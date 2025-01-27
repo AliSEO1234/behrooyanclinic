@@ -2,20 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  /* inter */
+  @font-face {
+    font-family: "inter";
+    src: url("./../assets/fonts/en-inter/Inter\ ExtraLight.otf")
+      format("opentype");
+    font-weight: 200;
+    font-style: normal;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @font-face {
+    font-family: "inter";
+    src: url("./../assets/fonts/en-inter/Inter\ Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "inter";
+    src: url("./../assets/fonts/en-inter/Inter\ Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "inter";
+    src: url("./../assets/fonts/en-inter/Inter\ Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "inter";
+    src: url("./../assets/fonts/en-inter/Inter\ SemiBold.otf")
+      format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "inter";
+    src: url("./../assets/fonts/en-inter/Inter\ Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "inter";
+    src: url("./../assets/fonts/en-inter/Inter\ ExtraBold.otf")
+      format("opentype");
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "inter";
+    src: url("./../assets/fonts/en-inter/Inter\ Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+  }
+  /* pt */
+  @font-face {
+    font-family: "pt-sans";
+    src: url("./../assets/fonts/ru-pt-sans/PTSans-Regular.ttf")
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "pt-sans";
+    src: url("./../assets/fonts/ru-pt-sans/PTSans-BoldItalic.ttf")
+      format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "pt-sans";
+    src: url("./../assets/fonts/ru-pt-sans/PTSans-Bold.ttf")
+      format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
 }
