@@ -1,22 +1,19 @@
+import createMiddleware from "next-intl/middleware";
 import { NextRequest, NextResponse } from "next/server";
+import { routing } from "./i18n/routing";
 
-const setLanguage = (req: NextRequest, res: NextResponse) => {
-  const langCookie = req.cookies.get("language");
-  if (!langCookie) {
-    res.cookies.set("language", "en", {
-      httpOnly: true,
-      path: "/",
-      sameSite: "strict",
-    });
-  }
-};
-
+export default createMiddleware(routing);
 export async function middleware(req: NextRequest) {
-  const res = NextResponse.next();
-  setLanguage(req, res);
+  const intlMiddleware = createMiddleware(routing);
+  const intlResponse = intlMiddleware(req);
+  const res = intlResponse || NextResponse.next();
   return res;
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+  matcher: [
+    "/((?!api|_next/static|_next/image|favicon.ico).*)",
+    "/",
+    "/(ru|en)/:path*",
+  ],
 };

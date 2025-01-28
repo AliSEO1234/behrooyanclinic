@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* animation */
+  .anm {
+    @apply duration-300 delay-75 ease-in-out;
+  }
+  /* flex class */
+  .flex-cen {
+    @apply flex justify-center items-center;
+  }
+  .flex-left {
+    @apply flex justify-start items-center;
+  }
+  .flex-right {
+    @apply flex justify-end items-center;
+  }
+}
+
 @layer base {
   /* inter */
   @font-face {
@@ -72,10 +89,8 @@
   }
   @font-face {
     font-family: "pt-sans";
-    src: url("./../assets/fonts/ru-pt-sans/PTSans-Bold.ttf")
-      format("truetype");
+    src: url("./../assets/fonts/ru-pt-sans/PTSans-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
   }
-  
 }
