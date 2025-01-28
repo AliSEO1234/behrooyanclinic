@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer components {
+
+  /* complimentary Form */
+  .complimentaryFormItem label{
+      @apply text-[#474744] font-medium mb-1 inline-block text-[14px] s1512:text-[14px] s1600:text-[16px]
+  }
+  .complimentaryFormItem input{
+      @apply placeholder:font-medium w-full outline-none border border-[#9996A0] rounded-[40px] h-[48px] p-4
+  }
   /* animation */
   .anm {
     @apply duration-300 delay-75 ease-in-out;
