@@ -3,8 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-  /* shadow service */
-  .shadow-service {
+  /* border arrow roadmap */
+  
+  /* progress video in home */
+  progress.progVideoHome::-webkit-progress-value {
+    @apply text-white bg-white;
+  }
+  /* shadow service shadow roadmap card  */
+  .shadow-service,
+  .shadow-roadmap-card {
     box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
   }
   /* complimentary Form */

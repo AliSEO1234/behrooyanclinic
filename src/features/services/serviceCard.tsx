@@ -16,7 +16,7 @@ const ServiceCard = ({
       <div className="flex-cen mb-4 px-4">
         <div className={`${imgStyle} flex-cen overflow-hidden border rounded-full shadow-inner-[0px_0px_40px_-8px_#86D1AB] p-4 bg-white shadow-service`}>
           <div className="w-full h-full">
-            <ImgFetcher src={img} />
+            <ImgFetcher width={200} height={200} src={img} />
           </div>
         </div>
       </div>

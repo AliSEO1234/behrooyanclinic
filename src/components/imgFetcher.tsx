@@ -19,8 +19,8 @@ const ImgFetcher = ({
       loading="lazy"
       src={link}
       alt={title || ""}
-      width={width || 1000}
-      height={height || 1000}
+      width={width || 200}
+      height={height || 200}
       title={title || ""}
     />
   );

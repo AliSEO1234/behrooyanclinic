@@ -8,7 +8,7 @@ import DropDownCustom from "../dropdownCustom";
 import { HiMenuAlt2 } from "react-icons/hi";
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-[4]">
+    <header className="sticky top-0 z-[5]">
       <nav className="anm grid grid-cols-12 bg-white shadow-[0_4px_2px_#0000001C] px-[20px] s1280:px-[71px] s1512:px-[78px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px] py-3 s1280:py-3 rounded-b-[40px]">
         <div className="col-span-6 s1280:col-span-1 flex-left gap-x-2">
           <div className="flex-cen">

@@ -15,6 +15,14 @@ import fertility from "@/assets/images/icons/services/fertility.svg";
 import eye from "@/assets/images/icons/services/eye.svg";
 import dental from "@/assets/images/icons/services/dental.svg";
 import aesthetics from "@/assets/images/icons/services/aesthetics.svg";
+import videoIcon from "@/assets/images/icons/video.svg";
+import medalIcon from "@/assets/images/icons/medal.svg";
+import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
+import RoadmapCard from "@/components/roadmap/roadmapCard";
+import passport from "@/assets/images/icons/passport.svg";
+import date from "@/assets/images/icons/date.svg";
+import air from "@/assets/images/icons/air.svg";
+import earth from "@/assets/images/icons/earth.svg";
 
 const Home = () => {
   return (
@@ -72,7 +80,7 @@ const Home = () => {
         </div>
         <div className="col-span-6 s1280:col-span-6 s1512:col-span-5 z-1">
           <div className="s1280:h-[560px] relative rounded-[20px] overflow-hidden">
-            <ImgFetcher src={homeBg} />
+            <ImgFetcher width={500} src={homeBg} />
             <div className="w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute top-2 right-2 s1280:top-5 s1280:right-5">
               <ImgFetcher src={pointtop} />
             </div>
@@ -124,7 +132,7 @@ const Home = () => {
         </div>
       </div>
       {/* Specialized Treatments */}
-      <div>
+      <div className="mb-10 s1280:mb-[60px]">
         <div className="flex-bet mb-5 s1280:mb-10">
           <div>
             <h2 className="font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px]">
@@ -181,6 +189,72 @@ const Home = () => {
             img={cell}
             linkService="/"
             title="Stem Cell"
+          />
+        </div>
+      </div>
+      {/* Watch Your Health Journey */}
+      <div className="mb-10 s1280:mb-[60px]">
+        <div className="flex-bet mb-2 s1280:mb-10">
+          <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[28%]" />
+          <h2 className="flex-cen font-semibold text-[20px] s1280:text-[30px]">
+            <span className="w-[70px] h-[53px]">
+              <ImgFetcher src={videoIcon} />
+            </span>
+            <span>Watch Your Health Journey</span>{" "}
+          </h2>
+          <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[28%]" />
+        </div>
+        <VideoPlayer />
+      </div>
+      {/* Your Treatment Roadmap */}
+      <div>
+        <div className="mb-2 s1280:mb-10">
+          <div className="flex-bet mb-4">
+            <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[24%]" />
+            <h2 className="flex-cen font-semibold text-[20px] s1280:text-[36px]">
+              <span className="w-[70px] h-[53px]">
+                <ImgFetcher src={medalIcon} />
+              </span>
+              <span>Your Treatment Roadmap</span>
+            </h2>
+            <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[24%]" />
+          </div>
+          <p className="text-center s1280:text-[24px] font-normal text-[#333333]">
+            We are here to make your medical journey as smooth and reassuring as
+            possible, with a dedicated team of doctors, healthcare
+            professionals, and experienced patient coordinators supporting you
+            every step of the way.
+          </p>
+        </div>
+        <div className="grid grid-cols-12 gap-y-10">
+          <RoadmapCard
+          align="left"
+            cover={passport}
+            title="Personalized Consultation & Treatment Planning"
+            desc="The process starts when clients contact us. We assess their needs, arrange consultations, and design a customized treatment plan with clear and transparent cost estimates."
+            className="s1280:w-[60%]"
+          />
+          <RoadmapCard
+          align="right"
+            cover={air}
+            title="Online & Pre-Travel Arrangements"
+            desc="Clients consult with their doctor online to address any questions before traveling. We assist with booking flights, accommodation, transfers,and visa support if needed."
+            className="s1280:w-[60%]"
+          />
+          <RoadmapCard
+          align="left"
+            cover={earth}
+            title="Receiving World-Class Treatment"
+            desc="Clients are supported throughout their treatment with regular updates, and follow-up care is arranged post-treatment for a seamless experience."
+            className="s1280:w-[60%]"
+          />
+          <RoadmapCard
+          endArrow
+          align="right"
+            cover={date}
+            title=" 7/24 Ongoing Support"
+            desc="Our relationship doesn’t end with the treatment. We remain available for questions, additional assistance, and long-term care."
+            className="s1280:w-[60%]"
           />
         </div>
       </div>
