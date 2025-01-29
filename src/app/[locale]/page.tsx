@@ -7,11 +7,20 @@ import squire from "@/assets/images/icons/home/squire.svg";
 import star from "@/assets/images/icons/star.svg";
 import ComplimentaryConsultationForm from "@/layoutes/complimentaryConsultationForm";
 import point from "@/assets/images/icons/home/points.svg";
+import Link from "next/link";
+import ServiceCard from "@/features/services/serviceCard";
+
+import cell from "@/assets/images/icons/services/stemcell.svg";
+import fertility from "@/assets/images/icons/services/fertility.svg";
+import eye from "@/assets/images/icons/services/eye.svg";
+import dental from "@/assets/images/icons/services/dental.svg";
+import aesthetics from "@/assets/images/icons/services/aesthetics.svg";
+
 const Home = () => {
   return (
     <>
       {/* header */}
-      <div className="grid grid-cols-12 gap-x-4 gap-y-10">
+      <div className="grid grid-cols-12 gap-x-4 gap-y-10 mb-10 s1280:mb-[60px]">
         <div className="col-span-6 s412:pt-5 s1280:col-span-6 s1512:col-span-4 s1280:pt-20 s1280:pe-20 s1512:pe-0 relative">
           {/* points */}
           <div className="hidden s1280:block w-72 h-72 absolute -bottom-6 left-40">
@@ -62,7 +71,7 @@ const Home = () => {
           </div>
         </div>
         <div className="col-span-6 s1280:col-span-6 s1512:col-span-5 z-1">
-          <div className="s1280:h-[600px] relative rounded-[20px] overflow-hidden">
+          <div className="s1280:h-[560px] relative rounded-[20px] overflow-hidden">
             <ImgFetcher src={homeBg} />
             <div className="w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute top-2 right-2 s1280:top-5 s1280:right-5">
               <ImgFetcher src={pointtop} />
@@ -96,7 +105,7 @@ const Home = () => {
           </div>
         </div>
         {/* Complimentary Consultation */}
-        <div className="col-span-12 s1280:col-span-12 s1512:col-span-3 relative s1512:flex">
+        <div className="col-span-12 s1280:col-span-12 s1512:col-span-3 relative s1512:flex flex-col items-end">
           {/* star */}
           <div className="w-[78px] h-[78px] absolute -top-8 left-0 z-[2] s1600:-top-5">
             <ImgFetcher src={star} />
@@ -112,6 +121,67 @@ const Home = () => {
               <ComplimentaryConsultationForm />
             </div>
           </div>
+        </div>
+      </div>
+      {/* Specialized Treatments */}
+      <div>
+        <div className="flex-bet mb-5 s1280:mb-10">
+          <div>
+            <h2 className="font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px]">
+              <span className="text-[#00979A]">Specialized</span> Treatments
+            </h2>
+          </div>
+          <div className="flex-right">
+            <Link
+              className="border-[2px] rounded-[40px] border-[#00979A] text-[#00979A] px-4 h-[40px] s1280:px-[71px] text-[14px] s1512:text-[20px] flex-cen font-semibold"
+              href="/"
+            >
+              See All
+            </Link>
+          </div>
+        </div>
+        {/* show service */}
+        <div className="flex flex-col s1280:flex-row s1280:flex-wrap items-center justify-start s1280:items-center s1280:justify-between gap-y-8 s1280:gap-4 s1280:px-0">
+          <ServiceCard
+            imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            className="w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+            countService={27}
+            img={aesthetics}
+            linkService="/"
+            title="Aesthetics"
+          />
+          <ServiceCard
+            imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            className="w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+            countService={74}
+            img={dental}
+            linkService="/"
+            title="Dental"
+          />
+          <ServiceCard
+            imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            className="w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+            countService={51}
+            img={eye}
+            linkService="/"
+            title="Eye Surgeries"
+          />
+          <ServiceCard
+            imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            className="w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+            countService={45}
+            img={fertility}
+            linkService="/"
+            title="Fertility"
+          />
+          <ServiceCard
+            imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            className="w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+            countService={24}
+            img={cell}
+            linkService="/"
+            title="Stem Cell"
+          />
         </div>
       </div>
     </>
