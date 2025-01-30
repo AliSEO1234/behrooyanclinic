@@ -24,7 +24,16 @@ import date from "@/assets/images/icons/date.svg";
 import air from "@/assets/images/icons/air.svg";
 import earth from "@/assets/images/icons/earth.svg";
 import RoadmapArrowMobile from "@/components/roadmap/roadmapArrowMobile";
-
+import help1 from "@/assets/images/icons/home/helptop.jpg";
+import help2 from "@/assets/images/icons/home/helpunder.jpg";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { BsHeartPulse } from "react-icons/bs";
+import ArrowHelping from "@/components/arrowHelping";
+import { MdManageHistory, MdOutlineCloudDone } from "react-icons/md";
+import FeedBackLayout from "@/layoutes/feedbackLayoute/feedbackLayoute";
+import InfoHealthCard from "@/components/infoHealth/infoHealthCard";
+import heart from "@/assets/images/icons/heart.svg";
+import BundleIcon from "@/components/infoHealth/bundleIcon";
 const Home = () => {
   return (
     <>
@@ -208,7 +217,7 @@ const Home = () => {
         <VideoPlayer />
       </div>
       {/* Your Treatment Roadmap */}
-      <div>
+      <div className="mb-10 s1280:mb-[80px]">
         <div className="mb-2 s1280:mb-10">
           <div className="flex-bet mb-4">
             <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[24%]" />
@@ -229,38 +238,38 @@ const Home = () => {
         </div>
         <div className="grid grid-cols-12 s1280:gap-y-10">
           <RoadmapCard
-          align="left"
+            align="left"
             cover={passport}
             title="Personalized Consultation & Treatment Planning"
             desc="The process starts when clients contact us. We assess their needs, arrange consultations, and design a customized treatment plan with clear and transparent cost estimates."
             className="s1280:w-[60%] s1728:w-[55%] s1920:w-[50%]"
           />
           <div className="col-span-12 flex-cen">
-            <RoadmapArrowMobile/>
+            <RoadmapArrowMobile />
           </div>
           <RoadmapCard
-          align="right"
+            align="right"
             cover={air}
             title="Online & Pre-Travel Arrangements"
             desc="Clients consult with their doctor online to address any questions before traveling. We assist with booking flights, accommodation, transfers,and visa support if needed."
             className="s1280:w-[60%] s1728:w-[55%] s1920:w-[50%]"
           />
           <div className="col-span-12 flex-cen">
-            <RoadmapArrowMobile/>
+            <RoadmapArrowMobile />
           </div>
           <RoadmapCard
-          align="left"
+            align="left"
             cover={earth}
             title="Receiving World-Class Treatment"
             desc="Clients are supported throughout their treatment with regular updates, and follow-up care is arranged post-treatment for a seamless experience."
             className="s1280:w-[60%] s1728:w-[55%] s1920:w-[50%]"
           />
           <div className="col-span-12 flex-cen">
-            <RoadmapArrowMobile/>
+            <RoadmapArrowMobile />
           </div>
           <RoadmapCard
-          endArrow
-          align="right"
+            endArrow
+            align="right"
             cover={date}
             title=" 7/24 Ongoing Support"
             desc="Our relationship doesn’t end with the treatment. We remain available for questions, additional assistance, and long-term care."
@@ -268,6 +277,166 @@ const Home = () => {
           />
         </div>
       </div>
+      {/* helping */}
+      <div className="mb-10 s1280:mb-[60px] bg-white shadow-[0_4px_15px_0_#0000001A] rounded-[40px] grid grid-cols-12 pt-4 pb-8 s1280:p-[27px] s1728:px-[30px] s1920:px-[70px] s1920:py-[38px] s1280:gap-x-[36px] s1512:gap-x-[42px] s1600:gap-x-[48px]">
+        <div className="col-span-12 s1280:col-span-6 relative">
+          <div className="flex items-center justify-center s1280:justify-end">
+            <div className="w-[320px] h-[206px] s390:w-[336px] s412:w-[366px] s1280:w-[366px] s1280:h-[206px] s1512:w-[439px] s1512:h-[247px] s1920:w-[528px] s1920:h-[297px] rounded-[40px] overflow-hidden">
+              <ImgFetcher width={1000} src={help1} />
+            </div>
+          </div>
+          <div className="hidden s1280:flex-left s1280:-mt-20">
+            <div className="s1280:w-[345px] s1280:h-[405px] s1512:w-[433px] s1512:h-[438px] s1600:w-[454px] s1600:h-[460px] s1728:w-[480px] s1728:h-[487px] s1920:w-[474px] s1920:h-[437px] rounded-[40px] overflow-hidden">
+              <ImgFetcher width={1000} src={help2} />
+            </div>
+          </div>
+          {/* consultation */}
+          <div className="flex-cen s1280:block w-full s1280:w-fit absolute -bottom-6 s1280:bottom-10 s1280:right-0 s1512:top-16 s1512:left-0 s1600:top-24 s1728:top-20">
+            <Link
+              href="/"
+              className="w-[266px] s1280:w-fit flex-cen gap-x-2 rounded-[40px] bg-[#FFFFFF99] shadow-[-8px_22px_15px_-15px_#0000001A] py-2 ps-2 pe-4 backdrop-blur-[10px]"
+            >
+              <div>
+                <div className="flex-cen w-[45px] h-[45px] s1280:w-[64px] s1280:h-[64px] rounded-full help-shadow text-[#00979A]">
+                  <BiSolidPhoneCall className="size-7" />
+                </div>
+              </div>
+              <div>
+                <p className="font-bold text-[#474744] s1280:mb-3">
+                  Zero-Cost Consultation
+                </p>
+                <p className="text-[#474744] text-[14px] s1280:text-[16px]">
+                  Consultation with the best
+                </p>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="col-span-12 s1280:col-span-6 flex flex-col mt-16 s1280:mt-0 px-2 s412:px-4">
+          <div className="mb-10 s1280:mb-0">
+            <h3 className="text-[14px] s390:text-[15px] s1280:text-[22px] s1512:text-[24px] s1600:text-[28px] s1728:text-[29px] font-semibold text-[#00979A] mb-5">
+              HELPING PATIENTS FROM AROUND THE GLOBE!!
+            </h3>
+            <h4 className="font-semibold text-[20px] s1280:text-[36px] s1600:text-[30px] s1728:text-[40px] mb-1">
+              Our <span className="text-[#00979A]">Mission</span>
+            </h4>
+            <p className="text-[#474744] font-medium text-[14px] s1512:text-[16px] s1600:text-[18px] s1728:text-[20px] s1512:leading-[30px] text-justify">
+              At AzpoHealth, we aim to transform healthcare from a routine
+              process into an inspiring journey. Our goal is to make advanced
+              medical technologies accessible to patients worldwide, providing
+              the most suitable treatment plans and ensuring access to
+              high-quality healthcare. From the moment you step into Turkey
+              until you return home, we’ll be with you every step of the way,
+              supporting you to become the best version of yourself. Our team of
+              expert doctors and professionals will be continuously by your
+              side, offering guidance and support throughout your treatment,
+              ensuring the safest and most comfortable experience possible.
+              Welcome to a new age of medical tourism, where your path to
+              wellness meets the excitement of discovering new possibilities.
+            </p>
+          </div>
+          <div className="font-medium text-[#474744] mt-auto flex flex-col items-start justify-end gap-y-4 s1512:gap-y-6 text-[14px] s1280:text-[20px]">
+            <div className="flex justify-start items-center gap-x-3">
+              <div className="flex-cen">
+                <BsHeartPulse className="size-6 s1280:size-8 text-[#00979A]" />
+              </div>
+              <ArrowHelping />
+              <div>
+                <p>Stay Updated About Your Health</p>
+              </div>
+            </div>
+            <div className="flex justify-start items-center gap-x-3">
+              <div className="flex-cen">
+                <MdOutlineCloudDone className="size-6 s1280:size-8 text-[#00979A]" />
+              </div>
+              <ArrowHelping />
+              <div>
+                <p>Check Your Results Online</p>
+              </div>
+            </div>
+            <div className="flex justify-start items-center gap-x-3">
+              <div className="flex-cen">
+                <MdManageHistory className="size-6 s1280:size-8 text-[#00979A]" />
+              </div>
+              <ArrowHelping />
+              <div>
+                <p>Manage Your Appointments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* We Appreciate Your Thoughts */}
+      <div className="mb-10 s1280:mb-[60px]">
+        <div className="mb-10">
+          <h2 className="text-center text-[#474744] font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px]">
+            We Appreciate Your Thoughts
+          </h2>
+        </div>
+        <div>
+          <FeedBackLayout />
+          <FeedBackLayout />
+        </div>
+      </div>
+      {/* information about Azpo Health */}
+      <div className="mb-10 s1280:mb-[200px]">
+        <div className="flex-bet mb-20">
+          <hr className="w-[40%] s1280:w-[43%] h-0 border-[2px] border-dashed border-[#333333]" />
+          <div className="w-[100px] h-[100px]">
+            <ImgFetcher src={heart} />
+          </div>
+          <hr className="w-[40%] s1280:w-[43%] h-0 border-[2px] border-dashed border-[#333333]" />
+        </div>
+
+        <div className="flex flex-col items-center gap-y-4 s1280:hidden">
+          <div className="flex justify-between items-center w-full">
+            <InfoHealthCard title="Successful Consultations" value="10000+" />
+            <BundleIcon
+              className="w-[120px] h-[67px] top-5"
+              destination="top"
+            />
+            <InfoHealthCard title="Healthcare Professionals" value="2.500" />
+          </div>
+
+          <BundleIcon
+            className="hidden s1280:block w-[120px] h-[67px]"
+            destination="bottom"
+          />
+          <div className="flex justify-between items-center w-full">
+            <InfoHealthCard title="Patient Satisfaction Rate" value="90%" />
+            <BundleIcon
+              className="w-[120px] h-[67px] top-5"
+              destination="top"
+            />
+            <InfoHealthCard title="Top Specialists" value="200" />
+          </div>
+        </div>
+        <div className="hidden s1280:flex items-center s1280:justify-between">
+          <InfoHealthCard title="Successful Consultations" value="10000+" />
+          <BundleIcon
+            className="w-[246px] s1600:w-[346px] h-[67px] s1600:h-[80px] top-24 s1600:top-24"
+            destination="top"
+          />
+          <InfoHealthCard title="Healthcare Professionals" value="2.500" />
+          <BundleIcon
+            className="w-[246px] s1600:w-[346px] h-[67px] s1600:h-[80px] top-24 s1600:top-24"
+            destination="bottom"
+          />
+          <InfoHealthCard title="Patient Satisfaction Rate" value="90%" />
+          <BundleIcon
+            className="w-[246px] s1600:w-[346px] h-[67px] s1600:h-[80px] top-24 s1600:top-24"
+            destination="top"
+          />
+          <InfoHealthCard title="Top Specialists" value="200" />
+        </div>
+      </div>
+      {/* Why choose us? */}
+      {/* <FillScrollLayout className="bg-rose-400" order="first" title="Why choose us?">
+        regreigrekgreg
+      </FillScrollLayout>
+      <FillScrollLayout order="second" title="Why choose us?">
+        regreigrekgreg
+      </FillScrollLayout> */}
     </>
   );
 };
