@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 import feed from "@/assets/images/feed.jpg";
 const FeedbackCard = ({ desc, title }: FeedBackCardType) => {
   return (
-    <div className="w-[329px] min-w-[329px] s1280:w-[432px] s1280:min-w-[432px] snap-start scroll-ml-3 bg-white rounded-[20px] shadow-[0_4px_15px_0_#0000001A] px-8 py-5">
+    <div className="w-[329px] min-w-[329px] s1280:w-[432px] s1280:min-w-[432px] bg-white rounded-[20px] shadow-[0_4px_15px_0_#0000001A] px-8 py-5">
       <div className="flex-left gap-x-3 mb-4">
         <div>
           <div className="s1280:w-[98px] s1280:h-[98px] overflow-hidden rounded-full">

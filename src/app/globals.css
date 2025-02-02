@@ -1,20 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  touch-action: pan-y;
+}
 
 @layer components {
+  /* inner shadowe info card in patform work */
+  .plt-work-title-shadow {
+    box-shadow: 0px 0px 14.7px -1px #00979a inset;
+  }
+  /* inner shadowe info card in patform work */
+  .plt-work-info-shadow {
+    box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
+  }
+  /* how our platform works form */
+  .form-platform-work div label {
+    @apply block font-semibold text-[#474744] mb-1;
+  }
+  .form-platform-work div input {
+    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#474744] mb-1;
+  }
   /* hide scrollbar */
   .scroll-hide::-webkit-scrollbar {
     @apply hidden;
   }
   .scrollbar-custom::-webkit-scrollbar {
-    @apply w-[2px] h-[5px] pt-1 ;
+    @apply w-[2px] h-[5px] pt-1;
   }
   .scrollbar-custom::-webkit-scrollbar-thumb {
     @apply bg-[#00979A] rounded-[100px];
   }
   .scrollbar-custom::-webkit-scrollbar-track {
     @apply bg-transparent;
+  }
+  /* experience shadow */
+  .experience-card-shadow {
+    box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
   }
   /* border arrow helping */
   .help-shadow {
@@ -25,6 +53,10 @@
     @apply text-white bg-white;
   }
   /* shadow service shadow roadmap card  */
+  .shadow-choose-us {
+    box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
+  }
+
   .shadow-service,
   .shadow-roadmap-card {
     box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
@@ -136,27 +168,10 @@
   position: absolute;
   right: 0;
   top: 0;
-  display: block;
 }
 .border__style--layout-second,
 .border__style--layout-fourth {
   position: absolute;
   left: 0;
   top: 0;
-  display: block;
-}
-@media only screen and (max-width: 1500px) {
-  .border__style--layout-second {
-    left: -70px;
-  }
-
-  .border__style--layout-first,
-  .border__style--layout-third {
-    display: none;
-  }
-
-  .border__style--layout-second,
-  .border__style--layout-fourth {
-    display: none;
-  }
 }

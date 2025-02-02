@@ -5,7 +5,6 @@ import pointtop from "@/assets/images/icons/home/point-tr.svg";
 import pointbot from "@/assets/images/icons/home/point-bl.svg";
 import squire from "@/assets/images/icons/home/squire.svg";
 import star from "@/assets/images/icons/star.svg";
-import ComplimentaryConsultationForm from "@/layoutes/complimentaryConsultationForm";
 import point from "@/assets/images/icons/home/points.svg";
 import Link from "next/link";
 import ServiceCard from "@/features/services/serviceCard";
@@ -34,6 +33,32 @@ import FeedBackLayout from "@/layoutes/feedbackLayoute/feedbackLayoute";
 import InfoHealthCard from "@/components/infoHealth/infoHealthCard";
 import heart from "@/assets/images/icons/heart.svg";
 import BundleIcon from "@/components/infoHealth/bundleIcon";
+import FillScrollLayout from "@/layoutes/fillScrollLayout/fillScrollLayout";
+import chooseIcon from "@/assets/images/chooseIcon.svg";
+import chooseUs from "@/assets/images/chooseus.jpg";
+import ChooseUsCard from "@/components/chooseUs/chooseUsCard";
+import SeeAll from "@/components/seeAll";
+import DistinctiveCard from "@/components/distinctive/distinctiveCard";
+import dist1 from "@/assets/images/distinctive/distinctive1.jpg";
+import dist2 from "@/assets/images/distinctive/distinctive2.jpg";
+import dist3 from "@/assets/images/distinctive/distinctive3.jpg";
+import dist4 from "@/assets/images/distinctive/distinctive4.jpg";
+import dist1icon from "@/assets/images/distinctive/icon1.svg";
+import dist2icon from "@/assets/images/distinctive/icon2.svg";
+import dist3icon from "@/assets/images/distinctive/icon3.svg";
+import dist4icon from "@/assets/images/distinctive/icon4.svg";
+import ExperienceCard from "@/components/experience/experienceCard";
+import noIcon from "@/assets/images/icons/experience/noicon.svg";
+import freeconsul from "@/assets/images/icons/experience/freeconsul.svg";
+import pay from "@/assets/images/icons/experience/pay.svg";
+import experienceIcon from "@/assets/images/icons/home/experience.jpg";
+import BlogCard from "@/components/blogs/blogCard";
+import { blogList } from "@/staticData/blogList";
+import ComplimentaryConsultationForm from "@/features/complimentaryConsultationForm";
+import PlatformWorkForm from "@/features/platformWork/platformWorkForm";
+import InfoCard from "@/features/platformWork/infoCard";
+import pltWork from "@/assets/images/workPlatform.jpg";
+import doctorIcon from "@/assets/images/doctorPltWork.svg";
 const Home = () => {
   return (
     <>
@@ -150,12 +175,7 @@ const Home = () => {
             </h2>
           </div>
           <div className="flex-right">
-            <Link
-              className="border-[2px] rounded-[40px] border-[#00979A] text-[#00979A] px-4 h-[40px] s1280:px-[71px] text-[14px] s1512:text-[20px] flex-cen font-semibold"
-              href="/"
-            >
-              See All
-            </Link>
+            <SeeAll link="/" />
           </div>
         </div>
         {/* show service */}
@@ -214,7 +234,9 @@ const Home = () => {
           </h2>
           <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[28%]" />
         </div>
-        <VideoPlayer />
+        <div className="flex-cen">
+          <VideoPlayer />
+        </div>
       </div>
       {/* Your Treatment Roadmap */}
       <div className="mb-10 s1280:mb-[80px]">
@@ -431,12 +453,197 @@ const Home = () => {
         </div>
       </div>
       {/* Why choose us? */}
-      {/* <FillScrollLayout className="bg-rose-400" order="first" title="Why choose us?">
-        regreigrekgreg
+      <FillScrollLayout
+        className="s1280:h-[852px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-24 s1512:pt-20"
+        order="first"
+        title="Why choose us?"
+      >
+        <div className="grid grid-cols-12 gap-y-10 px-2 s1280:gap-y-0 s1280:gap-x-10 s1600:gap-x-[55px] s1728:gap-x-[40px] s1920:gap-x-[75px]">
+          <div className="col-span-12 s1280:col-span-3 s1512:col-span-4 relative">
+            <div className="w-full h-[289px] s1280:h-full rounded-tr-[50px] rounded-bl-[50px] overflow-hidden">
+              <ImgFetcher
+                className="object-cover"
+                src={chooseUs}
+                width={2000}
+              />
+            </div>
+            {/* icon */}
+            <div className="hidden s1280:block s1280:w-[307px] s1280:h-[290px] absolute -bottom-14 -right-28">
+              <ImgFetcher src={chooseIcon} width={3000} />
+            </div>
+          </div>
+          <div className="col-span-12 s1280:col-span-9 s1512:col-span-8 grid grid-cols-12 s1280:gap-x-5 s1600:gap-x-[26px] s1920:gap-x-[39px] gap-y-[32px]">
+            <div className="col-span-12 s1280:col-span-6">
+              <ChooseUsCard
+                desc="What sets us apart from other intermediary organizations in providing the most reliable and tailored healthcare services is our team of expert doctors, healthcare professionals, and multilingual patient coordinators. We are committed to delivering the best possible care by fully understanding the individual needs of our patients. From the moment you contact us, the initial consultation is conducted one-on-one by our doctors, ensuring that the most accurate treatment plan is created and shared with you. We are here to guide you as a trusted bridge throughout your healthcare journey."
+                header="High Expertise"
+                index={1}
+              />
+              <ChooseUsCard
+                end
+                desc="With 20 years of experience serving international clients and building strong partnerships, our well-established company has a deep understanding of your needs and is highly knowledgeable about the capabilities of Turkish medicine. Each member of our team is an expert in their field, bringing valuable experience and insight to ensure the best coordination of your journey. We have extensive collaboration with medical institutions and an extensive database of statistics, allowing us to confidently recommend the best solutions. Throughout your treatment process, both before and after, we provide professional services with foresight, anticipating any potential situations and taking the necessary precautions to ensure optimal results. We are with you every step of the way."
+                header="Long-term Experience"
+                index={3}
+              />
+            </div>
+            <div className="col-span-12 s1280:col-span-6">
+              <ChooseUsCard
+                desc="Throughout your medical journey in Turkey, we ensure that every detail is taken care of to provide you with all the necessary services. We manage not only your treatment plan but also assist with transfers, accommodation, insurance, and visa arrangements. To accelerate your treatment and ensure the most accurate approach, we partner with Turkey’s top clinics and hospitals, accredited by the Ministry of Health for medical tourism. Before your arrival, your case will be reviewed by a team of specialists to optimize your treatment plan. It will then be carefully rechecked by Azpo Health’s expert doctors to guarantee the highest quality care, before being presented to you. All you need to do is trust the process and leave it to Azpo Health’s professional team."
+                header="360-degree Service"
+                index={2}
+              />
+              <ChooseUsCard
+                desc="Thanks to our years of experience and extensive network, we’re here to support you in top health tourism destinations in Turkey, including Istanbul, Antalya, Alanya, Ankara, Izmir, Samsun, and Cappadocia, as well as in several countries with well-established medical tourism. No matter where you choose to receive treatment and benefit from our services, our local representatives are ready to offer you the best service in that city."
+                header="Network"
+                index={4}
+              />
+            </div>
+          </div>
+        </div>
       </FillScrollLayout>
-      <FillScrollLayout order="second" title="Why choose us?">
-        regreigrekgreg
-      </FillScrollLayout> */}
+      {/* Video Distinctive Features */}
+      <FillScrollLayout
+        classLabel="hidden s1280:flex-cen"
+        className="mt-10 s1280:mt-0 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-10 s1512:pt-16 s1512:-mt-4"
+        order="second"
+        title="Video Distinctive Features"
+      >
+        <div className="w-full z-[3]">
+          <div className="flex items-center justify-between s1280:justify-end mb-10 s1512:mb-5">
+            <div className="s1280:hidden">
+              <h2 className="font-semibold text-[20px] text-[#333333]">
+                Video experience
+              </h2>
+            </div>
+            <div>
+              <SeeAll link="/" />
+            </div>
+          </div>
+          <div className="grid grid-cols-12 px-5 s390:px-8 sm:px-36 s412:px-10 gap-y-10 s1280:gap-y-0 s1280:px-0 s1280:gap-x-5 s1728:gap-x-12 s1920:gap-x-20">
+            <DistinctiveCard
+              icon={dist1icon}
+              desc="Some quick example text to build on the card title and make up the bulk of the card's content. This card has even longer"
+              link="/"
+              service="Aesthetics"
+              title="Ali mosadegh"
+              video={dist1}
+            />
+            <DistinctiveCard
+              icon={dist2icon}
+              desc="Some quick example text to build on the card title and make up the bulk of the card's content."
+              link="/"
+              service="Eye Surgeries"
+              title="Rasul bey"
+              video={dist2}
+            />
+            <DistinctiveCard
+              icon={dist3icon}
+              desc="Some quick example text to build on the card title and make up the bulk of the card's content. This card has even longer content than the first to show that equal height action."
+              link="/"
+              service="Bariatric surgeries"
+              title="Parinaz"
+              video={dist3}
+            />
+            <DistinctiveCard
+              icon={dist4icon}
+              desc="Some quick example text to build on the card title and make up the bulk of the card's content. This card has even longer content than the first to show that equal height action."
+              link="/"
+              service="Bariatric surgeries"
+              title="Parinaz"
+              video={dist4}
+            />
+          </div>
+        </div>
+      </FillScrollLayout>
+      {/* experience */}
+      <FillScrollLayout
+        title="Experience"
+        order="third"
+        classLabel="s1512:-mt-1 flex-cen"
+        className="s1280:h-[385px] s1280:pt-40  s1280:-mt-6 s1512:mt-7 relative s1600:-mt-[70px] s1728:-mt-[60px] s1920:mt-[12px]"
+      >
+        <div className="w-full h-full absolute s1280:top-12 left-0 z-[2]">
+          <ImgFetcher src={experienceIcon} width={2000} />
+        </div>
+        <div className="grid grid-cols-12 gap-y-10 s1280:gap-x-[61px] s1512:gap-x-[42px] s1600:gap-x-[85px] s1728:gap-x-[114px] s1920::gap-x-[175px] s1280:px-[25px] s1600:px-[20px] s1728:px-10 s1920:px-[44px] z-[3]">
+          <ExperienceCard icon={noIcon} title="No upfront fees" />
+          <ExperienceCard icon={pay} title="Payments directly at the clinic" />
+          <ExperienceCard
+            icon={freeconsul}
+            title="Free video consultation with the Dr’s"
+          />
+        </div>
+      </FillScrollLayout>
+      {/* blog azpo */}
+      <FillScrollLayout
+        className="s1280:pt-20 s1280:h-[750px] s1280:-mt-6"
+        title="AZPO Blog"
+        order="fourth"
+        classLabel="s1280:flex-cen ms-4"
+      >
+        <div>
+          <div className="flex items-center justify-between s1280:justify-end mb-10">
+            <div className="s1280:hidden">
+              <h2 className="font-semibold text-[20px]">AZPO Blog</h2>
+            </div>
+            <div>
+              <SeeAll link="/" />
+            </div>
+          </div>
+          <div className="grid grid-cols-12 px-4 s412:px-[27px] gap-y-5 s1280:gap-y-0 s1280:gap-x-5 s1600:gap-x-8 s1920:gap-x-14 z-[3] s1280:px-5 s1600:px-10">
+            {blogList.map((blog) => {
+              return <BlogCard key={blog.blogId} {...blog} />;
+            })}
+          </div>
+        </div>
+      </FillScrollLayout>
+      {/* how our platform works */}
+      <div className="my-10 s1280:my-0">
+        <div className="flex items-center justify-center s1280:justify-end s1280:-mt-5 s1512:mt-24 s1600:mt-20 mb-10">
+          <h2 className="text-[#3D3D3D] font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1600:text-[48px]">
+            How <span className="text-[#0CA5A5]">our platform</span> works
+          </h2>
+        </div>
+        <div className="grid grid-cols-12 gap-y-[49px] s1280:gap-y-0 s1280:gap-x-[25px] s1512:gap-x-[33px] s1600:gap-x-[25px] s1728:gap-x-[53px]">
+          <div className="order-3 s1280:order-1  col-span-12 s1280:col-span-4">
+            <PlatformWorkForm />
+          </div>
+          <div className="order-2 col-span-12 s1280:col-span-4 s1512:col-span-3 flex flex-col items-center justify-end gap-y-5 px-2 s1280:px-0">
+            <InfoCard
+              counter={1}
+              desc="Sign up and fill in your medical history securely. Setting up your profile this way would ensure that you stay up-to-date with your medical processes."
+              title="Create Your Profile"
+            />
+            <InfoCard
+              counter={2}
+              desc="Select from our range of services and book a consultation. Booking a consultation with HealNet is fairly simple and straight-forward."
+              title="Choose Your Service"
+            />
+            <InfoCard
+              counter={3}
+              desc="Have a virtual consultation with one of our certified specialists, or go for a physical visit to the doctor in case you opted for a physical check-up."
+              title="Meet Your Doctor"
+            />
+          </div>
+          <div className="order-1 s1280:order-3 col-span-12 s1280:col-span-4 s1512:col-span-5 relative flex items-start justify-center s1512:justify-end">
+            <div className="w-[213px] s1280:w-[405px]">
+              <ImgFetcher width={2000} src={pltWork} />
+            </div>
+            <div className="s1280:px-5 absolute  bottom-0 s1280:bottom-12 s1512:bottom-6 left-0 s1512:-left-20 flex-cen w-full">
+              <div className="rounded-[40px] flex-left gap-x-2 bg-[#FFFFFF99] backdrop-blur-[10px] shadow-[-8px_22px_15px_-15px_#0000001A] p-2">
+                <div className="w-[40px] h-[40px] s1280:w-[64px] s1280:h-[64px] p-2 s1280:p-4 rounded-full plt-work-title-shadow">
+                  <ImgFetcher src={doctorIcon} />
+                </div>
+                <div>
+                  <p className="font-bold text-[14px] s1600:text-[16px] text-[#474744]">
+                    Best Certified Team of Specialists
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

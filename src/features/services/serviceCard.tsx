@@ -11,7 +11,7 @@ const ServiceCard = ({
     <div
       className={`${
         className && className
-      } bg-white rounded-b-[40px] rounded-t-[400px] shadow-[0px_4px_15px_#0000001A] pt-4 pb-4`}
+      } bg-white rounded-b-[80px] rounded-t-[400px] shadow-[0px_4px_15px_#0000001A] pt-4 pb-4`}
     >
       <div className="flex-cen mb-4 px-4">
         <div className={`${imgStyle} flex-cen overflow-hidden border rounded-full shadow-inner-[0px_0px_40px_-8px_#86D1AB] p-4 bg-white shadow-service`}>
