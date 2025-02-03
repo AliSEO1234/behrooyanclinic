@@ -26,7 +26,7 @@ const DistinctiveCard = ({
       </div>
       <div className="flex-right mb-5">
         <p className="bg-[#DAEDE6] text-[#474744] rounded-s-[100px] px-2 py-1 font-medium flex-cen gap-x-2">
-          <span className="w-4 h-4">{<ImgFetcher src={icon} />}</span>
+          <span className="w-[15px] h-[15px]">{<ImgFetcher src={icon} />}</span>
           <span className="s1280:text-[12px] s1512:text-[16px]">{service}</span>
         </p>
       </div>

@@ -25,10 +25,7 @@ import earth from "@/assets/images/icons/earth.svg";
 import RoadmapArrowMobile from "@/components/roadmap/roadmapArrowMobile";
 import help1 from "@/assets/images/icons/home/helptop.jpg";
 import help2 from "@/assets/images/icons/home/helpunder.jpg";
-import { BiSolidPhoneCall } from "react-icons/bi";
-import { BsHeartPulse } from "react-icons/bs";
 import ArrowHelping from "@/components/arrowHelping";
-import { MdManageHistory, MdOutlineCloudDone } from "react-icons/md";
 import FeedBackLayout from "@/layoutes/feedbackLayoute/feedbackLayoute";
 import InfoHealthCard from "@/components/infoHealth/infoHealthCard";
 import heart from "@/assets/images/icons/heart.svg";
@@ -52,6 +49,7 @@ import noIcon from "@/assets/images/icons/experience/noicon.svg";
 import freeconsul from "@/assets/images/icons/experience/freeconsul.svg";
 import pay from "@/assets/images/icons/experience/pay.svg";
 import experienceIcon from "@/assets/images/icons/home/experience.jpg";
+import exPhone from "@/assets/images/icons/home/exPhone.jpg";
 import BlogCard from "@/components/blogs/blogCard";
 import { blogList } from "@/staticData/blogList";
 import ComplimentaryConsultationForm from "@/features/complimentaryConsultationForm";
@@ -59,6 +57,13 @@ import PlatformWorkForm from "@/features/platformWork/platformWorkForm";
 import InfoCard from "@/features/platformWork/infoCard";
 import pltWork from "@/assets/images/workPlatform.jpg";
 import doctorIcon from "@/assets/images/doctorPltWork.svg";
+import borderDashed from "@/assets/images/borderdashed.jpg";
+import borderRoadmap from "@/assets/images/border-roadmap.jpg";
+import infoBorder from "@/assets/images/infoBorder.jpg";
+import ring from "@/assets/images/ring.svg";
+import phone from "@/assets/images/phone.svg"
+import apoint from "@/assets/images/apointment.svg"
+import online from "@/assets/images/online.svg"
 const Home = () => {
   return (
     <>
@@ -70,7 +75,7 @@ const Home = () => {
             <ImgFetcher src={point} />
           </div>
           {/* squire icon */}
-          <div className="w-[60px] top-0 -right-12 h-[120px] s1280:w-[243px] s1280:h-[290px] absolute s1280:top-10 s1280:-right-40 z-[2]">
+          <div className="w-[60px] top-0 -right-12 h-[120px] s1280:w-[243px] s1280:h-[290px] absolute s1280:top-10 s1280:-right-44 z-[2]">
             <ImgFetcher
               className="object-contain filter drop-shadow-[inset_5px_10px_10px_rgb(0,0,0)]"
               src={squire}
@@ -88,7 +93,7 @@ const Home = () => {
             </p>
             <hr className="bg-[#9996A0] w-full mt-1 s1280:hidden" />
             <div className="flex-left mt-2">
-              <p className="text-[14px] text-center s1280:text-start rounded-[20px] s1280:text-[20px] s1512:text-[16px] s1600:text-[18px] s1728:text-[20px] s1280:rounded-[40px] w-fit font-medium bg-[#DAEDE6] text-[#2A2A2A] s1280:py-1 px-3 shadow-[0px_4px_4px_0px_#00000040] relative z-[3]">
+              <p className="text-[14px] text-center s1280:text-start rounded-[20px] s1280:text-[20px] s1512:text-[16px] s1600:text-[18px] s1728:text-[20px] s1280:rounded-[40px] w-fit font-medium bg-[#DAEDE6] text-[#2A2A2A] s1280:p-3 px-1 py-2 shadow-[0px_4px_4px_0px_#00000040] relative z-[3]">
                 Travel with confidence, heal with peace
               </p>
             </div>
@@ -103,8 +108,8 @@ const Home = () => {
               <div className="mt-5">
                 <button className="flex-cen gap-x-2 text-[#00979A] s1512:text-[20px] font-semibold">
                   <span className="bg-[#DAEDE6] rounded-full flex-cen p-2">
-                    <span className="bg-[#25A6A9] rounded-full flex-cen p-2 text-white">
-                      <FaPlay className="size-4" />
+                    <span className="w-[45px] h-[45px] bg-[#25A6A9] rounded-full flex-cen text-white">
+                      <FaPlay className="size-4 ms-1" />
                     </span>
                   </span>
                   <span>Play Azpo video</span>
@@ -114,12 +119,12 @@ const Home = () => {
           </div>
         </div>
         <div className="col-span-6 s1280:col-span-6 s1512:col-span-5 z-1">
-          <div className="s1280:h-[560px] relative rounded-[20px] overflow-hidden">
+          <div className="s1280:h-[560px] s1280:px-5 s1728:px-7 relative rounded-[20px] overflow-hidden">
             <ImgFetcher width={500} src={homeBg} />
-            <div className="w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute top-2 right-2 s1280:top-5 s1280:right-5">
+            <div className="w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute top-2 right-2 s1280:top-1 s1280:p-2 s1280:right-5 s1728:right-7">
               <ImgFetcher src={pointtop} />
             </div>
-            <div className="w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute bottom-2 left-2 s1280:bottom-5 s1280:left-5">
+            <div className="w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute bottom-2 left-2 s1280:bottom-1 s1280:left-5 s1728:left-7 s1280:p-2">
               <ImgFetcher src={pointbot} />
             </div>
           </div>
@@ -170,7 +175,7 @@ const Home = () => {
       <div className="mb-10 s1280:mb-[60px]">
         <div className="flex-bet mb-5 s1280:mb-10">
           <div>
-            <h2 className="font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px]">
+            <h2 className="font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px] [text-shadow:_0_4px_4px_0_#00000040]">
               <span className="text-[#00979A]">Specialized</span> Treatments
             </h2>
           </div>
@@ -225,14 +230,20 @@ const Home = () => {
       {/* Watch Your Health Journey */}
       <div className="mb-10 s1280:mb-[60px]">
         <div className="flex-bet mb-2 s1280:mb-10">
-          <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[28%]" />
+          <div className="flex-left w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
+            <ImgFetcher src={borderDashed} />
+          </div>
+          {/* <hr className="border-[3px] border-[#333333] border-dashed w-[2%] s1280:w-[28%]" /> */}
           <h2 className="flex-cen font-semibold text-[20px] s1280:text-[30px]">
             <span className="w-[70px] h-[53px]">
               <ImgFetcher src={videoIcon} />
             </span>
             <span>Watch Your Health Journey</span>{" "}
           </h2>
-          <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[28%]" />
+          {/* <hr className="border-[3px] border-[#333333] border-dashed w-[2%] s1280:w-[28%]" /> */}
+          <div className="flex-right w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
+            <ImgFetcher src={borderDashed} />
+          </div>
         </div>
         <div className="flex-cen">
           <VideoPlayer />
@@ -242,14 +253,20 @@ const Home = () => {
       <div className="mb-10 s1280:mb-[80px]">
         <div className="mb-2 s1280:mb-10">
           <div className="flex-bet mb-4">
-            <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[24%]" />
+            <div className="flex-left w-[2%] s1280:w-[300px] s1512:w-[368px] s1600:w-[400px] s1728:w-[450px] s1920:w-[512px] h-[3px] bg-left">
+              <ImgFetcher src={borderRoadmap} />
+            </div>
+            {/* <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[24%]" /> */}
             <h2 className="flex-cen font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px]">
               <span className="w-[70px] h-[53px]">
                 <ImgFetcher src={medalIcon} />
               </span>
               <span>Your Treatment Roadmap</span>
             </h2>
-            <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[24%]" />
+            <div className="flex-right w-[2%] s1280:w-[300px] s1512:w-[368px] s1600:w-[400px] s1728:w-[450px] s1920:w-[512px] h-[3px] bg-left">
+              <ImgFetcher src={borderRoadmap} />
+            </div>
+            {/* <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[24%]" /> */}
           </div>
           <p className="text-center s1280:text-[24px] s1512:text-[28px] s1728:text-[29px] font-normal text-[#333333]">
             We are here to make your medical journey as smooth and reassuring as
@@ -258,7 +275,7 @@ const Home = () => {
             every step of the way.
           </p>
         </div>
-        <div className="grid grid-cols-12 s1280:gap-y-10">
+        <div className="grid grid-cols-12 s1280:gap-y-2 s1280:px-10 s1600:px-20 s1728:px-34 s1920:px-36">
           <RoadmapCard
             align="left"
             cover={passport}
@@ -308,19 +325,20 @@ const Home = () => {
             </div>
           </div>
           <div className="hidden s1280:flex-left s1280:-mt-20">
-            <div className="s1280:w-[345px] s1280:h-[405px] s1512:w-[433px] s1512:h-[438px] s1600:w-[454px] s1600:h-[460px] s1728:w-[480px] s1728:h-[487px] s1920:w-[474px] s1920:h-[437px] rounded-[40px] overflow-hidden">
-              <ImgFetcher width={1000} src={help2} />
+            <div className="s1280:w-[345px] s1280:h-[405px] s1512:w-[433px] s1512:h-[438px] s1600:w-[454px] s1600:h-[460px] s1728:w-[480px] s1728:h-[487px] s1920:w-[474px] s1920:h-[437px] rounded-[40px] overflow-hidden ">
+              <ImgFetcher width={1000} src={help2}  />
             </div>
           </div>
           {/* consultation */}
-          <div className="flex-cen s1280:block w-full s1280:w-fit absolute -bottom-6 s1280:bottom-10 s1280:right-0 s1512:top-16 s1512:left-0 s1600:top-24 s1728:top-20">
+          <div className="flex-cen s1280:block w-full s1280:w-fit absolute -bottom-6 s1280:bottom-10 s1280:right-0 s1512:top-16 s1512:left-0 s1600:top-24 s1728:top-16">
             <Link
               href="/"
-              className="w-[266px] s1280:w-fit flex-cen gap-x-2 rounded-[40px] bg-[#FFFFFF99] shadow-[-8px_22px_15px_-15px_#0000001A] py-2 ps-2 pe-4 backdrop-blur-[10px]"
+              className="w-[266px] h-[55px] s1280:h-[86px] s1280:w-[316px] flex-left ps-2 s1280:ps-4 gap-x-2 rounded-[40px] bg-[#FFFFFF99] shadow-[-8px_22px_15px_-15px_#0000001A] backdrop-blur-[10px]"
             >
               <div>
-                <div className="flex-cen w-[45px] h-[45px] s1280:w-[64px] s1280:h-[64px] rounded-full help-shadow text-[#00979A]">
-                  <BiSolidPhoneCall className="size-7" />
+                <div className="flex-cen w-[45px] h-[45px] s1280:w-[64px] s1280:h-[64px] rounded-full help-shadow text-[#00979A] p-3 s1280:p-4">
+                  <ImgFetcher src={ring} />
+                  {/* <BiSolidPhoneCall className="size-7" /> */}
                 </div>
               </div>
               <div>
@@ -335,8 +353,8 @@ const Home = () => {
           </div>
         </div>
         <div className="col-span-12 s1280:col-span-6 flex flex-col mt-16 s1280:mt-0 px-2 s412:px-4">
-          <div className="mb-10 s1280:mb-0">
-            <h3 className="text-[14px] s390:text-[15px] s1280:text-[22px] s1512:text-[24px] s1600:text-[28px] s1728:text-[29px] font-semibold text-[#00979A] mb-5">
+          <div className="mb-10 s1280:mb-2">
+            <h3 className="text-[14px] s390:text-[15px] s1280:text-[20px] s1512:text-[24px] s1600:text-[28px] s1728:text-[29px] font-semibold text-[#00979A] mb-5">
               HELPING PATIENTS FROM AROUND THE GLOBE!!
             </h3>
             <h4 className="font-semibold text-[20px] s1280:text-[36px] s1600:text-[30px] s1728:text-[40px] mb-1">
@@ -359,8 +377,9 @@ const Home = () => {
           </div>
           <div className="font-medium text-[#474744] mt-auto flex flex-col items-start justify-end gap-y-4 s1512:gap-y-6 text-[14px] s1280:text-[20px]">
             <div className="flex justify-start items-center gap-x-3">
-              <div className="flex-cen">
-                <BsHeartPulse className="size-6 s1280:size-8 text-[#00979A]" />
+              <div className="flex-cen w-[50px] h-[40px]">
+                <ImgFetcher src={phone} />
+                {/* <BsHeartPulse className="size-6 s1280:size-8 text-[#00979A]" /> */}
               </div>
               <ArrowHelping />
               <div>
@@ -368,8 +387,9 @@ const Home = () => {
               </div>
             </div>
             <div className="flex justify-start items-center gap-x-3">
-              <div className="flex-cen">
-                <MdOutlineCloudDone className="size-6 s1280:size-8 text-[#00979A]" />
+              <div className="flex-cen w-[50px] h-[40px]">
+                <ImgFetcher src={online} />
+                {/* <MdOutlineCloudDone className="size-6 s1280:size-8 text-[#00979A]" /> */}
               </div>
               <ArrowHelping />
               <div>
@@ -377,8 +397,9 @@ const Home = () => {
               </div>
             </div>
             <div className="flex justify-start items-center gap-x-3">
-              <div className="flex-cen">
-                <MdManageHistory className="size-6 s1280:size-8 text-[#00979A]" />
+              <div className="flex-cen w-[50px] h-[40px]">
+                <ImgFetcher src={apoint} />
+                {/* <MdManageHistory className="size-6 s1280:size-8 text-[#00979A]" /> */}
               </div>
               <ArrowHelping />
               <div>
@@ -391,7 +412,7 @@ const Home = () => {
       {/* We Appreciate Your Thoughts */}
       <div className="mb-10 s1280:mb-[60px]">
         <div className="mb-10">
-          <h2 className="text-center text-[#474744] font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px]">
+          <h2 className="[text-shadow:_0_4px_4px_#00000040] text-center text-[#474744] font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px]">
             We Appreciate Your Thoughts
           </h2>
         </div>
@@ -403,11 +424,17 @@ const Home = () => {
       {/* information about Azpo Health */}
       <div className="mb-10 s1280:mb-[200px]">
         <div className="flex-bet mb-20">
-          <hr className="w-[40%] s1280:w-[43%] h-0 border-[2px] border-dashed border-[#333333]" />
+          <div className="flex-left w-[40%] s1280:w-[532px] s1512:w-[628px] s1600:w-[664px] s1728:w-[716px] s1920:w-[780px] h-[4px] bg-left">
+            <ImgFetcher src={infoBorder} />
+          </div>
+          {/* <hr className="w-[40%] s1280:w-[43%] h-0 border-[2px] border-dashed border-[#333333]" /> */}
           <div className="w-[100px] h-[100px]">
             <ImgFetcher src={heart} />
           </div>
-          <hr className="w-[40%] s1280:w-[43%] h-0 border-[2px] border-dashed border-[#333333]" />
+          <div className="flex-right w-[40%] s1280:w-[532px] s1512:w-[628px] s1600:w-[664px] s1728:w-[716px] s1920:w-[780px] h-[4px] bg-left">
+            <ImgFetcher src={infoBorder} />
+          </div>
+          {/* <hr className="w-[40%] s1280:w-[43%] h-0 border-[2px] border-dashed border-[#333333]" /> */}
         </div>
 
         <div className="flex flex-col items-center gap-y-4 s1280:hidden">
@@ -509,7 +536,7 @@ const Home = () => {
         title="Video Distinctive Features"
       >
         <div className="w-full z-[3]">
-          <div className="flex items-center justify-between s1280:justify-end mb-10 s1512:mb-5">
+          <div className="flex items-center justify-between s1280:justify-end mb-10 s1280:mb-5">
             <div className="s1280:hidden">
               <h2 className="font-semibold text-[20px] text-[#333333]">
                 Video experience
@@ -562,10 +589,13 @@ const Home = () => {
         classLabel="s1512:-mt-1 flex-cen"
         className="s1280:h-[385px] s1280:pt-40  s1280:-mt-6 s1512:mt-7 relative s1600:-mt-[70px] s1728:-mt-[60px] s1920:mt-[12px]"
       >
-        <div className="w-full h-full absolute s1280:top-12 left-0 z-[2]">
+        <div className="s1280:hidden w-full h-full absolute s1280:top-5 left-0 z-[1]">
+          <ImgFetcher src={exPhone} width={2000} />
+        </div>
+        <div className="hidden s1280:block w-full h-full absolute s1280:top-5 left-0 z-[1]">
           <ImgFetcher src={experienceIcon} width={2000} />
         </div>
-        <div className="grid grid-cols-12 gap-y-10 s1280:gap-x-[61px] s1512:gap-x-[42px] s1600:gap-x-[85px] s1728:gap-x-[114px] s1920::gap-x-[175px] s1280:px-[25px] s1600:px-[20px] s1728:px-10 s1920:px-[44px] z-[3]">
+        <div className="grid grid-cols-12 gap-y-10 s1280:-mt-5 s1280:gap-x-[61px] s1512:gap-x-[42px] s1600:gap-x-[85px] s1728:gap-x-[114px] s1920::gap-x-[175px] s1280:px-[25px] s1600:px-[20px] s1728:px-10 s1920:px-[44px] z-[3]">
           <ExperienceCard icon={noIcon} title="No upfront fees" />
           <ExperienceCard icon={pay} title="Payments directly at the clinic" />
           <ExperienceCard

@@ -160,7 +160,7 @@ const FeedBackLayout = () => {
       {feedbacks.map((feed) => {
         return (
           <div
-            className="w-full min-w-full max-w-full"
+            className="w-fit min-w-fit max-w-fit"
             key={feed.id}
             onMouseDown={handleMouseDown}
           >

@@ -1,4 +1,16 @@
+"use client"
+import ComboBox from "@/components/comboBox";
+import { OptionType } from "@/types/comboBox/comboType";
+import { useState } from "react";
+
 const PlatformWorkForm = () => {
+  const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
+
+  const options = [
+    { label: "Dental", key: "dental", id: 0 },
+    { label: "Eye", key: "eye", id: 1 },
+    { label: "Stem Cell", key: "stemcell", id: 2 },
+  ];
   return (
     <form className="grid grid-cols-12 gap-y-4 form-platform-work bg-white shadow-[0_4px_19px_0_#0000001A] rounded-[40px] px-[18px] s390:px-[25px] s412:px-[35px]  py-5 s1280:py-8 s1280:px-[44px] s1512:px-10 s1920:px-[58px]">
       <div className="col-span-12 ">
@@ -16,7 +28,14 @@ const PlatformWorkForm = () => {
       </div>
       <div className="col-span-12">
         <label htmlFor="">Choose your service type</label>
-        <input placeholder="Please Select" type="email" />
+        <ComboBox
+          trigger={selectedOption ? selectedOption.label : "Treatment"}
+          className="w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1"
+          options={options}
+          onChange={setSelectedOption}
+          selectedValue={selectedOption}
+        />
+        {/* <input placeholder="Please Select" type="email" /> */}
       </div>
       <div className="col-span-12 flex-cen">
         <button className="font-bold w-full h-[54px] text-center rounded-[40px] bg-[#0CA5A5] text-white">Send Message</button>

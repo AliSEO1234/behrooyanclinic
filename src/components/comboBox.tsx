@@ -1,0 +1,90 @@
+"use client";
+
+import { ComboBoxType } from "@/types/comboBox/comboType";
+import { useEffect, useRef, useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+import { AnimatePresence, motion } from "framer-motion";
+const ComboBox = ({ options, onChange, trigger, className }: ComboBoxType) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [openUpwards, setOpenUpwards] = useState<boolean>(false); // تعیین جهت باز شدن
+  const comboRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (isOpen && comboRef.current) {
+      const rect = comboRef.current.getBoundingClientRect();
+      const spaceBelow = window.innerHeight - rect.bottom;
+      const spaceAbove = rect.top;
+
+      // اگر فضای زیر کمتر از 200 پیکسل بود و فضای بالای بیشتری داشت، به بالا باز شود
+      if (spaceBelow < 200 && spaceAbove > spaceBelow) {
+        setOpenUpwards(true);
+      } else {
+        setOpenUpwards(false);
+      }
+    }
+  }, [isOpen]);
+  const filteredOptions = options.filter((option) =>
+    option.label.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  return (
+    <div ref={comboRef} className="relative">
+      <div
+        className={` ${className ? className : ""} flex-bet cursor-pointer`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span>{trigger}</span>
+        <span>
+          <IoIosArrowDown
+            className={`${isOpen ? "rotate-180" : "rotate-0"} size-5 anm`}
+          />
+        </span>
+      </div>
+      <AnimatePresence>
+        {isOpen ? (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className={`absolute w-full border bg-white rounded-[20px]  p-2 ${
+              openUpwards ? "bottom-full mb-1" : "mt-1"
+            }`}
+          >
+            <div>
+              <input
+                type="text"
+                className="w-full h-[44px] border p-2 rounded-[20px]"
+                placeholder="Search..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+
+            <ul className="max-h-48 overflow-y-auto">
+              {filteredOptions.length > 0 ? (
+                filteredOptions.map((option) => (
+                  <li
+                    key={option.key}
+                    className="p-2 cursor-pointer text-gray-500"
+                    onClick={() => {
+                      onChange(option);
+                      setIsOpen(false);
+                      setSearchTerm("");
+                    }}
+                  >
+                    {option.label}
+                  </li>
+                ))
+              ) : (
+                <li className="p-2 text-gray-500">Option not found</li>
+              )}
+            </ul>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+export default ComboBox;

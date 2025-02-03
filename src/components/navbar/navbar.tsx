@@ -1,15 +1,16 @@
 import health from "@/assets/images/health.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { BiSolidPhoneCall } from "react-icons/bi";
 import ChangeLanguage from "../change-language";
 import { FiSearch } from "react-icons/fi";
 import DropDownCustom from "../dropdownCustom";
 import { HiMenuAlt2 } from "react-icons/hi";
+import ring from "@/assets/images/ringnavbar.svg"
+import ImgFetcher from "../imgFetcher";
 const Navbar = () => {
   return (
     <header className="sticky top-0 z-[5]">
-      <nav className="anm grid grid-cols-12 bg-white shadow-[0_4px_2px_#0000001C] px-[20px] s1280:px-[71px] s1512:px-[78px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px] py-3 s1280:py-3 rounded-b-[40px]">
+      <nav className="anm grid grid-cols-12 bg-white shadow-[0_4px_2px_#0000001C] px-[20px] s1280:px-[50px] py-3 s1280:py-3 rounded-b-[40px]">
         <div className="col-span-6 s1280:col-span-1 flex-left gap-x-2">
           <div className="flex-cen">
             <div className="w-[44px] h-[44px] s1280:w-8 s1280:h-8 s1512:w-[49px] s1512:h-[49px]">
@@ -31,7 +32,7 @@ const Navbar = () => {
             </p>
           </div>
         </div>
-        <div className="hidden s1280:flex-cen s1280:col-span-8 font-medium s1280:text-[14px] s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-4 s1920:gap-x-8 text-[#474744]">
+        <div className="hidden s1280:flex-right s1280:col-span-7 font-medium s1280:text-[14px] s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-4 s1920:gap-x-8 text-[#474744]">
           <div>
             <Link href="/">Home Page</Link>
           </div>
@@ -71,7 +72,7 @@ const Navbar = () => {
             <Link href="/">Contact</Link>
           </div>
         </div>
-        <div className="col-span-6 s1280:col-span-3 flex-right gap-x-2">
+        <div className="col-span-6 s1280:col-span-4 flex-right gap-x-2">
           <div className="hidden s1280:block">
             <button className="outline-none flex-cen w-[35px] h-[35px] s1600:h-[44px] s1600:w-[44px] rounded-full bg-[#DAEDE6] text-[#25A6A9]">
               <FiSearch className="size-4 s1600:size-5" />
@@ -89,7 +90,8 @@ const Navbar = () => {
               className="flex-cen gap-x-2 bg-[#25A6A9] rounded-[40px] py-4 px-2 s1280:py-[10px] s1280:px-[20px] font-medium s1280:text-[12px] s1600:text-[18px] text-white h-[35px] s1600:h-[44px]"
             >
               <span>
-                <BiSolidPhoneCall className="size-5" />
+                <ImgFetcher src={ring} />
+                {/* <BiSolidPhoneCall className="size-5" /> */}
               </span>
               <span className="hidden s1280:inline">0555 6548 5575</span>
             </Link>

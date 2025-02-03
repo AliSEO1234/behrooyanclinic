@@ -19,7 +19,7 @@ const RoadmapCard = ({
       <div
         className={`${
           className && className
-        } rounded-[500px] bg-white border-x-[2px] s1280:border-x-[6px] border-[#189C9F] shadow-[-4px_6px_15.5px_2px_#0000003D] s1280:h-[168px] flex-bet s1280:gap-x-4 s1280:px-4 relative z-[4]`}
+        } rounded-[500px] bg-white border-x-[2px] s1280:border-x-[6px] border-[#189C9F] shadow-[-4px_6px_15.5px_2px_#0000003D] s1280:h-[168px] flex-bet s1280:gap-x-4 s1280:px-4 relative z-[4] s1280:w-[710px] s1512:w-[906px] s1512:min-w-[906px]`}
       >
         {!endArrow && <RoadmapArrow align={align} />}
         {/* {!endArrow && <RoadmapArrowMobile />} */}
@@ -32,7 +32,7 @@ const RoadmapCard = ({
           </div>
         </div>
         <div className="py-2 s1280:py-0">
-          <h3 className="px-5 s1280:p-0 text-[#00979A] font-medium text-[14px] text-center s1280:text-start  s1280:text-[16px] s1512:text-[20px]">{title}</h3>
+          <h3 className="px-5 s1280:p-0 text-[#00979A] font-medium text-[14px] text-center s1280:text-start s1280:text-[16px] s1512:text-[20px]">{title}</h3>
           <p className="font-normal text-[#423D3D] text-center px-5 s1280:p-0 s1280:text-start text-[14px] s1280:text-[16px] s1512:text-[20px]">{desc}</p>
         </div>
       </div>
