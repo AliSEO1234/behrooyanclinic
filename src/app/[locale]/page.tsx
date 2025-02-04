@@ -49,18 +49,15 @@ import ExperienceCard from "@/components/experience/experienceCard";
 import noIcon from "@/assets/images/icons/experience/noicon.svg";
 import freeconsul from "@/assets/images/icons/experience/freeconsul.svg";
 import pay from "@/assets/images/icons/experience/pay.svg";
-import experienceIcon from "@/assets/images/icons/home/experience.jpg";
-import exPhone from "@/assets/images/icons/home/exPhone.jpg";
+import experienceIcon from "@/assets/images/icons/home/experience.svg";
+import exPhone from "@/assets/images/icons/home/exPhone.svg";
 import BlogCard from "@/components/blogs/blogCard";
 import { blogList } from "@/staticData/blogList";
 import ComplimentaryConsultationForm from "@/features/complimentaryConsultationForm";
 import PlatformWorkForm from "@/features/platformWork/platformWorkForm";
 import InfoCard from "@/features/platformWork/infoCard";
-import pltWork from "@/assets/images/workPlatform.jpg";
+import pltWork from "@/assets/images/workPlatform.svg";
 import doctorIcon from "@/assets/images/doctorPltWork.svg";
-import borderDashed from "@/assets/images/borderdashed.jpg";
-import borderRoadmap from "@/assets/images/border-roadmap.jpg";
-import infoBorder from "@/assets/images/infoBorder.jpg";
 import ring from "@/assets/images/ring.svg";
 import phone from "@/assets/images/phone.svg"
 import apoint from "@/assets/images/apointment.svg"
@@ -69,14 +66,18 @@ const Home = () => {
   return (
     <>
       {/* header */}
-      <div className="grid grid-cols-12 gap-x-4 gap-y-10 mb-10 s1280:mb-[60px]">
+      <div className="grid grid-cols-12 gap-x-4 s1512:gap-x-[23px] s1728:gap-x-[28px] gap-y-10 mb-10 s1280:mb-[60px]">
         <div className="col-span-6 s412:pt-5 s1280:col-span-6 s1512:col-span-4 s1280:pt-20 s1280:pe-20 s1512:pe-0 relative">
+          {/* points */}
+          <div className="hidden s1280:block w-60 h-60 absolute -bottom-20 -right-36 s1600:-right-40">
+            <ImgFetcher src={point} />
+          </div>
           {/* points */}
           <div className="hidden s1280:block w-72 h-72 absolute -bottom-6 left-40">
             <ImgFetcher src={point} />
           </div>
           {/* squire icon */}
-          <div className="w-[60px] top-0 -right-12 h-[120px] s1280:w-[243px] s1280:h-[290px] absolute s1280:top-10 s1280:-right-44 z-[2]">
+          <div className="w-[60px] top-0 -right-12 h-[120px] s1280:w-[243px] s1280:h-[290px] absolute s1280:top-10 s1280:-right-40 z-[2]">
             <ImgFetcher
               className="object-contain filter drop-shadow-[inset_5px_10px_10px_rgb(0,0,0)]"
               src={squire}
@@ -100,7 +101,7 @@ const Home = () => {
             </div>
             <div className="mt-10 hidden s1280:block">
               <div>
-                <p className="font-medium text-[#2A2A2A] text-justify s1280:pe-10 s1600:text-[18px]">
+                <p className="font-medium text-[#2A2A2A] s1280:pe-10 s1600:text-[18px]">
                   Discover a life-changing medical journey with tailored care,
                   comprehensive services, and dedicated 24/7 support throughout
                   your experience!
@@ -120,12 +121,12 @@ const Home = () => {
           </div>
         </div>
         <div className="col-span-6 s1280:col-span-6 s1512:col-span-5 z-1">
-          <div className="s1280:h-[560px] s1280:px-5 s1728:px-7 relative rounded-[20px] overflow-hidden">
+          <div className="s1280:h-[560px] relative rounded-[20px] s1280:rounded-[30px] overflow-hidden bg-inherit shadow-[0_5px_10px_#00000040]">
             <ImgFetcher width={500} src={homeBg} />
-            <div className="header__dots-container w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute top-2 right-2 s1280:top-1 s1280:p-2 s1280:right-5 s1728:right-7">
+            <div className="header__dots-container w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute top-2 right-2 s1280:top-2 s1280:p-2 s1280:right-2">
               <ImgFetcher src={pointtop} />
             </div>
-            <div className="header__dots-container w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute bottom-2 left-2 s1280:bottom-1 s1280:left-5 s1728:left-7 s1280:p-2">
+            <div className="header__dots-container w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute bottom-2 left-2 s1280:bottom-2 s1280:left-2 s1280:p-2">
               <ImgFetcher src={pointbot} />
             </div>
           </div>
@@ -159,6 +160,10 @@ const Home = () => {
           <div className="w-[78px] h-[78px] absolute -top-8 left-0 z-[2] s1600:-top-5">
             <ImgFetcher src={star} />
           </div>
+          {/* points */}
+          <div className="hidden s1280:block w-60 h-60 absolute -top-8 s1512:-top-10 right-0">
+            <ImgFetcher src={point} />
+          </div>
           <div className="relative z-[3] s1512:flex s1512:flex-col">
             <div className="mb-4 s1280:px-[27px] s1600:px-0 s1600:mt-5">
               <h2 className="text-center s1280:text-start text-[20px] s1280:text-[24px] s1728:text-[26px] font-bold s1512:text-center text-[#474744]">
@@ -166,7 +171,7 @@ const Home = () => {
               </h2>
             </div>
             {/* form */}
-            <div className="p-4 s412:px-[35px] s1280:px-[27px] bg-white rounded-[30px] shadow-[0px_4px_15px_0px_#0000001A] s1280:py-5  mt-auto">
+            <div className="p-4 s412:px-[35px] s1280:px-[27px] bg-white rounded-[30px] s1512:mt-auto shadow-[0px_4px_15px_0px_#0000001A] s1280:py-5  mt-auto">
               <ComplimentaryConsultationForm />
             </div>
           </div>
@@ -176,7 +181,7 @@ const Home = () => {
       <div className="mb-10 s1280:mb-[60px]">
         <div className="flex-bet mb-5 s1280:mb-10">
           <div>
-            <h2 className="font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px] [text-shadow:_0_4px_4px_0_#00000040]">
+            <h2 className="font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px] treat-shadow">
               <span className="text-[#00979A]">Specialized</span> Treatments
             </h2>
           </div>
@@ -187,7 +192,7 @@ const Home = () => {
         {/* show service */}
         <div className="flex flex-col s1280:flex-row s1280:flex-wrap items-center justify-start s1280:items-center s1280:justify-between gap-y-8 s1280:gap-4 s1280:px-0">
           <ServiceCard
-            imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            imgStyle="p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
             className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
             countService={27}
             img={aesthetics}
@@ -195,7 +200,7 @@ const Home = () => {
             title="Aesthetics"
           />
           <ServiceCard
-            imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            imgStyle=" p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
             className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
             countService={74}
             img={dental}
@@ -203,7 +208,7 @@ const Home = () => {
             title="Dental"
           />
           <ServiceCard
-            imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            imgStyle=" p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
             className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
             countService={51}
             img={eye}
@@ -211,7 +216,7 @@ const Home = () => {
             title="Eye Surgeries"
           />
           <ServiceCard
-            imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            imgStyle=" p-8 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
             className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
             countService={45}
             img={fertility}
@@ -219,7 +224,7 @@ const Home = () => {
             title="Fertility"
           />
           <ServiceCard
-            imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            imgStyle="w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
             className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
             countService={24}
             img={cell}
@@ -231,20 +236,20 @@ const Home = () => {
       {/* Watch Your Health Journey */}
       <div className="mb-10 s1280:mb-[60px]">
         <div className="flex-bet mb-2 s1280:mb-10">
-          <div className="flex-left w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
+          {/* <div className="flex-left w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
             <ImgFetcher src={borderDashed} />
-          </div>
-          {/* <hr className="border-[3px] border-[#333333] border-dashed w-[2%] s1280:w-[28%]" /> */}
+          </div> */}
+          <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[28%]" />
           <h2 className="flex-cen font-semibold text-[20px] s1280:text-[30px]">
             <span className="w-[70px] h-[53px]">
               <ImgFetcher src={videoIcon} />
             </span>
             <span>Watch Your Health Journey</span>{" "}
           </h2>
-          {/* <hr className="border-[3px] border-[#333333] border-dashed w-[2%] s1280:w-[28%]" /> */}
-          <div className="flex-right w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
+          <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[28%]" />
+          {/* <div className="flex-right w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
             <ImgFetcher src={borderDashed} />
-          </div>
+          </div> */}
         </div>
         <div className="flex-cen">
           <VideoPlayer />
@@ -255,20 +260,20 @@ const Home = () => {
         <RoadmapIntersectionObserver />
         <div className="mb-2 s1280:mb-10">
           <div className="flex-bet mb-4">
-            <div className="flex-left w-[2%] s1280:w-[300px] s1512:w-[368px] s1600:w-[400px] s1728:w-[450px] s1920:w-[512px] h-[3px] bg-left">
+            {/* <div className="flex-left w-[2%] s1280:w-[300px] s1512:w-[368px] s1600:w-[400px] s1728:w-[450px] s1920:w-[512px] h-[3px] bg-left">
               <ImgFetcher src={borderRoadmap} />
-            </div>
-            {/* <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[24%]" /> */}
+            </div> */}
+            <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[24%]" />
             <h2 className="flex-cen font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px]">
               <span className="w-[70px] h-[53px]">
                 <ImgFetcher src={medalIcon} />
               </span>
               <span>Your Treatment Roadmap</span>
             </h2>
-            <div className="flex-right w-[2%] s1280:w-[300px] s1512:w-[368px] s1600:w-[400px] s1728:w-[450px] s1920:w-[512px] h-[3px] bg-left">
+            {/* <div className="flex-right w-[2%] s1280:w-[300px] s1512:w-[368px] s1600:w-[400px] s1728:w-[450px] s1920:w-[512px] h-[3px] bg-left">
               <ImgFetcher src={borderRoadmap} />
-            </div>
-            {/* <hr className="border border-[#333333] border-dashed w-[2%] s1280:w-[24%]" /> */}
+            </div> */}
+            <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[24%]" />
           </div>
           <p className="text-center s1280:text-[24px] s1512:text-[28px] s1728:text-[29px] font-normal text-[#333333]">
             We are here to make your medical journey as smooth and reassuring as
@@ -423,24 +428,24 @@ const Home = () => {
           </h2>
         </div>
         <div>
-          <FeedBackLayout />
-          <FeedBackLayout />
+          <FeedBackLayout align="right" />
+          <FeedBackLayout align="left" />
         </div>
       </div>
       {/* information about Azpo Health */}
       <div className="mb-10 s1280:mb-[200px]">
         <div className="flex-bet mb-20">
-          <div className="flex-left w-[40%] s1280:w-[532px] s1512:w-[628px] s1600:w-[664px] s1728:w-[716px] s1920:w-[780px] h-[4px] bg-left">
+          {/* <div className="flex-left w-[40%] s1280:w-[532px] s1512:w-[628px] s1600:w-[664px] s1728:w-[716px] s1920:w-[780px] h-[4px] bg-left">
             <ImgFetcher src={infoBorder} />
-          </div>
-          {/* <hr className="w-[40%] s1280:w-[43%] h-0 border-[2px] border-dashed border-[#333333]" /> */}
+          </div> */}
+          <hr className="w-[40%] s1280:w-[44%] h-0 border-[2px] border-dashed border-[#333333]" />
           <div className="w-[100px] h-[100px]">
             <ImgFetcher src={heart} />
           </div>
-          <div className="flex-right w-[40%] s1280:w-[532px] s1512:w-[628px] s1600:w-[664px] s1728:w-[716px] s1920:w-[780px] h-[4px] bg-left">
+          {/* <div className="flex-right w-[40%] s1280:w-[532px] s1512:w-[628px] s1600:w-[664px] s1728:w-[716px] s1920:w-[780px] h-[4px] bg-left">
             <ImgFetcher src={infoBorder} />
-          </div>
-          {/* <hr className="w-[40%] s1280:w-[43%] h-0 border-[2px] border-dashed border-[#333333]" /> */}
+          </div> */}
+          <hr className="w-[40%] s1280:w-[44%] h-0 border-[2px] border-dashed border-[#333333]" />
         </div>
 
         <div className="flex flex-col items-center gap-y-4 s1280:hidden">
@@ -491,7 +496,7 @@ const Home = () => {
         order="first"
         title="Why choose us?"
       >
-        <div className="grid grid-cols-12 gap-y-10 px-2 s1280:gap-y-0 s1280:gap-x-10 s1600:gap-x-[55px] s1728:gap-x-[40px] s1920:gap-x-[75px]">
+        <div className="grid grid-cols-12 gap-y-10 px-2 s1280:gap-y-0 s1280:gap-x-10 s1600:gap-x-[55px] s1728:gap-x-[40px] s1920:gap-x-[75px] z-[3]">
           <div className="col-span-12 s1280:col-span-3 s1512:col-span-4 relative">
             <div className="w-full h-[289px] s1280:h-full rounded-tr-[50px] rounded-bl-[50px] overflow-hidden">
               <ImgFetcher
@@ -617,7 +622,7 @@ const Home = () => {
         order="fourth"
         classLabel="s1280:flex-cen ms-4"
       >
-        <div>
+        <div className="z-[3]">
           <div className="flex items-center justify-between s1280:justify-end mb-10">
             <div className="s1280:hidden">
               <h2 className="font-semibold text-[20px]">AZPO Blog</h2>
@@ -641,7 +646,7 @@ const Home = () => {
           </h2>
         </div>
         <div className="grid grid-cols-12 gap-y-[49px] s1280:gap-y-0 s1280:gap-x-[25px] s1512:gap-x-[33px] s1600:gap-x-[25px] s1728:gap-x-[53px]">
-          <div className="order-3 s1280:order-1  col-span-12 s1280:col-span-4">
+          <div className="order-3 s1280:order-1 col-span-12 s1280:col-span-4 s1512:pe-16 s1920:pe-20">
             <PlatformWorkForm />
           </div>
           <div className="order-2 col-span-12 s1280:col-span-4 s1512:col-span-3 flex flex-col items-center justify-end gap-y-5 px-2 s1280:px-0">
@@ -666,7 +671,7 @@ const Home = () => {
               <ImgFetcher width={2000} src={pltWork} />
             </div>
             <div className="s1280:px-5 absolute  bottom-0 s1280:bottom-12 s1512:bottom-6 left-0 s1512:-left-20 flex-cen w-full">
-              <div className="rounded-[40px] flex-left gap-x-2 bg-[#FFFFFF99] backdrop-blur-[10px] shadow-[-8px_22px_15px_-15px_#0000001A] p-2">
+              <div className="w-[325px] h-[50px] s1600:w-[360px] s1280:h-[78px] rounded-[40px] flex-left gap-x-2 bg-[#FFFFFF99] backdrop-blur-[10px] shadow-[-8px_22px_15px_-15px_#0000001A] px-2">
                 <div className="w-[40px] h-[40px] s1280:w-[64px] s1280:h-[64px] p-2 s1280:p-4 rounded-full plt-work-title-shadow">
                   <ImgFetcher src={doctorIcon} />
                 </div>

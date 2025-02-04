@@ -46,9 +46,9 @@ const Navbar = () => {
             <DropDownCustom
               trigStyle="flex-cen gap-x-2 data-[state=open]:border-b data-[state=open]:border-[#25A6A9] data-[state=open]:text-[#25A6A9] anm"
               trigText="Exclusive Offers"
-              bodyStyle="w-[233px] bg-white p-4 rounded-[30px]"
+              bodyStyle="w-[233px] bg-white p-4 rounded-[30px] border-[1px] border-[#DAEDE6]"
             >
-              <div className="flex flex-col items-start justify-start gap-y-5 font-medium text-[18px] border-[#DAEDE6] text-[#474744]">
+              <div className="flex flex-col items-start justify-start gap-y-5 font-medium text-[18px] text-[#474744]">
                 <div>
                   <Link href="/">seasonal offers</Link>
                 </div>

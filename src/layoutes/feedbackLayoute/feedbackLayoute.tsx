@@ -1,8 +1,9 @@
 "use client";
 import FeedbackCard from "@/features/feedback/feedbackCard";
+import { FeedbackLayoutType } from "@/types/feedback/feebackLayout";
 import { useEffect, useRef, useState } from "react";
 
-const FeedBackLayout = () => {
+const FeedBackLayout = ({align} :FeedbackLayoutType) => {
   const feedParent = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -83,21 +84,6 @@ const FeedBackLayout = () => {
     setIsDragging(false);
     setIsMouseUp(true);
   };
-  // useEffect(() => {
-  //   const handleTouchMove = (e: TouchEvent) => {
-  //     if (feedParent.current) {
-  //       const canScroll =
-  //         feedParent.current.scrollWidth > feedParent.current.clientWidth;
-  //       if (canScroll) {
-  //         e.stopPropagation();
-  //       }
-  //     }
-  //   };
-
-  //   feedParent.current?.addEventListener("touchmove", handleTouchMove);
-  //   return () =>
-  //     feedParent.current?.removeEventListener("touchmove", handleTouchMove);
-  // }, []);
   const feedbacks = [
     {
       id: 0,
@@ -142,7 +128,15 @@ const FeedBackLayout = () => {
       score: 5,
     },
   ];
-
+  useEffect(() => {
+    if (feedParent.current && align === "right") {
+      setTimeout(() => {
+        feedParent.current!.scrollLeft = feedParent.current!.scrollWidth;
+      }, 100);
+    }
+  }, [align]);
+  
+  
   return (
     <div
       ref={feedParent}
@@ -153,7 +147,9 @@ const FeedBackLayout = () => {
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      className={`flex flex-nowrap overflow-x-hidden overflow-y-hidden gap-x-5 pb-5 s1280:pt-5 px-3 transition-all duration-500 ease-out ${
+      className={`flex ${
+        align === "left" ? "flex-row items-center" : "flex-row-reverse items-center"
+      } flex-nowrap overflow-x-hidden overflow-y-hidden gap-x-5 pb-5 s1280:pt-5 px-3 transition-all duration-500 ease-out ${
         isDragging ? "cursor-grabbing select-none " : "cursor-grab select-auto"
       }`}
     >

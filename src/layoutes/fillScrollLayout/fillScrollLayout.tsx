@@ -1,7 +1,7 @@
 "use client";
 import { BorderStyleLayoutType } from "@/types/fillScroll/fillScroll";
 import { useEffect, useState } from "react";
-const FillScrollLayout = ({
+const BorderLayoutAbout = ({
   className,
   title,
   children,
@@ -12,7 +12,6 @@ const FillScrollLayout = ({
     const path = document.querySelector<SVGPathElement>(
       ".border__style--layout-first path"
     );
-
     const path2 = document.querySelector<SVGPathElement>(
       ".border__style--layout-second path"
     );
@@ -109,7 +108,7 @@ const FillScrollLayout = ({
               height="831"
               viewBox="0 0 540 831"
               fill="none"
-              className="border__style--layout-first hidden s1920:block"
+              className="border__style--layout-first hidden s1920:block z-[2]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -194,7 +193,7 @@ const FillScrollLayout = ({
               height="896"
               viewBox="0 0 476 896"
               fill="none"
-              className="border__style--layout-first hidden s1728:block s1920:hidden"
+              className="border__style--layout-first hidden s1728:block s1920:hidden z-[2]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -279,7 +278,7 @@ const FillScrollLayout = ({
               height="910"
               viewBox="0 0 425 910"
               fill="none"
-              className="border__style--layout-first hidden s1600:block s1728:hidden"
+              className="border__style--layout-first hidden s1600:block s1728:hidden z-[2]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -364,7 +363,7 @@ const FillScrollLayout = ({
               height="793"
               viewBox="0 0 442 793"
               fill="none"
-              className="border__style--layout-first hidden  s1512:block s1600:hidden"
+              className="border__style--layout-first hidden  s1512:block s1600:hidden z-[2]"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -445,7 +444,7 @@ const FillScrollLayout = ({
           )}
           {viewportWidth >= 1280 && viewportWidth < 1512 && (
             <svg
-              className="border__style--layout-first hidden s1280:block s1512:hidden"
+              className="border__style--layout-first hidden s1280:block s1512:hidden z-[2]"
               width="388"
               height="880"
               viewBox="0 0 388 880"
@@ -1503,4 +1502,4 @@ const FillScrollLayout = ({
     </div>
   );
 };
-export default FillScrollLayout;
+export default BorderLayoutAbout;

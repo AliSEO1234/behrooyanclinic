@@ -5,23 +5,27 @@ const ServiceCard = ({
   title,
   img,
   countService,
-  imgStyle
+  imgStyle,
 }: ServiceCardType) => {
   return (
     <div
       className={`${
         className && className
-      } bg-white rounded-b-[80px] rounded-t-[400px] shadow-[0px_4px_15px_#0000001A] pt-4 pb-4`}
+      } bg-white rounded-b-[80px] rounded-t-[400px] shadow-[0px_4px_15px_#0000001A] pb-4 pt-3`}
     >
-      <div className="flex-cen mb-4 px-4">
-        <div className={`${imgStyle} treatments__card-bubble flex-cen overflow-hidden border rounded-full shadow-inner-[0px_0px_40px_-8px_#86D1AB] p-4 bg-white shadow-service`}>
-          <div className="w-full h-full">
-            <ImgFetcher width={200} height={200} src={img} />
-          </div>
+      <div className="flex-cen mb-4">
+        <div
+          className={`${imgStyle} treatments__card-bubble flex-cen overflow-hidden border rounded-full shadow-inner-[0px_0px_40px_-8px_#86D1AB] bg-white shadow-service`}
+        >
+          {/* <div className="w-full h-full min-w-full max-w-full min-h-full max-h-full"> */}
+          <ImgFetcher width={200} height={200} src={img} />
+          {/* </div> */}
         </div>
       </div>
       <div className="mb-2">
-        <h3 className="text-center font-medium text-[#474744] text-[20px] s1512:text-[20px]">{title}</h3>
+        <h3 className="text-center font-medium text-[#474744] text-[20px] s1512:text-[20px]">
+          {title}
+        </h3>
         <p className="text-[#888888] font-normal s1280:text-[14px] s1512:text-[16px] text-center">
           {countService} Service
         </p>

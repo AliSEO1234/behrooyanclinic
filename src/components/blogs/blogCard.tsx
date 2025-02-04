@@ -12,7 +12,7 @@ const BlogCard = ({
     <div
       className={`${
         className ? className : ""
-      } flex flex-col col-span-12 s1280:col-span-3 rounded-t-[500px] py-4 rounded-b-[80px] border-t-[5px] border-[#86D1AB] shadow-[0_4px_15px_0_#0000001A]`}
+      } flex flex-col col-span-12 s1280:col-span-3 rounded-t-[500px] py-4 rounded-b-[80px] border-t-[5px] border-[#86D1AB] shadow-[0_4px_15px_0_#0000001A] bg-white`}
     >
       <div className="flex-cen mb-3">
         <div className="w-[274px] h-[274px] s390:w-[295px] s390:h-[295px] s1280:w-[223px] s1280:h-[223px] s1512:w-[274px] s1512:h-[274px] s1600:w-[278px] s1600:h-[278px] s1728:w-[295px] s1728:h-[295px]  rounded-full overflow-hidden">

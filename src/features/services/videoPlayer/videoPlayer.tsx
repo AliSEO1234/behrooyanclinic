@@ -15,14 +15,14 @@ const VideoPlayer = () => {
         {/* video controler */}
       </div>
       <div className="absolute -bottom-10 s1280:-bottom-14 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex-cen px-5">
-        <div className="flex w-full s1280:w-[736px] items-center justify-between s1280:justify-between px-5 s1280:gap-x-10 rounded-[200px] bg-gradient-to-r from-[#8D8D8D57] to-[#8D8D8DD4] border border-white backdrop-blur-[12px] h-[38px] s1280:h-[57px] text-white">
+        <div className="flex w-full s1280:w-[736px] items-center justify-between s1280:justify-between px-5 s1280:gap-x-5 rounded-[200px] bg-gradient-to-r from-[#8D8D8D57] to-[#8D8D8DD4] border border-white backdrop-blur-[12px] h-[38px] s1280:h-[57px] text-white">
           <div>
             <button onClick={() => setTogglePlay((val) => !val)} className="">
               {/* pause */}
               {togglePlay ? (
-                <FaPause className="size-4 s1280:size-6" />
+                <FaPause className="size-4 s1280:size-4 s1600:size-5" />
               ) : (
-                <FaPlay className="size-4 s1280:size-6" />
+                <FaPlay className="size-4 s1280:size-4 s1600:size-5" />
               )}
               {/* play */}
             </button>
@@ -34,15 +34,15 @@ const VideoPlayer = () => {
               max={100}
             ></progress>
           </div>
-          <div className="flex-cen gap-x-4 s1280:gap-x-8">
+          <div className="flex-cen gap-x-4">
             <div>
               <button>
-                <AiOutlineFullscreen className="size-4 s1280:size-6" />
+                <AiOutlineFullscreen className="size-4 s1280:size-4 s1600:size-5" />
               </button>
             </div>
             <div>
               <button>
-                <PiSpeakerHighFill className="size-4 s1280:size-6" />
+                <PiSpeakerHighFill className="size-4 s1280:size-4 s1600:size-5" />
               </button>
             </div>
           </div>
