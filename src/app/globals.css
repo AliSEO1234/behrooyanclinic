@@ -183,3 +183,100 @@ body {
   left: 0;
   top: 0;
 }
+
+/* Home Page */
+/* dots */
+.header__dots-container {
+  animation: on-off-dots 1.5s infinite forwards;
+}
+
+@keyframes on-off-dots {
+  to {
+    opacity: .55;
+  }
+}
+
+/* Specialized Treatments */
+.treatments__sea-all-button {
+  transition: box-shadow .5s;
+}
+
+.treatments__sea-all-button:hover {
+  box-shadow: 0 3px 5px .2px rgba(0, 0, 0, .5);
+}
+
+.treatments__card-bubble,
+.treatments__card-bubble img {
+  transition: box-shadow .5s, transform .5s, border-width .1s;
+}
+
+.treatments__card-container:hover .treatments__card-bubble {
+  box-shadow: none;
+  border-width: 0;
+}
+
+.treatments__card-container:hover .treatments__card-bubble img {
+  transform: scale(1.25);
+  transform-origin: center;
+}
+
+.treatments__card-button {
+  transition: all .1s;
+  cursor: pointer;
+}
+
+.treatments__card-button:hover {
+  background: #ffffff;
+  border: 1px solid #86D1AB;
+  color: #86D1AB;
+}
+
+/* Treatment Roadmap */
+@media only screen and (min-width: 1280px) {
+  .roadmap-arrow__order--1,
+  .roadmap-arrow__order--2,
+  .roadmap-arrow__order--3,
+  .roadmap-card__order--2,
+  .roadmap-card__order--3,
+  .roadmap-card__order--4 {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+  }
+}
+
+.roadmap-arrow__order--1.active,
+.roadmap-arrow__order--2.active,
+.roadmap-arrow__order--3.active,
+.roadmap-card__order--2.active,
+.roadmap-card__order--3.active,
+.roadmap-card__order--4.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.roadmap-arrow__order--1 {
+  transition-delay: .5s;
+}
+
+.roadmap-card__order--2 {
+  transition-delay: 1s;
+}
+
+.roadmap-arrow__order--2 {
+  transition-delay: 2s;
+}
+
+.roadmap-card__order--3 {
+  transition-delay: 2.5s;
+}
+
+.roadmap-arrow__order--3 {
+  transition-delay: 3.5s;
+}
+
+.roadmap-card__order--4 {
+  transition-delay: 4s;
+}
+
+/* HELPING PATIENTS FROM AROUND THE GLOBE!! */

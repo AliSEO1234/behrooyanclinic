@@ -7,7 +7,9 @@ export type RoadmapType = {
   className?: string;
   align: "left" | "right";
   endArrow? : boolean
+  order: number;
 };
 export type RoadmapArrowType = {
   align: "left" | "right";
+  order: number;
 };

@@ -9,6 +9,7 @@ const RoadmapCard = ({
   title,
   align,
   endArrow = false,
+  order
 }: RoadmapType) => {
   return (
     <div
@@ -19,9 +20,9 @@ const RoadmapCard = ({
       <div
         className={`${
           className && className
-        } rounded-[500px] bg-white border-x-[2px] s1280:border-x-[6px] border-[#189C9F] shadow-[-4px_6px_15.5px_2px_#0000003D] s1280:h-[168px] flex-bet s1280:gap-x-4 s1280:px-4 relative z-[4] s1280:w-[710px] s1512:w-[906px] s1512:min-w-[906px]`}
+        } roadmap-card__order--${ order } rounded-[500px] bg-white border-x-[2px] s1280:border-x-[6px] border-[#189C9F] shadow-[-4px_6px_15.5px_2px_#0000003D] s1280:h-[168px] flex-bet s1280:gap-x-4 s1280:px-4 relative z-[4] s1280:w-[710px] s1512:w-[906px] s1512:min-w-[906px]`}
       >
-        {!endArrow && <RoadmapArrow align={align} />}
+        {!endArrow && <RoadmapArrow order={ order } align={align} />}
         {/* {!endArrow && <RoadmapArrowMobile />} */}
 
         <div className="flex-cen absolute -top-3 s1280:static">
