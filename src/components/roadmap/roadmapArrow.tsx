@@ -1,9 +1,9 @@
 import { RoadmapArrowType } from "@/types/roadmap/roadmap";
 
-const RoadmapArrow = ({ align }: RoadmapArrowType) => {
+const RoadmapArrow = ({ align, order }: RoadmapArrowType) => {
   return (
     <div
-      className={`hidden s1280:block z-[3] s1280:w-[250px] s1280:h-[150px] border-t-[6px] border-[#00979A] absolute top-[90%] -translate-y-1/2 ${
+      className={`roadmap-arrow__order--${ order } hidden s1280:block z-[3] s1280:w-[250px] s1280:h-[150px] border-t-[6px] border-[#00979A] absolute top-[90%] -translate-y-1/2 ${
         align === "left" ? "rounded-tr-[200px] -right-[250px] border-e-[6px]" : "rounded-tl-[200px] border-s-[6px] -left-[250px]"
       }`}
     >

@@ -8,6 +8,7 @@ import star from "@/assets/images/icons/star.svg";
 import point from "@/assets/images/icons/home/points.svg";
 import Link from "next/link";
 import ServiceCard from "@/features/services/serviceCard";
+import RoadmapIntersectionObserver from "@/components/scripts/roadmap-intersection-observer";
 
 import cell from "@/assets/images/icons/services/stemcell.svg";
 import fertility from "@/assets/images/icons/services/fertility.svg";
@@ -121,10 +122,10 @@ const Home = () => {
         <div className="col-span-6 s1280:col-span-6 s1512:col-span-5 z-1">
           <div className="s1280:h-[560px] s1280:px-5 s1728:px-7 relative rounded-[20px] overflow-hidden">
             <ImgFetcher width={500} src={homeBg} />
-            <div className="w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute top-2 right-2 s1280:top-1 s1280:p-2 s1280:right-5 s1728:right-7">
+            <div className="header__dots-container w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute top-2 right-2 s1280:top-1 s1280:p-2 s1280:right-5 s1728:right-7">
               <ImgFetcher src={pointtop} />
             </div>
-            <div className="w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute bottom-2 left-2 s1280:bottom-1 s1280:left-5 s1728:left-7 s1280:p-2">
+            <div className="header__dots-container w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute bottom-2 left-2 s1280:bottom-1 s1280:left-5 s1728:left-7 s1280:p-2">
               <ImgFetcher src={pointbot} />
             </div>
           </div>
@@ -187,7 +188,7 @@ const Home = () => {
         <div className="flex flex-col s1280:flex-row s1280:flex-wrap items-center justify-start s1280:items-center s1280:justify-between gap-y-8 s1280:gap-4 s1280:px-0">
           <ServiceCard
             imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-            className="w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+            className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
             countService={27}
             img={aesthetics}
             linkService="/"
@@ -195,7 +196,7 @@ const Home = () => {
           />
           <ServiceCard
             imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-            className="w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+            className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
             countService={74}
             img={dental}
             linkService="/"
@@ -203,7 +204,7 @@ const Home = () => {
           />
           <ServiceCard
             imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-            className="w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+            className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
             countService={51}
             img={eye}
             linkService="/"
@@ -211,7 +212,7 @@ const Home = () => {
           />
           <ServiceCard
             imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-            className="w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+            className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
             countService={45}
             img={fertility}
             linkService="/"
@@ -219,7 +220,7 @@ const Home = () => {
           />
           <ServiceCard
             imgStyle="w-[190px] h-[190px] w-full h-full s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-            className="w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+            className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
             countService={24}
             img={cell}
             linkService="/"
@@ -251,6 +252,7 @@ const Home = () => {
       </div>
       {/* Your Treatment Roadmap */}
       <div className="mb-10 s1280:mb-[80px]">
+        <RoadmapIntersectionObserver />
         <div className="mb-2 s1280:mb-10">
           <div className="flex-bet mb-4">
             <div className="flex-left w-[2%] s1280:w-[300px] s1512:w-[368px] s1600:w-[400px] s1728:w-[450px] s1920:w-[512px] h-[3px] bg-left">
@@ -277,6 +279,7 @@ const Home = () => {
         </div>
         <div className="grid grid-cols-12 s1280:gap-y-2 s1280:px-10 s1600:px-20 s1728:px-34 s1920:px-36">
           <RoadmapCard
+            order={1}
             align="left"
             cover={passport}
             title="Personalized Consultation & Treatment Planning"
@@ -287,6 +290,7 @@ const Home = () => {
             <RoadmapArrowMobile />
           </div>
           <RoadmapCard
+            order={2}
             align="right"
             cover={air}
             title="Online & Pre-Travel Arrangements"
@@ -297,6 +301,7 @@ const Home = () => {
             <RoadmapArrowMobile />
           </div>
           <RoadmapCard
+            order={3}
             align="left"
             cover={earth}
             title="Receiving World-Class Treatment"
@@ -307,6 +312,7 @@ const Home = () => {
             <RoadmapArrowMobile />
           </div>
           <RoadmapCard
+            order={4}
             endArrow
             align="right"
             cover={date}
