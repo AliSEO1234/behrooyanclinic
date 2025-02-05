@@ -32,11 +32,12 @@ body {
     box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
   }
   /* how our platform works form */
+  /* text-[#474744] */
   .form-platform-work div label {
-    @apply block font-semibold text-[#474744] mb-1;
+    @apply block font-semibold text-white;
   }
   .form-platform-work div input {
-    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#474744] mb-1;
+    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#474744];
   }
   /* hide scrollbar */
   .scroll-hide::-webkit-scrollbar {

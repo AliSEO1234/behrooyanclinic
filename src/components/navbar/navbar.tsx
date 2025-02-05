@@ -9,7 +9,7 @@ import ring from "@/assets/images/ringnavbar.svg"
 import ImgFetcher from "../imgFetcher";
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-[5]">
+    <header className="fixed top-0 left-0 w-full z-[5]">
       <nav className="anm grid grid-cols-12 bg-white shadow-[0_4px_2px_#0000001C] px-[20px] s1280:px-[50px] py-3 s1280:py-3 rounded-b-[40px]">
         <div className="col-span-6 s1280:col-span-1 flex-left gap-x-2">
           <div className="flex-cen">

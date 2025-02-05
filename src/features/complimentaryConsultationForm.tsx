@@ -12,31 +12,29 @@ const ComplimentaryConsultationForm = () => {
     { label: "Stem Cell", key: "stemcell", id: 2 },
   ];
   return (
-    <form className="grid grid-cols-12 gap-x-4 gap-y-5">
-      <div className="col-span-12 s1280:col-span-3 s1512:col-span-12 complimentaryFormItem">
+    <form className="grid grid-cols-12 gap-x-4 gap-y-2 form-platform-work">
+      <div className="col-span-12 s1280:col-span-12 s1512:col-span-12 complimentaryFormItem">
         <label htmlFor="">Residen of</label>
-        <br />
         <input placeholder="Residen of" type="text" />
       </div>
-      <div className="col-span-12 s1280:col-span-3 s1512:col-span-12">
-        <label className="block font-semibold text-[#474744] mb-1" htmlFor="">Treatment</label>
+      <div className="col-span-12 s1280:col-span-12 s1512:col-span-12">
+      {/* text-[#474744] */}
+        <label className="block font-semibold  mb-1" htmlFor="">Treatment</label>
         <ComboBox
           trigger={selectedOption ? selectedOption.label : "Treatment"}
-          className="w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1"
+          className="w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1 bg-white"
           options={options}
           onChange={setSelectedOption}
           selectedValue={selectedOption}
         />
         {/* <input placeholder="Treatment" type="text" /> */}
       </div>
-      <div className="col-span-12 s1280:col-span-3 s1512:col-span-12 complimentaryFormItem">
+      <div className="col-span-12 s1280:col-span-12 s1512:col-span-12 complimentaryFormItem">
         <label htmlFor="">Phone Number</label>
-        <br />
         <input placeholder="Phone Number" type="text" />
       </div>
-      <div className="col-span-12 s1280:col-span-3 s1512:col-span-12 complimentaryFormItem">
+      <div className="col-span-12 s1280:col-span-12 s1512:col-span-12 complimentaryFormItem">
         <label htmlFor="">Email</label>
-        <br />
         <input placeholder="Email" type="text" />
       </div>
       <div className="col-span-12 flex items-center s1280:justify-end s1512:justify-center">
