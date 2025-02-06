@@ -62,7 +62,14 @@ import phone from "@/assets/images/phone.svg";
 import apoint from "@/assets/images/apointment.svg";
 import online from "@/assets/images/online.svg";
 import VideoPlayerCom from "@/features/videoPlayer/videoPlayer";
-const Home = () => {
+const Home = async({
+  params,
+}: {
+  params: Promise<{
+    locale:string;
+  }>;
+}) => {
+  const {locale} = await params
   // https://azpo.com/api/files/property-videos/azpo_main.mp4
   return (
     <>
@@ -196,13 +203,13 @@ const Home = () => {
               </h2>
             </div>
             <div className="flex-right">
-              <SeeAll link="/" />
+              <SeeAll link={`/${locale}/treatments`} />
             </div>
           </div>
           {/* show service */}
           <div className="flex flex-col s1280:flex-row s1280:flex-wrap items-center justify-start s1280:items-center s1280:justify-between gap-y-8 s1280:gap-4 s1280:px-0">
             <ServiceCard
-            linkStyle=" text-[18px] s1512:text-[18px]"
+              linkStyle=" text-[18px] s1512:text-[18px]"
               titleStyle=" text-[20px] s1512:text-[20px]"
               imgStyle="p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
@@ -212,7 +219,7 @@ const Home = () => {
               title="Aesthetics"
             />
             <ServiceCard
-            linkStyle=" text-[18px] s1512:text-[18px]"
+              linkStyle=" text-[18px] s1512:text-[18px]"
               titleStyle=" text-[20px] s1512:text-[20px]"
               imgStyle=" p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
@@ -222,7 +229,7 @@ const Home = () => {
               title="Dental"
             />
             <ServiceCard
-            linkStyle=" text-[18px] s1512:text-[18px]"
+              linkStyle=" text-[18px] s1512:text-[18px]"
               titleStyle=" text-[20px] s1512:text-[20px]"
               imgStyle=" p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
@@ -232,7 +239,7 @@ const Home = () => {
               title="Eye Surgeries"
             />
             <ServiceCard
-            linkStyle=" text-[18px] s1512:text-[18px]"
+              linkStyle=" text-[18px] s1512:text-[18px]"
               titleStyle=" text-[20px] s1512:text-[20px]"
               imgStyle=" p-8 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
@@ -242,7 +249,7 @@ const Home = () => {
               title="Fertility"
             />
             <ServiceCard
-            linkStyle=" text-[18px] s1512:text-[18px]"
+              linkStyle=" text-[18px] s1512:text-[18px]"
               titleStyle=" text-[20px] s1512:text-[20px]"
               imgStyle="p-8 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
@@ -494,19 +501,31 @@ const Home = () => {
           </div>
           <div className="hidden s1280:flex items-center s1280:justify-between">
             <InfoIntersectionObserver />
-            <InfoHealthCard order={1} title="Successful Consultations" value="10000+" />
+            <InfoHealthCard
+              order={1}
+              title="Successful Consultations"
+              value="10000+"
+            />
             <BundleIcon
               order={1}
               className="w-[246px] s1600:w-[346px] h-[67px] s1600:h-[80px] top-24 s1600:top-24"
               destination="top"
             />
-            <InfoHealthCard order={2} title="Healthcare Professionals" value="2.500" />
+            <InfoHealthCard
+              order={2}
+              title="Healthcare Professionals"
+              value="2.500"
+            />
             <BundleIcon
               order={2}
               className="w-[246px] s1600:w-[346px] h-[67px] s1600:h-[80px] top-24 s1600:top-24"
               destination="bottom"
             />
-            <InfoHealthCard order={3} title="Patient Satisfaction Rate" value="90%" />
+            <InfoHealthCard
+              order={3}
+              title="Patient Satisfaction Rate"
+              value="90%"
+            />
             <BundleIcon
               order={3}
               className="w-[246px] s1600:w-[346px] h-[67px] s1600:h-[80px] top-24 s1600:top-24"
@@ -653,7 +672,9 @@ const Home = () => {
           <div className="z-[3]">
             <div className="flex items-center justify-between s1280:justify-end mb-10">
               <div className="s1280:hidden">
-                <h2 className="font-semibold text-[20px] text-[#333333]">AZPO Blog</h2>
+                <h2 className="font-semibold text-[20px] text-[#333333]">
+                  AZPO Blog
+                </h2>
               </div>
               <div>
                 <SeeAll link="/" />

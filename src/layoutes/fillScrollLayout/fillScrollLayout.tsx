@@ -529,7 +529,6 @@ const BorderLayoutAbout = ({
         </>
       );
     }
-
     if (order === "second") {
       return (
         <>
