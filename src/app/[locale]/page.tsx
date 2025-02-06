@@ -122,7 +122,7 @@ const Home = async({
                   </p>
                 </div>
                 <div className="mt-5">
-                  <button className="flex-cen gap-x-2 text-[#00979A] s1512:text-[20px] font-semibold">
+                  <button className="flex-cen gap-x-2 text-white s1512:text-[20px] font-semibold">
                     <span className="bg-[#DAEDE6] rounded-full flex-cen p-2">
                       <span className="w-[45px] h-[45px] bg-[#25A6A9] rounded-full flex-cen text-white">
                         <FaPlay className="size-4 ms-1" />
@@ -159,7 +159,7 @@ const Home = async({
               </p>
             </div>
             <div className="mt-5 flex-cen">
-              <button className="flex-cen gap-x-2 text-[#00979A] s1512:text-[20px] font-semibold">
+              <button className="flex-cen gap-x-2 text-white s1512:text-[20px] font-semibold">
                 <span className="bg-[#DAEDE6] rounded-full flex-cen p-2">
                   <span className="bg-[#25A6A9] rounded-full flex-cen p-2 text-white">
                     <FaPlay className="size-4" />
