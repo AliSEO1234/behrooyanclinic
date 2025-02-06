@@ -6,6 +6,8 @@ import point from "@/assets/images/icons/home/points.svg";
 import Link from "next/link";
 import ServiceCard from "@/features/services/serviceCard";
 import RoadmapIntersectionObserver from "@/components/scripts/roadmap-intersection-observer";
+import HelpingIntersectionObserver from "@/components/scripts/helping-intersection-observer";
+import InfoIntersectionObserver from "@/components/scripts/info-intersection-observer";
 
 import cell from "@/assets/images/icons/services/stemcell.svg";
 import fertility from "@/assets/images/icons/services/fertility.svg";
@@ -336,20 +338,21 @@ const Home = () => {
           </div>
         </div>
         {/* helping */}
+        <HelpingIntersectionObserver />
         <div className="mb-10 s1280:mb-[60px] bg-white shadow-[0_4px_15px_0_#0000001A] rounded-[40px] grid grid-cols-12 pt-4 pb-8 s1280:p-[27px] s1728:px-[30px] s1920:px-[70px] s1920:py-[38px] s1280:gap-x-[36px] s1512:gap-x-[42px] s1600:gap-x-[48px]">
           <div className="col-span-12 s1280:col-span-6 relative">
-            <div className="flex items-center justify-center s1280:justify-end">
+            <div className="helping__image-container--top flex items-center justify-center s1280:justify-end">
               <div className="w-[320px] h-[206px] s390:w-[336px] s412:w-[366px] s1280:w-[366px] s1280:h-[206px] s1512:w-[439px] s1512:h-[247px] s1920:w-[528px] s1920:h-[297px] rounded-[40px] overflow-hidden">
                 <ImgFetcher width={1000} src={help1} />
               </div>
             </div>
-            <div className="hidden s1280:flex-left s1280:-mt-20">
+            <div className="helping__image-container--bottom hidden s1280:flex-left s1280:-mt-20">
               <div className="s1280:w-[345px] s1280:h-[405px] s1512:w-[433px] s1512:h-[438px] s1600:w-[454px] s1600:h-[460px] s1728:w-[480px] s1728:h-[487px] s1920:w-[474px] s1920:h-[437px] rounded-[40px] overflow-hidden ">
                 <ImgFetcher width={1000} src={help2} />
               </div>
             </div>
             {/* consultation */}
-            <div className="flex-cen s1280:block w-full s1280:w-fit absolute -bottom-6 s1280:bottom-10 s1280:right-0 s1512:top-16 s1512:left-0 s1600:top-24 s1728:top-16">
+            <div className="helping__consultation-container flex-cen s1280:block w-full s1280:w-fit absolute -bottom-6 s1280:bottom-10 s1280:right-0 s1512:top-16 s1512:left-0 s1600:top-24 s1728:top-16">
               <Link
                 href="/"
                 className="w-[266px] h-[55px] s1280:h-[86px] s1280:w-[316px] flex-left ps-2 s1280:ps-4 gap-x-2 rounded-[40px] bg-[#FFFFFF99] shadow-[-8px_22px_15px_-15px_#0000001A] backdrop-blur-[10px]"
@@ -396,12 +399,12 @@ const Home = () => {
             </div>
             <div className="font-medium text-[#474744] mt-auto flex flex-col items-start justify-end gap-y-4 s1512:gap-y-6 text-[14px] s1280:text-[20px]">
               <div className="flex justify-start items-center gap-x-3">
-                <div className="flex-cen w-[50px] h-[40px]">
+                <div className="helping__first-icon flex-cen w-[50px] h-[40px]">
                   <ImgFetcher src={phone} />
                   {/* <BsHeartPulse className="size-6 s1280:size-8 text-[#00979A]" /> */}
                 </div>
                 <ArrowHelping />
-                <div>
+                <div className="helping__small-text-container">
                   <p>Stay Updated About Your Health</p>
                 </div>
               </div>
@@ -411,7 +414,7 @@ const Home = () => {
                   {/* <MdOutlineCloudDone className="size-6 s1280:size-8 text-[#00979A]" /> */}
                 </div>
                 <ArrowHelping />
-                <div>
+                <div className="helping__small-text-container">
                   <p>Check Your Results Online</p>
                 </div>
               </div>
@@ -421,7 +424,7 @@ const Home = () => {
                   {/* <MdManageHistory className="size-6 s1280:size-8 text-[#00979A]" /> */}
                 </div>
                 <ArrowHelping />
-                <div>
+                <div className="helping__small-text-container">
                   <p>Manage Your Appointments</p>
                 </div>
               </div>
@@ -480,22 +483,26 @@ const Home = () => {
             </div>
           </div>
           <div className="hidden s1280:flex items-center s1280:justify-between">
-            <InfoHealthCard title="Successful Consultations" value="10000+" />
+            <InfoIntersectionObserver />
+            <InfoHealthCard order={1} title="Successful Consultations" value="10000+" />
             <BundleIcon
+              order={1}
               className="w-[246px] s1600:w-[346px] h-[67px] s1600:h-[80px] top-24 s1600:top-24"
               destination="top"
             />
-            <InfoHealthCard title="Healthcare Professionals" value="2.500" />
+            <InfoHealthCard order={2} title="Healthcare Professionals" value="2.500" />
             <BundleIcon
+              order={2}
               className="w-[246px] s1600:w-[346px] h-[67px] s1600:h-[80px] top-24 s1600:top-24"
               destination="bottom"
             />
-            <InfoHealthCard title="Patient Satisfaction Rate" value="90%" />
+            <InfoHealthCard order={3} title="Patient Satisfaction Rate" value="90%" />
             <BundleIcon
+              order={3}
               className="w-[246px] s1600:w-[346px] h-[67px] s1600:h-[80px] top-24 s1600:top-24"
               destination="top"
             />
-            <InfoHealthCard title="Top Specialists" value="200" />
+            <InfoHealthCard order={4} title="Top Specialists" value="200" />
           </div>
         </div>
         {/* Why choose us? */}

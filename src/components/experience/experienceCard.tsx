@@ -3,7 +3,7 @@ import ImgFetcher from "../imgFetcher";
 
 const ExperienceCard = ({ icon, title }: ExperienceCardType) => {
   return (
-    <div className="flex-left p-3 s1920:p-5 gap-x-4 col-span-12 s1280:col-span-4 rounded-[100px] bg-white shadow-[0_4px_4px_0_#00000040]">
+    <div className="experience__card-container flex-left p-3 s1920:p-5 gap-x-4 col-span-12 s1280:col-span-4 rounded-[100px] bg-white shadow-[0_4px_4px_0_#00000040]">
       <div className="w-[84px] min-w-[84px] h-[84px] overflow-hidden rounded-full experience-card-shadow p-2">
         <ImgFetcher src={icon} />
       </div>
