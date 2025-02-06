@@ -4,6 +4,10 @@ import { routing } from "./i18n/routing";
 
 export default createMiddleware(routing);
 export async function middleware(req: NextRequest) {
+  const path = req.nextUrl.pathname;
+  if (path.startsWith("/videos") || path.startsWith("/health.ico")) {
+    return NextResponse.next();
+  }
   const intlMiddleware = createMiddleware(routing);
   const intlResponse = intlMiddleware(req);
   const res = intlResponse || NextResponse.next();

@@ -1,0 +1,206 @@
+import ImgFetcher from "@/components/imgFetcher";
+import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
+import Link from "next/link";
+import { FaPlay } from "react-icons/fa";
+import videoIcon from "@/assets/images/icons/video.svg";
+import SearchBox from "@/components/searchBox";
+import Sidebar from "@/layoutes/sidebar/sidebar";
+import ServiceCard from "@/features/services/serviceCard";
+import cell from "@/assets/images/icons/services/stemcell.svg";
+import fertility from "@/assets/images/icons/services/fertility.svg";
+import eye from "@/assets/images/icons/services/eye.svg";
+import dental from "@/assets/images/icons/services/dental.svg";
+import aesthetics from "@/assets/images/icons/services/aesthetics.svg";
+import Pagination from "@/components/pagination";
+import ServiceSlider from "@/features/services/serviceSlider/serviceSlider";
+const Treatments = () => {
+  const imgStyle =
+    "p-4 w-[190px] h-[190px] s1280:h-[160px] s1280:w-[160px] s1512:h-[207px] s1512:w-[207px] s1728:w-[238px] s1728:h-[238px] s1920:w-[250px] s1920:h-[250px]";
+  const titleStyle = "text-[20px] s1280:text-[16px] s1512:text-[20px]";
+  const linkStyle = "w-full text-[18px] s1280:text-[16px] s1512:text-[18px]";
+  const cardContainerStyle =
+    "treatments__card-container w-[210px] s1280:w-[185px] s1512:w-[238px] s1600:w-[245px] s1728:w-[270px] s1920:w-[282px]";
+  const services = [
+    {
+      countService: 27,
+      img: aesthetics,
+      linkService: "/",
+      title: "Aesthetics",
+    },
+    {
+      countService: 74,
+      img: dental,
+      linkService: "/",
+      title: "Dental",
+    },
+    {
+      countService: 51,
+      img: eye,
+      linkService: "/",
+      title: "Eye Surgeries",
+    },
+    {
+      countService: 45,
+      img: fertility,
+      linkService: "/",
+      title: "Fertility",
+    },
+    {
+      countService: 24,
+      img: cell,
+      linkService: "/",
+      title: "Stem Cell",
+    },
+    {
+      countService: 27,
+      img: aesthetics,
+      linkService: "/",
+      title: "Aesthetics",
+    },
+    {
+      countService: 74,
+      img: dental,
+      linkService: "/",
+      title: "Dental",
+    },
+    {
+      countService: 51,
+      img: eye,
+      linkService: "/",
+      title: "Eye Surgeries",
+    },
+    {
+      countService: 27,
+      img: aesthetics,
+      linkService: "/",
+      title: "Aesthetics",
+    },
+    {
+      countService: 74,
+      img: dental,
+      linkService: "/",
+      title: "Dental",
+    },
+    {
+      countService: 51,
+      img: eye,
+      linkService: "/",
+      title: "Eye Surgeries",
+    },
+    {
+      countService: 45,
+      img: fertility,
+      linkService: "/",
+      title: "Fertility",
+    },
+  ];
+  return (
+    <div className="px-[10px] s430:px-5 py-10 s1280:px-[71px] s1512:px-[79px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px]">
+      {/* header */}
+      <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 mb-10 s1280:mb-20 mt-20">
+        <div className="col-span-12 s1280:col-span-5 s1728:col-span-6">
+          <div className="mb-5 s1280:mb-20 s1728:mb-10">
+            <h1 className="text-[30px] s1280:text-[40px] s1512:text-[48px] s1728:text-[60px] font-black s1280:font-semibold text-[#00979A] mb-8">
+              Specialized Treatments
+            </h1>
+            <p className="font-semibold flex-left gap-x-1 text-[14px] s1280:text-[24px] text-[#00979A] [text-shadow:0_2px_3px_#00000040] mb-4">
+              <span>85</span>
+              <span>Service</span>
+            </p>
+            <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[28px] s1920:text-[30px] leading-[22px] s1280:leading-[27px] s1512:leading-[32px] s1728:leading-[40px] text-justify s1280:pe-24 s1600:pe-40 s1728:pe-72 s1920:pe-80">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry is standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.{" "}
+            </p>
+          </div>
+          <div className="flex items-center justify-start s1280:justify-between gap-x-4 s1280:gap-x-0 s1280:pe-20 s1600:pe-40 s1728:pe-72 s1920:pe-80">
+            <div>
+              <Link
+                className="flex-cen rounded-[40px] w-[157px] h-[41px] s1280:w-[197px] s1280:h-[52px] text-center bg-[#0CA5A5] text-white font-bold s1280:text-[18px]"
+                href="/"
+              >
+                Back To Home
+              </Link>
+            </div>
+            <div>
+              <button className="flex-cen gap-x-2 text-[#00979A] s1280:text-[20px] font-semibold">
+                <span className="bg-[#DAEDE6] rounded-full p-1 s1280:p-2 flex-cen w-[37px] h-[37px] s1280:w-[62px] s1280:h-[62px]">
+                  <span className=" bg-[#25A6A9] w-full h-full rounded-full flex-cen text-white">
+                    <FaPlay className="size-3 s1280:size-5 ms-1" />
+                  </span>
+                </span>
+                <span>Play video</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-12 s1280:col-span-7 s1728:col-span-6">
+          <ServiceSlider />
+        </div>
+      </div>
+      {/* azpo service video */}
+      <div className="mb-14 s1280:mb-28">
+        <div className="flex-bet mb-2 s1280:mb-10">
+          {/* <div className="flex-left w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
+            <ImgFetcher src={borderDashed} />
+          </div> */}
+          <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[34%]" />
+          <h2 className="flex-cen font-semibold text-[20px] s1280:text-[30px]">
+            <span className="w-[70px] h-[53px]">
+              <ImgFetcher src={videoIcon} />
+            </span>
+            <span>Azpo Service video</span>{" "}
+          </h2>
+          <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[34%]" />
+          {/* <div className="flex-right w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
+            <ImgFetcher src={borderDashed} />
+          </div> */}
+        </div>
+        <div className="flex-cen">
+          <VideoPlayer />
+        </div>
+      </div>
+      {/* all treatments */}
+      <div>
+        <div className="mb-10 flex flex-col justify-start gap-y-2 s1280:gap-y-0 s1280:flex-row items-start s1280:justify-between s1280:mb-20">
+          <div className="w-full s1280:w-fit">
+            <h2 className="[text-shadow:0px_1px_2px_#00000040] font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-[#00979A]">
+              All Treatments
+            </h2>
+          </div>
+          <div className="w-full s1280:w-fit">
+            <SearchBox />
+            {/* <div>
+              <p>Search service</p>
+            </div>
+            <div>
+            </div> */}
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-start s1280:flex-row s1280:items-start s1280:justify-between gap-y-10 s1280:gap-y-0 s1280:gap-x-5">
+          <div className="flex items-center flex-col justify-start s1280:flex-row s1280:justify-start flex-wrap w-full gap-y-10 s1280:flex-grow s1280:gap-x-5">
+            {services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                imgStyle={imgStyle}
+                titleStyle={titleStyle}
+                linkStyle={linkStyle}
+                className={cardContainerStyle}
+                countService={service.countService}
+                img={service.img}
+                linkService={service.linkService}
+                title={service.title}
+              />
+            ))}
+            <div className="w-full">
+              <Pagination totalPages={80} />
+            </div>
+          </div>
+          <Sidebar />
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Treatments;

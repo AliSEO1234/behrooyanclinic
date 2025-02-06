@@ -70,11 +70,11 @@ const Home = () => {
         <div className="grid grid-cols-12 gap-x-4 s1512:gap-x-[23px] s1728:gap-x-[28px] gap-y-10 mb-10 s1280:mb-[60px] px-[10px] s430:px-5 py-10 s1280:px-[71px] s1512:px-[79px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px]">
           <div className="col-span-12 s412:pt-5 s1280:col-span-6 s1512:col-span-4  relative">
             {/* points */}
-            <div className="hidden s1280:block w-60 h-60 absolute -bottom-20 -right-36 s1600:-right-40">
+            <div className="hidden w-60 h-60 absolute -bottom-20 -right-36 s1600:-right-40">
               <ImgFetcher src={point} />
             </div>
             {/* points */}
-            <div className="hidden s1280:block w-72 h-72 absolute -bottom-6 left-40">
+            <div className="hidden w-72 h-72 absolute -bottom-6 left-40">
               <ImgFetcher src={point} />
             </div>
             {/* squire icon */}
@@ -167,7 +167,7 @@ const Home = () => {
               <ImgFetcher src={star} />
             </div>
             {/* points */}
-            <div className="hidden s1280:block w-60 h-60 absolute -top-8 s1512:-top-10 right-0">
+            <div className="hidden w-60 h-60 absolute -top-8 s1512:-top-10 right-0">
               <ImgFetcher src={point} />
             </div>
             <div className="relative z-[3] s1512:flex s1512:flex-col">
@@ -200,6 +200,8 @@ const Home = () => {
           {/* show service */}
           <div className="flex flex-col s1280:flex-row s1280:flex-wrap items-center justify-start s1280:items-center s1280:justify-between gap-y-8 s1280:gap-4 s1280:px-0">
             <ServiceCard
+            linkStyle=" text-[18px] s1512:text-[18px]"
+              titleStyle=" text-[20px] s1512:text-[20px]"
               imgStyle="p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
               countService={27}
@@ -208,6 +210,8 @@ const Home = () => {
               title="Aesthetics"
             />
             <ServiceCard
+            linkStyle=" text-[18px] s1512:text-[18px]"
+              titleStyle=" text-[20px] s1512:text-[20px]"
               imgStyle=" p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
               countService={74}
@@ -216,6 +220,8 @@ const Home = () => {
               title="Dental"
             />
             <ServiceCard
+            linkStyle=" text-[18px] s1512:text-[18px]"
+              titleStyle=" text-[20px] s1512:text-[20px]"
               imgStyle=" p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
               countService={51}
@@ -224,6 +230,8 @@ const Home = () => {
               title="Eye Surgeries"
             />
             <ServiceCard
+            linkStyle=" text-[18px] s1512:text-[18px]"
+              titleStyle=" text-[20px] s1512:text-[20px]"
               imgStyle=" p-8 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
               countService={45}
@@ -232,7 +240,9 @@ const Home = () => {
               title="Fertility"
             />
             <ServiceCard
-              imgStyle="w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+            linkStyle=" text-[18px] s1512:text-[18px]"
+              titleStyle=" text-[20px] s1512:text-[20px]"
+              imgStyle="p-8 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
               countService={24}
               img={cell}
@@ -628,15 +638,15 @@ const Home = () => {
         </FillScrollLayout>
         {/* blog azpo */}
         <FillScrollLayout
-          className="s1280:pt-20 s1280:h-[750px] s1280:-mt-6"
+          className="s1280:pt-20 s1280:h-[750px] s1280:-mt-6 mt-10"
           title="AZPO Blog"
           order="fourth"
-          classLabel="s1280:flex-cen ms-4"
+          classLabel="hidden s1280:flex-cen ms-4"
         >
           <div className="z-[3]">
             <div className="flex items-center justify-between s1280:justify-end mb-10">
               <div className="s1280:hidden">
-                <h2 className="font-semibold text-[20px]">AZPO Blog</h2>
+                <h2 className="font-semibold text-[20px] text-[#333333]">AZPO Blog</h2>
               </div>
               <div>
                 <SeeAll link="/" />

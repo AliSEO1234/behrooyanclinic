@@ -5,7 +5,7 @@ import ChangeLanguage from "../change-language";
 import { FiSearch } from "react-icons/fi";
 import DropDownCustom from "../dropdownCustom";
 import { HiMenuAlt2 } from "react-icons/hi";
-import ring from "@/assets/images/ringnavbar.svg"
+import ring from "@/assets/images/ringnavbar.svg";
 import ImgFetcher from "../imgFetcher";
 const Navbar = () => {
   return (
@@ -87,7 +87,7 @@ const Navbar = () => {
           <div>
             <Link
               href="/"
-              className="flex-cen gap-x-2 bg-[#25A6A9] rounded-[40px] py-4 px-2 s1280:py-[10px] s1280:px-[20px] font-medium s1280:text-[12px] s1600:text-[18px] text-white h-[35px] s1600:h-[44px]"
+              className="flex-cen gap-x-2 bg-[#25A6A9] rounded-[40px] py-4 px-2 s1280:py-[10px] s1280:px-[20px] font-medium s1280:text-[12px] s1600:text-[18px] text-white h-[33px] w-[33px] s1280:w-fit s1280:h-[35px] s1600:h-[44px]"
             >
               <span>
                 <ImgFetcher src={ring} />
@@ -97,9 +97,8 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="s1280:hidden">
-            <button className="flex-cen bg-[#25A6A9] text-white p-2 rounded-full">
-            <HiMenuAlt2 className="size-5" />
-
+            <button className="flex-cen bg-[#25A6A9] w-[33px] h-[33px] text-white p-2 rounded-full">
+              <HiMenuAlt2 className="size-5" />
             </button>
           </div>
         </div>

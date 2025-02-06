@@ -7,4 +7,6 @@ export type ServiceCardType = {
   countService: number;
   linkService: string;
   imgStyle: string
+  titleStyle : string
+  linkStyle : string
 };

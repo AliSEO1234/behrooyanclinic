@@ -6,6 +6,8 @@ const ServiceCard = ({
   img,
   countService,
   imgStyle,
+  titleStyle,
+  linkStyle,
 }: ServiceCardType) => {
   return (
     <div
@@ -23,15 +25,23 @@ const ServiceCard = ({
         </div>
       </div>
       <div className="mb-2">
-        <h3 className="text-center font-medium text-[#474744] text-[20px] s1512:text-[20px]">
+        <h3
+          className={`text-center font-medium text-[#474744] ${
+            titleStyle ? titleStyle : ""
+          }`}
+        >
           {title}
         </h3>
         <p className="text-[#888888] font-normal s1280:text-[14px] s1512:text-[16px] text-center">
           {countService} Service
         </p>
       </div>
-      <div className="flex-cen">
-        <button className="treatments__card-button bg-[#86D1AB] text-white font-bold rounded-[40px] h-[48px] w-[156px] drop-shadow-[0px_4px_4px_#00000040] text-[18px] s1512:text-[18px]">
+      <div className="flex-cen px-4">
+        <button
+          className={`treatments__card-button bg-[#86D1AB] text-white font-bold rounded-[40px] h-[48px] w-[156px] drop-shadow-[0px_4px_4px_#00000040] ${
+            linkStyle ? linkStyle : linkStyle
+          }`}
+        >
           View services
         </button>
       </div>

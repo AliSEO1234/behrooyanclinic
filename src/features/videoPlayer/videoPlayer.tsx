@@ -8,7 +8,7 @@ const VideoPlayerCom = () => {
         loop={true}
         playsInline
         className="w-full object-cover h-full"
-        src="https://azpo.com/api/files/property-videos/azpo_main.mp4"
+        src="/videos/videoHealth.mp4"
       ></video>
     </div>
   );
