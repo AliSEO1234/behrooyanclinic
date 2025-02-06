@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 function RoadmapIntersectionObserver() {
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (window) {
       if ("IntersectionObserver" in window) {
         const observer = new IntersectionObserver(function(entries) {
           entries.forEach(function(entry) {
