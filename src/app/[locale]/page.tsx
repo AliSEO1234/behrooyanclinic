@@ -8,7 +8,7 @@ import ServiceCard from "@/features/services/serviceCard";
 import RoadmapIntersectionObserver from "@/components/scripts/roadmap-intersection-observer";
 import HelpingIntersectionObserver from "@/components/scripts/helping-intersection-observer";
 import InfoIntersectionObserver from "@/components/scripts/info-intersection-observer";
-
+import videoCover from "@/assets/images/videoCover.jpg";
 import cell from "@/assets/images/icons/services/stemcell.svg";
 import fertility from "@/assets/images/icons/services/fertility.svg";
 import eye from "@/assets/images/icons/services/eye.svg";
@@ -62,21 +62,21 @@ import phone from "@/assets/images/phone.svg";
 import apoint from "@/assets/images/apointment.svg";
 import online from "@/assets/images/online.svg";
 import VideoPlayerCom from "@/features/videoPlayer/videoPlayer";
-const Home = async({
+const Home = async ({
   params,
 }: {
   params: Promise<{
-    locale:string;
+    locale: string;
   }>;
 }) => {
-  const {locale} = await params
+  const { locale } = await params;
   // https://azpo.com/api/files/property-videos/azpo_main.mp4
   return (
     <>
       {/* header */}
       <div className="relative s1280:h-screen pt-12 s1280:pt-14 s1512:pt-28 overflow-hidden">
         <VideoPlayerCom />
-        <div className="grid grid-cols-12 gap-x-4 s1512:gap-x-[23px] s1728:gap-x-[28px] gap-y-10 mb-10 s1280:mb-[60px] px-[10px] s430:px-5 py-10 s1280:px-[71px] s1512:px-[79px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px]">
+        <div className="grid grid-cols-12 gap-x-4 s1512:gap-x-[23px] s1728:gap-x-[28px] gap-y-10 mb-10 s1280:mb-[60px] viewport-p">
           <div className="col-span-12 s412:pt-5 s1280:col-span-6 s1512:col-span-4  relative">
             {/* points */}
             <div className="hidden w-60 h-60 absolute -bottom-20 -right-36 s1600:-right-40">
@@ -193,7 +193,7 @@ const Home = async({
           </div>
         </div>
       </div>
-      <div className="px-[10px] s430:px-5 py-10 s1280:px-[71px] s1512:px-[79px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px]">
+      <div className="viewport-p">
         {/* Specialized Treatments */}
         <div className="mb-10 s1280:mb-[60px]">
           <div className="flex-bet mb-5 s1280:mb-10">
@@ -203,7 +203,7 @@ const Home = async({
               </h2>
             </div>
             <div className="flex-right">
-              <SeeAll link={`/${locale}/treatments`} />
+              <SeeAll link={`/${locale}/medicaltourism`} />
             </div>
           </div>
           {/* show service */}
@@ -215,7 +215,7 @@ const Home = async({
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
               countService={27}
               img={aesthetics}
-              linkService="/"
+              linkService="/medicaltourism/aesthetics"
               title="Aesthetics"
             />
             <ServiceCard
@@ -225,7 +225,7 @@ const Home = async({
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
               countService={74}
               img={dental}
-              linkService="/"
+              linkService="/medicaltourism/dental"
               title="Dental"
             />
             <ServiceCard
@@ -235,7 +235,7 @@ const Home = async({
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
               countService={51}
               img={eye}
-              linkService="/"
+              linkService="/medicaltourism/eyeSurgeries"
               title="Eye Surgeries"
             />
             <ServiceCard
@@ -245,7 +245,7 @@ const Home = async({
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
               countService={45}
               img={fertility}
-              linkService="/"
+              linkService="/medicaltourism/Fertility"
               title="Fertility"
             />
             <ServiceCard
@@ -255,7 +255,7 @@ const Home = async({
               className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
               countService={24}
               img={cell}
-              linkService="/"
+              linkService="/medicaltourism/stemCell"
               title="Stem Cell"
             />
           </div>
@@ -279,7 +279,10 @@ const Home = async({
           </div> */}
           </div>
           <div className="flex-cen">
-            <VideoPlayer />
+            <VideoPlayer
+              toolsbarStyle="h-[38px] s1280:h-[57px]"
+              src={videoCover}
+            />
           </div>
         </div>
         {/* Your Treatment Roadmap */}

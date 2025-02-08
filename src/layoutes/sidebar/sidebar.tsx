@@ -86,7 +86,7 @@ const Sidebar = () => {
           {items.map((item) => {
             return (
               <div className="w-full" key={item.id}>
-                <Link href="/treatments" className="w-full font-normal flex-bet">
+                <Link href="/" className="w-full font-normal flex-bet">
                   <span className="text-[#333333]">{item.label}</span>
                   <span><IoIosArrowForward className="size-5" /></span>
                 </Link>

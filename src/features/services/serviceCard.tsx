@@ -1,5 +1,7 @@
+"use client";
 import ImgFetcher from "@/components/imgFetcher";
 import { ServiceCardType } from "@/types/services/service";
+import { useRouter } from "next/navigation";
 const ServiceCard = ({
   className,
   title,
@@ -8,7 +10,9 @@ const ServiceCard = ({
   imgStyle,
   titleStyle,
   linkStyle,
+  linkService,
 }: ServiceCardType) => {
+  const router = useRouter();
   return (
     <div
       className={`${
@@ -38,6 +42,7 @@ const ServiceCard = ({
       </div>
       <div className="flex-cen px-4">
         <button
+          onClick={() => router.push(linkService)}
           className={`treatments__card-button bg-[#86D1AB] text-white font-bold rounded-[40px] h-[48px] w-[156px] drop-shadow-[0px_4px_4px_#00000040] ${
             linkStyle ? linkStyle : linkStyle
           }`}

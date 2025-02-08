@@ -13,6 +13,7 @@ import dental from "@/assets/images/icons/services/dental.svg";
 import aesthetics from "@/assets/images/icons/services/aesthetics.svg";
 import Pagination from "@/components/pagination";
 import ServiceSlider from "@/features/services/serviceSlider/serviceSlider";
+import videoCover from "@/assets/images/videoCover.jpg";
 const Treatments = () => {
   const imgStyle =
     "p-4 w-[190px] h-[190px] s1280:h-[160px] s1280:w-[160px] s1512:h-[207px] s1512:w-[207px] s1728:w-[238px] s1728:h-[238px] s1920:w-[250px] s1920:h-[250px]";
@@ -24,7 +25,7 @@ const Treatments = () => {
     {
       countService: 27,
       img: aesthetics,
-      linkService: "/",
+      linkService: "/Aesthetics",
       title: "Aesthetics",
     },
     {
@@ -95,7 +96,7 @@ const Treatments = () => {
     },
   ];
   return (
-    <div className="px-[10px] s430:px-5 py-10 s1280:px-[71px] s1512:px-[79px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px]">
+    <div className="viewport-p">
       {/* header */}
       <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 mb-10 s1280:mb-20 mt-20">
         <div className="col-span-12 s1280:col-span-5 s1728:col-span-6">
@@ -158,7 +159,11 @@ const Treatments = () => {
           </div> */}
         </div>
         <div className="flex-cen">
-          <VideoPlayer />
+          <VideoPlayer
+          toolsbarStyle="h-[38px] s1280:h-[60px]"
+            src={videoCover}
+            className="s1280:w-[916px] h-[200px] s1280:h-[501px]"
+          />
         </div>
       </div>
       {/* all treatments */}
@@ -171,11 +176,6 @@ const Treatments = () => {
           </div>
           <div className="w-full s1280:w-fit">
             <SearchBox />
-            {/* <div>
-              <p>Search service</p>
-            </div>
-            <div>
-            </div> */}
           </div>
         </div>
         <div className="flex flex-col items-center justify-start s1280:flex-row s1280:items-start s1280:justify-between gap-y-10 s1280:gap-y-0 s1280:gap-x-5">

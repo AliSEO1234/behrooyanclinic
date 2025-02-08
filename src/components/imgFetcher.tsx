@@ -14,7 +14,7 @@ const ImgFetcher = ({
   return (
     <Image
       className={`w-full h-full min-w-full min-h-full max-w-full max-h-full ${
-        className && className
+        className ? className : ""
       }`}
       loading={dynamic ? "lazy" : "eager"}
       src={link}
