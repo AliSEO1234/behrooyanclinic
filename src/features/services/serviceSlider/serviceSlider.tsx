@@ -1,16 +1,15 @@
 "use client";
-
 import { useState } from "react";
 import { TbArrowLeftFromArc } from "react-icons/tb";
-import men from "@/assets/images/chars/men.svg";
+import men from "@/assets/images/chars/men.png";
 import ImgFetcher from "@/components/imgFetcher";
 import ServiceSliderCard from "./serviceSliderCard";
-import eye from "@/assets/images/icons/services/eye.svg"
-import dental from "@/assets/images/icons/services/dental.svg"
-import fertility from "@/assets/images/icons/services/fertility.svg"
-import cells from "@/assets/images/icons/services/cells.svg"
-import hair from "@/assets/images/icons/services/hair.svg"
-import aesthetics from "@/assets/images/icons/services/aesthetics.svg"
+import eye from "@/assets/images/icons/services/eye.png"
+import dental from "@/assets/images/icons/services/dental.png"
+import fertility from "@/assets/images/icons/services/fertility.png"
+import cells from "@/assets/images/icons/services/cells.png"
+import hair from "@/assets/images/icons/services/hair.png"
+import aesthetics from "@/assets/images/icons/services/aesthetics.png"
 const ServiceSlider = () => {
   const [checked, setChecked] = useState(false);
   return (
