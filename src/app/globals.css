@@ -12,7 +12,14 @@ body {
 }
 
 @layer components {
-  
+  /* bg gradial sub treatment */
+  .shadow-subtreat-video {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(115, 115, 115, 0.58) 0%,
+      rgba(115, 115, 115, 0) 100%
+    );
+  }
   /* video gradial */
   .grdl-md {
     background: radial-gradient(

@@ -2,15 +2,15 @@ import ImgFetcher from "@/components/imgFetcher";
 import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
 import Link from "next/link";
 import { FaPlay } from "react-icons/fa";
-import videoIcon from "@/assets/images/icons/video.png";
+import videoIcon from "@/assets/images/icons/video.svg";
 import SearchBox from "@/components/searchBox";
 import Sidebar from "@/layoutes/sidebar/sidebar";
 import ServiceCard from "@/features/services/serviceCard";
-import cell from "@/assets/images/icons/services/cells.png";
-import fertility from "@/assets/images/icons/services/fertility.png";
-import eye from "@/assets/images/icons/services/eye.png";
-import dental from "@/assets/images/icons/services/dental.png";
-import aesthetics from "@/assets/images/icons/services/aesthetics.png";
+import cell from "@/assets/images/icons/services/cells.svg";
+import fertility from "@/assets/images/icons/services/fertility.svg";
+import eye from "@/assets/images/icons/services/eye.svg";
+import dental from "@/assets/images/icons/services/dental.svg";
+import aesthetics from "@/assets/images/icons/services/aesthetics.svg";
 import Pagination from "@/components/pagination";
 import ServiceSlider from "@/features/services/serviceSlider/serviceSlider";
 import videoCover from "@/assets/images/videoCover.jpg";
@@ -25,74 +25,74 @@ const Treatments = () => {
     {
       countService: 27,
       img: aesthetics,
-      linkService: "/Aesthetics",
+      linkService: "/medicaltourism/aesthetics",
       title: "Aesthetics",
     },
     {
       countService: 74,
       img: dental,
-      linkService: "/",
+      linkService: "/medicaltourism/dental",
       title: "Dental",
     },
     {
       countService: 51,
       img: eye,
-      linkService: "/",
+      linkService: "/medicaltourism/eyeSurgeries",
       title: "Eye Surgeries",
     },
     {
       countService: 45,
       img: fertility,
-      linkService: "/",
+      linkService: "/medicaltourism/fertility",
       title: "Fertility",
     },
     {
       countService: 24,
       img: cell,
-      linkService: "/",
+      linkService: "/medicaltourism/stemCell",
       title: "Stem Cell",
     },
     {
       countService: 27,
       img: aesthetics,
-      linkService: "/",
+      linkService: "/medicaltourism/aesthetics",
       title: "Aesthetics",
     },
     {
       countService: 74,
       img: dental,
-      linkService: "/",
+      linkService: "/medicaltourism/dental",
       title: "Dental",
     },
     {
       countService: 51,
       img: eye,
-      linkService: "/",
-      title: "Eye Surgeries",
-    },
-    {
-      countService: 27,
-      img: aesthetics,
-      linkService: "/",
-      title: "Aesthetics",
-    },
-    {
-      countService: 74,
-      img: dental,
-      linkService: "/",
-      title: "Dental",
-    },
-    {
-      countService: 51,
-      img: eye,
-      linkService: "/",
+      linkService: "/medicaltourism/eyeSurgeries",
       title: "Eye Surgeries",
     },
     {
       countService: 45,
       img: fertility,
-      linkService: "/",
+      linkService: "/medicaltourism/fertility",
       title: "Fertility",
+    },
+    {
+      countService: 24,
+      img: cell,
+      linkService: "/medicaltourism/stemCell",
+      title: "Stem Cell",
+    },
+    {
+      countService: 27,
+      img: aesthetics,
+      linkService: "/medicaltourism/aesthetics",
+      title: "Aesthetics",
+    },
+    {
+      countService: 74,
+      img: dental,
+      linkService: "/medicaltourism/dental",
+      title: "Dental",
     },
   ];
   return (
@@ -160,7 +160,7 @@ const Treatments = () => {
         </div>
         <div className="flex-cen">
           <VideoPlayer
-          toolsbarStyle="h-[38px] s1280:h-[60px]"
+            toolsbarStyle="h-[38px] s1280:h-[60px]"
             src={videoCover}
             className="s1280:w-[916px] h-[200px] s1280:h-[501px]"
           />

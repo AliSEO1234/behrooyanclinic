@@ -16,7 +16,6 @@ const ImgFetcher = ({
       className={`w-full h-full min-w-full min-h-full max-w-full max-h-full ${
         className ? className : ""
       }`}
-      loading={dynamic ? "lazy" : "eager"}
       src={link}
       alt={title || ""}
       width={width || 200}

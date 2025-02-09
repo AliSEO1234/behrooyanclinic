@@ -12,7 +12,7 @@ import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
 import videoCover from "@/assets/images/videoCover.jpg";
 import videoChar from "@/assets/images/treatment/vidChar.png";
 import borderPhone from "@/assets/images/treatment/borderTreatPhone.png";
-import safe from "@/assets/images/treatment/safe.png";
+import safe from "@/assets/images/treatment/safe.svg";
 import SearchBox from "@/components/searchBox";
 import Pagination from "@/components/pagination";
 import Sidebar from "@/layoutes/sidebar/sidebar";

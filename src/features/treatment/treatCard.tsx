@@ -1,9 +1,12 @@
+"use client"
 import { TreatCardType } from "@/types/tratment/treatCardType";
 import clipTreat from "@/assets/images/treatment/treatCardClip.png";
 import ImgFetcher from "@/components/imgFetcher";
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 const TreatCard = ({ className, desc, img, title }: TreatCardType) => {
+  const locale = useLocale()
   return (
     <div
       className={`${
@@ -24,7 +27,7 @@ const TreatCard = ({ className, desc, img, title }: TreatCardType) => {
         <p className="s1280:text-[14px] s1512:text-[16px] text-[#333333] font-normal text-justify line-clamp-4">{desc}</p>
       </div>
       <div className="flex-cen">
-        <Link className="w-[138px] h-[32px] s1280:w-[108px]  s1280:h-6 s1512:w-[138px] s1512:h-[32px] bg-[#DAEDE6] rounded-t-[50px] font-normal s1280:text-[14px] text-[#333333] flex-cen" href="/">View More</Link>
+        <Link className="w-[138px] h-[32px] s1280:w-[108px]  s1280:h-6 s1512:w-[138px] s1512:h-[32px] bg-[#DAEDE6] rounded-t-[50px] font-normal s1280:text-[14px] text-[#333333] flex-cen" href={`/${locale}/medicaltourism/stemCell/lasik`}>View More</Link>
       </div>
       {/* clip */}
       <div className="w-[350px] h-[350px] s1512:w-[300px] s1512:h-[300px] absolute -top-[160px] -left-[160px] s1280:-top-[105px] s1280:-left-[105px] s1512:-left-[125px] s1512:-top-[125px] rounded-[40px] overflow-hidden">
