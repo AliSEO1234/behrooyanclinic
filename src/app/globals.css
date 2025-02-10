@@ -12,6 +12,23 @@ body {
 }
 
 @layer components {
+  /* before && after */
+  .slash-bef-aft {
+    border: 6px solid;
+    border-image-source: linear-gradient(
+      90deg,
+      #fcfcfc 0%,
+      #3ebb9a 45%,
+      #fcfcfc 100%
+    );
+  }
+  /* bg  Conclusion */
+  .bg-consul {
+    @apply bg-none s1280:bg-[url('./../assets/images/subTreatment/conclusion.svg')];
+  }
+  .bg-consul-phone {
+    @apply bg-[url('./../assets/images/subTreatment/consulphone.svg')] s1280:bg-none;
+  }
   /* bg gradial sub treatment */
   .shadow-subtreat-video {
     background: radial-gradient(
