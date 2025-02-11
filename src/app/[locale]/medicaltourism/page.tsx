@@ -96,7 +96,7 @@ const Treatments = () => {
     },
   ];
   return (
-    <div className="viewport-p">
+    <div className="viewport-p bg-[#FCFCFC]">
       {/* header */}
       <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 mb-10 s1280:mb-20 mt-20">
         <div className="col-span-12 s1280:col-span-5 s1728:col-span-6">

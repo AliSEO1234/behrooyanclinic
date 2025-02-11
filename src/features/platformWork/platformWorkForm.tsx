@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import ComboBox from "@/components/comboBox";
 import { OptionType } from "@/types/comboBox/comboType";
+import { LucideSendHorizontal } from "lucide-react";
 import { useState } from "react";
 
 const PlatformWorkForm = () => {
@@ -38,7 +39,14 @@ const PlatformWorkForm = () => {
         {/* <input placeholder="Please Select" type="email" /> */}
       </div>
       <div className="col-span-12 flex-cen">
-        <button className="font-bold w-full h-[54px] text-center rounded-[40px] bg-[#0CA5A5] text-white">Send Message</button>
+        <button className="font-bold w-full h-[54px] text-center rounded-[40px] group relative overflow-hidden">
+          <div className="z-[2] bg-[#0CA5A5] text-white w-full h-full absolute top-0 group-hover:-top-full left-0 text-center flex-cen anm">
+            Send Message
+          </div>
+          <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
+            <LucideSendHorizontal className="size-5" />
+          </div>
+        </button>
       </div>
     </form>
   );

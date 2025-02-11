@@ -5,13 +5,13 @@ const ChooseUsCard = ({ desc, header, index, className ,end = false }: ChooseUsC
     <div
       className={`${
         className && className
-      } relative bg-white rounded-[40px] shadow-[0_4px_4px_0px_#00000040] ${end ? "" : "mb-[32px]"} s1280:mb-10 px-4 pb-5 s1280:px-3 s1280:pb-8 s1280:pt-4`}
+      } relative bg-white rounded-[40px] shadow-[0_4px_4px_0px_#00000040] ${end ? "" : "mb-[32px]"} s1280:mb-6 px-4 pb-5 s1280:px-3 s1280:pb-8 s1280:pt-4`}
     >
       <div className="mb-2">
         <h3 className="ms-6 s1280:ms-16 font-semibold text-[#00979A]">{header}</h3>
       </div>
       <div>
-        <p className="text-[14px] s1280:text-[14px] s1600:text-[16px] font-normal text-[#575757] leading-[17px] s1600:leading-[20px] text-justify">
+        <p className="text-[14px] s1280:text-[14px] s1600:text-[16px] font-normal text-[#575757] leading-[17px] s1280:leading-[18px] s1600:leading-[20px]">
           {desc}
         </p>
       </div>

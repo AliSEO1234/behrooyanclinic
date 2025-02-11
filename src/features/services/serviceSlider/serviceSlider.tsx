@@ -10,10 +10,15 @@ import cells from "@/assets/images/icons/services/cells.svg";
 import hair from "@/assets/images/icons/services/hair.svg";
 import aesthetics from "@/assets/images/icons/services/aesthetics.svg";
 import arrow from "@/assets/images/arrow.svg";
+import Ball from "@/components/ballAnimate";
 const ServiceSlider = () => {
   const [checked, setChecked] = useState(true);
+  const balls = [54, 62, 42, 50, 45, 32, 23, 15];
   return (
-    <div>
+    <div className="relative">
+       {balls.map((bal,index) => {
+          return <Ball key={index} size={bal} />;
+        })}
       <div className="flex-cen">
         <label className="relative inline-flex items-center justify-center cursor-pointer">
           <input
@@ -40,7 +45,8 @@ const ServiceSlider = () => {
           </div>
         </label>
       </div>
-      <div className="flex-cen relative">
+      <div className="flex-cen relative z-[2]">
+       
         {/* left items */}
         <ServiceSliderCard className="left-0 top-1/2" img={eye} />
         <ServiceSliderCard

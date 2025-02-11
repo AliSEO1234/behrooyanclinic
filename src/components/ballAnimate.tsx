@@ -16,7 +16,7 @@ const Ball = ({ size}: { size: number }) => {
       });
     };
     moveBall()
-    const interval = setInterval(moveBall, 15000);
+    const interval = setInterval(moveBall, 17000);
 
     return () => clearInterval(interval);
   },[size]);
@@ -26,10 +26,15 @@ const Ball = ({ size}: { size: number }) => {
       initial={{ x: 0, y: 0 }}
       animate={position}
       transition={{
-        duration: 15 ,
+        duration: 17 ,
         ease: "easeInOut",
       }}
-      className={`absolute rounded-full bg-gradient-to-b from-[#74B8B9] to-[#87C0C2] w-[${size}px] h-[${size}px] z-[1]`}
+      style={{
+        width : size,
+        height : size,
+        background: `radial-gradient(circle at 30% 30%, #ffffff 3%, #74B8B9 60%, #358588 90%)`
+      }}
+      className={`absolute rounded-full bg-gradient-to-b from-[#74B8B9] to-[#87C0C2] z-[1]`}
     ></motion.div>
   );
 };

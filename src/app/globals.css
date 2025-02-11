@@ -12,16 +12,16 @@ body {
 }
 
 @layer components {
-  /* consultation form */
-  .consul-form-input{
-    @apply outline-none w-full border-[1px] border-[#9996A0] p-3 rounded-[40px] font-normal
+  /* cosultation form */
+  .consul-form-input {
+    @apply outline-none w-full border-[1px] border-[#9996A0] p-3 rounded-[40px] font-normal;
   }
   /* animatte syringe */
   @keyframes syringMove {
-    0%{
+    0% {
       left: 0;
     }
-    100%{
+    100% {
       right: 0;
     }
   }

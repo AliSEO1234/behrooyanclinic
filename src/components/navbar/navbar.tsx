@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import ChangeLanguage from "../change-language";
 import { FiSearch } from "react-icons/fi";
-import DropDownCustom from "../dropdownCustom";
 import { HiMenuAlt2 } from "react-icons/hi";
 import ring from "@/assets/images/ringnavbar.svg";
 import ImgFetcher from "../imgFetcher";
@@ -42,7 +41,7 @@ const Navbar = () => {
           <div>
             <Link href="/">Hospital&Clinics</Link>
           </div>
-          <div>
+          {/* <div>
             <DropDownCustom
               trigStyle="flex-cen gap-x-2 data-[state=open]:border-b data-[state=open]:border-[#25A6A9] data-[state=open]:text-[#25A6A9] anm"
               trigText="Exclusive Offers"
@@ -60,8 +59,8 @@ const Navbar = () => {
                 </div>
               </div>
             </DropDownCustom>
-            {/* <Link href="/">Exclusive Offers</Link> */}
-          </div>
+            {/* <Link href="/">Exclusive Offers</Link>
+          </div> */}
           <div>
             <Link href="/">Patient Services</Link>
           </div>

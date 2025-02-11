@@ -24,11 +24,11 @@ const ChangeVideo = ({ videoList }: videoChangeType) => {
             key={video.id}
             className={`${
               activeVideoTreat?.videoKey === video.videoKey
-                ? "h-[160px] s1512:h-[240px]"
-                : "h-[130px] s1512:h-[200px]"
-            } w-[25%] outline-none rounded-[40px] overflow-hidden bg-cover anm relative`}
+                ? "h-[152px] s1280:h-[188px] s1512:h-[236px]"
+                : "h-[128px] s1280:h-[158px] s1512:h-[198px]"
+            } w-[108px] s1280:w-[112px] s1512:w-[141px] s1600:w-[153px] s1728:w-[167px] outline-none rounded-[20px] s1280:rounded-[40px] overflow-hidden bg-cover anm relative`}
           >
-            <ImgFetcher src={video.src} />
+            <ImgFetcher className="object-cover" src={video.src} />
             {activeVideoTreat?.videoKey !== video.videoKey && <BlurVideo />}
           </button>
         );

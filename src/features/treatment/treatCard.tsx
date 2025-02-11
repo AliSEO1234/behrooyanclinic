@@ -1,6 +1,6 @@
 "use client"
 import { TreatCardType } from "@/types/tratment/treatCardType";
-import clipTreat from "@/assets/images/treatment/treatCardClip.png";
+import clipTreat from "@/assets/images/treatment/treatCardClip.svg";
 import ImgFetcher from "@/components/imgFetcher";
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
@@ -34,7 +34,7 @@ const TreatCard = ({ className, desc, img, title }: TreatCardType) => {
         <ImgFetcher src={clipTreat} />
       </div>
       {/* arrow icon */}
-      <div className="w-[86px] h-[86px] s1512:w-[86px] s1512:h-[86px] rounded-full shadow-[0px_4px_4px_0px_#00000025] flex-cen text-[#CECFCF] absolute top-1 left-3">
+      <div className="w-[86px] h-[86px] s1512:w-[86px] s1512:h-[86px] rounded-full shadow-[0px_4px_4px_0px_#00000025] flex-cen bg-white text-[#CECFCF] absolute top-1 left-3">
         <BsArrowDownRight className="size-9 s1280:size-9" />
       </div>
     </div>

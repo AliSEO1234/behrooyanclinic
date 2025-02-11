@@ -24,11 +24,9 @@ const FeedBackLayout = ({align} :FeedbackLayoutType) => {
         }
       }
     };
-
     if (isMouseUp) {
       smoothScroll();
     }
-
     return () => {
       if (animationFrameId.current) {
         cancelAnimationFrame(animationFrameId.current);

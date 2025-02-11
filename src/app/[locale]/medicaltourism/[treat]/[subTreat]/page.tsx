@@ -24,7 +24,7 @@ import syringe from "@/assets/images/subTreatment/syringe.svg";
 import ConsultationForm from "@/components/forms/consultationForm/consultationForm";
 const Page = () => {
   return (
-    <div>
+    <div className="bg-[#FCFCFC]">
       <div className="grid grid-cols-12 gap-y-3 s1280:gap-y-0 mt-14 s1280:mt-36 viewport-p rounded-b-[40px] shadow-[0px_19px_29px_-25px_#00000011]">
         <div className="col-span-12 s1280:col-span-7 s1728:col-span-6">
           <div>
