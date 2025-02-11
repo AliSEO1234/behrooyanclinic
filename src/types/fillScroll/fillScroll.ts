@@ -4,6 +4,6 @@ export type BorderStyleLayoutType = {
   className?: string;
   children: ReactNode;
   title: string;
-  order: "first" | "second" | "third" | "fourth";
+  order: "first" | "second" | "third" | "fourth" | "five";
   classLabel? : string
 };

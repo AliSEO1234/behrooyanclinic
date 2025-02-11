@@ -12,6 +12,17 @@ body {
 }
 
 @layer components {
+  .border-text {
+    -webkit-text-stroke: 2px #2882856B;
+    color: white;
+  }
+  .personel-hover {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full anm rounded-none;
+  }
+  /* about us */
+  .bg-about-cover {
+    @apply bg-[url('./../assets/images/about/personelsCover.jpeg')] bg-no-repeat bg-contain s1280:bg-cover;
+  }
   /* cosultation form */
   .consul-form-input {
     @apply outline-none w-full border-[1px] border-[#9996A0] p-3 rounded-[40px] font-normal;
@@ -256,6 +267,7 @@ body {
 }
 /* fillscroll border */
 .border__style--layout-first,
+.border__style--layout-five,
 .border__style--layout-third {
   position: absolute;
   right: 0;

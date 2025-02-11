@@ -21,6 +21,9 @@ const BorderLayoutAbout = ({
     const path4 = document.querySelector<SVGPathElement>(
       ".border__style--layout-fourth path"
     );
+    const path5 = document.querySelector<SVGPathElement>(
+      ".border__style--layout-five path"
+    );
     const svg = document.querySelector<SVGElement>(
       ".border__style--layout-first"
     );
@@ -33,11 +36,15 @@ const BorderLayoutAbout = ({
     const svg4 = document.querySelector<SVGElement>(
       ".border__style--layout-fourth"
     );
+    const svg5 = document.querySelector<SVGElement>(
+      ".border__style--layout-five"
+    );
 
     const pathLength = path?.getTotalLength() ?? 0;
     const pathLength2 = path2?.getTotalLength() ?? 0;
     const pathLength3 = path3?.getTotalLength() ?? 0;
     const pathLength4 = path4?.getTotalLength() ?? 0;
+    const pathLength5 = path5?.getTotalLength() ?? 0;
 
     const drawingSpeed1 = 4.7;
 
@@ -79,6 +86,15 @@ const BorderLayoutAbout = ({
       if (svg4) {
         svg4.style.strokeDasharray = `${pathLength4}`;
         svg4.style.strokeDashoffset = `${dashoffset4}`;
+      }
+
+      // five one
+      const drawingSpeed5 = -7.5;
+      const drawPercentage5 = scrollPercentage * drawingSpeed5;
+      const dashoffset5 = pathLength5 * (1 - drawPercentage5);
+      if (svg5) {
+        svg5.style.strokeDasharray = `${pathLength5}`;
+        svg5.style.strokeDashoffset = `${dashoffset5}`;
       }
     };
 
@@ -1481,6 +1497,1021 @@ const BorderLayoutAbout = ({
         </>
       );
     }
+    // about
+
+    if (order === "five") {
+      return (
+        <>
+          {viewportWidth >= 1920 && (
+            <svg
+              width="617"
+              height="765"
+              viewBox="0 0 617 765"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="44.998" cy="5.71875" r="5" fill="#2E5A90" />
+              <path
+                d="M45.4019 5.71875H585.843C602.411 5.71875 615.843 19.1502 615.843 35.7188V733.797C615.843 750.366 602.411 763.797 585.843 763.797H0.708984"
+                stroke="#2E5A90"
+              />
+            </svg>
+          )}
+          {viewportWidth >= 1728 && viewportWidth < 1920 && (
+            <svg
+              width="531"
+              height="764"
+              viewBox="0 0 531 764"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="44.8262" cy="5.21875" r="5" fill="#2E5A90" />
+              <path
+                d="M45.6235 5.21875H499.774C516.343 5.21875 529.774 18.6502 529.774 35.2188V733.297C529.774 749.866 516.343 763.297 499.774 763.297H0.536998"
+                stroke="#2E5A90"
+              />
+            </svg>
+          )}
+          {/* {viewportWidth >= 1600 && viewportWidth < 1728 && (
+            <svg
+              width="856"
+              height="881"
+              viewBox="0 0 856 881"
+              fill="none"
+              className="border__style--layout-fourth z-[2]"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M855.739 874.347L845.739 868.573V880.12L855.739 874.347ZM562.146 20.127H21.5781V22.127H562.146V20.127ZM0.578125 41.127V854.347H2.57812V41.127H0.578125ZM21.5781 875.347H846.739V873.347H21.5781V875.347ZM0.578125 854.347C0.578125 865.945 9.98014 875.347 21.5781 875.347V873.347C11.0847 873.347 2.57812 864.84 2.57812 854.347H0.578125ZM21.5781 20.127C9.98012 20.127 0.578125 29.529 0.578125 41.127H2.57812C2.57812 30.6335 11.0847 22.127 21.5781 22.127V20.127Z"
+                fill="#0CA5A5"
+              />
+              <g filter="url(#filter0_d_1021_16467)">
+                <circle
+                  cx="564.154"
+                  cy="21.127"
+                  r="16.0371"
+                  fill="#B7EACC"
+                  fillOpacity="0.4"
+                  shapeRendering="crispEdges"
+                />
+              </g>
+              <circle
+                cx="564.157"
+                cy="21.1269"
+                r="6.92764"
+                fill="url(#paint0_linear_1021_16467)"
+              />
+              <defs>
+                <filter
+                  id="filter0_d_1021_16467"
+                  x="539.117"
+                  y="0.0898438"
+                  width="50.0742"
+                  height="50.0742"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feMorphology
+                    radius="1"
+                    operator="dilate"
+                    in="SourceAlpha"
+                    result="effect1_dropShadow_1021_16467"
+                  />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="4" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_1021_16467"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_1021_16467"
+                    result="shape"
+                  />
+                </filter>
+                <linearGradient
+                  id="paint0_linear_1021_16467"
+                  x1="568.25"
+                  y1="16.1791"
+                  x2="559.069"
+                  y2="28.0545"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#82DFB5" />
+                  <stop offset="0.464" stopColor="#00979A" />
+                </linearGradient>
+              </defs>
+            </svg>
+          )} */}
+          {viewportWidth >= 1512 && viewportWidth < 1728 && (
+            <svg
+              width="517"
+              height="764"
+              viewBox="0 0 517 764"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="44.5479" cy="5.22266" r="5" fill="#2E5A90" />
+              <path
+                d="M44.2129 5.22266H486.205C502.774 5.22266 516.205 18.6541 516.205 35.2227V733.301C516.205 749.87 502.774 763.301 486.205 763.301H0.25868"
+                stroke="#2E5A90"
+              />
+            </svg>
+          )}
+          {viewportWidth >= 1280 && viewportWidth < 1512 && (
+            <svg
+              width="395"
+              height="661"
+              viewBox="0 0 395 661"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="53.8662" cy="5.23047" r="5" fill="#2E5A90" />
+              <path
+                d="M52.5552 5.23047H363.662C380.23 5.23047 393.662 18.6619 393.662 35.2305V629.605C393.662 646.173 380.23 659.604 363.662 659.604H0.829102"
+                stroke="#2E5A90"
+              />
+            </svg>
+          )}
+        </>
+      );
+    }
+    // if (order === "six") {
+    //   return (
+    //     <>
+    //       {viewportWidth >= 1920 && (
+    //         <svg
+    //           width="1070"
+    //           height="881"
+    //           viewBox="0 0 1070 881"
+    //           fill="none"
+    //           className="border__style--layout-fourth z-[2]"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             d="M1069.17 874.71L1059.17 868.936V880.483L1069.17 874.71ZM21.0312 21.4902V22.4902V21.4902ZM663.449 20.4902H21.0312V22.4902H663.449V20.4902ZM0.03125 41.4902V854.71H2.03125V41.4902H0.03125ZM21.0312 875.71H1060.17V873.71H21.0312V875.71ZM0.03125 854.71C0.03125 866.308 9.43327 875.71 21.0312 875.71V873.71C10.5378 873.71 2.03125 865.203 2.03125 854.71H0.03125ZM21.0312 20.4902C9.43326 20.4902 0.03125 29.8923 0.03125 41.4902H2.03125C2.03125 30.9968 10.5378 22.4902 21.0312 22.4902V20.4902Z"
+    //             fill="#0CA5A5"
+    //           />
+    //           <g filter="url(#filter0_d_1021_9942)">
+    //             <circle
+    //               cx="663.451"
+    //               cy="21.4902"
+    //               r="16.0371"
+    //               fill="#B7EACC"
+    //               fillOpacity="0.4"
+    //               shapeRendering="crispEdges"
+    //             />
+    //           </g>
+    //           <circle
+    //             cx="663.453"
+    //             cy="21.4901"
+    //             r="6.92764"
+    //             fill="url(#paint0_linear_1021_9942)"
+    //           />
+    //           <defs>
+    //             <filter
+    //               id="filter0_d_1021_9942"
+    //               x="638.414"
+    //               y="0.453125"
+    //               width="50.0742"
+    //               height="50.0742"
+    //               filterUnits="userSpaceOnUse"
+    //               colorInterpolationFilters="sRGB"
+    //             >
+    //               <feFlood floodOpacity="0" result="BackgroundImageFix" />
+    //               <feColorMatrix
+    //                 in="SourceAlpha"
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+    //                 result="hardAlpha"
+    //               />
+    //               <feMorphology
+    //                 radius="1"
+    //                 operator="dilate"
+    //                 in="SourceAlpha"
+    //                 result="effect1_dropShadow_1021_9942"
+    //               />
+    //               <feOffset dy="4" />
+    //               <feGaussianBlur stdDeviation="4" />
+    //               <feComposite in2="hardAlpha" operator="out" />
+    //               <feColorMatrix
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in2="BackgroundImageFix"
+    //                 result="effect1_dropShadow_1021_9942"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in="SourceGraphic"
+    //                 in2="effect1_dropShadow_1021_9942"
+    //                 result="shape"
+    //               />
+    //             </filter>
+    //             <linearGradient
+    //               id="paint0_linear_1021_9942"
+    //               x1="667.546"
+    //               y1="16.5424"
+    //               x2="658.365"
+    //               y2="28.4178"
+    //               gradientUnits="userSpaceOnUse"
+    //             >
+    //               <stop stopColor="#82DFB5" />
+    //               <stop offset="0.464" stopColor="#00979A" />
+    //             </linearGradient>
+    //           </defs>
+    //         </svg>
+    //       )}
+    //       {viewportWidth >= 1728 && viewportWidth < 1920 && (
+    //         <svg
+    //           width="949"
+    //           height="881"
+    //           viewBox="0 0 949 881"
+    //           fill="none"
+    //           className="border__style--layout-fourth z-[2]"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             d="M948.83 874.686L938.83 868.912V880.459L948.83 874.686ZM598.068 20.4658H21.8007V22.4658H598.068V20.4658ZM0.800781 41.4658V854.685H2.80078V41.4658H0.800781ZM21.8008 875.686H939.83V873.686H21.8008V875.686ZM0.800781 854.685C0.800781 866.284 10.2028 875.686 21.8008 875.686V873.686C11.3074 873.686 2.80078 865.179 2.80078 854.685H0.800781ZM21.8007 20.4658C10.2028 20.4658 0.800781 29.8678 0.800781 41.4658H2.80078C2.80078 30.9724 11.3073 22.4658 21.8007 22.4658V20.4658Z"
+    //             fill="#0CA5A5"
+    //           />
+    //           <g filter="url(#filter0_d_1021_14842)">
+    //             <circle
+    //               cx="599.889"
+    //               cy="21.4658"
+    //               r="16.0371"
+    //               fill="#B7EACC"
+    //               fillOpacity="0.4"
+    //               shapeRendering="crispEdges"
+    //             />
+    //           </g>
+    //           <circle
+    //             cx="599.892"
+    //             cy="21.4657"
+    //             r="6.92764"
+    //             fill="url(#paint0_linear_1021_14842)"
+    //           />
+    //           <defs>
+    //             <filter
+    //               id="filter0_d_1021_14842"
+    //               x="574.852"
+    //               y="0.428711"
+    //               width="50.0742"
+    //               height="50.0742"
+    //               filterUnits="userSpaceOnUse"
+    //               colorInterpolationFilters="sRGB"
+    //             >
+    //               <feFlood floodOpacity="0" result="BackgroundImageFix" />
+    //               <feColorMatrix
+    //                 in="SourceAlpha"
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+    //                 result="hardAlpha"
+    //               />
+    //               <feMorphology
+    //                 radius="1"
+    //                 operator="dilate"
+    //                 in="SourceAlpha"
+    //                 result="effect1_dropShadow_1021_14842"
+    //               />
+    //               <feOffset dy="4" />
+    //               <feGaussianBlur stdDeviation="4" />
+    //               <feComposite in2="hardAlpha" operator="out" />
+    //               <feColorMatrix
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in2="BackgroundImageFix"
+    //                 result="effect1_dropShadow_1021_14842"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in="SourceGraphic"
+    //                 in2="effect1_dropShadow_1021_14842"
+    //                 result="shape"
+    //               />
+    //             </filter>
+    //             <linearGradient
+    //               id="paint0_linear_1021_14842"
+    //               x1="603.986"
+    //               y1="16.518"
+    //               x2="594.804"
+    //               y2="28.3934"
+    //               gradientUnits="userSpaceOnUse"
+    //             >
+    //               <stop stopColor="#82DFB5" />
+    //               <stop offset="0.464" stopColor="#00979A" />
+    //             </linearGradient>
+    //           </defs>
+    //         </svg>
+    //       )}
+    //       {viewportWidth >= 1600 && viewportWidth < 1728 && (
+    //         <svg
+    //           width="856"
+    //           height="881"
+    //           viewBox="0 0 856 881"
+    //           fill="none"
+    //           className="border__style--layout-fourth z-[2]"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             d="M855.739 874.347L845.739 868.573V880.12L855.739 874.347ZM562.146 20.127H21.5781V22.127H562.146V20.127ZM0.578125 41.127V854.347H2.57812V41.127H0.578125ZM21.5781 875.347H846.739V873.347H21.5781V875.347ZM0.578125 854.347C0.578125 865.945 9.98014 875.347 21.5781 875.347V873.347C11.0847 873.347 2.57812 864.84 2.57812 854.347H0.578125ZM21.5781 20.127C9.98012 20.127 0.578125 29.529 0.578125 41.127H2.57812C2.57812 30.6335 11.0847 22.127 21.5781 22.127V20.127Z"
+    //             fill="#0CA5A5"
+    //           />
+    //           <g filter="url(#filter0_d_1021_16467)">
+    //             <circle
+    //               cx="564.154"
+    //               cy="21.127"
+    //               r="16.0371"
+    //               fill="#B7EACC"
+    //               fillOpacity="0.4"
+    //               shapeRendering="crispEdges"
+    //             />
+    //           </g>
+    //           <circle
+    //             cx="564.157"
+    //             cy="21.1269"
+    //             r="6.92764"
+    //             fill="url(#paint0_linear_1021_16467)"
+    //           />
+    //           <defs>
+    //             <filter
+    //               id="filter0_d_1021_16467"
+    //               x="539.117"
+    //               y="0.0898438"
+    //               width="50.0742"
+    //               height="50.0742"
+    //               filterUnits="userSpaceOnUse"
+    //               colorInterpolationFilters="sRGB"
+    //             >
+    //               <feFlood floodOpacity="0" result="BackgroundImageFix" />
+    //               <feColorMatrix
+    //                 in="SourceAlpha"
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+    //                 result="hardAlpha"
+    //               />
+    //               <feMorphology
+    //                 radius="1"
+    //                 operator="dilate"
+    //                 in="SourceAlpha"
+    //                 result="effect1_dropShadow_1021_16467"
+    //               />
+    //               <feOffset dy="4" />
+    //               <feGaussianBlur stdDeviation="4" />
+    //               <feComposite in2="hardAlpha" operator="out" />
+    //               <feColorMatrix
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in2="BackgroundImageFix"
+    //                 result="effect1_dropShadow_1021_16467"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in="SourceGraphic"
+    //                 in2="effect1_dropShadow_1021_16467"
+    //                 result="shape"
+    //               />
+    //             </filter>
+    //             <linearGradient
+    //               id="paint0_linear_1021_16467"
+    //               x1="568.25"
+    //               y1="16.1791"
+    //               x2="559.069"
+    //               y2="28.0545"
+    //               gradientUnits="userSpaceOnUse"
+    //             >
+    //               <stop stopColor="#82DFB5" />
+    //               <stop offset="0.464" stopColor="#00979A" />
+    //             </linearGradient>
+    //           </defs>
+    //         </svg>
+    //       )}
+    //       {viewportWidth >= 1512 && viewportWidth < 1600 && (
+    //         <svg
+    //           width="823"
+    //           height="881"
+    //           viewBox="0 0 823 881"
+    //           className="border__style--layout-fourth z-[2]"
+    //           fill="none"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             d="M822.251 874.385L812.251 868.611V880.158L822.251 874.385ZM560.133 20.165H21.0196V22.165H560.133V20.165ZM0.0195312 41.165V854.385H2.01953V41.165H0.0195312ZM21.0195 875.385H813.251V873.385H21.0195V875.385ZM0.0195312 854.385C0.0195312 865.983 9.42155 875.385 21.0195 875.385V873.385C10.5261 873.385 2.01953 864.878 2.01953 854.385H0.0195312ZM21.0196 20.165C9.42158 20.165 0.0195312 29.5671 0.0195312 41.165H2.01953C2.01953 30.6716 10.5261 22.165 21.0196 22.165V20.165Z"
+    //             fill="#0CA5A5"
+    //           />
+    //           <g filter="url(#filter0_d_1021_21361)">
+    //             <circle
+    //               cx="562.057"
+    //               cy="21.165"
+    //               r="16.0371"
+    //               fill="#B7EACC"
+    //               fillOpacity="0.4"
+    //               shapeRendering="crispEdges"
+    //             />
+    //           </g>
+    //           <circle
+    //             cx="562.059"
+    //             cy="21.1649"
+    //             r="6.92764"
+    //             fill="url(#paint0_linear_1021_21361)"
+    //           />
+    //           <defs>
+    //             <filter
+    //               id="filter0_d_1021_21361"
+    //               x="537.02"
+    //               y="0.12793"
+    //               width="50.0742"
+    //               height="50.0742"
+    //               filterUnits="userSpaceOnUse"
+    //               colorInterpolationFilters="sRGB"
+    //             >
+    //               <feFlood floodOpacity="0" result="BackgroundImageFix" />
+    //               <feColorMatrix
+    //                 in="SourceAlpha"
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+    //                 result="hardAlpha"
+    //               />
+    //               <feMorphology
+    //                 radius="1"
+    //                 operator="dilate"
+    //                 in="SourceAlpha"
+    //                 result="effect1_dropShadow_1021_21361"
+    //               />
+    //               <feOffset dy="4" />
+    //               <feGaussianBlur stdDeviation="4" />
+    //               <feComposite in2="hardAlpha" operator="out" />
+    //               <feColorMatrix
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in2="BackgroundImageFix"
+    //                 result="effect1_dropShadow_1021_21361"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in="SourceGraphic"
+    //                 in2="effect1_dropShadow_1021_21361"
+    //                 result="shape"
+    //               />
+    //             </filter>
+    //             <linearGradient
+    //               id="paint0_linear_1021_21361"
+    //               x1="566.152"
+    //               y1="16.2172"
+    //               x2="556.971"
+    //               y2="28.0926"
+    //               gradientUnits="userSpaceOnUse"
+    //             >
+    //               <stop stopColor="#82DFB5" />
+    //               <stop offset="0.464" stopColor="#00979A" />
+    //             </linearGradient>
+    //           </defs>
+    //         </svg>
+    //       )}
+    //       {viewportWidth >= 1280 && viewportWidth < 1512 && (
+    //         <svg
+    //           width="633"
+    //           height="762"
+    //           viewBox="0 0 633 762"
+    //           fill="none"
+    //           className="border__style--layout-fourth z-[2]"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             d="M632.465 755.494L622.465 749.721V761.268L632.465 755.494ZM424.787 20.9453H21.586V22.9453H424.787V20.9453ZM0.585938 41.9453V735.494H2.58594V41.9453H0.585938ZM21.5859 756.494H623.465V754.494H21.5859V756.494ZM0.585938 735.494C0.585938 747.092 9.98796 756.494 21.5859 756.494V754.494C11.0925 754.494 2.58594 745.988 2.58594 735.494H0.585938ZM21.586 20.9453C9.98797 20.9453 0.585938 30.3473 0.585938 41.9453H2.58594C2.58594 31.4519 11.0925 22.9453 21.586 22.9453V20.9453Z"
+    //             fill="#0CA5A5"
+    //           />
+    //           <g filter="url(#filter0_d_1166_15228)">
+    //             <circle
+    //               cx="418.002"
+    //               cy="21.9453"
+    //               r="16.0371"
+    //               fill="#B7EACC"
+    //               fillOpacity="0.4"
+    //               shapeRendering="crispEdges"
+    //             />
+    //           </g>
+    //           <circle
+    //             cx="418.005"
+    //             cy="21.9452"
+    //             r="6.92764"
+    //             fill="url(#paint0_linear_1166_15228)"
+    //           />
+    //           <defs>
+    //             <filter
+    //               id="filter0_d_1166_15228"
+    //               x="392.965"
+    //               y="0.908203"
+    //               width="50.0742"
+    //               height="50.0742"
+    //               filterUnits="userSpaceOnUse"
+    //               colorInterpolationFilters="sRGB"
+    //             >
+    //               <feFlood floodOpacity="0" result="BackgroundImageFix" />
+    //               <feColorMatrix
+    //                 in="SourceAlpha"
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+    //                 result="hardAlpha"
+    //               />
+    //               <feMorphology
+    //                 radius="1"
+    //                 operator="dilate"
+    //                 in="SourceAlpha"
+    //                 result="effect1_dropShadow_1166_15228"
+    //               />
+    //               <feOffset dy="4" />
+    //               <feGaussianBlur stdDeviation="4" />
+    //               <feComposite in2="hardAlpha" operator="out" />
+    //               <feColorMatrix
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in2="BackgroundImageFix"
+    //                 result="effect1_dropShadow_1166_15228"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in="SourceGraphic"
+    //                 in2="effect1_dropShadow_1166_15228"
+    //                 result="shape"
+    //               />
+    //             </filter>
+    //             <linearGradient
+    //               id="paint0_linear_1166_15228"
+    //               x1="422.098"
+    //               y1="16.9975"
+    //               x2="412.917"
+    //               y2="28.8729"
+    //               gradientUnits="userSpaceOnUse"
+    //             >
+    //               <stop stopColor="#82DFB5" />
+    //               <stop offset="0.464" stopColor="#00979A" />
+    //             </linearGradient>
+    //           </defs>
+    //         </svg>
+    //       )}
+    //     </>
+    //   );
+    // }
+    // if (order === "seven") {
+    //   return (
+    //     <>
+    //       {viewportWidth >= 1920 && (
+    //         <svg
+    //           width="1070"
+    //           height="881"
+    //           viewBox="0 0 1070 881"
+    //           fill="none"
+    //           className="border__style--layout-fourth z-[2]"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             d="M1069.17 874.71L1059.17 868.936V880.483L1069.17 874.71ZM21.0312 21.4902V22.4902V21.4902ZM663.449 20.4902H21.0312V22.4902H663.449V20.4902ZM0.03125 41.4902V854.71H2.03125V41.4902H0.03125ZM21.0312 875.71H1060.17V873.71H21.0312V875.71ZM0.03125 854.71C0.03125 866.308 9.43327 875.71 21.0312 875.71V873.71C10.5378 873.71 2.03125 865.203 2.03125 854.71H0.03125ZM21.0312 20.4902C9.43326 20.4902 0.03125 29.8923 0.03125 41.4902H2.03125C2.03125 30.9968 10.5378 22.4902 21.0312 22.4902V20.4902Z"
+    //             fill="#0CA5A5"
+    //           />
+    //           <g filter="url(#filter0_d_1021_9942)">
+    //             <circle
+    //               cx="663.451"
+    //               cy="21.4902"
+    //               r="16.0371"
+    //               fill="#B7EACC"
+    //               fillOpacity="0.4"
+    //               shapeRendering="crispEdges"
+    //             />
+    //           </g>
+    //           <circle
+    //             cx="663.453"
+    //             cy="21.4901"
+    //             r="6.92764"
+    //             fill="url(#paint0_linear_1021_9942)"
+    //           />
+    //           <defs>
+    //             <filter
+    //               id="filter0_d_1021_9942"
+    //               x="638.414"
+    //               y="0.453125"
+    //               width="50.0742"
+    //               height="50.0742"
+    //               filterUnits="userSpaceOnUse"
+    //               colorInterpolationFilters="sRGB"
+    //             >
+    //               <feFlood floodOpacity="0" result="BackgroundImageFix" />
+    //               <feColorMatrix
+    //                 in="SourceAlpha"
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+    //                 result="hardAlpha"
+    //               />
+    //               <feMorphology
+    //                 radius="1"
+    //                 operator="dilate"
+    //                 in="SourceAlpha"
+    //                 result="effect1_dropShadow_1021_9942"
+    //               />
+    //               <feOffset dy="4" />
+    //               <feGaussianBlur stdDeviation="4" />
+    //               <feComposite in2="hardAlpha" operator="out" />
+    //               <feColorMatrix
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in2="BackgroundImageFix"
+    //                 result="effect1_dropShadow_1021_9942"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in="SourceGraphic"
+    //                 in2="effect1_dropShadow_1021_9942"
+    //                 result="shape"
+    //               />
+    //             </filter>
+    //             <linearGradient
+    //               id="paint0_linear_1021_9942"
+    //               x1="667.546"
+    //               y1="16.5424"
+    //               x2="658.365"
+    //               y2="28.4178"
+    //               gradientUnits="userSpaceOnUse"
+    //             >
+    //               <stop stopColor="#82DFB5" />
+    //               <stop offset="0.464" stopColor="#00979A" />
+    //             </linearGradient>
+    //           </defs>
+    //         </svg>
+    //       )}
+    //       {viewportWidth >= 1728 && viewportWidth < 1920 && (
+    //         <svg
+    //           width="949"
+    //           height="881"
+    //           viewBox="0 0 949 881"
+    //           fill="none"
+    //           className="border__style--layout-fourth z-[2]"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             d="M948.83 874.686L938.83 868.912V880.459L948.83 874.686ZM598.068 20.4658H21.8007V22.4658H598.068V20.4658ZM0.800781 41.4658V854.685H2.80078V41.4658H0.800781ZM21.8008 875.686H939.83V873.686H21.8008V875.686ZM0.800781 854.685C0.800781 866.284 10.2028 875.686 21.8008 875.686V873.686C11.3074 873.686 2.80078 865.179 2.80078 854.685H0.800781ZM21.8007 20.4658C10.2028 20.4658 0.800781 29.8678 0.800781 41.4658H2.80078C2.80078 30.9724 11.3073 22.4658 21.8007 22.4658V20.4658Z"
+    //             fill="#0CA5A5"
+    //           />
+    //           <g filter="url(#filter0_d_1021_14842)">
+    //             <circle
+    //               cx="599.889"
+    //               cy="21.4658"
+    //               r="16.0371"
+    //               fill="#B7EACC"
+    //               fillOpacity="0.4"
+    //               shapeRendering="crispEdges"
+    //             />
+    //           </g>
+    //           <circle
+    //             cx="599.892"
+    //             cy="21.4657"
+    //             r="6.92764"
+    //             fill="url(#paint0_linear_1021_14842)"
+    //           />
+    //           <defs>
+    //             <filter
+    //               id="filter0_d_1021_14842"
+    //               x="574.852"
+    //               y="0.428711"
+    //               width="50.0742"
+    //               height="50.0742"
+    //               filterUnits="userSpaceOnUse"
+    //               colorInterpolationFilters="sRGB"
+    //             >
+    //               <feFlood floodOpacity="0" result="BackgroundImageFix" />
+    //               <feColorMatrix
+    //                 in="SourceAlpha"
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+    //                 result="hardAlpha"
+    //               />
+    //               <feMorphology
+    //                 radius="1"
+    //                 operator="dilate"
+    //                 in="SourceAlpha"
+    //                 result="effect1_dropShadow_1021_14842"
+    //               />
+    //               <feOffset dy="4" />
+    //               <feGaussianBlur stdDeviation="4" />
+    //               <feComposite in2="hardAlpha" operator="out" />
+    //               <feColorMatrix
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in2="BackgroundImageFix"
+    //                 result="effect1_dropShadow_1021_14842"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in="SourceGraphic"
+    //                 in2="effect1_dropShadow_1021_14842"
+    //                 result="shape"
+    //               />
+    //             </filter>
+    //             <linearGradient
+    //               id="paint0_linear_1021_14842"
+    //               x1="603.986"
+    //               y1="16.518"
+    //               x2="594.804"
+    //               y2="28.3934"
+    //               gradientUnits="userSpaceOnUse"
+    //             >
+    //               <stop stopColor="#82DFB5" />
+    //               <stop offset="0.464" stopColor="#00979A" />
+    //             </linearGradient>
+    //           </defs>
+    //         </svg>
+    //       )}
+    //       {viewportWidth >= 1600 && viewportWidth < 1728 && (
+    //         <svg
+    //           width="856"
+    //           height="881"
+    //           viewBox="0 0 856 881"
+    //           fill="none"
+    //           className="border__style--layout-fourth z-[2]"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             d="M855.739 874.347L845.739 868.573V880.12L855.739 874.347ZM562.146 20.127H21.5781V22.127H562.146V20.127ZM0.578125 41.127V854.347H2.57812V41.127H0.578125ZM21.5781 875.347H846.739V873.347H21.5781V875.347ZM0.578125 854.347C0.578125 865.945 9.98014 875.347 21.5781 875.347V873.347C11.0847 873.347 2.57812 864.84 2.57812 854.347H0.578125ZM21.5781 20.127C9.98012 20.127 0.578125 29.529 0.578125 41.127H2.57812C2.57812 30.6335 11.0847 22.127 21.5781 22.127V20.127Z"
+    //             fill="#0CA5A5"
+    //           />
+    //           <g filter="url(#filter0_d_1021_16467)">
+    //             <circle
+    //               cx="564.154"
+    //               cy="21.127"
+    //               r="16.0371"
+    //               fill="#B7EACC"
+    //               fillOpacity="0.4"
+    //               shapeRendering="crispEdges"
+    //             />
+    //           </g>
+    //           <circle
+    //             cx="564.157"
+    //             cy="21.1269"
+    //             r="6.92764"
+    //             fill="url(#paint0_linear_1021_16467)"
+    //           />
+    //           <defs>
+    //             <filter
+    //               id="filter0_d_1021_16467"
+    //               x="539.117"
+    //               y="0.0898438"
+    //               width="50.0742"
+    //               height="50.0742"
+    //               filterUnits="userSpaceOnUse"
+    //               colorInterpolationFilters="sRGB"
+    //             >
+    //               <feFlood floodOpacity="0" result="BackgroundImageFix" />
+    //               <feColorMatrix
+    //                 in="SourceAlpha"
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+    //                 result="hardAlpha"
+    //               />
+    //               <feMorphology
+    //                 radius="1"
+    //                 operator="dilate"
+    //                 in="SourceAlpha"
+    //                 result="effect1_dropShadow_1021_16467"
+    //               />
+    //               <feOffset dy="4" />
+    //               <feGaussianBlur stdDeviation="4" />
+    //               <feComposite in2="hardAlpha" operator="out" />
+    //               <feColorMatrix
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in2="BackgroundImageFix"
+    //                 result="effect1_dropShadow_1021_16467"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in="SourceGraphic"
+    //                 in2="effect1_dropShadow_1021_16467"
+    //                 result="shape"
+    //               />
+    //             </filter>
+    //             <linearGradient
+    //               id="paint0_linear_1021_16467"
+    //               x1="568.25"
+    //               y1="16.1791"
+    //               x2="559.069"
+    //               y2="28.0545"
+    //               gradientUnits="userSpaceOnUse"
+    //             >
+    //               <stop stopColor="#82DFB5" />
+    //               <stop offset="0.464" stopColor="#00979A" />
+    //             </linearGradient>
+    //           </defs>
+    //         </svg>
+    //       )}
+    //       {viewportWidth >= 1512 && viewportWidth < 1600 && (
+    //         <svg
+    //           width="823"
+    //           height="881"
+    //           viewBox="0 0 823 881"
+    //           className="border__style--layout-fourth z-[2]"
+    //           fill="none"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             d="M822.251 874.385L812.251 868.611V880.158L822.251 874.385ZM560.133 20.165H21.0196V22.165H560.133V20.165ZM0.0195312 41.165V854.385H2.01953V41.165H0.0195312ZM21.0195 875.385H813.251V873.385H21.0195V875.385ZM0.0195312 854.385C0.0195312 865.983 9.42155 875.385 21.0195 875.385V873.385C10.5261 873.385 2.01953 864.878 2.01953 854.385H0.0195312ZM21.0196 20.165C9.42158 20.165 0.0195312 29.5671 0.0195312 41.165H2.01953C2.01953 30.6716 10.5261 22.165 21.0196 22.165V20.165Z"
+    //             fill="#0CA5A5"
+    //           />
+    //           <g filter="url(#filter0_d_1021_21361)">
+    //             <circle
+    //               cx="562.057"
+    //               cy="21.165"
+    //               r="16.0371"
+    //               fill="#B7EACC"
+    //               fillOpacity="0.4"
+    //               shapeRendering="crispEdges"
+    //             />
+    //           </g>
+    //           <circle
+    //             cx="562.059"
+    //             cy="21.1649"
+    //             r="6.92764"
+    //             fill="url(#paint0_linear_1021_21361)"
+    //           />
+    //           <defs>
+    //             <filter
+    //               id="filter0_d_1021_21361"
+    //               x="537.02"
+    //               y="0.12793"
+    //               width="50.0742"
+    //               height="50.0742"
+    //               filterUnits="userSpaceOnUse"
+    //               colorInterpolationFilters="sRGB"
+    //             >
+    //               <feFlood floodOpacity="0" result="BackgroundImageFix" />
+    //               <feColorMatrix
+    //                 in="SourceAlpha"
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+    //                 result="hardAlpha"
+    //               />
+    //               <feMorphology
+    //                 radius="1"
+    //                 operator="dilate"
+    //                 in="SourceAlpha"
+    //                 result="effect1_dropShadow_1021_21361"
+    //               />
+    //               <feOffset dy="4" />
+    //               <feGaussianBlur stdDeviation="4" />
+    //               <feComposite in2="hardAlpha" operator="out" />
+    //               <feColorMatrix
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in2="BackgroundImageFix"
+    //                 result="effect1_dropShadow_1021_21361"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in="SourceGraphic"
+    //                 in2="effect1_dropShadow_1021_21361"
+    //                 result="shape"
+    //               />
+    //             </filter>
+    //             <linearGradient
+    //               id="paint0_linear_1021_21361"
+    //               x1="566.152"
+    //               y1="16.2172"
+    //               x2="556.971"
+    //               y2="28.0926"
+    //               gradientUnits="userSpaceOnUse"
+    //             >
+    //               <stop stopColor="#82DFB5" />
+    //               <stop offset="0.464" stopColor="#00979A" />
+    //             </linearGradient>
+    //           </defs>
+    //         </svg>
+    //       )}
+    //       {viewportWidth >= 1280 && viewportWidth < 1512 && (
+    //         <svg
+    //           width="633"
+    //           height="762"
+    //           viewBox="0 0 633 762"
+    //           fill="none"
+    //           className="border__style--layout-fourth z-[2]"
+    //           xmlns="http://www.w3.org/2000/svg"
+    //         >
+    //           <path
+    //             d="M632.465 755.494L622.465 749.721V761.268L632.465 755.494ZM424.787 20.9453H21.586V22.9453H424.787V20.9453ZM0.585938 41.9453V735.494H2.58594V41.9453H0.585938ZM21.5859 756.494H623.465V754.494H21.5859V756.494ZM0.585938 735.494C0.585938 747.092 9.98796 756.494 21.5859 756.494V754.494C11.0925 754.494 2.58594 745.988 2.58594 735.494H0.585938ZM21.586 20.9453C9.98797 20.9453 0.585938 30.3473 0.585938 41.9453H2.58594C2.58594 31.4519 11.0925 22.9453 21.586 22.9453V20.9453Z"
+    //             fill="#0CA5A5"
+    //           />
+    //           <g filter="url(#filter0_d_1166_15228)">
+    //             <circle
+    //               cx="418.002"
+    //               cy="21.9453"
+    //               r="16.0371"
+    //               fill="#B7EACC"
+    //               fillOpacity="0.4"
+    //               shapeRendering="crispEdges"
+    //             />
+    //           </g>
+    //           <circle
+    //             cx="418.005"
+    //             cy="21.9452"
+    //             r="6.92764"
+    //             fill="url(#paint0_linear_1166_15228)"
+    //           />
+    //           <defs>
+    //             <filter
+    //               id="filter0_d_1166_15228"
+    //               x="392.965"
+    //               y="0.908203"
+    //               width="50.0742"
+    //               height="50.0742"
+    //               filterUnits="userSpaceOnUse"
+    //               colorInterpolationFilters="sRGB"
+    //             >
+    //               <feFlood floodOpacity="0" result="BackgroundImageFix" />
+    //               <feColorMatrix
+    //                 in="SourceAlpha"
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+    //                 result="hardAlpha"
+    //               />
+    //               <feMorphology
+    //                 radius="1"
+    //                 operator="dilate"
+    //                 in="SourceAlpha"
+    //                 result="effect1_dropShadow_1166_15228"
+    //               />
+    //               <feOffset dy="4" />
+    //               <feGaussianBlur stdDeviation="4" />
+    //               <feComposite in2="hardAlpha" operator="out" />
+    //               <feColorMatrix
+    //                 type="matrix"
+    //                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in2="BackgroundImageFix"
+    //                 result="effect1_dropShadow_1166_15228"
+    //               />
+    //               <feBlend
+    //                 mode="normal"
+    //                 in="SourceGraphic"
+    //                 in2="effect1_dropShadow_1166_15228"
+    //                 result="shape"
+    //               />
+    //             </filter>
+    //             <linearGradient
+    //               id="paint0_linear_1166_15228"
+    //               x1="422.098"
+    //               y1="16.9975"
+    //               x2="412.917"
+    //               y2="28.8729"
+    //               gradientUnits="userSpaceOnUse"
+    //             >
+    //               <stop stopColor="#82DFB5" />
+    //               <stop offset="0.464" stopColor="#00979A" />
+    //             </linearGradient>
+    //           </defs>
+    //         </svg>
+    //       )}
+    //     </>
+    //   );
+    // }
   }
 
   return (
