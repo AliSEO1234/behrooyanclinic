@@ -20,6 +20,8 @@ import pile from "@/assets/images/subTreatment/pile.svg";
 import drag from "@/assets/images/subTreatment/drag.svg";
 import BFSwiper from "@/features/BF/BFSwiper";
 import ConsultationAdmin from "@/components/consultationAdmin";
+import syringe from "@/assets/images/subTreatment/syringe.svg";
+import ConsultationForm from "@/components/forms/consultationForm/consultationForm";
 const Page = () => {
   return (
     <div>
@@ -219,7 +221,7 @@ const Page = () => {
           </div>
         </div>
         {/* before && after */}
-        <div className="s1280:mb-20">
+        <div className="mb-[24px] s1280:mb-20">
           <div className="font-bold flex-left relative w-fit mb-5">
             <h2 className="s1280:text-[48px]">Before</h2>
             <div className="bg-gradient-to-r from-[#FCFCFC] via-[#3EBB9A] to-[#FCFCFC] s1280:w-[140px] w-[80px] h-[2px] s1280:h-[6px] -rotate-45 absolute top-[58%] left-[42%] s1280:top-[55%] s1280:left-[42%] -translate-x-1/2 -translate-y-1/2"></div>
@@ -248,32 +250,56 @@ const Page = () => {
         </div>
         {/* Free consultation */}
         <div>
-          <div className="flex-bet s1280:mb-5">
-            <hr className="s1280:w-[32%] h-0 border-[2px] border-dashed border-[#333333]" />
-            <h2 className="font-semibold s1280:text-[40px] flex items-start justify-center gap-x-4">
-              <span className="s1280:w-[38px] s1280:h-[48px] block">
+          <div className="flex-bet mb-6 s1280:mb-5">
+            <hr className="w-[16%] s1280:w-[32%] h-0 border-[2px] border-dashed border-[#333333]" />
+            <h2 className="font-semibold text-[20px] s1280:text-[40px] flex items-start justify-center gap-x-4">
+              <span className="w-[27px] h-[34px] s1280:w-[38px] s1280:h-[48px] block -mt-2 s1280:-mt-0">
                 <ImgFetcher src={consulPerson} />
               </span>
               <span>Free consultation</span>
             </h2>
-            <hr className="s1280:w-[32%] h-0 border-[2px] border-dashed border-[#333333]" />
+            <hr className="w-[16%] s1280:w-[32%] h-0 border-[2px] border-dashed border-[#333333]" />
           </div>
-          <div className="flex-cen">
-            <div className="s1280:w-[450px] s1280:h-[450px] border-[3px] border-[#33333380] rounded-full relative s1280:p-20">
+          <div className="flex flex-col items-center justify-start gap-y-5 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-between">
+            {/* admins */}
+            <div className="w-[328px] h-[328px] s390:w-[346px] s390:h-[346px] s412:w-[364px] s1280:w-[450px] s1280:h-[450px] s1512:w-[567px] s1512:h-[567px] s1600:w-[661px] s1600:h-[661px] border-[3px] border-[#33333380] rounded-full relative p-14 s1280:p-20">
               {/* admins */}
-              <ConsultationAdmin img={admin3} positionStyle="top-5 left-8" />
-              <ConsultationAdmin img={admin1} positionStyle="bottom-5 right-8" />
+              <ConsultationAdmin
+                img={admin3}
+                positionStyle="left-6 top-4 s1280:top-5 s1280:left-8"
+              />
+              <ConsultationAdmin
+                img={admin1}
+                positionStyle="bottom-4 right-6 s1280:bottom-5 s1280:right-8"
+              />
               {/* inside dashed border */}
-              <div className="w-full h-full border-[3px] border-dashed border-[#33333380] rounded-full relative s1280:p-16">
-              <ConsultationAdmin img={admin2} positionStyle="top-0 right-3" />
-              <ConsultationAdmin img={admin4} positionStyle="bottom-0 left-3" />
+              <div className="w-full h-full border-[3px] border-dashed border-[#33333380] rounded-full relative p-12 s1280:p-16">
+                <ConsultationAdmin img={admin2} positionStyle="top-0 right-3" />
+                <ConsultationAdmin
+                  img={admin4}
+                  positionStyle="bottom-0 left-3"
+                />
                 {/* inside doctor char */}
                 <div className="w-full h-full border-[3px] border-[#33333380] rounded-full p-4">
-                    <ImgFetcher src={personDocChar} />
+                  <ImgFetcher src={personDocChar} />
                 </div>
               </div>
             </div>
-            <div></div>
+            {/* form */}
+            <div className="w-full s1280:w-fit">
+              <div className="s1280:me-24 mb-8">
+                <p className="font-normal s1280:text-[30px] text-[#474744] mb-2 s1280:mb-0">
+                  Fill out the form to receive advice
+                </p>
+                <div className="flex-bet relative">
+                  <div className="border-[0.5px] border-[#333333] h-0 w-full me-12 s1280:me-0"></div>
+                  <div className="w-[51px] h-[46px] s1280:w-[95px] s1280:h-[86px] animate-syringe absolute right-0  bottom-0 s1280:-right-[94px]">
+                    <ImgFetcher src={syringe} />
+                  </div>
+                </div>
+              </div>
+              <ConsultationForm />
+            </div>
           </div>
         </div>
       </div>
