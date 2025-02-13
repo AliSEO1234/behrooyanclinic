@@ -25,7 +25,7 @@ import ConsultationForm from "@/components/forms/consultationForm/consultationFo
 const Page = () => {
   return (
     <div className="bg-[#FCFCFC]">
-      <div className="grid grid-cols-12 gap-y-3 s1280:gap-y-0 mt-14 s1280:mt-36 viewport-p rounded-b-[40px] shadow-[0px_19px_29px_-25px_#00000011]">
+      <div className="grid grid-cols-12 gap-y-3 s1280:gap-y-0 mt-14 s1280:mt-28 viewport-p rounded-b-[40px] shadow-[0px_19px_29px_-25px_#00000011]">
         <div className="col-span-12 s1280:col-span-7 s1728:col-span-6">
           <div>
             <h1 className="font-semibold text-[20px] s1280:text-[30px] s1512:text-[36px] s1600:text-[40px] [text-shadow:0px_1px_4px_#00000025] text-[#00979A] s1512:mb-10 s1600:mb-20 s1728:mb-14">
@@ -65,7 +65,7 @@ const Page = () => {
       {/* content */}
       <div className="viewport-p">
         {/* video */}
-        <div className="mb-[18px] s1280:mb-[13px] s1512:mb-20">
+        <div className="mb-[18px] s1280:mb-[40px] s1512:mb-20">
           <div className="flex-left">
             <h2 className="font-semibold text-[20px] s1280:text-[40px]">
               Videos{" "}
@@ -83,7 +83,7 @@ const Page = () => {
                   Benefits
                 </h2>
               </div>
-              <div className="s1280:h-[463px] s1280:w-[220px]">
+              <div className="s1280:h-[463px] s1280:w-[259px] s1600:w-[330px] s1600:h-[589px]">
                 <ImgFetcher src={benefitIcon} />
               </div>
             </div>
@@ -118,7 +118,7 @@ const Page = () => {
               <ul className="font-normal flex flex-col gap-y-6 relative">
                 {/* border dashed */}
                 <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                  <div className="w-0 h-full border-[1px] border-dashed border-[#000000]"></div>
+                  <div className="w-0 h-full border-[1px] border-dashed border-[#000000] "></div>
                 </li>
                 <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
                   <span className="absolute top-2 left-0 w-[18px] flex-cen">

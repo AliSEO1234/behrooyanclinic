@@ -22,7 +22,7 @@ import eye2 from "@/assets/images/treatment/eye2.jpg";
 import aes1 from "@/assets/images/treatment/aes1.jpg";
 import ChangeVideo from "@/features/treatment/chagngeVideo";
 import { VideoDataType } from "@/types/videoPlayer/videoTypes";
-import Ball from "@/components/ballAnimate";
+// import Ball from "@/components/ballAnimate";
 const Page = () => {
   const videoList: VideoDataType[] = [
     {
@@ -47,13 +47,13 @@ const Page = () => {
       videoName: "AZPO Health",
     },
   ];
-  const balls = [54, 62, 42, 50, 45, 32, 23, 15];
+  // const balls = [54, 62, 42, 50, 45, 32, 23, 15];
   return (
     <div className="bg-[#FCFCFC]">
-      <div className="grid grid-cols-12 gap-y-5 s1280:gap-y-0 mt-16 s1512:mt-20 ps-[10px] s430:ps-5 pt-10 s1280:ps-[71px] s1512:ps-[79px] s1600:ps-[85px] s1728:ps-[100px] s1920:ps-[131px] rounded-b-[40px] shadow-[0px_19px_30px_-25px_#0000001C] overflow-hidden mb-10 s1280:mb-20 pb-5 s1280:pb-0 relative">
-        {balls.map((bal, index) => (
+      <div className="grid grid-cols-12 gap-y-5 s1280:gap-y-0 mt-16 s1512:mt-20 ps-[10px] s430:ps-5 pt-10 s1280:ps-[71px] s1512:ps-[79px] s1600:ps-[85px] s1728:ps-[100px] s1920:ps-[131px] rounded-b-[40px] shadow-[0px_19px_30px_-25px_#0000001C] overflow-hidden mb-10 s1280:mb-20 pb-5 s1280:pb-0">
+        {/* {balls.map((bal, index) => (
           <Ball key={index} size={bal} />
-        ))}
+        ))} */}
         <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-5 s1600:col-span-5 s1920:col-span-6 pe-[10px] s430:pe-5 z-[2]">
           <div className="mb-5">
             <h1 className="hidden s1280:block mb-4 s1512:mb-6 font-black s1280:text-[36px] s1512:text-[40px] s1728:text-[60px] text-[#00979A]">

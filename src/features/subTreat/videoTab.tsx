@@ -63,15 +63,15 @@ const VideoTab = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 s1280:gap-x-4">
-        <div className="col-span-12 s1280:col-span-10">
+      <div className="flex flex-col items-center justify-start gap-y-10 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-center s1280:gap-x-5">
+        <div className="s1280:w-[684px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1920:w-[966px]">
           <VideoPlayer
             src={video}
             toolsbarStyle="h-[38px] s1280:h-[60px] border-[1px] border-white"
-            className="s1280:w-full s1280:h-[615px] s1512:h-[700px]"
+            className="w-full  s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1920:w-[966px]"
           />
         </div>
-        <div className="col-span-12 s1280:col-span-2 s1280:ps-8 s1512:ps-12 s1728:ps-16 flex s1280:flex-col gap-x-4 s1280:gap-x-0 s1280:gap-y-4 items-center s1280:items-end justify-start overflow-y-scroll scroll-hide s1280:h-[615px] s1512:h-[700px]">
+        <div className="flex s1280:flex-col gap-x-4 s1280:gap-x-0 s1280:gap-y-4 s1600:gap-y-3 items-center s1280:items-end justify-start overflow-x-scroll s1280:overflow-x-hidden s1280:overflow-y-scroll scroll-hide s1280:h-[434px] s1512:h-[506px] s1600:h-[530px] w-full s1280:w-fit">
           {videoList.map((video) => {
             const isActive = activeVideo === video.videoKey;
             return (

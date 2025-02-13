@@ -100,8 +100,8 @@ const Treatments = () => {
       {/* header */}
       <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 mb-10 s1280:mb-20 mt-20">
         <div className="col-span-12 s1280:col-span-5 s1728:col-span-6">
-          <div className="mb-5 s1280:mb-20 s1728:mb-10">
-            <h1 className="text-[30px] s1280:text-[40px] s1512:text-[48px] s1728:text-[60px] font-black s1280:font-semibold text-[#00979A] mb-8">
+          <div className="mb-3 s1280:mb-20 s1728:mb-10">
+            <h1 className="text-[30px] s1280:text-[40px] s1512:text-[48px] s1728:text-[60px] font-black s1280:font-semibold text-[#00979A] mb-4 s1280:mb-8">
               Specialized Treatments
             </h1>
             <p className="font-semibold flex-left gap-x-1 text-[14px] s1280:text-[24px] text-[#00979A] [text-shadow:0_2px_3px_#00000040] mb-4">
@@ -146,14 +146,14 @@ const Treatments = () => {
           {/* <div className="flex-left w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
             <ImgFetcher src={borderDashed} />
           </div> */}
-          <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[34%]" />
+          <hr className="border-[1px] border-[#333333] border-dashed w-[12%] s1280:w-[34%]" />
           <h2 className="flex-cen font-semibold text-[20px] s1280:text-[30px]">
-            <span className="w-[70px] h-[53px]">
+            <span className="w-[55px] h-[40px]  s1280:w-[70px] s1280:h-[53px]">
               <ImgFetcher src={videoIcon} />
             </span>
             <span>Azpo Service video</span>{" "}
           </h2>
-          <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[34%]" />
+          <hr className="border-[1px] border-[#333333] border-dashed w-[12%] s1280:w-[34%]" />
           {/* <div className="flex-right w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
             <ImgFetcher src={borderDashed} />
           </div> */}

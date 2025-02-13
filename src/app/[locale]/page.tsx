@@ -263,14 +263,14 @@ const Home = async ({
           {/* Watch Your Health Journey */}
           <div className="mb-10 s1280:mb-[60px]">
             <div className="flex-bet mb-2 s1280:mb-10">
-              <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[28%]" />
+              <hr className="border-[1px] border-[#333333] border-dashed w-[7%] s1280:w-[28%]" />
               <h2 className="flex-cen font-semibold text-[20px] s1280:text-[30px]">
-                <span className="w-[70px] h-[53px]">
+                <span className="w-[48px] h-[34px] s1280:w-[70px] s1280:h-[53px]">
                   <ImgFetcher src={videoIcon} />
                 </span>
                 <span>Watch Your Health Journey</span>{" "}
               </h2>
-              <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[28%]" />
+              <hr className="border-[1px] border-[#333333] border-dashed w-[7%] s1280:w-[28%]" />
             </div>
             <div className="flex-cen">
               <VideoPlayer
@@ -285,14 +285,14 @@ const Home = async ({
             <RoadmapIntersectionObserver />
             <div className="mb-2 s1280:mb-10">
               <div className="flex-bet mb-4">
-                <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[24%]" />
+                <hr className="border-[1px] border-[#333333] border-dashed w-[9%] s390:w-[10%] s1280:w-[24%]" />
                 <h2 className="flex-cen font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px]">
-                  <span className="w-[70px] h-[53px]">
+                  <span className="w-[42px] h-[42px] s1280:w-[70px] s1280:h-[53px]">
                     <ImgFetcher src={medalIcon} />
                   </span>
                   <span>Your Treatment Roadmap</span>
                 </h2>
-                <hr className="border-[1px] border-[#333333] border-dashed w-[2%] s1280:w-[24%]" />
+                <hr className="border-[1px] border-[#333333] border-dashed w-[9%] s390:w-[10%] s1280:w-[24%]" />
               </div>
               <p className="text-center s1280:text-[24px] s1512:text-[28px] s1728:text-[29px] font-normal text-[#333333]">
                 We are here to make your medical journey as smooth and
@@ -455,18 +455,12 @@ const Home = async ({
           </div>
           {/* information about Azpo Health */}
           <div className="mb-10 s1280:mb-[200px]">
-            <div className="flex-bet mb-20">
-              {/* <div className="flex-left w-[40%] s1280:w-[532px] s1512:w-[628px] s1600:w-[664px] s1728:w-[716px] s1920:w-[780px] h-[4px] bg-left">
-            <ImgFetcher src={infoBorder} />
-          </div> */}
-              <hr className="w-[40%] s1280:w-[44%] h-0 border-[2px] border-dashed border-[#333333]" />
-              <div className="w-[100px] h-[100px]">
+            <div className="flex-bet mb-[10px]">
+              <hr className="w-[42%] s1280:w-[44%] h-0 border-[2px] border-dashed border-[#333333]" />
+              <div className="w-[42px] h-[42px] s1280:w-[100px] s1280:h-[100px]">
                 <ImgFetcher src={heart} />
               </div>
-              {/* <div className="flex-right w-[40%] s1280:w-[532px] s1512:w-[628px] s1600:w-[664px] s1728:w-[716px] s1920:w-[780px] h-[4px] bg-left">
-            <ImgFetcher src={infoBorder} />
-          </div> */}
-              <hr className="w-[40%] s1280:w-[44%] h-0 border-[2px] border-dashed border-[#333333]" />
+              <hr className="w-[42%] s1280:w-[44%] h-0 border-[2px] border-dashed border-[#333333]" />
             </div>
 
             <div className="flex flex-col items-center gap-y-4 s1280:hidden">
