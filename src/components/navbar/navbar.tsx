@@ -1,3 +1,4 @@
+"use client";
 import health from "@/assets/images/health.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,11 +7,27 @@ import { FiSearch } from "react-icons/fi";
 import { HiMenuAlt2 } from "react-icons/hi";
 import ring from "@/assets/images/ringnavbar.svg";
 import ImgFetcher from "../imgFetcher";
+import { useEffect, useState } from "react";
 const Navbar = () => {
+  const [isScroll, setIsScroll] = useState<boolean>(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  useEffect(() => {
+    console.log(isScroll);
+  }, [isScroll]);
   return (
-    <header className="fixed top-0 left-0 w-full z-[5]">
-      <nav className="anm grid grid-cols-12 bg-white shadow-[0_4px_2px_#0000001C] px-[20px] s1280:px-[50px] py-3 s1280:py-3 rounded-b-[40px]">
-        <div className="col-span-6 s1280:col-span-1 flex-left gap-x-2">
+    <header className="fixed top-0 left-0 w-full z-[5] anm">
+      <nav className={`grid grid-cols-12 bg-white shadow-[0_4px_2px_#0000001C] px-[20px] py-3 rounded-b-[40px] anm s1280:px-[50px] ${isScroll ? "s1280:py-1" : "s1280:py-3"}`}>
+        <div className={`col-span-6 flex-left gap-x-2 ${isScroll ? " s1280:col-span-2" : " s1280:col-span-1"}`}>
           <div className="flex-cen">
             <div className="w-[44px] h-[44px] s1280:w-8 s1280:h-8 s1512:w-[49px] s1512:h-[49px]">
               <Image
@@ -23,23 +40,39 @@ const Navbar = () => {
             </div>
           </div>
           <div className="text-[#00979A]">
-            <p className="font-black text-[24px] s412:text-[20px] s1280:text-[20px] s1512:text-[30px] tracking-[2px]">
+            <p
+              className={`anm font-black tracking-[2px] s1280:text-[20px] s1512:text-[30px] ${
+                isScroll
+                  ? ""
+                  : "text-[24px] s412:text-[20px] "
+              }`}
+            >
               AZPO
             </p>
-            <p className="-mt-2 font-bold text-[14px] s1280:text-[14px] s1512:text-[18px]">
+            <p
+              className={`-mt-2 font-bold text-[14px] s1280:text-[14px] s1512:text-[18px]  ${
+                isScroll ? "" : ""
+              }`}
+            >
               HEALTH
             </p>
           </div>
         </div>
-        <div className="hidden s1280:flex-right s1280:col-span-7 font-medium s1280:text-[14px] s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-4 s1920:gap-x-8 text-[#474744]">
+        <div
+          className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-4 s1920:gap-x-8 text-[#474744] anm  ${
+            isScroll
+              ? "s1280:col-span-10 s1280:justify-start s1280:-ms-10"
+              : "s1280:col-span-7 s1280:justify-end"
+          }`}
+        >
           <div>
-            <Link href="/">Home Page</Link>
+            <Link className="hover:text-[#25A6A9] anm" href="/">Home Page</Link>
           </div>
           <div>
-            <Link href="/">Medical Branches</Link>
+            <Link className="hover:text-[#25A6A9] anm" href="/">Medical Branches</Link>
           </div>
           <div>
-            <Link href="/">Hospital&Clinics</Link>
+            <Link className="hover:text-[#25A6A9] anm" href="/">Hospital&Clinics</Link>
           </div>
           {/* <div>
             <DropDownCustom
@@ -62,16 +95,20 @@ const Navbar = () => {
             {/* <Link href="/">Exclusive Offers</Link>
           </div> */}
           <div>
-            <Link href="/">Patient Services</Link>
+            <Link className="hover:text-[#25A6A9] anm" href="/">Patient Services</Link>
           </div>
           <div>
-            <Link href="/">Blogs</Link>
+            <Link className="hover:text-[#25A6A9] anm" href="/">Blogs</Link>
           </div>
           <div>
-            <Link href="/">Contact</Link>
+            <Link className="hover:text-[#25A6A9] anm" href="/">Contact</Link>
           </div>
         </div>
-        <div className="col-span-6 s1280:col-span-4 flex-right gap-x-2">
+        <div
+          className={`col-span-6 flex-right gap-x-2 anm ${
+            isScroll ? "hidden" : " s1280:col-span-4"
+          }`}
+        >
           <div className="hidden s1280:block">
             <button className="outline-none flex-cen w-[35px] h-[35px] s1600:h-[44px] s1600:w-[44px] rounded-full bg-[#DAEDE6] text-[#25A6A9]">
               <FiSearch className="size-4 s1600:size-5" />

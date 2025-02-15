@@ -6,11 +6,11 @@ import videoIcon from "@/assets/images/icons/video.svg";
 import SearchBox from "@/components/searchBox";
 import Sidebar from "@/layoutes/sidebar/sidebar";
 import ServiceCard from "@/features/services/serviceCard";
-import cell from "@/assets/images/icons/services/cells.svg";
-import fertility from "@/assets/images/icons/services/fertility.svg";
-import eye from "@/assets/images/icons/services/eye.svg";
-import dental from "@/assets/images/icons/services/dental.svg";
-import aesthetics from "@/assets/images/icons/services/aesthetics.svg";
+import cell from "@/assets/images/icons/services/cells.png";
+import fertility from "@/assets/images/icons/services/fertility.png";
+import eye from "@/assets/images/icons/services/eye.png";
+import dental from "@/assets/images/icons/services/dental.png";
+import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import Pagination from "@/components/pagination";
 import ServiceSlider from "@/features/services/serviceSlider/serviceSlider";
 import videoCover from "@/assets/images/videoCover.jpg";
@@ -143,20 +143,14 @@ const Treatments = () => {
       {/* azpo service video */}
       <div className="mb-14 s1280:mb-28">
         <div className="flex-bet mb-2 s1280:mb-10">
-          {/* <div className="flex-left w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
-            <ImgFetcher src={borderDashed} />
-          </div> */}
-          <hr className="border-[1px] border-[#333333] border-dashed w-[12%] s1280:w-[34%]" />
+          <hr className="border-[1px] border-[#333333] border-dashed w-[10%] s1280:w-[34%]" />
           <h2 className="flex-cen font-semibold text-[20px] s1280:text-[30px]">
             <span className="w-[55px] h-[40px]  s1280:w-[70px] s1280:h-[53px]">
               <ImgFetcher src={videoIcon} />
             </span>
             <span>Azpo Service video</span>{" "}
           </h2>
-          <hr className="border-[1px] border-[#333333] border-dashed w-[12%] s1280:w-[34%]" />
-          {/* <div className="flex-right w-[2%] s1280:w-[325px] s1512:w-[420px] s1600:w-[400px] s1728:w-[425px] s1920:w-[474px] h-[3px] bg-left">
-            <ImgFetcher src={borderDashed} />
-          </div> */}
+          <hr className="border-[1px] border-[#333333] border-dashed w-[10%] s1280:w-[34%]" />
         </div>
         <div className="flex-cen">
           <VideoPlayer

@@ -28,7 +28,7 @@ const RoadmapCard = ({
         <div className="flex-cen absolute -top-3 s1280:static">
           <div className={`w-[39px] h-[39px] s1280:w-[127px] s1280:h-[127px] bg-white shadow-roadmap-card rounded-full overflow-hidden flex-cen ${endArrow ? "p-2 s1280:p-6" :"p-1 s1280:p-2"}`}>
             <div>
-              <ImgFetcher src={cover} />
+              <ImgFetcher width={1000} height={1000} src={cover} />
             </div>
           </div>
         </div>

@@ -12,6 +12,28 @@ body {
 }
 
 @layer components {
+  /* after before */
+  /* benefits border
+  /* .custom-bf-border {
+    border: "1px dashed";
+    border-image-source: "linear-gradient(50deg, #000000 0%, #FCFCFC 100%)";
+    border-image-slice: 1;
+  } */
+  @keyframes rotatePile {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  .rotate-bf-image {
+    animation: rotatePile 4s 3s forwards;
+  }
+  .clip-path-custom {
+    clip-path: inset(-50% 0 0 0);
+  }
+
   .benef-border-style {
     border: 1px solid;
     border-image-source: linear-gradient(90deg, #000000 0%, #fcfcfc 100%);
@@ -34,14 +56,14 @@ body {
   /* animatte syringe */
   @keyframes syringMove {
     0% {
-      left: 0;
+      width: 0px;
     }
     100% {
-      right: 0;
+      width: 100%;
     }
   }
-  .animate-syringe {
-    animation: syringMove 2s ease-in-out;
+  .syring-animate{
+    animation: syringMove 4s 1s ease-in-out;
   }
   /* before && after */
   .slash-bef-aft {
@@ -90,6 +112,12 @@ body {
   .viewport-p {
     @apply px-[10px] s430:px-5 py-10 s1280:px-[71px] s1512:px-[79px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px];
   }
+  .form-platform-work-end div label {
+    @apply block font-semibold text-[#474744] mb-2;
+  }
+  .form-platform-work-end div input {
+    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] px-4 s1280:placeholder:text-[14px] rounded-[40px] border border-[#9996A0] font-normal text-[#474744] s1728:placeholder:text-[16px];
+  }
   .form-work div label {
     @apply block font-semibold text-[#474744];
   }
@@ -97,8 +125,8 @@ body {
     @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#474744];
   }
   .shadow-slider-card {
-    box-shadow: -19px 13px 13.9px -12px #00000012;
-    box-shadow: 0px 0px 39.9px -8px #e7e7e7 inset;
+    box-shadow: -19px 13px 13.9px -12px #00000012 , 0px 0px 39.9px -8px #e7e7e7 inset;
+    /* box-shadow: ; */
   }
   .shadow-char-slider {
     background: radial-gradient(
@@ -129,10 +157,10 @@ body {
   /* how our platform works form */
   /* text-[#474744] */
   .form-platform-work div label {
-    @apply block font-semibold text-white;
+    @apply block font-semibold text-white s1280:text-[14px] mb-2 s1600:text-[16px];
   }
   .form-platform-work div input {
-    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#474744];
+    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[38px] px-4 s1280:placeholder:text-[14px] rounded-[40px] border border-[#9996A0] font-normal text-[#474744] s1728:placeholder:text-[16px];
   }
   /* hide scrollbar */
   .scroll-hide::-webkit-scrollbar {

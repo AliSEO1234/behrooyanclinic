@@ -2521,7 +2521,7 @@ const BorderLayoutAbout = ({
           classLabel ? classLabel : "flex-cen"
         }  s1280:my-0 my-10 s1280:absolute s1280:-top-0 s1280:left-0 w-full s1600:-top-3`}
       >
-        <h2 className="w-fit font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1600:text-[48px] s1280:-mt-2 text-[#333333] z-[4]">
+        <h2 className="w-fit font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1600:text-[48px] s1280:-mt-2 text-[#333333] z-[4]">
           {title}
         </h2>
       </div>

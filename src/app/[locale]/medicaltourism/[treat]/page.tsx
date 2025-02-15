@@ -54,7 +54,7 @@ const Page = () => {
         {/* {balls.map((bal, index) => (
           <Ball key={index} size={bal} />
         ))} */}
-        <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-5 s1600:col-span-5 s1920:col-span-6 pe-[10px] s430:pe-5 z-[2]">
+        <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-5 s1600:col-span-5 s1920:col-span-6 pe-[10px] s430:pe-5 z-[2] s1512:mt-10 s1600:mt-0">
           <div className="mb-5">
             <h1 className="hidden s1280:block mb-4 s1512:mb-6 font-black s1280:text-[36px] s1512:text-[40px] s1728:text-[60px] text-[#00979A]">
               Eye Surgeries
@@ -63,7 +63,7 @@ const Page = () => {
               <span>54</span>
               <span>Service</span>
             </p>
-            <p className="text-[#333333] font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-justify s1280:text-start leading-[25px] s1280:leading-[38px] s1600:leading-[45px] s1280:line-clamp-[8]">
+            <p className="text-[#333333] font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-justify s1280:text-start leading-[25px] s1280:leading-[30px] s1600:leading-[45px] s1280:line-clamp-[8]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -97,33 +97,33 @@ const Page = () => {
             <ImgFetcher width={2000} height={2000} src={borderPhone} />
           </div>
           {/* desktop */}
-          <div className="hidden s1280:block s1280:w-[50%] s1280:h-[550px] s1512:h-[600px]">
+          <div className="hidden s1280:block s1280:w-[40%] s1280:h-[450px] s1512:h-[550px] s1512:w-[30%] s1600:w-[40%] s1600:h-[600px] s1920:h-[650px]" >
             <ImgFetcher width={2000} height={2000} src={borderTreat} />
           </div>
           {/* service icon */}
-          <div className="w-[320px] h-[320px] s1280:w-[500px] s1280:h-[480px] s1512:w-[600px] s1512:h-[580px] absolute top-1/2 s1280:top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <ImgFetcher width={2000} height={2000} src={eye} />
+          <div className="w-[320px] h-[320px] s1280:w-[404px] s1280:h-[404px] s1512:w-[487px] s1512:h-[473px] s1600:w-[473px] s1600:h-[473px] s1728:w-[503px] s1728:h-[503px] s1920:w-[578px] s1920:h-[578px] absolute top-1/2 s1280:top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <ImgFetcher width={3000} height={3000} src={eye} />
           </div>
         </div>
       </div>
       <div className="viewport-p">
         {/* videos */}
-        <div className="grid grid-cols-12 gap-y-8 s1280:gap-y-0 mb-10 s1280:mb-20">
-          <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-8 s1512:col-span-8 flex items-center justify-start">
+        <div className="grid grid-cols-12 gap-y-8 s1280:gap-y-0 mb-10 s1280:mb-20 s1280:gap-x-20 s1920:gap-x-32">
+          <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-7 flex items-center justify-start">
             <div className="s1280:w-[688px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[850px] s1728:h-[650px] s1920:w-[900px] s1920:h-[700px]">
               <VideoPlayer
                 toolsbarStyle="h-[38px] s1280:h-[60px] border-[1px] border-white"
-                className="s1280:w-[684px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[850px] s1728:h-[650px]  s1920:w-[900px] s1920:h-[700px]"
+                className="s1280:w-[684px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1728:h-[530px]  s1920:w-[996px] s1920:h-[580px]"
                 src={videoCover}
               />
             </div>
           </div>
-          <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-4 s1512:col-span-4 flex flex-col h-fit">
+          <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-5 flex flex-col h-fit">
             <div className="s1280:mb-20 s1512:mb-4">
-              <h2 className="font-semibold text-[20px] [text-shadow:0px_1px_2px_#00000025] s1280:text-[40px] s1600:text-[48px] text-[#333333] shadow-treat-video mb-2">
+              <h2 className="font-semibold text-[20px] [text-shadow:0px_1px_2px_#00000025] s1280:text-[36px] s1512:text-[48px] s1728:text-[48px] text-[#333333] shadow-treat-video mb-2">
                 Eye Surgeries
               </h2>
-              <p className="font-medium s1280:text-[28px] s1512:text-[30px] text-[#474744] text-justify s1280:text-start s1280:leading-8 s1512:leading-9 s1600:leading-[50px]">
+              <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-[#474744] text-justify s1280:text-start s1280:leading-8 s1512:leading-9 s1600:leading-[50px]">
                 Our goal is to deliver quality of care in a courteous,
                 respectful, and compassionate manner. We hope you will allow us
                 to care for you and strive to be the first and best choice for
@@ -134,7 +134,7 @@ const Page = () => {
               <ChangeVideo videoList={videoList} />
             </div>
           </div>
-          <div className="order-3 col-span-12 s1280:mt-24 s1512:mt-20 relative mt-8">
+          <div className="order-3 col-span-12 s1280:mt-10 s1728:mt-0 relative mt-8">
             <div className="items-end justify-start gap-x-2 flex s1280:hidden h-[152px]">
               <ChangeVideo videoList={videoList} />
             </div>
@@ -143,7 +143,7 @@ const Page = () => {
             <div className="grdl-md s1280:w-[133px] s1280:h-[27px]  absolute top-0 s1280:top-1/2 right-0"></div>
             {/* women character */}
             <div className="s1280:w-[121px] s1280:h-[378px] absolute -top-5 s1280:-top-[350px] right-0">
-              <ImgFetcher src={videoChar} />
+              <ImgFetcher width={2000} height={2000} src={videoChar} />
             </div>
           </div>
         </div>

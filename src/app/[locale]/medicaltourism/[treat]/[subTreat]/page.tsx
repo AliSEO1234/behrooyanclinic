@@ -2,25 +2,23 @@ import bgSub from "@/assets/images/subTreatment/bgSub.svg";
 import eye from "@/assets/images/subTreatment/eye.jpg";
 import ImgFetcher from "@/components/imgFetcher";
 import VideoTab from "@/features/subTreat/videoTab";
-import benefitIcon from "@/assets/images/subTreatment/benefits.svg";
+import benefitIcon from "@/assets/images/subTreatment/benefits.png";
 import BenefCard from "@/components/benefits/benefCard";
 import BenefBorder from "@/components/benefits/benefBorder";
 import person from "@/assets/images/subTreatment/person.svg";
 import consider from "@/assets/images/subTreatment/consider.svg";
 import mask from "@/assets/images/subTreatment/mask.svg";
-// import consulphone from "@/assets/images/subTreatment/consulphone.svg"
-
 import consulPerson from "@/assets/images/subTreatment/consulPerson.svg";
-import personDocChar from "@/assets/images/subTreatment/consulPersonmedar.svg";
+import personDocChar from "@/assets/images/subTreatment/consulPersonmedar.png";
 import admin1 from "@/assets/images/subTreatment/wom1.jpg";
 import admin2 from "@/assets/images/subTreatment/wom2.jpg";
 import admin3 from "@/assets/images/subTreatment/wom3.jpg";
 import admin4 from "@/assets/images/subTreatment/men1.jpg";
-import pile from "@/assets/images/subTreatment/pile.svg";
+import pile from "@/assets/images/subTreatment/pile.png";
 import drag from "@/assets/images/subTreatment/drag.svg";
 import BFSwiper from "@/features/BF/BFSwiper";
 import ConsultationAdmin from "@/components/consultationAdmin";
-import syringe from "@/assets/images/subTreatment/syringe.svg";
+import syringe from "@/assets/images/subTreatment/syringe.png";
 import ConsultationForm from "@/components/forms/consultationForm/consultationForm";
 const Page = () => {
   return (
@@ -76,15 +74,15 @@ const Page = () => {
         </div>
         {/* benefits */}
         <div className="s1512:h-full flex gap-y-[18px] s1280:gap-y-0 s1280:flex-col flex-wrap s1512:flex-nowrap items-center s1512:flex-row s1512:justify-start s1512:items-end s1512:gap-x-[44px] mb-10 s1280:mb-[16px] s1512:mb-24">
-          <div className="s1512:h-full flex items-center justify-between gap-x-4 s1280:gap-x-0 s1512:justify-start s1512:items-end w-full s1512:gap-x-[14px] s1512:w-fit">
-            <div className="flex flex-col items-start">
+          <div className="s1512:h-full flex items-center justify-between gap-x-4 s1280:gap-x-0 s1512:justify-start s1512:items-center w-full s1512:gap-x-[14px] s1512:w-fit">
+            <div className="flex flex-col items-start justify-center">
               <div className="w-full">
                 <h2 className="font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-center [text-shadow:0px_3px_2.8px_#00000040]">
                   Benefits
                 </h2>
               </div>
               <div className="s1280:h-[463px] s1280:w-[259px] s1600:w-[330px] s1600:h-[589px]">
-                <ImgFetcher src={benefitIcon} />
+                <ImgFetcher width={1500} height={1500} src={benefitIcon} />
               </div>
             </div>
             <div className="s1512:h-full flex flex-col items-center gap-y-[18px] s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-end s1512:flex-col s1512:justify-between s1512:gap-y-[72px]">
@@ -118,7 +116,13 @@ const Page = () => {
               <ul className="font-normal flex flex-col gap-y-6 relative">
                 {/* border dashed */}
                 <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                  <div className="w-0 h-full border-[1px] border-dashed border-[#000000] "></div>
+                  <div className="w-0 h-full"
+                  style={{
+                    border: "1px dashed",
+                    borderImageSource: "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                    borderImageSlice: 1,
+                  }}
+                  ></div>
                 </li>
                 <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
                   <span className="absolute top-2 left-0 w-[18px] flex-cen">
@@ -161,7 +165,13 @@ const Page = () => {
               </div>
               <ul className="font-normal flex flex-col gap-y-6 relative">
                 <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                  <div className="w-0 h-full border-[1px] border-dashed border-[#000000]"></div>
+                  <div className="w-0 h-full"
+                  style={{
+                    border: "1px dashed",
+                    borderImageSource: "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                    borderImageSlice: 1,
+                  }}
+                  ></div>
                 </li>
                 <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8">
                   <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
@@ -232,18 +242,26 @@ const Page = () => {
           <div>
             <BFSwiper />
           </div>
-          <div className="-mt-64 hidden s1280:block">
-            <div className="mb-5">
-              <ImgFetcher src={pile} />
+          <div className=" hidden s1280:block s1280:-mt-16">
+            <div className="s1280:h-[340px] s1600:h-[360px] s1920:h-[420px]">
+              {/* bg-[#FCFCFC] */}
+              <ImgFetcher
+                className="object-cover object-top  clip-path-custom s1280:scale-75"
+                width={1000}
+                height={1000}
+                src={pile}
+              />
             </div>
-            <div className="mb-4">
-              <p className="text-center font-normal text-[#7E7D7D]">
-                Drag the Pill to explore more Patient
-              </p>
-            </div>
-            <div className="flex-cen">
-              <div className="s1280:w-[66px] h-[56px]">
-                <ImgFetcher src={drag} />
+            <div className="s1280:-mt-5">
+              <div className="mb-4">
+                <p className="text-center font-normal text-[#7E7D7D]">
+                  Drag the Pill to explore more Patient
+                </p>
+              </div>
+              <div className="flex-cen">
+                <div className="s1280:w-[66px] h-[56px]">
+                  <ImgFetcher src={drag} />
+                </div>
               </div>
             </div>
           </div>
@@ -262,7 +280,7 @@ const Page = () => {
           </div>
           <div className="flex flex-col items-center justify-start gap-y-5 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-between">
             {/* admins */}
-            <div className="w-[328px] h-[328px] s390:w-[346px] s390:h-[346px] s412:w-[364px] s1280:w-[450px] s1280:h-[450px] s1512:w-[567px] s1512:h-[567px] s1600:w-[661px] s1600:h-[661px] border-[3px] border-[#33333380] rounded-full relative p-14 s1280:p-20">
+            <div className="w-[328px] h-[328px] s390:w-[346px] s390:h-[346px] s412:w-[364px] s1280:w-[450px] s1280:h-[450px] s1512:w-[567px] s1512:h-[567px] s1600:w-[661px] s1600:h-[661px] border-[3px] border-[#33333380] rounded-full relative p-16 s1280:p-24">
               {/* admins */}
               <ConsultationAdmin
                 img={admin3}
@@ -273,15 +291,15 @@ const Page = () => {
                 positionStyle="bottom-4 right-6 s1280:bottom-5 s1280:right-8"
               />
               {/* inside dashed border */}
-              <div className="w-full h-full border-[3px] border-dashed border-[#33333380] rounded-full relative p-12 s1280:p-16">
-                <ConsultationAdmin img={admin2} positionStyle="top-0 right-3" />
+              <div className="w-full h-full border-[3px] border-dashed border-[#33333380] rounded-full relative p-14 s1280:p-16 s1728:p-20">
+                <ConsultationAdmin img={admin2} positionStyle="top-0 right-1" />
                 <ConsultationAdmin
                   img={admin4}
-                  positionStyle="bottom-0 left-3"
+                  positionStyle="bottom-0 left-0"
                 />
                 {/* inside doctor char */}
-                <div className="w-full h-full border-[3px] border-[#33333380] rounded-full p-4">
-                  <ImgFetcher src={personDocChar} />
+                <div className="w-full h-full border-[3px] border-[#33333380] rounded-full py-1 px-2 s1280:py-3 s1280:px-5 s1512:px-8 s1600:py-5 s1600:px-12">
+                  <ImgFetcher width={2000} height={2000} src={personDocChar} />
                 </div>
               </div>
             </div>
@@ -291,10 +309,11 @@ const Page = () => {
                 <p className="font-normal s1280:text-[30px] text-[#474744] mb-2 s1280:mb-0">
                   Fill out the form to receive advice
                 </p>
-                <div className="flex-bet relative">
-                  <div className="border-[0.5px] border-[#333333] h-0 w-full me-12 s1280:me-0"></div>
-                  <div className="w-[51px] h-[46px] s1280:w-[95px] s1280:h-[86px] animate-syringe absolute right-0  bottom-0 s1280:-right-[94px]">
-                    <ImgFetcher src={syringe} />
+                <div className="flex-bet">
+                  <div className="border-[0.5px] border-[#333333] h-0 w-full me-12 s1280:me-0 relative syring-animate">
+                    <div className="w-[51px] h-[46px] s1280:w-[95px] s1280:h-[86px] absolute right-0  bottom-0 s1280:-right-[94px]">
+                      <ImgFetcher width={2000} height={2000} src={syringe} />
+                    </div>
                   </div>
                 </div>
               </div>

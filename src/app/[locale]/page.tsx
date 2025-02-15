@@ -9,19 +9,19 @@ import RoadmapIntersectionObserver from "@/components/scripts/roadmap-intersecti
 import HelpingIntersectionObserver from "@/components/scripts/helping-intersection-observer";
 import InfoIntersectionObserver from "@/components/scripts/info-intersection-observer";
 import videoCover from "@/assets/images/videoCover.jpg";
-import cell from "@/assets/images/icons/services/cells.svg";
-import fertility from "@/assets/images/icons/services/fertility.svg";
-import eye from "@/assets/images/icons/services/eye.svg";
-import dental from "@/assets/images/icons/services/dental.svg";
-import aesthetics from "@/assets/images/icons/services/aesthetics.svg";
+import cell from "@/assets/images/icons/services/cells.png";
+import fertility from "@/assets/images/icons/services/fertility.png";
+import eye from "@/assets/images/icons/services/eye.png";
+import dental from "@/assets/images/icons/services/dental.png";
+import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import videoIcon from "@/assets/images/icons/video.svg";
 import medalIcon from "@/assets/images/icons/medal.svg";
 import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
 import RoadmapCard from "@/components/roadmap/roadmapCard";
-import passport from "@/assets/images/icons/passport.svg";
-import date from "@/assets/images/icons/date.svg";
-import air from "@/assets/images/icons/air.svg";
-import earth from "@/assets/images/icons/earth.svg";
+import passport from "@/assets/images/icons/passport.png";
+import date from "@/assets/images/icons/date.png";
+import air from "@/assets/images/icons/air.png";
+import earth from "@/assets/images/icons/earth.png";
 import RoadmapArrowMobile from "@/components/roadmap/roadmapArrowMobile";
 import help1 from "@/assets/images/icons/home/helptop.jpg";
 import help2 from "@/assets/images/icons/home/helpunder.jpg";
@@ -55,7 +55,7 @@ import { blogList } from "@/staticData/blogList";
 import ComplimentaryConsultationForm from "@/features/complimentaryConsultationForm";
 import PlatformWorkForm from "@/features/platformWork/platformWorkForm";
 import InfoCard from "@/features/platformWork/infoCard";
-import pltWork from "@/assets/images/workPlatform.svg";
+import pltWork from "@/assets/images/workPlatform.png";
 import doctorIcon from "@/assets/images/doctorPltWork.svg";
 import ring from "@/assets/images/ring.svg";
 import phone from "@/assets/images/phone.svg";
@@ -172,7 +172,7 @@ const Home = async ({
             {/* Complimentary Consultation */}
             <div className="col-span-12 s1280:col-span-3 s1512:col-span-3 relative s1512:flex flex-col items-end">
               {/* star */}
-              <div className="w-[78px] h-[78px] absolute -top-8 left-0 z-[2] s1600:-top-5">
+              <div className="w-[78px] h-[78px] absolute -top-20 left-0 z-[2] s1280:-top-4 s1600:-top-5 s1280:-left-8">
                 <ImgFetcher src={star} />
               </div>
               {/* points */}
@@ -181,7 +181,7 @@ const Home = async ({
               </div>
               <div className="relative z-[3] s1512:flex s1512:flex-col">
                 <div className="mb-4 s1280:px-[27px] s1600:px-0 s1600:mt-5">
-                  <h2 className="text-center s1280:text-start text-[20px] s1280:text-[16px] s1728:text-[26px] font-bold s1512:text-center text-white">
+                  <h2 className="text-center text-[20px] s1280:text-[24px] s1728:text-[30px] font-bold s1512:text-center text-white">
                     Complimentary Consultation
                   </h2>
                 </div>
@@ -203,7 +203,10 @@ const Home = async ({
                 </h2>
               </div>
               <div className="flex-right">
-                <SeeAll link={`/${locale}/medicaltourism`} />
+                <SeeAll
+                  className="h-[40px] w-[89px] s1280:w-[194px] s1280:h-[54px] text-[14px] s1280:text-[20px]"
+                  link={`/${locale}/medicaltourism`}
+                />
               </div>
             </div>
             {/* show service */}
@@ -263,18 +266,18 @@ const Home = async ({
           {/* Watch Your Health Journey */}
           <div className="mb-10 s1280:mb-[60px]">
             <div className="flex-bet mb-2 s1280:mb-10">
-              <hr className="border-[1px] border-[#333333] border-dashed w-[7%] s1280:w-[28%]" />
-              <h2 className="flex-cen font-semibold text-[20px] s1280:text-[30px]">
+              <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[28%]" />
+              <h2 className="flex-cen font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1600:text-[40px]">
                 <span className="w-[48px] h-[34px] s1280:w-[70px] s1280:h-[53px]">
                   <ImgFetcher src={videoIcon} />
                 </span>
                 <span>Watch Your Health Journey</span>{" "}
               </h2>
-              <hr className="border-[1px] border-[#333333] border-dashed w-[7%] s1280:w-[28%]" />
+              <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[28%]" />
             </div>
             <div className="flex-cen">
               <VideoPlayer
-              className="s1280:w-[916px] s1280:h-[501px]"
+                className="s1280:w-[916px] s1280:h-[501px]"
                 toolsbarStyle="h-[38px] s1280:h-[57px]"
                 src={videoCover}
               />
@@ -285,14 +288,14 @@ const Home = async ({
             <RoadmapIntersectionObserver />
             <div className="mb-2 s1280:mb-10">
               <div className="flex-bet mb-4">
-                <hr className="border-[1px] border-[#333333] border-dashed w-[9%] s390:w-[10%] s1280:w-[24%]" />
-                <h2 className="flex-cen font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px]">
+                <hr className="border-[1px] border-[#333333] border-dashed w-[6%] s375:w-[9%] s390:w-[10%] s1280:w-[32%] s1600:w-[28%]" />
+                <h2 className="flex-cen font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px]  s1600:text-[40px]">
                   <span className="w-[42px] h-[42px] s1280:w-[70px] s1280:h-[53px]">
                     <ImgFetcher src={medalIcon} />
                   </span>
                   <span>Your Treatment Roadmap</span>
                 </h2>
-                <hr className="border-[1px] border-[#333333] border-dashed w-[9%] s390:w-[10%] s1280:w-[24%]" />
+                <hr className="border-[1px] border-[#333333] border-dashed w-[6%] s375:w-[9%] s390:w-[10%] s1280:w-[32%] s1600:w-[28%]" />
               </div>
               <p className="text-center s1280:text-[24px] s1512:text-[28px] s1728:text-[29px] font-normal text-[#333333]">
                 We are here to make your medical journey as smooth and
@@ -301,7 +304,7 @@ const Home = async ({
                 supporting you every step of the way.
               </p>
             </div>
-            <div className="grid grid-cols-12 s1280:gap-y-5 s1280:px-10 s1600:px-20 s1728:px-34 s1920:px-36">
+            <div className="grid grid-cols-12 s1280:gap-y-[10px] s1280:px-10 s1600:px-20 s1728:px-34 s1920:px-36">
               <RoadmapCard
                 order={1}
                 align="left"
@@ -383,12 +386,12 @@ const Home = async ({
                 </Link>
               </div>
             </div>
-            <div className="col-span-12 s1280:col-span-6 flex flex-col mt-16 s1280:mt-0 px-2 s412:px-4">
+            <div className="col-span-12 s1280:col-span-6 flex flex-col mt-16 s1280:mt-0 px-2 s412:px-4 s1600:px-0">
               <div className="mb-10 s1280:mb-2">
-                <h3 className="text-[14px] s390:text-[15px] s1280:text-[20px] s1512:text-[24px] s1600:text-[28px] s1728:text-[29px] font-semibold text-[#00979A] mb-5">
+                <h3 className="text-[14px] s390:text-[15px] s1280:text-[20px] s1512:text-[24px] s1600:text-[28px] s1728:text-[30px] font-semibold text-[#00979A] mb-5">
                   HELPING PATIENTS FROM AROUND THE GLOBE!!
                 </h3>
-                <h4 className="font-semibold text-[20px] s1280:text-[36px] s1600:text-[30px] s1728:text-[40px] mb-1">
+                <h4 className="font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1728:text-[40px] mb-1">
                   Our <span className="text-[#00979A]">Mission</span>
                 </h4>
                 <p className="text-[#474744] font-medium text-[14px] s1512:text-[16px] s1600:text-[18px] s1728:text-[20px] s1512:leading-[30px] text-justify">
@@ -444,7 +447,7 @@ const Home = async ({
           {/* We Appreciate Your Thoughts */}
           <div className="mb-10 s1280:mb-[60px]">
             <div className="mb-10">
-              <h2 className="[text-shadow:_0_4px_4px_#00000040] text-center text-[#474744] font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px]">
+              <h2 className="[text-shadow:_0_4px_4px_#00000040] text-center text-[#474744] font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1600:text-[40px] s1728:text-[48px]">
                 We Appreciate Your Thoughts
               </h2>
             </div>
@@ -455,7 +458,7 @@ const Home = async ({
           </div>
           {/* information about Azpo Health */}
           <div className="mb-10 s1280:mb-[200px]">
-            <div className="flex-bet mb-[10px]">
+            <div className="flex-bet mb-[10px] s1280:mb-16">
               <hr className="w-[42%] s1280:w-[44%] h-0 border-[2px] border-dashed border-[#333333]" />
               <div className="w-[42px] h-[42px] s1280:w-[100px] s1280:h-[100px]">
                 <ImgFetcher src={heart} />
@@ -478,7 +481,6 @@ const Home = async ({
                   value="2.500"
                 />
               </div>
-
               <BundleIcon
                 className="hidden s1280:block w-[120px] h-[67px]"
                 destination="bottom"
@@ -529,8 +531,9 @@ const Home = async ({
           </div>
           {/* Why choose us? */}
           <FillScrollLayout
-            className="s1280:h-[852px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-24 s1512:pt-20"
+            className="s1280:h-[852px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-44 s1512:pt-36"
             order="first"
+            classLabel="flex-cen s1280:mt-2 s1512:mt-1"
             title="Why choose us?"
           >
             <div className="grid grid-cols-12 gap-y-10 px-2 s1280:gap-y-0 s1280:gap-x-10 s1600:gap-x-[55px] s1728:gap-x-[40px] s1920:gap-x-[75px] z-[3]">
@@ -548,37 +551,39 @@ const Home = async ({
                 </div>
               </div>
               <div className="col-span-12 s1280:col-span-9 s1512:col-span-8 grid grid-cols-12 s1280:gap-x-5 s1600:gap-x-[26px] s1920:gap-x-[39px] gap-y-[32px]">
-                <div className="col-span-12 s1280:col-span-6">
-                  <ChooseUsCard
-                    desc="What sets us apart from other intermediary organizations in providing the most reliable and tailored healthcare services is our team of expert doctors, healthcare professionals, and multilingual patient coordinators. We are committed to delivering the best possible care by fully understanding the individual needs of our patients. From the moment you contact us, the initial consultation is conducted one-on-one by our doctors, ensuring that the most accurate treatment plan is created and shared with you. We are here to guide you as a trusted bridge throughout your healthcare journey."
-                    header="High Expertise"
-                    index={1}
-                  />
-                  <ChooseUsCard
-                    end
-                    desc="With 20 years of experience serving international clients and building strong partnerships, our well-established company has a deep understanding of your needs and is highly knowledgeable about the capabilities of Turkish medicine. Each member of our team is an expert in their field, bringing valuable experience and insight to ensure the best coordination of your journey. We have extensive collaboration with medical institutions and an extensive database of statistics, allowing us to confidently recommend the best solutions. Throughout your treatment process, both before and after, we provide professional services with foresight, anticipating any potential situations and taking the necessary precautions to ensure optimal results. We are with you every step of the way."
-                    header="Long-term Experience"
-                    index={3}
-                  />
-                </div>
-                <div className="col-span-12 s1280:col-span-6">
-                  <ChooseUsCard
-                    desc="Throughout your medical journey in Turkey, we ensure that every detail is taken care of to provide you with all the necessary services. We manage not only your treatment plan but also assist with transfers, accommodation, insurance, and visa arrangements. To accelerate your treatment and ensure the most accurate approach, we partner with Turkey’s top clinics and hospitals, accredited by the Ministry of Health for medical tourism. Before your arrival, your case will be reviewed by a team of specialists to optimize your treatment plan. It will then be carefully rechecked by Azpo Health’s expert doctors to guarantee the highest quality care, before being presented to you. All you need to do is trust the process and leave it to Azpo Health’s professional team."
-                    header="360-degree Service"
-                    index={2}
-                  />
-                  <ChooseUsCard
-                    desc="Thanks to our years of experience and extensive network, we’re here to support you in top health tourism destinations in Turkey, including Istanbul, Antalya, Alanya, Ankara, Izmir, Samsun, and Cappadocia, as well as in several countries with well-established medical tourism. No matter where you choose to receive treatment and benefit from our services, our local representatives are ready to offer you the best service in that city."
-                    header="Network"
-                    index={4}
-                  />
-                </div>
+                <ChooseUsCard
+                 className="col-span-12 s1280:col-span-6"
+                  desc="What sets us apart is our dedication to personalized, reliable care. Our expert doctors and patient coordinators truly understand your needs. From the first contact, we provide one-on-one consultations to craft the best treatment plan for you. We stand by you as a trusted guide on your healthcare journey."
+                  header="High Expertise"
+                  index={1}
+                />
+                <ChooseUsCard
+                 className="col-span-12 s1280:col-span-6"
+                  
+                  desc="Throughout your medical journey in Turkey Azpo Health team will take care of everything—treatment, transfers, accommodation, and visas—so you can focus on your recovery. Your case is thoroughly assessed by top specialists and double-checked by Azpo's consultant doctors to guarantee the highest quality care. All you need to do is trust the process and leave it to Azpo Health."
+                  header="360-degree Service"
+                  index={3}
+                />
+                <ChooseUsCard
+                 className="col-span-12 s1280:col-span-6"
+                  desc="With 20 years of experience serving international clients and building strong partnerships, we have have a deep understanding of your needs and ensure seamless coordination. Our expert team and strong medical partnerships enable us to recommend the best solutions. Anticipating every detail, we stand by you with unwavering support before, during, and after your treatment"
+                  header="Long-term Experience"
+                  index={2}
+                />
+                <ChooseUsCard
+                 className="col-span-12 s1280:col-span-6"
+                  desc="Thanks to our years of experience and extensive network, we’re here to support you in top health tourism destinations in Turkey, including Istanbul, Antalya, Alanya, Ankara, Izmir, Samsun, and Cappadocia, as well as in several countries with well-established medical tourism. No matter where you choose to receive treatment and benefit from our services, our local representatives are ready to offer you the best service in that city."
+                  header="Network"
+                  index={4}
+                />
+                {/* <div className="col-span-12 s1280:col-span-6"></div>
+                <div className="col-span-12 s1280:col-span-6"></div> */}
               </div>
             </div>
           </FillScrollLayout>
           {/* Video Distinctive Features */}
           <FillScrollLayout
-            classLabel="hidden s1280:flex-cen"
+            classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2"
             className="mt-10 s1280:mt-0 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-10 s1512:pt-16 s1512:-mt-4"
             order="second"
             title="Video Distinctive Features"
@@ -591,7 +596,10 @@ const Home = async ({
                   </h2>
                 </div>
                 <div>
-                  <SeeAll link="/" />
+                  <SeeAll
+                    className="h-[40px] w-[89px] s1280:w-[174px] s1512:w-[170px] s1512:text-[18px] s1600:w-[194px] s1600:text-[20px] s1280:h-[54px] text-[14px] s1280:text-[16px]"
+                    link="/"
+                  />
                 </div>
               </div>
               <div className="grid grid-cols-12 px-5 s390:px-8 sm:px-36 s412:px-10 gap-y-10 s1280:gap-y-0 s1280:px-0 s1280:gap-x-5 s1728:gap-x-12 s1920:gap-x-20">
@@ -634,7 +642,7 @@ const Home = async ({
           <FillScrollLayout
             title="Experience"
             order="third"
-            classLabel="s1512:-mt-1 flex-cen"
+            classLabel="s1512:-mt-1 flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-0"
             className="s1280:h-[385px] s1280:pt-40  s1280:-mt-6 s1512:mt-7 relative s1600:-mt-[70px] s1728:-mt-[60px] s1920:mt-[12px]"
           >
             <div className="s1280:hidden w-full h-full absolute s1280:top-5 left-0 z-[1]">
@@ -657,10 +665,11 @@ const Home = async ({
           </FillScrollLayout>
           {/* blog azpo */}
           <FillScrollLayout
+          
             className="s1280:pt-20 s1280:h-[750px] s1280:-mt-6 mt-10"
             title="AZPO Blog"
             order="fourth"
-            classLabel="hidden s1280:flex-cen ms-4"
+            classLabel="hidden s1280:flex-cen ms-4 s1280:mt-4 s1512:mt-3 s1600:mt-0"
           >
             <div className="z-[3] s1280:pt-10">
               <div className="flex items-center justify-between s1280:justify-end mb-10">
@@ -670,7 +679,10 @@ const Home = async ({
                   </h2>
                 </div>
                 <div>
-                  <SeeAll link="/" />
+                  <SeeAll
+                    className="h-[40px] w-[89px] s1280:w-[170px] s1512:w-[194px] s1512:text-[20px] s1600:w-[194px] s1600:text-[20px] s1280:h-[54px] text-[14px] s1280:text-[16px]"
+                    link="/"
+                  />
                 </div>
               </div>
               <div className="grid grid-cols-12 px-4 s412:px-[27px] gap-y-5 s1280:gap-y-0 s1280:gap-x-5 s1600:gap-x-8 s1920:gap-x-14 z-[3] s1280:px-5 s1600:px-10">
@@ -710,7 +722,7 @@ const Home = async ({
               </div>
               <div className="order-1 s1280:order-3 col-span-12 s1280:col-span-4 s1512:col-span-5 relative flex items-start justify-center s1512:justify-end">
                 <div className="w-[213px] s1280:w-[405px]">
-                  <ImgFetcher width={2000} src={pltWork} />
+                  <ImgFetcher width={3000} height={3000} src={pltWork} />
                 </div>
                 <div className="s1280:px-5 absolute  bottom-0 s1280:bottom-12 s1512:bottom-6 left-0 s1512:-left-20 flex-cen w-full">
                   <div className="w-[325px] h-[50px] s1600:w-[360px] s1280:h-[78px] rounded-[40px] flex-left gap-x-2 bg-[#FFFFFF99] backdrop-blur-[10px] shadow-[-8px_22px_15px_-15px_#0000001A] px-2">

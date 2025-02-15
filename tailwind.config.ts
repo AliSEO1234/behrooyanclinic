@@ -15,9 +15,6 @@ export default {
         inter: "inter",
         "pt-sans": "pt-sans",
       },
-      backgroundImage: {
-        'gradient-border': 'linear-gradient(to bottom, #000000, #FCFCFC)',
-      },
       screens: {
         s375: "375px",
         s390: "390px",
