@@ -23,12 +23,11 @@ const RoadmapCard = ({
         } roadmap-card__order--${ order } rounded-[500px] bg-white border-x-[2px] s1280:border-x-[6px] border-[#189C9F] shadow-[-4px_6px_15.5px_2px_#0000003D] flex-bet s1280:gap-x-4 s1280:px-4 relative z-[4]`}
       >
         {!endArrow && <RoadmapArrow order={ order } align={align} />}
-        {/* {!endArrow && <RoadmapArrowMobile />} */}
 
         <div className="flex-cen absolute -top-3 s1280:static">
           <div className={`w-[39px] h-[39px] s1280:w-[127px] s1280:h-[127px] bg-white shadow-roadmap-card rounded-full overflow-hidden flex-cen ${endArrow ? "p-2 s1280:p-6" :"p-1 s1280:p-2"}`}>
             <div>
-              <ImgFetcher width={1000} height={1000} src={cover} />
+              <ImgFetcher width={100} height={100} src={cover} />
             </div>
           </div>
         </div>
