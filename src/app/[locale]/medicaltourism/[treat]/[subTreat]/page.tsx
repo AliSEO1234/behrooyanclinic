@@ -21,23 +21,38 @@ import ConsultationAdmin from "@/components/consultationAdmin";
 import syringe from "@/assets/images/subTreatment/syringe.png";
 import ConsultationForm from "@/components/forms/consultationForm/consultationForm";
 import SubContent from "@/components/shortLongDesc";
-const Page = () => {
+import { dataSubCategoryHandler } from "@/staticData/subCategoryList";
+type PropsPageType = {
+  params: Promise<{ subTreat: string; locale: string }>;
+};
+const Page = async ({ params }: PropsPageType) => {
+  const { subTreat, locale } = await params;
+  const fetchData = dataSubCategoryHandler(subTreat, locale);
+  console.log(fetchData);
+  // : {
+  //   id: number;
+  //   title: string;
+  //   descriptionTop: string;
+  //   subKey: string;
+  // }
   return (
     <div className="bg-[#FCFCFC]">
       <div className="grid grid-cols-12 gap-y-3 s1280:gap-y-0 mt-14 s1280:mt-28 viewport-p rounded-b-[40px] shadow-[0px_19px_29px_-25px_#00000011]">
         <div className="col-span-12 s1280:col-span-7 s1728:col-span-6">
           <div>
             <h1 className="font-semibold text-[20px] s1280:text-[30px] s1512:text-[36px] s1600:text-[40px] [text-shadow:0px_1px_4px_#00000025] text-[#00979A] s1512:mb-10 s1600:mb-20 s1728:mb-14">
-              LASIK <br /> (Laser-Assisted in Situ Keratomileusis)
+              {fetchData?.title}
+              {/* LASIK <br /> (Laser-Assisted in Situ Keratomileusis) */}
             </h1>
-            <p className="font-medium hidden s1280:block s1280:text-[20px] s1600:text-[24px] s1728:text-[28px] s1280:leading-[40px] s1728:leading-[45px] s1280:pe-40 s1512:pe-52 text-justify text-[#474744]">
-              LASIK is a laser eye surgery that reshapes the cornea to improve
+            <p className="font-medium hidden s1280:block s1280:text-[20px] s1600:text-[24px] s1728:text-[28px] s1280:leading-[40px] s1728:leading-[45px] s1280:pe-40 s1512:pe-52 text-[#474744]">
+              {fetchData?.descriptionTop}
+              {/* LASIK is a laser eye surgery that reshapes the cornea to improve
               how light enters the eye. The surgeon creates a flap on the
               cornea, uses a laser to reshape it, and then repositions the flap.
               It starts with the anesthesia of the eye tissue with anesthetic
               drops. In this way, the patient does not feel anything during the
               surgery. The improvement in vision begins to give satisfactory
-              results within 3-5 days.
+              results within 3-5 days. */}
             </p>
           </div>
         </div>
@@ -88,18 +103,18 @@ const Page = () => {
             </div>
             <div className="s1512:h-full flex flex-col items-center gap-y-[18px] s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-end s1512:flex-col s1512:justify-between s1512:gap-y-[72px]">
               <BenefCard
-                desc="Most patients notice vision improvement within a day, with full clarity in about a week."
-                title="Rapid Recovery"
+                desc={fetchData?.benefits.items[0].desc || ""}
+                title={fetchData?.benefits.items[0].title || ""}
               />
               <BenefBorder />
               <BenefCard
-                desc="Significantly decreases or eliminates the need for glasses or contact lenses."
-                title="Reduced Dependency"
+                desc={fetchData?.benefits.items[1].desc || ""}
+                title={fetchData?.benefits.items[1].title || ""}
               />
               <BenefBorder />
               <BenefCard
-                desc="Most patients notice vision improvement within a day, with full clarity in about a week."
-                title="Precision"
+                desc={fetchData?.benefits.items[2].desc || ""}
+                title={fetchData?.benefits.items[2].title || ""}
               />
             </div>
           </div>
@@ -111,7 +126,7 @@ const Page = () => {
                   <span className="w-[18px] h-[39px]">
                     <ImgFetcher src={person} />
                   </span>
-                  <span>Who is it suitable for?</span>
+                  <span>{fetchData?.benefits.categories[0].header}</span>
                 </h4>
               </div>
               <ul className="font-normal flex flex-col gap-y-6 relative">
@@ -131,11 +146,9 @@ const Page = () => {
                   <span className="absolute top-2 left-0 w-[18px] flex-cen">
                     <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
                   </span>
-                  <span>
-                    Adults (18–40) with stable vision for at least a year.
-                  </span>
+                  <span>{fetchData?.benefits.categories[0].desc}</span>
                 </li>
-                <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
+                {/* <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
                   <span className="absolute top-2 left-0 w-[18px] flex-cen">
                     <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
                   </span>
@@ -153,7 +166,7 @@ const Page = () => {
                     conditions, severe refractive errors, or certain medical
                     conditions like keratoconus or autoimmune diseases.
                   </span>
-                </li>
+                </li> */}
               </ul>
             </div>
             {/* category */}
@@ -163,7 +176,7 @@ const Page = () => {
                   <span className="w-[18px] h-[39px]">
                     <ImgFetcher src={consider} />
                   </span>
-                  <span>Considerations</span>
+                  <span>{fetchData?.benefits.categories[1].header}</span>
                 </h4>
               </div>
               <ul className="font-normal flex flex-col gap-y-6 relative">
@@ -178,16 +191,22 @@ const Page = () => {
                     }}
                   ></div>
                 </li>
-                <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8">
-                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>
-                    <strong>Potential Risks: </strong>Dry eyes, glare, or halos
-                    around lights, typically temporary.
-                  </span>
-                </li>
-                <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
+                {fetchData?.benefits.categories[1].decsList?.map(
+                  (des, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8"
+                      >
+                        <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                          <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                        </span>
+                        <span>{des}</span>
+                      </li>
+                    );
+                  }
+                )}
+                {/* <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
                   <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
                     <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
                   </span>
@@ -206,7 +225,58 @@ const Page = () => {
                     rubbing their eyes and follow prescribed care for optimal
                     healing.
                   </span>
+                </li> */}
+              </ul>
+            </div>
+            <div className="text-[#474744]">
+              <div className="mb-8 s1280:mb-5">
+                <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
+                  <span className="w-[18px] h-[39px]">
+                    <ImgFetcher src={consider} />
+                  </span>
+                  <span>{fetchData?.benefits.categories[2].header}</span>
+                </h4>
+              </div>
+              <ul className="font-normal flex flex-col gap-y-6 relative">
+                <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
+                  <div
+                    className="w-0 h-full"
+                    style={{
+                      border: "1px dashed",
+                      borderImageSource:
+                        "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                      borderImageSlice: 1,
+                    }}
+                  ></div>
                 </li>
+
+                <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8">
+                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                  </span>
+                  <span>{fetchData?.benefits.categories[2].desc}</span>
+                </li>
+
+                {/* <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
+                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                  </span>
+                  <span>
+                    <strong>Not Suitable For:</strong> Thin corneas, high
+                    refractive errors, or individuals with eye infections or
+                    severe dry eye syndrome.
+                  </span>
+                </li>
+                <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
+                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                  </span>
+                  <span>
+                    <strong>Post-Surgery Care:</strong> Patients must avoid
+                    rubbing their eyes and follow prescribed care for optimal
+                    healing.
+                  </span>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -225,12 +295,7 @@ const Page = () => {
             </div>
             <div>
               <p className="font-medium s1280:text-[20px] text-center s1280:px-32 s1512:px-44 s1600:px-56 s1728:px-64 text-[#474744] leading-[30px] z-[3]">
-                LASIK is a safe, effective, and life-changing procedure for
-                those with refractive errors. With high success rates, most
-                patients achieve 20/20 or better vision, making it one of the
-                most popular vision correction methods worldwide. While not
-                everyone is a candidate, for those who are, it offers a quick
-                recovery and long-lasting results.
+                {fetchData?.conclusion.desc}
               </p>
             </div>
           </div>
@@ -245,7 +310,7 @@ const Page = () => {
             </h2>
           </div>
           <div>
-            <BFSwiper />
+            <BFSwiper bfList={fetchData?.bfs || []} />
           </div>
           <div className=" hidden s1280:block s1280:-mt-16">
             <div className="s1280:h-[340px] s1600:h-[360px] s1920:h-[420px]">
@@ -329,17 +394,8 @@ const Page = () => {
         {/* content */}
         <div>
           <SubContent
-            header="Azpo Health"
-            desc=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis, voluptatem pariatur deserunt totam consectetur officia, id illum beatae asperiores reprehenderit alias. Sapiente assumenda quis est rerum, quae cupiditate esse.
-                  Animi ullam quibusdam nihil ad error temporibus ducimus? Asperiores inventore tenetur ad quidem? Ex veniam explicabo, ipsam maxime blanditiis, suscipit accusamus incidunt ad placeat odio laborum saepe vel nam earum?
-                  Laudantium dolorum deserunt natus vero incidunt, porro veritatis repudiandae numquam omnis quod, dolores beatae corrupti id illo fugiat, qui nemo ratione unde? Rem impedit ut hic autem! Doloribus, facere atque!
-                  Quisquam dicta consequuntur est alias ea minus error id sed, veritatis illo voluptates officia eligendi ab nesciunt? Modi ab esse eos fuga, atque et distinctio a, labore delectus repudiandae illum.
-                  Repudiandae recusandae commodi nulla aliquam cupiditate in harum quos corporis reiciendis deserunt, unde fugit, architecto, animi amet quisquam eos soluta impedit ipsum eligendi? Tempore ea reiciendis laborum quis beatae commodi.
-                  Officia, tempore iusto, tempora reprehenderit dolore dolor praesentium natus aliquid ducimus aspernatur repudiandae laborum non autem facere ipsam! Ad deserunt expedita atque ab, reiciendis facere nostrum et unde minima error!
-                  Qui repellendus debitis provident modi quibusdam non, molestiae soluta eum. Dolorem harum debitis, repudiandae impedit laudantium dolor minima nam soluta id maxime repellendus magni accusamus ullam et placeat corrupti nobis?
-                  Doloremque minima officia sit aut, perspiciatis laborum eveniet repudiandae vero dicta pariatur? Quae, voluptatibus aliquid dolore impedit sequi necessitatibus voluptas iure provident maxime vero ratione, suscipit possimus iste, natus voluptates?
-                  Molestiae tenetur magni exercitationem earum corporis distinctio facere quidem impedit alias doloribus architecto nulla quas quasi consequatur quaerat repellendus eveniet, excepturi culpa eligendi est obcaecati modi. Voluptatem tenetur culpa nostrum.
-                  Earum natus ipsa similique perspiciatis perferendis quod quia quae omnis magni. Eligendi distinctio quidem, alias numquam debitis modi voluptas illo. Maiores aliquam dolorem voluptas, doloremque architecto molestiae veritatis cumque. Quo!"
+            header={fetchData?.contents.title || ""}
+            desc={fetchData?.contents.content || ""}
           />
         </div>
       </div>

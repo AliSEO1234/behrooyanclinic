@@ -23,8 +23,15 @@ import aes1 from "@/assets/images/treatment/aes1.jpg";
 import ChangeVideo from "@/features/treatment/chagngeVideo";
 import { VideoDataType } from "@/types/videoPlayer/videoTypes";
 import SubContent from "@/components/shortLongDesc";
+import { dataCategoryHandler } from "@/staticData/subCategoryList";
 // import Ball from "@/components/ballAnimate";
-const Page = () => {
+type PropsPageType = {
+  params: Promise<{ treat: string; locale: string }>;
+};
+const Page = async ({ params }: PropsPageType) => {
+  const { treat, locale } = await params;
+  const fetchData = dataCategoryHandler(treat, locale);
+  console.log(fetchData);
   const videoList: VideoDataType[] = [
     {
       id: 0,
@@ -58,17 +65,19 @@ const Page = () => {
         <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-5 s1600:col-span-5 s1920:col-span-6 pe-[10px] s430:pe-5 z-[2] s1512:mt-10 s1600:mt-0">
           <div className="mb-5">
             <h1 className="hidden s1280:block mb-4 s1512:mb-6 font-black s1280:text-[36px] s1512:text-[40px] s1728:text-[60px] text-[#00979A]">
-              Eye Surgeries
+              {fetchData?.title}
+              {/* Eye Surgeries */}
             </h1>
             <p className="text-[#00979A] font-semibold text-[14px] flex-left gap-x-2 mb-2 s1280:hidden">
               <span>54</span>
               <span>Service</span>
             </p>
             <p className="text-[#333333] font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-justify s1280:text-start leading-[25px] s1280:leading-[30px] s1600:leading-[45px] s1280:line-clamp-[8]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              {fetchData?.descriptionTop}
+              {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.{" "}
+              nisi ut aliquip ex ea commodo consequat.{" "} */}
             </p>
           </div>
           <PrevNextBtn />
@@ -121,14 +130,11 @@ const Page = () => {
           </div>
           <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-5 flex flex-col h-fit">
             <div className="s1280:mb-20 s1512:mb-4">
-              <h2 className="font-semibold text-[20px] [text-shadow:0px_1px_2px_#00000025] s1280:text-[36px] s1512:text-[48px] s1728:text-[48px] text-[#333333] shadow-treat-video mb-2">
-                Eye Surgeries
+              <h2 className="font-semibold text-[20px] [text-shadow:0px_1px_2px_#00000025] s1280:text-[30px] s1512:text-[36px] s1728:text-[40px] text-[#333333] shadow-treat-video mb-2">
+                {fetchData?.videoContents.title}
               </h2>
               <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-[#474744] text-justify s1280:text-start s1280:leading-8 s1512:leading-9 s1600:leading-[50px]">
-                Our goal is to deliver quality of care in a courteous,
-                respectful, and compassionate manner. We hope you will allow us
-                to care for you and strive to be the first and best choice for
-                healthcare.
+                {fetchData?.videoContents.desc}
               </p>
             </div>
             <div className="items-end justify-start gap-x-4 mt-auto hidden s1280:flex s1280:h-[188px] s1512:h-[236px]">
@@ -161,7 +167,7 @@ const Page = () => {
             <div className="mb-10 flex flex-col justify-start gap-y-2 s1280:gap-y-0 s1280:flex-row items-start s1280:justify-between s1280:mb-20">
               <div className="w-full s1280:w-fit mb-5">
                 <h2 className="[text-shadow:0px_1px_2px_#00000040] font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-[#00979A]">
-                  Eye Surgeries Service
+                  {fetchData?.subCategoryContent.title}
                 </h2>
               </div>
               <div className="w-full s1280:w-fit">
@@ -231,17 +237,8 @@ const Page = () => {
                 {/* content */}
                 <div>
                   <SubContent
-                    header="Azpo Health"
-                    desc=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis, voluptatem pariatur deserunt totam consectetur officia, id illum beatae asperiores reprehenderit alias. Sapiente assumenda quis est rerum, quae cupiditate esse.
-                  Animi ullam quibusdam nihil ad error temporibus ducimus? Asperiores inventore tenetur ad quidem? Ex veniam explicabo, ipsam maxime blanditiis, suscipit accusamus incidunt ad placeat odio laborum saepe vel nam earum?
-                  Laudantium dolorum deserunt natus vero incidunt, porro veritatis repudiandae numquam omnis quod, dolores beatae corrupti id illo fugiat, qui nemo ratione unde? Rem impedit ut hic autem! Doloribus, facere atque!
-                  Quisquam dicta consequuntur est alias ea minus error id sed, veritatis illo voluptates officia eligendi ab nesciunt? Modi ab esse eos fuga, atque et distinctio a, labore delectus repudiandae illum.
-                  Repudiandae recusandae commodi nulla aliquam cupiditate in harum quos corporis reiciendis deserunt, unde fugit, architecto, animi amet quisquam eos soluta impedit ipsum eligendi? Tempore ea reiciendis laborum quis beatae commodi.
-                  Officia, tempore iusto, tempora reprehenderit dolore dolor praesentium natus aliquid ducimus aspernatur repudiandae laborum non autem facere ipsam! Ad deserunt expedita atque ab, reiciendis facere nostrum et unde minima error!
-                  Qui repellendus debitis provident modi quibusdam non, molestiae soluta eum. Dolorem harum debitis, repudiandae impedit laudantium dolor minima nam soluta id maxime repellendus magni accusamus ullam et placeat corrupti nobis?
-                  Doloremque minima officia sit aut, perspiciatis laborum eveniet repudiandae vero dicta pariatur? Quae, voluptatibus aliquid dolore impedit sequi necessitatibus voluptas iure provident maxime vero ratione, suscipit possimus iste, natus voluptates?
-                  Molestiae tenetur magni exercitationem earum corporis distinctio facere quidem impedit alias doloribus architecto nulla quas quasi consequatur quaerat repellendus eveniet, excepturi culpa eligendi est obcaecati modi. Voluptatem tenetur culpa nostrum.
-                  Earum natus ipsa similique perspiciatis perferendis quod quia quae omnis magni. Eligendi distinctio quidem, alias numquam debitis modi voluptas illo. Maiores aliquam dolorem voluptas, doloremque architecto molestiae veritatis cumque. Quo!"
+                    header={fetchData?.contents.title || ""}
+                    desc={fetchData?.contents.content || ""}
                   />
                 </div>
               </div>

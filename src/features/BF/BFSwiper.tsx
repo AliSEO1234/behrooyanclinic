@@ -1,17 +1,13 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import bf1 from "@/assets/images/subTreatment/BF/ba1.jpg";
-import bf2 from "@/assets/images/subTreatment/BF/ba2.jpg";
-import bf3 from "@/assets/images/subTreatment/BF/ba3.jpg";
-import bf4 from "@/assets/images/subTreatment/BF/ba4.jpg";
-import bf5 from "@/assets/images/subTreatment/BF/ba5.jpg";
+
 import ImgFetcher from "@/components/imgFetcher";
 import { useState } from "react";
+import { StaticImageData } from "next/image";
 
-const BFSwiper = () => {
+const BFSwiper = ({bfList} : {bfList : StaticImageData[]}) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-
   return (
     <Swiper
       spaceBetween={40}
@@ -19,7 +15,7 @@ const BFSwiper = () => {
       breakpoints={{
         1024: {
           spaceBetween: 40,
-          slidesPerView: 3,
+          slidesPerView: 4,
         },
       }}
       centeredSlides={true}
@@ -28,10 +24,10 @@ const BFSwiper = () => {
         setActiveIndex(swiper.activeIndex);
       }}
     >
-      {[bf1, bf2, bf3, bf4, bf5].map((src, index) => (
+      {bfList.map((src, index) => (
         <SwiperSlide
           key={index}
-          className={`rounded-[20px] overflow-hidden transition-opacity duration-300 ${
+          className={`s1280:h-[200px] s1280:min-h-[200px] s1280:w-[100px] rounded-[20px] overflow-hidden transition-opacity duration-300 ${
             activeIndex === index ? "opacity-100 shadow-[-4px_0px_8.1px_#00000040]" : "opacity-30 p-2 s1280:p-10"
           }`}
         >

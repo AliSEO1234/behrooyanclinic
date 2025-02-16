@@ -14,7 +14,7 @@ const SubContent = ({
   const [isFull, setIsFull] = useState<boolean>(false);
   return (
     <div className="pb-8 pt-[30px] border border-[#00979A] bg-white rounded-[40px]">
-      <div className="mb-4 s1280:mb-0 ">
+      <div className="mb-4 s1280:mb-5 ">
         <h2 className="px-4 s1280:px-10 font-semibold s1280:text-[20px]">
           {header}
         </h2>
