@@ -66,50 +66,51 @@ export const dataSubCategoryHandler = (key: string, locale: string) => {
       id: 0,
       title:
         locale === "ru"
-          ? "Пересадка волос в Турции: естественные, постоянные результаты в 2025 году!"
+          ? "Пересадка Волос FUE Методом: Восстановите Ваши Волосы Естественным и Долговечным Способом"
           : "FUE Hair Transplant in Turkey: Natural, Permanent Results with AZPO Health!",
       descriptionTop:
         locale === "ru"
-          ? "Устали от истончения волос или залысин? Откройте для себя доступные решения для пересадки волос мирового класса в AZPO Health в Стамбуле, Анталье и Аланье, Турция. Верните себе молодость и уверенность с нашей опытной медицинской командой и современными технологиями."
+          ? "Надоели редеющие волосы и залысины? Откройте для себя пересадку волос методом FUE в Турции! Современная технология, минимальная инвазивность и естественный результат – верните себе уверенность и молодость с AZPO Health."
           : "Tired of thinning hair? Discover world-class FUE hair transplant solutions at AZPO Health in Istanbul, Antalya, and Alanya. Regain your youthful look and confidence with our experienced team and advanced techniques.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "" : "Minimally invasive procedure",
+            title: locale === "ru" ? "Минимально инвазивная" : "Minimally invasive",
             desc:
               locale === "ru"
-                ? ""
+                ? "Минимальная травматизация тканей и быстрое восстановление."
                 : "A gentle surgical technique that reduces trauma and promotes faster healing.",
           },
           {
-            title: locale === "ru" ? "" : "No visible scars",
+            title: locale === "ru" ? "Отсутствие видимых шрамов" : "No visible scars",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура оставляет минимальные рубцы, сохраняя естественный внешний вид."
                 : "The procedure leaves minimal scarring, maintaining a natural appearance.  ",
           },
           {
-            title: locale === "ru" ? "" : "Quick recovery",
+            title: locale === "ru" ? "Естественность пересаженных волос" : "Quick recovery",
             desc:
               locale === "ru"
-                ? ""
+                ? "Естественная интеграция пересаженных волос с существующими."
                 : "Results blend seamlessly with existing hair for authentic appearance.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "" : "For whom it is suitable:",
+            header: locale === "ru" ? "Кому это подходит" : "For whom it is suitable",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура подходит как мужчинам, так и женщинам с локальными участками выпадения волос, но требуется достаточное количество здоровых волос в донорской зоне."
                 : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
           },
           {
-            header: locale === "ru" ? "" : "What to consider:",
+            header: locale === "ru" ? "Что следует учитывать" : "What to consider",
             decsList: [
-              "Results are not immediate – hair starts growing in a few months.",
-              "Choosing an experienced specialist is key to success.",
-              "Temporary redness and sensitivity in the transplanted area may occur.",
+                locale === "ru" ? "Результаты не проявляются сразу – волосы начинают расти через несколько месяцев." : "Results are not immediate – hair starts growing in a few months.",
+                locale === "ru" ? "Выбор опытного специалиста – ключ к успеху." : "Choosing an experienced specialist is key to success.",
+                locale === "ru" ? "Возможно временное покраснение и чувствительность в зоне пересадки." : "Temporary redness and sensitivity in the transplanted area may occur.",
+
             ],
             desc:
               locale === "ru"
@@ -117,18 +118,19 @@ export const dataSubCategoryHandler = (key: string, locale: string) => {
                 : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
           },
           {
-            header: locale === "ru" ? "" : "How it works:",
+            header: locale === "ru" ? "Как это работает" : "How it works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Волосяные фолликулы аккуратно извлекаются и имплантируются в заранее подготовленные микроканалы в проблемной зоне. Это обеспечивает естественную густоту волос и стимулирует их рост."
                 : "Hair follicles are carefully extracted and implanted into pre-prepared microchannels in the problem area. This allows for natural hair density and stimulates hair growth.",
           },
         ],
       },
       conclusion: {
+        title : locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? ""
+            ? "Метод FUE – это современный, безопасный и эффективный способ восстановления волос. Он подходит большинству пациентов, но успех зависит от выбора правильной клиники и соблюдения послепроцедурных рекомендаций."
             : "The FUE method is a modern, safe, and effective way to restore hair. It is suitable for most patients, but success depends on selecting the right clinic and adhering to post-procedure recommendations.",
       },
       subCategoryContent: {

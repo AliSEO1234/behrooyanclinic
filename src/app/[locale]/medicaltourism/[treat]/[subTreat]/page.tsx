@@ -118,7 +118,7 @@ const Page = async ({ params }: PropsPageType) => {
               />
             </div>
           </div>
-          <div className="bg-[#DAEDE645] rounded-[40px] p-4 s1280:p-9 w-full flex flex-col gap-y-16 s1512:h-[680px] s1512:pe-12 s1600:pe-28">
+          <div className="bg-[#DAEDE645] rounded-[40px] p-4 s1280:p-9 w-full flex flex-col gap-y-16 s1512:pe-12 s1600:pe-28">
             {/* category */}
             <div className="text-[#474744]">
               <div className="mb-8 s1280:mb-5">
@@ -286,7 +286,7 @@ const Page = async ({ params }: PropsPageType) => {
           <div className="z-[3]">
             <div className="flex items-start justify-center s1280:mb-20 bg-consul-phone h-[95px]">
               <h2 className="font-semibold text-[20px] s1280:text-[40px] bg-gradient-to-r from-[#666666] to-[#3EBB9A] inline-block text-transparent bg-clip-text relative h-[3]">
-                Conclusion
+                {fetchData?.conclusion.title}
                 <div className="absolute top-[100%] -right-[42%] s1280:top-[108%] s1280:-right-[32%] w-[53px] h-[40px] s1280:w-fit s1280:h-fit -translate-x-1/2 -translate-y-1/2">
                   <ImgFetcher src={mask} />
                 </div>
@@ -303,10 +303,24 @@ const Page = async ({ params }: PropsPageType) => {
         {/* before && after */}
         <div className="mb-[24px] s1280:mb-20">
           <div className="font-bold flex-left relative w-fit mb-5">
-            <h2 className="s1280:text-[48px]">Before</h2>
-            <div className="bg-gradient-to-r from-[#FCFCFC] via-[#3EBB9A] to-[#FCFCFC] s1280:w-[140px] w-[80px] h-[2px] s1280:h-[6px] -rotate-45 absolute top-[58%] left-[42%] s1280:top-[55%] s1280:left-[42%] -translate-x-1/2 -translate-y-1/2"></div>
-            <h2 className="text-[30px] s1280:text-[96px] text-[#3EBB9A] [text-shadow:0px_3px_2.8px_#00000040] mt-7 -ms-2 s1280:-ms-6 s1280:mt-20">
-              After
+            <h2 className="s1280:text-[48px]">
+              {locale === "ru" ? "До" : "Before"}
+            </h2>
+            <div
+              className={`bg-gradient-to-r from-[#FCFCFC] via-[#3EBB9A] to-[#FCFCFC] s1280:w-[140px] w-[80px] h-[2px] s1280:h-[6px] -rotate-45 absolute -translate-x-1/2 -translate-y-1/2 ${
+                locale === "ru"
+                  ? "top-[58%] left-[20%] s1280:top-[55%] s1280:left-[20%]"
+                  : "top-[58%] left-[42%] s1280:top-[55%] s1280:left-[42%]"
+              }`}
+            ></div>
+            <h2
+              className={`text-[30px] s1280:text-[96px] text-[#3EBB9A] [text-shadow:0px_3px_2.8px_#00000040]  ${
+                locale === "ru"
+                  ? "mt-7 -ms-0 s1280:-ms-1 s1280:mt-20"
+                  : "mt-7 -ms-2 s1280:-ms-6 s1280:mt-20"
+              }`}
+            >
+              {locale === "ru" ? "После" : "After"}
             </h2>
           </div>
           <div>
