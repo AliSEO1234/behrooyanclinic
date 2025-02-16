@@ -66,13 +66,9 @@ const Page = async ({ params }: PropsPageType) => {
         </div>
         <div className="col-span-12 s1280:hidden">
           <p className="font-medium s1280:hidden text-justify text-[#474744]">
-            LASIK is a laser eye surgery that reshapes the cornea to improve how
-            light enters the eye. The surgeon creates a flap on the cornea, uses
-            a laser to reshape it, and then repositions the flap. It starts with
-            the anesthesia of the eye tissue with anesthetic drops. In this way,
-            the patient does not feel anything during the surgery. The
-            improvement in vision begins to give satisfactory results within 3-5
-            days.
+            {
+              fetchData?.descriptionTop
+            }
           </p>
         </div>
       </div>
