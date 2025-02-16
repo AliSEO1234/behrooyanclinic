@@ -90,7 +90,9 @@ const Page = async ({ params }: PropsPageType) => {
             <div className="flex flex-col items-start justify-center">
               <div className="w-full">
                 <h2 className="font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-center [text-shadow:0px_3px_2.8px_#00000040]">
-                  Benefits
+                  {
+                    locale === "ru" ? "Преимущества" : "Advantages"
+                  }
                 </h2>
               </div>
               <div className="s1280:h-[463px] s1280:w-[259px] s1600:w-[330px] s1600:h-[589px]">
