@@ -22,6 +22,7 @@ import eye2 from "@/assets/images/treatment/eye2.jpg";
 import aes1 from "@/assets/images/treatment/aes1.jpg";
 import ChangeVideo from "@/features/treatment/chagngeVideo";
 import { VideoDataType } from "@/types/videoPlayer/videoTypes";
+import SubContent from "@/components/shortLongDesc";
 // import Ball from "@/components/ballAnimate";
 const Page = () => {
   const videoList: VideoDataType[] = [
@@ -97,7 +98,7 @@ const Page = () => {
             <ImgFetcher width={2000} height={2000} src={borderPhone} />
           </div>
           {/* desktop */}
-          <div className="hidden s1280:block s1280:w-[40%] s1280:h-[450px] s1512:h-[550px] s1512:w-[30%] s1600:w-[40%] s1600:h-[600px] s1920:h-[650px]" >
+          <div className="hidden s1280:block s1280:w-[40%] s1280:h-[450px] s1512:h-[550px] s1512:w-[30%] s1600:w-[40%] s1600:h-[600px] s1920:h-[650px]">
             <ImgFetcher width={2000} height={2000} src={borderTreat} />
           </div>
           {/* service icon */}
@@ -226,6 +227,22 @@ const Page = () => {
                 />
                 <div className="w-full">
                   <Pagination totalPages={80} />
+                </div>
+                {/* content */}
+                <div>
+                  <SubContent
+                    header="Azpo Health"
+                    desc=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis, voluptatem pariatur deserunt totam consectetur officia, id illum beatae asperiores reprehenderit alias. Sapiente assumenda quis est rerum, quae cupiditate esse.
+                  Animi ullam quibusdam nihil ad error temporibus ducimus? Asperiores inventore tenetur ad quidem? Ex veniam explicabo, ipsam maxime blanditiis, suscipit accusamus incidunt ad placeat odio laborum saepe vel nam earum?
+                  Laudantium dolorum deserunt natus vero incidunt, porro veritatis repudiandae numquam omnis quod, dolores beatae corrupti id illo fugiat, qui nemo ratione unde? Rem impedit ut hic autem! Doloribus, facere atque!
+                  Quisquam dicta consequuntur est alias ea minus error id sed, veritatis illo voluptates officia eligendi ab nesciunt? Modi ab esse eos fuga, atque et distinctio a, labore delectus repudiandae illum.
+                  Repudiandae recusandae commodi nulla aliquam cupiditate in harum quos corporis reiciendis deserunt, unde fugit, architecto, animi amet quisquam eos soluta impedit ipsum eligendi? Tempore ea reiciendis laborum quis beatae commodi.
+                  Officia, tempore iusto, tempora reprehenderit dolore dolor praesentium natus aliquid ducimus aspernatur repudiandae laborum non autem facere ipsam! Ad deserunt expedita atque ab, reiciendis facere nostrum et unde minima error!
+                  Qui repellendus debitis provident modi quibusdam non, molestiae soluta eum. Dolorem harum debitis, repudiandae impedit laudantium dolor minima nam soluta id maxime repellendus magni accusamus ullam et placeat corrupti nobis?
+                  Doloremque minima officia sit aut, perspiciatis laborum eveniet repudiandae vero dicta pariatur? Quae, voluptatibus aliquid dolore impedit sequi necessitatibus voluptas iure provident maxime vero ratione, suscipit possimus iste, natus voluptates?
+                  Molestiae tenetur magni exercitationem earum corporis distinctio facere quidem impedit alias doloribus architecto nulla quas quasi consequatur quaerat repellendus eveniet, excepturi culpa eligendi est obcaecati modi. Voluptatem tenetur culpa nostrum.
+                  Earum natus ipsa similique perspiciatis perferendis quod quia quae omnis magni. Eligendi distinctio quidem, alias numquam debitis modi voluptas illo. Maiores aliquam dolorem voluptas, doloremque architecto molestiae veritatis cumque. Quo!"
+                  />
                 </div>
               </div>
               <Sidebar />

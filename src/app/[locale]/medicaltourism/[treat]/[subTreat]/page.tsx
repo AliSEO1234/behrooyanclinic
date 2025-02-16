@@ -20,6 +20,7 @@ import BFSwiper from "@/features/BF/BFSwiper";
 import ConsultationAdmin from "@/components/consultationAdmin";
 import syringe from "@/assets/images/subTreatment/syringe.png";
 import ConsultationForm from "@/components/forms/consultationForm/consultationForm";
+import SubContent from "@/components/shortLongDesc";
 const Page = () => {
   return (
     <div className="bg-[#FCFCFC]">
@@ -116,12 +117,14 @@ const Page = () => {
               <ul className="font-normal flex flex-col gap-y-6 relative">
                 {/* border dashed */}
                 <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                  <div className="w-0 h-full"
-                  style={{
-                    border: "1px dashed",
-                    borderImageSource: "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
-                    borderImageSlice: 1,
-                  }}
+                  <div
+                    className="w-0 h-full"
+                    style={{
+                      border: "1px dashed",
+                      borderImageSource:
+                        "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                      borderImageSlice: 1,
+                    }}
                   ></div>
                 </li>
                 <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
@@ -165,12 +168,14 @@ const Page = () => {
               </div>
               <ul className="font-normal flex flex-col gap-y-6 relative">
                 <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                  <div className="w-0 h-full"
-                  style={{
-                    border: "1px dashed",
-                    borderImageSource: "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
-                    borderImageSlice: 1,
-                  }}
+                  <div
+                    className="w-0 h-full"
+                    style={{
+                      border: "1px dashed",
+                      borderImageSource:
+                        "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                      borderImageSlice: 1,
+                    }}
                   ></div>
                 </li>
                 <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8">
@@ -267,7 +272,7 @@ const Page = () => {
           </div>
         </div>
         {/* Free consultation */}
-        <div>
+        <div className="mb-10">
           <div className="flex-bet mb-6 s1280:mb-5">
             <hr className="w-[16%] s1280:w-[32%] h-0 border-[2px] border-dashed border-[#333333]" />
             <h2 className="font-semibold text-[20px] s1280:text-[40px] flex items-start justify-center gap-x-4">
@@ -312,7 +317,7 @@ const Page = () => {
                 <div className="flex-bet">
                   <div className="border-[0.5px] border-[#333333] h-0 w-full me-12 s1280:me-0 relative syring-animate">
                     <div className="w-[51px] h-[46px] s1280:w-[95px] s1280:h-[86px] absolute right-0  bottom-0 s1280:-right-[94px]">
-                      <ImgFetcher width={2000} height={2000} src={syringe} />
+                      <ImgFetcher width={800} height={800} src={syringe} />
                     </div>
                   </div>
                 </div>
@@ -320,6 +325,22 @@ const Page = () => {
               <ConsultationForm />
             </div>
           </div>
+        </div>
+        {/* content */}
+        <div>
+          <SubContent
+            header="Azpo Health"
+            desc=" Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, omnis, voluptatem pariatur deserunt totam consectetur officia, id illum beatae asperiores reprehenderit alias. Sapiente assumenda quis est rerum, quae cupiditate esse.
+                  Animi ullam quibusdam nihil ad error temporibus ducimus? Asperiores inventore tenetur ad quidem? Ex veniam explicabo, ipsam maxime blanditiis, suscipit accusamus incidunt ad placeat odio laborum saepe vel nam earum?
+                  Laudantium dolorum deserunt natus vero incidunt, porro veritatis repudiandae numquam omnis quod, dolores beatae corrupti id illo fugiat, qui nemo ratione unde? Rem impedit ut hic autem! Doloribus, facere atque!
+                  Quisquam dicta consequuntur est alias ea minus error id sed, veritatis illo voluptates officia eligendi ab nesciunt? Modi ab esse eos fuga, atque et distinctio a, labore delectus repudiandae illum.
+                  Repudiandae recusandae commodi nulla aliquam cupiditate in harum quos corporis reiciendis deserunt, unde fugit, architecto, animi amet quisquam eos soluta impedit ipsum eligendi? Tempore ea reiciendis laborum quis beatae commodi.
+                  Officia, tempore iusto, tempora reprehenderit dolore dolor praesentium natus aliquid ducimus aspernatur repudiandae laborum non autem facere ipsam! Ad deserunt expedita atque ab, reiciendis facere nostrum et unde minima error!
+                  Qui repellendus debitis provident modi quibusdam non, molestiae soluta eum. Dolorem harum debitis, repudiandae impedit laudantium dolor minima nam soluta id maxime repellendus magni accusamus ullam et placeat corrupti nobis?
+                  Doloremque minima officia sit aut, perspiciatis laborum eveniet repudiandae vero dicta pariatur? Quae, voluptatibus aliquid dolore impedit sequi necessitatibus voluptas iure provident maxime vero ratione, suscipit possimus iste, natus voluptates?
+                  Molestiae tenetur magni exercitationem earum corporis distinctio facere quidem impedit alias doloribus architecto nulla quas quasi consequatur quaerat repellendus eveniet, excepturi culpa eligendi est obcaecati modi. Voluptatem tenetur culpa nostrum.
+                  Earum natus ipsa similique perspiciatis perferendis quod quia quae omnis magni. Eligendi distinctio quidem, alias numquam debitis modi voluptas illo. Maiores aliquam dolorem voluptas, doloremque architecto molestiae veritatis cumque. Quo!"
+          />
         </div>
       </div>
     </div>
