@@ -8,4 +8,6 @@ export type ServiceSliderCardType = {
   services? :string[]
   className? : string
   imgStyle? : string
+  changeImageHandler : (key : string)=>void
+  keyImg : string
 };

@@ -28,13 +28,6 @@ type PropsPageType = {
 const Page = async ({ params }: PropsPageType) => {
   const { subTreat, locale } = await params;
   const fetchData = dataSubCategoryHandler(subTreat, locale);
-  console.log(fetchData);
-  // : {
-  //   id: number;
-  //   title: string;
-  //   descriptionTop: string;
-  //   subKey: string;
-  // }
   return (
     <div className="bg-[#FCFCFC]">
       <div className="grid grid-cols-12 gap-y-3 s1280:gap-y-0 mt-14 s1280:mt-28 viewport-p rounded-b-[40px] shadow-[0px_19px_29px_-25px_#00000011]">
@@ -42,17 +35,9 @@ const Page = async ({ params }: PropsPageType) => {
           <div>
             <h1 className="font-semibold text-[20px] s1280:text-[30px] s1512:text-[36px] s1600:text-[40px] [text-shadow:0px_1px_4px_#00000025] text-[#00979A] s1512:mb-10 s1600:mb-20 s1728:mb-14">
               {fetchData?.title}
-              {/* LASIK <br /> (Laser-Assisted in Situ Keratomileusis) */}
             </h1>
             <p className="font-medium hidden s1280:block s1280:text-[20px] s1600:text-[24px] s1728:text-[28px] s1280:leading-[40px] s1728:leading-[45px] s1280:pe-40 s1512:pe-52 text-[#474744]">
               {fetchData?.descriptionTop}
-              {/* LASIK is a laser eye surgery that reshapes the cornea to improve
-              how light enters the eye. The surgeon creates a flap on the
-              cornea, uses a laser to reshape it, and then repositions the flap.
-              It starts with the anesthesia of the eye tissue with anesthetic
-              drops. In this way, the patient does not feel anything during the
-              surgery. The improvement in vision begins to give satisfactory
-              results within 3-5 days. */}
             </p>
           </div>
         </div>
