@@ -934,26 +934,26 @@ export const dataSubCategoryHandler = (key: string, locale: string) => {
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Улучшенная эстетика" : "Enhanced Aesthetics",
+            title: locale === "ru" ? "Улучшенная эстетика" : "Better Look",
             desc:
               locale === "ru"
                 ? "Гармоничные пропорции носа, идеально дополняющие черты лица"
-                : "Achieve facial harmony with refined nose proportions that complement your natural features",
+                : "Create balanced facial features with ideal nose shape",
           },
           {
-            title: locale === "ru" ? "Улучшение дыхания" : "Breathing Improvement",
+            title: locale === "ru" ? "Улучшение дыхания" : "Easy Breath",
             desc:
               locale === "ru"
                 ? "Коррекция структурных проблем для оптимизации дыхания"
-                : "Correct structural issues like deviated septum to enhance airflow and improve respiratory function",
+                : "Fix structural problems to help you breathe better",
           },
           {
             title:
-              locale === "ru" ? "Долговременные результаты" : "Lasting Results",
+              locale === "ru" ? "Долговременные результаты" : "Long Term",
             desc:
               locale === "ru"
                 ? "Результаты сохраняются на протяжении многих лет"
-                : "Enjoy permanent changes that maintain their appearance for years after complete healing",
+                : "Enjoy permanent results that last for years to come",
           },
         ],
         categories: [
@@ -1050,26 +1050,26 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Омоложенный вид" : "Rejuvenated Look",
+            title: locale === "ru" ? "Молодые Глаза" : "Youthful Eyes",
             desc:
               locale === "ru"
-                ? "Преобразите свою внешность с помощью освеженной, молодой области вокруг глаз, которая сбрасывает годы с вашего лица"
-                : "Transform your appearance with a refreshed, youthful eye area that takes years off your face",
+                ? "Освежите область вокруг глаз для более молодого вида лица"
+                : "Get a refreshed look and restore your natural eye appearance",
           },
           {
-            title: locale === "ru" ? "Результаты, противостоящие возрасту" : "Age-Defying Results",
+            title: locale === "ru" ? "Стойкий Эффект" : "Ageless Beauty",
             desc:
               locale === "ru"
-                ? "Получите длительное улучшение эстетики лица за счет уменьшения видимых признаков старения вокруг глаз"
-                : "Experience lasting improvement in facial aesthetics by reducing visible signs of aging around eyes",
+                ? "Длительное улучшение внешнего вида за счет уменьшения признаков старения"
+                : "Reduce aging signs around eyes for lasting facial enhancement",
           },
           {
             title:
-              locale === "ru" ? "Улучшенное зрение" : "Enhanced Vision",
+              locale === "ru" ? "Четкий Взгляд" : "Clear Vision",
             desc:
               locale === "ru"
-                ? "Улучшите как функциональность, так и эстетику, когда нависающие веки влияют на поле зрения"
-                : "Improve both functionality and aesthetics when drooping eyelids affect your field of vision",
+                ? "Улучшение зрения и эстетики при проблеме нависающих век"
+                : "Improve sight and appearance by addressing drooping eyelids",
           },
         ],
         categories: [
@@ -1157,26 +1157,26 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Эстетическое улучшение" : "Aesthetic Enhancement",
+            title: locale === "ru" ? "Эстетическое улучшение" : "Image Benefits",
             desc:
               locale === "ru"
                 ? "Улучшение внешнего вида интимной зоны повышает самооценку."
-                : "A refined and harmonious appearance of intimate areas leads to improved self-image and confidence.",
+                : "Natural-looking results boost confidence and enhance physical comfort.",
           },
           {
-            title: locale === "ru" ? "Физический комфорт" : "Physical Comfort",
+            title: locale === "ru" ? "Физический комфорт" : "Daily Comfort",
             desc:
               locale === "ru"
                 ? "Устранение дискомфорта при ежедневной активности."
-                : "Reduction of excess tissue eliminates friction and discomfort during daily activities and exercise.",
+                : "Less friction during activities leads to improved mobility.",
           },
           {
             title:
-              locale === "ru" ? "Эмоциональное благополучие" : "Emotional Well-being",
+              locale === "ru" ? "Эмоциональное благополучие" : "Mental Health",
             desc:
               locale === "ru"
                 ? "Повышение уверенности в себе и улучшение качества жизни."
-                : "Enhanced body confidence and reduced anxiety about intimate appearance improves quality of life.",
+                : "Better self-image reduces anxiety and enhances life satisfaction.",
           },
         ],
         categories: [
@@ -1264,26 +1264,26 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Улучшенный Внешний Вид" : "Enhanced Appearance",
+            title: locale === "ru" ? "Улучшенный Внешний Вид" : "Profile Enhancement",
             desc:
               locale === "ru"
                 ? "Избавьтесь от двойного подбородка для более молодого и четкого профиля."
-                : "Get rid of unwanted fullness under the chin and achieve a more defined, youthful facial profile.",
+                : "Define your jawline and achieve a more youthful appearance.",
           },
           {
-            title: locale === "ru" ? "Естественно Выглядящие Результаты" : "Natural-Looking Results",
+            title: locale === "ru" ? "Природная Красота" : "Natural Beauty",
             desc:
               locale === "ru"
                 ? "Результаты гармонично дополняют ваши природные черты лица."
-                : "Results blend seamlessly with your natural features while maintaining balanced facial proportions.",
+                : "Seamlessly blend results with your features for perfect facial harmony.",
           },
           {
             title:
-              locale === "ru" ? "Долгосрочный Успех" : "Long-Term Success",
+              locale === "ru" ? "Долгосрочный Успех" : "Lasting Results",
             desc:
               locale === "ru"
                 ? "Сохраняйте результат надолго благодаря здоровому образу жизни."
-                : "Maintain your new profile through a healthy lifestyle with lasting improvement in facial definition.",
+                : "Maintain your improved profile through healthy habits and lifestyle changes.",
           },
         ],
         categories: [
@@ -1368,26 +1368,26 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Улучшенная эстетика" : "Enhanced Aesthetics",
+            title: locale === "ru" ? "Улучшенная форма" : "Better Look",
             desc:
               locale === "ru"
-                ? "Естественная форма ушей, гармонично дополняющая черты лица."
-                : "A natural-looking ear shape and position that blends harmoniously with facial features.",
+                ? "Естественный вид ушей для гармоничного образа."
+                : "Natural ear shape that complements facial features.",
           },
           {
-            title: locale === "ru" ? "Психологическое воздействие" : "Psychological Impact",
+            title: locale === "ru" ? "Уверенность" : "Self Image",
             desc:
               locale === "ru"
-                ? "Повышение уверенности в себе и улучшение самовосприятия."
-                : "Boosted confidence and self-image, particularly beneficial for social interactions and self-perception.",
+                ? "Повышение самооценки и улучшение восприятия себя."
+                : "Improved confidence and comfort in social settings.",
           },
           {
             title:
-              locale === "ru" ? "Долгосрочные решения" : "Lasting Solutions",
+              locale === "ru" ? "Результат" : "Long Term",
             desc:
               locale === "ru"
-                ? "Стойкий результат коррекции, сохраняющийся на протяжении всей жизни."
-                : "Permanent correction of ear irregularities with results that maintain their quality over time.",
+                ? "Постоянный эффект коррекции на всю жизнь."
+                : "Permanent ear correction with enduring results.",
           },
         ],
         categories: [
@@ -1474,26 +1474,26 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Лифтинг" : "Skin Tightening",
+            title: locale === "ru" ? "Лифтинг" : "Skin Lift",
             desc:
               locale === "ru"
                 ? "Восстановление упругости кожи для более молодого вида."
-                : "Advanced techniques work to restore elasticity and firmness, creating a smoother and more youthful appearance.",
+                : "Restores elasticity and firmness for a smoother, youthful look.",
           },
           {
-            title: locale === "ru" ? "Контуры" : "Contour Enhancement",
+            title: locale === "ru" ? "Контуры" : "Body Shape",
             desc:
               locale === "ru"
                 ? "Процедуры для создания привлекательных пропорций бедер."
-                : "Specialized procedures reshape and define thigh areas, resulting in more balanced and attractive proportions.",
+                : "Reshapes thigh areas for balanced, attractive proportions.",
           },
           {
             title:
-              locale === "ru" ? "Коррекция" : "Fat Management",
+              locale === "ru" ? "Коррекция" : "Fat Care",
             desc:
               locale === "ru"
                 ? "Удаление избыточных тканей для достижения стройного силуэта."
-                : "Strategic removal of excess tissue and fat deposits helps achieve a sleeker, more toned thigh profile.",
+                : "Removes excess tissue and fat for a sleeker, toned profile.",
           },
         ],
         categories: [
@@ -1583,26 +1583,26 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Результат без морщин" : "Wrinkle-Free Results",
+            title: locale === "ru" ? "Гладкая кожа" : "Smooth Skin",
             desc:
               locale === "ru"
-                ? "Устраняет морщины на лбу и создает более молодую кожу"
-                : "A transformative solution that eliminates forehead wrinkles and creates smoother, more youthful skin",
+                ? "Эффективное устранение морщин и омоложение кожи лба"
+                : "Eliminates forehead wrinkles for a more youthful appearance",
           },
           {
-            title: locale === "ru" ? "Улучшение области вокруг глаз" : "Enhanced Eye Area",
+            title: locale === "ru" ? "Яркий взгляд" : "Fresh Eyes",
             desc:
               locale === "ru"
-                ? "Приподнимает брови для более открытого и свежего взгляда"
-                : "Lifts and raises eyebrows to achieve a more open-eyed, refreshed appearance for a rejuvenated look",
+                ? "Естественный лифтинг бровей для более выразительных глаз"
+                : "Lifts eyebrows to create a naturally refreshed look",
           },
           {
             title:
-              locale === "ru" ? "Повышение уверенности" : "Confidence Boost",
+              locale === "ru" ? "Новая уверенность" : "Natural Beauty",
             desc:
               locale === "ru"
-                ? "Естественная коррекция тяжелых бровей и горизонтальных линий"
-                : "Corrects heavy brows and horizontal lines while improving self-esteem through natural-looking results",
+                ? "Коррекция тяжелых бровей для естественного преображения"
+                : "Corrects heavy brows while boosting confidence through natural results",
           },
         ],
         categories: [
@@ -1684,26 +1684,26 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Омоложение" : "Rejuvenation",
+            title: locale === "ru" ? "Омоложение кожи" : "Neck Revival",
             desc:
               locale === "ru"
-                ? "Устраняет признаки старения: обвисшую кожу и двойной подбородок."
-                : "Eliminates visible aging signs in neck area, including sagging skin and unwanted double chin appearance.",
+                ? "Устраняет дряблость и двойной подбородок, возвращая молодость."
+                : "Reduces aging signs and double chin for a more youthful neck appearance",
           },
           {
-            title: locale === "ru" ? "Улучшенные контуры" : "Enhanced Contours",
+            title: locale === "ru" ? "Четкий овал" : "Sculpted Profile",
             desc:
               locale === "ru"
-                ? "Создает гладкий профиль шеи и подбородка путем моделирования тканей."
-                : "Creates smoother, more defined neck and jawline profile through precise tissue repositioning and sculpting.",
+                ? "Моделирует ткани для создания идеального профиля."
+                : "Creates defined jawline through precise tissue sculpting techniques",
           },
           {
             title:
-              locale === "ru" ? "Долгосрочные результаты" : "Long-lasting Results",
+              locale === "ru" ? "Стойкий эффект" : "Lasting Beauty",
             desc:
               locale === "ru"
-                ? "При правильном уходе результаты сохраняются много лет."
-                : "With proper lifestyle maintenance, surgical improvements can remain visible for many years to come.",
+                ? "Сохраняет результат на долгие годы при правильном уходе."
+                : "Maintains visible improvements for years with proper lifestyle habits",
           },
         ],
         categories: [

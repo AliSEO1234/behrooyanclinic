@@ -24,44 +24,51 @@ import dentalwomen from "@/assets/images/chars/dentalwomen.png";
 
 // import Ball from "@/components/ballAnimate";
 const ServiceSlider = () => {
-  const [checked, setChecked] = useState(false);
-  const [loadedImages, setLoadedImages] = useState<{ [key: string]: boolean }>(
-    {}
-  );
+  const [checked, setChecked] = useState(true);
   const [activePhoto, setActivePhoto] = useState(
     checked
-      ? { menKey: "def", src: defmain }
-      : { menKey: "defwomen", src: mainwomen }
+      ? { keyImg: "def", src: defmain }
+      : { keyImg: "defwomen", src: mainwomen }
   );
-
+  useEffect(() => {
+    setActivePhoto(
+      checked
+        ? { keyImg: "def", src: defmain }
+        : { keyImg: "defwomen", src: mainwomen }
+    );
+  }, [checked]);
   const listPhoto = [
-    { menKey: "def", src: defmain },
-    { menKey: "defwomen", src: mainwomen },
-    { menKey: "cellmen", src: celmen },
-    { menKey: "cellwomen", src: celwomen },
-    { menKey: "eyemen", src: eyemen },
-    { menKey: "aesismen", src: aesismen },
-    { menKey: "aesiswomen", src: fitneswomen },
-    { menKey: "dentalmen", src: dentalmen },
-    { menKey: "dentalwomen", src: dentalwomen },
-    { menKey: "fertilitywomen", src: fertilityWomen },
+    { keyImg: "def", src: defmain },
+    { keyImg: "defwomen", src: mainwomen },
+    { keyImg: "cellmen", src: celmen },
+    { keyImg: "cellwomen", src: celwomen },
+    { keyImg: "eyemen", src: eyemen },
+    { keyImg: "aesismen", src: aesismen },
+    { keyImg: "aesiswomen", src: fitneswomen },
+    { keyImg: "dentalmen", src: dentalmen },
+    { keyImg: "dentalwomen", src: dentalwomen },
+    { keyImg: "fertilitywomen", src: fertilityWomen },
   ];
 
-  // پیش‌لود کردن تصاویر
-  useEffect(() => {
-    listPhoto.forEach((photo) => {
-      const img = new Image();
-      img.src = typeof photo.src === "string" ? photo.src : photo.src.src;
-      img.onload = () => {
-        setLoadedImages((prev) => ({ ...prev, [photo.menKey]: true }));
-      };
-    });
-  }, []);
-
   const changeImageHandler = (key: string) => {
-    if (!key) return;
-    const findPhoto = listPhoto.find((photo) => photo.menKey === key);
-    if (findPhoto) setActivePhoto(findPhoto);
+    if (!key) {
+      setActivePhoto(
+        checked
+          ? { keyImg: "def", src: defmain }
+          : { keyImg: "defwomen", src: mainwomen }
+      );
+      return;
+    }
+    const findPhoto = listPhoto.find((photo) => photo.keyImg === key);
+    if (findPhoto) {
+      setActivePhoto(findPhoto);
+    } else {
+      setActivePhoto(
+        checked
+          ? { keyImg: "def", src: defmain }
+          : { keyImg: "defwomen", src: mainwomen }
+      );
+    }
   };
 
   return (
@@ -138,12 +145,7 @@ const ServiceSlider = () => {
           img={cells}
         />
         <div className="s1280:w-[547px] s1280:h-[547px] s1512:w-[580px] s1512:h-[580px] relative z-[1]">
-          {loadedImages[activePhoto?.menKey || ""] ? (
-            <ImgFetcher width={1000} src={activePhoto?.src || defmain} />
-          ) : (
-            <span>Loading...</span>
-          )}
-          {/* <ImgFetcher width={1000} src={activePhoto.src} /> */}
+          <ImgFetcher width={1000} src={activePhoto.src} />
           <div className="shadow-char-slider absolute bottom-0 s1280:bottom-2 -translate-x-1/2 left-1/2 shadow-char-slider w-[244px] h-[18px]"></div>
         </div>
       </div>
