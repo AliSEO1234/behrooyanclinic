@@ -51,9 +51,7 @@ const Page = async ({ params }: PropsPageType) => {
         </div>
         <div className="col-span-12 s1280:hidden">
           <p className="font-medium s1280:hidden text-justify text-[#474744]">
-            {
-              fetchData?.descriptionTop
-            }
+            {fetchData?.descriptionTop}
           </p>
         </div>
       </div>
@@ -75,9 +73,7 @@ const Page = async ({ params }: PropsPageType) => {
             <div className="flex flex-col items-start justify-center">
               <div className="w-full">
                 <h2 className="font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-center [text-shadow:0px_3px_2.8px_#00000040]">
-                  {
-                    locale === "ru" ? "Преимущества" : "Advantages"
-                  }
+                  {locale === "ru" ? "Преимущества" : "Advantages"}
                 </h2>
               </div>
               <div className="s1280:h-[463px] s1280:w-[259px] s1600:w-[330px] s1600:h-[589px]">
@@ -153,43 +149,44 @@ const Page = async ({ params }: PropsPageType) => {
               </ul>
             </div>
             {/* category */}
-            <div className="text-[#474744]">
-              <div className="mb-8 s1280:mb-5">
-                <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
-                  <span className="w-[18px] h-[39px]">
-                    <ImgFetcher src={consider} />
-                  </span>
-                  <span>{fetchData?.benefits.categories[1].header}</span>
-                </h4>
-              </div>
-              <ul className="font-normal flex flex-col gap-y-6 relative">
-                <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                  <div
-                    className="w-0 h-full"
-                    style={{
-                      border: "1px dashed",
-                      borderImageSource:
-                        "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
-                      borderImageSlice: 1,
-                    }}
-                  ></div>
-                </li>
-                {fetchData?.benefits.categories[1].decsList?.map(
-                  (des, index) => {
-                    return (
-                      <li
-                        key={index}
-                        className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8"
-                      >
-                        <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                          <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                        </span>
-                        <span>{des}</span>
-                      </li>
-                    );
-                  }
-                )}
-                {/* <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
+            {fetchData?.benefits.categories[1].header && (
+              <div className="text-[#474744]">
+                <div className="mb-8 s1280:mb-5">
+                  <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
+                    <span className="w-[18px] h-[39px]">
+                      <ImgFetcher src={consider} />
+                    </span>
+                    <span>{fetchData?.benefits.categories[1].header}</span>
+                  </h4>
+                </div>
+                <ul className="font-normal flex flex-col gap-y-6 relative">
+                  <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
+                    <div
+                      className="w-0 h-full"
+                      style={{
+                        border: "1px dashed",
+                        borderImageSource:
+                          "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                        borderImageSlice: 1,
+                      }}
+                    ></div>
+                  </li>
+                  {fetchData?.benefits.categories[1].decsList?.map(
+                    (des, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8"
+                        >
+                          <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                            <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                          </span>
+                          <span>{des}</span>
+                        </li>
+                      );
+                    }
+                  )}
+                  {/* <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
                   <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
                     <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
                   </span>
@@ -209,8 +206,9 @@ const Page = async ({ params }: PropsPageType) => {
                     healing.
                   </span>
                 </li> */}
-              </ul>
-            </div>
+                </ul>
+              </div>
+            )}
             <div className="text-[#474744]">
               <div className="mb-8 s1280:mb-5">
                 <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">

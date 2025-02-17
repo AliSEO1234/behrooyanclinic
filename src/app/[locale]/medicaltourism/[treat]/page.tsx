@@ -31,7 +31,6 @@ type PropsPageType = {
 const Page = async ({ params }: PropsPageType) => {
   const { treat, locale } = await params;
   const fetchData = dataCategoryHandler(treat, locale);
-  console.log(fetchData);
   const videoList: VideoDataType[] = [
     {
       id: 0,
