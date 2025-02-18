@@ -13,7 +13,6 @@ import dental from "@/assets/images/icons/services/dental.png";
 import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import Pagination from "@/components/pagination";
 import ServiceSlider from "@/features/services/serviceSlider/serviceSlider";
-import videoCover from "@/assets/images/videoCover.jpg";
 const Treatments = async ({
   params,
 }: {
@@ -165,8 +164,7 @@ const Treatments = async ({
             src={
               locale === "ru"
                 ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                : "https://azpo.com/api/files/property-videos/site_health_en.mp4" ||
-                  videoCover
+                : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
             }
             className="s1280:w-[916px] h-[200px] s1280:h-[501px]"
           />

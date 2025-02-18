@@ -8,7 +8,6 @@ import ServiceCard from "@/features/services/serviceCard";
 import RoadmapIntersectionObserver from "@/components/scripts/roadmap-intersection-observer";
 import HelpingIntersectionObserver from "@/components/scripts/helping-intersection-observer";
 import InfoIntersectionObserver from "@/components/scripts/info-intersection-observer";
-import videoCover from "@/assets/images/videoCover.jpg";
 import cell from "@/assets/images/icons/services/cells.png";
 import fertility from "@/assets/images/icons/services/fertility.png";
 import eye from "@/assets/images/icons/services/eye.png";
@@ -282,8 +281,7 @@ const Home = async ({
                 src={
                   locale === "ru"
                     ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                    : "https://azpo.com/api/files/property-videos/site_health_en.mp4" ||
-                      videoCover
+                    : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
                 }
               />
             </div>

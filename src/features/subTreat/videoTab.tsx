@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import VideoPlayer from "../services/videoPlayer/videoPlayer";
-import video from "@/assets/images/videoCover.jpg";
 
 import VideoCard from "./videoCard";
 import { useLocale } from "next-intl";
@@ -72,8 +71,7 @@ const VideoTab = () => {
             src={
               locale === "ru"
                 ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                : "https://azpo.com/api/files/property-videos/site_health_en.mp4" ||
-                  video
+                : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
             }
             toolsbarStyle="h-[38px] s1280:h-[60px] border-[1px] border-white"
             className="w-full  s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1920:w-[966px]"
