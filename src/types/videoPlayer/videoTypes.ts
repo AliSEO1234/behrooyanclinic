@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 export type VideoPlayerType = {
   className?: string;
-  src: StaticImageData;
+  src: StaticImageData | string;
   toolsbarStyle: string;
 };
 

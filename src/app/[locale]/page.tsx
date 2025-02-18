@@ -218,7 +218,7 @@ const Home = async ({
                 className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
                 countService={27}
                 img={aesthetics}
-                linkService="/medicaltourism/aesthetics"
+                linkService="/medicaltourism/aesthetic"
                 title="Aesthetics"
               />
               <ServiceCard
@@ -279,7 +279,12 @@ const Home = async ({
               <VideoPlayer
                 className="s1280:w-[916px] s1280:h-[501px]"
                 toolsbarStyle="h-[38px] s1280:h-[57px]"
-                src={videoCover}
+                src={
+                  locale === "ru"
+                    ? "https://azpo.com/api/files/property-videos/site_health.mp4"
+                    : "https://azpo.com/api/files/property-videos/site_health_en.mp4" ||
+                      videoCover
+                }
               />
             </div>
           </div>
@@ -552,26 +557,25 @@ const Home = async ({
               </div>
               <div className="col-span-12 s1280:col-span-9 s1512:col-span-8 grid grid-cols-12 s1280:gap-x-5 s1600:gap-x-[26px] s1920:gap-x-[39px] gap-y-[32px]">
                 <ChooseUsCard
-                 className="col-span-12 s1280:col-span-6"
+                  className="col-span-12 s1280:col-span-6"
                   desc="What sets us apart is our dedication to personalized, reliable care. Our expert doctors and patient coordinators truly understand your needs. From the first contact, we provide one-on-one consultations to craft the best treatment plan for you. We stand by you as a trusted guide on your healthcare journey."
                   header="High Expertise"
                   index={1}
                 />
                 <ChooseUsCard
-                 className="col-span-12 s1280:col-span-6"
-                  
+                  className="col-span-12 s1280:col-span-6"
                   desc="Throughout your medical journey in Turkey Azpo Health team will take care of everything—treatment, transfers, accommodation, and visas—so you can focus on your recovery. Your case is thoroughly assessed by top specialists and double-checked by Azpo's consultant doctors to guarantee the highest quality care. All you need to do is trust the process and leave it to Azpo Health."
                   header="360-degree Service"
                   index={3}
                 />
                 <ChooseUsCard
-                 className="col-span-12 s1280:col-span-6"
+                  className="col-span-12 s1280:col-span-6"
                   desc="With 20 years of experience serving international clients and building strong partnerships, we have have a deep understanding of your needs and ensure seamless coordination. Our expert team and strong medical partnerships enable us to recommend the best solutions. Anticipating every detail, we stand by you with unwavering support before, during, and after your treatment"
                   header="Long-term Experience"
                   index={2}
                 />
                 <ChooseUsCard
-                 className="col-span-12 s1280:col-span-6"
+                  className="col-span-12 s1280:col-span-6"
                   desc="Thanks to our years of experience and extensive network, we’re here to support you in top health tourism destinations in Turkey, including Istanbul, Antalya, Alanya, Ankara, Izmir, Samsun, and Cappadocia, as well as in several countries with well-established medical tourism. No matter where you choose to receive treatment and benefit from our services, our local representatives are ready to offer you the best service in that city."
                   header="Network"
                   index={4}
@@ -665,7 +669,6 @@ const Home = async ({
           </FillScrollLayout>
           {/* blog azpo */}
           <FillScrollLayout
-          
             className="s1280:pt-20 s1280:h-[750px] s1280:-mt-6 mt-10"
             title="AZPO Blog"
             order="fourth"

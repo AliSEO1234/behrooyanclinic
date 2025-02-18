@@ -14,7 +14,14 @@ import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import Pagination from "@/components/pagination";
 import ServiceSlider from "@/features/services/serviceSlider/serviceSlider";
 import videoCover from "@/assets/images/videoCover.jpg";
-const Treatments = () => {
+const Treatments = async ({
+  params,
+}: {
+  params: Promise<{
+    locale: string;
+  }>;
+}) => {
+  const {locale} = await params
   const imgStyle =
     "p-4 w-[190px] h-[190px] s1280:h-[160px] s1280:w-[160px] s1512:h-[207px] s1512:w-[207px] s1728:w-[238px] s1728:h-[238px] s1920:w-[250px] s1920:h-[250px]";
   const titleStyle = "text-[20px] s1280:text-[16px] s1512:text-[20px]";
@@ -155,7 +162,12 @@ const Treatments = () => {
         <div className="flex-cen">
           <VideoPlayer
             toolsbarStyle="h-[38px] s1280:h-[60px]"
-            src={videoCover}
+            src={
+              locale === "ru"
+                ? "https://azpo.com/api/files/property-videos/site_health.mp4"
+                : "https://azpo.com/api/files/property-videos/site_health_en.mp4" ||
+                  videoCover
+            }
             className="s1280:w-[916px] h-[200px] s1280:h-[501px]"
           />
         </div>

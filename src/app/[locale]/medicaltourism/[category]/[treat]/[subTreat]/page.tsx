@@ -45,7 +45,7 @@ const Page = async ({ params }: PropsPageType) => {
           <div className="s1280:w-[450px] s1280:h-[420px] s1512:w-[600px] s1512:h-[550px] s1600:w-[700px] s1600:h-[550px] s1728:w-[750px] s1728:h-[650px] relative">
             <ImgFetcher src={bgSub} />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[233px] h-[336px] s1280:w-[248px] s1280:h-[402px] s1512:w-[350px] s1512:h-[550px] s1728:w-[400px] s1728:h-[650px] rounded-[500px] overflow-hidden shadow-[0px_4px_10.7px_3px_#00000042]">
-              <ImgFetcher src={eye} />
+              <ImgFetcher src={fetchData?.imgCover || eye} />
             </div>
           </div>
         </div>

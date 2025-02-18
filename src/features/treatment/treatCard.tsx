@@ -16,7 +16,7 @@ const TreatCard = ({ className, desc, img, title , path }: TreatCardType) => {
       {/* img treat */}
       <div className="flex-right mb-5">
         <div className="w-[193px] h-[193px] s390:w-[206px] s390:h-[206px] s1280:w-[128px] s1280:h-[128px] s1512:w-[165px] s1512:h-[165px] s1600:w-[185px] s1600:h-[185px] s1728:w-[206px] s1728:h-[206px] overflow-hidden rounded-full">
-          <ImgFetcher src={img!} />
+          <ImgFetcher className="object-cover" src={img!} />
         </div>
       </div>
       {/* contents */}
@@ -24,7 +24,7 @@ const TreatCard = ({ className, desc, img, title , path }: TreatCardType) => {
         <h3 className="font-semibold text-[20px] s1280:text-[14px] s1512:text-[20px] text-[#00979A] line-clamp-1 mb-2">
           {title}
         </h3>
-        <p className="s1280:text-[14px] s1512:text-[16px] text-[#333333] font-normal text-justify line-clamp-4">{desc}</p>
+        <p className="s1280:text-[14px] s1512:text-[16px] text-[#333333] font-normal line-clamp-4">{desc}</p>
       </div>
       <div className="flex-cen">
         <Link className="w-[138px] h-[32px] s1280:w-[108px]  s1280:h-6 s1512:w-[138px] s1512:h-[32px] bg-[#DAEDE6] rounded-t-[50px] font-normal s1280:text-[14px] text-[#333333] flex-cen" href={`/${locale}/medicaltourism/${path}`}>View More</Link>

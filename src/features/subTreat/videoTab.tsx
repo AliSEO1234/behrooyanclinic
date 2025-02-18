@@ -3,7 +3,9 @@
 import { useState } from "react";
 import VideoPlayer from "../services/videoPlayer/videoPlayer";
 import video from "@/assets/images/videoCover.jpg";
+
 import VideoCard from "./videoCard";
+import { useLocale } from "next-intl";
 const VideoTab = () => {
   const [activeTab, setActiveTab] = useState<"doctors" | "patient">("doctors");
   const [activeVideo, setActiveVideo] = useState<string>("doc1");
@@ -33,6 +35,7 @@ const VideoTab = () => {
       videoKey: "doc6",
     },
   ];
+  const locale = useLocale()
   return (
     <div>
       <div className="flex-right -mt-9 s1280:-mt-16 mb-[18px] s1280:mb-16">
@@ -66,7 +69,12 @@ const VideoTab = () => {
       <div className="flex flex-col items-center justify-start gap-y-10 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-center s1280:gap-x-5">
         <div className="s1280:w-[684px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1920:w-[966px]">
           <VideoPlayer
-            src={video}
+            src={
+              locale === "ru"
+                ? "https://azpo.com/api/files/property-videos/site_health.mp4"
+                : "https://azpo.com/api/files/property-videos/site_health_en.mp4" ||
+                  video
+            }
             toolsbarStyle="h-[38px] s1280:h-[60px] border-[1px] border-white"
             className="w-full  s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1920:w-[966px]"
           />

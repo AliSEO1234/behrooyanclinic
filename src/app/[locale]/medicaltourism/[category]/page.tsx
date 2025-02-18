@@ -3,6 +3,7 @@ import { BsMouse } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 import borderTreat from "@/assets/images/treatment/bordertreat.png";
 import eye from "@/assets/images/treatment/eye.png";
+import bgCate from "@/assets/images/treatment/bg-category.svg";
 import ImgFetcher from "@/components/imgFetcher";
 import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
 import videoCover from "@/assets/images/videoCover.jpg";
@@ -107,7 +108,10 @@ const Page = async ({ params }: PropsPageType) => {
           </div>
           {/* service icon */}
           <div className="w-[320px] h-[320px] s1280:w-[404px] s1280:h-[404px] s1512:w-[487px] s1512:h-[473px] s1600:w-[473px] s1600:h-[473px] s1728:w-[503px] s1728:h-[503px] s1920:w-[578px] s1920:h-[578px] absolute top-1/2 s1280:top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <ImgFetcher width={3000} height={3000} src={eye} />
+            <ImgFetcher width={3000} height={3000} src={bgCate} />
+          </div>
+          <div className="w-[320px] h-[320px] s1280:w-[404px] s1280:h-[404px] s1512:w-[487px] s1512:h-[473px] s1600:w-[473px] s1600:h-[473px] s1728:w-[503px] s1728:h-[503px] s1920:w-[578px] s1920:h-[578px] absolute top-1/2 s1280:top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <ImgFetcher width={3000} height={3000} src={fetchData?.imgCover || eye} />
           </div>
         </div>
       </div>
@@ -119,7 +123,12 @@ const Page = async ({ params }: PropsPageType) => {
               <VideoPlayer
                 toolsbarStyle="h-[38px] s1280:h-[60px] border-[1px] border-white"
                 className="s1280:w-[684px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1728:h-[530px]  s1920:w-[996px] s1920:h-[580px]"
-                src={videoCover}
+                src={
+                  locale === "ru"
+                    ? "https://azpo.com/api/files/property-videos/site_health.mp4"
+                    : "https://azpo.com/api/files/property-videos/site_health_en.mp4" ||
+                      videoCover
+                }
               />
             </div>
           </div>

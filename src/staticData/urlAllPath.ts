@@ -1,26 +1,19 @@
 export const pathsCategory = [
     "aesthetic",
-    "medical",
     "dental-treatments",
-    "addiction-treatment",
-    "wellness",
-    "alternative-medicine",
-    "neurological-rehabilitation",
-    "orthopedic-rehabilitation",
+    "medical",
 ]
 
 export const pathsSubCategory = [
-    // Aesthetic
     "hair-transplantation",
-    // "facial-aesthetic-surgery",
-    // "body-contouring",
-    // "breast-surgery",
-    // "surgical-aesthetic-procedures",
-    // "genital-aesthetic",
+    "facial-aesthetic-surgery",
+    "body-contouring",
+    "breast-surgery",
+    "genital-aesthetic"
 ]
 
 export const pathsSubNestedCategory = [
-    // Aesthetic
+    // hair
     "fue-hair-transplant",
     "dhi-hair-transplant",
     "prp-hair-treatment",
@@ -28,4 +21,24 @@ export const pathsSubNestedCategory = [
     "beard-transplant",
     "moustache-transplant",
     "eyebrow-transplant",
+    // fecial
+    "rhinoplasty-nose-reshaping",
+    "blepharoplasty-upper-lower",
+    "double-chin-liposuction",
+    "otoplasty",
+    "brow-lift",
+    "neck-lift",
+    // body contouring
+    "liposuction",
+    "brazilian-butt-lift",
+    "arm-lift",
+    "thigh-lift",
+    "tummy-tuck-abdominoplasty",
+    // Breast-Surgery
+    "breast-augmentation-implants",
+    "breast-lift-mastopexy",
+    // Genital-Aesthetic
+    "labiaplasty-barbie-look",
+    "vaginal-tightening",
+    "penile-enlargement-phalloplasty"
 ]
