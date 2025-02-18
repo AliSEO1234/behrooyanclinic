@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import "@/app/globals.css";
 import Navbar from "@/components/navbar/navbar";
 import { AppProvider } from "@/contexts/app-context/app-context";
+import Footer from "@/components/footer/footer";
 
 export const metadata: Metadata = {
   title: "Azpo Health",
@@ -28,6 +29,7 @@ const RootLayout = async ({
           <Navbar />
           {/* className="px-[10px] s430:px-5 py-10 s1280:px-[71px] s1512:px-[79px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px]" */}
           <main>{children}</main>
+          <Footer />
         </AppProvider>
       </body>
     </html>
