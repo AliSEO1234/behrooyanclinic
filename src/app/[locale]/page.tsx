@@ -74,7 +74,7 @@ const Home = async ({
   return (
     <>
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
-        <div className="relative s1280:h-screen pt-12 s1280:pt-14 s1512:pt-28 overflow-hidden">
+        <div className="relative s1280:h-full pt-12 s1280:pt-14 s1512:pt-28 overflow-hidden">
           <VideoPlayerCom />
           <div className="grid grid-cols-12 gap-x-4 s1512:gap-x-[23px] s1728:gap-x-[28px] gap-y-10 mb-10 s1280:mb-[60px] viewport-p">
             <div className="col-span-12 s412:pt-5 s1280:col-span-6 s1512:col-span-4  relative">

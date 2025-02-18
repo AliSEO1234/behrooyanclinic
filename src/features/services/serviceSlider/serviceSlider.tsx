@@ -10,17 +10,19 @@ import hair from "@/assets/images/icons/services/hair.svg";
 import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import arrow from "@/assets/images/arrow.svg";
 import arrowwomen from "@/assets/images/arrowwomen.svg";
+
 import defmain from "@/assets/images/chars/defmainmen.png";
-import aesismen from "@/assets/images/chars/aesismen.png";
-import celmen from "@/assets/images/chars/fiteyemen.png";
+import aesismen from "@/assets/images/chars/stemcellmen.png";
+import celmen from "@/assets/images/chars/fitmen.png";
 import dentalmen from "@/assets/images/chars/dentalmen.png";
 import eyemen from "@/assets/images/chars/eyemen.png";
 
 import mainwomen from "@/assets/images/chars/mainwomen.png";
-import celwomen from "@/assets/images/chars/celwomen.png";
+import celwomen from "@/assets/images/chars/stemcellwomen.png";
 import fertilityWomen from "@/assets/images/chars/fertilityWomen.png";
 import fitneswomen from "@/assets/images/chars/fitneswomen.png";
 import dentalwomen from "@/assets/images/chars/dentalwomen.png";
+import eyewomen from "@/assets/images/chars/eyewomen.png";
 
 // import Ball from "@/components/ballAnimate";
 const ServiceSlider = () => {
@@ -43,6 +45,8 @@ const ServiceSlider = () => {
     { keyImg: "cellmen", src: celmen },
     { keyImg: "cellwomen", src: celwomen },
     { keyImg: "eyemen", src: eyemen },
+    { keyImg: "eyewomen", src: eyewomen },
+
     { keyImg: "aesismen", src: aesismen },
     { keyImg: "aesiswomen", src: fitneswomen },
     { keyImg: "dentalmen", src: dentalmen },
@@ -107,7 +111,7 @@ const ServiceSlider = () => {
       <div className="flex-cen relative">
         {/* left items */}
         <ServiceSliderCard
-          keyImg={checked ? "eyemen" : ""}
+          keyImg={checked ? "eyemen" : "eyewomen"}
           changeImageHandler={changeImageHandler}
           className="left-0 top-1/2"
           img={eye}
@@ -119,7 +123,7 @@ const ServiceSlider = () => {
           img={dental}
         />
         <ServiceSliderCard
-          keyImg={checked ? "" : "fertilitywomen"}
+          keyImg={checked ? "none" : "fertilitywomen"}
           changeImageHandler={changeImageHandler}
           className="left-16 top-[12.5%] p-2 s1280:left-24 s1280:top-[10%]  s1512:left-40 s1512:top-[4%] "
           img={fertility}

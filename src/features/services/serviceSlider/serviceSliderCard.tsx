@@ -10,11 +10,12 @@ const ServiceSliderCard = ({
 }: ServiceSliderCardType) => {
   return (
     <button
+      disabled={keyImg === "none"}
       onMouseEnter={() => changeImageHandler(keyImg)}
       onMouseLeave={() => changeImageHandler("")}
       className={`${
         className ? className : ""
-      } cursor-pointer absolute shadow-slider-card w-[52px] h-[52px] s1280:w-[90px] s1280:h-[90px] s1512:w-[116px] s1512:h-[116px] s1600:w-[135px] s1600:h-[135px] rounded-full p-1 s1280:p-3 z-[2] hover:bg-[#A8D9DA] anm`}
+      } ${keyImg === "none" ? "pointer-events-none" : ""} cursor-pointer absolute shadow-slider-card hover:shadow-slider-card-hover w-[52px] h-[52px] s1280:w-[90px] s1280:h-[90px] s1512:w-[116px] s1512:h-[116px] s1600:w-[135px] s1600:h-[135px] rounded-full p-1 s1280:p-3 z-[2] anm`}
     >
       <ImgFetcher
         width={800}

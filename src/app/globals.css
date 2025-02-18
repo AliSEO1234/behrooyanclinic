@@ -62,7 +62,7 @@ body {
       width: 100%;
     }
   }
-  .syring-animate{
+  .syring-animate {
     animation: syringMove 4s 1s ease-in-out;
   }
   /* before && after */
@@ -124,9 +124,13 @@ body {
   .form-work div input {
     @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#474744];
   }
-  .shadow-slider-card {
-    box-shadow: -19px 13px 13.9px -12px #00000012 , 0px 0px 39.9px -8px #e7e7e7 inset;
+  .shadow-slider-card-hover {
+    box-shadow: -19px 13px 13.9px -12px #00000012,
+      0px 0px 39.9px -8px #74bbbb inset;
     /* box-shadow: ; */
+  }
+  .shadow-slider-card {
+    box-shadow: -19px 13px 13.9px -12px #00000012, 0px 0px 39.9px -8px #e7e7e7 inset;
   }
   .shadow-char-slider {
     background: radial-gradient(
