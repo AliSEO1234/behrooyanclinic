@@ -1,4 +1,5 @@
-import bgSub from "@/assets/images/subTreatment/bgSub.svg";
+// import bgSub from "@/assets/images/subTreatment/bgSub.svg";
+import bgNetSub from "@/assets/images/subTreatment/bgNetSub.svg";
 import eye from "@/assets/images/subTreatment/eye.jpg";
 import ImgFetcher from "@/components/imgFetcher";
 import VideoTab from "@/features/subTreat/videoTab";
@@ -7,7 +8,7 @@ import BenefCard from "@/components/benefits/benefCard";
 import BenefBorder from "@/components/benefits/benefBorder";
 import person from "@/assets/images/subTreatment/person.svg";
 import consider from "@/assets/images/subTreatment/consider.svg";
-import mask from "@/assets/images/subTreatment/mask.svg";
+import mask from "@/assets/images/subTreatment/mask.png";
 import consulPerson from "@/assets/images/subTreatment/consulPerson.svg";
 import personDocChar from "@/assets/images/subTreatment/consulPersonmedar.png";
 import admin1 from "@/assets/images/subTreatment/wom1.jpg";
@@ -16,11 +17,16 @@ import admin3 from "@/assets/images/subTreatment/wom3.jpg";
 import admin4 from "@/assets/images/subTreatment/men1.jpg";
 import pile from "@/assets/images/subTreatment/pile.png";
 import drag from "@/assets/images/subTreatment/drag.svg";
+import pill from "@/assets/images/subTreatment/pill.png";
 import BFSwiper from "@/features/BF/BFSwiper";
 import ConsultationAdmin from "@/components/consultationAdmin";
 import syringe from "@/assets/images/subTreatment/syringe.png";
 import ConsultationForm from "@/components/forms/consultationForm/consultationForm";
 import SubContent from "@/components/shortLongDesc";
+import SubTreatAdvantagesIntersectionObserver from "@/components/scripts/sub-treat-advantages-intersection.observer";
+import SubTreatConclusionInterceptionObserver from "@/components/scripts/sub-treat-conclusion-interception-observer";
+import SubTreatSyringeIntersectionObserver from "@/components/scripts/sub-treat-syringe-intersection-observer";
+import Image from "next/image";
 import { dataSubCategoryHandler } from "@/staticData/subCategoryList";
 type PropsPageType = {
   params: Promise<{ subTreat: string; locale: string }>;
@@ -42,10 +48,17 @@ const Page = async ({ params }: PropsPageType) => {
           </div>
         </div>
         <div className="col-span-12 s1280:col-span-5 s1728:col-span-6 flex items-center justify-center s1600:justify-end">
-          <div className="s1280:w-[450px] s1280:h-[420px] s1512:w-[600px] s1512:h-[550px] s1600:w-[700px] s1600:h-[550px] s1728:w-[750px] s1728:h-[650px] relative">
-            <ImgFetcher src={bgSub} />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[233px] h-[336px] s1280:w-[248px] s1280:h-[402px] s1512:w-[350px] s1512:h-[550px] s1728:w-[400px] s1728:h-[650px] rounded-[500px] overflow-hidden shadow-[0px_4px_10.7px_3px_#00000042]">
-              <ImgFetcher src={fetchData?.imgCover || eye} />
+          <div
+              className="s1280:w-[450px] s1280:h-[420px] s1512:w-[600px] s1512:h-[550px] s1600:w-[700px] s1600:h-[550px] s1728:w-[750px] s1728:h-[650px] relative">
+            {
+              Array.from({length: 7}, (n, i) => i).map(number => {
+                return <div key={number} className={`sub-treat__top-circle sub-treat__top-circle--${number + 1}`}/>
+              })
+            }
+            <ImgFetcher src={bgNetSub}/>
+            <div
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[233px] h-[336px] s1280:w-[248px] s1280:h-[402px] s1512:w-[350px] s1512:h-[550px] s1728:w-[400px] s1728:h-[650px] rounded-[500px] overflow-hidden shadow-[0px_4px_10.7px_3px_#00000042]">
+              <ImgFetcher src={fetchData?.imgCover || eye}/>
             </div>
           </div>
         </div>
@@ -81,6 +94,7 @@ const Page = async ({ params }: PropsPageType) => {
               </div>
             </div>
             <div className="s1512:h-full flex flex-col items-center gap-y-[18px] s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-end s1512:flex-col s1512:justify-between s1512:gap-y-[72px]">
+              <SubTreatAdvantagesIntersectionObserver />
               <BenefCard
                 desc={fetchData?.benefits.items[0].desc || ""}
                 title={fetchData?.benefits.items[0].title || ""}
@@ -264,18 +278,26 @@ const Page = async ({ params }: PropsPageType) => {
         </div>
         {/*  Conclusion */}
         <div className="relative bg-consul s1280:h-[394px] z-[2] ">
+          <div className="conclusion__pill-container">
+            {
+              Array.from({ length: 7 }, (n, i) => i).map(number => {
+                return <Image key={ number } className={ `conclusion__pill-image conclusion__pill-image--${ number + 1 }` } src={ pill } alt={ `pill-${ number + 1 }` } />
+              })
+            }
+          </div>
           <div className="z-[3]">
             <div className="flex items-start justify-center s1280:mb-20 bg-consul-phone h-[95px]">
               <h2 className="font-semibold text-[20px] s1280:text-[40px] bg-gradient-to-r from-[#666666] to-[#3EBB9A] inline-block text-transparent bg-clip-text relative h-[3]">
                 {fetchData?.conclusion.title}
-                <div className="absolute top-[100%] -right-[42%] s1280:top-[108%] s1280:-right-[32%] w-[53px] h-[40px] s1280:w-fit s1280:h-fit -translate-x-1/2 -translate-y-1/2">
+                <div className="conclusion__mask-container absolute top-[100%] -right-[42%] s1280:top-[108%] s1280:-right-[32%] w-[53px] h-[40px] s1280:w-fit s1280:h-fit -translate-x-1/2 -translate-y-1/2">
+                  <SubTreatConclusionInterceptionObserver />
                   <ImgFetcher src={mask} />
                 </div>
                 <div className="w-[2px] h-[4px] s1280:w-[5px] s1280:h-[7.48px] bg-[#43B194] absolute top-1/2 right-[5%] s1280:right-[6.5%] -translate-x-1/2 -translate-y-1/2"></div>
               </h2>
             </div>
             <div>
-              <p className="font-medium s1280:text-[20px] text-center s1280:px-32 s1512:px-44 s1600:px-56 s1728:px-64 text-[#474744] leading-[30px] z-[3]">
+              <p className="conclusion__description--text font-medium s1280:text-[20px] text-center s1280:px-32 s1512:px-44 s1600:px-56 s1728:px-64 text-[#474744] leading-[30px] z-[3]">
                 {fetchData?.conclusion.desc}
               </p>
             </div>
@@ -347,21 +369,25 @@ const Page = async ({ params }: PropsPageType) => {
             {/* admins */}
             <div className="w-[328px] h-[328px] s390:w-[346px] s390:h-[346px] s412:w-[364px] s1280:w-[450px] s1280:h-[450px] s1512:w-[567px] s1512:h-[567px] s1600:w-[661px] s1600:h-[661px] border-[3px] border-[#33333380] rounded-full relative p-16 s1280:p-24">
               {/* admins */}
-              <ConsultationAdmin
-                img={admin3}
-                positionStyle="left-6 top-4 s1280:top-5 s1280:left-8"
-              />
-              <ConsultationAdmin
-                img={admin1}
-                positionStyle="bottom-4 right-6 s1280:bottom-5 s1280:right-8"
-              />
+              <div className="free-consultation__circle-container--outer">
+                <ConsultationAdmin
+                    img={admin3}
+                    positionStyle="left-6 top-4 s1280:top-5 s1280:left-8"
+                />
+                <ConsultationAdmin
+                    img={admin1}
+                    positionStyle="bottom-4 right-6 s1280:bottom-5 s1280:right-8"
+                />
+              </div>
               {/* inside dashed border */}
               <div className="w-full h-full border-[3px] border-dashed border-[#33333380] rounded-full relative p-14 s1280:p-16 s1728:p-20">
-                <ConsultationAdmin img={admin2} positionStyle="top-0 right-1" />
-                <ConsultationAdmin
-                  img={admin4}
-                  positionStyle="bottom-0 left-0"
-                />
+                <div className="free-consultation__circle-container--inner">
+                  <ConsultationAdmin img={admin2} positionStyle="top-0 right-1" />
+                  <ConsultationAdmin
+                      img={admin4}
+                      positionStyle="bottom-0 left-0"
+                  />
+                </div>
                 {/* inside doctor char */}
                 <div className="w-full h-full border-[3px] border-[#33333380] rounded-full py-1 px-2 s1280:py-3 s1280:px-5 s1512:px-8 s1600:py-5 s1600:px-12">
                   <ImgFetcher width={2000} height={2000} src={personDocChar} />
@@ -375,7 +401,8 @@ const Page = async ({ params }: PropsPageType) => {
                   Fill out the form to receive advice
                 </p>
                 <div className="flex-bet">
-                  <div className="border-[0.5px] border-[#333333] h-0 w-full me-12 s1280:me-0 relative syring-animate">
+                  <div className="free-consultation__syringe-container border-[0.5px] border-[#333333] h-0 w-full me-12 s1280:me-0 relative syring-animate">
+                    <SubTreatSyringeIntersectionObserver />
                     <div className="w-[51px] h-[46px] s1280:w-[95px] s1280:h-[86px] absolute right-0  bottom-0 s1280:-right-[94px]">
                       <ImgFetcher width={800} height={800} src={syringe} />
                     </div>

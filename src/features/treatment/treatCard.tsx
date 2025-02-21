@@ -11,7 +11,7 @@ const TreatCard = ({ className, desc, img, title , path }: TreatCardType) => {
     <div
       className={`${
         className ? className : ""
-      } bg-white rounded-[40px] w-full s1280:w-[255px] s1512:w-[329px] s1600:w-[349px] s1728:w-[369px] s1920:w-[390px] poly-treat-card relative overflow-hidden shadow-[4px_4px_4px_0px_#00000025] p-4 pb-0 s1728:p-5 s1728:pb-0 s1280:pb-0 s1920:p-6 s1920:pb-0`}
+      } treat__card-container bg-white rounded-[40px] w-full s1280:w-[255px] s1512:w-[329px] s1600:w-[349px] s1728:w-[369px] s1920:w-[390px] poly-treat-card relative overflow-hidden shadow-[4px_4px_4px_0px_#00000025] p-4 pb-0 s1728:p-5 s1728:pb-0 s1280:pb-0 s1920:p-6 s1920:pb-0`}
     >
       {/* img treat */}
       <div className="flex-right mb-5">
@@ -34,7 +34,7 @@ const TreatCard = ({ className, desc, img, title , path }: TreatCardType) => {
         <ImgFetcher src={clipTreat} />
       </div> */}
       {/* arrow icon */}
-      <div className="w-[86px] h-[86px] s1512:w-[86px] s1512:h-[86px] rounded-full shadow-[0px_4px_4px_0px_#00000025] flex-cen bg-white text-[#CECFCF] absolute top-1 left-3">
+      <div className="treat__card--arrow-container w-[86px] h-[86px] s1512:w-[86px] s1512:h-[86px] rounded-full shadow-[0px_4px_4px_0px_#00000025] flex-cen bg-white text-[#CECFCF] absolute top-1 left-3">
         <BsArrowDownRight className="size-9 s1280:size-9" />
       </div>
     </div>
