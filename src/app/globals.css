@@ -1072,6 +1072,11 @@ body {
   visibility: hidden;
 }
 
+.conclusion__mask-container img {
+  width: 80px;
+  height: 86px;
+}
+
 .conclusion__mask-container.active {
   animation: mask-move .7s forwards;
 }
