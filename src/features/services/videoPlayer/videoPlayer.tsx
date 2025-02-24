@@ -27,10 +27,10 @@ const VideoPlayer = ({ src, className, showLogo = true }: VideoPlayerType) => {
       </div>
       {showLogo && (
         <>
-          <div className="s1280:w-[245px] s1280:h-[245px] s1728:w-[294px] s1728:h-[294px] absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 z-[1]">
+          <div className="hidden s1280:block s1280:w-[245px] s1280:h-[245px] s1728:w-[294px] s1728:h-[294px] absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 z-[1]">
             <ImgFetcher src={healthlogo} />
           </div>
-          <div className="s1280:w-[245px] s1280:h-[245px] s1728:w-[294px] s1728:h-[294px] absolute top-1/2 -right-[27%] s1728:-right-[32%] -translate-x-1/2 -translate-y-1/2 z-[1]">
+          <div className="hidden s1280:block s1280:w-[245px] s1280:h-[245px] s1728:w-[294px] s1728:h-[294px] absolute top-1/2 -right-[27%] s1728:-right-[32%] -translate-x-1/2 -translate-y-1/2 z-[1]">
             <ImgFetcher src={healthlogo} />
           </div>
         </>
