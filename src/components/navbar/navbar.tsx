@@ -8,7 +8,9 @@ import ring from "@/assets/images/ringnavbar.svg";
 import ImgFetcher from "../imgFetcher";
 import { useEffect, useState } from "react";
 import TreatSearchBox from "./treatSearchBox";
+import { useLocale } from "next-intl";
 const Navbar = () => {
+  const locale = useLocale()
   const [isScroll, setIsScroll] = useState<boolean>(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -104,14 +106,14 @@ const Navbar = () => {
                 Patient Services
               </Link>
             </div>
-            <div>
+            {/* <div>
               <Link className="hover:text-[#25A6A9] anm" href="/">
                 Blogs
               </Link>
-            </div>
+            </div> */}
             <div>
-              <Link className="hover:text-[#25A6A9] anm" href="/">
-                Contact
+              <Link className="hover:text-[#25A6A9] anm" href={`/${locale}/about`}>
+                َAbout Us
               </Link>
             </div>
           </div>
@@ -128,14 +130,14 @@ const Navbar = () => {
           </div>
           <div>
             <Link
-              href="/"
+              href="tel:+90 539 332 32 30"
               className="flex-cen gap-x-2 bg-[#25A6A9] rounded-[40px] py-4 px-2 s1280:py-[10px] s1280:px-[20px] font-medium s1280:text-[12px] s1600:text-[18px] text-white h-[33px] w-[33px] s1280:w-fit s1280:h-[35px] s1600:h-[44px]"
             >
               <span>
                 <ImgFetcher src={ring} />
                 {/* <BiSolidPhoneCall className="size-5" /> */}
               </span>
-              <span className="hidden s1280:inline">0555 6548 5575</span>
+              <span className="hidden s1280:inline">+90 539 332 32 30</span>
             </Link>
           </div>
           <div className="s1280:hidden">

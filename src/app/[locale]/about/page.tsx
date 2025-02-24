@@ -2,8 +2,10 @@ import AboutContent from "@/components/about/aboutCom";
 import AboutTab from "@/components/about/aboutTab";
 import OurBranches from "@/components/about/ourBranches";
 import OurTeam from "@/components/about/ourTeam";
+import { AboutPageType } from "@/types/about/aboutPageType";
 
-const Page = () => {
+const Page = async ({params}:AboutPageType) => {
+  const {locale} = await params
   return (
     <div className="bg-[#FCFCFC]">
       {/* header */}
@@ -40,9 +42,9 @@ const Page = () => {
             ]}
           >
             {{
-              about: <AboutContent />,
-              branch:<OurBranches />,
-              team: <OurTeam />,
+              about: <AboutContent locale={locale} />,
+              branch:<OurBranches locale={locale} />,
+              team: <OurTeam locale={locale} />,
             }}
           </AboutTab>
         </div>

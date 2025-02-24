@@ -1,8 +1,5 @@
 import health from "@/assets/images/health.svg";
 import ImgFetcher from "../imgFetcher";
-import cert1 from "@/assets/images/certificate/1.png";
-import cert2 from "@/assets/images/certificate/2.png";
-import cert3 from "@/assets/images/certificate/3.png";
 import Link from "next/link";
 import loc from "@/assets/images/locicon.svg";
 import glob from "@/assets/images/Globe Medical.svg";
@@ -12,6 +9,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
 import { BsInstagram } from "react-icons/bs";
+import CertiLayout from "./certifications";
 const Footer = () => {
   return (
     <footer className="px-7 pt-5 pb-2 s1280:viewport-p bg-white shadow-[0px_0px_9.6px_#00000014] rounded-t-[40px] s1280:rounded-t-[100px]">
@@ -37,17 +35,7 @@ const Footer = () => {
             </p>
           </div>
           {/* certificate */}
-          <div className="flex-left gap-x-8">
-            <div className="w-[110px] h-[80px] s1280:w-[132px] s1280:h-[95px] s1512:w-[171px] s1512:h-[124px] bg-[#72D6B2] p-1 rounded-[5px]">
-              <ImgFetcher className="object-cover" src={cert1} />
-            </div>
-            <div className="w-[58px] h-[80px] s1280:w-[70px] s1280:h-[95px] s1512:w-[90px] s1512:h-[124px] bg-[#72D6B2] p-1 rounded-[5px]">
-              <ImgFetcher className="object-cover" src={cert2} />
-            </div>
-            <div className="w-[58px] h-[80px] s1280:w-[70px] s1280:h-[95px] s1512:w-[90px] s1512:h-[124px] bg-[#72D6B2] p-1 rounded-[5px]">
-              <ImgFetcher className="object-cover" src={cert3} />
-            </div>
-          </div>
+          <CertiLayout />
         </div>
         <div className="col-span-12 hidden s1280:block s1280:col-span-7">
           <table className="text-[#333333] table-auto border-collapse w-full color">
@@ -94,11 +82,11 @@ const Footer = () => {
               </tr>
               <tr>
                 <td className="py-3">
-                  <Link href="tel:+9088787878787" className="flex-left gap-x-2">
+                  <Link href="tel:+90 539 332 32 30" className="flex-left gap-x-2">
                     <span className="s1280:w-[15px] s1280:h-[19px] s1512:w-[18px] s1512:h-[23px]">
                       <ImgFetcher src={phone} />
                     </span>
-                    <span>+90-88787878787</span>
+                    <span>+90 539 332 32 30</span>
                   </Link>
                 </td>
                 <td className="py-3">
@@ -129,13 +117,13 @@ const Footer = () => {
               <tr>
                 <td className="py-3">
                   <Link
-                    href="mailto:info@azpo.com"
+                    href="mailto:info@azpomed.com"
                     className="flex-left gap-x-2"
                   >
                     <span className="s1280:w-[15px] s1280:h-[19px] s1512:w-[18px] s1512:h-[23px]">
                       <ImgFetcher src={glob} />
                     </span>
-                    <span>info@azpo.com</span>
+                    <span>info@azpomed.com</span>
                   </Link>
                 </td>
                 <td className="py-3">
@@ -230,19 +218,19 @@ const Footer = () => {
             </Link>
           </div>
           <div>
-            <Link href="tel:+9088787878787" className="flex-left gap-x-2">
+            <Link href="tel:+90 539 332 32 30" className="flex-left gap-x-2">
               <span className="w-[18px] h-[23px] s1280:w-[15px] s1280:h-[19px] s1512:w-[18px] s1512:h-[23px]">
                 <ImgFetcher src={phone} />
               </span>
-              <span>+90-88787878787</span>
+              <span>+90 539 332 32 30</span>
             </Link>
           </div>
           <div>
-            <Link href="mailto:info@azpo.com" className="flex-left gap-x-2">
+            <Link href="mailto:info@azpomed.com" className="flex-left gap-x-2">
               <span className="w-[18px] h-[23px] s1280:w-[15px] s1280:h-[19px] s1512:w-[18px] s1512:h-[23px]">
                 <ImgFetcher src={glob} />
               </span>
-              <span>info@azpo.com</span>
+              <span>info@azpomed.com</span>
             </Link>
           </div>
         </div>

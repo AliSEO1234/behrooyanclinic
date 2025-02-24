@@ -7,18 +7,15 @@ import ph3 from "@/assets/images/about/about/p3.jpg";
 import ph4 from "@/assets/images/about/about/p4.jpeg";
 import ph5 from "@/assets/images/about/about/p5.jpeg";
 import ph6 from "@/assets/images/about/about/p6.jpeg";
-const AboutContent = () => {
+import { AboutComType } from "@/types/about/aboutPageType";
+const AboutContent = ({ locale }: AboutComType) => {
   return (
     <>
       <div className="s1280:mb-20 mb-10">
         <p className="font-medium text-[14px] leading-[25px] s1280:text-[20px] text-[#474744] text-center s1280:px-20 s1280:leading-[36px]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry.Lorem Ipsum is simply dummy text of the printing
-          and typesetting industry.Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry.Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry.Lorem Ipsum is simply dummy text
-          of the printing and typesetting industry
+          {locale === "ru"
+            ? "Вот уже 20 лет Azpo Group является надёжным проводником для наших клиентов и партнёров в Турции, помогая находить оптимальные решения и подтверждая свою репутацию востребованного бренда, которому доверяют и который рекомендуют.Компания Azpo Health — новое направление бренда Azpo, лицензированное Министерством здравоохранения Турции. Благодаря нашим партнёрским связям пациенты могут выбрать лечение в любом городе страны, получая доступ к лучшим клиникам и специалистам, соответствующим их индивидуальным потребностям."
+            : "Azpo Group has been a trusted name in the industry for over 20 years, establishing itself as a well-known and preferred brand. As a newly established division of Azpo Group, Azpo Health operates with official recognition from the Turkish Ministry of Health under the Health Tourism License, providing expert advisory services to international patients seeking medical treatment in Turkey."}
         </p>
       </div>
       <div className="s1280:px-[89.5px] s1512:px-[108px]">
@@ -39,27 +36,15 @@ const AboutContent = () => {
         <div className="mb-10 s1280:mb-20">
           <div className="mb-5">
             <h2 className="text-center font-medium text-[18px] s1280:text-[30px] s1512:text-[36px]">
-              Our experiences
+            Azpo Health
             </h2>
           </div>
           <div className="flex items-center flex-col s1280:flex-row s1280:justify-between">
             <div className="order-2 s1280:order-1 -mt-[175px] s1280:-mt-0 rounded-[20px] s1280:rounded-none p-5 s1280:p-0 bg-white s1280:bg-inherit   s1280:pe-10 s1512:pe-0 s1280:w-[642px] s1512:w-[750px] s1728:w-[1035px] s1728:pe-10">
               <p className="font-medium text-[#727272] text-[12px] s1280:text-[16px] leading-[24px] s1280:leading-[30px]">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry.Lorem Ipsum is simply dummy
-                text of the printing and typesetting industry.Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.Lorem
-                Ipsum is simply dummy text of the printing and typesetting
-                industry.Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry.Lorem Ipsum is simply dummy
-                text of the printing and typesetting industry.Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.Lorem
-                Ipsum is simply dummy text of the printing and typesetting
-                industry.Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry
+                {
+                  locale === "ru" ? "Опытная команда врачей, медицинских работников и координаторов будет сопровождать вас на каждом этапе, гарантируя комфорт, уверенность и безупречную организацию. Мы предоставляем всестороннюю языковую поддержку, бесплатные онлайн-консультации и круглосуточную помощь — начиная с первого звонка и заканчивая реабилитацией." : "To ensure patients make informed decisions, Azpo Health offers comprehensive translation support and personalized guidance throughout the entire process. From visa arrangements and accommodation to professional transfers, every detail is carefully managed for a seamless and stress-free experience."
+                }
               </p>
             </div>
             <div className="order-1 s1280:order-2 w-[273px] h-[273px] s1280:w-[350px] s1280:h-[350px]">
@@ -69,47 +54,109 @@ const AboutContent = () => {
         </div>
         <div>
           <div className="s1280:mb-20 hidden s1280:block">
-            <h2 className="font-semibold s1280:text-[30px] s1512:text-[36px] text-center">Azpo Gallery</h2>
+            <h2 className="font-semibold s1280:text-[30px] s1512:text-[36px] text-center">
+              Azpo Gallery
+            </h2>
           </div>
           <div className="grid grid-cols-12 s1280:gap-x-4">
             <div className="col-span-12 s1280:col-span-6 grid grid-cols-4 grid-rows-3 gap-4">
-              <div className="col-span-2 row-span-2 rounded-[20px] overflow-hidden relative">
-                <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                    <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio quae, animi consectetur corrupti est harum? Iure dolorem ipsam expedita nobis, odio quisquam eveniet rerum, aliquam, laudantium officia tenetur odit.</p>
-                </div>
-                <ImgFetcher width={2000} height={2000} src={ph4} className="object-cover" />
+              <div className="col-span-2 row-span-2 rounded-[20px] overflow-hidden">
+                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
+                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias odio quae, animi consectetur corrupti est harum? Iure
+                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
+                    aliquam, laudantium officia tenetur odit.
+                  </p>
+                </div> */}
+                <ImgFetcher
+                  width={2000}
+                  height={2000}
+                  src={ph4}
+                  className="object-cover"
+                />
               </div>
-              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden relative">
-                <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                    <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio quae, animi consectetur corrupti est harum? Iure dolorem ipsam expedita nobis, odio quisquam eveniet rerum, aliquam, laudantium officia tenetur odit.</p>
-                </div>
-                <ImgFetcher width={2000} height={2000} src={ph5} className="object-cover" />
+              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden">
+                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
+                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias odio quae, animi consectetur corrupti est harum? Iure
+                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
+                    aliquam, laudantium officia tenetur odit.
+                  </p>
+                </div> */}
+                <ImgFetcher
+                  width={2000}
+                  height={2000}
+                  src={ph5}
+                  className="object-cover"
+                />
               </div>
-              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden relative">
-                <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                    <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio quae, animi consectetur corrupti est harum? Iure dolorem ipsam expedita nobis, odio quisquam eveniet rerum, aliquam, laudantium officia tenetur odit.</p>
-                </div>
-                <ImgFetcher width={2000} height={2000} src={ph6} className="object-cover" />
+              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden">
+                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
+                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias odio quae, animi consectetur corrupti est harum? Iure
+                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
+                    aliquam, laudantium officia tenetur odit.
+                  </p>
+                </div> */}
+                <ImgFetcher
+                  width={2000}
+                  height={2000}
+                  src={ph6}
+                  className="object-cover"
+                />
               </div>
             </div>
             <div className="col-span-12 s1280:col-span-6 grid grid-cols-4 grid-rows-3 gap-4 -mt-32 s1280:mt-0">
-              <div className="col-span-2 row-span-2 rounded-[20px] overflow-hidden relative">
-                <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                    <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio quae, animi consectetur corrupti est harum? Iure dolorem ipsam expedita nobis, odio quisquam eveniet rerum, aliquam, laudantium officia tenetur odit.</p>
-                </div>
-                <ImgFetcher width={2000} height={2000} src={ph3} className="object-cover" />
+              <div className="col-span-2 row-span-2 rounded-[20px] overflow-hidden">
+                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
+                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias odio quae, animi consectetur corrupti est harum? Iure
+                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
+                    aliquam, laudantium officia tenetur odit.
+                  </p>
+                </div> */}
+                <ImgFetcher
+                  width={2000}
+                  height={2000}
+                  src={ph3}
+                  className="object-cover"
+                />
               </div>
-              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden relative">
-                <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                    <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio quae, animi consectetur corrupti est harum? Iure dolorem ipsam expedita nobis, odio quisquam eveniet rerum, aliquam, laudantium officia tenetur odit.</p>
-                </div>
-                <ImgFetcher width={2000} height={2000} src={ph1} className="object-cover" />
+              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden">
+                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
+                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias odio quae, animi consectetur corrupti est harum? Iure
+                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
+                    aliquam, laudantium officia tenetur odit.
+                  </p>
+                </div> */}
+                <ImgFetcher
+                  width={2000}
+                  height={2000}
+                  src={ph1}
+                  className="object-cover"
+                />
               </div>
-              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden relative">
-                <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                    <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio quae, animi consectetur corrupti est harum? Iure dolorem ipsam expedita nobis, odio quisquam eveniet rerum, aliquam, laudantium officia tenetur odit.</p>
-                </div>
-                <ImgFetcher width={2000} height={2000} src={ph2} className="object-cover" />
+              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden">
+                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
+                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias odio quae, animi consectetur corrupti est harum? Iure
+                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
+                    aliquam, laudantium officia tenetur odit.
+                  </p>
+                </div> */}
+                <ImgFetcher
+                  width={2000}
+                  height={2000}
+                  src={ph2}
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

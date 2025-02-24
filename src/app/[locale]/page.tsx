@@ -360,7 +360,7 @@ const Home = async ({
               {/* consultation */}
               <div className="helping__consultation-container flex-cen s1280:block w-full s1280:w-fit absolute -bottom-6 s1280:bottom-10 s1280:right-0 s1512:top-16 s1512:left-0 s1600:top-24 s1728:top-16">
                 <Link
-                  href="/"
+                  href="tel:+90 539 332 32 30"
                   className="w-[266px] h-[55px] s1280:h-[86px] s1280:w-[316px] flex-left ps-2 s1280:ps-4 gap-x-2 rounded-[40px] bg-[#FFFFFF99] shadow-[-8px_22px_15px_-15px_#0000001A] backdrop-blur-[10px]"
                 >
                   <div>
@@ -523,9 +523,9 @@ const Home = async ({
           </div>
           {/* Why choose us? */}
           <FillScrollLayout
-            className="s1280:h-[852px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-44 s1512:pt-36"
+            className="s1280:h-[852px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-28 s1512:pt-24 s1600:pt-20 s1728:pt-32"
             order="first"
-            classLabel="flex-cen s1280:mt-2 s1512:mt-1"
+            classLabel="flex-cen s1280:mt-2 s1512:mt-1 s1600:mt-4 s1728:mt-0"
             title="Why choose us?"
           >
             <div className="grid grid-cols-12 gap-y-10 px-2 s1280:gap-y-0 s1280:gap-x-10 s1600:gap-x-[55px] s1728:gap-x-[40px] s1920:gap-x-[75px] z-[3]">
@@ -574,8 +574,8 @@ const Home = async ({
           </FillScrollLayout>
           {/* Video Distinctive Features */}
           <FillScrollLayout
-            classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2"
-            className="mt-10 s1280:mt-0 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-10 s1512:pt-16 s1512:-mt-4"
+            classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-5 s1728:mt-2"
+            className="mt-10 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-16 s1512:pt-16 s1280:-mt-40 s1512:-mt-36 s1600:-mt-44 s1728:-mt-36 s1920:-mt-24"
             order="second"
             title="Video Distinctive Features"
           >
@@ -631,10 +631,10 @@ const Home = async ({
           </FillScrollLayout>
           {/* experience */}
           <FillScrollLayout
-            title="Experience"
+            title="Distinctive Features"
             order="third"
-            classLabel="s1512:-mt-1 flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-0"
-            className="s1280:h-[385px] s1280:pt-40  s1280:-mt-6 s1512:mt-7 relative s1600:-mt-[70px] s1728:-mt-[60px] s1920:mt-[12px]"
+            classLabel=" flex-cen s1280:mt-2 s1512:mt-1 s1600:mt-4 s1728:mt-0"
+            className="s1280:h-[385px] s1280:pt-40 s1280:mt-0 s1512:mt-7 relative s1600:-mt-[70px] s1728:-mt-[60px] s1920:mt-[12px]"
           >
             <div className="s1280:hidden w-full h-full absolute s1280:top-5 left-0 z-[1]">
               <ImgFetcher src={exPhone} width={2000} />
@@ -656,13 +656,13 @@ const Home = async ({
           </FillScrollLayout>
           {/* blog azpo */}
           <FillScrollLayout
-            className="s1280:pt-20 s1280:h-[750px] s1280:-mt-6 mt-10"
+            className="s1280:pt-14 s1280:h-[750px] s1280:-mt-6 mt-10 s1512:-mt-10 s1600:-mt-9 s1728:-mt-6 s1920:-mt-10"
             title="AZPO Blog"
             order="fourth"
-            classLabel="hidden s1280:flex-cen ms-4 s1280:mt-4 s1512:mt-3 s1600:mt-0"
+            classLabel="hidden s1280:flex-cen ms-4 s1280:mt-4 s1512:mt-2 s1600:mt-5 s1728:mt-3"
           >
-            <div className="z-[3] s1280:pt-10">
-              <div className="flex items-center justify-between s1280:justify-end mb-10">
+            <div className="z-[3]">
+              <div className="flex items-center justify-between s1280:justify-end mb-10 s1280:mb-5">
                 <div className="s1280:hidden">
                   <h2 className="font-semibold text-[20px] text-[#333333]">
                     AZPO Blog
@@ -684,8 +684,8 @@ const Home = async ({
           </FillScrollLayout>
           {/* how our platform works */}
           <div className="my-10 s1280:my-0">
-            <div className="flex items-center justify-center s1280:justify-end s1280:-mt-5 s1512:mt-24 s1600:mt-20 mb-10">
-              <h2 className="text-[#3D3D3D] font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1600:text-[48px]">
+            <div className="flex items-center justify-center s1280:justify-end s1280:-mt-5 s1512:-mt-4 s1600:mt-0 s1728:mt-5 s1920:mt-8 mb-10">
+              <h2 className="text-[#3D3D3D] font-semibold text-[20px] s1280:text-[28px] s1512:text-[30px] s1728:text-[48px]">
                 How <span className="text-[#0CA5A5]">our platform</span> works
               </h2>
             </div>
