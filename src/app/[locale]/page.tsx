@@ -370,12 +370,10 @@ const Home = async ({
                     </div>
                   </div>
                   <div>
-                    <p className="font-bold text-[#474744] s1280:mb-3">
+                    <p className="font-bold text-[#474744]">
                       Zero-Cost Consultation
                     </p>
-                    <p className="text-[#474744] text-[14px] s1280:text-[16px]">
-                      Consultation with the best
-                    </p>
+                   
                   </div>
                 </Link>
               </div>
