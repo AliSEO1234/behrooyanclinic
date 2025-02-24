@@ -22,7 +22,7 @@ const ComplimentaryConsultationForm = () => {
         <label className="block font-semibold  mb-1" htmlFor="">Treatment</label>
         <ComboBox
           trigger={selectedOption ? selectedOption.label : "Treatment"}
-          className=" s1280:text-[14px] s1728:text-[16px] w-full outline-none h-[38px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1 bg-white"
+          className="s1280:text-[14px] s1728:text-[16px] w-full outline-none h-[38px] s1600:h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1 bg-white"
           options={options}
           onChange={setSelectedOption}
           selectedValue={selectedOption}

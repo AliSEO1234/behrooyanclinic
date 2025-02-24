@@ -193,7 +193,7 @@ const Home = async ({
               </div>
               <div className="flex-right">
                 <SeeAll
-                  className="h-[40px] w-[89px] s1280:w-[194px] s1280:h-[54px] text-[14px] s1280:text-[20px]"
+                  className="h-[40px] w-[89px] s1280:w-[170px] s1280:h-[54px] text-[14px] s1280:text-[18px]"
                   link={`/${locale}/medicaltourism`}
                 />
               </div>
@@ -255,14 +255,14 @@ const Home = async ({
           {/* Watch Your Health Journey */}
           <div className="mb-10 s1280:mb-[60px]">
             <div className="flex-bet mb-2 s1280:mb-10">
-              <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[28%]" />
-              <h2 className="flex-cen font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1600:text-[40px]">
-                <span className="w-[48px] h-[34px] s1280:w-[70px] s1280:h-[53px]">
+              <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[29%] s1728:w-[30%] s1920:w-[32%]" />
+              <h2 className="flex-cen gap-x-1 font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1600:text-[40px]">
+                <span className="w-[48px] h-[34px] s1280:w-[65px] s1280:h-[46px]">
                   <ImgFetcher src={videoIcon} />
                 </span>
                 <span>Watch Your Health Journey</span>{" "}
               </h2>
-              <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[28%]" />
+              <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[29%] s1728:w-[30%] s1920:w-[32%]" />
             </div>
             <div className="flex-cen relative">
               
@@ -282,14 +282,14 @@ const Home = async ({
             <RoadmapIntersectionObserver />
             <div className="mb-2 s1280:mb-10">
               <div className="flex-bet mb-4">
-                <hr className="border-[1px] border-[#333333] border-dashed w-[6%] s375:w-[9%] s390:w-[10%] s1280:w-[32%] s1600:w-[28%]" />
+                <hr className="border-[1px] border-[#333333] border-dashed w-[6%] s375:w-[9%] s390:w-[10%] s1280:w-[33%] s1600:w-[30%] s1728:w-[31%] s1920:w-[33%]" />
                 <h2 className="flex-cen font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px]  s1600:text-[40px]">
                   <span className="w-[42px] h-[42px] s1280:w-[70px] s1280:h-[53px]">
                     <ImgFetcher src={medalIcon} />
                   </span>
                   <span>Your Treatment Roadmap</span>
                 </h2>
-                <hr className="border-[1px] border-[#333333] border-dashed w-[6%] s375:w-[9%] s390:w-[10%] s1280:w-[32%] s1600:w-[28%]" />
+                <hr className="border-[1px] border-[#333333] border-dashed w-[6%] s375:w-[9%] s390:w-[10%] s1280:w-[33%] s1600:w-[30%] s1728:w-[31%] s1920:w-[33%]" />
               </div>
               <p className="text-center s1280:text-[24px] s1512:text-[28px] s1728:text-[29px] font-normal text-[#333333]">
                 We are here to make your medical journey as smooth and
@@ -451,11 +451,11 @@ const Home = async ({
           {/* information about Azpo Health */}
           <div className="mb-10 s1280:mb-[200px]">
             <div className="flex-bet mb-[10px] s1280:mb-16">
-              <hr className="w-[42%] s1280:w-[44%] h-0 border-[2px] border-dashed border-[#333333]" />
+              <hr className="w-[42%] s1280:w-[44%] s1512:w-[45%] s1600:w-[46%] h-0 border-[1px] border-dashed border-[#333333]" />
               <div className="w-[42px] h-[42px] s1280:w-[100px] s1280:h-[100px]">
                 <ImgFetcher src={heart} />
               </div>
-              <hr className="w-[42%] s1280:w-[44%] h-0 border-[2px] border-dashed border-[#333333]" />
+              <hr className="w-[42%] s1280:w-[44%] s1512:w-[45%] s1600:w-[46%] h-0 border-[1px] border-dashed border-[#333333]" />
             </div>
 
             <div className="flex flex-col items-center gap-y-4 s1280:hidden">
@@ -575,7 +575,7 @@ const Home = async ({
           {/* Video Distinctive Features */}
           <FillScrollLayout
             classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-5 s1728:mt-2"
-            className="mt-10 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-16 s1512:pt-16 s1280:-mt-40 s1512:-mt-36 s1600:-mt-44 s1728:-mt-36 s1920:-mt-24"
+            className="mt-10 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-16 s1512:pt-16 s1280:-mt-40 s1512:-mt-[150px] s1600:-mt-44 s1728:-mt-36 s1920:-mt-24"
             order="second"
             title="Video Distinctive Features"
           >
@@ -588,7 +588,7 @@ const Home = async ({
                 </div>
                 <div>
                   <SeeAll
-                    className="h-[40px] w-[89px] s1280:w-[174px] s1512:w-[170px] s1512:text-[18px] s1600:w-[194px] s1600:text-[20px] s1280:h-[54px] text-[14px] s1280:text-[16px]"
+                    className="h-[40px] w-[89px] s1280:w-[170px] s1600:w-[194px] s1600:text-[20px] s1280:h-[54px] text-[14px] s1280:text-[18px]"
                     link="/"
                   />
                 </div>
@@ -656,10 +656,10 @@ const Home = async ({
           </FillScrollLayout>
           {/* blog azpo */}
           <FillScrollLayout
-            className="s1280:pt-14 s1280:h-[750px] s1280:-mt-6 mt-10 s1512:-mt-10 s1600:-mt-9 s1728:-mt-6 s1920:-mt-10"
+            className="s1280:pt-14 s1280:h-[750px] s1280:-mt-9 mt-10 s1512:-mt-10 s1600:-mt-9 s1728:-mt-6 s1920:-mt-10"
             title="AZPO Blog"
             order="fourth"
-            classLabel="hidden s1280:flex-cen ms-4 s1280:mt-4 s1512:mt-2 s1600:mt-5 s1728:mt-3"
+            classLabel="hidden s1280:flex-cen ms-4 s1280:mt-2 s1512:mt-2 s1600:mt-5 s1728:mt-1"
           >
             <div className="z-[3]">
               <div className="flex items-center justify-between s1280:justify-end mb-10 s1280:mb-5">
@@ -670,7 +670,7 @@ const Home = async ({
                 </div>
                 <div>
                   <SeeAll
-                    className="h-[40px] w-[89px] s1280:w-[170px] s1512:w-[194px] s1512:text-[20px] s1600:w-[194px] s1600:text-[20px] s1280:h-[54px] text-[14px] s1280:text-[16px]"
+                    className="h-[40px] w-[89px] s1280:w-[170px] s1600:w-[194px] s1600:text-[20px] s1280:h-[54px] text-[14px] s1280:text-[18px]"
                     link="/"
                   />
                 </div>
@@ -684,7 +684,7 @@ const Home = async ({
           </FillScrollLayout>
           {/* how our platform works */}
           <div className="my-10 s1280:my-0">
-            <div className="flex items-center justify-center s1280:justify-end s1280:-mt-5 s1512:-mt-4 s1600:mt-0 s1728:mt-5 s1920:mt-8 mb-10">
+            <div className="flex items-center justify-center s1280:justify-end s1280:-mt-[93px] s1512:-mt-4 s1600:mt-0 s1728:mt-4 s1920:mt-8 mb-10">
               <h2 className="text-[#3D3D3D] font-semibold text-[20px] s1280:text-[28px] s1512:text-[30px] s1728:text-[48px]">
                 How <span className="text-[#0CA5A5]">our platform</span> works
               </h2>

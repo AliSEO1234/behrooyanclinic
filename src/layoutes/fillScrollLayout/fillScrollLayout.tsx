@@ -119,14 +119,14 @@ const BorderLayoutAbout = ({
       return (
         <>
           {viewportWidth >= 1920 && (
-            <svg className="border__style--layout-first hidden s1920:block z-[2]" width="540" height="752" viewBox="0 0 540 752" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M53.5065 745.381L63.5065 739.607L63.5065 751.154L53.5065 745.381ZM518.559 745.381L518.559 746.381L518.559 745.381ZM19.5599 18.5137L518.559 18.5137L518.559 20.5137L19.5599 20.5137L19.5599 18.5137ZM539.559 39.5137L539.559 725.381L537.559 725.381L537.559 39.5137L539.559 39.5137ZM518.559 746.381L62.5065 746.381L62.5065 744.381L518.559 744.381L518.559 746.381ZM539.559 725.381C539.559 736.979 530.157 746.381 518.559 746.381L518.559 744.381C529.052 744.381 537.559 735.874 537.559 725.381L539.559 725.381ZM518.559 18.5137C530.157 18.5137 539.559 27.9157 539.559 39.5137L537.559 39.5137C537.559 29.0203 529.052 20.5137 518.559 20.5137L518.559 18.5137Z" fill="#0CA5A5"/>
+            <svg className="border__style--layout-first hidden s1920:block z-[2]" width="594" height="752" viewBox="0 0 594 752" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M107.506 745.381L117.506 739.607L117.506 751.154L107.506 745.381ZM572.559 745.381L572.559 746.381L572.559 745.381ZM23.4589 18.5137L572.559 18.5137L572.559 20.5137L23.4589 20.5137L23.4589 18.5137ZM593.559 39.5137L593.559 725.381L591.559 725.381L591.559 39.5137L593.559 39.5137ZM572.559 746.381L116.506 746.381L116.506 744.381L572.559 744.381L572.559 746.381ZM593.559 725.381C593.559 736.979 584.157 746.381 572.559 746.381L572.559 744.381C583.052 744.381 591.559 735.874 591.559 725.381L593.559 725.381ZM572.559 18.5137C584.157 18.5137 593.559 27.9157 593.559 39.5137L591.559 39.5137C591.559 29.0203 583.052 20.5137 572.559 20.5137L572.559 18.5137Z" fill="#0CA5A5"/>
             <g filter="url(#filter0_d_1021_9951)">
-            <ellipse cx="23.6943" cy="19.514" rx="14.1318" ry="13.722" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
+            <ellipse cx="23.7412" cy="19.514" rx="14.1318" ry="13.722" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
             </g>
-            <ellipse cx="23.6964" cy="19.5135" rx="6.10461" ry="5.92756" fill="url(#paint0_linear_1021_9951)"/>
+            <ellipse cx="23.7433" cy="19.5135" rx="6.10461" ry="5.92756" fill="url(#paint0_linear_1021_9951)"/>
             <defs>
-            <filter id="filter0_d_1021_9951" x="0.5625" y="0.791992" width="46.2637" height="45.4443" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <filter id="filter0_d_1021_9951" x="0.609375" y="0.791992" width="46.2637" height="45.4443" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
             <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_1021_9951"/>
@@ -137,25 +137,22 @@ const BorderLayoutAbout = ({
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1021_9951"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1021_9951" result="shape"/>
             </filter>
-            <linearGradient id="paint0_linear_1021_9951" x1="27.3032" y1="15.28" x2="19.5084" y2="25.6631" gradientUnits="userSpaceOnUse">
+            <linearGradient id="paint0_linear_1021_9951" x1="27.35" y1="15.28" x2="19.5553" y2="25.6631" gradientUnits="userSpaceOnUse">
             <stop stopColor="#82DFB5"/>
             <stop offset="0.464" stopColor="#00979A"/>
             </linearGradient>
             </defs>
-            </svg>
-            
-            
-           
+            </svg>     
           )}
           {viewportWidth >= 1728 && viewportWidth < 1920 && (
-            <svg className="border__style--layout-first z-[2]" width="480" height="769" viewBox="0 0 480 769" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M51.311 762.276L61.311 756.503L61.311 768.05L51.311 762.276ZM21.6926 20.0049L458.173 20.0049L458.173 22.0049L21.6926 22.0049L21.6926 20.0049ZM479.173 41.0049L479.173 742.276L477.173 742.276L477.173 41.0049L479.173 41.0049ZM458.173 763.276L60.311 763.276L60.311 761.276L458.173 761.276L458.173 763.276ZM479.173 742.276C479.173 753.874 469.771 763.276 458.173 763.276L458.173 761.276C468.666 761.276 477.173 752.77 477.173 742.276L479.173 742.276ZM458.173 20.0049C469.771 20.0049 479.173 29.4069 479.173 41.0049L477.173 41.0049C477.173 30.5115 468.666 22.0049 458.173 22.0049L458.173 20.0049Z" fill="#0CA5A5"/>
+            <svg className="border__style--layout-first z-[2]" width="543" height="769" viewBox="0 0 543 769" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M114.312 762.276L124.312 756.503L124.312 768.05L114.312 762.276ZM26.4705 20.0049L521.174 20.0049L521.174 22.0049L26.4705 22.0049L26.4705 20.0049ZM542.174 41.0049L542.174 742.276L540.174 742.276L540.174 41.0049L542.174 41.0049ZM521.174 763.276L123.312 763.276L123.312 761.276L521.174 761.276L521.174 763.276ZM542.174 742.276C542.174 753.874 532.772 763.276 521.174 763.276L521.174 761.276C531.667 761.276 540.174 752.77 540.174 742.276L542.174 742.276ZM521.174 20.0049C532.772 20.0049 542.174 29.4069 542.174 41.0049L540.174 41.0049C540.174 30.5115 531.667 22.0049 521.174 22.0049L521.174 20.0049Z" fill="#0CA5A5"/>
             <g filter="url(#filter0_d_1021_14851)">
-            <ellipse cx="25.7988" cy="21.0049" rx="16.0371" ry="15.3828" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
+            <ellipse cx="25.0566" cy="21.0049" rx="16.0371" ry="15.3828" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
             </g>
-            <ellipse cx="25.8026" cy="21.0054" rx="6.92764" ry="6.645" fill="url(#paint0_linear_1021_14851)"/>
+            <ellipse cx="25.0605" cy="21.0054" rx="6.92764" ry="6.645" fill="url(#paint0_linear_1021_14851)"/>
             <defs>
-            <filter id="filter0_d_1021_14851" x="0.761719" y="0.62207" width="50.0742" height="48.7656" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <filter id="filter0_d_1021_14851" x="0.0195312" y="0.62207" width="50.0742" height="48.7656" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
             <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_1021_14851"/>
@@ -166,13 +163,13 @@ const BorderLayoutAbout = ({
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1021_14851"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1021_14851" result="shape"/>
             </filter>
-            <linearGradient id="paint0_linear_1021_14851" x1="29.8957" y1="16.2595" x2="21.1879" y2="28.0015" gradientUnits="userSpaceOnUse">
+            <linearGradient id="paint0_linear_1021_14851" x1="29.1535" y1="16.2595" x2="20.4457" y2="28.0015" gradientUnits="userSpaceOnUse">
             <stop stopColor="#82DFB5"/>
             <stop offset="0.464" stopColor="#00979A"/>
             </linearGradient>
             </defs>
             </svg>
-          
+
           )}
           {viewportWidth >= 1600 && viewportWidth < 1728 && (
             <svg className="border__style--layout-first z-[2]" width="568" height="754" viewBox="0 0 568 754" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -404,13 +401,13 @@ const BorderLayoutAbout = ({
           )}
           {viewportWidth >= 1512 && viewportWidth < 1600 && (
             <svg className="border__style--layout-second z-[2]" width="489" height="834" viewBox="0 0 489 834" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M488.623 827.716L478.623 821.942V833.489L488.623 827.716ZM464.08 20.3496H21.7891V22.3496H464.08V20.3496ZM0.789062 41.3496V807.716H2.78906V41.3496H0.789062ZM21.7891 828.716H479.623V826.716H21.7891V828.716ZM0.789062 807.716C0.789062 819.314 10.1911 828.716 21.7891 828.716V826.716C11.2957 826.716 2.78906 818.209 2.78906 807.716H0.789062ZM21.7891 20.3496C10.1911 20.3496 0.789062 29.7516 0.789062 41.3496H2.78906C2.78906 30.8562 11.2957 22.3496 21.7891 22.3496V20.3496Z" fill="#0CA5A5"/>
+            <path d="M488.623 827.716L478.623 821.942V833.489L488.623 827.716ZM433.51 20.3496H21.7891V22.3496H433.51V20.3496ZM0.789062 41.3496V807.716H2.78906V41.3496H0.789062ZM21.7891 828.716H479.623V826.716H21.7891V828.716ZM0.789062 807.716C0.789062 819.314 10.1911 828.716 21.7891 828.716V826.716C11.2957 826.716 2.78906 818.209 2.78906 807.716H0.789062ZM21.7891 20.3496C10.1911 20.3496 0.789062 29.7516 0.789062 41.3496H2.78906C2.78906 30.8562 11.2956 22.3496 21.7891 22.3496V20.3496Z" fill="#0CA5A5"/>
             <g filter="url(#filter0_d_1021_21355)">
-            <circle cx="461.283" cy="21.3496" r="16.0371" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
+            <circle cx="434.845" cy="21.3496" r="16.0371" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
             </g>
-            <circle cx="461.286" cy="21.3495" r="6.92764" fill="url(#paint0_linear_1021_21355)"/>
+            <circle cx="434.848" cy="21.3495" r="6.92764" fill="url(#paint0_linear_1021_21355)"/>
             <defs>
-            <filter id="filter0_d_1021_21355" x="436.246" y="0.3125" width="50.0742" height="50.0742" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <filter id="filter0_d_1021_21355" x="409.808" y="0.3125" width="50.0742" height="50.0742" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
             <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_1021_21355"/>
@@ -421,7 +418,7 @@ const BorderLayoutAbout = ({
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1021_21355"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1021_21355" result="shape"/>
             </filter>
-            <linearGradient id="paint0_linear_1021_21355" x1="465.379" y1="16.4018" x2="456.198" y2="28.2772" gradientUnits="userSpaceOnUse">
+            <linearGradient id="paint0_linear_1021_21355" x1="438.941" y1="16.4018" x2="429.759" y2="28.2772" gradientUnits="userSpaceOnUse">
             <stop stopColor="#82DFB5"/>
             <stop offset="0.464" stopColor="#00979A"/>
             </linearGradient>
@@ -630,14 +627,14 @@ const BorderLayoutAbout = ({
            
           )}
           {viewportWidth >= 1280 && viewportWidth < 1512 && (
-            <svg className="border__style--layout-third z-[2]" width="474" height="377" viewBox="0 0 474 377" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.748077 370.386L10.7481 364.612L10.7481 376.159L0.748077 370.386ZM452.43 370.386L452.43 369.386L452.43 370.386ZM114.436 20.3857L452.43 20.3857V22.3857L114.436 22.3857V20.3857ZM473.43 41.3857L473.43 350.386L471.43 350.386L471.43 41.3857L473.43 41.3857ZM452.43 371.386L9.74808 371.386L9.74808 369.386L452.43 369.386L452.43 371.386ZM473.43 350.386C473.43 361.984 464.028 371.386 452.43 371.386L452.43 369.386C462.923 369.386 471.43 360.879 471.43 350.386L473.43 350.386ZM452.43 20.3857C464.028 20.3857 473.43 29.7878 473.43 41.3857L471.43 41.3857C471.43 30.8923 462.923 22.3857 452.43 22.3857V20.3857Z" fill="#0CA5A5"/>
+            <svg className="border__style--layout-third z-[2]" width="427" height="377" viewBox="0 0 427 377" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.865173 370.386L10.8652 364.612L10.8652 376.159L0.865173 370.386ZM405.429 370.386L405.429 369.386L405.429 370.386ZM405.429 21.3857L405.429 22.3857L405.429 21.3857ZM26.1987 20.3857L405.429 20.3857L405.429 22.3857L26.1987 22.3857L26.1987 20.3857ZM426.429 41.3857L426.429 350.386L424.429 350.386L424.429 41.3857L426.429 41.3857ZM405.429 371.386L9.86517 371.386L9.86517 369.386L405.429 369.386L405.429 371.386ZM426.429 350.386C426.429 361.984 417.027 371.386 405.429 371.386L405.429 369.386C415.922 369.386 424.429 360.879 424.429 350.386L426.429 350.386ZM405.429 20.3857C417.027 20.3857 426.429 29.7878 426.429 41.3857L424.429 41.3857C424.429 30.8923 415.922 22.3857 405.429 22.3857L405.429 20.3857Z" fill="#0CA5A5"/>
             <g filter="url(#filter0_d_3906_79073)">
-            <circle cx="114.01" cy="21.3135" r="16.0371" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
+            <circle cx="26.3838" cy="21.3135" r="16.0371" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
             </g>
-            <circle cx="114.013" cy="21.3134" r="6.92764" fill="url(#paint0_linear_3906_79073)"/>
+            <circle cx="26.3866" cy="21.3134" r="6.92764" fill="url(#paint0_linear_3906_79073)"/>
             <defs>
-            <filter id="filter0_d_3906_79073" x="88.9727" y="0.276367" width="50.0742" height="50.0742" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <filter id="filter0_d_3906_79073" x="1.34668" y="0.276367" width="50.0742" height="50.0742" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
             <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
             <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_3906_79073"/>
@@ -648,12 +645,14 @@ const BorderLayoutAbout = ({
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3906_79073"/>
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3906_79073" result="shape"/>
             </filter>
-            <linearGradient id="paint0_linear_3906_79073" x1="118.106" y1="16.3656" x2="108.924" y2="28.241" gradientUnits="userSpaceOnUse">
+            <linearGradient id="paint0_linear_3906_79073" x1="30.4796" y1="16.3656" x2="21.2983" y2="28.241" gradientUnits="userSpaceOnUse">
             <stop stopColor="#82DFB5"/>
             <stop offset="0.464" stopColor="#00979A"/>
             </linearGradient>
             </defs>
             </svg>
+            
+  
 
           )}
         </>
@@ -717,8 +716,9 @@ const BorderLayoutAbout = ({
             </svg>
           )}
           {viewportWidth >= 1600 && viewportWidth < 1728 && (
-            <svg className="border__style--layout-fourth z-[2]" width="951" height="778" viewBox="0 0 951 778" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M950.855 771.32L940.855 765.547V777.094L950.855 771.32ZM599.052 20.3203H21.5788V22.3203H599.052V20.3203ZM0.578797 41.3203L0.578143 751.32L2.57814 751.32L2.5788 41.3203L0.578797 41.3203ZM21.5781 772.32H941.855V770.32H21.5781V772.32ZM0.578143 751.32C0.578133 762.918 9.98016 772.32 21.5781 772.32V770.32C11.0847 770.32 2.57813 761.814 2.57814 751.32L0.578143 751.32ZM21.5788 20.3203C9.98087 20.3203 0.578808 29.7223 0.578797 41.3203L2.5788 41.3203C2.57881 30.8269 11.0854 22.3203 21.5788 22.3203V20.3203Z" fill="#0CA5A5"/>
+
+            <svg className="border__style--layout-fourth z-[2]" width="1046" height="778" viewBox="0 0 1046 778" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1045.15 771.32L1035.15 765.547V777.094L1045.15 771.32ZM599.052 20.3203H21.5788V22.3203H599.052V20.3203ZM0.578797 41.3203L0.578143 751.32L2.57814 751.32L2.5788 41.3203L0.578797 41.3203ZM21.5781 772.32H1036.15V770.32H21.5781V772.32ZM0.578143 751.32C0.578133 762.918 9.98016 772.32 21.5781 772.32V770.32C11.0847 770.32 2.57813 761.814 2.57814 751.32L0.578143 751.32ZM21.5788 20.3203C9.98087 20.3203 0.578808 29.7223 0.578797 41.3203L2.5788 41.3203C2.57881 30.8269 11.0854 22.3203 21.5788 22.3203V20.3203Z" fill="#0CA5A5"/>
             <g filter="url(#filter0_d_1021_16467)">
             <circle cx="601.751" cy="21.3203" r="16.0371" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
             </g>
@@ -741,10 +741,11 @@ const BorderLayoutAbout = ({
             </linearGradient>
             </defs>
             </svg>
+            
           )}
           {viewportWidth >= 1512 && viewportWidth < 1600 && (
-            <svg className="border__style--layout-fourth z-[2]" width="938" height="764" viewBox="0 0 938 764" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M937.876 757.625L927.876 751.851V763.398L937.876 757.625ZM560.133 20.1934H21.0196V22.1934H560.133V20.1934ZM0.0195312 41.1934V737.625H2.01953V41.1934H0.0195312ZM21.0195 758.625H928.876V756.625H21.0195V758.625ZM0.0195312 737.625C0.0195312 749.223 9.42155 758.625 21.0195 758.625V756.625C10.5261 756.625 2.01953 748.118 2.01953 737.625H0.0195312ZM21.0196 20.1934C9.42158 20.1934 0.0195312 29.5954 0.0195312 41.1934H2.01953C2.01953 30.7 10.5261 22.1934 21.0196 22.1934V20.1934Z" fill="#0CA5A5"/>
+            <svg className="border__style--layout-fourth z-[2]" width="974" height="764" viewBox="0 0 974 764" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M973.535 757.625L963.535 751.851V763.399L973.535 757.625ZM560.133 20.1934H21.0196V22.1934H560.133V20.1934ZM0.0195312 41.1934V737.625H2.01953V41.1934H0.0195312ZM21.0195 758.625H964.535V756.625H21.0195V758.625ZM0.0195312 737.625C0.0195312 749.223 9.42155 758.625 21.0195 758.625V756.625C10.5261 756.625 2.01953 748.118 2.01953 737.625H0.0195312ZM21.0196 20.1934C9.42158 20.1934 0.0195312 29.5954 0.0195312 41.1934H2.01953C2.01953 30.7 10.5261 22.1934 21.0196 22.1934V20.1934Z" fill="#0CA5A5"/>
             <g filter="url(#filter0_d_1021_21361)">
             <circle cx="562.057" cy="21.1934" r="16.0371" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
             </g>
@@ -766,95 +767,36 @@ const BorderLayoutAbout = ({
             <stop offset="0.464" stopColor="#00979A"/>
             </linearGradient>
             </defs>
-            </svg>
-
-            
-           
+            </svg>  
           )}
           {viewportWidth >= 1280 && viewportWidth < 1512 && (
-            <svg
-              width="633"
-              height="762"
-              viewBox="0 0 633 762"
-              fill="none"
-              className="border__style--layout-fourth z-[2]"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M632.465 755.494L622.465 749.721V761.268L632.465 755.494ZM424.787 20.9453H21.586V22.9453H424.787V20.9453ZM0.585938 41.9453V735.494H2.58594V41.9453H0.585938ZM21.5859 756.494H623.465V754.494H21.5859V756.494ZM0.585938 735.494C0.585938 747.092 9.98796 756.494 21.5859 756.494V754.494C11.0925 754.494 2.58594 745.988 2.58594 735.494H0.585938ZM21.586 20.9453C9.98797 20.9453 0.585938 30.3473 0.585938 41.9453H2.58594C2.58594 31.4519 11.0925 22.9453 21.586 22.9453V20.9453Z"
-                fill="#0CA5A5"
-              />
-              <g filter="url(#filter0_d_1166_15228)">
-                <circle
-                  cx="418.002"
-                  cy="21.9453"
-                  r="16.0371"
-                  fill="#B7EACC"
-                  fillOpacity="0.4"
-                  shapeRendering="crispEdges"
-                />
-              </g>
-              <circle
-                cx="418.005"
-                cy="21.9452"
-                r="6.92764"
-                fill="url(#paint0_linear_1166_15228)"
-              />
-              <defs>
-                <filter
-                  id="filter0_d_1166_15228"
-                  x="392.965"
-                  y="0.908203"
-                  width="50.0742"
-                  height="50.0742"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="dilate"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow_1166_15228"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="4" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_1166_15228"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_1166_15228"
-                    result="shape"
-                  />
-                </filter>
-                <linearGradient
-                  id="paint0_linear_1166_15228"
-                  x1="422.098"
-                  y1="16.9975"
-                  x2="412.917"
-                  y2="28.8729"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#82DFB5" />
-                  <stop offset="0.464" stopColor="#00979A" />
-                </linearGradient>
-              </defs>
+            <svg  className="border__style--layout-fourth z-[2]" width="758" height="688" viewBox="0 0 758 688" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M757.648 681.259L747.648 675.485V687.032L757.648 681.259ZM0.952148 41.2588V661.259H2.95215V41.2588H0.952148ZM21.9521 682.259H748.648V680.259H21.9521V682.259ZM461.754 20.2588H231.853V22.2588H461.754V20.2588ZM231.853 20.2588H21.9522V22.2588H231.853V20.2588ZM0.952148 661.259C0.952148 672.857 10.3542 682.259 21.9521 682.259V680.259C11.4587 680.259 2.95215 671.752 2.95215 661.259H0.952148ZM2.95215 41.2588C2.95215 30.7654 11.4587 22.2588 21.9522 22.2588V20.2588C10.3542 20.2588 0.952148 29.6608 0.952148 41.2588H2.95215Z" fill="#0CA5A5"/>
+            <g filter="url(#filter0_d_3907_79074)">
+            <circle cx="463.474" cy="21.2588" r="16.0371" fill="#B7EACC" fillOpacity="0.4" shapeRendering="crispEdges"/>
+            </g>
+            <circle cx="463.476" cy="21.2587" r="6.92764" fill="url(#paint0_linear_3907_79074)"/>
+            <defs>
+            <filter id="filter0_d_3907_79074" x="438.437" y="0.22168" width="50.0742" height="50.0742" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_3907_79074"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="4"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3907_79074"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3907_79074" result="shape"/>
+            </filter>
+            <linearGradient id="paint0_linear_3907_79074" x1="467.569" y1="16.3109" x2="458.388" y2="28.1863" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#82DFB5"/>
+            <stop offset="0.464" stopColor="#00979A"/>
+            </linearGradient>
+            </defs>
             </svg>
+            
+
+
           )}
         </>
       );

@@ -186,7 +186,7 @@ body {
     @apply block font-semibold text-white s1280:text-[14px] mb-2 s1600:text-[16px];
   }
   .form-platform-work div input {
-    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[38px] px-4 s1280:placeholder:text-[14px] rounded-[40px] border border-[#9996A0] font-normal text-[#474744] s1728:placeholder:text-[16px];
+    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[38px] s1600:h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#474744] s1280:placeholder:text-[14px] s1280:text-[14px] s1728:text-[16px] s1728:placeholder:text-[16px];
   }
   /* hide scrollbar */
   .scroll-hide::-webkit-scrollbar {
