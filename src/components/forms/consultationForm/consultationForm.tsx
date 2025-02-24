@@ -8,7 +8,7 @@ const ConsultationForm = () => {
         <input autoComplete="off" className="consul-form-input" placeholder="Number" type="text" />
       </div>
       <div>
-        <button className="w-full text-white bg-[#0CA5A5] font-bold h-[54px] rounded-[40px]">Send Message</button>
+        <button className="free-consultation__form--button w-full text-white bg-[#0CA5A5] font-bold h-[54px] rounded-[40px]">Send Message</button>
       </div>
     </form>
   );

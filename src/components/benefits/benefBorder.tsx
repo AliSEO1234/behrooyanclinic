@@ -1,7 +1,7 @@
 const BenefBorder = () => {
   return (
     <div
-      className="z-[1] h-0 w-[38px] rotate-90 s1280:rotate-0 s1280:w-[47px] s1512:w-[144px] relative s1512:rotate-90"
+      className="benefit-border-container z-[1] h-0 w-[38px] rotate-90 s1280:rotate-0 s1280:w-[47px] s1512:w-[144px] relative s1512:rotate-90"
       style={{
         border: "1px dashed",
         borderImageSource: "linear-gradient(50deg, #000000 0%, #FCFCFC 100%)",
