@@ -1,25 +1,40 @@
 "use client";
 import ImgFetcher from "@/components/imgFetcher";
 import { VideoPlayerType } from "@/types/videoPlayer/videoTypes";
-const VideoPlayer = ({ src, className }: VideoPlayerType) => {
+import healthlogo from "@/assets/images/healthlogo.png";
+const VideoPlayer = ({ src, className, showLogo = true }: VideoPlayerType) => {
   // const [togglePlay, setTogglePlay] = useState<boolean>(false);
   return (
     <div className="relative w-fit">
       <div
         className={`${
           className ? className : ""
-        } rounded-[20px] s1280:rounded-[40px] relative overflow-hidden`}
+        } rounded-[20px] s1280:rounded-[40px] ${showLogo ? "relative" : ""}  overflow-hidden z-[2]`}
       >
-        <div className="bg-[#00000047] w-full h-full absolute top-0 left-0"></div>
+        <div className="bg-[#00000047] rounded-[20px] s1280:rounded-[40px] w-full h-full absolute top-0 left-0"></div>
         {typeof src === "string" ? (
           <div className="w-full h-full">
-            <video className="w-full h-full min-h-full max-h-full object-cover" controls src={src}></video>
+            <video
+              className="w-full h-full min-h-full max-h-full object-cover"
+              controls
+              src={src}
+            ></video>
           </div>
         ) : (
           <ImgFetcher className="object-cover" width={2000} src={src} />
         )}
         {/* video controler */}
       </div>
+      {showLogo && (
+        <>
+          <div className="s1280:w-[245px] s1280:h-[245px] s1728:w-[294px] s1728:h-[294px] absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 z-[1]">
+            <ImgFetcher src={healthlogo} />
+          </div>
+          <div className="s1280:w-[245px] s1280:h-[245px] s1728:w-[294px] s1728:h-[294px] absolute top-1/2 -right-[27%] s1728:-right-[32%] -translate-x-1/2 -translate-y-1/2 z-[1]">
+            <ImgFetcher src={healthlogo} />
+          </div>
+        </>
+      )}
       {/* <div className="absolute -bottom-10 s1280:-bottom-14 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex-cen px-5 s1280:px-20 s1512:px-32">
         <div
           className={` ${

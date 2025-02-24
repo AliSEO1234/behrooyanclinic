@@ -61,6 +61,7 @@ import phone from "@/assets/images/phone.svg";
 import apoint from "@/assets/images/apointment.svg";
 import online from "@/assets/images/online.svg";
 import VideoPlayerCom from "@/features/videoPlayer/videoPlayer";
+
 const Home = async ({
   params,
 }: {
@@ -127,24 +128,13 @@ const Home = async ({
                           <FaPlay className="size-4 ms-1" />
                         </span>
                       </span>
-                      <span>Play Azpo video</span>
+                      <span>What We Do?</span>
                     </button>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-span-6 s1280:col-span-3 s1512:col-span-5 z-1"></div>
-            {/* <div className="col-span-6 s1280:col-span-6 s1512:col-span-5 z-1">
-            <div className="s1280:h-[560px] relative rounded-[20px] s1280:rounded-[30px] overflow-hidden bg-inherit shadow-[0_5px_10px_#00000040]">
-              <ImgFetcher width={500} src={homeBg} />
-              <div className="header__dots-container w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute top-2 right-2 s1280:top-2 s1280:p-2 s1280:right-2">
-                <ImgFetcher src={pointtop} />
-              </div>
-              <div className="header__dots-container w-6 h-6 s1280:w-[55px] s1280:h-[55px] absolute bottom-2 left-2 s1280:bottom-2 s1280:left-2 s1280:p-2">
-                <ImgFetcher src={pointbot} />
-              </div>
-            </div>
-          </div> */}
             <div className="col-span-12 s1280:hidden relative">
               {/* points */}
               <div className="w-48 h-48 absolute -top-10 left-0">
@@ -164,7 +154,7 @@ const Home = async ({
                       <FaPlay className="size-4" />
                     </span>
                   </span>
-                  <span>Play Azpo video</span>
+                  <span>What We Do?</span>
                 </button>
               </div>
             </div>
@@ -198,7 +188,7 @@ const Home = async ({
             <div className="flex-bet mb-5 s1280:mb-10">
               <div>
                 <h2 className="font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px] treat-shadow">
-                  <span className="text-[#00979A]">Specialized</span> Treatments
+                  Treatments
                 </h2>
               </div>
               <div className="flex-right">
@@ -274,7 +264,8 @@ const Home = async ({
               </h2>
               <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[28%]" />
             </div>
-            <div className="flex-cen">
+            <div className="flex-cen relative">
+              
               <VideoPlayer
                 className="s1280:w-[916px] s1280:h-[501px]"
                 toolsbarStyle="h-[38px] s1280:h-[57px]"

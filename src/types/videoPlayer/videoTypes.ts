@@ -4,6 +4,7 @@ export type VideoPlayerType = {
   className?: string;
   src: StaticImageData | string;
   toolsbarStyle: string;
+  showLogo? : boolean
 };
 
 export type VideoDataType = {

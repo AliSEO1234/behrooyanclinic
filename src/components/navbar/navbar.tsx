@@ -3,11 +3,11 @@ import health from "@/assets/images/health.svg";
 import Image from "next/image";
 import Link from "next/link";
 import ChangeLanguage from "../change-language";
-import { FiSearch } from "react-icons/fi";
 import { HiMenuAlt2 } from "react-icons/hi";
 import ring from "@/assets/images/ringnavbar.svg";
 import ImgFetcher from "../imgFetcher";
 import { useEffect, useState } from "react";
+import TreatSearchBox from "./treatSearchBox";
 const Navbar = () => {
   const [isScroll, setIsScroll] = useState<boolean>(false);
   useEffect(() => {
@@ -26,55 +26,60 @@ const Navbar = () => {
   }, [isScroll]);
   return (
     <header className="fixed top-0 left-0 w-full z-[5] anm">
-      <nav className={`grid grid-cols-12 bg-white shadow-[0_4px_2px_#0000001C] px-[20px] py-3 rounded-b-[40px] anm s1280:px-[50px] ${isScroll ? "s1280:py-1" : "s1280:py-3"}`}>
-        <div className={`col-span-6 flex-left gap-x-2 ${isScroll ? " s1280:col-span-2" : " s1280:col-span-1"}`}>
-          <div className="flex-cen">
-            <div className="w-[44px] h-[44px] s1280:w-8 s1280:h-8 s1512:w-[49px] s1512:h-[49px]">
-              <Image
-                src={health}
-                alt="Azpo Health"
-                width={1000}
-                height={1000}
-                className="w-full h-full"
-              />
+      <nav
+        className={`flex items-center justify-between bg-white shadow-[0_4px_2px_#0000001C] px-[20px] py-3 rounded-b-[40px] anm s1280:px-[50px] ${
+          isScroll ? "s1280:py-1" : "s1280:py-3"
+        }`}
+      >
+        <div className="flex-left s1280:gap-x-[18px] s1512:gap-x-[32px]">
+          <div className={`flex-left gap-x-2`}>
+            <div className="flex-cen">
+              <div className="w-[44px] h-[44px] s1280:w-8 s1280:h-8 s1512:w-[49px] s1512:h-[49px]">
+                <Image
+                  src={health}
+                  alt="Azpo Health"
+                  width={1000}
+                  height={1000}
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+            <div className="text-[#00979A]">
+              <p
+                className={`anm font-black tracking-[2px] s1280:text-[20px] s1512:text-[30px] ${
+                  isScroll ? "" : "text-[24px] s412:text-[20px] "
+                }`}
+              >
+                AZPO
+              </p>
+              <p
+                className={`-mt-2 font-bold text-[14px] s1280:text-[14px] s1512:text-[18px]  ${
+                  isScroll ? "" : ""
+                }`}
+              >
+                HEALTH
+              </p>
             </div>
           </div>
-          <div className="text-[#00979A]">
-            <p
-              className={`anm font-black tracking-[2px] s1280:text-[20px] s1512:text-[30px] ${
-                isScroll
-                  ? ""
-                  : "text-[24px] s412:text-[20px] "
-              }`}
-            >
-              AZPO
-            </p>
-            <p
-              className={`-mt-2 font-bold text-[14px] s1280:text-[14px] s1512:text-[18px]  ${
-                isScroll ? "" : ""
-              }`}
-            >
-              HEALTH
-            </p>
-          </div>
-        </div>
-        <div
-          className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-4 s1920:gap-x-8 text-[#474744] anm  ${
-            isScroll
-              ? "s1280:col-span-10 s1280:justify-start s1280:-ms-10"
-              : "s1280:col-span-7 s1280:justify-end"
-          }`}
-        >
-          <div>
-            <Link className="hover:text-[#25A6A9] anm" href="/">Home Page</Link>
-          </div>
-          <div>
-            <Link className="hover:text-[#25A6A9] anm" href="/">Medical Branches</Link>
-          </div>
-          <div>
-            <Link className="hover:text-[#25A6A9] anm" href="/">Hospital&Clinics</Link>
-          </div>
-          {/* <div>
+          <div
+            className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-4 s1920:gap-x-8 text-[#474744] anm`}
+          >
+            <div>
+              <Link className="hover:text-[#25A6A9] anm" href="/">
+                Home Page
+              </Link>
+            </div>
+            <div>
+              <Link className="hover:text-[#25A6A9] anm" href="/">
+                Medical Branches
+              </Link>
+            </div>
+            <div>
+              <Link className="hover:text-[#25A6A9] anm" href="/">
+                Hospital&Clinics
+              </Link>
+            </div>
+            {/* <div>
             <DropDownCustom
               trigStyle="flex-cen gap-x-2 data-[state=open]:border-b data-[state=open]:border-[#25A6A9] data-[state=open]:text-[#25A6A9] anm"
               trigText="Exclusive Offers"
@@ -94,25 +99,26 @@ const Navbar = () => {
             </DropDownCustom>
             {/* <Link href="/">Exclusive Offers</Link>
           </div> */}
-          <div>
-            <Link className="hover:text-[#25A6A9] anm" href="/">Patient Services</Link>
-          </div>
-          <div>
-            <Link className="hover:text-[#25A6A9] anm" href="/">Blogs</Link>
-          </div>
-          <div>
-            <Link className="hover:text-[#25A6A9] anm" href="/">Contact</Link>
+            <div>
+              <Link className="hover:text-[#25A6A9] anm" href="/">
+                Patient Services
+              </Link>
+            </div>
+            <div>
+              <Link className="hover:text-[#25A6A9] anm" href="/">
+                Blogs
+              </Link>
+            </div>
+            <div>
+              <Link className="hover:text-[#25A6A9] anm" href="/">
+                Contact
+              </Link>
+            </div>
           </div>
         </div>
-        <div
-          className={`col-span-6 flex-right gap-x-2 anm ${
-            isScroll ? "hidden" : " s1280:col-span-4"
-          }`}
-        >
+        <div className={`flex-right gap-x-2 anm ${isScroll ? "hidden" : ""}`}>
           <div className="hidden s1280:block">
-            <button className="outline-none flex-cen w-[35px] h-[35px] s1600:h-[44px] s1600:w-[44px] rounded-full bg-[#DAEDE6] text-[#25A6A9]">
-              <FiSearch className="size-4 s1600:size-5" />
-            </button>
+            <TreatSearchBox />
           </div>
           <div className="hidden s1280:block">
             <ChangeLanguage

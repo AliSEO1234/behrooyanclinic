@@ -125,6 +125,7 @@ const Page = async ({ params }: PropsPageType) => {
           <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-7 flex items-center justify-start">
             <div className="s1280:w-[688px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[850px] s1728:h-[650px] s1920:w-[900px] s1920:h-[700px]">
               <VideoPlayer
+              showLogo={false}
                 toolsbarStyle="h-[38px] s1280:h-[60px] border-[1px] border-white"
                 className="s1280:w-[684px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1728:h-[530px]  s1920:w-[996px] s1920:h-[580px]"
                 src={

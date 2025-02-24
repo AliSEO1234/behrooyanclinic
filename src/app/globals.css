@@ -12,13 +12,10 @@ body {
 }
 
 @layer components {
-  /* after before */
-  /* benefits border
-  /* .custom-bf-border {
-    border: "1px dashed";
-    border-image-source: "linear-gradient(50deg, #000000 0%, #FCFCFC 100%)";
-    border-image-slice: 1;
-  } */
+  /* .animate search navbar style */
+  .animate-search-parent{
+    @apply s1280:w-[115px] s1512:w-[144px] s1600:w-[203px] s1728:w-[168px] s1920:w-[249px]
+  }
   @keyframes rotatePile {
     0% {
       transform: rotate(0deg);
