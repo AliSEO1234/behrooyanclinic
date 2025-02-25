@@ -10,5 +10,6 @@ export type ComboBoxType = {
   selectedValue: OptionType | null;
   onChange: Dispatch<SetStateAction<OptionType | null>>;
   className : string
+  containertStyle?: string
   trigger : string
 };

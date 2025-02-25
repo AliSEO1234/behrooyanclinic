@@ -7,6 +7,7 @@ import {
   ReactNode,
   SetStateAction,
   useContext,
+  useEffect,
   useState,
 } from "react";
 
@@ -18,7 +19,9 @@ type AppContextType = {
   footerDialog: boolean;
   setFooterDialog: Dispatch<SetStateAction<boolean>>;
   footerImages: PhotoType | undefined;
-  setFooterImages: Dispatch<SetStateAction<PhotoType| undefined>>;
+  setFooterImages: Dispatch<SetStateAction<PhotoType | undefined>>;
+  popUpForm: boolean;
+  setPopUpForm: Dispatch<SetStateAction<boolean>>;
 };
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -30,9 +33,17 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
   const [footerImages, setFooterImages] = useState<PhotoType | undefined>(
     undefined
   );
+  const [popUpForm, setPopUpForm] = useState<boolean>(false);
+  useEffect(()=>{
+    setTimeout(() => {
+      setPopUpForm(true)
+    }, 3000);
+  },[])
   return (
     <AppContext.Provider
       value={{
+        popUpForm,
+        setPopUpForm,
         footerImages,
         setFooterImages,
         locale,

@@ -4,10 +4,10 @@ import { ComboBoxType } from "@/types/comboBox/comboType";
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
-const ComboBox = ({ options, onChange, trigger, className }: ComboBoxType) => {
+const ComboBox = ({ options, onChange, trigger, className , containertStyle }: ComboBoxType) => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const [openUpwards, setOpenUpwards] = useState<boolean>(false); // تعیین جهت باز شدن
+  const [openUpwards, setOpenUpwards] = useState<boolean>(false);
   const comboRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -16,7 +16,6 @@ const ComboBox = ({ options, onChange, trigger, className }: ComboBoxType) => {
       const spaceBelow = window.innerHeight - rect.bottom;
       const spaceAbove = rect.top;
 
-      // اگر فضای زیر کمتر از 200 پیکسل بود و فضای بالای بیشتری داشت، به بالا باز شود
       if (spaceBelow < 200 && spaceAbove > spaceBelow) {
         setOpenUpwards(true);
       } else {
@@ -47,7 +46,7 @@ const ComboBox = ({ options, onChange, trigger, className }: ComboBoxType) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className={`absolute w-full border bg-white rounded-[20px]  p-2 ${
+            className={`absolute w-full border bg-white rounded-[20px] p-2 ${containertStyle ? containertStyle : ""} ${
               openUpwards ? "bottom-full mb-1" : "mt-1"
             }`}
           >

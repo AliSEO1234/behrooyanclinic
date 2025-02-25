@@ -12,6 +12,12 @@ body {
 }
 
 @layer components {
+  .popUpform label{
+    @apply p-1 font-medium text-[14px] s1728:text-[16px] text-[#474744]
+  }
+  .popUpform input:nth-child(2){
+    @apply outline-none w-full h-[45px] s1280:w-[219px] s1512:w-[250px] s1280:h-[38px] s1728:h-[48px] s1728:w-[320px] border-[1px] border-[#9996A0] placeholder:text-[14px] rounded-[40px] px-2 text-[14px] s1280:placeholder:text-[14px] s1728:text-[16px] s1728:placeholder:text-[16px]
+  }
   /* navbar */
   @keyframes navbar-animate {
     0%{

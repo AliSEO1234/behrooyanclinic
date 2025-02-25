@@ -62,6 +62,7 @@ import apoint from "@/assets/images/apointment.svg";
 import online from "@/assets/images/online.svg";
 import VideoPlayerCom from "@/features/videoPlayer/videoPlayer";
 import { FeedbackCardType } from "@/types/feedback/feebackLayout";
+import DialogForm from "@/components/popUpForm/dialogForm";
 
 const Home = async ({
   params,
@@ -75,44 +76,68 @@ const Home = async ({
     {
       fullName: locale === "ru" ? "" : "Mahour afshar",
       rateCount: 5,
-      desc: locale === "ru" ? "" : "I'm really really grateful to this amazing team. I must admit that although we'd gone through every stage of the operation in a detailed manner beforehand, I was still nervous. However, they changed my mind by how meticulous they were about everything  and alleviated the situation the moment we met.",
+      desc:
+        locale === "ru"
+          ? ""
+          : "I'm really really grateful to this amazing team. I must admit that although we'd gone through every stage of the operation in a detailed manner beforehand, I was still nervous. However, they changed my mind by how meticulous they were about everything  and alleviated the situation the moment we met.",
     },
     {
       fullName: locale === "ru" ? "" : "Sheena ahangar",
       rateCount: 5,
-      desc: locale === "ru" ? "" : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏 …",
+      desc:
+        locale === "ru"
+          ? ""
+          : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏 …",
     },
     {
       fullName: locale === "ru" ? "" : "Mozhgaan panahi",
       rateCount: 5,
-      desc: locale === "ru" ? "" : "One of the best experiences I’ve ever had in health tourism in turkey, thanks to the professional staff .Recommend it to everyone",
+      desc:
+        locale === "ru"
+          ? ""
+          : "One of the best experiences I’ve ever had in health tourism in turkey, thanks to the professional staff .Recommend it to everyone",
     },
     {
       fullName: locale === "ru" ? "" : "Saina Tayebi",
       rateCount: 5,
-      desc: locale === "ru" ? "" : "Very friendly coordinators and good prices they have. Highly recommended.",
+      desc:
+        locale === "ru"
+          ? ""
+          : "Very friendly coordinators and good prices they have. Highly recommended.",
     },
     {
       fullName: locale === "ru" ? "" : "Александр Степин",
       rateCount: 5,
-      desc: locale === "ru" ? "" : "A wonderful clinic with attentive and sensitive specialists. I had a transplant six months ago, and I can already see the results. Thank you very much for your work!",
+      desc:
+        locale === "ru"
+          ? ""
+          : "A wonderful clinic with attentive and sensitive specialists. I had a transplant six months ago, and I can already see the results. Thank you very much for your work!",
     },
   ];
   const feedBackTwo: FeedbackCardType[] = [
     {
       fullName: locale === "ru" ? "" : "Irina Kulagina",
       rateCount: 5,
-      desc: locale === "ru" ? "" : "Professionals in their field. They work only with trusted clinics and doctors.",
+      desc:
+        locale === "ru"
+          ? ""
+          : "Professionals in their field. They work only with trusted clinics and doctors.",
     },
     {
       fullName: locale === "ru" ? "" : "Mehmet Nastrullah",
       rateCount: 5,
-      desc: locale === "ru" ? "" : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏 …",
+      desc:
+        locale === "ru"
+          ? ""
+          : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏 …",
     },
     {
       fullName: locale === "ru" ? "" : "Mozhgaan panahi",
       rateCount: 5,
-      desc: locale === "ru" ? "" : "I contacted them for a hair transplant. They are very attentive both before and after the treatment.",
+      desc:
+        locale === "ru"
+          ? ""
+          : "I contacted them for a hair transplant. They are very attentive both before and after the treatment.",
     },
     {
       fullName: locale === "ru" ? "" : "Aleysa Mahmutçepoğlu",
@@ -127,6 +152,7 @@ const Home = async ({
   ];
   return (
     <>
+      <DialogForm />
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
         <div className="relative s1280:h-full pt-12 s1280:pt-14 s1512:pt-28 overflow-hidden">
           <VideoPlayerCom />
@@ -783,7 +809,6 @@ const Home = async ({
           </div>
         </div>
       </div>
-      {/* header */}
     </>
   );
 };
