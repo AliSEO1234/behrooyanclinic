@@ -22,12 +22,10 @@ const RootLayout = async ({
       <body
         className={`${
           locale === "en" ? "font-inter" : "font-pt-sans"
-        } relative  `}
+        } relative bg-[#FCFCFC]`}
       >
-        {/* from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC] */}
         <AppProvider>
           <Navbar />
-          {/* className="px-[10px] s430:px-5 py-10 s1280:px-[71px] s1512:px-[79px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px]" */}
           <main>{children}</main>
           <Footer />
         </AppProvider>
