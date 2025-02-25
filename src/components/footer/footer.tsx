@@ -13,23 +13,23 @@ import CertiLayout from "./certifications";
 const Footer = () => {
   return (
     <footer className="px-7 pt-5 pb-2 s1280:viewport-p bg-white shadow-[0px_0px_9.6px_#00000014] rounded-t-[40px] s1280:rounded-t-[100px]">
-      <div className="grid grid-cols-12 s1280:gap-x-5 s1280:mb-6">
-        <div className="col-span-12 s1280:col-span-4 mb-2 s1280:mb-0">
+      <div className="grid grid-cols-12 gap-y-6 s1280:gap-y-0 s1280:gap-x-5 s1280:mb-6">
+        <div className="col-span-12 s1280:col-span-4">
           <div className="flex items-start justify-start gap-x-2 mb-4">
             <div className="w-[72px] h-[72px] s1280:w-[49px] s1280:h-[49px] s1600:w-[72px] s1600:h-[72px]">
               <ImgFetcher src={health} />
             </div>
             <div className="text-[#00979A]">
-              <p className="font-black text-[40px] s1280:text-[24px] s1600:text-[40px] s1920:-mt-2">
+              <p className="font-black text-[32px] s412:text-[40px] s1280:text-[24px] s1600:text-[40px] s412:-mt-2 s1280:-mt-0 s1920:-mt-2">
                 AZPO
               </p>
-              <p className="font-bold text-[20px] s1280:text-[16px] s1600:text-[20px] s1920:-mt-2">
+              <p className="font-bold s412:text-[20px] s1280:text-[16px] s1600:text-[20px] -mt-2 s412:-mt-2 s1280:-mt-0 s1920:-mt-2">
                 Health
               </p>
             </div>
           </div>
           <div className="mb-4">
-            <p className="font-normal text-[20px] s1280:text-[14px] s1600:text-[18px] s1728:text-[20px] s1728:pe-14 s1280:pe-4">
+            <p className="font-normal s1280:text-[14px] s1600:text-[18px] s1728:text-[20px] s1728:pe-14 s1280:pe-4">
               Your health, our priority – delivering world-class medical care
               and seamless support tailored just for you.
             </p>
@@ -38,13 +38,15 @@ const Footer = () => {
           <CertiLayout />
         </div>
         <div className="col-span-12 s1280:col-span-3 text-[#333333] s1512:ms-10">
-          <div className="s1280:pb-5">
-            <h3 className="font-medium s1728:text-[20px]">Our Branches</h3>
+          <div className="mb-5">
+            <h3 className="font-medium text-[#00979A] s1280:text-[#333333] s1728:text-[20px]">
+              Our Branches
+            </h3>
           </div>
-          <div className="font-normal flex flex-col items-center justify-between s1280:gap-y-7 s1512:gap-y-6 s1600:pe-0 s1600:gap-y-14 s1728:gap-y-12">
+          <div className="font-normal flex flex-col items-center justify-between gap-y-7 s1512:gap-y-6 s1600:pe-0 s1600:gap-y-14 s1728:gap-y-12">
             {/* item */}
             <div className="flex items-start justify-start gap-x-4">
-              <div className="s1280:w-[14px] s1280:min-w-[14px] s1512:w-[17px] s1512:min-w-[17px] s1728:w-[20px] s1728:min-w-[20px]">
+              <div className="w-5 min-w-5 s1280:w-[14px] s1280:min-w-[14px] s1512:w-[17px] s1512:min-w-[17px] s1728:w-[20px] s1728:min-w-[20px]">
                 <ImgFetcher src={loc} />
               </div>
               <div>
@@ -55,7 +57,7 @@ const Footer = () => {
             </div>
             {/* item */}
             <div className="flex items-start justify-start gap-x-4">
-              <div className="s1280:w-[14px] s1280:min-w-[14px] s1512:w-[17px] s1512:min-w-[17px] s1728:w-[20px] s1728:min-w-[20px]">
+              <div className="w-5 min-w-5 s1280:w-[14px] s1280:min-w-[14px] s1512:w-[17px] s1512:min-w-[17px] s1728:w-[20px] s1728:min-w-[20px]">
                 <ImgFetcher src={loc} />
               </div>
               <div>
@@ -67,7 +69,7 @@ const Footer = () => {
             </div>
             {/* item */}
             <div className="flex items-start justify-start gap-x-4">
-              <div className="s1280:w-[14px] s1280:min-w-[14px] s1512:w-[17px] s1512:min-w-[17px] s1728:w-[20px] s1728:min-w-[20px]">
+              <div className="w-5 min-w-5 s1280:w-[14px] s1280:min-w-[14px] s1512:w-[17px] s1512:min-w-[17px] s1728:w-[20px] s1728:min-w-[20px]">
                 <ImgFetcher src={loc} />
               </div>
               <div>
@@ -223,69 +225,44 @@ const Footer = () => {
             </tbody>
           </table>
         </div>
-        <div className="col-span-12 mb-4 s1280:hidden text-[#333333] flex flex-col items-start justify-start gap-y-3">
-          <div>
-            <Link href="/" className="flex-left gap-x-2">
-              <span className="w-[18px] h-[23px] s1280:w-[15px] s1280:h-[19px] s1512:w-[18px] s1512:h-[23px]">
-                <ImgFetcher src={loc} />
-              </span>
-              <span>Alanya, 201005</span>
-            </Link>
-          </div>
-          <div>
-            <Link href="tel:+90 539 332 32 30" className="flex-left gap-x-2">
-              <span className="w-[18px] h-[23px] s1280:w-[15px] s1280:h-[19px] s1512:w-[18px] s1512:h-[23px]">
-                <ImgFetcher src={phone} />
-              </span>
-              <span>+90 539 332 32 30</span>
-            </Link>
-          </div>
-          <div>
-            <Link href="mailto:info@azpomed.com" className="flex-left gap-x-2">
-              <span className="w-[18px] h-[23px] s1280:w-[15px] s1280:h-[19px] s1512:w-[18px] s1512:h-[23px]">
-                <ImgFetcher src={glob} />
-              </span>
-              <span>info@azpomed.com</span>
-            </Link>
-          </div>
-        </div>
       </div>
-      <hr className="w-full h-0 border-[1px] border-black mb-5" />
+      <hr className="w-full h-0 border-[1px] border-black my-5" />
       <div className="flex flex-col items-start justify-start gap-y-4 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-between">
         <div className="order-2 s1280:order-1">
           <p className="text-[#474744] font-normal">
             Copyright ©2024All Rights Reserved
           </p>
         </div>
-        <div className="order-1 s1280:order-2 flex items-center justify-start s1280:justify-end gap-x-4 text-[#0CA5A5] s1280:gap-x-2">
-         
-          <div>
-            <Link
-              href="maito:info@azpomed.com"
-              className="flex-cen gap-x-2 p-2 text-[#333333] font-normal s1280:text-[14px] s1600:text-[16px]"
-            >
-              <span className="w-5 min-w-5 s1920:w-7 s1920:min-w-7">
-                <ImgFetcher src={glob} />
-              </span>
-              <span>info@azpomed.com</span>
-            </Link>
-          </div>
-          <div>
-            <Link
-              href="tel:+90 539 332 32 30"
-              className="flex-cen gap-x-2 p-2 text-[#333333] font-normal s1280:text-[14px] s1600:text-[16px]"
-            >
-              <span className="w-5 min-w-5 s1920:w-7 s1920:min-w-7">
-                <ImgFetcher src={phone} />
-              </span>
-              <span>+90 539 332 32 30</span>
-            </Link>
+        <div className="order-1 s1280:order-2 flex items-center justify-start flex-wrap s1280:flex-nowrap s1280:justify-end gap-x-4 text-[#0CA5A5] s1280:gap-x-2">
+          <div className="w-full flex flex-col items-start justify-start mb-3 s1280:mb-0 s1280:flex-row s1280:items-center s1280:justify-end s1280:w-fit">
+            <div>
+              <Link
+                href="maito:info@azpomed.com"
+                className="flex-cen gap-x-2 p-2 text-[#333333] font-normal s1280:text-[14px] s1600:text-[16px]"
+              >
+                <span className="w-5 min-w-5 s1920:w-7 s1920:min-w-7">
+                  <ImgFetcher src={glob} />
+                </span>
+                <span>info@azpomed.com</span>
+              </Link>
+            </div>
+            <div>
+              <Link
+                href="tel:+90 539 332 32 30"
+                className="flex-cen gap-x-2 p-2 text-[#333333] font-normal s1280:text-[14px] s1600:text-[16px]"
+              >
+                <span className="w-5 min-w-5 s1920:w-7 s1920:min-w-7">
+                  <ImgFetcher src={phone} />
+                </span>
+                <span>+90 539 332 32 30</span>
+              </Link>
+            </div>
           </div>
 
           <div>
             <Link
               href="/"
-              className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2"
+              className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <FaFacebookF className="s1280:size-5" />
             </Link>
@@ -293,7 +270,7 @@ const Footer = () => {
           <div>
             <Link
               href="/"
-              className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2"
+              className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <FaXTwitter className="s1280:size-5" />
             </Link>
@@ -301,7 +278,7 @@ const Footer = () => {
           <div>
             <Link
               href="/"
-              className="s1280:w-[35px] s1280:h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2"
+              className="s1280:w-[35px] s1280:h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <IoLogoYoutube className="s1280:size-5" />
             </Link>
@@ -309,7 +286,7 @@ const Footer = () => {
           <div>
             <Link
               href="/"
-              className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2"
+              className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <BsInstagram className="s1280:size-5" />
             </Link>

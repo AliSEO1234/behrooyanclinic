@@ -12,6 +12,18 @@ body {
 }
 
 @layer components {
+  /* navbar */
+  @keyframes navbar-animate {
+    0%{
+      @apply -top-20
+    }
+    100%{
+      @apply top-0
+    }
+  }
+  .animateScroll{
+    animation: navbar-animate 1s forwards;
+  }
   /* mask admins */
   .mask-hover {
     mask-image: none;

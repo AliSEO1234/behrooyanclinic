@@ -3,7 +3,7 @@ import FeedbackCard from "@/features/feedback/feedbackCard";
 import { FeedbackLayoutType } from "@/types/feedback/feebackLayout";
 import { useEffect, useRef, useState } from "react";
 
-const FeedBackLayout = ({align} :FeedbackLayoutType) => {
+const FeedBackLayout = ({ align, feedbackList }: FeedbackLayoutType) => {
   const feedParent = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -82,50 +82,6 @@ const FeedBackLayout = ({align} :FeedbackLayoutType) => {
     setIsDragging(false);
     setIsMouseUp(true);
   };
-  const feedbacks = [
-    {
-      id: 0,
-      name: "Amir Davari",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti a ducimus quia placeat minima non perferendis distinctio! Dignissimos sequi, nesciunt voluptatibus sed culpa quod, quos dolores eaque hic nulla fugiat!",
-      score: 5,
-    },
-    {
-      id: 1,
-      name: "Reza Babaee",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti a ducimus quia placeat minima non perferendis distinctio! Dignissimos sequi, nesciunt voluptatibus sed culpa quod, quos dolores eaque hic nulla fugiat!",
-      score: 5,
-    },
-    {
-      id: 2,
-      name: "Ali Gholami",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti a ducimus quia placeat minima non perferendis distinctio! Dignissimos sequi, nesciunt voluptatibus sed culpa quod, quos dolores eaque hic nulla fugiat!",
-      score: 5,
-    },
-    {
-      id: 3,
-      name: "Pooya Bayati",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti a ducimus quia placeat minima non perferendis distinctio! Dignissimos sequi, nesciunt voluptatibus sed culpa quod, quos dolores eaque hic nulla fugiat!",
-      score: 5,
-    },
-    {
-      id: 4,
-      name: "Pooya Bayati",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti a ducimus quia placeat minima non perferendis distinctio! Dignissimos sequi, nesciunt voluptatibus sed culpa quod, quos dolores eaque hic nulla fugiat!",
-      score: 5,
-    },
-    {
-      id: 5,
-      name: "Pooya Bayati",
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti a ducimus quia placeat minima non perferendis distinctio! Dignissimos sequi, nesciunt voluptatibus sed culpa quod, quos dolores eaque hic nulla fugiat!",
-      score: 5,
-    },
-  ];
   useEffect(() => {
     if (feedParent.current && align === "right") {
       setTimeout(() => {
@@ -133,8 +89,7 @@ const FeedBackLayout = ({align} :FeedbackLayoutType) => {
       }, 100);
     }
   }, [align]);
-  
-  
+
   return (
     <div
       ref={feedParent}
@@ -146,23 +101,24 @@ const FeedBackLayout = ({align} :FeedbackLayoutType) => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
       className={`flex ${
-        align === "left" ? "flex-row items-center" : "flex-row-reverse items-center"
+        align === "left"
+          ? "flex-row items-center"
+          : "flex-row-reverse items-center"
       } flex-nowrap overflow-x-hidden overflow-y-hidden gap-x-5 pb-5 s1280:pt-5 px-3 transition-all duration-500 ease-out ${
         isDragging ? "cursor-grabbing select-none " : "cursor-grab select-auto"
       }`}
     >
-      {feedbacks.map((feed) => {
+      {feedbackList.map((feed, index) => {
         return (
           <div
             className="w-fit min-w-fit max-w-fit"
-            key={feed.id}
+            key={index}
             onMouseDown={handleMouseDown}
           >
             <FeedbackCard
-              key={feed.id}
-              desc={feed.content}
-              scoreCount={feed.score}
-              title={feed.name}
+              desc={feed.desc}
+              scoreCount={feed.rateCount}
+              title={feed.fullName}
             />
           </div>
         );

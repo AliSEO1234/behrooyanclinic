@@ -42,7 +42,7 @@ const DialogFooterCom = ({ photos }: DialogFooterType) => {
     <Dialog open={footerDialog} onOpenChange={setFooterDialog}>
       <DialogContent
         onClick={() => setFooterDialog(false)}
-        className="w-full min-w-full bg-inherit border-none p-0 px-3 s1280:px-5 shadow-none h-full rounded-none"
+        className="w-full min-w-full bg-[#00000052] border-none p-0 px-3 s1280:px-5 shadow-none h-full rounded-none"
       >
         <DialogHeader className="hidden">
           <DialogTitle></DialogTitle>
@@ -51,7 +51,12 @@ const DialogFooterCom = ({ photos }: DialogFooterType) => {
         <div className="flex-bet w-full min-w-full ">
           <div className="hidden s1280:block">
             <button
-              onClick={() => api && api.scrollTo(current - 2)}
+              onClick={(e) => {
+                e.stopPropagation();
+                if (api) {
+                  api.scrollTo(current - 2);
+                }
+              }}
               disabled={current === 1}
               className="flex-cen text-white"
             >
@@ -72,7 +77,7 @@ const DialogFooterCom = ({ photos }: DialogFooterType) => {
                         className="s1280:h-[615px]"
                         key={index}
                       >
-                        <ImgFetcher width={3000} height={3000} src={cert.src} />
+                        <ImgFetcher width={800} height={800} src={cert.src} />
                       </div>
                     </CarouselItem>
                   );
@@ -82,7 +87,12 @@ const DialogFooterCom = ({ photos }: DialogFooterType) => {
           </div>
           <div className="hidden s1280:block">
             <button
-              onClick={() => api && api.scrollTo(current)}
+              onClick={(e) => {
+                e.stopPropagation();
+                if (api) {
+                  api.scrollTo(current);
+                }
+              }}
               disabled={current === count}
               className="flex-cen text-white"
             >

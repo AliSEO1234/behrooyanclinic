@@ -61,6 +61,7 @@ import phone from "@/assets/images/phone.svg";
 import apoint from "@/assets/images/apointment.svg";
 import online from "@/assets/images/online.svg";
 import VideoPlayerCom from "@/features/videoPlayer/videoPlayer";
+import { FeedbackCardType } from "@/types/feedback/feebackLayout";
 
 const Home = async ({
   params,
@@ -70,7 +71,60 @@ const Home = async ({
   }>;
 }) => {
   const { locale } = await params;
-  // https://azpo.com/api/files/property-videos/azpo_main.mp4
+  const feedBackOne: FeedbackCardType[] = [
+    {
+      fullName: locale === "ru" ? "" : "Mahour afshar",
+      rateCount: 5,
+      desc: locale === "ru" ? "" : "I'm really really grateful to this amazing team. I must admit that although we'd gone through every stage of the operation in a detailed manner beforehand, I was still nervous. However, they changed my mind by how meticulous they were about everything  and alleviated the situation the moment we met.",
+    },
+    {
+      fullName: locale === "ru" ? "" : "Sheena ahangar",
+      rateCount: 5,
+      desc: locale === "ru" ? "" : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏 …",
+    },
+    {
+      fullName: locale === "ru" ? "" : "Mozhgaan panahi",
+      rateCount: 5,
+      desc: locale === "ru" ? "" : "One of the best experiences I’ve ever had in health tourism in turkey, thanks to the professional staff .Recommend it to everyone",
+    },
+    {
+      fullName: locale === "ru" ? "" : "Saina Tayebi",
+      rateCount: 5,
+      desc: locale === "ru" ? "" : "Very friendly coordinators and good prices they have. Highly recommended.",
+    },
+    {
+      fullName: locale === "ru" ? "" : "Александр Степин",
+      rateCount: 5,
+      desc: locale === "ru" ? "" : "A wonderful clinic with attentive and sensitive specialists. I had a transplant six months ago, and I can already see the results. Thank you very much for your work!",
+    },
+  ];
+  const feedBackTwo: FeedbackCardType[] = [
+    {
+      fullName: locale === "ru" ? "" : "Irina Kulagina",
+      rateCount: 5,
+      desc: locale === "ru" ? "" : "Professionals in their field. They work only with trusted clinics and doctors.",
+    },
+    {
+      fullName: locale === "ru" ? "" : "Mehmet Nastrullah",
+      rateCount: 5,
+      desc: locale === "ru" ? "" : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏 …",
+    },
+    {
+      fullName: locale === "ru" ? "" : "Mozhgaan panahi",
+      rateCount: 5,
+      desc: locale === "ru" ? "" : "I contacted them for a hair transplant. They are very attentive both before and after the treatment.",
+    },
+    {
+      fullName: locale === "ru" ? "" : "Aleysa Mahmutçepoğlu",
+      rateCount: 5,
+      desc: locale === "ru" ? "" : "A perfect clinic, amazing in every way ❤️",
+    },
+    {
+      fullName: locale === "ru" ? "" : "Erhan Günal",
+      rateCount: 5,
+      desc: locale === "ru" ? "" : "Thank you for your attention and care ❤️",
+    },
+  ];
   return (
     <>
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
@@ -265,7 +319,6 @@ const Home = async ({
               <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[29%] s1728:w-[30%] s1920:w-[32%]" />
             </div>
             <div className="flex-cen relative">
-              
               <VideoPlayer
                 className="s1280:w-[916px] s1280:h-[501px]"
                 toolsbarStyle="h-[38px] s1280:h-[57px]"
@@ -373,7 +426,6 @@ const Home = async ({
                     <p className="font-bold text-[#474744]">
                       Zero-Cost Consultation
                     </p>
-                   
                   </div>
                 </Link>
               </div>
@@ -444,8 +496,8 @@ const Home = async ({
               </h2>
             </div>
             <div>
-              <FeedBackLayout align="right" />
-              <FeedBackLayout align="left" />
+              <FeedBackLayout feedbackList={feedBackOne} align="right" />
+              <FeedBackLayout feedbackList={feedBackTwo} align="left" />
             </div>
           </div>
           {/* information about Azpo Health */}

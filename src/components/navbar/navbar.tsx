@@ -27,7 +27,7 @@ const Navbar = () => {
     console.log(isScroll);
   }, [isScroll]);
   return (
-    <header className="fixed top-0 left-0 w-full z-[5] anm">
+    <header className={`fixed top-0 left-0 ${isScroll? "animateScroll" : ""} w-full z-[5]`}>
       <nav
         className={`flex items-center justify-between bg-white shadow-[0_4px_2px_#0000001C] px-[20px] py-3 rounded-b-[40px] anm s1280:px-[50px] ${
           isScroll ? "s1280:py-1" : "s1280:py-3"
@@ -64,7 +64,7 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-4 s1920:gap-x-8 text-[#474744] anm`}
+            className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1280:gap-x-8 s1512:gpa-x-10 s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-12 text-[#474744] anm`}
           >
             <div>
               <Link className="hover:text-[#25A6A9] anm" href="/">
@@ -81,26 +81,6 @@ const Navbar = () => {
                 Hospital&Clinics
               </Link>
             </div>
-            {/* <div>
-            <DropDownCustom
-              trigStyle="flex-cen gap-x-2 data-[state=open]:border-b data-[state=open]:border-[#25A6A9] data-[state=open]:text-[#25A6A9] anm"
-              trigText="Exclusive Offers"
-              bodyStyle="w-[233px] bg-white p-4 rounded-[30px] border-[1px] border-[#DAEDE6]"
-            >
-              <div className="flex flex-col items-start justify-start gap-y-5 font-medium text-[18px] text-[#474744]">
-                <div>
-                  <Link href="/">seasonal offers</Link>
-                </div>
-                <div>
-                  <Link href="/">flash sales</Link>
-                </div>
-                <div>
-                  <Link href="/">VIP offers</Link>
-                </div>
-              </div>
-            </DropDownCustom>
-            {/* <Link href="/">Exclusive Offers</Link>
-          </div> */}
             <div>
               <Link className="hover:text-[#25A6A9] anm" href="/">
                 Patient Services
