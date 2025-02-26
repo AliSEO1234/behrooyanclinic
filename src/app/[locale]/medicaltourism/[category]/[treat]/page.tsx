@@ -1,6 +1,4 @@
 import PrevNextBtn from "@/features/treatment/prevNextTreat/prevNextBtn";
-import { BsMouse } from "react-icons/bs";
-import { IoIosArrowDown } from "react-icons/io";
 import borderTreat from "@/assets/images/treatment/bordertreat.png";
 // import aesthetics from "@/assets/images/treatment/aesthetics.png";
 // import cells from "@/assets/images/treatment/cells.png";
@@ -31,16 +29,16 @@ const Page = async ({ params }: PropsPageType) => {
   return (
     <div className="bg-[#FCFCFC]">
       <div className="grid grid-cols-12 gap-y-5 s1280:gap-y-0 mt-16 s1512:mt-20 ps-[10px] s430:ps-5 pt-10 s1280:ps-[71px] s1512:ps-[79px] s1600:ps-[85px] s1728:ps-[100px] s1920:ps-[131px] rounded-b-[40px] shadow-[0px_19px_30px_-25px_#0000001C] overflow-hidden mb-10 s1280:mb-20 pb-5 s1280:pb-0">
-        <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-6 s1600:col-span-5 s1920:col-span-6 pe-[10px] s430:pe-5 z-[2] s1512:mt-10 s1600:mt-0">
+        <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-6 s1600:col-span-5 s1920:col-span-6 pe-[10px] s430:pe-5 z-[2] s1512:mt-10 s1600:mt-0 s1280:pb-4">
           <div className="mb-5">
             <h1 className="hidden s1280:block mb-4 s1512:mb-6 font-black s1280:text-[36px] s1512:text-[40px] s1728:text-[60px] text-[#00979A]">
               {fetchData?.title}
               {/* Eye Surgeries */}
             </h1>
-            <p className="text-[#00979A] font-semibold text-[14px] flex-left gap-x-2 mb-2 s1280:hidden">
+            {/* <p className="text-[#00979A] font-semibold text-[14px] flex-left gap-x-2 mb-2 s1280:hidden">
               <span>54</span>
               <span>Service</span>
-            </p>
+            </p> */}
             <p className="text-[#333333] font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-justify s1280:text-start leading-[25px] s1280:leading-[30px] s1600:leading-[45px] s1280:line-clamp-[8]">
               {fetchData?.descriptionTop}
               {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -50,7 +48,7 @@ const Page = async ({ params }: PropsPageType) => {
             </p>
           </div>
           <PrevNextBtn />
-          <div className="hidden s1280:flex-left gap-x-4 mt-6 s1512:mt-10 s1600:mt-16  text-[#00979A]">
+          {/* <div className="hidden s1280:flex-left gap-x-4 mt-6 s1512:mt-10 s1600:mt-16  text-[#00979A]">
             <div className="flex flex-col items-center justify-center">
               <span>
                 <BsMouse className="size-10 s1512:size-12" />
@@ -59,12 +57,12 @@ const Page = async ({ params }: PropsPageType) => {
                 <IoIosArrowDown className="size-5" />
               </span>
             </div>
-            {/* <div>
+            <div>
               <p className="font-semibold s1280:text-[24px]">
                 view <span>69</span> Service
               </p>
-            </div> */}
-          </div>
+            </div>
+          </div> */}
         </div>
         <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 s1600:col-span-7 s1920:col-span-6 relative flex-right z-[2]">
           {/* text */}

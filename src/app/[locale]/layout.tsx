@@ -8,6 +8,10 @@ import DialogForm from "@/components/popUpForm/dialogForm";
 export const metadata: Metadata = {
   title: "Azpo Health",
   description: "Health with Azpo",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 const RootLayout = async ({

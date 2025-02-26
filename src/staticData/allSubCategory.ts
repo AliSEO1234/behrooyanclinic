@@ -24,7 +24,8 @@ import brow from "@/assets/images/subnested/Brow Lift (Browplasty).jpg";
 import neck from "@/assets/images/subnested/Neck Lift (Platysmaplasty).jpg";
 import otoplasty from "@/assets/images/subnested/Otoplasty.jpg";
 import ble from "@/assets/images/subnested/Blepharoplasty (Upper and Lower Eyelid Surgery).jpg";
-
+// breast
+import breatSubCategory from "@/assets/images/subCategory/breastCard.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -227,11 +228,10 @@ export const allSubNestedCategory = [
   },
   // breast-surgery
   {
-    img: breast,
+    img: breatSubCategory,
     title: "Breast Augmentation Implants",
     description:
-      "Is a sagging neckline stealing your confidence? At AZPO Health in Turkey, a neck lift can rejuvenate your appearance, offering a smoother, more defined contour and a boost in self-esteem.",
-    path: "breast-augmentation-implants",
+      "Longing for fuller, more defined curves? Breast augmentation with implants at AZPO Health in Turkey offers a transformative journey to enhance your natural beauty and boost your self-confidence. Discover how our expert surgeons and all-inclusive packages can make your dream a reality.",
     categoryKey: "aesthetic",
     subCategoryKey: "breast-surgery",
   },
