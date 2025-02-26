@@ -3,6 +3,7 @@ import "@/app/globals.css";
 import Navbar from "@/components/navbar/navbar";
 import { AppProvider } from "@/contexts/app-context/app-context";
 import Footer from "@/components/footer/footer";
+import DialogForm from "@/components/popUpForm/dialogForm";
 
 export const metadata: Metadata = {
   title: "Azpo Health",
@@ -25,6 +26,8 @@ const RootLayout = async ({
         } relative bg-[#FCFCFC]`}
       >
         <AppProvider>
+          {/* pop up */}
+          <DialogForm />
           <Navbar />
           <main>{children}</main>
           <Footer />

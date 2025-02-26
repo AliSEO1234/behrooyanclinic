@@ -62,7 +62,6 @@ import apoint from "@/assets/images/apointment.svg";
 import online from "@/assets/images/online.svg";
 import VideoPlayerCom from "@/features/videoPlayer/videoPlayer";
 import { FeedbackCardType } from "@/types/feedback/feebackLayout";
-import DialogForm from "@/components/popUpForm/dialogForm";
 
 const Home = async ({
   params,
@@ -131,14 +130,14 @@ const Home = async ({
           ? ""
           : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏 …",
     },
-    {
-      fullName: locale === "ru" ? "" : "Mozhgaan panahi",
-      rateCount: 5,
-      desc:
-        locale === "ru"
-          ? ""
-          : "I contacted them for a hair transplant. They are very attentive both before and after the treatment.",
-    },
+    // {
+    //   fullName: locale === "ru" ? "" : "Mozhgaan panahi",
+    //   rateCount: 5,
+    //   desc:
+    //     locale === "ru"
+    //       ? ""
+    //       : "I contacted them for a hair transplant. They are very attentive both before and after the treatment.",
+    // },
     {
       fullName: locale === "ru" ? "" : "Aleysa Mahmutçepoğlu",
       rateCount: 5,
@@ -152,7 +151,7 @@ const Home = async ({
   ];
   return (
     <>
-      <DialogForm />
+      
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
         <div className="relative s1280:h-full pt-12 s1280:pt-14 s1512:pt-28 overflow-hidden">
           <VideoPlayerCom />

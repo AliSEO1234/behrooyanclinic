@@ -21,9 +21,6 @@ import { MdArrowForwardIos, MdOutlineArrowBackIos } from "react-icons/md";
 
 const DialogFooterCom = ({ photos }: DialogFooterType) => {
   const { footerDialog, setFooterDialog, footerImages } = useAppContext();
-  useEffect(() => {
-    console.log(footerImages);
-  }, [footerImages]);
   const [api, setApi] = useState<CarouselApi | null>(null);
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -31,7 +28,13 @@ const DialogFooterCom = ({ photos }: DialogFooterType) => {
     if (!api) return;
 
     setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
+
+    // یافتن عکس کلیک‌شده
+    const selectedIndex = photos.findIndex((photo) => photo.key === footerImages?.key);
+    if (selectedIndex !== -1) {
+      setCurrent(selectedIndex + 1);
+      api.scrollTo(selectedIndex);
+    }
 
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);

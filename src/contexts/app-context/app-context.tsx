@@ -1,6 +1,7 @@
 "use client";
 import { PhotoType } from "@/types/footer/dialogFooter";
 import { VideoDataType } from "@/types/videoPlayer/videoTypes";
+import { usePathname } from "next/navigation";
 import {
   createContext,
   Dispatch,
@@ -26,6 +27,7 @@ type AppContextType = {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 const AppProvider = ({ children }: { children: ReactNode }) => {
+  const pathname = usePathname()
   const [locale, setLocale] = useState<"ru" | "en">("en");
   const [activeVideoTreat, setActiveVideoTreat] =
     useState<VideoDataType | null>(null);
@@ -38,7 +40,7 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
     setTimeout(() => {
       setPopUpForm(true)
     }, 3000);
-  },[])
+  },[pathname])
   return (
     <AppContext.Provider
       value={{

@@ -96,6 +96,11 @@ const Navbar = () => {
                 َAbout Us
               </Link>
             </div>
+            <div>
+              <Link className="hover:text-[#25A6A9] anm" href={`/${locale}/about`}>
+                َContact Us
+              </Link>
+            </div>
           </div>
         </div>
         <div className={`flex-right gap-x-2 anm ${isScroll ? "hidden" : ""}`}>

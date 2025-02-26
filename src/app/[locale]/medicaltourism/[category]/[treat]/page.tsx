@@ -9,7 +9,6 @@ import borderTreat from "@/assets/images/treatment/bordertreat.png";
 import bgCover from "@/assets/images/treatment/bg-category.svg";
 import ImgFetcher from "@/components/imgFetcher";
 import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
-import videoCover from "@/assets/images/videoCover.jpg";
 import videoChar from "@/assets/images/treatment/vidChar.png";
 import borderPhone from "@/assets/images/treatment/borderTreatPhone.png";
 import safe from "@/assets/images/treatment/safe.svg";
@@ -20,8 +19,6 @@ import TreatCard from "@/features/treatment/treatCard";
 import eye1 from "@/assets/images/treatment/eye1.jpg";
 // import eye2 from "@/assets/images/treatment/eye2.jpg";
 // import aes1 from "@/assets/images/treatment/aes1.jpg";
-import ChangeVideo from "@/features/treatment/chagngeVideo";
-import { VideoDataType } from "@/types/videoPlayer/videoTypes";
 import SubContent from "@/components/shortLongDesc";
 import { subCategoryHandler } from "@/staticData/subCategoryList";
 // import Ball from "@/components/ballAnimate";
@@ -31,38 +28,11 @@ type PropsPageType = {
 const Page = async ({ params }: PropsPageType) => {
   const { treat, locale, category } = await params;
   const fetchData = subCategoryHandler(category, treat, locale);
-  const videoList: VideoDataType[] = [
-    {
-      id: 0,
-      order: 1,
-      src: videoCover,
-      videoKey: "treatOne",
-      videoName: "AZPO Health",
-    },
-    {
-      id: 1,
-      order: 2,
-      src: videoCover,
-      videoKey: "treatTwo",
-      videoName: "AZPO Health",
-    },
-    {
-      id: 2,
-      order: 3,
-      src: videoCover,
-      videoKey: "treatThree",
-      videoName: "AZPO Health",
-    },
-  ];
 
-  // const balls = [54, 62, 42, 50, 45, 32, 23, 15];
   return (
     <div className="bg-[#FCFCFC]">
       <div className="grid grid-cols-12 gap-y-5 s1280:gap-y-0 mt-16 s1512:mt-20 ps-[10px] s430:ps-5 pt-10 s1280:ps-[71px] s1512:ps-[79px] s1600:ps-[85px] s1728:ps-[100px] s1920:ps-[131px] rounded-b-[40px] shadow-[0px_19px_30px_-25px_#0000001C] overflow-hidden mb-10 s1280:mb-20 pb-5 s1280:pb-0">
-        {/* {balls.map((bal, index) => (
-          <Ball key={index} size={bal} />
-        ))} */}
-        <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-5 s1600:col-span-5 s1920:col-span-6 pe-[10px] s430:pe-5 z-[2] s1512:mt-10 s1600:mt-0">
+        <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-6 s1600:col-span-5 s1920:col-span-6 pe-[10px] s430:pe-5 z-[2] s1512:mt-10 s1600:mt-0">
           <div className="mb-5">
             <h1 className="hidden s1280:block mb-4 s1512:mb-6 font-black s1280:text-[36px] s1512:text-[40px] s1728:text-[60px] text-[#00979A]">
               {fetchData?.title}
@@ -97,7 +67,7 @@ const Page = async ({ params }: PropsPageType) => {
             </div>
           </div>
         </div>
-        <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-7 s1600:col-span-7 s1920:col-span-6 relative flex-right z-[2]">
+        <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 s1600:col-span-7 s1920:col-span-6 relative flex-right z-[2]">
           {/* text */}
           <h1 className="s1280:hidden absolute top-0 left-0 font-bold text-[30px] text-[#00979A] w-1/2">
             Eye Surgeries
@@ -107,7 +77,7 @@ const Page = async ({ params }: PropsPageType) => {
             <ImgFetcher width={2000} height={2000} src={borderPhone} />
           </div>
           {/* desktop */}
-          <div className="hidden s1280:block s1280:w-[40%] s1280:h-[450px] s1512:h-[550px] s1512:w-[30%] s1600:w-[40%] s1600:h-[600px] s1920:h-[650px]">
+          <div className="hidden s1280:block absolute bottom-0 right-0 s1280:w-[40%] s1280:h-[450px] s1512:h-[550px] s1512:w-[30%] s1600:w-[40%] s1600:h-[600px] s1920:h-[650px]">
             <ImgFetcher width={2000} height={2000} src={borderTreat} />
           </div>
           {/* service icon */}
@@ -121,7 +91,7 @@ const Page = async ({ params }: PropsPageType) => {
       </div>
       <div className="viewport-p">
         {/* videos */}
-        <div className="grid grid-cols-12 gap-y-8 s1280:gap-y-0 mb-10 s1280:mb-20 s1280:gap-x-20 s1920:gap-x-32">
+        <div className="grid grid-cols-12 gap-y-8 s1280:gap-y-0 s1280:mb-20 s1280:gap-x-20 s1920:gap-x-32">
           <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-7 flex items-center justify-start">
             <div className="s1280:w-[688px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[850px] s1728:h-[650px] s1920:w-[900px] s1920:h-[700px]">
               <VideoPlayer
@@ -145,19 +115,17 @@ const Page = async ({ params }: PropsPageType) => {
                 {fetchData?.videoContents.desc}
               </p>
             </div>
-            <div className="items-end justify-start gap-x-4 mt-auto hidden s1280:flex s1280:h-[188px] s1512:h-[236px]">
+            {/* <div className="items-end justify-start gap-x-4 mt-auto hidden s1280:flex s1280:h-[188px] s1512:h-[236px]">
               <ChangeVideo videoList={videoList} />
-            </div>
+            </div> */}
           </div>
           <div className="order-3 col-span-12 s1280:mt-10 s1728:mt-0 relative mt-8">
-            <div className="items-end justify-start gap-x-2 flex s1280:hidden h-[152px]">
+            {/* <div className="items-end justify-start gap-x-2 flex s1280:hidden h-[152px]">
               <ChangeVideo videoList={videoList} />
-            </div>
-            {/* shadow */}
-            <div className="s1280:w-[700px] s1280:h-[38px] absolute top-1/2 left-[30%] s1512:left-1/4 -translate-x-1/2 -translate-y-1/2"></div>
+            </div> */}
+            {/* <div className="s1280:w-[700px] s1280:h-[38px] absolute top-1/2 left-[30%] s1512:left-1/4 -translate-x-1/2 -translate-y-1/2"></div> */}
             <div className="grdl-md s1280:w-[133px] s1280:h-[27px]  absolute top-0 s1280:top-1/2 right-0"></div>
-            {/* women character */}
-            <div className="s1280:w-[121px] s1280:h-[378px] absolute -top-5 s1280:-top-[350px] right-0">
+            <div className="hidden s1280:block s1280:w-[121px] s1280:h-[378px] absolute -top-5 s1280:-top-[350px] right-0">
               <ImgFetcher width={2000} height={2000} src={videoChar} />
             </div>
           </div>

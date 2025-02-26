@@ -108,7 +108,7 @@ const Treatments = async ({
         <div className="col-span-12 s1280:col-span-5 s1728:col-span-6">
           <div className="mb-3 s1280:mb-20 s1728:mb-10">
             <h1 className="text-[30px] s1280:text-[40px] s1512:text-[48px] s1728:text-[60px] font-black s1280:font-semibold text-[#00979A] mb-4 s1280:mb-8">
-              Specialized Treatments
+              Treatments
             </h1>
             <p className="font-semibold flex-left gap-x-1 text-[14px] s1280:text-[24px] text-[#00979A] [text-shadow:0_2px_3px_#00000040] mb-4">
               <span>85</span>
