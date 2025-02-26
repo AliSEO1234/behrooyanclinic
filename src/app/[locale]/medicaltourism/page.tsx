@@ -31,7 +31,7 @@ const Treatments = async ({
     {
       countService: 27,
       img: aesthetics,
-      linkService: "/medicaltourism/aesthetics",
+      linkService: "/medicaltourism/aesthetic",
       title: "Aesthetics",
     },
     {
@@ -61,7 +61,7 @@ const Treatments = async ({
     {
       countService: 27,
       img: aesthetics,
-      linkService: "/medicaltourism/aesthetics",
+      linkService: "/medicaltourism/aesthetic",
       title: "Aesthetics",
     },
     {
@@ -91,7 +91,7 @@ const Treatments = async ({
     {
       countService: 27,
       img: aesthetics,
-      linkService: "/medicaltourism/aesthetics",
+      linkService: "/medicaltourism/aesthetic",
       title: "Aesthetics",
     },
     {
