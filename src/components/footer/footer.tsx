@@ -261,7 +261,8 @@ const Footer = () => {
 
           <div>
             <Link
-              href="/"
+            target="_blank"
+              href="https://instagram.com/azpo_health"
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <FaFacebookF className="s1280:size-5" />
@@ -277,7 +278,8 @@ const Footer = () => {
           </div>
           <div>
             <Link
-              href="/"
+            target="_blank"
+              href="https://www.youtube.com/@azpohealth"
               className="s1280:w-[35px] s1280:h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <IoLogoYoutube className="s1280:size-5" />
@@ -285,7 +287,8 @@ const Footer = () => {
           </div>
           <div>
             <Link
-              href="/"
+              target="_blank"
+              href="wa.me/905300515535"
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <BsInstagram className="s1280:size-5" />

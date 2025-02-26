@@ -12,7 +12,8 @@ export const pathsSubCategory = [
     "genital-aesthetic",
     "implantology",
     "general-dentistry",
-    "cosmetic-dentistry"
+    "cosmetic-dentistry",
+    "restorative-dentistry"
 ]
 
 export const pathsSubNestedCategory = [
