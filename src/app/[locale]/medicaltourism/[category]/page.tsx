@@ -86,11 +86,11 @@ const Page = async ({ params }: PropsPageType) => {
                 <IoIosArrowDown className="size-5" />
               </span>
             </div>
-            <div>
+            {/* <div>
               <p className="font-semibold s1280:text-[24px]">
                 view <span>69</span> Service
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 s1600:col-span-7 s1920:col-span-6 relative flex-right z-[2]">

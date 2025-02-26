@@ -107,13 +107,13 @@ const Treatments = async ({
       <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 mb-10 s1280:mb-20 mt-20">
         <div className="col-span-12 s1280:col-span-5 s1728:col-span-6">
           <div className="mb-3 s1280:mb-20 s1728:mb-10">
-            <h1 className="text-[30px] s1280:text-[40px] s1512:text-[48px] s1728:text-[60px] font-black s1280:font-semibold text-[#00979A] mb-4 s1280:mb-8">
+            <h1 className="text-[30px] s1280:text-[40px] s1512:text-[48px] s1728:text-[60px] font-black s1280:font-semibold text-[#00979A] mb-4 s1280:mb-10">
               Treatments
             </h1>
-            <p className="font-semibold flex-left gap-x-1 text-[14px] s1280:text-[24px] text-[#00979A] [text-shadow:0_2px_3px_#00000040] mb-4">
+            {/* <p className="font-semibold flex-left gap-x-1 text-[14px] s1280:text-[24px] text-[#00979A] [text-shadow:0_2px_3px_#00000040] mb-4">
               <span>85</span>
               <span>Service</span>
-            </p>
+            </p> */}
             <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[28px] s1920:text-[30px] leading-[22px] s1280:leading-[27px] s1512:leading-[32px] s1728:leading-[40px] text-justify s1280:pe-24 s1600:pe-40 s1728:pe-72 s1920:pe-80">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry is standard dummy text
