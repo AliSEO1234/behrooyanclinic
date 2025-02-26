@@ -9,7 +9,6 @@ import borderTreat from "@/assets/images/treatment/bordertreat.png";
 import bgCover from "@/assets/images/treatment/bg-category.svg";
 import ImgFetcher from "@/components/imgFetcher";
 import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
-import videoChar from "@/assets/images/treatment/vidChar.png";
 import borderPhone from "@/assets/images/treatment/borderTreatPhone.png";
 import safe from "@/assets/images/treatment/safe.svg";
 import SearchBox from "@/components/searchBox";
@@ -100,8 +99,8 @@ const Page = async ({ params }: PropsPageType) => {
                 className="s1280:w-[684px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1728:h-[530px]  s1920:w-[996px] s1920:h-[580px]"
                 src={
                   fetchData?.videoPage || locale === "ru"
-                    ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                    : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
+                  ? "https://azpo.com/api/files/property-videos/site_health.mp4"
+                  : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
                 }
               />
             </div>
@@ -124,10 +123,10 @@ const Page = async ({ params }: PropsPageType) => {
               <ChangeVideo videoList={videoList} />
             </div> */}
             {/* <div className="s1280:w-[700px] s1280:h-[38px] absolute top-1/2 left-[30%] s1512:left-1/4 -translate-x-1/2 -translate-y-1/2"></div> */}
-            <div className="grdl-md s1280:w-[133px] s1280:h-[27px]  absolute top-0 s1280:top-1/2 right-0"></div>
+            {/* <div className="grdl-md s1280:w-[133px] s1280:h-[27px]  absolute top-0 s1280:top-1/2 right-0"></div>
             <div className="hidden s1280:block s1280:w-[121px] s1280:h-[378px] absolute -top-5 s1280:-top-[350px] right-0">
               <ImgFetcher width={2000} height={2000} src={videoChar} />
-            </div>
+            </div> */}
           </div>
         </div>
         {/* service categoryies */}
