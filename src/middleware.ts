@@ -5,7 +5,11 @@ import { routing } from "./i18n/routing";
 export default createMiddleware(routing);
 export async function middleware(req: NextRequest) {
   const path = req.nextUrl.pathname;
-  if (path.startsWith("/videos") || path.startsWith("/health.ico")) {
+  if (
+    path.startsWith("/videos") ||
+    path.startsWith("/health.ico") ||
+    path.startsWith("/robots.txt")
+  ) {
     return NextResponse.next();
   }
   const intlMiddleware = createMiddleware(routing);

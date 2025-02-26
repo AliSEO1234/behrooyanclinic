@@ -8,7 +8,8 @@ import { useLocale } from "next-intl";
 const TreatCard = ({ className, desc, img, title , path }: TreatCardType) => {
   const locale = useLocale()
   return (
-    <div
+    <Link
+    href={`/${locale}/medicaltourism/${path}`}
       className={`${
         className ? className : ""
       } treat__card-container bg-white rounded-[40px] w-full s1280:w-[255px] s1512:w-[329px] s1600:w-[349px] s1728:w-[369px] s1920:w-[390px] poly-treat-card relative overflow-hidden shadow-[4px_4px_4px_0px_#00000025] p-4 pb-0 s1728:p-5 s1728:pb-0 s1280:pb-0 s1920:p-6 s1920:pb-0`}
@@ -26,9 +27,9 @@ const TreatCard = ({ className, desc, img, title , path }: TreatCardType) => {
         </h3>
         <p className="s1280:text-[14px] s1512:text-[16px] text-[#333333] font-normal line-clamp-4">{desc}</p>
       </div>
-      <div className="flex-cen">
-        <Link className="w-[138px] h-[32px] s1280:w-[108px]  s1280:h-6 s1512:w-[138px] s1512:h-[32px] bg-[#DAEDE6] rounded-t-[50px] font-normal s1280:text-[14px] text-[#333333] flex-cen" href={`/${locale}/medicaltourism/${path}`}>View More</Link>
-      </div>
+      {/* <div className="flex-cen">
+        <p className="w-[138px] h-[32px] s1280:w-[108px]  s1280:h-6 s1512:w-[138px] s1512:h-[32px] bg-[#DAEDE6] rounded-t-[50px] font-normal s1280:text-[14px] text-[#333333] flex-cen" href={`/${locale}/medicaltourism/${path}`}>View More</p>
+      </div> */}
       {/* clip */}
       {/* <div className="w-[350px] h-[350px] s1512:w-[300px] s1512:h-[300px] absolute -top-[160px] -left-[160px] s1280:-top-[165px] s1280:-left-[165px] s1512:-left-[125px] s1512:-top-[125px] rounded-[40px] overflow-hidden">
         <ImgFetcher src={clipTreat} />
@@ -37,7 +38,7 @@ const TreatCard = ({ className, desc, img, title , path }: TreatCardType) => {
       <div className="treat__card--arrow-container w-[86px] h-[86px] s1512:w-[86px] s1512:h-[86px] rounded-full shadow-[0px_4px_4px_0px_#00000025] flex-cen bg-white text-[#CECFCF] absolute top-1 left-3">
         <BsArrowDownRight className="size-9 s1280:size-9" />
       </div>
-    </div>
+    </Link>
   );
 };
 export default TreatCard;

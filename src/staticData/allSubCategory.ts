@@ -1,6 +1,7 @@
 import hair from "@/assets/images/treatment/Hair Transplantation.jpg";
 import fecial from "@/assets/images/treatment/Facial Aesthetic Surgery.jpg";
 import body from "@/assets/images/treatment/Body contouring.jpg";
+import breastCategory from "@/assets/images/treatment/breast.jpg";
 // hair
 import Beard from "@/assets/images/subnested/Beard Transplant.jpg";
 import prp from "@/assets/images/subnested/PRP Hair Treatment.jpg";
@@ -48,6 +49,13 @@ export const allSubCategory = [
       "Achieve the body of your dreams with advanced body contouring procedures in Turkey. Experience world-class medical care, personalized treatment plans, and stunning results.",
     categoryKey: "aesthetic",
     path: "body-contouring",
+  },
+  {
+    img: breastCategory,
+    title: "Breast Surgery",
+    description: "Considering breast surgery? Unlock your dream silhouette and boost your self-esteem with world-class breast surgery in Turkey. AZPO Health offers expert surgeons, luxurious care, and affordable packages. Explore your options for breast augmentation, reduction, and lift in a premier medical tourism destination.",
+    categoryKey: "aesthetic",
+    path: "breast-surgery",
   },
 ];
 export const allSubNestedCategory = [
