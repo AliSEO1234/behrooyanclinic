@@ -32,6 +32,10 @@ import labiaplastyGenital from "@/assets/images/treatment/labiaplasty.jpg"
 import penileGenital from "@/assets/images/subnested/penile.jpg"
 import implantology from "@/assets/images/subCategory/implantology.jpg"
 import den64 from "@/assets/images/subnested/den64.jpg"
+import destigeneral from "@/assets/images/treatment/destigeneral.jpg"
+import rootcanal from "@/assets/images/subnested/rootcanal.jpg"
+import cosmeticdentistry from "@/assets/images/treatment/Cosmetic-Dentistry.jpg"
+import laminateveneers from "@/assets/images/subnested/Laminate Veneers.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -79,6 +83,21 @@ export const allSubCategory = [
     path: "implantology",
     categoryKey: "dental-treatments",
   },
+  {
+    img: cosmeticdentistry,
+    title: "Cosmetic Dentistry",
+    description: "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
+    path: "cosmetic-dentistry",
+    categoryKey: "dental-treatments",
+  },
+  {
+    img: destigeneral,
+    title: "General Dentistry",
+    description: "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
+    path: "general-dentistry",
+    categoryKey: "dental-treatments",
+  },
+  
 ];
 export const allSubNestedCategory = [
   // hair-transplantation
@@ -297,6 +316,26 @@ export const allSubNestedCategory = [
     categoryKey: "dental-treatments",
     path: "6-4-dental-implants",
     subCategoryKey: "implantology",
+  },
+  // dentistry
+  {
+    img: rootcanal,
+    title: "Root Canal Therapy",
+    description:
+      "Tired of tooth pain and worried about losing your natural smile? Discover how root canal therapy in Turkey can be your affordable and high-quality solution. AZPO Health offers comprehensive dental care packages in Istanbul, Antalya, and Alanya, combining expert treatment with a relaxing medical tourism experience.",
+    categoryKey: "dental-treatments",
+    path: "root-canal-therapy",
+    subCategoryKey: "general-dentistry",
+  },
+  // laminate-veneers
+  {
+    img: laminateveneers,
+    title: "Laminate Veneers",
+    description:
+      "Tired of tooth pain and worried about losing your natural smile? Discover how root canal therapy in Turkey can be your affordable and high-quality solution. AZPO Health offers comprehensive dental care packages in Istanbul, Antalya, and Alanya, combining expert treatment with a relaxing medical tourism experience.",
+    categoryKey: "dental-treatments",
+    path: "laminate-veneers",
+    subCategoryKey: "cosmetic-dentistry",
   },
 
 ];

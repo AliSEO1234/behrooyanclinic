@@ -10,7 +10,9 @@ export const pathsSubCategory = [
     "body-contouring",
     "breast-surgery",
     "genital-aesthetic",
-    "implantology"
+    "implantology",
+    "general-dentistry",
+    "cosmetic-dentistry"
 ]
 
 export const pathsSubNestedCategory = [
@@ -41,5 +43,6 @@ export const pathsSubNestedCategory = [
     // Genital-Aesthetic
     "labiaplasty-barbie-look",
     "vaginal-tightening",
-    "penile-enlargement-phalloplasty"
+    "penile-enlargement-phalloplasty",
+    // dental
 ]
