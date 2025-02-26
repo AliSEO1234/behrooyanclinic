@@ -26,6 +26,8 @@ import otoplasty from "@/assets/images/subnested/Otoplasty.jpg";
 import ble from "@/assets/images/subnested/Blepharoplasty (Upper and Lower Eyelid Surgery).jpg";
 // breast
 import breatSubCategory from "@/assets/images/subCategory/breastCard.jpg"
+// genital
+import genital from "@/assets/images/treatment/genital.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -57,6 +59,13 @@ export const allSubCategory = [
     description: "Considering breast surgery? Unlock your dream silhouette and boost your self-esteem with world-class breast surgery in Turkey. AZPO Health offers expert surgeons, luxurious care, and affordable packages. Explore your options for breast augmentation, reduction, and lift in a premier medical tourism destination.",
     categoryKey: "aesthetic",
     path: "breast-surgery",
+  },
+  {
+    img: genital,
+    title: "Genital Aesthetic",
+    description: "Considering genital aesthetic surgery to address personal concerns or enhance your intimate well-being? Turkey has become a leading destination for these specialized procedures, offering discreet, high-quality care. Discover how AZPO Health connects you with expert surgeons and all-inclusive packages for a comfortable and transformative experience.",
+    categoryKey: "aesthetic",
+    path: "genital-aesthetic",
   },
 ];
 export const allSubNestedCategory = [
