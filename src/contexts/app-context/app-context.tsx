@@ -27,7 +27,7 @@ type AppContextType = {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 const AppProvider = ({ children }: { children: ReactNode }) => {
-  const pathname = usePathname()
+  const pathname = usePathname();
   const [locale, setLocale] = useState<"ru" | "en">("en");
   const [activeVideoTreat, setActiveVideoTreat] =
     useState<VideoDataType | null>(null);
@@ -36,11 +36,16 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
     undefined
   );
   const [popUpForm, setPopUpForm] = useState<boolean>(false);
-  useEffect(()=>{
+  useEffect(() => {
+    if (pathname === `/${locale}`) {
+      setTimeout(() => {
+        setPopUpForm(true);
+      }, 3000);
+    }
     setTimeout(() => {
-      setPopUpForm(true)
-    }, 3000);
-  },[pathname])
+      setPopUpForm(true);
+    }, 180000);
+  }, [pathname,locale]);
   return (
     <AppContext.Provider
       value={{

@@ -3,37 +3,37 @@
 import { useState } from "react";
 import VideoPlayer from "../services/videoPlayer/videoPlayer";
 
-import VideoCard from "./videoCard";
+// import VideoCard from "./videoCard";
 import { useLocale } from "next-intl";
 const VideoTab = () => {
   const [activeTab, setActiveTab] = useState<"doctors" | "patient">("doctors");
-  const [activeVideo, setActiveVideo] = useState<string>("doc1");
-  const videoList = [
-    {
-      id: 0,
-      videoKey: "doc1",
-    },
-    {
-      id: 1,
-      videoKey: "doc2",
-    },
-    {
-      id: 2,
-      videoKey: "doc3",
-    },
-    {
-      id: 3,
-      videoKey: "doc4",
-    },
-    {
-      id: 4,
-      videoKey: "doc5",
-    },
-    {
-      id: 5,
-      videoKey: "doc6",
-    },
-  ];
+  // const [activeVideo, setActiveVideo] = useState<string>("doc1");
+  // const videoList = [
+  //   {
+  //     id: 0,
+  //     videoKey: "doc1",
+  //   },
+  //   {
+  //     id: 1,
+  //     videoKey: "doc2",
+  //   },
+  //   {
+  //     id: 2,
+  //     videoKey: "doc3",
+  //   },
+  //   {
+  //     id: 3,
+  //     videoKey: "doc4",
+  //   },
+  //   {
+  //     id: 4,
+  //     videoKey: "doc5",
+  //   },
+  //   {
+  //     id: 5,
+  //     videoKey: "doc6",
+  //   },
+  // ];
   const locale = useLocale();
   return (
     <div>
@@ -78,7 +78,7 @@ const VideoTab = () => {
             className="w-full  s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1920:w-[966px]"
           />
         </div>
-        <div className="flex s1280:flex-col gap-x-4 s1280:gap-x-0 s1280:gap-y-4 s1600:gap-y-3 items-center s1280:items-end justify-start overflow-x-scroll s1280:overflow-x-hidden s1280:overflow-y-scroll scroll-hide s1280:h-[434px] s1512:h-[506px] s1600:h-[530px] w-full s1280:w-fit">
+        {/* <div className="flex s1280:flex-col gap-x-4 s1280:gap-x-0 s1280:gap-y-4 s1600:gap-y-3 items-center s1280:items-end justify-start overflow-x-scroll s1280:overflow-x-hidden s1280:overflow-y-scroll scroll-hide s1280:h-[434px] s1512:h-[506px] s1600:h-[530px] w-full s1280:w-fit">
           {videoList.map((video) => {
             const isActive = activeVideo === video.videoKey;
             return (
@@ -90,7 +90,7 @@ const VideoTab = () => {
               />
             );
           })}
-        </div>
+        </div> */}
         <div className="col-span-12 s1280:mt-12 hidden s1280:grid grid-cols-12">
           <div className="col-span-12 s1280:col-span-10 shadow-subtreat-video h-9"></div>
           <div className="col-span-6 s1280:col-span-2"></div>
