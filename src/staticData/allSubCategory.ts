@@ -30,7 +30,7 @@ import breatSubCategory from "@/assets/images/subCategory/breastCard.jpg"
 import genital from "@/assets/images/treatment/genital.jpg"
 import labiaplastyGenital from "@/assets/images/treatment/labiaplasty.jpg"
 import penileGenital from "@/assets/images/subnested/penile.jpg"
-import implantology from "@/assets/images/subCategory/Implantology.jpg"
+import implantology from "@/assets/images/subCategory/implantology.jpg"
 export const allSubCategory = [
   {
     img: hair,
