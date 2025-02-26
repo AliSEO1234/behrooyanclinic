@@ -28,6 +28,9 @@ import ble from "@/assets/images/subnested/Blepharoplasty (Upper and Lower Eyeli
 import breatSubCategory from "@/assets/images/subCategory/breastCard.jpg"
 // genital
 import genital from "@/assets/images/treatment/genital.jpg"
+import labiaplastyGenital from "@/assets/images/treatment/labiaplasty.jpg"
+import penileGenital from "@/assets/images/subnested/penile.jpg"
+import implantology from "@/assets/images/subCategory/Implantology.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -66,6 +69,14 @@ export const allSubCategory = [
     description: "Considering genital aesthetic surgery to address personal concerns or enhance your intimate well-being? Turkey has become a leading destination for these specialized procedures, offering discreet, high-quality care. Discover how AZPO Health connects you with expert surgeons and all-inclusive packages for a comfortable and transformative experience.",
     categoryKey: "aesthetic",
     path: "genital-aesthetic",
+  },
+  // dental
+  {
+    img: implantology,
+    title: "Implantology",
+    description: "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
+    path: "implantology",
+    categoryKey: "dental-treatments",
   },
 ];
 export const allSubNestedCategory = [
@@ -253,5 +264,37 @@ export const allSubNestedCategory = [
     path: "breast-lift-mastopexy",
     categoryKey: "aesthetic",
     subCategoryKey: "breast-surgery",
+  },
+  // genital
+  // labia
+  {
+    img: labiaplastyGenital,
+    title: "Labiaplasty Barbie Look",
+    description:
+      "Are you experiencing discomfort or self-consciousness due to enlarged or asymmetrical labia?. Labiaplasty in Turkey at AZPO Health offers a safe, effective solution to restore your comfort, confidence, and well-being. Under the care of experienced surgeons, you can achieve the aesthetic results you desire.",
+    categoryKey: "aesthetic",
+    path: "labiaplasty-barbie-look",
+    subCategoryKey: "genital-aesthetic",
+  },
+  // panile
+  {
+    img: penileGenital,
+    title: "Penile Enlargement Phalloplasty",
+    description:
+      "Considering phalloplasty for penile enlargement to enhance your confidence and address personal desires? Turkey has emerged as a respected destination for men seeking these specialized procedures. Discover how AZPO Health can connect you with experienced surgeons and comprehensive support for a discreet and empowering journey.",
+    categoryKey: "aesthetic",
+    path: "penile-enlargement-phalloplasty",
+    subCategoryKey: "genital-aesthetic",
+  },
+  // dental
+  // Implantology
+  {
+    img: penileGenital,
+    title: "Implantology",
+    description:
+      "Considering phalloplasty for penile enlargement to enhance your confidence and address personal desires? Turkey has emerged as a respected destination for men seeking these specialized procedures. Discover how AZPO Health can connect you with experienced surgeons and comprehensive support for a discreet and empowering journey.",
+    categoryKey: "dental-treatments",
+    path: "implantology",
+    subCategoryKey: "dental-treatments",
   },
 ];

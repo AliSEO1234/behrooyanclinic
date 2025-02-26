@@ -37,7 +37,7 @@ const Treatments = async ({
     {
       countService: 74,
       img: dental,
-      linkService: "/medicaltourism/dental",
+      linkService: "/medicaltourism/dental-treatments",
       title: "Dental",
     },
     {
@@ -67,7 +67,7 @@ const Treatments = async ({
     {
       countService: 74,
       img: dental,
-      linkService: "/medicaltourism/dental",
+      linkService: "/medicaltourism/dental-treatments",
       title: "Dental",
     },
     {
@@ -97,7 +97,7 @@ const Treatments = async ({
     {
       countService: 74,
       img: dental,
-      linkService: "/medicaltourism/dental",
+      linkService: "/medicaltourism/dental-treatments",
       title: "Dental",
     },
   ];

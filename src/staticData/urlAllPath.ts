@@ -9,7 +9,8 @@ export const pathsSubCategory = [
     "facial-aesthetic-surgery",
     "body-contouring",
     "breast-surgery",
-    "genital-aesthetic"
+    "genital-aesthetic",
+    "implantology"
 ]
 
 export const pathsSubNestedCategory = [

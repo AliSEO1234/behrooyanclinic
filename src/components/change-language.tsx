@@ -9,13 +9,15 @@ import {
 } from "./ui/dropdown-menu";
 import { useLocale } from "next-intl";
 import { IoIosArrowDown } from "react-icons/io";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { ChangeLanguageType } from "@/types/navbar/navbar";
 
 const ChangeLanguage = ({ BodyWidth, trigStyle }: ChangeLanguageType) => {
   const [changeLang, setChangeLang] = useState<boolean>(false);
   const locale = useLocale();
   const router = useRouter();
+  const pathname = usePathname();
+  const currentPath = pathname.split("/").filter(path=> Boolean(path)).slice(1).join("/")  
   return (
     <DropdownMenu open={changeLang} onOpenChange={setChangeLang}>
       <DropdownMenuTrigger className="outline-none" asChild>
@@ -35,13 +37,13 @@ const ChangeLanguage = ({ BodyWidth, trigStyle }: ChangeLanguageType) => {
       >
         <DropdownMenuGroup>
           <DropdownMenuItem
-            onClick={() => router.push(`/ru`)}
+            onClick={() => router.push(`/ru/${currentPath}`)}
             className={`border mb-2 flex-cen p-0 h-[35px] rounded-[40px] bg-white font-bold text-[#25A6A9] cursor-pointer`}
           >
             RU
           </DropdownMenuItem>
           <DropdownMenuItem
-            onClick={() => router.push(`/en`)}
+            onClick={() => router.push(`/en/${currentPath}`)}
             className={`border flex-cen p-0 h-[35px] rounded-[40px] bg-white font-bold text-[#25A6A9] cursor-pointer`}
           >
             EN
