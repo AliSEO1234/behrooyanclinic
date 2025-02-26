@@ -233,6 +233,7 @@ export const allSubNestedCategory = [
     description:
       "Longing for fuller, more defined curves? Breast augmentation with implants at AZPO Health in Turkey offers a transformative journey to enhance your natural beauty and boost your self-confidence. Discover how our expert surgeons and all-inclusive packages can make your dream a reality.",
     categoryKey: "aesthetic",
+    path:"breast-augmentation-implants",
     subCategoryKey: "breast-surgery",
   },
   {

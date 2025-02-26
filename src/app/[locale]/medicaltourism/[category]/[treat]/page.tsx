@@ -25,7 +25,8 @@ type PropsPageType = {
 const Page = async ({ params }: PropsPageType) => {
   const { treat, locale, category } = await params;
   const fetchData = subCategoryHandler(category, treat, locale);
-
+  console.log(fetchData);
+  
   return (
     <div className="bg-[#FCFCFC]">
       <div className="grid grid-cols-12 gap-y-5 s1280:gap-y-0 mt-16 s1512:mt-20 ps-[10px] s430:ps-5 pt-10 s1280:ps-[71px] s1512:ps-[79px] s1600:ps-[85px] s1728:ps-[100px] s1920:ps-[131px] rounded-b-[40px] shadow-[0px_19px_30px_-25px_#0000001C] overflow-hidden mb-10 s1280:mb-20 pb-5 s1280:pb-0">
@@ -151,6 +152,7 @@ const Page = async ({ params }: PropsPageType) => {
               <div className="flex items-center flex-col justify-start s1280:flex-row s1280:justify-start flex-wrap w-full gap-y-10 s1280:flex-grow s1280:gap-x-4 s1600:gap-x-[10px] s1728:gap-x-6">
                 {/* content */}
                 {fetchData?.subNestedList.map((subNested, index) => {
+                  
                   return (
                     <TreatCard
                       key={index}
