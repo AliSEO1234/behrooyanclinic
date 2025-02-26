@@ -31,6 +31,7 @@ import genital from "@/assets/images/treatment/genital.jpg"
 import labiaplastyGenital from "@/assets/images/treatment/labiaplasty.jpg"
 import penileGenital from "@/assets/images/subnested/penile.jpg"
 import implantology from "@/assets/images/subCategory/implantology.jpg"
+import den64 from "@/assets/images/subnested/den64.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -289,12 +290,13 @@ export const allSubNestedCategory = [
   // dental
   // Implantology
   {
-    img: penileGenital,
-    title: "Implantology",
+    img: den64,
+    title: "All on 6-4 Dental Implants",
     description:
       "Considering phalloplasty for penile enlargement to enhance your confidence and address personal desires? Turkey has emerged as a respected destination for men seeking these specialized procedures. Discover how AZPO Health can connect you with experienced surgeons and comprehensive support for a discreet and empowering journey.",
     categoryKey: "dental-treatments",
-    path: "implantology",
-    subCategoryKey: "dental-treatments",
+    path: "6-4-dental-implants",
+    subCategoryKey: "implantology",
   },
+
 ];

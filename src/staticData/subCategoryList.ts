@@ -45,6 +45,7 @@ import labiaplastyGenital from "@/assets/images/treatment/labiaplasty.jpg"
 import genital3d from "@/assets/images/subCategory/genital3d.png";
 import penileGenital from "@/assets/images/subnested/penile.jpg"
 import dental3d from "@/assets/images/treatment/dental3d.png"
+import den64 from "@/assets/images/subnested/den64.jpg"
 export const categoryDataHandler = (key: string, locale: string) => {
   const findPathCategory = pathsCategory.find((path) => path === key);
   const findSubCategories = allSubCategory.filter(
@@ -435,8 +436,8 @@ export const subCategoryHandler = (
       subCategoryContent: {
         title:
           locale === "ru"
-            ? "Genital Aesthetic in Turkey"
-            : "Genital Aesthetic in Turkey",
+            ? "Implantology in Turkey"
+            : "Implantology in Turkey",
       },
       contents: {
         title:
@@ -455,7 +456,7 @@ export const subCategoryHandler = (
       subCategoryKey: "implantology",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      imgCover: genital3d,
+      imgCover: dental3d,
     },
   ];
   const findData = categoryList.find(
@@ -2965,6 +2966,112 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
       imgCover: subNestedKey === "penile-enlargement-phalloplasty" ? penileGenital : null,
       subNestedKey: "penile-enlargement-phalloplasty",
     },
+    // dental
+      // all 6-4
+      {
+        id: 0,
+        title:
+          locale === "ru"
+            ? "4 Dental Implants in Turkey: All-on-4 & All-on-6 Solutions for a Renewed Smile with AZPO Health"
+            : "4 Dental Implants in Turkey: All-on-4 & All-on-6 Solutions for a Renewed Smile with AZPO Health",
+        descriptionTop:
+          locale === "ru"
+            ? "Considering full arch dental restoration and researching cost-effective solutions? Turkey has become a leading destination for 4 Dental Implants and 6 Dental Implants procedures, offering advanced All-on-4 and All-on-6 dental implant techniques at significantly reduced costs. Discover how AZPO Health connects you with expert implantologists and all-inclusive packages to regain a complete, functional, and beautiful smile."
+            : "Considering full arch dental restoration and researching cost-effective solutions? Turkey has become a leading destination for 4 Dental Implants and 6 Dental Implants procedures, offering advanced All-on-4 and All-on-6 dental implant techniques at significantly reduced costs. Discover how AZPO Health connects you with expert implantologists and all-inclusive packages to regain a complete, functional, and beautiful smile.",
+        benefits: {
+          items: [
+            {
+              title: locale === "ru" ? "Cost Smart" : "Cost Smart",
+              desc:
+                locale === "ru"
+                  ? "Fewer implants needed compared to traditional methods, making it more affordable"
+                  : "Fewer implants needed compared to traditional methods, making it more affordable",
+            },
+            {
+              title: locale === "ru" ? "Quick Recovery" : "Quick Recovery",
+              desc:
+                locale === "ru"
+                  ? "Same-day temporary teeth with complete healing in months, not years"
+                  : "Same-day temporary teeth with complete healing in months, not years",
+            },
+            {
+              title: locale === "ru" ? "Long Lasting" : "Long Lasting",
+              desc:
+                locale === "ru"
+                  ? "15+ year lifespan with proper care, outperforming traditional dentures"
+                  : "15+ year lifespan with proper care, outperforming traditional dentures",
+            },
+          ],
+          categories: [
+            {
+              header: locale === "ru" ? "Who It’s For" : "Who It’s For",
+              desc:
+                locale === "ru"
+                  ? "Patients with complete tooth loss in one or both jaws."
+                  : "Patients with complete tooth loss in one or both jaws.",
+            },
+            {
+  
+              header: locale === "ru" ? "Важные аспекты" : "Considerations",
+              decsList: [locale === "ru" ? "A soft diet is required during the 3-month healing phase when implants integrate with the bone." : "A soft diet is required during the 3-month healing phase when implants integrate with the bone.",
+                locale === "ru" ? "Mild pain and swelling may occur post-surgery but can be managed with prescribed medication." : "Mild pain and swelling may occur post-surgery but can be managed with prescribed medication.",
+                locale === "ru" ? "For patients with dental anxiety, the procedure can be performed under local anesthesia, sedation, or general anesthesia." : "For patients with dental anxiety, the procedure can be performed under local anesthesia, sedation, or general anesthesia."
+              ],
+              // desc:
+              //   locale === "ru"
+              //     ? ""
+              //     : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
+            },
+            {
+              header: locale === "ru" ? "Как это работает" : "How it works",
+              desc:
+                locale === "ru"
+                  ? "Four dental implants are surgically placed in the jawbone. Two are inserted at the front of the jaw vertically, while the other two are positioned at an angle of 30° in the rear for maximum support."
+                  : "Four dental implants are surgically placed in the jawbone. Two are inserted at the front of the jaw vertically, while the other two are positioned at an angle of 30° in the rear for maximum support.",
+            },
+          ],
+        },
+        conclusion: {
+          title: locale === "ru" ? "Заключение" : "Conclusion",
+          desc:
+            locale === "ru"
+              ? "All-On-4 dental implants are a revolutionary solution for full-mouth rehabilitation, combining efficiency, aesthetics, and durability. The procedure is minimally invasive, cost-effective, and provides a permanent solution to tooth loss. With proper care and maintenance, All-On-4 dental implants can dramatically improve a patient’s quality of life."
+              : "All-On-4 dental implants are a revolutionary solution for full-mouth rehabilitation, combining efficiency, aesthetics, and durability. The procedure is minimally invasive, cost-effective, and provides a permanent solution to tooth loss. With proper care and maintenance, All-On-4 dental implants can dramatically improve a patient’s quality of life.",
+        },
+        subCategoryContent: {
+          title:
+            locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
+        },
+        bfs: [
+          bf1,
+          bf2,
+          bf3,
+          bf4,
+          bf5,
+          bf6,
+          bf7,
+          bf8,
+          bf9,
+          bf10,
+          bf11,
+          bf12,
+          bf13,
+        ],
+        contents: {
+          title:
+            locale === "ru"
+              ? "Почему стоит выбрать Турцию для фаллопластики по увеличению полового члена с AZPO Health?"
+              : "All-on-4 vs. All-on-6 Dental Implants: Understanding the Options",
+          content:
+            locale === "ru"
+              ? `
+          <p><span style="color: rgb(27, 28, 29);">[Image: Illustrative image showing the placement of 4 implants for All-on-4 and 6 implants for All-on-6 in the jawbone. Keep it educational and clear, not overly clinical.]</span></p><p><span style="color: rgb(27, 28, 29);">Deciding between </span><strong style="color: rgb(27, 28, 29);">all on 4 vs all on 6 dental implants</strong><span style="color: rgb(27, 28, 29);"> is an important step in your full arch restoration journey. While both All-on-4 and All-on-6 systems are exceptional solutions for replacing a full upper or lower arch of teeth, there are key differences to consider when discussing your options with your AZPO Health dental specialist.</span></p><p><span style="color: rgb(27, 28, 29);">The primary distinction lies in the </span><strong style="color: rgb(27, 28, 29);">number of implants used</strong><span style="color: rgb(27, 28, 29);">: All-on-4 utilizes four dental implants per arch, while All-on-6 employs six. In the All-on-4 technique, the posterior implants are often strategically angled to maximize contact with available bone, which is particularly beneficial for patients who may have moderate bone density. All-on-6, on the other hand, typically involves a straighter implant placement, often incorporating additional implants towards the back of the mouth. This increased number of implants in the All-on-6 system generally provides </span><strong style="color: rgb(27, 28, 29);">enhanced stability and support</strong><span style="color: rgb(27, 28, 29);">, making it a strong recommendation for patients with less dense bone or those who require extra support for larger dentures, or those who may experience bruxism (teeth grinding).</span></p><p><span style="color: rgb(27, 28, 29);">In terms of suitability, All-on-4 is an excellent option for many full arch cases, particularly when the patient has good to moderate bone density. All-on-6 is often favored in situations where bone density is lower, or when the patient desires a greater degree of stability. From a procedural standpoint, All-on-4 is generally considered to be a slightly less complex surgical procedure compared to All-on-6. As for cost, </span><strong style="color: rgb(27, 28, 29);">All-on-4 dental implants</strong><span style="color: rgb(27, 28, 29);"> are typically slightly less expensive than All-on-6, reflecting the difference in the number of implants used.</span></p><p><span style="color: rgb(27, 28, 29);">Ultimately, the most suitable choice – whether </span><strong style="color: rgb(27, 28, 29);">4 on 6 dental implants</strong><span style="color: rgb(27, 28, 29);"> or All-on-4 – will be determined through a thorough and personalized evaluation by your AZPO Health dentist. They will carefully assess your individual bone density, jaw structure, and specific needs to recommend the approach that will best achieve a successful and long-lasting full arch restoration for you.</span></p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Why Choose Turkey for Your All-on-4 or All-on-6 Dental Implants with AZPO Health?</span></h2><p><span style="color: rgb(27, 28, 29);">Turkey has emerged as a premier destination for dental tourism, particularly for advanced procedures like All-on-4 and All-on-6 dental implants. AZPO Health amplifies these advantages, offering:</span></p><p>Specialized Expertise in Full Arch Implantology: Turkey boasts a wealth of highly trained and experienced dentists specializing in dental implantology. AZPO Health partners with clinics renowned for their expertise in all on 4 or 6 dental implants, ensuring you are treated by specialists skilled in these advanced techniques. Our partner clinics often include specialists from Smile Antalya Dental Aesthetic and Implantology Clinic [if permissible, otherwise, keep generic], known for their focus on implantology and aesthetic dentistry.</p><p><br></p><p>Significant Cost Savings on Premium Implant Systems: The price of 4 dental implants in Turkey or 6 Dental-Implants in turkey is significantly lower than in many Western countries, without sacrificing quality. AZPO Health provides access to these cost-effective solutions using premium, internationally recognized implant brands, making full arch restoration accessible to more patients.</p><p><br></p><p>Comprehensive All-Inclusive Packages for a Stress-Free Experience: AZPO Health handles every detail of your dental journey with our all-inclusive packages, including:</p><p><br></p><p class="ql-indent-1">Convenient VIP Transfers: Relax with seamless airport transfers and transportation between your hotel and the dental clinic.</p><p class="ql-indent-1">Comfortable Accommodation: Recover in carefully selected hotels, ensuring a comfortable and restful stay.</p><p class="ql-indent-1">Dedicated Patient Coordinator: Receive personalized support and assistance from a dedicated coordinator throughout your treatment.</p><p class="ql-indent-1">Thorough Consultations and Planning: Benefit from expert consultations and customized treatment planning for your 4 on 6 dental implants in turkey or All-on-4 procedure.</p><p class="ql-indent-1">Transparent, All-Inclusive Pricing: Know the full 4 on 6 dental implants in turkey cost upfront with our transparent packages, covering surgery, implants, components, and aftercare.</p><p class="ql-indent-1">Personalized Aftercare Support: Receive a tailored aftercare plan and ongoing support for optimal healing and long-term success.</p><p class="ql-indent-1">Opportunity for Rejuvenating Recovery in Turkey: Combine your dental treatment with a relaxing recovery in beautiful Turkey, exploring its rich culture and stunning landscapes.</p><h2><span style="color: rgb(27, 28, 29);">Benefits of Choosing All-on-4 or All-on-6 Dental Implants:</span></h2><p><span style="color: rgb(27, 28, 29);">Whether you opt for All-on-4 or 6 dental implants, both systems offer remarkable advantages for full arch restoration:</span></p><p>Full Arch Restoration with Fewer Implants: Replace an entire upper or lower arch of teeth with just 4 or 6 implants, minimizing surgery and recovery time compared to individual implants for each tooth.</p><p>Enhanced Stability and Chewing Function: Enjoy significantly improved stability and chewing function compared to traditional dentures, allowing you to eat a wider variety of foods comfortably and confidently.</p><p>Improved Aesthetics and Confidence: Restore a natural-looking smile, enhancing your appearance and boosting your self-esteem.</p><p>Bone Preservation: Dental implants stimulate the jawbone, helping to prevent bone loss that can occur with missing teeth and traditional dentures.</p><p>Long-Term, Durable Solution: With proper care, All-on-4 and All-on-6 implants offer a long-lasting and reliable solution for full arch tooth replacement.</p><p><em style="color: rgb(27, 28, 29);">"I was hesitant about getting full dentures, but All-on-6 implants in Turkey with AZPO Health have exceeded my expectations! The procedure was much easier than I anticipated, and my new smile feels incredibly secure and natural. The cost was a fraction of what I was quoted at home, and the care was exceptional. I highly recommend AZPO Health and All-on-6 implants in Turkey!"</em><span style="color: rgb(27, 28, 29);"> – Sarah M., Australia</span></p><h2><span style="color: rgb(27, 28, 29);">AZPO Health: Your Partner in Achieving a Full, Confident Smile with Dental Implants in Turkey</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health is dedicated to making high-quality dental care accessible and affordable. We are your trusted partner for navigating 4 Dental Implants in Turkey and 6 Dental-Implants in turkey, providing expert guidance, connecting you with top clinics, and ensuring a smooth and successful dental implant journey.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Full Arch Dental Implant Restoration?</span></p><p>Specialized Focus on All-on-4 and All-on-6 Procedures: We connect you with clinics specializing in these advanced full arch restoration techniques.</p><p>Access to Experienced Implant Dentists: Our network includes dentists with extensive experience in All-on-4 and All-on-6 implant procedures.</p><p>Personalized and Supportive Patient Care: We provide individualized consultations and dedicated patient coordinators to guide you through every step.</p><p>Transparent and Competitive All-Inclusive Packages: We offer clear, all-inclusive pricing for 4 on 6 dental implants in turkey and All-on-4 procedures, providing exceptional value.</p><p>Dedicated 24/7 Assistance and Support: Our team is available around the clock to answer your questions and ensure your comfort and peace of mind.</p><p><span style="color: rgb(27, 28, 29);">Ready to explore the life-changing possibilities of All-on-4 or All-on-6 dental implants in Turkey with AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your full arch restoration needs, answer your questions, and help you plan your journey to a renewed and confident smile with 4 Dental Implants in turkey or 6 Dental-Implants in turkey through AZPO Health. Your transformation starts now!</span></p><p><br></p><p><br></p>
+          `
+              : `<p><span style="color: rgb(27, 28, 29);">[Image: Illustrative image showing the placement of 4 implants for All-on-4 and 6 implants for All-on-6 in the jawbone. Keep it educational and clear, not overly clinical.]</span></p><p><span style="color: rgb(27, 28, 29);">Deciding between </span><strong style="color: rgb(27, 28, 29);">all on 4 vs all on 6 dental implants</strong><span style="color: rgb(27, 28, 29);"> is an important step in your full arch restoration journey. While both All-on-4 and All-on-6 systems are exceptional solutions for replacing a full upper or lower arch of teeth, there are key differences to consider when discussing your options with your AZPO Health dental specialist.</span></p><p><span style="color: rgb(27, 28, 29);">The primary distinction lies in the </span><strong style="color: rgb(27, 28, 29);">number of implants used</strong><span style="color: rgb(27, 28, 29);">: All-on-4 utilizes four dental implants per arch, while All-on-6 employs six. In the All-on-4 technique, the posterior implants are often strategically angled to maximize contact with available bone, which is particularly beneficial for patients who may have moderate bone density. All-on-6, on the other hand, typically involves a straighter implant placement, often incorporating additional implants towards the back of the mouth. This increased number of implants in the All-on-6 system generally provides </span><strong style="color: rgb(27, 28, 29);">enhanced stability and support</strong><span style="color: rgb(27, 28, 29);">, making it a strong recommendation for patients with less dense bone or those who require extra support for larger dentures, or those who may experience bruxism (teeth grinding).</span></p><p><span style="color: rgb(27, 28, 29);">In terms of suitability, All-on-4 is an excellent option for many full arch cases, particularly when the patient has good to moderate bone density. All-on-6 is often favored in situations where bone density is lower, or when the patient desires a greater degree of stability. From a procedural standpoint, All-on-4 is generally considered to be a slightly less complex surgical procedure compared to All-on-6. As for cost, </span><strong style="color: rgb(27, 28, 29);">All-on-4 dental implants</strong><span style="color: rgb(27, 28, 29);"> are typically slightly less expensive than All-on-6, reflecting the difference in the number of implants used.</span></p><p><span style="color: rgb(27, 28, 29);">Ultimately, the most suitable choice – whether </span><strong style="color: rgb(27, 28, 29);">4 on 6 dental implants</strong><span style="color: rgb(27, 28, 29);"> or All-on-4 – will be determined through a thorough and personalized evaluation by your AZPO Health dentist. They will carefully assess your individual bone density, jaw structure, and specific needs to recommend the approach that will best achieve a successful and long-lasting full arch restoration for you.</span></p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Why Choose Turkey for Your All-on-4 or All-on-6 Dental Implants with AZPO Health?</span></h2><p><span style="color: rgb(27, 28, 29);">Turkey has emerged as a premier destination for dental tourism, particularly for advanced procedures like All-on-4 and All-on-6 dental implants. AZPO Health amplifies these advantages, offering:</span></p><p>Specialized Expertise in Full Arch Implantology: Turkey boasts a wealth of highly trained and experienced dentists specializing in dental implantology. AZPO Health partners with clinics renowned for their expertise in all on 4 or 6 dental implants, ensuring you are treated by specialists skilled in these advanced techniques. Our partner clinics often include specialists from Smile Antalya Dental Aesthetic and Implantology Clinic [if permissible, otherwise, keep generic], known for their focus on implantology and aesthetic dentistry.</p><p><br></p><p>Significant Cost Savings on Premium Implant Systems: The price of 4 dental implants in Turkey or 6 Dental-Implants in turkey is significantly lower than in many Western countries, without sacrificing quality. AZPO Health provides access to these cost-effective solutions using premium, internationally recognized implant brands, making full arch restoration accessible to more patients.</p><p><br></p><p>Comprehensive All-Inclusive Packages for a Stress-Free Experience: AZPO Health handles every detail of your dental journey with our all-inclusive packages, including:</p><p><br></p><p class="ql-indent-1">Convenient VIP Transfers: Relax with seamless airport transfers and transportation between your hotel and the dental clinic.</p><p class="ql-indent-1">Comfortable Accommodation: Recover in carefully selected hotels, ensuring a comfortable and restful stay.</p><p class="ql-indent-1">Dedicated Patient Coordinator: Receive personalized support and assistance from a dedicated coordinator throughout your treatment.</p><p class="ql-indent-1">Thorough Consultations and Planning: Benefit from expert consultations and customized treatment planning for your 4 on 6 dental implants in turkey or All-on-4 procedure.</p><p class="ql-indent-1">Transparent, All-Inclusive Pricing: Know the full 4 on 6 dental implants in turkey cost upfront with our transparent packages, covering surgery, implants, components, and aftercare.</p><p class="ql-indent-1">Personalized Aftercare Support: Receive a tailored aftercare plan and ongoing support for optimal healing and long-term success.</p><p class="ql-indent-1">Opportunity for Rejuvenating Recovery in Turkey: Combine your dental treatment with a relaxing recovery in beautiful Turkey, exploring its rich culture and stunning landscapes.</p><h2><span style="color: rgb(27, 28, 29);">Benefits of Choosing All-on-4 or All-on-6 Dental Implants:</span></h2><p><span style="color: rgb(27, 28, 29);">Whether you opt for All-on-4 or 6 dental implants, both systems offer remarkable advantages for full arch restoration:</span></p><p>Full Arch Restoration with Fewer Implants: Replace an entire upper or lower arch of teeth with just 4 or 6 implants, minimizing surgery and recovery time compared to individual implants for each tooth.</p><p>Enhanced Stability and Chewing Function: Enjoy significantly improved stability and chewing function compared to traditional dentures, allowing you to eat a wider variety of foods comfortably and confidently.</p><p>Improved Aesthetics and Confidence: Restore a natural-looking smile, enhancing your appearance and boosting your self-esteem.</p><p>Bone Preservation: Dental implants stimulate the jawbone, helping to prevent bone loss that can occur with missing teeth and traditional dentures.</p><p>Long-Term, Durable Solution: With proper care, All-on-4 and All-on-6 implants offer a long-lasting and reliable solution for full arch tooth replacement.</p><p><em style="color: rgb(27, 28, 29);">"I was hesitant about getting full dentures, but All-on-6 implants in Turkey with AZPO Health have exceeded my expectations! The procedure was much easier than I anticipated, and my new smile feels incredibly secure and natural. The cost was a fraction of what I was quoted at home, and the care was exceptional. I highly recommend AZPO Health and All-on-6 implants in Turkey!"</em><span style="color: rgb(27, 28, 29);"> – Sarah M., Australia</span></p><h2><span style="color: rgb(27, 28, 29);">AZPO Health: Your Partner in Achieving a Full, Confident Smile with Dental Implants in Turkey</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health is dedicated to making high-quality dental care accessible and affordable. We are your trusted partner for navigating 4 Dental Implants in Turkey and 6 Dental-Implants in turkey, providing expert guidance, connecting you with top clinics, and ensuring a smooth and successful dental implant journey.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Full Arch Dental Implant Restoration?</span></p><p>Specialized Focus on All-on-4 and All-on-6 Procedures: We connect you with clinics specializing in these advanced full arch restoration techniques.</p><p>Access to Experienced Implant Dentists: Our network includes dentists with extensive experience in All-on-4 and All-on-6 implant procedures.</p><p>Personalized and Supportive Patient Care: We provide individualized consultations and dedicated patient coordinators to guide you through every step.</p><p>Transparent and Competitive All-Inclusive Packages: We offer clear, all-inclusive pricing for 4 on 6 dental implants in turkey and All-on-4 procedures, providing exceptional value.</p><p>Dedicated 24/7 Assistance and Support: Our team is available around the clock to answer your questions and ensure your comfort and peace of mind.</p><p><span style="color: rgb(27, 28, 29);">Ready to explore the life-changing possibilities of All-on-4 or All-on-6 dental implants in Turkey with AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your full arch restoration needs, answer your questions, and help you plan your journey to a renewed and confident smile with 4 Dental Implants in turkey or 6 Dental-Implants in turkey through AZPO Health. Your transformation starts now!</span></p><p><br></p><p><br></p>`,
+        },
+        imgCover: subNestedKey === "6-4-dental-implants" ? den64 : null,
+        subNestedKey: "6-4-dental-implants",
+      },
     // bread
     {
       id: 0,
