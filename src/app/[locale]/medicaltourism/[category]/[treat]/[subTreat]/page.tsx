@@ -71,7 +71,7 @@ const Page = async ({ params }: PropsPageType) => {
       {/* content */}
       <div className="viewport-p">
         {/* video */}
-        <div className="mb-[18px] s1280:mb-[40px] s1512:mb-20">
+        <div className="mb-20 s1280:mb-[40px] s1512:mb-20">
           <div className="flex-left">
             <h2 className="font-semibold text-[20px] s1280:text-[40px]">
               Videos{" "}
@@ -355,7 +355,7 @@ const Page = async ({ params }: PropsPageType) => {
         </div>
         {/* Free consultation */}
         <div className="mb-10">
-          <div className="flex-bet mb-6 s1280:mb-5">
+          <div className="flex-bet mb-10 s1280:mb-5">
             <hr className="w-[16%] s1280:w-[32%] h-0 border-[2px] border-dashed border-[#333333]" />
             <h2 className="font-semibold text-[20px] s1280:text-[40px] flex items-start justify-center gap-x-4">
               <span className="w-[27px] h-[34px] s1280:w-[38px] s1280:h-[48px] block -mt-2 s1280:-mt-0">
@@ -365,7 +365,7 @@ const Page = async ({ params }: PropsPageType) => {
             </h2>
             <hr className="w-[16%] s1280:w-[32%] h-0 border-[2px] border-dashed border-[#333333]" />
           </div>
-          <div className="flex flex-col items-center justify-start gap-y-5 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-between">
+          <div className="flex flex-col items-center justify-start gap-y-10 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-between">
             {/* admins */}
             <div className="w-[328px] h-[328px] s390:w-[346px] s390:h-[346px] s412:w-[364px] s1280:w-[450px] s1280:h-[450px] s1512:w-[567px] s1512:h-[567px] s1600:w-[661px] s1600:h-[661px] border-[3px] border-[#33333380] rounded-full relative p-16 s1280:p-24">
               {/* admins */}

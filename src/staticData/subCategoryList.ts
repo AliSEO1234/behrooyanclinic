@@ -109,16 +109,16 @@ export const categoryDataHandler = (key: string, locale: string) => {
         locale === "ru"
           ? "Мечтаете о здоровой и красивой улыбке, но беспокоитесь о стоимости стоматологических услуг? Турция стала ведущим направлением для доступного стоматологического лечения, предлагая профессионализм мирового уровня по значительно более низким ценам. Узнайте, как AZPO Health поможет вам найти лучшие стоматологические клиники и комплексные пакеты для здоровой и уверенной улыбки."
           : "Seeking high-quality dental care without breaking the bank? Turkey has become a leading destination for affordable dental treatments, offering world-class expertise at significantly lower prices. Discover how AZPO Health can connect you with top dental clinics and all-inclusive packages for a healthy and confident smile.",
-      videoContents: {
-        title:
-          locale === "ru"
-            ? "Стоматологическое лечение в Турции"
-            : "Cheap Dental Treatments in Turkey",
-        desc:
-          locale === "ru"
-            ? "Вы откладываете необходимое стоматологическое лечение из-за высоких цен в вашей стране? Стоматологическое лечение в Турции – это не компромисс в качестве! Турция гордится высококвалифицированными стоматологами, современными клиниками, оснащенными по последнему слову техники, и строгими стандартами гигиены. С AZPO Health вы получите доступ к исключительному стоматологическому лечению за часть стоимости, которую вы могли бы заплатить в других странах."
-            : "Are you delaying necessary dental work due to high costs in your home country? Cheap dental treatments in Turkey don't mean compromising on quality. Turkey boasts highly skilled dentists, modern clinics equipped with the latest technology, and rigorous hygiene standards. With AZPO Health, you can access exceptional dental care for a fraction of the price you might expect to pay elsewhere.",
-      },
+      // videoContents: {
+      //   title:
+      //     locale === "ru"
+      //       ? "Стоматологическое лечение в Турции"
+      //       : "Cheap Dental Treatments in Turkey",
+      //   desc:
+      //     locale === "ru"
+      //       ? "Вы откладываете необходимое стоматологическое лечение из-за высоких цен в вашей стране? Стоматологическое лечение в Турции – это не компромисс в качестве! Турция гордится высококвалифицированными стоматологами, современными клиниками, оснащенными по последнему слову техники, и строгими стандартами гигиены. С AZPO Health вы получите доступ к исключительному стоматологическому лечению за часть стоимости, которую вы могли бы заплатить в других странах."
+      //       : "Are you delaying necessary dental work due to high costs in your home country? Cheap dental treatments in Turkey don't mean compromising on quality. Turkey boasts highly skilled dentists, modern clinics equipped with the latest technology, and rigorous hygiene standards. With AZPO Health, you can access exceptional dental care for a fraction of the price you might expect to pay elsewhere.",
+      // },
       subCategoryContent: {
         title:
           locale === "ru"
@@ -3227,8 +3227,11 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
             {
   
               header: locale === "ru" ? "Важные аспекты" : "Considerations",
-              decsList: [locale === "ru" ? "A soft diet is required during the 3-month healing phase when implants integrate with the bone." : "A soft diet is required during the 3-month healing phase when implants integrate with the bone.",
+              decsList: [
+                locale === "ru" ? "A soft diet is required during the 3-month healing phase when implants integrate with the bone." : "A soft diet is required during the 3-month healing phase when implants integrate with the bone.",
+
                 locale === "ru" ? "Mild pain and swelling may occur post-surgery but can be managed with prescribed medication." : "Mild pain and swelling may occur post-surgery but can be managed with prescribed medication.",
+
                 locale === "ru" ? "For patients with dental anxiety, the procedure can be performed under local anesthesia, sedation, or general anesthesia." : "For patients with dental anxiety, the procedure can be performed under local anesthesia, sedation, or general anesthesia."
               ],
               // desc:
@@ -3252,10 +3255,10 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
               ? "All-On-4 dental implants are a revolutionary solution for full-mouth rehabilitation, combining efficiency, aesthetics, and durability. The procedure is minimally invasive, cost-effective, and provides a permanent solution to tooth loss. With proper care and maintenance, All-On-4 dental implants can dramatically improve a patient’s quality of life."
               : "All-On-4 dental implants are a revolutionary solution for full-mouth rehabilitation, combining efficiency, aesthetics, and durability. The procedure is minimally invasive, cost-effective, and provides a permanent solution to tooth loss. With proper care and maintenance, All-On-4 dental implants can dramatically improve a patient’s quality of life.",
         },
-        subCategoryContent: {
-          title:
-            locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
-        },
+        // subCategoryContent: {
+        //   title:
+        //     locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
+        // },
         bfs: [
           bf1,
           bf2,

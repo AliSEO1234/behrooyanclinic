@@ -5,6 +5,7 @@ export type VideoPlayerType = {
   src: StaticImageData | string;
   toolsbarStyle: string;
   showLogo? : boolean
+  positionVideo? : "subnested"
 };
 
 export type VideoDataType = {

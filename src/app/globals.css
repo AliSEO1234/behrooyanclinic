@@ -15,6 +15,31 @@ body {
   -webkit-mask-image: none !important;
 }
 @layer components {
+  /* videos */
+  @keyframes open-animation-video {
+    0%{
+      @apply h-0
+    }
+    100%{
+      @apply h-[120%]
+    }
+  }
+  .open-animate-video{
+    animation: open-animation-video 0.3s forwards;
+    @apply h-[120%] w-[2px]
+  }
+  @keyframes close-animation-video {
+    0%{
+      @apply h-[120%]
+    }
+    100%{
+      @apply h-0
+    }
+  }
+  .close-animate-video{
+    animation: close-animation-video 0.3s forwards;
+    @apply h-0 w-[2px]
+  }
   /* .animate-popup-form */
   @keyframes animate-popup {
     0%{

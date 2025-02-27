@@ -8,6 +8,9 @@ import PopForm from "@/components/popUpForm/popForm";
 export const metadata: Metadata = {
   title: "Azpo Health",
   description: "Health with Azpo",
+  icons:{
+    icon : "/health.ico"
+  },
   robots: {
     index: false,
     follow: false,

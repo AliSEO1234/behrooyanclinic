@@ -1,27 +1,27 @@
 import createMiddleware from "next-intl/middleware";
 import { NextRequest, NextResponse } from "next/server";
 import { routing } from "./i18n/routing";
-
+const intlMiddleware = createMiddleware(routing);
 export default createMiddleware(routing);
 export async function middleware(req: NextRequest) {
   const path = req.nextUrl.pathname;
   if (
     path.startsWith("/videos") ||
     path.startsWith("/images") ||
-    path.startsWith("/health.ico") ||
-    path.startsWith("/robots.txt")
+    path === "/health.ico" || 
+    path === "/favicon.ico" || 
+    path === "/robots.txt"
   ) {
     return NextResponse.next();
   }
-  const intlMiddleware = createMiddleware(routing);
-  const intlResponse = intlMiddleware(req);
-  const res = intlResponse || NextResponse.next();
-  return res;
+
+  const response = intlMiddleware(req);
+  return response || NextResponse.next();
 }
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico).*)",
+    "/((?!api|_next/static|_next/image|robots.txt).*)",
     "/",
     "/(ru|en)/:path*",
   ],
