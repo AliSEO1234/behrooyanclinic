@@ -11,123 +11,15 @@ import per31 from "@/assets/images/about/personels/Jafarov.jpg"
 import per32 from "@/assets/images/about/personels/Kubra.jpg"
 import per33 from "@/assets/images/about/personels/Shaker.jpg"
 import PersonelCard from "./personelCard";
-// import { IoIosArrowForward } from "react-icons/io";
-// import { HiArrowLongRight } from "react-icons/hi2";
-// import Link from "next/link";
 import { OurTeamComType } from "@/types/about/aboutPageType";
-// {
-//   id: 3,
-//   fullName: locale === "ru" ? "Юдакова Наталия" : "Nataliya Yudakova",
-//   position: locale === "ru" ? "Эксперт по недвижимости" : "Real Estate Expert",
-//   img: per13,
-// },
-// {
-//   id: 4,
-//   fullName: locale === "ru" ? "Хайри Йылдырым" : "HAYRI YILDIRIM",
-//   position: locale === "ru" ? "Директор Аланийского офиса" : "Director of the Alanya Office",
-//   img: per14,
-// },
-
-
-// {
-//   id: 7,
-//   fullName: locale === "ru" ? "Умут Гюнал" : "Umut Günal",
-//   position: locale === "ru" ? "Координатор объектов" : "Property Coordinator",
-//   img: per15,
-// },
-// {
-//   id: 8,
-//   fullName: locale === "ru" ? "Хюсейн Джанданай" : "Hüseyin Candanay",
-//   position: locale === "ru" ? "Координатор объектов" : "Property Coordinator",
-//   img: per16,
-// },
-// {
-//   id: 9,
-//   fullName: locale === "ru" ? "Елена Гечер" : "Elena Gecher",
-//   position: locale === "ru" ? "Эксперт по недвижимости" : "Real Estate Expert",
-//   img: per17,
-// },
-
-
-// {
-//   id: 12,
-//   fullName: locale === "ru" ? "Джафер Дуран" : "Cafer Duran",
-//   position: locale === "ru" ? "Специалист по послепродажному обслуживанию" : "After-Sales Service Specialist",
-//   img: per19,
-// },
-
-// {
-//   id: 14,
-//   fullName: locale === "ru" ? "Усманова Асель" : "Usmanova Asel",
-//   position: locale === "ru" ? "Русское портфолио, отдел аренды" : "Russian Portfolio, Rental Department",
-//   img: per20,
-// },
-
-// {
-//   id: 15,
-//   fullName: locale === "ru" ? "Абдуллах Дурсун" : "Abdullah Dursun",
-//   position: locale === "ru" ? "Шофёр" : "Driver",
-//   img: per21,
-// },
-// {
-//   id: 16,
-//   fullName: locale === "ru" ? "Бахтияр Акиф" : "Bahtiyar Akif",
-//   position:
-//     locale === "ru"
-//       ? "Руководитель отдела продаж в Анталии."
-//       : "Sales Department Manager in Antalya",
-//   img: per22,
-// },
-// {
-//   id: 17,
-//   fullName: locale === "ru" ? "Гульнара Кая" : "Gulnara Kaya",
-//   position:
-//     locale === "ru" ? "Эксперт по недвижимости" : "Real Estate Expert",
-//   img: per24,
-// },
-// {
-//   id: 18,
-//   fullName: locale === "ru" ? "Григорий Лазарев" : "Grigory Lazarev",
-//   position:
-//     locale === "ru" ? "эксперт по недвижимости." : "Real Estate Expert.",
-//   img: per23,
-// },
-// {
-//   id: 19,
-//   fullName: locale === "ru" ? "Муслим Шаруддин" : "MUSLim Şaruddin",
-//   position:
-//     locale === "ru"
-//       ? "Директор офиса в Анталии"
-//       : "Antalya Office Director",
-//   img: per25,
-// },
-// {
-//   id: 20,
-//   fullName: locale === "ru" ? "Магомед Оздомиров" : "Magomed Ozdomirov",
-//   position: locale === "ru" ? "Экономист" : "Economist",
-//   img: per26,
-// },
-// {
-//   id: 21,
-//   fullName: locale === "ru" ? "Эмре Айдын" : "Emre Aydın",
-//   position: locale === "ru" ? "Координатор объектов" : "Property Coordinator",
-//   img: per27,
-// },
-// {
-//   id: 22,
-//   fullName: locale === "ru" ? "Огузхан Каймакчы" : "Oğuzhan Kaymakçı",
-//   position:
-//     locale === "ru" ? "Координатор объектов" : "Property Coordinator",
-//   img: per28,
-// },
-// {
-//   id: 23,
-//   fullName: locale === "ru" ? "Иса Той" : "İsa Toy",
-//   position: locale === "ru" ? "Бухгалтер" : "Accountant",
-//   img: per29,
-// },
 const OurTeam = ({locale} : OurTeamComType) => {
   const personels = [
+        {
+      id: 0,
+      fullName: locale === "ru" ? "Ресул Чечен" : "Resul Çeçen",
+      position: locale === "ru" ? "Владелец компании" : "Company Owner",
+      img: per4,
+    },
     {
       id: 1,
       fullName: locale === "ru" ? "Шуле Гюнал" : "Şule Günal",
@@ -165,12 +57,6 @@ const OurTeam = ({locale} : OurTeamComType) => {
       img: per5,
     },
     {
-      id: 0,
-      fullName: locale === "ru" ? "Ресул Чечен" : "Resul Çeçen",
-      position: locale === "ru" ? "Владелец компании" : "Company Owner",
-      img: per4,
-    },
-    {
       id: 2,
       fullName: locale === "ru" ? "Али Моссадык" : "Ali Mosadegh",
       position: locale === "ru" ? "Генеральный директор и технический директор" : "SEO and CTO maneger",
@@ -206,7 +92,7 @@ const OurTeam = ({locale} : OurTeamComType) => {
       <div className="mb-10 s1280:mb-20">
         <p className="text-center font-medium s1280:text-[20px] s1280:leading-[36px] text-[#474744] s1280:px-20 s1512:px-40">
           {
-            locale === "ru" ? "Наш опыт в построении партнёрских отношений и внимательность к деталям помогают решать сложные задачи и достигать реальных результатов. Именно поэтому Azpo Group занимает лидирующие позиции на рынке, предлагая качественные услуги. Наша команда экспертов поддержит вас на каждом этапе: от оформления визы до выбора клиники и врача, организации проживания и трансфера." : "With a commitment to reliability and a customer-focused approach, Azpo Group supports patients every step of the way, making their health journey smooth, safe, and well-coordinated."
+            locale === "ru" ? "Опытная команда врачей, медицинских работников и координаторов будет сопровождать вас на каждом этапе, гарантируя комфорт, уверенность и безупречную организацию. Мы предоставляем всестороннюю языковую поддержку, бесплатные онлайн-консультации и круглосуточную помощь — начиная с первого звонка и заканчивая реабилитацией." : "Our dedicated team of experienced doctors, medical professionals, and expert patient coordinators is always by your side, guiding you through every step of the process to ensure a seamless and stress-free experience.With a commitment to reliability and a customer-focused approach, Azpo Group supports patients every step of the way, making their health journey smooth, safe, and well-coordinated."
           }
         </p>
       </div>

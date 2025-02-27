@@ -90,7 +90,7 @@ const Navbar = () => {
             </div> */}
             <div>
               <Link className="hover:text-[#25A6A9] anm" href={`/${locale}/about`}>
-                َAbout Us
+                About Us
               </Link>
             </div>
             <div>

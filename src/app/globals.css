@@ -127,7 +127,7 @@ body {
   }
   /* about us */
   .bg-about-cover {
-    @apply bg-[url('./../assets/images/about/personelsCover.jpeg')] bg-no-repeat bg-contain s1280:bg-cover;
+    @apply bg-[url('./../assets/images/about/personelsCover.jpg')] object-cover bg-no-repeat bg-contain s1280:bg-cover;
   }
   /* cosultation form */
   .consul-form-input {
