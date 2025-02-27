@@ -2,23 +2,85 @@
 import ImgFetcher from "@/components/imgFetcher";
 import { VideoPlayerType } from "@/types/videoPlayer/videoTypes";
 import healthlogo from "@/assets/images/healthlogo.png";
-const VideoPlayer = ({ src, className, showLogo = true }: VideoPlayerType) => {
-  // const [togglePlay, setTogglePlay] = useState<boolean>(false);
+import { useRef, useState } from "react";
+import videoCover from "@/assets/images/videoCover.png";
+import { FaPause, FaPlay } from "react-icons/fa";
+import { AiOutlineFullscreen } from "react-icons/ai";
+import { PiSpeakerHighFill } from "react-icons/pi";
+const VideoPlayer = ({
+  src,
+  className,
+  showLogo = true,
+  toolsbarStyle,
+}: VideoPlayerType) => {
+  const [togglePlay, setTogglePlay] = useState<boolean>(false);
+  const videoEl = useRef<HTMLVideoElement | null>(null);
+  const [hasPlayed, setHasPlayed] = useState<boolean>(false);
+  const [currentTime, setCurrentTime] = useState<number>(0);
+  const handlePlayPause = () => {
+    if (videoEl.current) {
+      if (togglePlay) {
+        videoEl.current.pause();
+      } else {
+        videoEl.current.play();
+        if (!hasPlayed) {
+          setHasPlayed(true);
+        }
+      }
+      setTogglePlay(!togglePlay);
+    }
+  };
+  const handleFullScreen = () => {
+    if (videoEl.current) {
+      if (!document.fullscreenElement) {
+        setCurrentTime(videoEl.current.currentTime);
+        videoEl.current
+          .requestFullscreen()
+          .then(() => {
+            videoEl.current!.currentTime = currentTime;
+            videoEl.current!.play();
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      } else {
+        setHasPlayed(true)
+        document.exitFullscreen();
+      }
+    }
+  };
+  // useEffect(() => {
+    
+  //   if (currentTime !== 0) {
+  //     setHasPlayed(true);
+  //   }
+  // }, [currentTime]);
   return (
     <div className="relative w-fit">
       <div
         className={`${
           className ? className : ""
-        } rounded-[20px] s1280:rounded-[40px] ${showLogo ? "relative" : ""}  overflow-hidden z-[2]`}
+        } rounded-[20px] s1280:rounded-[40px] ${
+          showLogo ? "relative" : ""
+        }  overflow-hidden z-[2]`}
       >
         <div className="bg-[#00000047] rounded-[20px] s1280:rounded-[40px] w-full h-full absolute top-0 left-0"></div>
         {typeof src === "string" ? (
-          <div className="w-full h-full">
+          <div className="w-full h-full relative">
             <video
-              className="w-full h-full min-h-full max-h-full object-cover"
-              controls
+              poster="/images/videoCover.png"
+              className="w-full h-full min-h-full max-h-full object-cover image-overlay"
+              ref={videoEl}
               src={src}
             ></video>
+            {!hasPlayed && (
+              <ImgFetcher
+                width={3000}
+                height={3000}
+                src={videoCover}
+                className="object-cover absolute top-0 left-0 z-[0]"
+              />
+            )}
           </div>
         ) : (
           <ImgFetcher className="object-cover" width={2000} src={src} />
@@ -35,14 +97,14 @@ const VideoPlayer = ({ src, className, showLogo = true }: VideoPlayerType) => {
           </div>
         </>
       )}
-      {/* <div className="absolute -bottom-10 s1280:-bottom-14 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex-cen px-5 s1280:px-20 s1512:px-32">
+      <div className="absolute -bottom-10 s1280:-bottom-14 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex-cen px-5 s1280:px-20 s1512:px-32 z-[2]">
         <div
           className={` ${
             toolsbarStyle ? toolsbarStyle : ""
           } flex w-full items-center justify-between s1280:justify-between px-5 s1280:gap-x-5 rounded-[200px] bg-gradient-to-r from-[#8D8D8D57] to-[#8D8D8DD4] border border-white backdrop-blur-[12px] text-white shadow-[0px_4px_4px_#00000025]`}
         >
           <div>
-            <button onClick={() => setTogglePlay((val) => !val)} className="">
+            <button onClick={handlePlayPause} className="">
               {togglePlay ? (
                 <FaPause className="size-4 s1280:size-4 s1600:size-5" />
               ) : (
@@ -59,7 +121,7 @@ const VideoPlayer = ({ src, className, showLogo = true }: VideoPlayerType) => {
           </div>
           <div className="flex-cen gap-x-4">
             <div>
-              <button>
+              <button onClick={handleFullScreen}>
                 <AiOutlineFullscreen className="size-4 s1280:size-4 s1600:size-5" />
               </button>
             </div>
@@ -70,7 +132,7 @@ const VideoPlayer = ({ src, className, showLogo = true }: VideoPlayerType) => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

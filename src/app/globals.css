@@ -10,8 +10,24 @@ html,
 body {
   overflow-x: hidden;
 }
-
+.image-overlay {
+  background-color: transparent !important;
+  -webkit-mask-image: none !important;
+}
 @layer components {
+  /* .animate-popup-form */
+  @keyframes animate-popup {
+    0%{
+      @apply -right-full
+    }
+    100%{
+      @apply right-6
+    }
+  }
+  .animate-popup-form{
+    animation: animate-popup 3s forwards;
+    @apply hidden s1280:block fixed s1280:bottom-28 -right-full
+  }
   .popUpform label{
     @apply p-1 font-medium text-[14px] s1728:text-[16px]  text-[#474744]
   }

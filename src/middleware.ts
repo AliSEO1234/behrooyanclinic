@@ -7,6 +7,7 @@ export async function middleware(req: NextRequest) {
   const path = req.nextUrl.pathname;
   if (
     path.startsWith("/videos") ||
+    path.startsWith("/images") ||
     path.startsWith("/health.ico") ||
     path.startsWith("/robots.txt")
   ) {

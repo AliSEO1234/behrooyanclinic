@@ -94,7 +94,7 @@ const Footer = () => {
             <tbody className="space-y-10 s1280:text-[14px] s1728:text-[16px]">
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -102,7 +102,7 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -110,7 +110,7 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -120,7 +120,7 @@ const Footer = () => {
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -128,7 +128,7 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -136,7 +136,7 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -146,7 +146,7 @@ const Footer = () => {
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -154,7 +154,7 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -162,7 +162,7 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -172,7 +172,7 @@ const Footer = () => {
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -180,7 +180,7 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -188,7 +188,7 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -198,7 +198,7 @@ const Footer = () => {
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -206,7 +206,7 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -214,7 +214,7 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-4">
+                  <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>

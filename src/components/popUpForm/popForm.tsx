@@ -1,3 +1,4 @@
+"use client"
 import girlChar from "@/assets/images/popChar.png";
 import phone from "@/assets/images/popPhone.png";
 import ImgFetcher from "../imgFetcher";
@@ -8,7 +9,7 @@ import { IoClose } from "react-icons/io5";
 import { useAppContext } from "@/contexts/app-context/app-context";
 const PopForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
-  const { setPopUpForm } = useAppContext();
+  const { setPopUpForm , popUpForm } = useAppContext();
   const options = [
     { label: "Dental", key: "dental", id: 0 },
     { label: "Eye", key: "eye", id: 1 },
@@ -18,7 +19,7 @@ const PopForm = () => {
     <form
       onSubmit={(e)=>e.preventDefault()}
       onClick={(e) => e.stopPropagation()}
-      className="w-[326px] s390:w-[358px] s1280:w-[526px] s1280:h-[260px] s1512:w-[621px] s1728:w-[716px] s1512:h-[250px] s1728:h-[290px] popUpform"
+      className={`z-[5] w-[326px] s390:w-[358px] s1280:w-[526px] s1280:h-[260px] s1512:w-[621px] s1728:w-[716px] s1512:h-[250px] s1728:h-[290px] popUpform  ${popUpForm ? "animate-popup-form" : "hidden"}`}
     >
       <div className="h-[80px] s1512:h-[90px] bg-gradient-to-r from-[#82DFB5] to-[#0CA5A5] rounded-t-[40px] relative z-[2] flex-cen">
         {/* close */}

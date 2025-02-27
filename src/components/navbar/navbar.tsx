@@ -23,9 +23,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  useEffect(() => {
-    console.log(isScroll);
-  }, [isScroll]);
   return (
     <header className={`fixed top-0 left-0 ${isScroll? "animateScroll" : ""} w-full z-[5]`}>
       <nav

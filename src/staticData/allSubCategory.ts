@@ -38,6 +38,7 @@ import cosmeticdentistry from "@/assets/images/treatment/Cosmetic-Dentistry.jpg"
 import laminateveneers from "@/assets/images/subnested/Laminate Veneers.jpg"
 import restoryDenstiry from "@/assets/images/subCategory/restorative-dentistry.jpg"
 import dentistchoosing from "@/assets/images/subnested/dentist_choosing.jpg"
+import periodontics from "@/assets/images/treatment/periodontics.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -104,6 +105,13 @@ export const allSubCategory = [
     title: "Restorative Dentistry",
     description: "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
     path: "restorative-dentistry",
+    categoryKey: "dental-treatments",
+  },
+  {
+    img: periodontics,
+    title: "Periodontics",
+    description: "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
+    path: "periodontics",
     categoryKey: "dental-treatments",
   },
   
