@@ -1,11 +1,9 @@
 "use client";
 import { useState } from "react";
 import VideoPlayer from "../services/videoPlayer/videoPlayer";
-
-import { useLocale } from "next-intl";
-const VideoTab = () => {
+import { VideoTabType } from "@/types/videoPlayer/videoTabPdp/videoTab";
+const VideoTab = ({videoSrc} : VideoTabType) => {
   const [activeTab, setActiveTab] = useState<"doctors" | "patient">("doctors");
-  const locale = useLocale();
   return (
     <div>
       <div className="flex-right -mt-9 s1280:-mt-16 mb-[18px] s1280:mb-16">
@@ -41,11 +39,7 @@ const VideoTab = () => {
           <VideoPlayer
             showLogo
             positionVideo={"subnested"}
-            src={
-              locale === "ru"
-                ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
-            }
+            src={videoSrc}
             toolsbarStyle="h-[38px] s1280:h-[60px] border-[1px] border-white"
             className="w-full  s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1920:w-[966px]"
           />

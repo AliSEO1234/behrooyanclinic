@@ -29,10 +29,10 @@ import SubTreatSyringeIntersectionObserver from "@/components/scripts/sub-treat-
 import Image from "next/image";
 import { dataSubCategoryHandler } from "@/staticData/subCategoryList";
 type PropsPageType = {
-  params: Promise<{ subTreat: string; locale: string }>;
+  params: Promise<{treat : string; subTreat: string; locale: string }>;
 };
 const Page = async ({ params }: PropsPageType) => {
-  const { subTreat, locale } = await params;
+  const { subTreat, locale , treat } = await params;
   const fetchData = dataSubCategoryHandler(subTreat, locale);
   return (
     <div className="bg-[#FCFCFC]">
@@ -78,7 +78,13 @@ const Page = async ({ params }: PropsPageType) => {
               <span className="font-medium s1280:text-[25px]">(21 item)</span>
             </h2>
           </div>
-          <VideoTab />
+          <VideoTab videoSrc={
+                  treat === "hair-transplantation"
+                    ? "https://azpo.com/api/files/property-videos/hair_category.mp4"
+                    : locale === "ru"
+                    ? "https://azpo.com/api/files/property-videos/site_health.mp4"
+                    : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
+                } />
         </div>
         {/* benefits */}
         <div className="s1512:h-full flex gap-y-[18px] s1280:gap-y-0 s1280:flex-col flex-wrap s1512:flex-nowrap items-center s1512:flex-row s1512:justify-start s1512:items-end s1512:gap-x-[44px] mb-10 s1280:mb-[16px] s1512:mb-24">
@@ -354,8 +360,8 @@ const Page = async ({ params }: PropsPageType) => {
           </div>
         </div>
         {/* Free consultation */}
-        <div className="mb-10">
-          <div className="flex-bet mb-10 s1280:mb-5">
+        <div className="mb-10 s1280:mb-20">
+          <div className="flex-bet mb-10 s1280:mb-20">
             <hr className="w-[16%] s1280:w-[32%] h-0 border-[2px] border-dashed border-[#333333]" />
             <h2 className="font-semibold text-[20px] s1280:text-[40px] flex items-start justify-center gap-x-4">
               <span className="w-[27px] h-[34px] s1280:w-[38px] s1280:h-[48px] block -mt-2 s1280:-mt-0">
@@ -367,7 +373,7 @@ const Page = async ({ params }: PropsPageType) => {
           </div>
           <div className="flex flex-col items-center justify-start gap-y-10 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-between">
             {/* admins */}
-            <div className="w-[328px] h-[328px] s390:w-[346px] s390:h-[346px] s412:w-[364px] s1280:w-[450px] s1280:h-[450px] s1512:w-[567px] s1512:h-[567px] s1600:w-[661px] s1600:h-[661px] border-[3px] border-[#33333380] rounded-full relative p-16 s1280:p-24">
+            <div className="w-[328px] h-[328px] s390:w-[346px] s390:h-[346px] s412:w-[364px] s412:h-[364px] s1280:w-[450px] s1280:h-[450px] s1512:w-[567px] s1512:h-[567px] s1600:w-[661px] s1600:h-[661px] border-[3px] border-[#33333380] rounded-full relative p-16 s1280:p-24 flex-cen">
               {/* admins */}
               <div className="free-consultation__circle-container--outer">
                 <ConsultationAdmin
@@ -380,7 +386,7 @@ const Page = async ({ params }: PropsPageType) => {
                 />
               </div>
               {/* inside dashed border */}
-              <div className="w-full h-full border-[3px] border-dashed border-[#33333380] rounded-full relative p-14 s1280:p-16 s1728:p-20">
+              <div className="w-full h-full s412:h-[231px] s1280:h-full border-[3px] border-dashed border-[#33333380] rounded-full relative p-14 s1280:p-16 s1512:p-24 s1600:p-32 flex-cen">
                 <div className="free-consultation__circle-container--inner">
                   <ConsultationAdmin img={admin2} positionStyle="top-0 right-1" />
                   <ConsultationAdmin
@@ -389,7 +395,7 @@ const Page = async ({ params }: PropsPageType) => {
                   />
                 </div>
                 {/* inside doctor char */}
-                <div className="w-full h-full border-[3px] border-[#33333380] rounded-full py-1 px-2 s1280:py-3 s1280:px-5 s1512:px-8 s1600:py-5 s1600:px-12">
+                <div className="w-full h-full s412:h-[114px] s1280:h-full border-[3px] border-[#33333380] rounded-full p-3 s1280:py-3 s1280:px-5 s1512:px-8 s1600:py-5 s1600:px-12">
                   <ImgFetcher width={2000} height={2000} src={personDocChar} />
                 </div>
               </div>

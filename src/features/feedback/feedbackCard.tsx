@@ -12,11 +12,11 @@ const FeedbackCard = ({ desc, title }: FeedBackCardType) => {
             <p className="font-bold s1280:text-[20px]">{title}</p>
           </div>
           <div className="flex-left gap-x-1 text-[#F9C909]">
-            <FaStar className="size-5" />
-            <FaStar className="size-5" />
-            <FaStar className="size-5" />
-            <FaStar className="size-5" />
-            <FaStar className="size-5" />
+            <FaStar className="size-[19px]" />
+            <FaStar className="size-[19px]" />
+            <FaStar className="size-[19px]" />
+            <FaStar className="size-[19px]" />
+            <FaStar className="size-[19px]" />
           </div>
         </div>
       </div>

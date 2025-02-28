@@ -42,12 +42,12 @@ const ServiceSlider = () => {
   const listPhoto = [
     { keyImg: "def", src: defmain },
     { keyImg: "defwomen", src: mainwomen },
-    { keyImg: "cellmen", src: celmen },
+    { keyImg: "cellmen", src:aesismen  },
     { keyImg: "cellwomen", src: celwomen },
     { keyImg: "eyemen", src: eyemen },
     { keyImg: "eyewomen", src: eyewomen },
 
-    { keyImg: "aesismen", src: aesismen },
+    { keyImg: "aesismen", src: celmen },
     { keyImg: "aesiswomen", src: fitneswomen },
     { keyImg: "dentalmen", src: dentalmen },
     { keyImg: "dentalwomen", src: dentalwomen },

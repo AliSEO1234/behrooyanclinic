@@ -87,7 +87,7 @@ const VideoPlayer = ({
     }
   };
   return (
-    <div className="relative w-fit">
+    <div className="relative w-fit" id="video-service">
       <div
         className={`${
           className ? className : ""
@@ -96,7 +96,7 @@ const VideoPlayer = ({
         }  overflow-hidden z-[2]`}
       >
         <div className="bg-[#00000047] rounded-[20px] s1280:rounded-[40px] w-full h-full absolute top-0 left-0"></div>
-        {  src && typeof src === "string" ? (
+        {  src && typeof src === "string" && (
           <div className="w-full h-full relative">
             <video
               poster="/images/videoCover.png"
@@ -117,9 +117,8 @@ const VideoPlayer = ({
             )}
             
           </div>
-        ) : (
-          <ImgFetcher className="object-cover" width={2000} src={src} />
-        )}
+        )
+      }
         {/* video controler */}
       </div>
       {showLogo && (

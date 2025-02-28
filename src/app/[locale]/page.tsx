@@ -201,14 +201,14 @@ const Home = async ({
                     </p>
                   </div>
                   <div className="mt-5">
-                    <button className="flex-cen gap-x-2 text-white s1512:text-[20px] font-semibold">
+                    <a href="#video-service" className="flex-cen w-fit gap-x-2 text-white s1512:text-[20px] font-semibold">
                       <span className="bg-[#DAEDE6] rounded-full flex-cen p-2">
-                        <span className="w-[45px] h-[45px] bg-[#25A6A9] rounded-full flex-cen text-white">
+                        <span className="w-[45px] h-[45px] bg-[#25A6A9] hover:bg-[#0c797b] anm rounded-full flex-cen text-white">
                           <FaPlay className="size-4 ms-1" />
                         </span>
                       </span>
                       <span>What We Do?</span>
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -227,14 +227,14 @@ const Home = async ({
                 </p>
               </div>
               <div className="mt-5 flex-cen">
-                <button className="flex-cen gap-x-2 text-white s1512:text-[20px] font-semibold">
+                <a href="#video-service" className="w-fit flex-cen gap-x-2 text-white s1512:text-[20px] font-semibold">
                   <span className="bg-[#DAEDE6] rounded-full flex-cen p-2">
-                    <span className="bg-[#25A6A9] rounded-full flex-cen p-2 text-white">
+                    <span className="bg-[#25A6A9] hover:bg-[#3bb1b3] anm rounded-full flex-cen p-2 text-white">
                       <FaPlay className="size-4" />
                     </span>
                   </span>
                   <span>What We Do?</span>
-                </button>
+                </a>
               </div>
             </div>
             {/* Complimentary Consultation */}

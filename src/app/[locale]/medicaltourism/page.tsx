@@ -107,7 +107,7 @@ const Treatments = async ({
       <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 mb-10 s1280:mb-20 mt-20">
         <div className="col-span-12 s1280:col-span-5 s1728:col-span-6">
           <div className="mb-3 s1280:mb-20 s1728:mb-10">
-            <h1 className="text-[30px] s1280:text-[40px] s1512:text-[48px] s1728:text-[60px] font-black s1280:font-semibold text-[#00979A] mb-4 s1280:mb-10">
+            <h1 className="text-[30px] s1280:text-[30px] s1512:text-[40px] s1920:text-[60px] font-black s1280:font-semibold text-[#00979A] mb-4 s1280:mb-10">
               Treatments
             </h1>
             {/* <p className="font-semibold flex-left gap-x-1 text-[14px] s1280:text-[24px] text-[#00979A] [text-shadow:0_2px_3px_#00000040] mb-4">
@@ -124,21 +124,21 @@ const Treatments = async ({
           <div className="flex items-center justify-start s1280:justify-between gap-x-4 s1280:gap-x-0 s1280:pe-20 s1600:pe-40 s1728:pe-72 s1920:pe-80">
             <div>
               <Link
-                className="flex-cen rounded-[40px] w-[157px] h-[41px] s1280:w-[197px] s1280:h-[52px] text-center bg-[#0CA5A5] text-white font-bold s1280:text-[18px]"
-                href="/"
+                className="flex-cen rounded-[40px] w-[157px] h-[41px] s1280:w-[197px] s1280:h-[52px] text-center bg-[#0CA5A5] text-white font-bold s1280:text-[18px] border border-[#0CA5A5] hover:bg-white hover:text-[#0CA5A5] anm"
+                href={`/${locale}`}
               >
                 Back To Home
               </Link>
             </div>
             <div>
-              <button className="flex-cen gap-x-2 text-[#00979A] s1280:text-[20px] font-semibold">
+              <a href="#video-service" className="flex-cen gap-x-2 text-[#00979A] s1280:text-[20px] font-semibold">
                 <span className="bg-[#DAEDE6] rounded-full p-1 s1280:p-2 flex-cen w-[37px] h-[37px] s1280:w-[62px] s1280:h-[62px]">
-                  <span className=" bg-[#25A6A9] w-full h-full rounded-full flex-cen text-white">
+                  <span className=" bg-[#25A6A9] hover:bg-[#0c797b] anm w-full h-full rounded-full flex-cen text-white">
                     <FaPlay className="size-3 s1280:size-5 ms-1" />
                   </span>
                 </span>
                 <span>Play video</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

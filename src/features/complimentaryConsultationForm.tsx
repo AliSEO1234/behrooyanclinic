@@ -1,6 +1,7 @@
 "use client";
 import ComboBox from "@/components/comboBox";
 import { OptionType } from "@/types/comboBox/comboType";
+import { LucideSendHorizontal } from "lucide-react";
 import { useState } from "react";
 
 const ComplimentaryConsultationForm = () => {
@@ -38,8 +39,13 @@ const ComplimentaryConsultationForm = () => {
         <input placeholder="Email" type="text" />
       </div>
       <div className="col-span-12 flex items-center s1280:justify-end s1512:justify-center mt-4">
-        <button className="h-[51px] bg-[#00979A] rounded-[40px] text-white px-4 w-full s1280:w-[214px] text-center s1600:text-[18px] font-bold">
+        <button type="button" className="h-[51px] rounded-[40px] text-white px-4 w-full s1280:w-[214px] text-center s1600:text-[18px] font-bold group relative overflow-hidden">
+          <div className="z-[2] bg-[#0CA5A5] text-white w-full h-full absolute top-0 group-hover:-top-full left-0 text-center flex-cen anm">
           Let’s Connect
+          </div>
+          <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
+            <LucideSendHorizontal className="size-5" />
+          </div>
         </button>
       </div>
     </form>

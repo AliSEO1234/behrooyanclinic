@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 export type VideoPlayerType = {
   className?: string;
-  src: StaticImageData | string;
+  src: string | undefined;
   toolsbarStyle: string;
   showLogo? : boolean
   positionVideo? : "subnested"

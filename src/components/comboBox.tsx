@@ -28,7 +28,7 @@ const ComboBox = ({ options, onChange, trigger, className , containertStyle }: C
   );
 
   return (
-    <div ref={comboRef} className="relative">
+    <div ref={comboRef} className="relative z-[3]">
       <div
         className={` ${className ? className : ""} flex-bet cursor-pointer`}
         onClick={() => setIsOpen(!isOpen)}
@@ -46,11 +46,11 @@ const ComboBox = ({ options, onChange, trigger, className , containertStyle }: C
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className={`absolute w-full border bg-white rounded-[20px] p-2 ${containertStyle ? containertStyle : ""} ${
+            className={`absolute w-full border bg-white rounded-[20px] py-2 ${containertStyle ? containertStyle : ""} ${
               openUpwards ? "bottom-full mb-1" : "mt-1"
             }`}
           >
-            <div>
+            <div className="px-2 mb-2">
               <input
                 type="text"
                 className="w-full h-[44px] border p-2 rounded-[20px]"
@@ -65,7 +65,7 @@ const ComboBox = ({ options, onChange, trigger, className , containertStyle }: C
                 filteredOptions.map((option) => (
                   <li
                     key={option.key}
-                    className="p-2 cursor-pointer text-gray-500"
+                    className="p-2 cursor-pointer text-gray-500 font-medium hover:bg-[#f4f4f4] anm"
                     onClick={() => {
                       onChange(option);
                       setIsOpen(false);

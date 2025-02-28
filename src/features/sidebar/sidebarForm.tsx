@@ -34,7 +34,7 @@ const SidebarForm = () => {
         {/* <input placeholder="Please Select" type="email" /> */}
       </div>
       <div className="col-span-12 flex-cen z-[3]">
-        <button className="font-bold w-full h-[54px] text-center rounded-[40px] group s1280:text-[18px]  text-white relative overflow-hidden">
+        <button className="font-bold w-full h-[48px] text-center rounded-[40px] group s1280:text-[18px]  text-white relative overflow-hidden">
           <div className="z-[2] bg-[#0CA5A5] w-full h-full absolute top-0 group-hover:-top-full left-0 text-center flex-cen anm">
             Chat with a Health Now
           </div>

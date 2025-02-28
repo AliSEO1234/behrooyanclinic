@@ -24,7 +24,9 @@ type PropsPageType = {
 };
 const Page = async ({ params }: PropsPageType) => {
   const { treat, locale, category } = await params;
-  const fetchData = subCategoryHandler(category, treat, locale);  
+  const fetchData = subCategoryHandler(category, treat, locale);
+  console.log(fetchData?.videoPage);
+
   return (
     <div className="bg-[#FCFCFC]">
       <div className="grid grid-cols-12 gap-y-5 s1280:gap-y-0 mt-16 s1512:mt-20 ps-[10px] s430:ps-5 pt-10 s1280:ps-[71px] s1512:ps-[79px] s1600:ps-[85px] s1728:ps-[100px] s1920:ps-[131px] rounded-b-[40px] shadow-[0px_19px_30px_-25px_#0000001C] overflow-hidden mb-10 s1280:mb-20 pb-5 s1280:pb-0">
@@ -91,13 +93,15 @@ const Page = async ({ params }: PropsPageType) => {
           <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-7 flex items-center justify-start">
             <div className="s1280:w-[688px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[850px] s1728:h-[650px] s1920:w-[900px] s1920:h-[700px]">
               <VideoPlayer
-              showLogo={false}
+                showLogo={false}
                 toolsbarStyle="h-[38px] s1280:h-[60px] border-[1px] border-white"
                 className="s1280:w-[684px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1728:h-[530px]  s1920:w-[996px] s1920:h-[580px]"
                 src={
-                  fetchData?.videoPage || locale === "ru"
-                  ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                  : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
+                  fetchData?.videoPage
+                    ? fetchData.videoPage
+                    : locale === "ru"
+                    ? "https://azpo.com/api/files/property-videos/site_health.mp4"
+                    : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
                 }
               />
             </div>
@@ -150,7 +154,6 @@ const Page = async ({ params }: PropsPageType) => {
               <div className="flex items-center flex-col justify-start s1280:flex-row s1280:justify-start flex-wrap w-full gap-y-10 s1280:flex-grow s1280:gap-x-4 s1600:gap-x-[10px] s1728:gap-x-6">
                 {/* content */}
                 {fetchData?.subNestedList.map((subNested, index) => {
-                  
                   return (
                     <TreatCard
                       key={index}
