@@ -49,6 +49,8 @@ import den64 from "@/assets/images/subnested/den64.jpg"
 import rootcanal from "@/assets/images/subnested/rootcanal.jpg"
 import laminateveneers from "@/assets/images/subnested/Laminate Veneers.jpg"
 import dentistchoosing from "@/assets/images/subnested/dentist_choosing.jpg"
+import fecial3d from "@/assets/images/subCategory/Facial Aesthetic Surgery.png"
+import body3d from "@/assets/images/subCategory/Body contouring.png"
 export const categoryDataHandler = (key: string, locale: string) => {
   const findPathCategory = pathsCategory.find((path) => path === key);
   const findSubCategories = allSubCategory.filter(
@@ -279,7 +281,7 @@ export const subCategoryHandler = (
       subCategoryKey: "facial-aesthetic-surgery",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      imgCover: hair,
+      imgCover: fecial3d,
     },
     // body contouring
     {
@@ -320,7 +322,7 @@ export const subCategoryHandler = (
       subCategoryKey: "body-contouring",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      imgCover: hair,
+      imgCover: body3d,
     },
     // breast
     {
