@@ -563,7 +563,7 @@ const Home = async ({
                 <InfoHealthCard title="Top Specialists" value="200" />
               </div>
             </div>
-            <div className="hidden s1280:flex items-center s1280:justify-between">
+            <div className="home__info-container--bottom hidden s1280:flex items-center s1280:justify-between">
               <InfoIntersectionObserver />
               <InfoHealthCard
                 order={1}
