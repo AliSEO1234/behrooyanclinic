@@ -44,7 +44,7 @@ const DistinctiveCard = ({
           onClick={() => router.push(`/${locale}/medicaltourism/${link}`)}
           className="video-distinctive__button--down bg-[#86D1AB] font-bold text-[18px] text-white rounded-[40px] w-[206px] h-[54px]"
         >
-          See more
+          See Service
         </button>
       </div>
     </div>
