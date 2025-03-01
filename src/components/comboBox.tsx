@@ -60,7 +60,7 @@ const ComboBox = ({ options, onChange, trigger, className , containertStyle }: C
               />
             </div>
 
-            <ul className="max-h-48 overflow-y-auto">
+            <ul className="max-h-[230px] overflow-y-auto">
               {filteredOptions.length > 0 ? (
                 filteredOptions.map((option) => (
                   <li

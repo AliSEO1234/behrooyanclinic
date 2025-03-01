@@ -40,11 +40,11 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
     if (pathname === `/${locale}`) {
       setTimeout(() => {
         setPopUpForm(true);
-      }, 3000);
+      }, 15000);
     }
     setTimeout(() => {
       setPopUpForm(true);
-    }, 180000);
+    }, 300000);
   }, [pathname,locale]);
   return (
     <AppContext.Provider

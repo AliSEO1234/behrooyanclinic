@@ -1,22 +1,17 @@
 "use client";
 import ComboBox from "@/components/comboBox";
+import { options } from "@/staticData/optionsForm";
 import { OptionType } from "@/types/comboBox/comboType";
 import { LucideSendHorizontal } from "lucide-react";
 import { useState } from "react";
 
 const ComplimentaryConsultationForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
-
-  const options = [
-    { label: "Dental", key: "dental", id: 0 },
-    { label: "Eye", key: "eye", id: 1 },
-    { label: "Stem Cell", key: "stemcell", id: 2 },
-  ];
   return (
     <form className="grid grid-cols-12 gap-x-4 gap-y-2 form-platform-work">
       <div className="col-span-12 s1280:col-span-12 s1512:col-span-12">
-        <label htmlFor="">Residen of</label>
-        <input placeholder="Residen of" type="text" />
+        <label htmlFor="">Resident of</label>
+        <input placeholder="Resident of" type="text" />
       </div>
       <div className="col-span-12 s1280:col-span-12 s1512:col-span-12">
       {/* text-[#474744] */}

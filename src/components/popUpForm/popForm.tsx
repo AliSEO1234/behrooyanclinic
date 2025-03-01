@@ -7,14 +7,11 @@ import { OptionType } from "@/types/comboBox/comboType";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { useAppContext } from "@/contexts/app-context/app-context";
+import { options } from "@/staticData/optionsForm";
 const PopForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
   const { setPopUpForm , popUpForm } = useAppContext();
-  const options = [
-    { label: "Dental", key: "dental", id: 0 },
-    { label: "Eye", key: "eye", id: 1 },
-    { label: "Stem Cell", key: "stemcell", id: 2 },
-  ];
+
   return (
     <form
       onSubmit={(e)=>e.preventDefault()}
@@ -52,15 +49,15 @@ const PopForm = () => {
           </p>
         </div>
       </div>
-      <div className="bg-white h-full rounded-b-[40px] relative z-[3] py-3 px-5 s1280:py-5 s1280:px-8 s1512:px-12 s1728:px-5">
+      <div className="bg-white h-full rounded-b-[40px] relative z-[3] py-3 px-5 s1280:py-5 s1280:px-8 s1512:px-12 s1728:px-5 shadow-pop">
         <div className="flex flex-col items-center justify-start s1280:flex-row s1280:flex-wrap s1280:items-start s1280:justify-between gap-y-3 s1280:gap-y-5 mb-5">
           <div className="w-full s1280:w-fit">
             <label className="block" htmlFor="residen">
-              Residen of
+              Resident of
             </label>
             <input
               className="placeholder:text-[#898989]"
-              placeholder="Residen of"
+              placeholder="Resident of"
               type="text"
             />
           </div>

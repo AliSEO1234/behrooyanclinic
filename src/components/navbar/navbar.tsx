@@ -9,8 +9,17 @@ import ImgFetcher from "../imgFetcher";
 import { useEffect, useState } from "react";
 import TreatSearchBox from "./treatSearchBox";
 import { useLocale } from "next-intl";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "../ui/navigation-menu";
+import { options } from "@/staticData/optionsForm";
+import { MdArrowForwardIos } from "react-icons/md";
 const Navbar = () => {
-  const locale = useLocale()
+  const locale = useLocale();
   const [isScroll, setIsScroll] = useState<boolean>(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +33,11 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <header className={`fixed top-0 left-0 ${isScroll? "animateScroll" : ""} w-full z-[5]`}>
+    <header
+      className={`fixed top-0 left-0 ${
+        isScroll ? "animateScroll" : ""
+      } w-full z-[5]`}
+    >
       <nav
         className={`flex items-center justify-between bg-white shadow-[0_4px_2px_#0000001C] px-[20px] py-3 rounded-b-[40px] anm s1280:px-[50px] ${
           isScroll ? "s1280:py-1" : "s1280:py-3"
@@ -61,7 +74,7 @@ const Navbar = () => {
             </div>
           </div>
           <div
-            className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1280:gap-x-8 s1512:gpa-x-10 s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-12 text-[#474744] anm`}
+            className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1280:gap-x-6 s1512:gpa-x-10 s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-12 text-[#474744] anm`}
           >
             <div>
               <Link className="hover:text-[#25A6A9] anm" href="/">
@@ -69,9 +82,39 @@ const Navbar = () => {
               </Link>
             </div>
             <div>
-              <Link className="hover:text-[#25A6A9] anm" href="/">
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="p-0 hover:bg-inherit focus:bg-inherit hover:text-[#00979A] s1280:text-[14px] s1512:text-[16px] s1728:text-[18px]">
+                      Medical branches
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="w-[200px] py-3">
+                        <ul className="flex flex-col items-center justify-start">
+                          {options.map((service, index) => {
+                            return (
+                              <li className="w-full" key={index}>
+                                <Link
+                                className="flex-bet hover:bg-[#fafafa] py-2 px-3"
+                                  href={`/${locale}/medicaltourism/${service.key}`}
+                                >
+                                  <span className="text-[#00979A]">{service.label}</span>
+                                  <span className="bg-[#00979A] text-white rounded-full flex-cen w-6 h-6">
+                                    <MdArrowForwardIos className="size-3 -me-[1px]" />
+                                  </span>
+                                </Link>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+              {/* <Link className="hover:text-[#25A6A9] anm" href="/">
                 Medical Branches
-              </Link>
+              </Link> */}
             </div>
             <div>
               <Link className="hover:text-[#25A6A9] anm" href="/">
@@ -89,13 +132,19 @@ const Navbar = () => {
               </Link>
             </div> */}
             <div>
-              <Link className="hover:text-[#25A6A9] anm" href={`/${locale}/about`}>
+              <Link
+                className="hover:text-[#25A6A9] anm"
+                href={`/${locale}/about`}
+              >
                 About Us
               </Link>
             </div>
             <div>
-              <Link className="hover:text-[#25A6A9] anm" href={`/${locale}/about`}>
-                َContact Us
+              <Link
+                className="hover:text-[#25A6A9] anm"
+                href={`/${locale}/about`}
+              >
+                Contact Us
               </Link>
             </div>
           </div>

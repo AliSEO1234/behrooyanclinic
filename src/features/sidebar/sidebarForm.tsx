@@ -1,5 +1,6 @@
 "use client";
 import ComboBox from "@/components/comboBox";
+import { options } from "@/staticData/optionsForm";
 import { OptionType } from "@/types/comboBox/comboType";
 import { LucideSendHorizontal } from "lucide-react";
 import { useState } from "react";
@@ -7,11 +8,7 @@ import { useState } from "react";
 const SidebarForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
 
-  const options = [
-    { label: "Dental", key: "dental", id: 0 },
-    { label: "Eye", key: "eye", id: 1 },
-    { label: "Stem Cell", key: "stemcell", id: 2 },
-  ];
+  
   return (
     <form className="grid grid-cols-12 gap-y-4 form-work">
       <div className="col-span-12">

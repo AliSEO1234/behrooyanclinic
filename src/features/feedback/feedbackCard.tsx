@@ -21,7 +21,7 @@ const FeedbackCard = ({ desc, title }: FeedBackCardType) => {
         </div>
       </div>
       <div>
-        <p className="line-clamp-3 font-semibold s1280:text-[18px] text-justify s1280:text-start text-[#6D6D6D]">
+        <p className="line-clamp-5 font-semibold s1280:text-[18px] text-justify s1280:text-start text-[#6D6D6D]">
           {desc}
         </p>
       </div>

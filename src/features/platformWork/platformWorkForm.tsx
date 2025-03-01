@@ -1,17 +1,12 @@
 "use client";
 import ComboBox from "@/components/comboBox";
+import { options } from "@/staticData/optionsForm";
 import { OptionType } from "@/types/comboBox/comboType";
 import { LucideSendHorizontal } from "lucide-react";
 import { useState } from "react";
 
 const PlatformWorkForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
-
-  const options = [
-    { label: "Dental", key: "dental", id: 0 },
-    { label: "Eye", key: "eye", id: 1 },
-    { label: "Stem Cell", key: "stemcell", id: 2 },
-  ];
   return (
     <form className="platform__form-container grid grid-cols-12 gap-y-4 form-platform-work-end bg-white shadow-[0_4px_19px_0_#0000001A] rounded-[40px] px-[18px] s390:px-[25px] s412:px-[35px] py-5 s1280:py-8 s1280:px-[30px] s1512:px-9 s1920:px-[58px]">
       <div className="col-span-12 ">

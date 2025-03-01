@@ -35,14 +35,6 @@ import chooseUs from "@/assets/images/chooseus.jpg";
 import ChooseUsCard from "@/components/chooseUs/chooseUsCard";
 import SeeAll from "@/components/seeAll";
 import DistinctiveCard from "@/components/distinctive/distinctiveCard";
-import dist1 from "@/assets/images/distinctive/distinctive1.jpg";
-import dist2 from "@/assets/images/distinctive/distinctive2.jpg";
-import dist3 from "@/assets/images/distinctive/distinctive3.jpg";
-import dist4 from "@/assets/images/distinctive/distinctive4.jpg";
-import dist1icon from "@/assets/images/distinctive/icon1.svg";
-import dist2icon from "@/assets/images/distinctive/icon2.svg";
-import dist3icon from "@/assets/images/distinctive/icon3.svg";
-import dist4icon from "@/assets/images/distinctive/icon4.svg";
 import ExperienceCard from "@/components/experience/experienceCard";
 import noIcon from "@/assets/images/icons/experience/noicon.svg";
 import freeconsul from "@/assets/images/icons/experience/freeconsul.svg";
@@ -62,6 +54,7 @@ import apoint from "@/assets/images/apointment.svg";
 import online from "@/assets/images/online.svg";
 import VideoPlayerCom from "@/features/videoPlayer/videoPlayer";
 import { FeedbackCardType } from "@/types/feedback/feebackLayout";
+import { patientContents } from "@/staticData/patientContent";
 
 const Home = async ({
   params,
@@ -86,7 +79,7 @@ const Home = async ({
       desc:
         locale === "ru"
           ? ""
-          : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏 …",
+          : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏",
     },
     {
       fullName: locale === "ru" ? "" : "Mozhgaan panahi",
@@ -128,7 +121,7 @@ const Home = async ({
       desc:
         locale === "ru"
           ? ""
-          : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏 …",
+          : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏",
     },
     // {
     //   fullName: locale === "ru" ? "" : "Mozhgaan panahi",
@@ -151,7 +144,6 @@ const Home = async ({
   ];
   return (
     <>
-      
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
         <div className="relative s1280:h-full pt-12 s1280:pt-14 s1512:pt-28 overflow-hidden">
           <VideoPlayerCom />
@@ -201,7 +193,10 @@ const Home = async ({
                     </p>
                   </div>
                   <div className="mt-5">
-                    <a href="#video-service" className="flex-cen w-fit gap-x-2 text-white s1512:text-[20px] font-semibold">
+                    <a
+                      href="#video-service"
+                      className="flex-cen w-fit gap-x-2 text-white s1512:text-[20px] font-semibold"
+                    >
                       <span className="bg-[#DAEDE6] rounded-full flex-cen p-2">
                         <span className="w-[45px] h-[45px] bg-[#25A6A9] hover:bg-[#0c797b] anm rounded-full flex-cen text-white">
                           <FaPlay className="size-4 ms-1" />
@@ -227,7 +222,10 @@ const Home = async ({
                 </p>
               </div>
               <div className="mt-5 flex-cen">
-                <a href="#video-service" className="w-fit flex-cen gap-x-2 text-white s1512:text-[20px] font-semibold">
+                <a
+                  href="#video-service"
+                  className="w-fit flex-cen gap-x-2 text-white s1512:text-[20px] font-semibold"
+                >
                   <span className="bg-[#DAEDE6] rounded-full flex-cen p-2">
                     <span className="bg-[#25A6A9] hover:bg-[#3bb1b3] anm rounded-full flex-cen p-2 text-white">
                       <FaPlay className="size-4" />
@@ -654,13 +652,13 @@ const Home = async ({
             classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-5 s1728:mt-2"
             className="mt-10 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-16 s1512:pt-16 s1280:-mt-40 s1512:-mt-[150px] s1600:-mt-44 s1728:-mt-36 s1920:-mt-24"
             order="second"
-            title="Video Distinctive Features"
+            title="Patients speak"
           >
             <div className="w-full z-[3]">
               <div className="flex items-center justify-between s1280:justify-end mb-10 s1280:mb-5">
                 <div className="s1280:hidden">
                   <h2 className="font-semibold text-[20px] text-[#333333]">
-                    Video experience
+                    Patients speak
                   </h2>
                 </div>
                 <div>
@@ -671,7 +669,25 @@ const Home = async ({
                 </div>
               </div>
               <div className="grid grid-cols-12 px-5 s390:px-8 sm:px-36 s412:px-10 gap-y-10 s1280:gap-y-0 s1280:px-0 s1280:gap-x-5 s1728:gap-x-12 s1920:gap-x-20">
-                <DistinctiveCard
+                {patientContents.map(
+                  (
+                    { desc, header, serivceKey, service, serviceIcon, video },
+                    index
+                  ) => {
+                    return (
+                      <DistinctiveCard
+                        icon={serviceIcon}
+                        link={serivceKey}
+                        service={service}
+                        title={header}
+                        video={video}
+                        desc={desc}
+                        key={index}
+                      />
+                    );
+                  }
+                )}
+                {/* <DistinctiveCard
                   icon={dist1icon}
                   desc="Some quick example text to build on the card title and make up the bulk of the card's content. This card has even longer"
                   link="/"
@@ -702,7 +718,7 @@ const Home = async ({
                   service="Bariatric surgeries"
                   title="Parinaz"
                   video={dist4}
-                />
+                /> */}
               </div>
             </div>
           </FillScrollLayout>
