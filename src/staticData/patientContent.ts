@@ -1,7 +1,7 @@
 import dist1icon from "@/assets/images/distinctive/icon1.svg";
 // import dist2icon from "@/assets/images/distinctive/icon2.svg";
 // import dist3icon from "@/assets/images/distinctive/icon3.svg";
-import dist4icon from "@/assets/images/distinctive/icon4.svg";
+// import dist4icon from "@/assets/images/distinctive/icon4.svg";
 import { StaticImageData } from "next/image";
 export const patientContents: {
   service: string;
@@ -38,7 +38,7 @@ export const patientContents: {
   {
     service: "Aesthetics",
     serivceKey: "aesthetic",
-    serviceIcon: dist4icon,
+    serviceIcon: dist1icon,
     header: "Nataliya",
     desc: "Hair Transplant Journey",
     video: "https://azpo.com/api/files/property-videos/site_health_en.mp4",

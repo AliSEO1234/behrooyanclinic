@@ -3,7 +3,7 @@ import { FaPlay } from "react-icons/fa";
 import { PatientVideoPlayerType } from "@/types/videoPlayer/patientVideoPlayerType";
 import { useEffect, useRef, useState } from "react";
 
-const PatientVideoPlayer = ({ videoSrc }: PatientVideoPlayerType) => {
+const PatientVideoPlayer = ({ videoSrc,isPoster }: PatientVideoPlayerType) => {
   const videoEl = useRef<HTMLVideoElement | null>(null);
   const [poster, setPoster] = useState<string | null>(null);
   const handlePlay = () => {
@@ -25,7 +25,7 @@ const PatientVideoPlayer = ({ videoSrc }: PatientVideoPlayerType) => {
     const capturePoster = () => {
       if (videoEl.current) {
         const video = videoEl.current;
-        video.currentTime = 5;
+        video.currentTime =isPoster ? 20 : 5;
         video.addEventListener(
           "seeked",
           () => {

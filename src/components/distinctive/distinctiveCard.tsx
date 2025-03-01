@@ -23,7 +23,7 @@ const DistinctiveCard = ({
       } video-distinctive__card-container col-span-12 s1280:col-span-3 s1512:col-span-3 h-[634px] s1280:h-full py-4 shadow-[0_4px_15px_0_#0000001A] bg-white rounded-t-[400px] rounded-b-[80px] border-t-[5px] border-[#86D1AB] flex flex-col`}
     >
       <div className="flex-cen mb-5">
-        <PatientVideoPlayer videoSrc={video} />
+        <PatientVideoPlayer isPoster={title === "Nataliya" ? true : false} videoSrc={video} />
       </div>
       <div className="flex-right mb-5">
         <p className="video-distinctive__service-text bg-[#DAEDE6] text-[#474744] rounded-s-[100px] px-2 py-1 font-medium flex-cen gap-x-2">

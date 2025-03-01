@@ -95,7 +95,7 @@ const VideoPlayer = ({
           showLogo ? "relative" : ""
         }  overflow-hidden z-[2]`}
       >
-        <div className="bg-[#00000047] rounded-[20px] s1280:rounded-[40px] w-full h-full absolute top-0 left-0"></div>
+        <div className="bg-[#d2d2d2] rounded-[20px] s1280:rounded-[40px] w-full h-full absolute top-0 left-0"></div>
         {  src && typeof src === "string" && (
           <div className="w-full h-full relative">
             <video
