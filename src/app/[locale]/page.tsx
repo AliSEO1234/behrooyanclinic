@@ -30,7 +30,7 @@ import InfoHealthCard from "@/components/infoHealth/infoHealthCard";
 import heart from "@/assets/images/icons/heart.svg";
 import BundleIcon from "@/components/infoHealth/bundleIcon";
 import FillScrollLayout from "@/layoutes/fillScrollLayout/fillScrollLayout";
-import chooseIcon from "@/assets/images/chooseIcon.svg";
+import chooseIcon from "@/assets/images/chooseIcon.png";
 import chooseUs from "@/assets/images/chooseus.jpg";
 import ChooseUsCard from "@/components/chooseUs/chooseUsCard";
 import SeeAll from "@/components/seeAll";
@@ -614,7 +614,7 @@ const Home = async ({
                 </div>
                 {/* icon */}
                 <div className="hidden s1280:block s1280:w-[307px] s1280:h-[290px] absolute -bottom-14 -right-28">
-                  <ImgFetcher src={chooseIcon} width={3000} />
+                  <ImgFetcher src={chooseIcon} width={800} />
                 </div>
               </div>
               <div className="col-span-12 s1280:col-span-9 s1512:col-span-8 grid grid-cols-12 s1280:gap-x-5 s1600:gap-x-[26px] s1920:gap-x-[39px] gap-y-[32px]">

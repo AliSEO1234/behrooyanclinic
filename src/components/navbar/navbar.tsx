@@ -89,17 +89,23 @@ const Navbar = () => {
                       Medical branches
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="w-[200px] py-3">
-                        <ul className="flex flex-col items-center justify-start">
+                      <div className="w-[900px] py-3">
+                        <ul className="grid grid-cols-12">
                           {options.map((service, index) => {
                             return (
-                              <li className="w-full" key={index}>
+                              <li
+                                title={service.label}
+                                className="s1280:col-span-4"
+                                key={index}
+                              >
                                 <Link
-                                className="flex-bet hover:bg-[#fafafa] py-2 px-3"
+                                  className="flex-bet hover:bg-[#fafafa] py-2 px-3 text-[#474744] hover:text-[#00979A] anm font-medium"
                                   href={`/${locale}/medicaltourism/${service.key}`}
                                 >
-                                  <span className="text-[#00979A]">{service.label}</span>
-                                  <span className="bg-[#00979A] text-white rounded-full flex-cen w-6 h-6">
+                                  <span className="line-clamp-1">
+                                    {service.label}
+                                  </span>
+                                  <span className="rounded-full flex-cen w-6 h-6">
                                     <MdArrowForwardIos className="size-3 -me-[1px]" />
                                   </span>
                                 </Link>

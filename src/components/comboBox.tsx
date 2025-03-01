@@ -33,7 +33,7 @@ const ComboBox = ({ options, onChange, trigger, className , containertStyle }: C
         className={` ${className ? className : ""} flex-bet cursor-pointer`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span>{trigger}</span>
+        <span className="line-clamp-1">{trigger}</span>
         <span>
           <IoIosArrowDown
             className={`${isOpen ? "rotate-180" : "rotate-0"} size-5 anm`}
@@ -62,10 +62,10 @@ const ComboBox = ({ options, onChange, trigger, className , containertStyle }: C
 
             <ul className="max-h-[230px] overflow-y-auto">
               {filteredOptions.length > 0 ? (
-                filteredOptions.map((option) => (
+                filteredOptions.map((option,index) => (
                   <li
-                    key={option.key}
-                    className="p-2 cursor-pointer text-gray-500 font-medium hover:bg-[#f4f4f4] anm"
+                    key={index}
+                    className="px-2 py-1 cursor-pointer text-gray-500 font-medium hover:bg-[#f4f4f4] anm line-clamp-1 mb-1"
                     onClick={() => {
                       onChange(option);
                       setIsOpen(false);

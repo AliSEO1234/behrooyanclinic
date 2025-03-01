@@ -12,7 +12,7 @@ const PatientVideoPlayer = ({ videoSrc }: PatientVideoPlayerType) => {
         videoEl.current
           .requestFullscreen()
           .then(() => {
-            videoEl.current?.classList.remove("object-cover")
+            videoEl.current?.classList.remove("object-cover");
             videoEl.current!.play();
           })
           .catch((err) =>
@@ -50,6 +50,7 @@ const PatientVideoPlayer = ({ videoSrc }: PatientVideoPlayerType) => {
   useEffect(() => {
     const handleFullscreenChange = () => {
       if (!document.fullscreenElement && videoEl.current) {
+        videoEl.current.classList.add("object-cover");
         videoEl.current.pause();
       }
     };
