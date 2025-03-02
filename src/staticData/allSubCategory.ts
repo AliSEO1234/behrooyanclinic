@@ -355,7 +355,27 @@ export const allSubNestedCategory = [
     path: "laminate-veneers",
     subCategoryKey: "cosmetic-dentistry",
   },
-  // laminate-veneers
+  // teeth whiting
+  {
+    img: laminateveneers,
+    title: "Hollywood Smile",
+    description:
+      "Get the dazzling, flawless smile you’ve always dreamed of with Hollywood Smile. Say goodbye to stains, chips, and gaps—our expert cosmetic dentistry enhances your teeth with precision, giving you that perfect, picture-ready look. Boost your confidence and make every smile unforgettable!",
+    categoryKey: "dental-treatments",
+    path: "hollywood-smile",
+    subCategoryKey: "cosmetic-dentistry",
+  },
+  // teeth whiting
+  {
+    img: laminateveneers,
+    title: "Teeth whitening",
+    description:
+      "Tired of tooth pain and worried about losing your natural smile? Discover how root canal therapy in Turkey can be your affordable and high-quality solution. AZPO Health offers comprehensive dental care packages in Istanbul, Antalya, and Alanya, combining expert treatment with a relaxing medical tourism experience.",
+    categoryKey: "dental-treatments",
+    path: "teeth-whitening",
+    subCategoryKey: "cosmetic-dentistry",
+  },
+  // dental-crowns
   {
     img: dentistchoosing,
     title: "Dental Crowns",

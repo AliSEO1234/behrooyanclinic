@@ -649,8 +649,8 @@ const Home = async ({
           </FillScrollLayout>
           {/* Video Distinctive Features */}
           <FillScrollLayout
-            classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-5 s1728:mt-2"
-            className="mt-10 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-16 s1512:pt-16 s1280:-mt-40 s1512:-mt-[150px] s1600:-mt-44 s1728:-mt-36 s1920:-mt-24"
+            classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-5 s1728:mt-2 s1920:mt-1"
+            className="mt-10 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-28 s1280:-mt-40 s1512:-mt-[150px] s1600:-mt-52 s1728:-mt-36 s1920:-mt-24"
             order="second"
             title="Patients speak"
           >

@@ -150,7 +150,7 @@ const ServiceSlider = () => {
         />
         <div className="s1280:w-[547px] s1280:h-[547px] s1512:w-[580px] s1512:h-[580px] relative z-[1]">
           <ImgFetcher width={1000} src={activePhoto.src} />
-          <div className="shadow-char-slider absolute bottom-0 s1280:bottom-2 -translate-x-1/2 left-1/2 shadow-char-slider w-[244px] h-[18px]"></div>
+          <div className={`shadow-char-slider absolute ${checked ? "bottom-0 s1280:bottom-2" : "bottom-2 s1280:bottom-5"}  -translate-x-1/2 left-1/2 shadow-char-slider w-[244px] h-[18px]`}></div>
         </div>
       </div>
     </div>
