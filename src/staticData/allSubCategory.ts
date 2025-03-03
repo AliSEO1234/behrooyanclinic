@@ -39,6 +39,13 @@ import laminateveneers from "@/assets/images/subnested/Laminate Veneers.jpg"
 import restoryDenstiry from "@/assets/images/subCategory/restorative-dentistry.jpg"
 import dentistchoosing from "@/assets/images/subnested/dentist_choosing.jpg"
 import periodontics from "@/assets/images/treatment/periodontics.jpg"
+import hollywood from "@/assets/images/subCategory/Hollywood Smile.jpg"
+import teethwhiting from "@/assets/images/subCategory/Teeth Whitening.jpg"
+import orthodontics from "@/assets/images/subCategory/orthodontics.jpg"
+import clearaligners from "@/assets/images/subCategory/Clear Aligners.jpg"
+import gumgrafting from "@/assets/images/subnested/Gum Grafting.jpg"
+import lasergumtreatments from "@/assets/images/subCategory/laser gum.jpg"
+import oralsurgery from "@/assets/images/subCategory/Oral-Surgery.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -112,6 +119,20 @@ export const allSubCategory = [
     title: "Periodontics",
     description: "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
     path: "periodontics",
+    categoryKey: "dental-treatments",
+  },
+  {
+    img: orthodontics,
+    title: "Orthodontics",
+    description: "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
+    path: "orthodontics",
+    categoryKey: "dental-treatments",
+  },
+  {
+    img: oralsurgery,
+    title: "Oral Surgery",
+    description: "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
+    path: "oral-surgery",
     categoryKey: "dental-treatments",
   },
   
@@ -355,9 +376,9 @@ export const allSubNestedCategory = [
     path: "laminate-veneers",
     subCategoryKey: "cosmetic-dentistry",
   },
-  // teeth whiting
+  // Hollywood Smile
   {
-    img: laminateveneers,
+    img: hollywood,
     title: "Hollywood Smile",
     description:
       "Get the dazzling, flawless smile you’ve always dreamed of with Hollywood Smile. Say goodbye to stains, chips, and gaps—our expert cosmetic dentistry enhances your teeth with precision, giving you that perfect, picture-ready look. Boost your confidence and make every smile unforgettable!",
@@ -367,7 +388,7 @@ export const allSubNestedCategory = [
   },
   // teeth whiting
   {
-    img: laminateveneers,
+    img: teethwhiting,
     title: "Teeth whitening",
     description:
       "Tired of tooth pain and worried about losing your natural smile? Discover how root canal therapy in Turkey can be your affordable and high-quality solution. AZPO Health offers comprehensive dental care packages in Istanbul, Antalya, and Alanya, combining expert treatment with a relaxing medical tourism experience.",
@@ -384,6 +405,36 @@ export const allSubNestedCategory = [
     categoryKey: "dental-treatments",
     path: "dental-crowns",
     subCategoryKey: "restorative-dentistry",
+  },
+  // clear-aligners-invisalign
+  {
+    img: clearaligners,
+    title: "Clear Aligners Invisalign",
+    description:
+      "Ditch the metal braces! Invisalign clear aligners offer a virtually invisible, comfortable way to achieve perfectly aligned teeth. Custom-made for a precise fit, these removable aligners let you eat, drink, and smile with confidence—while straightening your teeth effortlessly. Get the smile you deserve, the modern way!",
+    categoryKey: "dental-treatments",
+    path: "clear-aligners-invisalign",
+    subCategoryKey: "orthodontics",
+  },
+  // Gum Grafting
+  {
+    img: gumgrafting,
+    title: "Gum Grafting",
+    description:
+      "Ditch the metal braces! Invisalign clear aligners offer a virtually invisible, comfortable way to achieve perfectly aligned teeth. Custom-made for a precise fit, these removable aligners let you eat, drink, and smile with confidence—while straightening your teeth effortlessly. Get the smile you deserve, the modern way!",
+    categoryKey: "dental-treatments",
+    path: "gum-grafting",
+    subCategoryKey: "periodontics",
+  },
+  // Gum Grafting
+  {
+    img: lasergumtreatments,
+    title: "Laser Gum Treatments",
+    description:
+      "Ditch the metal braces! Invisalign clear aligners offer a virtually invisible, comfortable way to achieve perfectly aligned teeth. Custom-made for a precise fit, these removable aligners let you eat, drink, and smile with confidence—while straightening your teeth effortlessly. Get the smile you deserve, the modern way!",
+    categoryKey: "dental-treatments",
+    path: "laser-gum-treatments",
+    subCategoryKey: "periodontics",
   },
 
 ];

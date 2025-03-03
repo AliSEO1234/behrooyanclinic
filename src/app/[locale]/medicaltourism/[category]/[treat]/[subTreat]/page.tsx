@@ -154,7 +154,7 @@ const Page = async ({ params }: PropsPageType) => {
             </div>
             <div
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[233px] h-[336px] s1280:w-[248px] s1280:h-[402px] s1512:w-[350px] s1512:h-[550px] s1728:w-[400px] s1728:h-[650px] rounded-[500px] overflow-hidden shadow-[0px_4px_10.7px_3px_#00000042]">
-              <ImgFetcher src={fetchData?.imgCover || eye}/>
+              <ImgFetcher className="object-cover" src={fetchData?.imgCover || eye}/>
             </div>
           </div>
         </div>
