@@ -46,6 +46,7 @@ import clearaligners from "@/assets/images/subCategory/Clear Aligners.jpg"
 import gumgrafting from "@/assets/images/subnested/Gum Grafting.jpg"
 import lasergumtreatments from "@/assets/images/subCategory/laser gum.jpg"
 import oralsurgery from "@/assets/images/subCategory/Oral-Surgery.jpg"
+
 export const allSubCategory = [
   {
     img: hair,
