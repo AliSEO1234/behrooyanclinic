@@ -46,7 +46,7 @@ import clearaligners from "@/assets/images/subCategory/Clear Aligners.jpg"
 import gumgrafting from "@/assets/images/subnested/Gum Grafting.jpg"
 import lasergumtreatments from "@/assets/images/subCategory/laser gum.jpg"
 import oralsurgery from "@/assets/images/subCategory/Oral-Surgery.jpg"
-
+import bonegrafting from "@/assets/images/subnested/Bone Grafting.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -427,7 +427,7 @@ export const allSubNestedCategory = [
     path: "gum-grafting",
     subCategoryKey: "periodontics",
   },
-  // Gum Grafting
+  // Laser Gum Treatments
   {
     img: lasergumtreatments,
     title: "Laser Gum Treatments",
@@ -436,6 +436,15 @@ export const allSubNestedCategory = [
     categoryKey: "dental-treatments",
     path: "laser-gum-treatments",
     subCategoryKey: "periodontics",
+  },
+  {
+    img: bonegrafting,
+    title: "Bone Grafting",
+    description:
+      "Lost bone due to missing teeth or gum disease? Bone grafting rebuilds and strengthens your jaw, creating a solid foundation for dental implants and long-term oral health. Our advanced techniques ensure a safe, effective, and comfortable procedure—bringing back your smile’s strength and function!",
+    categoryKey: "dental-treatments",
+    path: "bone-grafting",
+    subCategoryKey: "oral-surgery",
   },
 
 ];

@@ -13,6 +13,8 @@ import dental from "@/assets/images/icons/services/dental.png";
 import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import Pagination from "@/components/pagination";
 import ServiceSlider from "@/features/services/serviceSlider/serviceSlider";
+import SubContent from "@/components/shortLongDesc";
+import { medicalTourismContent } from "@/staticData/medicalTourismContent";
 const Treatments = async ({
   params,
 }: {
@@ -20,7 +22,7 @@ const Treatments = async ({
     locale: string;
   }>;
 }) => {
-  const {locale} = await params
+  const { locale } = await params;
   const imgStyle =
     "p-4 w-[190px] h-[190px] s1280:h-[160px] s1280:w-[160px] s1512:h-[207px] s1512:w-[207px] s1728:w-[238px] s1728:h-[238px] s1920:w-[250px] s1920:h-[250px]";
   const titleStyle = "text-[20px] s1280:text-[16px] s1512:text-[20px]";
@@ -58,48 +60,6 @@ const Treatments = async ({
       linkService: "/medicaltourism/stemCell",
       title: "Stem Cell",
     },
-    {
-      countService: 27,
-      img: aesthetics,
-      linkService: "/medicaltourism/aesthetic",
-      title: "Aesthetics",
-    },
-    {
-      countService: 74,
-      img: dental,
-      linkService: "/medicaltourism/dental-treatments",
-      title: "Dental",
-    },
-    {
-      countService: 51,
-      img: eye,
-      linkService: "/medicaltourism/eyeSurgeries",
-      title: "Eye Surgeries",
-    },
-    {
-      countService: 45,
-      img: fertility,
-      linkService: "/medicaltourism/fertility",
-      title: "Fertility",
-    },
-    {
-      countService: 24,
-      img: cell,
-      linkService: "/medicaltourism/stemCell",
-      title: "Stem Cell",
-    },
-    {
-      countService: 27,
-      img: aesthetics,
-      linkService: "/medicaltourism/aesthetic",
-      title: "Aesthetics",
-    },
-    {
-      countService: 74,
-      img: dental,
-      linkService: "/medicaltourism/dental-treatments",
-      title: "Dental",
-    },
   ];
   return (
     <div className="viewport-p bg-[#FCFCFC]">
@@ -108,17 +68,19 @@ const Treatments = async ({
         <div className="col-span-12 s1280:col-span-5 s1728:col-span-6">
           <div className="mb-3 s1280:mb-20 s1728:mb-10">
             <h1 className="text-[30px] s1280:text-[30px] s1512:text-[40px] s1920:text-[60px] font-black s1280:font-semibold text-[#00979A] mb-4 s1280:mb-10">
+              {locale === "ru"
+                ? "Медицинский туризм в Турции: Ваш путь к первоклассному здравоохранению"
+                : "Medical Tourism in Turkey - Your Gateway to World-Class Healthcare"}
               Treatments
             </h1>
             {/* <p className="font-semibold flex-left gap-x-1 text-[14px] s1280:text-[24px] text-[#00979A] [text-shadow:0_2px_3px_#00000040] mb-4">
               <span>85</span>
               <span>Service</span>
             </p> */}
-            <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[28px] s1920:text-[30px] leading-[22px] s1280:leading-[27px] s1512:leading-[32px] s1728:leading-[40px] text-justify s1280:pe-24 s1600:pe-40 s1728:pe-72 s1920:pe-80">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry is standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.{" "}
+            <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[28px] s1920:text-[30px] leading-[22px] s1280:leading-[27px] s1512:leading-[32px] s1728:leading-[40px] s1280:pe-24 s1600:pe-40 s1728:pe-72 s1920:pe-80">
+              {locale === "ru"
+                ? "Ищете доступное и качественное медицинское обслуживание? Откройте для себя медицинский туризм в Турции! AZPO Health предлагает комплексные пакеты для различных медицинских нужд, от косметической хирургии до специализированных процедур. Совместите заботу о здоровье с уникальным культурным опытом."
+                : "Seeking affordable, high-quality healthcare? Discover medical tourism in Turkey! AZPO Health offers comprehensive packages for various medical needs, from cosmetic surgery to specialized treatments. Combine your health journey with a unique cultural experience."}
             </p>
           </div>
           <div className="flex items-center justify-start s1280:justify-between gap-x-4 s1280:gap-x-0 s1280:pe-20 s1600:pe-40 s1728:pe-72 s1920:pe-80">
@@ -131,7 +93,10 @@ const Treatments = async ({
               </Link>
             </div>
             <div>
-              <a href="#video-service" className="flex-cen gap-x-2 text-[#00979A] s1280:text-[20px] font-semibold">
+              <a
+                href="#video-service"
+                className="flex-cen gap-x-2 text-[#00979A] s1280:text-[20px] font-semibold"
+              >
                 <span className="bg-[#DAEDE6] rounded-full p-1 s1280:p-2 flex-cen w-[37px] h-[37px] s1280:w-[62px] s1280:h-[62px]">
                   <span className=" bg-[#25A6A9] hover:bg-[#0c797b] anm w-full h-full rounded-full flex-cen text-white">
                     <FaPlay className="size-3 s1280:size-5 ms-1" />
@@ -199,6 +164,12 @@ const Treatments = async ({
             ))}
             <div className="w-full">
               <Pagination totalPages={80} />
+            </div>
+            <div className="w-full">
+              <SubContent
+                desc={medicalTourismContent(locale, "desc")}
+                header={medicalTourismContent(locale, "title")}
+              />
             </div>
           </div>
           <Sidebar />

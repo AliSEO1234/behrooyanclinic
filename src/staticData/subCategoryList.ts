@@ -55,6 +55,7 @@ import hollywood from "@/assets/images/subCategory/Hollywood Smile.jpg"
 import teethwhiting from "@/assets/images/subCategory/Teeth Whitening.jpg"
 import clearaligners from "@/assets/images/subCategory/Clear Aligners.jpg"
 import gumgrafting from "@/assets/images/subnested/Gum Grafting.jpg"
+import bonegrafting from "@/assets/images/subnested/Bone Grafting.jpg"
 import lasergumtreatments from "@/assets/images/subCategory/laser gum.jpg"
 export const categoryDataHandler = (key: string, locale: string) => {
   const findPathCategory = pathsCategory.find((path) => path === key);
@@ -4295,6 +4296,108 @@ AZPO Health - ведущая компания медицинского тури�
         },
         imgCover: subNestedKey === "laser-gum-treatments" ? lasergumtreatments : null,
         subNestedKey: "laser-gum-treatments",
+      },
+      // bone grafting
+      {
+        id: 0,
+        title:
+          locale === "ru"
+            ? "Regain a Solid Foundation for Your Smile with Bone Grafting in Turkey"
+            : "Regain a Solid Foundation for Your Smile with Bone Grafting in Turkey",
+        descriptionTop:
+          locale === "ru"
+            ? "Lost bone due to missing teeth or gum disease? Bone grafting rebuilds and strengthens your jaw, creating a solid foundation for dental implants and long-term oral health. Our advanced techniques ensure a safe, effective, and comfortable procedure—bringing back your smile’s strength and function!"
+            : "Lost bone due to missing teeth or gum disease? Bone grafting rebuilds and strengthens your jaw, creating a solid foundation for dental implants and long-term oral health. Our advanced techniques ensure a safe, effective, and comfortable procedure—bringing back your smile’s strength and function!",
+        benefits: {
+          items: [
+            {
+              title: locale === "ru" ? "Grafting Benefits" : "Grafting Benefits",
+              desc:
+                locale === "ru"
+                  ? "Strengthens jawbone structure, prevents bone loss, and enhances facial aesthetics."
+                  : "Strengthens jawbone structure, prevents bone loss, and enhances facial aesthetics.",
+            },
+            {
+              title: locale === "ru" ? "Implant Support" : "Implant Support",
+              desc:
+                locale === "ru"
+                  ? "Creates stable foundation for dental implants while increasing their longevity."
+                  : "Creates stable foundation for dental implants while increasing their longevity.",
+            },
+            {
+              title: locale === "ru" ? "Bone Protection" : "Bone Protection",
+              desc:
+                locale === "ru"
+                  ? "Reduces complications from deficiencies and prevents deterioration of bone tissue."
+                  : "Reduces complications from deficiencies and prevents deterioration of bone tissue.",
+            },
+          ],
+          categories: [
+            {
+              header: locale === "ru" ? "Who It’s For" : "Who It’s For",
+              desc:
+                locale === "ru"
+                  ? `Bone grafting is recommended for individuals who experience:\n
+                     Gum Disease: Severe periodontal conditions leading to bone loss around the teeth.
+                     Jawbone Deterioration: Due to prolonged tooth loss or the use of ill-fitting dentures.
+                     Dental Trauma: Accidents or injuries causing structural damage to the jawbone.`
+                  : `Bone grafting is recommended for individuals who experience:\n
+                     Gum Disease: Severe periodontal conditions leading to bone loss around the teeth.
+                     Jawbone Deterioration: Due to prolonged tooth loss or the use of ill-fitting dentures.
+                     Dental Trauma: Accidents or injuries causing structural damage to the jawbone.`
+            },
+            {
+              header:locale === "ru" ? "Considerations" : "Considerations",
+              decsList: [
+                locale === "ru" ? "Healing Time: The integration of the graft with the existing bone can take several months, requiring patience." : "Healing Time: The integration of the graft with the existing bone can take several months, requiring patience.",
+                locale === "ru" ? "Some discomfort and swelling are expected after the procedure, which can be managed with prescribed medications." : "Some discomfort and swelling are expected after the procedure, which can be managed with prescribed medications.",
+                locale === "ru" ? "Soft foods are recommended during the initial healing phase to avoid stress on the grafted area." : "Soft foods are recommended during the initial healing phase to avoid stress on the grafted area.",
+              ],
+            },
+            {
+              header: locale === "ru" ? "How it Works" : "How it Works",
+              desc:
+                locale === "ru"
+                  ? "Bone grafting is a surgical procedure used to enhance bone regeneration in cases where the skeletal structure cannot heal naturally. It is most commonly performed in the jaw area to improve both functional and aesthetic outcomes, particularly in dental implant treatment."
+                  :"Bone grafting is a surgical procedure used to enhance bone regeneration in cases where the skeletal structure cannot heal naturally. It is most commonly performed in the jaw area to improve both functional and aesthetic outcomes, particularly in dental implant treatments."
+            },
+          ],
+        },
+        conclusion: {
+          title: locale === "ru" ? "Заключение" : "Conclusion",
+          desc:
+            locale === "ru"
+              ? "Bone grafting is a crucial procedure for individuals requiring dental implants or experiencing bone loss in the jaw. By reinforcing the skeletal structure, it enhances both oral functionality and aesthetics while significantly increasing the success rate of dental restorations.With proper post-operative care and professional guidance, patients can achieve optimal healing and long-term benefits from the procedure. Whether due to tooth loss, trauma, or genetic factors, bone grafting offers a reliable solution for restoring oral health and improving overall quality of life."
+              : "Bone grafting is a crucial procedure for individuals requiring dental implants or experiencing bone loss in the jaw. By reinforcing the skeletal structure, it enhances both oral functionality and aesthetics while significantly increasing the success rate of dental restorations.With proper post-operative care and professional guidance, patients can achieve optimal healing and long-term benefits from the procedure. Whether due to tooth loss, trauma, or genetic factors, bone grafting offers a reliable solution for restoring oral health and improving overall quality of life.",
+        },
+        bfs: [
+          bf1,
+          bf2,
+          bf3,
+          bf4,
+          bf5,
+          bf6,
+          bf7,
+          bf8,
+          bf9,
+          bf10,
+          bf11,
+          bf12,
+          bf13,
+        ],
+        contents: {
+          title:
+            locale === "ru"
+              ? "Why Choose Turkey for Bone Grafting?"
+              : "Why Choose Turkey for Bone Grafting?",
+          content:
+            locale === "ru"
+              ? `<p>Turkey has become a popular destination for medical tourism, especially for dental procedures like bone grafting. Here's why choosing AZPO Health in Turkey for your bone grafting needs is a smart decision:</p><p><strong>Affordability:</strong> Dental treatments in Turkey, including bone grafting, are significantly more affordable compared to Europe, the UK, and the US. You can save up to 70-90% on costs, even after factoring in travel and accommodation.</p><p><strong>Quality:</strong> AZPO Health boasts experienced and well-educated healthcare professionals. The clinics use high-quality materials and modern technologies, ensuring you receive world-class dental care.</p><p><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover treatment, accommodation, airport transfers, and even leisure activities, making your medical journey stress-free.</p><p><strong>Beautiful Location:</strong> Combine your treatment with a holiday! AZPO Health is located in Istanbul, Antalya, and Alanya, all popular tourist destinations with rich history and culture.</p><h3><strong>Understanding Bone Grafting</strong></h3><p>Bone grafting is a surgical procedure used to rebuild bone in the jaw when there is insufficient bone volume or density to support dental implants. This is often necessary due to:</p><p><strong>Tooth Loss:</strong> Prolonged tooth loss can lead to bone resorption (breakdown) in the jaw.</p><p><strong>Periodontal Disease:</strong> Gum disease can damage the bone and tissues supporting the teeth.</p><p><strong>Trauma:</strong> Injuries to the face can cause bone loss.</p><p><strong>Congenital Defects:</strong> Some individuals are born with insufficient bone in certain areas of the jaw.</p><h4><strong>Types of Bone Grafting Procedures</strong></h4><p>Several bone grafting techniques are available, depending on the location and extent of bone loss:</p><p><strong>Socket Preservation:</strong> This procedure is performed immediately after tooth extraction to prevent bone loss in the socket. The socket is filled with a bone graft material, and a protective membrane is placed over it.</p><p><strong>Ridge Augmentation:</strong> This technique is used to increase the width and height of the alveolar ridge (the bony ridge that supports the teeth). It is often required when bone loss has resulted in a narrow or thin ridge.</p><p><strong>Sinus Lift:</strong> This procedure is performed in the upper jaw when there is not enough bone height to place dental implants in the posterior (back) region. The sinus membrane is lifted, and bone graft material is placed to increase the bone volume.</p><p><strong>Block Bone Graft:</strong> This involves taking a block of bone from another area of the body (usually the jaw or hip) and transplanting it to the deficient area in the jaw. This is typically used for larger defects.</p><h4><strong>Bone Graft Materials</strong></h4><p>Various types of bone graft materials can be used:</p><p><strong>Autograft:</strong> Bone taken from the patient's own body. This is considered the gold standard as it has the highest success rate.</p><p><strong>Allograft:</strong> Bone taken from a human donor. It is thoroughly screened and sterilized to ensure safety.</p><p><strong>Xenograft:</strong> Bone taken from an animal source (usually bovine). It is processed to remove organic material and ensure biocompatibility.</p><p><strong>Alloplast:</strong> Synthetic bone graft materials made of calcium phosphate ceramics or other biocompatible materials.</p><h3><strong>The Bone Grafting Procedure</strong></h3><p>Here's what you can expect during your bone grafting journey with AZPO Health:</p><p><strong>Initial Consultation:</strong> A thorough examination, including X-rays or CT scans, to assess your bone volume and determine the best treatment plan.</p><p><strong>Treatment Planning:</strong> A detailed discussion of the procedure, including the type of bone graft material, the surgical technique, and the expected outcomes.</p><p><strong>Anesthesia:</strong> Local anesthesia is typically used, but sedation or general anesthesia may be available for anxious patients.</p><p><strong>Graft Placement:</strong> The gum tissue is opened, and the bone graft material is placed in the deficient area. A membrane may be used to protect the graft and promote healing.</p><p><strong>Closure:</strong> The gum tissue is closed with sutures.</p><p><strong>Healing Period:</strong> This can range from a few months to allow the bone graft to integrate with the existing bone.</p><p><strong>Implant Placement:</strong> Once the bone graft has healed, dental implants can be placed.</p><h3><strong>Why Bone Grafting for Dental Implants is Essential</strong></h3><p>Bone grafting is often a prerequisite for successful dental implant placement. Implants require sufficient bone support to ensure stability and long-term success. Without adequate bone, implants can fail. Bone grafting provides the necessary foundation for implants, restoring your ability to chew, speak, and smile with confidence.</p><h3><strong>What to Expect After Bone Grafting</strong></h3><p>Following bone grafting surgery, it's important to follow your surgeon's instructions carefully to ensure proper healing:</p><p><strong>Pain Management:</strong> Pain medication will be prescribed to manage any discomfort.</p><p><strong>Diet:</strong> A soft diet is recommended during the initial healing phase.</p><p><strong>Oral Hygiene:</strong> Gentle rinsing with an antibacterial mouthwash is essential to keep the area clean.</p><p><strong>Follow-up Appointments:</strong> Regular check-ups are necessary to monitor healing and ensure the graft is integrating properly.</p><h3><strong>Real Patient Stories</strong></h3><p><em>"I lost a tooth a few years ago and was told I didn't have enough bone for an implant. AZPO Health made bone grafting so easy and affordable. Now I have a beautiful implant that feels just like a real tooth!"</em> - Sarah J.</p><p><em>"I was nervous about getting a sinus lift, but the team at AZPO Health explained everything clearly and made me feel comfortable. The procedure was painless, and the results are amazing!"</em> - Michael K.</p><h3><strong>AZPO Health: Your Partner in Dental Restoration</strong></h3><p>AZPO Health is committed to providing exceptional dental care to international patients. Here's what sets AZPO Health apart:</p><p><strong>Experienced Surgeons:</strong> Our team consists of highly skilled and experienced oral surgeons specializing in bone grafting and dental implant procedures.</p><p><strong>State-of-the-Art Technology:</strong> We use advanced dental technology to ensure accurate diagnoses and precise treatment planning.</p><p><strong>Personalized Care:</strong> We tailor each treatment plan to meet your unique needs and goals.</p><p><strong>Affordable Prices:</strong> We offer competitive prices without compromising on quality.</p><p><strong>All-Inclusive Packages:</strong> Our packages cover all aspects of your treatment, making your experience convenient and stress-free.</p><p>Don't let bone loss stand in the way of your dream smile. Contact AZPO Health today for a free consultation and personalized quote. Let us help you rebuild your jaw and regain your confidence!</p><p><br></p>
+          `
+              : `<p>Turkey has become a popular destination for medical tourism, especially for dental procedures like bone grafting. Here's why choosing AZPO Health in Turkey for your bone grafting needs is a smart decision:</p><p><strong>Affordability:</strong> Dental treatments in Turkey, including bone grafting, are significantly more affordable compared to Europe, the UK, and the US. You can save up to 70-90% on costs, even after factoring in travel and accommodation.</p><p><strong>Quality:</strong> AZPO Health boasts experienced and well-educated healthcare professionals. The clinics use high-quality materials and modern technologies, ensuring you receive world-class dental care.</p><p><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover treatment, accommodation, airport transfers, and even leisure activities, making your medical journey stress-free.</p><p><strong>Beautiful Location:</strong> Combine your treatment with a holiday! AZPO Health is located in Istanbul, Antalya, and Alanya, all popular tourist destinations with rich history and culture.</p><h3><strong>Understanding Bone Grafting</strong></h3><p>Bone grafting is a surgical procedure used to rebuild bone in the jaw when there is insufficient bone volume or density to support dental implants. This is often necessary due to:</p><p><strong>Tooth Loss:</strong> Prolonged tooth loss can lead to bone resorption (breakdown) in the jaw.</p><p><strong>Periodontal Disease:</strong> Gum disease can damage the bone and tissues supporting the teeth.</p><p><strong>Trauma:</strong> Injuries to the face can cause bone loss.</p><p><strong>Congenital Defects:</strong> Some individuals are born with insufficient bone in certain areas of the jaw.</p><h4><strong>Types of Bone Grafting Procedures</strong></h4><p>Several bone grafting techniques are available, depending on the location and extent of bone loss:</p><p><strong>Socket Preservation:</strong> This procedure is performed immediately after tooth extraction to prevent bone loss in the socket. The socket is filled with a bone graft material, and a protective membrane is placed over it.</p><p><strong>Ridge Augmentation:</strong> This technique is used to increase the width and height of the alveolar ridge (the bony ridge that supports the teeth). It is often required when bone loss has resulted in a narrow or thin ridge.</p><p><strong>Sinus Lift:</strong> This procedure is performed in the upper jaw when there is not enough bone height to place dental implants in the posterior (back) region. The sinus membrane is lifted, and bone graft material is placed to increase the bone volume.</p><p><strong>Block Bone Graft:</strong> This involves taking a block of bone from another area of the body (usually the jaw or hip) and transplanting it to the deficient area in the jaw. This is typically used for larger defects.</p><h4><strong>Bone Graft Materials</strong></h4><p>Various types of bone graft materials can be used:</p><p><strong>Autograft:</strong> Bone taken from the patient's own body. This is considered the gold standard as it has the highest success rate.</p><p><strong>Allograft:</strong> Bone taken from a human donor. It is thoroughly screened and sterilized to ensure safety.</p><p><strong>Xenograft:</strong> Bone taken from an animal source (usually bovine). It is processed to remove organic material and ensure biocompatibility.</p><p><strong>Alloplast:</strong> Synthetic bone graft materials made of calcium phosphate ceramics or other biocompatible materials.</p><h3><strong>The Bone Grafting Procedure</strong></h3><p>Here's what you can expect during your bone grafting journey with AZPO Health:</p><p><strong>Initial Consultation:</strong> A thorough examination, including X-rays or CT scans, to assess your bone volume and determine the best treatment plan.</p><p><strong>Treatment Planning:</strong> A detailed discussion of the procedure, including the type of bone graft material, the surgical technique, and the expected outcomes.</p><p><strong>Anesthesia:</strong> Local anesthesia is typically used, but sedation or general anesthesia may be available for anxious patients.</p><p><strong>Graft Placement:</strong> The gum tissue is opened, and the bone graft material is placed in the deficient area. A membrane may be used to protect the graft and promote healing.</p><p><strong>Closure:</strong> The gum tissue is closed with sutures.</p><p><strong>Healing Period:</strong> This can range from a few months to allow the bone graft to integrate with the existing bone.</p><p><strong>Implant Placement:</strong> Once the bone graft has healed, dental implants can be placed.</p><h3><strong>Why Bone Grafting for Dental Implants is Essential</strong></h3><p>Bone grafting is often a prerequisite for successful dental implant placement. Implants require sufficient bone support to ensure stability and long-term success. Without adequate bone, implants can fail. Bone grafting provides the necessary foundation for implants, restoring your ability to chew, speak, and smile with confidence.</p><h3><strong>What to Expect After Bone Grafting</strong></h3><p>Following bone grafting surgery, it's important to follow your surgeon's instructions carefully to ensure proper healing:</p><p><strong>Pain Management:</strong> Pain medication will be prescribed to manage any discomfort.</p><p><strong>Diet:</strong> A soft diet is recommended during the initial healing phase.</p><p><strong>Oral Hygiene:</strong> Gentle rinsing with an antibacterial mouthwash is essential to keep the area clean.</p><p><strong>Follow-up Appointments:</strong> Regular check-ups are necessary to monitor healing and ensure the graft is integrating properly.</p><h3><strong>Real Patient Stories</strong></h3><p><em>"I lost a tooth a few years ago and was told I didn't have enough bone for an implant. AZPO Health made bone grafting so easy and affordable. Now I have a beautiful implant that feels just like a real tooth!"</em> - Sarah J.</p><p><em>"I was nervous about getting a sinus lift, but the team at AZPO Health explained everything clearly and made me feel comfortable. The procedure was painless, and the results are amazing!"</em> - Michael K.</p><h3><strong>AZPO Health: Your Partner in Dental Restoration</strong></h3><p>AZPO Health is committed to providing exceptional dental care to international patients. Here's what sets AZPO Health apart:</p><p><strong>Experienced Surgeons:</strong> Our team consists of highly skilled and experienced oral surgeons specializing in bone grafting and dental implant procedures.</p><p><strong>State-of-the-Art Technology:</strong> We use advanced dental technology to ensure accurate diagnoses and precise treatment planning.</p><p><strong>Personalized Care:</strong> We tailor each treatment plan to meet your unique needs and goals.</p><p><strong>Affordable Prices:</strong> We offer competitive prices without compromising on quality.</p><p><strong>All-Inclusive Packages:</strong> Our packages cover all aspects of your treatment, making your experience convenient and stress-free.</p><p>Don't let bone loss stand in the way of your dream smile. Contact AZPO Health today for a free consultation and personalized quote. Let us help you rebuild your jaw and regain your confidence!</p><p><br></p>`,
+        },
+        imgCover: subNestedKey === "bone-grafting" ? bonegrafting : null,
+        subNestedKey: "bone-grafting",
       },
     // bread
     {
