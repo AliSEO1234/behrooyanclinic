@@ -8,8 +8,8 @@ const OurBranches = ({locale} : BranchComType) => {
   const photoList = [p1, p2, p3, p4];
   return (
     <>
-      <div className="mb-10 s1280:mb-20">
-        <p className="text-center font-medium s1280:text-[20px] s1280:leading-[36px] text-[#474744] s1280:px-20 s1512:px-40">
+      <div className="mb-10 s1280:mb-20 flex-cen">
+        <p className="font-medium s1280:text-[20px] s1280:leading-[36px] text-[#474744] s1280:w-[802px] s1512:w-[951px]">
           {
             locale === "ru" ? "Компания Azpo Health — новое направление бренда Azpo, лицензированное Министерством здравоохранения Турции. Благодаря нашим партнёрским связям пациенты могут выбрать лечение в любом городе страны, получая доступ к лучшим клиникам и специалистам, соответствующим их индивидуальным потребностям." : "With a global network of trusted partners, Azpo Health ensures that patients from all over the world receive top-quality medical services. Thanks to our wide-reaching partnerships, patients can choose to be treated in any city across Turkey, accessing the best hospitals and specialists suited to their needs. "
           }

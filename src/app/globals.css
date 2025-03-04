@@ -10,7 +10,7 @@ html,
 body {
   overflow-x: hidden;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 .image-overlay {
@@ -18,63 +18,63 @@ html{
   -webkit-mask-image: none !important;
 }
 @layer components {
-  .shadow-pop{
+  .shadow-pop {
     box-shadow: 0px 4px 4px 0px #00000040;
   }
   /* videos */
   @keyframes open-animation-video {
-    0%{
-      @apply h-0
+    0% {
+      @apply h-0;
     }
-    100%{
-      @apply h-[120%]
+    100% {
+      @apply h-[120%];
     }
   }
-  .open-animate-video{
+  .open-animate-video {
     animation: open-animation-video 0.3s forwards;
-    @apply h-[120%] w-[2px]
+    @apply h-[120%] w-[2px];
   }
   @keyframes close-animation-video {
-    0%{
-      @apply h-[120%]
+    0% {
+      @apply h-[120%];
     }
-    100%{
-      @apply h-0
+    100% {
+      @apply h-0;
     }
   }
-  .close-animate-video{
+  .close-animate-video {
     animation: close-animation-video 0.3s forwards;
-    @apply h-0 w-[2px]
+    @apply h-0 w-[2px];
   }
   /* .animate-popup-form */
   @keyframes animate-popup {
-    0%{
-      @apply -right-full
+    0% {
+      @apply -right-full;
     }
-    100%{
-      @apply right-6
+    100% {
+      @apply right-6;
     }
   }
-  .animate-popup-form{
+  .animate-popup-form {
     animation: animate-popup 3s forwards;
-    @apply hidden s1280:block fixed s1280:bottom-28 -right-full
+    @apply hidden s1280:block fixed s1280:bottom-28 -right-full;
   }
-  .popUpform label{
-    @apply p-1 font-medium text-[14px] s1728:text-[16px]  text-[#474744]
+  .popUpform label {
+    @apply p-1 font-medium text-[14px] s1728:text-[16px]  text-[#474744];
   }
-  .popUpform input:nth-child(2){
-    @apply outline-none w-full h-[45px] s1280:w-[219px] s1512:w-[250px] s1280:h-[38px] s1728:h-[48px] s1728:w-[320px] border-[1px] border-[#9996A0] placeholder:text-[14px] rounded-[40px] px-2 text-[14px] s1280:placeholder:text-[14px] s1728:text-[16px] s1728:placeholder:text-[16px]
+  .popUpform input:nth-child(2) {
+    @apply outline-none w-full h-[45px] s1280:w-[219px] s1512:w-[250px] s1280:h-[38px] s1728:h-[48px] s1728:w-[320px] border-[1px] border-[#9996A0] placeholder:text-[14px] rounded-[40px] px-2 text-[14px] s1280:placeholder:text-[14px] s1728:text-[16px] s1728:placeholder:text-[16px];
   }
   /* navbar */
   @keyframes navbar-animate {
-    0%{
-      @apply -top-20
+    0% {
+      @apply -top-20;
     }
-    100%{
-      @apply top-0
+    100% {
+      @apply top-0;
     }
   }
-  .animateScroll{
+  .animateScroll {
     animation: navbar-animate 1s forwards;
   }
   /* mask admins */
@@ -390,13 +390,15 @@ html{
 }
 /* fillscroll border */
 .border__style--layout-first,
+.border__style--layout-third,
 .border__style--layout-five,
-.border__style--layout-third {
+.border__style--layout-seven {
   position: absolute;
   right: 0;
   top: 0;
 }
 .border__style--layout-second,
+.border__style--layout-six,
 .border__style--layout-fourth {
   position: absolute;
   left: 0;
@@ -481,7 +483,6 @@ html{
 .roadmap-arrow__order--3.active {
   animation-play-state: running;
 }
-
 
 @keyframes fill-animation-main {
   0% {

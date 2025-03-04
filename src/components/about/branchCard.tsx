@@ -18,7 +18,7 @@ const BranchCard = ({
           {title}
         </h2>
       </div>
-      <div className="bg-[#E9F1EE] rounded-[40px] py-8 px-6 flex flex-col items-center justify-start gap-y-6 s1280:gap-y-0 s1280:flex-row s1280:items-start s1280:justify-between shadow-[0px_4px_4px_#00000040]">
+      <div className="bg-[#E9F1EE] rounded-[40px] py-8 px-6 flex flex-col items-center justify-start gap-y-6 s1280:gap-y-0 s1280:gap-x-4 s1280:flex-row s1280:items-start s1280:justify-between shadow-[0px_4px_4px_#00000040]">
         <div className="s1280:w-[571px] s1512:w-[651px]">
           <div className="mb-10">
             <p className="font-medium text-[12px] s1280:text-[14px] s1512:text-[16px] text-[#474744] leading-[25px]">

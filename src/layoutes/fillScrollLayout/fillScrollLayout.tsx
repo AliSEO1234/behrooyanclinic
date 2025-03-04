@@ -6,7 +6,7 @@ const BorderLayoutAbout = ({
   title,
   children,
   order,
-  classLabel,
+  classLabel
 }: BorderStyleLayoutType) => {
   useEffect(() => {
     const path = document.querySelector<SVGPathElement>(
@@ -24,6 +24,12 @@ const BorderLayoutAbout = ({
     const path5 = document.querySelector<SVGPathElement>(
       ".border__style--layout-five path"
     );
+    const path6 = document.querySelector<SVGPathElement>(
+      ".border__style--layout-six path"
+    );
+    const path7 = document.querySelector<SVGPathElement>(
+      ".border__style--layout-seven path"
+    );
     const svg = document.querySelector<SVGElement>(
       ".border__style--layout-first"
     );
@@ -39,12 +45,20 @@ const BorderLayoutAbout = ({
     const svg5 = document.querySelector<SVGElement>(
       ".border__style--layout-five"
     );
+    const svg6 = document.querySelector<SVGElement>(
+      ".border__style--layout-six"
+    );
+    const svg7 = document.querySelector<SVGElement>(
+      ".border__style--layout-seven"
+    );
 
     const pathLength = path?.getTotalLength() ?? 0;
     const pathLength2 = path2?.getTotalLength() ?? 0;
     const pathLength3 = path3?.getTotalLength() ?? 0;
     const pathLength4 = path4?.getTotalLength() ?? 0;
     const pathLength5 = path5?.getTotalLength() ?? 0;
+    const pathLength6 = path6?.getTotalLength() ?? 0;
+    const pathLength7 = path7?.getTotalLength() ?? 0;
 
     const drawingSpeed1 = 4.7;
 
@@ -95,6 +109,22 @@ const BorderLayoutAbout = ({
       if (svg5) {
         svg5.style.strokeDasharray = `${pathLength5}`;
         svg5.style.strokeDashoffset = `${dashoffset5}`;
+      }
+      // six one
+      const drawingSpeed6 = -7.5;
+      const drawPercentage6 = scrollPercentage * drawingSpeed6;
+      const dashoffset6 = pathLength6 * (1 - drawPercentage6);
+      if (svg6) {
+        svg6.style.strokeDasharray = `${pathLength6}`;
+        svg6.style.strokeDashoffset = `${dashoffset6}`;
+      }
+      // seven one
+      const drawingSpeed7 = -7.5;
+      const drawPercentage7 = scrollPercentage * drawingSpeed7;
+      const dashoffset7 = pathLength7 * (1 - drawPercentage7);
+      if (svg7) {
+        svg7.style.strokeDasharray = `${pathLength7}`;
+        svg7.style.strokeDashoffset = `${dashoffset7}`;
       }
     };
 
@@ -393,7 +423,6 @@ const BorderLayoutAbout = ({
         </>
       );
     }
-
     if (order === "third") {
       return (
         <>
@@ -594,7 +623,6 @@ const BorderLayoutAbout = ({
         </>
       );
     }
-
     if (order === "fourth") {
       return (
         <>
@@ -738,155 +766,97 @@ const BorderLayoutAbout = ({
       );
     }
     // about
-
     if (order === "five") {
       return (
         <>
           {viewportWidth >= 1920 && (
-            <svg
-              width="617"
-              height="765"
-              viewBox="0 0 617 765"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="44.998" cy="5.71875" r="5" fill="#2E5A90" />
-              <path
-                d="M45.4019 5.71875H585.843C602.411 5.71875 615.843 19.1502 615.843 35.7188V733.797C615.843 750.366 602.411 763.797 585.843 763.797H0.708984"
-                stroke="#2E5A90"
-              />
+            <svg className="border__style--layout-five z-[2]" width="617" height="765" viewBox="0 0 617 765" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="44.998" cy="5.71875" r="5" fill="#2E5A90"/>
+            <path d="M45.4019 5.71875H585.843C602.411 5.71875 615.843 19.1502 615.843 35.7188V733.797C615.843 750.366 602.411 763.797 585.843 763.797H0.708984" stroke="#2E5A90"/>
             </svg>
+            
           )}
           {viewportWidth >= 1728 && viewportWidth < 1920 && (
-            <svg
-              width="531"
-              height="764"
-              viewBox="0 0 531 764"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="44.8262" cy="5.21875" r="5" fill="#2E5A90" />
-              <path
-                d="M45.6235 5.21875H499.774C516.343 5.21875 529.774 18.6502 529.774 35.2188V733.297C529.774 749.866 516.343 763.297 499.774 763.297H0.536998"
-                stroke="#2E5A90"
-              />
+            <svg className="border__style--layout-five z-[2]" width="531" height="764" viewBox="0 0 531 764" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="44.8262" cy="5.21875" r="5" fill="#2E5A90"/>
+            <path d="M45.6235 5.21875H499.774C516.343 5.21875 529.774 18.6502 529.774 35.2188V733.297C529.774 749.866 516.343 763.297 499.774 763.297H0.536998" stroke="#2E5A90"/>
             </svg>
+            
           )}
-          {/* {viewportWidth >= 1600 && viewportWidth < 1728 && (
-            <svg
-              width="856"
-              height="881"
-              viewBox="0 0 856 881"
-              fill="none"
-              className="border__style--layout-fourth z-[2]"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M855.739 874.347L845.739 868.573V880.12L855.739 874.347ZM562.146 20.127H21.5781V22.127H562.146V20.127ZM0.578125 41.127V854.347H2.57812V41.127H0.578125ZM21.5781 875.347H846.739V873.347H21.5781V875.347ZM0.578125 854.347C0.578125 865.945 9.98014 875.347 21.5781 875.347V873.347C11.0847 873.347 2.57812 864.84 2.57812 854.347H0.578125ZM21.5781 20.127C9.98012 20.127 0.578125 29.529 0.578125 41.127H2.57812C2.57812 30.6335 11.0847 22.127 21.5781 22.127V20.127Z"
-                fill="#0CA5A5"
-              />
-              <g filter="url(#filter0_d_1021_16467)">
-                <circle
-                  cx="564.154"
-                  cy="21.127"
-                  r="16.0371"
-                  fill="#B7EACC"
-                  fillOpacity="0.4"
-                  shapeRendering="crispEdges"
-                />
-              </g>
-              <circle
-                cx="564.157"
-                cy="21.1269"
-                r="6.92764"
-                fill="url(#paint0_linear_1021_16467)"
-              />
-              <defs>
-                <filter
-                  id="filter0_d_1021_16467"
-                  x="539.117"
-                  y="0.0898438"
-                  width="50.0742"
-                  height="50.0742"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="dilate"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow_1021_16467"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="4" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_1021_16467"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_1021_16467"
-                    result="shape"
-                  />
-                </filter>
-                <linearGradient
-                  id="paint0_linear_1021_16467"
-                  x1="568.25"
-                  y1="16.1791"
-                  x2="559.069"
-                  y2="28.0545"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#82DFB5" />
-                  <stop offset="0.464" stopColor="#00979A" />
-                </linearGradient>
-              </defs>
-            </svg>
-          )} */}
           {viewportWidth >= 1512 && viewportWidth < 1728 && (
-            <svg
-              width="517"
-              height="764"
-              viewBox="0 0 517 764"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="44.5479" cy="5.22266" r="5" fill="#2E5A90" />
-              <path
-                d="M44.2129 5.22266H486.205C502.774 5.22266 516.205 18.6541 516.205 35.2227V733.301C516.205 749.87 502.774 763.301 486.205 763.301H0.25868"
-                stroke="#2E5A90"
-              />
+            <svg className="border__style--layout-five z-[2]" width="517" height="764" viewBox="0 0 517 764" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="44.5479" cy="5.22266" r="5" fill="#2E5A90"/>
+            <path d="M44.2129 5.22266H486.205C502.774 5.22266 516.205 18.6541 516.205 35.2227V733.301C516.205 749.87 502.774 763.301 486.205 763.301H0.25868" stroke="#2E5A90"/>
             </svg>
           )}
           {viewportWidth >= 1280 && viewportWidth < 1512 && (
-            <svg
-              width="395"
-              height="661"
-              viewBox="0 0 395 661"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="53.8662" cy="5.23047" r="5" fill="#2E5A90" />
-              <path
-                d="M52.5552 5.23047H363.662C380.23 5.23047 393.662 18.6619 393.662 35.2305V629.605C393.662 646.173 380.23 659.604 363.662 659.604H0.829102"
-                stroke="#2E5A90"
-              />
+            <svg className="border__style--layout-five z-[2]" width="395" height="661" viewBox="0 0 395 661" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="53.8662" cy="5.23047" r="5" fill="#2E5A90"/>
+            <path d="M52.5552 5.23047H363.662C380.23 5.23047 393.662 18.6619 393.662 35.2305V629.605C393.662 646.173 380.23 659.604 363.662 659.604H0.829102" stroke="#2E5A90"/>
             </svg>
           )}
+        </>
+      );
+    }
+    if (order === "six") {
+      return (
+        <>
+          {viewportWidth >= 1920 && (
+            <svg className="border__style--layout-six z-[2]" width="621" height="542" viewBox="0 0 621 542" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="615.828" cy="5.0625" r="5" fill="#2E5A90"/>
+            <path d="M610.825 5.0625H30.9454C14.3768 5.0625 0.945312 18.494 0.945312 35.0625V511.023C0.945312 527.592 14.3768 541.023 30.9453 541.023H610.825" stroke="#2E5A90"/>
+            </svg>
+          )}
+          {viewportWidth >= 1728 && viewportWidth < 1920 && (
+            <svg className="border__style--layout-six z-[2]" width="536" height="543" viewBox="0 0 536 543" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="530.07" cy="5.875" r="5" fill="#2E5A90"/>
+            <path d="M525.068 5.875H31.085C14.5164 5.875 1.08496 19.3065 1.08496 35.875V511.835C1.08496 528.404 14.5164 541.835 31.085 541.835H525.068" stroke="#2E5A90"/>
+            </svg>   
+          )}
+          {viewportWidth >= 1512 && viewportWidth < 1728 && (
+            <svg className="border__style--layout-six z-[2]" width="436" height="489" viewBox="0 0 436 489" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="430.951" cy="5.89844" r="5" fill="#2E5A90"/>
+            <path d="M425.949 5.89844H30.5479C13.9793 5.89844 0.547852 19.3299 0.547852 35.8984V457.952C0.547852 474.521 13.9793 487.952 30.5479 487.952H425.949" stroke="#2E5A90"/>
+            </svg>
+          )}
+          {viewportWidth >= 1280 && viewportWidth < 1512 && (
+            <svg className="border__style--layout-six z-[2]" width="400" height="440" viewBox="0 0 400 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="394.597" cy="5.25391" r="5" fill="#2E5A90"/>
+            <path d="M394.681 5.25391H30.6494C14.0809 5.25391 0.649414 18.6854 0.649414 35.2539V409.072C0.649414 425.64 14.0809 439.072 30.6494 439.072H394.681" stroke="#2E5A90"/>
+            </svg>
+          )}
+        </>
+      );
+    }
+    if (order === "seven") {
+      return (
+        <>
+          {viewportWidth >= 1920 && (
+            <svg className="border__style--layout-seven z-[2]" width="662" height="721" viewBox="0 0 662 721" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5.94531" cy="5.49219" r="5" fill="#2E5A90"/>
+            <path d="M5.49609 5.49219H631.473C648.041 5.49219 661.473 18.9236 661.473 35.4922V690.325C661.473 706.893 648.041 720.325 631.473 720.325H46.3388" stroke="#2E5A90"/>
+            </svg>
+            
+          )}
+          {viewportWidth >= 1728 && viewportWidth < 1920 && (
+            <svg className="border__style--layout-seven z-[2]" width="576" height="722" viewBox="0 0 576 722" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5.08496" cy="5.96484" r="5" fill="#2E5A90"/>
+            <path d="M5.7793 5.96484H544.716C561.284 5.96484 574.716 19.3963 574.716 35.9648V690.798C574.716 707.366 561.284 720.798 544.716 720.798H41.5479" stroke="#2E5A90"/>
+            </svg> 
+          )}
+          {viewportWidth >= 1512 && viewportWidth < 1728 && (
+            <svg className="border__style--layout-seven z-[2]" width="563" height="721" viewBox="0 0 563 721" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5.83008" cy="5.44141" r="5" fill="#2E5A90"/>
+            <path d="M6.00293 5.44141H532.169C548.738 5.44141 562.169 18.8729 562.169 35.4414V690.274C562.169 706.843 548.738 720.274 532.169 720.274H41.6845" stroke="#2E5A90"/>
+            </svg>  
+          )}
+          {viewportWidth >= 1280 && viewportWidth < 1512 && (
+            <svg className="border__style--layout-seven z-[2]" width="426" height="586" viewBox="0 0 426 586" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5.22754" cy="5.32422" r="5" fill="#2E5A90"/>
+            <path d="M10.2276 5.32422H395.103C411.671 5.32422 425.103 18.7557 425.103 35.3242V554.525C425.103 571.094 411.671 584.525 395.103 584.525H29.2114" stroke="#2E5A90"/>
+            </svg>
+            
+          )} 
         </>
       );
     }
@@ -894,7 +864,7 @@ const BorderLayoutAbout = ({
   }
 
   return (
-    <div className={`${className} round40 s1280:relative`}>
+    <div className={`${className ? className : ""} round40 s1280:relative`}>
       <div
         className={`${
           classLabel ? classLabel : "flex-cen"

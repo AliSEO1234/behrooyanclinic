@@ -30,11 +30,6 @@ const Page = async ({params}:AboutPageType) => {
               locale === "ru" ? "О компании Azpo" : "About Azpo"
             }
           </h1>
-          {/* <p className="font-medium text-[#474744]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry
-          </p> */}
         </div>
         {/* tab */}
         <div>

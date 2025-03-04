@@ -89,8 +89,8 @@ const OurTeam = ({locale} : OurTeamComType) => {
   ];
   return (
     <>
-      <div className="mb-10 s1280:mb-20">
-        <p className="text-center font-medium s1280:text-[20px] s1280:leading-[36px] text-[#474744] s1280:px-20 s1512:px-40">
+      <div className="mb-10 s1280:mb-20 flex-cen">
+        <p className="font-medium s1280:text-[20px] s1280:leading-[36px] text-[#474744] s1280:w-[802px] s1512:w-[951px]">
           {
             locale === "ru" ? "Опытная команда врачей, медицинских работников и координаторов будет сопровождать вас на каждом этапе, гарантируя комфорт, уверенность и безупречную организацию. Мы предоставляем всестороннюю языковую поддержку, бесплатные онлайн-консультации и круглосуточную помощь — начиная с первого звонка и заканчивая реабилитацией." : "Our dedicated team of experienced doctors, medical professionals, and expert patient coordinators is always by your side, guiding you through every step of the process to ensure a seamless and stress-free experience.With a commitment to reliability and a customer-focused approach, Azpo Group supports patients every step of the way, making their health journey smooth, safe, and well-coordinated."
           }
