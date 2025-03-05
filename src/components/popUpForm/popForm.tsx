@@ -11,7 +11,6 @@ import { options } from "@/staticData/optionsForm";
 const PopForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
   const { setPopUpForm , popUpForm } = useAppContext();
-
   return (
     <form
       onSubmit={(e)=>e.preventDefault()}

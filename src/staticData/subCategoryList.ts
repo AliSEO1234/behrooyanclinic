@@ -1,16 +1,4 @@
-import bf1 from "@/assets/images/subTreatment/BF/Hair story eng 17.png";
-import bf2 from "@/assets/images/subTreatment/BF/Hair story eng 21.png";
-import bf3 from "@/assets/images/subTreatment/BF/Hair story eng 22.png";
-import bf4 from "@/assets/images/subTreatment/BF/Hair story eng 23.png";
-import bf5 from "@/assets/images/subTreatment/BF/Hair story eng 25.png";
-import bf6 from "@/assets/images/subTreatment/BF/Hair story eng 26.png";
-import bf7 from "@/assets/images/subTreatment/BF/Hair story eng 27.png";
-import bf8 from "@/assets/images/subTreatment/BF/Hair story eng 28.png";
-import bf9 from "@/assets/images/subTreatment/BF/Hair story eng 30.png";
-import bf10 from "@/assets/images/subTreatment/BF/Hair story eng 31.png";
-import bf11 from "@/assets/images/subTreatment/BF/Hair story eng 32.png";
-import bf12 from "@/assets/images/subTreatment/BF/Hair story eng 33.png";
-import bf13 from "@/assets/images/subTreatment/BF/Hair story eng 34.png";
+
 import tdAes from "@/assets/images/treatment/3dAesthetics.png";
 import { pathsCategory, pathsSubCategory } from "./urlAllPath";
 import { allSubCategory, allSubNestedCategory } from "./allSubCategory";
@@ -57,6 +45,8 @@ import clearaligners from "@/assets/images/subCategory/Clear Aligners.jpg"
 import gumgrafting from "@/assets/images/subnested/Gum Grafting.jpg"
 import bonegrafting from "@/assets/images/subnested/Bone Grafting.jpg"
 import lasergumtreatments from "@/assets/images/subCategory/laser gum.jpg"
+import { bfPublic } from "./BFs/publicBFs";
+import { rainoplasty } from "./BFs/rhinoplastyNoseReshapingBFs";
 export const categoryDataHandler = (key: string, locale: string) => {
   const findPathCategory = pathsCategory.find((path) => path === key);
   const findSubCategories = allSubCategory.filter(
@@ -876,21 +866,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -1000,21 +976,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs:bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -1118,21 +1080,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -1240,21 +1188,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -1353,21 +1287,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -1467,21 +1387,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -1580,21 +1486,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -1691,21 +1583,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Labiaplasty Treatment" : "Labiaplasty Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: rainoplasty,
       contents: {
         title:
           locale === "ru"
@@ -1805,21 +1683,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
         title:
           locale === "ru" ? "Labiaplasty Treatment" : "Labiaplasty Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -1914,21 +1778,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
         title:
           locale === "ru" ? "Labiaplasty Treatment" : "Labiaplasty Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -2021,21 +1871,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
             ? "Double chin liposuction Treatment"
             : "Double chin liposuction Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -2123,21 +1959,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
       subCategoryContent: {
         title: locale === "ru" ? "Otoplasty Treatment" : "Otoplasty Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -2229,21 +2051,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
         title:
           locale === "ru" ? "Thighplasty Treatment" : "Thighplasty Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -2326,21 +2134,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
       subCategoryContent: {
         title: locale === "ru" ? "Brow Lift Treatment" : "Brow Lift Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -2427,21 +2221,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -2532,21 +2312,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -2635,21 +2401,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -2739,21 +2491,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -2839,21 +2577,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -2941,21 +2665,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -3042,21 +2752,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -3145,21 +2841,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -3250,21 +2932,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -3359,21 +3027,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
         //   title:
         //     locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
         // },
-        bfs: [
-          bf1,
-          bf2,
-          bf3,
-          bf4,
-          bf5,
-          bf6,
-          bf7,
-          bf8,
-          bf9,
-          bf10,
-          bf11,
-          bf12,
-          bf13,
-        ],
+        bfs: bfPublic,
         contents: {
           title:
             locale === "ru"
@@ -3464,21 +3118,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
           title:
             locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
         },
-        bfs: [
-          bf1,
-          bf2,
-          bf3,
-          bf4,
-          bf5,
-          bf6,
-          bf7,
-          bf8,
-          bf9,
-          bf10,
-          bf11,
-          bf12,
-          bf13,
-        ],
+        bfs: bfPublic,
         contents: {
           title:
             locale === "ru"
@@ -3569,21 +3209,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
           title:
             locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
         },
-        bfs: [
-          bf1,
-          bf2,
-          bf3,
-          bf4,
-          bf5,
-          bf6,
-          bf7,
-          bf8,
-          bf9,
-          bf10,
-          bf11,
-          bf12,
-          bf13,
-        ],
+        bfs: bfPublic,
         contents: {
           title:
             locale === "ru"
@@ -3674,21 +3300,7 @@ Are heavy, drooping eyelids making you look older than you feel? Are you noticin
           title:
             locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
         },
-        bfs: [
-          bf1,
-          bf2,
-          bf3,
-          bf4,
-          bf5,
-          bf6,
-          bf7,
-          bf8,
-          bf9,
-          bf10,
-          bf11,
-          bf12,
-          bf13,
-        ],
+        bfs: bfPublic,
         contents: {
           title:
             locale === "ru"
@@ -3840,21 +3452,7 @@ AZPO Health - ведущая компания медицинского тури�
               ? "Root canal treatment is a highly effective procedure for saving a damaged or infected tooth, alleviating pain, and restoring normal function. With modern techniques, root canal therapy is relatively painless and quick, with most patients returning to normal activities the same day. By removing infection and preserving the natural tooth, root canal treatment helps maintain long-term oral health and prevent further complications. With proper care, treated teeth can last a lifetime, providing a lasting solution to tooth damage and infection."
               : "Root canal treatment is a highly effective procedure for saving a damaged or infected tooth, alleviating pain, and restoring normal function. With modern techniques, root canal therapy is relatively painless and quick, with most patients returning to normal activities the same day. By removing infection and preserving the natural tooth, root canal treatment helps maintain long-term oral health and prevent further complications. With proper care, treated teeth can last a lifetime, providing a lasting solution to tooth damage and infection.",
         },
-        bfs: [
-          bf1,
-          bf2,
-          bf3,
-          bf4,
-          bf5,
-          bf6,
-          bf7,
-          bf8,
-          bf9,
-          bf10,
-          bf11,
-          bf12,
-          bf13,
-        ],
+        bfs: bfPublic,
         contents: {
           title:
             locale === "ru"
@@ -3942,21 +3540,7 @@ AZPO Health - ведущая компания медицинского тури�
               ? "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile. Although it requires an investment of time and money, the benefits of a Hollywood Smile, including improved confidence and aesthetic appeal, make it a worthwhile option for many. Proper care and maintenance are key to ensuring your new smile lasts for many years."
               : "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile. Although it requires an investment of time and money, the benefits of a Hollywood Smile, including improved confidence and aesthetic appeal, make it a worthwhile option for many. Proper care and maintenance are key to ensuring your new smile lasts for many years.",
         },
-        bfs: [
-          bf1,
-          bf2,
-          bf3,
-          bf4,
-          bf5,
-          bf6,
-          bf7,
-          bf8,
-          bf9,
-          bf10,
-          bf11,
-          bf12,
-          bf13,
-        ],
+        bfs: bfPublic,
         contents: {
           title:
             locale === "ru"
@@ -4063,21 +3647,7 @@ AZPO Health - ведущая компания медицинского тури�
               ? "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.If you’re considering clear aligners, consult an orthodontist to determine if they’re the right treatment option for your specific needs."
               : "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.If you’re considering clear aligners, consult an orthodontist to determine if they’re the right treatment option for your specific needs.",
         },
-        bfs: [
-          bf1,
-          bf2,
-          bf3,
-          bf4,
-          bf5,
-          bf6,
-          bf7,
-          bf8,
-          bf9,
-          bf10,
-          bf11,
-          bf12,
-          bf13,
-        ],
+        bfs: bfPublic,
         contents: {
           title:
             locale === "ru"
@@ -4172,21 +3742,7 @@ AZPO Health - ведущая компания медицинского тури�
               ? "Gum grafting is an effective method for restoring gum health and aesthetics, especially in cases of gum recession. The procedure helps reduce tooth sensitivity, improve the appearance of the smile, and prevent more serious dental issues. Following the dentist’s recommendations and maintaining oral health during the recovery period ensures the best results and long-term effectiveness."
               : "Gum grafting is an effective method for restoring gum health and aesthetics, especially in cases of gum recession. The procedure helps reduce tooth sensitivity, improve the appearance of the smile, and prevent more serious dental issues. Following the dentist’s recommendations and maintaining oral health during the recovery period ensures the best results and long-term effectiveness.",
         },
-        bfs: [
-          bf1,
-          bf2,
-          bf3,
-          bf4,
-          bf5,
-          bf6,
-          bf7,
-          bf8,
-          bf9,
-          bf10,
-          bf11,
-          bf12,
-          bf13,
-        ],
+        bfs: bfPublic,
         contents: {
           title:
             locale === "ru"
@@ -4269,21 +3825,7 @@ AZPO Health - ведущая компания медицинского тури�
               ? "Laser gum treatments offer many advantages over traditional methods for treating gum disease. The procedure is minimally invasive, with quick recovery and high precision in targeting affected tissues. Laser therapy helps eliminate inflammation, accelerates healing, and minimizes pain, making it an ideal choice for those looking for an effective and non-traumatic solution for gum issues."
               : "Laser gum treatments offer many advantages over traditional methods for treating gum disease. The procedure is minimally invasive, with quick recovery and high precision in targeting affected tissues. Laser therapy helps eliminate inflammation, accelerates healing, and minimizes pain, making it an ideal choice for those looking for an effective and non-traumatic solution for gum issues.",
         },
-        bfs: [
-          bf1,
-          bf2,
-          bf3,
-          bf4,
-          bf5,
-          bf6,
-          bf7,
-          bf8,
-          bf9,
-          bf10,
-          bf11,
-          bf12,
-          bf13,
-        ],
+        bfs: bfPublic,
         contents: {
           title:
             locale === "ru"
@@ -4371,21 +3913,7 @@ AZPO Health - ведущая компания медицинского тури�
               ? "Bone grafting is a crucial procedure for individuals requiring dental implants or experiencing bone loss in the jaw. By reinforcing the skeletal structure, it enhances both oral functionality and aesthetics while significantly increasing the success rate of dental restorations.With proper post-operative care and professional guidance, patients can achieve optimal healing and long-term benefits from the procedure. Whether due to tooth loss, trauma, or genetic factors, bone grafting offers a reliable solution for restoring oral health and improving overall quality of life."
               : "Bone grafting is a crucial procedure for individuals requiring dental implants or experiencing bone loss in the jaw. By reinforcing the skeletal structure, it enhances both oral functionality and aesthetics while significantly increasing the success rate of dental restorations.With proper post-operative care and professional guidance, patients can achieve optimal healing and long-term benefits from the procedure. Whether due to tooth loss, trauma, or genetic factors, bone grafting offers a reliable solution for restoring oral health and improving overall quality of life.",
         },
-        bfs: [
-          bf1,
-          bf2,
-          bf3,
-          bf4,
-          bf5,
-          bf6,
-          bf7,
-          bf8,
-          bf9,
-          bf10,
-          bf11,
-          bf12,
-          bf13,
-        ],
+        bfs: bfPublic,
         contents: {
           title:
             locale === "ru"
@@ -4473,21 +4001,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -4575,21 +4089,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: [
-        bf1,
-        bf2,
-        bf3,
-        bf4,
-        bf5,
-        bf6,
-        bf7,
-        bf8,
-        bf9,
-        bf10,
-        bf11,
-        bf12,
-        bf13,
-      ],
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
