@@ -26,7 +26,7 @@ const PlatformWorkForm = () => {
         <label htmlFor="">Choose your service type</label>
         <ComboBox
           trigger={selectedOption ? selectedOption.label : "Treatment"}
-          className="w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1"
+          className="flex-bet w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1"
           options={options}
           onChange={setSelectedOption}
           selectedValue={selectedOption}

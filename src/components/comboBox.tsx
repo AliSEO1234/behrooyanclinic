@@ -30,7 +30,7 @@ const ComboBox = ({ options, onChange, trigger, className , containertStyle }: C
   return (
     <div ref={comboRef} className="relative z-[3]">
       <div
-        className={` ${className ? className : ""} flex-bet cursor-pointer`}
+        className={` ${className ? className : ""} cursor-pointer`}
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="line-clamp-1">{trigger}</span>
