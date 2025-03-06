@@ -20,8 +20,8 @@ const Page = async ({ params }: PropsPageType) => {
   const fetchData = subCategoryHandler(category, treat, locale);
   return (
     <div className="bg-[#FCFCFC]">
-      <div className="grid grid-cols-12 gap-y-5 s1280:gap-y-0 mt-16 s1512:mt-20 ps-[10px] s430:ps-5 pt-10 s1280:ps-[71px] s1512:ps-[79px] s1600:ps-[85px] s1728:ps-[100px] s1920:ps-[131px] rounded-b-[40px] shadow-[0px_19px_30px_-25px_#0000001C] overflow-hidden mb-10 s1280:mb-20 pb-5 s1280:pb-0">
-        <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-6 s1600:col-span-5 s1920:col-span-6 pe-[10px] s430:pe-5 z-[2] s1512:mt-10 s1600:mt-0 s1280:pb-4">
+      <div className="grid grid-cols-12 gap-y-5 s1280:gap-y-0 mt-16 s1280:mt-20 s1512:mt-20 ps-[10px] s430:ps-5 pt-10 s1280:ps-[71px] s1512:ps-[79px] s1600:ps-[85px] s1728:ps-[100px] s1920:ps-[131px] rounded-b-[40px] shadow-[0px_19px_30px_-25px_#0000001C] overflow-hidden mb-10 s1280:mb-20 pb-5 s1280:pb-0 s1280:h-[520px] s1512:h-[620px] s1728:h-[750px]">
+        <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-6 s1600:col-span-5 s1920:col-span-6 pe-[10px] s430:pe-5 z-[2] s1512:mt-10 s1600:mt-0 s1280:pb-4 flex flex-col items-start justify-center">
           <div className="mb-5">
             <h1 className="hidden s1280:block mb-4 s1512:mb-6 font-black s1280:text-[36px] s1512:text-[40px] s1728:text-[60px] text-[#00979A]">
               {fetchData?.title}
@@ -66,7 +66,7 @@ const Page = async ({ params }: PropsPageType) => {
             <ImgFetcher width={2000} height={2000} src={borderPhone} />
           </div>
           {/* desktop */}
-          <div className="hidden s1280:block absolute bottom-0 right-0 s1280:w-[40%] s1280:h-[450px] s1512:h-[550px] s1512:w-[30%] s1600:w-[40%] s1600:h-[600px] s1920:h-[650px]">
+          <div className="hidden s1280:block absolute bottom-0 right-0 s1280:w-[40%] h-full s1512:w-[30%] s1600:w-[40%]">
             <ImgFetcher width={2000} height={2000} src={borderTreat} />
           </div>
           {/* service icon */}
@@ -102,7 +102,7 @@ const Page = async ({ params }: PropsPageType) => {
               <h2 className="font-semibold text-[20px] [text-shadow:0px_1px_2px_#00000025] s1280:text-[30px] s1512:text-[36px] s1728:text-[40px] text-[#333333] shadow-treat-video mb-2">
                 {fetchData?.videoContents.title}
               </h2>
-              <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-[#474744] text-justify s1280:text-start s1280:leading-8 s1512:leading-9 s1600:leading-[50px]">
+              <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-[#474744] text-justify s1280:text-start s1280:leading-8 s1512:leading-9 s1600:leading-[50px] line-clamp-[10]">
                 {fetchData?.videoContents.desc}
               </p>
             </div>

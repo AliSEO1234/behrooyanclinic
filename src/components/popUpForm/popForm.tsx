@@ -54,11 +54,11 @@ const PopForm = () => {
         <div className="flex flex-col items-center justify-start s1280:flex-row s1280:flex-wrap s1280:items-start s1280:justify-between gap-y-3 s1280:gap-y-5 mb-5">
           <div className="w-full s1280:w-fit">
             <label className="block" htmlFor="residen">
-              Resident of
+              Name
             </label>
             <input
               className="placeholder:text-[#898989]"
-              placeholder="Resident of"
+              placeholder="Name"
               type="text"
             />
           </div>

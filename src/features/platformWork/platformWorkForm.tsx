@@ -15,12 +15,12 @@ const PlatformWorkForm = () => {
         </h3>
       </div>
       <div className="col-span-12">
-        <label htmlFor="">Email</label>
-        <input placeholder="Email" type="email" />
+        <label>Name</label>
+        <input placeholder="Name" type="Name" />
       </div>
       <div className="col-span-12">
-        <label htmlFor="">Phone Number</label>
-        <input placeholder="Number" type="email" />
+        <label htmlFor="phone-our-work">Phone Number</label>
+        <input id="phone-our-work" placeholder="Number" type="text" />
       </div>
       <div className="col-span-12">
         <label htmlFor="">Choose your service type</label>

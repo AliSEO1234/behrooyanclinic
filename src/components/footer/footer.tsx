@@ -5,9 +5,8 @@ import loc from "@/assets/images/locicon.svg";
 import glob from "@/assets/images/Globe Medical.svg";
 import phone from "@/assets/images/phonefooter.svg";
 import { MdArrowForwardIos } from "react-icons/md";
-import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { IoLogoYoutube } from "react-icons/io";
+import { IoLogoWhatsapp, IoLogoYoutube } from "react-icons/io";
 import { BsInstagram } from "react-icons/bs";
 import CertiLayout from "./certifications";
 const Footer = () => {
@@ -261,11 +260,13 @@ const Footer = () => {
 
           <div>
             <Link
-            target="_blank"
-              href="https://instagram.com/azpo_health"
+              target="_blank"
+              href="whatsapp://send?phone=905300515535"
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
-              <FaFacebookF className="s1280:size-5" />
+              <IoLogoWhatsapp className="s1280:size-5" />
+              {/* <MdOutlineWhatsapp className="s1280:size-5" /> */}
+              {/* <FaFacebookF className="s1280:size-5" /> */}
             </Link>
           </div>
           <div>
@@ -278,8 +279,8 @@ const Footer = () => {
           </div>
           <div>
             <Link
-            target="_blank"
-              href="https://www.youtube.com/@azpohealth"
+              target="_blank"
+              href="http://www.youtube.com/@azpohealth"
               className="s1280:w-[35px] s1280:h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <IoLogoYoutube className="s1280:size-5" />
@@ -288,7 +289,7 @@ const Footer = () => {
           <div>
             <Link
               target="_blank"
-              href="wa.me/905300515535"
+              href="https://instagram.com/azpo_health"
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <BsInstagram className="s1280:size-5" />

@@ -36,8 +36,8 @@ const Page = async ({ params }: PropsPageType) => {
   const fetchData = dataSubCategoryHandler(subTreat, locale);
   return (
     <div className="bg-[#FCFCFC]">
-      <div className="grid grid-cols-12 gap-y-3 s1280:gap-y-0 mt-14 s1280:mt-28 viewport-p rounded-b-[40px] shadow-[0px_19px_29px_-25px_#00000011]">
-        <div className="col-span-12 s1280:col-span-7 s1728:col-span-6">
+      <div className="grid grid-cols-12 gap-y-3 s1280:gap-y-0 mt-14 s1280:mt-20 viewport-p rounded-b-[40px] shadow-[0px_19px_29px_-25px_#00000011]">
+        <div className="col-span-12 s1280:col-span-7 s1728:col-span-6 flex flex-col items-start justify-center">
           <div>
             <h1 className="font-semibold text-[20px] s1280:text-[30px] s1512:text-[36px] s1600:text-[40px] [text-shadow:0px_1px_4px_#00000025] text-[#00979A] s1512:mb-10 s1600:mb-20 s1728:mb-14">
               {fetchData?.title}

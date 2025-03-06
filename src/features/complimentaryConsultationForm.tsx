@@ -10,8 +10,8 @@ const ComplimentaryConsultationForm = () => {
   return (
     <form className="grid grid-cols-12 gap-x-4 gap-y-2 form-platform-work">
       <div className="col-span-12 s1280:col-span-12 s1512:col-span-12">
-        <label htmlFor="">Resident of</label>
-        <input placeholder="Resident of" type="text" />
+        <label htmlFor="">Name</label>
+        <input placeholder="Name" type="text" />
       </div>
       <div className="col-span-12 s1280:col-span-12 s1512:col-span-12">
       {/* text-[#474744] */}

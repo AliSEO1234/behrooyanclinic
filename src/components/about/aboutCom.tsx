@@ -32,8 +32,12 @@ const AboutContent = ({ locale }: AboutComType) => {
           classLabel="s1280:-mt-3 flex-cen"
         >
           <VideoComponent
-            text="the steps to buy this property"
-            src="https://azpo.com/api/files/property-videos/azpo_main.mp4"
+            text="how we work !"
+            src={
+              locale === "ru"
+                ? "https://azpo.com/api/files/property-videos/site_health.mp4"
+                : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
+            }
             className="s1280:w-[959px] s1280:h-[506px] s1512:w-[1140px] s1512:h-[601px] rounded-[40px] overflow-hidden"
           />
         </FillScrollLayout>
