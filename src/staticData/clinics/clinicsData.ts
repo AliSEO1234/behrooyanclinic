@@ -20,7 +20,7 @@ import clinic18 from "@/assets/images/clinics/clinicsPhoto/18.jpg"
 export const clinicsData = [
     {
         label: "Veni Vidi Eye Hospital",
-        img : clinic1
+        img : clinic1,
     },
     {
         label: "Lazergöz Eye Hospital",
