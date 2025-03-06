@@ -18,6 +18,19 @@ html {
   -webkit-mask-image: none !important;
 }
 @layer components {
+  /* patient services */
+  .submit-btn-bg{
+    background: radial-gradient(73.79% 41.38% at 108.63% -14.74%, #00F9FF 0%, #1C5658 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  }
+  .patient-form-item {
+    @apply w-full s1280:w-[250px] s1728:w-[320px];
+  }
+  .patient-form-item label {
+    @apply font-medium text-[14px] s1728:text-[16px] text-white mb-2 inline-block;
+  }
+  .patient-form-item input {
+    @apply outline-none w-full h-[48px] s1280:h-[38px] s1512:h-[48px] rounded-[40px] font-medium s1280:text-[14px] s1280:placeholder:text-[14px] px-3 placeholder:text-[#898989] s1728:placeholder:text-[16px] s1728:text-[16px] bg-white;
+  }
   .shadow-pop {
     box-shadow: 0px 4px 4px 0px #00000040;
   }

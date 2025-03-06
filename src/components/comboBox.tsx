@@ -28,7 +28,7 @@ const ComboBox = ({ options, onChange, trigger, className , containertStyle }: C
   );
 
   return (
-    <div ref={comboRef} className="relative z-[3]">
+    <div ref={comboRef} className="relative z-[3] w-full">
       <div
         className={` ${className ? className : ""} cursor-pointer`}
         onClick={() => setIsOpen(!isOpen)}
