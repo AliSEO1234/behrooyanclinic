@@ -8,7 +8,6 @@ import { useState } from "react";
 const SidebarForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
 
-  
   return (
     <form className="grid grid-cols-12 gap-y-4 form-work">
       <div className="col-span-12">
@@ -37,9 +36,11 @@ const SidebarForm = () => {
       <div className="col-span-12 flex-cen z-[3]">
         <button className="font-bold w-full h-[48px] text-center rounded-[40px] group s1280:text-[18px]  text-white relative overflow-hidden">
           <div className="z-[2] bg-[#0CA5A5] w-full h-full absolute top-0 group-hover:-top-full left-0 text-center flex-cen anm">
-            Chat with a Health Now
+            let’s connect
           </div>
-          <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen"><LucideSendHorizontal className="size-5" /></div>
+          <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
+            <LucideSendHorizontal className="size-5" />
+          </div>
         </button>
       </div>
     </form>

@@ -1,4 +1,5 @@
 "use client";
+import { ImgType } from "@/types/about/galleryAbout";
 import { PhotoType } from "@/types/footer/dialogFooter";
 import { VideoDataType } from "@/types/videoPlayer/videoTypes";
 import {
@@ -22,6 +23,12 @@ type AppContextType = {
   setFooterImages: Dispatch<SetStateAction<PhotoType | undefined>>;
   popUpForm: boolean;
   setPopUpForm: Dispatch<SetStateAction<boolean>>;
+  aboutGallery: boolean;
+  aboutGalleryIndex: string;
+  setAboutGallery: Dispatch<SetStateAction<boolean>>;
+  setAboutGalleryIndex: Dispatch<SetStateAction<string>>;
+  setImgsAbout: Dispatch<SetStateAction<ImgType[]>>;
+  imgsAbout: ImgType[];
 };
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -34,6 +41,9 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
     undefined
   );
   const [popUpForm, setPopUpForm] = useState<boolean>(false);
+  const [aboutGallery, setAboutGallery] = useState<boolean>(false);
+  const [aboutGalleryIndex, setAboutGalleryIndex] = useState<string>("");
+  const [imgsAbout, setImgsAbout] = useState<ImgType[]>([]);
   useEffect(() => {
     setTimeout(() => {
       setPopUpForm(true);
@@ -46,6 +56,12 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
   return (
     <AppContext.Provider
       value={{
+        aboutGallery,
+        setAboutGallery,
+        aboutGalleryIndex,
+        setAboutGalleryIndex,
+        imgsAbout,
+        setImgsAbout,
         popUpForm,
         setPopUpForm,
         footerImages,

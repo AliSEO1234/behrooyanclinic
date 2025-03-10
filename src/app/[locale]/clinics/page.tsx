@@ -38,13 +38,12 @@ const Clinics = () => {
               </h1>
               <p className="text-[#474744] px-5 s1280:px-0 font-medium s1280:text-[18px] s1728:text-[20px] s1280:leading-[33px]">
                 Turkey is home to many internationally accredited hospitals,
-                including *JCI-certified* institutions. At *Azpo Health, we’re
-                all about connecting you with **the best healthcare services* by
-                working with *top hospitals and expert doctors* across Turkey.
-                We’ve partnered with some of the most trusted medical centers in
-                *Istanbul, Antalya, Izmir, Cappadocia, Samsun, and Ankara*—all
+                including <strong>JCI-certified institutions. At Azpo Health, we’re
+                all about connecting you with the best healthcare services</strong> by
+                working with <strong>top hospitals and expert doctors</strong> across Turkey.
+                We’ve partnered with some of the most trusted medical centers in <strong>Istanbul, Antalya, Izmir, Cappadocia, Samsun, and Ankara</strong>—all
                 top destinations for health tourism. Our goal? To make sure you
-                get world-class treatment with **the highest standards of care
+                get world-class treatment with the highest standards of care
                 and comfort
               </p>
             </div>

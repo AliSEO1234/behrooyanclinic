@@ -34,12 +34,14 @@ export const patientServices = [
   },
   {
     photos: [pat9, pat10],
-    label: "Accomodation",
-    desc: "How about a big, soft bed? It’s well known that the most important aspect of any trip is where you will be staying. Carefully selected accommodation, tailored to your needs and budget, will make you feel at home throughout your treatment journey. No matter which city you’re in, we will ensure both comfort and a convenient location, offering exclusive conditions for an unforgettable travel experience.Your comfort is our priority!",
+    label: "Visa Support",
+    desc: `Preparing for a medical trip involves not only treatment but often a lot of bureaucratic paperwork. Why waste time on this when you can leave the process to professionals? We will quickly and stress-free handle all visa procedures and guide you on the documents needed for your arrival in Turkey.
+    We will support you every step of the way and guarantee that everything will be processed correctly.
+    Trust us and focus on what matters most — your health. We will take care of everything else to make your journey comfortable and effortless.`,
   },
   {
     photos: [pat11, pat12],
-    label: "Visa Support",
-    desc: "Preparing for a medical trip involves not only treatment but often a lot of bureaucratic paperwork. Why waste time on this when you can leave the process to professionals? We will quickly and stress-free handle all visa procedures and guide you on the documents needed for your arrival in Turkey.We will support you every step of the way and guarantee that everything will be processed correctly.Trust us and focus on what matters most — your health. We will take care of everything else to make your journey comfortable and effortless.",
+    label: "Customized City Tours",
+    desc: "When you arrive in Turkey, we greet you with warmth and attention, as if welcoming a close friend. Our coordinators will assist you not only with medical matters but also with settling into a new environment. We understand that navigating a foreign country can raise questions or concerns, which is why we offer support with transfers, accompaniment to doctor appointments, and even provide a guide to take you to the most interesting places for relaxation and cultural exploration. Our guides speak your language and are always ready to assist, ensuring your stay is as comfortable and homely as possible.",
   },
 ];

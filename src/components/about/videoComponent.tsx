@@ -4,7 +4,6 @@ import { VideoComponentType } from "@/types/about/videoType";
 import React, { useRef, useState } from "react";
 import { FaPause } from "react-icons/fa";
 import { IoPlay } from "react-icons/io5";
-
 const VideoComponent = ({ src, className, text }: VideoComponentType) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
@@ -28,6 +27,7 @@ const VideoComponent = ({ src, className, text }: VideoComponentType) => {
         controls={false}
         src={src}
         className="w-full h-full object-cover"
+        poster="/images/covervideo.png"
         // autoPlay
         // loop
         // muted

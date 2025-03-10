@@ -4,7 +4,6 @@ import eye from "@/assets/images/treatment/eye.png";
 import bgCate from "@/assets/images/treatment/bg-category.svg";
 import ImgFetcher from "@/components/imgFetcher";
 import borderPhone from "@/assets/images/treatment/borderTreatPhone.png";
-import SearchBox from "@/components/searchBox";
 import Pagination from "@/components/pagination";
 import Sidebar from "@/layoutes/sidebar/sidebar";
 import TreatCard from "@/features/treatment/treatCard";
@@ -57,15 +56,15 @@ const Page = async ({ params }: PropsPageType) => {
         {/* service categoryies */}
         <div>
           <div>
-            <div className="mb-10 flex flex-col justify-start gap-y-2 s1280:gap-y-0 s1280:flex-row items-start s1280:justify-between s1280:mb-20">
+            <div className="mb-10 flex flex-col justify-start gap-y-2 s1280:gap-y-0 s1280:flex-row items-start s1280:justify-start s1280:mb-20">
               <div className="w-full s1280:w-fit mb-5">
                 <h2 className="[text-shadow:0px_1px_2px_#00000040] font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-[#00979A]">
                   {fetchData?.subCategoryContent.title}
                 </h2>
               </div>
-              <div className="w-full s1280:w-fit">
+              {/* <div className="w-full s1280:w-fit">
                 <SearchBox />
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-col items-center justify-start s1280:flex-row s1280:items-start s1280:justify-between gap-y-10 s1280:gap-y-0 s1280:gap-x-5 s1512:gap-x-4">
               <div className="flex items-center flex-col justify-start s1280:flex-row s1280:justify-start flex-wrap w-full gap-y-10 s1280:flex-grow s1280:gap-x-4 s1600:gap-x-[10px] s1728:gap-x-6">

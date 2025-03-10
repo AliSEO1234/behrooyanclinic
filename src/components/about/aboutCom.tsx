@@ -1,14 +1,9 @@
 import ImgFetcher from "../imgFetcher";
 import VideoComponent from "./videoComponent";
 import healthlogo from "@/assets/images/about/healthabout.svg";
-import ph1 from "@/assets/images/about/about/p1.jpeg";
-import ph2 from "@/assets/images/about/about/p2.jpg";
-import ph3 from "@/assets/images/about/about/p3.jpg";
-import ph4 from "@/assets/images/about/about/p4.jpeg";
-import ph5 from "@/assets/images/about/about/p5.jpeg";
-import ph6 from "@/assets/images/about/about/p6.jpeg";
 import { AboutComType } from "@/types/about/aboutPageType";
 import FillScrollLayout from "@/layoutes/fillScrollLayout/fillScrollLayout";
+import AboutGalleryCom from "./aboutComGallery";
 const AboutContent = ({ locale }: AboutComType) => {
   return (
     <>
@@ -68,108 +63,8 @@ const AboutContent = ({ locale }: AboutComType) => {
           classLabel="s1280:-mt-2 flex-cen"
           className="s1280:mt-7 s1280:pt-24"
         >
-          <div className="grid grid-cols-12 s1280:gap-x-4 s1280:px-10">
-            <div className="col-span-12 s1280:col-span-6 grid grid-cols-4 grid-rows-3 gap-4">
-              <div className="col-span-2 row-span-2 rounded-[20px] overflow-hidden">
-                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias odio quae, animi consectetur corrupti est harum? Iure
-                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
-                    aliquam, laudantium officia tenetur odit.
-                  </p>
-                </div> */}
-                <ImgFetcher
-                  width={2000}
-                  height={2000}
-                  src={ph4}
-                  className="object-cover"
-                />
-              </div>
-              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden">
-                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias odio quae, animi consectetur corrupti est harum? Iure
-                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
-                    aliquam, laudantium officia tenetur odit.
-                  </p>
-                </div> */}
-                <ImgFetcher
-                  width={2000}
-                  height={2000}
-                  src={ph5}
-                  className="object-cover"
-                />
-              </div>
-              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden">
-                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias odio quae, animi consectetur corrupti est harum? Iure
-                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
-                    aliquam, laudantium officia tenetur odit.
-                  </p>
-                </div> */}
-                <ImgFetcher
-                  width={2000}
-                  height={2000}
-                  src={ph6}
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            <div className="col-span-12 s1280:col-span-6 grid grid-cols-4 grid-rows-3 gap-4 -mt-32 s1280:mt-0">
-              <div className="col-span-2 row-span-2 rounded-[20px] overflow-hidden">
-                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias odio quae, animi consectetur corrupti est harum? Iure
-                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
-                    aliquam, laudantium officia tenetur odit.
-                  </p>
-                </div> */}
-                <ImgFetcher
-                  width={2000}
-                  height={2000}
-                  src={ph3}
-                  className="object-cover"
-                />
-              </div>
-              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden">
-                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias odio quae, animi consectetur corrupti est harum? Iure
-                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
-                    aliquam, laudantium officia tenetur odit.
-                  </p>
-                </div> */}
-                <ImgFetcher
-                  width={2000}
-                  height={2000}
-                  src={ph1}
-                  className="object-cover"
-                />
-              </div>
-              <div className="col-span-2 row-span-1 rounded-[20px] overflow-hidden">
-                {/* <div className="absolute top-0 left-0 w-full h-full flex bg-gradient-to-t from-[#208385] to-[#00000000]">
-                  <p className="font-medium text-white line-clamp-3 mt-auto px-2 mb-2 s1280:px-4 s1280:mb-4 text-[12px] s1280:text-[16px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Alias odio quae, animi consectetur corrupti est harum? Iure
-                    dolorem ipsam expedita nobis, odio quisquam eveniet rerum,
-                    aliquam, laudantium officia tenetur odit.
-                  </p>
-                </div> */}
-                <ImgFetcher
-                  width={2000}
-                  height={2000}
-                  src={ph2}
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
+          <AboutGalleryCom />
+          
         </FillScrollLayout>
       </div>
     </>

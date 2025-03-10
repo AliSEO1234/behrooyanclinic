@@ -17,10 +17,11 @@ const RoadmapCard = ({
         align === "right" ? "justify-end" : "justify-start"
       }`}
     >
+      {/* roadmap-card__order--${ order } */}
       <div
         className={`${
           className && className
-        } roadmap-card__order--${ order } rounded-[500px] bg-white border-x-[2px] s1280:border-x-[6px] border-[#189C9F] shadow-[-4px_6px_15.5px_2px_#0000003D] flex-bet s1280:gap-x-4 s1280:px-4 relative z-[4]`}
+        }  rounded-[500px] bg-white border-x-[2px] s1280:border-x-[6px] border-[#189C9F] shadow-[-4px_6px_15.5px_2px_#0000003D] flex-bet s1280:gap-x-4 s1280:px-4 relative z-[4]`}
       >
         {!endArrow && <RoadmapArrow order={ order } align={align} />}
 

@@ -5,7 +5,6 @@ import star from "@/assets/images/icons/star.svg";
 import point from "@/assets/images/icons/home/points.svg";
 import Link from "next/link";
 import ServiceCard from "@/features/services/serviceCard";
-import RoadmapIntersectionObserver from "@/components/scripts/roadmap-intersection-observer";
 import HelpingIntersectionObserver from "@/components/scripts/helping-intersection-observer";
 import InfoIntersectionObserver from "@/components/scripts/info-intersection-observer";
 import cell from "@/assets/images/icons/services/cells.png";
@@ -355,7 +354,7 @@ const Home = async ({
           </div>
           {/* Your Treatment Roadmap */}
           <div className="mb-10 s1280:mb-[80px]">
-            <RoadmapIntersectionObserver />
+            {/* <RoadmapIntersectionObserver /> */}
             <div className="mb-2 s1280:mb-10">
               <div className="flex-bet mb-4">
                 <hr className="border-[1px] border-[#333333] border-dashed w-[6%] s375:w-[9%] s390:w-[10%] s1280:w-[33%] s1600:w-[30%] s1728:w-[31%] s1920:w-[33%]" />
