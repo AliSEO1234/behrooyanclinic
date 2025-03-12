@@ -47,6 +47,12 @@ import gumgrafting from "@/assets/images/subnested/Gum Grafting.jpg"
 import lasergumtreatments from "@/assets/images/subCategory/laser gum.jpg"
 import oralsurgery from "@/assets/images/subCategory/Oral-Surgery.jpg"
 import bonegrafting from "@/assets/images/subnested/Bone Grafting.jpg"
+import glocama from "@/assets/images/subnested/Glaucoma.jpg"
+import intraocularImg from "@/assets/images/subnested/Intraocular.jpg"
+import eyedesis from "@/assets/images/subCategory/Eye disease.jpg"
+import surgical from "@/assets/images/subCategory/Surgical.jpg"
+import diabetic from "@/assets/images/subCategory/Diabetic.jpg"
+import corneal from "@/assets/images/subnested/Corneal Transplant.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -136,8 +142,21 @@ export const allSubCategory = [
     path: "oral-surgery",
     categoryKey: "dental-treatments",
   },
-  
-  
+  // eye
+  {
+    img: eyedesis,
+    title: "Eye disease treatments",
+    description: "Don't let eye diseases impact your life and well-being any longer. At AZPO Health in Turkey, we offer a range of advanced treatments and expert care to help you see clearly again. Discover how our specialized services can provide the vision solutions you've been searching for.",
+    path: "eye-disease-treatments",
+    categoryKey: "eye-surgery",
+  },
+  {
+    img: surgical,
+    title: "Surgical implant procedures",
+    description: "Are you tired of struggling with vision problems, from cataracts and refractive errors to the limitations of glasses and contact lenses? Discover how advanced eye surgical & implant procedures in Turkey offered through AZPO Health can provide you with a renewed sense of sight and a brighter future.",
+    path: "surgical-implant-procedures",
+    categoryKey: "eye-surgery",
+  },
 ];
 export const allSubNestedCategory = [
   // hair-transplantation
@@ -446,5 +465,45 @@ export const allSubNestedCategory = [
     path: "bone-grafting",
     subCategoryKey: "oral-surgery",
   },
+  // eye
+  // desis
+  {
+    img: diabetic,
+    title: "Diabetic Retinopathy Treatment",
+    description:
+      "Are blurry vision, cataracts, or reliance on glasses and contacts limiting your daily life? Discover the potential of Intraocular Lens (IOL) implantation in Turkey, a trusted destination for advanced eye care. AZPO Health can guide you to explore options for clearer vision and a brighter future.",
+    categoryKey: "eye-surgery",
+    path: "diabetic-retinopathy-treatment",
+    subCategoryKey: "eye-disease-treatments",
+  },
+  {
+    img: glocama,
+    title: "Glaucoma treatment",
+    description:
+      "Is blurry vision, eye pressure, or gradual vision loss making daily life harder? Glaucoma is a silent thief of sight—but early intervention can save your vision. Regain hope with advanced Glaucoma Treatment options. AZPO Health connects you with expert clinics in Turkey offering personalized care to manage your condition and help preserve your precious sight, ensuring a brighter future for your vision.",
+    categoryKey: "eye-surgery",
+    path: "glaucoma-treatment",
+    subCategoryKey: "eye-disease-treatments",
+  },
+  // surgical
+  {
+    img: intraocularImg,
+    title: "Intraocular Lens",
+    description:
+      "Are blurry vision, cataracts, or reliance on glasses and contacts limiting your daily life? Discover the potential of Intraocular Lens (IOL) implantation in Turkey, a trusted destination for advanced eye care. AZPO Health can guide you to explore options for clearer vision and a brighter future.",
+    categoryKey: "eye-surgery",
+    path: "intraocular-lens",
+    subCategoryKey: "surgical-implant-procedures",
+  },
+  {
+    img: corneal,
+    title: "Corneal Transplantation",
+    description:
+      "Does your vision feel like it’s fading—blurred, painful, or just not as sharp as it used to be? A damaged cornea can impact not just your sight, but your confidence and daily life. But there’s hope. In Turkey’s world-class medical centers, skilled surgeons use cutting-edge corneal transplantation techniques to restore clarity and comfort—giving you the gift of clear vision once again. Whether due to injury, disease, or degeneration, you don’t have to settle for compromised sight.",
+    categoryKey: "eye-surgery",
+    path: "corneal-transplantation",
+    subCategoryKey: "surgical-implant-procedures",
+  },
+
 
 ];

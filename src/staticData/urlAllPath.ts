@@ -17,6 +17,10 @@ export const pathsSubCategory = [
     "periodontics",
     "orthodontics",
     "oral-surgery",
+    "glaucoma-treatment",
+    // eye
+    "eye-disease-treatments",
+    "surgical-implant-procedures"
 ]
 
 export const pathsSubNestedCategory = [
