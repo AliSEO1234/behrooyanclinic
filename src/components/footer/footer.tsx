@@ -88,7 +88,7 @@ const Footer = () => {
           <table className="text-[#333333] table-auto border-collapse w-full color">
             <thead dir="rtl">
               <tr className="font-medium s1728:text-[20px]">
-                <th className="text-end pb-2 w-[110px] block">Our services</th>
+                <th className="text-end pb-2 w-[110px] s1728:w-[150px] block">Our services</th>
                 {/* <th className="text-start pb-2">Department</th>
                 <th className="text-start pb-2">Useful Links</th> */}
               </tr>
@@ -96,7 +96,7 @@ const Footer = () => {
             <tbody dir="rtl" className="space-y-10 s1280:text-[14px] s1728:text-[16px]">
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href={`/${locale}/medicaltourism/aesthetic`} className="flex-right gap-x-2 w-[110px]">
+                  <Link href={`/${locale}/medicaltourism/aesthetic`} className="flex-right gap-x-2 w-[110px] s1728:w-[150px]">
                     <span>Aesthetic</span>
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
@@ -122,7 +122,7 @@ const Footer = () => {
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-right gap-x-2 w-[110px]">
+                  <Link href="/" className="flex-right gap-x-2 w-[110px] s1728:w-[150px]">
                     <span>Fertility</span>
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
@@ -148,7 +148,7 @@ const Footer = () => {
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-right gap-x-2 w-[110px]">
+                  <Link href="/" className="flex-right gap-x-2 w-[110px] s1728:w-[150px]">
                     <span>Eye surgery</span>
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
@@ -174,7 +174,7 @@ const Footer = () => {
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-right gap-x-2 w-[110px]">
+                  <Link href="/" className="flex-right gap-x-2 w-[110px] s1728:w-[150px]">
                     <span>Stem cell</span>
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
@@ -200,7 +200,7 @@ const Footer = () => {
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href={`/${locale}/medicaltourism/dental-treatments`} className="flex-right gap-x-2 w-[110px]">
+                  <Link href={`/${locale}/medicaltourism/dental-treatments`} className="flex-right gap-x-2 w-[110px] s1728:w-[150px]">
                     <span>Dental</span>
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />

@@ -1,10 +1,10 @@
 "use client";
-import ph1 from "@/assets/images/about/gallery/p1.jpeg";
+import ph1 from "@/assets/images/about/gallery/p1.jpg";
 import ph2 from "@/assets/images/about/gallery/p2.jpg";
 import arman5 from "@/assets/images/about/gallery/p3.jpg";
-import ph4 from "@/assets/images/about/gallery/p4.jpeg";
-import ph5 from "@/assets/images/about/gallery/p5.jpeg";
-import ph6 from "@/assets/images/about/gallery/p6.jpeg";
+import ph4 from "@/assets/images/about/gallery/p-4.jpg";
+import ph5 from "@/assets/images/about/gallery/p-5.jpg";
+import ph6 from "@/assets/images/about/gallery/p-6.jpg";
 
 import arman1 from "@/assets/images/about/gallery/armn (1).jpg";
 import arman2 from "@/assets/images/about/gallery/armn (2).jpg";
@@ -18,19 +18,19 @@ import arman9 from "@/assets/images/about/gallery/armn (9).jpg";
 import arman10 from "@/assets/images/about/gallery/armn (10).jpg";
 import arman11 from "@/assets/images/about/gallery/armn (11).jpg";
 import arman21 from "@/assets/images/about/gallery/armn (12).jpg";
-import arman13 from "@/assets/images/about/gallery/armn (13).jpg";
-import arman14 from "@/assets/images/about/gallery/armn (14).jpg";
-import arman15 from "@/assets/images/about/gallery/armn (15).jpg";
-import arman16 from "@/assets/images/about/gallery/armn (16).jpg";
-import arman17 from "@/assets/images/about/gallery/armn (17).jpg";
-import arman18 from "@/assets/images/about/gallery/armn (18).jpg";
-import arman19 from "@/assets/images/about/gallery/armn (19).jpg";
-import arman20 from "@/assets/images/about/gallery/armn (20).jpg";
-import ph3 from "@/assets/images/about/gallery/armn (21).jpg";
-import arman22 from "@/assets/images/about/gallery/armn (22).jpg";
-import arman23 from "@/assets/images/about/gallery/armn (23).jpg";
-import arman24 from "@/assets/images/about/gallery/armn (24).jpg";
-import arman25 from "@/assets/images/about/gallery/armn (25).jpg";
+// import arman13 from "@/assets/images/about/gallery/armn (13).jpg";
+// import arman14 from "@/assets/images/about/gallery/armn (14).jpg";
+// import arman15 from "@/assets/images/about/gallery/armn (15).jpg";
+// import arman16 from "@/assets/images/about/gallery/armn (16).jpg";
+// import arman17 from "@/assets/images/about/gallery/armn (17).jpg";
+// import arman18 from "@/assets/images/about/gallery/armn (18).jpg";
+// import arman19 from "@/assets/images/about/gallery/armn (19).jpg";
+// import arman20 from "@/assets/images/about/gallery/armn (20).jpg";
+// import ph3 from "@/assets/images/about/gallery/armn (21).jpg";
+// import arman22 from "@/assets/images/about/gallery/armn (22).jpg";
+// import arman23 from "@/assets/images/about/gallery/armn (23).jpg";
+// import arman24 from "@/assets/images/about/gallery/armn (24).jpg";
+// import arman25 from "@/assets/images/about/gallery/armn (25).jpg";
 
 import AboutGallery from "./aboutGallery";
 import { useAppContext } from "@/contexts/app-context/app-context";
@@ -51,7 +51,7 @@ const AboutGalleryCom = () => {
     },
     {
       id: 27,
-      src: ph3,
+      src: arman3,
       key: "ph3",
     },
     {
@@ -72,7 +72,7 @@ const AboutGalleryCom = () => {
     },
     { id: 0, key: "arman5", src: arman5 },
     { id: 1, key: "arman9", src: arman9 },
-    { id: 2, key: "arman16", src: arman16 },
+    { id: 2, key: "arman16", src: arman21 },
     { id: 3, key: "arman2", src: arman2 },
     { id: 4, key: "arman3", src: arman3 },
     { id: 5, key: "arman4", src: arman4 },
@@ -83,18 +83,18 @@ const AboutGalleryCom = () => {
     { id: 10, key: "arman11", src: arman11 },
     { id: 11, key: "arman12", src: arman12 },
     { id: 12, key: "arman1", src: arman1 },
-    { id: 13, key: "arman13", src: arman13 },
-    { id: 14, key: "arman14", src: arman14 },
-    { id: 15, key: "arman15", src: arman15 },
-    { id: 16, key: "arman17", src: arman17 },
-    { id: 17, key: "arman18", src: arman18 },
-    { id: 18, key: "arman19", src: arman19 },
-    { id: 19, key: "arman20", src: arman20 },
-    { id: 20, key: "arman21", src: arman21 },
-    { id: 21, key: "arman22", src: arman22 },
-    { id: 22, key: "arman23", src: arman23 },
-    { id: 23, key: "arman24", src: arman24 },
-    { id: 24, key: "arman25", src: arman25 },
+    // { id: 13, key: "arman13", src: arman13 },
+    // { id: 14, key: "arman14", src: arman14 },
+    // { id: 15, key: "arman15", src: arman15 },
+    // { id: 16, key: "arman17", src: arman17 },
+    // { id: 17, key: "arman18", src: arman18 },
+    // { id: 18, key: "arman19", src: arman19 },
+    // { id: 19, key: "arman20", src: arman20 },
+    // { id: 20, key: "arman21", src: arman21 },
+    // { id: 21, key: "arman22", src: arman22 },
+    // { id: 22, key: "arman23", src: arman23 },
+    // { id: 23, key: "arman24", src: arman24 },
+    // { id: 24, key: "arman25", src: arman25 },
   ];
   const { setAboutGallery, setAboutGalleryIndex } = useAppContext();
   return (
@@ -166,7 +166,7 @@ const AboutGalleryCom = () => {
                 </div> */}
             <ImgFetcher
               width={2000}
-              src={ph3}
+              src={arman3}
               className="object-cover hover:scale-105 anm"
             />
           </div>

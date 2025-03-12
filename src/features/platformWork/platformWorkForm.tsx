@@ -15,8 +15,8 @@ const PlatformWorkForm = () => {
         </h3>
       </div>
       <div className="col-span-12">
-        <label>Name</label>
-        <input placeholder="Name" type="Name" />
+        <label>Name & Surname</label>
+        <input placeholder="Name & Surname" type="text" />
       </div>
       <div className="col-span-12">
         <label htmlFor="phone-our-work">Phone Number</label>

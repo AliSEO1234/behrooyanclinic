@@ -11,8 +11,8 @@ const SidebarForm = () => {
   return (
     <form className="grid grid-cols-12 gap-y-4 form-work">
       <div className="col-span-12">
-        <label htmlFor="">Name</label>
-        <input placeholder="Name" type="text" />
+        <label htmlFor="">Name & Surname</label>
+        <input placeholder="Name & Surname" type="text" />
       </div>
       <div className="col-span-12">
         <label htmlFor="">Email</label>

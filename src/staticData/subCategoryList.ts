@@ -395,7 +395,7 @@ export const subCategoryHandler = (
         title:
           locale === "ru"
             ? "Facial aesthetic surgery"
-            : "Facial aesthetic surgery",
+            : "Body contouring treatments",
       },
       contents: {
         title: locale === "ru" ? "" : "Why Choose Turkey for Body Contouring?",
@@ -822,7 +822,7 @@ export const subCategoryHandler = (
       },
       subCategoryContent: {
         title:
-          locale === "ru" ? "Orthodontics in Turkey" : "Orthodontics in Turkey",
+          locale === "ru" ? "Orthodontics in Turkey" : "Oral surgery treatments",
       },
       contents: {
         title:
@@ -910,7 +910,7 @@ export const subCategoryHandler = (
       },
       subCategoryContent: {
         title:
-          locale === "ru" ? "Eye disease treatments" : "Eye disease treatments",
+          locale === "ru" ? "Eye disease treatments" : "Surgical implant procedures",
       },
       contents: {
         title:

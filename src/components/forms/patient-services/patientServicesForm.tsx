@@ -49,7 +49,7 @@ const PatientServicesForm = () => {
         </div>
         <div className="w-full flex flex-col items-center justify-start s1280:flex-row s1280:flex-wrap s1280:items-center s1280:justify-center gap-x-4 gap-y-2 s1728:gap-y-8 s1728:gap-x-10 s1280:w-[550px] s1512:w-[700px] s1728:w-[800px]">
           <div className="patient-form-item">
-            <label htmlFor="">Name</label>
+            <label htmlFor="">Name & Surname</label>
             <input type="text" placeholder="Name" />
           </div>
           <div className="patient-form-item">
