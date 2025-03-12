@@ -303,7 +303,7 @@ const Home = async ({
                 className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
                 countService={51}
                 img={eye}
-                linkService="/medicaltourism/eyeSurgeries"
+                linkService="/medicaltourism/eye-surgery"
                 title="Eye Surgeries"
               />
               <ServiceCard
