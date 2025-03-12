@@ -56,7 +56,7 @@ const Treatments = async ({
     {
       countService: 24,
       img: cell,
-      linkService: "/medicaltourism/stemCell",
+      linkService: "/medicaltourism/stem-cell",
       title: "Stem Cell",
     },
   ];

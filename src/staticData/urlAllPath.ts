@@ -2,6 +2,8 @@ export const pathsCategory = [
     "aesthetic",
     "dental-treatments",
     "eye-surgery",
+    "fertility",
+    'stem-cell'
 ]
 
 export const pathsSubCategory = [
@@ -20,7 +22,11 @@ export const pathsSubCategory = [
     "glaucoma-treatment",
     // eye
     "eye-disease-treatments",
-    "surgical-implant-procedures"
+    "surgical-implant-procedures",
+    // fertility
+    "fertility-assisted-reproduction",
+    // stem cell
+    "male-sexual-therapy"
 ]
 
 export const pathsSubNestedCategory = [

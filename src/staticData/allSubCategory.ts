@@ -53,6 +53,10 @@ import eyedesis from "@/assets/images/subCategory/Eye disease.jpg"
 import surgical from "@/assets/images/subCategory/Surgical.jpg"
 import diabetic from "@/assets/images/subCategory/Diabetic.jpg"
 import corneal from "@/assets/images/subnested/Corneal Transplant.jpg"
+import maleFertility from "@/assets/images/subnested/Male-Infertility.jpg"
+import asissfertility from "@/assets/images/subCategory/fertility assisted reproduction.jpg"
+import malesecual from "@/assets/images/subCategory/Male Sexual.jpg"
+import malesexual from "@/assets/images/subnested/Male Sexual Health Issues.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -157,6 +161,23 @@ export const allSubCategory = [
     path: "surgical-implant-procedures",
     categoryKey: "eye-surgery",
   },
+  // fertility
+  {
+    img: asissfertility,
+    title: "Fertility assisted reproduction",
+    description: "Are you dreaming of starting or expanding your family but facing challenges? Discover how AZPO Health in Turkey can be your partner, offering a ray of hope with world-class fertility treatments and compassionate care, guiding you towards the joyous journey of parenthood.",
+    path: "fertility-assisted-reproduction",
+    categoryKey: "fertility",
+  },
+  // stem cell
+  {
+    img: malesecual,
+    title: "Male sexual therapy",
+    description: "Are you seeking innovative solutions to revitalize your sexual health and reproductive capabilities? Discover the potential of male sexual & reproductive health stem cell therapy in Turkey, offering cutting-edge treatments designed to address various concerns and improve your quality of life.",
+    path: "male-sexual-therapy",
+    categoryKey: "stem-cell",
+  },
+
 ];
 export const allSubNestedCategory = [
   // hair-transplantation
@@ -504,6 +525,26 @@ export const allSubNestedCategory = [
     path: "corneal-transplantation",
     subCategoryKey: "surgical-implant-procedures",
   },
-
+  // fertility Male-Infertility
+  {
+    img: maleFertility,
+    title: "Male infertility",
+    description:
+      "Trying for a baby but facing endless disappointment? Male infertility is a hidden struggle that affects millions, yet few talk about it. Low sperm count, poor motility, and hormonal imbalances can crush confidence and strain relationships. But there’s hope—solutions exist. Don’t suffer in silence. Take the first step today.",
+    categoryKey: "fertility",
+    path: "male-infertility",
+    subCategoryKey: "fertility-assisted-reproduction",
+  },
+  // stem cel
+  // male-sexual-health-issues
+  {
+    img: malesexual,
+    title: "Male sexual health issues",
+    description:
+      "Is your sexual health affecting your confidence, relationships, and overall well-being? You’re not alone—and real solutions exist. Whether it’s Erectile Dysfunction, low libido, or performance concerns, advanced treatments in Turkey’s world-class medical centers offer hope and transformation. Start your journey with AZPO health now.",
+    categoryKey: "stem-cell",
+    path: "male-sexual-health-issues",
+    subCategoryKey: "male-sexual-therapy",
+  },
 
 ];

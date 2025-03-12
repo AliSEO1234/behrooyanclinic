@@ -288,67 +288,68 @@ const Page = async ({ params }: PropsPageType) => {
           />
         </div>
         {/* benefits */}
-        <div className="s1512:h-full flex gap-y-[18px] s1280:gap-y-0 s1280:flex-col flex-wrap s1512:flex-nowrap items-center s1512:flex-row s1512:justify-start s1512:items-end s1512:gap-x-[44px] mb-10 s1280:mb-[16px] s1512:mb-24">
-          <div className="s1512:h-full flex items-center justify-between gap-x-4 s1280:gap-x-0 s1512:justify-start s1512:items-center w-full s1512:gap-x-[14px] s1512:w-fit">
-            <div className="flex flex-col items-start justify-center">
-              <div className="w-full">
-                <h2 className="font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-center [text-shadow:0px_3px_2.8px_#00000040]">
-                  {locale === "ru" ? "Преимущества" : "Advantages"}
-                </h2>
+        {fetchData?.benefits && (
+          <div className="s1512:h-full flex gap-y-[18px] s1280:gap-y-0 s1280:flex-col flex-wrap s1512:flex-nowrap items-center s1512:flex-row s1512:justify-start s1512:items-end s1512:gap-x-[44px] mb-10 s1280:mb-[16px] s1512:mb-24">
+            <div className="s1512:h-full flex items-center justify-between gap-x-4 s1280:gap-x-0 s1512:justify-start s1512:items-center w-full s1512:gap-x-[14px] s1512:w-fit">
+              <div className="flex flex-col items-start justify-center">
+                <div className="w-full">
+                  <h2 className="font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-center [text-shadow:0px_3px_2.8px_#00000040]">
+                    {locale === "ru" ? "Преимущества" : "Advantages"}
+                  </h2>
+                </div>
+                <div className="s1280:h-[463px] s1280:w-[259px] s1600:w-[330px] s1600:h-[589px]">
+                  <ImgFetcher width={1500} height={1500} src={benefitIcon} />
+                </div>
               </div>
-              <div className="s1280:h-[463px] s1280:w-[259px] s1600:w-[330px] s1600:h-[589px]">
-                <ImgFetcher width={1500} height={1500} src={benefitIcon} />
+              <div className="s1512:h-full flex flex-col items-center gap-y-[18px] s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-end s1512:flex-col s1512:justify-between s1512:gap-y-[72px]">
+                <SubTreatAdvantagesIntersectionObserver />
+                <BenefCard
+                  desc={fetchData?.benefits.items[0].desc || ""}
+                  title={fetchData?.benefits.items[0].title || ""}
+                />
+                <BenefBorder />
+                <BenefCard
+                  desc={fetchData?.benefits.items[1].desc || ""}
+                  title={fetchData?.benefits.items[1].title || ""}
+                />
+                <BenefBorder />
+                <BenefCard
+                  desc={fetchData?.benefits.items[2].desc || ""}
+                  title={fetchData?.benefits.items[2].title || ""}
+                />
               </div>
             </div>
-            <div className="s1512:h-full flex flex-col items-center gap-y-[18px] s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-end s1512:flex-col s1512:justify-between s1512:gap-y-[72px]">
-              <SubTreatAdvantagesIntersectionObserver />
-              <BenefCard
-                desc={fetchData?.benefits.items[0].desc || ""}
-                title={fetchData?.benefits.items[0].title || ""}
-              />
-              <BenefBorder />
-              <BenefCard
-                desc={fetchData?.benefits.items[1].desc || ""}
-                title={fetchData?.benefits.items[1].title || ""}
-              />
-              <BenefBorder />
-              <BenefCard
-                desc={fetchData?.benefits.items[2].desc || ""}
-                title={fetchData?.benefits.items[2].title || ""}
-              />
-            </div>
-          </div>
-          <div className="bg-[#DAEDE645] rounded-[40px] p-4 s1280:p-9 w-full flex flex-col gap-y-16 s1512:pe-12 s1600:pe-28">
-            {/* category */}
-            <div className="text-[#474744]">
-              <div className="mb-8 s1280:mb-5">
-                <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
-                  <span className="w-[18px] h-[39px]">
-                    <ImgFetcher src={person} />
-                  </span>
-                  <span>{fetchData?.benefits.categories[0].header}</span>
-                </h4>
-              </div>
-              <ul className="font-normal flex flex-col gap-y-6 relative">
-                {/* border dashed */}
-                <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                  <div
-                    className="w-0 h-full"
-                    style={{
-                      border: "1px dashed",
-                      borderImageSource:
-                        "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
-                      borderImageSlice: 1,
-                    }}
-                  ></div>
-                </li>
-                <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
-                  <span className="absolute top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>{fetchData?.benefits.categories[0].desc}</span>
-                </li>
-                {/* <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
+            <div className="bg-[#DAEDE645] rounded-[40px] p-4 s1280:p-9 w-full flex flex-col gap-y-16 s1512:pe-12 s1600:pe-28">
+              {/* category */}
+              <div className="text-[#474744]">
+                <div className="mb-8 s1280:mb-5">
+                  <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
+                    <span className="w-[18px] h-[39px]">
+                      <ImgFetcher src={person} />
+                    </span>
+                    <span>{fetchData?.benefits.categories[0].header}</span>
+                  </h4>
+                </div>
+                <ul className="font-normal flex flex-col gap-y-6 relative">
+                  {/* border dashed */}
+                  <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
+                    <div
+                      className="w-0 h-full"
+                      style={{
+                        border: "1px dashed",
+                        borderImageSource:
+                          "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                        borderImageSlice: 1,
+                      }}
+                    ></div>
+                  </li>
+                  <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
+                    <span className="absolute top-2 left-0 w-[18px] flex-cen">
+                      <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                    </span>
+                    <span>{fetchData?.benefits.categories[0].desc}</span>
+                  </li>
+                  {/* <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
                   <span className="absolute top-2 left-0 w-[18px] flex-cen">
                     <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
                   </span>
@@ -367,17 +368,76 @@ const Page = async ({ params }: PropsPageType) => {
                     conditions like keratoconus or autoimmune diseases.
                   </span>
                 </li> */}
-              </ul>
-            </div>
-            {/* category */}
-            {fetchData?.benefits.categories[1].header && (
+                </ul>
+              </div>
+              {/* category */}
+              {fetchData?.benefits.categories[1].header && (
+                <div className="text-[#474744]">
+                  <div className="mb-8 s1280:mb-5">
+                    <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
+                      <span className="w-[18px] h-[39px]">
+                        <ImgFetcher src={consider} />
+                      </span>
+                      <span>{fetchData?.benefits.categories[1].header}</span>
+                    </h4>
+                  </div>
+                  <ul className="font-normal flex flex-col gap-y-6 relative">
+                    <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
+                      <div
+                        className="w-0 h-full"
+                        style={{
+                          border: "1px dashed",
+                          borderImageSource:
+                            "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                          borderImageSlice: 1,
+                        }}
+                      ></div>
+                    </li>
+                    {fetchData?.benefits.categories[1].decsList?.map(
+                      (des, index) => {
+                        return (
+                          <li
+                            key={index}
+                            className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8"
+                          >
+                            <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                              <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                            </span>
+                            <span>{des}</span>
+                          </li>
+                        );
+                      }
+                    )}
+                    {/* <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
+                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                  </span>
+                  <span>
+                    <strong>Not Suitable For:</strong> Thin corneas, high
+                    refractive errors, or individuals with eye infections or
+                    severe dry eye syndrome.
+                  </span>
+                </li>
+                <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
+                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                  </span>
+                  <span>
+                    <strong>Post-Surgery Care:</strong> Patients must avoid
+                    rubbing their eyes and follow prescribed care for optimal
+                    healing.
+                  </span>
+                </li> */}
+                  </ul>
+                </div>
+              )}
               <div className="text-[#474744]">
                 <div className="mb-8 s1280:mb-5">
                   <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
                     <span className="w-[18px] h-[39px]">
                       <ImgFetcher src={consider} />
                     </span>
-                    <span>{fetchData?.benefits.categories[1].header}</span>
+                    <span>{fetchData?.benefits.categories[2].header}</span>
                   </h4>
                 </div>
                 <ul className="font-normal flex flex-col gap-y-6 relative">
@@ -392,21 +452,14 @@ const Page = async ({ params }: PropsPageType) => {
                       }}
                     ></div>
                   </li>
-                  {fetchData?.benefits.categories[1].decsList?.map(
-                    (des, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8"
-                        >
-                          <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                            <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                          </span>
-                          <span>{des}</span>
-                        </li>
-                      );
-                    }
-                  )}
+
+                  <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8">
+                    <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                      <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                    </span>
+                    <span>{fetchData?.benefits.categories[2].desc}</span>
+                  </li>
+
                   {/* <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
                   <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
                     <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
@@ -429,94 +482,45 @@ const Page = async ({ params }: PropsPageType) => {
                 </li> */}
                 </ul>
               </div>
-            )}
-            <div className="text-[#474744]">
-              <div className="mb-8 s1280:mb-5">
-                <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
-                  <span className="w-[18px] h-[39px]">
-                    <ImgFetcher src={consider} />
-                  </span>
-                  <span>{fetchData?.benefits.categories[2].header}</span>
-                </h4>
-              </div>
-              <ul className="font-normal flex flex-col gap-y-6 relative">
-                <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                  <div
-                    className="w-0 h-full"
-                    style={{
-                      border: "1px dashed",
-                      borderImageSource:
-                        "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
-                      borderImageSlice: 1,
-                    }}
-                  ></div>
-                </li>
-
-                <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8">
-                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>{fetchData?.benefits.categories[2].desc}</span>
-                </li>
-
-                {/* <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
-                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>
-                    <strong>Not Suitable For:</strong> Thin corneas, high
-                    refractive errors, or individuals with eye infections or
-                    severe dry eye syndrome.
-                  </span>
-                </li>
-                <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
-                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>
-                    <strong>Post-Surgery Care:</strong> Patients must avoid
-                    rubbing their eyes and follow prescribed care for optimal
-                    healing.
-                  </span>
-                </li> */}
-              </ul>
             </div>
           </div>
-        </div>
+        )}
         {/*  Conclusion */}
-        <div className="relative bg-consul s1280:h-[394px] z-[2] ">
-          <div className="conclusion__pill-container">
-            {Array.from({ length: 7 }, (n, i) => i).map((number) => {
-              return (
-                <Image
-                  key={number}
-                  className={`conclusion__pill-image conclusion__pill-image--${
-                    number + 1
-                  }`}
-                  src={pill}
-                  alt={`pill-${number + 1}`}
-                />
-              );
-            })}
-          </div>
-          <div className="z-[3]">
-            <div className="flex items-start justify-center s1280:mb-20 bg-consul-phone h-[95px]">
-              <h2 className="font-semibold text-[20px] s1280:text-[40px] bg-gradient-to-r from-[#666666] to-[#3EBB9A] inline-block text-transparent bg-clip-text relative h-[3]">
-                {fetchData?.conclusion.title}
-                <div className="conclusion__mask-container absolute top-[100%] -right-[42%] s1280:top-[108%] s1280:-right-[32%] w-[53px] h-[40px] s1280:w-fit s1280:h-fit -translate-x-1/2 -translate-y-1/2">
-                  <SubTreatConclusionInterceptionObserver />
-                  <ImgFetcher src={mask} />
-                </div>
-                <div className="w-[2px] h-[4px] s1280:w-[5px] s1280:h-[7.48px] bg-[#43B194] absolute top-1/2 right-[5%] s1280:right-[6.5%] -translate-x-1/2 -translate-y-1/2"></div>
-              </h2>
+        {fetchData?.conclusion && (
+          <div className="relative bg-consul s1280:h-[394px] z-[2] ">
+            <div className="conclusion__pill-container">
+              {Array.from({ length: 7 }, (n, i) => i).map((number) => {
+                return (
+                  <Image
+                    key={number}
+                    className={`conclusion__pill-image conclusion__pill-image--${
+                      number + 1
+                    }`}
+                    src={pill}
+                    alt={`pill-${number + 1}`}
+                  />
+                );
+              })}
             </div>
-            <div>
-              <p className="conclusion__description--text font-medium s1280:text-[20px] text-center s1280:px-32 s1512:px-44 s1600:px-56 s1728:px-64 text-[#474744] leading-[30px] z-[3]">
-                {fetchData?.conclusion.desc}
-              </p>
+            <div className="z-[3]">
+              <div className="flex items-start justify-center s1280:mb-20 bg-consul-phone h-[95px]">
+                <h2 className="font-semibold text-[20px] s1280:text-[40px] bg-gradient-to-r from-[#666666] to-[#3EBB9A] inline-block text-transparent bg-clip-text relative h-[3]">
+                  {fetchData?.conclusion.title}
+                  <div className="conclusion__mask-container absolute top-[100%] -right-[42%] s1280:top-[108%] s1280:-right-[32%] w-[53px] h-[40px] s1280:w-fit s1280:h-fit -translate-x-1/2 -translate-y-1/2">
+                    <SubTreatConclusionInterceptionObserver />
+                    <ImgFetcher src={mask} />
+                  </div>
+                  <div className="w-[2px] h-[4px] s1280:w-[5px] s1280:h-[7.48px] bg-[#43B194] absolute top-1/2 right-[5%] s1280:right-[6.5%] -translate-x-1/2 -translate-y-1/2"></div>
+                </h2>
+              </div>
+              <div>
+                <p className="conclusion__description--text font-medium s1280:text-[20px] text-center s1280:px-32 s1512:px-44 s1600:px-56 s1728:px-64 text-[#474744] leading-[30px] z-[3]">
+                  {fetchData?.conclusion.desc}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        )}
         {/* before && after */}
         <div className="mb-[24px] s1280:mb-20">
           <div className="font-bold flex-left relative w-fit mb-5">
