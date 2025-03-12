@@ -26,7 +26,8 @@ export const pathsSubCategory = [
     // fertility
     "fertility-assisted-reproduction",
     // stem cell
-    "male-sexual-therapy"
+    "male-sexual-therapy",
+    "therapy-regenerative-medicine"
 ]
 
 export const pathsSubNestedCategory = [

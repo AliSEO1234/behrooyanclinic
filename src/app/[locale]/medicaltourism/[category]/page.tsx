@@ -13,9 +13,7 @@ type PropsPageType = {
   params: Promise<{ category: string; locale: string }>;
 };
 const Page = async ({ params }: PropsPageType) => {
-  const { category, locale } = await params;
-  console.log(category);
-  
+  const { category, locale } = await params;  
   const fetchData = categoryDataHandler(category, locale);  
   return (
     <div className="bg-[#FCFCFC]">

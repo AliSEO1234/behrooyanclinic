@@ -59,6 +59,10 @@ import malesecual from "@/assets/images/subCategory/Male Sexual.jpg"
 import malesexual from "@/assets/images/subnested/Male Sexual Health Issues.jpg"
 import peyroniesdisease from "@/assets/images/subnested/Peyronie’s Disease 1.jpg"
 import dyfunc from "@/assets/images/subnested/Erectile Dysfunction.jpg"
+import theregemed from "@/assets/images/subCategory/therapy Regenerative Medicine.jpg"
+import orthopedic from "@/assets/images/subnested/Orthopedic Stem Cell Therapy 1.jpg"
+import stemmen from "@/assets/images/subnested/Stem Cell men.jpg"
+import neurological from "@/assets/images/subnested/Neurological Stem Cell.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -177,6 +181,13 @@ export const allSubCategory = [
     title: "Male sexual therapy",
     description: "Are you seeking innovative solutions to revitalize your sexual health and reproductive capabilities? Discover the potential of male sexual & reproductive health stem cell therapy in Turkey, offering cutting-edge treatments designed to address various concerns and improve your quality of life.",
     path: "male-sexual-therapy",
+    categoryKey: "stem-cell",
+  },
+  {
+    img: theregemed,
+    title: "Therapy regenerative medicine",
+    description: "Looking for advanced, innovative treatments to restore health and vitality? Stem Cell Therapy & Regenerative Medicine in Turkey offer groundbreaking solutions for tissue repair, disease management, and overall well-being. With cutting-edge medical advancements and expert specialists, these treatments provide new hope for lasting recovery and improved quality of life.",
+    path: "therapy-regenerative-medicine",
     categoryKey: "stem-cell",
   },
 
@@ -566,5 +577,31 @@ export const allSubNestedCategory = [
     path: "erectile-dysfunction-ed",
     subCategoryKey: "male-sexual-therapy",
   },
-
+  {
+    img: stemmen,
+    title: "Stem cell for men",
+    description:
+      "Feeling the weight of age or specific health challenges affecting your well-being as a man? Imagine a therapy that harnesses your body's own healing power to rejuvenate and address these concerns, offering a renewed sense of vitality and hope. stem cell therapy, facilitated by AZPO Health in Turkey, could be the innovative solution you've been seeking for a healthier future.",
+    categoryKey: "stem-cell",
+    path: "stem-cell-for-men",
+    subCategoryKey: "therapy-regenerative-medicine",
+  },
+  {
+    img: orthopedic,
+    title: "Orthopedic stem cell therapy",
+    description:
+      "What if you could heal your joints naturally—without surgery? Orthopedic Stem Cell Therapy uses your body’s own regenerative power to repair cartilage, reduce pain, and restore mobility. Whether it’s arthritis, sports injuries, or chronic pain, this cutting-edge treatment gets you moving again—stronger, faster, pain-free!",
+    categoryKey: "stem-cell",
+    path: "orthopedic-stem-cell-therapy",
+    subCategoryKey: "therapy-regenerative-medicine",
+  },
+  {
+    img: neurological,
+    title: "Neurological therapy",
+    description:
+      "Are you or a loved one facing the challenges of a neurological condition, longing for advancements that offer a ray of hope? In Turkey, you can find access to clinics specializing in stem cell therapies for neurological disorders, potentially offering a path toward improved well-being and a brighter future. Contact AZPO Health to explore your options for connecting with these specialized medical centers.",
+    categoryKey: "stem-cell",
+    path: "neurological-therapy",
+    subCategoryKey: "therapy-regenerative-medicine",
+  },
 ];
