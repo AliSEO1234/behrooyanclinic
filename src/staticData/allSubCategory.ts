@@ -57,6 +57,8 @@ import maleFertility from "@/assets/images/subnested/Male-Infertility.jpg"
 import asissfertility from "@/assets/images/subCategory/fertility assisted reproduction.jpg"
 import malesecual from "@/assets/images/subCategory/Male Sexual.jpg"
 import malesexual from "@/assets/images/subnested/Male Sexual Health Issues.jpg"
+import peyroniesdisease from "@/assets/images/subnested/Peyronie’s Disease 1.jpg"
+import dyfunc from "@/assets/images/subnested/Erectile Dysfunction.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -544,6 +546,24 @@ export const allSubNestedCategory = [
       "Is your sexual health affecting your confidence, relationships, and overall well-being? You’re not alone—and real solutions exist. Whether it’s Erectile Dysfunction, low libido, or performance concerns, advanced treatments in Turkey’s world-class medical centers offer hope and transformation. Start your journey with AZPO health now.",
     categoryKey: "stem-cell",
     path: "male-sexual-health-issues",
+    subCategoryKey: "male-sexual-therapy",
+  },
+  {
+    img: peyroniesdisease,
+    title: "Peyronies disease",
+    description:
+      "Struggling with discomfort, curvature, or intimacy challenges? Peyronie’s Disease can be frustrating—but Stem Cell Therapy in Turkey offers a groundbreaking, non-surgical solution. This innovative treatment reduces plaque, restores natural function, and improves confidence with expert care. Take the first step toward relief and recovery today.",
+    categoryKey: "stem-cell",
+    path: "peyronies-disease",
+    subCategoryKey: "male-sexual-therapy",
+  },
+  {
+    img: dyfunc,
+    title: "Erectile Dysfunction ED",
+    description:
+      "Does ED have you feeling frustrated, disconnected, or less like yourself? You’re not alone—and you don’t have to accept it. Imagine restoring your performance, confidence, and passion with a cutting-edge solution that targets the root cause.At AZPO Health, we connect you to advanced Erectile Dysfunction treatments in Turkey, including revolutionary Stem Cell Therapy—designed to naturally repair, regenerate, and revitalize your sexual function. No more temporary fixes—just real, lasting results.",
+    categoryKey: "stem-cell",
+    path: "erectile-dysfunction-ed",
     subCategoryKey: "male-sexual-therapy",
   },
 
