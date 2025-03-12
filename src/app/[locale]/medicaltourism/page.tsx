@@ -44,7 +44,7 @@ const Treatments = async ({
     {
       countService: 51,
       img: eye,
-      linkService: "/medicaltourism/eyeSurgeries",
+      linkService: "/medicaltourism/eye-surgery",
       title: "Eye Surgeries",
     },
     {

@@ -1,7 +1,7 @@
 export const pathsCategory = [
     "aesthetic",
     "dental-treatments",
-    "medical",
+    "eye-surgery",
 ]
 
 export const pathsSubCategory = [
