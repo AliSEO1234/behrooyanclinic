@@ -5,7 +5,6 @@ import arman5 from "@/assets/images/about/gallery/p3.jpg";
 import ph4 from "@/assets/images/about/gallery/p-4.jpg";
 import ph5 from "@/assets/images/about/gallery/p-5.jpg";
 import ph6 from "@/assets/images/about/gallery/p-6.jpg";
-
 import arman1 from "@/assets/images/about/gallery/armn (1).jpg";
 import arman2 from "@/assets/images/about/gallery/armn (2).jpg";
 import arman3 from "@/assets/images/about/gallery/armn (3).jpg";
