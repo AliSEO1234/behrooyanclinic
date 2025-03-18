@@ -44,7 +44,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex-left s1280:gap-x-[18px] s1512:gap-x-[32px]">
-          <div className={`flex-left gap-x-2`}>
+          <Link href={`/${locale}`} className={`flex-left gap-x-2`}>
             <div className="flex-cen">
               <div className="w-[44px] h-[44px] s1280:w-8 s1280:h-8 s1512:w-[49px] s1512:h-[49px]">
                 <Image
@@ -72,15 +72,10 @@ const Navbar = () => {
                 HEALTH
               </p>
             </div>
-          </div>
+          </Link>
           <div
             className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1280:gap-x-6 s1512:gpa-x-10 s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-12 text-[#474744] anm`}
           >
-            <div>
-              <Link className="hover:text-[#25A6A9] anm" href="/">
-                Home Page
-              </Link>
-            </div>
             <div>
               <NavigationMenu>
                 <NavigationMenuList>
@@ -99,15 +94,21 @@ const Navbar = () => {
                                 key={index}
                               >
                                 <Link
-                                  className="flex-bet hover:bg-[#fafafa] py-2 px-3 text-[#474744] hover:text-[#00979A] anm font-medium"
+                                  className={`flex-bet gap-x-2 hover:bg-[#fafafa] py-2 px-3 text-[#474744] anm font-medium ${service.isActive ? "hover:text-[#00979A] hover:bg-[#fafafa]" : "pointer-events-none"}`}
                                   href={`/${locale}/medicaltourism/${service.key}`}
                                 >
                                   <span className="line-clamp-1">
                                     {service.label}
                                   </span>
-                                  <span className="rounded-full flex-cen w-6 h-6">
-                                    <MdArrowForwardIos className="size-3 -me-[1px]" />
-                                  </span>
+                                  {service.isActive ? (
+                                    <span className="rounded-full flex-cen w-6 h-6">
+                                      <MdArrowForwardIos className="size-3 -me-[1px]" />
+                                    </span>
+                                  ) : (
+                                    <span className="bg-[#00979A] text-white font-medium s1280:text-[14px] rounded-[5px] px-1">
+                                      Soon
+                                    </span>
+                                  )}
                                 </Link>
                               </li>
                             );
@@ -123,12 +124,18 @@ const Navbar = () => {
               </Link> */}
             </div>
             <div>
-              <Link className="hover:text-[#25A6A9] anm" href={`/${locale}/clinics`}>
+              <Link
+                className="hover:text-[#25A6A9] anm"
+                href={`/${locale}/clinics`}
+              >
                 Hospital&Clinics
               </Link>
             </div>
             <div>
-              <Link className="hover:text-[#25A6A9] anm" href={`/${locale}/patient-services`}>
+              <Link
+                className="hover:text-[#25A6A9] anm"
+                href={`/${locale}/patient-services`}
+              >
                 Patient Services
               </Link>
             </div>
@@ -148,7 +155,7 @@ const Navbar = () => {
             <div>
               <Link
                 className="hover:text-[#25A6A9] anm"
-                href={`/${locale}/about`}
+                href={`/${locale}/contact-us`}
               >
                 Contact Us
               </Link>

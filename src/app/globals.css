@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+  -moz-user-select: none;
 }
 html,
 body {
@@ -18,9 +20,36 @@ html {
   -webkit-mask-image: none !important;
 }
 @layer components {
+  /* footer table */
+  .style-item--table-footer tr td a{
+    @apply hover:text-[#0CA5A5] anm
+  }
+  /* contact us style */
+  .contact-form div label {
+    @apply hidden font-medium text-[#333333] s1280:block mb-2;
+  }
+  .contact-form div input {
+    @apply outline-none w-full h-[48px] rounded-[40px] border border-[#9996A0] px-4 placeholder:text-[#9996A0];
+  }
+  .contact-form div textarea {
+    @apply outline-none w-full rounded-[20px] border border-[#9996A0] p-4 placeholder:text-[#9996A0];
+  }
+  /* home page form */
+  .homepage-input {
+    @apply bg-white h-[48px] rounded-[40px] px-4 border border-[#9996A0] font-medium w-full;
+  }
+  /* h1homepagestyle */
+  .h1-homepage-shadow {
+    text-shadow: 0px 4px 4px 0px #00000040;
+  }
   /* patient services */
-  .submit-btn-bg{
-    background: radial-gradient(73.79% 41.38% at 108.63% -14.74%, #00F9FF 0%, #1C5658 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  .submit-btn-bg {
+    background: radial-gradient(
+        73.79% 41.38% at 108.63% -14.74%,
+        #00f9ff 0%,
+        #1c5658 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   }
   .patient-form-item {
     @apply w-full s1280:w-[250px] s1728:w-[320px];
@@ -259,13 +288,6 @@ html {
     box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
   }
   /* how our platform works form */
-  /* text-[#474744] */
-  .form-platform-work div label {
-    @apply block font-semibold text-white s1280:text-[14px] mb-2 s1600:text-[16px];
-  }
-  .form-platform-work div input {
-    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[38px] s1600:h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#474744] s1280:placeholder:text-[14px] s1280:text-[14px] s1728:text-[16px] s1728:placeholder:text-[16px];
-  }
   /* hide scrollbar */
   .scroll-hide::-webkit-scrollbar {
     @apply hidden;

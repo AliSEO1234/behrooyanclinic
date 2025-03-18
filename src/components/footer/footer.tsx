@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import health from "@/assets/images/health.svg";
 import ImgFetcher from "../imgFetcher";
 import Link from "next/link";
@@ -6,13 +6,13 @@ import loc from "@/assets/images/locicon.svg";
 import glob from "@/assets/images/Globe Medical.svg";
 import phone from "@/assets/images/phonefooter.svg";
 import { MdArrowForwardIos } from "react-icons/md";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
 import { IoLogoWhatsapp, IoLogoYoutube } from "react-icons/io";
 import { BsInstagram } from "react-icons/bs";
 import CertiLayout from "./certifications";
 import { useLocale } from "next-intl";
 const Footer = () => {
-  const locale = useLocale()
+  const locale = useLocale();
   return (
     <footer className="px-7 pt-5 pb-2 s1280:viewport-p bg-white shadow-[0px_0px_9.6px_#00000014] rounded-t-[40px] s1280:rounded-t-[100px]">
       <div className="grid grid-cols-12 gap-y-6 s1280:gap-y-0 s1280:gap-x-5 s1280:mb-6">
@@ -86,24 +86,27 @@ const Footer = () => {
         {/* table */}
         <div className="col-span-12 hidden s1280:block s1280:col-span-5 s1512:ms-36">
           <table className="text-[#333333] table-auto border-collapse w-full color">
-            <thead dir="rtl">
+            <thead>
               <tr className="font-medium s1728:text-[20px]">
-                <th className="text-end pb-2 w-[110px] s1728:w-[150px] block">Our services</th>
-                {/* <th className="text-start pb-2">Department</th>
-                <th className="text-start pb-2">Useful Links</th> */}
+                <th className="text-start pb-2">Our services</th>
+                <th className="text-start pb-2">Department</th>
+                <th className="text-start pb-2">Useful Links</th>
               </tr>
             </thead>
-            <tbody dir="rtl" className="space-y-10 s1280:text-[14px] s1728:text-[16px]">
+            <tbody className="space-y-10 s1280:text-[14px] s1728:text-[16px] style-item--table-footer">
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href={`/${locale}/medicaltourism/aesthetic`} className="flex-right gap-x-2 w-[110px] s1728:w-[150px]">
+                  <Link
+                    href={`/${locale}/medicaltourism/aesthetic`}
+                    className="flex-left gap-x-2 w-[110px] s1728:w-[150px]"
+                  >
+                    <span>
+                      <MdArrowForwardIos className="s1280:size-4" />
+                    </span>
                     <span>Aesthetic</span>
-                    <span>
-                      <MdArrowForwardIos className="s1280:size-4" />
-                    </span>
                   </Link>
                 </td>
-                {/* <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
                   <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
@@ -112,24 +115,27 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-2">
+                  <Link href={`/${locale}/about`} className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
                     <span>About Us</span>
                   </Link>
-                </td> */}
+                </td>
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-right gap-x-2 w-[110px] s1728:w-[150px]">
+                  <Link
+                    href="/"
+                    className="flex-left gap-x-2 w-[110px] s1728:w-[150px]"
+                  >
+                    <span>
+                      <MdArrowForwardIos className="s1280:size-4" />
+                    </span>
                     <span>Fertility</span>
-                    <span>
-                      <MdArrowForwardIos className="s1280:size-4" />
-                    </span>
                   </Link>
                 </td>
-                {/* <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
                   <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
@@ -138,24 +144,30 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-2">
+                  <Link
+                    href={`/${locale}/contact-us`}
+                    className="flex-left gap-x-2"
+                  >
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>About Us</span>
+                    <span>Contact Us</span>
                   </Link>
-                </td> */}
+                </td>
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-right gap-x-2 w-[110px] s1728:w-[150px]">
+                  <Link
+                    href="/"
+                    className="flex-left gap-x-2 w-[110px] s1728:w-[150px]"
+                  >
+                    <span>
+                      <MdArrowForwardIos className="s1280:size-4" />
+                    </span>
                     <span>Eye surgery</span>
-                    <span>
-                      <MdArrowForwardIos className="s1280:size-4" />
-                    </span>
                   </Link>
                 </td>
-                {/* <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
                   <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
@@ -170,18 +182,21 @@ const Footer = () => {
                     </span>
                     <span>About Us</span>
                   </Link>
-                </td> */}
+                </td>
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-right gap-x-2 w-[110px] s1728:w-[150px]">
+                  <Link
+                    href="/"
+                    className="flex-left gap-x-2 w-[110px] s1728:w-[150px]"
+                  >
+                    <span>
+                      <MdArrowForwardIos className="s1280:size-4" />
+                    </span>
                     <span>Stem cell</span>
-                    <span>
-                      <MdArrowForwardIos className="s1280:size-4" />
-                    </span>
                   </Link>
                 </td>
-                {/* <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
                   <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
@@ -196,18 +211,21 @@ const Footer = () => {
                     </span>
                     <span>About Us</span>
                   </Link>
-                </td> */}
+                </td>
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href={`/${locale}/medicaltourism/dental-treatments`} className="flex-right gap-x-2 w-[110px] s1728:w-[150px]">
-                    <span>Dental</span>
+                  <Link
+                    href={`/${locale}/medicaltourism/dental-treatments`}
+                    className="flex-left gap-x-2 w-[110px] s1728:w-[150px]"
+                  >
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
+                    <span>Dental</span>
                   </Link>
                 </td>
-                {/* <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
                   <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
@@ -222,7 +240,7 @@ const Footer = () => {
                     </span>
                     <span>About Us</span>
                   </Link>
-                </td> */}
+                </td>
               </tr>
             </tbody>
           </table>
@@ -264,7 +282,7 @@ const Footer = () => {
           <div>
             <Link
               target="_blank"
-              href="whatsapp://send?phone=905300515535"
+              href="whatsapp://send?phone=05393323230"
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <IoLogoWhatsapp className="s1280:size-5" />
@@ -277,7 +295,7 @@ const Footer = () => {
               href="/"
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
-              <FaXTwitter className="s1280:size-5" />
+              <FaFacebookF className="s1280:size-5" />
             </Link>
           </div>
           <div>

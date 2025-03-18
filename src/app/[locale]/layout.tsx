@@ -33,8 +33,6 @@ const RootLayout = async ({
         } relative bg-[#FCFCFC]`}
       >
         <AppProvider>
-          {/* pop up */}
-          {/* <DialogForm /> */}
           <PopForm />
           <Navbar />
           <main>{children}</main>

@@ -5,15 +5,11 @@ import { FaPlay } from "react-icons/fa";
 import videoIcon from "@/assets/images/icons/video.svg";
 import Sidebar from "@/layoutes/sidebar/sidebar";
 import ServiceCard from "@/features/services/serviceCard";
-import cell from "@/assets/images/icons/services/cells.png";
-import fertility from "@/assets/images/icons/services/fertility.png";
-import eye from "@/assets/images/icons/services/eye.png";
-import dental from "@/assets/images/icons/services/dental.png";
-import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import Pagination from "@/components/pagination";
 import ServiceSlider from "@/features/services/serviceSlider/serviceSlider";
 import SubContent from "@/components/shortLongDesc";
 import { medicalTourismContent } from "@/staticData/medicalTourismContent";
+import handleServices from "@/staticData/services/handleServices";
 const Treatments = async ({
   params,
 }: {
@@ -22,44 +18,7 @@ const Treatments = async ({
   }>;
 }) => {
   const { locale } = await params;
-  const imgStyle =
-    "p-4 w-[190px] h-[190px] s1280:h-[160px] s1280:w-[160px] s1512:h-[207px] s1512:w-[207px] s1728:w-[238px] s1728:h-[238px] s1920:w-[250px] s1920:h-[250px]";
-  const titleStyle = "text-[20px] s1280:text-[16px] s1512:text-[20px]";
-  const linkStyle = "w-full text-[18px] s1280:text-[16px] s1512:text-[18px]";
-  const cardContainerStyle =
-    "treatments__card-container w-[210px] s1280:w-[185px] s1512:w-[238px] s1600:w-[245px] s1728:w-[270px] s1920:w-[282px]";
-  const services = [
-    {
-      countService: 27,
-      img: aesthetics,
-      linkService: "/medicaltourism/aesthetic",
-      title: "Aesthetics",
-    },
-    {
-      countService: 74,
-      img: dental,
-      linkService: "/medicaltourism/dental-treatments",
-      title: "Dental",
-    },
-    {
-      countService: 51,
-      img: eye,
-      linkService: "/medicaltourism/eye-surgery",
-      title: "Eye Surgeries",
-    },
-    {
-      countService: 45,
-      img: fertility,
-      linkService: "/medicaltourism/fertility",
-      title: "Fertility",
-    },
-    {
-      countService: 24,
-      img: cell,
-      linkService: "/medicaltourism/stem-cell",
-      title: "Stem Cell",
-    },
-  ];
+  const services = handleServices(locale);
   return (
     <div className="viewport-p bg-[#FCFCFC]">
       {/* header */}
@@ -148,17 +107,17 @@ const Treatments = async ({
         </div>
         <div className="flex flex-col items-center justify-start s1280:flex-row s1280:items-start s1280:justify-between gap-y-10 s1280:gap-y-0 s1280:gap-x-5">
           <div className="flex items-center flex-col justify-start s1280:flex-row s1280:justify-start flex-wrap w-full gap-y-10 s1280:flex-grow s1280:gap-x-5">
-            {services.map((service, index) => (
+            {services.map(({ countService, img, label, path }, index) => (
               <ServiceCard
                 key={index}
-                imgStyle={imgStyle}
-                titleStyle={titleStyle}
-                linkStyle={linkStyle}
-                className={cardContainerStyle}
-                countService={service.countService}
-                img={service.img}
-                linkService={service.linkService}
-                title={service.title}
+                imgStyle="p-4 w-[190px] h-[190px] s1280:h-[160px] s1280:w-[160px] s1512:h-[207px] s1512:w-[207px] s1728:w-[238px] s1728:h-[238px] s1920:w-[250px] s1920:h-[250px]"
+                titleStyle="text-[20px] s1280:text-[16px] s1512:text-[20px]"
+                linkStyle="w-full text-[18px] s1280:text-[16px] s1512:text-[18px]"
+                className="treatments__card-container w-[210px] s1280:w-[185px] s1512:w-[238px] s1600:w-[245px] s1728:w-[270px] s1920:w-[282px]"
+                countService={countService}
+                img={img}
+                linkService={path}
+                title={label}
               />
             ))}
             <div className="w-full">

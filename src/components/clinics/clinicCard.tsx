@@ -7,8 +7,8 @@ const ClinicCard = ({ img, label }: ClinicCardType) => {
       <div className="rounded-[40px] overflow-hidden h-[140px] s1280:h-[140px] s1512:h-[185px] w-full">
         <ImgFetcher
           src={img}
-          width={1500}
-          height={1500}
+          width={3000}
+          height={3000}
           className="object-cover"
         />
       </div>

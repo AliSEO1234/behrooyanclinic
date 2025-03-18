@@ -44,7 +44,7 @@ const ServiceCard = ({
       </div>
       <div className="flex-cen px-4">
         <button
-          onClick={() => router.push(`/${locale}${linkService}`)}
+          onClick={() => router.push(`/${locale}/medicaltourism/${linkService}`)}
           className={`treatments__card-button bg-[#86D1AB] text-white font-bold rounded-[40px] h-[48px] w-[156px] drop-shadow-[0px_4px_4px_#00000040] ${
             linkStyle ? linkStyle : linkStyle
           }`}

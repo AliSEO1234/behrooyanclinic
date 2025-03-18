@@ -21,8 +21,9 @@ const VideoTab = ({videoSrc} : VideoTabType) => {
             </button>
           </div>
           <div>
-            <button
-              onClick={() => setActiveTab("patient")}
+            <a
+            href="#patient-bf"
+              // onClick={() => setActiveTab("patient")}
               className={`font-normal ${
                 activeTab === "patient"
                   ? "border-b border-[#00979A] text-[#00979A]"
@@ -30,7 +31,7 @@ const VideoTab = ({videoSrc} : VideoTabType) => {
               } anm`}
             >
               Patient
-            </button>
+            </a>
           </div>
         </div>
       </div>

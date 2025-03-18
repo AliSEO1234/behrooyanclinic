@@ -26,10 +26,10 @@ import Mesotherapy from "@/assets/images/subnested/Mesotherapy for Hair.jpeg";
 import Moustache from "@/assets/images/subnested/Moustache Transplant.jpg";
 
 // imgCover: subNestedKey === "neck-lift" ? neck : null
-import hair from "@/assets/images/subCategory/hair.png";
-import breastSubCategory from "@/assets/images/subCategory/breast.png";
+// import hair from "@/assets/images/subCategory/hair.png";
+// import breastSubCategory from "@/assets/images/subCategory/breast.png";
 import labiaplastyGenital from "@/assets/images/treatment/labiaplasty.jpg";
-import genital3d from "@/assets/images/subCategory/genital3d.png";
+// import genital3d from "@/assets/images/subCategory/genital3d.png";
 import penileGenital from "@/assets/images/subnested/penile.jpg";
 import dental3d from "@/assets/images/treatment/dental3d.png";
 import den64 from "@/assets/images/subnested/den64.jpg";
@@ -201,7 +201,7 @@ AZPO Health упрощает ваш путь к доступному и каче
           ? "Don’t let blurred vision, eye conditions, or discomfort hold you back! At AZPO Health, we connect you with top-tier eye specialists in Turkey, offering advanced, personalized treatments using the latest medical technology.From laser vision correction to cataract surgery, glaucoma treatment, and corneal transplants, our expert team ensures affordable, high-quality care tailored to your needs."
           : "Don’t let blurred vision, eye conditions, or discomfort hold you back! At AZPO Health, we connect you with top-tier eye specialists in Turkey, offering advanced, personalized treatments using the latest medical technology.From laser vision correction to cataract surgery, glaucoma treatment, and corneal transplants, our expert team ensures affordable, high-quality care tailored to your needs.",
       subCategoryContent: {
-        title: locale === "ru" ? "Dental Treatments" : "Dental Treatments",
+        title: locale === "ru" ? "Eye Surgery Treatments" : "Eye Surgery Treatments",
       },
       contents: {
         title:
@@ -344,7 +344,7 @@ export const subCategoryHandler = (
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
       videoPage: "https://azpo.com/api/files/property-videos/hair_category.mp4",
-      imgCover: hair,
+      imgCover: tdAes,
     },
     {
       id: 0,
@@ -476,7 +476,7 @@ export const subCategoryHandler = (
       subCategoryKey: "breast-surgery",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      imgCover: breastSubCategory,
+      imgCover: tdAes,
     },
     // genital
     {
@@ -522,7 +522,7 @@ export const subCategoryHandler = (
       subCategoryKey: "genital-aesthetic",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      imgCover: genital3d,
+      imgCover: tdAes,
     },
     // dental
     // Implantology

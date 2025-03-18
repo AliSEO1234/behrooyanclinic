@@ -23,16 +23,10 @@ const PatientServices = async ({ params }: PatientServicesType) => {
               PATIENT SERVICES
             </h1>
             <p className="text-[#474744] font-medium leading-[182%] s1512:text-[18px] s1728:text-[20px] s1280:pe-10 s1728:pe-40 s1920:pe-44">
-              We understand how important it is to prepare for your medical
-              journey even before you leave home. That is why we offer
-              convenient and informative online consultations with leading
-              specialists. You’ll have the opportunity to discuss your plans,
-              ask questions to doctors and medical consultants, and receive
-              initial recommendations from the comfort of your home. This step
-              helps you make informed decisions, plan your treatment, and better
-              prepare for your trip. We’re always available to ensure you have
-              full clarity about the treatment process, making your journey
-              towards health as transparent and straightforward as possible.
+            Health is the most valuable and essential aspect of life. At Azpo Health, we prioritize your well-being and ensure that your healthcare journey takes place under the best possible conditions. Our goal is to provide a seamless treatment process by meeting every need a patient may have.<br />
+            From the very first moment, our services begin with a pre-consultation and continue with 24/7 support, even after the patient returns to their home country. Throughout the treatment process, we offer accommodation, transportation, and visa assistance, along with optional city tours for those interested.<br />
+            Experience a flawless, stress-free, and comfortable treatment journey with Azpo Health!
+
             </p>
           </div>
         </div>

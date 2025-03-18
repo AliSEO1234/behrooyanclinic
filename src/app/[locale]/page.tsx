@@ -1,17 +1,8 @@
-import { FaPlay } from "react-icons/fa";
 import ImgFetcher from "@/components/imgFetcher";
-import squire from "@/assets/images/icons/home/squire.svg";
-import star from "@/assets/images/icons/star.svg";
-import point from "@/assets/images/icons/home/points.svg";
 import Link from "next/link";
 import ServiceCard from "@/features/services/serviceCard";
 import HelpingIntersectionObserver from "@/components/scripts/helping-intersection-observer";
 import InfoIntersectionObserver from "@/components/scripts/info-intersection-observer";
-import cell from "@/assets/images/icons/services/cells.png";
-import fertility from "@/assets/images/icons/services/fertility.png";
-import eye from "@/assets/images/icons/services/eye.png";
-import dental from "@/assets/images/icons/services/dental.png";
-import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import videoIcon from "@/assets/images/icons/video.svg";
 import medalIcon from "@/assets/images/icons/medal.svg";
 import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
@@ -29,7 +20,6 @@ import InfoHealthCard from "@/components/infoHealth/infoHealthCard";
 import heart from "@/assets/images/icons/heart.svg";
 import BundleIcon from "@/components/infoHealth/bundleIcon";
 import FillScrollLayout from "@/layoutes/fillScrollLayout/fillScrollLayout";
-import chooseIcon from "@/assets/images/chooseIcon.png";
 import chooseUs from "@/assets/images/chooseus.jpg";
 import ChooseUsCard from "@/components/chooseUs/chooseUsCard";
 import SeeAll from "@/components/seeAll";
@@ -42,7 +32,6 @@ import experienceIcon from "@/assets/images/icons/home/experience.svg";
 import exPhone from "@/assets/images/icons/home/exPhone.svg";
 import BlogCard from "@/components/blogs/blogCard";
 import { blogList } from "@/staticData/blogList";
-import ComplimentaryConsultationForm from "@/features/complimentaryConsultationForm";
 import PlatformWorkForm from "@/features/platformWork/platformWorkForm";
 import InfoCard from "@/features/platformWork/infoCard";
 import pltWork from "@/assets/images/workPlatform.png";
@@ -54,6 +43,9 @@ import online from "@/assets/images/online.svg";
 import VideoPlayerCom from "@/features/videoPlayer/videoPlayer";
 import { FeedbackCardType } from "@/types/feedback/feebackLayout";
 import { patientContents } from "@/staticData/patientContent";
+import { FaPlay } from "react-icons/fa6";
+import ComplimentaryConsultationForm from "@/features/complimentaryConsultationForm";
+import handleServices from "@/staticData/services/handleServices";
 
 const Home = async ({
   params,
@@ -141,122 +133,34 @@ const Home = async ({
       desc: locale === "ru" ? "" : "Thank you for your attention and care ❤️",
     },
   ];
+  const services = handleServices(locale) || [];
   return (
     <>
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
-        <div className="relative s1280:h-full pt-12 s1280:pt-14 s1512:pt-28 overflow-hidden">
+        <div className="viewport-p relative s1280:h-screen pt-20 s1280:pt-28 s1512:pt-28 overflow-hidden flex flex-col items-center">
           <VideoPlayerCom />
-          <div className="grid grid-cols-12 gap-x-4 s1512:gap-x-[23px] s1728:gap-x-[28px] gap-y-10 mb-10 s1280:mb-[60px] viewport-p">
-            <div className="col-span-12 s412:pt-5 s1280:col-span-6 s1512:col-span-4  relative">
-              {/* points */}
-              <div className="hidden w-60 h-60 absolute -bottom-20 -right-36 s1600:-right-40">
-                <ImgFetcher src={point} />
-              </div>
-              {/* points */}
-              <div className="hidden w-72 h-72 absolute -bottom-6 left-40">
-                <ImgFetcher src={point} />
-              </div>
-              {/* squire icon */}
-              <div className="hidden w-[60px] top-0 -right-12 h-[120px] s1280:w-[243px] s1280:h-[290px] absolute s1280:top-10 s1280:-right-40 z-[2]">
-                <ImgFetcher
-                  className="object-contain filter drop-shadow-[inset_5px_10px_10px_rgb(0,0,0)]"
-                  src={squire}
-                />
-              </div>
-              <div className="relative z-[3]">
-                {/* text-[#00979A] */}
-                <h1 className="text-[20px] s1280:text-[48px] s1512:text-[60px] font-black text-center s1280:text-start text-white">
-                  AZPO Health
-                </h1>
-                {/* text-[#2A2A2A] */}
-                <p className="text-[14px] s1280:text-[40px] s1512:text-[38px] s1920:text-[45px]  text-center s1280:text-start font-medium text-white">
-                  Trust, Care, and Wellness
-                </p>
-                {/* text-[#2A2A2A] */}
-                <p className="text-[14px] s1280:text-[40px] s1512:text-[38px] s1920:text-[45px]  text-center s1280:text-start font-medium text-white">
-                  Beyond Borders
-                </p>
-                <hr className="bg-[#9996A0] w-full mt-1 s1280:hidden" />
-                <div className="flex-cen s1280:flex-left mt-2">
-                  <p className="text-[14px] text-center s1280:text-start rounded-[20px] s1280:text-[20px] s1512:text-[16px] s1600:text-[18px] s1728:text-[20px] s1280:rounded-[40px] w-fit font-medium bg-[#DAEDE6] text-[#2A2A2A] s1280:p-3 px-1 py-2 shadow-[0px_4px_4px_0px_#00000040] relative z-[3]">
-                    Travel with confidence, heal with peace
-                  </p>
-                </div>
-                <div className="mt-10 hidden s1280:block">
-                  <div>
-                    {/* text-[#2A2A2A] */}
-                    <p className="font-medium s1280:pe-10 s1600:text-[18px] text-white ">
-                      Discover a life-changing medical journey with tailored
-                      care, comprehensive services, and dedicated 24/7 support
-                      throughout your experience!
-                    </p>
-                  </div>
-                  <div className="mt-5">
-                    <a
-                      href="#video-service"
-                      className="flex-cen w-fit gap-x-2 text-white s1512:text-[20px] font-semibold"
-                    >
-                      <span className="bg-[#DAEDE6] rounded-full flex-cen p-2">
-                        <span className="w-[45px] h-[45px] bg-[#25A6A9] hover:bg-[#0c797b] anm rounded-full flex-cen text-white">
-                          <FaPlay className="size-4 ms-1" />
-                        </span>
-                      </span>
-                      <span>What We Do?</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-span-6 s1280:col-span-3 s1512:col-span-5 z-1"></div>
-            <div className="col-span-12 s1280:hidden relative">
-              {/* points */}
-              <div className="w-48 h-48 absolute -top-10 left-0">
-                <ImgFetcher src={point} />
-              </div>
-              <div>
-                <p className="font-medium text-white text-center px-6 s412:px-0 text-[14px]">
-                  Discover a life-changing medical journey with tailored care,
-                  comprehensive services, and dedicated 24/7 support throughout
-                  your experience!
-                </p>
-              </div>
-              <div className="mt-5 flex-cen">
-                <a
-                  href="#video-service"
-                  className="w-fit flex-cen gap-x-2 text-white s1512:text-[20px] font-semibold"
-                >
-                  <span className="bg-[#DAEDE6] rounded-full flex-cen p-2">
-                    <span className="bg-[#25A6A9] hover:bg-[#3bb1b3] anm rounded-full flex-cen p-2 text-white">
-                      <FaPlay className="size-4" />
-                    </span>
+          <div className="w-full flex flex-col items-center justify-center z-[3] relative mb-20 s1280:mb-0">
+            <h1 className="font-black text-[24px] s1280:text-[32px] text-white h1-homepage-shadow">
+              AZPO Health
+            </h1>
+            <p className="font-medium text-[18px] s1280:text-[24px] text-white">
+              Trust, Care, and Wellness Beyond Borders
+            </p>
+            <div className="mt-5">
+              <a
+                href="#video-service"
+                className="flex-cen w-fit gap-x-2 text-white s1280:text-[18px] s1512:text-[20px] font-semibold"
+              >
+                <span className="bg-[#DAEDE6] rounded-full flex-cen p-1 w-10 h-10">
+                  <span className="w-full h-full bg-[#25A6A9] hover:bg-[#0c797b] anm rounded-full flex-cen text-white">
+                    <FaPlay className="size-4 ms-[2px]" />
                   </span>
-                  <span>What We Do?</span>
-                </a>
-              </div>
-            </div>
-            {/* Complimentary Consultation */}
-            <div className="col-span-12 s1280:col-span-3 s1512:col-span-3 relative s1512:flex flex-col items-end">
-              {/* star */}
-              <div className="w-[78px] h-[78px] absolute -top-20 left-0 z-[2] s1280:-top-4 s1600:-top-5 s1280:-left-8">
-                <ImgFetcher src={star} />
-              </div>
-              {/* points */}
-              <div className="hidden w-60 h-60 absolute -top-8 s1512:-top-10 right-0">
-                <ImgFetcher src={point} />
-              </div>
-              <div className="relative z-[3] s1512:flex s1512:flex-col">
-                <div className="mb-4 s1280:px-[27px] s1600:px-0 s1600:mt-5">
-                  <h2 className="text-center text-[20px] s1280:text-[24px] s1728:text-[30px] font-bold s1512:text-center text-white">
-                    Complimentary Consultation
-                  </h2>
-                </div>
-                {/* form */}
-                <div className="p-4 s412:px-[35px] s1280:px-[27px] bg-[#ffffff4f] backdrop-blur-[10px] rounded-[30px] s1512:mt-auto shadow-[0px_4px_15px_0px_#0000001A] s1280:py-5  mt-auto">
-                  <ComplimentaryConsultationForm />
-                </div>
-              </div>
+                </span>
+                <span>What We Do?</span>
+              </a>
             </div>
           </div>
+          <ComplimentaryConsultationForm />
         </div>
         <div className="viewport-p">
           {/* Specialized Treatments */}
@@ -276,7 +180,22 @@ const Home = async ({
             </div>
             {/* show service */}
             <div className="flex flex-col s1280:flex-row s1280:flex-wrap items-center justify-start s1280:items-center s1280:justify-between gap-y-8 s1280:gap-4 s1280:px-0">
-              <ServiceCard
+              {services.map(({ countService, img, label, path }, index) => {
+                return (
+                  <ServiceCard
+                    key={index}
+                    countService={countService}
+                    img={img}
+                    title={label}
+                    linkService={path}
+                    linkStyle=" text-[18px] s1512:text-[18px]"
+                    titleStyle=" text-[20px] s1512:text-[20px]"
+                    imgStyle="p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
+                    className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
+                  />
+                );
+              })}
+              {/* <ServiceCard
                 linkStyle=" text-[18px] s1512:text-[18px]"
                 titleStyle=" text-[20px] s1512:text-[20px]"
                 imgStyle="p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
@@ -325,7 +244,7 @@ const Home = async ({
                 img={cell}
                 linkService="/medicaltourism/stem-cell"
                 title="Stem Cell"
-              />
+              /> */}
             </div>
           </div>
           {/* Watch Your Health Journey */}
@@ -612,9 +531,9 @@ const Home = async ({
                   />
                 </div>
                 {/* icon */}
-                <div className="hidden s1280:block s1280:w-[307px] s1280:h-[290px] absolute -bottom-14 -right-28">
+                {/* <div className="hidden s1280:block s1280:w-[307px] s1280:h-[290px] absolute -bottom-14 -right-28">
                   <ImgFetcher src={chooseIcon} width={800} />
-                </div>
+                </div> */}
               </div>
               <div className="col-span-12 s1280:col-span-9 s1512:col-span-8 grid grid-cols-12 s1280:gap-x-5 s1600:gap-x-[26px] s1920:gap-x-[39px] gap-y-[32px]">
                 <ChooseUsCard

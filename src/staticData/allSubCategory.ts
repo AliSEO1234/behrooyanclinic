@@ -441,7 +441,7 @@ export const allSubNestedCategory = [
   // Hollywood Smile
   {
     img: hollywood,
-    title: "Hollywood Smile",
+    title: "Holleywood smile/Snap on Smile",
     description:
       "Get the dazzling, flawless smile you’ve always dreamed of with Hollywood Smile. Say goodbye to stains, chips, and gaps—our expert cosmetic dentistry enhances your teeth with precision, giving you that perfect, picture-ready look. Boost your confidence and make every smile unforgettable!",
     categoryKey: "dental-treatments",

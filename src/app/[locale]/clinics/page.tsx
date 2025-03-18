@@ -1,7 +1,6 @@
 import girlChar from "@/assets/images/clinics/girlChar.png";
 import desk from "@/assets/images/clinics/desk.png";
 import pres from "@/assets/images/clinics/pres.png";
-import SearchClinic from "@/components/clinics/searchClinic";
 import ImgFetcher from "@/components/imgFetcher";
 import { clinicsData } from "@/staticData/clinics/clinicsData";
 import ClinicCard from "@/components/clinics/clinicCard";
@@ -47,7 +46,7 @@ const Clinics = () => {
                 and comfort
               </p>
             </div>
-            <SearchClinic />
+            {/* <SearchClinic /> */}
           </div>
         </div>
         {/* content */}

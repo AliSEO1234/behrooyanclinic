@@ -522,7 +522,7 @@ const Page = async ({ params }: PropsPageType) => {
           </div>
         )}
         {/* before && after */}
-        <div className="mb-[24px] s1280:mb-20">
+        <div id="patient-bf" className="mb-[24px] s1280:mb-20">
           <div className="font-bold flex-left relative w-fit mb-5">
             <h2 className="s1280:text-[48px]">
               {locale === "ru" ? "До" : "Before"}
