@@ -292,7 +292,8 @@ const Footer = () => {
           </div>
           <div>
             <Link
-              href="/"
+              href="https://www.facebook.com/share/1C8Kd8rX83/"
+              target="_blank"
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <FaFacebookF className="s1280:size-5" />
@@ -310,7 +311,11 @@ const Footer = () => {
           <div>
             <Link
               target="_blank"
-              href="https://instagram.com/azpo_health"
+              href={
+                locale === "ru"
+                  ? "https://www.instagram.com/azpo_health?igsh=MXcxbm9tMXV2bmE5dg=="
+                  : "https://www.instagram.com/azpo_health_international?igsh=NzJkcWY5NmxkbGky"
+              }
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <BsInstagram className="s1280:size-5" />

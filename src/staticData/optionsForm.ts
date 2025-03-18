@@ -29,7 +29,7 @@ export const options = [
   {
     isActive: true,
     label: "Ophthalmology and Eye Surgery",
-    key: "aesthetic",
+    key: "eye-surgery",
     id: 17,
   },
   {

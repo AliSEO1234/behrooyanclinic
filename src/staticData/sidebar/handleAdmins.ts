@@ -12,7 +12,13 @@ import iran from "@/assets/images/iran.svg";
 export const handleAdmins = (locale: string) => {
   const adminList = [
     {
-      name: "Aylin",
+      name: locale === "ru" ? "Parinaz" : "Parinaz",
+      languages: [us, iran, turkey],
+      desc: locale === "ru" ? "Patient Coordinators" : "Patient Coordinators",
+      img: parinaz,
+    },
+    {
+      name: "Aynur",
       languages: [gr, turkey],
       desc: locale === "ru" ? "Patient Coordinators" : "Patient Coordinators",
       img: health,
@@ -42,12 +48,6 @@ export const handleAdmins = (locale: string) => {
       languages: [russian, turkey],
       desc: locale === "ru" ? "Patient Coordinators" : "Patient Coordinators",
       img: mehri,
-    },
-    {
-      name: locale === "ru" ? "Parinaz" : "Parinaz",
-      languages: [us, iran, turkey],
-      desc: locale === "ru" ? "Patient Coordinators" : "Patient Coordinators",
-      img: parinaz,
     },
   ];
   return adminList;
