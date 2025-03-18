@@ -280,7 +280,7 @@ export const allSubNestedCategory = [
     img: double,
     title: "Double chin iposuction",
     description:
-      "Is a stubborn double chin clouding your profile? Don't let excess fat under your chin keep you from feeling your best. Double chin liposuction can sculpt a more youthful, defined look, restoring your confidence.",
+      "Tired of seeing a stubborn double chin in photos or the mirror? No matter how much you diet or exercise, that extra fat under your chin just won’t go away? It’s frustrating—but there’s a solution. With Double Chin Liposuction in Turkey, you can achieve a sleek, sculpted jawline and bring back your youthful, confident look. AZPO Health connects you with top cosmetic specialists who use advanced, minimally invasive techniques for smooth, natural-looking results.",
     path: "double-chin-liposuction",
     categoryKey: "aesthetic",
     subCategoryKey: "facial-aesthetic-surgery",
@@ -298,7 +298,7 @@ export const allSubNestedCategory = [
     img: ble,
     title: "Blepharoplasty upper lower",
     description:
-      "Tired of looking tired? Blepharoplasty can help refresh your appearance and restore your confidence in 2025. Are heavy, drooping eyelids making you look older than you feel? Are you noticing puffiness or bags under your eyes that just won't go away, no matter how much sleep you get? Perhaps you're even experiencing vision problems due to sagging upper eyelids. At AZPO Health, we understand how these concerns can affect your self-esteem and overall quality of life. Blepharoplasty, or eyelid surgery, offers a rejuvenating solution to address these issues, helping you achieve a brighter, more youthful, and refreshed appearance.",
+      "Tired of looking tired? Sagging eyelids and under-eye bags can add years to your face, making you look exhausted or older than you feel. With expert Blepharoplasty (eyelid surgery) in Turkey, you can achieve a refreshed, youthful appearance in 2025. At AZPO Health, we connect you with top surgeons specializing in natural-looking eyelid rejuvenation—helping you reduce puffiness, lift drooping skin, and restore a brighter, more awake expression.",
     path: "blepharoplasty-upper-lower",
     categoryKey: "aesthetic",
     subCategoryKey: "facial-aesthetic-surgery",
@@ -307,7 +307,7 @@ export const allSubNestedCategory = [
     img: brow,
     title: "Brow Lift",
     description:
-      "Is forehead wrinkles, hooded eyelids, or drooping brows are casting a shadow on your confidence? At AZPO Health, we understand the frustration. Discover how a brow lift in Turkey can rejuvenate your appearance, smooth wrinkles, and restore a more alert, youthful you.",
+      "Are sagging brows, forehead wrinkles, or hooded eyelids making you look tired, older, or less expressive? Don’t let aging define you—refresh and lift your look with expert Brow Lift Surgery in Turkey. At AZPO Health, we connect you with top-tier surgeons who specialize in Brow Lift Surgery and giving you natural-looking results.",
     path: "brow-lift",
     categoryKey: "aesthetic",
     subCategoryKey: "facial-aesthetic-surgery",
@@ -316,7 +316,7 @@ export const allSubNestedCategory = [
     img: neck,
     title: "Neck Lift",
     description:
-      "Is a sagging neckline stealing your confidence? At AZPO Health in Turkey, a neck lift can rejuvenate your appearance, offering a smoother, more defined contour and a boost in self-esteem.",
+      "If sagging skin, wrinkles, or a loose neckline is making you feel older than you are, it’s time for a change. A neck lift can restore a firmer, more youthful contour, bringing back the confidence that comes with a well-defined jawline. At AZPO Health, we connect you with top surgeons in Turkey who specialize in natural-looking results, ensuring a smooth, refreshed appearance. Turn back the clock with expert care and lasting transformation.",
     path: "neck-lift",
     categoryKey: "aesthetic",
     subCategoryKey: "facial-aesthetic-surgery",
@@ -326,7 +326,7 @@ export const allSubNestedCategory = [
     img: liposuction,
     title: "Liposuction",
     description:
-      "Are you struggling with stubborn fat? Discover affordable and effective liposuction in Turkey at AZPO Health, achieving the body you desire with natural-looking results.",
+      "Are you struggling with stubborn fat? Discover affordable and effective liposuction in Turkey with AZPO Health, achieving the body you desire with natural-looking results.Feeling self-conscious about localized fat deposits? At AZPO Health, we understand the frustration. Liposuction in Turkey offers a safe and effective solution to sculpt your body and boost your confidence. With experienced surgeons and state-of-the-art facilities, AZPO Health can help you achieve your dream physique in 2025.",
     path: "liposuction",
     categoryKey: "aesthetic",
     subCategoryKey: "body-contouring",
@@ -353,17 +353,16 @@ export const allSubNestedCategory = [
     img: thighlift,
     title: "Thigh Lift",
     description:
-      "Are you longing for firmer, more toned thighs that you can confidently show off?. Does excess skin or stubborn fat deposits keep you from wearing the clothes you love and feeling your best?. At AZPO Health, we understand how frustrating it can be to struggle with the appearance of your thighs despite your best efforts with diet and exercise. That's why we offer advanced thigh lift surgery in Turkey, providing a safe, effective, and affordable solution to help you achieve the smooth, sculpted legs you've always dreamed of.",
+      "Tired of sagging skin and stubborn thigh fat? AZPO Health connects you with top clinics in Turkey for transformative thigh lift surgery. Achieve beautifully sculpted legs and renewed confidence with a safe, effective, and affordable solution.",
     path: "thigh-lift",
     categoryKey: "aesthetic",
     subCategoryKey: "body-contouring",
   },
-
   {
     img: tummy,
     title: "Tummy Tuck Abdominoplasty",
     description:
-      "Is excess skin after weight loss or pregnancy making you feel self-conscious? A tummy tuck (abdominoplasty) at AZPO Health in Turkey can remove that skin, tighten your abdominal muscles, and restore your youthful shape. Regain confidence with a flatter, firmer tummy and step into the new you.",
+      "Is excess skin after weight loss or pregnancy making you feel self-conscious? A tummy tuck (abdominoplasty) with AZPO Health in Turkey can remove that skin, tighten your abdominal muscles, and restore your youthful shape. Regain confidence with a flatter, firmer tummy and step into the new you.",
     path: "tummy-tuck-abdominoplasty",
     categoryKey: "aesthetic",
     subCategoryKey: "body-contouring",
@@ -373,7 +372,7 @@ export const allSubNestedCategory = [
     img: breatSubCategory,
     title: "Breast Augmentation Implants",
     description:
-      "Longing for fuller, more defined curves? Breast augmentation with implants at AZPO Health in Turkey offers a transformative journey to enhance your natural beauty and boost your self-confidence. Discover how our expert surgeons and all-inclusive packages can make your dream a reality.",
+      "Longing for fuller, more defined curves? Breast augmentation implants with AZPO Health in Turkey offers a transformative journey to enhance your natural beauty and boost your self-confidence. Discover how our expert surgeons and all-inclusive packages can make your dream a reality.",
     categoryKey: "aesthetic",
     path:"breast-augmentation-implants",
     subCategoryKey: "breast-surgery",
@@ -382,7 +381,7 @@ export const allSubNestedCategory = [
     img: breast,
     title: "Breast Lift Mastopexy",
     description:
-      "Is a sagging neckline stealing your confidence? At AZPO Health in Turkey, a neck lift can rejuvenate your appearance, offering a smoother, more defined contour and a boost in self-esteem.",
+      "Are you feeling that your breasts have lost their youthful shape and firmness due to factors like aging, pregnancy, or weight fluctuations? Do you desire a more lifted and aesthetically pleasing breast appearance? In Turkey, through AZPO Health's extensive network, you can connect with skilled surgeons who specialize in breast lift mastopexy procedures, helping you regain confidence and achieve the breast contours you've been longing for.",
     path: "breast-lift-mastopexy",
     categoryKey: "aesthetic",
     subCategoryKey: "breast-surgery",
