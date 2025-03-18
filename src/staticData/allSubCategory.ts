@@ -63,6 +63,15 @@ import theregemed from "@/assets/images/subCategory/therapy Regenerative Medicin
 import orthopedic from "@/assets/images/subnested/Orthopedic Stem Cell Therapy 1.jpg"
 import stemmen from "@/assets/images/subnested/Stem Cell men.jpg"
 import neurological from "@/assets/images/subnested/Neurological Stem Cell.jpg"
+import tipplasty from "@/assets/images/subnested/Tip Plasty (Nose Tip Correction).jpg"
+import almondeye from "@/assets/images/subnested/Aesthetic Almond-Shaped Eyes - Bilateral Canthoplasty.jpg"
+import facelift from "@/assets/images/subnested/Facelift (Rhytidectomy).jpg"
+import bichecktomy from "@/assets/images/subnested/Bichecktomy.jpg"
+import momymakeover from "@/assets/images/subnested/Mommy Makeover.jpg"
+import breastreduc from "@/assets/images/subnested/Breast Reduction.jpg"
+import malebreastreduc from "@/assets/images/subnested/Male Breast Reduction (Gynecomastia Treatment).jpg"
+import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg"
+import implant from "@/assets/images/subnested/Implant Treatment .jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -604,4 +613,95 @@ export const allSubNestedCategory = [
     path: "neurological-therapy",
     subCategoryKey: "therapy-regenerative-medicine",
   },
+  // tipplasty
+  {
+    img: tipplasty,
+    title: "Tip plasty",
+    description:
+      "If your nasal tip feels off, too round, too bulbous, or just unbalanced, Tip Plasty can refine it without a full rhinoplasty. In Turkey, top specialists offer this precise enhancement, bringing harmony to your features with subtle yet powerful results. Through AZPO Health’s trusted network, you’ll get expert care for a natural, confidence-boosting transformation.",
+    categoryKey: "aesthetic",
+    path: "tip-plasty",
+    subCategoryKey: "facial-aesthetic-surgery",
+  },
+  // Almond Eye
+  {
+    img: almondeye,
+    title: "Almond Eye",
+    description:
+      "Are you longing for captivating, elegant eyes that enhance your natural beauty and radiate allure? In Turkey, you can access expert care and advanced techniques to achieve the sought-after almond eye shape, boosting your confidence and transforming your look with natural-looking results.",
+    categoryKey: "aesthetic",
+    path: "almond-eye",
+    subCategoryKey: "facial-aesthetic-surgery",
+  },
+  // face lift
+  {
+    img: facelift,
+    title: "Face lift",
+    description:
+      "Are the signs of aging on your face like sagging skin, wrinkles, and a tired appearance affecting your confidence? Imagine a refreshed and more youthful look. AZPO Health connects you with experienced medical professionals in Turkey who specialize in Facelift procedures, helping you achieve your aesthetic goals with personalized care and promising results. Contact us today for a free consultation.",
+    categoryKey: "aesthetic",
+    path: "face-lift",
+    subCategoryKey: "facial-aesthetic-surgery",
+  },
+  // bichecktomy
+  {
+    img: bichecktomy,
+    title: "Bichecktomy",
+    description:
+      "Are you looking to refine your facial appearance and achieve slimmer, more sculpted cheeks? In Turkey, you can find access to experienced professionals who perform bichectomy, a procedure aimed at reducing fullness in the cheeks. Connect with qualified clinics through AZPO Health and explore how this treatment can help you attain a more defined and balanced facial aesthetic.",
+    categoryKey: "aesthetic",
+    path: "bichecktomy",
+    subCategoryKey: "facial-aesthetic-surgery",
+  },
+  // mommy-makeover
+  {
+    img: momymakeover,
+    title: "Mommy makeover",
+    description:
+      "Are you feeling the impact of motherhood on your body, noticing changes that leave you less confident? A mommy makeover in Turkey with AZPO health offers a comprehensive solution to rejuvenate your appearance, helping you feel like yourself again. Explore the possibilities and take the first step towards renewed confidence.",
+    categoryKey: "aesthetic",
+    path: "mommy-makeover",
+    subCategoryKey: "body-contouring",
+  },
+  // breast-reduction
+  {
+    img: breastreduc,
+    title: "Breast reduction",
+    description:
+      "Feeling burdened by the physical and emotional weight of overly large breasts? Is discomfort, pain, or limitations in your daily life becoming a constant struggle? In Turkey, you can find experienced surgeons and modern facilities that specialize in breast reduction surgery, offering a potential pathway to renewed comfort and improved well-being. Contact AZPO Health today to explore your options and take the first step towards a more balanced and confident you.",
+    categoryKey: "aesthetic",
+    path: "breast-reduction",
+    subCategoryKey: "breast-surgery",
+  },
+  // Male breast reduction
+  {
+    img: malebreastreduc,
+    title: "Male breast reduction",
+    description:
+      "Tired of hiding under baggy clothes? Feeling self-conscious every time you take off your shirt? You’re not alone—but you don’t have to live like this.At AZPO Health, we connect you with top-tier surgeons in Turkey specializing in male breast reduction—giving you a sculpted, masculine chest so you can walk with confidence and finally feel at home in your own body.",
+    categoryKey: "aesthetic",
+    path: "male-breast-reduction",
+    subCategoryKey: "breast-surgery",
+  },
+  // Vaginal tightening
+  {
+    img: veginal,
+    title: "Vaginal tightening",
+    description:
+      "Do you feel like something’s changed? A loss of tightness, discomfort, or a dip in confidence affecting your intimate life? You’re not alone—and you don’t have to settle.At AZPO Health, we connect you with leading specialists in Turkey offering advanced vaginal tightening (vaginoplasty) treatments designed to restore comfort, confidence, and pleasure.",
+    categoryKey: "aesthetic",
+    path: "vaginal-tightening",
+    subCategoryKey: "genital-aesthetic",
+  },
+  // Implant treatment
+  {
+    img: implant,
+    title: "Implant treatment",
+    description:
+      "Missing teeth shouldn’t dictate your life—whether it’s eating, speaking, or simply smiling without worry. But what if you could get back the look and feel of natural teeth with a solution that’s seamless and lasting? At AZPO Health, we connect you with elite dental experts in Turkey, offering cutting-edge implant treatments that restore your smile at a fraction of the price you’d pay elsewhere—without compromising on quality.",
+    categoryKey: "dental-treatments",
+    path: "implant-treatment",
+    subCategoryKey: "implantology",
+  },
+
 ];
