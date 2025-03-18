@@ -413,7 +413,7 @@ export const allSubNestedCategory = [
     img: den64,
     title: "All on 6-4 Dental Implants",
     description:
-      "Considering phalloplasty for penile enlargement to enhance your confidence and address personal desires? Turkey has emerged as a respected destination for men seeking these specialized procedures. Discover how AZPO Health can connect you with experienced surgeons and comprehensive support for a discreet and empowering journey.",
+      "Considering full arch dental restoration and researching cost-effective solutions? Turkey has become a leading destination for 4 Dental Implants and 6 Dental Implants procedures, offering advanced All-on-4 and All-on-6 dental implant techniques at significantly reduced costs. Discover how AZPO Health connects you with expert implantologists and all-inclusive packages to regain a complete, functional, and beautiful smile.",
     categoryKey: "dental-treatments",
     path: "6-4-dental-implants",
     subCategoryKey: "implantology",
@@ -423,7 +423,7 @@ export const allSubNestedCategory = [
     img: rootcanal,
     title: "Root Canal Therapy",
     description:
-      "Tired of tooth pain and worried about losing your natural smile? Discover how root canal therapy in Turkey can be your affordable and high-quality solution. AZPO Health offers comprehensive dental care packages in Istanbul, Antalya, and Alanya, combining expert treatment with a relaxing medical tourism experience.",
+      "Prioritizing your oral health and seeking routine dental care without high costs? Turkey has become an increasingly popular destination for general dentistry, offering accessible and quality treatments. Discover how AZPO Health connects you with experienced dentists and comfortable, comprehensive care packages to maintain a healthy and confident smile.",
     categoryKey: "dental-treatments",
     path: "root-canal-therapy",
     subCategoryKey: "general-dentistry",
