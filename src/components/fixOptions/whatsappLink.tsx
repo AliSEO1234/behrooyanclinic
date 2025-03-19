@@ -32,7 +32,7 @@ const WhatsAppLink = () => {
           <DropdownMenuItem className="border shadow w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-white">
             <Link
               className="w-full h-full flex-cen"
-              href="whatsapp://send?phone=05393323230"
+              href="whatsapp://send?phone=+905393323230"
               target="_blank"
             >
               <IoLogoWhatsapp className="size-6 text-[#25d366]" />
