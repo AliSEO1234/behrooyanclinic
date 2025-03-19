@@ -22,7 +22,7 @@ const UpArrow = () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }}
-      className={`z-[5] w-[40px] h-[40px] s1512:w-[54px] s1512:h-[54px] rounded-full bg-white color hover:bg-color hover:text-white animation-global shadow-[0px_4px_4px_0px_#00000040] fixed left-5 bottom-5 ${
+      className={`z-[5] w-[40px] h-[40px] s1512:w-[54px] s1512:h-[54px] rounded-full bg-white color hover:bg-[#0CA5A5] hover:text-white anm shadow-[0px_4px_4px_0px_#00000040] fixed left-5 bottom-5 ${
         moveScroll ? "flex-cen" : "hidden"
       }`}
     >
