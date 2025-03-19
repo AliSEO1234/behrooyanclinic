@@ -89,7 +89,7 @@ const HamburgerMenu = () => {
               </button>
             </div>
             <div>
-              <ul className="flex flex-col items-start gap-y-8 font-medium text-[#474744]">
+              <ul className="flex flex-col items-start gap-y-6 font-medium text-[#474744]">
                 <li>
                   <Link href={`/${locale}`}>Home Page</Link>
                 </li>
