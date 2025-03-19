@@ -8,7 +8,7 @@ const InfoCard = ({ counter, desc, title }: PltInfoCardType) => {
       </div>
       <div>
         <h4 className="font-bold s1280:text-[20px] text-[#00979A]">{title}</h4>
-        <p className="text-[#6D6D6D] text-justify font-medium leading-[25px]">
+        <p className="text-[#6D6D6D] font-medium leading-[25px]">
           {desc}
         </p>
       </div>

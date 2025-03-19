@@ -30,7 +30,7 @@ const Page = async ({ params }: PropsPageType) => {
               <span>54</span>
               <span>Service</span>
             </p> */}
-            <p className="text-[#333333] font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-justify s1280:text-start leading-[25px] s1280:leading-[30px] s1600:leading-[45px] s1280:line-clamp-[8]">
+            <p className="text-[#333333] font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] s1280:text-start leading-[25px] s1280:leading-[30px] s1600:leading-[45px] s1280:line-clamp-[8]">
               {fetchData?.descriptionTop}
               {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -81,11 +81,11 @@ const Page = async ({ params }: PropsPageType) => {
         {/* videos */}
         <div className="grid grid-cols-12 gap-y-8 s1280:gap-y-0 s1280:mb-20 s1280:gap-x-20 s1920:gap-x-32">
           <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-7 flex items-center justify-start">
-            <div className="s1280:w-[688px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[850px] s1728:h-[650px] s1920:w-[900px] s1920:h-[700px]">
+            <div className="w-full flex-cen s1280:w-[688px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[850px] s1728:h-[650px] s1920:w-[900px] s1920:h-[700px]">
               <VideoPlayer
                 showLogo={false}
                 toolsbarStyle="h-[38px] s1280:h-[60px] border-[1px] border-white"
-                className="s1280:w-[684px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1728:h-[530px]  s1920:w-[996px] s1920:h-[580px]"
+                className="w-[300px] h-[170px] s1280:w-[684px] s1280:h-[434px] s1512:w-[798px] s1512:h-[506px] s1600:w-[836px] s1600:h-[530px] s1728:w-[885px] s1728:h-[530px]  s1920:w-[996px] s1920:h-[580px]"
                 src={
                   fetchData?.videoPage
                     ? fetchData.videoPage
@@ -101,7 +101,7 @@ const Page = async ({ params }: PropsPageType) => {
               <h2 className="font-semibold text-[20px] [text-shadow:0px_1px_2px_#00000025] s1280:text-[30px] s1512:text-[36px] s1728:text-[40px] text-[#333333] shadow-treat-video mb-2">
                 {fetchData?.videoContents.title}
               </h2>
-              <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-[#474744] text-justify s1280:text-start s1280:leading-8 s1512:leading-9 s1600:leading-[50px] line-clamp-[10]">
+              <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-[#474744] s1280:text-start s1280:leading-8 s1512:leading-9 s1600:leading-[50px] line-clamp-[10]">
                 {fetchData?.videoContents.desc}
               </p>
             </div>

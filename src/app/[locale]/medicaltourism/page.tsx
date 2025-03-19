@@ -89,7 +89,7 @@ const Treatments = async ({
                 ? "https://azpo.com/api/files/property-videos/site_health.mp4"
                 : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
             }
-            className="s1280:w-[916px] h-[200px] s1280:h-[501px]"
+            className="w-[300px] h-[170px] s1280:w-[916px] s1280:h-[501px] object-cover"
           />
         </div>
       </div>

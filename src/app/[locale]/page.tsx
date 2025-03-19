@@ -139,7 +139,7 @@ const Home = async ({
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
         <div className="viewport-p relative s1280:h-screen pt-20 s1280:pt-28 s1512:pt-28 flex flex-col items-center">
           <VideoPlayerCom />
-          <div className="w-full flex flex-col items-center justify-center z-[3] relative mb-20 s1280:mb-0">
+          <div className="w-full flex flex-col items-center justify-center z-[3] relative mb-10 s1280:mb-0">
             <h1 className="font-black text-[24px] s1280:text-[32px] text-white h1-homepage-shadow">
               AZPO Health
             </h1>
@@ -261,7 +261,7 @@ const Home = async ({
             </div>
             <div className="flex-cen relative">
               <VideoPlayer
-                className="s1280:w-[916px] s1280:h-[501px]"
+                className="w-[300px] h-[170px] s1280:w-[916px] s1280:h-[501px] object-cover"
                 toolsbarStyle="h-[38px] s1280:h-[57px]"
                 src={
                   locale === "ru"
@@ -379,7 +379,7 @@ const Home = async ({
                 <h4 className="font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1728:text-[40px] mb-1">
                   Our <span className="text-[#00979A]">Mission</span>
                 </h4>
-                <p className="text-[#474744] font-medium text-[14px] s1512:text-[16px] s1600:text-[18px] s1728:text-[20px] s1512:leading-[30px] text-justify">
+                <p className="text-[#474744] font-medium text-[14px] s1512:text-[16px] s1600:text-[18px] s1728:text-[20px] s1512:leading-[30px]">
                   At AzpoHealth, we aim to transform healthcare from a routine
                   process into an inspiring journey. Our goal is to make
                   advanced medical technologies accessible to patients

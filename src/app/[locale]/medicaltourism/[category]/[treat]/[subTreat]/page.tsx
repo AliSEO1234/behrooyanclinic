@@ -282,7 +282,7 @@ const Page = async ({ params }: PropsPageType) => {
           </div>
         </div>
         <div className="col-span-12 s1280:hidden">
-          <p className="font-medium s1280:hidden text-justify text-[#474744]">
+          <p className="font-medium s1280:hidden text-[#474744]">
             {fetchData?.descriptionTop}
           </p>
         </div>

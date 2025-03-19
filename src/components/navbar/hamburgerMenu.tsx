@@ -76,9 +76,9 @@ const HamburgerMenu = () => {
               </div>
             </div>
           </div>
-          <hr className="h-0 w-full border-[0.7px] border-[#00000029] my-4" />
+          <hr className="h-0 w-full border-[0.7px] border-[#00000029] mt-4 mb-10" />
           <div className="overflow-y-scroll h-[60vh] pb-12">
-            <div className="relative mb-8">
+            <div className="relative mb-10">
               <input
                 type="search"
                 className="w-full h-[48px] border-[0.5px] border-[#00000012] rounded-[100px] px-4"
@@ -89,7 +89,7 @@ const HamburgerMenu = () => {
               </button>
             </div>
             <div>
-              <ul className="flex flex-col items-start gap-y-3 font-medium text-[#474744]">
+              <ul className="flex flex-col items-start gap-y-8 font-medium text-[#474744]">
                 <li>
                   <Link href={`/${locale}`}>Home Page</Link>
                 </li>

@@ -24,7 +24,7 @@ const Page = async ({ params }: PropsPageType) => {
               {fetchData?.title}
               {/* Eye Surgeries */}
             </h1>
-            <p className="text-[#333333] font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] text-justify s1280:text-start leading-[25px] s1280:leading-[30px] s1600:leading-[45px] s1280:line-clamp-[8]">
+            <p className="text-[#333333] font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[30px] s1280:text-start leading-[25px] s1280:leading-[30px] s1600:leading-[45px] s1280:line-clamp-[8]">
               {fetchData?.descriptionTop}
             </p>
           </div>
