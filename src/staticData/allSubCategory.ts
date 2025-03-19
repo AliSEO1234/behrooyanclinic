@@ -25,53 +25,67 @@ import neck from "@/assets/images/subnested/Neck Lift (Platysmaplasty).jpg";
 import otoplasty from "@/assets/images/subnested/Otoplasty.jpg";
 import ble from "@/assets/images/subnested/Blepharoplasty (Upper and Lower Eyelid Surgery).jpg";
 // breast
-import breatSubCategory from "@/assets/images/subCategory/breastCard.jpg"
+import breatSubCategory from "@/assets/images/subCategory/breastCard.jpg";
 // genital
-import genital from "@/assets/images/treatment/genital.jpg"
-import labiaplastyGenital from "@/assets/images/treatment/labiaplasty.jpg"
-import penileGenital from "@/assets/images/subnested/penile.jpg"
-import implantology from "@/assets/images/subCategory/implantology.jpg"
-import den64 from "@/assets/images/subnested/den64.jpg"
-import destigeneral from "@/assets/images/treatment/destigeneral.jpg"
-import rootcanal from "@/assets/images/subnested/rootcanal.jpg"
-import cosmeticdentistry from "@/assets/images/treatment/Cosmetic-Dentistry.jpg"
-import laminateveneers from "@/assets/images/subnested/Laminate Veneers.jpg"
-import restoryDenstiry from "@/assets/images/subCategory/restorative-dentistry.jpg"
-import dentistchoosing from "@/assets/images/subnested/dentist_choosing.jpg"
-import periodontics from "@/assets/images/treatment/periodontics.jpg"
-import hollywood from "@/assets/images/subCategory/Hollywood Smile.jpg"
-import teethwhiting from "@/assets/images/subCategory/Teeth Whitening.jpg"
-import orthodontics from "@/assets/images/subCategory/Orthodontics.jpg"
-import clearaligners from "@/assets/images/subCategory/Clear Aligners.jpg"
-import gumgrafting from "@/assets/images/subnested/Gum Grafting.jpg"
-import lasergumtreatments from "@/assets/images/subCategory/laser gum.jpg"
-import oralsurgery from "@/assets/images/subCategory/Oral-Surgery.jpg"
-import bonegrafting from "@/assets/images/subnested/Bone Grafting.jpg"
-import glocama from "@/assets/images/subnested/Glaucoma.jpg"
-import intraocularImg from "@/assets/images/subnested/Intraocular.jpg"
-import eyedesis from "@/assets/images/subCategory/Eye disease.jpg"
-import surgical from "@/assets/images/subCategory/Surgical.jpg"
-import diabetic from "@/assets/images/subCategory/Diabetic.jpg"
-import corneal from "@/assets/images/subnested/Corneal Transplant.jpg"
-import maleFertility from "@/assets/images/subnested/Male-Infertility.jpg"
-import asissfertility from "@/assets/images/subCategory/fertility assisted reproduction.jpg"
-import malesecual from "@/assets/images/subCategory/Male Sexual.jpg"
-import malesexual from "@/assets/images/subnested/Male Sexual Health Issues.jpg"
-import peyroniesdisease from "@/assets/images/subnested/Peyronie’s Disease 1.jpg"
-import dyfunc from "@/assets/images/subnested/Erectile Dysfunction.jpg"
-import theregemed from "@/assets/images/subCategory/therapy Regenerative Medicine.jpg"
-import orthopedic from "@/assets/images/subnested/Orthopedic Stem Cell Therapy 1.jpg"
-import stemmen from "@/assets/images/subnested/Stem Cell men.jpg"
-import neurological from "@/assets/images/subnested/Neurological Stem Cell.jpg"
-import tipplasty from "@/assets/images/subnested/Tip Plasty (Nose Tip Correction).jpg"
-import almondeye from "@/assets/images/subnested/Aesthetic Almond-Shaped Eyes - Bilateral Canthoplasty.jpg"
-import facelift from "@/assets/images/subnested/Facelift (Rhytidectomy).jpg"
-import bichecktomy from "@/assets/images/subnested/Bichecktomy.jpg"
-import momymakeover from "@/assets/images/subnested/Mommy Makeover.jpg"
-import breastreduc from "@/assets/images/subnested/Breast Reduction.jpg"
-import malebreastreduc from "@/assets/images/subnested/Male Breast Reduction (Gynecomastia Treatment).jpg"
-import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg"
-import implant from "@/assets/images/subnested/Implant Treatment .jpg"
+import genital from "@/assets/images/treatment/genital.jpg";
+import labiaplastyGenital from "@/assets/images/treatment/labiaplasty.jpg";
+import penileGenital from "@/assets/images/subnested/penile.jpg";
+import implantology from "@/assets/images/subCategory/implantology.jpg";
+import den64 from "@/assets/images/subnested/den64.jpg";
+import destigeneral from "@/assets/images/treatment/destigeneral.jpg";
+import rootcanal from "@/assets/images/subnested/rootcanal.jpg";
+import cosmeticdentistry from "@/assets/images/treatment/Cosmetic-Dentistry.jpg";
+import laminateveneers from "@/assets/images/subnested/Laminate Veneers.jpg";
+import restoryDenstiry from "@/assets/images/subCategory/restorative-dentistry.jpg";
+import dentistchoosing from "@/assets/images/subnested/dentist_choosing.jpg";
+import periodontics from "@/assets/images/treatment/periodontics.jpg";
+import hollywood from "@/assets/images/subCategory/Hollywood Smile.jpg";
+import teethwhiting from "@/assets/images/subCategory/Teeth Whitening.jpg";
+import orthodontics from "@/assets/images/subCategory/Orthodontics.jpg";
+import clearaligners from "@/assets/images/subCategory/Clear Aligners.jpg";
+import gumgrafting from "@/assets/images/subnested/Gum Grafting.jpg";
+import lasergumtreatments from "@/assets/images/subCategory/laser gum.jpg";
+import oralsurgery from "@/assets/images/subCategory/Oral-Surgery.jpg";
+import bonegrafting from "@/assets/images/subnested/Bone Grafting.jpg";
+import glocama from "@/assets/images/subnested/Glaucoma.jpg";
+import intraocularImg from "@/assets/images/subnested/Intraocular.jpg";
+import eyedesis from "@/assets/images/subCategory/Eye disease.jpg";
+import surgical from "@/assets/images/subCategory/Surgical.jpg";
+import diabetic from "@/assets/images/subCategory/Diabetic.jpg";
+import corneal from "@/assets/images/subnested/Corneal Transplant.jpg";
+import maleFertility from "@/assets/images/subnested/Male-Infertility.jpg";
+import asissfertility from "@/assets/images/subCategory/fertility assisted reproduction.jpg";
+import malesecual from "@/assets/images/subCategory/Male Sexual.jpg";
+import malesexual from "@/assets/images/subnested/Male Sexual Health Issues.jpg";
+import peyroniesdisease from "@/assets/images/subnested/Peyronie’s Disease 1.jpg";
+import dyfunc from "@/assets/images/subnested/Erectile Dysfunction.jpg";
+import theregemed from "@/assets/images/subCategory/therapy Regenerative Medicine.jpg";
+import orthopedic from "@/assets/images/subnested/Orthopedic Stem Cell Therapy 1.jpg";
+import stemmen from "@/assets/images/subnested/Stem Cell men.jpg";
+import neurological from "@/assets/images/subnested/Neurological Stem Cell.jpg";
+import tipplasty from "@/assets/images/subnested/Tip Plasty (Nose Tip Correction).jpg";
+import almondeye from "@/assets/images/subnested/Aesthetic Almond-Shaped Eyes - Bilateral Canthoplasty.jpg";
+import facelift from "@/assets/images/subnested/Facelift (Rhytidectomy).jpg";
+import bichecktomy from "@/assets/images/subnested/Bichecktomy.jpg";
+import momymakeover from "@/assets/images/subnested/Mommy Makeover.jpg";
+import breastreduc from "@/assets/images/subnested/Breast Reduction.jpg";
+import malebreastreduc from "@/assets/images/subnested/Male Breast Reduction (Gynecomastia Treatment).jpg";
+import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg";
+import implant from "@/assets/images/subnested/Implant Treatment .jpg";
+
+import fillings from "@/assets/images/subnested/Fillings.jpg"
+import rotinecheckupscleaning from "@/assets/images/subnested/Routine Check-ups & Cleanings.jpg"
+import toothextraction from "@/assets/images/subnested/Tooth Extractions.jpg"
+import jawsurgery from "@/assets/images/subnested/Jaw Surgery 1.jpg"
+import cataract from "@/assets/images/subnested/Cataract-Treatment 1.jpg"
+import retinaldisease from "@/assets/images/subnested/Retinal-Disease-Treatment 1.jpg"
+import xrays from "@/assets/images/subnested/Dental X-rays (2).jpg"
+import fet from "@/assets/images/subnested/Frozen Embryo Transfer (FET).jpg"
+import ivf from "@/assets/images/subnested/In Vitro Fertilization (IVF).jpg"
+import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg"
+import smartlens from "@/assets/images/subnested/Smart lens.jpg"
+import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.jpg"
+
 export const allSubCategory = [
   {
     img: hair,
@@ -100,14 +114,16 @@ export const allSubCategory = [
   {
     img: breastCategory,
     title: "Breast Surgery",
-    description: "Considering breast surgery? Unlock your dream silhouette and boost your self-esteem with world-class breast surgery in Turkey. AZPO Health offers expert surgeons, luxurious care, and affordable packages. Explore your options for breast augmentation, reduction, and lift in a premier medical tourism destination.",
+    description:
+      "Considering breast surgery? Unlock your dream silhouette and boost your self-esteem with world-class breast surgery in Turkey. AZPO Health offers expert surgeons, luxurious care, and affordable packages. Explore your options for breast augmentation, reduction, and lift in a premier medical tourism destination.",
     categoryKey: "aesthetic",
     path: "breast-surgery",
   },
   {
     img: genital,
     title: "Genital Aesthetic",
-    description: "Considering genital aesthetic surgery to address personal concerns or enhance your intimate well-being? Turkey has become a leading destination for these specialized procedures, offering discreet, high-quality care. Discover how AZPO Health connects you with expert surgeons and all-inclusive packages for a comfortable and transformative experience.",
+    description:
+      "Considering genital aesthetic surgery to address personal concerns or enhance your intimate well-being? Turkey has become a leading destination for these specialized procedures, offering discreet, high-quality care. Discover how AZPO Health connects you with expert surgeons and all-inclusive packages for a comfortable and transformative experience.",
     categoryKey: "aesthetic",
     path: "genital-aesthetic",
   },
@@ -115,49 +131,56 @@ export const allSubCategory = [
   {
     img: implantology,
     title: "Implantology",
-    description: "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
+    description:
+      "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
     path: "implantology",
     categoryKey: "dental-treatments",
   },
   {
     img: destigeneral,
     title: "General Dentistry",
-    description: "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
+    description:
+      "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
     path: "general-dentistry",
     categoryKey: "dental-treatments",
   },
   {
     img: cosmeticdentistry,
     title: "Cosmetic Dentistry",
-    description: "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
+    description:
+      "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
     path: "cosmetic-dentistry",
     categoryKey: "dental-treatments",
   },
   {
     img: restoryDenstiry,
     title: "Restorative Dentistry",
-    description: "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
+    description:
+      "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
     path: "restorative-dentistry",
     categoryKey: "dental-treatments",
   },
   {
     img: periodontics,
     title: "Periodontics",
-    description: "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
+    description:
+      "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
     path: "periodontics",
     categoryKey: "dental-treatments",
   },
   {
     img: orthodontics,
     title: "Orthodontics",
-    description: "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
+    description:
+      "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
     path: "orthodontics",
     categoryKey: "dental-treatments",
   },
   {
     img: oralsurgery,
     title: "Oral Surgery",
-    description: "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
+    description:
+      "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
     path: "oral-surgery",
     categoryKey: "dental-treatments",
   },
@@ -165,14 +188,16 @@ export const allSubCategory = [
   {
     img: eyedesis,
     title: "Eye disease treatments",
-    description: "Don't let eye diseases impact your life and well-being any longer. At AZPO Health in Turkey, we offer a range of advanced treatments and expert care to help you see clearly again. Discover how our specialized services can provide the vision solutions you've been searching for.",
+    description:
+      "Don't let eye diseases impact your life and well-being any longer. At AZPO Health in Turkey, we offer a range of advanced treatments and expert care to help you see clearly again. Discover how our specialized services can provide the vision solutions you've been searching for.",
     path: "eye-disease-treatments",
     categoryKey: "eye-surgery",
   },
   {
     img: surgical,
     title: "Surgical implant procedures",
-    description: "Are you tired of struggling with vision problems, from cataracts and refractive errors to the limitations of glasses and contact lenses? Discover how advanced eye surgical & implant procedures in Turkey offered through AZPO Health can provide you with a renewed sense of sight and a brighter future.",
+    description:
+      "Are you tired of struggling with vision problems, from cataracts and refractive errors to the limitations of glasses and contact lenses? Discover how advanced eye surgical & implant procedures in Turkey offered through AZPO Health can provide you with a renewed sense of sight and a brighter future.",
     path: "surgical-implant-procedures",
     categoryKey: "eye-surgery",
   },
@@ -180,7 +205,8 @@ export const allSubCategory = [
   {
     img: asissfertility,
     title: "Fertility assisted reproduction",
-    description: "Are you dreaming of starting or expanding your family but facing challenges? Discover how AZPO Health in Turkey can be your partner, offering a ray of hope with world-class fertility treatments and compassionate care, guiding you towards the joyous journey of parenthood.",
+    description:
+      "Are you dreaming of starting or expanding your family but facing challenges? Discover how AZPO Health in Turkey can be your partner, offering a ray of hope with world-class fertility treatments and compassionate care, guiding you towards the joyous journey of parenthood.",
     path: "fertility-assisted-reproduction",
     categoryKey: "fertility",
   },
@@ -188,18 +214,19 @@ export const allSubCategory = [
   {
     img: malesecual,
     title: "Male sexual therapy",
-    description: "Are you seeking innovative solutions to revitalize your sexual health and reproductive capabilities? Discover the potential of male sexual & reproductive health stem cell therapy in Turkey, offering cutting-edge treatments designed to address various concerns and improve your quality of life.",
+    description:
+      "Are you seeking innovative solutions to revitalize your sexual health and reproductive capabilities? Discover the potential of male sexual & reproductive health stem cell therapy in Turkey, offering cutting-edge treatments designed to address various concerns and improve your quality of life.",
     path: "male-sexual-therapy",
     categoryKey: "stem-cell",
   },
   {
     img: theregemed,
     title: "Therapy regenerative medicine",
-    description: "Looking for advanced, innovative treatments to restore health and vitality? Stem Cell Therapy & Regenerative Medicine in Turkey offer groundbreaking solutions for tissue repair, disease management, and overall well-being. With cutting-edge medical advancements and expert specialists, these treatments provide new hope for lasting recovery and improved quality of life.",
+    description:
+      "Looking for advanced, innovative treatments to restore health and vitality? Stem Cell Therapy & Regenerative Medicine in Turkey offer groundbreaking solutions for tissue repair, disease management, and overall well-being. With cutting-edge medical advancements and expert specialists, these treatments provide new hope for lasting recovery and improved quality of life.",
     path: "therapy-regenerative-medicine",
     categoryKey: "stem-cell",
   },
-
 ];
 export const allSubNestedCategory = [
   // hair-transplantation
@@ -374,7 +401,7 @@ export const allSubNestedCategory = [
     description:
       "Longing for fuller, more defined curves? Breast augmentation implants with AZPO Health in Turkey offers a transformative journey to enhance your natural beauty and boost your self-confidence. Discover how our expert surgeons and all-inclusive packages can make your dream a reality.",
     categoryKey: "aesthetic",
-    path:"breast-augmentation-implants",
+    path: "breast-augmentation-implants",
     subCategoryKey: "breast-surgery",
   },
   {
@@ -702,5 +729,124 @@ export const allSubNestedCategory = [
     path: "implant-treatment",
     subCategoryKey: "implantology",
   },
-
+  // fillings
+  {
+    img: fillings,
+    title: "Fillings",
+    description:
+      "Are you experiencing tooth sensitivity or discomfort from cavities? Concerned about the appearance of damaged or decayed teeth affecting your smile? In Turkey, you can find high-quality solutions with advanced dental filling procedures that can restore your oral health and bring back your confident smile. AZPO Health connects you with experienced dental professionals ready to provide the care you need.",
+    categoryKey: "dental-treatments",
+    path: "fillings",
+    subCategoryKey: "general-dentistry",
+  },
+  // routine check ups
+  {
+    img: rotinecheckupscleaning,
+    title: "Routine Check-ups & Cleanings",
+    description:
+      "Are you concerned about maintaining your oral health without straining your budget? Longing for thorough dental evaluations that put your well-being first? Turkey offers a compelling solution, blending exceptional dental care with cost-effective options and above all a memorable holiday too while doing your dental work, your smile receives the expert attention it deserves with AZPO Health.",
+    categoryKey: "dental-treatments",
+    path: "routine-check-ups",
+    subCategoryKey: "general-dentistry",
+  },
+  // dental -x- rays
+  {
+    img: xrays,
+    title: "Dental X-rays",
+    description:
+      "Concerned about a dental issue but unsure of the next step? In Turkey, accessing essential diagnostic tools like dental X-rays is straightforward and provides a clear picture of your oral health, paving the way for effective and reassuring solutions. Contact AZPO Health today to connect with experienced dental professionals.",
+    categoryKey: "dental-treatments",
+    path: "dental-x-rays",
+    subCategoryKey: "general-dentistry",
+  },
+  // Tooth Extractions
+  {
+    img: toothextraction,
+    title: "Tooth Extractions",
+    description:
+      "Are you experiencing persistent tooth pain or discomfort, perhaps from a severely decayed or damaged tooth? The thought of extraction might seem daunting, but in Turkey, you can find experienced dental professionals who offer gentle and effective tooth extractions, paving the way for a healthier and more comfortable smile. Contact AZPO Health today to connect with reputable clinics for your personalized care.",
+    categoryKey: "dental-treatments",
+    path: "tooth-extractions",
+    subCategoryKey: "general-dentistry",
+  },
+  // wisdom teeth removal
+  {
+    img: wisdom,
+    title: "Wisdom Teeth Removal",
+    description:
+      "Are you experiencing discomfort, pain, or swelling in the back of your mouth? Perhaps your dentist has mentioned the need for wisdom teeth removal. Many people face this common dental concern, and the good news is that effective and high-quality solutions are available. Considering options for your oral health can feel overwhelming, but exploring the benefits of having your wisdom teeth removal in Turkey through AZPO Health can provide you with a comfortable and supported journey towards a healthier smile.",
+    categoryKey: "dental-treatments",
+    path: "wisdom-teeth-removal",
+    subCategoryKey: "oral-surgery",
+  },
+  // jaw surgery
+  {
+    img: jawsurgery,
+    title: "Jaw Surgery",
+    description:
+      "Are you experiencing discomfort, difficulty chewing, or concerns about your facial alignment? Jaw surgery in Turkey offers a transformative solution, and AZPO Health can connect you with experienced professionals to guide you toward improved function and renewed confidence.",
+    categoryKey: "dental-treatments",
+    path: "jaw-surgery",
+    subCategoryKey: "oral-surgery",
+  },
+  // Cataract Treatment
+  {
+    img: cataract,
+    title: "Cataract Treatment",
+    description:
+      "Are cloudy vision and difficulty seeing clearly making everyday life a challenge? Take heart! In Turkey, you can find expert care and advanced options for cataract treatment, offering a renewed outlook with clearer vision and a brighter future. Contact AZPO Health to explore your personalized path to visual clarity.",
+    categoryKey: "ophthalmology-eye-surgery",
+    path: "cataract-treatment",
+    subCategoryKey: "eye-disease-treatments",
+  },
+  // retinal-disease-treatment
+  {
+    img: retinaldisease,
+    title: "Retinal Disease Treatment",
+    description:
+      "Experiencing changes in your vision due to a retinal condition can be unsettling, affecting your daily life and overall well-being. Are you looking for specialized care and effective solutions for your retinal disease? In Turkey, you can find highly skilled medical professionals and advanced treatment options, and AZPO Health is here to guide you through every step of your journey.",
+    categoryKey: "ophthalmology-eye-surgery",
+    path: "retinal-disease-treatment",
+    subCategoryKey: "eye-disease-treatments",
+  },
+  // LASIK surgery
+  {
+    img: lasiksurgery,
+    title: "LASIK surgery",
+    description:
+      "Are you tired of the daily struggle with glasses or the discomfort of contact lenses? Imagine waking up every morning with clear, crisp vision. In Turkey, advanced LASIK eye surgery offers a safe and effective path to visual freedom, and AZPO Health is here to connect you with leading clinics to explore this life-changing possibility.",
+    categoryKey: "ophthalmology-eye-surgery",
+    path: "lasik-surgery",
+    subCategoryKey: "surgical-implant-procedures",
+  },
+  // Smart lens
+  {
+    img: smartlens,
+    title: "Smart Lens",
+    description:
+      "Are you tired of struggling with blurry vision, constantly reaching for your reading glasses, or feeling limited by your eyesight? Imagine a life with sharper vision at all distances, potentially freeing you from the daily hassle of glasses and contact lenses. Smart lens technology in Turkey offers a promising solution, and AZPO Health can connect you with experienced professionals to explore this life-changing opportunity.",
+    categoryKey: "ophthalmology-eye-surgery",
+    path: "smart-lens",
+    subCategoryKey: "surgical-implant-procedures",
+  },
+  // IVF
+  {
+    img: ivf,
+    title: "IVF",
+    description:
+      "Are you tired of struggling with blurry vision, constantly reaching for your reading glasses, or feeling limited by your eyesight? Imagine a life with sharper vision at all distances, potentially freeing you from the daily hassle of glasses and contact lenses. Smart lens technology in Turkey offers a promising solution, and AZPO Health can connect you with experienced professionals to explore this life-changing opportunity.",
+    categoryKey: "fertility",
+    path: "ivf",
+    subCategoryKey: "fertility-assisted-reproduction",
+  },
+  // fet
+  {
+    img: fet,
+    title: "FET (Frozen Embryo Transfer)",
+    description:
+      "Are you dreaming of holding your baby but facing challenges with natural conception or previous fertility treatments? Could the answer to your hopes lie in a gentle, yet highly effective approach in a welcoming land renowned for its medical expertise? Explore the possibility of frozen embryo transfer in Turkey, and let AZPO Health guide you towards a brighter future.",
+    categoryKey: "fertility",
+    path: "fet",
+    subCategoryKey: "fertility-assisted-reproduction",
+  },
 ];
