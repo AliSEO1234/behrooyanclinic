@@ -74,7 +74,7 @@ import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg";
 import implant from "@/assets/images/subnested/Implant Treatment .jpg";
 
 import fillings from "@/assets/images/subnested/Fillings.jpg"
-import rotinecheckupscleaning from "@/assets/images/subnested/Routine Check-ups & Cleanings.jpg"
+import rotinecheckupscleaning from "@/assets/images/subnested/RoutineCheck-upsCleanings.jpg"
 import toothextraction from "@/assets/images/subnested/Tooth Extractions.jpg"
 import jawsurgery from "@/assets/images/subnested/Jaw Surgery 1.jpg"
 import cataract from "@/assets/images/subnested/Cataract-Treatment 1.jpg"
