@@ -137,7 +137,7 @@ const Home = async ({
   return (
     <>
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
-        <div className="viewport-p relative s1280:h-screen pt-20 s1280:pt-28 s1512:pt-28 overflow-hidden flex flex-col items-center">
+        <div className="viewport-p relative s1280:h-screen pt-20 s1280:pt-28 s1512:pt-28 flex flex-col items-center">
           <VideoPlayerCom />
           <div className="w-full flex flex-col items-center justify-center z-[3] relative mb-20 s1280:mb-0">
             <h1 className="font-black text-[24px] s1280:text-[32px] text-white h1-homepage-shadow">

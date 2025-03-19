@@ -4,7 +4,6 @@ export const options = [
   { isActive: false, label: "Check-Ups", key: "aesthetic", id: 6 },
   { isActive: true, label: "Aesthetics", key: "aesthetic", id: 5 },
   { isActive: false, label: "Cardiology", key: "aesthetic", id: 7 },
-  { isActive: false, label: "Stem Cell Transplants", key: "aesthetic", id: 8 },
   { isActive: true, label: "Stem Cell", key: "stem-cell", id: 3 },
   {
     isActive: false,
