@@ -113,7 +113,7 @@ const HamburgerMenu = () => {
                       <AccordionTrigger className="py-0">
                         Medical Branches
                       </AccordionTrigger>
-                      <AccordionContent className="mt-3 p-3">
+                      <AccordionContent className="mt-3 p-3 pb-6">
                         <ul className="flex flex-col items-start gap-y-3">
                           {sortedData.map((service, index) => {
                             return (
