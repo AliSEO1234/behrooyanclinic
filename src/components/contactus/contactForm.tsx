@@ -1,6 +1,9 @@
 "use client";
 import { ContactusFormType } from "@/types/contactTypes";
 import { SubmitHandler, useForm } from "react-hook-form";
+import CountryCode from "../forms/countryCode";
+import { OptionType } from "@/types/comboBox/comboType";
+import { useState } from "react";
 
 const ContactForm = () => {
   const {
@@ -39,6 +42,7 @@ const ContactForm = () => {
     // }
     // reset();
   };
+  const [codes, setCodes] = useState<OptionType | null>({id : 0 , key : "+90" , label : "Turkey"});
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
@@ -51,7 +55,7 @@ const ContactForm = () => {
           autoComplete="off"
           type="text"
           placeholder="First name"
-          className={`${
+          className={`px-4 ${
             errors.firstName && errors.firstName.type === "required"
               ? "ring-[1px] ring-rose-600"
               : ""
@@ -65,7 +69,7 @@ const ContactForm = () => {
           autoComplete="off"
           type="text"
           placeholder="Surname"
-          className={`${
+          className={`px-4 ${
             errors.surname && errors.surname.type === "required"
               ? "ring-[1px] ring-rose-600"
               : ""
@@ -76,7 +80,7 @@ const ContactForm = () => {
         <label>Email</label>
         <input
           {...register("email", { required: true })}
-          className={`${
+          className={`px-4 ${
             errors.email && errors.email.type === "required"
               ? "ring-[1px] ring-rose-600"
               : ""
@@ -88,23 +92,26 @@ const ContactForm = () => {
       </div>
       <div className="col-span-12 s1280:col-span-6">
         <label>Phone</label>
-        <input
-          {...register("phone", { required: true })}
-          className={`${
-            errors.phone && errors.phone.type === "required"
-              ? "ring-[1px] ring-rose-600"
-              : ""
-          }`}
-          autoComplete="off"
-          type="text"
-          placeholder="Phone"
-        />
+        <div className="relative">
+          <input
+            {...register("phone", { required: true })}
+            className={` ps-20 pe-4${
+              errors.phone && errors.phone.type === "required"
+                ? "ring-[1px] ring-rose-600"
+                : ""
+            }`}
+            autoComplete="off"
+            type="text"
+            placeholder="Phone"
+          />
+          <CountryCode codes={codes} setCodes={setCodes} />
+        </div>
       </div>
       <div className="col-span-12">
         <label>Message</label>
         <textarea
           {...register("message", { required: true })}
-          className={`${
+          className={`px-4 ${
             errors.message && errors.message.type === "required"
               ? "ring-[1px] ring-rose-600"
               : ""

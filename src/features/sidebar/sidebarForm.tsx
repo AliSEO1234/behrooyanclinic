@@ -1,5 +1,6 @@
 "use client";
 import ComboBox from "@/components/comboBox";
+import CountryCode from "@/components/forms/countryCode";
 import { options } from "@/staticData/optionsForm";
 import { OptionType } from "@/types/comboBox/comboType";
 import { LucideSendHorizontal } from "lucide-react";
@@ -7,20 +8,23 @@ import { useState } from "react";
 
 const SidebarForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
-
+  const [codes, setCodes] = useState<OptionType | null>({id : 0 , key : "+90" , label : "Turkey"});
   return (
     <form className="grid grid-cols-12 gap-y-4 form-work">
       <div className="col-span-12">
         <label htmlFor="">Name & Surname</label>
-        <input placeholder="Name & Surname" type="text" />
+        <input className="px-4" placeholder="Name & Surname" type="text" />
       </div>
       <div className="col-span-12">
         <label htmlFor="">Email</label>
-        <input placeholder="Email" type="email" />
+        <input className="px-4" placeholder="Email" type="email" />
       </div>
       <div className="col-span-12">
         <label htmlFor="">Phone Number</label>
-        <input placeholder="Number" type="email" />
+        <div className="w-full relative overflow-hidden">
+          <input placeholder="Number" type="text" className="ps-20 pe-3" />
+          <CountryCode codes={codes} setCodes={setCodes} />
+        </div>
       </div>
       <div className="col-span-12 z-[4]">
         <label htmlFor="">Choose your service type</label>

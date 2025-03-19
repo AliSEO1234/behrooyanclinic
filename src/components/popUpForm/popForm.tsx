@@ -8,8 +8,10 @@ import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { useAppContext } from "@/contexts/app-context/app-context";
 import { options } from "@/staticData/optionsForm";
+import CountryCode from "../forms/countryCode";
 const PopForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
+  const [codes, setCodes] = useState<OptionType | null>({id : 0 , key : "+90" , label : "Turkey"});
   const { setPopUpForm, popUpForm } = useAppContext();
   return (
     <form
@@ -57,7 +59,7 @@ const PopForm = () => {
               Name
             </label>
             <input
-              className="placeholder:text-[#898989]"
+              className="placeholder:text-[#898989] px-2"
               placeholder="Name"
               type="text"
             />
@@ -66,11 +68,14 @@ const PopForm = () => {
             <label className="block" htmlFor="residen">
               Phone Number
             </label>
-            <input
-              className="placeholder:text-[#898989]"
-              placeholder="Phone Number"
-              type="text"
-            />
+            <div className="relative">
+              <input
+                className="placeholder:text-[#898989] ps-20 pe-2 outline-none w-full h-[45px] s1280:w-[219px] s1512:w-[250px] s1280:h-[38px] s1728:h-[48px] s1728:w-[320px] border-[1px] border-[#9996A0] placeholder:text-[14px] rounded-[40px] text-[14px] s1280:placeholder:text-[14px] s1728:text-[16px] s1728:placeholder:text-[16px]"
+                placeholder="Phone Number"
+                type="text"
+              />
+              <CountryCode codes={codes} setCodes={setCodes} />
+            </div>
           </div>
           <div className="w-full s1280:w-fit">
             <label className="block" htmlFor="residen">
@@ -91,7 +96,7 @@ const PopForm = () => {
             </label>
             <input
               id="email"
-              className="placeholder:text-[#898989]"
+              className="placeholder:text-[#898989] px-2"
               placeholder="Email"
               type="text"
             />

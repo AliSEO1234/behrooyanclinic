@@ -31,15 +31,15 @@ html {
   .contact-form div label {
     @apply hidden font-medium text-[#333333] s1280:block mb-2;
   }
-  .contact-form div input {
-    @apply outline-none w-full h-[48px] rounded-[40px] border border-[#9996A0] px-4 placeholder:text-[#9996A0];
+  .contact-form div input , .contact-form div div input {
+    @apply outline-none w-full h-[48px] rounded-[40px] border border-[#9996A0] placeholder:text-[#9996A0];
   }
   .contact-form div textarea {
     @apply outline-none w-full rounded-[20px] border border-[#9996A0] p-4 placeholder:text-[#9996A0];
   }
   /* home page form */
   .homepage-input {
-    @apply bg-white h-[48px] rounded-[40px] px-4 border border-[#9996A0] font-medium w-full;
+    @apply bg-white h-[48px] rounded-[40px] border border-[#9996A0] font-medium w-full outline-none;
   }
   /* h1homepagestyle */
   .h1-homepage-shadow {
@@ -107,8 +107,8 @@ html {
   .popUpform label {
     @apply p-1 font-medium text-[14px] s1728:text-[16px]  text-[#474744];
   }
-  .popUpform input:nth-child(2) {
-    @apply outline-none w-full h-[45px] s1280:w-[219px] s1512:w-[250px] s1280:h-[38px] s1728:h-[48px] s1728:w-[320px] border-[1px] border-[#9996A0] placeholder:text-[14px] rounded-[40px] px-2 text-[14px] s1280:placeholder:text-[14px] s1728:text-[16px] s1728:placeholder:text-[16px];
+  .popUpform input:nth-child(2), .popUpform div input:nth-child(2) {
+    @apply outline-none w-full h-[45px] s1280:w-[219px] s1512:w-[250px] s1280:h-[38px] s1728:h-[48px] s1728:w-[320px] border-[1px] border-[#9996A0] placeholder:text-[14px] rounded-[40px] text-[14px] s1280:placeholder:text-[14px] s1728:text-[16px] s1728:placeholder:text-[16px];
   }
   /* navbar */
   @keyframes navbar-animate {
@@ -182,7 +182,7 @@ html {
   }
   /* cosultation form */
   .consul-form-input {
-    @apply outline-none w-full border-[1px] border-[#9996A0] p-3 rounded-[40px] font-normal;
+    @apply outline-none w-full border-[1px] border-[#9996A0] rounded-[40px] font-normal;
   }
   /* animatte syringe */
   /*@keyframes syringMove {*/
@@ -246,14 +246,14 @@ html {
   .form-platform-work-end div label {
     @apply block font-semibold text-[#474744] mb-2;
   }
-  .form-platform-work-end div input {
-    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] px-4 s1280:placeholder:text-[14px] rounded-[40px] border border-[#9996A0] font-normal text-[#474744] s1728:placeholder:text-[16px];
+  .form-platform-work-end div input  {
+    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] s1280:placeholder:text-[14px] rounded-[40px] border border-[#9996A0] font-normal text-[#474744] s1728:placeholder:text-[16px];
   }
   .form-work div label {
     @apply block font-semibold text-[#474744];
   }
-  .form-work div input {
-    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#474744];
+  .form-work div input  , .form-work div div input {
+    @apply placeholder:text-[#BBBBBB] w-full outline-none h-[48px] rounded-[40px] border border-[#9996A0] font-normal text-[#474744];
   }
   .shadow-slider-card-hover {
     box-shadow: -19px 13px 13.9px -12px #00000012,

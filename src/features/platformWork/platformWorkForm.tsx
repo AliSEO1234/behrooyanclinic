@@ -1,5 +1,6 @@
 "use client";
 import ComboBox from "@/components/comboBox";
+import CountryCode from "@/components/forms/countryCode";
 import { options } from "@/staticData/optionsForm";
 import { OptionType } from "@/types/comboBox/comboType";
 import { LucideSendHorizontal } from "lucide-react";
@@ -7,8 +8,10 @@ import { useState } from "react";
 
 const PlatformWorkForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
+  const [codes, setCodes] = useState<OptionType | null>({id : 0 , key : "+90" , label : "Turkey"});
   return (
-    <form className="platform__form-container grid grid-cols-12 gap-y-4 form-platform-work-end bg-white shadow-[0_4px_19px_0_#0000001A] rounded-[40px] px-[18px] s390:px-[25px] s412:px-[35px] py-5 s1280:py-8 s1280:px-[30px] s1512:px-9 s1920:px-[58px]">
+    <form className="grid grid-cols-12 gap-y-4 form-platform-work-end bg-white shadow-[0_4px_19px_0_#0000001A] rounded-[40px] px-[18px] s390:px-[25px] s412:px-[35px] py-5 s1280:py-8 s1280:px-[30px] s1512:px-9 s1920:px-[58px]">
+      {/* platform__form-container  */}
       <div className="col-span-12 ">
         <h3 className="text-center font-bold text-[20px] s1280:text-[18px] s1728:text-[28px] text-[#0CA5A5]">
           Fill out the form to receive advice
@@ -16,11 +19,14 @@ const PlatformWorkForm = () => {
       </div>
       <div className="col-span-12">
         <label>Name & Surname</label>
-        <input placeholder="Name & Surname" type="text" />
+        <input className="px-4" placeholder="Name & Surname" type="text" />
       </div>
       <div className="col-span-12">
         <label htmlFor="phone-our-work">Phone Number</label>
-        <input id="phone-our-work" placeholder="Number" type="text" />
+        <div className="relative">
+          <input className="ps-20 pe-4" id="phone-our-work" placeholder="Number" type="text" />
+          <CountryCode codes={codes} setCodes={setCodes} />
+        </div>
       </div>
       <div className="col-span-12">
         <label htmlFor="">Choose your service type</label>

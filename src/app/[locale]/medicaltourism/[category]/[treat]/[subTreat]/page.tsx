@@ -29,12 +29,31 @@ import SubTreatSyringeIntersectionObserver from "@/components/scripts/sub-treat-
 import Image from "next/image";
 import health from "@/assets/images/healthlogo.png";
 import { dataSubCategoryHandler } from "@/staticData/subCategoryList";
+import { handleBFRelation } from "@/staticData/BFs/relationBFsDrive";
 type PropsPageType = {
   params: Promise<{ treat: string; subTreat: string; locale: string }>;
 };
 const Page = async ({ params }: PropsPageType) => {
   const { subTreat, locale, treat } = await params;
-  const fetchData = dataSubCategoryHandler(subTreat, locale);
+  const bfRelations = handleBFRelation();
+  const findSubnestedRelation = bfRelations.find((bf) => bf.path === subTreat);
+  const handleBfList = () => {
+    const basePath = `/${findSubnestedRelation?.driveFolder}/${findSubnestedRelation?.sizeNameFolder}/`;
+    const bfLinkList: string[] = [];
+
+    for (const bf of findSubnestedRelation!.images) {
+      const concatPath = basePath.concat(bf);
+      bfLinkList.push(concatPath);
+    }
+    return bfLinkList;
+  };
+  const bfCurrentLinks = handleBfList();  
+  const alreadyBFs = bfCurrentLinks.length > 0
+  const fetchData = dataSubCategoryHandler(
+    subTreat,
+    locale,
+    alreadyBFs ? bfCurrentLinks : null
+  );
   return (
     <div className="bg-[#FCFCFC]">
       <div className="grid grid-cols-12 gap-y-3 s1280:gap-y-0 mt-14 s1280:mt-20 viewport-p rounded-b-[40px] shadow-[0px_19px_29px_-25px_#00000011]">
@@ -548,7 +567,7 @@ const Page = async ({ params }: PropsPageType) => {
             </h2>
           </div>
           <div>
-            <BFSwiper bfList={fetchData?.bfs || []} />
+            <BFSwiper dynamic={alreadyBFs} bfList={fetchData?.bfs || []} />
           </div>
           <div className=" hidden s1280:block s1280:-mt-16">
             <div className="s1280:h-[340px] s1600:h-[360px] s1920:h-[420px]">

@@ -14,6 +14,12 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "azpohealth.com",
+        port: "",
+        pathname: "**/**/**",
+      },
+      {
+        protocol: "https",
         pathname: "**/**/**",
         hostname: "i.ytimg.com",
       },

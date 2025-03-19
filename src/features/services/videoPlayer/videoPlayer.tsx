@@ -100,7 +100,7 @@ const VideoPlayer = ({
           <div className="w-full h-full relative">
             <video
               poster="/images/videoCover.png"
-              className="w-full h-full min-h-full max-h-full image-overlay bg-white"
+              className="w-full h-full min-w-full max-w-full min-h-full max-h-full image-overlay bg-white"
               ref={videoEl}
               src={src}
               muted={videoMuted}

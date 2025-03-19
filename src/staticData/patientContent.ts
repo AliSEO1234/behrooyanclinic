@@ -39,8 +39,8 @@ export const patientContents: {
     service: "Aesthetics",
     serivceKey: "aesthetic",
     serviceIcon: dist1icon,
-    header: "Ayaz",
-    desc: "Hair Transplant Journey",
-    video: "https://azpo.com/api/files/property-videos/site_health_en.mp4",
+    header: "Ludmila's",
+    desc: "Hip Replacement Surgery",
+    video: "https://azpohealth.com/api/files/content-videos/feedback_1.mp4",
   },
 ];
