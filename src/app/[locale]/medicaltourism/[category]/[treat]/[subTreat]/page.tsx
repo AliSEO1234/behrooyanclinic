@@ -39,20 +39,22 @@ const Page = async ({ params }: PropsPageType) => {
   const findSubnestedRelation = bfRelations.find((bf) => bf.path === subTreat);
   const handleBfList = () => {
     const basePath = `/${findSubnestedRelation?.driveFolder}/${findSubnestedRelation?.sizeNameFolder}/`;
-    const bfLinkList: string[] = [];
-
-    for (const bf of findSubnestedRelation!.images) {
-      const concatPath = basePath.concat(bf);
-      bfLinkList.push(concatPath);
+    let bfLinkList: string[] | null = [];
+    if (findSubnestedRelation?.images) {
+      for (const bf of findSubnestedRelation!.images) {
+        const concatPath = basePath.concat(bf);
+        bfLinkList.push(concatPath);
+      }
+    }else{
+      bfLinkList = null
     }
     return bfLinkList;
   };
-  const bfCurrentLinks = handleBfList();  
-  const alreadyBFs = bfCurrentLinks.length > 0
+  const bfCurrentLinks = handleBfList();
   const fetchData = dataSubCategoryHandler(
     subTreat,
     locale,
-    alreadyBFs ? bfCurrentLinks : null
+    bfCurrentLinks ? bfCurrentLinks : null
   );
   return (
     <div className="bg-[#FCFCFC]">
@@ -567,7 +569,7 @@ const Page = async ({ params }: PropsPageType) => {
             </h2>
           </div>
           <div>
-            <BFSwiper dynamic={alreadyBFs} bfList={fetchData?.bfs || []} />
+            <BFSwiper dynamic={Boolean(bfCurrentLinks)} bfList={fetchData?.bfs || []} />
           </div>
           <div className=" hidden s1280:block s1280:-mt-16">
             <div className="s1280:h-[340px] s1600:h-[360px] s1920:h-[420px]">
