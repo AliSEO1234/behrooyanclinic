@@ -27,7 +27,7 @@ import SubTreatAdvantagesIntersectionObserver from "@/components/scripts/sub-tre
 import SubTreatConclusionInterceptionObserver from "@/components/scripts/sub-treat-conclusion-interception-observer";
 import SubTreatSyringeIntersectionObserver from "@/components/scripts/sub-treat-syringe-intersection-observer";
 import Image from "next/image";
-import health from "@/assets/images/healthlogo.png"
+import health from "@/assets/images/healthlogo.png";
 import { dataSubCategoryHandler } from "@/staticData/subCategoryList";
 type PropsPageType = {
   params: Promise<{ treat: string; subTreat: string; locale: string }>;
@@ -328,7 +328,9 @@ const Page = async ({ params }: PropsPageType) => {
                     <span className="w-[18px] h-[39px]">
                       <ImgFetcher src={person} />
                     </span>
-                    <span>{fetchData?.benefits.categories[0].header}</span>
+                    <span>
+                      {fetchData?.benefits.categories[0]?.header || ""}
+                    </span>
                   </h4>
                 </div>
                 <ul className="font-normal flex flex-col gap-y-6 relative">
@@ -348,7 +350,7 @@ const Page = async ({ params }: PropsPageType) => {
                     <span className="absolute top-2 left-0 w-[18px] flex-cen">
                       <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
                     </span>
-                    <span>{fetchData?.benefits.categories[0].desc}</span>
+                    <span>{fetchData?.benefits.categories[0]?.desc || []}</span>
                   </li>
                   {/* <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
                   <span className="absolute top-2 left-0 w-[18px] flex-cen">
@@ -372,7 +374,7 @@ const Page = async ({ params }: PropsPageType) => {
                 </ul>
               </div>
               {/* category */}
-              {fetchData?.benefits.categories[1].header && (
+              {fetchData?.benefits.categories[1]?.header && (
                 <div className="text-[#474744]">
                   <div className="mb-8 s1280:mb-5">
                     <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
@@ -438,7 +440,7 @@ const Page = async ({ params }: PropsPageType) => {
                     <span className="w-[18px] h-[39px]">
                       <ImgFetcher src={consider} />
                     </span>
-                    <span>{fetchData?.benefits.categories[2].header}</span>
+                    <span>{fetchData?.benefits.categories[2]?.header}</span>
                   </h4>
                 </div>
                 <ul className="font-normal flex flex-col gap-y-6 relative">
@@ -458,7 +460,7 @@ const Page = async ({ params }: PropsPageType) => {
                     <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
                       <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
                     </span>
-                    <span>{fetchData?.benefits.categories[2].desc}</span>
+                    <span>{fetchData?.benefits.categories[2]?.desc}</span>
                   </li>
 
                   {/* <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
