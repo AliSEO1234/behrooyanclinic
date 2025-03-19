@@ -14,7 +14,12 @@ export async function middleware(req: NextRequest) {
   ) {
     return NextResponse.next();
   }
-
+  const locale = path.split("/")[1]
+  if(locale === "ru"){
+    const newUrl = new URL(req.url)
+    newUrl.pathname = newUrl.pathname.replace(/^\/ru/, "/en")
+    return NextResponse.redirect(newUrl , 308)
+  }
   const response = intlMiddleware(req);
   return response || NextResponse.next();
 }

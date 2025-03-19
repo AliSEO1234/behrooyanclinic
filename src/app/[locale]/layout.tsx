@@ -4,12 +4,13 @@ import Navbar from "@/components/navbar/navbar";
 import { AppProvider } from "@/contexts/app-context/app-context";
 import Footer from "@/components/footer/footer";
 import PopForm from "@/components/popUpForm/popForm";
+import FixBoxs from "@/components/fixOptions/fixBoxs";
 
 export const metadata: Metadata = {
   title: "Azpo Health",
   description: "Health with Azpo",
-  icons:{
-    icon : "/health.ico"
+  icons: {
+    icon: "/health.ico",
   },
   robots: {
     index: false,
@@ -35,6 +36,7 @@ const RootLayout = async ({
         <AppProvider>
           <PopForm />
           <Navbar />
+          <FixBoxs />
           <main>{children}</main>
           <Footer />
         </AppProvider>

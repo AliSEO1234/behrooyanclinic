@@ -36,12 +36,12 @@ const ChangeLanguage = ({ BodyWidth, trigStyle }: ChangeLanguageType) => {
         className={`${BodyWidth} bg-inherit border-none p-0 mt-2 shadow-none`}
       >
         <DropdownMenuGroup>
-          <DropdownMenuItem
+          {/* <DropdownMenuItem
             onClick={() => router.push(`/ru/${currentPath}`)}
             className={`border mb-2 flex-cen p-0 h-[35px] rounded-[40px] bg-white font-bold text-[#25A6A9] cursor-pointer`}
           >
             RU
-          </DropdownMenuItem>
+          </DropdownMenuItem> */}
           <DropdownMenuItem
             onClick={() => router.push(`/en/${currentPath}`)}
             className={`border flex-cen p-0 h-[35px] rounded-[40px] bg-white font-bold text-[#25A6A9] cursor-pointer`}

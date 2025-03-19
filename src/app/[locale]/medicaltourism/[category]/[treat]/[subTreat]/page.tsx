@@ -27,6 +27,7 @@ import SubTreatAdvantagesIntersectionObserver from "@/components/scripts/sub-tre
 import SubTreatConclusionInterceptionObserver from "@/components/scripts/sub-treat-conclusion-interception-observer";
 import SubTreatSyringeIntersectionObserver from "@/components/scripts/sub-treat-syringe-intersection-observer";
 import Image from "next/image";
+import health from "@/assets/images/healthlogo.png"
 import { dataSubCategoryHandler } from "@/staticData/subCategoryList";
 type PropsPageType = {
   params: Promise<{ treat: string; subTreat: string; locale: string }>;
@@ -585,7 +586,7 @@ const Page = async ({ params }: PropsPageType) => {
           </div>
           <div className="flex flex-col items-center justify-start gap-y-10 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-between">
             {/* admins */}
-            <div className="w-[328px] h-[328px] s390:w-[346px] s390:h-[346px] s412:w-[364px] s412:h-[364px] s1280:w-[450px] s1280:h-[450px] s1512:w-[567px] s1512:h-[567px] s1600:w-[661px] s1600:h-[661px] border-[3px] border-[#33333380] rounded-full relative p-16 s1280:p-24 flex-cen">
+            <div className="w-[308px] h-[308px] s390:w-[326px] s390:h-[326px] s412:w-[344px] s412:h-[344px] s1280:w-[450px] s1280:h-[450px] s1512:w-[567px] s1512:h-[567px] s1600:w-[661px] s1600:h-[661px] border-[3px] border-[#33333380] rounded-full relative p-16 s1280:p-24 flex-cen">
               {/* admins */}
               <div className="free-consultation__circle-container--outer">
                 <ConsultationAdmin
@@ -594,7 +595,12 @@ const Page = async ({ params }: PropsPageType) => {
                 />
                 <ConsultationAdmin
                   img={admin1}
-                  positionStyle="bottom-4 right-6 s1280:bottom-5 s1280:right-8"
+                  positionStyle="bottom-3 left-6 s1280:bottom-5 s1280:left-8"
+                />
+                <ConsultationAdmin
+                  img={health}
+                  isHealth
+                  positionStyle="bottom-20 -right-5 s1280:bottom-40 s1280:-right-10"
                 />
               </div>
               {/* inside dashed border */}
@@ -602,11 +608,16 @@ const Page = async ({ params }: PropsPageType) => {
                 <div className="free-consultation__circle-container--inner">
                   <ConsultationAdmin
                     img={admin2}
-                    positionStyle="top-0 right-1"
+                    positionStyle="-top-5 right-10"
+                  />
+                  <ConsultationAdmin
+                    img={health}
+                    isHealth
+                    positionStyle="bottom-16 -left-7 s1280:bottom-36 s1280:-left-12"
                   />
                   <ConsultationAdmin
                     img={admin4}
-                    positionStyle="bottom-0 left-0"
+                    positionStyle="-bottom-6 right-12 s1280:-bottom-10 s1280:right-16"
                   />
                 </div>
                 {/* inside doctor char */}

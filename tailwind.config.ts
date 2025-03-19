@@ -10,23 +10,45 @@ export default {
     "./src/features/**/*.{ts,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        inter: "inter",
-        "pt-sans": "pt-sans",
-      },
-      screens: {
-        s375: "375px",
-        s390: "390px",
-        s412: "412px",
-        s430: "430px",
-        s1280: "1280px",
-        s1512: "1512px",
-        s1600: "1600px",
-        s1728: "1728px",
-        s1920: "1920px",
-      },
-    },
+  	extend: {
+  		fontFamily: {
+  			inter: 'inter',
+  			'pt-sans': 'pt-sans'
+  		},
+  		screens: {
+  			s375: '375px',
+  			s390: '390px',
+  			s412: '412px',
+  			s430: '430px',
+  			s1280: '1280px',
+  			s1512: '1512px',
+  			s1600: '1600px',
+  			s1728: '1728px',
+  			s1920: '1920px'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		}
+  	}
   },
   plugins: [tailwindcssAnimate],
 } satisfies Config;

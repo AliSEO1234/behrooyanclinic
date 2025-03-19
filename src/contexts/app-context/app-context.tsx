@@ -29,6 +29,8 @@ type AppContextType = {
   setAboutGalleryIndex: Dispatch<SetStateAction<string>>;
   setImgsAbout: Dispatch<SetStateAction<ImgType[]>>;
   imgsAbout: ImgType[];
+  hamburgerMenu: boolean;
+  setHamburgerMenu: Dispatch<SetStateAction<boolean>>;
 };
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -44,6 +46,7 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
   const [aboutGallery, setAboutGallery] = useState<boolean>(false);
   const [aboutGalleryIndex, setAboutGalleryIndex] = useState<string>("");
   const [imgsAbout, setImgsAbout] = useState<ImgType[]>([]);
+  const [hamburgerMenu, setHamburgerMenu] = useState<boolean>(false);
   useEffect(() => {
     setTimeout(() => {
       setPopUpForm(true);
@@ -56,6 +59,8 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
   return (
     <AppContext.Provider
       value={{
+        hamburgerMenu,
+        setHamburgerMenu,
         aboutGallery,
         setAboutGallery,
         aboutGalleryIndex,
