@@ -20,7 +20,7 @@ const WhatsAppLink = () => {
     <DropdownMenu>
       <DropdownMenuTrigger
         data-aos="fade-up"
-        className="w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-[#00979A] p-2 outline-none"
+        className="w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-[#00979A] p-2 outline-none fixed bottom-5 right-5 z-[5]"
       >
         <ImgFetcher src={phone} width={500} />
       </DropdownMenuTrigger>

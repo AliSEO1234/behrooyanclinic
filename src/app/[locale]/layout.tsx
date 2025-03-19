@@ -4,7 +4,8 @@ import Navbar from "@/components/navbar/navbar";
 import { AppProvider } from "@/contexts/app-context/app-context";
 import Footer from "@/components/footer/footer";
 import PopForm from "@/components/popUpForm/popForm";
-import FixBoxs from "@/components/fixOptions/fixBoxs";
+import WhatsAppLink from "@/components/fixOptions/whatsappLink";
+import UpArrow from "@/components/fixOptions/upArrow";
 
 export const metadata: Metadata = {
   title: "Azpo Health",
@@ -36,7 +37,9 @@ const RootLayout = async ({
         <AppProvider>
           <PopForm />
           <Navbar />
-          <FixBoxs />
+          {/* <FixBoxs /> */}
+          <UpArrow />
+          <WhatsAppLink />
           <main>{children}</main>
           <Footer />
         </AppProvider>
