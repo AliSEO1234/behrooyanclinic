@@ -1,6 +1,11 @@
 export const options = [
   { isActive: true, label: "Dental", key: "dental-treatments", id: 0 },
-  { isActive: false, label: "Ophthalmology and eye", key: "eye", id: 1 },
+  {
+    isActive: false,
+    label: "Physical Therapy and Rehabilitation",
+    key: "aesthetic",
+    id: 23,
+  },
   { isActive: false, label: "Check-Ups", key: "aesthetic", id: 6 },
   { isActive: true, label: "Aesthetics", key: "aesthetic", id: 5 },
   { isActive: false, label: "Cardiology", key: "aesthetic", id: 7 },
@@ -56,10 +61,5 @@ export const options = [
   { isActive: false, label: "Oncology", key: "aesthetic", id: 20 },
   { isActive: false, label: "Addiction Treatment", key: "aesthetic", id: 21 },
   { isActive: false, label: "Wellness", key: "aesthetic", id: 22 },
-  {
-    isActive: false,
-    label: "Physical Therapy and Rehabilitation",
-    key: "aesthetic",
-    id: 23,
-  },
+  
 ];

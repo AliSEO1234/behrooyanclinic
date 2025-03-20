@@ -41,8 +41,8 @@ const FeedBackLayout = ({ align, feedbackList }: FeedbackLayoutType) => {
         style={{
           transform:
             align === "left"
-              ? `translateX(${-position}px)` // حرکت از چپ به راست
-              : `translateX(${position}px)`, // حرکت از راست به چپ
+              ? `translateX(${-position}px)`
+              : `translateX(${position}px)`,
           transition: "transform 0.05s linear",
         }}
       >

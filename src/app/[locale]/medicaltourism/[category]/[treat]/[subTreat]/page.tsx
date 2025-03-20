@@ -15,7 +15,6 @@ import admin1 from "@/assets/images/subTreatment/wom1.jpg";
 import admin2 from "@/assets/images/subTreatment/wom2.jpg";
 import admin3 from "@/assets/images/subTreatment/wom3.jpg";
 import admin4 from "@/assets/images/subTreatment/men1.jpg";
-import pile from "@/assets/images/subTreatment/pile.png";
 import drag from "@/assets/images/subTreatment/drag.svg";
 import pill from "@/assets/images/subTreatment/pill.png";
 import BFSwiper from "@/features/BF/BFSwiper";
@@ -64,7 +63,8 @@ const Page = async ({ params }: PropsPageType) => {
             <h1 className="font-semibold text-[20px] s1280:text-[30px] s1512:text-[36px] s1600:text-[40px] [text-shadow:0px_1px_4px_#00000025] text-[#00979A] s1512:mb-10 s1600:mb-20 s1728:mb-14">
               {fetchData?.title}
             </h1>
-            <p dangerouslySetInnerHTML={{__html : fetchData?.descriptionTop || ""}} className="font-medium hidden s1280:block s1280:text-[20px] s1600:text-[24px] s1728:text-[28px] s1280:leading-[40px] s1728:leading-[45px] s1280:pe-40 s1512:pe-52 text-[#474744]">
+            <p className="font-medium hidden s1280:block s1280:text-[20px] s1600:text-[24px] s1728:text-[28px] s1280:leading-[40px] s1728:leading-[45px] s1280:pe-40 s1512:pe-52 text-[#474744]">
+              {fetchData?.descriptionTop || ""}
             </p>
           </div>
         </div>
@@ -282,7 +282,7 @@ const Page = async ({ params }: PropsPageType) => {
         </div>
         <div className="col-span-12 s1280:hidden">
           <p className="font-medium s1280:hidden text-[#474744]">
-            {fetchData?.descriptionTop}
+          {fetchData?.descriptionTop || ""}
           </p>
         </div>
       </div>
@@ -571,16 +571,15 @@ const Page = async ({ params }: PropsPageType) => {
             <BFSwiper dynamic={Boolean(bfCurrentLinks)} bfList={fetchData?.bfs || []} />
           </div>
           <div className=" hidden s1280:block s1280:-mt-16">
-            <div className="s1280:h-[340px] s1600:h-[360px] s1920:h-[420px]">
-              {/* bg-[#FCFCFC] */}
+            {/* <div className="s1280:h-[340px] s1600:h-[360px] s1920:h-[420px]">
               <ImgFetcher
                 className="object-cover object-top  clip-path-custom s1280:scale-75"
                 width={1000}
                 height={1000}
                 src={pile}
               />
-            </div>
-            <div className="s1280:-mt-5">
+            </div> */}
+            <div className="mt-20">
               <div className="mb-4">
                 <p className="text-center font-normal text-[#7E7D7D]">
                   Drag the Pill to explore more Patient
