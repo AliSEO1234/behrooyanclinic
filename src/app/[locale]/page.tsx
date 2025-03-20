@@ -170,12 +170,12 @@ const Home = async ({
                   Treatments
                 </h2>
               </div>
-              <div className="flex-right">
+              {/* <div className="flex-right">
                 <SeeAll
                   className="h-[40px] w-[89px] s1280:w-[170px] s1280:h-[54px] text-[14px] s1280:text-[18px]"
                   link={`/${locale}/medicaltourism`}
                 />
-              </div>
+              </div> */}
             </div>
             {/* show service */}
             <ScrollServices />

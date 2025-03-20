@@ -150,7 +150,7 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/clinics`}
                 >
-                  Hospital&Clinics
+                  Hospital & Clinics
                 </Link>
               </div>
               <div>

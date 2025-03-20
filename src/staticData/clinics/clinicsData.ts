@@ -1,5 +1,5 @@
 import clinic1 from "@/assets/images/clinics/clinicsPhoto/1.png";
-import clinic2 from "@/assets/images/clinics/clinicsPhoto/2.png";
+// import clinic2 from "@/assets/images/clinics/clinicsPhoto/2.png";
 import clinic3 from "@/assets/images/clinics/clinicsPhoto/3.png";
 import clinic4 from "@/assets/images/clinics/clinicsPhoto/4.jpg";
 import clinic5 from "@/assets/images/clinics/clinicsPhoto/5.jpg";
@@ -23,11 +23,11 @@ export const clinicsData = [
     img: clinic1,
     link: "https://venividigoz.com",
   },
-  {
-    label: "Lazergöz Eye Hospital",
-    img: clinic2,
-    link: "https://www.lazergoztipmerkezi.com",
-  },
+  // {
+  //   label: "Lazergöz Eye Hospital",
+  //   img: clinic2,
+  //   link: "https://www.lazergoztipmerkezi.com",
+  // },
   {
     label: "Memorial Healthcare Group",
     img: clinic3,

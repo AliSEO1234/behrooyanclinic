@@ -13,14 +13,16 @@ import ImgFetcher from "../imgFetcher";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { BsInstagram } from "react-icons/bs";
 import { useLocale } from "next-intl";
+import { useState } from "react";
 
 const WhatsAppLink = () => {
   const locale = useLocale()
+  const [whatsapp,setWhatsapp] = useState<boolean>(false)
   return (
-    <DropdownMenu>
+    <DropdownMenu onOpenChange={setWhatsapp} open={whatsapp}>
       <DropdownMenuTrigger
         data-aos="fade-up"
-        className="w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-[#00979A] p-2 outline-none fixed bottom-5 right-5 z-[5]"
+        className={`w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-[#00979A] p-2 outline-none fixed bottom-5 right-5 z-[5] ${whatsapp ? "" : "animate-ping-custom"}`}
       >
         <ImgFetcher src={phone} width={500} />
       </DropdownMenuTrigger>
