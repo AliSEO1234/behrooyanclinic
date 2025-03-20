@@ -1213,7 +1213,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfPublic ,
       contents: {
         title:
           locale === "ru"
@@ -1323,7 +1323,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -1427,7 +1427,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -1535,7 +1535,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -1634,7 +1634,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -1734,7 +1734,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -1833,7 +1833,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2028,7 +2028,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Labiaplasty Treatment" : "Labiaplasty Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2123,7 +2123,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Labiaplasty Treatment" : "Labiaplasty Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2216,7 +2216,7 @@ export const dataSubCategoryHandler = (
             ? "Double chin liposuction Treatment"
             : "Double chin liposuction Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2304,7 +2304,7 @@ export const dataSubCategoryHandler = (
       subCategoryContent: {
         title: locale === "ru" ? "Otoplasty Treatment" : "Otoplasty Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2396,7 +2396,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Thighplasty Treatment" : "Thighplasty Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2479,7 +2479,7 @@ export const dataSubCategoryHandler = (
       subCategoryContent: {
         title: locale === "ru" ? "Brow Lift Treatment" : "Brow Lift Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2566,7 +2566,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2657,7 +2657,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2746,7 +2746,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2837,7 +2837,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -2923,7 +2923,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -3011,7 +3011,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -3098,7 +3098,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -3190,7 +3190,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -3288,7 +3288,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -3391,7 +3391,7 @@ export const dataSubCategoryHandler = (
       //   title:
       //     locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       // },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -3488,7 +3488,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -3585,7 +3585,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -3683,7 +3683,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -3837,7 +3837,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Root canal treatment is a highly effective procedure for saving a damaged or infected tooth, alleviating pain, and restoring normal function. With modern techniques, root canal therapy is relatively painless and quick, with most patients returning to normal activities the same day. By removing infection and preserving the natural tooth, root canal treatment helps maintain long-term oral health and prevent further complications. With proper care, treated teeth can last a lifetime, providing a lasting solution to tooth damage and infection."
             : "Root canal treatment is a highly effective procedure for saving a damaged or infected tooth, alleviating pain, and restoring normal function. With modern techniques, root canal therapy is relatively painless and quick, with most patients returning to normal activities the same day. By removing infection and preserving the natural tooth, root canal treatment helps maintain long-term oral health and prevent further complications. With proper care, treated teeth can last a lifetime, providing a lasting solution to tooth damage and infection.",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -3926,7 +3926,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile. Although it requires an investment of time and money, the benefits of a Hollywood Smile, including improved confidence and aesthetic appeal, make it a worthwhile option for many. Proper care and maintenance are key to ensuring your new smile lasts for many years."
             : "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile. Although it requires an investment of time and money, the benefits of a Hollywood Smile, including improved confidence and aesthetic appeal, make it a worthwhile option for many. Proper care and maintenance are key to ensuring your new smile lasts for many years.",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -4040,7 +4040,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.If you’re considering clear aligners, consult an orthodontist to determine if they’re the right treatment option for your specific needs."
             : "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.If you’re considering clear aligners, consult an orthodontist to determine if they’re the right treatment option for your specific needs.",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -4148,7 +4148,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Gum grafting is an effective method for restoring gum health and aesthetics, especially in cases of gum recession. The procedure helps reduce tooth sensitivity, improve the appearance of the smile, and prevent more serious dental issues. Following the dentist’s recommendations and maintaining oral health during the recovery period ensures the best results and long-term effectiveness."
             : "Gum grafting is an effective method for restoring gum health and aesthetics, especially in cases of gum recession. The procedure helps reduce tooth sensitivity, improve the appearance of the smile, and prevent more serious dental issues. Following the dentist’s recommendations and maintaining oral health during the recovery period ensures the best results and long-term effectiveness.",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -4240,7 +4240,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Laser gum treatments offer many advantages over traditional methods for treating gum disease. The procedure is minimally invasive, with quick recovery and high precision in targeting affected tissues. Laser therapy helps eliminate inflammation, accelerates healing, and minimizes pain, making it an ideal choice for those looking for an effective and non-traumatic solution for gum issues."
             : "Laser gum treatments offer many advantages over traditional methods for treating gum disease. The procedure is minimally invasive, with quick recovery and high precision in targeting affected tissues. Laser therapy helps eliminate inflammation, accelerates healing, and minimizes pain, making it an ideal choice for those looking for an effective and non-traumatic solution for gum issues.",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -4335,7 +4335,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Bone grafting is a crucial procedure for individuals requiring dental implants or experiencing bone loss in the jaw. By reinforcing the skeletal structure, it enhances both oral functionality and aesthetics while significantly increasing the success rate of dental restorations.With proper post-operative care and professional guidance, patients can achieve optimal healing and long-term benefits from the procedure. Whether due to tooth loss, trauma, or genetic factors, bone grafting offers a reliable solution for restoring oral health and improving overall quality of life."
             : "Bone grafting is a crucial procedure for individuals requiring dental implants or experiencing bone loss in the jaw. By reinforcing the skeletal structure, it enhances both oral functionality and aesthetics while significantly increasing the success rate of dental restorations.With proper post-operative care and professional guidance, patients can achieve optimal healing and long-term benefits from the procedure. Whether due to tooth loss, trauma, or genetic factors, bone grafting offers a reliable solution for restoring oral health and improving overall quality of life.",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -4424,7 +4424,7 @@ AZPO Health - ведущая компания медицинского тури�
     //         ? "Hair Transplant Treatment"
     //         : "Hair Transplant Treatment",
     //   },
-    //   bfs: bfList || bfPublic,
+    //   bfs: bfList ,
     //   contents: {
     //     title:
     //       locale === "ru"
@@ -4513,7 +4513,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -4602,7 +4602,7 @@ AZPO Health - ведущая компания медицинского тури�
       subCategoryContent: {
         title: locale === "ru" ? "Glaucoma treatment" : "Glaucoma treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -4693,7 +4693,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Diabetic retinopathy treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -4785,7 +4785,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Diabetic retinopathy treatment",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -4876,7 +4876,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -4969,7 +4969,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -5062,7 +5062,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -5164,7 +5164,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -5266,7 +5266,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -5364,7 +5364,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -5462,7 +5462,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -5561,7 +5561,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -5652,7 +5652,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title: locale === "ru" ? "" : "Why Choose Turkey for Your Tip Plasty?",
         content:
@@ -5743,7 +5743,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -5827,7 +5827,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -5911,7 +5911,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Consider Turkey for Your Bichectomy?",
@@ -5997,7 +5997,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Your Mommy Makeover?",
@@ -6079,7 +6079,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Your Breast Reduction Surgery?",
@@ -6164,7 +6164,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Understanding Male Breast Reduction in Turkey",
@@ -6248,7 +6248,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Vaginal Tightening?",
@@ -6337,7 +6337,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Dental Implant Treatment?",
@@ -6423,7 +6423,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Your Dental Fillings?",
@@ -6455,7 +6455,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Your Dental Check-ups?",
@@ -6487,7 +6487,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Your Dental Needs, Including Dental X-rays?",
@@ -6519,7 +6519,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Consider Turkey for Your Tooth Extractions?",
@@ -6605,7 +6605,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Consider Turkey for Wisdom Teeth Removal?",
@@ -6705,7 +6705,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -6807,7 +6807,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -6847,7 +6847,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru"
@@ -6936,7 +6936,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Your LASIK Eye Surgery Journey?",
@@ -7017,7 +7017,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Consider Turkey for Your Smart Lens Procedure?",
@@ -7101,7 +7101,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Overcoming Fertility Challenges with IVF in Turkey",
@@ -7184,7 +7184,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList || bfPublic,
+      bfs: bfList ,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Your Frozen Embryo Transfer Journey?",

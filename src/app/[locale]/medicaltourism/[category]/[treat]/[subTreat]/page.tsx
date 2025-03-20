@@ -44,8 +44,8 @@ const Page = async ({ params }: PropsPageType) => {
         const concatPath = basePath.concat(bf);
         bfLinkList.push(concatPath);
       }
-    }else{
-      bfLinkList = null
+    } else {
+      bfLinkList = null;
     }
     return bfLinkList;
   };
@@ -282,7 +282,7 @@ const Page = async ({ params }: PropsPageType) => {
         </div>
         <div className="col-span-12 s1280:hidden">
           <p className="font-medium s1280:hidden text-[#474744]">
-          {fetchData?.descriptionTop || ""}
+            {fetchData?.descriptionTop || ""}
           </p>
         </div>
       </div>
@@ -510,7 +510,7 @@ const Page = async ({ params }: PropsPageType) => {
         )}
         {/*  Conclusion */}
         {fetchData?.conclusion && (
-          <div className="relative bg-consul s1280:h-[394px] z-[2] ">
+          <div className="relative bg-consul s1280:h-[394px] z-[2] mb-10">
             <div className="conclusion__pill-container">
               {Array.from({ length: 7 }, (n, i) => i).map((number) => {
                 return (
@@ -545,33 +545,37 @@ const Page = async ({ params }: PropsPageType) => {
           </div>
         )}
         {/* before && after */}
-        <div id="patient-bf" className="mb-[24px] s1280:mb-20">
-          <div className="font-bold flex-left relative w-fit mb-5">
-            <h2 className="s1280:text-[48px]">
-              {locale === "ru" ? "До" : "Before"}
-            </h2>
-            <div
-              className={`bg-gradient-to-r from-[#FCFCFC] via-[#3EBB9A] to-[#FCFCFC] s1280:w-[140px] w-[80px] h-[2px] s1280:h-[6px] -rotate-45 absolute -translate-x-1/2 -translate-y-1/2 ${
-                locale === "ru"
-                  ? "top-[58%] left-[20%] s1280:top-[55%] s1280:left-[20%]"
-                  : "top-[58%] left-[42%] s1280:top-[55%] s1280:left-[42%]"
-              }`}
-            ></div>
-            <h2
-              className={`text-[30px] s1280:text-[96px] text-[#3EBB9A] [text-shadow:0px_3px_2.8px_#00000040]  ${
-                locale === "ru"
-                  ? "mt-7 -ms-0 s1280:-ms-1 s1280:mt-20"
-                  : "mt-7 -ms-2 s1280:-ms-6 s1280:mt-20"
-              }`}
-            >
-              {locale === "ru" ? "После" : "After"}
-            </h2>
-          </div>
-          <div>
-            <BFSwiper dynamic={Boolean(bfCurrentLinks)} bfList={fetchData?.bfs || []} />
-          </div>
-          <div className=" hidden s1280:block s1280:-mt-16">
-            {/* <div className="s1280:h-[340px] s1600:h-[360px] s1920:h-[420px]">
+        {Boolean(bfCurrentLinks) && (
+          <div id="patient-bf" className="mb-[24px] s1280:mb-20">
+            <div className="font-bold flex-left relative w-fit mb-5">
+              <h2 className="s1280:text-[48px]">
+                {locale === "ru" ? "До" : "Before"}
+              </h2>
+              <div
+                className={`bg-gradient-to-r from-[#FCFCFC] via-[#3EBB9A] to-[#FCFCFC] s1280:w-[140px] w-[80px] h-[2px] s1280:h-[6px] -rotate-45 absolute -translate-x-1/2 -translate-y-1/2 ${
+                  locale === "ru"
+                    ? "top-[58%] left-[20%] s1280:top-[55%] s1280:left-[20%]"
+                    : "top-[58%] left-[42%] s1280:top-[55%] s1280:left-[42%]"
+                }`}
+              ></div>
+              <h2
+                className={`text-[30px] s1280:text-[96px] text-[#3EBB9A] [text-shadow:0px_3px_2.8px_#00000040]  ${
+                  locale === "ru"
+                    ? "mt-7 -ms-0 s1280:-ms-1 s1280:mt-20"
+                    : "mt-7 -ms-2 s1280:-ms-6 s1280:mt-20"
+                }`}
+              >
+                {locale === "ru" ? "После" : "After"}
+              </h2>
+            </div>
+            <div>
+              <BFSwiper
+                dynamic={Boolean(bfCurrentLinks)}
+                bfList={fetchData?.bfs || []}
+              />
+            </div>
+            <div className=" hidden s1280:block s1280:-mt-16">
+              {/* <div className="s1280:h-[340px] s1600:h-[360px] s1920:h-[420px]">
               <ImgFetcher
                 className="object-cover object-top  clip-path-custom s1280:scale-75"
                 width={1000}
@@ -579,20 +583,21 @@ const Page = async ({ params }: PropsPageType) => {
                 src={pile}
               />
             </div> */}
-            <div className="mt-20">
-              <div className="mb-4">
-                <p className="text-center font-normal text-[#7E7D7D]">
-                  Drag the Pill to explore more Patient
-                </p>
-              </div>
-              <div className="flex-cen">
-                <div className="s1280:w-[66px] h-[56px]">
-                  <ImgFetcher src={drag} />
+              <div className="mt-20">
+                <div className="mb-4">
+                  <p className="text-center font-normal text-[#7E7D7D]">
+                    Drag the Pill to explore more Patient
+                  </p>
+                </div>
+                <div className="flex-cen">
+                  <div className="s1280:w-[66px] h-[56px]">
+                    <ImgFetcher src={drag} />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        )}
         {/* Free consultation */}
         <div className="mb-10 s1280:mb-20">
           <div className="flex-bet mb-10 s1280:mb-20">

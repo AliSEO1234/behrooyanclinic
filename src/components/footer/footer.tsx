@@ -52,9 +52,9 @@ const Footer = () => {
                 <ImgFetcher src={loc} />
               </div>
               <div>
-                <p className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
+                <Link target="_blank" href="https://maps.app.goo.gl/fnzi83DnR94SLxDV6" className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
                   Cumhuriyet Mahallesi Keykubat Bulvarı 270A/14 Alanya/Antalya
-                </p>
+                </Link>
               </div>
             </div>
             {/* item */}
@@ -63,10 +63,10 @@ const Footer = () => {
                 <ImgFetcher src={loc} />
               </div>
               <div>
-                <p className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
+                <Link target="_blank" href="https://maps.app.goo.gl/mE6RaiFLZBMRTiXU9" className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
                   Fener mahallesi Bülent Ecevit Bulvarı Özdemir Plaza № 42/1,
                   07230 Muratpaşa/Antalya
-                </p>
+                </Link>
               </div>
             </div>
             {/* item */}
@@ -250,14 +250,14 @@ const Footer = () => {
       <div className="flex flex-col items-start justify-start gap-y-4 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-between">
         <div className="order-2 s1280:order-1">
           <p className="text-[#474744] font-normal">
-            Copyright ©2024All Rights Reserved
+            Copyright ©2025 All Rights Reserved
           </p>
         </div>
         <div className="order-1 s1280:order-2 flex items-center justify-start flex-wrap s1280:flex-nowrap s1280:justify-end gap-x-4 text-[#0CA5A5] s1280:gap-x-2">
           <div className="w-full flex flex-col items-start justify-start mb-3 s1280:mb-0 s1280:flex-row s1280:items-center s1280:justify-end s1280:w-fit">
             <div>
               <Link
-                href="maito:info@azpohealth.com"
+                href="mailto:info@azpohealth.com"
                 className="flex-cen gap-x-2 p-2 text-[#333333] font-normal s1280:text-[14px] s1600:text-[16px]"
               >
                 <span className="w-5 min-w-5 s1920:w-7 s1920:min-w-7">
