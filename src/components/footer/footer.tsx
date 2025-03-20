@@ -75,10 +75,10 @@ const Footer = () => {
                 <ImgFetcher src={loc} />
               </div>
               <div>
-                <p className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
+                <Link href="https://maps.app.goo.gl/H2XHqc9pCpAkjdEg7" target="_blank" className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
                   Kayabaşı Mahallesi, Adnan Menderes Bulvarı, No: 5/A, Blok: B3,
                   Kat: 2, Daire: 12. Başakşehir/Istanbul
-                </p>
+                </Link>
               </div>
             </div>
           </div>
