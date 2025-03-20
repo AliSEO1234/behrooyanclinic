@@ -36,8 +36,8 @@ import den64 from "@/assets/images/subnested/den64.jpg";
 import rootcanal from "@/assets/images/subnested/rootcanal.jpg";
 import laminateveneers from "@/assets/images/subnested/Laminate Veneers.jpg";
 import dentistchoosing from "@/assets/images/subnested/dentist_choosing.jpg";
-import fecial3d from "@/assets/images/subCategory/Facial Aesthetic Surgery.png";
-import body3d from "@/assets/images/subCategory/Body contouring.png";
+// import fecial3d from "@/assets/images/subCategory/Facial Aesthetic Surgery.png";
+// import body3d from "@/assets/images/subCategory/Body contouring.png";
 import hollywood from "@/assets/images/subCategory/Hollywood Smile.jpg";
 import teethwhiting from "@/assets/images/subCategory/Teeth Whitening.jpg";
 import clearaligners from "@/assets/images/subCategory/Clear Aligners.jpg";
@@ -401,7 +401,7 @@ export const subCategoryHandler = (
       subCategoryKey: "facial-aesthetic-surgery",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      imgCover: fecial3d,
+      imgCover: tdAes,
     },
     // body contouring
     {
@@ -442,7 +442,7 @@ export const subCategoryHandler = (
       subCategoryKey: "body-contouring",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      imgCover: body3d,
+      imgCover:tdAes ,
     },
     // breast
     {
