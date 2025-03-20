@@ -1,14 +1,14 @@
 import us from "@/assets/images/us.svg";
 import russian from "@/assets/images/russian.svg";
 import turkey from "@/assets/images/turkey.svg";
-import gr from "@/assets/images/germany.svg";
-import kn1 from "@/assets/images/known1.svg";
+import gr from "@/assets/images/german.jpg";
 import health from "@/assets/images/healthlogo.png";
 import teymur from "@/assets/images/about/personels/Jafarov.jpg";
 import kubra from "@/assets/images/about/personels/Kubra.jpg";
 import mehri from "@/assets/images/about/personels/Narbayeva.jpg";
 import parinaz from "@/assets/images/about/personels/Shaker.jpg";
 import iran from "@/assets/images/iran.svg";
+import bosnia from "@/assets/images/bosnia.svg"
 export const handleAdmins = (locale: string) => {
   const adminList = [
     {
@@ -26,7 +26,7 @@ export const handleAdmins = (locale: string) => {
     },
     {
       name: "Sabina",
-      languages: [us, kn1],
+      languages: [us, bosnia],
       desc: locale === "ru" ? "Patient Coordinators" : "Patient Coordinators",
       img: health,
       isNotFull: true,
@@ -39,7 +39,7 @@ export const handleAdmins = (locale: string) => {
     },
     {
       name: "Kubra",
-      languages: [us, gr, turkey],
+      languages: [us, turkey],
       desc: locale === "ru" ? "Patient Coordinators" : "Patient Coordinators",
       img: kubra,
     },

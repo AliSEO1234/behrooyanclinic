@@ -88,30 +88,30 @@ const Footer = () => {
           <table className="text-[#333333] table-auto border-collapse w-full color">
             <thead>
               <tr className="font-medium s1728:text-[20px]">
-                <th className="text-start pb-2">Our services</th>
-                <th className="text-start pb-2">Department</th>
+                <th className="text-start pb-2 w-[165px] s1728:w-[180px]">Our services</th>
+                <th className="text-start pb-2">Categories</th>
                 <th className="text-start pb-2">Useful Links</th>
               </tr>
             </thead>
             <tbody className="space-y-10 s1280:text-[14px] s1728:text-[16px] style-item--table-footer">
               <tr>
-                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7 ">
                   <Link
-                    href={`/${locale}/medicaltourism/aesthetic`}
-                    className="flex-left gap-x-2 w-[110px] s1728:w-[150px]"
+                    href={`/${locale}/medicaltourism/aesthetic/hair-transplantation`}
+                    className="flex-left gap-x-2 w-full"
                   >
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Aesthetic</span>
+                    <span>Hair transplant</span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-2">
+                  <Link href={`/${locale}/medicaltourism/aesthetic`} className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Orthology</span>
+                    <span>Aesthetic</span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
@@ -126,21 +126,21 @@ const Footer = () => {
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
                   <Link
-                    href="/"
-                    className="flex-left gap-x-2 w-[110px] s1728:w-[150px]"
+                    href={`/${locale}/medicaltourism/aesthetic/body-contouring`}
+                    className="flex-left gap-x-2 w-full"
                   >
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Fertility</span>
+                    <span>Body contouring</span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-2">
+                  <Link href={`/${locale}/medicaltourism/dental-treatments`} className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Orthology</span>
+                    <span>Dental</span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
@@ -158,38 +158,75 @@ const Footer = () => {
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
                   <Link
-                    href="/"
-                    className="flex-left gap-x-2 w-[110px] s1728:w-[150px]"
+                    href={`/${locale}/medicaltourism/dental-treatments/implantology/implant-treatment`}
+                    className="flex-left gap-x-2  w-full"
                   >
+                    <span>
+                      <MdArrowForwardIos className="s1280:size-4" />
+                    </span>
+                    <span>Implant treatment</span>
+                  </Link>
+                </td>
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                  <Link href={`/${locale}/medicaltourism/eye-surgery`} className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
                     <span>Eye surgery</span>
                   </Link>
                 </td>
-                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-2">
-                    <span>
-                      <MdArrowForwardIos className="s1280:size-4" />
-                    </span>
-                    <span>Orthology</span>
-                  </Link>
-                </td>
-                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                {/* <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
                   <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
                     <span>About Us</span>
                   </Link>
-                </td>
+                </td> */}
               </tr>
               <tr>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
                   <Link
-                    href="/"
-                    className="flex-left gap-x-2 w-[110px] s1728:w-[150px]"
+                    href={`/${locale}/medicaltourism/stem-cell/male-sexual-therapy/male-sexual-health-issues`}
+                    className="flex-left gap-x-2 w-full"
                   >
+                    <span>
+                      <MdArrowForwardIos className="s1280:size-4" />
+                    </span>
+                    <span>Male sexual</span>
+                  </Link>
+                </td>
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                  <Link href={`/${locale}/medicaltourism/fertility`} className="flex-left gap-x-2">
+                    <span>
+                      <MdArrowForwardIos className="s1280:size-4" />
+                    </span>
+                    <span>Fertility</span>
+                  </Link>
+                </td>
+                {/* <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                  <Link href="/" className="flex-left gap-x-2">
+                    <span>
+                      <MdArrowForwardIos className="s1280:size-4" />
+                    </span>
+                    <span>About Us</span>
+                  </Link>
+                </td> */}
+              </tr>
+              <tr>
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                  <Link
+                    href={`/${locale}//medicaltourism/ophthalmology-eye-surgery/eye-disease-treatments/cataract-treatment`}
+                    className="flex-left gap-x-2 w-full"
+                  >
+                    <span>
+                      <MdArrowForwardIos className="s1280:size-4" />
+                    </span>
+                    <span>Cataract treatment</span>
+                  </Link>
+                </td>
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
+                  <Link href={`/${locale}/medicaltourism/stem-cell`} className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
@@ -197,49 +234,12 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-2">
-                    <span>
-                      <MdArrowForwardIos className="s1280:size-4" />
-                    </span>
-                    <span>Orthology</span>
-                  </Link>
-                </td>
-                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-2">
+                  {/* <Link href="/" className="flex-left gap-x-2">
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
                     <span>About Us</span>
-                  </Link>
-                </td>
-              </tr>
-              <tr>
-                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link
-                    href={`/${locale}/medicaltourism/dental-treatments`}
-                    className="flex-left gap-x-2 w-[110px] s1728:w-[150px]"
-                  >
-                    <span>
-                      <MdArrowForwardIos className="s1280:size-4" />
-                    </span>
-                    <span>Dental</span>
-                  </Link>
-                </td>
-                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-2">
-                    <span>
-                      <MdArrowForwardIos className="s1280:size-4" />
-                    </span>
-                    <span>Orthology</span>
-                  </Link>
-                </td>
-                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href="/" className="flex-left gap-x-2">
-                    <span>
-                      <MdArrowForwardIos className="s1280:size-4" />
-                    </span>
-                    <span>About Us</span>
-                  </Link>
+                  </Link> */}
                 </td>
               </tr>
             </tbody>

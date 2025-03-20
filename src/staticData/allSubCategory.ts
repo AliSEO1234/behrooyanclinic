@@ -57,7 +57,7 @@ import maleFertility from "@/assets/images/subnested/Male-Infertility.jpg";
 import asissfertility from "@/assets/images/subCategory/fertility assisted reproduction.jpg";
 import malesecual from "@/assets/images/subCategory/Male Sexual.jpg";
 import malesexual from "@/assets/images/subnested/Male Sexual Health Issues.jpg";
-import peyroniesdisease from "@/assets/images/subnested/Peyronie’s Disease 1.jpg";
+import peyroniesdisease from "@/assets/images/subnested/PeyroniDisease1.jpg";
 import dyfunc from "@/assets/images/subnested/Erectile Dysfunction.jpg";
 import theregemed from "@/assets/images/subCategory/therapy Regenerative Medicine.jpg";
 import orthopedic from "@/assets/images/subnested/Orthopedic Stem Cell Therapy 1.jpg";
@@ -846,7 +846,7 @@ export const allSubNestedCategory = [
     description:
       "Are you dreaming of holding your baby but facing challenges with natural conception or previous fertility treatments? Could the answer to your hopes lie in a gentle, yet highly effective approach in a welcoming land renowned for its medical expertise? Explore the possibility of frozen embryo transfer in Turkey, and let AZPO Health guide you towards a brighter future.",
     categoryKey: "fertility",
-    path: "fet",
+    path: "fet-frozen-embryo-transfer",
     subCategoryKey: "fertility-assisted-reproduction",
   },
 ];
