@@ -87,6 +87,14 @@ const Navbar = () => {
               className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1280:gap-x-6 s1512:gpa-x-10 s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-12 text-[#474744] anm`}
             >
               <div>
+                <Link
+                  className="hover:text-[#25A6A9] anm"
+                  href={`/${locale}`}
+                >
+                  Home Page
+                </Link>
+              </div>
+              <div>
                 <NavigationMenu>
                   <NavigationMenuList>
                     <NavigationMenuItem>

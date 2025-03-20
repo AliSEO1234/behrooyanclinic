@@ -64,8 +64,7 @@ const Page = async ({ params }: PropsPageType) => {
             <h1 className="font-semibold text-[20px] s1280:text-[30px] s1512:text-[36px] s1600:text-[40px] [text-shadow:0px_1px_4px_#00000025] text-[#00979A] s1512:mb-10 s1600:mb-20 s1728:mb-14">
               {fetchData?.title}
             </h1>
-            <p className="font-medium hidden s1280:block s1280:text-[20px] s1600:text-[24px] s1728:text-[28px] s1280:leading-[40px] s1728:leading-[45px] s1280:pe-40 s1512:pe-52 text-[#474744]">
-              {fetchData?.descriptionTop}
+            <p dangerouslySetInnerHTML={{__html : fetchData?.descriptionTop || ""}} className="font-medium hidden s1280:block s1280:text-[20px] s1600:text-[24px] s1728:text-[28px] s1280:leading-[40px] s1728:leading-[45px] s1280:pe-40 s1512:pe-52 text-[#474744]">
             </p>
           </div>
         </div>

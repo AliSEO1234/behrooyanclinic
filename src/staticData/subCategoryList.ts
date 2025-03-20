@@ -1107,6 +1107,7 @@ export const subCategoryHandler = (
     },
   ];
   
+  
   const findData = categoryList.find(
     (sub) => sub.subCategoryKey === findSubCategory
   );
