@@ -106,6 +106,8 @@ const VideoPlayer = ({
               muted={videoMuted}
               onTimeUpdate={handleTimeUpdate}
               onLoadedMetadata={handleTimeUpdate}
+              preload="auto"
+              playsInline
             ></video>
             {!hasPlayed && (
               <ImgFetcher

@@ -1,6 +1,5 @@
 import ImgFetcher from "@/components/imgFetcher";
 import Link from "next/link";
-import ServiceCard from "@/features/services/serviceCard";
 import HelpingIntersectionObserver from "@/components/scripts/helping-intersection-observer";
 import InfoIntersectionObserver from "@/components/scripts/info-intersection-observer";
 import videoIcon from "@/assets/images/icons/video.svg";
@@ -45,7 +44,8 @@ import { FeedbackCardType } from "@/types/feedback/feebackLayout";
 import { patientContents } from "@/staticData/patientContent";
 import { FaPlay } from "react-icons/fa6";
 import ComplimentaryConsultationForm from "@/features/complimentaryConsultationForm";
-import handleServices from "@/staticData/services/handleServices";
+import ScrollServices from "@/components/services/scrollServices";
+import { CiDesktopMouse2 } from "react-icons/ci";
 
 const Home = async ({
   params,
@@ -133,7 +133,6 @@ const Home = async ({
       desc: locale === "ru" ? "" : "Thank you for your attention and care ❤️",
     },
   ];
-  const services = handleServices(locale) || [];
   return (
     <>
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
@@ -179,73 +178,7 @@ const Home = async ({
               </div>
             </div>
             {/* show service */}
-            <div className="flex flex-col s1280:flex-row s1280:flex-wrap items-center justify-start s1280:items-center s1280:justify-between gap-y-8 s1280:gap-4 s1280:px-0">
-              {services.map(({ countService, img, label, path }, index) => {
-                return (
-                  <ServiceCard
-                    key={index}
-                    countService={countService}
-                    img={img}
-                    title={label}
-                    linkService={path}
-                    linkStyle=" text-[18px] s1512:text-[18px]"
-                    titleStyle=" text-[20px] s1512:text-[20px]"
-                    imgStyle="p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-                    className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
-                  />
-                );
-              })}
-              {/* <ServiceCard
-                linkStyle=" text-[18px] s1512:text-[18px]"
-                titleStyle=" text-[20px] s1512:text-[20px]"
-                imgStyle="p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-                className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
-                countService={27}
-                img={aesthetics}
-                linkService="/medicaltourism/aesthetic"
-                title="Aesthetics"
-              />
-              <ServiceCard
-                linkStyle=" text-[18px] s1512:text-[18px]"
-                titleStyle=" text-[20px] s1512:text-[20px]"
-                imgStyle=" p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-                className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
-                countService={74}
-                img={dental}
-                linkService="/medicaltourism/dental-treatments"
-                title="Dental"
-              />
-              <ServiceCard
-                linkStyle=" text-[18px] s1512:text-[18px]"
-                titleStyle=" text-[20px] s1512:text-[20px]"
-                imgStyle=" p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-                className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
-                countService={51}
-                img={eye}
-                linkService="/medicaltourism/eye-surgery"
-                title="Eye Surgeries"
-              />
-              <ServiceCard
-                linkStyle=" text-[18px] s1512:text-[18px]"
-                titleStyle=" text-[20px] s1512:text-[20px]"
-                imgStyle=" p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-                className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
-                countService={45}
-                img={fertility}
-                linkService="/medicaltourism/fertility"
-                title="Fertility"
-              />
-              <ServiceCard
-                linkStyle=" text-[18px] s1512:text-[18px]"
-                titleStyle=" text-[20px] s1512:text-[20px]"
-                imgStyle="p-8 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
-                className="treatments__card-container w-[210px] s1280:w-[210px] s1512:w-[252px] s1600:w-[262px] s1728:w-[282px]"
-                countService={24}
-                img={cell}
-                linkService="/medicaltourism/stem-cell"
-                title="Stem Cell"
-              /> */}
-            </div>
+            <ScrollServices />
           </div>
           {/* Watch Your Health Journey */}
           <div className="mb-10 s1280:mb-[60px]">
@@ -439,6 +372,11 @@ const Home = async ({
             <div>
               <FeedBackLayout feedbackList={feedBackOne} align="right" />
               <FeedBackLayout feedbackList={feedBackTwo} align="left" />
+            </div>
+            <div className="hidden s1280:flex-cen">
+              <div>
+              <CiDesktopMouse2 className="size-10 text-[#00979A]" />
+              </div>
             </div>
           </div>
           {/* information about Azpo Health */}

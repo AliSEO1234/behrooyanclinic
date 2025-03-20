@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 const FeedbackCard = ({ desc, title }: FeedBackCardType) => {
   return (
-    <Link href="https://www.google.com.tr/maps/place/AZPO+HEALTH/@36.5424725,32.0294971,17z/data=!3m1!4b1!4m6!3m5!1s0x14dc991aac26385b:0x6c62ab4b8439418e!8m2!3d36.5424682!4d32.032072!16s%2Fg%2F11y3lrrxnz?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="block h-[244px] bg-white rounded-[20px] shadow-[0_4px_15px_0_#0000001A] px-8 py-5">
+    <Link href="https://www.google.com.tr/maps/place/AZPO+HEALTH/@36.5424725,32.0294971,17z/data=!3m1!4b1!4m6!3m5!1s0x14dc991aac26385b:0x6c62ab4b8439418e!8m2!3d36.5424682!4d32.032072!16s%2Fg%2F11y3lrrxnz?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="block h-[244px] bg-white rounded-[20px] shadow-[0_4px_15px_0_#0000001A] px-8 py-5 snap-center w-[328px] min-w-[328px] s1280:w-[432px] s1280:min-w-[432px]">
       <div className="flex-bet gap-x-3 mb-4">
         <div>
           <div>
