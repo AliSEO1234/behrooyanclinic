@@ -292,8 +292,7 @@ const Page = async ({ params }: PropsPageType) => {
         <div className="mb-20 s1280:mb-[40px] s1512:mb-20">
           <div className="flex-left">
             <span className="font-semibold text-[20px] s1280:text-[40px]">
-              Videos{" "}
-              <span className="font-medium s1280:text-[25px]">(21 item)</span>
+              Videos
             </span>
           </div>
           <VideoTab

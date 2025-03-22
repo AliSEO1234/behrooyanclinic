@@ -7,7 +7,6 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import ring from "@/assets/images/ringnavbar.svg";
 import ImgFetcher from "../imgFetcher";
 import { useEffect, useState } from "react";
-import TreatSearchBox from "./treatSearchBox";
 import { useLocale } from "next-intl";
 import {
   NavigationMenu,
@@ -185,9 +184,9 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex-right gap-x-2 anm">
-            <div className="hidden s1280:block">
+            {/* <div className="hidden s1280:block">
               <TreatSearchBox />
-            </div>
+            </div> */}
             <div className="hidden s1280:block">
               <ChangeLanguage
                 trigStyle="s1280:w-[56px] s1600:w-[70px] h-[35px] s1600:h-[44px]"

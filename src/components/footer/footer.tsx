@@ -7,10 +7,11 @@ import glob from "@/assets/images/Globe Medical.svg";
 import phone from "@/assets/images/phonefooter.svg";
 import { MdArrowForwardIos } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa6";
-import { IoLogoWhatsapp, IoLogoYoutube } from "react-icons/io";
+import { IoLogoVk, IoLogoWhatsapp, IoLogoYoutube } from "react-icons/io";
 import { BsInstagram } from "react-icons/bs";
 import CertiLayout from "./certifications";
 import { useLocale } from "next-intl";
+import { FaTelegramPlane } from "react-icons/fa";
 const Footer = () => {
   const locale = useLocale();
   return (
@@ -75,7 +76,7 @@ const Footer = () => {
                 <ImgFetcher src={loc} />
               </div>
               <div>
-                <Link href="https://maps.app.goo.gl/H2XHqc9pCpAkjdEg7" target="_blank" className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
+                <Link href="https://maps.app.goo.gl/H2XHqc9pCpAkjdEg7n" target="_blank" className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
                   Kayabaşı Mahallesi, Adnan Menderes Bulvarı, No: 5/A, Blok: B3,
                   Kat: 2, Daire: 12. Başakşehir/Istanbul
                 </Link>
@@ -319,6 +320,24 @@ const Footer = () => {
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <BsInstagram className="s1280:size-5" />
+            </Link>
+          </div>
+          <div>
+            <Link
+              target="_blank"
+              href="https://vk.com/azpohealth"
+              className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
+            >
+              <IoLogoVk  className="size-5" />
+            </Link>
+          </div>
+          <div>
+            <Link
+              target="_blank"
+              href="https://t.me/azpohealth"
+              className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
+            >
+              <FaTelegramPlane className="size-5" />
             </Link>
           </div>
         </div>

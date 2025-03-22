@@ -41,7 +41,7 @@ const OurTeam = ({locale} : OurTeamComType) => {
     {
       id: 10,
       fullName: locale === "ru" ? "МЕХМЕТ НАСТРУЛА" : "MEHMET NASTRULLA",
-      position: locale === "ru" ? "ВОДИТЕЛЬ" : "DRİVER",
+      position: locale === "ru" ? "ВОДИТЕЛЬ" : "DRIVER",
       img: per11,
     },
     {

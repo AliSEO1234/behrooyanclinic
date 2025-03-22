@@ -1,5 +1,4 @@
 import ImgFetcher from "@/components/imgFetcher";
-import Link from "next/link";
 import HelpingIntersectionObserver from "@/components/scripts/helping-intersection-observer";
 import InfoIntersectionObserver from "@/components/scripts/info-intersection-observer";
 import videoIcon from "@/assets/images/icons/video.svg";
@@ -35,7 +34,7 @@ import PlatformWorkForm from "@/features/platformWork/platformWorkForm";
 import InfoCard from "@/features/platformWork/infoCard";
 import pltWork from "@/assets/images/workPlatform.png";
 import doctorIcon from "@/assets/images/doctorPltWork.svg";
-import ring from "@/assets/images/ring.svg";
+// import ring from "@/assets/images/ring.svg";
 import phone from "@/assets/images/phone.svg";
 import apoint from "@/assets/images/apointment.svg";
 import online from "@/assets/images/online.svg";
@@ -285,7 +284,7 @@ const Home = async ({
                 </div>
               </div>
               {/* consultation */}
-              <div className="helping__consultation-container flex-cen s1280:block w-full s1280:w-fit absolute -bottom-6 s1280:bottom-10 s1280:right-0 s1512:top-16 s1512:left-0 s1600:top-24 s1728:top-16">
+              {/* <div className="helping__consultation-container flex-cen s1280:block w-full s1280:w-fit absolute -bottom-6 s1280:bottom-10 s1280:right-0 s1512:top-16 s1512:left-0 s1600:top-24 s1728:top-16">
                 <Link
                   href="tel:+90 539 332 32 30"
                   className="w-[266px] h-[55px] s1280:h-[86px] s1280:w-[316px] flex-left ps-2 s1280:ps-4 gap-x-2 rounded-[40px] bg-[#FFFFFF99] shadow-[-8px_22px_15px_-15px_#0000001A] backdrop-blur-[10px]"
@@ -293,7 +292,6 @@ const Home = async ({
                   <div>
                     <div className="flex-cen w-[45px] h-[45px] s1280:w-[64px] s1280:h-[64px] rounded-full help-shadow text-[#00979A] p-3 s1280:p-4">
                       <ImgFetcher src={ring} />
-                      {/* <BiSolidPhoneCall className="size-7" /> */}
                     </div>
                   </div>
                   <div>
@@ -302,7 +300,7 @@ const Home = async ({
                     </p>
                   </div>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div className="col-span-12 s1280:col-span-6 flex flex-col mt-16 s1280:mt-0 px-2 s412:px-4 s1600:px-0">
               <div className="mb-10 s1280:mb-2">
