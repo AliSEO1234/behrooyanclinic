@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io";
 import phone from "@/assets/images/white-phone-logo.svg";
@@ -10,19 +10,20 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import ImgFetcher from "../imgFetcher";
-import { BiSolidPhoneCall } from "react-icons/bi";
-import { BsInstagram } from "react-icons/bs";
-import { useLocale } from "next-intl";
+import { BiMessageSquareEdit, BiSolidPhoneCall } from "react-icons/bi";
 import { useState } from "react";
+import { useLocale } from "next-intl";
 
 const WhatsAppLink = () => {
+  const [whatsapp, setWhatsapp] = useState<boolean>(false);
   const locale = useLocale()
-  const [whatsapp,setWhatsapp] = useState<boolean>(false)
   return (
     <DropdownMenu onOpenChange={setWhatsapp} open={whatsapp}>
       <DropdownMenuTrigger
         data-aos="fade-up"
-        className={`w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-[#00979A] p-2 outline-none fixed bottom-5 right-5 z-[5] ${whatsapp ? "" : "animate-ping-custom"}`}
+        className={`w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-[#00979A] p-2 outline-none fixed bottom-5 right-5 z-[5] ${
+          whatsapp ? "" : "animate-ping-custom"
+        }`}
       >
         <ImgFetcher src={phone} width={500} />
       </DropdownMenuTrigger>
@@ -52,15 +53,11 @@ const WhatsAppLink = () => {
           </DropdownMenuItem>
           <DropdownMenuItem className="border shadow w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-white text-[#00979A]">
             <Link
+              onClick={() => setWhatsapp(false)}
               className="w-full h-full flex-cen"
-              href={
-                locale === "ru"
-                  ? "https://www.instagram.com/azpo_health?igsh=MXcxbm9tMXV2bmE5dg=="
-                  : "https://www.instagram.com/azpo_health_international?igsh=NzJkcWY5NmxkbGky"
-              }
-              target="_blank"
+              href={`/${locale}/contact-us`}
             >
-              <BsInstagram className="s1280:size-5" />
+              <BiMessageSquareEdit className="size-7" />
             </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>

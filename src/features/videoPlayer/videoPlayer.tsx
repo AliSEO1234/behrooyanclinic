@@ -7,7 +7,7 @@ const VideoPlayerCom = () => {
         loop={true}
         playsInline
         className="w-full object-cover h-full"
-        src="/videos/videoHealth.mp4"
+        src="/videos/videoHealth1.mp4"
       ></video>
     </div>
   );
