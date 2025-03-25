@@ -57,7 +57,7 @@ const Page = async ({ params }: PropsPageType) => {
         </div>
         <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 s1600:col-span-7 s1920:col-span-6 relative flex-right z-[2]">
           {/* text */}
-          <h1 className="s1280:hidden absolute top-0 left-0 font-bold text-[30px] text-[#00979A] w-1/2">
+          <h1 className="s1280:hidden line-clamp-2 absolute top-0 left-0 font-bold text-[30px] text-[#00979A] w-1/2">
           {fetchData?.title}
           </h1>
           {/* phone */}
