@@ -506,13 +506,13 @@ const Home = async ({
             classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-5 s1728:mt-2 s1920:mt-1"
             className="mt-10 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-28 s1280:-mt-40 s1512:-mt-[150px] s1600:-mt-52 s1728:-mt-36 s1920:-mt-24"
             order="second"
-            title="Patients speak"
+            title="Patients Speak"
           >
             <div className="w-full z-[3]">
               <div className="flex items-center justify-between s1280:justify-end mb-10 s1280:mb-5">
                 <div className="s1280:hidden">
                   <h2 className="font-semibold text-[20px] text-[#333333]">
-                    Patients speak
+                    Patients Speak
                   </h2>
                 </div>
                 <div>

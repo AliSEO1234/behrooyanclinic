@@ -73,6 +73,8 @@ const PatientVideoPlayer = ({ videoSrc,isPoster }: PatientVideoPlayerType) => {
         poster={poster || undefined}
         ref={videoEl}
         src={videoSrc}
+        preload="auto"
+        playsInline
         className="w-full h-full object-cover z-0"
       ></video>
       {/* <ImgFetcher src={videoSrc} width={2000} /> */}

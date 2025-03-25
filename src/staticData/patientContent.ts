@@ -31,7 +31,7 @@ export const patientContents: {
     service: "Aesthetics",
     serivceKey: "aesthetic",
     serviceIcon: dist1icon,
-    header: "Valid's",
+    header: "Vadim's",
     desc: "Hair Transplant Journey",
     video: "https://azpo.com/api/files/property-videos/otziv_3_en.mp4",
   },

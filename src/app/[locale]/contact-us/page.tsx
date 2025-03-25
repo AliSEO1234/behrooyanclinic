@@ -26,19 +26,19 @@ const ContactUs = () => {
                   branchName="Istanbul"
                   location="Kayabaşı Mahallesi, Adnan Menderes Bulvarı, No: 5/A, Blok: B3, Kat: 2, Daire: 12, Başakşehir/Istanbul"
                   mail="info@azpo.com"
-                  phone="+ 90 545 555 0 555"
+                  phone="+90 539 332 32 30"
                 />
                 <BranchContactCard
                   branchName="Antalya"
                   location="Fener Mahallesi, Bülent Ecevit Bulvarı, Özdemir Plaza No: 42/1, 07230 Muratpaşa/Antalya"
                   mail="info@azpo.com"
-                  phone="+ 90 545 555 0 555"
+                  phone="+90 539 332 32 30"
                 />
                 <BranchContactCard
                   branchName="Alanya"
                   location="Cumhuriyet Mahallesi, Keykubat Bulvarı 270A/14, Alanya/Antalya"
                   mail="info@azpo.com"
-                  phone="+ 90 545 555 0 555"
+                  phone="+90 539 332 32 30"
                 />
               </div>
             </div>

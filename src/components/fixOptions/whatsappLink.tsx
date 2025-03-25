@@ -44,7 +44,7 @@ const WhatsAppLink = () => {
           <DropdownMenuItem className="border shadow w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-white s1512:p-3">
             <Link
               className="w-full h-full flex-cen text-[#00979A]"
-              href="tel:+ 90 545 555 0 555"
+              href="tel:+90 539 332 32 30"
               target="_blank"
             >
               {" "}

@@ -164,6 +164,7 @@ const HamburgerMenu = () => {
             <div className="w-full">
               <Link
                 href="tel:+90 539 332 32 30"
+                target="_blank"
                 className="flex-cen gap-x-2 py-2 text-[#333333] font-normal"
               >
                 <span className="w-5 min-w-5">

@@ -196,11 +196,11 @@ const Navbar = () => {
             <div>
               <Link
                 href="tel:+90 539 332 32 30"
+                target="_blank"
                 className="flex-cen gap-x-2 bg-[#25A6A9] rounded-[40px] py-4 px-2 s1280:py-[10px] s1280:px-[20px] font-medium s1280:text-[12px] s1600:text-[18px] text-white h-[33px] w-[33px] s1280:w-fit s1280:h-[35px] s1600:h-[44px]"
               >
                 <span>
                   <ImgFetcher src={ring} />
-                  {/* <BiSolidPhoneCall className="size-5" /> */}
                 </span>
                 <span className="hidden s1280:inline">+90 539 332 32 30</span>
               </Link>
