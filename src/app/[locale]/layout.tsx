@@ -6,7 +6,7 @@ import Footer from "@/components/footer/footer";
 import PopForm from "@/components/popUpForm/popForm";
 import WhatsAppLink from "@/components/fixOptions/whatsappLink";
 import UpArrow from "@/components/fixOptions/upArrow";
-
+import { ToastContainer } from "react-toastify";
 export const metadata: Metadata = {
   title: "Azpo Health",
   description: "Health with Azpo",
@@ -35,6 +35,7 @@ const RootLayout = async ({
         } relative bg-[#FCFCFC]`}
       >
         <AppProvider>
+          <ToastContainer position="top-center" draggable />
           <PopForm />
           <Navbar />
           {/* <FixBoxs /> */}

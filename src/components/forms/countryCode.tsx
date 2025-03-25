@@ -47,16 +47,17 @@ const CountryCode = ({ setCodes, codes }: CountryCodeType) => {
   const handleFilterCountries = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.toLowerCase();
     setCountryList(
-      allCountries.filter((country) =>
-        country.label.toLowerCase().includes(value)
-      )
+      allCountries.filter((country) => {
+        const matchCountry = `${country.key} ${country.label.toLowerCase()}`;
+        return matchCountry.includes(value);
+      })
     );
   };
   useEffect(() => {
     if (!countriesDrop) {
       setCountryList(allCountries);
     }
-  }, [countriesDrop , allCountries]);
+  }, [countriesDrop, allCountries]);
   return (
     <DropdownMenu open={countriesDrop} onOpenChange={setCountriesDrop}>
       <DropdownMenuTrigger className="absolute top-1/2 -translate-y-1/2 left-3 w-16 s1280:text-[14] outline-none flex-cen gap-x-1 text-[#9996A0] hover:text-[#00979A] anm border-none">

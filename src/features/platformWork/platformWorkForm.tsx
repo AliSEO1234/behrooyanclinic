@@ -1,16 +1,80 @@
 "use client";
 import ComboBox from "@/components/comboBox";
 import CountryCode from "@/components/forms/countryCode";
+import { sendFormFunc } from "@/server-APIs/formAPI";
 import { options } from "@/staticData/optionsForm";
 import { OptionType } from "@/types/comboBox/comboType";
+import { HomePlatformWorkFormType } from "@/types/forms";
 import { LucideSendHorizontal } from "lucide-react";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const PlatformWorkForm = () => {
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
-  const [codes, setCodes] = useState<OptionType | null>({id : 0 , key : "+90" , label : "Turkey"});
+  const [codes, setCodes] = useState<OptionType | null>({
+    id: 0,
+    key: "+90",
+    label: "Turkey",
+  });
+  const pathnme = usePathname();
+  const { handleSubmit, register, setValue, watch, setError, reset } =
+    useForm<HomePlatformWorkFormType>();
+  useEffect(() => {
+    setValue("treatment", `${selectedOption?.label},${selectedOption?.key}`);
+  }, [selectedOption, setValue]);
+  const phoneValue = watch("phone", "");
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let inputValue = e.target.value;
+
+    if (!inputValue.startsWith(codes?.key || "")) {
+      inputValue = `${codes?.key || ""}${inputValue.replace(/^\+\d+/, "")}`;
+    }
+    inputValue = inputValue.replace(/[^0-9+]/g, "");
+
+    setValue("phone", inputValue);
+  };
+  useEffect(() => {
+    if (codes) {
+      setValue("phone", codes.key);
+    }
+  }, [codes, setValue]);
+  const onSubmit: SubmitHandler<HomePlatformWorkFormType> = async ({
+    full_name,
+    phone,
+    treatment,
+  }) => {
+    if (isNaN(+phone)) {
+      setError("phone", { type: "validate", message: "The number is wrong." });
+      return;
+    } else if (!selectedOption) {
+      setError("treatment", {
+        type: "validate",
+        message: "Select service type",
+      });
+      return;
+    }
+    const response = await sendFormFunc({
+      name: full_name,
+      phone: phoneValue,
+      treatment,
+      pageUrl: pathnme,
+    });
+
+    if (response) {
+      toast.success("Request sent successfully.");
+    } else {
+      toast.error("There was a problem sending the request.");
+    }
+    reset();
+  };
   return (
-    <form className="grid grid-cols-12 gap-y-4 form-platform-work-end bg-white shadow-[0_4px_19px_0_#0000001A] rounded-[40px] px-[18px] s390:px-[25px] s412:px-[35px] py-5 s1280:py-8 s1280:px-[30px] s1512:px-9 s1920:px-[58px]">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="grid grid-cols-12 gap-y-4 form-platform-work-end bg-white shadow-[0_4px_19px_0_#0000001A] rounded-[40px] px-[18px] s390:px-[25px] s412:px-[35px] py-5 s1280:py-8 s1280:px-[30px] s1512:px-9 s1920:px-[58px]"
+    >
       {/* platform__form-container  */}
       <div className="col-span-12 ">
         <h3 className="text-center font-bold text-[20px] s1280:text-[18px] s1728:text-[28px] text-[#0CA5A5]">
@@ -19,12 +83,25 @@ const PlatformWorkForm = () => {
       </div>
       <div className="col-span-12">
         <label>Name & Surname</label>
-        <input className="px-4" placeholder="Name & Surname" type="text" />
+        <input
+          {...register("full_name", { required: true })}
+          className="px-4"
+          placeholder="Name & Surname"
+          type="text"
+        />
       </div>
       <div className="col-span-12">
         <label htmlFor="phone-our-work">Phone Number</label>
         <div className="relative">
-          <input className="ps-20 pe-4" id="phone-our-work" placeholder="Number" type="text" />
+          <input
+            {...register("phone", { required: true })}
+            onChange={handlePhoneChange}
+            defaultValue={phoneValue}
+            className="ps-20 pe-4"
+            id="phone-our-work"
+            placeholder="Number"
+            type="text"
+          />
           <CountryCode codes={codes} setCodes={setCodes} />
         </div>
       </div>

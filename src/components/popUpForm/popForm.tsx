@@ -4,18 +4,91 @@ import phone from "@/assets/images/popPhone.png";
 import ImgFetcher from "../imgFetcher";
 import ComboBox from "../comboBox";
 import { OptionType } from "@/types/comboBox/comboType";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { useAppContext } from "@/contexts/app-context/app-context";
 import { options } from "@/staticData/optionsForm";
 import CountryCode from "../forms/countryCode";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { PopFormType } from "@/types/forms";
+import { sendFormFunc } from "@/server-APIs/formAPI";
+import { toast } from "react-toastify";
+import { usePathname } from "next/navigation";
 const PopForm = () => {
-  const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
-  const [codes, setCodes] = useState<OptionType | null>({id : 0 , key : "+90" , label : "Turkey"});
+  const pathname = usePathname();
+  const { handleSubmit, register, setValue, watch, setError, reset } =
+    useForm<PopFormType>();
   const { setPopUpForm, popUpForm } = useAppContext();
+  const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
+  const [codes, setCodes] = useState<OptionType | null>({
+    id: 0,
+    key: "+90",
+    label: "Turkey",
+  });
+  useEffect(() => {
+    setValue("treatment", `${selectedOption?.label},${selectedOption?.key}`);
+  }, [selectedOption, setValue]);
+  const phoneValue = watch("phone", "");
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let inputValue = e.target.value;
+
+    if (!inputValue.startsWith(codes?.key || "")) {
+      inputValue = `${codes?.key || ""}${inputValue.replace(/^\+\d+/, "")}`;
+    }
+    inputValue = inputValue.replace(/[^0-9+]/g, "");
+
+    setValue("phone", inputValue);
+  };
+  useEffect(() => {
+    if (codes) {
+      setValue("phone", codes.key);
+    }
+  }, [codes, setValue]);
+
+  const [loading, setLoading] = useState<boolean>(false);
+  const onSubmit: SubmitHandler<PopFormType> = async ({
+    email,
+    full_name,
+    phone,
+    treatment,
+  }) => {
+    setLoading(true);
+    if (isNaN(+phone)) {
+      setError("phone", { type: "validate", message: "The number is wrong." });
+      setLoading(false);
+      return;
+    } else if (!selectedOption) {
+      setError("treatment", {
+        type: "validate",
+        message: "Select service type",
+      });
+      setLoading(false);
+      return;
+    }
+    const response = await sendFormFunc({
+      name: full_name,
+      phone: phoneValue,
+      treatment,
+      email,
+      pageUrl: pathname,
+    });
+
+    if (response) {
+      setLoading(false);
+      setTimeout(() => {
+        setPopUpForm(false);
+      }, 2000);
+      toast.success("Request sent successfully.");
+    } else {
+      setLoading(false);
+      toast.error("There was a problem sending the request.");
+    }
+    reset();
+  };
   return (
     <form
-      onSubmit={(e) => e.preventDefault()}
+      onSubmit={handleSubmit(onSubmit)}
       onClick={(e) => e.stopPropagation()}
       className={`z-[5] w-[326px] s390:w-[358px] s1280:w-[526px] s1280:h-[260px] s1512:w-[621px] s1728:w-[716px] s1512:h-[250px] s1728:h-[290px] popUpform ${
         popUpForm ? "animate-popup-form" : "hidden"
@@ -59,6 +132,7 @@ const PopForm = () => {
               Name
             </label>
             <input
+              {...register("full_name", { required: true })}
               className="placeholder:text-[#898989] px-2"
               placeholder="Name"
               type="text"
@@ -70,6 +144,9 @@ const PopForm = () => {
             </label>
             <div className="relative">
               <input
+                {...register("phone", { required: true })}
+                onChange={handlePhoneChange}
+                defaultValue={phoneValue}
                 className="placeholder:text-[#898989] ps-20 pe-2 outline-none w-full h-[45px] s1280:w-[219px] s1512:w-[250px] s1280:h-[38px] s1728:h-[48px] s1728:w-[320px] border-[1px] border-[#9996A0] placeholder:text-[14px] rounded-[40px] text-[14px] s1280:placeholder:text-[14px] s1728:text-[16px] s1728:placeholder:text-[16px]"
                 placeholder="Phone Number"
                 type="text"
@@ -95,6 +172,7 @@ const PopForm = () => {
               Email
             </label>
             <input
+              {...register("email", { required: true })}
               id="email"
               className="placeholder:text-[#898989] px-2"
               placeholder="Email"
@@ -103,8 +181,12 @@ const PopForm = () => {
           </div>
         </div>
         <div className="flex items-center s1280:justify-end">
-          <button className="bg-[#0CA5A5] rounded-[40px] w-full h-[45px] s1280:w-[163px] s1280:h-[38px] s1728:w-[178px] s1728:h-[45px] flex-cen text-white">
-            Send Message
+          <button
+            disabled={loading}
+            type="submit"
+            className="bg-[#0CA5A5] rounded-[40px] w-full h-[45px] s1280:w-[163px] s1280:h-[38px] s1728:w-[178px] s1728:h-[45px] flex-cen text-white"
+          >
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </div>
       </div>

@@ -12,27 +12,26 @@ import { handleAdmins } from "@/staticData/sidebar/handleAdmins";
 import { useLocale } from "next-intl";
 import Link from "next/link";
 // import { usePathname } from "next/navigation";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Sidebar = () => {
   const locale = useLocale();
-  // const pathname = usePathname();
-  // const [activeIndex, setActiveIndex] = useState<number>(0);
-  // const activeAdmin = handleAdmins(locale)[activeIndex].name;
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+  const activeAdmin = handleAdmins(locale)[activeIndex].name;
   const admins = handleAdmins(locale);
   const [api, setApi] = useState<CarouselApi>();
   const carouselRef = useRef<HTMLDivElement | null>(null);
   const services = handleServices(locale);
-  // useEffect(() => {
-  //   if (!api) return;
+  useEffect(() => {
+    if (!api) return;
 
-  //   setActiveIndex(api.selectedScrollSnap());
+    setActiveIndex(api.selectedScrollSnap());
 
-  //   api.on("select", () => {
-  //     setActiveIndex(api.selectedScrollSnap());
-  //   });
-  // }, [api]);
+    api.on("select", () => {
+      setActiveIndex(api.selectedScrollSnap());
+    });
+  }, [api]);
   return (
     <div className="hidden s1280:sticky s1280:top-0 s1280:flex s1280:flex-col w-full s1280:w-[318px] s1280:flex-shrink-0 s1280:min-w-[318px] s1600:w-[340px] s1600:min-w-[340px] rounded-[40px] shadow-[0_4px_15px_#0000001A] bg-white px-6 py-8">
       <div className="s1280:mb-10">
@@ -56,28 +55,29 @@ const Sidebar = () => {
           </button>
 
           <Carousel setApi={setApi} opts={{ loop: true }} className="w-full">
-            <CarouselContent ref={carouselRef}>
-              {admins.map((admin, index) => {
-                return (
-                  <CarouselItem key={index}>
-                    <CarouselAdmin
-                      isNotFull={admin.isNotFull}
-                      value={admin.desc}
-                      langs={admin.languages}
-                      image={admin.img}
-                      name={admin.name}
-                      userType="onlyView"
-                    />
-                  </CarouselItem>
-                );
-              })}
-            </CarouselContent>
-            {/* <CarouselPrevious />
+          <CarouselContent ref={carouselRef}>
+            {admins.map((admin, index) => {
+              return (
+                <CarouselItem key={index}>
+                  <CarouselAdmin
+                    value={
+                      admin.desc
+                    }
+                    langs={admin.languages}
+                    image={admin.img}
+                    name={admin.name}
+                    userType="onlyView"
+                  />
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+          {/* <CarouselPrevious />
           <CarouselNext /> */}
-          </Carousel>
+        </Carousel>
         </div>
         <div>
-          <SidebarForm />
+          <SidebarForm activeAdmin={activeAdmin} />
         </div>
       </div>
       <div className="mt-auto">

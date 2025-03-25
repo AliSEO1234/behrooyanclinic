@@ -3,46 +3,79 @@ import { ContactusFormType } from "@/types/contactTypes";
 import { SubmitHandler, useForm } from "react-hook-form";
 import CountryCode from "../forms/countryCode";
 import { OptionType } from "@/types/comboBox/comboType";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { ContactUsFormType } from "@/types/forms";
+import { sendFormFunc } from "@/server-APIs/formAPI";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
+  const pathname = usePathname();
   const {
     handleSubmit,
     register,
+    setValue,
+    watch,
+    setError,
+    reset,
     formState: { errors },
-    // reset,
-  } = useForm<ContactusFormType>();
-  // const [loading, setLoading] = useState<boolean>(true);
-  // const pathname = usePathname();
-  const onSubmit: SubmitHandler<ContactusFormType> = async () => {
-    // setLoading(true);
-    // const response = await requestFormClient(
-    //   email,
-    //   phone,
-    //   pathname,
-    //   1,
-    //   null,
-    //   0,
-    //   firstName + " " + surname,
-    //   message,
-    //   null
-    // );
-    // if (response) {
-    //   toast.success(
-    //     locale === "ru"
-    //       ? "Information sent successfully."
-    //       : "Information sent successfully."
-    //   );
-    //   setLoading(false);
-    // } else {
-    //   toast.warning(
-    //     locale === "ru" ? "A problem has occurred." : "A problem has occurred."
-    //   );
-    //   setLoading(false);
-    // }
-    // reset();
+  } = useForm<ContactUsFormType>();
+  const [codes, setCodes] = useState<OptionType | null>({
+    id: 0,
+    key: "+90",
+    label: "Turkey",
+  });
+  const phoneValue = watch("phone", "");
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let inputValue = e.target.value;
+
+    if (!inputValue.startsWith(codes?.key || "")) {
+      inputValue = `${codes?.key || ""}${inputValue.replace(/^\+\d+/, "")}`;
+    }
+    inputValue = inputValue.replace(/[^0-9+]/g, "");
+
+    setValue("phone", inputValue);
   };
-  const [codes, setCodes] = useState<OptionType | null>({id : 0 , key : "+90" , label : "Turkey"});
+  useEffect(() => {
+    if (codes) {
+      setValue("phone", codes.key);
+    }
+  }, [codes, setValue]);
+
+  const [loading, setLoading] = useState<boolean>(false);
+  const onSubmit: SubmitHandler<ContactusFormType> = async ({
+    email,
+    firstName,
+    message,
+    phone,
+    surname,
+  }) => {
+    setLoading(true);
+    if (isNaN(+phone)) {
+      setError("phone", { type: "validate", message: "The number is wrong." });
+      setLoading(false);
+      return;
+    }
+
+    const response = await sendFormFunc({
+      email,
+      name: firstName + " " + surname,
+      throughEmail: 1,
+      phone,
+      message,
+      pageUrl: pathname,
+    });
+
+    if (response) {
+      setLoading(false);
+      toast.success("Request sent successfully.");
+    } else {
+      setLoading(false);
+      toast.error("There was a problem sending the request.");
+    }
+    reset();
+  };
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
@@ -95,6 +128,8 @@ const ContactForm = () => {
         <div className="relative">
           <input
             {...register("phone", { required: true })}
+            onChange={handlePhoneChange}
+            defaultValue={phoneValue}
             className={` ps-20 pe-4${
               errors.phone && errors.phone.type === "required"
                 ? "ring-[1px] ring-rose-600"
@@ -125,18 +160,13 @@ const ContactForm = () => {
       </div>
       <div className="col-span-12">
         <button
-          disabled
+          disabled={loading}
           type="submit"
           className="outline-none w-full h-[46px] rounded-[100px] text-white font-bold bg-[#0CA5A5]"
         >
-          Send request
-          {/* {loading
-            ? locale === "ru"
-              ? "Sending..."
-              : "Sending..."
-            : locale === "ru"
-            ? "Send request"
-            : "Send request"} */}
+          {
+            loading ? "Loading..." : "Send request"
+          }
         </button>
       </div>
     </form>
