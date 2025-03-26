@@ -13,6 +13,15 @@ import arman8 from "@/assets/images/about/gallery/armn (8).jpg";
 import arman9 from "@/assets/images/about/gallery/armn (9).jpg";
 import arman21 from "@/assets/images/about/gallery/armn (12).jpg";
 
+import health1 from "@/assets/images/about/gallery/health (1).png";
+import health2 from "@/assets/images/about/gallery/health (2).png";
+import health3 from "@/assets/images/about/gallery/health (3).png";
+import health4 from "@/assets/images/about/gallery/health (4).png";
+import health5 from "@/assets/images/about/gallery/health (5).png";
+import health6 from "@/assets/images/about/gallery/health (6).png";
+import health7 from "@/assets/images/about/gallery/health (7).png";
+import health8 from "@/assets/images/about/gallery/health (8).png";
+import health9 from "@/assets/images/about/gallery/health (9).png";
 import AboutGallery from "./aboutGallery";
 import { useAppContext } from "@/contexts/app-context/app-context";
 import { ImgType } from "@/types/about/galleryAbout";
@@ -54,6 +63,16 @@ const AboutGalleryCom = () => {
     { id: 7, key: "arman7", src: arman7 },
     { id: 8, key: "arman8", src: arman8 },
     { id: 11, key: "arman12", src: arman12 },
+
+    { id: 12, key: "health1", src: health1 },
+    { id: 13, key: "health2", src: health2 },
+    { id: 14, key: "health3", src: health3 },
+    { id: 15, key: "health4", src: health4 },
+    { id: 16, key: "health5", src: health5 },
+    { id: 17, key: "health6", src: health6 },
+    { id: 18, key: "health7", src: health7 },
+    { id: 19, key: "health8", src: health8 },
+    { id: 20, key: "health9", src: health9 },
   ];
   const { setAboutGallery, setAboutGalleryIndex } = useAppContext();
   return (

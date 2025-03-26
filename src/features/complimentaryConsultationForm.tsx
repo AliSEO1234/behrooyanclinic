@@ -19,7 +19,7 @@ const ComplimentaryConsultationForm = () => {
     key: "+90",
     label: "Turkey",
   });
-  const { handleSubmit, register, setValue, watch, setError ,reset} =
+  const { handleSubmit, register, setValue, watch, setError, reset } =
     useForm<HomePageFormType>();
   useEffect(() => {
     setValue("treatment", `${selectedOption?.label},${selectedOption?.key}`);
@@ -41,18 +41,25 @@ const ComplimentaryConsultationForm = () => {
       setValue("phone", codes.key);
     }
   }, [codes, setValue]);
+  const [loading, setLoading] = useState<boolean>(false);
   const onSubmit: SubmitHandler<HomePageFormType> = async ({
     email,
     full_name,
     phone,
     treatment,
   }) => {
+    setLoading(true);
     if (isNaN(+phone)) {
       setError("phone", { type: "validate", message: "The number is wrong." });
+      setLoading(false);
       return;
-    }else if(!selectedOption){
-      setError("treatment" , {type : "validate" , message : "Select service type"})
-      return
+    } else if (!selectedOption) {
+      setError("treatment", {
+        type: "validate",
+        message: "Select service type",
+      });
+      setLoading(false);
+      return;
     }
     const response = await sendFormFunc({
       email,
@@ -63,10 +70,12 @@ const ComplimentaryConsultationForm = () => {
     });
     if (response) {
       toast.success("Request sent successfully.");
+      setLoading(false);
     } else {
       toast.error("There was a problem sending the request.");
+      setLoading(false);
     }
-    reset()
+    reset();
   };
   return (
     <form
@@ -111,11 +120,16 @@ const ComplimentaryConsultationForm = () => {
       </div>
       <div className="col-span-12 s1280:col-span-2 h-fit">
         <button
+          disabled={loading}
           type="submit"
           className="h-[48px] rounded-[40px] text-white px-4 w-full text-center font-bold group relative overflow-hidden text-[18px]"
         >
-          <div className="z-[2] bg-[#0CA5A5] text-white w-full h-full absolute top-0 group-hover:-top-full left-0 text-center flex-cen anm">
-            Let’s Connect
+          <div
+            className={`z-[2] bg-[#0CA5A5] text-white w-full h-full absolute top-0 ${
+              loading ? "top-0" : "group-hover:-top-full"
+            } group-hover:-top-full left-0 text-center flex-cen anm`}
+          >
+            {loading ? "Let’s Connect" : "Sending..."}
           </div>
           <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
             <LucideSendHorizontal className="size-5" />
