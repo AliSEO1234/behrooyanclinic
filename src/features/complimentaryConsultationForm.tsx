@@ -129,7 +129,7 @@ const ComplimentaryConsultationForm = () => {
               loading ? "top-0" : "group-hover:-top-full"
             } group-hover:-top-full left-0 text-center flex-cen anm`}
           >
-            {loading ? "Let’s Connect" : "Sending..."}
+            {loading ? "Sending..." : "Let’s Connect"}
           </div>
           <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
             <LucideSendHorizontal className="size-5" />
