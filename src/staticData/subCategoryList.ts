@@ -8,7 +8,7 @@ import breast from "@/assets/images/subnested/Breast lift (Mastopexy).png";
 import breastImp from "@/assets/images/subCategory/Breast augmentation (implants).png";
 import liposuction from "@/assets/images/subnested/Liposuction.png";
 import tumy from "@/assets/images/subnested/Tummy tuck (Abdominoplasty).png";
-import thighlift from "@/assets/images/subnested/Thigh Lift.png";
+import thighlift from "@/assets/images/subnested/Thigh lift.png";
 // fecial
 import rhinoplasty from "@/assets/images/subnested/Rhinoplasty (Nose reshaping).jpg";
 import brow from "@/assets/images/subnested/Brow Lift (Browplasty).jpg";
