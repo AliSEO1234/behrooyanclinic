@@ -172,7 +172,7 @@ export const allSubCategory = [
     img: orthodontics,
     title: "Orthodontics",
     description:
-      "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
+      "Achieve a healthier, more confident smile with advanced orthodontic care. Whether it’s braces, clear aligners, or retainers, we offer personalized solutions for all ages. Say goodbye to misaligned teeth and bite issues—our treatments bring precision, comfort, and long-term results. Your perfect smile starts here! 🦷",
     path: "orthodontics",
     categoryKey: "dental-treatments",
   },
@@ -180,7 +180,7 @@ export const allSubCategory = [
     img: oralsurgery,
     title: "Oral Surgery",
     description:
-      "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
+      "From tooth extractions to jaw corrections, our expert oral surgery services restore your smile’s health and function with precision and care. Whether it’s wisdom teeth removal, dental implants, or corrective procedures, we ensure a safe, comfortable, and effective experience. Your oral health is in expert hands!",
     path: "oral-surgery",
     categoryKey: "dental-treatments",
   },
