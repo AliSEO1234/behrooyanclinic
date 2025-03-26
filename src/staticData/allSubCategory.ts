@@ -12,12 +12,12 @@ import Mesotherapy from "@/assets/images/subnested/Mesotherapy for Hair.jpeg";
 import Moustache from "@/assets/images/subnested/Moustache Transplant.jpg";
 import double from "@/assets/images/subnested/Double Chin Liposuction.jpg";
 // body contouring
-import arm from "@/assets/images/subnested/Arm Lift (Brachioplasty).jpg";
-import brazilianad from "@/assets/images/subnested/Brazilian Butt Lift (BBL).jpg";
-import breast from "@/assets/images/subnested/Breast Surgery.jpg";
-import liposuction from "@/assets/images/subnested/Liposuction.jpg";
-import tummy from "@/assets/images/subnested/Mommy Makeover.jpg";
-import thighlift from "@/assets/images/subnested/Thigh Lift.jpg";
+import arm from "@/assets/images/subnested/Arm lift.png";
+import brazilianad from "@/assets/images/subnested/Brazilian Butt Lift.png";
+import breast from "@/assets/images/subnested/Breast lift (Mastopexy).png";
+import liposuction from "@/assets/images/subnested/Liposuction.png";
+import tummy from "@/assets/images/subnested/Tummy tuck (Abdominoplasty).png";
+import thighlift from "@/assets/images/subnested/Thigh lift.png";
 // fecial
 import rhinoplasty from "@/assets/images/subnested/Rhinoplasty (Nose reshaping).jpg";
 import brow from "@/assets/images/subnested/Brow Lift (Browplasty).jpg";
@@ -25,7 +25,7 @@ import neck from "@/assets/images/subnested/Neck Lift (Platysmaplasty).jpg";
 import otoplasty from "@/assets/images/subnested/Otoplasty.jpg";
 import ble from "@/assets/images/subnested/Blepharoplasty (Upper and Lower Eyelid Surgery).jpg";
 // breast
-import breatSubCategory from "@/assets/images/subCategory/breastCard.jpg";
+import breatSubCategory from "@/assets/images/subCategory/Breast augmentation (implants).png";
 // genital
 import genital from "@/assets/images/treatment/genital.jpg";
 import labiaplastyGenital from "@/assets/images/treatment/labiaplasty.jpg";
@@ -67,24 +67,24 @@ import tipplasty from "@/assets/images/subnested/Tip Plasty (Nose Tip Correction
 import almondeye from "@/assets/images/subnested/Aesthetic Almond-Shaped Eyes - Bilateral Canthoplasty.jpg";
 import facelift from "@/assets/images/subnested/Facelift (Rhytidectomy).jpg";
 import bichecktomy from "@/assets/images/subnested/Bichecktomy.jpg";
-import momymakeover from "@/assets/images/subnested/Mommy Makeover.jpg";
-import breastreduc from "@/assets/images/subnested/Breast Reduction.jpg";
-import malebreastreduc from "@/assets/images/subnested/Male Breast Reduction (Gynecomastia Treatment).jpg";
+import momymakeover from "@/assets/images/subnested/Mommy Makeover.png";
+import breastreduc from "@/assets/images/subnested/Breast reduction.png";
+import malebreastreduc from "@/assets/images/subnested/Male breast reduction (Gynecomastia treatment).png";
 import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg";
 import implant from "@/assets/images/subnested/Implant Treatment .jpg";
 
-import fillings from "@/assets/images/subnested/Fillings.jpg"
-import rotinecheckupscleaning from "@/assets/images/subnested/RoutineCheck-upsCleanings.jpg"
-import toothextraction from "@/assets/images/subnested/Tooth Extractions.jpg"
-import jawsurgery from "@/assets/images/subnested/Jaw Surgery 1.jpg"
-import cataract from "@/assets/images/subnested/Cataract-Treatment 1.jpg"
-import retinaldisease from "@/assets/images/subnested/Retinal-Disease-Treatment 1.jpg"
-import xrays from "@/assets/images/subnested/Dental X-rays (2).jpg"
-import fet from "@/assets/images/subnested/Frozen Embryo Transfer (FET).jpg"
-import ivf from "@/assets/images/subnested/In Vitro Fertilization (IVF).jpg"
-import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg"
-import smartlens from "@/assets/images/subnested/Smart lens.jpg"
-import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.jpg"
+import fillings from "@/assets/images/subnested/Fillings.jpg";
+import rotinecheckupscleaning from "@/assets/images/subnested/RoutineCheck-upsCleanings.jpg";
+import toothextraction from "@/assets/images/subnested/Tooth Extractions.jpg";
+import jawsurgery from "@/assets/images/subnested/Jaw Surgery 1.jpg";
+import cataract from "@/assets/images/subnested/Cataract-Treatment 1.jpg";
+import retinaldisease from "@/assets/images/subnested/Retinal-Disease-Treatment 1.jpg";
+import xrays from "@/assets/images/subnested/Dental X-rays (2).jpg";
+import fet from "@/assets/images/subnested/Frozen Embryo Transfer (FET).jpg";
+import ivf from "@/assets/images/subnested/In Vitro Fertilization (IVF).jpg";
+import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg";
+import smartlens from "@/assets/images/subnested/Smart lens.jpg";
+import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.jpg";
 
 export const allSubCategory = [
   {
