@@ -32,7 +32,7 @@ const AboutCarouselGallery: React.FC<ImageCarouselProps> = ({ images }) => {
   };
 
   const scrollToThumbnail = (index: number): void => {
-    const thumbnails = thumbnailsRef.current;
+    const thumbnails  = thumbnailsRef.current;
     if (thumbnails) {
       const selectedThumbnail = thumbnails.children[index] as HTMLElement;
       const offsetLeft = selectedThumbnail.offsetLeft;
