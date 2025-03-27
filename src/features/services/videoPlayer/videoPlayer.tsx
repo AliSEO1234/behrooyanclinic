@@ -31,42 +31,75 @@ const VideoPlayer = ({
   //   };
   //   checkISO();
   // }, []);
+  // const handlePlayPause = () => {
+  //   if (videoEl.current) {
+  //     if (togglePlay) {
+  //       videoEl.current.pause();
+  //     } else {
+  //       videoEl.current.play();
+  //       if (!hasPlayed) {
+  //         setHasPlayed(true);
+  //       }
+  //     }
+  //     setTogglePlay(!togglePlay);
+  //   }
+  // };
   const handlePlayPause = () => {
-    if (videoEl.current) {
-      if (togglePlay) {
-        videoEl.current.pause();
-      } else {
-        videoEl.current.play();
-        if (!hasPlayed) {
-          setHasPlayed(true);
-        }
-      }
-      setTogglePlay(!togglePlay);
-    }
-  };
-
-  const handleFullScreen = () => {
-    if (videoEl.current) {
-      if (!document.fullscreenElement) {
-        setCurrentTime(videoEl.current.currentTime);
-        videoEl.current
-          .requestFullscreen()
+    if (!videoEl.current) return;
+    const video = videoEl.current as HTMLVideoElement & { webkitEnterFullscreen?: () => void; webkitDisplayingFullscreen?: boolean };
+    if (video.paused) {
+      const playPromise = video.play();
+      
+      if (playPromise !== undefined) {
+        playPromise
           .then(() => {
-            videoEl.current!.currentTime = currentTime;
-            videoEl.current!.play();
             setTogglePlay(true);
             setHasPlayed(true);
           })
           .catch((err) => {
-            console.error(err);
+            console.error("ٍPlay error in ios & android", err);
           });
-      } else {
+      }
+    } else {
+      video.pause();
+      setTogglePlay(false);
+    }
+  };
+  
+
+  const handleFullScreen = () => {
+    if (videoEl.current) {
+      const video = videoEl.current as HTMLVideoElement & {
+        webkitEnterFullscreen?: () => void;
+        webkitDisplayingFullscreen?: boolean;
+      };
+      if (document.fullscreenElement || video.webkitDisplayingFullscreen) {
         setHasPlayed(true);
-        if (!videoEl.current.paused) {
-          videoEl.current.pause();
+        if (!video.paused) {
+          video.pause();
           setTogglePlay(false);
         }
-        document.exitFullscreen();
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        }
+      } else {
+        setCurrentTime(video.currentTime);
+        if (video.requestFullscreen) {
+          video
+            .requestFullscreen()
+            .then(() => {
+              video.currentTime = currentTime;
+              video.play();
+              setTogglePlay(true);
+              setHasPlayed(true);
+            })
+            .catch((err) => console.error(err));
+        } else if (video.webkitEnterFullscreen) {
+          video.webkitEnterFullscreen();
+          video.play();
+          setTogglePlay(true);
+          setHasPlayed(true);
+        }
       }
     }
   };
