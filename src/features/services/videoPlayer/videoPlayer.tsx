@@ -47,7 +47,10 @@ const VideoPlayer = ({
   const handlePlayPause = () => {
     if (!videoEl.current) return;
   
-    const video = videoEl.current as HTMLVideoElement & { webkitEnterFullscreen?: () => void; webkitDisplayingFullscreen?: boolean };
+    const video = videoEl.current as HTMLVideoElement & {
+      webkitEnterFullscreen?: () => void;
+      webkitDisplayingFullscreen?: boolean;
+    };
   
     if (video.paused) {
       const playPromise = video.play();
@@ -58,20 +61,20 @@ const VideoPlayer = ({
             setTogglePlay(true);
             setHasPlayed(true);
   
-            if (video.currentTime > 0 && !video.paused && !video.ended && video.readyState > 2) {
+            setTimeout(() => {
               video.currentTime = video.currentTime + 0.01;
-            }
+            }, 100);
           })
           .catch((err) => {
-            console.error("Error in play video:", err);
+            console.error("ٍError in update video:", err);
           });
       }
     } else {
-      // پاز کردن
       video.pause();
       setTogglePlay(false);
     }
   };
+  
   
   
 
