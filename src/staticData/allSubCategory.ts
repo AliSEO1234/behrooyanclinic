@@ -1,16 +1,16 @@
-import hair from "@/assets/images/treatment/Hair Transplantation.jpg";
-import fecial from "@/assets/images/treatment/Facial Aesthetic Surgery.jpg";
-import body from "@/assets/images/treatment/Body contouring.jpg";
-import breastCategory from "@/assets/images/treatment/breast.jpg";
+import hair from "@/assets/images/treatment/Hair Transplantation.png";
+import fecial from "@/assets/images/treatment/Facial Aesthetic Surgery.png";
+import body from "@/assets/images/treatment/Body contouring.png";
+import breastCategory from "@/assets/images/treatment/Breast Surgery.png";
 // hair
-import Beard from "@/assets/images/subnested/Beard Transplant.jpg";
+import Beard from "@/assets/images/subnested/Beard Transplant.png";
 import prp from "@/assets/images/subnested/PRP Hair Treatment.jpg";
 import DHI from "@/assets/images/subnested/DHI Hair Transplant.jpg";
 import Eyebrow from "@/assets/images/subnested/Eyebrow Transplant.jpg";
 import FUE from "@/assets/images/subnested/FUE Hair Transplant.jpg";
 import Mesotherapy from "@/assets/images/subnested/Mesotherapy for Hair.jpeg";
-import Moustache from "@/assets/images/subnested/Moustache Transplant.jpg";
-import double from "@/assets/images/subnested/Double Chin Liposuction.jpg";
+import Moustache from "@/assets/images/subnested/Moustache Transplant.png";
+import double from "@/assets/images/subnested/Double Chin Liposuction.png";
 // body contouring
 import arm from "@/assets/images/subnested/Arm lift.png";
 import brazilianad from "@/assets/images/subnested/Brazilian Butt Lift.png";
@@ -19,16 +19,16 @@ import liposuction from "@/assets/images/subnested/Liposuction.png";
 import tummy from "@/assets/images/subnested/Tummy tuck (Abdominoplasty).png";
 import thighlift from "@/assets/images/subnested/Thigh lift.png";
 // fecial
-import rhinoplasty from "@/assets/images/subnested/Rhinoplasty (Nose reshaping).jpg";
-import brow from "@/assets/images/subnested/Brow Lift (Browplasty).jpg";
-import neck from "@/assets/images/subnested/Neck Lift (Platysmaplasty).jpg";
-import otoplasty from "@/assets/images/subnested/Otoplasty.jpg";
-import ble from "@/assets/images/subnested/Blepharoplasty (Upper and Lower Eyelid Surgery).jpg";
+import rhinoplasty from "@/assets/images/subnested/Rhinoplasty (Nose reshaping).png";
+import brow from "@/assets/images/subnested/Brow lift.png";
+import neck from "@/assets/images/subnested/Neck lift.png";
+import otoplasty from "@/assets/images/subnested/Otoplasty.png";
+import ble from "@/assets/images/subnested/Blepharoplasty (Upper and Lower).png";
 // breast
 import breatSubCategory from "@/assets/images/subCategory/Breast augmentation (implants).png";
 // genital
-import genital from "@/assets/images/treatment/genital.jpg";
-import labiaplastyGenital from "@/assets/images/treatment/labiaplasty.jpg";
+import genital from "@/assets/images/treatment/Genital Aesthetic.png";
+import labiaplastyGenital from "@/assets/images/subnested/Labiaplasty _ Barbie Look.png";
 import penileGenital from "@/assets/images/subnested/penile.jpg";
 import implantology from "@/assets/images/subCategory/implantology.jpg";
 import den64 from "@/assets/images/subnested/den64.jpg";
@@ -65,7 +65,7 @@ import stemmen from "@/assets/images/subnested/Stem Cell men.jpg";
 import neurological from "@/assets/images/subnested/Neurological Stem Cell.jpg";
 import tipplasty from "@/assets/images/subnested/Tip Plasty (Nose Tip Correction).jpg";
 import almondeye from "@/assets/images/subnested/Aesthetic Almond-Shaped Eyes - Bilateral Canthoplasty.jpg";
-import facelift from "@/assets/images/subnested/Facelift (Rhytidectomy).jpg";
+import facelift from "@/assets/images/subnested/Facelift.png";
 import bichecktomy from "@/assets/images/subnested/Bichecktomy.jpg";
 import momymakeover from "@/assets/images/subnested/Mommy Makeover.png";
 import breastreduc from "@/assets/images/subnested/Breast reduction.png";
