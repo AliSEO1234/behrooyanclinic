@@ -20,15 +20,32 @@ const VideoPlayer = ({
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [duration, setDuration] = useState<number>(0);
   const [videoMuted ,setVideoMuted] = useState<boolean>(false)
+  // const handlePlayPause = () => {
+  //   if (videoEl.current) {
+  //     if (togglePlay) {
+  //       videoEl.current.pause();
+  //     } else {
+  //       videoEl.current.play();
+  //       if (!hasPlayed) {
+  //         setHasPlayed(true);
+  //       }
+  //     }
+  //     setTogglePlay(!togglePlay);
+  //   }
+  // };
   const handlePlayPause = () => {
     if (videoEl.current) {
       if (togglePlay) {
         videoEl.current.pause();
       } else {
-        videoEl.current.play();
-        if (!hasPlayed) {
-          setHasPlayed(true);
-        }
+        videoEl.current.muted = true;
+        videoEl.current.play().then(() => {
+          if (!hasPlayed) {
+            setHasPlayed(true);
+          }
+        }).catch((err) => {
+          console.error('Video play error:', err);
+        });
       }
       setTogglePlay(!togglePlay);
     }
