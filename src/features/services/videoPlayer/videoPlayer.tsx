@@ -20,17 +20,17 @@ const VideoPlayer = ({
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [duration, setDuration] = useState<number>(0);
   const [videoMuted, setVideoMuted] = useState<boolean>(false);
-  const [userISO, setUserISO] = useState<boolean>(false);
-  useEffect(() => {
-    const checkISO = () => {
-      const user = navigator.userAgent;
-      const isISO =
-        /iPad|iPhone|iPod/.test(user) ||
-        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-      setUserISO(isISO);
-    };
-    checkISO();
-  }, []);
+  // const [userISO, setUserISO] = useState<boolean>(false);
+  // useEffect(() => {
+  //   const checkISO = () => {
+  //     const user = navigator.userAgent;
+  //     const isISO =
+  //       /iPad|iPhone|iPod/.test(user) ||
+  //       (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  //     setUserISO(isISO);
+  //   };
+  //   checkISO();
+  // }, []);
   const handlePlayPause = () => {
     if (videoEl.current) {
       if (togglePlay) {
@@ -151,63 +151,61 @@ const VideoPlayer = ({
           </div>
         </>
       )}
-      {!userISO && (
-        <div className="absolute -bottom-10 s1280:-bottom-14 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex-cen px-5 s1280:px-20 s1512:px-32 z-[2]">
-          <div
-            className={` ${
-              toolsbarStyle ? toolsbarStyle : ""
-            } flex w-full items-center justify-between s1280:justify-between px-5 s1280:gap-x-5 rounded-[200px] bg-gradient-to-r from-[#8D8D8D57] to-[#8D8D8DD4] border border-white backdrop-blur-[12px] text-white shadow-[0px_4px_4px_#00000025]`}
-          >
-            <div>
-              <button onClick={handlePlayPause} className="">
-                {togglePlay ? (
-                  <FaPause className="size-4 s1280:size-4 s1600:size-5" />
-                ) : (
-                  <FaPlay className="size-4 s1280:size-4 s1600:size-5" />
-                )}
-              </button>
-            </div>
-            <div className="w-[60%] s1280:w-[90%] flex-cen">
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value={(currentTime / duration) * 100 || 0}
-                onChange={handleProgressChange}
-                className="w-full h-[3px] cursor-pointer"
-              />
-              {/* <progress
+      <div className="absolute -bottom-10 s1280:-bottom-14 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex-cen px-5 s1280:px-20 s1512:px-32 z-[2]">
+        <div
+          className={` ${
+            toolsbarStyle ? toolsbarStyle : ""
+          } flex w-full items-center justify-between s1280:justify-between px-5 s1280:gap-x-5 rounded-[200px] bg-gradient-to-r from-[#8D8D8D57] to-[#8D8D8DD4] border border-white backdrop-blur-[12px] text-white shadow-[0px_4px_4px_#00000025]`}
+        >
+          <div>
+            <button onClick={handlePlayPause} className="">
+              {togglePlay ? (
+                <FaPause className="size-4 s1280:size-4 s1600:size-5" />
+              ) : (
+                <FaPlay className="size-4 s1280:size-4 s1600:size-5" />
+              )}
+            </button>
+          </div>
+          <div className="w-[60%] s1280:w-[90%] flex-cen">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value={(currentTime / duration) * 100 || 0}
+              onChange={handleProgressChange}
+              className="w-full h-[3px] cursor-pointer"
+            />
+            {/* <progress
               className="w-full h-[3px] progVideoHome"
               value="40"
               max={100}
             ></progress> */}
+          </div>
+          <div className="flex-cen gap-x-4">
+            <div>
+              <button
+                className="hover:scale-110 anm hover:text"
+                onClick={handleFullScreen}
+              >
+                <AiOutlineFullscreen className="size-4 s1280:size-4 s1600:size-5" />
+              </button>
             </div>
-            <div className="flex-cen gap-x-4">
-              <div>
-                <button
-                  className="hover:scale-110 anm hover:text"
-                  onClick={handleFullScreen}
-                >
-                  <AiOutlineFullscreen className="size-4 s1280:size-4 s1600:size-5" />
-                </button>
-              </div>
-              <div>
-                <button
-                  className="hover:scale-110 anm hover:text relative"
-                  onClick={() => setVideoMuted((val) => !val)}
-                >
-                  <span
-                    className={`bg-[#545454] absolute top-[2px] left-0 -rotate-45 rounded-[5px] origin-top-left ${
-                      videoMuted ? "open-animate-video" : "close-animate-video"
-                    }`}
-                  ></span>
-                  <PiSpeakerHighFill className="size-4 s1280:size-4 s1600:size-5" />
-                </button>
-              </div>
+            <div>
+              <button
+                className="hover:scale-110 anm hover:text relative"
+                onClick={() => setVideoMuted((val) => !val)}
+              >
+                <span
+                  className={`bg-[#545454] absolute top-[2px] left-0 -rotate-45 rounded-[5px] origin-top-left ${
+                    videoMuted ? "open-animate-video" : "close-animate-video"
+                  }`}
+                ></span>
+                <PiSpeakerHighFill className="size-4 s1280:size-4 s1600:size-5" />
+              </button>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
