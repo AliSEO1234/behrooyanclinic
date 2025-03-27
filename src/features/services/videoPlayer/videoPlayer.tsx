@@ -33,6 +33,7 @@ const VideoPlayer = ({
   //     setTogglePlay(!togglePlay);
   //   }
   // };
+  
   const handlePlayPause = () => {
     if (videoEl.current) {
       if (togglePlay) {
