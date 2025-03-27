@@ -1,6 +1,6 @@
 import hair from "@/assets/images/treatment/Hair Transplantation.png";
 import fecial from "@/assets/images/treatment/Facial Aesthetic Surgery.png";
-import body from "@/assets/images/treatment/Body contouring.png";
+import body from "@/assets/images/treatment/Body Contouring.png";
 import breastCategory from "@/assets/images/treatment/Breast Surgery.png";
 // hair
 import Beard from "@/assets/images/subnested/Beard Transplant.png";
