@@ -7,6 +7,7 @@ import videoCover from "@/assets/images/videoCover.png";
 import { FaPause, FaPlay } from "react-icons/fa";
 import { AiOutlineFullscreen } from "react-icons/ai";
 import { PiSpeakerHighFill } from "react-icons/pi";
+import SpinnerLoading from "@/components/spinnerLoading";
 const VideoPlayer = ({
   src,
   className,
@@ -20,53 +21,31 @@ const VideoPlayer = ({
   const [currentTime, setCurrentTime] = useState<number>(0);
   const [duration, setDuration] = useState<number>(0);
   const [videoMuted, setVideoMuted] = useState<boolean>(false);
-  // const [userISO, setUserISO] = useState<boolean>(false);
-  // useEffect(() => {
-  //   const checkISO = () => {
-  //     const user = navigator.userAgent;
-  //     const isISO =
-  //       /iPad|iPhone|iPod/.test(user) ||
-  //       (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-  //     setUserISO(isISO);
-  //   };
-  //   checkISO();
-  // }, []);
-  // const handlePlayPause = () => {
-  //   if (videoEl.current) {
-  //     if (togglePlay) {
-  //       videoEl.current.pause();
-  //     } else {
-  //       videoEl.current.play();
-  //       if (!hasPlayed) {
-  //         setHasPlayed(true);
-  //       }
-  //     }
-  //     setTogglePlay(!togglePlay);
-  //   }
-  // };
+  const [isLoading, setIsLoading] = useState(false);
   const handlePlayPause = () => {
     if (!videoEl.current) return;
-  
+
     const video = videoEl.current as HTMLVideoElement & {
       webkitEnterFullscreen?: () => void;
       webkitDisplayingFullscreen?: boolean;
     };
-  
+
     if (video.paused) {
+      setIsLoading(true);
       const playPromise = video.play();
-  
       if (playPromise !== undefined) {
         playPromise
           .then(() => {
             setTogglePlay(true);
             setHasPlayed(true);
-  
+            setIsLoading(false);
             setTimeout(() => {
               video.currentTime = video.currentTime + 0.01;
             }, 100);
           })
           .catch((err) => {
-            console.error("ٍError in update video:", err);
+            console.error("Error in play video", err);
+            setIsLoading(false);
           });
       }
     } else {
@@ -74,9 +53,6 @@ const VideoPlayer = ({
       setTogglePlay(false);
     }
   };
-  
-  
-  
 
   const handleFullScreen = () => {
     if (videoEl.current) {
@@ -128,20 +104,51 @@ const VideoPlayer = ({
       document.removeEventListener("fullscreenchange", handleExitFullScreen);
     };
   }, []);
-
+  useEffect(() => {
+    if (!videoEl.current) return;
+    const video = videoEl.current;
+    const handleWaiting = () => setIsLoading(true);
+    const handleCanPlay = () => setIsLoading(false);
+    video.addEventListener("waiting", handleWaiting);
+    video.addEventListener("canplay", handleCanPlay);
+    return () => {
+      video.removeEventListener("waiting", handleWaiting);
+      video.removeEventListener("canplay", handleCanPlay);
+    };
+  }, []);
   const handleTimeUpdate = () => {
     if (videoEl.current) {
       setCurrentTime(videoEl.current.currentTime);
       setDuration(videoEl.current.duration);
+      setIsLoading(false);
     }
   };
   const handleProgressChange = (e: ChangeEvent<HTMLInputElement>) => {
+    if (!videoEl.current) return;
+
     const newTime = (parseFloat(e.target.value) / 100) * duration;
-    if (videoEl.current) {
-      videoEl.current.currentTime = newTime;
-      setCurrentTime(newTime);
+    const video = videoEl.current;
+
+    setCurrentTime(newTime);
+    video.currentTime = newTime;
+
+    if (video.paused) {
+      setIsLoading(true);
+      const playPromise = video.play();
+
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            setIsLoading(false);
+          })
+          .catch((err) => {
+            console.error("خطا در پلی کردن ویدیو:", err);
+            setIsLoading(false);
+          });
+      }
     }
   };
+
   return (
     <div className="relative w-fit" id="video-service">
       <div
@@ -177,6 +184,11 @@ const VideoPlayer = ({
         )}
         {/* video controler */}
       </div>
+      {isLoading && (
+        <div className="w-full h-full absolute top-0 left-0 z-[2] bg-[#d2d2d227] rounded-[20px] s1280:rounded-[40px]">
+          <SpinnerLoading />
+        </div>
+      )}
       {showLogo && (
         <>
           <div
@@ -195,7 +207,7 @@ const VideoPlayer = ({
           </div>
         </>
       )}
-      <div className="absolute -bottom-10 s1280:-bottom-14 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex-cen px-5 s1280:px-20 s1512:px-32 z-[2]">
+      <div className="absolute -bottom-10 s1280:-bottom-14 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex-cen px-5 s1280:px-20 s1512:px-32 z-[3]">
         <div
           className={` ${
             toolsbarStyle ? toolsbarStyle : ""
