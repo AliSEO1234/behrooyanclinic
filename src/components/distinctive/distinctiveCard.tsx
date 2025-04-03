@@ -85,7 +85,7 @@ const DistinctiveCard = ({
         ></video>
         {/* <ImgFetcher src={videoSrc} width={2000} /> */}
       </div>
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#FFFFFF00] to-[#20a1a381]">
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#FFFFFF00] to-[#20a1a3c3]">
         <button
           onClick={handlePlay}
           className="w-[46px] h-[46px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex-cen rounded-full bg-[#FFFFFFB2] text-[#00979ACC] border border-white group"
