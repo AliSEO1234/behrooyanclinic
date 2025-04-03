@@ -44,7 +44,6 @@ import { patientContents } from "@/staticData/patientContent";
 import { FaPlay } from "react-icons/fa6";
 import ComplimentaryConsultationForm from "@/features/complimentaryConsultationForm";
 import ScrollServices from "@/components/services/scrollServices";
-import { CiDesktopMouse2 } from "react-icons/ci";
 import CircleAnimate from "@/components/circleAnimate";
 import LeadForm from "@/components/leadForm";
 // import LeadForm from "@/components/leadForm";
@@ -378,11 +377,6 @@ const Home = async ({
             <div>
               <FeedBackLayout feedbackList={feedBackOne} align="right" />
               <FeedBackLayout feedbackList={feedBackTwo} align="left" />
-            </div>
-            <div className="hidden s1280:flex-cen">
-              <div>
-                <CiDesktopMouse2 className="size-10 text-[#00979A]" />
-              </div>
             </div>
           </div>
           {/* information about Azpo Health */}
