@@ -7,7 +7,7 @@ import PopForm from "@/components/popUpForm/popForm";
 import WhatsAppLink from "@/components/fixOptions/whatsappLink";
 import UpArrow from "@/components/fixOptions/upArrow";
 import { ToastContainer } from "react-toastify";
-export const dynamic = "dynamic-force"
+export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Azpo Health",
   description: "Health with Azpo",
