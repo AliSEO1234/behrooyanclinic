@@ -38,3 +38,6 @@ export type PatientFormType = {
   phone : string
   treatment : string
 }
+export type LeadFormType = {
+  className? : string
+}
