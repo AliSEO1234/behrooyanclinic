@@ -33,7 +33,7 @@ const DistinctiveCard = ({
     const capturePoster = () => {
       if (videoEl.current) {
         const video = videoEl.current;
-        video.currentTime = 5;
+        video.currentTime = 10;
         video.addEventListener(
           "seeked",
           () => {

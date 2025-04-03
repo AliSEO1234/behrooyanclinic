@@ -25,7 +25,7 @@ const VideoPlayer = ({
   const handlePlayPause = () => {
     if (!videoEl.current) return;
     const video = videoEl.current;
-  
+
     if (video.paused) {
       setIsLoading(true);
       video.muted = true;
@@ -36,7 +36,9 @@ const VideoPlayer = ({
             setTogglePlay(true);
             setHasPlayed(true);
             setIsLoading(false);
-            video.muted = videoMuted;
+            setTimeout(() => {
+              video.muted = videoMuted;
+            }, 100);
           })
           .catch((err) => {
             console.error("Error in play video", err);
@@ -94,6 +96,7 @@ const VideoPlayer = ({
         webkitEnterFullscreen?: () => void;
         webkitDisplayingFullscreen?: boolean;
       };
+
       if (document.fullscreenElement || video.webkitDisplayingFullscreen) {
         setHasPlayed(true);
         if (!video.paused) {

@@ -92,9 +92,9 @@ const LeadForm = ({ className }: LeadFormType) => {
       <div className="col-span-12 s1280:col-span-5 relative flex items-end justify-center s1280:items-center s1280:py-5 p-4 s1280:ms-10 pt-0">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-full h-[332px] s1280:h-fit"
+          className="w-full s1280:h-fit bg-gradient-to-b from-[#FFFFFF91] to-[#FFFFFF6E] p-3 s1280:p-0 rounded-[38px] s1280:rounded-none s1280:bg-none mb-[54px] h-fit"
         >
-          <p className="font-bold s1512:text-[20px] s1728:text-[24px] text-white">
+          <p className="font-bold s1512:text-[20px] s1728:text-[24px] text-center s1280:text-start text-white">
             Are you ready for a health checkup?
           </p>
           <div className="grid grid-cols-12 gap-y-4 s1280:gap-x-2 s1280:gap-y-6 mt-4 s1280:mt-6 s1920:gap-y-10">
@@ -129,7 +129,6 @@ const LeadForm = ({ className }: LeadFormType) => {
                 setCodes={setCodes}
               />
             </div>
-
             <div className="col-span-12 flex-cen">
               <button
                 disabled={loading}
