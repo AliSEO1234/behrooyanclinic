@@ -507,34 +507,30 @@ const Home = async ({
           {/* Video Distinctive Features */}
           <FillScrollLayout
             classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-5 s1728:mt-2 s1920:mt-1"
-            className="mt-10 s1280:h-[733px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-28 s1280:-mt-40 s1512:-mt-[150px] s1600:-mt-52 s1728:-mt-36 s1920:-mt-24"
+            className="mt-10 s1280:h-[340px] s1512:h-[380px] s1728:h-[471px] s1728:pt-20 s1920:h-[453px] s1280:ps-[25px] s1280:pt-14 s1280:-mt-40 s1512:-mt-[150px] s1600:-mt-52 s1728:-mt-36 s1920:-mt-24"
             order="second"
             title="Patients Speak"
           >
             <div className="w-full z-[3]">
               <div className="flex items-center justify-between s1280:justify-end mb-10 s1280:mb-5">
                 <div className="s1280:hidden">
-                  <h2 className="font-semibold text-[20px] text-[#333333]">
+                  <h2 className="font-semibold text-[20px] text-[#333333] s1280:hidden">
                     Patients Speak
                   </h2>
                 </div>
-                <div>
+                <div className="s1280:hidden">
                   <SeeAll
                     className="h-[40px] w-[89px] s1280:w-[170px] s1600:w-[194px] s1600:text-[20px] s1280:h-[54px] text-[14px] s1280:text-[18px]"
                     link="/"
                   />
                 </div>
               </div>
-              <div className="grid grid-cols-12 px-5 s390:px-8 sm:px-36 s412:px-10 gap-y-10 s1280:gap-y-0 s1280:px-0 s1280:gap-x-5 s1728:gap-x-12 s1920:gap-x-20">
+              <div className="flex items-center justify-start flex-nowrap overflow-x-scroll scroll-hide s1280:overflow-x-hidden s1280:flex-row gap-x-3 s1512:gap-x-8 s1920:gap-x-10">
                 {patientContents.map(
-                  (
-                    { desc, header, serivceKey, service, serviceIcon, video },
-                    index
-                  ) => {
+                  ({ desc, header, service, serviceIcon, video }, index) => {
                     return (
                       <DistinctiveCard
                         icon={serviceIcon}
-                        link={serivceKey}
                         service={service}
                         title={header}
                         video={video}
@@ -544,38 +540,12 @@ const Home = async ({
                     );
                   }
                 )}
-                {/* <DistinctiveCard
-                  icon={dist1icon}
-                  desc="Some quick example text to build on the card title and make up the bulk of the card's content. This card has even longer"
-                  link="/"
-                  service="Aesthetics"
-                  title="Ali mosadegh"
-                  video={dist1}
-                />
-                <DistinctiveCard
-                  icon={dist2icon}
-                  desc="Some quick example text to build on the card title and make up the bulk of the card's content."
-                  link="/"
-                  service="Eye Surgeries"
-                  title="Rasul bey"
-                  video={dist2}
-                />
-                <DistinctiveCard
-                  icon={dist3icon}
-                  desc="Some quick example text to build on the card title and make up the bulk of the card's content. This card has even longer content than the first to show that equal height action."
-                  link="/"
-                  service="Bariatric surgeries"
-                  title="Parinaz"
-                  video={dist3}
-                />
-                <DistinctiveCard
-                  icon={dist4icon}
-                  desc="Some quick example text to build on the card title and make up the bulk of the card's content. This card has even longer content than the first to show that equal height action."
-                  link="/"
-                  service="Bariatric surgeries"
-                  title="Parinaz"
-                  video={dist4}
-                /> */}
+                <div className="s1512:ms-5 hidden s1280:block">
+                  <SeeAll
+                    className="h-[40px] w-[89px] s1280:w-[170px] s1600:w-[194px] s1600:text-[20px] s1280:h-[54px] text-[14px] s1280:text-[18px]"
+                    link="/"
+                  />
+                </div>
               </div>
             </div>
           </FillScrollLayout>
@@ -584,7 +554,7 @@ const Home = async ({
             title="Distinctive Features"
             order="third"
             classLabel=" flex-cen s1280:mt-2 s1512:mt-1 s1600:mt-4 s1728:mt-0"
-            className="s1280:h-[385px] s1280:pt-40 s1280:mt-0 s1512:mt-7 relative s1600:-mt-[70px] s1728:-mt-[60px] s1920:mt-[12px]"
+            className="s1280:h-[385px] s1280:pt-40 s1280:mt-0 relative"
           >
             <div className="s1280:hidden w-full h-full absolute s1280:top-5 left-0 z-[1]">
               <ImgFetcher src={exPhone} width={2000} />
