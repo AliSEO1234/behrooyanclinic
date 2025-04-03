@@ -18,4 +18,5 @@ export type CountrycodeItemType = {
 export type CountryCodeType = {
   setCodes: Dispatch<SetStateAction<OptionType | null>>;
   codes : OptionType | null
+  className? : string 
 };

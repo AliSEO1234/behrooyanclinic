@@ -1,10 +1,8 @@
 import {
   CountrycodeItemType,
   CountryCodeType,
-  CountryType,
 } from "@/types/countryCode";
 import { ChangeEvent, useEffect, useState } from "react";
-import axios from "axios";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -15,34 +13,13 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { countryCodes } from "@/staticData/countryCodes";
 
-const CountryCode = ({ setCodes, codes }: CountryCodeType) => {
-  const [countryList, setCountryList] = useState<CountrycodeItemType[]>([]);
-  const [allCountries, setAllCountries] = useState<CountrycodeItemType[]>([]);
+const CountryCode = ({ setCodes, codes, className }: CountryCodeType) => {
+  const [countryList, setCountryList] = useState<CountrycodeItemType[]>(countryCodes);
+  const allCountries :CountrycodeItemType[]=countryCodes;
   const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
-  useEffect(() => {
-    const getCountryCodes = async () => {
-      try {
-        const response = await axios.get("https://restcountries.com/v3.1/all");
-        const countryData = response.data.map(
-          (country: CountryType, index: number) => ({
-            label: country.name?.common || "N/A",
-            key: country.idd?.root
-              ? country.idd.root + (country.idd.suffixes?.[0] || "")
-              : "N/A",
-            id: index,
-          })
-        );
 
-        setAllCountries(countryData);
-        setCountryList(countryData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    getCountryCodes();
-  }, []);
 
   const handleFilterCountries = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.toLowerCase();
@@ -60,7 +37,11 @@ const CountryCode = ({ setCodes, codes }: CountryCodeType) => {
   }, [countriesDrop, allCountries]);
   return (
     <DropdownMenu open={countriesDrop} onOpenChange={setCountriesDrop}>
-      <DropdownMenuTrigger className="absolute top-1/2 -translate-y-1/2 left-3 w-16 s1280:text-[14] outline-none flex-cen gap-x-1 text-[#9996A0] hover:text-[#00979A] anm border-none">
+      <DropdownMenuTrigger
+        className={`absolute top-1/2 -translate-y-1/2 left-3 outline-none flex-cen gap-x-1 text-[#9996A0] hover:text-[#00979A] anm border-none ${
+          className ? className : "2s1280:text-[14] w-16"
+        }`}
+      >
         <span>{codes ? codes.key : "+90"}</span>
         <span>
           <MdKeyboardArrowDown className="size-5 data-[state=open]:rotate-180" />

@@ -41,3 +41,8 @@ export type PatientFormType = {
 export type LeadFormType = {
   className? : string
 }
+export type FormItemType= {
+  fullName : string
+  phone : string
+  email : string
+}
