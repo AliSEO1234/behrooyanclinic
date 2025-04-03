@@ -68,12 +68,12 @@ const LeadForm = ({ className }: LeadFormType) => {
       } grid grid-cols-12 relative h-[567px] s1280:h-[259px] s1512:h-[306px] s1728:h-[346px] s1920:h-[374px]`}
     >
       <ImgFetcher
-        width={3000}
+        width={4000}
         src={leaddesk}
         className="w-full h-full absolute top-0 left-0 hidden s1280:block"
       />
       <ImgFetcher
-        width={3000}
+        width={4000}
         src={leadphone}
         className="w-full h-full absolute top-0 left-0 s1280:hidden"
       />
