@@ -71,7 +71,7 @@ import momymakeover from "@/assets/images/subnested/Mommy Makeover.png";
 import breastreduc from "@/assets/images/subnested/Breast reduction.png";
 import malebreastreduc from "@/assets/images/subnested/Male breast reduction (Gynecomastia treatment).png";
 import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg";
-import implant from "@/assets/images/subnested/Implant Treatment .jpg";
+import implant from "@/assets/images/subnested/Implant Treatment .jpg"
 
 import fillings from "@/assets/images/subnested/Fillings.jpg";
 import rotinecheckupscleaning from "@/assets/images/subnested/RoutineCheck-upsCleanings.jpg";
@@ -140,7 +140,7 @@ export const allSubCategory = [
     img: destigeneral,
     title: "General Dentistry",
     description:
-      "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
+      "Prioritizing your oral health and seeking routine dental care without high costs? Turkey has become an increasingly popular destination for general dentistry, offering accessible and quality treatments. Discover how AZPO Health connects you with experienced dentists and comfortable, comprehensive care packages to maintain a healthy and confident smile.",
     path: "general-dentistry",
     categoryKey: "dental-treatments",
   },
@@ -148,7 +148,7 @@ export const allSubCategory = [
     img: cosmeticdentistry,
     title: "Cosmetic Dentistry",
     description:
-      "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
+      "Dreaming of a dazzling smile makeover to boost your confidence? Turkey has become a global hotspot for cosmetic dentistry, offering world-class treatments, skilled specialists, and exceptional affordability. Discover how AZPO Health connects you with leading cosmetic dentists and all-inclusive packages to achieve the smile you've always desired.",
     path: "cosmetic-dentistry",
     categoryKey: "dental-treatments",
   },
@@ -156,7 +156,7 @@ export const allSubCategory = [
     img: restoryDenstiry,
     title: "Restorative Dentistry",
     description:
-      "Ready to replace missing teeth and rediscover the confidence of a complete, healthy smile? Turkey has become a global leader in dental implantology, offering advanced treatments, skilled specialists, and exceptional value. AZPO Health connects you with premier dental clinics and comprehensive support for a successful and transformative dental implant journey.",
+      "Experiencing dental problems that impact your smile’s function and appearance? Restorative dentistry in Turkey offers advanced solutions to repair damaged or missing teeth, restoring your oral health and smile confidence. Discover how AZPO Health connects you with leading restorative dentists and all-inclusive packages for expert care and lasting results.",
     path: "restorative-dentistry",
     categoryKey: "dental-treatments",
   },

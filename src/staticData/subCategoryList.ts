@@ -24,10 +24,6 @@ import Eyebrow from "@/assets/images/subnested/Eyebrow Transplant.jpg";
 import FUE from "@/assets/images/subnested/FUE Hair Transplant.jpg";
 import Mesotherapy from "@/assets/images/subnested/Mesotherapy for Hair.jpeg";
 import Moustache from "@/assets/images/subnested/Moustache Transplant.png";
-
-// imgCover: subNestedKey === "neck-lift" ? neck : null
-// import hair from "@/assets/images/subCategory/hair.png";
-// import breastSubCategory from "@/assets/images/subCategory/breast.png";
 import labiaplastyGenital from "@/assets/images/subnested/Labiaplasty _ Barbie Look.png";
 // import genital3d from "@/assets/images/subCategory/genital3d.png";
 import penileGenital from "@/assets/images/subnested/penile.jpg";

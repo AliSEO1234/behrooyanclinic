@@ -24,12 +24,10 @@ const VideoPlayer = ({
   const [isLoading, setIsLoading] = useState(false);
   const handlePlayPause = () => {
     if (!videoEl.current) return;
-
     const video = videoEl.current as HTMLVideoElement & {
       webkitEnterFullscreen?: () => void;
       webkitDisplayingFullscreen?: boolean;
     };
-
     if (video.paused) {
       setIsLoading(true);
       const playPromise = video.play();
@@ -39,9 +37,6 @@ const VideoPlayer = ({
             setTogglePlay(true);
             setHasPlayed(true);
             setIsLoading(false);
-            setTimeout(() => {
-              video.currentTime = video.currentTime + 0.01;
-            }, 100);
           })
           .catch((err) => {
             console.error("Error in play video", err);
@@ -53,7 +48,37 @@ const VideoPlayer = ({
       setTogglePlay(false);
     }
   };
+  
+  // const handlePlayPause = () => {
+  //   if (!videoEl.current) return;
+  //   const video = videoEl.current as HTMLVideoElement & {
+  //     webkitEnterFullscreen?: () => void;
+  //     webkitDisplayingFullscreen?: boolean;
+  //   };
 
+  //   if (video.paused) {
+  //     setIsLoading(true);
+  //     const playPromise = video.play();
+  //     if (playPromise !== undefined) {
+  //       playPromise
+  //         .then(() => {
+  //           setTogglePlay(true);
+  //           setHasPlayed(true);
+  //           setIsLoading(false);
+  //           setTimeout(() => {
+  //             video.currentTime = video.currentTime + 0.01;
+  //           }, 100);
+  //         })
+  //         .catch((err) => {
+  //           console.error("Error in play video", err);
+  //           setIsLoading(false);
+  //         });
+  //     }
+  //   } else {
+  //     video.pause();
+  //     setTogglePlay(false);
+  //   }
+  // };
   const handleFullScreen = () => {
     if (videoEl.current) {
       const video = videoEl.current as HTMLVideoElement & {
@@ -142,7 +167,7 @@ const VideoPlayer = ({
             setIsLoading(false);
           })
           .catch((err) => {
-            console.error("خطا در پلی کردن ویدیو:", err);
+            console.error("error in play video", err);
             setIsLoading(false);
           });
       }
