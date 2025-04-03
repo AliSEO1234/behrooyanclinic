@@ -24,12 +24,11 @@ const VideoPlayer = ({
   const [isLoading, setIsLoading] = useState(false);
   const handlePlayPause = () => {
     if (!videoEl.current) return;
-    const video = videoEl.current as HTMLVideoElement & {
-      webkitEnterFullscreen?: () => void;
-      webkitDisplayingFullscreen?: boolean;
-    };
+    const video = videoEl.current;
+  
     if (video.paused) {
       setIsLoading(true);
+      video.muted = true;
       const playPromise = video.play();
       if (playPromise !== undefined) {
         playPromise
@@ -37,6 +36,7 @@ const VideoPlayer = ({
             setTogglePlay(true);
             setHasPlayed(true);
             setIsLoading(false);
+            video.muted = videoMuted;
           })
           .catch((err) => {
             console.error("Error in play video", err);
@@ -48,7 +48,16 @@ const VideoPlayer = ({
       setTogglePlay(false);
     }
   };
-  
+  useEffect(() => {
+    const enableVideo = () => {
+      if (videoEl.current && videoEl.current.paused) {
+        videoEl.current.muted = true;
+        videoEl.current.play().catch(() => {});
+      }
+    };
+    document.addEventListener("click", enableVideo);
+    return () => document.removeEventListener("click", enableVideo);
+  }, []);
   // const handlePlayPause = () => {
   //   if (!videoEl.current) return;
   //   const video = videoEl.current as HTMLVideoElement & {
@@ -194,7 +203,6 @@ const VideoPlayer = ({
               muted={videoMuted}
               onTimeUpdate={handleTimeUpdate}
               onLoadedMetadata={handleTimeUpdate}
-              preload="auto"
               playsInline
             ></video>
             {!hasPlayed && (
