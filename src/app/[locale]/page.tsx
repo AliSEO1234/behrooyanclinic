@@ -46,8 +46,6 @@ import ComplimentaryConsultationForm from "@/features/complimentaryConsultationF
 import ScrollServices from "@/components/services/scrollServices";
 import CircleAnimate from "@/components/circleAnimate";
 import LeadForm from "@/components/leadForm";
-// import LeadForm from "@/components/leadForm";
-
 const Home = async ({
   params,
 }: {
@@ -452,7 +450,7 @@ const Home = async ({
               <InfoHealthCard order={4} title="Top Specialists" value="200" />
             </div>
           </div>
-          <LeadForm className="s1280:mb-10" />
+          <LeadForm className="s1280:mb-20" />
           {/* Why choose us? */}
           <FillScrollLayout
             className="s1280:h-[852px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-28 s1512:pt-24 s1600:pt-20 s1728:pt-32"

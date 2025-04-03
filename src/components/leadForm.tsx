@@ -12,8 +12,15 @@ import { LucideSendHorizontal } from "lucide-react";
 import { sendFormFunc } from "@/server-APIs/formAPI";
 import { usePathname } from "next/navigation";
 import { toast } from "react-toastify";
+import Link from "next/link";
+import { FaTelegramPlane } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { useLocale } from "next-intl";
+import { IoLogoWhatsapp } from "react-icons/io";
 const LeadForm = ({ className }: LeadFormType) => {
-  const { setValue, watch, handleSubmit, register , reset } = useForm<FormItemType>();
+  const locale = useLocale();
+  const { setValue, watch, handleSubmit, register, reset } =
+    useForm<FormItemType>();
   const [loading, setLoading] = useState<boolean>(false);
   const pathname = usePathname();
   const [codes, setCodes] = useState<OptionType | null>({
@@ -44,7 +51,7 @@ const LeadForm = ({ className }: LeadFormType) => {
     fullName,
     phone,
   }) => {
-    setLoading(true)
+    setLoading(true);
     const response = await sendFormFunc({
       email,
       name: fullName,
@@ -67,27 +74,31 @@ const LeadForm = ({ className }: LeadFormType) => {
         className || ""
       } grid grid-cols-12 relative h-[567px] s1280:h-[259px] s1512:h-[306px] s1728:h-[346px] s1920:h-[374px]`}
     >
+      <div className="w-full absolute top-0 left-0">
+
       <ImgFetcher
-        width={4000}
+        width={80000}
+        height={80000}
         src={leaddesk}
-        className="w-full h-full absolute top-0 left-0 hidden s1280:block"
+        className="hidden s1280:block"
       />
       <ImgFetcher
-        width={4000}
+        width={80000}
+        height={80000}
         src={leadphone}
-        className="w-full h-full absolute top-0 left-0 s1280:hidden"
+        className="s1280:hidden"
       />
-      <div className="col-span-12 s1280:col-span-7 relative flex items-end justify-center s1280:items-center s1280:py-5 s1280:ps-10 s1280:pe-3 p-4 pt-0">
+      </div>
+      <div className="col-span-12 s1280:col-span-5 relative flex items-end justify-center s1280:items-center s1280:py-5 p-4 s1280:ms-10 pt-0">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-full h-[332px] s1280:h-full rounded-[38px] bg-gradient-to-b from-[#FFFFFF91] to-[#FFFFFF6E]"
+          className="w-full h-[332px] s1280:h-fit"
         >
-          <hr className="mx-auto w-[101px] s1512:w-[121px] s1728:w-[136px] s1920:w-[153px] h-[5px] bg-white my-4 s1512:my-8 rounded-[10px] s1728:my-10" />
-          <p className="font-bold s1512:text-[20px] s1728:text-[24px] text-center text-white">
+          <p className="font-bold s1512:text-[20px] s1728:text-[24px] text-white">
             Are you ready for a health checkup?
           </p>
-          <div className="grid grid-cols-12 gap-y-4 s1280:gap-x-2 s1280:gap-y-6 px-3 mt-4 s1280:mt-6 s1920:gap-y-10">
-            <div className="col-span-12 s1280:col-span-4">
+          <div className="grid grid-cols-12 gap-y-4 s1280:gap-x-2 s1280:gap-y-6 mt-4 s1280:mt-6 s1920:gap-y-10">
+            <div className="col-span-12 s1280:col-span-6">
               <input
                 {...register("fullName", { required: true })}
                 placeholder="Name"
@@ -95,7 +106,15 @@ const LeadForm = ({ className }: LeadFormType) => {
                 type="text"
               />
             </div>
-            <div className="col-span-12 s1280:col-span-4 relative">
+            <div className="col-span-12 s1280:col-span-6">
+              <input
+                {...register("email", { required: true })}
+                placeholder="Email"
+                className="px-3 outline-none bg-white w-full h-[48px] s1280:h-[38px] s1512:h-[40px] s1728:h-[48px] s1512:text-[16px] s1280:text-[14px] placeholder:text-[#9996A0] font-medium rounded-[40px]"
+                type="email"
+              />
+            </div>
+            <div className="col-span-12 relative">
               <input
                 {...register("phone", { required: true })}
                 onChange={handlePhoneChange}
@@ -110,18 +129,11 @@ const LeadForm = ({ className }: LeadFormType) => {
                 setCodes={setCodes}
               />
             </div>
-            <div className="col-span-12 s1280:col-span-4">
-              <input
-                {...register("email", { required: true })}
-                placeholder="Email"
-                className="px-3 outline-none bg-white w-full h-[48px] s1280:h-[38px] s1512:h-[40px] s1728:h-[48px] s1512:text-[16px] s1280:text-[14px] placeholder:text-[#9996A0] font-medium rounded-[40px]"
-                type="email"
-              />
-            </div>
+
             <div className="col-span-12 flex-cen">
               <button
                 disabled={loading}
-                className="outline-none  rounded-[48px] shadow-[0px_0px_20px_0px_#5ED2B76B] text-center s1280:h-[40px] font-medium h-[43px] w-full text-[14px] s1512:text-[16px] s1920:text-[20px] s1280:w-[197px] s1512:w-[235px] s1728:w-[275px] s1920:w-[311px] s1920:h-[59px] s1728:h-[52px] s1728:text-[20px] group relative overflow-hidden"
+                className="outline-none rounded-[48px] shadow-[0px_0px_20px_0px_#5ED2B76B] text-center s1280:h-[40px] font-medium h-[43px] w-full text-[14px] s1512:text-[16px] s1920:text-[20px] s1920:h-[59px] s1728:h-[52px] s1728:text-[20px] group relative overflow-hidden"
               >
                 <div
                   className={`z-[2] bg-white text-[#088387] w-full h-full absolute top-0 ${
@@ -137,6 +149,38 @@ const LeadForm = ({ className }: LeadFormType) => {
             </div>
           </div>
         </form>
+      </div>
+      <div className="col-span-3 hidden s1280:flex relative pb-5 s1512:pb-[34px] s1728:pb-[38px]">
+        <div className="h-[59px] bg-blue-6000 mt-auto flex-left gap-x-2">
+          <p className="font-bold s1280:text-[24px] text-white me-3">OR</p>
+          <Link
+            target="_blank"
+            href="https://t.me/azpohealth"
+            className="bg-white w-[35px] h-[35px] s1512:w-[44px] s1512:h-[44px] rounded-full flex-cen p-2 text-[#0088cc] hover:bg-[#0CA5A5] hover:text-white anm shadow-[0px_1px_6px_0px_#00000040]"
+          >
+            <FaTelegramPlane className="size-5 s1512:size-6" />
+          </Link>
+          <Link
+            target="_blank"
+            href={
+              locale === "ru"
+                ? "https://www.instagram.com/azpo_health?igsh=MXcxbm9tMXV2bmE5dg=="
+                : "https://www.instagram.com/azpo_health_international?igsh=NzJkcWY5NmxkbGky"
+            }
+            className="bg-white w-[35px] h-[35px] s1512:w-[44px] s1512:h-[44px] rounded-full flex-cen p-2 text-[#C13584] hover:bg-[#0CA5A5] hover:text-white anm shadow-[0px_1px_6px_0px_#00000040]"
+          >
+            <BsInstagram className="s1280:size-5 s1512:size-6" />
+          </Link>
+          <Link
+            target="_blank"
+            href="whatsapp://send?phone=+905393323230"
+            className="w-[35px] h-[35px] s1512:w-[44px] s1512:h-[44px] rounded-full flex-cen p-2 text-[#128C7E] bg-white hover:bg-[#0CA5A5] hover:text-white anm shadow-[0px_1px_6px_0px_#00000040]"
+          >
+            <IoLogoWhatsapp className="s1280:size-5 s1512:size-6" />
+            {/* <MdOutlineWhatsapp className="s1280:size-5" /> */}
+            {/* <FaFacebookF className="s1280:size-5" /> */}
+          </Link>
+        </div>
       </div>
     </div>
   );

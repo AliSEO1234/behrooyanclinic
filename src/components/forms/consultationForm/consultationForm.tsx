@@ -94,7 +94,7 @@ const ConsultationForm = () => {
         <button
           type="submit"
           disabled={loading}
-          className="font-bold w-full h-[48px] text-center rounded-[40px] group s1280:text-[18px]  text-white relative overflow-hidden"
+          className="font-bold w-full h-[48px] text-center rounded-[40px] group s1280:text-[18px] text-white relative overflow-hidden"
         >
           <div
             className={`z-[2] bg-[#0CA5A5] w-full h-full absolute top-0 ${
