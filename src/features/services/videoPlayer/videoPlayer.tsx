@@ -60,36 +60,7 @@ const VideoPlayer = ({
     document.addEventListener("click", enableVideo);
     return () => document.removeEventListener("click", enableVideo);
   }, []);
-  // const handlePlayPause = () => {
-  //   if (!videoEl.current) return;
-  //   const video = videoEl.current as HTMLVideoElement & {
-  //     webkitEnterFullscreen?: () => void;
-  //     webkitDisplayingFullscreen?: boolean;
-  //   };
-
-  //   if (video.paused) {
-  //     setIsLoading(true);
-  //     const playPromise = video.play();
-  //     if (playPromise !== undefined) {
-  //       playPromise
-  //         .then(() => {
-  //           setTogglePlay(true);
-  //           setHasPlayed(true);
-  //           setIsLoading(false);
-  //           setTimeout(() => {
-  //             video.currentTime = video.currentTime + 0.01;
-  //           }, 100);
-  //         })
-  //         .catch((err) => {
-  //           console.error("Error in play video", err);
-  //           setIsLoading(false);
-  //         });
-  //     }
-  //   } else {
-  //     video.pause();
-  //     setTogglePlay(false);
-  //   }
-  // };
+  
   const handleFullScreen = () => {
     if (videoEl.current) {
       const video = videoEl.current as HTMLVideoElement & {
@@ -144,6 +115,7 @@ const VideoPlayer = ({
   useEffect(() => {
     if (!videoEl.current) return;
     const video = videoEl.current;
+    video.currentTime = 8;
     const handleWaiting = () => setIsLoading(true);
     const handleCanPlay = () => setIsLoading(false);
     video.addEventListener("waiting", handleWaiting);
