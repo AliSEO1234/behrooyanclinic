@@ -72,27 +72,26 @@ const LeadForm = ({ className }: LeadFormType) => {
     <div
       className={`${
         className || ""
-      } grid grid-cols-12 relative h-[567px] s1280:h-[259px] s1512:h-[306px] s1728:h-[346px] s1920:h-[374px]`}
+      } grid grid-cols-12 relative h-[567px] max-h-[567px] s1280:h-[259px] s1512:h-[306px] s1728:h-[346px] s1920:h-[374px] rounded-[40px] overflow-hidden `}
     >
-      <div className="w-full absolute top-0 left-0">
-
-      <ImgFetcher
-        width={80000}
-        height={80000}
-        src={leaddesk}
-        className="hidden s1280:block"
-      />
-      <ImgFetcher
-        width={80000}
-        height={80000}
-        src={leadphone}
-        className="s1280:hidden"
-      />
+      <div className="w-full absolute top-0 left-0  h-[567px] max-h-full">
+        <ImgFetcher
+          width={2000}
+          height={80000}
+          src={leaddesk}
+          className="hidden s1280:block object-cover"
+        />
+        <ImgFetcher
+          width={2000}
+          height={80000}
+          src={leadphone}
+          className="s1280:hidden object-cover"
+        />
       </div>
-      <div className="col-span-12 s1280:col-span-5 relative flex items-end justify-center s1280:items-center s1280:py-5 p-4 s1280:ms-10 pt-0">
+      <div className="col-span-12 s1280:col-span-5 relative flex items-end justify-center s1280:items-center s1280:py-5 p-4 s1280:ms-10 pt-0 h-full">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="w-full s1280:h-fit bg-gradient-to-b from-[#FFFFFF91] to-[#FFFFFF6E] p-3 s1280:p-0 rounded-[38px] s1280:rounded-none s1280:bg-none mt-auto mb-12 s390:mb-7 s412:mb-0 h-fit"
+          className="w-full s1280:h-fit bg-gradient-to-b from-[#FFFFFF91] to-[#FFFFFF6E] p-3 s1280:p-0 rounded-[38px] s1280:rounded-none s1280:bg-none mt-auto s1280:mt-0 h-fit"
         >
           <hr className="mx-auto w-[101px] h-[3px] bg-white rounded-[10px] my-2 s1280:hidden" />
           <p className="font-bold s1512:text-[20px] s1728:text-[24px] text-center s1280:text-start text-white">
@@ -150,7 +149,7 @@ const LeadForm = ({ className }: LeadFormType) => {
           </div>
         </form>
       </div>
-      <div className="col-span-3 hidden s1280:flex relative pb-5 s1512:pb-[34px] s1728:pb-[38px]">
+      <div className="col-span-3 hidden s1280:flex relative pb-3 s1512:pb-[34px] s1728:pb-[38px]">
         <div className="h-[59px] bg-blue-6000 mt-auto flex-left gap-x-2">
           <p className="font-bold s1280:text-[24px] text-white me-3">OR</p>
           <Link
