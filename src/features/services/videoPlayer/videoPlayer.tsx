@@ -115,7 +115,7 @@ const VideoPlayer = ({
   useEffect(() => {
     if (!videoEl.current) return;
     const video = videoEl.current;
-    video.currentTime = 8;
+    video.currentTime = 7;
     const handleWaiting = () => setIsLoading(true);
     const handleCanPlay = () => setIsLoading(false);
     video.addEventListener("waiting", handleWaiting);
