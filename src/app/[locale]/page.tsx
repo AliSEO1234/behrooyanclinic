@@ -48,6 +48,7 @@ import CircleAnimate from "@/components/circleAnimate";
 import LeadForm from "@/components/leadForm";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
+
 const Home = async ({
   params,
 }: {
