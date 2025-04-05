@@ -3,7 +3,7 @@ import "@/app/globals.css";
 import Navbar from "@/components/navbar/navbar";
 import { AppProvider } from "@/contexts/app-context/app-context";
 import Footer from "@/components/footer/footer";
-import PopForm from "@/components/popUpForm/popForm";
+// import PopForm from "@/components/popUpForm/popForm";
 import WhatsAppLink from "@/components/fixOptions/whatsappLink";
 import UpArrow from "@/components/fixOptions/upArrow";
 import { ToastContainer } from "react-toastify";
@@ -37,7 +37,7 @@ const RootLayout = async ({
       >
         <AppProvider>
           <ToastContainer position="top-center" draggable />
-          <PopForm />
+          {/* <PopForm /> */}
           <Navbar />
           {/* <FixBoxs /> */}
           <UpArrow />

@@ -50,17 +50,17 @@ const VideoPlayer = ({
       setTogglePlay(false);
     }
   };
-  useEffect(() => {
-    const enableVideo = () => {
-      if (videoEl.current && videoEl.current.paused) {
-        videoEl.current.muted = true;
-        videoEl.current.play().catch(() => {});
-      }
-    };
-    document.addEventListener("click", enableVideo);
-    return () => document.removeEventListener("click", enableVideo);
-  }, []);
-  
+
+  // useEffect(() => {
+  //   const enableVideo = () => {
+  //     if (videoEl.current && videoEl.current.paused) {
+  //       // Auto-play logic is removed
+  //     }
+  //   };
+  //   document.addEventListener("click", enableVideo);
+  //   return () => document.removeEventListener("click", enableVideo);
+  // }, []);
+
   const handleFullScreen = () => {
     if (videoEl.current) {
       const video = videoEl.current as HTMLVideoElement & {
@@ -98,6 +98,7 @@ const VideoPlayer = ({
       }
     }
   };
+
   useEffect(() => {
     const handleExitFullScreen = () => {
       if (!document.fullscreenElement) {
@@ -112,6 +113,7 @@ const VideoPlayer = ({
       document.removeEventListener("fullscreenchange", handleExitFullScreen);
     };
   }, []);
+
   useEffect(() => {
     if (!videoEl.current) return;
     const video = videoEl.current;
@@ -125,6 +127,7 @@ const VideoPlayer = ({
       video.removeEventListener("canplay", handleCanPlay);
     };
   }, []);
+
   const handleTimeUpdate = () => {
     if (videoEl.current) {
       setCurrentTime(videoEl.current.currentTime);
@@ -132,6 +135,7 @@ const VideoPlayer = ({
       setIsLoading(false);
     }
   };
+
   const handleProgressChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (!videoEl.current) return;
 
@@ -157,6 +161,8 @@ const VideoPlayer = ({
       }
     }
   };
+
+
 
   return (
     <div className="relative w-fit" id="video-service">

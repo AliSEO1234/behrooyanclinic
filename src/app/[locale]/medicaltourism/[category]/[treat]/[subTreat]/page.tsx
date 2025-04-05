@@ -1,6 +1,3 @@
-// import bgSub from "@/assets/images/subTreatment/bgSub.svg";
-import bgNetSub from "@/assets/images/subTreatment/bgNetSub.svg";
-import eye from "@/assets/images/subTreatment/eye.jpg";
 import ImgFetcher from "@/components/imgFetcher";
 import VideoTab from "@/features/subTreat/videoTab";
 import benefitIcon from "@/assets/images/subTreatment/benefits.png";
@@ -8,27 +5,27 @@ import BenefCard from "@/components/benefits/benefCard";
 import BenefBorder from "@/components/benefits/benefBorder";
 import person from "@/assets/images/subTreatment/person.svg";
 import consider from "@/assets/images/subTreatment/consider.svg";
-import mask from "@/assets/images/subTreatment/mask.png";
-import consulPerson from "@/assets/images/subTreatment/consulPerson.svg";
-import personDocChar from "@/assets/images/subTreatment/consulPersonmedar.png";
-import admin1 from "@/assets/images/subTreatment/wom1.jpg";
-import admin2 from "@/assets/images/subTreatment/wom2.jpg";
-import admin3 from "@/assets/images/subTreatment/wom3.jpg";
-import admin4 from "@/assets/images/subTreatment/men1.jpg";
 import drag from "@/assets/images/subTreatment/drag.svg";
-import pill from "@/assets/images/subTreatment/pill.png";
 import BFSwiper from "@/features/BF/BFSwiper";
-import ConsultationAdmin from "@/components/consultationAdmin";
-import syringe from "@/assets/images/subTreatment/syringe.png";
-import ConsultationForm from "@/components/forms/consultationForm/consultationForm";
 import SubContent from "@/components/shortLongDesc";
 import SubTreatAdvantagesIntersectionObserver from "@/components/scripts/sub-treat-advantages-intersection.observer";
-import SubTreatConclusionInterceptionObserver from "@/components/scripts/sub-treat-conclusion-interception-observer";
-import SubTreatSyringeIntersectionObserver from "@/components/scripts/sub-treat-syringe-intersection-observer";
-import Image from "next/image";
-import health from "@/assets/images/healthlogo.png";
 import { dataSubCategoryHandler } from "@/staticData/subCategoryList";
 import { handleBFRelation } from "@/staticData/BFs/relationBFsDrive";
+import BorderSubNested from "@/components/subNestedCategory/borderSubNested";
+import bfIcon from "@/assets/images/bficon.svg";
+import subnestedvideo from "@/assets/images/subnestedvideo.svg";
+import advantageicon from "@/assets/images/advantageicon.svg";
+import subnestedcontent from "@/assets/images/subnestedcontent.svg";
+import TableOfContentCard from "@/components/subNestedCategory/tableOfContentCard";
+import lasik from "@/assets/images/subnested/LASIK surgery.jpg";
+import LeadForm from "@/components/leadForm";
+import { Accordion } from "@/components/ui/accordion";
+import { handleQuestions } from "@/staticData/questions";
+import QuestionAcco from "@/components/questionAccordion";
+import faqcover from "@/assets/images/faqcover.png";
+import posticon from "@/assets/images/post.svg";
+import preicon from "@/assets/images/pre.svg";
+import PrePostLayout from "@/layoutes/prePostLayout/presPostLayout";
 type PropsPageType = {
   params: Promise<{ treat: string; subTreat: string; locale: string }>;
 };
@@ -55,246 +52,97 @@ const Page = async ({ params }: PropsPageType) => {
     locale,
     bfCurrentLinks ? bfCurrentLinks : null
   );
+  const tableOfContents = [
+    {
+      link: "patient-bf",
+      label: "Befor/After",
+      icon: bfIcon,
+    },
+    {
+      link: "video",
+      label: "Videos",
+      icon: subnestedvideo,
+    },
+    {
+      link: "advantages",
+      label: "Advantages",
+      icon: advantageicon,
+    },
+    {
+      link: "content",
+      label: "Content",
+      icon: subnestedcontent,
+    },
+  ];
+  const postList = [
+    "Discuss goals and get impressions/scans",
+    "Discuss goals and get impressions/scans",
+    "Discuss goals and get impressions/scans",
+    "Discuss goals and get impressions/scans",
+    "Discuss goals and get impressions/scans",
+    "Discuss goals and get impressions/scans",
+    "Discuss goals and get impressions/scans",
+    "Discuss goals and get impressions/scans",
+  ];
+  const questions = handleQuestions(locale);
   return (
-    <div className="bg-[#FCFCFC]">
-      <div className="grid grid-cols-12 gap-y-3 s1280:gap-y-0 mt-14 s1280:mt-20 viewport-p rounded-b-[40px] shadow-[0px_19px_29px_-25px_#00000011]">
-        <div className="col-span-12 s1280:col-span-7 s1728:col-span-6 flex flex-col items-start justify-center">
-          <div>
-            <h1 className="font-semibold text-[20px] s1280:text-[30px] s1512:text-[36px] s1600:text-[40px] [text-shadow:0px_1px_4px_#00000025] text-[#00979A] s1512:mb-10 s1600:mb-20 s1728:mb-14">
-              {fetchData?.title}
-            </h1>
-            <p className="font-medium hidden s1280:block s1280:text-[20px] s1600:text-[24px] s1728:text-[28px] s1280:leading-[40px] s1728:leading-[45px] s1280:pe-40 s1512:pe-52 text-[#474744]">
-              {fetchData?.descriptionTop || ""}
-            </p>
-          </div>
-        </div>
-        <div className="col-span-12 s1280:col-span-5 s1728:col-span-6 flex items-center justify-center s1600:justify-end">
-          <div className="s1280:w-[450px] s1280:h-[420px] s1512:w-[600px] s1512:h-[550px] s1600:w-[700px] s1600:h-[550px] s1728:w-[750px] s1728:h-[650px] relative">
-            {Array.from({ length: 7 }, (n, i) => i).map((number) => {
-              return (
-                <div key={number} className="sub-treat__top-circle-container">
-                  <div
-                    className={`sub-treat__top-circle sub-treat__top-circle--${
-                      number + 1
-                    }`}
-                  />
-                </div>
-              );
+    <>
+      <section className="viewport-p grid grid-cols-12 gap-y-3 mt-4 s1280:mt-10 s1512:mt-20 shadow-[0px_2px_12.9px_0px_#00979A1C] rounded-b-[40px] s1280:mb-4 relative">
+        <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-6">
+          <h2 className="font-semibold s1280:text-[28px] s1512:text-[36px] s1728:text-[40px] s1920:text-[48px] text-[#00979A] s1920:border-b s1920:border-[#00979A] s1920:w-fit mb-2 s1280:mb-6 s1920:mb-5">
+            LASIK
+          </h2>
+          {/* <h1 className="font-light text-[#00979A] mb-1 s1280:mb-4 s1512:text-[18px] s1728:text-[20px] s1920:text-[24px]">
+            Laser-Assisted in Situ Keratomileusis
+          </h1> */}
+          <p className="font-normal text-[14px] s1512:text-[16px] s1728:text-[18px] s1920:text-[20px] text-[#474744] leading-[27px] s1512:leading-[31px] s1728:leading-[43px] mb-2 s1280:mb-5">
+            LASIK is a laser eye surgery that reshapes the cornea to improve how
+            light enters the eye. The surgeon creates a flap on the cornea, uses
+            a laser to reshape it, and then repositions the flap. It starts with
+            the anesthesia of the eye tissue with anesthetic drops. In this way,
+            the patient does not feel anything during the surgery. The
+            improvement in vision begins to give satisfactory results within 3-5
+            days.
+          </p>
+          <BorderSubNested
+            label="Table of content"
+            className="w-[114px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-5 s1512:mb-8"
+            labelStyle="text-[#00979A] s1280:text-[14px] s1512:text-[16px]"
+          />
+          <section className="flex items-center justify-between sm:justify-center s1280:gap-x-8 relative z-0 pb-1">
+            {/* <div
+              className="absolute z-[-1] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 s1280:w-[120%] bg-gradient-to-r from-[#FCFCFC] via-[#CFEAEB] to-[#FCFCFC] s1280:h-[24px] pointer-events-none
+"
+            ></div> */}
+            {tableOfContents.map((card, index) => {
+              return <TableOfContentCard key={index} {...card} />;
             })}
-            <ImgFetcher src={bgNetSub} />
-            <div className="sub-treat__top-svg-container">
-              <svg width="698" height="684" viewBox="0 0 698 684" fill="none">
-                <path
-                  id="netPath1"
-                  d="M559.512 683.237C497.361 683.237 431.517 632.44 376.947 590.34C344.23 565.102 315.977 543.306 297.052 539.823C278.721 536.454 248.49 547.024 213.483 559.264C140.316 584.842 49.2642 616.67 10.9296 539.57C-23.625 470.075 33.0929 396.789 78.6669 337.906C100.316 309.932 119.014 285.773 122.314 268.396C125.595 251.108 117.385 224.557 107.877 193.816C87.9381 129.34 63.1222 49.0983 135.07 11.9735C207.31 -25.305 277.083 32.3604 333.149 78.6943C360.452 101.259 384.033 120.746 402.767 125.031C421.571 129.333 448.952 123.016 480.655 115.7C548.536 100.04 633.03 80.5577 681.076 157.105C724.08 225.61 676.087 281.197 637.521 325.863C618.662 347.704 600.848 368.337 596.378 387.064C586.079 430.224 639.306 541.452 664.889 594.907C677.184 621.728 665.467 641.908 650.404 651.854C637.764 659.922 608.297 673.732 593.184 677.766C582.146 681.535 570.888 683.237 559.512 683.237"
-                  fill="none"
-                />
-                <path
-                  id="netPath2"
-                  d="M550 650C500 650 440 610 390 570C360 550 330 530 310 525C290 520 260 530 230 540C160 565 80 590 45 530C10 470 60 400 100 350C120 325 140 300 145 280C150 260 140 230 130 200C110 140 85 70 145 40C210 5 280 60 335 110C360 130 385 150 400 155C420 160 450 150 480 145C540 130 610 115 650 180C685 235 645 280 610 320C590 340 575 360 570 380C565 400 580 430 595 460C620 515 655 590 605 630C590 640 570 650 550 650Z"
-                  fill="none"
-                />
-                <path
-                  id="netPath3"
-                  d="M550 615C500 615 435 575 380 540C355 525 330 510 315 507C305 505 280 515 255 523C190 545 100 575 70 520C45 470 95 400 135 350C155 325 170 305 175 285C180 270 170 245 160 220C140 165 120 100 155 65C200 25 285 95 340 140C365 160 385 175 395 178C410 182 435 178 460 175C520 165 600 150 630 205C655 250 620 290 590 325C575 345 560 365 555 380C550 395 560 420 575 450C600 500 635 570 595 600C580 610 565 615 550 615Z"
-                  fill="none"
-                />
-                <path
-                  id="netPath4"
-                  d="M545 585C500 585 435 545 385 515C360 500 340 490 330 488C320 486 300 492 275 500C215 520 120 550 95 505C75 465 125 395 165 345C185 320 200 300 202 290C204 280 195 255 185 230C165 175 140 110 175 95C215 75 285 130 335 168C360 185 380 200 390 203C400 205 420 203 445 200C505 195 585 185 610 225C630 260 595 300 565 335C550 350 535 370 532 385C530 395 540 415 552 440C575 485 610 550 580 573C570 580 558 585 545 585Z"
-                  fill="none"
-                />
-                <path
-                  id="netPath5"
-                  d="M525 550C490 550 440 525 400 505C375 490 350 475 340 473C330 471 310 475 285 480C230 490 165 505 140 480C115 455 160 395 195 350C210 330 225 310 226 300C228 285 220 255 212 230C200 190 190 155 190 145C190 135 195 125 205 120C215 115 225 120 235 125C270 145 300 165 325 182C355 202 380 220 400 227C410 230 430 228 455 225C505 220 555 215 570 245C585 270 560 310 540 340C530 355 520 370 515 385C510 395 520 420 530 445C550 490 570 530 550 545C540 550 530 550 525 550Z"
-                  fill="none"
-                />
-                <defs>
-                  <radialGradient
-                    id="grad1"
-                    cx="75%"
-                    cy="25%"
-                    r="50%"
-                    fx="75%"
-                    fy="25%"
-                  >
-                    <stop
-                      offset="0%"
-                      style={{ stopColor: "#c5e6e8", stopOpacity: 1 }}
-                    />
-                    <stop
-                      offset="12%"
-                      style={{ stopColor: "#ffffff", stopOpacity: 1 }}
-                    />
-                    <stop
-                      offset="40%"
-                      style={{ stopColor: "#c5e6e8", stopOpacity: 1 }}
-                    />
-                    <stop
-                      offset="80%"
-                      style={{ stopColor: "#74b8b9", stopOpacity: 1 }}
-                    />
-                  </radialGradient>
-                </defs>
-                <circle r="10" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="20s"
-                    rotate="auto"
-                    begin="0"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath2" />
-                  </animateMotion>
-                </circle>
-                <circle r="12" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="50s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath2" />
-                  </animateMotion>
-                </circle>
-                <circle r="20" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="70s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath2" />
-                  </animateMotion>
-                </circle>
-                <circle r="14" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="40s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath3" />
-                  </animateMotion>
-                </circle>
-                <circle r="20" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="30s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath3" />
-                  </animateMotion>
-                </circle>
-                <circle r="10" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="15s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath3" />
-                  </animateMotion>
-                </circle>
-                <circle r="18" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="40s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath4" />
-                  </animateMotion>
-                </circle>
-                <circle r="10" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="20s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath4" />
-                  </animateMotion>
-                </circle>
-                <circle r="12" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="50s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath4" />
-                  </animateMotion>
-                </circle>
-                <circle r="20" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="70s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath5" />
-                  </animateMotion>
-                </circle>
-                <circle r="18" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="50s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath5" />
-                  </animateMotion>
-                </circle>
-                <circle r="12" fill="url(#grad1)">
-                  <animateMotion
-                    repeatCount="indefinite"
-                    dur="65s"
-                    rotate="auto"
-                    begin="0s"
-                    calcMode="paced"
-                  >
-                    <mpath href="#netPath5" />
-                  </animateMotion>
-                </circle>
-              </svg>
-            </div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[233px] h-[336px] s1280:w-[248px] s1280:h-[402px] s1512:w-[350px] s1512:h-[550px] s1728:w-[400px] s1728:h-[650px] rounded-[500px] overflow-hidden shadow-[0px_4px_10.7px_3px_#00000042]">
+          </section>
+        </div>
+        <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 flex items-start justify-center">
+          <div className="w-full h-[231px] s390:h-[237px] s412:h-[254px] s430:h-[256px] min-h-[160px] s1280:w-[394px] s1280:h-[440px] s1512:w-[484px] s1512:h-[530px] s1728:w-[560px] s1728:h-[600px] s1920:w-[592px] s1920:h-[620px] border-[3px] border-dashed border-[#00979A80] s1280:-mt-5 s1512:-mt-10 rounded-b-[300px] p-2 pt-0 s1280:p-3 s1280:pt-0 subnested-photo-animate">
+            <div className="w-full h-full overflow-hidden shadow-[0px_0px_7.5px_0px_#00979A40] rounded-b-[300px]">
               <ImgFetcher
                 className="object-cover"
-                width={1000}
-                height={1000}
-                src={fetchData?.imgCover || eye}
+                src={lasik}
+                width={700}
+                height={700}
               />
             </div>
           </div>
         </div>
-        <div className="col-span-12 s1280:hidden">
-          <p className="font-medium s1280:hidden text-[#474744]">
-            {fetchData?.descriptionTop || ""}
-          </p>
-        </div>
-      </div>
+        {/* paht */}
+        {/* <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[75%] h-[50px] rounded-b-[400px] z-10 bg-rose-600"></div> */}
+      </section>
       {/* content */}
-      <div className="viewport-p">
+      <section className="viewport-p bg-[#FCFCFC]">
         {/* video */}
-        <div className="mb-20 s1280:mb-[40px] s1512:mb-20">
-          <div className="flex-left">
-            <span className="font-semibold text-[20px] s1280:text-[40px]">
-              Videos
-            </span>
-          </div>
+        <section id="video" className="mb-20 s1280:mb-[40px] s1512:mb-20">
+          <BorderSubNested
+            label="Video"
+            className="w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1512:mb-8"
+            labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
+          />
           <VideoTab
             videoSrc={
               treat === "hair-transplantation"
@@ -306,11 +154,14 @@ const Page = async ({ params }: PropsPageType) => {
                 : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
             }
           />
-        </div>
+        </section>
         {/* benefits */}
         {fetchData?.benefits && (
-          <div className="s1512:h-full flex gap-y-[18px] s1280:gap-y-0 s1280:flex-col flex-wrap s1512:flex-nowrap items-center s1512:flex-row s1512:justify-start s1512:items-end s1512:gap-x-[44px] mb-10 s1280:mb-[16px] s1512:mb-24">
-            <div className="s1512:h-full flex items-center justify-between gap-x-4 s1280:gap-x-0 s1512:justify-start s1512:items-center w-full s1512:gap-x-[14px] s1512:w-fit">
+          <section
+            id="advantages"
+            className="s1512:h-full flex gap-y-[18px] s1280:gap-y-0 s1280:flex-col flex-wrap s1512:flex-nowrap items-center s1512:flex-row s1512:justify-start s1512:items-center s1512:gap-x-[44px] mb-5 s1280:mb-[16px] s1512:mb-24"
+          >
+            <section className="s1512:h-full flex items-center justify-between gap-x-4 s1280:gap-x-0 s1512:justify-start s1512:items-center w-full s1512:gap-x-[14px] s1512:w-fit">
               <div className="flex flex-col items-start justify-center">
                 <div className="w-full">
                   <h2 className="font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-center [text-shadow:0px_3px_2.8px_#00000040]">
@@ -338,8 +189,8 @@ const Page = async ({ params }: PropsPageType) => {
                   title={fetchData?.benefits.items[2].title || ""}
                 />
               </div>
-            </div>
-            <div className="bg-[#DAEDE645] rounded-[40px] p-4 s1280:p-9 w-full flex flex-col gap-y-16 s1512:pe-12 s1600:pe-28">
+            </section>
+            <section className="bg-[#DAEDE645] rounded-[40px] p-4 s1280:p-9 w-full flex flex-col gap-y-16 s1512:pe-12 s1600:pe-28">
               {/* category */}
               <div className="text-[#474744]">
                 <div className="mb-8 s1280:mb-5">
@@ -504,44 +355,36 @@ const Page = async ({ params }: PropsPageType) => {
                 </li> */}
                 </ul>
               </div>
-            </div>
-          </div>
+            </section>
+          </section>
         )}
+        <LeadForm className="my-10" />
+        <section className="mb-10">
+          {/* post */}
+          <PrePostLayout
+            iconLabel={posticon}
+            itemList={postList}
+            position="post"
+          />
+          {/* pre */}
+          <PrePostLayout
+            iconLabel={preicon}
+            itemList={postList}
+            position="pre"
+          />
+        </section>
         {/*  Conclusion */}
         {fetchData?.conclusion && (
-          <div className="relative bg-consul s1280:h-[394px] z-[2] mb-10">
-            <div className="conclusion__pill-container">
-              {Array.from({ length: 7 }, (n, i) => i).map((number) => {
-                return (
-                  <Image
-                    key={number}
-                    className={`conclusion__pill-image conclusion__pill-image--${
-                      number + 1
-                    }`}
-                    src={pill}
-                    alt={`pill-${number + 1}`}
-                  />
-                );
-              })}
-            </div>
-            <div className="z-[3]">
-              <div className="flex items-start justify-center s1280:mb-20 bg-consul-phone h-[95px]">
-                <h2 className="font-semibold text-[20px] s1280:text-[40px] bg-gradient-to-r from-[#666666] to-[#3EBB9A] inline-block text-transparent bg-clip-text relative h-[3]">
-                  {fetchData?.conclusion.title}
-                  <div className="conclusion__mask-container absolute top-[100%] -right-[42%] s1280:top-[108%] s1280:-right-[32%] w-[53px] h-[40px] s1280:w-fit s1280:h-fit -translate-x-1/2 -translate-y-1/2">
-                    <SubTreatConclusionInterceptionObserver />
-                    <ImgFetcher src={mask} />
-                  </div>
-                  <div className="w-[2px] h-[4px] s1280:w-[5px] s1280:h-[7.48px] bg-[#43B194] absolute top-1/2 right-[5%] s1280:right-[6.5%] -translate-x-1/2 -translate-y-1/2"></div>
-                </h2>
-              </div>
-              <div>
-                <p className="conclusion__description--text font-medium s1280:text-[20px] text-center s1280:px-32 s1512:px-44 s1600:px-56 s1728:px-64 text-[#474744] leading-[30px] z-[3]">
-                  {fetchData?.conclusion.desc}
-                </p>
-              </div>
-            </div>
-          </div>
+          <section className="relative mb-10 s1280:mb-16 z-[2]">
+            <BorderSubNested
+              label="Conclusion"
+              className="w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1512:mb-8"
+              labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
+            />
+            <p className="font-light s1280:font-medium s1280:text-[16px] s1512:text-[18px] s1728:text-[20px] text-center s1280:px-32 s1512:px-44 s1600:px-56 s1728:px-64 text-[#474744] leading-[30px] z-[3]">
+              {fetchData?.conclusion.desc}
+            </p>
+          </section>
         )}
         {/* before && after */}
         {Boolean(bfCurrentLinks) && (
@@ -597,88 +440,44 @@ const Page = async ({ params }: PropsPageType) => {
             </div>
           </div>
         )}
-        {/* Free consultation */}
-        <div className="mb-10 s1280:mb-20">
-          <div className="flex-bet mb-10 s1280:mb-20">
-            <hr className="w-[16%] s1280:w-[32%] h-0 border-[2px] border-dashed border-[#333333]" />
-            <h2 className="font-semibold text-[20px] s1280:text-[40px] flex items-start justify-center gap-x-4">
-              <span className="w-[27px] h-[34px] s1280:w-[38px] s1280:h-[48px] block -mt-2 s1280:-mt-0">
-                <ImgFetcher src={consulPerson} />
-              </span>
-              <span>Free consultation</span>
-            </h2>
-            <hr className="w-[16%] s1280:w-[32%] h-0 border-[2px] border-dashed border-[#333333]" />
-          </div>
-          <div className="flex flex-col items-center justify-start gap-y-10 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-between">
-            {/* admins */}
-            <div className="w-[308px] h-[308px] s390:w-[326px] s390:h-[326px] s412:w-[344px] s412:h-[344px] s1280:w-[450px] s1280:h-[450px] s1512:w-[567px] s1512:h-[567px] s1600:w-[661px] s1600:h-[661px] border-[3px] border-[#33333380] rounded-full relative p-16 s1280:p-24 flex-cen">
-              {/* admins */}
-              <div className="free-consultation__circle-container--outer">
-                <ConsultationAdmin
-                  img={admin3}
-                  positionStyle="left-6 top-4 s1280:top-5 s1280:left-8"
-                />
-                <ConsultationAdmin
-                  img={admin1}
-                  positionStyle="bottom-3 left-6 s1280:bottom-5 s1280:left-8"
-                />
-                <ConsultationAdmin
-                  img={health}
-                  isHealth
-                  positionStyle="bottom-20 -right-5 s1280:bottom-40 s1280:-right-10"
-                />
-              </div>
-              {/* inside dashed border */}
-              <div className="w-full h-full s412:h-[231px] s1280:h-full border-[3px] border-dashed border-[#33333380] rounded-full relative p-14 s1280:p-16 s1512:p-24 s1600:p-32 flex-cen">
-                <div className="free-consultation__circle-container--inner">
-                  <ConsultationAdmin
-                    img={admin2}
-                    positionStyle="-top-5 right-10"
-                  />
-                  <ConsultationAdmin
-                    img={health}
-                    isHealth
-                    positionStyle="bottom-16 -left-7 s1280:bottom-36 s1280:-left-12"
-                  />
-                  <ConsultationAdmin
-                    img={admin4}
-                    positionStyle="-bottom-6 right-12 s1280:-bottom-10 s1280:right-16"
-                  />
-                </div>
-                {/* inside doctor char */}
-                <div className="w-full h-full s412:h-[114px] s1280:h-full border-[3px] border-[#33333380] rounded-full p-3 s1280:py-3 s1280:px-5 s1512:px-8 s1600:py-5 s1600:px-12">
-                  <ImgFetcher width={2000} height={2000} src={personDocChar} />
-                </div>
+        {/* faq */}
+        <section className="mb-10 s1280:mb-16">
+          <BorderSubNested
+            label="Frequently Asked Questions"
+            className=" w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-10 s1512:mb-12"
+            labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
+          />
+          <div className="grid grid-cols-12 gap-y-5">
+            <Accordion
+              type="single"
+              collapsible
+              className="order-2 s1280:order-1 col-span-12 s1280:col-span-6 grid grid-cols-12 gap-y-5 s1280:gap-y-3 4xl:gap-x-5 px-1 pb-2"
+            >
+              {questions.slice(0, 5).map((qu, index) => {
+                return <QuestionAcco key={index} item={index} {...qu} />;
+              })}
+            </Accordion>
+            <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 flex items-start justify-center">
+              <div className="w-full s430:w-[390px] h-[345px] s390:h-[362px] s412:h-[382px] s1280:w-[405px] s1280:h-[398px] s1512:w-[471px] s1512:h-[463px] s1728:w-[546px] s1728:h-[536px] s1920:w-[666px] s1920:h-[671px]">
+                <ImgFetcher src={faqcover} width={3000} height={3000} />
               </div>
             </div>
-            {/* form */}
-            <div className="w-full s1280:w-fit">
-              <div className="s1280:me-24 mb-8">
-                <p className="font-normal s1280:text-[30px] text-[#474744] mb-2 s1280:mb-0">
-                  Fill out the form to receive advice
-                </p>
-                <div className="flex-bet">
-                  <div className="free-consultation__syringe-container border-[0.5px] border-[#333333] h-0 w-full me-12 s1280:me-0 relative syring-animate">
-                    <SubTreatSyringeIntersectionObserver />
-                    <div className="w-[51px] h-[46px] s1280:w-[95px] s1280:h-[86px] absolute right-0  bottom-0 s1280:-right-[94px]">
-                      <ImgFetcher width={800} height={800} src={syringe} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <ConsultationForm />
-            </div>
           </div>
-        </div>
+        </section>
         {/* content */}
-        <div>
+        <section id="content">
+          <BorderSubNested
+            label="Content"
+            className=" w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-10 s1512:mb-12"
+            labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
+          />
           <SubContent
             header={fetchData?.contents.title || ""}
             desc={fetchData?.contents.content || ""}
           />
-        </div>
-      </div>
-    </div>
+        </section>
+      </section>
+    </>
   );
 };
 export default Page;
