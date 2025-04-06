@@ -24,7 +24,7 @@ const CircleAnimate = ({ position, topValue, xValue }: CircleAnimateType) => {
         ],
       }}
       transition={{
-        duration: 50,
+        duration: 5,
         repeat: Infinity,
         ease: "easeInOut",
       }}
@@ -37,13 +37,3 @@ const CircleAnimate = ({ position, topValue, xValue }: CircleAnimateType) => {
 };
 
 export default CircleAnimate;
-
-// "use client";
-// const CircleAnimate = () => {
-//   return (
-//     <div className="w-0 h-0 absolute top-20 left-1/2 -translate-x-1/2 z-[1] shadow-[0_0_150px_150px_#00979A80] backdrop-blur-[313px]">
-//       grege
-//     </div>
-//   );
-// };
-// export default CircleAnimate;

@@ -8,7 +8,7 @@ import consider from "@/assets/images/subTreatment/consider.svg";
 import drag from "@/assets/images/subTreatment/drag.svg";
 import BFSwiper from "@/features/BF/BFSwiper";
 import SubContent from "@/components/shortLongDesc";
-import SubTreatAdvantagesIntersectionObserver from "@/components/scripts/sub-treat-advantages-intersection.observer";
+
 import { dataSubCategoryHandler } from "@/staticData/subCategoryList";
 import { handleBFRelation } from "@/staticData/BFs/relationBFsDrive";
 import BorderSubNested from "@/components/subNestedCategory/borderSubNested";
@@ -17,7 +17,7 @@ import subnestedvideo from "@/assets/images/subnestedvideo.svg";
 import advantageicon from "@/assets/images/advantageicon.svg";
 import subnestedcontent from "@/assets/images/subnestedcontent.svg";
 import TableOfContentCard from "@/components/subNestedCategory/tableOfContentCard";
-import lasik from "@/assets/images/subnested/LASIK surgery.jpg";
+import health from "@/assets/images/healthlogo.png";
 import LeadForm from "@/components/leadForm";
 import { Accordion } from "@/components/ui/accordion";
 import { handleQuestions } from "@/staticData/questions";
@@ -26,6 +26,8 @@ import faqcover from "@/assets/images/faqcover.png";
 import posticon from "@/assets/images/post.svg";
 import preicon from "@/assets/images/pre.svg";
 import PrePostLayout from "@/layoutes/prePostLayout/presPostLayout";
+import SubTreatAdvantagesIntersectionObserver from "@/components/scripts/sub-treat-advantages-intersection.observer";
+import CircleAnimate from "@/components/circleAnimate";
 type PropsPageType = {
   params: Promise<{ treat: string; subTreat: string; locale: string }>;
 };
@@ -57,21 +59,25 @@ const Page = async ({ params }: PropsPageType) => {
       link: "patient-bf",
       label: "Befor/After",
       icon: bfIcon,
+      isActive: fetchData?.bfs && fetchData.bfs.length > 0,
     },
     {
       link: "video",
       label: "Videos",
       icon: subnestedvideo,
+      isActive: true,
     },
     {
       link: "advantages",
       label: "Advantages",
       icon: advantageicon,
+      isActive: true,
     },
     {
       link: "content",
       label: "Content",
       icon: subnestedcontent,
+      isActive: true,
     },
   ];
   const postList = [
@@ -85,24 +91,41 @@ const Page = async ({ params }: PropsPageType) => {
     "Discuss goals and get impressions/scans",
   ];
   const questions = handleQuestions(locale);
+  const circleList: {
+    position: "left" | "right";
+    xValue: number;
+    topValue: number;
+  }[] = [
+    {
+      position: "left",
+      xValue: 160,
+      topValue: 500,
+    },
+    {
+      position: "left",
+      xValue: 160,
+      topValue: 2200,
+    },
+    // {
+    //   position: "right",
+    //   xValue: 900,
+    //   topValue: 3200,
+    // },
+    // {
+    //   position: "left",
+    //   xValue: 80,
+    //   topValue: 3600,
+    // },
+  ];
   return (
     <>
       <section className="viewport-p grid grid-cols-12 gap-y-3 mt-4 s1280:mt-10 s1512:mt-20 shadow-[0px_2px_12.9px_0px_#00979A1C] rounded-b-[40px] s1280:mb-4 relative">
         <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-6">
-          <h2 className="font-semibold s1280:text-[28px] s1512:text-[36px] s1728:text-[40px] s1920:text-[48px] text-[#00979A] s1920:border-b s1920:border-[#00979A] s1920:w-fit mb-2 s1280:mb-6 s1920:mb-5">
-            LASIK
-          </h2>
-          {/* <h1 className="font-light text-[#00979A] mb-1 s1280:mb-4 s1512:text-[18px] s1728:text-[20px] s1920:text-[24px]">
-            Laser-Assisted in Situ Keratomileusis
-          </h1> */}
+          <h1 className="font-semibold s1280:text-[28px] s1512:text-[36px] s1728:text-[40px] s1920:text-[48px] text-[#00979A] s1920:border-b s1920:border-[#00979A] s1920:w-fit mb-2 s1280:mb-6 s1920:mb-5">
+            {fetchData?.title}
+          </h1>
           <p className="font-normal text-[14px] s1512:text-[16px] s1728:text-[18px] s1920:text-[20px] text-[#474744] leading-[27px] s1512:leading-[31px] s1728:leading-[43px] mb-2 s1280:mb-5">
-            LASIK is a laser eye surgery that reshapes the cornea to improve how
-            light enters the eye. The surgeon creates a flap on the cornea, uses
-            a laser to reshape it, and then repositions the flap. It starts with
-            the anesthesia of the eye tissue with anesthetic drops. In this way,
-            the patient does not feel anything during the surgery. The
-            improvement in vision begins to give satisfactory results within 3-5
-            days.
+            {fetchData?.descriptionTop}
           </p>
           <BorderSubNested
             label="Table of content"
@@ -115,16 +138,18 @@ const Page = async ({ params }: PropsPageType) => {
 "
             ></div> */}
             {tableOfContents.map((card, index) => {
-              return <TableOfContentCard key={index} {...card} />;
+              if (card.isActive) {
+                return <TableOfContentCard key={index} {...card} />;
+              }
             })}
           </section>
         </div>
         <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 flex items-start justify-center">
-          <div className="w-full h-[231px] s390:h-[237px] s412:h-[254px] s430:h-[256px] min-h-[160px] s1280:w-[394px] s1280:h-[440px] s1512:w-[484px] s1512:h-[530px] s1728:w-[560px] s1728:h-[600px] s1920:w-[592px] s1920:h-[620px] border-[3px] border-dashed border-[#00979A80] s1280:-mt-5 s1512:-mt-10 rounded-b-[300px] p-2 pt-0 s1280:p-3 s1280:pt-0 subnested-photo-animate">
+          <div className="w-full h-[340px] s390:h-[237px] s412:h-[254px] s430:h-[256px] min-h-[160px] s1280:w-[394px] s1280:h-[440px] s1512:w-[484px] s1512:h-[530px] s1728:w-[560px] s1728:h-[600px] s1920:w-[592px] s1920:h-[620px] border-[3px] border-dashed border-[#00979A80] s1280:-mt-5 s1512:-mt-10 rounded-b-[300px] p-2 pt-0 s1280:p-3 s1280:pt-0 subnested-photo-animate">
             <div className="w-full h-full overflow-hidden shadow-[0px_0px_7.5px_0px_#00979A40] rounded-b-[300px]">
               <ImgFetcher
                 className="object-cover"
-                src={lasik}
+                src={fetchData?.imgCover || health}
                 width={700}
                 height={700}
               />
@@ -136,8 +161,14 @@ const Page = async ({ params }: PropsPageType) => {
       </section>
       {/* content */}
       <section className="viewport-p bg-[#FCFCFC]">
+        {circleList.map((circle, index) => (
+          <CircleAnimate key={index} {...circle} />
+        ))}
         {/* video */}
-        <section id="video" className="mb-20 s1280:mb-[40px] s1512:mb-20">
+        <section
+          id="video"
+          className="relative z-[2] mb-20 s1280:mb-[40px] s1512:mb-20"
+        >
           <BorderSubNested
             label="Video"
             className="w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1512:mb-8"
@@ -159,7 +190,7 @@ const Page = async ({ params }: PropsPageType) => {
         {fetchData?.benefits && (
           <section
             id="advantages"
-            className="s1512:h-full flex gap-y-[18px] s1280:gap-y-0 s1280:flex-col flex-wrap s1512:flex-nowrap items-center s1512:flex-row s1512:justify-start s1512:items-center s1512:gap-x-[44px] mb-5 s1280:mb-[16px] s1512:mb-24"
+            className="relative z-[2] s1512:h-full flex gap-y-[18px] s1280:gap-y-0 s1280:flex-col flex-wrap s1512:flex-nowrap items-center s1512:flex-row s1512:justify-start s1512:items-center s1512:gap-x-[44px] mb-5 s1280:mb-[16px] s1512:mb-24"
           >
             <section className="s1512:h-full flex items-center justify-between gap-x-4 s1280:gap-x-0 s1512:justify-start s1512:items-center w-full s1512:gap-x-[14px] s1512:w-fit">
               <div className="flex flex-col items-start justify-center">
@@ -190,7 +221,7 @@ const Page = async ({ params }: PropsPageType) => {
                 />
               </div>
             </section>
-            <section className="bg-[#DAEDE645] rounded-[40px] p-4 s1280:p-9 w-full flex flex-col gap-y-16 s1512:pe-12 s1600:pe-28">
+            <section className="bg-[#DAEDE645] rounded-[40px] p-4 s1280:p-9 w-full flex flex-col gap-y-16 s1512:pe-12 s1600:pe-28 relative z-[10]">
               {/* category */}
               <div className="text-[#474744]">
                 <div className="mb-8 s1280:mb-5">
@@ -222,88 +253,45 @@ const Page = async ({ params }: PropsPageType) => {
                     </span>
                     <span>{fetchData?.benefits.categories[0]?.desc || []}</span>
                   </li>
-                  {/* <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
-                  <span className="absolute top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>
-                    Those with mild to moderate refractive errors and adequate
-                    corneal thickness.
-                  </span>
-                </li>
-                <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 s1512:gap-x-5 relative ps-8 s1280:ps-8">
-                  <span className="absolute top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>
-                    Not suitable for individuals with progressive eye
-                    conditions, severe refractive errors, or certain medical
-                    conditions like keratoconus or autoimmune diseases.
-                  </span>
-                </li> */}
                 </ul>
               </div>
               {/* category */}
-              {fetchData?.benefits.categories[1]?.header && (
-                <div className="text-[#474744]">
-                  <div className="mb-8 s1280:mb-5">
-                    <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
-                      <span className="w-[18px] h-[39px]">
-                        <ImgFetcher src={consider} />
-                      </span>
-                      <span>{fetchData?.benefits.categories[1].header}</span>
-                    </h4>
+              {fetchData?.benefits.categories[1]?.header &&
+                fetchData?.benefits.categories[1]?.desc && (
+                  <div className="text-[#474744]">
+                    <div className="mb-8 s1280:mb-5">
+                      <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
+                        <span className="w-[18px] h-[39px]">
+                          <ImgFetcher src={consider} />
+                        </span>
+                        <span>{fetchData?.benefits.categories[1].header}</span>
+                      </h4>
+                    </div>
+                    <ul className="font-normal flex flex-col gap-y-6 relative">
+                      <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
+                        <div
+                          className="w-0 h-full"
+                          style={{
+                            border: "1px dashed",
+                            borderImageSource:
+                              "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                            borderImageSlice: 1,
+                          }}
+                        ></div>
+                      </li>
+                      {fetchData?.benefits.categories[1].decsList && (
+                        <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8">
+                          <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                            <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                          </span>
+                          <span>
+                            {fetchData.benefits.categories[1].decsList}
+                          </span>
+                        </li>
+                      )}
+                    </ul>
                   </div>
-                  <ul className="font-normal flex flex-col gap-y-6 relative">
-                    <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                      <div
-                        className="w-0 h-full"
-                        style={{
-                          border: "1px dashed",
-                          borderImageSource:
-                            "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
-                          borderImageSlice: 1,
-                        }}
-                      ></div>
-                    </li>
-                    {fetchData?.benefits.categories[1].decsList?.map(
-                      (des, index) => {
-                        return (
-                          <li
-                            key={index}
-                            className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8"
-                          >
-                            <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                              <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                            </span>
-                            <span>{des}</span>
-                          </li>
-                        );
-                      }
-                    )}
-                    {/* <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
-                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>
-                    <strong>Not Suitable For:</strong> Thin corneas, high
-                    refractive errors, or individuals with eye infections or
-                    severe dry eye syndrome.
-                  </span>
-                </li>
-                <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
-                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>
-                    <strong>Post-Surgery Care:</strong> Patients must avoid
-                    rubbing their eyes and follow prescribed care for optimal
-                    healing.
-                  </span>
-                </li> */}
-                  </ul>
-                </div>
-              )}
+                )}
               <div className="text-[#474744]">
                 <div className="mb-8 s1280:mb-5">
                   <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
@@ -332,46 +320,28 @@ const Page = async ({ params }: PropsPageType) => {
                     </span>
                     <span>{fetchData?.benefits.categories[2]?.desc}</span>
                   </li>
-
-                  {/* <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
-                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>
-                    <strong>Not Suitable For:</strong> Thin corneas, high
-                    refractive errors, or individuals with eye infections or
-                    severe dry eye syndrome.
-                  </span>
-                </li>
-                <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 s1512:gap-x-5 z-[2] ps-8 relative s1280:ps-8">
-                  <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                    <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                  </span>
-                  <span>
-                    <strong>Post-Surgery Care:</strong> Patients must avoid
-                    rubbing their eyes and follow prescribed care for optimal
-                    healing.
-                  </span>
-                </li> */}
                 </ul>
               </div>
             </section>
           </section>
         )}
-        <LeadForm className="my-10" />
-        <section className="mb-10">
-          {/* post */}
-          <PrePostLayout
-            iconLabel={posticon}
-            itemList={postList}
-            position="post"
-          />
-          {/* pre */}
-          <PrePostLayout
-            iconLabel={preicon}
-            itemList={postList}
-            position="pre"
-          />
+        <LeadForm className="my-10 relative z-[2]" />
+
+        <section className="mb-10 relative z-[2]">
+          {fetchData?.posts && fetchData?.posts.length > 0 && (
+            <PrePostLayout
+              iconLabel={posticon}
+              itemList={postList}
+              position="post"
+            />
+          )}
+          {fetchData?.posts && fetchData?.posts.length > 0 && (
+            <PrePostLayout
+              iconLabel={preicon}
+              itemList={postList}
+              position="pre"
+            />
+          )}
         </section>
         {/*  Conclusion */}
         {fetchData?.conclusion && (
@@ -388,7 +358,10 @@ const Page = async ({ params }: PropsPageType) => {
         )}
         {/* before && after */}
         {Boolean(bfCurrentLinks) && (
-          <div id="patient-bf" className="mb-[24px] s1280:mb-20">
+          <section
+            id="patient-bf"
+            className="mb-[24px] s1280:mb-20 relative z-[2]"
+          >
             <div className="font-bold flex-left relative w-fit mb-5">
               <h2 className="s1280:text-[48px]">
                 {locale === "ru" ? "До" : "Before"}
@@ -438,34 +411,36 @@ const Page = async ({ params }: PropsPageType) => {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         )}
         {/* faq */}
-        <section className="mb-10 s1280:mb-16">
-          <BorderSubNested
-            label="Frequently Asked Questions"
-            className=" w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-10 s1512:mb-12"
-            labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
-          />
-          <div className="grid grid-cols-12 gap-y-5">
-            <Accordion
-              type="single"
-              collapsible
-              className="order-2 s1280:order-1 col-span-12 s1280:col-span-6 grid grid-cols-12 gap-y-5 s1280:gap-y-3 4xl:gap-x-5 px-1 pb-2"
-            >
-              {questions.slice(0, 5).map((qu, index) => {
-                return <QuestionAcco key={index} item={index} {...qu} />;
-              })}
-            </Accordion>
-            <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 flex items-start justify-center">
-              <div className="w-full s430:w-[390px] h-[345px] s390:h-[362px] s412:h-[382px] s1280:w-[405px] s1280:h-[398px] s1512:w-[471px] s1512:h-[463px] s1728:w-[546px] s1728:h-[536px] s1920:w-[666px] s1920:h-[671px]">
-                <ImgFetcher src={faqcover} width={3000} height={3000} />
+        {fetchData?.faqs && fetchData.faqs.length > 0 && (
+          <section className="mb-10 s1280:mb-16 relative z-[2]">
+            <BorderSubNested
+              label="Frequently Asked Questions"
+              className=" w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-10 s1512:mb-12"
+              labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
+            />
+            <div className="grid grid-cols-12 gap-y-5">
+              <Accordion
+                type="single"
+                collapsible
+                className="order-2 s1280:order-1 col-span-12 s1280:col-span-6 grid grid-cols-12 gap-y-5 s1280:gap-y-3 4xl:gap-x-5 px-1 pb-2"
+              >
+                {questions.slice(0, 5).map((qu, index) => {
+                  return <QuestionAcco key={index} item={index} {...qu} />;
+                })}
+              </Accordion>
+              <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 flex items-start justify-center">
+                <div className="w-full s430:w-[390px] h-[345px] s390:h-[362px] s412:h-[382px] s1280:w-[405px] s1280:h-[398px] s1512:w-[471px] s1512:h-[463px] s1728:w-[546px] s1728:h-[536px] s1920:w-[666px] s1920:h-[671px]">
+                  <ImgFetcher src={faqcover} width={3000} height={3000} />
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
         {/* content */}
-        <section id="content">
+        <section className="relative z-[2]" id="content">
           <BorderSubNested
             label="Content"
             className=" w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-10 s1512:mb-12"

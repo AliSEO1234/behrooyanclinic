@@ -135,6 +135,42 @@ const Home = async ({
       desc: locale === "ru" ? "" : "Thank you for your attention and care ❤️",
     },
   ];
+  const circleList: {
+    position: "left" | "right";
+    xValue: number;
+    topValue: number;
+  }[] = [
+    {
+      position: "left",
+      xValue: 80,
+      topValue: 200,
+    },
+    {
+      position: "right",
+      xValue: 900,
+      topValue: 1200,
+    },
+    {
+      position: "left",
+      xValue: 80,
+      topValue: 2200,
+    },
+    {
+      position: "right",
+      xValue: 900,
+      topValue: 3200,
+    },
+    {
+      position: "left",
+      xValue: 80,
+      topValue: 4200,
+    },
+    {
+      position: "right",
+      xValue: 900,
+      topValue: 5200,
+    },
+  ];
   return (
     <>
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
@@ -164,12 +200,9 @@ const Home = async ({
           <ComplimentaryConsultationForm />
         </div>
         <div className="viewport-p">
-          <CircleAnimate position="left" xValue={80} topValue={200} />
-          <CircleAnimate position="right" xValue={900} topValue={1200} />
-          <CircleAnimate position="left" xValue={80} topValue={2200} />
-          <CircleAnimate position="right" xValue={900} topValue={3200} />
-          <CircleAnimate position="right" xValue={80} topValue={4200} />
-          {/* Specialized Treatments */}
+          {circleList.map((circle, index) => (
+            <CircleAnimate key={index} {...circle} />
+          ))}
           <div className="mb-10 s1280:mb-[60px] z-[2] relative">
             <div className="flex-bet mb-5 s1280:mb-10">
               <div>

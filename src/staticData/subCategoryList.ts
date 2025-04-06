@@ -1,3 +1,7 @@
+import eye3d from "@/assets/images/treatment/Eye-Surgery (1).png";
+import ferti3d from "@/assets/images/treatment/fertility.png";
+import stemcell from "@/assets/images/treatment/stemcell.png";
+import dental3d from "@/assets/images/treatment/dental3d.png";
 import tdAes from "@/assets/images/treatment/3dAesthetics.png";
 import { pathsCategory, pathsSubCategory } from "./urlAllPath";
 import { allSubCategory, allSubNestedCategory } from "./allSubCategory";
@@ -27,7 +31,6 @@ import Moustache from "@/assets/images/subnested/Moustache Transplant.png";
 import labiaplastyGenital from "@/assets/images/subnested/Labiaplasty _ Barbie Look.png";
 // import genital3d from "@/assets/images/subCategory/genital3d.png";
 import penileGenital from "@/assets/images/subnested/penile.jpg";
-import dental3d from "@/assets/images/treatment/dental3d.png";
 import den64 from "@/assets/images/subnested/den64.jpg";
 import rootcanal from "@/assets/images/subnested/rootcanal.jpg";
 import laminateveneers from "@/assets/images/subnested/Laminate Veneers.jpg";
@@ -42,13 +45,10 @@ import bonegrafting from "@/assets/images/subnested/Bone Grafting.jpg";
 import lasergumtreatments from "@/assets/images/subCategory/laser gum.jpg";
 import { bfPublic } from "./BFs/publicBFs";
 import { rainoplasty } from "./BFs/rhinoplastyNoseReshapingBFs";
-import eye3d from "@/assets/images/treatment/Eye-Surgery (1).png";
 import glocama from "@/assets/images/subnested/Glaucoma.jpg";
 import intraocularImg from "@/assets/images/subnested/Intraocular.jpg";
 import diabetic from "@/assets/images/subCategory/Diabetic.jpg";
 import corneal from "@/assets/images/subnested/Corneal Transplant.jpg";
-import ferti3d from "@/assets/images/treatment/fertility.png";
-import stemcell from "@/assets/images/treatment/stemcell.png";
 import maleFertility from "@/assets/images/subnested/Male-Infertility.jpg";
 import malesexual from "@/assets/images/subnested/Male Sexual Health Issues.jpg";
 import orthopedic from "@/assets/images/subnested/Orthopedic Stem Cell Therapy 1.jpg";
@@ -60,23 +60,23 @@ import almondeye from "@/assets/images/subnested/Aesthetic Almond-Shaped Eyes - 
 import facelift from "@/assets/images/subnested/Facelift.png";
 import bichecktomy from "@/assets/images/subnested/Bichecktomy.jpg";
 import momymakeover from "@/assets/images/subnested/Mommy Makeover.png";
-import breastreduc from "@/assets/images/subnested/Breast reduction.png"
-import malebreastreduc from "@/assets/images/subnested/Male breast reduction (Gynecomastia treatment).png"
-import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg"
-import implant from "@/assets/images/subnested/Implant Treatment .jpg"
+import breastreduc from "@/assets/images/subnested/Breast reduction.png";
+import malebreastreduc from "@/assets/images/subnested/Male breast reduction (Gynecomastia treatment).png";
+import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg";
+import implant from "@/assets/images/subnested/Implant Treatment .jpg";
 import peyroniesdisease from "@/assets/images/subnested/PeyroniDisease1.jpg";
-import fillings from "@/assets/images/subnested/Fillings.jpg"
-import rotinecheckupscleaning from "@/assets/images/subnested/RoutineCheck-upsCleanings.jpg"
-import toothextraction from "@/assets/images/subnested/Tooth Extractions.jpg"
-import jawsurgery from "@/assets/images/subnested/Jaw Surgery 1.jpg"
-import cataract from "@/assets/images/subnested/Cataract-Treatment 1.jpg"
-import retinaldisease from "@/assets/images/subnested/Retinal-Disease-Treatment 1.jpg"
-import xrays from "@/assets/images/subnested/Dental X-rays (2).jpg"
-import fet from "@/assets/images/subnested/Frozen Embryo Transfer (FET).jpg"
-import ivf from "@/assets/images/subnested/In Vitro Fertilization (IVF).jpg"
-import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg"
-import smartlens from "@/assets/images/subnested/Smart lens.jpg"
-import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.jpg"
+import fillings from "@/assets/images/subnested/Fillings.jpg";
+import rotinecheckupscleaning from "@/assets/images/subnested/RoutineCheck-upsCleanings.jpg";
+import toothextraction from "@/assets/images/subnested/Tooth Extractions.jpg";
+import jawsurgery from "@/assets/images/subnested/Jaw Surgery 1.jpg";
+import cataract from "@/assets/images/subnested/Cataract-Treatment 1.jpg";
+import retinaldisease from "@/assets/images/subnested/Retinal-Disease-Treatment 1.jpg";
+import xrays from "@/assets/images/subnested/Dental X-rays (2).jpg";
+import fet from "@/assets/images/subnested/Frozen Embryo Transfer (FET).jpg";
+import ivf from "@/assets/images/subnested/In Vitro Fertilization (IVF).jpg";
+import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg";
+import smartlens from "@/assets/images/subnested/Smart lens.jpg";
+import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.jpg";
 export const categoryDataHandler = (key: string, locale: string) => {
   const findSubCategories = allSubCategory.filter(
     (sub) => sub.categoryKey === key
@@ -209,7 +209,8 @@ AZPO Health упрощает ваш путь к доступному и каче
           ? "Don’t let blurred vision, eye conditions, or discomfort hold you back! At AZPO Health, we connect you with top-tier eye specialists in Turkey, offering advanced, personalized treatments using the latest medical technology.From laser vision correction to cataract surgery, glaucoma treatment, and corneal transplants, our expert team ensures affordable, high-quality care tailored to your needs."
           : "Don’t let blurred vision, eye conditions, or discomfort hold you back! At AZPO Health, we connect you with top-tier eye specialists in Turkey, offering advanced, personalized treatments using the latest medical technology.From laser vision correction to cataract surgery, glaucoma treatment, and corneal transplants, our expert team ensures affordable, high-quality care tailored to your needs.",
       subCategoryContent: {
-        title: locale === "ru" ? "Eye Surgery Treatments" : "Eye Surgery Treatments",
+        title:
+          locale === "ru" ? "Eye Surgery Treatments" : "Eye Surgery Treatments",
       },
       contents: {
         title:
@@ -438,7 +439,7 @@ export const subCategoryHandler = (
       subCategoryKey: "body-contouring",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      imgCover:tdAes ,
+      imgCover: tdAes,
     },
     // breast
     {
@@ -1101,8 +1102,7 @@ export const subCategoryHandler = (
       imgCover: stemcell,
     },
   ];
-  
-  
+
   const findData = categoryList.find(
     (sub) => sub.subCategoryKey === findSubCategory
   );
@@ -1111,7 +1111,7 @@ export const subCategoryHandler = (
 export const dataSubCategoryHandler = (
   subNestedKey: string,
   locale: string,
-  bfList : string[] | null
+  bfList: string[] | null
 ) => {
   const categoryList = [
     // hair
@@ -1171,17 +1171,6 @@ export const dataSubCategoryHandler = (
           {
             header:
               locale === "ru" ? "Что следует учитывать" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Результаты не проявляются сразу – волосы начинают расти через несколько месяцев."
-                : "Results are not immediate – hair starts growing in a few months.",
-              locale === "ru"
-                ? "Выбор опытного специалиста – ключ к успеху."
-                : "Choosing an experienced specialist is key to success.",
-              locale === "ru"
-                ? "Возможно временное покраснение и чувствительность в зоне пересадки."
-                : "Temporary redness and sensitivity in the transplanted area may occur.",
-            ],
             desc:
               locale === "ru"
                 ? ""
@@ -1196,6 +1185,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -1209,7 +1201,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfPublic ,
+      bfs: bfPublic,
       contents: {
         title:
           locale === "ru"
@@ -1281,17 +1273,7 @@ export const dataSubCategoryHandler = (
           {
             header:
               locale === "ru" ? "Что следует учитывать" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Метод DHI требует высококвалифицированного хирурга, поэтому выбор авторитетной клиники имеет решающее значение."
-                : "The DHI method requires a highly skilled surgeon, so choosing a reputable clinic is essential.",
-              locale === "ru"
-                ? "Процедура занимает больше времени."
-                : "Results begin to appear after several months, with the final result visible in 9–12 months.",
-              locale === "ru"
-                ? "Результаты начинают проявляться через несколько месяцев, окончательный результат виден через 9-12 месяцев."
-                : "After the procedure, it is important to follow all aftercare recommendations.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             desc:
               locale === "ru"
                 ? ""
@@ -1306,6 +1288,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -1319,7 +1304,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -1388,14 +1373,7 @@ export const dataSubCategoryHandler = (
           {
             header:
               locale === "ru" ? "На что обратить внимание" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Результаты появляются через несколько месяцев, и для достижения оптимальных результатов требуется несколько сеансов."
-                : "Results take a few months to appear, and multiple sessions are required for optimal results.",
-              locale === "ru"
-                ? "Не эффективно при полном отсутствии волос."
-                : "It is not effective for complete hair loss.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             desc:
               locale === "ru"
                 ? ""
@@ -1410,6 +1388,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -1423,7 +1404,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -1496,14 +1477,7 @@ export const dataSubCategoryHandler = (
           {
             header:
               locale === "ru" ? "На что обратить внимание" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Для заметных результатов требуется несколько сеансов."
-                : "Several sessions are needed for noticeable results.",
-              locale === "ru"
-                ? "Процедура может быть болезненной, после сеанса возможно покраснение или отек."
-                : "The procedure may be painful, and redness or swelling can occur after the session.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             desc:
               locale === "ru"
                 ? ""
@@ -1518,6 +1492,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -1531,7 +1508,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -1598,11 +1575,7 @@ export const dataSubCategoryHandler = (
           {
             header:
               locale === "ru" ? "На что обратить внимание" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Процедура требует квалифицированного специалиста, а также терпения в период восстановления, так как результаты становятся видимыми через несколько месяцев."
-                : "The procedure requires a qualified specialist, as well as patience for recovery, as results become visible after several months.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             desc:
               locale === "ru"
                 ? ""
@@ -1617,6 +1590,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -1630,7 +1606,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -1695,14 +1671,7 @@ export const dataSubCategoryHandler = (
           {
             header:
               locale === "ru" ? "На что обратить внимание" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Процедура требует опытного специалиста."
-                : "The procedure requires an experienced specialist.",
-              locale === "ru"
-                ? "Восстановление занимает время, а результаты становятся видимыми через несколько месяцев."
-                : "Recovery takes time, and results are visible after several months.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             desc:
               locale === "ru"
                 ? ""
@@ -1717,6 +1686,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -1730,7 +1702,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -1794,14 +1766,7 @@ export const dataSubCategoryHandler = (
           {
             header:
               locale === "ru" ? "На что обратить внимание" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Требуется опытный врач."
-                : "Requires an experienced doctor.",
-              locale === "ru"
-                ? "Восстановление требует времени, а результаты видны через несколько месяцев."
-                : "Recovery takes time, and results are visible after several months.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -1816,6 +1781,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -1829,7 +1797,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -1894,14 +1862,7 @@ export const dataSubCategoryHandler = (
           {
             header:
               locale === "ru" ? "На что обратить внимание" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Время восстановления может занять несколько недель, а на начальных этапах могут возникнуть отеки и синяки."
-                : "Recovery time can take several weeks, and swelling and bruising may occur in the initial stages.",
-              locale === "ru"
-                ? "Окончательные результаты становятся видимыми через несколько месяцев."
-                : "Final results become visible after several months.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -1916,6 +1877,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -1991,14 +1955,7 @@ export const dataSubCategoryHandler = (
           {
             header:
               locale === "ru" ? "На что обратить внимание" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Восстановление может занять несколько недель, возможны отеки и синяки."
-                : "Recovery can take several weeks, with possible swelling and bruising.",
-              locale === "ru"
-                ? "Окончательные результаты видны через несколько месяцев."
-                : "Final results are visible after several months.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -2013,6 +1970,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2024,7 +1984,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Labiaplasty Treatment" : "Labiaplasty Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2086,14 +2046,7 @@ export const dataSubCategoryHandler = (
           {
             header:
               locale === "ru" ? "На что обратить внимание" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Требуется опытный врач."
-                : "Requires an experienced doctor.",
-              locale === "ru"
-                ? "Процедура требует времени на восстановление, возможны отеки и болезненность. Результаты становятся видимыми через несколько недель."
-                : "The procedure requires recovery time, with possible swelling and tenderness. Results become visible after a few weeks",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -2108,6 +2061,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2119,7 +2075,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Labiaplasty Treatment" : "Labiaplasty Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2180,11 +2136,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Особенности" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Процедура требует времени на восстановление, возможны отеки и синяки. Результаты становятся видимыми через несколько недель."
-                : "The procedure requires recovery time, and there may be swelling and bruising. Results are visible within a few weeks.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -2199,6 +2151,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2212,7 +2167,7 @@ export const dataSubCategoryHandler = (
             ? "Double chin liposuction Treatment"
             : "Double chin liposuction Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2271,11 +2226,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Особенности" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Процедура требует времени на восстановление, в первые дни возможны отёк и дискомфорт. Результаты становятся видимыми через несколько недель."
-                : "The procedure requires recovery time, and there may be swelling and discomfort in the first few days. Results are visible within a few weeks.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -2290,6 +2241,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2300,7 +2254,7 @@ export const dataSubCategoryHandler = (
       subCategoryContent: {
         title: locale === "ru" ? "Otoplasty Treatment" : "Otoplasty Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2359,14 +2313,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Особенности" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Требуется опытный врач."
-                : "Requires an experienced doctor.",
-              locale === "ru"
-                ? "Процедура требует периода восстановления, при этом отеки и синяки являются обычным явлением. Результаты становятся видимыми через несколько месяцев."
-                : "The procedure requires recovery, with swelling and bruising being common. Results become visible after several months",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -2381,6 +2328,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2392,7 +2342,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Thighplasty Treatment" : "Thighplasty Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2450,7 +2400,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: null,
-            decsList: null,
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -2465,6 +2415,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2475,7 +2428,7 @@ export const dataSubCategoryHandler = (
       subCategoryContent: {
         title: locale === "ru" ? "Brow Lift Treatment" : "Brow Lift Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2534,7 +2487,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: null,
-            decsList: null,
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -2549,6 +2502,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2562,7 +2518,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2621,11 +2577,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Процедура требует периода восстановления, при этом отёки и синяки являются обычным явлением. Результаты становятся видимыми через несколько месяцев."
-                : "The procedure requires a recovery period, with swelling and bruising being common. Results are visible after a few months.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -2640,6 +2592,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2653,7 +2608,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2714,11 +2669,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Особенности" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Процедура требует периода восстановления, отеки и синяки являются обычным явлением. Результаты становятся видимыми через несколько недель. Долгосрочные результаты зависят от поддержания здорового образа жизни."
-                : "The procedure requires a recovery period, and swelling and bruising are common. Results become visible after a few weeks. Long-term results depend on maintaining a healthy lifestyle.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How it works",
@@ -2729,6 +2680,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2742,7 +2696,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2801,11 +2755,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Процедура требует периода восстановления, и на руках могут остаться видимые шрамы. Результаты заметны после полного заживления."
-                : "The procedure requires a recovery period, and scars may be visible on the arms. Results are noticeable after full healing.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -2820,6 +2770,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2833,7 +2786,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2891,11 +2844,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Особенности" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Процедура требует периода восстановления, при этом отеки и синяки являются обычным явлением. Результаты становятся видимыми через несколько месяцев."
-                : "The procedure requires recovery, with swelling and bruising being common. Results become visible after several months.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How it works",
@@ -2906,6 +2855,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -2919,7 +2871,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -2979,7 +2931,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: null,
-            decsList: null,
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -2994,6 +2946,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3007,7 +2962,7 @@ export const dataSubCategoryHandler = (
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -3068,7 +3023,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: null,
-            decsList: null,
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -3083,6 +3038,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3094,7 +3052,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -3156,11 +3114,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Что учесть" : "What to consider",
-            decsList: [
-              locale === "ru"
-                ? "Процедура требует времени на восстановление, возможны отеки и болезненность. Результаты становятся видимыми через несколько недель."
-                : "The procedure requires recovery time, with possible swelling and tenderness. Results become visible after a few weeks.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -3175,6 +3129,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3186,7 +3143,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -3248,17 +3205,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Время восстановления: Хотя большинство пациентов могут вернуться к нормальной деятельности через 1-2 недели, важно избегать интенсивных нагрузок, таких как поднятие тяжестей и половая активность в период восстановления."
-                : "Post-Surgery Care: Following the surgery, patients must adhere to post-operative instructions, including proper hygiene, avoiding sexual activity for about 1.5 to 2 months, and using prescribed medications to prevent infection.",
-              locale === "ru"
-                ? "Осложнения: Хотя редко, могут возникнуть осложнения, такие как инфекции, образование рубцов, повреждение нервов или неравномерности при пересадке жира. Пациентам следует выбирать квалифицированного и опытного хирурга для минимизации рисков."
-                : "Recovery Time: While most patients can resume normal activities within 1-2 weeks, it is important to avoid strenuous activities such as lifting heavy weights and engaging in sexual activities during the recovery period.",
-              locale === "ru"
-                ? "Множественные процедуры: В некоторых случаях пациенты могут выбрать несколько операций для достижения желаемых результатов, например, комбинируя процедуры удлинения и утолщения."
-                : "Complications: Although rare, complications such as infections, scarring, nerve damage, or irregularities in fat transfer may occur. Patients should choose a skilled and experienced surgeon to minimize risks.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -3273,6 +3220,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3284,7 +3234,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -3349,19 +3299,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "A soft diet is required during the 3-month healing phase when implants integrate with the bone."
-                : "Healing Period:A soft diet is required during the 3-month healing phase when implants integrate with the bone.",
-
-              locale === "ru"
-                ? "Mild pain and swelling may occur post-surgery but can be managed with prescribed medication."
-                : "Potential Discomfort:Mild pain and swelling may occur post-surgery but can be managed with prescribed medication.",
-
-              locale === "ru"
-                ? "For patients with dental anxiety, the procedure can be performed under local anesthesia, sedation, or general anesthesia."
-                : "Anxiety Management:For patients with dental anxiety, the procedure can be performed under local anesthesia, sedation, or general anesthesia.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -3376,6 +3314,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3387,7 +3328,7 @@ export const dataSubCategoryHandler = (
       //   title:
       //     locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       // },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -3448,17 +3389,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Время восстановления: Хотя онемение может сохраняться в течение нескольких часов после процедуры, большинство пациентов могут вернуться к обычному режиму в тот же день. Рекомендуется воздержаться от еды до полного прекращения действия анестезии."
-                : "Recovery Time: Although you may experience numbness for a few hours following the procedure, most patients can return to their normal routine the same day. It’s recommended to avoid eating until the numbness has fully worn off.",
-              locale === "ru"
-                ? "Дискомфорт после лечения: В течение нескольких дней после процедуры может наблюдаться легкий дискомфорт или болезненность, которые можно устранить с помощью безрецептурных обезболивающих."
-                : "Post-Treatment Discomfort: Mild discomfort or soreness may occur for a few days after the procedure, which can be managed with over-the-counter pain relievers.",
-              locale === "ru"
-                ? "Показатель успеха: Лечение корневого канала очень эффективно, с показателем успеха более 95%. Однако в некоторых случаях могут возникнуть осложнения, требующие дополнительного лечения."
-                : "Success Rate: Root canal treatments are highly effective, with a success rate of over 95%. However, complications can arise in some cases, requiring further treatment.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -3473,6 +3404,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3484,7 +3418,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -3545,17 +3479,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Irreversibility: The procedure involves the removal of a small amount of tooth structure, making it a permanent treatment."
-                : "Irreversibility: The procedure involves the removal of a small amount of tooth structure, making it a permanent treatment.",
-              locale === "ru"
-                ? "Cost: E-Max veneers can be more expensive than other types of dental veneers due to the advanced material and customization involved."
-                : "Cost: E-Max veneers can be more expensive than other types of dental veneers due to the advanced material and customization involved.",
-              locale === "ru"
-                ? "Time: The procedure typically requires multiple visits, including initial consultation, preparation, and placement of the final veneers."
-                : "Time: The procedure typically requires multiple visits, including initial consultation, preparation, and placement of the final veneers.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -3570,6 +3494,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3581,7 +3508,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -3643,17 +3570,7 @@ export const dataSubCategoryHandler = (
           },
           {
             header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Структурные ограничения: Они менее подходят для длинных мостовидных протезов в задней части рта из-за повышенного риска поломки."
-                : "Structural Limitations: They are less suitable for long-span bridges in the back of the mouth due to a higher risk of breakage.",
-              locale === "ru"
-                ? "Начальное здоровье десен: Существующие заболевания десен необходимо вылечить перед установкой циркониевых коронок для обеспечения долгосрочного успеха."
-                : "Initial Gum Health: Pre-existing gum diseases need to be treated before the application of zirconium crowns to ensure long-term success.",
-              locale === "ru"
-                ? "Изменения в соседних зубах: Если зуб, прилегающий к коронке, утрачен, окружающие зубы могут сместиться, что приведет к потенциальным проблемам с деснами или костной тканью. Важно своевременно восстанавливать эти промежутки имплантатами или мостами."
-                : "Changes in Neighboring Teeth: If a tooth adjacent to the crown is lost, the surrounding teeth may shift, leading to potential gum or bone issues. Restoring these gaps with implants or bridges promptly is crucial.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -3668,6 +3585,9 @@ export const dataSubCategoryHandler = (
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3679,7 +3599,7 @@ export const dataSubCategoryHandler = (
         title:
           locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -3811,11 +3731,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery Time: Although you may experience numbness for a few hours following the procedure, most patients can return to their normal routine the same day. It’s recommended to avoid eating until the numbness has fully worn off."
-                : "Recovery Time: Although you may experience numbness for a few hours following the procedure, most patients can return to their normal routine the same day. It’s recommended to avoid eating until the numbness has fully worn off.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How it works",
@@ -3826,6 +3742,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3833,7 +3752,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Root canal treatment is a highly effective procedure for saving a damaged or infected tooth, alleviating pain, and restoring normal function. With modern techniques, root canal therapy is relatively painless and quick, with most patients returning to normal activities the same day. By removing infection and preserving the natural tooth, root canal treatment helps maintain long-term oral health and prevent further complications. With proper care, treated teeth can last a lifetime, providing a lasting solution to tooth damage and infection."
             : "Root canal treatment is a highly effective procedure for saving a damaged or infected tooth, alleviating pain, and restoring normal function. With modern techniques, root canal therapy is relatively painless and quick, with most patients returning to normal activities the same day. By removing infection and preserving the natural tooth, root canal treatment helps maintain long-term oral health and prevent further complications. With proper care, treated teeth can last a lifetime, providing a lasting solution to tooth damage and infection.",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -3900,11 +3819,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Tooth Preparation: Depending on the veneer material, some removal of tooth enamel may be necessary, which is irreversible. It’s important to discuss this with your dentist beforehand."
-                : "Tooth Preparation: Depending on the veneer material, some removal of tooth enamel may be necessary, which is irreversible. It’s important to discuss this with your dentist beforehand.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How it works",
@@ -3915,6 +3830,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3922,7 +3840,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile. Although it requires an investment of time and money, the benefits of a Hollywood Smile, including improved confidence and aesthetic appeal, make it a worthwhile option for many. Proper care and maintenance are key to ensuring your new smile lasts for many years."
             : "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile. Although it requires an investment of time and money, the benefits of a Hollywood Smile, including improved confidence and aesthetic appeal, make it a worthwhile option for many. Proper care and maintenance are key to ensuring your new smile lasts for many years.",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -4000,7 +3918,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: null,
-            decsList: null,
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header:
@@ -4029,6 +3947,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -4036,7 +3957,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.If you’re considering clear aligners, consult an orthodontist to determine if they’re the right treatment option for your specific needs."
             : "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.If you’re considering clear aligners, consult an orthodontist to determine if they’re the right treatment option for your specific needs.",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -4116,17 +4037,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "What to Consider" : "What to Consider",
-            decsList: [
-              locale === "ru"
-                ? "After the surgery, it will take time for healing. Mild swelling and discomfort may occur for a few days. It is important to follow the dentist’s instructions for oral care, avoiding hard foods and resting."
-                : "After the surgery, it will take time for healing. Mild swelling and discomfort may occur for a few days. It is important to follow the dentist’s instructions for oral care, avoiding hard foods and resting.",
-              locale === "ru"
-                ? "As with any surgical procedure, gum grafting can lead to complications such as infection or graft rejection. However, this is rare when the dentist’s recommendations are followed."
-                : "As with any surgical procedure, gum grafting can lead to complications such as infection or graft rejection. However, this is rare when the dentist’s recommendations are followed.",
-              locale === "ru"
-                ? "After the procedure, it is crucial to maintain regular oral hygiene, including careful gum and tooth care, and visit the dentist regularly to monitor gum health."
-                : "After the procedure, it is crucial to maintain regular oral hygiene, including careful gum and tooth care, and visit the dentist regularly to monitor gum health.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "How it Works" : "How it Works",
@@ -4137,6 +4048,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -4144,7 +4058,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Gum grafting is an effective method for restoring gum health and aesthetics, especially in cases of gum recession. The procedure helps reduce tooth sensitivity, improve the appearance of the smile, and prevent more serious dental issues. Following the dentist’s recommendations and maintaining oral health during the recovery period ensures the best results and long-term effectiveness."
             : "Gum grafting is an effective method for restoring gum health and aesthetics, especially in cases of gum recession. The procedure helps reduce tooth sensitivity, improve the appearance of the smile, and prevent more serious dental issues. Following the dentist’s recommendations and maintaining oral health during the recovery period ensures the best results and long-term effectiveness.",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -4208,17 +4122,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "What to Consider" : "What to Consider",
-            decsList: [
-              locale === "ru"
-                ? "Before starting laser therapy, the dentist should assess the gum condition to determine if this method is appropriate for the specific case."
-                : "Before starting laser therapy, the dentist should assess the gum condition to determine if this method is appropriate for the specific case.",
-              locale === "ru"
-                ? "While laser treatments promote fast recovery, patients must follow the dentist’s recommendations regarding oral care, avoid hot or cold foods for a few days, and maintain good hygiene."
-                : "While laser treatments promote fast recovery, patients must follow the dentist’s recommendations regarding oral care, avoid hot or cold foods for a few days, and maintain good hygiene.",
-              locale === "ru"
-                ? "In some cases, additional sessions may be required to achieve optimal results, especially in severe gum conditions."
-                : "In some cases, additional sessions may be required to achieve optimal results, especially in severe gum conditions.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "How it Works" : "How it Works",
@@ -4229,6 +4133,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -4236,7 +4143,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Laser gum treatments offer many advantages over traditional methods for treating gum disease. The procedure is minimally invasive, with quick recovery and high precision in targeting affected tissues. Laser therapy helps eliminate inflammation, accelerates healing, and minimizes pain, making it an ideal choice for those looking for an effective and non-traumatic solution for gum issues."
             : "Laser gum treatments offer many advantages over traditional methods for treating gum disease. The procedure is minimally invasive, with quick recovery and high precision in targeting affected tissues. Laser therapy helps eliminate inflammation, accelerates healing, and minimizes pain, making it an ideal choice for those looking for an effective and non-traumatic solution for gum issues.",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -4303,17 +4210,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Considerations" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Healing Time: The integration of the graft with the existing bone can take several months, requiring patience."
-                : "Healing Time: The integration of the graft with the existing bone can take several months, requiring patience.",
-              locale === "ru"
-                ? "Some discomfort and swelling are expected after the procedure, which can be managed with prescribed medications."
-                : "Some discomfort and swelling are expected after the procedure, which can be managed with prescribed medications.",
-              locale === "ru"
-                ? "Soft foods are recommended during the initial healing phase to avoid stress on the grafted area."
-                : "Soft foods are recommended during the initial healing phase to avoid stress on the grafted area.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "How it Works" : "How it Works",
@@ -4324,6 +4221,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -4331,7 +4231,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Bone grafting is a crucial procedure for individuals requiring dental implants or experiencing bone loss in the jaw. By reinforcing the skeletal structure, it enhances both oral functionality and aesthetics while significantly increasing the success rate of dental restorations.With proper post-operative care and professional guidance, patients can achieve optimal healing and long-term benefits from the procedure. Whether due to tooth loss, trauma, or genetic factors, bone grafting offers a reliable solution for restoring oral health and improving overall quality of life."
             : "Bone grafting is a crucial procedure for individuals requiring dental implants or experiencing bone loss in the jaw. By reinforcing the skeletal structure, it enhances both oral functionality and aesthetics while significantly increasing the success rate of dental restorations.With proper post-operative care and professional guidance, patients can achieve optimal healing and long-term benefits from the procedure. Whether due to tooth loss, trauma, or genetic factors, bone grafting offers a reliable solution for restoring oral health and improving overall quality of life.",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -4346,92 +4246,6 @@ AZPO Health - ведущая компания медицинского тури�
       imgCover: subNestedKey === "bone-grafting" ? bonegrafting : null,
       subNestedKey: "bone-grafting",
     },
-    // bread
-    // deleted
-    // {
-    //   id: 0,
-    //   title:
-    //     locale === "ru"
-    //       ? "ПОДТЯЖКА ШЕИ В ТУРЦИИ: ВЕРНИТЕ МОЛОДОСТЬ И ИЗЯЩЕСТВО КОНТУРАМ!"
-    //       : "Neck Lift Surgery in Turkey: Reclaim a Youthful, Defined Neckline!",
-    //   descriptionTop:
-    //     locale === "ru"
-    //       ? "Всего за одну процедуру в лучших клиниках Стамбула, Анталии и Алании вы вновь обретете четкий овал лица и уверенность в себе!"
-    //       : "Is a sagging neckline stealing your confidence? At AZPO Health in Turkey, a neck lift can rejuvenate your appearance, offering a smoother, more defined contour and a boost in self-esteem.",
-    //   benefits: {
-    //     items: [
-    //       {
-    //         title: locale === "ru" ? "Омоложение кожи" : "Neck Revival",
-    //         desc:
-    //           locale === "ru"
-    //             ? "Устраняет дряблость и двойной подбородок, возвращая молодость."
-    //             : "Reduces aging signs and double chin for a more youthful neck appearance",
-    //       },
-    //       {
-    //         title: locale === "ru" ? "Четкий овал" : "Sculpted Profile",
-    //         desc:
-    //           locale === "ru"
-    //             ? "Моделирует ткани для создания идеального профиля."
-    //             : "Creates defined jawline through precise tissue sculpting techniques",
-    //       },
-    //       {
-    //         title: locale === "ru" ? "Стойкий эффект" : "Lasting Beauty",
-    //         desc:
-    //           locale === "ru"
-    //             ? "Сохраняет результат на долгие годы при правильном уходе."
-    //             : "Maintains visible improvements for years with proper lifestyle habits",
-    //       },
-    //     ],
-    //     categories: [
-    //       {
-    //         header: locale === "ru" ? "Для кого" : "For whom it is suitable",
-    //         desc:
-    //           locale === "ru"
-    //             ? "Подходит для людей с обвисшей кожей или жировыми отложениями в области шеи и подбородка, которые хотят восстановить более молодой и четкий внешний вид. Также идеально подходит для тех, кто хочет избавиться от двойного подбородка или улучшить контуры шеи после значительной потери веса."
-    //             : "Suitable for individuals with sagging skin or fat deposits in the neck and chin area who wish to restore a younger, more defined look. It is also ideal for those who want to get rid of a double chin or improve neck contours after significant weight loss.",
-    //       },
-    //       {
-    //         header: null,
-    //         decsList: null,
-    //         // desc:
-    //         //   locale === "ru"
-    //         //     ? ""
-    //         //     : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
-    //       },
-    //       {
-    //         header: locale === "ru" ? "Как это работает" : "How it works",
-    //         desc:
-    //           locale === "ru"
-    //             ? "Хирург делает разрезы под подбородком или вдоль линии роста волос на затылке. Удаляются излишки кожи и жировые отложения, а оставшиеся ткани подтягиваются. В некоторых случаях может проводиться липосакция для удаления жира из области подбородка и шеи. Также может выполняться подтяжка мышц для улучшения контуров шеи. Восстановление обычно занимает от 2 до 4 недель, в течение которых пациентам следует избегать физической активности и тщательно следить за заживлением ран."
-    //             : "The surgeon makes incisions under the chin or along the hairline at the nape of the neck. Excess skin and fat deposits are removed, and the remaining tissues are tightened. In some cases, liposuction may be performed to remove fat from the chin and neck area. Muscle tightening may also be done to improve neck contours. Recovery typically takes 2 to 4 weeks, during which patients should avoid physical activity and carefully monitor wound healing.",
-    //       },
-    //     ],
-    //   },
-    //   conclusion: {
-    //     title: locale === "ru" ? "Заключение" : "Conclusion",
-    //     desc:
-    //       locale === "ru"
-    //         ? "Подтяжка шеи - это эффективная процедура, которая помогает восстановить молодость и улучшить контуры шеи и подбородка. Это отличное решение для людей, которые хотят устранить признаки старения в области шеи и достичь более молодого и гармоничного внешнего вида."
-    //         : "A neck lift is an effective procedure that helps restore youthfulness and improve the contours of the neck and chin. It is a great solution for individuals who want to eliminate signs of aging in the neck area and achieve a more youthful and harmonious appearance.",
-    //   },
-    //   subCategoryContent: {
-    //     title:
-    //       locale === "ru"
-    //         ? "Hair Transplant Treatment"
-    //         : "Hair Transplant Treatment",
-    //   },
-    //   bfs: bfList ,
-    //   contents: {
-    //     title:
-    //       locale === "ru"
-    //         ? "Подтяжка шеи в Турции: почувствуйте себя моложе!"
-    //         : "Discover a More Youthful You with Neck Lift Surgery at AZPO Health",
-    //     content: locale === "ru" ? `` : ``,
-    //   },
-    //   imgCover: subNestedKey === "breast-lift-mastopexy" ? breast : null,
-    //   subNestedKey: "breast-lift-mastopexy",
-    // },
-    // deleted
     // tummy
     {
       id: 0,
@@ -4477,11 +4291,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Полное восстановление может занять несколько недель. Эта процедура не является методом похудения."
-                : "Full recovery may take several weeks. This procedure is not a weight-loss method.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -4496,6 +4306,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -4509,7 +4322,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Hair Transplant Treatment"
             : "Hair Transplant Treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -4569,11 +4382,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Risks include infection, scarring, and failure of the drainage site.Post-surgery follow-up is critical to ensure success.Some procedures, like MIGS, may not be suitable for advanced glaucoma."
-                : "Risks include infection, scarring, and failure of the drainage site.Post-surgery follow-up is critical to ensure success.Some procedures, like MIGS, may not be suitable for advanced glaucoma.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -4588,6 +4397,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -4598,7 +4410,7 @@ AZPO Health - ведущая компания медицинского тури�
       subCategoryContent: {
         title: locale === "ru" ? "Glaucoma treatment" : "Glaucoma treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -4657,11 +4469,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -4676,6 +4484,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -4689,7 +4500,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Diabetic retinopathy treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -4749,11 +4560,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : " Post-Surgery Care: Patients must avoid strenuous activity and eye rubbing for several weeks.Potential Risks: Infection, inflammation, or complications with the IOL, though rare.Not Suitable For: Those with severe underlying eye diseases that might affect outcomes.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -4768,6 +4575,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -4781,7 +4591,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Diabetic retinopathy treatment",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -4840,11 +4650,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Risks: Include infection, retinal detachment, or glare from the IOL, though these are rare.Recovery: May require weeks for complete stabilization of vision.Not Suitable For: People with certain retinal or corneal diseases.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -4859,6 +4665,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -4872,7 +4681,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -4898,74 +4707,17 @@ AZPO Health - ведущая компания медицинского тури�
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
           : "Trying for a baby but facing endless disappointment? Male infertility is a hidden struggle that affects millions, yet few talk about it. Low sperm count, poor motility, and hormonal imbalances can crush confidence and strain relationships. But there’s hope—solutions exist. Don’t suffer in silence. Take the first step today.",
       benefits: null,
-      // {
-      //   items: [
-      //     {
-      //       title: locale === "ru" ? "Новое Тело" : "Error Correction",
-      //       desc:
-      //         locale === "ru"
-      //           ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
-      //           : "Fixes severe vision problems when LASIK isn't suitable",
-      //     },
-      //     {
-      //       title: locale === "ru" ? "Гладкая Кожа" : "Vision Freedom",
-      //       desc:
-      //         locale === "ru"
-      //           ? "Избавление от растяжек и дефектов кожи для безупречного результата"
-      //           : "Reduces reliance on glasses and contacts for clear vision",
-      //     },
-      //     {
-      //       title: locale === "ru" ? "Идеальный Контур" : "Cataract Prevention",
-      //       desc:
-      //         locale === "ru"
-      //           ? "Создание привлекательного силуэта через устранение лишних тканей"
-      //           : "Helps protect against future cataract development",
-      //     },
-      //   ],
-      //   categories: [
-      //     {
-      //       header: locale === "ru" ? "Для кого" : "Who It’s For",
-      //       desc:
-      //         locale === "ru"
-      //           ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
-      //           : "Individuals over 40 with presbyopia or high refractive errors.Patients unsuitable for LASIK due to thin corneas or extreme vision correction needs.Those seeking a permanent solution to both refractive errors and potential cataracts.",
-      //     },
-      //     {
-      //       header: locale === "ru" ? "Важно учесть" : "Considerations",
-      //       decsList: [
-      //         locale === "ru"
-      //           ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-      //           : "Risks: Include infection, retinal detachment, or glare from the IOL, though these are rare.Recovery: May require weeks for complete stabilization of vision.Not Suitable For: People with certain retinal or corneal diseases.",
-      //       ],
-      //       // desc:
-      //       //   locale === "ru"
-      //       //     ? ""
-      //       //     : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
-      //     },
-      //     {
-      //       header: locale === "ru" ? "Как это работает" : "How it works",
-      //       desc:
-      //         locale === "ru"
-      //           ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-      //           : "RLE is a surgical procedure similar to cataract surgery. The eye's natural lens is removed and replaced with an artificial intraocular lens (IOL) to correct refractive errors such as severe myopia, hyperopia, or presbyopia. The procedure is performed under local anesthesia and involves minimal discomfort. The new lens eliminates the need for future cataract surgery.",
-      //     },
-      //   ],
-      // }
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: null,
-      // {
-      //   title: locale === "ru" ? "Заключение" : "Conclusion",
-      //   desc:
-      //     locale === "ru"
-      //       ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
-      //       : "RLE is an effective option for individuals with severe refractive errors or early cataracts, offering both vision correction and long-term prevention of cataracts. While it carries some risks, its success rate and dual benefits make it a valuable choice for eligible patients.",
-      // }
       subCategoryContent: {
         title:
           locale === "ru"
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -5044,6 +4796,9 @@ AZPO Health - ведущая компания медицинского тури�
       //     },
       //   ],
       // }
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: null,
       // {
       //   title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -5058,7 +4813,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -5118,17 +4873,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Procedure Complexity: The process involves isolating, culturing, and injecting stem cells, requiring specialized facilities and expertise.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Cost: The therapy is relatively expensive due to the advanced techniques and materials involved.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Potential Risks: Rare adverse effects include allergic reactions and theoretical risks of malignancy.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -5146,6 +4891,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -5160,7 +4908,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -5220,17 +4968,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Procedure Complexity: The process involves isolating, culturing, and injecting stem cells, requiring specialized facilities and expertise.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Cost: The therapy is relatively expensive due to the advanced techniques and materials involved.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Potential Risks: Rare adverse effects include allergic reactions and theoretical risks of malignancy.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -5248,6 +4986,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -5262,7 +5003,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -5321,17 +5062,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Adipose tissue is a preferred source due to its abundance, ease of access, and ability to differentiate into various cell types.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Bone marrow and umbilical cord blood are also viable sources, depending on the condition being treated.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "The treatment typically lasts 1–3 hours. Recovery time varies by the condition treated, with most patients requiring several weeks for optimal results.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -5346,6 +5077,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -5360,7 +5094,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -5419,17 +5153,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "The treatment typically lasts 1–3 hours. Recovery time varies by the condition treated, with most patients requiring several weeks for optimal results.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Bone marrow and umbilical cord blood are also viable sources, depending on the condition being treated.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Adipose tissue is a preferred source due to its abundance, ease of access, and ability to differentiate into various cell types.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -5444,6 +5168,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -5458,7 +5185,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -5518,17 +5245,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Stem cell therapy is most effective in early to moderate stages of neurological conditions. Advanced damage may limit therapeutic benefits.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Precise delivery techniques are crucial to avoid unintended side effects, such as inflammation or abnormal cell differentiation.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "While initial results are promising, long-term outcomes remain under investigation.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
@@ -5543,6 +5260,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -5557,7 +5277,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -5616,14 +5336,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Recovery takes time, and swelling and bruising may occur.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Final results will be visible after a few months.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -5634,6 +5347,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -5648,7 +5364,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title: locale === "ru" ? "" : "Why Choose Turkey for Your Tip Plasty?",
         content:
@@ -5704,17 +5420,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? ""
-                : "The procedure requires a skilled surgeon.",
-              locale === "ru"
-                ? ""
-                : "Recovery may take several weeks, and swelling and bruising are possible.",
-              locale === "ru"
-                ? ""
-                : "Final results become visible after a few months.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -5725,6 +5431,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -5739,7 +5448,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -5798,7 +5507,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: null,
-            decsList: null,
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -5809,6 +5518,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -5823,7 +5535,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -5882,7 +5594,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: null,
-            decsList: null,
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -5893,6 +5605,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -5907,7 +5622,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru" ? "" : "Why Consider Turkey for Your Bichectomy?",
@@ -5964,11 +5679,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? ""
-                : "Recovery may take longer due to the extent of the procedures. Long-term lifestyle changes are needed to maintain results.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -5979,6 +5690,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -5993,7 +5707,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Your Mommy Makeover?",
@@ -6049,8 +5763,8 @@ AZPO Health - ведущая компания медицинского тури�
                 : "Suitable for women with excessively large breasts who experience discomfort, those with difficulties finding suitable clothing, and patients in good health with realistic expectations.",
           },
           {
-            header:null,
-            decsList: null,
+            header: null,
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -6061,6 +5775,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -6075,10 +5792,12 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Choose Turkey for Your Breast Reduction Surgery?",
+          locale === "ru"
+            ? ""
+            : "Why Choose Turkey for Your Breast Reduction Surgery?",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
@@ -6134,8 +5853,8 @@ AZPO Health - ведущая компания медицинского тури�
                 : "Suitable for men with persistent gynecomastia that does not respond to diet and exercise. Ideal for those experiencing psychological or physical discomfort.",
           },
           {
-            header:null,
-            decsList: null,
+            header: null,
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -6146,6 +5865,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -6160,16 +5882,19 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Understanding Male Breast Reduction in Turkey",
+          locale === "ru"
+            ? ""
+            : "Understanding Male Breast Reduction in Turkey",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
             : `<p>Choosing to address gynecomastia, or enlarged male breast tissue, is a significant decision for many men seeking to improve their physical appearance and overall well-being. Turkey has emerged as a popular destination for individuals considering male breast reduction surgery, and for good reason.</p><p><strong>Why Choose Turkey for Male Breast Reduction?</strong></p><p>Turkey has established itself as a leading hub for medical tourism, attracting patients from across the globe for various cosmetic and medical procedures. Several factors contribute to its popularity for male breast reduction surgery.</p><p>Firstly, the <strong>cost of male breast reduction surgery cost in turkey</strong> is often more affordable compared to many other countries, including Europe and the United States. This allows individuals to access high-quality surgical care without incurring excessive financial burdens. While specific prices vary depending on individual needs and the chosen clinic, the overall value proposition in Turkey remains attractive.</p><p>Secondly, Turkey boasts a <strong>high standard of medical facilities and experienced surgeons</strong> specializing in cosmetic surgery, including procedures like male breast reduction surgery. Many Turkish surgeons are board-certified and have extensive training and expertise in performing these types of operations. AZPO Health partners with reputable clinics and thoroughly vetted surgeons to ensure patients receive care from skilled professionals.</p><p>Furthermore, the medical tourism infrastructure in Turkey is well-developed, catering to the needs of international patients. This includes assistance with travel arrangements, accommodation, and language support, making the entire process smoother and less stressful for individuals traveling from abroad. AZPO Health plays a crucial role in facilitating this process by connecting patients with the right resources and providing comprehensive support throughout their medical journey.</p><p>Finally, combining your male breast reduction surgery with a recovery period in Turkey offers the opportunity to experience the country's rich culture, history, and vibrant cities. This can make the overall experience more positive and memorable.</p><p><strong>Understanding Male Breast Reduction Surgery</strong></p><p>Male breast reduction surgery, also known as gynecomastia surgery, aims to reduce the size of enlarged breast tissue in men, resulting in a flatter, firmer, and more masculine chest contour. Gynecomastia can be caused by various factors, including hormonal imbalances, genetics, certain medications, and underlying medical conditions.</p><p>The surgical approach for male breast reduction depends on the underlying cause and the extent of breast enlargement. Common surgical techniques include:</p><ul><li><strong>Liposuction:</strong> This technique is often used when excess fat is the primary contributor to enlarged breasts. A small, thin tube called a cannula is inserted through tiny incisions to suction out the excess fat tissue. Liposuction can be used alone or in conjunction with other surgical methods.</li><li><strong>Surgical Excision:</strong> This method involves the direct removal of excess glandular tissue, skin, and fat through incisions. It is typically recommended for cases where there is a significant amount of glandular tissue or excess skin. The size and location of the incisions will depend on the amount of tissue to be removed and the individual's anatomy.</li><li><strong>Combination of Liposuction and Excision:</strong> In many cases, a combination of both liposuction and surgical excision is necessary to achieve the desired outcome. Liposuction can address excess fat, while excision can remove glandular tissue and reshape the chest.</li></ul><p>During a consultation facilitated by AZPO Health, the partnered surgeon will assess your individual condition, discuss your goals and expectations, and recommend the most appropriate surgical technique for you. They will explain the procedure in detail, including the risks and benefits, the type of anesthesia to be used, and what to expect during the recovery period.</p><p><strong>Benefits of Male Breast Reduction Surgery</strong></p><p>Undergoing male breast reduction surgery can offer numerous physical and psychological benefits, including:</p><ul><li><strong>Improved Chest Contour:</strong> The primary benefit is a flatter, more masculine-looking chest, which can significantly enhance your physique.</li><li><strong>Increased Confidence and Self-Esteem:</strong> Reducing the size of enlarged breasts can alleviate feelings of self-consciousness and improve your overall confidence.</li><li><strong>Better Clothing Fit:</strong> You may find that your clothes fit better and you have more options in terms of styles and fabrics.</li><li><strong>Greater Comfort During Physical Activity:</strong> Excess breast tissue can sometimes be uncomfortable or restrict movement during exercise. Reduction surgery can alleviate this discomfort.</li><li><strong>Improved Body Image:</strong> Achieving a more proportional and masculine chest can lead to a more positive body image and a greater sense of well-being.</li></ul><p><strong>Customer Testimonials</strong></p><p><em>"For years, I felt embarrassed about my enlarged chest. I avoided taking my shirt off at the beach or pool, and it really affected my confidence. I looked into male breast reduction surgery in my home country, but the cost was prohibitive. A friend told me about medical tourism in Turkey, and I connected with AZPO Health. They guided me through the whole process, and the surgeon they connected me with was fantastic. The surgery was successful, and I finally feel comfortable in my own skin. It was the best decision I ever made."</em> - <strong>Mark, UK</strong></p><p><em>"I had been dealing with gynecomastia since my teenage years. It wasn't just the physical discomfort; it was the emotional toll it took on me. I heard about the excellent medical care available in Turkey and contacted AZPO Health. They were incredibly helpful and responsive, answering all my questions and connecting me with a top-rated clinic. The entire experience was well-organized and professional. Now, after the surgery, I have a chest I'm no longer ashamed of. Thank you, AZPO Health!"</em> - <strong>David, Canada</strong></p><p><em>"I was initially hesitant about traveling abroad for surgery, but AZPO Health made the entire process so easy and reassuring. They helped me find a highly qualified surgeon for my male breast reduction surgery and provided support every step of the way, from the initial virtual consultation to the post-operative follow-up. The cost in Turkey was significantly lower than what I was quoted back home, and the quality of care was exceptional. I'm thrilled with the results and so grateful to AZPO Health for making this possible."</em> - <strong>James, USA</strong></p><p><strong>AZPO Health: Your Partner in Male Breast Reduction Surgery in Turkey</strong></p><p>AZPO Health is a reputable medical tourism facilitator based in Turkey, dedicated to connecting international patients with leading medical professionals and accredited healthcare facilities. While AZPO Health does not provide medical treatment directly, we act as a trusted bridge, ensuring you have access to experienced surgeons specializing in male breast reduction surgery in Turkey.</p><p>Our commitment is to provide you with a seamless and stress-free experience, guiding you through every step of your medical journey. We carefully select our partner clinics and surgeons based on their expertise, experience, and commitment to patient care.</p><p>When you choose AZPO Health, you can expect:</p><ul><li><strong>Access to Experienced Surgeons:</strong> We connect you with highly qualified and experienced surgeons specializing in male breast reduction surgery.</li><li><strong>Personalized Guidance:</strong> Our dedicated patient coordinators will understand your specific needs and preferences and provide tailored support.</li><li><strong>Comprehensive Information:</strong> We provide you with detailed information about the procedure, the chosen clinic, and the surgeon's qualifications.</li><li><strong>Facilitation of Consultations:</strong> We assist in arranging virtual or in-person consultations with the surgeon to discuss your treatment plan.</li><li><strong>Coordination of Logistics:</strong> We can help with travel arrangements, accommodation, and airport transfers to ensure a comfortable and convenient stay in Turkey.</li><li><strong>Ongoing Support:</strong> We provide continuous support before, during, and after your surgery, addressing any questions or concerns you may have.</li><li><strong>Commitment to Quality and Confidentiality:</strong> We prioritize your safety, well-being, and privacy throughout the entire process.</li></ul><p>Take the first step towards a more confident you. Contact AZPO Health today for a free consultation and personalized quote for male breast reduction surgery in Turkey.</p><p><br></p>`,
       },
-      imgCover: subNestedKey === "male-breast-reduction" ? malebreastreduc : null,
+      imgCover:
+        subNestedKey === "male-breast-reduction" ? malebreastreduc : null,
       subNestedKey: "male-breast-reduction",
     },
     // vaginal-tightening
@@ -6218,8 +5943,8 @@ AZPO Health - ведущая компания медицинского тури�
                 : "Suitable for women who experience reduced vaginal tone after childbirth or due to aging. Ideal for women with excessive tissue stretching who wish to improve both the appearance and functionality of the vagina. Women who suffer from mild urinary incontinence related to weakened tissues may also benefit.",
           },
           {
-            header:null,
-            decsList: null,
+            header: null,
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -6230,6 +5955,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -6244,7 +5972,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Vaginal Tightening?",
@@ -6304,11 +6032,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "" : "Considerations",
-            decsList: [
-              locale === "ru" ? "" : "Healing Time: The process can take several months from implant placement to final restoration.",
-              locale === "ru" ? "" : "Cost: Implants are a significant investment, but their longevity and benefits often justify the expense.",
-              locale === "ru" ? "" : "Bone Density: If the jawbone is insufficient, additional procedures like bone grafting may be required.",
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -6319,6 +6043,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -6333,10 +6060,12 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Choose Turkey for Dental Implant Treatment?",
+          locale === "ru"
+            ? ""
+            : "Why Choose Turkey for Dental Implant Treatment?",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
@@ -6389,15 +6118,13 @@ AZPO Health - ведущая компания медицинского тури�
                 : "Those with cavities, cracks, or minor fractures.Patients looking to prevent further tooth damage.Types of Dental Fillings.Ceramic (Inlays & Onlays): Custom-made for a natural look and high durability but require multiple visits.",
           },
           {
-            header: locale === "ru" ? "" : "Considerations Before Getting a Filling",
-            decsList: [
-              locale === "ru" ? "" : "The choice of material affects durability, cost, and aesthetics.",
-              locale === "ru" ? "" : "Some fillings require multiple visits for proper placement.",
-              locale === "ru" ? "" : "Proper oral hygiene is essential to maintain the longevity of the filling.",
-            ],
+            header:
+              locale === "ru" ? "" : "Considerations Before Getting a Filling",
+            decsList: locale === "ru" ? "" : "",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How the Procedure Works",
+            header:
+              locale === "ru" ? "Как это работает" : "How the Procedure Works",
             desc:
               locale === "ru"
                 ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
@@ -6405,6 +6132,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -6419,7 +6149,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Your Dental Fillings?",
@@ -6442,7 +6172,10 @@ AZPO Health - ведущая компания медицинского тури�
         locale === "ru"
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
           : `Are you concerned about maintaining your oral health without straining your budget? Longing for thorough dental evaluations that put your well-being first? Turkey offers a compelling solution, blending exceptional dental care with cost-effective options and above all a memorable holiday too while doing your dental work, your smile receives the expert attention it deserves with AZPO Health.`,
-      benefits:null,
+      benefits: null,
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: null,
 
       subCategoryContent: {
@@ -6451,7 +6184,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru" ? "" : "Why Choose Turkey for Your Dental Check-ups?",
@@ -6460,7 +6193,8 @@ AZPO Health - ведущая компания медицинского тури�
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
             : `<p>Maintaining good oral health is a cornerstone of overall well-being. Regular dental check-ups are essential for early detection and prevention of dental problems, helping you avoid more complex and costly treatments down the line. Turkey has emerged as a prominent destination for individuals seeking high-quality dental care at more accessible prices compared to many other countries.</p><p>One of the primary reasons people choose Turkey for their dental needs, including routine check-ups, is the cost-effectiveness. The favorable exchange rates often make dental services in Turkey significantly more affordable without compromising on the quality of care. This allows you to prioritize your oral health through regular examinations and cleanings without financial burden.</p><p>Beyond affordability, Turkey boasts a robust healthcare system with highly qualified dental professionals and modern clinics equipped with advanced technology. Many Turkish dental clinics adhere to international standards of care and hygiene, providing a safe and reliable environment for your dental check-ups. The dentists are often experienced in treating international patients and understand the importance of clear communication and personalized care.</p><p>Furthermore, combining your routine check-up with a visit to Turkey can turn a necessary health activity into an enjoyable experience. Turkey's rich history, vibrant culture, and beautiful landscapes offer ample opportunities for exploration and relaxation before or after your dental appointment.</p><h3><strong>Understanding the Importance of Routine Dental Check-ups and Teeth Cleanings</strong></h3><p>A routine dental check-up is a comprehensive evaluation of your oral health conducted by a dental professional. These appointments typically involve a thorough examination of your teeth, gums, and mouth to identify any signs of tooth decay, gum disease, or other oral health issues. Early detection of these problems can significantly improve treatment outcomes and prevent more serious complications.</p><p>During a routine check-up, your dentist will likely perform a visual examination, checking each tooth for cavities, cracks, or wear. They will also assess the health of your gums, looking for signs of inflammation, bleeding, or recession, which are indicators of gum disease. The dentist may also examine your bite and the alignment of your teeth. In some cases, dental X-rays may be taken to provide a more detailed view of your teeth and jawbone, helping to identify issues that may not be visible during a clinical examination.</p><p>Teeth cleaning, often performed during the same visit as a routine check-up, is crucial for removing plaque and tartar buildup from your teeth. Plaque is a sticky film of bacteria that constantly forms on your teeth. If not removed regularly through brushing and flossing, it can harden into tartar, a stubborn deposit that can only be removed by a dental professional. Both plaque and tartar harbor bacteria that can lead to tooth decay and gum disease.</p><p>During a professional teeth cleaning, a dental hygienist uses specialized instruments to carefully remove plaque and tartar from above and below the gum line. This process helps to prevent cavities, gingivitis (early gum disease), and periodontitis (advanced gum disease). After the cleaning, your teeth may be polished to remove surface stains and leave them feeling smooth and clean. The hygienist may also provide you with personalized oral hygiene instructions, including proper brushing and flossing techniques, to help you maintain a healthy smile between check-ups.</p><p>Regular routine check-ups in Turkey, combined with professional teeth cleanings, are vital for maintaining optimal oral health. These preventive measures not only help keep your teeth and gums healthy but also contribute to your overall well-being.</p><h3><strong>Hear From Others: Real Experiences with Dental Care in Turkey</strong></h3><p><strong><em>Testimonial 1: Sarah from the UK</em></strong></p><p>"I had been putting off my routine dental check-up for far too long due to the exorbitant costs back home. A friend recommended looking into options in Turkey, and I was initially hesitant. However, after connecting with a clinic through AZPO Health, I felt completely at ease. The communication was clear, and the price for a comprehensive check-up and cleaning was a fraction of what I would have paid in the UK. The clinic was modern and clean, and the dentist was thorough and professional. I even enjoyed a few days exploring Istanbul after my appointment. It was a fantastic experience, and I'm so glad I chose to take care of my dental health in Turkey."</p><p><strong><em>Testimonial 2: John from the USA</em></strong></p><p>"As someone without dental insurance, the cost of routine dental care in the US was a significant concern. I started researching medical tourism and came across Turkey. AZPO Health helped me find a highly-rated clinic for a routine check-up and teeth cleaning. The entire process was seamless. The clinic was state-of-the-art, and the dental team was incredibly skilled. I appreciated the detailed explanation of my oral health status and the personalized advice I received. The cost savings were substantial, allowing me to prioritize my health without a major financial burden. I highly recommend considering Turkey for your dental care needs."</p><p><strong><em>Testimonial 3: Emily from Canada</em></strong></p><p>"I decided to combine a holiday in Turkey with my annual dental check-up. AZPO Health made it incredibly easy to find a reputable clinic in a convenient location. The clinic was modern and well-equipped, and the dentist was very attentive and professional. The routine check-up was comprehensive, and the teeth cleaning was excellent. I was impressed by the level of care I received, and the cost was significantly lower than what I would have paid in Canada. It was a win-win situation – I got to explore a beautiful country and take care of my dental health at the same time."</p><h3><strong>AZPO Health: Your Partner in Accessing Quality Dental Check-ups in Turkey</strong></h3><p>AZPO Health is dedicated to connecting you with reputable and experienced dental clinics in Turkey, making it easier for you to access affordable and high-quality dental check-ups. We understand the importance of finding a trustworthy healthcare provider, especially when considering treatment abroad. AZPO Health carefully vets the clinics we partner with, ensuring they meet stringent standards of quality, hygiene, and patient care.</p><p>By choosing AZPO Health, you gain access to a network of dental professionals committed to providing comprehensive routine check-ups and thorough teeth cleanings. We facilitate the process by providing you with information about the clinics, helping you understand the procedures involved, and answering any questions you may have. Our goal is to make your journey towards a healthy smile in Turkey as smooth and stress-free as possible.</p><p>AZPO Health empowers you to make informed decisions about your dental care by providing transparent information and facilitating communication with the clinics. While AZPO Health does not provide the treatments directly, we ensure that you are connected with qualified professionals who can address your specific needs for routine check-ups and teeth cleanings. Our commitment is to your well-being and satisfaction throughout your dental care experience in Turkey.</p><h3><strong>Take the First Step Towards a Healthier Smile Today</strong></h3><p>Don't let concerns about cost or accessibility prevent you from prioritizing your oral health. Turkey offers a compelling solution for affordable and comprehensive dental check-ups. Contact AZPO Health today for a free consultation and personalized quote. Our experienced team is ready to assist you in finding a reputable clinic that meets your needs and helps you embark on your journey towards a healthier, brighter smile.</p><p><br></p>`,
       },
-      imgCover: subNestedKey === "routine-check-ups" ? rotinecheckupscleaning : null,
+      imgCover:
+        subNestedKey === "routine-check-ups" ? rotinecheckupscleaning : null,
       subNestedKey: "routine-check-ups",
     },
     // dental-x-rays
@@ -6475,6 +6209,9 @@ AZPO Health - ведущая компания медицинского тури�
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
           : `Concerned about a dental issue but unsure of the next step? In Turkey, accessing essential diagnostic tools like dental X-rays is straightforward and provides a clear picture of your oral health, paving the way for effective and reassuring solutions. Contact AZPO Health today to connect with experienced dental professionals.`,
       benefits: null,
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: null,
 
       subCategoryContent: {
@@ -6483,10 +6220,12 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Choose Turkey for Your Dental Needs, Including Dental X-rays?",
+          locale === "ru"
+            ? ""
+            : "Why Choose Turkey for Your Dental Needs, Including Dental X-rays?",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
@@ -6506,7 +6245,10 @@ AZPO Health - ведущая компания медицинского тури�
         locale === "ru"
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
           : `Are you experiencing persistent tooth pain or discomfort, perhaps from a severely decayed or damaged tooth? The thought of extraction might seem daunting, but in Turkey, you can find experienced dental professionals who offer gentle and effective tooth extractions, paving the way for a healthier and more comfortable smile. Contact AZPO Health today to connect with reputable clinics for your personalized care.`,
-      benefits:null,
+      benefits: null,
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: null,
 
       subCategoryContent: {
@@ -6515,10 +6257,12 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Consider Turkey for Your Tooth Extractions?",
+          locale === "ru"
+            ? ""
+            : "Why Consider Turkey for Your Tooth Extractions?",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
@@ -6537,7 +6281,7 @@ AZPO Health - ведущая компания медицинского тури�
       descriptionTop:
         locale === "ru"
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
-          : `Are you experiencing discomfort, pain, or swelling in the back of your mouth? Perhaps your dentist has mentioned the need for wisdom teeth removal. Many people face this common dental concern, and the good news is that effective and high-quality solutions are available. Considering options for your oral health can feel overwhelming,but exploring the benefits of having your wisdom teeth removal in Turkey through AZPO Health can provide you with a comfortable and supported journey towards a healthier smile.`,
+          : `Are you experiencing discomfort, pain, or swelling in the back of your mouth? Perhaps your dentist has mentioned the need for wisdom teeth removal. Many people face this common dental concern, and the good news is that effective and high-quality solutions are available. Considering options for your oral health can feel overwhelming, but exploring the benefits of having your wisdom teeth removal in Turkey through AZPO Health can provide you with a comfortable and supported journey towards a healthier smile.`,
       benefits: {
         items: [
           {
@@ -6564,51 +6308,139 @@ AZPO Health - ведущая компания медицинского тури�
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Who Needs It?",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
-                : `This procedure is recommended for individuals whose wisdom teeth are:\nImpacted or misaligned\nCausing pain, infection, or damage to other teeth\nUnable to emerge fully due to lack of space`,
+                : `A wisdom tooth is a third molar at the back of the mouth, typically emerging between ages 17 and 25. There are four wisdom teeth, one on each side of the upper and lower jaws. These teeth may emerge normally, remain impacted, or grow crooked, often causing`,
           },
           {
-            header: locale === "ru" ? "" : "Considerations",
-            decsList: [
-              locale === "ru" ? "" : "First 24 Hours: Avoid straws, rinsing, or disturbing the area.",
-              locale === "ru" ? "" : "Oral Care: Brush gently near the extraction site and follow your dentist's advice on rinsing.",
-              locale === "ru" ? "" : "Diet: Eat soft, cool foods and avoid hot or spicy items.",
-            ],
+            header: locale === "ru" ? "" : "How It Works",
+            decsList:
+              locale === "ru"
+                ? ""
+                : "Wisdom tooth extraction is usually performed under local anesthesia. If the tooth is impacted, an incision is made in the gum, and sometimes the bone around the tooth is removed or the tooth is divided into pieces for easier extraction. The area is then sutured.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "The Procedure",
+            header: locale === "ru" ? "Как это работает" : "Who Needs It?",
             desc:
               locale === "ru"
                 ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-                : "Wisdom tooth extraction is usually performed under local anesthesia. If the tooth is impacted, an incision is made in the gum, and sometimes the bone around the tooth is removed or the tooth is divided into pieces for easier extraction. The area is then sutured.",
+                : "This procedure is recommended for individuals whose wisdom teeth are: Impacted or misaligned Causing pain, infection, or damage to other teeth Unable to emerge fully due to lack of space",
           },
         ],
       },
+      faqs: [
+        {
+          question:locale === "ru" ? "" : "How long do results last?",
+          answer:locale === "ru" ? "" : "6 months to 2 years depending on diet and habits",
+        },
+        {
+          question:locale === "ru" ? "" : "Is it safe?",
+          answer:locale === "ru" ? "" : "Yes, when done professionally",
+        },
+        {
+          question:locale === "ru" ? "" : "Will it hurt?",
+          answer:locale === "ru" ? "" : "Some sensitivity may occur, usually short-term",
+        },
+        {
+          question:locale === "ru" ? "" : "Can I whiten crowns or veneers?",
+          answer:locale === "ru" ? "" : "No, only natural teeth respond to whitening",
+        },
+        {
+          question:locale === "ru" ? "" : "How white will my teeth get?",
+          answer:locale === "ru" ? "" : "Depends on your natural shade and type of stains ",
+        },
+        {
+          question:locale === "ru" ? "" : "Can teeth whitening be done during pregnancy and breastfeeding?",
+          answer:locale === "ru" ? "" : "It’s not recommended; consult a dentist first.",
+        },
+        {
+          question:locale === "ru" ? "" : "How often can teeth whitening be done?",
+          answer:locale === "ru" ? "" : "Generally, every 6 months.",
+        },
+        
+      ],
+      posts: [
+        "Bite on gauze to control bleeding",
+        "Avoid spitting, using a straw, or smoking for 3 days",
+        "Apply ice packs for swelling during first 48 hours",
+        "Eat soft, cool foods like yogurt or soup",
+        "Rinse with salt water after 24 hours",
+        "Initially, sleep with your head elevated.",
+        "Avoid intense exercise.",
+      ],
+      preList: [
+        "Fast 6–8 hours before surgery if under sedation",
+        "Arrange transportation after the procedure",
+        "Wear loose, comfortable clothing",
+        "Avoid smoking and alcohol for 24 hours prior",
+        "Pay attention to oral hygiene.",
+        "Inform about allergies or health conditions.",
+        "Avoid blood thinners.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
-            : "Wisdom tooth extraction helps prevent dental problems and improve overall oral health. With proper care, recovery is typically quick and successful.",
+            : "Wisdom tooth extraction helps prevent dental problems and improve overall oral health. With proper care, recovery is typically quick and successful.By removing impacted or problematic wisdom teeth, the procedure reduces the risk of infection, overcrowding, and misalignment. This proactive approach can prevent future complications and enhance long-term dental well-being, ensuring a healthier, more comfortable smile.",
       },
 
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
-      },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Consider Turkey for Wisdom Teeth Removal?",
+          locale === "ru"
+            ? ""
+            : "Why Consider Turkey for Wisdom Teeth Removal?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>Choosing where to undergo any medical or dental procedure is a significant decision. Turkey has emerged as a prominent destination for individuals seeking various health treatments, including dental care like wisdom teeth removal. Several compelling factors contribute to this growing trend.</p><p>One of the primary reasons many international patients consider Turkey for dental treatments is the potential for significant cost savings. The cost of wisdom teeth removal, along with other dental procedures, can be considerably more affordable in Turkey compared to many countries in Europe, the United Kingdom, or the United States. These cost advantages can make necessary dental care more accessible without compromising on the quality of treatment. While the exact <strong>wisdom teeth removal cost</strong> can vary based on individual needs and the complexity of the extraction, exploring options through AZPO Health can provide a financially viable path to addressing your dental health. Understanding the potential <strong>wisdom teeth removal cost in Turkey</strong> allows for better financial planning for your overall well-being.</p><p>Beyond affordability, Turkey boasts a robust healthcare system with highly skilled dental professionals. Many dentists in Turkey are well-educated and experienced in performing a wide range of dental procedures, including the extraction of wisdom teeth. Furthermore, clinics that cater to international patients often utilize modern dental technologies and adhere to stringent hygiene and safety standards. AZPO Health collaborates with reputable clinics that prioritize patient safety and employ contemporary techniques in oral surgery.</p><p>Another aspect that makes Turkey an attractive choice for dental tourism is the opportunity to combine your treatment with a visit to a country rich in history and culture. Istanbul, in particular, is a vibrant city offering a blend of historical sites, modern amenities, and unique cultural experiences. Many individuals find that undergoing their <strong>wisdom teeth removal in Turkey</strong> allows them to address their health needs while also enjoying a memorable travel experience. AZPO Health can assist in coordinating your treatment journey, potentially including guidance on travel and accommodation, to make your experience as smooth and comfortable as possible.</p><h2><strong>Understanding Wisdom Teeth Removal</strong></h2><p>Wisdom teeth, also known as third molars, are the last teeth to erupt in the mouth, typically appearing in the late teens or early twenties. While some individuals have no issues with their wisdom teeth, in many cases, they can cause problems due to lack of space in the jaw. This can lead to impaction (becoming trapped beneath the gums or partially erupted), misalignment, pain, infection, damage to adjacent teeth, or the formation of cysts.</p><p>The decision to remove wisdom teeth is usually based on a comprehensive dental examination, including X-rays, to assess their position, alignment, and potential impact on your oral health. Dentists often recommend removal if the wisdom teeth are causing current problems or are likely to cause issues in the future.</p><p>The procedure for <strong>wisdom teeth removal</strong> typically involves a local anesthetic to numb the area, although sedation options may be available depending on the complexity of the extraction and patient anxiety. In some cases, a general anesthetic might be used. The dentist or oral surgeon will make an incision in the gum tissue to expose the tooth and bone. If the tooth is impacted or difficult to remove, it may be sectioned into smaller pieces. Once the tooth is extracted, the site is cleaned, and stitches may be placed to aid in healing. Gauze is usually placed to control bleeding.</p><p>The recovery period after <strong>wisdom teeth removal</strong> varies from person to person but generally involves some swelling, discomfort, and potential bruising. Pain medication can help manage discomfort. Following your dentist's post-operative instructions is crucial for proper healing and to minimize the risk of complications such as infection or dry socket. These instructions typically include guidance on diet (starting with soft foods), oral hygiene (gentle rinsing), and activity restrictions.</p><h2><strong>Benefits of Addressing Wisdom Teeth Issues in Turkey with AZPO Health</strong></h2><p>Choosing to address your wisdom teeth concerns through AZPO Health in Turkey offers several potential advantages:</p><ul><li><strong>Access to Experienced Professionals:</strong> AZPO Health connects you with qualified and experienced dentists and oral surgeons in Turkey who are proficient in performing wisdom teeth extractions.</li><li><strong>Modern Facilities and Techniques:</strong> The clinics within AZPO Health's network often utilize advanced dental equipment and techniques to ensure efficient and effective treatment.</li><li><strong>Personalized Care and Support:</strong> AZPO Health aims to provide a supportive experience by assisting you in finding suitable dental care options based on your individual needs and preferences.</li><li><strong>Streamlined Treatment Journey:</strong> While actual treatment happens at the chosen clinic, AZPO Health can help facilitate your journey by providing information and support related to your dental care in Turkey.</li><li><strong>Potential for Cost-Effective Solutions:</strong> By exploring options through AZPO Health, you may find more affordable solutions for your <strong>wisdom teeth removal cost</strong> compared to what you might encounter in your home country. Understanding the <strong>wisdom teeth removal cost in Turkey</strong> can help you make an informed decision about your dental care budget.</li></ul><h2><strong>Patient Experiences&nbsp;</strong></h2><ul><li><strong>Sarah from the UK:</strong> "I had been putting off my wisdom teeth removal for years due to the high costs back home. A friend recommended looking into options in Turkey, and I contacted AZPO Health. They were very helpful in providing information about different clinics. The clinic I chose was modern, and the dentist was excellent. The overall cost was significantly lower than what I had been quoted in the UK, and I even had a little time to explore Istanbul after my procedure. The aftercare guidance was clear, and I felt well-supported throughout the process."</li><li><strong>John from the USA:</strong> "The pain from my impacted wisdom tooth was becoming unbearable. I looked online and found AZPO Health. They helped me find a reputable dental clinic in Istanbul quickly. The communication was smooth, and the clinic staff was professional. I was a bit nervous about having dental surgery abroad, but the dentist explained everything clearly, and the procedure went well. The <strong>wisdom teeth removal cost in Turkey</strong> was a pleasant surprise, and it allowed me to get the relief I desperately needed without a huge financial burden."</li></ul><p><br></p><h2><strong>About AZPO Health</strong></h2><p>AZPO Health is dedicated to connecting individuals seeking quality and affordable medical and dental care with reputable clinics and healthcare professionals in Turkey. We understand that navigating international healthcare options can be a complex process, and our goal is to simplify this for you. While AZPO Health does not provide direct medical or dental treatment, we act as a facilitator, offering information and support to help you make informed decisions about your health journey.</p><p>We prioritize connecting you with clinics that maintain high standards of care, utilize modern technologies, and have experienced medical teams. Our focus is on ensuring that you have access to comprehensive information and support as you explore your options for <strong>wisdom teeth removal in Turkey</strong>. We strive to build trust by providing accurate information and maintaining a professional and supportive tone throughout your interaction with us. Contact AZPO Health today to learn more about how we can assist you in finding suitable options for your wisdom teeth removal needs and understanding the potential <strong>wisdom teeth removal cost</strong>.</p><h2><strong>Take the Next Step Toward a Healthier Smile</strong></h2><p>If you are considering wisdom teeth removal and are looking for high-quality, potentially more affordable options, we encourage you to reach out to AZPO Health. Contact us today for a free consultation and personalized information. Our team is here to answer your questions and help you explore the possibilities for addressing your wisdom teeth concerns in Turkey.</p><p><br></p>`,
+            ? ``
+            : `<p dir="ltr">Choosing where to undergo any medical or dental procedure is a significant decision. Turkey has emerged as a prominent destination for individuals seeking various health treatments, including dental care like wisdom teeth removal. Several compelling factors contribute to this growing trend.</p>
+<p dir="ltr">One of the primary reasons many international patients consider Turkey for dental treatments is the potential for significant cost savings. The cost of wisdom teeth removal, along with other dental procedures, can be considerably more affordable in Turkey compared to many countries in Europe, the United Kingdom, or the United States. These cost advantages can make necessary dental care more accessible without compromising on the quality of treatment. While the exact wisdom teeth removal cost can vary based on individual needs and the complexity of the extraction, exploring options through AZPO Health can provide a financially viable path to addressing your dental health. Understanding the potential wisdom teeth removal cost in Turkey allows for better financial planning for your overall well-being.</p>
+<p dir="ltr">Beyond affordability, Turkey boasts a robust healthcare system with highly skilled dental professionals. Many dentists in Turkey are well-educated and experienced in performing a wide range of dental procedures, including the extraction of wisdom teeth. Furthermore, clinics that cater to international patients often utilize modern dental technologies and adhere to stringent hygiene and safety standards. AZPO Health collaborates with reputable clinics that prioritize patient safety and employ contemporary techniques in oral surgery.</p>
+<p dir="ltr">Another aspect that makes Turkey an attractive choice for dental tourism is the opportunity to combine your treatment with a visit to a country rich in history and culture. Istanbul, in particular, is a vibrant city offering a blend of historical sites, modern amenities, and unique cultural experiences. Many individuals find that undergoing their wisdom teeth removal in Turkey allows them to address their health needs while also enjoying a memorable travel experience. AZPO Health can assist in coordinating your treatment journey, potentially including guidance on travel and accommodation, to make your experience as smooth and comfortable as possible.</p>
+<h2 dir="ltr">Understanding Wisdom Teeth Removal</h2>
+<p dir="ltr">Wisdom teeth, also known as third molars, are the last teeth to erupt in the mouth, typically appearing in the late teens or early twenties. While some individuals have no issues with their wisdom teeth, in many cases, they can cause problems due to lack of space in the jaw. This can lead to impaction (becoming trapped beneath the gums or partially erupted), misalignment, pain, infection, damage to adjacent teeth, or the formation of cysts.</p>
+<p dir="ltr">The decision to remove wisdom teeth is usually based on a comprehensive dental examination, including X-rays, to assess their position, alignment, and potential impact on your oral health. Dentists often recommend removal if the wisdom teeth are causing current problems or are likely to cause issues in the future.</p>
+<p dir="ltr">The procedure for wisdom teeth removal typically involves a local anesthetic to numb the area, although sedation options may be available depending on the complexity of the extraction and patient anxiety. In some cases, a general anesthetic might be used. The dentist or oral surgeon will make an incision in the gum tissue to expose the tooth and bone. If the tooth is impacted or difficult to remove, it may be sectioned into smaller pieces. Once the tooth is extracted, the site is cleaned, and stitches may be placed to aid in healing. Gauze is usually placed to control bleeding.</p>
+<p dir="ltr">The recovery period after wisdom teeth removal varies from person to person but generally involves some swelling, discomfort, and potential bruising. Pain medication can help manage discomfort. Following your dentist's post-operative instructions is crucial for proper healing and to minimize the risk of complications such as infection or dry socket. These instructions typically include guidance on diet (starting with soft foods), oral hygiene (gentle rinsing), and activity restrictions.</p>
+<h2 dir="ltr">Benefits of Addressing Wisdom Teeth Issues in Turkey with AZPO Health</h2>
+<p dir="ltr">Choosing to address your wisdom teeth concerns through AZPO Health in Turkey offers several potential advantages:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Access to Experienced Professionals: AZPO Health connects you with qualified and experienced dentists and oral surgeons in Turkey who are proficient in performing wisdom teeth extractions.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Modern Facilities and Techniques: The clinics within AZPO Health's network often utilize advanced dental equipment and techniques to ensure efficient and effective treatment.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Care and Support: AZPO Health aims to provide a supportive experience by assisting you in finding suitable dental care options based on your individual needs and preferences.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Streamlined Treatment Journey: While actual treatment happens at the chosen clinic, AZPO Health can help facilitate your journey by providing information and support related to your dental care in Turkey.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Potential for Cost-Effective Solutions: By exploring options through AZPO Health, you may find more affordable solutions for your wisdom teeth removal cost compared to what you might encounter in your home country. Understanding the wisdom teeth removal cost in Turkey can help you make an informed decision about your dental care budget.</p>
+</li>
+</ul>
+<p><strong>&nbsp;</strong></p>
+<h2 dir="ltr">About AZPO Health</h2>
+<p dir="ltr">AZPO Health is dedicated to connecting individuals seeking quality and affordable medical and dental care with reputable clinics and healthcare professionals in Turkey. We understand that navigating international healthcare options can be a complex process, and our goal is to simplify this for you. While AZPO Health does not provide direct medical or dental treatment, we act as a facilitator, offering information and support to help you make informed decisions about your health journey.</p>
+<p dir="ltr">We prioritize connecting you with clinics that maintain high standards of care, utilize modern technologies, and have experienced medical teams. Our focus is on ensuring that you have access to comprehensive information and support as you explore your options for wisdom teeth removal in Turkey. We strive to build trust by providing accurate information and maintaining a professional and supportive tone throughout your interaction with us. Contact AZPO Health today to learn more about how we can assist you in finding suitable options for your wisdom teeth removal needs and understanding the potential wisdom teeth removal cost.</p>
+<h2 dir="ltr">Take the Next Step Toward a Healthier Smile</h2>
+<p dir="ltr">If you are considering wisdom teeth removal and are looking for high-quality, potentially more affordable options, we encourage you to reach out to AZPO Health. Contact us today for a free consultation and personalized information. Our team is here to answer your questions and help you explore the possibilities for addressing your wisdom teeth concerns in Turkey.</p>
+<p><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Patient Experiences&nbsp;</h2>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Sarah from the UK: "I had been putting off my wisdom teeth removal for years due to the high costs back home. A friend recommended looking into options in Turkey, and I contacted AZPO Health. They&nbsp;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">were very helpful in providing information about different clinics. The clinic I chose was modern, and the dentist was excellent. The overall cost was significantly lower than what I had been quoted in the UK, and I even had a little time to explore Istanbul after my procedure. The aftercare guidance was clear, and I felt well-supported throughout the process."</p>
+</li>
+</ul>
+<p><strong id="docs-internal-guid-2395c212-7fff-a9c4-85e4-cebcc58ee894">John from the USA: "The pain from my impacted wisdom tooth was becoming unbearable. I looked online and found AZPO Health. They helped me find a reputable dental clinic in Istanbul quickly. The communication was smooth, and the clinic staff was professional. I was a bit nervous about having dental surgery abroad, but the dentist explained everything clearly, and the procedure went well. The wisdom teeth removal cost in Turkey was a pleasant surprise, and it allowed me to get the relief I desperately needed without a huge financial burden.</strong></p>`,
       },
       imgCover: subNestedKey === "wisdom-teeth-removal" ? wisdom : null,
       subNestedKey: "wisdom-teeth-removal",
@@ -6650,8 +6482,7 @@ AZPO Health - ведущая компания медицинского тури�
         ],
         categories: [
           {
-            header:
-              locale === "ru" ? "Для кого" : "Who It’s For",
+            header: locale === "ru" ? "Для кого" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
@@ -6659,27 +6490,14 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Healing can take from several days to several weeks, depending on the complexity of the surgery.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Follow all pre- and post-operative instructions closely. Recovery requires oral care, soft foods, and adequate rest.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Patients require a comprehensive pre-surgical examination including medical history and imaging to assess health status and identify potential complications.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
             //     : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
           },
           {
-            header:
-              locale === "ru"
-                ? "Как это работает"
-                : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
                 ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
@@ -6687,6 +6505,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -6701,12 +6522,9 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
-        title:
-          locale === "ru"
-            ? ""
-            : "Why Choose Turkey for Jaw Surgery?",
+        title: locale === "ru" ? "" : "Why Choose Turkey for Jaw Surgery?",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
@@ -6752,8 +6570,7 @@ AZPO Health - ведущая компания медицинского тури�
         ],
         categories: [
           {
-            header:
-              locale === "ru" ? "Для кого" : "Who It’s For",
+            header: locale === "ru" ? "Для кого" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
@@ -6761,27 +6578,14 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: [
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Considerations: Post-Surgery Care: Patients must avoid strenuous activity and eye rubbing for several weeks.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Potential Risks: Infection, inflammation, or complications with the IOL, though rare.",
-              locale === "ru"
-                ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-                : "Not Suitable For: Those with severe underlying eye diseases that might affect outcomes.",
-            ],
+            decsList: locale === "ru" ? "" : "",
             // desc:
             //   locale === "ru"
             //     ? ""
             //     : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
           },
           {
-            header:
-              locale === "ru"
-                ? "Как это работает"
-                : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
                 ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
@@ -6789,6 +6593,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -6803,7 +6610,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -6829,6 +6636,9 @@ AZPO Health - ведущая компания медицинского тури�
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
           : "Experiencing changes in your vision due to a retinal condition can be unsettling, affecting your daily life and overall well-being. Are you looking for specialized care and effective solutions for your retinal disease? In Turkey, you can find highly skilled medical professionals and advanced treatment options, and AZPO Health is here to guide you through every step of your journey.",
       benefits: null,
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -6843,7 +6653,7 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"
@@ -6854,7 +6664,8 @@ AZPO Health - ведущая компания медицинского тури�
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
             : `<p>Choosing the right place for medical treatment is a significant decision. When it comes to retinal diseases, Turkey has emerged as a leading destination for individuals seeking high-quality care and advanced medical technologies. Through AZPO Health, you can connect with reputable clinics and experienced ophthalmologists who specialize in diagnosing and treating a wide range of retinal conditions.</p><h3><strong>Why Consider Turkey for Your Retinal Disease Treatment?</strong></h3><ul><li><strong>Experienced Medical Professionals:</strong> Turkey boasts a large pool of highly trained and experienced ophthalmologists who are experts in various sub-specialties, including retinal diseases. Many have received international training and stay updated with the latest advancements in the field.</li><li><strong>Advanced Medical Facilities:</strong> The clinics and hospitals in Turkey that AZPO Health partners with are equipped with state-of-the-art diagnostic and treatment technologies, ensuring you have access to cutting-edge procedures. This includes advanced imaging systems and laser technologies crucial for managing retinal conditions.</li><li><strong>Holistic and Personalized Care:</strong> The medical professionals in Turkey emphasize a patient-centered approach, taking the time to understand your specific condition and concerns. They work towards creating personalized treatment plans tailored to your unique needs, maximizing the chances of successful outcomes.</li><li><strong>Comprehensive Support Services:</strong> AZPO Health facilitates your entire medical journey, from initial consultation to post-treatment care. This includes assistance with travel arrangements, accommodation, and communication, ensuring a stress-free experience.</li><li><strong>Focus on Patient Well-being:</strong> The healthcare environment in Turkey prioritizes patient comfort and well-being. You can expect compassionate care from the medical staff throughout your treatment process.</li></ul><h3><strong>Understanding Retinal Diseases and Available Treatments</strong></h3><p>The retina is a light-sensitive layer at the back of your eye that plays a crucial role in vision. Various conditions can affect the retina, leading to vision impairment or even blindness if left untreated. Some common retinal diseases include:</p><ul><li><strong>Age-Related Macular Degeneration (AMD):</strong> A condition that affects the central part of your vision, making it difficult to see fine details.</li><li><strong>Diabetic Retinopathy:</strong> Damage to the blood vessels in the retina caused by diabetes.</li><li><strong>Retinal Detachment:</strong> A serious condition where the retina pulls away from the back of the eye.</li><li><strong>Glaucoma:</strong> While primarily affecting the optic nerve, glaucoma can also impact the retinal nerve fiber layer.</li><li><strong>Retinitis Pigmentosa:</strong> A group of rare, genetic disorders that cause a breakdown and loss of cells in the retina.</li><li><strong>Macular Hole:</strong> A small break in the macula, the central part of the retina.</li><li><strong>Retinal Tears:</strong> Small tears in the retina that can lead to retinal detachment.</li></ul><p>The treatment options for retinal diseases vary depending on the specific condition and its severity. The experienced ophthalmologists you can connect with through AZPO Health in Turkey offer a range of advanced treatments, which may include:</p><ul><li><strong>Laser Therapy:</strong> Used to seal leaking blood vessels in diabetic retinopathy, repair retinal tears, and treat certain types of glaucoma.</li><li><strong>Anti-VEGF Injections:</strong> Medications injected into the eye to block the growth of abnormal blood vessels in conditions like wet AMD and diabetic retinopathy.</li><li><strong>Eye Surgery:</strong> Surgical procedures to repair retinal detachments, macular holes, or other structural issues in the retina.</li><li><strong>Intraocular Lens (IOL) Implants:</strong> While primarily used for cataracts, in some cases, IOLs can address vision problems related to certain retinal conditions.</li><li><strong>Photodynamic Therapy (PDT):</strong> A laser treatment used for certain types of macular degeneration.</li><li><strong>Microinvasive Glaucoma Surgery (MIGS):</strong> Surgical options to lower eye pressure in glaucoma patients, which can indirectly benefit the retina.</li></ul><p>The ophthalmologists will conduct thorough diagnostic tests, including retinal imaging, to accurately assess your condition and recommend the most appropriate treatment plan. They will explain the procedures in detail, discuss the potential benefits and risks, and answer any questions you may have.</p><h3><strong>Real Patient Experiences: Finding Hope and Healing in Turkey</strong></h3><p>Hearing from others who have undergone similar medical journeys can provide reassurance and hope. Here are a couple of fictionalized accounts of patients who sought retinal disease treatment in Turkey through a facilitator like AZPO Health:</p><p><strong>Sarah's Story:</strong> "For years, my vision had declining due to age-related macular degeneration. Simple tasks like reading and recognizing faces became increasingly challenging. I felt frustrated and worried about losing my independence. My local ophthalmologist suggested some treatments, but I wanted to explore more advanced options. That's when I learned about the expertise available in Turkey. Through a medical tourism agency, I connected with a wonderful eye clinic in Istanbul. The doctors were incredibly knowledgeable and explained a new anti-VEGF therapy that wasn't readily available where I lived. The entire experience, from the initial online consultation to the post-treatment follow-ups, was handled with care and professionalism. My vision has stabilized significantly, and I can now enjoy reading again. I am so grateful for the opportunity to receive this advanced treatment in Turkey."</p><p><strong>David's Story:</strong> "Being diagnosed with diabetic retinopathy was a shock. I was concerned about the potential for vision loss and the impact it would have on my active lifestyle. My doctor recommended regular laser treatments, but I was looking for a more comprehensive approach. A friend told me about the excellent medical care in Turkey, particularly for eye conditions. I contacted AZPO Health, and they connected me with a leading ophthalmologist who specialized in diabetic retinopathy. After a thorough examination, he recommended a combination of laser therapy and lifestyle modifications. The clinic was modern, the staff was supportive, and the level of care I received was exceptional. I felt like they truly understood my concerns and were committed to preserving my vision. My condition is now well-managed, and I feel much more confident about my future."</p><p>These stories highlight the potential for positive outcomes when seeking retinal disease treatment in Turkey with the support of a medical tourism facilitator.</p><h3><strong>AZPO Health: Your Partner in Navigating Retinal Disease Treatment in Turkey</strong></h3><p>AZPO Health is dedicated to making your medical journey to Turkey as seamless and stress-free as possible. We understand the complexities of seeking medical care abroad, and we are here to provide you with the guidance and support you need every step of the way.</p><p>Our services include:</p><ul><li><strong>Connecting you with reputable clinics and experienced ophthalmologists specializing in retinal diseases.</strong></li><li><strong>Facilitating virtual consultations to discuss your condition and treatment options from the comfort of your home.</strong></li><li><strong>Providing comprehensive information about the clinics, the medical professionals, and the treatment procedures.</strong></li><li><strong>Assisting with travel arrangements, accommodation, and airport transfers.</strong></li><li><strong>Offering language assistance to ensure clear communication with the medical team.</strong></li><li><strong>Providing ongoing support throughout your treatment and recovery.</strong></li></ul><p>AZPO Health prioritizes your well-being and strives to ensure you receive the highest standard of care in Turkey. We believe in clear communication, transparency, and personalized support to empower you to make informed decisions about your health.</p><p>If you are seeking advanced and expert care for your retinal disease, we encourage you to reach out to AZPO Health. Let us help you connect with the right medical professionals in Turkey and embark on a journey towards better vision and improved quality of life.</p><p><strong>Contact AZPO Health today for a free consultation and personalized information about retinal disease treatment options in Turkey.</strong></p><p><br></p><p><br></p>`,
       },
-      imgCover: subNestedKey === "retinal-disease-treatment" ? retinaldisease : null,
+      imgCover:
+        subNestedKey === "retinal-disease-treatment" ? retinaldisease : null,
       subNestedKey: "retinal-disease-treatment",
     },
     // lasik surgery
@@ -6902,12 +6713,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "" : "Considerations",
-            decsList: [
-              locale === "ru" ? "" : "Potential Risks: Dry eyes, glare, or halos around lights, typically temporary.",
-              locale === "ru" ? "" : "Not Suitable For: Thin corneas, high refractive errors, or individuals with eye infections or severe dry eye syndrome.",
-              locale === "ru" ? "" : "Post-Surgery Care: Patients must avoid rubbing their eyes and follow prescribed care for optimal healing.",
-
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -6918,6 +6724,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -6932,10 +6741,12 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Choose Turkey for Your LASIK Eye Surgery Journey?",
+          locale === "ru"
+            ? ""
+            : "Why Choose Turkey for Your LASIK Eye Surgery Journey?",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
@@ -6983,12 +6794,7 @@ AZPO Health - ведущая компания медицинского тури�
           null,
           {
             header: locale === "ru" ? "" : "Considerations",
-            decsList: [
-              locale === "ru" ? "" : "Not suitable for all eye conditions—consultation is essential",
-              locale === "ru" ? "" : "Post-surgery recovery is quick but requires follow-up care",
-              locale === "ru" ? "" : "Temporary sensitivity or adjustment period may occur",
-
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -6999,6 +6805,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -7013,10 +6822,12 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Consider Turkey for Your Smart Lens Procedure?",
+          locale === "ru"
+            ? ""
+            : "Why Consider Turkey for Your Smart Lens Procedure?",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
@@ -7063,16 +6874,14 @@ AZPO Health - ведущая компания медицинского тури�
         categories: [
           {
             header: locale === "ru" ? "" : "Who Is IVF For?",
-            desc: locale === "ru" ? "" : "Blocked Fallopian Tubes: If a woman has damaged or blocked fallopian tubes, IVF bypasses this problem by directly implanting the embryo into the uterus, ensuring sperm and egg can meet for fertilization.Male Infertility: Men with low sperm count, poor sperm motility, or other fertility issues can benefit from IVF with ICSI, a technique where a single sperm is directly injected into the egg to facilitate fertilization."
+            desc:
+              locale === "ru"
+                ? ""
+                : "Blocked Fallopian Tubes: If a woman has damaged or blocked fallopian tubes, IVF bypasses this problem by directly implanting the embryo into the uterus, ensuring sperm and egg can meet for fertilization.Male Infertility: Men with low sperm count, poor sperm motility, or other fertility issues can benefit from IVF with ICSI, a technique where a single sperm is directly injected into the egg to facilitate fertilization.",
           },
           {
             header: locale === "ru" ? "" : "Considerations",
-            decsList: [
-              locale === "ru" ? "" : "Cost: IVF cycles cost thousands, plus additional fees. Limited insurance coverage increases expenses.",
-              locale === "ru" ? "" : "Physical and Emotional Impact: IVF involves intensive medical procedures and hormone treatments, causing stress.",
-              locale === "ru" ? "" : "Multiple Pregnancies: IVF may increase multiple pregnancy risks, though clinics limit embryo transfers.",
-
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -7083,6 +6892,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -7097,10 +6909,12 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Overcoming Fertility Challenges with IVF in Turkey",
+          locale === "ru"
+            ? ""
+            : "Overcoming Fertility Challenges with IVF in Turkey",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
@@ -7147,16 +6961,14 @@ AZPO Health - ведущая компания медицинского тури�
         categories: [
           {
             header: locale === "ru" ? "" : "Who Is IVF For?",
-            desc: locale === "ru" ? "" : "Women with Failed Fresh IVF: FET provides another chance using previously frozen embryos from unsuccessful IVF cycles.Women with Low Egg Quality or Need Breaks: FET helps those with poor ovarian reserve by avoiding repeated stimulation, and allows couples to pause between cycles."
+            desc:
+              locale === "ru"
+                ? ""
+                : "Women with Failed Fresh IVF: FET provides another chance using previously frozen embryos from unsuccessful IVF cycles.Women with Low Egg Quality or Need Breaks: FET helps those with poor ovarian reserve by avoiding repeated stimulation, and allows couples to pause between cycles.",
           },
           {
             header: locale === "ru" ? "" : "Considerations",
-            decsList: [
-              locale === "ru" ? "" : "Embryo Viability: Some embryos may not survive the freeze-thaw process, despite improved vitrification technology.",
-              locale === "ru" ? "" : "Hormonal Treatment: FET requires hormone treatments that may cause side effects like mood swings and bloating.",
-              locale === "ru" ? "" : "Success Rates: Outcomes vary based on embryo quality, age, and reproductive health. Multiple cycles may be needed.",
-
-            ],
+            decsList: locale === "ru" ? "" : "",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -7167,6 +6979,9 @@ AZPO Health - ведущая компания медицинского тури�
           },
         ],
       },
+      faqs: [],
+      posts: [],
+      preList: [],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -7180,10 +6995,12 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Diabetic retinopathy treatment"
             : "Corneal-Transplantation",
       },
-      bfs: bfList ,
+      bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Choose Turkey for Your Frozen Embryo Transfer Journey?",
+          locale === "ru"
+            ? ""
+            : "Why Choose Turkey for Your Frozen Embryo Transfer Journey?",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
@@ -7192,8 +7009,13 @@ AZPO Health - ведущая компания медицинского тури�
       imgCover: subNestedKey === "fet-frozen-embryo-transfer" ? fet : null,
       subNestedKey: "fet-frozen-embryo-transfer",
     },
-
   ];
+  // const getPathKey = categoryList.map(category=>category.subNestedKey)
+  // const updatedList = categoryList.map(item => {
+  //   return { ...item, faqs: null , posts : null , preList : null };
+  // });
+  // faqs : [] , posts : [] , preList : []
+
   const findData = categoryList.find(
     (sub) => sub.subNestedKey === subNestedKey
   );
