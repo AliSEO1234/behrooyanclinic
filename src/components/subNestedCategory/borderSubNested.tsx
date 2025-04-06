@@ -3,7 +3,7 @@ import syring from "@/assets/images/syring.svg";
 import ImgFetcher from "../imgFetcher";
 const BorderSubNested = ({ className, label , labelStyle }: BorderSubNestedType) => {
   return (
-    <section className="flex flex-col items-center gap-y-2 w-fit mx-auto">
+    <div className="flex flex-col items-center gap-y-2 w-fit mx-auto">
       <div>
         <p className={`text-center font-semibold mb-2 ${labelStyle || null}`}>{label}</p>
       </div>
@@ -17,7 +17,7 @@ const BorderSubNested = ({ className, label , labelStyle }: BorderSubNestedType)
           <ImgFetcher src={syring} />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 export default BorderSubNested;

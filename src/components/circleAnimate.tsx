@@ -24,7 +24,7 @@ const CircleAnimate = ({ position, topValue, xValue }: CircleAnimateType) => {
         ],
       }}
       transition={{
-        duration: 5,
+        duration: 50,
         repeat: Infinity,
         ease: "easeInOut",
       }}

@@ -106,47 +106,31 @@ const Page = async ({ params }: PropsPageType) => {
       xValue: 160,
       topValue: 2200,
     },
-    // {
-    //   position: "right",
-    //   xValue: 900,
-    //   topValue: 3200,
-    // },
-    // {
-    //   position: "left",
-    //   xValue: 80,
-    //   topValue: 3600,
-    // },
   ];
   return (
     <>
-      <section className="viewport-p grid grid-cols-12 gap-y-3 mt-4 s1280:mt-10 s1512:mt-20 shadow-[0px_2px_12.9px_0px_#00979A1C] rounded-b-[40px] s1280:mb-4 relative">
-        <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-6">
-          <h1 className="font-semibold s1280:text-[28px] s1512:text-[36px] s1728:text-[40px] s1920:text-[48px] text-[#00979A] s1920:border-b s1920:border-[#00979A] s1920:w-fit mb-2 s1280:mb-6 s1920:mb-5">
-            {fetchData?.title}
-          </h1>
-          <p className="font-normal text-[14px] s1512:text-[16px] s1728:text-[18px] s1920:text-[20px] text-[#474744] leading-[27px] s1512:leading-[31px] s1728:leading-[43px] mb-2 s1280:mb-5">
-            {fetchData?.descriptionTop}
-          </p>
+      <section className="sub-nested-home-first-section">
+        <div>
+          <h1>{fetchData?.title}</h1>
+          <p>{fetchData?.descriptionTop}</p>
           <BorderSubNested
             label="Table of content"
-            className="w-[114px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-5 s1512:mb-8"
-            labelStyle="text-[#00979A] s1280:text-[14px] s1512:text-[16px]"
+            className="home-first-child-section"
+            labelStyle="home-first-child-section-label"
           />
-          <section className="flex items-center justify-between sm:justify-center s1280:gap-x-8 relative z-0 pb-1">
-            {/* <div
-              className="absolute z-[-1] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 s1280:w-[120%] bg-gradient-to-r from-[#FCFCFC] via-[#CFEAEB] to-[#FCFCFC] s1280:h-[24px] pointer-events-none
-"
-            ></div> */}
+          <div>
             {tableOfContents.map((card, index) => {
               if (card.isActive) {
                 return <TableOfContentCard key={index} {...card} />;
               }
             })}
-          </section>
+            {/* <div
+            ></div> */}
+          </div>
         </div>
-        <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 flex items-start justify-center">
-          <div className="w-full h-[340px] s390:h-[237px] s412:h-[254px] s430:h-[256px] min-h-[160px] s1280:w-[394px] s1280:h-[440px] s1512:w-[484px] s1512:h-[530px] s1728:w-[560px] s1728:h-[600px] s1920:w-[592px] s1920:h-[620px] border-[3px] border-dashed border-[#00979A80] s1280:-mt-5 s1512:-mt-10 rounded-b-[300px] p-2 pt-0 s1280:p-3 s1280:pt-0 subnested-photo-animate">
-            <div className="w-full h-full overflow-hidden shadow-[0px_0px_7.5px_0px_#00979A40] rounded-b-[300px]">
+        <div>
+          <div>
+            <div>
               <ImgFetcher
                 className="object-cover"
                 src={fetchData?.imgCover || health}
@@ -165,14 +149,11 @@ const Page = async ({ params }: PropsPageType) => {
           <CircleAnimate key={index} {...circle} />
         ))}
         {/* video */}
-        <section
-          id="video"
-          className="relative z-[2] mb-20 s1280:mb-[40px] s1512:mb-20"
-        >
+        <section id="video" className="sub-nested-video-section">
           <BorderSubNested
             label="Video"
-            className="w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1512:mb-8"
-            labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
+            className="sub-nested-video-label"
+            labelStyle="sub-nested-video-label-style"
           />
           <VideoTab
             videoSrc={
@@ -188,22 +169,17 @@ const Page = async ({ params }: PropsPageType) => {
         </section>
         {/* benefits */}
         {fetchData?.benefits && (
-          <section
-            id="advantages"
-            className="relative z-[2] s1512:h-full flex gap-y-[18px] s1280:gap-y-0 s1280:flex-col flex-wrap s1512:flex-nowrap items-center s1512:flex-row s1512:justify-start s1512:items-center s1512:gap-x-[44px] mb-5 s1280:mb-[16px] s1512:mb-24"
-          >
-            <section className="s1512:h-full flex items-center justify-between gap-x-4 s1280:gap-x-0 s1512:justify-start s1512:items-center w-full s1512:gap-x-[14px] s1512:w-fit">
-              <div className="flex flex-col items-start justify-center">
+          <section id="advantages" className="sub-nested-advantages">
+            <div>
+              <div>
                 <div className="w-full">
-                  <h2 className="font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-center [text-shadow:0px_3px_2.8px_#00000040]">
-                    {locale === "ru" ? "Преимущества" : "Advantages"}
-                  </h2>
+                  <h2>{locale === "ru" ? "Преимущества" : "Advantages"}</h2>
                 </div>
-                <div className="s1280:h-[463px] s1280:w-[259px] s1600:w-[330px] s1600:h-[589px]">
+                <div>
                   <ImgFetcher width={1500} height={1500} src={benefitIcon} />
                 </div>
               </div>
-              <div className="s1512:h-full flex flex-col items-center gap-y-[18px] s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-end s1512:flex-col s1512:justify-between s1512:gap-y-[72px]">
+              <div>
                 <SubTreatAdvantagesIntersectionObserver />
                 <BenefCard
                   desc={fetchData?.benefits.items[0].desc || ""}
@@ -220,12 +196,12 @@ const Page = async ({ params }: PropsPageType) => {
                   title={fetchData?.benefits.items[2].title || ""}
                 />
               </div>
-            </section>
-            <section className="bg-[#DAEDE645] rounded-[40px] p-4 s1280:p-9 w-full flex flex-col gap-y-16 s1512:pe-12 s1600:pe-28 relative z-[10]">
+            </div>
+            <div>
               {/* category */}
               <div className="text-[#474744]">
                 <div className="mb-8 s1280:mb-5">
-                  <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
+                  <h4 className="">
                     <span className="w-[18px] h-[39px]">
                       <ImgFetcher src={person} />
                     </span>
@@ -322,11 +298,10 @@ const Page = async ({ params }: PropsPageType) => {
                   </li>
                 </ul>
               </div>
-            </section>
+            </div>
           </section>
         )}
         <LeadForm className="my-10 relative z-[2]" />
-
         <section className="mb-10 relative z-[2]">
           {fetchData?.posts && fetchData?.posts.length > 0 && (
             <PrePostLayout
