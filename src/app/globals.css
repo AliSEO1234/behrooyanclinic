@@ -40,14 +40,14 @@ html {
     @apply font-normal text-[14px] s1512:text-[16px] s1728:text-[18px] s1920:text-[20px] text-[#474744] leading-[27px] s1512:leading-[31px] s1728:leading-[43px] mb-2 s1280:mb-5;
   }
   .sub-nested-home-first-section > div:first-child > div:last-child {
-    @apply flex items-center justify-between sm:justify-center s1280:gap-x-8 pb-1;
+    @apply flex items-center justify-center gap-x-4 s1280:gap-x-8 pb-1 relative;
   }
   /* border table of content */
   .sub-nested-home-first-section
     > div:first-child
     > div:last-child
     > div:last-child {
-    @apply absolute z-0 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 s1280:w-[120%] bg-gradient-to-r from-[#FCFCFC] via-[#CFEAEB] to-[#FCFCFC] s1280:h-[24px] pointer-events-none;
+    @apply absolute z-[1] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 s1280:w-[600px] s1512:h-[66px] s1512:w-[709px] s1728:w-[888px]  bg-gradient-to-r from-[#FCFCFC] via-[#CFEAEB] to-[#FCFCFC] s1280:h-[24px];
   }
   /* image layout */
   .sub-nested-home-first-section > div:last-child {
@@ -85,23 +85,23 @@ html {
   .sub-nested-advantages > div:first-child > div:last-child {
     @apply s1280:h-[463px] s1280:w-[259px] s1600:w-[330px] s1600:h-[589px];
   }
-  .benefits-card{
-    @apply benefit-card-container z-[2] bg-white shadow-[0px_4px_15px_#00000010] rounded-[20px] s1280:rounded-[40px] px-4 py-2 leading-[17px] s1280:px-4 s1728:px-6 s1280:py-4 s1280:leading-[25px] w-[208px] h-[104px] s1280:w-[269px] s1728:w-[357px] s1280:h-[130px]
+  .benefits-card {
+    @apply  z-[2] bg-white shadow-[0px_4px_15px_#00000010] rounded-[20px] s1280:rounded-[40px] px-4 py-2 leading-[17px] s1280:px-4 s1728:px-6 s1280:py-4 s1280:leading-[25px] w-[208px] h-[104px] s1280:w-[269px] s1728:w-[357px] s1280:h-[130px];
   }
-  .benefits-card h3{
-    @apply font-medium text-[#3EBB9A] text-[14px] s1280:text-[16px] s1728:text-[20px] line-clamp-1
+  .benefits-card h3 {
+    @apply font-medium text-[#3EBB9A] text-[14px] s1280:text-[16px] s1728:text-[20px] line-clamp-1;
   }
-  .benefits-card p{
-    @apply font-normal text-[14px] s1280:text-[16px] s1728:text-[20px] line-clamp-3
+  .benefits-card p {
+    @apply font-normal text-[14px] s1280:text-[16px] s1728:text-[20px] line-clamp-3;
   }
-  .benefit-border-card{
-    @apply benefit-border-container z-[1] h-0 w-[38px] rotate-90 s1280:rotate-0 s1280:w-[47px] s1512:w-[144px] relative s1512:rotate-90
+  .benefit-border-card {
+    @apply benefit-border-container z-[1] h-0 w-[38px] rotate-90 s1280:rotate-0 s1280:w-[47px] s1512:w-[144px] relative s1512:rotate-90;
   }
-  .benefit-border-card div{
-    @apply w-[22px] h-[22px] bg-[#B7EACC] rounded-full flex-cen p-[6px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+  .benefit-border-card div {
+    @apply w-[22px] h-[22px] bg-[#B7EACC] rounded-full flex-cen p-[6px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
   }
-  .benefit-border-card div span{
-    @apply w-full h-full bg-gradient-to-tr from-[#00979A] to-[#82DFB5] rounded-full
+  .benefit-border-card div span {
+    @apply w-full h-full bg-gradient-to-tr from-[#00979A] to-[#82DFB5] rounded-full;
   }
 
   .sub-nested-advantages > div:first-child > div:last-child {
@@ -111,8 +111,8 @@ html {
   .sub-nested-advantages > div:last-child {
     @apply bg-[#DAEDE645] rounded-[40px] p-4 s1280:p-9 w-full flex flex-col gap-y-16 s1512:pe-12 s1600:pe-28 relative z-[10];
   }
-  .sub-nested-advantages > div:last-child >div >div>h4{
-    @apply flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]
+  .sub-nested-advantages > div:last-child > div > div > h4 {
+    @apply flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px];
   }
   /* subnested style class */
   /* pre post */
@@ -544,6 +544,51 @@ html {
     font-weight: 700;
     font-display: swap;
     font-style: normal;
+  }
+}
+@media only screen and (min-width: 1512px) {
+  .benefit-card-container:nth-child(3) {
+    transform: translateY(-210%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.5s;
+    transition-delay: 0.3s;
+  }
+
+  .benefit-card-container:nth-child(5) {
+    transform: translateY(-210%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.5s;
+    transition-delay: 1s;
+  }
+
+  .benefit-card-container.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .benefit-border-container:nth-child(2) {
+    transform: translateY(-5800%) rotate(90deg);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.5s;
+    transition-delay: 0.3s;
+  }
+
+  .benefit-border-container:nth-child(4) {
+    transform: translateY(-5800%) rotate(90deg);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.5s;
+    transition-delay: 1s;
+  }
+
+  .benefit-border-container.active {
+    transform: translateY(0) rotate(90deg);
+    opacity: 1;
+    visibility: visible;
   }
 }
 /* apinner loading */

@@ -11,8 +11,8 @@ const PrePostCard = ({ icon, position }: PrePostCardType) => {
         <div>
           <p className="font-black s1280:text-[14px] s1512:text-[16px] s1728:text-[18px] s1920:text-[20px] text-center text-[#019E9F]">
             {position === "post"
-              ? "Post-operative Care Instructions"
-              : "Pre-operative Guidelines"}
+              ? "Pre-operative Guidelines"
+              : "Post-operative Care Instructions"}
           </p>
         </div>
       </div>

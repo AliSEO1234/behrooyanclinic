@@ -41,12 +41,12 @@ const PrePostLayout = ({
         <button
           onClick={scrollRight}
           className={`pre-post-btn right-0 ${
-            position === "post" ? "right-0" : "-right-9"
+            position === "post" ? "right-0" : "-right-[35px]"
           }`}
         >
           <IoIosArrowForward className="size-6" />
         </button>
-        <button onClick={scrollLeft} className={`pre-post-btn ${position === "post" ? "-left-8" : "-left-2 "} -left-8`}>
+        <button onClick={scrollLeft} className={`pre-post-btn ${position === "post" ? "-left-8" : "left-0"} -left-8`}>
           <IoIosArrowForward className="size-6 rotate-180" />
         </button>
         <hr className="w-full h-[18px] bg-[#00A8A91A] absolute top-1/2 -translate-y-1/2 right-0 z-[1]" />

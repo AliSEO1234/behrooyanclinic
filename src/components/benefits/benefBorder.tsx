@@ -1,7 +1,7 @@
 const BenefBorder = () => {
   return (
     <div
-      className="benefit-border-card"
+      className="benefit-border-card benefit-border-container"
       style={{
         border: "1px dashed",
         borderImageSource: "linear-gradient(50deg, #000000 0%, #FCFCFC 100%)",

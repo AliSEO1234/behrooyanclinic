@@ -85,7 +85,7 @@ import ivf from "@/assets/images/subnested/In Vitro Fertilization (IVF).jpg";
 import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg";
 import smartlens from "@/assets/images/subnested/Smart lens.jpg";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.jpg";
-
+import dentalbonding from "@/assets/images/subnested/bonding.jpg"
 export const allSubCategory = [
   {
     img: hair,
@@ -444,6 +444,15 @@ export const allSubNestedCategory = [
     categoryKey: "dental-treatments",
     path: "6-4-dental-implants",
     subCategoryKey: "implantology",
+  },
+  {
+    img: dentalbonding,
+    title: "Dental Bonding",  
+    description:
+      "Are you self-conscious about minor imperfections in your smile, such as chipped, cracked, stained, or unevenly spaced teeth? Imagine a quick, effective, and affordable solution that can transform your smile and boost your confidence. In Turkey, skilled dental professionals offer high-quality dental bonding procedures, and AZPO Health is here to connect you with the expertise you need for a brighter, more confident you.",
+    categoryKey: "dental-treatments",
+    path: "dental-bonding",
+    subCategoryKey: "cosmetic-dentistry",
   },
   // dentistry
   {

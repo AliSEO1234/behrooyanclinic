@@ -77,6 +77,7 @@ import ivf from "@/assets/images/subnested/In Vitro Fertilization (IVF).jpg";
 import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg";
 import smartlens from "@/assets/images/subnested/Smart lens.jpg";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.jpg";
+import dentalbonding from "@/assets/images/subnested/bonding.jpg"
 export const categoryDataHandler = (key: string, locale: string) => {
   const findSubCategories = allSubCategory.filter(
     (sub) => sub.categoryKey === key
@@ -3354,7 +3355,7 @@ export const dataSubCategoryHandler = (
       descriptionTop:
         locale === "ru"
           ? "Устали от зубной боли и беспокоитесь о потере естественной улыбки? Узнайте, как терапия корневых каналов в Турции может стать вашим доступным и качественным решением. AZPO Health предлагает комплексные пакеты стоматологической помощи в Стамбуле, Анталии и Алании, сочетая экспертное лечение с расслабляющим медицинским туризмом."
-          : "Tired of tooth pain and worried about losing your natural smile? Discover how root canal therapy in Turkey can be your affordable and high-quality solution. AZPO Health offers comprehensive dental care packages in Istanbul, Antalya, and Alanya, combining expert treatment with a relaxing medical tourism experience.",
+          : "Tired of tooth pain and worried about losing your natural smile? Discover how root canal therapy in Turkey can be your affordable and high-quality solution. AZPO Health offers comprehensive dental care packages in Istanbul, Antalya, Izmir, Cappadocia, and Alanya, combining expert treatment with a relaxing medical tourism experience.",
       benefits: {
         items: [
           {
@@ -3381,32 +3382,73 @@ export const dataSubCategoryHandler = (
         ],
         categories: [
           {
-            header: locale === "ru" ? "Who It’s For" : "Who It’s For",
+            header: locale === "ru" ? "Who It’s For" : "Description",
             desc:
               locale === "ru"
                 ? "Имеют серьезный кариес или повреждение пульпы.Испытывают такие симптомы, как сильная боль при жевании, длительная чувствительность к горячему или холодному, или отек и болезненность десен.Имеют треснувший или сколотый зуб, затронувший пульпу."
-                : "Have severe tooth decay or damage to the pulp.Experience symptoms such as intense pain when chewing, prolonged sensitivity to hot or cold, or swelling and tenderness in the gums.",
+                : "Root Canal Therapy is a procedure to treat and save teeth with infected or damaged pulp, helping to prevent further infection and restore the tooth’s function. The process involves removing the infected pulp, cleaning and disinfecting the root canals, and sealing them to prevent reinfection.",
           },
           {
-            header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: locale === "ru" ? "" : "",
-            // desc:
-            //   locale === "ru"
-            //     ? ""
-            //     : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
+            header: locale === "ru" ? "Важные аспекты" : "How It Works",
+            decsList: locale === "ru" ? "" : "Root canal treatment starts with X-rays to assess the infection, followed by local anesthesia for a painless procedure. The dentist removes the infected pulp through a small opening, then cleans and disinfects the root canals. After sealing them with a biocompatible material, a filling or crown is placed to restore the tooth’s strength and function.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Как это работает" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "Ваш стоматолог или эндодонтист оценит состояние зуба с помощью рентгеновских снимков и клинических тестов. Если обнаружено, что пульпа инфицирована или воспалена, рекомендуется лечение корневого канала."
-                : "Your dentist or endodontist will evaluate the condition of the tooth through x-rays and clinical tests. If the pulp is found to be infected or inflamed, root canal treatment is recommended.",
+                : "Root canal treatment is needed for severe decay, pulp damage, or infection. Symptoms include pain, sensitivity, swelling, or a cracked tooth. It helps save the tooth and prevent extraction.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "Is it painful?",
+          answer: locale === "ru" ? "" : "Not during the procedure – some discomfort after is common"
+        },
+        {
+          question: locale === "ru" ? "" : "How long does it take?",
+          answer: locale === "ru" ? "" : "1–2 visits, depending on the case"
+        },
+        {
+          question: locale === "ru" ? "" : "Is a crown always needed?",
+          answer: locale === "ru" ? "" : "Usually yes, to protect the tooth long-term"
+        },
+        {
+          question: locale === "ru" ? "" : "Can the infection return?",
+          answer: locale === "ru" ? "" : "Rarely, if treatment is done properly"
+        },
+        {
+          question: locale === "ru" ? "" : "Will the tooth look different?",
+          answer: locale === "ru" ? "" : "Not with a crown – appearance is preserved"
+        },
+        {
+          question: locale === "ru" ? "" : "Does my tooth weaken after a root canal?",
+          answer: locale === "ru" ? "" : "Yes, the tooth may weaken, so a crown is often recommended."
+        },
+        {
+          question: locale === "ru" ? "" : "What if my tooth breaks after a root canal?",
+          answer: locale === "ru" ? "" : "Contact your dentist right away. A crown or other treatment may be needed."
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Expect soreness for 2–3 days – use pain relievers",
+        locale === "ru" ? "" : "Avoid chewing on treated tooth until permanent filling/crown",
+        locale === "ru" ? "" : "Keep area clean – brush and floss gently",
+        locale === "ru" ? "" : "Follow-up for crown placement is critical",
+        locale === "ru" ? "" : "Use prescribed medications as directed",
+        locale === "ru" ? "" : "Avoid smoking.",
+        locale === "ru" ? "" : "Pain and swelling should subside within a few days.",
+        locale === "ru" ? "" : "Avoid hot or cold foods.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Take antibiotics if prescribed ahead of time",
+        locale === "ru" ? "" : "Eat a light meal unless told otherwise",
+        locale === "ru" ? "" : "Inform your dentist of any medical conditions",
+        locale === "ru" ? "" : "Expect the area to be numb during procedure",
+        locale === "ru" ? "" : "Avoid hard, hot, or cold foods on the day of treatment.",
+        locale === "ru" ? "" : "Clean your teeth before the treatment.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -3414,22 +3456,161 @@ export const dataSubCategoryHandler = (
             ? "Лечение корневого канала - это высокоэффективная процедура для спасения поврежденного или инфицированного зуба, устранения боли и восстановления нормальной функции. С современными методиками лечение корневого канала относительно безболезненно и быстро, большинство пациентов возвращаются к нормальной деятельности в тот же день. Удаляя инфекцию и сохраняя естественный зуб, лечение корневого канала помогает поддерживать долгосрочное здоровье полости рта и предотвращать дальнейшие осложнения. При правильном уходе пролеченные зубы могут служить всю жизнь, обеспечивая долговременное решение проблемы повреждения и инфекции зуба."
             : "Root canal treatment is a highly effective procedure for saving a damaged or infected tooth, alleviating pain, and restoring normal function. With modern techniques, root canal therapy is relatively painless and quick, with most patients returning to normal activities the same day. By removing infection and preserving the natural tooth, root canal treatment helps maintain long-term oral health and prevent further complications. With proper care, treated teeth can last a lifetime, providing a lasting solution to tooth damage and infection.",
       },
-      subCategoryContent: {
-        title:
-          locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
-      },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
             ? "Почему стоит выбрать Турцию для фаллопластики по увеличению полового члена с AZPO Health?"
-            : "Why Choose Turkey and AZPO Health for Your Root Canal Therapy?",
+            : "Endodontic Excellence: Pain-Free Root Canal Therapy in Turkey Awaits You",
         content:
           locale === "ru"
             ? `
          <p><span style="color: rgb(27, 28, 29);">Когда речь идет о стоматологическом лечении, особенно о таком важном, как терапия корневых каналов, выбор правильного места и поставщика услуг имеет первостепенное значение. Турция стала ведущим направлением медицинского туризма, и на то есть веские причины. AZPO Health, с клиниками в Стамбуле, Анталии и Алании, находится в авангарде этой революции, предлагая стоматологическую помощь мирового класса со значительными преимуществами.</span></p><p><span style="color: rgb(27, 28, 29);">Непревзойденное Качество и Экспертиза:</span></p><p><span style="color: rgb(27, 28, 29);">Турция может похвастаться высококвалифицированным и прошедшим международную подготовку сообществом стоматологов. Стоматологи в Турции владеют новейшими методиками и технологиями, гарантируя, что вы получите лечение, соответствующее мировым стандартам. AZPO Health стремится нанимать только лучших, наши эндодонты обладают многолетним опытом и специальной подготовкой в процедурах корневых каналов. Мы используем самое современное оборудование и придерживаемся строгих гигиенических протоколов, гарантируя безопасное и эффективное лечение. Наши клиники современные, комфортабельные и созданы для обеспечения спокойной обстановки для наших пациентов. Мы понимаем, что стоматологические процедуры могут быть пугающими, и мы стремимся сделать ваш опыт максимально расслабленным и беззаботным.</span></p><p><span style="color: rgb(27, 28, 29);">Доступность Без Компромисса:</span></p><p><span style="color: rgb(27, 28, 29);">Одна из самых веских причин выбрать Турцию для терапии корневых каналов – это стоимость. По сравнению с Европой, Великобританией или Северной Америкой, стоматологическое лечение в Турции значительно доступнее. Эта экономическая эффективность не означает компромисса в качестве. В AZPO Health мы считаем, что каждый заслуживает доступа к отличному стоматологическому обслуживанию. Выбрав нас, вы можете получить терапию корневых каналов высшего уровня по цене, которая будет на порядок ниже, чем в вашей родной стране. Это позволит вам значительно сэкономить на стоимости лечения, наслаждаясь отдыхом в прекрасной стране.</span></p><p><span style="color: rgb(27, 28, 29);">Комплексный Пакет AZPO Health:</span></p><p><span style="color: rgb(27, 28, 29);">AZPO Health выходит за рамки простого предоставления исключительного стоматологического лечения. Мы предлагаем комплексные пакеты, разработанные, чтобы сделать ваше путешествие в медицинский туризм беспрепятственным и беззаботным. Наши пакеты обычно включают:</span></p><p>Экспертная Терапия Корневых Каналов: Проводится высококвалифицированными и опытными эндодонтами с использованием новейших методов и материалов.</p><p>Проживание: Комфортабельные и удобные варианты размещения в Стамбуле, Анталии или Алании, в зависимости от выбранного вами местоположения клиники.</p><p>Трансфер из Аэропорта: Беспроблемный трансфер из и в аэропорт, обеспечивающий гладкое прибытие и отъезд.</p><p>Транспорт Внутри Страны: Помощь с транспортом в клинику и обратно, что делает ваше пребывание комфортным и удобным.</p><p>Индивидуальный План Лечения: Индивидуальный план лечения, разработанный с учетом ваших конкретных потребностей и состояния зубов.</p><p>Персональный Координатор Пациента: Персональный координатор, который будет помогать вам на протяжении всего вашего пути, от первоначальной консультации до послеоперационного ухода.</p><p>Послеоперационный Уход и Рекомендации: Комплексные инструкции по послеоперационному уходу и поддержка для обеспечения оптимального заживления и долгосрочного успеха вашей терапии корневых каналов.</p><p><span style="color: rgb(27, 28, 29);">Выбор AZPO Health означает выбор целостного подхода к стоматологической помощи, сочетающего экспертное лечение с поддерживающим и комфортным пребыванием в прекрасном месте.</span></p><h3><strong style="color: rgb(27, 28, 29);">Понимание Терапии Корневых Каналов: Спасение Вашего Естественного Зуба</strong></h3><p><span style="color: rgb(27, 28, 29);">Что Такое Терапия Корневых Каналов?</span></p><p><span style="color: rgb(27, 28, 29);">Терапия корневых каналов, также известная как эндодонтическое лечение, – это процедура, разработанная для спасения зуба, который сильно разрушен или инфицирован. "Корневой канал" – это полые каналы внутри корня зуба, содержащие пульпу, которая состоит из нервов, кровеносных сосудов и соединительной ткани. Когда эта пульпа инфицируется или повреждается, это может вызвать значительную боль и, если ее не лечить, может привести к потере зуба.</span></p><p><span style="color: rgb(27, 28, 29);">Почему Необходима Терапия Корневых Каналов?</span></p><p><span style="color: rgb(27, 28, 29);">Пульпа внутри вашего зуба может быть повреждена или инфицирована по нескольким причинам:</span></p><p>Глубокий Кариес: Невылеченный кариес может достичь пульпы, позволяя бактериям инфицировать ее.</p><p>Трещина или Скол Зуба: Повреждение зуба может открыть пульпу для бактерий.</p><p>Повторные Стоматологические Процедуры: Многочисленные пломбы или стоматологические работы на одном и том же зубе иногда могут раздражать пульпу.</p><p>Травма Зуба: Травма зуба, даже без видимых трещин, может повредить пульпу.</p><p><span style="color: rgb(27, 28, 29);">Если инфицированную пульпу не удалить, это может вызвать:</span></p><p>Сильную Боль: Постоянную и интенсивную зубную боль.</p><p>Абсцесс: Болезненную инфекцию на корне зуба.</p><p>Потерю Костной Ткани: Инфекция может распространиться на окружающую кость.</p><p>Потерю Зуба: В конечном итоге зуб может потребоваться удалить.</p><p><span style="color: rgb(27, 28, 29);">Методы Терапии Корневых Каналов в AZPO Health:</span></p><p><span style="color: rgb(27, 28, 29);">В AZPO Health мы применяем передовые методы для обеспечения эффективного и комфортного лечения корневых каналов. Основные этапы терапии корневых каналов:</span></p><p>Диагностика и Анестезия: Процедура начинается с тщательного обследования, включая рентген, для оценки степени повреждения. Местная анестезия вводится для обезболивания зуба и окружающей области, обеспечивая безболезненное лечение.</p><p>Доступ к Корневому Каналу: Небольшое отверстие создается на коронке зуба для доступа к пульповой камере и корневым каналам.</p><p>Очистка и Формирование Канала: С помощью специальных инструментов инфицированная или поврежденная пульпа тщательно удаляется из корневых каналов. Затем каналы очищаются, дезинфицируются и формируются для подготовки к пломбированию. Мы используем роторную эндодонтию и апекслокаторы для повышения точности и эффективности.</p><p>Пломбирование Канала: После того, как каналы тщательно очищены и сформированы, они заполняются биосовместимым материалом, обычно гуттаперчей, вместе с силером, чтобы предотвратить повторное проникновение бактерий.</p><p>Реставрация: Заключительный этап включает восстановление зуба до его полной функции и внешнего вида. Обычно это включает установку зубной коронки на обработанный зуб для обеспечения прочности и защиты. В некоторых случаях может быть достаточно пломбы.</p><p><span style="color: rgb(27, 28, 29);">Преимущества Терапии Корневых Каналов:</span></p><p>Облегчение Боли: Терапия корневых каналов устраняет источник зубной боли, обеспечивая немедленное и длительное облегчение.</p><p>Сохранение Зуба: Она спасает ваш естественный зуб, предотвращая необходимость удаления и замены. Сохранение естественных зубов всегда является лучшим вариантом для здоровья полости рта.</p><p>Предотвращает Распространение Инфекции: Удаление инфицированной пульпы предотвращает распространение инфекции на другие зубы и челюстную кость.</p><p>Улучшение Здоровья Полости Рта: Лечение инфекции и восстановление зуба способствуют общему здоровью полости рта и благополучию.</p><p>Восстановление Функциональности: Вылеченный зуб может нормально функционировать после терапии корневых каналов, позволяя вам комфортно жевать, кусать и говорить.</p><p>Эстетика: С коронкой вылеченный зуб будет выглядеть естественно и гармонично сочетаться с вашей улыбкой.</p><p><span style="color: rgb(27, 28, 29);">Не позволяйте зубной боли контролировать вашу жизнь. Терапия корневых каналов в AZPO Health предлагает надежное и эффективное решение для восстановления вашего стоматологического здоровья и уверенности.</span></p><h3><strong style="color: rgb(27, 28, 29);">Реальные Истории Пациентов: Восстановление Улыбок и Жизней</strong></h3><p><span style="color: rgb(27, 28, 29);">Сара из Великобритании:</span></p><p><span style="color: rgb(27, 28, 29);">"В течение нескольких месяцев я страдала от мучительной зубной боли. Мой стоматолог в Великобритании сказал мне, что мне нужен корневой канал, но стоимость была невероятно высокой. Друг порекомендовал AZPO Health в Турции, и я решила узнать подробнее. С первой же онлайн-консультации я была впечатлена. Они были профессиональны, ответили на все мои вопросы, а цена была намного ниже, чем мне предложили дома. Сама процедура была безболезненной, а клиника была безупречной. Я была поражена уровнем заботы и профессионализма. Теперь я живу без боли и наслаждаюсь отдыхом в Алании. Спасибо, AZPO Health, за спасение моего зуба и моего кошелька!"</span></p><p><span style="color: rgb(27, 28, 29);">Дэвид из Германии:</span></p><p><span style="color: rgb(27, 28, 29);">"Я очень нервничал по поводу лечения корневых каналов. Я слышал истории о том, что это больно и неприятно. Но с того момента, как я прибыл в AZPO Health в Стамбуле, мои страхи развеялись. Стоматолог был таким нежным и объяснил каждый шаг процесса. Я честно не чувствовал никакой боли! Персонал был невероятно добрым и отзывчивым, и весь опыт был намного лучше, чем я когда-либо представлял. Я очень рекомендую AZPO Health всем, кому нужна стоматологическая помощь. Они действительно исключительны."</span></p><p><span style="color: rgb(27, 28, 29);">Мария из США:</span></p><p><span style="color: rgb(27, 28, 29);">"Поездка в Турцию для стоматологической работы была большим решением, но это было лучшее решение, которое я могла принять. Стоимость терапии корневых каналов в США просто заоблачная. AZPO Health предложил фантастический пакет, который включал в себя все – лечение, проживание, трансферы. Клиника в Анталии была прекрасна, а стоматологи – на высшем уровне. Я так довольна результатами и полученной заботой. Я чувствую, что моя улыбка вернулась, и я снова могу есть без боли. Спасибо, AZPO Health!"</span></p><h3><strong style="color: rgb(27, 28, 29);">AZPO Health: Ваш Надежный Партнер в Стоматологическом Превосходстве</strong></h3><p><span style="color: rgb(27, 28, 29);">AZPO Health – ведущая компания медицинского туризма в Турции, специализирующаяся на предоставлении исключительных медицинских услуг иностранным пациентам. С клиниками в Стамбуле, Анталии и Алании мы специализируемся на эстетических и оздоровительных процедурах, включая передовую стоматологию.</span></p><p><span style="color: rgb(27, 28, 29);">Почему Выбирают AZPO Health?</span></p><p>Опытные и Квалифицированные Специалисты: Наша команда состоит из высококвалифицированных и опытных стоматологов, эндодонтов и вспомогательного персонала, которые стремятся предоставлять медицинскую помощь самого высокого уровня.</p><p>Современное Оборудование: Мы используем современные клиники, оснащенные новейшими стоматологическими технологиями, обеспечивая точное и эффективное лечение.</p><p>Ориентированный на Пациента Подход: Мы уделяем первостепенное внимание вашему комфорту и благополучию, обеспечивая индивидуальный уход и внимание на протяжении всего вашего лечебного пути.</p><p>Многоязычный Персонал: Наша команда говорит на нескольких языках, обеспечивая четкое общение и понимание на протяжении всего вашего пребывания.</p><p>Комплексная Поддержка: От первоначальной консультации до послеоперационного наблюдения мы обеспечиваем полную поддержку и руководство.</p><p>Превосходное Расположение: Наши клиники расположены в красивых и доступных городах Турции – Стамбуле, Анталии и Алании – что позволяет вам совместить лечение с незабываемым отдыхом.</p><p><span style="color: rgb(27, 28, 29);">В AZPO Health мы понимаем важность здоровой и красивой улыбки. Мы стремимся предоставить вам наилучшую терапию корневых каналов, восстанавливая ваше стоматологическое здоровье и уверенность.</span></p><p><span style="color: rgb(27, 28, 29);">Готовы Спасти Свою Улыбку?</span></p><p><span style="color: rgb(27, 28, 29);">Не позволяйте зубной боли сдерживать вас и дальше. Свяжитесь с AZPO Health сегодня для бесплатной консультации и узнайте, насколько доступной и эффективной может быть терапия корневых каналов в Турции. Сделайте первый шаг к здоровой улыбке без боли и светлому будущему.</span></p><p><span style="color: rgb(27, 28, 29);">Свяжитесь с нами сейчас для получения индивидуального предложения!</span></p><p><br></p><p><br></p>
           `
-            : `<p><span style="color: rgb(27, 28, 29);">When considering dental treatment, especially something as crucial as root canal therapy, choosing the right location and provider is paramount. Turkey has emerged as a leading destination for medical tourism, and for good reason. AZPO Health, with its clinics in Istanbul, Antalya, and Alanya, stands at the forefront of this revolution, offering world-class dental care with significant advantages.</span></p><p><span style="color: rgb(27, 28, 29);">Unmatched Quality and Expertise:</span></p><p><span style="color: rgb(27, 28, 29);">Turkey boasts a highly skilled and internationally trained dental professional community. Dentists in Turkey are proficient in the latest techniques and technologies, ensuring you receive treatment that meets global standards. AZPO Health is committed to employing only the best, with our endodontists possessing years of experience and specialized training in root canal procedures. We utilize state-of-the-art equipment and adhere to stringent hygiene protocols, guaranteeing a safe and effective treatment experience. Our clinics are modern, comfortable, and designed to provide a calming environment for our patients. We understand that dental procedures can be daunting, and we strive to make your experience as relaxed and stress-free as possible.</span></p><p><span style="color: rgb(27, 28, 29);">Affordability Without Compromise:</span></p><p><span style="color: rgb(27, 28, 29);">One of the most compelling reasons to choose Turkey for root canal therapy is the cost. Compared to Europe, the UK, or North America, dental treatments in Turkey are significantly more affordable. This cost-effectiveness does not mean a compromise on quality. At AZPO Health, we believe that everyone deserves access to excellent dental care. By choosing us, you can receive top-tier root canal therapy at a fraction of the price you would pay in your home country. This allows you to save significantly on treatment costs while enjoying a holiday in a beautiful country.</span></p><p><span style="color: rgb(27, 28, 29);">The AZPO Health Comprehensive Package:</span></p><p><span style="color: rgb(27, 28, 29);">AZPO Health goes beyond just providing exceptional dental treatment. We offer comprehensive packages designed to make your medical tourism journey seamless and stress-free. Our packages typically include:</span></p><p>Expert Root Canal Therapy: Performed by highly qualified and experienced endodontists using the latest techniques and materials.</p><p>Accommodation: Comfortable and convenient accommodation options in Istanbul, Antalya, or Alanya, depending on your chosen clinic location.</p><p>Airport Transfers: Hassle-free transfers to and from the airport, ensuring smooth arrival and departure.</p><p>In-country Transportation: Assistance with transportation to and from your appointments, making your stay comfortable and convenient.</p><p>Personalized Treatment Plan: A tailored treatment plan designed to meet your specific needs and dental condition.</p><p>Dedicated Patient Coordinator: A personal coordinator to assist you throughout your journey, from initial consultation to post-treatment care.</p><p>Post-Treatment Care and Guidance: Comprehensive aftercare instructions and support to ensure optimal healing and long-term success of your root canal therapy.</p><p><span style="color: rgb(27, 28, 29);">Choosing AZPO Health means choosing a holistic approach to dental care, combining expert treatment with a supportive and comfortable experience in a beautiful setting.</span></p><h3><strong style="color: rgb(27, 28, 29);">Understanding Root Canal Therapy: Saving Your Natural Tooth</strong></h3><p><span style="color: rgb(27, 28, 29);">What is Root Canal Therapy?</span></p><p><span style="color: rgb(27, 28, 29);">Root canal therapy, also known as endodontic treatment, is a procedure designed to save a tooth that is badly decayed or infected. The "root canal" refers to the hollow channels within the root of the tooth that contain the pulp, which is made up of nerves, blood vessels, and connective tissue. When this pulp becomes infected or damaged, it can cause significant pain and, if left untreated, can lead to tooth loss.</span></p><p><span style="color: rgb(27, 28, 29);">Why is Root Canal Therapy Necessary?</span></p><p><span style="color: rgb(27, 28, 29);">The pulp inside your tooth can become damaged or infected due to several reasons:</span></p><p>Deep Decay: Untreated cavities can reach the pulp, allowing bacteria to infect it.</p><p>Cracked or Chipped Tooth: Damage to the tooth can expose the pulp to bacteria.</p><p>Repeated Dental Procedures: Multiple fillings or dental work on the same tooth can sometimes irritate the pulp.</p><p>Trauma to the Tooth: An injury to the tooth, even without visible cracks, can damage the pulp.</p><p><span style="color: rgb(27, 28, 29);">If the infected pulp is not removed, it can cause:</span></p><p>Severe Pain: Persistent and intense toothache.</p><p>Abscess: A painful infection at the root of the tooth.</p><p>Bone Loss: Infection can spread to the surrounding bone.</p><p>Tooth Loss: Ultimately, the tooth may need to be extracted.</p><p><span style="color: rgb(27, 28, 29);">Methods of Root Canal Therapy at AZPO Health:</span></p><p><span style="color: rgb(27, 28, 29);">At AZPO Health, we employ advanced techniques to ensure effective and comfortable root canal treatment. The primary steps involved in root canal therapy are:</span></p><p>Diagnosis and Anesthesia: The procedure begins with a thorough examination, including X-rays, to assess the extent of the damage. Local anesthesia is administered to numb the tooth and surrounding area, ensuring a pain-free experience.</p><p>Accessing the Root Canal: A small opening is created on the crown of the tooth to access the pulp chamber and root canals.</p><p>Cleaning and Shaping the Canal: Using specialized instruments, the infected or damaged pulp is carefully removed from the root canals. The canals are then cleaned, disinfected, and shaped to prepare them for filling. We utilize rotary endodontics and apex locators for enhanced precision and efficiency.</p><p>Filling the Canal: Once the canals are thoroughly cleaned and shaped, they are filled with a biocompatible material, usually gutta-percha, along with a sealer to prevent bacteria from re-entering.</p><p>Restoration: The final step involves restoring the tooth to its full function and appearance. This usually involves placing a dental crown over the treated tooth to provide strength and protection. In some cases, a filling may be sufficient.</p><p><span style="color: rgb(27, 28, 29);">Benefits of Root Canal Therapy:</span></p><p>Pain Relief: Root canal therapy eliminates the source of tooth pain, providing immediate and lasting relief.</p><p>Tooth Preservation: It saves your natural tooth, preventing the need for extraction and replacement. Maintaining your natural teeth is always the best option for oral health.</p><p>Prevents Spread of Infection: Removing the infected pulp prevents the infection from spreading to other teeth and the jawbone.</p><p>Improved Oral Health: By treating the infection and restoring the tooth, root canal therapy contributes to overall oral health and well-being.</p><p>Restored Functionality: A treated tooth can function normally after root canal therapy, allowing you to chew, bite, and speak comfortably.</p><p>Aesthetics: With a crown, the treated tooth will look natural and blend seamlessly with your smile.</p><p><span style="color: rgb(27, 28, 29);">Don't let tooth pain control your life. Root canal therapy at AZPO Health offers a reliable and effective solution to restore your dental health and confidence.</span></p><h3><strong style="color: rgb(27, 28, 29);">Real Patient Stories: Restoring Smiles and Lives</strong></h3><p><span style="color: rgb(27, 28, 29);">Sarah from the UK:</span></p><p><span style="color: rgb(27, 28, 29);">"For months, I had been suffering from excruciating tooth pain. My dentist in the UK told me I needed a root canal, but the cost was incredibly high. A friend recommended AZPO Health in Turkey, and I decided to look into it. From my first online consultation, I was impressed. They were professional, answered all my questions, and the price was a fraction of what I was quoted at home. The procedure itself was painless, and the clinic was spotless. I was amazed by the level of care and expertise. Now, I'm pain-free and enjoying my holiday in Alanya. Thank you, AZPO Health, for saving my tooth and my wallet!"</span></p><p><span style="color: rgb(27, 28, 29);">David from Germany:</span></p><p><span style="color: rgb(27, 28, 29);">"I was very nervous about getting a root canal. I had heard stories about it being painful and unpleasant. But from the moment I arrived at AZPO Health in Istanbul, my fears were put to rest. The dentist was so gentle and explained every step of the process. I honestly felt no pain at all! The staff were incredibly kind and helpful, and the whole experience was much better than I ever imagined. I highly recommend AZPO Health to anyone needing dental work. They are truly exceptional."</span></p><p><span style="color: rgb(27, 28, 29);">Maria from the USA:</span></p><p><span style="color: rgb(27, 28, 29);">"Traveling to Turkey for dental work was a big decision, but it was the best decision I could have made. The cost of root canal therapy in the US is outrageous. AZPO Health offered a fantastic package that included everything – treatment, accommodation, transfers. The clinic in Antalya was beautiful, and the dentists were top-notch. I am so happy with the results and the care I received. I feel like I have my smile back, and I can eat without pain again. Thank you, AZPO Health!"</span></p><h3><strong style="color: rgb(27, 28, 29);">AZPO Health: Your Trusted Partner in Dental Excellence</strong></h3><p><span style="color: rgb(27, 28, 29);">AZPO Health is a leading medical tourism company in Turkey, dedicated to providing exceptional healthcare services to international patients. With clinics in Istanbul, Antalya, and Alanya, we specialize in aesthetic and health treatments, including advanced dentistry.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health?</span></p><p>Experienced and Qualified Professionals: Our team comprises highly skilled and experienced dentists, endodontists, and support staff who are committed to providing the highest standard of care.</p><p>State-of-the-Art Facilities: We utilize modern clinics equipped with the latest dental technology, ensuring precise and effective treatments.</p><p>Patient-Centered Approach: We prioritize your comfort and well-being, providing personalized care and attention throughout your treatment journey.</p><p>Multilingual Staff: Our team speaks multiple languages, ensuring clear communication and understanding throughout your experience.</p><p>Comprehensive Support: From initial consultation to post-treatment follow-up, we provide complete support and guidance.</p><p>Prime Locations: Our clinics are located in beautiful and accessible cities in Turkey – Istanbul, Antalya, and Alanya – allowing you to combine your treatment with a memorable vacation.</p><p><span style="color: rgb(27, 28, 29);">At AZPO Health, we understand the importance of a healthy and beautiful smile. We are committed to providing you with the best possible root canal therapy experience, restoring your dental health and confidence.</span></p><p><span style="color: rgb(27, 28, 29);">Ready to Save Your Smile?</span></p><p><span style="color: rgb(27, 28, 29);">Don't let tooth pain hold you back any longer. Contact AZPO Health today for a free consultation and discover how affordable and effective root canal therapy in Turkey can be. Take the first step towards a pain-free, healthy smile and a brighter future.</span></p><p><span style="color: rgb(27, 28, 29);">Contact us now for your personalized quote!</span></p><p><br></p><p><br></p>`,
+            : `<p dir="ltr">Are you experiencing persistent toothache, sensitivity to hot and cold, or swelling around your gums? These could be signs that you need root canal therapy. Many people feel anxious about this procedure, but at AZPO Health in Turkey, we transform this experience. We understand your concerns and are dedicated to providing pain-free, effective root canal treatment, restoring your dental health and confidence. Let us address your pain points and guide you towards a healthier, happier smile.</p>
+<h3 dir="ltr">Why Choose Turkey and AZPO Health for Your Root Canal Therapy?</h3>
+<p dir="ltr">When considering dental treatment, especially something as crucial as root canal therapy, choosing the right location and provider is paramount. Turkey has emerged as a leading destination for medical tourism, offering world-class dental care with significant advantages.</p>
+<p dir="ltr">Unmatched Quality and Expertise:</p>
+<p dir="ltr">Turkey boasts a highly skilled and internationally trained dental professional community. Dentists in Turkey are proficient in the latest techniques and technologies, ensuring you receive treatment that meets global standards. AZPO Health is committed to employing only the best, with our endodontists possessing years of experience and specialized training in root canal procedures. We utilize state-of-the-art equipment and adhere to stringent hygiene protocols, guaranteeing a safe and effective treatment experience. Our clinics are modern, comfortable, and designed to provide a calming environment for our patients. We understand that dental procedures can be daunting, and we strive to make your experience as relaxed and stress-free as possible.</p>
+<p dir="ltr">Affordability Without Compromise:</p>
+<p dir="ltr">One of the most compelling reasons to choose Turkey for root canal therapy is the cost. Compared to Europe, the UK, or North America, dental treatments in Turkey are significantly more affordable. This cost-effectiveness does not mean a compromise on quality. At AZPO Health, we believe that everyone deserves access to excellent dental care. By choosing us, you can receive top-tier root canal therapy at a fraction of the price you would pay in your home country. This allows you to save significantly on treatment costs while enjoying a holiday in a beautiful country.</p>
+<p dir="ltr">The AZPO Health Comprehensive Package:</p>
+<p dir="ltr">AZPO Health goes beyond just providing exceptional dental treatment. We offer comprehensive packages designed to make your medical tourism journey seamless and stress-free. Our packages typically include:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Expert Root Canal Therapy: Performed by highly qualified and experienced endodontists using the latest techniques and materials.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Accommodation: Comfortable and convenient accommodation options in Istanbul, Antalya, or Alanya and Izmir, depending on your chosen clinic location.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Airport Transfers: Hassle-free transfers to and from the airport, ensuring smooth arrival and departure.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">In-country Transportation: Assistance with transportation to and from your appointments, making your stay comfortable and convenient.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Treatment Plan: A tailored treatment plan designed to meet your specific needs and dental condition.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Dedicated Patient Coordinator: A personal coordinator to assist you throughout your journey, from initial consultation to post-treatment care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Post-Treatment Care and Guidance: Comprehensive aftercare instructions and support to ensure optimal healing and long-term success of your root canal therapy.</p>
+</li>
+</ul>
+<p dir="ltr">Choosing AZPO Health means choosing a holistic approach to dental care, combining expert treatment with a supportive and comfortable experience in a beautiful setting.</p>
+<h3 dir="ltr">Understanding Root Canal Therapy: Saving Your Natural Tooth</h3>
+<p dir="ltr">What is Root Canal Therapy?</p>
+<p dir="ltr">Root canal therapy, also known as endodontic treatment, is a procedure designed to save a tooth that is badly decayed or infected. The "root canal" refers to the hollow channels within the root of the tooth that contain the pulp, which is made up of nerves, blood vessels, and connective tissue. When this pulp becomes infected or damaged, it can cause significant pain and, if left untreated, can lead to tooth loss.</p>
+<p dir="ltr">Why is Root Canal Therapy Necessary?</p>
+<p dir="ltr">The pulp inside your tooth can become damaged or infected due to several reasons:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Deep Decay: Untreated cavities can reach the pulp, allowing bacteria to infect it.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cracked or Chipped Tooth: Damage to the tooth can expose the pulp to bacteria.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Repeated Dental Procedures: Multiple fillings or dental work on the same tooth can sometimes irritate the pulp.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Trauma to the Tooth: An injury to the tooth, even without visible cracks, can damage the pulp.</p>
+</li>
+</ul>
+<p dir="ltr">If the infected pulp is not removed, it can cause:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Severe Pain: Persistent and intense toothache.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Abscess: A painful infection at the root of the tooth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Bone Loss: Infection can spread to the surrounding bone.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Tooth Loss: Ultimately, the tooth may need to be extracted.</p>
+</li>
+</ul>
+<p dir="ltr">Methods of Root Canal Therapy at AZPO Health:</p>
+<p dir="ltr">At AZPO Health, we employ advanced techniques to ensure effective and comfortable root canal treatment. The primary steps involved in root canal therapy are:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Diagnosis and Anesthesia: The procedure begins with a thorough examination, including X-rays, to assess the extent of the damage. Local anesthesia is administered to numb the tooth and surrounding area, ensuring a pain-free experience.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Accessing the Root Canal: A small opening is created on the crown of the tooth to access the pulp chamber and root canals.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cleaning and Shaping the Canal: Using specialized instruments, the infected or damaged pulp is carefully removed from the root canals. The canals are then cleaned, disinfected, and shaped to prepare them for filling. We utilize rotary endodontics and apex locators for enhanced precision and efficiency.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Filling the Canal: Once the canals are thoroughly cleaned and shaped, they are filled with a biocompatible material, usually gutta-percha, along with a sealer to prevent bacteria from re-entering.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Restoration: The final step involves restoring the tooth to its full function and appearance. This usually involves placing a dental crown over the treated tooth to provide strength and protection. In some cases, a filling may be sufficient.</p>
+</li>
+</ol>
+<p dir="ltr">Benefits of Root Canal Therapy:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pain Relief: Root canal therapy eliminates the source of tooth pain, providing immediate and lasting relief.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Tooth Preservation: It saves your natural tooth, preventing the need for extraction and replacement. Maintaining your natural teeth is always the best option for oral health.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Prevents Spread of Infection: Removing the infected pulp prevents the infection from spreading to other teeth and the jawbone.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Improved Oral Health: By treating the infection and restoring the tooth, root canal therapy contributes to overall oral health and well-being.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Restored Functionality: A treated tooth can function normally after root canal therapy, allowing you to chew, bite, and speak comfortably.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Aesthetics: With a crown, the treated tooth will look natural and blend seamlessly with your smile.</p>
+</li>
+</ul>
+<p dir="ltr">Don't let tooth pain control your life. Root canal therapy at AZPO Health offers a reliable and effective solution to restore your dental health and confidence.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">AZPO Health: Your Trusted Partner in Dental Excellence</h3>
+<p dir="ltr">AZPO Health is a leading medical tourism company in Turkey, dedicated to providing exceptional healthcare services to international patients, we specialize in aesthetic and health treatments, including advanced dentistry.</p>
+<p dir="ltr">Why Choose AZPO Health?</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced and Qualified Professionals: Our team comprises highly skilled and experienced dentists, endodontists, and support staff who are committed to providing the highest standard of care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">State-of-the-Art Facilities: We utilize modern clinics equipped with the latest dental technology, ensuring precise and effective treatments.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Patient-Centered Approach: We prioritize your comfort and well-being, providing personalized care and attention throughout your treatment journey.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Multilingual Staff: Our team speaks multiple languages, ensuring clear communication and understanding throughout your experience.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Support: From initial consultation to post-treatment follow-up, we provide complete support and guidance.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Prime Locations: Our clinics are located in beautiful and accessible cities in Turkey&ndash; allowing you to combine your treatment with a memorable vacation.</p>
+</li>
+</ul>
+<p dir="ltr">we understand the importance of a healthy and beautiful smile. We are committed to providing you with the best possible root canal therapy experience, restoring your dental health and confidence.</p>
+<p dir="ltr">Ready to Save Your Smile?</p>
+<p dir="ltr">Don't let tooth pain hold you back any longer. Contact AZPO Health today for a free consultation and discover how affordable and effective root canal therapy in Turkey can be. Take the first step towards a pain-free, healthy smile and a brighter future.</p>
+<p dir="ltr">Contact us now for your personalized quote!</p>
+<h3 dir="ltr">Real Patient Stories: Restoring Smiles and Lives</h3>
+<p dir="ltr">Sarah from the UK:</p>
+<p dir="ltr">"For months, I had been suffering from excruciating tooth pain. My dentist in the UK told me I needed a root canal, but the cost was incredibly high. A friend recommended AZPO Health in Turkey, and I decided to look into it. From my first online consultation, I was impressed. They were professional, answered all my questions, and the price was a fraction of what I was quoted at home. The procedure itself was painless, and the clinic was spotless. I was amazed by the level of care and expertise. Now, I'm pain-free and enjoying my holiday in Alanya. Thank you, AZPO Health, for saving my tooth and my wallet!"</p>
+<p dir="ltr">David from Germany:</p>
+<p dir="ltr">"I was very nervous about getting a root canal. I had heard stories about it being painful and unpleasant. But from the moment I arrived at AZPO Health in Istanbul, my fears were put to rest. The dentist was so gentle and explained every step of the process. I honestly felt no pain at all! The staff were incredibly kind and helpful, and the whole experience was much better than I ever imagined. I highly recommend AZPO Health to anyone needing dental work. They are truly exceptional."</p>
+<p dir="ltr">Maria from the USA:</p>
+<p dir="ltr">"Traveling to Turkey for dental work was a big decision, but it was the best decision I could have made. The cost of root canal therapy in the US is outrageous. AZPO Health offered a fantastic package that included everything &ndash; treatment, accommodation, transfers. The clinic in Antalya was beautiful, and the dentists were top-notch. I am so happy with the results and the care I received. I feel like I have my smile back, and I can eat without pain again. Thank you, AZPO Health!"</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "root-canal-therapy" ? rootcanal : null,
       subNestedKey: "root-canal-therapy",
@@ -3440,7 +3621,7 @@ export const dataSubCategoryHandler = (
       title:
         locale === "ru"
           ? "Laminate Veneers in Turkey: Achieve Your Dream Smile with Affordable Excellence at AZPO Health"
-          : "Save Your Natural Smile with Expert Root Canal Therapy in Turkey",
+          : "Laminate Veneers in Turkey: Achieve Your Dream Smile with Affordable Excellence at AZPO Health",
       descriptionTop:
         locale === "ru"
           ? "Seeking a subtle yet transformative smile enhancement? Laminate veneers in Turkey have become a highly popular cosmetic dentistry option, offering a minimally invasive path to a flawless smile at exceptional prices. Discover how AZPO Health connects you with expert dentists and all-inclusive packages to achieve the radiant, confident smile you've always wanted with beautiful laminate veneers."
@@ -3471,42 +3652,76 @@ export const dataSubCategoryHandler = (
         ],
         categories: [
           {
-            header: locale === "ru" ? "Who It’s For" : "Who It’s For",
+            header: locale === "ru" ? "Who It’s For" : "Description",
             desc:
               locale === "ru"
                 ? "E-Max veneers are ideal for individuals who wish to enhance the aesthetics of their smile, particularly those with discolored, uneven, or damaged front teeth. They are perfect for those looking for a durable, natural-looking solution that improves both function and appearance. Individuals seeking a minimally invasive treatment that preserves the natural tooth structure would benefit from E-Max veneers."
-                : "E-Max veneers are ideal for individuals who wish to enhance the aesthetics of their smile, particularly those with discolored, uneven, or damaged front teeth. They are perfect for those looking for a durable, natural-looking solution that improves both function and appearance. Individuals seeking a minimally invasive treatment that preserves the natural tooth structure would benefit from E-Max veneers.",
+                : "Laminate veneers (or leaf veneers) are thin, aesthetic coverings applied to the front of teeth, typically made from ceramic or composite materials. They enhance the color, shape, and appearance of teeth, offering an easy way to achieve a flawless and natural-looking smile.",
           },
           {
-            header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: locale === "ru" ? "" : "",
-            // desc:
-            //   locale === "ru"
-            //     ? ""
-            //     : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
+            header: locale === "ru" ? "Важные аспекты" : "How It Works",
+            decsList: locale === "ru" ? "" : "Consultation & Planning: The dentist evaluates your teeth and recommends the best veneer option. Preparation: A small amount of enamel is removed for a proper fit. Customization: Impressions are taken, and the veneers are custom-designed for a natural look. Placement: Veneers are bonded to your teeth with a strong adhesive. Final Adjustments: The dentist ensures the fit and appearance are perfect.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Как это работает" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "Consultation & Planning: The dentist evaluates your teeth and discusses your cosmetic goals. Based on this assessment, the dentist will recommend E-Max veneers for an ideal smile."
-                : "Consultation & Planning: The dentist evaluates your teeth and discusses your cosmetic goals. Based on this assessment, the dentist will recommend E-Max veneers for an ideal smile.",
+                : " Laminate veneers are ideal for individuals who wish to enhance the aesthetics of their smile, particularly those with discolored, uneven, or damaged front teeth. They are perfect for those looking for a durable, natural-looking solution that improves both function and appearance. Individuals seeking a minimally invasive treatment that preserves the natural tooth structure would benefit from Laminate veneers.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          answer: locale === "ru" ? "" : "Do veneers ruin my teeth?",
+          question: locale === "ru" ? "" : "No, only a thin layer of enamel is removed for bonding"
+        },
+        {
+          answer: locale === "ru" ? "" : "Are veneers permanent?",
+          question: locale === "ru" ? "" : "They last 10–15 years with care, may need replacement"
+        },
+        {
+          answer: locale === "ru" ? "" : "Can I whiten veneers?",
+          question: locale === "ru" ? "" : "No, veneers don’t respond to whitening"
+        },
+        {
+          answer: locale === "ru" ? "" : "Are they fragile?",
+          question: locale === "ru" ? "" : "They’re strong but can chip – avoid using teeth as tools"
+        },
+        {
+          answer: locale === "ru" ? "" : "Will they look natural?",
+          question: locale === "ru" ? "" : "Yes, modern veneers mimic natural tooth translucency"
+        },
+        {
+          answer: locale === "ru" ? "" : "Do veneers change color over time?",
+          question: locale === "ru" ? "" : "No, but pigmented foods and drinks can change the color of natural teeth."
+        },
+      ],
+      posts: [
+        locale ==="ru"? "" : "Avoid biting hard foods with front teeth (like apples)",
+        locale ==="ru"? "" : "Maintain oral hygiene but use non-abrasive toothpaste",
+        locale ==="ru"? "" : "Use a night guard if you grind your teeth",
+        locale ==="ru"? "" : "Avoid staining foods and drinks for first 48 hours",
+        locale ==="ru"? "" : "Follow up for bonding check if needed",
+        locale ==="ru"? "" : "Avoid excessively hot and cold foods.",
+        locale ==="ru"? "" : "Avoid using whitening products after the procedure.",
+        locale ==="ru"? "" : "Avoid tobacco products.",
+        locale ==="ru"? "" : "Stay away from acidic and colorful foods.",
+        locale ==="ru"? "" : "Use a mouthguard during physical activities to protect your veneers.",
+      ],
+      preList: [
+        locale ==="ru"? "" : "Ensure oral health is stable (no untreated decay or gum disease)",
+        locale ==="ru"? "" : "Discuss color, shape, and smile design with your dentist",
+        locale ==="ru"? "" : "Expect minor enamel removal – no major fasting required",
+        locale ==="ru"? "" : "Stop smoking for better adhesion and long-term aesthetics",
+        locale ==="ru"? "" : "Clean your teeth. Inform if you have tooth sensitivity",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "E-Max veneers provide an excellent solution for individuals looking to improve the aesthetics of their smile with a durable and natural-looking material. Their aesthetic perfection, combined with durability and gum compatibility, makes them a popular choice for front tooth restorations. With proper care and maintenance, E-Max veneers offer long-lasting results that enhance both the appearance and function of your smile."
-            : "E-Max veneers provide an excellent solution for individuals looking to improve the aesthetics of their smile with a durable and natural-looking material. Their aesthetic perfection, combined with durability and gum compatibility, makes them a popular choice for front tooth restorations. With proper care and maintenance, E-Max veneers offer long-lasting results that enhance both the appearance and function of your smile.",
-      },
-      subCategoryContent: {
-        title:
-          locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
+            : "Laminate veneers provide an excellent solution for individuals looking to improve the aesthetics of their smile with a durable and natural-looking material. Their aesthetic perfection, combined with durability and gum compatibility, makes them a popular choice for front tooth restorations. With proper care and maintenance, Laminate veneers offer long-lasting results that enhance both the appearance and function of your smile.",
       },
       bfs: bfList,
       contents: {
@@ -3517,12 +3732,331 @@ export const dataSubCategoryHandler = (
         content:
           locale === "ru"
             ? `
-         <p><span style="color: rgb(27, 28, 29);">Laminate veneers, also known as porcelain veneers, are ultra-thin shells of tooth-colored material custom-designed to bond to the front surface of your teeth. They are a minimally invasive and highly effective solution for correcting a variety of cosmetic dental imperfections, including chips, cracks, stains, minor misalignments, and gaps. Choosing laminate veneers in Turkey with AZPO Health provides access to artistry and precision at an unparalleled value.</span></p><h2><span style="color: rgb(27, 28, 29);">The Benefits of Laminate Veneers in Turkey with AZPO Health:</span></h2><p><span style="color: rgb(27, 28, 29);">Opting for laminate veneers in Turkey through AZPO Health unlocks a world of advantages for your smile transformation:</span></p><p>Subtle Yet Dramatic Smile Enhancement: Laminate veneers offer a natural-looking yet significant improvement to your smile's aesthetics. They enhance your teeth's color, shape, size, and alignment, creating a harmonious and beautiful smile without looking artificial.</p><p><br></p><p>Minimally Invasive Procedure: Compared to crowns, laminate veneers require minimal tooth enamel removal, preserving more of your natural tooth structure. This makes them a more conservative and gentle approach to smile enhancement.</p><p><br></p><p>Stain Resistance and Long-Lasting Beauty: Crafted from high-quality porcelain or composite materials, laminate veneers are highly resistant to staining from coffee, tea, wine, and other common culprits. They maintain their beautiful appearance for years, providing a long-lasting smile solution.</p><p><br></p><p>Boosted Confidence and Self-Esteem: A transformed smile with laminate veneers can dramatically enhance your self-confidence and self-esteem, positively impacting your personal and professional interactions.</p><p><br></p><p>Affordable Laminate Veneers Cost Turkey: Premium Quality, Accessible Prices: One of the most compelling reasons to consider laminate veneers in Turkey is the significantly lower cost compared to many Western countries. AZPO Health provides access to these affordable options, allowing you to achieve premium quality laminate veneers cost turkey prices that fit your budget. Explore laminate veneers turkey price options with AZPO Health and discover exceptional value.</p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Exploring Laminate Veneer Options and Costs in Turkey with AZPO Health:</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health offers a range of laminate veneer options in Turkey, with costs varying depending on the material and specific clinic:</span></p><p>Porcelain Laminate Veneers: Porcelain veneers are the gold standard for laminate veneers, prized for their exceptional aesthetics, durability, and stain resistance. They mimic the natural translucency of teeth and offer the most lifelike and long-lasting results. While slightly more expensive than composite veneers, porcelain veneers are considered a superior investment in your smile.</p><p><br></p><p>Composite Laminate Veneers: Composite veneers are a more affordable alternative to porcelain, crafted from a tooth-colored resin material. They can be directly bonded to the teeth in a single visit, making them a quicker and budget-friendly option. While less stain-resistant and durable than porcelain, composite veneers can still provide a significant cosmetic improvement for many patients.</p><p><br></p><p>Emax Laminate Veneers: Premium Aesthetics and Strength: Emax laminate veneers are a specific type of all-ceramic veneer known for their exceptional strength, thinness, and lifelike aesthetics. They are a premium option within porcelain veneers, offering a perfect balance of durability and natural beauty. While the emax laminate veneers cost may be slightly higher, they are often preferred for their superior quality and long-term performance. Ask your AZPO Health coordinator about emax laminate veneers cost turkey.</p><p><br></p><p><span style="color: rgb(27, 28, 29);">The cost of laminate veneers in Turkey, and specifically how much are laminate veneers turkey, will depend on factors such as the number of veneers needed, the material chosen (porcelain, composite, Emax), and the specific clinic. However, AZPO Health is committed to providing transparent and competitive pricing, ensuring you receive exceptional value for your investment.</span></p><h2><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Laminate Veneers Journey in Turkey?</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health simplifies your journey to achieving your dream smile with laminate veneers in Turkey by providing:</span></p><p>Access to Top Cosmetic Dentists Specializing in Veneers: We partner with carefully selected dental clinics in Turkey renowned for their expertise in laminate veneers and cosmetic dentistry. Our network includes dentists with extensive experience and artistry in creating beautiful, natural-looking veneers.</p><p>Affordable Laminate Veneers Turkey Price Packages: Benefit from significantly lower laminate veneers turkey price options compared to your home country, without compromising on the quality of materials or the expertise of your dentist.</p><p>Comprehensive All-Inclusive Packages for a Stress-Free Experience: AZPO Health offers all-inclusive packages designed for your comfort and convenience, including flights, luxurious accommodation, private transfers, and dedicated patient support throughout your veneer journey.</p><p>Personalized Consultation and Smile Design: AZPO Health dentists provide personalized consultations to understand your aesthetic goals, assess your individual needs, and create a customized smile design plan to ensure your laminate veneers perfectly complement your facial features and personality.</p><p>State-of-the-Art Clinics and Technology: Our partner clinics in Turkey are equipped with advanced dental technology and adhere to the highest international hygiene standards, ensuring a safe, comfortable, and modern treatment experience for your laminate veneers.</p><h2><span style="color: rgb(27, 28, 29);">Benefits of Laminate Veneers Beyond Aesthetics:</span></h2><p><span style="color: rgb(27, 28, 29);">While primarily a cosmetic procedure, laminate veneers offer benefits that extend beyond just appearance:</span></p><p>Improved Smile Aesthetics and Confidence: Achieve a straighter, whiter, and more symmetrical smile, dramatically enhancing your self-confidence and overall appearance.</p><p>Correction of Minor Dental Imperfections: Effectively conceal chips, cracks, stains, gaps, and minor misalignments, creating a more uniform and flawless smile.</p><p>Minimal Tooth Preparation: Preserve more of your natural tooth structure compared to more extensive procedures like crowns.</p><p>Stain Resistance and Long-Term Beauty: Enjoy a brighter, stain-resistant smile that maintains its beauty for years with proper care.</p><p>Enhanced First Impressions: A beautiful smile created with laminate veneers can create a positive and lasting first impression in both social and professional settings.</p><p><em style="color: rgb(27, 28, 29);">"Getting laminate veneers in Turkey with AZPO Health was the best decision I ever made! My smile is completely transformed, but it still looks so natural. The cost was amazing compared to what I was quoted at home, and the whole experience with AZPO Health was seamless and supportive. I finally have the confident smile I've always dreamed of!"</em><span style="color: rgb(27, 28, 29);"> – Jessica T., Canada</span></p><h2><span style="color: rgb(27, 28, 29);">AZPO Health: Your Trusted Partner for Laminate Veneers in Turkey</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health is dedicated to making exceptional laminate veneers accessible and enjoyable for everyone. We are your trusted partner for navigating laminate veneers in Turkey, providing expert guidance, connecting you with top-tier clinics and dentists, and ensuring a smooth and rewarding smile transformation journey.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Laminate Veneers Journey?</span></p><p>Access to Leading Veneer Specialists in Turkey: We partner with meticulously vetted clinics and dentists renowned for their expertise in laminate veneers and their artistic approach to smile design.</p><p>Affordable Laminate Veneers Cost Turkey: Benefit from transparent and competitive pricing, making dream smiles attainable.</p><p>Personalized and Attentive Patient Care: We prioritize your individual aesthetic goals and concerns, providing personalized consultations and dedicated patient coordinator support throughout your entire experience.</p><p>Transparent and All-Inclusive Packages: We offer clear, all-inclusive pricing for laminate veneers in turkey, ensuring exceptional value and no hidden costs.</p><p>Dedicated 24/7 Assistance and Support: Our caring patient support team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind.</p><p><span style="color: rgb(27, 28, 29);">Ready to unlock your dream smile with laminate veneers in Turkey and AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your laminate veneer goals, answer your questions, and help you plan your transformative smile journey to Turkey with AZPO Health. Your radiant new smile awaits!</span></p><p><br></p><p><br></p>
+         
           `
-            : `<p><span style="color: rgb(27, 28, 29);">Laminate veneers, also known as porcelain veneers, are ultra-thin shells of tooth-colored material custom-designed to bond to the front surface of your teeth. They are a minimally invasive and highly effective solution for correcting a variety of cosmetic dental imperfections, including chips, cracks, stains, minor misalignments, and gaps. Choosing laminate veneers in Turkey with AZPO Health provides access to artistry and precision at an unparalleled value.</span></p><h2><span style="color: rgb(27, 28, 29);">The Benefits of Laminate Veneers in Turkey with AZPO Health:</span></h2><p><span style="color: rgb(27, 28, 29);">Opting for laminate veneers in Turkey through AZPO Health unlocks a world of advantages for your smile transformation:</span></p><p>Subtle Yet Dramatic Smile Enhancement: Laminate veneers offer a natural-looking yet significant improvement to your smile's aesthetics. They enhance your teeth's color, shape, size, and alignment, creating a harmonious and beautiful smile without looking artificial.</p><p><br></p><p>Minimally Invasive Procedure: Compared to crowns, laminate veneers require minimal tooth enamel removal, preserving more of your natural tooth structure. This makes them a more conservative and gentle approach to smile enhancement.</p><p><br></p><p>Stain Resistance and Long-Lasting Beauty: Crafted from high-quality porcelain or composite materials, laminate veneers are highly resistant to staining from coffee, tea, wine, and other common culprits. They maintain their beautiful appearance for years, providing a long-lasting smile solution.</p><p><br></p><p>Boosted Confidence and Self-Esteem: A transformed smile with laminate veneers can dramatically enhance your self-confidence and self-esteem, positively impacting your personal and professional interactions.</p><p><br></p><p>Affordable Laminate Veneers Cost Turkey: Premium Quality, Accessible Prices: One of the most compelling reasons to consider laminate veneers in Turkey is the significantly lower cost compared to many Western countries. AZPO Health provides access to these affordable options, allowing you to achieve premium quality laminate veneers cost turkey prices that fit your budget. Explore laminate veneers turkey price options with AZPO Health and discover exceptional value.</p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Exploring Laminate Veneer Options and Costs in Turkey with AZPO Health:</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health offers a range of laminate veneer options in Turkey, with costs varying depending on the material and specific clinic:</span></p><p>Porcelain Laminate Veneers: Porcelain veneers are the gold standard for laminate veneers, prized for their exceptional aesthetics, durability, and stain resistance. They mimic the natural translucency of teeth and offer the most lifelike and long-lasting results. While slightly more expensive than composite veneers, porcelain veneers are considered a superior investment in your smile.</p><p><br></p><p>Composite Laminate Veneers: Composite veneers are a more affordable alternative to porcelain, crafted from a tooth-colored resin material. They can be directly bonded to the teeth in a single visit, making them a quicker and budget-friendly option. While less stain-resistant and durable than porcelain, composite veneers can still provide a significant cosmetic improvement for many patients.</p><p><br></p><p>Emax Laminate Veneers: Premium Aesthetics and Strength: Emax laminate veneers are a specific type of all-ceramic veneer known for their exceptional strength, thinness, and lifelike aesthetics. They are a premium option within porcelain veneers, offering a perfect balance of durability and natural beauty. While the emax laminate veneers cost may be slightly higher, they are often preferred for their superior quality and long-term performance. Ask your AZPO Health coordinator about emax laminate veneers cost turkey.</p><p><br></p><p><span style="color: rgb(27, 28, 29);">The cost of laminate veneers in Turkey, and specifically how much are laminate veneers turkey, will depend on factors such as the number of veneers needed, the material chosen (porcelain, composite, Emax), and the specific clinic. However, AZPO Health is committed to providing transparent and competitive pricing, ensuring you receive exceptional value for your investment.</span></p><h2><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Laminate Veneers Journey in Turkey?</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health simplifies your journey to achieving your dream smile with laminate veneers in Turkey by providing:</span></p><p>Access to Top Cosmetic Dentists Specializing in Veneers: We partner with carefully selected dental clinics in Turkey renowned for their expertise in laminate veneers and cosmetic dentistry. Our network includes dentists with extensive experience and artistry in creating beautiful, natural-looking veneers.</p><p>Affordable Laminate Veneers Turkey Price Packages: Benefit from significantly lower laminate veneers turkey price options compared to your home country, without compromising on the quality of materials or the expertise of your dentist.</p><p>Comprehensive All-Inclusive Packages for a Stress-Free Experience: AZPO Health offers all-inclusive packages designed for your comfort and convenience, including flights, luxurious accommodation, private transfers, and dedicated patient support throughout your veneer journey.</p><p>Personalized Consultation and Smile Design: AZPO Health dentists provide personalized consultations to understand your aesthetic goals, assess your individual needs, and create a customized smile design plan to ensure your laminate veneers perfectly complement your facial features and personality.</p><p>State-of-the-Art Clinics and Technology: Our partner clinics in Turkey are equipped with advanced dental technology and adhere to the highest international hygiene standards, ensuring a safe, comfortable, and modern treatment experience for your laminate veneers.</p><h2><span style="color: rgb(27, 28, 29);">Benefits of Laminate Veneers Beyond Aesthetics:</span></h2><p><span style="color: rgb(27, 28, 29);">While primarily a cosmetic procedure, laminate veneers offer benefits that extend beyond just appearance:</span></p><p>Improved Smile Aesthetics and Confidence: Achieve a straighter, whiter, and more symmetrical smile, dramatically enhancing your self-confidence and overall appearance.</p><p>Correction of Minor Dental Imperfections: Effectively conceal chips, cracks, stains, gaps, and minor misalignments, creating a more uniform and flawless smile.</p><p>Minimal Tooth Preparation: Preserve more of your natural tooth structure compared to more extensive procedures like crowns.</p><p>Stain Resistance and Long-Term Beauty: Enjoy a brighter, stain-resistant smile that maintains its beauty for years with proper care.</p><p>Enhanced First Impressions: A beautiful smile created with laminate veneers can create a positive and lasting first impression in both social and professional settings.</p><p><em style="color: rgb(27, 28, 29);">"Getting laminate veneers in Turkey with AZPO Health was the best decision I ever made! My smile is completely transformed, but it still looks so natural. The cost was amazing compared to what I was quoted at home, and the whole experience with AZPO Health was seamless and supportive. I finally have the confident smile I've always dreamed of!"</em><span style="color: rgb(27, 28, 29);"> – Jessica T., Canada</span></p><h2><span style="color: rgb(27, 28, 29);">AZPO Health: Your Trusted Partner for Laminate Veneers in Turkey</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health is dedicated to making exceptional laminate veneers accessible and enjoyable for everyone. We are your trusted partner for navigating laminate veneers in Turkey, providing expert guidance, connecting you with top-tier clinics and dentists, and ensuring a smooth and rewarding smile transformation journey.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Laminate Veneers Journey?</span></p><p>Access to Leading Veneer Specialists in Turkey: We partner with meticulously vetted clinics and dentists renowned for their expertise in laminate veneers and their artistic approach to smile design.</p><p>Affordable Laminate Veneers Cost Turkey: Benefit from transparent and competitive pricing, making dream smiles attainable.</p><p>Personalized and Attentive Patient Care: We prioritize your individual aesthetic goals and concerns, providing personalized consultations and dedicated patient coordinator support throughout your entire experience.</p><p>Transparent and All-Inclusive Packages: We offer clear, all-inclusive pricing for laminate veneers in turkey, ensuring exceptional value and no hidden costs.</p><p>Dedicated 24/7 Assistance and Support: Our caring patient support team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind.</p><p><span style="color: rgb(27, 28, 29);">Ready to unlock your dream smile with laminate veneers in Turkey and AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your laminate veneer goals, answer your questions, and help you plan your transformative smile journey to Turkey with AZPO Health. Your radiant new smile awaits!</span></p><p><br></p><p><br></p>`,
+            : `<p dir="ltr">Laminate veneers, also known as porcelain veneers, are ultra-thin shells of tooth-colored material custom-designed to bond to the front surface of your teeth. They are a minimally invasive and highly effective solution for correcting a variety of cosmetic dental imperfections, including chips, cracks, stains, minor misalignments, and gaps. Choosing laminate veneers in Turkey with AZPO Health provides access to artistry and precision at an unparalleled value.</p>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h2 dir="ltr">The Benefits of Laminate Veneers in Turkey with AZPO Health:</h2>
+<p dir="ltr">Opting for laminate veneers in Turkey through AZPO Health unlocks a world of advantages for your smile transformation:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Subtle Yet Dramatic Smile Enhancement: Laminate veneers offer a natural-looking yet significant improvement to your smile's aesthetics. They enhance your teeth's color, shape, size, and alignment, creating a harmonious and beautiful smile without looking artificial.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Minimally Invasive Procedure: Compared to crowns, laminate veneers require minimal tooth enamel removal, preserving more of your natural tooth structure. This makes them a more conservative and gentle approach to smile enhancement.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Stain Resistance and Long-Lasting Beauty: Crafted from high-quality porcelain or composite materials, laminate veneers are highly resistant to staining from coffee, tea, wine, and other common culprits. They maintain their beautiful appearance for years, providing a long-lasting smile solution.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Boosted Confidence and Self-Esteem: A transformed smile with laminate veneers can dramatically enhance your self-confidence and self-esteem, positively impacting your personal and professional interactions.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordable Laminate Veneers Cost Turkey: Premium Quality, Accessible Prices: One of the most compelling reasons to consider laminate veneers in Turkey is the significantly lower cost compared to many Western countries. AZPO Health provides access to these affordable options, allowing you to achieve premium quality laminate veneers cost turkey prices that fit your budget. Explore laminate veneers turkey price options with AZPO Health and discover exceptional value.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Exploring Laminate Veneer Options and Costs in Turkey with AZPO Health:</h2>
+<p dir="ltr">AZPO Health offers a range of laminate veneer options in Turkey, with costs varying depending on the material and specific clinic:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Porcelain Laminate Veneers: Porcelain veneers are the gold standard for laminate veneers, prized for their exceptional aesthetics, durability, and stain resistance. They mimic the natural translucency of teeth and offer the most lifelike and long-lasting results. While slightly more expensive than composite veneers, porcelain veneers are considered a superior investment in your smile.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Composite Laminate Veneers: Composite veneers are a more affordable alternative to porcelain, crafted from a tooth-colored resin material. They can be directly bonded to the teeth in a single visit, making them a quicker and budget-friendly option. While less stain-resistant and durable than porcelain, composite veneers can still provide a significant cosmetic improvement for many patients.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Emax Laminate Veneers: Premium Aesthetics and Strength: Emax laminate veneers are a specific type of all-ceramic veneer known for their exceptional strength, thinness, and lifelike aesthetics. They are a premium option within porcelain veneers, offering a perfect balance of durability and natural beauty. While the emax laminate veneers cost may be slightly higher, they are often preferred for their superior quality and long-term performance. Ask your AZPO Health coordinator about emax laminate veneers cost turkey.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">The cost of laminate veneers in Turkey, and specifically how much are laminate veneers turkey, will depend on factors such as the number of veneers needed, the material chosen (porcelain, composite, Emax), and the specific clinic. However, AZPO Health is committed to providing transparent and competitive pricing, ensuring you receive exceptional value for your investment.</p>
+<h2 dir="ltr">Why Choose AZPO Health for Your Laminate Veneers Journey in Turkey?</h2>
+<p dir="ltr">AZPO Health simplifies your journey to achieving your dream smile with laminate veneers in Turkey by providing:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Access to Top Cosmetic Dentists Specializing in Veneers: We partner with carefully selected dental clinics in Turkey renowned for their expertise in laminate veneers and cosmetic dentistry. Our network includes dentists with extensive experience and artistry in creating beautiful, natural-looking veneers.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordable Laminate Veneers Turkey Price Packages: Benefit from significantly lower laminate veneers turkey price options compared to your home country, without compromising on the quality of materials or the expertise of your dentist.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive All-Inclusive Packages for a Stress-Free Experience: AZPO Health offers all-inclusive packages designed for your comfort and convenience, including flights, luxurious accommodation, private transfers, and dedicated patient support throughout your veneer journey.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Consultation and Smile Design: AZPO Health dentists provide personalized consultations to understand your aesthetic goals, assess your individual needs, and create a customized smile design plan to ensure your laminate veneers perfectly complement your facial features and personality.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">State-of-the-Art Clinics and Technology: Our partner clinics in Turkey are equipped with advanced dental technology and adhere to the highest international hygiene standards, ensuring a safe, comfortable, and modern treatment experience for your laminate veneers.</p>
+</li>
+</ul>
+<h2 dir="ltr">Benefits of Laminate Veneers Beyond Aesthetics:</h2>
+<p dir="ltr">While primarily a cosmetic procedure, laminate veneers offer benefits that extend beyond just appearance:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Improved Smile Aesthetics and Confidence: Achieve a straighter, whiter, and more symmetrical smile, dramatically enhancing your self-confidence and overall appearance.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Correction of Minor Dental Imperfections: Effectively conceal chips, cracks, stains, gaps, and minor misalignments, creating a more uniform and flawless smile.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Minimal Tooth Preparation: Preserve more of your natural tooth structure compared to more extensive procedures like crowns.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Stain Resistance and Long-Term Beauty: Enjoy a brighter, stain-resistant smile that maintains its beauty for years with proper care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Enhanced First Impressions: A beautiful smile created with laminate veneers can create a positive and lasting first impression in both social and professional settings.</p>
+</li>
+</ul>
+<h2 dir="ltr">AZPO Health: Your Trusted Partner for Laminate Veneers in Turkey</h2>
+<p dir="ltr">AZPO Health is dedicated to making exceptional laminate veneers accessible and enjoyable for everyone. We are your trusted partner for navigating laminate veneers in Turkey, providing expert guidance, connecting you with top-tier clinics and dentists, and ensuring a smooth and rewarding smile transformation journey.</p>
+<p dir="ltr">Why Choose AZPO Health for Your Laminate Veneers Journey?</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Access to Leading Veneer Specialists in Turkey: We partner with meticulously vetted clinics and dentists renowned for their expertise in laminate veneers and their artistic approach to smile design.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordable Laminate Veneers Cost Turkey: Benefit from transparent and competitive pricing, making dream smiles attainable.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized and Attentive Patient Care: We prioritize your individual aesthetic goals and concerns, providing personalized consultations and dedicated patient coordinator support throughout your entire experience.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Transparent and All-Inclusive Packages: We offer clear, all-inclusive pricing for laminate veneers in turkey, ensuring exceptional value and no hidden costs.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Dedicated 24/7 Assistance and Support: Our caring patient support team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind.</p>
+</li>
+</ul>
+<p dir="ltr">Ready to unlock your dream smile with laminate veneers in Turkey and AZPO Health?</p>
+<p dir="ltr">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your laminate veneer goals, answer your questions, and help you plan your transformative smile journey to Turkey with AZPO Health. Your radiant new smile awaits!</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">"Getting laminate veneers in Turkey with AZPO Health was the best decision I ever made! My smile is completely transformed, but it still looks so natural. The cost was amazing compared to what I was quoted at home, and the whole experience with AZPO Health was seamless and supportive. I finally have the confident smile I've always dreamed of!" &ndash; Jessica T., Canada</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "laminate-veneers" ? laminateveneers : null,
       subNestedKey: "laminate-veneers",
+    },
+    // dental bonding
+    {
+      id: 0,
+      title:
+        locale === "ru"
+          ? "Laminate Veneers in Turkey: Achieve Your Dream Smile with Affordable Excellence at AZPO Health"
+          : "Dental Bonding in Turkey in 2025",
+      descriptionTop:
+        locale === "ru"
+          ? "Seeking a subtle yet transformative smile enhancement? Laminate veneers in Turkey have become a highly popular cosmetic dentistry option, offering a minimally invasive path to a flawless smile at exceptional prices. Discover how AZPO Health connects you with expert dentists and all-inclusive packages to achieve the radiant, confident smile you've always wanted with beautiful laminate veneers."
+          : "Are you self-conscious about minor imperfections in your smile, such as chipped, cracked, stained, or unevenly spaced teeth? Imagine a quick, effective, and affordable solution that can transform your smile and boost your confidence. In Turkey, skilled dental professionals offer high-quality dental bonding procedures, and AZPO Health is here to connect you with the expertise you need for a brighter, more confident you.",
+      benefits: {
+        items: [
+          {
+            title: locale === "ru" ? "Perfect Smile" : "Minimally Invasive",
+            desc:
+              locale === "ru"
+                ? "Mimics natural teeth with ideal color reflection and transparency for flawless aesthetics"
+                : "No or little enamel removal, preserving natural tooth structure.",
+          },
+          {
+            title: locale === "ru" ? "Lasting Beauty" : "Cost-Effective",
+            desc:
+              locale === "ru"
+                ? "Highly durable ceramic material with stable coloring that maintains appearance over time"
+                : "More affordable than veneers or crowns.",
+          },
+          {
+            title: locale === "ru" ? "Gentle Treatment" : "Quick Results",
+            desc:
+              locale === "ru"
+                ? "Minimally invasive procedure that preserves natural tooth structure"
+                : "Completed in one visit with instant improvement.",
+          },
+        ],
+        categories: [
+          {
+            header: locale === "ru" ? "Who It’s For" : "Description",
+            desc:
+              locale === "ru"
+                ? "E-Max veneers are ideal for individuals who wish to enhance the aesthetics of their smile, particularly those with discolored, uneven, or damaged front teeth. They are perfect for those looking for a durable, natural-looking solution that improves both function and appearance. Individuals seeking a minimally invasive treatment that preserves the natural tooth structure would benefit from E-Max veneers."
+                : "Dental bonding is a cosmetic procedure where a tooth-colored resin material is applied to the surface of your teeth. This material is sculpted and shaped to improve the appearance of your smile. It can fix a variety of dental issues, including repairing decayed or damaged teeth, closing gaps, reshaping or lengthening teeth, and covering up stains or discoloration. ",
+          },
+          {
+            header: locale === "ru" ? "Важные аспекты" : "How It Works",
+            decsList: locale === "ru" ? "" : "Consultation: The dentist evaluates your teeth and selects a matching resin color. Preparation: The tooth is roughened, and a bonding agent is applied. Application: Resin is layered, shaped, and hardened with a special light. Finishing Touches: The dentist trims and polishes for a natural look.",
+          },
+          {
+            header: locale === "ru" ? "Как это работает" : "For Whom",
+            desc:
+              locale === "ru"
+                ? "Consultation & Planning: The dentist evaluates your teeth and discusses your cosmetic goals. Based on this assessment, the dentist will recommend E-Max veneers for an ideal smile."
+                : "Dental bonding is ideal for individuals who have minor cosmetic imperfections such as small chips, gaps between teeth, or discoloration. It is also an excellent option for people who want to fix dental issues like decay or damage without resorting to more invasive procedures. ",
+          },
+        ],
+      },
+      faqs: [
+        {
+          question : locale === "ru" ? "" : "How long does dental bonding last?",
+          answer: locale === "ru" ? "" : "Typically 3–10 years, depending on care"
+        },
+        {
+          question : locale === "ru" ? "" : "Does it hurt?",
+          answer: locale === "ru" ? "" : "No, it’s a painless, non-invasive procedure"
+        },
+        {
+          question : locale === "ru" ? "" : "Can it fix gaps?",
+          answer: locale === "ru" ? "" : "Yes, great for closing small gaps"
+        },
+        {
+          question : locale === "ru" ? "" : "Is bonding noticeable?",
+          answer: locale === "ru" ? "" : "It’s color-matched to your teeth and looks natural"
+        },
+        {
+          question : locale === "ru" ? "" : "What if it chips?",
+          answer: locale === "ru" ? "" : "It can be easily repaired"
+        },
+        {
+          question : locale === "ru" ? "" : "Is dental bonding compatible with teeth whitening?",
+          answer: locale === "ru" ? "" : "Yes, but bonding may discolor after whitening, so it's best to do bonding first."
+        },
+        {
+          question : locale === "ru" ? "" : "Does dental bonding change color?",
+          answer: locale === "ru" ? "" : "Bonding doesn’t change, but stains from smoking, coffee, or tea can affect it."
+        },
+      ],
+      posts: [
+        locale ==="ru"? "" : "Avoid hard or sticky foods for 24–48 hour",
+        locale ==="ru"? "" : "Bonding can stain – avoid coffee, tea, red wine, and smoking",
+        locale ==="ru"? "" : "Maintain regular brushing and flossingh",
+        locale ==="ru"? "" : "See dentist if chipping or discoloration occurs",
+        locale ==="ru"? "" : "Re-polishing may be needed over time",
+        locale ==="ru"? "" : "Use a mouthguard to protect your teeth during sports",
+        locale ==="ru"? "" : "Choose soft foods",
+        locale ==="ru"? "" : "Avoid acidic foods and drinks",
+      ],
+      preList: [
+        locale ==="ru"? "" : "No major prep needed",
+        locale ==="ru"? "" : "Inform your dentist about allergies or previous restorations",
+        locale ==="ru"? "" : "Good oral hygiene before the visit helps ensure adhesion",
+        locale ==="ru"? "" : "Avoid alcohol and smoking before the session",
+        locale ==="ru"? "" : "Avoid hard foods",
+      ],
+      conclusion: {
+        title: locale === "ru" ? "Заключение" : "Conclusion",
+        desc:
+          locale === "ru"
+            ? "E-Max veneers provide an excellent solution for individuals looking to improve the aesthetics of their smile with a durable and natural-looking material. Their aesthetic perfection, combined with durability and gum compatibility, makes them a popular choice for front tooth restorations. With proper care and maintenance, E-Max veneers offer long-lasting results that enhance both the appearance and function of your smile."
+            : "Dental bonding is an effective, affordable, and quick solution for improving the appearance of your teeth and addressing minor cosmetic issues. While it may not last as long as other treatments like veneers or crowns, it offers immediate results with minimal discomfort and recovery time. With good oral care, dental bonding can provide you with a beautiful, functional smile for many years.",
+      },
+      bfs: bfList,
+      contents: {
+        title:
+          locale === "ru"
+            ? "Laminate Veneers: The Art of Subtle Smile Perfection"
+            : "Why Choose Turkey for Your Dental Bonding Procedure?",
+        content:
+          locale === "ru"
+            ? `
+         
+          `
+            : `<p dir="ltr">Opting for dental bonding in Turkey through AZPO Health offers several compelling advantages. One of the primary reasons many individuals consider Turkey for dental procedures is the dental bonding cost in Turkey. You'll often find that the dental bonding price in Turkey is significantly more affordable compared to costs in many other countries, making smile enhancement accessible to a wider range of individuals.</p>
+<p dir="ltr">Despite the cost-effectiveness, the quality of dental care in Turkey is high. Many clinics utilize modern technologies and adhere to stringent hygiene and safety standards. The dentists in Turkey are often highly skilled and experienced in cosmetic dentistry procedures like dental bonding. Through AZPO Health, you can be connected with reputable professionals who are dedicated to providing excellent results.</p>
+<p dir="ltr">Furthermore, combining your dental treatment with a trip to Turkey presents a unique opportunity for medical tourism. Turkey is a beautiful country with a rich history, vibrant culture, and stunning landscapes. You can enjoy a memorable vacation while taking care of your smile needs. AZPO Health can assist in coordinating your dental journey, making the entire process smoother and more convenient.</p>
+<h2 dir="ltr">Understanding the Dental Bonding Procedure</h2>
+<p dir="ltr">Dental bonding is a popular cosmetic dental procedure that uses a tooth-colored composite resin material to improve the appearance of your smile. This versatile technique can address various cosmetic concerns, offering a relatively quick and often less invasive solution compared to other treatments like porcelain veneers.</p>
+<p dir="ltr">What Can Dental Bonding Fix?</p>
+<p dir="ltr">Dental bonding is effective in repairing:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Chipped or Cracked Teeth: Bonding can restore the original shape and integrity of teeth that have suffered minor damage.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Gaps Between Teeth: Small gaps or spaces between teeth can be closed using composite bonding material, creating a more uniform smile.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Discolored Teeth: Bonding can cover stains or discoloration that may not respond well to teeth whitening treatments.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Short or Misshapen Teeth: The shape and length of teeth can be altered with bonding to create a more aesthetically pleasing smile line.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Exposed Tooth Roots: If gums have receded, exposing sensitive tooth roots, bonding can be used to cover and protect these areas.</p>
+</li>
+</ul>
+<p dir="ltr">Benefits of Dental Bonding:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cost-Effective: Compared to other cosmetic dental procedures like veneers or crowns, dental bonding is generally more affordable.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Minimally Invasive: In most cases, dental bonding requires minimal or no removal of the natural tooth enamel.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Quick Procedure: Dental bonding can often be completed in a single visit, depending on the extent of the work required.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Reversible: Unlike some other cosmetic treatments, dental bonding is considered reversible, as the composite material can usually be removed if needed.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Natural Appearance: The composite resin used in bonding can be matched to the shade of your natural teeth, providing a seamless and natural-looking result.</p>
+</li>
+</ul>
+<h2 dir="ltr">The Dental Bonding Methods</h2>
+<p dir="ltr">The most common method for dental bonding involves direct composite bonding. Here's what you can typically expect during the procedure:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Preparation: The dentist will first examine the tooth or teeth to be treated and determine the appropriate shade of composite resin to match your natural teeth. The surface of the tooth may be lightly etched with a mild acidic solution to create a slightly rough texture. This helps the bonding material adhere more effectively to the tooth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Resin Application: The tooth-colored composite resin material, which has a putty-like consistency, is then applied to the prepared tooth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Shaping and Sculpting: The dentist will carefully shape and sculpt the resin to achieve the desired form and contour, correcting the imperfections and creating a natural-looking appearance.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Hardening: Once the resin is properly shaped, it is hardened using a special high-intensity light. This process takes only a few seconds per tooth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Polishing: After the resin has hardened, the dentist will smooth and polish the bonded area to ensure a seamless finish that blends in with the surrounding tooth structure.</p>
+</li>
+</ol>
+<p dir="ltr">In most cases, anesthesia is not required for dental bonding, especially for minor repairs. However, if the bonding procedure is extensive or involves a sensitive area, local anesthesia can be used to ensure your comfort.</p>
+<h2 dir="ltr">AZPO Health: Your Partner in Achieving a Beautiful Smile</h2>
+<p dir="ltr">AZPO Health is a leading medical tourism facilitator in Turkey, dedicated to connecting patients with highly qualified dental professionals and reputable clinics offering a wide range of dental treatments, including dental bonding. We understand that seeking dental care in another country can seem daunting, which is why we strive to make the process as smooth and stress-free as possible.</p>
+<p dir="ltr">Our Commitment to You:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Connecting You with Experienced Professionals: We partner with carefully vetted dentists and clinics in Turkey known for their expertise in cosmetic dentistry and patient satisfaction.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Assistance: Our team is here to understand your specific needs and preferences and help you find the right dental professional for your dental bonding procedure.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Quality and Safety: We prioritize connecting you with clinics that adhere to high international standards of quality, hygiene, and safety.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Seamless Experience: We can assist you with various aspects of your medical travel, providing information and support to make your journey comfortable and convenient.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Transparent Information: We aim to provide you with clear and comprehensive information about dental bonding in Turkey, including the procedure, potential benefits, and what to expect.</p>
+</li>
+</ul>
+<p dir="ltr">Ready to enhance your smile with affordable and high-quality dental bonding in Turkey?</p>
+<p dir="ltr">Contact AZPO Health today for a free consultation and personalized quote.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Real Patient Experiences</h2>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Sarah from the UK: "I had a chipped front tooth that always bothered me whenever I smiled. The cost of fixing it in the UK was quite high. A friend recommended looking into options in Turkey. AZPO Health connected me with a fantastic clinic, and the dental bonding procedure was quick, painless, and the results are amazing! My smile looks perfect now, and the overall cost was significantly lower than what I was quoted back home. Plus, I got to spend a few days exploring Istanbul!"<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">John from the USA: "I had some minor gaps between my front teeth that I wanted to address for years. I considered Invisalign, but the treatment time was longer than I preferred. I looked into dental bonding in Turkey through AZPO Health, and the entire experience was seamless. The dentist I was connected with was very professional, explained everything clearly, and the bonding procedure closed the gaps beautifully in just one appointment. The dental bonding cost turkey was a pleasant surprise, and I'm very happy with the outcome."<br><br></p>
+</li>
+</ul>
+<p dir="ltr"><strong id="docs-internal-guid-d449a7f7-7fff-e0ba-abf5-99cc7eeee57e">Emily from Canada: "One of my front teeth was slightly discolored, which made me feel self-conscious. Teeth whitening didn't fully resolve the issue. I decided to explore dental bonding in Turkey. AZPO Health provided me with information on several reputable clinics. The dentist I chose did an excellent job matching the bonding material to my other teeth, and now my smile looks even and bright. The price was much more reasonable, and the quality of care was excellent."</strong></p>`,
+      },
+      imgCover: subNestedKey === "dental-bonding" ? dentalbonding : null,
+      subNestedKey: "dental-bonding",
     },
     // dentist choosing
     {
@@ -3538,66 +4072,94 @@ export const dataSubCategoryHandler = (
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Естественная красота" : "Natural Beauty",
+            title: locale === "ru" ? "Естественная красота" : "Restores Function & Strength",
             desc:
               locale === "ru"
                 ? "Биосовместимый, гипоаллергенный материал предотвращает проблемы с деснами и безопасен для людей с чувствительностью к металлам."
-                : "Zirconium crowns mimic natural teeth with light-transmitting properties for a realistic, lifelike appearance.",
+                : "Helps with chewing and protects weak/damaged teeth.",
           },
           {
             title:
-              locale === "ru" ? "Преимущества для здоровья" : "Health Benefits",
+              locale === "ru" ? "Преимущества для здоровья" : "Enhances Aesthetics",
             desc:
               locale === "ru"
                 ? "Highly durable ceramic material with stable coloring that maintains appearance over time"
-                : "Biocompatible, hypoallergenic material prevents gum issues and is safe for those with metal sensitivities.",
+                : "Covers stains, cracks, and misshapen teeth for a natural look.",
           },
           {
-            title: locale === "ru" ? "Простой уход" : "Easy Maintenance",
+            title: locale === "ru" ? "Простой уход" : "Long-Lasting Protection",
             desc:
               locale === "ru"
                 ? "Устойчивые к пятнам и зубному налету, эти прочные коронки требуют только регулярной чистки и плановых осмотров."
-                : "Resistant to stains and plaque, these durable crowns require only regular brushing and routine check-ups.",
+                : "Durable and supports dental work like bridges and implants.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Who It’s For" : "Who It’s For",
+            header: locale === "ru" ? "Who It’s For" : "Description",
             desc:
               locale === "ru"
                 ? "Циркониевые коронки подходят для широкого круга пациентов, включая тех, кто:Желает получить естественно выглядящую реставрацию зубов.Имеет аллергию или чувствительность к металлам.Нуждается в коронках для зубов, видимых при улыбке, так как цирконий обеспечивает эстетически привлекательный результат.Нуждается в долгосрочных, прочных стоматологических решениях.Однако это не рекомендуется пациентам младше 18-20 лет, так как рост челюсти и изменения в процессе развития могут повлиять на посадку и выравнивание коронок."
-                : "Zirconium crowns are suitable for a wide range of patients, including those who:Desire a natural-looking dental restoration.Have metal allergies or sensitivity.Need crowns for teeth that are visible when smiling, as zirconium ensures an aesthetically pleasing outcome.Require long-term, durable dental solutions.However, it is not recommended for patients under the age of 18-20, as jaw growth and changes during development can affect the fit and alignment of the crowns.",
+                : "A dental crown is a custom cap that restores a damaged tooth’s function and appearance. It strengthens fragile teeth, repairs cracks, supports bridges, covers stains, and protects teeth after a root canal or implant. The dentist trims a thin enamel layer before bonding the crown, which can be made from resin, metal, or porcelain for durability and aesthetics.",
           },
           {
-            header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: locale === "ru" ? "" : "",
-            // desc:
-            //   locale === "ru"
-            //     ? ""
-            //     : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
+            header: locale === "ru" ? "Важные аспекты" : "How It Works",
+            decsList: locale === "ru" ? "" : "The process begins with trimming the tooth to make space for the crown. The dentist then takes precise impressions and matches the crown’s color to your natural teeth. A temporary crown may be placed while the permanent one is custom-made in a lab. Once ready, the final crown is securely bonded using strong dental adhesives, ensuring a natural and durable fit. The procedure typically requires 1–2 visits.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Как это работает" : "For Whom",
             desc:
               locale === "ru"
                 ? "Процесс установки циркониевой коронки включает несколько этапов для обеспечения наилучшей посадки и внешнего вида. Сначала стоматолог уменьшает размер зуба, аналогично тому, как устанавливаются традиционные коронки. После того как десны здоровы, делаются точные слепки с использованием специальных форм и инструментов. В зуботехнической лаборатории циркониевое основание изготавливается в соответствии с точным цветом и формой ваших естественных зубов, а для безупречного финиша добавляется фарфоровое покрытие. Финальная коронка надежно фиксируется на зубе с помощью современных стоматологических адгезивов, создавая естественный вид без видимых переходов. Весь процесс обычно может быть завершен в течение недели для пациентов со здоровыми деснами."
-                : "The process of applying a zirconium crown involves multiple steps to ensure the best fit and appearance. First, the dentist reduces the size of the tooth, similar to how traditional crowns are applied. Once the gums are healthy, precise impressions are taken using special molds and tools. In a dental lab, the zirconium base is crafted to match the exact color and shape of your natural teeth, and a porcelain overlay is added for a flawless finish. The final crown is securely bonded to the tooth using advanced dental adhesives, creating a seamless and natural look. The entire process can typically be completed within a week for patients with healthy gums.",
+                : "Crowns are suitable for a wide range of patients, including those who:Desire a natural-looking dental restoration. Have metal allergies or sensitivity. Need crowns for teeth that are visible when smiling, Require long-term, durable dental solutions. However, it is not recommended for patients under the age of 18-20, as jaw growth and changes during development can affect the fit and alignment of the crowns.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "How long do crowns last?",
+          answer: locale === "ru" ? "" : "10–15 years or more with good care"
+        },
+        {
+          question: locale === "ru" ? "" : "Will it match my teeth?",
+          answer: locale === "ru" ? "" : "Yes, color is customized for porcelain crowns"
+        },
+        {
+          question: locale === "ru" ? "" : "Can I eat normally?",
+          answer: locale === "ru" ? "" : "Yes, once fully bonded and settled"
+        },
+        {
+          question: locale === "ru" ? "" : "Does a crown protect the tooth?",
+          answer: locale === "ru" ? "" : "Yes, it restores strength and function"
+        },
+        {
+          question: locale === "ru" ? "" : "What if my crown comes off?",
+          answer: locale === "ru" ? "" : "See your dentist to re-cement or replace it"
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Avoid sticky/hard foods with temporary crown",
+        locale === "ru" ? "" : "Final crown: brush/floss as usual; clean well at gumline",
+        locale === "ru" ? "" : "Some sensitivity to cold is normal initially",
+        locale === "ru" ? "" : "Report discomfort or high bite to your dentist",
+        locale === "ru" ? "" : "Attend follow-ups if recommended",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Treat decay or infection before crown placement",
+        locale === "ru" ? "" : "Discuss material options (zirconia, porcelain, metal, etc.)",
+        locale === "ru" ? "" : "Get digital or traditional impressions for fit",
+        locale === "ru" ? "" : "Expect a temporary crown if a lab-made one is needed",
+        locale === "ru" ? "" : "Pay attention to oral hygiene.",
+        locale === "ru" ? "" : "Inform your dentist about any tooth sensitivity.",
+        locale === "ru" ? "" : "Reduce alcohol and tobacco use.",
+        locale === "ru" ? "" : "Be prepared for multiple sessions.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "Циркониевые зубные коронки - это высокотехнологичное решение, предлагающее сочетание прочности, долговечности и непревзойденной эстетики. Используемый в передовых применениях, таких как теплозащитные экраны аэрокосмических аппаратов и тормозные диски спортивных автомобилей, оксид циркония доказывает свою надежность и в стоматологии. Хотя они могут не быть идеальными для всех случаев, особенно для длинных, неподдерживаемых пролетов в задних зубах, их гипоаллергенные свойства, совместимость с тканями десен и естественный внешний вид делают их отличным выбором для многих пациентов. Регулярные стоматологические осмотры и правильная гигиена полости рта могут обеспечить этим коронкам десятилетия службы, даря красивую, функциональную улыбку, которая выдержит испытание временем."
-            : "Zirconium dental crowns are a high-tech solution offering a combination of strength, durability, and unmatched aesthetics. Used in advanced applications like aerospace heat shields and sports car brake discs, zirconium oxide proves its reliability in dentistry as well. While they might not be ideal for all cases, particularly for long, unsupported spans in the back teeth, their hypoallergenic properties, compatibility with gum tissue, and natural appearance make them an excellent choice for many patients. Regular dental check-ups and proper oral hygiene can ensure these crowns last for decades, offering a beautiful, functional smile that stands the test of time.",
-      },
-      subCategoryContent: {
-        title:
-          locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
+            : "Dental crowns are a high-tech solution offering a combination of strength, durability, and unmatched aesthetics. Used in advanced applications like aerospace heat shields and sports car brake discs, zirconium oxide proves its reliability in dentistry as well. While they might not be ideal for all cases, particularly for long, unsupported spans in the back teeth, their hypoallergenic properties, compatibility with gum tissue, and natural appearance make them an excellent choice for many patients. Regular dental check-ups and proper oral hygiene can ensure these crowns last for decades, offering a beautiful, functional smile that stands the test of time.",
       },
       bfs: bfList,
       contents: {
@@ -3674,7 +4236,170 @@ AZPO Health - ведущая компания медицинского тури�
 Восстановите свою улыбку сегодня!
 Готовы вернуть себе уверенную улыбку с помощью доступных и качественных зубных коронок в Турции? Свяжитесь с AZPO Health сегодня для бесплатной консультации и индивидуального предложения.
           `
-            : `<p>Turkey has become a leading destination for medical tourism, especially in dental care. The combination of skilled professionals, advanced technology, and affordable prices attracts thousands seeking high-quality dental treatments. AZPO Health leverages these advantages to offer a comprehensive package that ensures a positive and successful dental crown experience.</p><p><strong>Affordability</strong>: Dental treatments in Turkey are significantly more affordable compared to many Western countries. You can save up to 70-90% on costs, even after accounting for travel and accommodation.</p><p><strong>High-Quality Care</strong>: AZPO Health works with experienced dentists and modern clinics that maintain high standards of hygiene and patient care. The facilities use state-of-the-art equipment and advanced techniques to ensure effective and comfortable treatments.</p><p><strong>Comprehensive Packages</strong>: AZPO Health offers all-inclusive packages that cover not only the dental procedure but also airport transfers, accommodation, and post-treatment support. This seamless experience allows you to focus on your treatment and recovery while enjoying your stay in Turkey.</p><p><strong>Experienced Professionals:</strong> AZPO Health's network includes skilled dentists specializing in cosmetic and restorative dentistry. They are experienced in creating custom-fitted dental crowns that look natural and restore full functionality.</p><p><strong>Modern Technology:</strong> Turkish dental clinics invest in advanced technologies, including CAD/CAM systems for precise crown design and creation. This ensures a perfect fit and natural look.</p><h2><strong>Understanding Dental Crowns</strong></h2><p>Dental crowns, also known as caps, are prosthetic devices that cover damaged or decayed teeth to restore their shape, size, strength, and appearance. They protect the tooth from further damage and restore its function.</p><h3><strong>Types of Dental Crowns</strong></h3><p>Crowns can be made from various materials, each with its own advantages. The choice of material depends on factors such as the tooth's location, its function, aesthetic considerations, and your budget. Here are some common types of dental crowns:</p><p><strong>All-Ceramic Crowns:</strong> These crowns are made entirely of porcelain or ceramic material. They offer the best aesthetic appeal, blending seamlessly with natural teeth. All-ceramic crowns are an excellent choice for front teeth where appearance is a priority.</p><p><strong>Porcelain-Fused-to-Metal (PFM) Crowns:</strong> These crowns have a metal base covered by a layer of porcelain. PFM crowns provide a good balance of strength and aesthetics, making them suitable for both front and back teeth.</p><p><strong>All-Metal Crowns:</strong> Made from gold or other metal alloys, these crowns are known for their exceptional strength and durability. Gold dental crowns are ideal for back teeth where biting forces are high.</p><p><strong>Zirconia Crowns:</strong> Zirconia crowns are a type of all-ceramic crown made from zirconium dioxide, a very strong and biocompatible material. They offer a combination of strength, durability, and aesthetics.</p><p><strong>best dental crowns in Turkey</strong> are often Zirconia or All-ceramic due to their balance of esthetics and durability.</p><h3><strong>The Dental Crown Procedure</strong></h3><p>Getting a dental crown typically requires two visits to the dentist. Here's what you can expect during the procedure:</p><p><strong>Assessment and Preparation</strong>: The dentist will examine the tooth to determine if a crown is necessary. If so, they will prepare the tooth by removing a layer of its outer surface to make room for the crown.</p><p><strong>Impression</strong>: After preparing the tooth, the dentist will take an impression (mold) of the tooth. This impression is sent to a dental laboratory where the crown is custom-made.</p><p><strong>Temporary Crown</strong>: A temporary crown is placed on the prepared tooth to protect it while the permanent crown is being fabricated.</p><p><strong>Placement of Permanent Crown</strong>: Once the permanent crown is ready, you will return to the dentist. The temporary crown is removed, and the permanent crown is fitted, adjusted, and cemented onto the prepared tooth.</p><h3><strong>Benefits of Dental Crowns</strong></h3><p>Dental crowns offer numerous benefits for restoring and protecting damaged teeth:</p><p><strong>Restoration of Tooth Structure:</strong> Crowns restore teeth that have been significantly damaged by decay, fractures, or large fillings. They cover the entire visible portion of the tooth above the gum line, restoring its shape, size, and strength.</p><p><strong>Protection:</strong> Crowns provide a protective cover for weak or damaged teeth, preventing further deterioration and potential fractures.</p><p><strong>Improved Function:</strong> Crowns restore the function of the tooth, allowing you to chew and bite properly.</p><p><strong>Aesthetic Enhancement:</strong> Dental crowns can improve the appearance of teeth, crafted to match the color, shape, and size of your natural teeth.</p><p><strong>Longevity:</strong> With proper care, dental crowns can last many years.</p><p><strong>Versatility:</strong> Crowns can be used for various dental purposes, including restoring severely decayed teeth, covering discolored or misshapen teeth, supporting dental bridges, and covering dental implants.</p><p><strong>Comfort:</strong> Once properly fitted, crowns feel comfortable and function like natural teeth.</p><p><strong>Prevention of Tooth Sensitivity:</strong> Crowns can help protect exposed tooth surfaces, reducing sensitivity to hot or cold foods and beverages.</p><p><strong>Support for Dental Bridges:</strong> Crowns serve as abutments (anchors) for dental bridges, helping to bridge gaps left by missing teeth.</p><p><strong>Durable Solution:</strong> Crowns provide a durable solution that withstands normal biting and chewing forces.</p><h3><strong>Factors Affecting the Cost of Dental Crowns in Turkey</strong></h3><p>The <strong>how much are dental crowns in Turkey</strong> depends on several factors:</p><p><strong>Type of Crown Material</strong>: The material used for the crown significantly impacts the cost. All-ceramic and zirconia crowns are generally more expensive than PFM or all-metal crowns.</p><p><strong>Clinic Reputation and Location</strong>: The reputation and location of the dental clinic can also affect the price. Clinics in major cities like Istanbul or Antalya may charge more than those in smaller towns.</p><p><strong>Dentist's Experience</strong>: The experience and qualifications of the dentist can also influence the cost. Highly experienced dentists may charge more for their services.</p><p><strong>Additional Procedures</strong>: If you require additional procedures such as root canal treatment or gum disease treatment before getting a crown, this will add to the overall cost.</p><h3><strong>How Long Will You Need to Stay in Turkey?</strong></h3><p>The length of your stay in Turkey for dental crowns depends on the treatment plan. For dental crowns, the process typically requires 5 to 7 days to allow time for initial consultations, treatments, and follow-up appointments. If you are undergoing multiple treatments or complex procedures (like full-mouth restoration), you may need to stay 10 to 14 days to ensure sufficient time for healing and any necessary adjustments.</p><h3><strong>Taking Care of Your Dental Crowns</strong></h3><p>Proper care and maintenance are essential for ensuring the longevity of your dental crowns:</p><p><strong>Brush Regularly:</strong> Brush your teeth at least twice a day with fluoride toothpaste.</p><p><strong>Floss Daily:</strong> Floss daily to clean between your teeth and along the gumline.</p><p><strong>Use Mouthwash:</strong> Consider using an antimicrobial mouthwash to help control bacteria in your mouth.</p><p><strong>Avoid Hard Objects:</strong> Avoid chewing on hard objects such as ice, pencils, or candies.</p><p><strong>Wear a Nightguard:</strong> If you have a history of teeth grinding (bruxism), wear a custom-fitted nightguard while you sleep.</p><p><strong>Limit Sugary Foods:</strong> Reduce sugary and acidic foods and beverages, as they can contribute to decay and gum disease.</p><p><strong>Visit Your Dentist Regularly:</strong> Visit your dentist for regular check-ups and professional cleanings.</p><h2><strong>AZPO Health: Your Trusted Partner for Dental Crowns in Turkey</strong></h2><p>AZPO Health is a leading medical tourism company in Turkey, with locations in Istanbul, Antalya, and Alanya. We specialize in providing high-quality and affordable dental treatments to international patients. Our team is committed to ensuring a comfortable and successful experience for every patient.</p><p><strong>Experienced Dentists</strong>: We work with a network of highly skilled and experienced dentists who specialize in cosmetic and restorative dentistry.</p><p><strong>State-of-the-Art Facilities</strong>: Our partner clinics are equipped with the latest dental technology, ensuring precise and effective treatments.</p><p><strong>Personalized Treatment Plans</strong>: We create customized treatment plans tailored to your specific needs and goals.</p><p><strong>All-Inclusive Packages</strong>: Our packages include airport transfers, accommodation, dental treatment, and post-operative care.</p><p><strong>Dedicated Support</strong>: Our multilingual team provides dedicated support throughout your journey, ensuring a stress-free experience.</p><h3><strong>Hear From Our Patients</strong></h3><p><em>"I had been self-conscious about my smile for years due to a cracked tooth. AZPO Health made the entire process of getting a crown so easy and affordable. The dentist was fantastic, and the results are amazing!"</em> - <strong>Sarah J.</strong></p><p><em>"I was hesitant to travel abroad for dental work, but AZPO Health's team put me at ease from the start. The clinic was modern and clean, and the crown looks and feels completely natural."</em> - <strong>Michael B.</strong></p><h2><strong>Restore Your Smile Today!</strong></h2><p>Ready to regain your confident smile with affordable, high-quality dental crowns in Turkey? Contact AZPO Health today for a free consultation and personalized quote.</p><p><br></p>`,
+            : `<p dir="ltr">Turkey has become a leading destination for medical tourism, especially in dental care. The combination of skilled professionals, advanced technology, and affordable prices attracts thousands seeking high-quality dental treatments. AZPO Health leverages these advantages to offer a comprehensive package that ensures a positive and successful dental experience.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: Dental treatments in Turkey are significantly more affordable compared to many Western countries. You can save up to 50-70% on costs, even after accounting for travel and accommodation.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">High-Quality Care: AZPO Health works with experienced dentists and modern clinics that maintain high standards of hygiene and patient care. The facilities use state-of-the-art equipment and advanced techniques to ensure effective and comfortable treatments.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health offers all-inclusive packages that cover not only the dental procedure but also airport transfers, accommodation, and post-treatment support. This seamless experience allows you to focus on your treatment and recovery while enjoying your stay in Turkey.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Professionals: AZPO Health's network includes skilled dentists specializing in cosmetic and restorative dentistry. They are experienced in creating custom-fitted dental crowns that look natural and restore full functionality.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Modern Technology: Turkish dental clinics invest in advanced technologies, including CAD/CAM systems for precise crown design and creation. This ensures a perfect fit and natural look.</p>
+</li>
+</ul>
+<h2 dir="ltr">Understanding Dental Crowns</h2>
+<p dir="ltr">Dental crowns, also known as caps, are prosthetic devices that cover damaged or decayed teeth to restore their shape, size, strength, and appearance. They protect the tooth from further damage and restore its function.</p>
+<h3 dir="ltr">Types of Dental Crowns</h3>
+<p dir="ltr">Crowns can be made from various materials, each with its own advantages. The choice of material depends on factors such as the tooth's location, its function, aesthetic considerations, and your budget. Here are some common types of dental crowns:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">All-Ceramic&nbsp; or All-Porcelain&nbsp; Crowns: These crowns are made entirely of porcelain or ceramic material. They offer the best aesthetic appeal, blending seamlessly with natural teeth. All-ceramic crowns are an excellent choice for front teeth where appearance is a priority.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Porcelain-Fused-to-Metal (PFM) Crowns: These crowns have a metal base covered by a layer of porcelain. PFM crowns provide a good balance of strength and aesthetics, making them suitable for both front and back teeth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">All-Metal Crowns: Made from gold or other metal alloys, these crowns are known for their exceptional strength and durability. Gold dental crowns are ideal for back teeth where biting forces are high.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Zirconia Crowns: Zirconia crowns are a type of all-ceramic crown made from zirconium dioxide, a very strong and biocompatible material. They offer a combination of strength, durability, and aesthetics.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<h3 dir="ltr" role="presentation">&nbsp;E-Max Crowns (Lithium Disilicate): E-Max crowns are made from lithium disilicate, a high-strength glass-ceramic material. They offer excellent aesthetics, with a translucent appearance that closely resembles natural teeth, making them an ideal choice for front teeth. They are also strong enough to be used in most areas of the mouth. However, E-Max crowns tend to be slightly more expensive than other options and may not be the best choice for patients who grind or clench their teeth (bruxism)<br><br><br></h3>
+</li>
+</ul>
+<p><strong><br><br></strong></p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation"><img style="display: block !important;margin-left: auto !important;margin-right: auto !important" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfcSrr65O2UPdWrdVGNDoL1LoesO2ieOGy7RUt2RAVrU-v5aUsM4tNYANlc7I6kNsRfPpwDBPAs3aLAXboPnxmR-B30RCbuefatiyxvNzO5GRH1QzqtTRx5l4aFjebqXEv-WFYKuQ?key=rGsdTFDxadg__aZyq3tSvZLY" width="602" height="401"></p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3 dir="ltr">The Dental Crown Procedure</h3>
+<p dir="ltr">Getting a dental crown typically requires two visits to the dentist. Here's what you can expect during the procedure:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Assessment and Preparation: The dentist will examine the tooth to determine if a crown is necessary. If so, they will prepare the tooth by removing a layer of its outer surface to make room for the crown.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Impression: After preparing the tooth, the dentist will take an impression (mold) of the tooth. This impression is sent to a dental laboratory where the crown is custom-made.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Temporary Crown: A temporary crown is placed on the prepared tooth to protect it while the permanent crown is being fabricated.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Placement of Permanent Crown: Once the permanent crown is ready, you will return to the dentist. The temporary crown is removed, and the permanent crown is fitted, adjusted, and cemented onto the prepared tooth.</p>
+</li>
+</ol>
+<h3 dir="ltr">Benefits of Dental Crowns</h3>
+<p dir="ltr">Dental crowns offer numerous benefits for restoring and protecting damaged teeth:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Restoration of Tooth Structure: Crowns restore teeth that have been significantly damaged by decay, fractures, or large fillings. They cover the entire visible portion of the tooth above the gum line, restoring its shape, size, and strength.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Protection: Crowns provide a protective cover for weak or damaged teeth, preventing further deterioration and potential fractures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Improved Function: Crowns restore the function of the tooth, allowing you to chew and bite properly.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Aesthetic Enhancement: Dental crowns can improve the appearance of teeth, crafted to match the color, shape, and size of your natural teeth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Longevity: With proper care, dental crowns can last many years.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Versatility: Crowns can be used for various dental purposes, including restoring severely decayed teeth, covering discolored or misshapen teeth, supporting dental bridges, and covering dental implants.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comfort: Once properly fitted, crowns feel comfortable and function like natural teeth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Prevention of Tooth Sensitivity: Crowns can help protect exposed tooth surfaces, reducing sensitivity to hot or cold foods and beverages.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Support for Dental Bridges: Crowns serve as abutments (anchors) for dental bridges, helping to bridge gaps left by missing teeth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Durable Solution: Crowns provide a durable solution that withstands normal biting and chewing forces.</p>
+</li>
+</ul>
+<h3 dir="ltr">Factors Affecting the Cost of Dental Crowns in Turkey</h3>
+<p dir="ltr">The cost of dental crowns in Turkey depends on several factors:</p>
+<p dir="ltr">Type of Crown Material: The material used for the crown significantly impacts the cost. All-ceramic and zirconia crowns are generally more expensive than PFM or all-metal crowns.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Clinic Reputation and Location: The reputation and location of the dental clinic can also affect the price. Clinics in major cities like Istanbul or Antalya may charge more than those in smaller towns.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Dentist's Experience: The experience and qualifications of the dentist can also influence the cost. Highly experienced dentists may charge more for their services.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Additional Procedures: If you require additional procedures such as root canal treatment or gum disease treatment before getting a crown, this will add to the overall cost.</p>
+</li>
+</ul>
+<h3 dir="ltr">How Long Will You Need to Stay in Turkey?</h3>
+<p dir="ltr">The length of your stay in Turkey for dental crowns depends on the treatment plan. For dental crowns, the process typically requires 5 to 7 days to allow time for initial consultations, treatments, and follow-up appointments. If you are undergoing multiple treatments or complex procedures (like full-mouth restoration), you may need to stay 10 to 14 days to ensure sufficient time for healing and any necessary adjustments.</p>
+<h3 dir="ltr">Taking Care of Your Dental Crowns</h3>
+<p dir="ltr">Proper care and maintenance are essential for ensuring the longevity of your dental crowns:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Brush Regularly: Brush your teeth at least twice a day with fluoride toothpaste.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Floss Daily: Floss daily to clean between your teeth and along the gumline.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Use Mouthwash: Consider using an antimicrobial mouthwash to help control bacteria in your mouth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Avoid Hard Objects: Avoid chewing on hard objects such as ice, pencils, or candies.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Wear a Nightguard: If you have a history of teeth grinding (bruxism), wear a custom-fitted night guard while you sleep.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Limit Sugary Foods: Reduce sugary and acidic foods and beverages, as they can contribute to decay and gum disease.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Visit Your Dentist Regularly: Visit your dentist for regular check-ups and professional cleanings.</p>
+</li>
+</ul>
+<h2 dir="ltr">AZPO Health: Your Trusted Partner for Dental Crowns in Turkey</h2>
+<p dir="ltr">AZPO Health is a leading medical tourism company in Turkey, with locations in Istanbul, Antalya, and Alanya. We specialize in providing high-quality and affordable dental treatments to international patients. Our team is committed to ensuring a comfortable and successful experience for every patient.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Dentists: We work with a network of highly skilled and experienced dentists who specialize in cosmetic and restorative dentistry.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">State-of-the-Art Facilities: Our partner clinics are equipped with the latest dental technology, ensuring precise and effective treatments.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Treatment Plans: We create customized treatment plans tailored to your specific needs and goals.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">All-Inclusive Packages: Our packages include airport transfers, accommodation, dental treatment, and post-operative care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Dedicated Support: Our multilingual team provides dedicated support throughout your journey, ensuring a stress-free experience.</p>
+</li>
+</ul>
+<p><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Restore Your Smile Today!</h2>
+<p dir="ltr">Ready to regain your confident smile with affordable, high-quality dental crowns in Turkey? Contact AZPO Health today for a free consultation and personalized quote.</p>
+<p><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Hear From Our Patients</h3>
+<p dir="ltr">"I had been self-conscious about my smile for years due to a cracked tooth. AZPO Health made the entire process of getting a crown so easy and affordable. The dentist was fantastic, and the results are amazing!" - Sarah J.</p>
+<p><strong id="docs-internal-guid-e0027ac1-7fff-bc31-865d-ba382afb607a">"I was hesitant to travel abroad for dental work, but AZPO Health's team put me at ease from the start. The clinic was modern and clean, and the crown looks and feels completely natural." - Michael B.</strong></p>`,
       },
       imgCover: subNestedKey === "dental-crowns" ? dentistchoosing : null,
       subNestedKey: "dental-crowns",
@@ -3805,7 +4530,7 @@ AZPO Health - ведущая компания медицинского тури�
         ],
         categories: [
           {
-            header: locale === "ru" ? "Who It’s For" : "Who It’s For",
+            header: locale === "ru" ? "Who It’s For" : "Description",
             desc:
               locale === "ru"
                 ? `
@@ -3813,32 +4538,73 @@ AZPO Health - ведущая компания медицинского тури�
                     Have stained, chipped, or worn-out teeth.Desire a more symmetrical, aligned, and aesthetically pleasing smile.Have minor alignment or spacing issues that they wish to correct without orthodontics.Seek a long-lasting and minimally invasive solution to enhance their smile.
                   `
                 : `
-                    The Hollywood Smile is ideal for individuals who:
-                    Have stained, chipped, or worn-out teeth.Desire a more symmetrical, aligned, and aesthetically pleasing smile.Have minor alignment or spacing issues that they wish to correct without orthodontics.Seek a long-lasting and minimally invasive solution to enhance their smile.
+                    The Hollywood Smile is a cosmetic dental treatment designed to transform your smile by addressing common aesthetic concerns like tooth pigmentation, chipping, alignment issues, and general tooth shape. The treatment involves the use of dental veneers—thin, film-like covers that are placed on the front surface of the teeth to enhance their appearance.
                   `,
           },
           {
-            header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            decsList: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "Важные аспекты" : "How It Works",
+            decsList: locale === "ru" ? "" : "Consultation: Dentist evaluates oral health and takes X-rays. Smile Design: Customized veneers are planned based on tooth shape, size, and color. Tooth Preparation: Minimal enamel removal, depending on veneer type. Application: Veneers are bonded for a natural, enhanced smile.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Как это работает" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "The process starts with a consultation where your dentist evaluates your oral health, discussing any underlying issues like gum disease or cavities. X-rays will be taken to ensure your teeth and gums are healthy enough for the treatment."
-                : "The process starts with a consultation where your dentist evaluates your oral health, discussing any underlying issues like gum disease or cavities. X-rays will be taken to ensure your teeth and gums are healthy enough for the treatment.",
+                : "The Hollywood Smile is ideal for individuals who: Have stained, chipped, or worn-out teeth. Desire a more symmetrical, aligned, and aesthetically pleasing smile Have minor alignment or spacing issues that they wish to correct without orthodontics. Seek a long-lasting and minimally invasive solution to enhance their smile.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "What is a Hollywood Smile?",
+          answer: locale === "ru" ? "" : "A full-mouth cosmetic makeover usually with veneers or crowns"
+        },
+        {
+          question: locale === "ru" ? "" : "Does it damage my natural teeth?",
+          answer: locale === "ru" ? "" : "Minimal enamel reduction, preserves structure"
+        },
+        {
+          question: locale === "ru" ? "" : "Is it painful?",
+          answer: locale === "ru" ? "" : "Local anesthesia prevents pain, mild soreness after"
+        },
+        {
+          question: locale === "ru" ? "" : "How long does it last?",
+          answer: locale === "ru" ? "" : "Typically 10–15 years with care"
+        },
+        {
+          question: locale === "ru" ? "" : "Can I choose the shade?",
+          answer: locale === "ru" ? "" : "Yes, you customize it with your dentist"
+        },
+        {
+          question: locale === "ru" ? "" : "Does the procedure take a long time?",
+          answer: locale === "ru" ? "" : "Varies depending on the treatment but usually completed in 2-3 sessions"
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Avoid biting hard objects with front teeth",
+        locale === "ru" ? "" : "Practice excellent hygiene and regular dental visits",
+        locale === "ru" ? "" : "Use a mouthguard if you grind teeth at night",
+        locale === "ru" ? "" : "Limit staining foods/beverages initially",
+        locale === "ru" ? "" : "Expect adjustment period to new bite/smile",
+        locale === "ru" ? "" : "Avoid hard foods",
+        locale === "ru" ? "" : "Limit smoking and alcohol",
+        locale === "ru" ? "" : "Prefer soft foods initially",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Dental exam and consultation for smile design",
+        locale === "ru" ? "" : "Treat gum disease or decay before starting",
+        locale === "ru" ? "" : "Discuss material (zirconia, e.max, veneers, etc.) and shade preference",
+        locale === "ru" ? "" : "Quit smoking for better bonding and aesthetics",
+        locale === "ru" ? "" : "Maintain good oral hygiene",
+        locale === "ru" ? "" : "It can be digitally designed in advance",
+        locale === "ru" ? "" : "It usually involves several stages, so be prepared to allocate enough time",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile. Although it requires an investment of time and money, the benefits of a Hollywood Smile, including improved confidence and aesthetic appeal, make it a worthwhile option for many. Proper care and maintenance are key to ensuring your new smile lasts for many years."
-            : "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile. Although it requires an investment of time and money, the benefits of a Hollywood Smile, including improved confidence and aesthetic appeal, make it a worthwhile option for many. Proper care and maintenance are key to ensuring your new smile lasts for many years.",
+            : "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile.",
       },
       bfs: bfList,
       contents: {
@@ -3852,11 +4618,10 @@ AZPO Health - ведущая компания медицинского тури�
         <p>Turkey has become a leading destination for medical tourism, particularly for dental treatments like the Hollywood Smile. Several factors contribute to its popularity:</p><p><strong>Affordability:</strong> Dental treatments in Turkey are significantly more affordable compared to Europe, the UK, and the USA. You can achieve the smile of your dreams without breaking the bank.</p><p><strong>High-Quality Services:</strong> Turkish dentists and healthcare staff are well-educated and experienced. Many have international training and use advanced techniques and technologies.</p><p><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover treatment costs, accommodation, airport transfers, and post-operative care. This makes the entire process smooth and stress-free.</p><p><strong>Beautiful Destination:</strong> Combine your dental treatment with a holiday in a fascinating country. Explore the historic sites, vibrant culture, and delicious cuisine of Istanbul, Antalya, or Alanya.</p><h4><strong>What is a Hollywood Smile?</strong></h4><p>The Hollywood Smile is a cosmetic dental treatment designed to transform your smile by addressing common aesthetic concerns like tooth pigmentation, chipping, alignment issues, and general tooth shape. The treatment involves the use of dental veneers—thin, film-like covers that are placed on the front surface of the teeth to enhance their appearance. The veneers are typically made of porcelain, lumineers (ultra-thin porcelain), or zirconium (a strong ceramic), and are customized to give you a natural, flawless smile.</p><p><br></p><h4><strong>Methods Used in a Hollywood Smile</strong></h4><p>Several methods can be used in combination to achieve a Hollywood Smile, including:</p><p><strong>Dental Veneers:</strong> Thin layers of porcelain or composite resin are bonded to the front surface of the teeth to correct imperfections such as stains, chips, cracks, or minor misalignments. Veneers can improve the shape, size, and color of your teeth, creating a uniform and aesthetically pleasing smile.</p><p class="ql-indent-1">Depending on the veneer material, some removal of tooth enamel may be necessary, which is irreversible.</p><p><strong>Dental Crowns:</strong> Tooth-shaped caps that cover damaged or decayed teeth, restoring their shape, size, strength, and appearance. Crowns are used when a tooth is too damaged to be corrected with a veneer.</p><p><strong>Dental Implants:</strong> Artificial tooth roots that are surgically placed into the jawbone to support replacement teeth. Implants are a long-lasting solution for missing teeth, providing a stable foundation for crowns or bridges.</p><p class="ql-indent-1">Before proceeding with dental implants, it’s crucial to disclose your complete medical history, including any medications you are taking and any underlying health conditions, to your dentist or oral surgeon.</p><p><strong>Teeth Whitening:</strong> Bleaching procedures that lighten the shade of your teeth, removing stains and discoloration. Teeth whitening can be done in-office or at home using custom-made trays and bleaching gels.</p><p><strong>Gum Contouring:</strong> Reshaping the gum line to improve the symmetry and aesthetics of your smile. Gum contouring can correct a "gummy smile" or even out an uneven gum line.</p><p><strong>Orthodontics:</strong> In some cases, minor teeth straightening may be necessary to achieve optimal alignment before other cosmetic procedures. Clear aligners or traditional braces can be used to correct misalignments.</p><h4><strong>Benefits of Each Method</strong></h4><p><strong>Veneers:</strong> Provide a quick and effective way to correct minor imperfections, creating a bright and symmetrical smile.</p><p><strong>Crowns:</strong> Restore damaged teeth, protecting them from further decay and improving their function and appearance.</p><p><strong>Implants:</strong> Offer a permanent solution for missing teeth, restoring your smile and preventing bone loss in the jaw.</p><p><strong>Teeth Whitening:</strong> Enhances the brightness of your smile, making you look younger and more attractive.</p><p><strong>Gum Contouring:</strong> Improves the balance and harmony of your smile, correcting a gummy or uneven gum line.</p><p><strong>Orthodontics:</strong> Straightens misaligned teeth, improving your bite and making your teeth easier to clean.</p><h4><strong>Is a Hollywood Smile Right for You?</strong></h4><p>The Hollywood Smile is ideal for individuals who:</p><p>Have stained, chipped, or worn-out teeth.</p><p>Desire a more symmetrical, aligned, and aesthetically pleasing smile.</p><p>Have minor alignment or spacing issues that they wish to correct without orthodontics.</p><p>Seek a long-lasting and minimally invasive solution to enhance their smile.</p><h4><strong>Patient Testimonials</strong></h4><p><strong>Sarah, 32:</strong> "I always felt self-conscious about my smile because of some gaps and discoloration. AZPO Health gave me a Hollywood Smile, and it has changed my life! I feel so much more confident and love to show off my new smile."</p><p><strong>Mark, 45:</strong> "I had several damaged teeth and was embarrassed to smile. The team at AZPO Health restored my teeth with crowns and veneers, and the result is incredible. I now have a strong, healthy, and attractive smile."</p><p><strong>Emily, 28:</strong> "I was hesitant about traveling to Turkey for dental work, but AZPO Health made the entire process so easy and comfortable. The clinic was modern and clean, and the staff was friendly and professional. I am thrilled with my Hollywood Smile!"</p><h4><strong>AZPO Health: Your Trusted Partner for a Perfect Smile</strong></h4><p>AZPO Health is a leading medical tourism company in Turkey, specializing in aesthetic and health treatments. With locations in Istanbul, Antalya, and Alanya, we offer world-class dental services at affordable prices.</p><p>Our commitment to quality, expertise, and patient satisfaction sets us apart. We work with experienced dentists and use the latest technology to deliver exceptional results. Our all-inclusive packages ensure a smooth and stress-free experience, from your initial consultation to your post-operative care.</p><h4><strong>Contact Us Today!</strong></h4><p>Ready to transform your smile with a Hollywood Smile in Turkey? Contact AZPO Health today for a free consultation and personalized quote! Discover how we can help you achieve the smile of your dreams.</p><p><br></p>
           `
             : `<p>Turkey has become a leading destination for medical tourism, particularly for dental treatments like the Hollywood Smile. Several factors contribute to its popularity:</p><p><strong>Affordability:</strong> Dental treatments in Turkey are significantly more affordable compared to Europe, the UK, and the USA. You can achieve the smile of your dreams without breaking the bank.</p><p><strong>High-Quality Services:</strong> Turkish dentists and healthcare staff are well-educated and experienced. Many have international training and use advanced techniques and technologies.</p><p><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover treatment costs, accommodation, airport transfers, and post-operative care. This makes the entire process smooth and stress-free.</p><p><strong>Beautiful Destination:</strong> Combine your dental treatment with a holiday in a fascinating country. Explore the historic sites, vibrant culture, and delicious cuisine of Istanbul, Antalya, or Alanya.</p><h4><strong>What is a Hollywood Smile?</strong></h4><p>The Hollywood Smile is a cosmetic dental treatment designed to transform your smile by addressing common aesthetic concerns like tooth pigmentation, chipping, alignment issues, and general tooth shape. The treatment involves the use of dental veneers—thin, film-like covers that are placed on the front surface of the teeth to enhance their appearance. The veneers are typically made of porcelain, lumineers (ultra-thin porcelain), or zirconium (a strong ceramic), and are customized to give you a natural, flawless smile.</p><p><br></p><h4><strong>Methods Used in a Hollywood Smile</strong></h4><p>Several methods can be used in combination to achieve a Hollywood Smile, including:</p><p><strong>Dental Veneers:</strong> Thin layers of porcelain or composite resin are bonded to the front surface of the teeth to correct imperfections such as stains, chips, cracks, or minor misalignments. Veneers can improve the shape, size, and color of your teeth, creating a uniform and aesthetically pleasing smile.</p><p class="ql-indent-1">Depending on the veneer material, some removal of tooth enamel may be necessary, which is irreversible.</p><p><strong>Dental Crowns:</strong> Tooth-shaped caps that cover damaged or decayed teeth, restoring their shape, size, strength, and appearance. Crowns are used when a tooth is too damaged to be corrected with a veneer.</p><p><strong>Dental Implants:</strong> Artificial tooth roots that are surgically placed into the jawbone to support replacement teeth. Implants are a long-lasting solution for missing teeth, providing a stable foundation for crowns or bridges.</p><p class="ql-indent-1">Before proceeding with dental implants, it’s crucial to disclose your complete medical history, including any medications you are taking and any underlying health conditions, to your dentist or oral surgeon.</p><p><strong>Teeth Whitening:</strong> Bleaching procedures that lighten the shade of your teeth, removing stains and discoloration. Teeth whitening can be done in-office or at home using custom-made trays and bleaching gels.</p><p><strong>Gum Contouring:</strong> Reshaping the gum line to improve the symmetry and aesthetics of your smile. Gum contouring can correct a "gummy smile" or even out an uneven gum line.</p><p><strong>Orthodontics:</strong> In some cases, minor teeth straightening may be necessary to achieve optimal alignment before other cosmetic procedures. Clear aligners or traditional braces can be used to correct misalignments.</p><h4><strong>Benefits of Each Method</strong></h4><p><strong>Veneers:</strong> Provide a quick and effective way to correct minor imperfections, creating a bright and symmetrical smile.</p><p><strong>Crowns:</strong> Restore damaged teeth, protecting them from further decay and improving their function and appearance.</p><p><strong>Implants:</strong> Offer a permanent solution for missing teeth, restoring your smile and preventing bone loss in the jaw.</p><p><strong>Teeth Whitening:</strong> Enhances the brightness of your smile, making you look younger and more attractive.</p><p><strong>Gum Contouring:</strong> Improves the balance and harmony of your smile, correcting a gummy or uneven gum line.</p><p><strong>Orthodontics:</strong> Straightens misaligned teeth, improving your bite and making your teeth easier to clean.</p><h4><strong>Is a Hollywood Smile Right for You?</strong></h4><p>The Hollywood Smile is ideal for individuals who:</p><p>Have stained, chipped, or worn-out teeth.</p><p>Desire a more symmetrical, aligned, and aesthetically pleasing smile.</p><p>Have minor alignment or spacing issues that they wish to correct without orthodontics.</p><p>Seek a long-lasting and minimally invasive solution to enhance their smile.</p><h4><strong>Patient Testimonials</strong></h4><p><strong>Sarah, 32:</strong> "I always felt self-conscious about my smile because of some gaps and discoloration. AZPO Health gave me a Hollywood Smile, and it has changed my life! I feel so much more confident and love to show off my new smile."</p><p><strong>Mark, 45:</strong> "I had several damaged teeth and was embarrassed to smile. The team at AZPO Health restored my teeth with crowns and veneers, and the result is incredible. I now have a strong, healthy, and attractive smile."</p><p><strong>Emily, 28:</strong> "I was hesitant about traveling to Turkey for dental work, but AZPO Health made the entire process so easy and comfortable. The clinic was modern and clean, and the staff was friendly and professional. I am thrilled with my Hollywood Smile!"</p><h4><strong>AZPO Health: Your Trusted Partner for a Perfect Smile</strong></h4><p>AZPO Health is a leading medical tourism company in Turkey, specializing in aesthetic and health treatments. With locations in Istanbul, Antalya, and Alanya, we offer world-class dental services at affordable prices.</p><p>Our commitment to quality, expertise, and patient satisfaction sets us apart. We work with experienced dentists and use the latest technology to deliver exceptional results. Our all-inclusive packages ensure a smooth and stress-free experience, from your initial consultation to your post-operative care.</p><h4><strong>Contact Us Today!</strong></h4><p>Ready to transform your smile with a Hollywood Smile in Turkey? Contact AZPO Health today for a free consultation and personalized quote! Discover how we can help you achieve the smile of your dreams.</p><p><br></p>`,
-      },
-      imgCover: subNestedKey === "hollywood-smile" ? hollywood : null,
-      subNestedKey: "hollywood-smile",
-      video:
-        "https://azpo.com/api/files/property-videos/dental_dr_ecenaz_eng.mp4",
+      },      
+      imgCover: subNestedKey === "hollywood-smile" ? hollywood : null,       
+      video:"https://azpo.com/api/files/property-videos/dental_dr_ecenaz_eng.mp4",
+      subNestedKey: "hollywood-smile",        
     },
     // clear aligners
     {
@@ -3868,7 +4633,7 @@ AZPO Health - ведущая компания медицинского тури�
       descriptionTop:
         locale === "ru"
           ? "Ditch the metal braces! Invisalign clear aligners offer a virtually invisible, comfortable way to achieve perfectly aligned teeth. Custom-made for a precise fit, these removable aligners let you eat, drink, and smile with confidence—while straightening your teeth effortlessly. Get the smile you deserve, the modern way!"
-          : "Ditch the metal braces! Invisalign clear aligners offer a virtually invisible, comfortable way to achieve perfectly aligned teeth. Custom-made for a precise fit, these removable aligners let you eat, drink, and smile with confidence—while straightening your teeth effortlessly. Get the smile you deserve, the modern way!",
+          : "Ditch the metal braces! Invisalign clear aligners offer a virtually invisible, comfortable way to achieve perfectly aligned teeth. Custom-made for a precise fit, these removable aligners let you eat, drink, and smile with confidence, while straightening your teeth effortlessly. Get the smile you deserve, the modern way!",
       benefits: {
         items: [
           {
@@ -3898,7 +4663,7 @@ AZPO Health - ведущая компания медицинского тури�
             header:
               locale === "ru"
                 ? "Who Are Clear Aligners Suitable For?"
-                : "Who Are Clear Aligners Suitable For?",
+                : "Description",
             desc:
               locale === "ru"
                 ? `
@@ -3909,22 +4674,18 @@ AZPO Health - ведущая компания медицинского тури�
                     Those committed to wearing aligners as prescribed to achieve the best results.
                   `
                 : `
-                  Clear aligners are recommended for:
-                  Adults and teenagers seeking to straighten their teeth discreetly.
-                  Individuals with mild to moderate alignment issues, such as spacing, crowding, or minor bite problems.
-                  Patients who prefer removable appliances over fixed braces.
-                  Those committed to wearing aligners as prescribed to achieve the best results.
+                  Clear aligners, such as Invisalign, are a modern alternative to traditional braces. These custom-made, transparent trays gradually shift teeth into their desired position. They are nearly invisible and provide a comfortable and discreet orthodontic treatment option.
                 `,
           },
           {
-            header: null,
-            decsList: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "" : "How does It work?",
+            decsList: locale === "ru" ? "" : "Diagnosis and Treatment Planning: A 3D scan creates a digital model, and a customized treatment plan is developed. Fabrication and Use of Aligners: Aligners are worn 20–22 hours daily, removed for eating, drinking, and hygiene. They are replaced every 1–2 weeks. Duration of Treatment: Treatment usually lasts 12–18 months, depending on case complexity.",
           },
           {
             header:
               locale === "ru"
                 ? "How Do Clear Aligners Work?"
-                : "How Do Clear Aligners Work?",
+                : "For Whom",
             desc:
               locale === "ru"
                 ? `
@@ -3936,26 +4697,61 @@ AZPO Health - ведущая компания медицинского тури�
                   Aligners must be worn for 20–22 hours daily, removed only for eating, drinking, and oral hygiene.
                   `
                 : `
-                  Diagnosis and Treatment Planning:
-                  A 3D scan of your teeth is taken to create a digital model.
-                  A personalized treatment plan is developed, detailing the sequence of tooth movements.
-                  Fabrication and Use of Aligners:
-                  Patients receive a set of aligners, with each tray designed for a specific stage of tooth alignment.
-                  Aligners must be worn for 20–22 hours daily, removed only for eating, drinking, and oral hygiene.
-                  Every 1–2 weeks, aligners are replaced with the next set in the series to continue progress.
+                  Adults and teenagers seeking to straighten their teeth discreetly.
+                  Individuals with mild to moderate alignment issues, such as spacing, crowding, or minor bite problems.
+                  Patients who prefer removable appliances over fixed braces.
+                  Those committed to wearing aligners as prescribed to achieve the best results.
                   `,
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "Does it hurt?",
+          answer: locale === "ru" ? "" : "Mild pressure for a day or two is normal"
+        },
+        {
+          question: locale === "ru" ? "" : "Can I drink with aligners in?",
+          answer: locale === "ru" ? "" : "Only water – remove for other drinks"
+        },
+        {
+          question: locale === "ru" ? "" : "What happens if I forget to wear them?",
+          answer: locale === "ru" ? "" : "Treatment may be delayed or trays may not fit"
+        },
+        {
+          question: locale === "ru" ? "" : "How long is treatment?",
+          answer: locale === "ru" ? "" : "6–18 months depending on case"
+        },
+        {
+          question: locale === "ru" ? "" : "Will my speech change?",
+          answer: locale === "ru" ? "" : "Slight lisp at first, but it goes away"
+        },
+        {
+          question: locale === "ru" ? "" : "Can I chew gum with the aligners?",
+          answer: locale === "ru" ? "" : "No, as it may damage them"
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Wear aligners 20–22 hrs/day, remove only for eating/cleaning",
+        locale === "ru" ? "" : "Clean aligners daily, brush teeth after meals",
+        locale === "ru" ? "" : "Expect mild discomfort with new sets, avoid losing them",
+        locale === "ru" ? "" : "Switch trays as directed and attend check-ups regularly",
+        locale === "ru" ? "" : "Store the aligners in a special case to prevent loss.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Get a dental cleaning and ensure no cavities",
+        locale === "ru" ? "" : "Discuss goals and get impressions/scans",
+        locale === "ru" ? "" : "Prepare for 22-hour daily wear and aligner cleaning",
+        locale === "ru" ? "" : "Perform a professional dental cleaning and ensure there are no cavities.",
+        locale === "ru" ? "" : "Discuss treatment goals and take impressions/scans for custom aligner creation.",
+        locale === "ru" ? "" : "Prepare to wear the aligners for 22 hours a day and maintain regular cleaning.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.If you’re considering clear aligners, consult an orthodontist to determine if they’re the right treatment option for your specific needs."
-            : "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.If you’re considering clear aligners, consult an orthodontist to determine if they’re the right treatment option for your specific needs.",
+            : "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.",
       },
       bfs: bfList,
       contents: {
@@ -3968,7 +4764,145 @@ AZPO Health - ведущая компания медицинского тури�
             ? `
         <p>Turkey has emerged as a leading destination for medical tourism, particularly for dental treatments, and here’s why choosing AZPO Health for your Clear Aligners Invisalign treatment in Turkey is a smart decision:</p><p><strong>Affordability</strong>: One of the primary reasons people choose Turkey for dental work is the cost savings. You can save up to 70-90% on dental treatments compared to the US and UK, even after factoring in travel and accommodation expenses.</p><p><strong>High-Quality Care</strong>: AZPO Health is committed to providing top-notch dental services using state-of-the-art technology and adhering to the highest international standards. Our experienced dental professionals are skilled in the latest Invisalign techniques, ensuring you receive the best possible care.</p><p><strong>Experienced Professionals</strong>: AZPO Health boasts a team of highly trained experts who stay updated with the latest advancements in dentistry. Our specialists have years of experience in performing Clear Aligners Invisalign treatments, ensuring optimal results.</p><p><strong>Comprehensive Packages</strong>: AZPO Health offers all-inclusive packages that cover not only the Clear Aligners Invisalign treatment but also accommodation, airport transfers, and post-operative care. This comprehensive approach ensures a hassle-free and comfortable experience for international patients.</p><p><strong>Beautiful Destination</strong>: Combine your dental treatment with a vacation in Turkey! Explore the rich history, vibrant culture, and stunning landscapes of Istanbul, Antalya, or Alanya while achieving your dream smile.</p><h2>What Are Clear Aligners?</h2><p>Clear aligners, such as Invisalign, are a modern alternative to traditional braces. These custom-made, transparent trays gradually shift teeth into their desired position. They are nearly invisible and provide a comfortable and discreet orthodontic treatment option.</p><p><br></p><h4><strong>How Clear Aligners Work</strong></h4><p><strong>Initial Consultation and 3D Scanning:</strong></p><p class="ql-indent-1">The process begins with a consultation at AZPO Health, where our dental professionals assess your oral health and discuss your smile goals.</p><p class="ql-indent-1">Using a state-of-the-art iTero Element™ scanner, we create a detailed 3D scan of your teeth. This digital model ensures high precision in treatment planning.</p><p><strong>Personalized Treatment Plan:</strong></p><p class="ql-indent-1">Based on the 3D scan, our experts develop a customized treatment plan that maps out the precise movements of your teeth.</p><p class="ql-indent-1">You’ll get a preview of what your new smile will look like throughout each stage of the treatment.</p><p><strong>Custom Aligner Fabrication:</strong></p><p class="ql-indent-1">A series of Clear Aligners are custom-made to fit your teeth perfectly.</p><p class="ql-indent-1">These aligners are crafted from SmartTrack™ material, which is comfortable, durable, and nearly invisible.</p><p><strong>Wearing the Aligners:</strong></p><p class="ql-indent-1">You’ll wear each set of aligners for about 1-2 weeks, as directed by your dentist.</p><p class="ql-indent-1">The aligners should be worn for 20-22 hours a day, removing them only for eating, drinking, and oral hygiene.</p><p><strong>Progress and Adjustments:</strong></p><p class="ql-indent-1">As you switch to a new set of aligners, your teeth gradually shift into the desired position.</p><p class="ql-indent-1">Regular check-ups allow our team to monitor your progress and make any necessary adjustments.</p><h4><strong>Benefits of Clear Aligners: Invisalign</strong></h4><p><strong>Virtually Invisible</strong>: Clear Aligners are nearly invisible, making them a discreet option for straightening teeth.</p><p><strong>Comfortable Fit</strong>: Made from smooth plastic, Clear Aligners are gentle on your gums and cheeks, minimizing irritation.</p><p><strong>Removable</strong>: You can remove the aligners to eat, drink, brush, and floss, making it easier to maintain good oral hygiene.</p><p><strong>Customized Treatment</strong>: Each aligner is custom-made to fit your mouth, ensuring precise and effective tooth movement.</p><p><strong>Predictable Results</strong>: The 3D scanning and treatment planning process allows for predictable and accurate results.</p><p><strong>Improved Oral Health</strong>: Straightening your teeth with Clear Aligners can improve your overall oral health by making it easier to clean your teeth and gums.</p><h3><span style="color: rgb(67, 67, 67);">Types of clear aligners</span></h3><p><strong>Invisalign</strong>: A popular brand of clear aligners that offers a series of custom-made aligners to gradually straighten teeth.</p><p><strong>ClearCorrect</strong>: Another brand of clear aligners that uses a similar approach to Invisalign, with custom-made aligners designed to move teeth over time.</p><p><strong>eCligner</strong>: It is a transparent aligner system that uses aligners that are made in stages to align teeth.</p><h3><strong>AZPO Health: Your Trusted Partner for Clear Aligners Invisalign</strong></h3><p>At AZPO Health, we are dedicated to providing exceptional dental care with a focus on patient satisfaction and outstanding results. Here’s what sets us apart:</p><p><strong>Experienced Dental Team</strong>: Our team consists of highly qualified and experienced dentists specializing in orthodontics and Clear Aligners Invisalign treatments.</p><p><strong>State-of-the-Art Technology</strong>: We use the latest dental technology, including 3D scanning and digital treatment planning, to ensure precision and optimal outcomes.</p><p><strong>Personalized Care</strong>: We believe in providing personalized care tailored to your unique needs and smile goals. Our dental professionals take the time to listen to your concerns and develop a treatment plan that’s right for you.</p><p><strong>Comprehensive Support</strong>: From the initial consultation to the final follow-up appointment, we provide comprehensive support and guidance to ensure a smooth and comfortable experience. Our bilingual staff is always available to answer your questions and address any concerns.</p><p><strong>Prime Locations</strong>: With clinics all over Turkey, AZPO Health offers convenient access to world-class dental care in some of Turkey’s most beautiful cities.</p><h3><strong>Real Stories, Real Smiles</strong></h3><p><em>I had always been self-conscious about my crooked teeth, but the thought of wearing metal braces as an adult was unbearable. AZPO Health offered me a Clear Aligners Invisalign treatment plan that was not only affordable but also incredibly convenient. The aligners were virtually invisible, and I could remove them to eat and brush my teeth. The whole process was smooth, and the results are amazing. I finally have the confident smile I’ve always dreamed of!</em> - <strong>Sarah J.</strong></p><p><em>Choosing AZPO Health for my Clear Aligners Invisalign treatment was the best decision I’ve ever made. The team was professional and caring, and the clinic was equipped with the latest technology. I was amazed at how quickly my teeth started to straighten, and the aligners were so comfortable to wear. Plus, being able to explore Istanbul during my treatment was an added bonus. I highly recommend AZPO Health to anyone considering Clear Aligners Invisalign.</em> - <strong>Michael B.</strong></p><h3><strong>Take the First Step Towards Your Dream Smile!</strong></h3><p>Ready to transform your smile with Clear Aligners Invisalign? Contact AZPO Health today for a free consultation and personalized quote. Our friendly team is here to answer your questions, discuss your smile goals, and help you discover how Clear Aligners Invisalign can change your life. Don’t wait any longer to achieve the confident, beautiful smile you deserve!</p><p><br></p>
           `
-            : `<p>Turkey has emerged as a leading destination for medical tourism, particularly for dental treatments, and here’s why choosing AZPO Health for your Clear Aligners Invisalign treatment in Turkey is a smart decision:</p><p><strong>Affordability</strong>: One of the primary reasons people choose Turkey for dental work is the cost savings. You can save up to 70-90% on dental treatments compared to the US and UK, even after factoring in travel and accommodation expenses.</p><p><strong>High-Quality Care</strong>: AZPO Health is committed to providing top-notch dental services using state-of-the-art technology and adhering to the highest international standards. Our experienced dental professionals are skilled in the latest Invisalign techniques, ensuring you receive the best possible care.</p><p><strong>Experienced Professionals</strong>: AZPO Health boasts a team of highly trained experts who stay updated with the latest advancements in dentistry. Our specialists have years of experience in performing Clear Aligners Invisalign treatments, ensuring optimal results.</p><p><strong>Comprehensive Packages</strong>: AZPO Health offers all-inclusive packages that cover not only the Clear Aligners Invisalign treatment but also accommodation, airport transfers, and post-operative care. This comprehensive approach ensures a hassle-free and comfortable experience for international patients.</p><p><strong>Beautiful Destination</strong>: Combine your dental treatment with a vacation in Turkey! Explore the rich history, vibrant culture, and stunning landscapes of Istanbul, Antalya, or Alanya while achieving your dream smile.</p><h2>What Are Clear Aligners?</h2><p>Clear aligners, such as Invisalign, are a modern alternative to traditional braces. These custom-made, transparent trays gradually shift teeth into their desired position. They are nearly invisible and provide a comfortable and discreet orthodontic treatment option.</p><p><br></p><h4><strong>How Clear Aligners Work</strong></h4><p><strong>Initial Consultation and 3D Scanning:</strong></p><p class="ql-indent-1">The process begins with a consultation at AZPO Health, where our dental professionals assess your oral health and discuss your smile goals.</p><p class="ql-indent-1">Using a state-of-the-art iTero Element™ scanner, we create a detailed 3D scan of your teeth. This digital model ensures high precision in treatment planning.</p><p><strong>Personalized Treatment Plan:</strong></p><p class="ql-indent-1">Based on the 3D scan, our experts develop a customized treatment plan that maps out the precise movements of your teeth.</p><p class="ql-indent-1">You’ll get a preview of what your new smile will look like throughout each stage of the treatment.</p><p><strong>Custom Aligner Fabrication:</strong></p><p class="ql-indent-1">A series of Clear Aligners are custom-made to fit your teeth perfectly.</p><p class="ql-indent-1">These aligners are crafted from SmartTrack™ material, which is comfortable, durable, and nearly invisible.</p><p><strong>Wearing the Aligners:</strong></p><p class="ql-indent-1">You’ll wear each set of aligners for about 1-2 weeks, as directed by your dentist.</p><p class="ql-indent-1">The aligners should be worn for 20-22 hours a day, removing them only for eating, drinking, and oral hygiene.</p><p><strong>Progress and Adjustments:</strong></p><p class="ql-indent-1">As you switch to a new set of aligners, your teeth gradually shift into the desired position.</p><p class="ql-indent-1">Regular check-ups allow our team to monitor your progress and make any necessary adjustments.</p><h4><strong>Benefits of Clear Aligners: Invisalign</strong></h4><p><strong>Virtually Invisible</strong>: Clear Aligners are nearly invisible, making them a discreet option for straightening teeth.</p><p><strong>Comfortable Fit</strong>: Made from smooth plastic, Clear Aligners are gentle on your gums and cheeks, minimizing irritation.</p><p><strong>Removable</strong>: You can remove the aligners to eat, drink, brush, and floss, making it easier to maintain good oral hygiene.</p><p><strong>Customized Treatment</strong>: Each aligner is custom-made to fit your mouth, ensuring precise and effective tooth movement.</p><p><strong>Predictable Results</strong>: The 3D scanning and treatment planning process allows for predictable and accurate results.</p><p><strong>Improved Oral Health</strong>: Straightening your teeth with Clear Aligners can improve your overall oral health by making it easier to clean your teeth and gums.</p><h3><span style="color: rgb(67, 67, 67);">Types of clear aligners</span></h3><p><strong>Invisalign</strong>: A popular brand of clear aligners that offers a series of custom-made aligners to gradually straighten teeth.</p><p><strong>ClearCorrect</strong>: Another brand of clear aligners that uses a similar approach to Invisalign, with custom-made aligners designed to move teeth over time.</p><p><strong>eCligner</strong>: It is a transparent aligner system that uses aligners that are made in stages to align teeth.</p><h3><strong>AZPO Health: Your Trusted Partner for Clear Aligners Invisalign</strong></h3><p>At AZPO Health, we are dedicated to providing exceptional dental care with a focus on patient satisfaction and outstanding results. Here’s what sets us apart:</p><p><strong>Experienced Dental Team</strong>: Our team consists of highly qualified and experienced dentists specializing in orthodontics and Clear Aligners Invisalign treatments.</p><p><strong>State-of-the-Art Technology</strong>: We use the latest dental technology, including 3D scanning and digital treatment planning, to ensure precision and optimal outcomes.</p><p><strong>Personalized Care</strong>: We believe in providing personalized care tailored to your unique needs and smile goals. Our dental professionals take the time to listen to your concerns and develop a treatment plan that’s right for you.</p><p><strong>Comprehensive Support</strong>: From the initial consultation to the final follow-up appointment, we provide comprehensive support and guidance to ensure a smooth and comfortable experience. Our bilingual staff is always available to answer your questions and address any concerns.</p><p><strong>Prime Locations</strong>: With clinics all over Turkey, AZPO Health offers convenient access to world-class dental care in some of Turkey’s most beautiful cities.</p><h3><strong>Real Stories, Real Smiles</strong></h3><p><em>I had always been self-conscious about my crooked teeth, but the thought of wearing metal braces as an adult was unbearable. AZPO Health offered me a Clear Aligners Invisalign treatment plan that was not only affordable but also incredibly convenient. The aligners were virtually invisible, and I could remove them to eat and brush my teeth. The whole process was smooth, and the results are amazing. I finally have the confident smile I’ve always dreamed of!</em> - <strong>Sarah J.</strong></p><p><em>Choosing AZPO Health for my Clear Aligners Invisalign treatment was the best decision I’ve ever made. The team was professional and caring, and the clinic was equipped with the latest technology. I was amazed at how quickly my teeth started to straighten, and the aligners were so comfortable to wear. Plus, being able to explore Istanbul during my treatment was an added bonus. I highly recommend AZPO Health to anyone considering Clear Aligners Invisalign.</em> - <strong>Michael B.</strong></p><h3><strong>Take the First Step Towards Your Dream Smile!</strong></h3><p>Ready to transform your smile with Clear Aligners Invisalign? Contact AZPO Health today for a free consultation and personalized quote. Our friendly team is here to answer your questions, discuss your smile goals, and help you discover how Clear Aligners Invisalign can change your life. Don’t wait any longer to achieve the confident, beautiful smile you deserve!</p><p><br></p>`,
+            : `<p dir="ltr">Turkey has emerged as a leading destination for medical tourism, particularly for dental treatments, and here&rsquo;s why choosing AZPO Health for your Clear Aligners Invisalign treatment in Turkey is a smart decision:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: One of the primary reasons people choose Turkey for dental work is the cost savings. You can save up to 70-90% on dental treatments compared to the US and UK, even after factoring in travel and accommodation expenses.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">High-Quality Care: AZPO Health is committed to providing top-notch dental services using state-of-the-art technology and adhering to the highest international standards. Our experienced dental professionals are skilled in the latest Invisalign techniques, ensuring you receive the best possible care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Professionals: AZPO Health boasts a team of highly trained experts who stay updated with the latest advancements in dentistry. Our specialists have years of experience in performing Clear Aligners Invisalign treatments, ensuring optimal results.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health offers all-inclusive packages that cover not only the Clear Aligners Invisalign treatment but also accommodation, airport transfers, and post-operative care. This comprehensive approach ensures a hassle-free and comfortable experience for international patients.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Beautiful Destination: Combine your dental treatment with a vacation in Turkey! Explore the rich history, vibrant culture, and stunning landscapes of Istanbul, Antalya, or Alanya while achieving your dream smile.</p>
+</li>
+</ul>
+<h2 dir="ltr">What Are Clear Aligners?</h2>
+<p dir="ltr">Clear aligners, such as Invisalign, are a modern alternative to traditional braces. These custom-made, transparent trays gradually shift teeth into their desired position. They are nearly invisible and provide a comfortable and discreet orthodontic treatment option.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h4 dir="ltr">How Clear Aligners Work</h4>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Initial Consultation and 3D Scanning:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The process begins with a consultation at AZPO Health, where our dental professionals assess your oral health and discuss your smile goals.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Using a state-of-the-art iTero Element&trade; scanner, we create a detailed 3D scan of your teeth. This digital model ensures high precision in treatment planning.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Treatment Plan:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Based on the 3D scan, our experts develop a customized treatment plan that maps out the precise movements of your teeth.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">You&rsquo;ll get a preview of what your new smile will look like throughout each stage of the treatment.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Custom Aligner Fabrication:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">A series of Clear Aligners are custom-made to fit your teeth perfectly.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">These aligners are crafted from SmartTrack&trade; material, which is comfortable, durable, and nearly invisible.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Wearing the Aligners:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">You&rsquo;ll wear each set of aligners for about 1-2 weeks, as directed by your dentist.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The aligners should be worn for 20-22 hours a day, removing them only for eating, drinking, and oral hygiene.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Progress and Adjustments:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">As you switch to a new set of aligners, your teeth gradually shift into the desired position.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">In clear aligner and wireless orthodontic treatments, proper treatment planning significantly reduces the time spent in the clinic. As a result, the frequency of in-person check-ups decreases, and patients can confidently continue their treatment even if they are far away. When necessary, virtual check-up appointments can be easily arranged, allowing the process to continue seamlessly.</p>
+</li>
+</ul>
+</ol>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h4 dir="ltr">Benefits of Clear Aligners: Invisalign</h4>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Virtually Invisible: Clear Aligners are nearly invisible, making them a discreet option for straightening teeth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comfortable Fit: Made from smooth plastic, Clear Aligners are gentle on your gums and cheeks, minimizing irritation.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Removable: You can remove the aligners to eat, drink, brush, and floss, making it easier to maintain good oral hygiene.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Customized Treatment: Each aligner is custom-made to fit your mouth, ensuring precise and effective tooth movement.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Predictable Results: The 3D scanning and treatment planning process allows for predictable and accurate results.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Improved Oral Health: Straightening your teeth with Clear Aligners can improve your overall oral health by making it easier to clean your teeth and gums.</p>
+</li>
+</ul>
+<h3 dir="ltr">Types of clear aligners</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Invisalign: A popular brand of clear aligners that offers a series of custom-made aligners to gradually straighten teeth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">ClearCorrect: Another brand of clear aligners that uses a similar approach to Invisalign, with custom-made aligners designed to move teeth over time.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">eCligner: It is a transparent aligner system that uses aligners that are made in stages to align teeth.</p>
+</li>
+</ul>
+<h3 dir="ltr">AZPO Health: Your Trusted Partner for Clear Aligners Invisalign</h3>
+<p dir="ltr">At AZPO Health, we are dedicated to providing exceptional dental care with a focus on patient satisfaction and outstanding results. Here&rsquo;s what sets us apart:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Team: We collaborate with a team of highly qualified and experienced partner dentists who specialize in orthodontics and Clear Aligners treatments&nbsp;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">State-of-the-Art Technology: The latest dental technology, including 3D scanning and digital treatment planning, is used to ensure precision and optimal outcomes.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Care: We believe in providing personalized care tailored to your unique needs and smile goals. Our dental professionals take the time to listen to your concerns and develop a treatment plan that&rsquo;s right for you.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Support: From the initial consultation to the final follow-up appointment, we provide comprehensive support and guidance to ensure a smooth and comfortable experience. Our bilingual staff is always available to answer your questions and address any concerns. Besides, we will continue to support you even after you return home, and our professional patient coordinators will always be by your side.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Prime Locations: With clinics all over Turkey, AZPO Health offers convenient access to world-class dental care in some of Turkey&rsquo;s most beautiful cities.</p>
+</li>
+</ul>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Take the First Step Towards Your Dream Smile!</h3>
+<p dir="ltr">Ready to transform your smile with Clear Aligners Invisalign? Contact AZPO Health today for a free consultation and personalized quote. Our friendly team is here to answer your questions, discuss your smile goals, and help you discover how Clear Aligners Invisalign can change your life. Don&rsquo;t wait any longer to achieve the confident, beautiful smile you deserve!</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Real Stories, Real Smiles</h3>
+<p dir="ltr">I had always been self-conscious about my crooked teeth, but the thought of wearing metal braces as an adult was unbearable. AZPO Health offered me a Clear Aligners Invisalign treatment plan that was not only affordable but also incredibly convenient. The aligners were virtually invisible, and I could remove them to eat and brush my teeth. The whole process was smooth, and the results are amazing. I finally have the confident smile I&rsquo;ve always dreamed of! - Sarah J.</p>
+<p dir="ltr"><strong id="docs-internal-guid-38daf12b-7fff-67c6-ba4e-e001ed76f33c">Choosing AZPO Health for my Clear Aligners Invisalign treatment was the best decision I&rsquo;ve ever made. The team was professional and caring, and the clinic was equipped with the latest technology. I was amazed at how quickly my teeth started to straighten, and the aligners were so comfortable to wear. Plus, being able to explore Istanbul during my treatment was an added bonus. I highly recommend AZPO Health to anyone considering Clear Aligners Invisalign. - Michael B.</strong></p>`,
       },
       imgCover:
         subNestedKey === "clear-aligners-invisalign" ? clearaligners : null,
@@ -4084,7 +5018,7 @@ AZPO Health - ведущая компания медицинского тури�
       descriptionTop:
         locale === "ru"
           ? "Say goodbye to gum disease and excessive gum tissue with minimally invasive laser gum surgery! This advanced treatment removes bacteria, reshapes gums, and promotes healing with less pain, no stitches, and a faster recovery. Experience a healthier, more balanced smile—without the downtime!"
-          : "Say goodbye to gum disease and excessive gum tissue with minimally invasive laser gum surgery! This advanced treatment removes bacteria, reshapes gums, and promotes healing with less pain, no stitches, and a faster recovery. Experience a healthier, more balanced smile—without the downtime!",
+          : "Say goodbye to gum disease and excessive gum tissue with minimally invasive laser gum surgery! This advanced treatment removes bacteria, reshapes gums, and promotes healing with less pain, no stitches, and a faster recovery. Experience a healthier, more balanced smile, without the downtime!",
       benefits: {
         items: [
           {
@@ -4114,28 +5048,66 @@ AZPO Health - ведущая компания медицинского тури�
             header:
               locale === "ru"
                 ? "Who Are Clear Aligners Suitable For?"
-                : "Who Are Clear Aligners Suitable For?",
+                : "Description",
             desc:
               locale === "ru"
                 ? "Patients with gum diseases such as gingivitis or periodontitis.Individuals suffering from gum inflammation and bleeding.Patients seeking to minimize trauma and pain during gum treatment.Those who are not candidates for more invasive surgical procedures."
-                : "Patients with gum diseases such as gingivitis or periodontitis.Individuals suffering from gum inflammation and bleeding.Patients seeking to minimize trauma and pain during gum treatment.Those who are not candidates for more invasive surgical procedures.",
+                : "Laser gum surgery is a dental technique used to treat issues with the gums. It involves using laser technology to address problems such as excessive gum growth and gum disease. This method offers a less painful alternative to invasive procedures like traditional gum surgery, promoting a quicker recovery.",
           },
           {
-            header: locale === "ru" ? "What to Consider" : "What to Consider",
-            decsList: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "What to Consider" : "How it Works",
+            decsList: locale === "ru" ? "" : "Laser gum treatments use a laser to target inflamed gum tissues, remove plaque, and promote healing. The laser breaks down damaged tissue, has an antiseptic effect, and stimulates tissue regeneration. Unlike traditional methods, it’s minimally invasive, reducing pain and speeding up recovery without the need for stitches",
           },
           {
-            header: locale === "ru" ? "How it Works" : "How it Works",
+            header: locale === "ru" ? "How it Works" : "Who is it for",
             desc:
               locale === "ru"
                 ? "Laser gum treatments use laser technology to treat various gum diseases such as gingivitis, periodontitis, and other inflammatory conditions. Laser procedures are minimally invasive, which reduces pain and shortens recovery time."
-                : "Laser gum treatments use laser technology to treat various gum diseases such as gingivitis, periodontitis, and other inflammatory conditions. Laser procedures are minimally invasive, which reduces pain and shortens recovery time.",
+                : "Patients with gum diseases such as gingivitis or periodontitis. Individuals suffering from gum inflammation and bleeding. Patients seeking to minimize trauma and pain during gum treatment. Those who are not candidates for more invasive surgical procedures.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "Is it painful?",
+          answer: locale === "ru" ? "" : "Minimal discomfort compared to traditional surgery"
+        },
+        {
+          question: locale === "ru" ? "" : "How long does it take to heal?",
+          answer: locale === "ru" ? "" : "1–2 weeks for surface healing"
+        },
+        {
+          question: locale === "ru" ? "" : "Does it regrow gums?",
+          answer: locale === "ru" ? "" : "Helps reattach tissue and reduce pockets"
+        },
+        {
+          question: locale === "ru" ? "" : "Is LANAP better than traditional?",
+          answer: locale === "ru" ? "" : "Often less invasive, quicker recovery"
+        },
+        {
+          question: locale === "ru" ? "" : "Can I brush my gums?",
+          answer: locale === "ru" ? "" : "Avoid brushing laser-treated zones initially"
+        },
+        {
+          question: locale === "ru" ? "" : "When can I resume physical activity?",
+          answer: locale === "ru" ? "" : "After a few days, but consult with your doctor"
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Mild tenderness is normal, avoid hot/spicy food",
+        locale === "ru" ? "" : "Use salt water or mouthwash gently",
+        locale === "ru" ? "" : "Avoid disturbing healing areas, no flossing treated sites",
+        locale === "ru" ? "" : "Don’t smoke, take meds as prescribed",
+        locale === "ru" ? "" : "Attend follow-ups to monitor healing",
+        locale === "ru" ? "" : "Drink cool liquids and avoid excessive rinsing.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Minimal prep for contouring",
+        locale === "ru" ? "" : "LANAP may involve segments and numbing",
+        locale === "ru" ? "" : "Maintain good hygiene beforehand",
+        locale === "ru" ? "" : "Arrange help if sedated",
+        locale === "ru" ? "" : "LANAP is especially effective for treating periodontal disease.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -4151,9 +5123,144 @@ AZPO Health - ведущая компания медицинского тури�
             : "Why Choose Turkey for Laser Gum Surgery?",
         content:
           locale === "ru"
-            ? `<p>Turkey has become a popular destination for medical tourism, especially for dental procedures like laser gum surgery. AZPO Health, with locations in Istanbul, Antalya, and Alanya, offers a unique combination of quality, affordability, and comprehensive care.</p><p><strong>Affordability:</strong> Dental treatments in Turkey can be significantly more affordable compared to the US and the UK, with potential savings of up to 70-90%, even after factoring in travel and accommodation. This makes advanced procedures like laser gum surgery accessible to a broader range of patients.</p><p><strong>Quality:</strong> AZPO Health maintains high standards of dental care, utilizing modern technology and experienced healthcare professionals. The clinics adhere to strict hygiene protocols, ensuring a safe and comfortable treatment environment.</p><p><strong>Comprehensive Packages:</strong> AZPO Health provides all-inclusive packages that cater to international patients, managing everything from airport transfers to accommodation and post-operative care. This comprehensive approach reduces the stress associated with traveling abroad for medical treatment.</p><p><strong>Experienced Professionals:</strong> The dentists and healthcare staff at AZPO Health are well-educated and experienced, performing a high volume of dental procedures each year. This experience translates to better outcomes and patient satisfaction.</p><p><strong>Beautiful Country for Holiday:</strong> Combining your dental treatment with a vacation in Turkey allows you to explore the country's rich history, culture, and beautiful landscapes. Istanbul, in particular, is a major tourist attraction with unique historical sites and cultural experiences.</p><h2><strong>Understanding Laser Gum Surgery</strong></h2><p>Laser gum surgery, also known as laser-assisted periodontal therapy (LAPT), is a modern approach to treating gum disease. It offers several advantages over traditional surgical methods.</p><h3><strong>How Laser Gum Surgery Works</strong></h3><p>Laser gum surgery employs focused beams of light to remove diseased tissue and bacteria from the gums. The precision of lasers allows dentists to target affected areas without damaging healthy tissue. The procedure typically involves the following steps:</p><p><strong>Anesthesia:</strong> Local anesthesia is administered to ensure a painless experience during the procedure.</p><p><strong>Scaling:</strong> The dentist uses a laser to remove tartar and plaque from the teeth and below the gum line.</p><p><strong>Diseased Tissue Removal:</strong> The laser is used to eliminate infected gum tissue, promoting healing and preventing further spread of the disease.</p><p><strong>Root Planing:</strong> The roots of the teeth are smoothed to prevent bacteria from reattaching and to encourage the gums to heal properly.</p><p><strong>Closure:</strong> In some cases, the dentist may use sutures to help secure the gums as they heal.</p><h3><strong>Methods of Laser Gum Surgery</strong></h3><p>Several laser technologies are used in gum surgery, each offering specific benefits. The most common types include:</p><p><strong>Diode Lasers:</strong> These are versatile lasers suitable for a variety of soft tissue procedures, including removing inflamed gum tissue and promoting coagulation.</p><p><strong>Nd:YAG Lasers:</strong> Neodymium-doped yttrium aluminum garnet (Nd:YAG) lasers are effective for deep-pocket treatments and bacterial reduction.</p><p><strong>CO2 Lasers:</strong> Carbon dioxide (CO2) lasers offer precise cutting and vaporization of tissue, making them useful for removing lesions and reshaping gum tissue.</p><h3><strong>Benefits of Laser Gum Surgery</strong></h3><p>Laser gum surgery offers several advantages over traditional gum surgery:</p><p><strong>Precision:</strong> Lasers precisely target and remove diseased tissue, minimizing damage to surrounding healthy tissue.</p><p><strong>Reduced Bleeding:</strong> The laser promotes coagulation, reducing bleeding during and after the procedure.</p><p><strong>Less Pain:</strong> Patients typically experience less pain and discomfort compared to traditional surgery.</p><p><strong>Faster Healing:</strong> Laser treatments stimulate faster tissue regeneration, leading to quicker recovery times.</p><p><strong>Reduced Risk of Infection:</strong> The laser sterilizes the treatment area, reducing the risk of post-operative infections.</p><p><strong>Minimal Invasiveness:</strong> Laser gum surgery is less invasive than traditional surgery, often requiring no sutures.</p><h3><strong>Who is a Good Candidate for Laser Gum Surgery?</strong></h3><p>Good candidates for laser gum surgery include individuals with:</p><p>Gingivitis: Early-stage gum disease characterized by inflammation, redness, and bleeding.</p><p>Periodontitis: Advanced gum disease with deeper pockets, bone loss, and potential tooth loosening.</p><p>Gum Recession: Lasers can help reshape and restore receded gum tissue.</p><p>Gum Overgrowth: Lasers can remove excess gum tissue to improve aesthetics and oral hygiene.</p><h3><strong>Recovery and Aftercare</strong></h3><p>Following laser gum surgery, proper aftercare is essential for optimal healing. Key recommendations include:</p><p><strong>Oral Hygiene:</strong> Gentle brushing and flossing as directed by your dentist.</p><p><strong>Antimicrobial Rinse:</strong> Use of prescribed mouthwash to prevent infection.</p><p><strong>Diet:</strong> Consume soft foods and avoid hot, spicy, or hard foods that may irritate the gums.</p><p><strong>Pain Management:</strong> Take prescribed pain medication as needed.</p><p><strong>Follow-up Appointments:</strong> Attend all scheduled follow-up appointments to monitor healing and address any concerns.</p><h2><strong>AZPO Health: Your Partner in Laser Gum Surgery</strong></h2><p>AZPO Health is dedicated to providing top-quality dental care to both local and international patients. With state-of-the-art facilities in Istanbul, Antalya, and Alanya, AZPO Health offers a comfortable and safe environment for laser gum surgery.</p><p><strong>Experienced Team:</strong> AZPO Health's team of dentists and support staff are highly trained and experienced in performing laser gum surgery.</p><p><strong>Advanced Technology:</strong> The clinics are equipped with the latest laser technology, ensuring precise and effective treatments.</p><p><strong>Personalized Care:</strong> AZPO Health provides individualized treatment plans tailored to each patient's specific needs and goals.</p><p><strong>International Standards:</strong> The clinics adhere to international hygiene and safety standards, ensuring patient well-being.</p><p><strong>Comprehensive Support:</strong> AZPO Health offers complete support to international patients, including assistance with travel arrangements, accommodation, and post-operative care.</p><h2><strong>Customer Testimonials</strong></h2><p><em>"I had laser gum surgery at AZPO Health in Istanbul, and I am extremely pleased with the results. The procedure was painless, and the recovery was quick. The staff was caring and professional, making me feel comfortable throughout the entire process."</em> - <strong>Michael S.</strong></p><p><em>"I was hesitant about traveling to Turkey for dental work, but AZPO Health exceeded my expectations. The clinic in Alanya was modern, the dentist was skilled, and the prices were very reasonable. My gums have never felt healthier!"</em> - <strong>Sarah J.</strong></p><p><em>"After struggling with gum disease for years, I finally found a solution at AZPO Health in Antalya. The laser gum surgery was a game-changer. I highly recommend their services to anyone seeking affordable and high-quality dental care."</em> - <strong>David L.</strong></p><h2><strong>Take the Next Step with AZPO Health</strong></h2><p>Don't let gum disease affect your smile and oral health. Contact AZPO Health today for a free consultation and discover how laser gum surgery can transform your life. Our experienced team will assess your condition, answer your questions, and provide a personalized treatment plan to restore your healthy, confident smile.</p><p><br></p>
+            ? `
           `
-            : `<p>Turkey has become a popular destination for medical tourism, especially for dental procedures like laser gum surgery. AZPO Health, with locations in Istanbul, Antalya, and Alanya, offers a unique combination of quality, affordability, and comprehensive care.</p><p><strong>Affordability:</strong> Dental treatments in Turkey can be significantly more affordable compared to the US and the UK, with potential savings of up to 70-90%, even after factoring in travel and accommodation. This makes advanced procedures like laser gum surgery accessible to a broader range of patients.</p><p><strong>Quality:</strong> AZPO Health maintains high standards of dental care, utilizing modern technology and experienced healthcare professionals. The clinics adhere to strict hygiene protocols, ensuring a safe and comfortable treatment environment.</p><p><strong>Comprehensive Packages:</strong> AZPO Health provides all-inclusive packages that cater to international patients, managing everything from airport transfers to accommodation and post-operative care. This comprehensive approach reduces the stress associated with traveling abroad for medical treatment.</p><p><strong>Experienced Professionals:</strong> The dentists and healthcare staff at AZPO Health are well-educated and experienced, performing a high volume of dental procedures each year. This experience translates to better outcomes and patient satisfaction.</p><p><strong>Beautiful Country for Holiday:</strong> Combining your dental treatment with a vacation in Turkey allows you to explore the country's rich history, culture, and beautiful landscapes. Istanbul, in particular, is a major tourist attraction with unique historical sites and cultural experiences.</p><h2><strong>Understanding Laser Gum Surgery</strong></h2><p>Laser gum surgery, also known as laser-assisted periodontal therapy (LAPT), is a modern approach to treating gum disease. It offers several advantages over traditional surgical methods.</p><h3><strong>How Laser Gum Surgery Works</strong></h3><p>Laser gum surgery employs focused beams of light to remove diseased tissue and bacteria from the gums. The precision of lasers allows dentists to target affected areas without damaging healthy tissue. The procedure typically involves the following steps:</p><p><strong>Anesthesia:</strong> Local anesthesia is administered to ensure a painless experience during the procedure.</p><p><strong>Scaling:</strong> The dentist uses a laser to remove tartar and plaque from the teeth and below the gum line.</p><p><strong>Diseased Tissue Removal:</strong> The laser is used to eliminate infected gum tissue, promoting healing and preventing further spread of the disease.</p><p><strong>Root Planing:</strong> The roots of the teeth are smoothed to prevent bacteria from reattaching and to encourage the gums to heal properly.</p><p><strong>Closure:</strong> In some cases, the dentist may use sutures to help secure the gums as they heal.</p><h3><strong>Methods of Laser Gum Surgery</strong></h3><p>Several laser technologies are used in gum surgery, each offering specific benefits. The most common types include:</p><p><strong>Diode Lasers:</strong> These are versatile lasers suitable for a variety of soft tissue procedures, including removing inflamed gum tissue and promoting coagulation.</p><p><strong>Nd:YAG Lasers:</strong> Neodymium-doped yttrium aluminum garnet (Nd:YAG) lasers are effective for deep-pocket treatments and bacterial reduction.</p><p><strong>CO2 Lasers:</strong> Carbon dioxide (CO2) lasers offer precise cutting and vaporization of tissue, making them useful for removing lesions and reshaping gum tissue.</p><h3><strong>Benefits of Laser Gum Surgery</strong></h3><p>Laser gum surgery offers several advantages over traditional gum surgery:</p><p><strong>Precision:</strong> Lasers precisely target and remove diseased tissue, minimizing damage to surrounding healthy tissue.</p><p><strong>Reduced Bleeding:</strong> The laser promotes coagulation, reducing bleeding during and after the procedure.</p><p><strong>Less Pain:</strong> Patients typically experience less pain and discomfort compared to traditional surgery.</p><p><strong>Faster Healing:</strong> Laser treatments stimulate faster tissue regeneration, leading to quicker recovery times.</p><p><strong>Reduced Risk of Infection:</strong> The laser sterilizes the treatment area, reducing the risk of post-operative infections.</p><p><strong>Minimal Invasiveness:</strong> Laser gum surgery is less invasive than traditional surgery, often requiring no sutures.</p><h3><strong>Who is a Good Candidate for Laser Gum Surgery?</strong></h3><p>Good candidates for laser gum surgery include individuals with:</p><p>Gingivitis: Early-stage gum disease characterized by inflammation, redness, and bleeding.</p><p>Periodontitis: Advanced gum disease with deeper pockets, bone loss, and potential tooth loosening.</p><p>Gum Recession: Lasers can help reshape and restore receded gum tissue.</p><p>Gum Overgrowth: Lasers can remove excess gum tissue to improve aesthetics and oral hygiene.</p><h3><strong>Recovery and Aftercare</strong></h3><p>Following laser gum surgery, proper aftercare is essential for optimal healing. Key recommendations include:</p><p><strong>Oral Hygiene:</strong> Gentle brushing and flossing as directed by your dentist.</p><p><strong>Antimicrobial Rinse:</strong> Use of prescribed mouthwash to prevent infection.</p><p><strong>Diet:</strong> Consume soft foods and avoid hot, spicy, or hard foods that may irritate the gums.</p><p><strong>Pain Management:</strong> Take prescribed pain medication as needed.</p><p><strong>Follow-up Appointments:</strong> Attend all scheduled follow-up appointments to monitor healing and address any concerns.</p><h2><strong>AZPO Health: Your Partner in Laser Gum Surgery</strong></h2><p>AZPO Health is dedicated to providing top-quality dental care to both local and international patients. With state-of-the-art facilities in Istanbul, Antalya, and Alanya, AZPO Health offers a comfortable and safe environment for laser gum surgery.</p><p><strong>Experienced Team:</strong> AZPO Health's team of dentists and support staff are highly trained and experienced in performing laser gum surgery.</p><p><strong>Advanced Technology:</strong> The clinics are equipped with the latest laser technology, ensuring precise and effective treatments.</p><p><strong>Personalized Care:</strong> AZPO Health provides individualized treatment plans tailored to each patient's specific needs and goals.</p><p><strong>International Standards:</strong> The clinics adhere to international hygiene and safety standards, ensuring patient well-being.</p><p><strong>Comprehensive Support:</strong> AZPO Health offers complete support to international patients, including assistance with travel arrangements, accommodation, and post-operative care.</p><h2><strong>Customer Testimonials</strong></h2><p><em>"I had laser gum surgery at AZPO Health in Istanbul, and I am extremely pleased with the results. The procedure was painless, and the recovery was quick. The staff was caring and professional, making me feel comfortable throughout the entire process."</em> - <strong>Michael S.</strong></p><p><em>"I was hesitant about traveling to Turkey for dental work, but AZPO Health exceeded my expectations. The clinic in Alanya was modern, the dentist was skilled, and the prices were very reasonable. My gums have never felt healthier!"</em> - <strong>Sarah J.</strong></p><p><em>"After struggling with gum disease for years, I finally found a solution at AZPO Health in Antalya. The laser gum surgery was a game-changer. I highly recommend their services to anyone seeking affordable and high-quality dental care."</em> - <strong>David L.</strong></p><h2><strong>Take the Next Step with AZPO Health</strong></h2><p>Don't let gum disease affect your smile and oral health. Contact AZPO Health today for a free consultation and discover how laser gum surgery can transform your life. Our experienced team will assess your condition, answer your questions, and provide a personalized treatment plan to restore your healthy, confident smile.</p><p><br></p>`,
+            : `<p dir="ltr">Turkey has become a popular destination for medical tourism, especially for dental procedures like laser gum surgery. AZPO Health, with locations in Istanbul, Antalya, and Alanya, offers a unique combination of quality, affordability, and comprehensive care.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: Dental treatments in Turkey can be significantly more affordable compared to the US and the UK, with potential savings of up to 70-90%, even after factoring in travel and accommodation. This makes advanced procedures like laser gum surgery accessible to a broader range of patients.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Quality: AZPO Health maintains high standards of dental care, utilizing modern technology and experienced healthcare professionals. The clinics adhere to strict hygiene protocols, ensuring a safe and comfortable treatment environment.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health provides all-inclusive packages that cater to international patients, managing everything from airport transfers to accommodation and post-operative care. This comprehensive approach reduces the stress associated with traveling abroad for medical treatment.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Professionals: The dentists and healthcare staff at AZPO Health are well-educated and experienced, performing a high volume of dental procedures each year. This experience translates to better outcomes and patient satisfaction.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Beautiful Country for Holiday: Combining your dental treatment with a vacation in Turkey allows you to explore the country's rich history, culture, and beautiful landscapes. Istanbul, in particular, is a major tourist attraction with unique historical sites and cultural experiences.</p>
+</li>
+</ul>
+<h2 dir="ltr">Understanding Laser Gum Surgery</h2>
+<p dir="ltr">Laser gum surgery, also known as laser-assisted periodontal therapy (LAPT), is a modern approach to treating gum disease. It offers several advantages over traditional surgical methods.</p>
+<h3 dir="ltr">How Laser Gum Surgery Works</h3>
+<p dir="ltr">Laser gum surgery employs focused beams of light to remove diseased tissue and bacteria from the gums. The precision of lasers allows dentists to target affected areas without damaging healthy tissue. The procedure typically involves the following steps:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Anesthesia: Local anesthesia is administered to ensure a painless experience during the procedure.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Scaling: The dentist uses a laser to remove tartar and plaque from the teeth and below the gum line.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Diseased Tissue Removal: The laser is used to eliminate infected gum tissue, promoting healing and preventing further spread of the disease.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Root Planing: The roots of the teeth are smoothed to prevent bacteria from reattaching and to encourage the gums to heal properly.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Closure: In some cases, the dentist may use sutures to help secure the gums as they heal.</p>
+</li>
+</ol>
+<h3 dir="ltr">Methods of Laser Gum Surgery</h3>
+<p dir="ltr">Several laser technologies are used in gum surgery, each offering specific benefits. The most common types include:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Diode Lasers: These are versatile lasers suitable for a variety of soft tissue procedures, including removing inflamed gum tissue and promoting coagulation.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Nd:YAG Lasers: Neodymium-doped yttrium aluminum garnet (Nd:YAG) lasers are effective for deep-pocket treatments and bacterial reduction.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">CO2 Lasers: Carbon dioxide (CO2) lasers offer precise cutting and vaporization of tissue, making them useful for removing lesions and reshaping gum tissue.</p>
+</li>
+</ul>
+<h3 dir="ltr">Benefits of Laser Gum Surgery</h3>
+<p dir="ltr">Laser gum surgery offers several advantages over traditional gum surgery:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Precision: Lasers precisely target and remove diseased tissue, minimizing damage to surrounding healthy tissue.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Reduced Bleeding: The laser promotes coagulation, reducing bleeding during and after the procedure.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Less Pain: Patients typically experience less pain and discomfort compared to traditional surgery.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Faster Healing: Laser treatments stimulate faster tissue regeneration, leading to quicker recovery times.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Reduced Risk of Infection: The laser sterilizes the treatment area, reducing the risk of post-operative infections.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Minimal Invasiveness: Laser gum surgery is less invasive than traditional surgery, often requiring no sutures.</p>
+</li>
+</ul>
+<h3 dir="ltr">Who is a Good Candidate for Laser Gum Surgery?</h3>
+<p dir="ltr">Good candidates for laser gum surgery include individuals with:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Gingivitis: Early-stage gum disease characterized by inflammation, redness, and bleeding.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Periodontitis: Advanced gum disease with deeper pockets, bone loss, and potential tooth loosening.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Gum Recession: Lasers can help reshape and restore receded gum tissue.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Gum Overgrowth: Lasers can remove excess gum tissue to improve aesthetics and oral hygiene.</p>
+</li>
+</ul>
+<h3 dir="ltr">Recovery and Aftercare</h3>
+<p dir="ltr">Following laser gum surgery, proper aftercare is essential for optimal healing. Key recommendations include:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Oral Hygiene: Gentle brushing and flossing as directed by your dentist.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Antimicrobial Rinse: Use of prescribed mouthwash to prevent infection.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Diet: Consume soft foods and avoid hot, spicy, or hard foods that may irritate the gums.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pain Management: Take prescribed pain medication as needed.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Follow-up Appointments: Attend all scheduled follow-up appointments to monitor healing and address any concerns.</p>
+</li>
+</ul>
+<h2 dir="ltr">AZPO Health: Your Partner in Laser Gum Surgery</h2>
+<p dir="ltr">AZPO Health is dedicated to providing top-quality dental care to both local and international patients. With state-of-the-art facilities in Istanbul, Antalya, and Alanya, AZPO Health offers a comfortable and safe environment for laser gum surgery.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Team: AZPO Health's team of dentists and support staff are highly trained and experienced in performing laser gum surgery.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Advanced Technology: The clinics are equipped with the latest laser technology, ensuring precise and effective treatments.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Care: AZPO Health provides individualized treatment plans tailored to each patient's specific needs and goals.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">International Standards: The clinics adhere to international hygiene and safety standards, ensuring patient well-being.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Support: AZPO Health offers complete support to international patients, including assistance with travel arrangements, accommodation, and post-operative care.</p>
+</li>
+</ul>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Take the Next Step with AZPO Health</h2>
+<p dir="ltr">Don't let gum disease affect your smile and oral health. Contact AZPO Health today for a free consultation and discover how laser gum surgery can transform your life. Our experienced team will assess your condition, answer your questions, and provide a personalized treatment plan to restore your healthy, confident smile.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Customer Testimonials</h2>
+<p dir="ltr">"I had laser gum surgery at AZPO Health in Istanbul, and I am extremely pleased with the results. The procedure was painless, and the recovery was quick. The staff was caring and professional, making me feel comfortable throughout the entire process." - Michael S.</p>
+<p dir="ltr">"I was hesitant about traveling to Turkey for dental work, but AZPO Health exceeded my expectations. The clinic in Alanya was modern, the dentist was skilled, and the prices were very reasonable. My gums have never felt healthier!" - Sarah J.</p>
+<p dir="ltr"><strong id="docs-internal-guid-02213f36-7fff-7c64-31ca-71c5cf176a51">"After struggling with gum disease for years, I finally found a solution at AZPO Health in Antalya. The laser gum surgery was a game-changer. I highly recommend their services to anyone seeking affordable and high-quality dental care." - David L.</strong></p>`,
       },
       imgCover:
         subNestedKey === "laser-gum-treatments" ? lasergumtreatments : null,
@@ -5995,8 +7102,7 @@ AZPO Health - ведущая компания медицинского тури�
         locale === "ru"
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
           : `
-          Missing teeth shouldn’t dictate your life—whether it’s eating, speaking, or simply smiling without worry. But what if you could get back the look and feel of natural teeth with a solution that’s seamless and lasting?\n
-          At AZPO Health, we connect you with elite dental experts in Turkey, offering cutting-edge implant treatments that restore your smile at a fraction of the price you’d pay elsewhere—without compromising on quality.
+          Missing teeth shouldn’t dictate your life—whether it’s eating, speaking, or simply smiling without worry. But what if you could get back the look and feel of natural teeth with a solution that’s seamless and lasting? At AZPO Health, we connect you with elite dental experts in Turkey, offering cutting-edge implant treatments that restore your smile at a fraction of the price you’d pay elsewhere—without compromising on quality.
           `,
       benefits: {
         items: [
@@ -6024,41 +7130,67 @@ AZPO Health - ведущая компания медицинского тури�
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "For Whom",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
-                : "Suitable for women who experience reduced vaginal tone after childbirth or due to aging. Ideal for women with excessive tissue stretching who wish to improve both the appearance and functionality of the vagina. Women who suffer from mild urinary incontinence related to weakened tissues may also benefit.",
+                : "Implant treatment refers to a dental procedure in which artificial tooth roots made of biocompatible materials, such as titanium, are placed into the jawbone to support replacement teeth like crowns, bridges, or dentures. Dental implants mimic the function and appearance of natural teeth, providing a durable and long-lasting solution for missing teeth.",
           },
           {
-            header: locale === "ru" ? "" : "Considerations",
-            decsList: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "" : "How It Works",
+            decsList: locale === "ru" ? "" : "Initial Consultation: Oral health and jaw suitability are assessed, with X-rays or 3D scans taken for planning. Implant Placement: The implant is surgically inserted into the jawbone and fuses over time (osseointegration). Abutment & Crown: After a few months, an abutment is placed, and a custom crown is attached. Follow-Up & Maintenance: Regular visits and proper hygiene are essential for long-term success.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "For Whom",
             desc:
               locale === "ru"
                 ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-                : `Initial Consultation: Assessment of oral health, jawbone density, and overall suitability for implants.\nX-rays or 3D scans may be taken to plan the procedure. \nPlacement of the Implant:\nThe dental implant is surgically inserted into the jawbone. Over time, the bone fuses with the implant in a process called osseointegration, ensuring stability.`,
+                : `Individuals with one or more missing teeth. People with healthy gums and adequate jawbone density. Those in good overall health without conditions that may affect healing (e.g., uncontrolled diabetes or heavy smoking).
+                `,
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "Is the implant permanent?",
+          answer: locale === "ru" ? "" : "Yes, with proper care, they can last a lifetime"
+        },
+        {
+          question: locale === "ru" ? "" : "Is the procedure painful?",
+          answer: locale === "ru" ? "" : "Mild soreness after, managed with medication"
+        },
+        {
+          question: locale === "ru" ? "" : "Can I eat normally?",
+          answer: locale === "ru" ? "" : "Yes, after initial healing phase"
+        },
+        {
+          question: locale === "ru" ? "" : "Will it look natural?",
+          answer: locale === "ru" ? "" : "Yes, blends well with natural teeth"
+        },
+        {
+          question: locale === "ru" ? "" : "How long does it take?",
+          answer: locale === "ru" ? "" : "Healing can take several months, but implant placement is quick"
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Avoid hot foods and rinse with salt water",
+        locale === "ru" ? "" : "Do not disturb implant site with tongue or fingers",
+        locale === "ru" ? "" : "Brush teeth gently and avoid the surgical area",
+        locale === "ru" ? "" : "Stick to soft foods for a few days",
+        locale === "ru" ? "" : "Take antibiotics and pain relievers as prescribed",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Full dental exam and X-rays before procedure",
+        locale === "ru" ? "" : "Treat any gum disease beforehand",
+        locale === "ru" ? "" : "Avoid smoking for at least 1 week before",
+        locale === "ru" ? "" : "Follow fasting instructions if sedation is planned",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
-            : "Implant treatment is a reliable and effective solution for replacing missing teeth, offering functional and aesthetic benefits. While the process requires time, patience, and a financial commitment, the long-term advantages make it an ideal choice for those seeking a permanent restoration for their smile. Always consult with a qualified dentist to determine if dental implants are the right option for you.",
-      },
-
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
+            : "Implant treatment is a reliable and effective solution for replacing missing teeth, offering functional and aesthetic benefits. While the process requires time, patience, and a financial commitment, the long-term advantages make it an ideal choice for those seeking a permanent restoration for their smile.",
       },
       bfs: bfList,
       contents: {
@@ -6069,7 +7201,39 @@ AZPO Health - ведущая компания медицинского тури�
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>In recent years, Turkey has emerged as a leading destination for medical tourism, particularly in the field of dental care. Several compelling reasons contribute to this popularity. Firstly, the cost of dental implant treatment in Turkey is often significantly more affordable compared to many other countries, including the United States, the United Kingdom, and Europe. This cost-effectiveness does not compromise the quality of care. Turkish dental clinics are equipped with modern technology, and the dentists are highly skilled and experienced in performing various dental implant procedures. Many healthcare professionals in Turkey have received international training and adhere to high standards of practice.</p><p>Furthermore, Turkey's strategic location and well-developed tourism infrastructure make it easily accessible for international patients. Combining your dental implant treatment with a pleasant stay in a country rich in history and culture is an attractive option for many. From the bustling city of Istanbul to the beautiful coastal regions, Turkey offers a diverse range of experiences to enhance your medical travel journey. AZPO Health understands the unique needs of international patients and can connect you with reputable clinics and facilitate a seamless experience, from initial consultation to post-treatment follow-up.</p><p><br></p><h2><strong>Understanding Your Concerns</strong></h2><p>The impact of missing teeth can extend far beyond the visible gap. You might find yourself avoiding certain foods that are difficult to chew, or perhaps you feel self-conscious about smiling or speaking in social situations. These everyday challenges can erode your quality of life and your sense of well-being. You are not alone in these feelings. Many individuals experience the discomfort and frustration of tooth loss, and for many, finding a lasting and reliable solution is a top priority. The desire to regain a complete and functional smile is understandable, and the advancements in modern dentistry offer real hope.</p><h2><strong>The Hope of Dental Implants in Turkey</strong></h2><p>In 2025, you have access to a remarkable solution: dental implant treatment in Turkey. This advanced procedure offers a long-term, stable, and aesthetically pleasing way to replace missing teeth. Think of dental implants as artificial tooth roots, typically made of biocompatible titanium, that are surgically placed into your jawbone. Over time, these implants fuse with your natural bone in a process called osseointegration, creating a strong and secure foundation for replacement teeth. Whether you are missing a single tooth, several teeth, or an entire arch, dental implant treatment in Turkey can be tailored to your specific needs, offering a renewed sense of confidence and a fully functional smile.</p><h2><strong>What is Dental Implant Treatment?</strong></h2><p>Dental implant treatment is a multi-stage process designed to provide a permanent and natural-looking replacement for missing teeth. The journey begins with a comprehensive initial consultation where a qualified dentist will assess your oral health, including the condition of your gums and jawbone. This assessment may involve dental x-rays or 3D scans to determine the optimal placement for the dental implant treatment. Your dentist will discuss your treatment options, explain the procedure in detail, and answer any questions you may have.</p><p>The next stage involves the surgical placement of the dental implant into your jawbone. This procedure is typically performed under local anesthesia, ensuring your comfort throughout the process. In some cases, if there is insufficient bone density to support the implant, a bone grafting procedure may be necessary to augment the bone before implant placement. After the implant is placed, a period of healing, usually several months, is required to allow osseointegration to occur. During this time, the bone grows around and fuses with the implant, providing a stable foundation.</p><p>Once osseointegration is complete, a small connector post called an abutment is attached to the implant. Finally, a custom-made artificial tooth, known as a dental crown, is secured to the abutment. The crown is designed to match the color, shape, and size of your natural teeth, ensuring a seamless and aesthetically pleasing result. For patients with multiple missing teeth, implant-supported bridges or dentures can be created to restore a larger section of the smile.</p><h2><strong>Benefits of Dental Implant Treatment</strong></h2><p>Choosing dental implant treatment offers numerous advantages over other tooth replacement options like traditional dentures or bridges. Dental implants provide superior stability and support because they are anchored in the jawbone, just like natural teeth. This stability allows you to eat, speak, and smile with confidence, without the worry of loose or shifting prosthetics. Unlike dentures, dental implants do not require adhesives and do not affect your adjacent healthy teeth, as is the case with traditional bridges that rely on support from neighboring teeth.</p><p>Dental implants also help to preserve jawbone health. When a tooth is lost, the lack of stimulation can lead to bone resorption, where the jawbone deteriorates over time. Dental implants provide this necessary stimulation, helping to maintain bone density and facial structure. Furthermore, with proper care and maintenance, dental implants can last for many years, making them a cost-effective long-term solution for missing teeth. They are also designed to look and feel like natural teeth, enhancing your smile and overall appearance.</p><h2><strong>Methods of Dental Implant Treatment</strong></h2><p>Dental implant treatment can address various levels of tooth loss, and different methods are available to suit individual needs.</p><ul><li><strong>Single Tooth Implants:</strong> For replacing a single missing tooth, a dental implant is placed, and a custom crown is attached, restoring both function and aesthetics.</li><li><strong>Implant-Supported Bridges:</strong> When multiple adjacent teeth are missing, an implant-supported bridge can be used. This involves placing dental implants at either end of the missing tooth span, which then support a bridge of artificial teeth.</li><li><strong>Implant-Supported Dentures (All-on-4 and All-on-6):</strong> For patients missing all or most of their teeth in one or both jaws, implant-supported dentures, such as the All-on-4 or All-on-6 techniques, offer a stable and secure solution. These methods involve strategically placing four or six dental implants in the jawbone to support a full arch of replacement teeth. This eliminates the discomfort and instability often associated with traditional removable dentures, providing improved chewing ability, speech, and overall comfort. The decision of which method is best for you will depend on factors such as the number of missing teeth, jawbone density, and your individual treatment goals, all of which will be thoroughly evaluated by the dental professional.</li></ul><h2><strong>AZPO Health: Your Partner in Achieving a Healthy Smile</strong></h2><p>AZPO Health is dedicated to connecting you with reputable and highly qualified dental clinics and experienced dentists in Turkey for your dental implant treatment. We understand that seeking dental care abroad can feel overwhelming, and our mission is to make the process as smooth and stress-free as possible. We carefully vet our partner clinics to ensure they meet stringent international standards of hygiene, safety, and quality of care. Our team can assist you with every step of your journey, from providing detailed information about the treatment options and connecting you with clinics for virtual consultations to assisting with travel arrangements and ensuring clear communication throughout your experience.</p><p>At AZPO Health, we prioritize your well-being and strive to provide personalized support tailored to your individual needs. We believe that everyone deserves a healthy and confident smile, and we are committed to making high-quality dental implant treatment accessible to you in Turkey. By choosing AZPO Health, you gain a trusted partner who will guide you towards achieving the smile you've always dreamed of.</p><h2><strong>Taking the Next Step Towards Your New Smile</strong></h2><p>If you are considering dental implant treatment to replace missing teeth and regain your confident smile, we encourage you to take the next step. Contact AZPO Health today for a free consultation. Our experienced team is here to answer your questions, discuss your options, and connect you with leading dental professionals in Turkey. Begin your journey towards a healthier, more confident you. Text us to learn more about pricing and personalized treatment plans.</p><p><br></p>`,
+            : `<p dir="ltr">In recent years, Turkey has emerged as a leading destination for medical tourism, particularly in the field of dental care. Several compelling reasons contribute to this popularity. Firstly, the cost of dental implant treatment in Turkey is often significantly more affordable compared to many other countries, including the United States, the United Kingdom, and Europe. This cost-effectiveness does not compromise the quality of care. Turkish dental clinics are equipped with modern technology, and the dentists are highly skilled and experienced in performing various dental implant procedures. Many healthcare professionals in Turkey have received international training and adhere to high standards of practice.</p>
+<p dir="ltr">Furthermore, Turkey's strategic location and well-developed tourism infrastructure make it easily accessible for international patients. Combining your dental implant treatment with a pleasant stay in a country rich in history and culture is an attractive option for many. From the bustling city of Istanbul to the beautiful coastal regions, Turkey offers a diverse range of experiences to enhance your medical travel journey. AZPO Health understands the unique needs of international patients and can connect you with reputable clinics and facilitate a seamless experience, from initial consultation to post-treatment follow-up.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Understanding Your Concerns</h2>
+<p dir="ltr">The impact of missing teeth can extend far beyond the visible gap. You might find yourself avoiding certain foods that are difficult to chew, or perhaps you feel self-conscious about smiling or speaking in social situations. These everyday challenges can erode your quality of life and your sense of well-being. You are not alone in these feelings. Many individuals experience the discomfort and frustration of tooth loss, and for many, finding a lasting and reliable solution is a top priority. The desire to regain a complete and functional smile is understandable, and the advancements in modern dentistry offer real hope.</p>
+<h2 dir="ltr">The Hope of Dental Implants in Turkey</h2>
+<p dir="ltr">In 2025, you have access to a remarkable solution: dental implant treatment in Turkey. This advanced procedure offers a long-term, stable, and aesthetically pleasing way to replace missing teeth. Think of dental implants as artificial tooth roots, typically made of biocompatible titanium, that are surgically placed into your jawbone. Over time, these implants fuse with your natural bone in a process called osseointegration, creating a strong and secure foundation for replacement teeth. Whether you are missing a single tooth, several teeth, or an entire arch, dental implant treatment in Turkey can be tailored to your specific needs, offering a renewed sense of confidence and a fully functional smile.</p>
+<h2 dir="ltr">What is Dental Implant Treatment?</h2>
+<p dir="ltr">Dental implant treatment is a multi-stage process designed to provide a permanent and natural-looking replacement for missing teeth. The journey begins with a comprehensive initial consultation where a qualified dentist will assess your oral health, including the condition of your gums and jawbone. This assessment may involve dental x-rays or 3D scans to determine the optimal placement for the dental implant treatment. Your dentist will discuss your treatment options, explain the procedure in detail, and answer any questions you may have.</p>
+<p dir="ltr">The next stage involves the surgical placement of the dental implant into your jawbone. This procedure is typically performed under local anesthesia, ensuring your comfort throughout the process. In some cases, if there is insufficient bone density to support the implant, a bone grafting procedure may be necessary to augment the bone before implant placement. After the implant is placed, a period of healing, usually several months, is required to allow osseointegration to occur. During this time, the bone grows around and fuses with the implant, providing a stable foundation.</p>
+<p dir="ltr">Once osseointegration is complete, a small connector post called an abutment is attached to the implant. Finally, a custom-made artificial tooth, known as a dental crown, is secured to the abutment. The crown is designed to match the color, shape, and size of your natural teeth, ensuring a seamless and aesthetically pleasing result. For patients with multiple missing teeth, implant-supported bridges or dentures can be created to restore a larger section of the smile.</p>
+<h2 dir="ltr">Benefits of Dental Implant Treatment</h2>
+<p dir="ltr">Choosing dental implant treatment offers numerous advantages over other tooth replacement options like traditional dentures or bridges. Dental implants provide superior stability and support because they are anchored in the jawbone, just like natural teeth. This stability allows you to eat, speak, and smile with confidence, without the worry of loose or shifting prosthetics. Unlike dentures, dental implants do not require adhesives and do not affect your adjacent healthy teeth, as is the case with traditional bridges that rely on support from neighboring teeth.</p>
+<p dir="ltr">Dental implants also help to preserve jawbone health. When a tooth is lost, the lack of stimulation can lead to bone resorption, where the jawbone deteriorates over time. Dental implants provide this necessary stimulation, helping to maintain bone density and facial structure. Furthermore, with proper care and maintenance, dental implants can last for many years, making them a cost-effective long-term solution for missing teeth. They are also designed to look and feel like natural teeth, enhancing your smile and overall appearance.</p>
+<h2 dir="ltr">Methods of Dental Implant Treatment</h2>
+<p dir="ltr">Dental implant treatment can address various levels of tooth loss, and different methods are available to suit individual needs.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Single Tooth Implants: For replacing a single missing tooth, a dental implant is placed, and a custom crown is attached, restoring both function and aesthetics.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Implant-Supported Bridges: When multiple adjacent teeth are missing, an implant-supported bridge can be used. This involves placing dental implants at either end of the missing tooth span, which then support a bridge of artificial teeth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Implant-Supported Dentures (All-on-4 and All-on-6): For patients missing all or most of their teeth in one or both jaws, implant-supported dentures, such as the All-on-4 or All-on-6 techniques, offer a stable and secure solution. These methods involve strategically placing four or six dental implants in the jawbone to support a full arch of replacement teeth. This eliminates the discomfort and instability often associated with traditional removable dentures, providing improved chewing ability, speech, and overall comfort. The decision of which method is best for you will depend on factors such as the number of missing teeth, jawbone density, and your individual treatment goals, all of which will be thoroughly evaluated by the dental professional.</p>
+</li>
+</ul>
+<h2 dir="ltr">AZPO Health: Your Partner in Achieving a Healthy Smile</h2>
+<p dir="ltr">AZPO Health is dedicated to connecting you with reputable and highly qualified dental clinics and experienced dentists in Turkey for your dental implant treatment. We understand that seeking dental care abroad can feel overwhelming, and our mission is to make the process as smooth and stress-free as possible. We carefully vet our partner clinics to ensure they meet stringent international standards of hygiene, safety, and quality of care. Our team can assist you with every step of your journey, from providing detailed information about the treatment options and connecting you with clinics for virtual consultations to assisting with travel arrangements and ensuring clear communication throughout your experience.</p>
+<p dir="ltr">At AZPO Health, we prioritize your well-being and strive to provide personalized support tailored to your individual needs. We believe that everyone deserves a healthy and confident smile, and we are committed to making high-quality dental implant treatment accessible to you in Turkey. By choosing AZPO Health, you gain a trusted partner who will guide you towards achieving the smile you've always dreamed of.</p>
+<h2 dir="ltr">Taking the Next Step Towards Your New Smile</h2>
+<p dir="ltr">If you are considering dental implant treatment to replace missing teeth and regain your confident smile, we encourage you to take the next step. Contact AZPO Health today for a free consultation. Our experienced team is here to answer your questions, discuss your options, and connect you with leading dental professionals in Turkey. Begin your journey towards a healthier, more confident you. Text us to learn more about pricing and personalized treatment plans.</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "implant-treatment" ? implant : null,
       subNestedKey: "implant-treatment",
@@ -6111,43 +7275,83 @@ AZPO Health - ведущая компания медицинского тури�
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Who Needs It?",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
-                : "Those with cavities, cracks, or minor fractures.Patients looking to prevent further tooth damage.Types of Dental Fillings.Ceramic (Inlays & Onlays): Custom-made for a natural look and high durability but require multiple visits.",
+                : "A dental filling is a treatment used to restore teeth that have decayed, cracked, or broken. If you experience any dental issues, consulting a dentist is essential to determine the best treatment option. Fillings help preserve tooth structure and prevent further damage.",
           },
           {
             header:
-              locale === "ru" ? "" : "Considerations Before Getting a Filling",
-            decsList: locale === "ru" ? "" : "",
+              locale === "ru" ? "" : "How It Works",
+            decsList: locale === "ru" ? "" : "The process begins with the dentist examining the affected tooth and removing any decayed or damaged tissue. The cleaned cavity is then filled with a suitable material to restore the tooth's function and appearance. Different filling materials are available, and the choice depends on the tooth’s condition, aesthetic preferences, and budget.",
           },
           {
             header:
-              locale === "ru" ? "Как это работает" : "How the Procedure Works",
+              locale === "ru" ? "Как это работает" : "For Whom",
             desc:
               locale === "ru"
                 ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-                : "The process begins with the dentist examining the affected tooth and removing any decayed or damaged tissue. The cleaned cavity is then filled with a suitable material to restore the tooth's function and appearance. Different filling materials are available, and the choice depends on the tooth’s condition, aesthetic preferences, and budget.",
+                : "Those with cavities, cracks, or minor fractures Patients looking to prevent further tooth damage",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "Will it hurt?",
+          answer: locale === "ru" ? "" : "Local anesthesia prevents pain during; some soreness after is normal"
+        },
+        {
+          question: locale === "ru" ? "" : "How long do fillings last?",
+          answer: locale === "ru" ? "" : "5–15 years depending on material and care"
+        },
+        {
+          question: locale === "ru" ? "" : "Can I eat right after?",
+          answer: locale === "ru" ? "" : "Wait until numbness fades; avoid hard foods for 24 hrs"
+        },
+        {
+          question: locale === "ru" ? "" : "Will I feel the filling?",
+          answer: locale === "ru" ? "" : "Slight awareness at first, but it blends in quickly"
+        },
+        {
+          question: locale === "ru" ? "" : "What if it falls out?",
+          answer: locale === "ru" ? "" : "Call your dentist for a replacement ASAP"
+        },
+        {
+          question: locale === "ru" ? "" : "How should fillings be cared for?",
+          answer: locale === "ru" ? "" : "Brush, floss, and get regular check-ups."
+        },
+        {
+          question: locale === "ru" ? "" : "Do fillings get affected during whitening procedures?",
+          answer: locale === "ru" ? "" : "Yes, composite fillings can be affected; do whitening before fillings."
+        },
+        {
+          question: locale === "ru" ? "" : "How can the lifespan of fillings be extended?",
+          answer: locale === "ru" ? "" : "Maintain oral health, clean regularly, and avoid hard foods."
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Avoid chewing on the side of the filling until numbness wears off",
+        locale === "ru" ? "" : "Sensitivity to cold or pressure is normal for a few days",
+        locale === "ru" ? "" : "Avoid sticky or hard foods initially",
+        locale === "ru" ? "" : "Continue good oral hygiene",
+        locale === "ru" ? "" : "Call dentist if pain persists beyond a week",
+        locale === "ru" ? "" : "Avoid hot foods and drinks for the first 24 hours.",
+        locale === "ru" ? "" : "Avoid clenching and grinding your teeth.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Brush and floss before the appointment",
+        locale === "ru" ? "" : "Inform the dentist about any allergies (especially to anesthesia)",
+        locale === "ru" ? "" : "Eat lightly if not under sedation",
+        locale === "ru" ? "" : "Discuss material options (composite, amalgam, etc.)",
+        locale === "ru" ? "" : "Provide information about any previous dental issues or past treatments.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
             : "Dental fillings are an effective way to restore damaged teeth, prevent further decay, and maintain oral health. Consulting a dentist ensures the right filling type is chosen for optimal durability and appearance.",
-      },
-
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
       },
       bfs: bfList,
       contents: {
@@ -6156,7 +7360,90 @@ AZPO Health - ведущая компания медицинского тури�
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>Many individuals are increasingly choosing Turkey for their dental treatments, and for good reason. When it comes to dental fillings, Turkey offers a compelling combination of factors that make it an attractive destination for your oral health needs.</p><p>One of the primary reasons is the affordability of dental treatments in Turkey. Compared to many countries in Europe, the United Kingdom, and the United States, the cost of dental procedures, including fillings, can be significantly lower in Turkey. This cost-effectiveness doesn't necessarily mean a compromise on quality. Instead, it's often attributed to factors such as lower labor costs and favorable exchange rates. By choosing Turkey for your dental fillings, you can potentially achieve substantial savings without sacrificing the standard of care you receive.</p><p>Beyond the financial aspect, Turkey is home to highly skilled and experienced dental professionals. Many dentists in Turkey have received excellent education and training, and they often stay updated with the latest advancements in dental techniques and materials. The clinics that AZPO Health connects you with utilize modern technologies and adhere to stringent hygiene protocols, ensuring that you receive safe and effective treatment. You can have peace of mind knowing that your dental filling procedure will be performed with precision and care.</p><p>Furthermore, combining your dental filling treatment with a pleasant travel experience is a significant advantage of choosing Turkey. Turkey is a country rich in history, culture, and natural beauty, offering a wide array of attractions and activities to explore. Whether you're interested in visiting historical sites, enjoying the vibrant city life of Istanbul, or relaxing in beautiful coastal regions, you can easily integrate your dental appointment into a memorable trip. AZPO Health can assist you in planning your medical journey, connecting you with clinics in easily accessible and often touristic locations.</p><p>Moreover, Turkish dental clinics often prioritize international patients, offering comprehensive services to make their experience as smooth as possible. This can include assistance with airport transfers and accommodation, ensuring a stress-free visit focused on your dental health. The welcoming and hospitable nature of the Turkish people further contributes to a positive experience for international visitors seeking medical care.</p><p>In summary, opting for your dental fillings in Turkey offers a compelling blend of affordability, high-quality dental expertise, modern facilities, and the opportunity to enjoy a unique travel experience. AZPO Health is here to guide you through this process, connecting you with trusted dental professionals who can address your needs effectively.</p><h2><strong>Understanding Dental Fillings: Restoring Your Teeth</strong></h2><p>Dental fillings are a fundamental aspect of restorative dentistry, playing a crucial role in repairing teeth that have been damaged by decay (cavities) or minor fractures. Think of a dental filling as a way to "fill in" the area of the tooth where damage has occurred, helping to restore its original shape, function, and prevent further deterioration.</p><p>When a tooth develops a cavity, it means that the hard outer layer of the tooth enamel has been eroded, creating a hole. If left untreated, this decay can progress deeper into the tooth, potentially reaching the nerve and causing significant pain and infection. A dental filling involves the careful removal of the decayed portion of the tooth by a dental professional, followed by cleaning the area and then filling the space with a suitable material. This process seals the tooth, preventing bacteria from entering and causing more damage.</p><p>Dental fillings are also used to repair minor chips or cracks in teeth. Even small imperfections can sometimes lead to sensitivity or affect the overall integrity of the tooth. By filling these minor damages, the tooth is strengthened and its smooth surface is restored.</p><h3><strong>Types of Dental Fillings</strong></h3><p>Over the years, various materials have been used for dental fillings, each with its own set of advantages and considerations. Understanding the different <strong>types of dental fillings</strong> available can help you make an informed decision in consultation with the dental professional AZPO Health connects you with. Here are some common <strong>what are the types of dental fillings</strong>:</p><ul><li><strong>Composite Resin Fillings:</strong> These are a popular choice because they can be closely matched to the natural color of your teeth, making them aesthetically pleasing. Composite fillings are made from a mixture of plastic resin and fine glass-like particles. They are typically used for small to medium-sized restorations and can be placed in both front and back teeth. One of the benefits of composite fillings is that they bond directly to the tooth structure, providing good support. However, they may not be as durable as some other materials for very large fillings or areas that experience heavy chewing forces.</li><li><strong>Amalgam Fillings (Silver Fillings):</strong> Amalgam fillings have been used for many years and are known for their strength and durability. They are typically made from a mixture of metals, including silver, tin, copper, and mercury. Amalgam fillings are a cost-effective option and are particularly well-suited for restoring back teeth that endure significant chewing pressure. However, their silver color makes them less aesthetically appealing compared to tooth-colored fillings, and some patients may have concerns about the mercury content, although scientific evidence generally supports their safety.</li><li><strong>Porcelain Fillings (Ceramic Fillings):</strong> Porcelain fillings are another tooth-colored option that offers excellent aesthetics and good durability. They are custom-made in a dental laboratory to precisely fit the cavity and can be shaded to match your surrounding teeth very closely. Porcelain fillings are stain-resistant and can be a good choice for restorations that need to withstand moderate chewing forces. They are generally more expensive than composite or amalgam fillings.</li><li><strong>Gold Fillings:</strong> Gold fillings are known for their exceptional durability and longevity. They are made from gold mixed with other metals. While gold fillings can last for many years, they are typically more expensive than other types of fillings and their metallic color is noticeable, making them less popular for visible areas of the mouth.</li><li><strong>Glass Ionomer Fillings:</strong> Glass ionomer is a tooth-colored material made from a combination of glass powder and an acidic liquid. It chemically bonds to the tooth and releases fluoride, which can help protect against further decay. Glass ionomer fillings are often used for small fillings, particularly near the gum line, and for fillings in children's teeth. They are not as strong or wear-resistant as composite resin or amalgam.</li></ul><p>The choice of filling material will depend on several factors, including the size and location of the cavity, the chewing forces the filling will need to withstand, aesthetic considerations, the patient's budget, and the dental professional's recommendation. When you connect with a dental clinic through AZPO Health in Turkey, the dentist will thoroughly assess your needs and discuss the most suitable options for your specific situation.</p><h3><strong>The Dental Filling Procedure</strong></h3><p>Getting a dental filling is typically a straightforward and relatively quick procedure. Here's a general overview of what you can expect:</p><ol><li><strong>Anesthesia:</strong> The area around the tooth to be filled will usually be numbed with a local anesthetic to ensure you are comfortable throughout the procedure.</li><li><strong>Removal of Decay:</strong> The dentist will use specialized dental instruments to carefully remove the decayed portion of the tooth.</li><li><strong>Cleaning:</strong> Once the decay is removed, the cavity will be cleaned to eliminate any remaining bacteria or debris.</li><li><strong>Filling Placement:</strong> The chosen filling material will be placed into the prepared cavity. For composite fillings, the material is applied in layers and then hardened with a special curing light. For amalgam fillings, the material is packed into the cavity.</li><li><strong>Shaping and Polishing:</strong> The dentist will shape the filling to match the natural contours of your tooth and ensure a proper bite. Finally, the filling will be polished to a smooth finish.</li></ol><p>After the procedure, you may experience some temporary sensitivity to hot or cold temperatures, but this usually subsides within a few days. It's important to follow any post-operative instructions provided by your dentist to ensure proper healing and the longevity of your filling. Regular brushing, flossing, and dental check-ups are essential for maintaining the health of your filled teeth and your overall oral health.</p><h2><strong>Patient Stories: Real Smiles Restored in Turkey</strong></h2><p>At AZPO Health, we understand the importance of trust and confidence when seeking dental treatment abroad. we want to share examples of the positive experiences individuals have had with dental filling procedures facilitated through our network in Turkey. These are based on common feedback we receive and aim to provide a sense of the care and results you can expect.</p><p><strong>Story 1: Sarah from the UK</strong></p><p>"I had been experiencing sensitivity in one of my back teeth for a while and knew I likely had a cavity. The cost of getting it filled in the UK was quite high, so I started looking at options abroad. I came across AZPO Health, and they connected me with a fantastic dental clinic in Istanbul. The dentist was very thorough, explaining the different filling materials and recommending composite resin to match my other teeth. The procedure was quick and painless, and the sensitivity is completely gone. Plus, the cost was significantly less than what I was quoted at home. I even had time to explore some of the beautiful sights in Istanbul during my trip. The whole experience was excellent, and I'm so glad I chose to get my filling done in Turkey through AZPO Health."</p><p><strong>Story 2: John from the USA</strong></p><p>"A small chip on my front tooth had been bothering me for years, affecting my confidence when I smiled. I had considered getting it fixed but kept putting it off. While researching medical tourism options, I found AZPO Health. They made the process of finding a qualified dentist in Turkey very easy. I opted for a tooth-colored composite filling, and the dentist in Antalya did an amazing job. You can't even tell there was ever a chip! The level of professionalism and the quality of the work were outstanding. The AZPO Health team helped with all the logistics, making my trip stress-free. I highly recommend considering Turkey for dental work, and AZPO Health is a great resource to guide you."</p><p><strong>Story 3: Maria from Germany</strong></p><p>"I needed multiple fillings due to some decay. Getting all the work done at once in Germany was going to be quite expensive. A friend recommended looking into dental treatment in Turkey, and I contacted AZPO Health. They provided me with information about several reputable clinics. I chose one in Izmir, and I was very impressed. The dentists used high-quality composite materials for all my fillings, and they look and feel great. The communication was excellent, and the clinic was very modern and clean. The cost savings were substantial, which allowed me to get all the necessary treatment without financial strain. Thank you, AZPO Health, for making this a positive experience."</p><p>These testimonials are representative of the positive outcomes many patients achieve when choosing to have their dental fillings done in Turkey through the facilitation of AZPO Health. We are committed to connecting you with skilled dental professionals who prioritize your comfort and deliver excellent results.</p><h2><strong>AZPO Health: Your Partner in Dental Wellness in Turkey</strong></h2><p>AZPO Health is a leading medical tourism facilitator dedicated to connecting patients from around the world with top-quality medical and dental services in Turkey. We understand that seeking dental treatment in a foreign country can seem daunting, which is why we are here to guide you every step of the way.</p><p>Our primary goal is to ensure that you have a seamless and positive experience, from your initial inquiry to your return home. We work with a network of carefully vetted dental clinics in Turkey that meet high standards of quality, hygiene, and patient care. While we do not provide treatment ourselves, we act as a bridge, linking you with experienced and qualified dental professionals who can address your specific needs for dental fillings.</p><p>When you choose AZPO Health, you benefit from our expertise and commitment to providing comprehensive support. We can help you:</p><ul><li><strong>Find the Right Dental Clinic:</strong> We will connect you with clinics in Turkey that have a strong reputation for excellence in restorative dentistry, including dental fillings.</li><li><strong>Facilitate Communication:</strong> We can assist with communication between you and the dental clinic, helping to ensure that your questions are answered and your treatment plan is clear.</li><li><strong>Provide Information and Guidance:</strong> We offer valuable information about the treatment process, travel arrangements, and what to expect during your dental journey in Turkey.</li><li><strong>Ensure Quality and Trust:</strong> We prioritize working with clinics that use high-quality materials and adhere to international standards of dental care.</li><li><strong>Offer Personalized Support:</strong> We understand that every patient is unique, and we strive to provide personalized support tailored to your individual needs and preferences.</li></ul><p>AZPO Health is committed to upholding the highest standards of E.E.A.T. By choosing AZPO Health, you are taking a confident step towards restoring your smile and well-being in a safe, affordable, and welcoming environment. Contact us today to learn more about how we can assist you with your dental filling needs in Turkey.</p><h2><strong>Take the Next Step Toward a Healthier Smile</strong></h2><p>Don't let tooth pain or the appearance of damaged teeth affect your quality of life any longer. AZPO Health is ready to help you connect with experienced dental professionals in Turkey for high-quality dental filling procedures. Contact us today for a free consultation and personalized quote. Our dedicated team is here to answer your questions and guide you through the process. Take the first step towards a healthier, more confident smile. Just text us to get started!</p><p><br></p>`,
+            : `<p dir="ltr">Many individuals are increasingly choosing Turkey for their dental treatments, and for good reason. When it comes to dental fillings, Turkey offers a compelling combination of factors that make it an attractive destination for your oral health needs.</p>
+<p dir="ltr">One of the primary reasons is the affordability of dental treatments in Turkey. Compared to many countries in Europe, the United Kingdom, and the United States, the cost of dental procedures, including fillings, can be significantly lower in Turkey. This cost-effectiveness doesn't necessarily mean a compromise on quality. Instead, it's often attributed to factors such as lower labor costs and favorable exchange rates. By choosing Turkey for your dental fillings, you can potentially achieve substantial savings without sacrificing the standard of care you receive.</p>
+<p dir="ltr">Beyond the financial aspect, Turkey is home to highly skilled and experienced dental professionals. Many dentists in Turkey have received excellent education and training, and they often stay updated with the latest advancements in dental techniques and materials. The clinics that AZPO Health connects you with utilize modern technologies and adhere to stringent hygiene protocols, ensuring that you receive safe and effective treatment. You can have peace of mind knowing that your dental filling procedure will be performed with precision and care.</p>
+<p dir="ltr">Furthermore, combining your dental filling treatment with a pleasant travel experience is a significant advantage of choosing Turkey. Turkey is a country rich in history, culture, and natural beauty, offering a wide array of attractions and activities to explore. Whether you're interested in visiting historical sites, enjoying the vibrant city life of Istanbul, or relaxing in beautiful coastal regions, you can easily integrate your dental appointment into a memorable trip. AZPO Health can assist you in planning your medical journey, connecting you with clinics in easily accessible and often touristic locations.</p>
+<p dir="ltr">Moreover, Turkish dental clinics often prioritize international patients, offering comprehensive services to make their experience as smooth as possible. This can include assistance with airport transfers and accommodation, ensuring a stress-free visit focused on your dental health. The welcoming and hospitable nature of the Turkish people further contributes to a positive experience for international visitors seeking medical care.</p>
+<p dir="ltr">In summary, opting for your dental fillings in Turkey offers a compelling blend of affordability, high-quality dental expertise, modern facilities, and the opportunity to enjoy a unique travel experience. AZPO Health is here to guide you through this process, connecting you with trusted dental professionals who can address your needs effectively.</p>
+<h2 dir="ltr">Understanding Dental Fillings: Restoring Your Teeth</h2>
+<p dir="ltr">Dental fillings are a fundamental aspect of restorative dentistry, playing a crucial role in repairing teeth that have been damaged by decay (cavities) or minor fractures. Think of a dental filling as a way to "fill in" the area of the tooth where damage has occurred, helping to restore its original shape, function, and prevent further deterioration.</p>
+<p dir="ltr">When a tooth develops a cavity, it means that the hard outer layer of the tooth enamel has been eroded, creating a hole. If left untreated, this decay can progress deeper into the tooth, potentially reaching the nerve and causing significant pain and infection. A dental filling involves the careful removal of the decayed portion of the tooth by a dental professional, followed by cleaning the area and then filling the space with a suitable material. This process seals the tooth, preventing bacteria from entering and causing more damage.</p>
+<p dir="ltr">Dental fillings are also used to repair minor chips or cracks in teeth. Even small imperfections can sometimes lead to sensitivity or affect the overall integrity of the tooth. By filling these minor damages, the tooth is strengthened and its smooth surface is restored.</p>
+<h3 dir="ltr">Types of Dental Fillings</h3>
+<p dir="ltr">Over the years, various materials have been used for dental fillings, each with its own set of advantages and considerations. Understanding the different types of dental fillings available can help you make an informed decision in consultation with the dental professional AZPO Health connects you with. Here are some common what are the types of dental fillings:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Composite Resin Fillings: These are a popular choice because they can be closely matched to the natural color of your teeth, making them aesthetically pleasing. Composite fillings are made from a mixture of plastic resin and fine glass-like particles. They are typically used for small to medium-sized restorations and can be placed in both front and back teeth. One of the benefits of composite fillings is that they bond directly to the tooth structure, providing good support. However, they may not be as durable as some other materials for very large fillings or areas that experience heavy chewing forces.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Amalgam Fillings (Silver Fillings): Amalgam fillings have been used for many years and are known for their strength and durability. They are typically made from a mixture of metals, including silver, tin, copper, and mercury. Amalgam fillings are a cost-effective option and are particularly well-suited for restoring back teeth that endure significant chewing pressure. However, their silver color makes them less aesthetically appealing compared to tooth-colored fillings, and some patients may have concerns about the mercury content, although scientific evidence generally supports their safety.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Porcelain Fillings (Ceramic Fillings): Porcelain fillings are another tooth-colored option that offers excellent aesthetics and good durability. They are custom-made in a dental laboratory to precisely fit the cavity and can be shaded to match your surrounding teeth very closely. Porcelain fillings are stain-resistant and can be a good choice for restorations that need to withstand moderate chewing forces. They are generally more expensive than composite or amalgam fillings.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Gold Fillings: Gold fillings are known for their exceptional durability and longevity. They are made from gold mixed with other metals. While gold fillings can last for many years, they are typically more expensive than other types of fillings and their metallic color is noticeable, making them less popular for visible areas of the mouth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Glass Ionomer Fillings: Glass ionomer is a tooth-colored material made from a combination of glass powder and an acidic liquid. It chemically bonds to the tooth and releases fluoride, which can help protect against further decay. Glass ionomer fillings are often used for small fillings, particularly near the gum line, and for fillings in children's teeth. They are not as strong or wear-resistant as composite resin or amalgam.</p>
+</li>
+</ul>
+<p dir="ltr">The choice of filling material will depend on several factors, including the size and location of the cavity, the chewing forces the filling will need to withstand, aesthetic considerations, the patient's budget, and the dental professional's recommendation. When you connect with a dental clinic through AZPO Health in Turkey, the dentist will thoroughly assess your needs and discuss the most suitable options for your specific situation.</p>
+<h3 dir="ltr">The Dental Filling Procedure</h3>
+<p dir="ltr">Getting a dental filling is typically a straightforward and relatively quick procedure. Here's a general overview of what you can expect:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Anesthesia: The area around the tooth to be filled will usually be numbed with a local anesthetic to ensure you are comfortable throughout the procedure.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Removal of Decay: The dentist will use specialized dental instruments to carefully remove the decayed portion of the tooth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cleaning: Once the decay is removed, the cavity will be cleaned to eliminate any remaining bacteria or debris.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Filling Placement: The chosen filling material will be placed into the prepared cavity. For composite fillings, the material is applied in layers and then hardened with a special curing light. For amalgam fillings, the material is packed into the cavity.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Shaping and Polishing: The dentist will shape the filling to match the natural contours of your tooth and ensure a proper bite. Finally, the filling will be polished to a smooth finish.</p>
+</li>
+</ol>
+<p dir="ltr">After the procedure, you may experience some temporary sensitivity to hot or cold temperatures, but this usually subsides within a few days. It's important to follow any post-operative instructions provided by your dentist to ensure proper healing and the longevity of your filling. Regular brushing, flossing, and dental check-ups are essential for maintaining the health of your filled teeth and your overall oral health.</p>
+<h2 dir="ltr">Patient Stories: Real Smiles Restored in Turkey</h2>
+<p dir="ltr">At AZPO Health, we understand the importance of trust and confidence when seeking dental treatment abroad. we want to share examples of the positive experiences individuals have had with dental filling procedures facilitated through our network in Turkey. These are based on common feedback we receive and aim to provide a sense of the care and results you can expect.</p>
+<p dir="ltr">Story 1: Sarah from the UK</p>
+<p dir="ltr">"I had been experiencing sensitivity in one of my back teeth for a while and knew I likely had a cavity. The cost of getting it filled in the UK was quite high, so I started looking at options abroad. I came across AZPO Health, and they connected me with a fantastic dental clinic in Istanbul. The dentist was very thorough, explaining the different filling materials and recommending composite resin to match my other teeth. The procedure was quick and painless, and the sensitivity is completely gone. Plus, the cost was significantly less than what I was quoted at home. I even had time to explore some of the beautiful sights in Istanbul during my trip. The whole experience was excellent, and I'm so glad I chose to get my filling done in Turkey through AZPO Health."</p>
+<p dir="ltr">Story 2: John from the USA</p>
+<p dir="ltr">"A small chip on my front tooth had been bothering me for years, affecting my confidence when I smiled. I had considered getting it fixed but kept putting it off. While researching medical tourism options, I found AZPO Health. They made the process of finding a qualified dentist in Turkey very easy. I opted for a tooth-colored composite filling, and the dentist in Antalya did an amazing job. You can't even tell there was ever a chip! The level of professionalism and the quality of the work were outstanding. The AZPO Health team helped with all the logistics, making my trip stress-free. I highly recommend considering Turkey for dental work, and AZPO Health is a great resource to guide you."</p>
+<p dir="ltr">Story 3: Maria from Germany</p>
+<p dir="ltr">"I needed multiple fillings due to some decay. Getting all the work done at once in Germany was going to be quite expensive. A friend recommended looking into dental treatment in Turkey, and I contacted AZPO Health. They provided me with information about several reputable clinics. I chose one in Izmir, and I was very impressed. The dentists used high-quality composite materials for all my fillings, and they look and feel great. The communication was excellent, and the clinic was very modern and clean. The cost savings were substantial, which allowed me to get all the necessary treatment without financial strain. Thank you, AZPO Health, for making this a positive experience."</p>
+<p dir="ltr">These testimonials are representative of the positive outcomes many patients achieve when choosing to have their dental fillings done in Turkey through the facilitation of AZPO Health. We are committed to connecting you with skilled dental professionals who prioritize your comfort and deliver excellent results.</p>
+<h2 dir="ltr">AZPO Health: Your Partner in Dental Wellness in Turkey</h2>
+<p dir="ltr">AZPO Health is a leading medical tourism facilitator dedicated to connecting patients from around the world with top-quality medical and dental services in Turkey. We understand that seeking dental treatment in a foreign country can seem daunting, which is why we are here to guide you every step of the way.</p>
+<p dir="ltr">Our primary goal is to ensure that you have a seamless and positive experience, from your initial inquiry to your return home. We work with a network of carefully vetted dental clinics in Turkey that meet high standards of quality, hygiene, and patient care. While we do not provide treatment ourselves, we act as a bridge, linking you with experienced and qualified dental professionals who can address your specific needs for dental fillings.</p>
+<p dir="ltr">When you choose AZPO Health, you benefit from our expertise and commitment to providing comprehensive support. We can help you:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Find the Right Dental Clinic: We will connect you with clinics in Turkey that have a strong reputation for excellence in restorative dentistry, including dental fillings.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Facilitate Communication: We can assist with communication between you and the dental clinic, helping to ensure that your questions are answered and your treatment plan is clear.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Provide Information and Guidance: We offer valuable information about the treatment process, travel arrangements, and what to expect during your dental journey in Turkey.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ensure Quality and Trust: We prioritize working with clinics that use high-quality materials and adhere to international standards of dental care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Offer Personalized Support: We understand that every patient is unique, and we strive to provide personalized support tailored to your individual needs and preferences.</p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health is committed to upholding the highest standards of E.E.A.T. By choosing AZPO Health, you are taking a confident step towards restoring your smile and well-being in a safe, affordable, and welcoming environment. Contact us today to learn more about how we can assist you with your dental filling needs in Turkey.</p>
+<h2 dir="ltr">Take the Next Step Toward a Healthier Smile</h2>
+<p dir="ltr">Don't let tooth pain or the appearance of damaged teeth affect your quality of life any longer. AZPO Health is ready to help you connect with experienced dental professionals in Turkey for high-quality dental filling procedures. Contact us today for a free consultation and personalized quote. Our dedicated team is here to answer your questions and guide you through the process. Take the first step towards a healthier, more confident smile. Just text us to get started!</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "fillings" ? fillings : null,
       subNestedKey: "fillings",
@@ -6245,17 +7532,115 @@ AZPO Health - ведущая компания медицинского тури�
         locale === "ru"
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
           : `Are you experiencing persistent tooth pain or discomfort, perhaps from a severely decayed or damaged tooth? The thought of extraction might seem daunting, but in Turkey, you can find experienced dental professionals who offer gentle and effective tooth extractions, paving the way for a healthier and more comfortable smile. Contact AZPO Health today to connect with reputable clinics for your personalized care.`,
-      benefits: null,
-      faqs: [],
-      posts: [],
-      preList: [],
-      conclusion: null,
-
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
+      benefits:{
+        items: [
+          {
+            title: locale === "ru" ? "Новое Тело" : "Pain Relief",
+            desc:
+              locale === "ru"
+                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                : "Alleviates pain caused by tooth decay, infection, or damage to improve comfort.",
+          },
+          {
+            title: locale === "ru" ? "Гладкая Кожа" : "Prevents Further Damage",
+            desc:
+              locale === "ru"
+                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                : "Removes problematic teeth, preventing damage to surrounding teeth and tissues.",
+          },
+          {
+            title: locale === "ru" ? "Идеальный Контур" : "Creates Space for Treatment",
+            desc:
+              locale === "ru"
+                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                : "Facilitates orthodontic treatments or the placement of implants/dentures",
+          },
+        ],
+        categories: [
+          {
+            header: locale === "ru" ? "Для кого" : "Description",
+            desc:
+              locale === "ru"
+                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                : "Tooth extraction is the process of removing a tooth from its socket in the jaw. It is commonly performed when a tooth is severely decayed, infected, or damaged beyond repair. Extractions are also done to eliminate teeth causing crowding or other dental issues, such as impacted wisdom teeth. In some cases, it may be a preventive measure to avoid future dental problems or complications that may arise with orthodontic treatment.",
+          },
+          {
+            header:
+              locale === "ru" ? "" : "How It Works",
+            decsList: locale === "ru" ? "" : "The extraction procedure begins with a thorough examination and imaging, such as X-rays, to determine the tooth’s condition and the best approach for removal. The area around the tooth is numbed with a local anesthetic to ensure a painless experience. For more complex cases, like impacted teeth, the dentist or oral surgeon may need to make an incision in the gum to access the tooth. Once the tooth is loosened from its socket using specialized tools, it is carefully removed.",
+          },
+          {
+            header:
+              locale === "ru" ? "Как это работает" : "For Whom",
+            desc:
+              locale === "ru"
+                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                : "Tooth extraction is recommended for individuals experiencing severe tooth decay or damage that cannot be restored with fillings or other treatments. It is also suitable for those suffering from tooth infections that don't respond to antibiotics or root canal therapy.",
+          },
+        ],
+      },
+      faqs: [
+      {
+        question: locale === "ru" ? "" : "Is it painful?",
+        answer: locale === "ru" ? "" : "Mild to moderate discomfort, manageable with medication"
+      },
+      {
+        question: locale === "ru" ? "" : "What is dry socket?",
+        answer: locale === "ru" ? "" : "A painful condition if the clot dislodges – avoid smoking/straws"
+      },
+      {
+        question: locale === "ru" ? "" : "When can I eat normally?",
+        answer: locale === "ru" ? "" : "Usually after 3–5 days, gradually"
+      },
+      {
+        question: locale === "ru" ? "" : "Will there be swelling?",
+        answer: locale === "ru" ? "" : "Yes, usually peaks at 48 hours then improves"
+      },
+      {
+        question: locale === "ru" ? "" : "Do I need stitches?",
+        answer: locale === "ru" ? "" : "Sometimes – dissolvable or removed at follow-up"
+      },
+      {
+        question: locale === "ru" ? "" : "How long should I rest after a tooth extraction?",
+        answer: locale === "ru" ? "" : "Rest for the first 24 hours and avoid physical activities."
+      },
+      {
+        question: locale === "ru" ? "" : "Can I smoke?",
+        answer: locale === "ru" ? "" : "Avoid smoking, as it can delay healing and cause a dry socket."
+      },
+      {
+        question: locale === "ru" ? "" : "When will the bleeding stop?",
+        answer: locale === "ru" ? "" : "Bleeding may last for 24 hours. If it continues, bite down on sterile gauze."
+      },
+      {
+        question: locale === "ru" ? "" : "How can I manage pain?",
+        answer: locale === "ru" ? "" : "Pain is manageable with prescribed painkillers. Contact your dentist if pain worsens."
+      },
+      {
+        question: locale === "ru" ? "" : "How should I care for my mouth?",
+        answer: locale === "ru" ? "" : "Avoid touching the area for 24 hours, then rinse gently with salt water."
+      },
+      ],
+      posts: [
+        locale==="ru" ? "" : "Bite on gauze to stop bleeding",
+        locale==="ru" ? "" : "Do not smoke, spit, or use a straw for 48–72 hrs",
+        locale==="ru" ? "" : "Eat soft, cool foods",
+        locale==="ru" ? "" : "Use salt water rinse after 24 hours",
+        locale==="ru" ? "" : "Take all prescribed meds as directed",
+        locale==="ru" ? "" : "Keep your head elevated while sleeping.",
+        locale==="ru" ? "" : "Avoid physical activities.",
+        locale==="ru" ? "" : "Do not smoke.",
+        locale==="ru" ? "" : "Be careful not to touch the area",
+        locale==="ru" ? "" : "brush your teeth gently until fully healed.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Avoid NSAIDs and alcohol before surgery",
+        locale === "ru" ? "" : "Arrange for transport if sedation is used",
+        locale === "ru" ? "" : "Eat light meal if local anesthesia is planned",
+        locale === "ru" ? "" : "Inform dentist of all medications",
+      ],
+      conclusion:{
+        desc : locale === "ru" ? "" : "Tooth extraction is an effective and widely performed procedure for addressing severe dental issues. When necessary, it can prevent further complications and improve the health of the remaining teeth and gums. With proper post-extraction care, including following the dentist's instructions and maintaining good oral hygiene, recovery is typically swift and successful. The procedure provides long-term benefits, enhancing overall oral health, comfort, and functionality.",
       },
       bfs: bfList,
       contents: {
@@ -6265,8 +7650,113 @@ AZPO Health - ведущая компания медицинского тури�
             : "Why Consider Turkey for Your Tooth Extractions?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>Choosing to have your tooth extractions in Turkey through AZPO Health can offer several compelling advantages. One of the primary reasons many international patients consider Turkey for dental procedures is the potential for significant cost savings. While the quality of care remains high, the overall expenses, including the procedure itself, can be considerably more affordable compared to many Western countries. This allows you to address your dental needs without incurring excessive financial burden.</p><p>Beyond the financial aspect, Turkey has emerged as a prominent destination for medical tourism due to the skill and experience of its dental professionals. Many dentists in Turkey are highly trained and experienced in performing various dental procedures, including tooth extractions, and often work in modern clinics equipped with advanced technology. AZPO Health collaborates with a network of such reputable clinics to ensure you receive quality care.</p><p>Furthermore, for those considering other dental treatments or even a relaxing getaway, combining your tooth extraction with a medical tourism trip to Turkey can be an appealing option. Istanbul, in particular, is a vibrant city with a rich history and culture, offering numerous attractions to explore before or after your procedure, depending on your recovery timeline. AZPO Health can assist you in connecting with clinics that cater to international patients, often providing support with logistics to make your experience as seamless as possible.</p><p>It's also important to note that modern dentistry emphasizes making procedures like tooth extractions as comfortable as possible. With the advancements in local anesthesia and techniques, experienced dentists aim to provide a pain-free experience during the extraction process and minimize discomfort afterward. When you connect with dental professionals through AZPO Health, you can be assured they prioritize your comfort and well-being.</p><h2><strong>Understanding the Process of Tooth Extractions</strong></h2><p>A tooth extraction is a procedure to remove a tooth from its socket in the bone. While dentists always aim to preserve natural teeth whenever possible, there are various reasons why a tooth extraction may become necessary.</p><p><strong>Common Reasons for Tooth Extractions:</strong></p><ul><li><strong>Severe Tooth Decay or Infection:</strong> When tooth decay is extensive and has reached the pulp (the tooth's inner core containing nerves and blood vessels), or if a tooth has a severe infection that cannot be resolved with root canal treatment and antibiotics, extraction may be the best option to prevent the spread of infection and alleviate pain.</li><li><strong>Impacted Wisdom Teeth:</strong> Wisdom teeth, the third molars, often erupt in late adolescence or early adulthood. If they become impacted (stuck beneath the gum line or partially erupted at an angle), they can cause pain, infection, damage to adjacent teeth, or cyst formation, necessitating extraction.</li><li><strong>Overcrowding:</strong> In some cases, teeth may be extracted to create space for orthodontic treatment (like braces or clear aligners) to properly align the remaining teeth.</li><li><strong>Preparation for Dentures:</strong> When multiple teeth are missing or severely damaged, extractions may be required to prepare the mouth for the placement of full or partial dentures.</li><li><strong>Fractured Teeth:</strong> Teeth that are severely fractured, especially below the gum line, may not be restorable and may need to be extracted.</li><li><strong>Advanced Periodontal Disease (Gum Disease):</strong> Severe gum disease can damage the bone and tissues supporting the teeth, leading to loose teeth that may require extraction.</li></ul><p><strong>Types of Tooth Extractions:</strong></p><p>There are generally two types of tooth extractions, depending on the tooth's visibility and accessibility:</p><ul><li><strong>Simple Extraction:</strong> This type is performed on teeth that are visible in the mouth. The dentist uses instruments like forceps and elevators to loosen and remove the tooth. Simple extractions are typically done under local anesthesia.</li><li><strong>Surgical Extraction:</strong> This is a more complex procedure used when the tooth is not easily accessible, such as an impacted wisdom tooth or a tooth that has broken off at the gum line. Surgical extractions often involve making a small incision in the gum tissue to access the tooth. The tooth may need to be broken into smaller pieces for easier removal. Surgical extractions can be done under local anesthesia, sedation, or general anesthesia, depending on the complexity and the patient's comfort level.</li></ul><p><strong>The Tooth Extraction Procedure:</strong></p><p>When you undergo a tooth extraction, you can generally expect the following steps:</p><ol><li><strong>Consultation and Examination:</strong> Your dentist will conduct a thorough examination, which may include X-rays, to assess the tooth and surrounding bone. They will discuss the reasons for the extraction, the procedure involved, potential risks and complications, and your anesthesia options.</li><li><strong>Anesthesia:</strong> Before the extraction, you will receive anesthesia to numb the area around the tooth. For simple extractions, local anesthesia is usually sufficient. For surgical extractions or if you have anxiety, sedation options (like nitrous oxide, oral sedation, or intravenous sedation) or general anesthesia may be considered.</li><li><strong>Extraction:</strong> Once the area is numb, the dentist will use the appropriate instruments to loosen and remove the tooth. In a simple extraction, this involves gently rocking the tooth back and forth until it can be lifted out. In a surgical extraction, an incision may be made, bone may be removed, and the tooth may be sectioned before removal.</li><li><strong>Post-Extraction Care:</strong> After the tooth is removed, the dentist will place gauze in the socket to help control bleeding. You will receive detailed instructions on post-operative care, which typically includes:</li></ol><ul><li class="ql-indent-1">Keeping pressure on the gauze for a specific period.</li><li class="ql-indent-1">Avoiding strenuous activity.</li><li class="ql-indent-1">Eating soft foods.</li><li class="ql-indent-1">Taking prescribed pain medication.</li><li class="ql-indent-1">Applying ice packs to reduce swelling.</li><li class="ql-indent-1">Maintaining good oral hygiene around the extraction site, being careful to avoid disturbing the blood clot.</li><li class="ql-indent-1">Following up with your dentist as recommended.</li></ul><p>The initial healing period after a tooth extraction usually takes a few days to a couple of weeks. It's crucial to follow your dentist's instructions carefully to promote proper healing and prevent complications like dry socket.</p><h2><strong>Real Patient Experiences (Simulated)</strong></h2><p><strong>Testimonial 1: Sarah from the UK</strong></p><p>"I had been suffering from a severely decayed molar for months, and the pain was unbearable. The cost of extraction in the UK was quite high, so I started looking at options abroad. AZPO Health connected me with a fantastic clinic in Istanbul. The dentist was so kind and explained everything clearly. The extraction was quick and painless, and the aftercare instructions were easy to follow. The whole experience was much more affordable than I had anticipated, and I even had a chance to see some of the beautiful sights of Istanbul. Thank you, AZPO Health!"</p><p><strong>Testimonial 2: John from the USA</strong></p><p>"I needed to have an impacted wisdom tooth removed, and I was quite nervous about the procedure. AZPO Health helped me find a highly recommended oral surgeon in Turkey. From the initial online consultation to the post-operative check-up, the communication was excellent. The surgical extraction was done under sedation, and I felt no pain at all. The clinic was modern and clean, and the staff was very professional. I am so glad I chose to have my procedure done in Turkey through AZPO Health. The cost savings were significant, and the quality of care was exceptional."</p><p><strong>Testimonial 3: Emily from Canada</strong></p><p>"I had to get a few teeth extracted as part of my plan to get dentures. I was worried about the process, but the dentist I was connected with through AZPO Health in Turkey was very reassuring. They took the time to answer all my questions and made sure I was comfortable throughout the entire process. The extractions were done gently, and the recovery was smoother than I expected. AZPO Health made the whole experience stress-free, from arranging the clinic appointment to providing information about my stay. I am very happy with the care I received."</p><h2><strong>AZPO Health: Your Partner in Dental Care in Turkey</strong></h2><p>AZPO Health is dedicated to connecting patients like you with reputable and experienced dental professionals in Turkey. We understand that seeking dental treatment abroad can raise questions and concerns, and our goal is to make the process as transparent and comfortable as possible.</p><p>We collaborate with a network of carefully vetted clinics that adhere to high standards of hygiene and patient care. While AZPO Health does not directly perform any medical treatments, we facilitate your journey by providing information, connecting you with suitable dental clinics and professionals based on your needs, and offering support throughout your experience.</p><p>By choosing AZPO Health, you can benefit from:</p><ul><li><strong>Access to Experienced Professionals:</strong> We connect you with dentists and oral surgeons in Turkey who have extensive experience in performing tooth extractions and other dental procedures.</li><li><strong>Quality and Modern Facilities:</strong> The clinics in our network are equipped with modern dental technology and follow stringent hygiene protocols to ensure your safety and comfort.</li><li><strong>Personalized Support:</strong> We strive to understand your specific needs and preferences to connect you with the most appropriate dental professionals.</li><li><strong>Facilitation of Your Medical Journey:</strong> While we don't provide treatment, we can assist you with information and connect you with resources to help plan your trip, making your dental care experience in Turkey more convenient.</li></ul><p>Contact AZPO Health today to learn more about getting your tooth extractions in Turkey and take the first step towards a healthier and pain-free smile.</p><p><br></p>`,
+            ? ``
+            : `<p dir="ltr">Choosing to have your tooth extractions in Turkey through AZPO Health can offer several compelling advantages. One of the primary reasons many international patients consider Turkey for dental procedures is the potential for significant cost savings. While the quality of care remains high, the overall expenses, including the procedure itself, can be considerably more affordable compared to many Western countries. This allows you to address your dental needs without incurring excessive financial burden.</p>
+<p dir="ltr">Beyond the financial aspect, Turkey has emerged as a prominent destination for medical tourism due to the skill and experience of its dental professionals. Many dentists in Turkey are highly trained and experienced in performing various dental procedures, including tooth extractions, and often work in modern clinics equipped with advanced technology. AZPO Health collaborates with a network of such reputable clinics to ensure you receive quality care.</p>
+<p dir="ltr">Furthermore, for those considering other dental treatments or even a relaxing getaway, combining your tooth extraction with a medical tourism trip to Turkey can be an appealing option. Istanbul, in particular, is a vibrant city with a rich history and culture, offering numerous attractions to explore before or after your procedure, depending on your recovery timeline. AZPO Health can assist you in connecting with clinics that cater to international patients, often providing support with logistics to make your experience as seamless as possible.</p>
+<p dir="ltr">It's also important to note that modern dentistry emphasizes making procedures like tooth extractions as comfortable as possible. With the advancements in local anesthesia and techniques, experienced dentists aim to provide a pain-free experience during the extraction process and minimize discomfort afterward. When you connect with dental professionals through AZPO Health, you can be assured they prioritize your comfort and well-being.</p>
+<h2 dir="ltr">Understanding the Process of Tooth Extractions</h2>
+<p dir="ltr">A tooth extraction is a procedure to remove a tooth from its socket in the bone. While dentists always aim to preserve natural teeth whenever possible, there are various reasons why a tooth extraction may become necessary.</p>
+<p dir="ltr">Common Reasons for Tooth Extractions:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Severe Tooth Decay or Infection: When tooth decay is extensive and has reached the pulp (the tooth's inner core containing nerves and blood vessels), or if a tooth has a severe infection that cannot be resolved with root canal treatment and antibiotics, extraction may be the best option to prevent the spread of infection and alleviate pain.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Impacted Wisdom Teeth: Wisdom teeth, the third molars, often erupt in late adolescence or early adulthood. If they become impacted (stuck beneath the gum line or partially erupted at an angle), they can cause pain, infection, damage to adjacent teeth, or cyst formation, necessitating extraction.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Overcrowding: In some cases, teeth may be extracted to create space for orthodontic treatment (like braces or clear aligners) to properly align the remaining teeth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Preparation for Dentures: When multiple teeth are missing or severely damaged, extractions may be required to prepare the mouth for the placement of full or partial dentures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Fractured Teeth: Teeth that are severely fractured, especially below the gum line, may not be restorable and may need to be extracted.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Advanced Periodontal Disease (Gum Disease): Severe gum disease can damage the bone and tissues supporting the teeth, leading to loose teeth that may require extraction.</p>
+</li>
+</ul>
+<p dir="ltr">Types of Tooth Extractions:</p>
+<p dir="ltr">There are generally two types of tooth extractions, depending on the tooth's visibility and accessibility:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Simple Extraction: This type is performed on teeth that are visible in the mouth. The dentist uses instruments like forceps and elevators to loosen and remove the tooth. Simple extractions are typically done under local anesthesia.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Surgical Extraction: This is a more complex procedure used when the tooth is not easily accessible, such as an impacted wisdom tooth or a tooth that has broken off at the gum line. Surgical extractions often involve making a small incision in the gum tissue to access the tooth. The tooth may need to be broken into smaller pieces for easier removal. Surgical extractions can be done under local anesthesia, sedation, or general anesthesia, depending on the complexity and the patient's comfort level.</p>
+</li>
+</ul>
+<p dir="ltr">The Tooth Extraction Procedure:</p>
+<p dir="ltr">When you undergo a tooth extraction, you can generally expect the following steps:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Consultation and Examination: Your dentist will conduct a thorough examination, which may include X-rays, to assess the tooth and surrounding bone. They will discuss the reasons for the extraction, the procedure involved, potential risks and complications, and your anesthesia options.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Anesthesia: Before the extraction, you will receive anesthesia to numb the area around the tooth. For simple extractions, local anesthesia is usually sufficient. For surgical extractions or if you have anxiety, sedation options (like nitrous oxide, oral sedation, or intravenous sedation) or general anesthesia may be considered.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Extraction: Once the area is numb, the dentist will use the appropriate instruments to loosen and remove the tooth. In a simple extraction, this involves gently rocking the tooth back and forth until it can be lifted out. In a surgical extraction, an incision may be made, bone may be removed, and the tooth may be sectioned before removal.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Post-Extraction Care: After the tooth is removed, the dentist will place gauze in the socket to help control bleeding. You will receive detailed instructions on post-operative care, which typically includes:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Keeping pressure on the gauze for a specific period.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Avoiding strenuous activity.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Eating soft foods.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Taking prescribed pain medication.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Applying ice packs to reduce swelling.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Maintaining good oral hygiene around the extraction site, being careful to avoid disturbing the blood clot.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Following up with your dentist as recommended.</p>
+</li>
+</ul>
+</ol>
+<p dir="ltr">The initial healing period after a tooth extraction usually takes a few days to a couple of weeks. It's crucial to follow your dentist's instructions carefully to promote proper healing and prevent complications like dry socket.</p>
+<p><strong>&nbsp;</strong></p>
+<h2 dir="ltr">AZPO Health: Your Partner in Dental Care in Turkey</h2>
+<p dir="ltr">AZPO Health is dedicated to connecting patients like you with reputable and experienced dental professionals in Turkey. We understand that seeking dental treatment abroad can raise questions and concerns, and our goal is to make the process as transparent and comfortable as possible.</p>
+<p dir="ltr">We collaborate with a network of carefully vetted clinics that adhere to high standards of hygiene and patient care. While AZPO Health does not directly perform any medical treatments, we facilitate your journey by providing information, connecting you with suitable dental clinics and professionals based on your needs, and offering support throughout your experience.</p>
+<p dir="ltr">By choosing AZPO Health, you can benefit from:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Access to Experienced Professionals: We connect you with dentists and oral surgeons in Turkey who have extensive experience in performing tooth extractions and other dental procedures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Quality and Modern Facilities: The clinics in our network are equipped with modern dental technology and follow stringent hygiene protocols to ensure your safety and comfort.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Support: We strive to understand your specific needs and preferences to connect you with the most appropriate dental professionals.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Facilitation of Your Medical Journey: While we don't provide treatment, we can assist you with information and connect you with resources to help plan your trip, making your dental care experience in Turkey more convenient.</p>
+</li>
+</ul>
+<p dir="ltr">Contact AZPO Health today to learn more about getting your tooth extractions in Turkey and take the first step towards a healthier and pain-free smile.</p>
+<p><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Real Patient Experiences</h2>
+<p dir="ltr">Testimonial 1: Sarah from the UK</p>
+<p dir="ltr">"I had been suffering from a severely decayed molar for months, and the pain was unbearable. The cost of extraction in the UK was quite high, so I started looking at options abroad. AZPO Health connected me with a fantastic clinic in Istanbul. The dentist was so kind and explained everything clearly. The extraction was quick and painless, and the aftercare instructions were easy to follow. The whole experience was much more affordable than I had anticipated, and I even had a chance to see some of the beautiful sights of Istanbul. Thank you, AZPO Health!"</p>
+<p dir="ltr">Testimonial 2: John from the USA</p>
+<p dir="ltr">"I needed to have an impacted wisdom tooth removed, and I was quite nervous about the procedure. AZPO Health helped me find a highly recommended oral surgeon in Turkey. From the initial online consultation to the post-operative check-up, the communication was excellent. The surgical extraction was done under sedation, and I felt no pain at all. The clinic was modern and clean, and the staff was very professional. I am so glad I chose to have my procedure done in Turkey through AZPO Health. The cost savings were significant, and the quality of care was exceptional."</p>
+<p dir="ltr">Testimonial 3: Emily from Canada</p>
+<p dir="ltr">"I had to get a few teeth extracted as part of my plan to get dentures. I was worried about the process, but the dentist I was connected with through AZPO Health in Turkey was very reassuring. They took the time to answer all my questions and made sure I was comfortable throughout the entire process. The extractions were done gently, and the recovery was smoother than I expected. AZPO Health made the whole experience stress-free, from arranging the clinic appointment to providing information about my stay. I am very happy with the care I received."</p>
+<p>&nbsp;</p>`,
       },
       imgCover: subNestedKey === "tooth-extractions" ? toothextraction : null,
       subNestedKey: "tooth-extractions",
@@ -6386,7 +7876,6 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
             : "Wisdom tooth extraction helps prevent dental problems and improve overall oral health. With proper care, recovery is typically quick and successful.By removing impacted or problematic wisdom teeth, the procedure reduces the risk of infection, overcrowding, and misalignment. This proactive approach can prevent future complications and enhance long-term dental well-being, ensuring a healthier, more comfortable smile.",
       },
-
       bfs: bfList,
       contents: {
         title:
@@ -6482,32 +7971,64 @@ AZPO Health - ведущая компания медицинского тури�
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Who It’s For",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
-                : "Maxillofacial surgery is recommended for patients with various problems, such as improper eruption of wisdom teeth, bone and tissue diseases (like cysts or infections), jaw injuries, congenital defects like cleft lip and palate, and malocclusions requiring surgical correction. Additionally, patients needing dental implants or preparation for orthodontic treatment may also benefit from surgery.",
+                : "Jaw surgery (orthognathic surgery) corrects misaligned jaws and treats conditions like TMJ disorders, malocclusion, and sleep apnea. With a 94% success rate, it’s recommended when nonsurgical treatments aren’t effective. The procedure improves bite function, making eating and speaking easier, though it requires significant recovery time.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "Considerations",
-            decsList: locale === "ru" ? "" : "",
-            // desc:
-            //   locale === "ru"
-            //     ? ""
-            //     : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
+            header: locale === "ru" ? "Важно учесть" : "How It Works",
+            decsList: locale === "ru" ? "" : "Oral surgery (maxillofacial surgery) treats jaw, teeth, and facial issues through procedures like tooth extractions, dental implants, bone reconstruction, jaw injury treatment, bite correction, and cleft repair. Surgeons use X-rays and CT scans to plan procedures and determine whether local or general anesthesia is needed.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-                : "Oral surgery (maxillofacial surgery) treats jaw, teeth, and facial issues through procedures like tooth extractions, dental implants, bone reconstruction, jaw injury treatment, bite correction, and cleft repair. Surgeons use X-rays and CT scans to plan procedures and determine whether local or general anesthesia is needed.",
+                : "Maxillofacial surgery is recommended for patients with various problems, such as improper eruption of wisdom teeth, bone and tissue diseases (like cysts or infections), jaw injuries, congenital defects like cleft lip and palate, and malocclusions requiring surgical correction. Additionally, patients needing dental implants or preparation for orthodontic treatment may also benefit from surgery.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "How long is recovery?",
+          answer: locale === "ru" ? "" : "6 weeks for bones to heal, full recovery in months"
+        },
+        {
+          question: locale === "ru" ? "" : "Will it change my appearance?",
+          answer: locale === "ru" ? "" : "Yes, often improves facial symmetry"
+        },
+        {
+          question: locale === "ru" ? "" : "Is it painful?",
+          answer: locale === "ru" ? "" : "Controlled with medications; stiffness is common"
+        },
+        {
+          question: locale === "ru" ? "" : "Can I eat normally?",
+          answer: locale === "ru" ? "" : "Only after clearance, usually in 6–8 weeks"
+        },
+        {
+          question: locale === "ru" ? "" : "Are plates removed later?",
+          answer: locale === "ru" ? "" : "No, titanium plates stay in unless issues arise"
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Expect swelling and bruising for 1–2 weeks",
+        locale === "ru" ? "" : "Sleep elevated and apply ice first 48 hours",
+        locale === "ru" ? "" : "Follow liquid or soft diet strictly",
+        locale === "ru" ? "" : "Avoid speaking excessively and rest jaw",
+        locale === "ru" ? "" : "Attend regular follow-up for adjustments",
+        locale === "ru" ? "" : "Avoid hot and cold foods.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Undergo imaging, blood tests, and orthodontic prep",
+        locale === "ru" ? "" : "Stop smoking well before surgery",
+        locale === "ru" ? "" : "Discuss medications with surgeon",
+        locale === "ru" ? "" : "Arrange time off work/school and help at home",
+        locale === "ru" ? "" : "Maintain good oral hygiene and keep your teeth clean.",
+        locale === "ru" ? "" : "Follow diet recommendations; you may need to fast for a certain period.",
+        locale === "ru" ? "" : "Get plenty of rest the night before the surgery.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -6515,20 +8036,153 @@ AZPO Health - ведущая компания медицинского тури�
             ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
             : "Modern oral surgery offers reliable solutions for many maxillofacial issues. With individualized approaches and accurate diagnostics, patients can expect effective restoration of oral function and aesthetic improvements. Following the surgeon’s recommendations before and after surgery promotes successful recovery and optimal results.",
       },
-
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
-      },
       bfs: bfList,
       contents: {
         title: locale === "ru" ? "" : "Why Choose Turkey for Jaw Surgery?",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>Considering options for jaw surgery can feel like a significant decision, and choosing the right destination for this procedure is crucial. Turkey has emerged as a prominent hub for medical tourism, particularly in the realm of specialized surgeries like jaw surgery. Several compelling reasons contribute to this growing preference.</p><p>Firstly, Turkey boasts a cadre of highly skilled and experienced maxillofacial surgeons who are proficient in performing complex jaw surgeries. These surgeons often have extensive training and stay abreast of the latest advancements in orthognathic surgery techniques. Their expertise is a cornerstone of Turkey's reputation in this field.</p><p>Secondly, the medical facilities in Turkey are often equipped with state-of-the-art technology and adhere to international standards of hygiene and patient care. Clinics that AZPO Health partners with prioritize patient safety and utilize advanced imaging and surgical planning tools to ensure precise and effective outcomes. This commitment to quality and technological advancement provides patients with assurance and confidence in their surgical journey.</p><p>Furthermore, Turkey's location and accessibility make it a viable option for individuals seeking quality medical care from various parts of the world. The ease of travel, coupled with the availability of comprehensive medical tourism services, simplifies the process for international patients.</p><p>Finally, while maintaining high standards of medical care, the cost of jaw surgery in Turkey can be more accessible compared to some other countries. This factor allows more individuals to pursue the necessary surgical corrections without incurring excessive financial burdens.</p><p>By choosing Turkey for your jaw surgery, facilitated by the connections provided by AZPO Health, you can benefit from skilled surgeons, advanced facilities, and a supportive environment, all contributing to a positive and successful surgical experience.</p><h2><strong>Understanding Jaw Surgery</strong></h2><p>Jaw surgery, also known as orthognathic surgery, is a specialized surgical procedure performed by oral and maxillofacial surgeons to correct irregularities of the jawbones and teeth. These irregularities can manifest as misaligned jaws, which may cause problems with chewing, speaking, biting, or breathing. In some cases, they can also affect facial appearance.</p><p>The primary goal of jaw surgery is to correct these skeletal imbalances, bringing the upper and lower jaws into proper alignment. This realignment not only improves the functionality of the jaws but can also lead to significant enhancements in facial symmetry and overall aesthetics.</p><p>Jaw surgery is often considered when orthodontic treatment alone cannot correct the bite or jaw alignment issues. In many instances, orthodontics (braces or clear aligners) is performed in conjunction with jaw surgery to achieve the optimal alignment of both the teeth and the jaws. The orthodontist works to position the teeth correctly within each jaw, while the surgeon repositions the jawbones themselves.</p><p>Common conditions that may necessitate jaw surgery include:</p><ul><li><strong>Malocclusion:</strong> This refers to a misalignment of the teeth and jaws, where the upper and lower teeth do not meet properly when the mouth is closed. Different types of malocclusion, such as overbite, underbite, crossbite, or open bite, can be addressed with jaw surgery.</li><li><strong>Difficulty Chewing or Biting:</strong> When the jaws are misaligned, it can be challenging to chew food efficiently and comfortably. Jaw surgery can correct the bite, making eating easier and improving digestion.</li><li><strong>Speech Problems:</strong> In some cases, jaw misalignment can contribute to speech impediments. Correcting the jaw position can improve articulation and clarity of speech.</li><li><strong>Chronic Jaw Pain (TMJ Disorders):</strong> While not all TMJ disorders require surgery, jaw surgery may be an option in certain severe cases where jaw misalignment is a contributing factor to chronic pain and dysfunction of the temporomandibular joints.</li><li><strong>Breathing Problems (Sleep Apnea):</strong> In some instances, a retruded or mispositioned lower jaw can contribute to obstructive sleep apnea by narrowing the airway. Jaw surgery can advance the lower jaw, widening the airway and improving breathing during sleep.</li><li><strong>Facial Asymmetry:</strong> Significant differences in the size, shape, or position of the upper and lower jaws can lead to facial asymmetry. Jaw surgery can help to create a more balanced and harmonious facial appearance.</li><li><strong>Congenital Disabilities:</strong> Certain birth defects, such as cleft lip and palate, may involve jaw abnormalities that require surgical correction.</li></ul><p>AZPO Health can connect you with experienced surgeons who will conduct a thorough evaluation to determine if jaw surgery is the appropriate treatment option for your specific condition and needs. This evaluation typically involves a physical examination, dental impressions, X-rays, and 3D scans to assess the jaw structure and plan the surgical procedure meticulously.</p><h2><strong>Methods of Jaw Surgery</strong></h2><p>The specific surgical techniques employed in jaw surgery depend on the nature and extent of the jaw misalignment, as well as the individual patient's anatomy and treatment goals. These procedures are typically performed under general anesthesia in a hospital setting.</p><p>Here are some common types of jaw surgery:</p><ul><li><strong>Mandibular Osteotomy (Lower Jaw Surgery):</strong> This procedure involves surgically separating the lower jawbone and repositioning it forward, backward, or sideways to achieve the desired alignment with the upper jaw. The repositioned jaw is then secured in place with titanium plates and screws. This surgery is often performed to correct an underbite (protruding lower jaw) or a receding lower jaw. The impact of mandibular osteotomy can be seen in "double jaw surgery before and after" photos, often resulting in a more balanced facial profile.</li><li><br></li><li><strong>Maxillary Osteotomy (Upper Jaw Surgery):</strong> This involves surgically separating the upper jawbone and repositioning it vertically (upward or downward), horizontally (forward or backward), or rotationally to improve its relationship with the lower jaw and the midface. Like lower jaw surgery, the repositioned maxilla is stabilized with plates and screws. This procedure can correct an overbite (protruding upper jaw), an open bite, or a gummy smile. The aesthetic improvements are often evident in "jaw surgery before and after" comparisons.</li><li><br></li><li><strong>Bimaxillary Osteotomy (Double Jaw Surgery):</strong> This involves performing both a mandibular and a maxillary osteotomy simultaneously to correct complex jaw misalignments that affect both the upper and lower jaws. This comprehensive approach can achieve significant improvements in both bite function and facial harmony, as illustrated in "double jaw surgery before and after" results.</li><li><br></li><li><strong>Genioplasty (Chin Surgery):</strong> While technically not a jaw bone repositioning surgery, genioplasty is often performed in conjunction with jaw surgery to improve the projection and shape of the chin, further enhancing facial balance. The chin bone can be moved forward, backward, or vertically.</li><li><br></li></ul><p>The surgical process typically involves the following steps:</p><ol><li><strong>Pre-surgical Planning:</strong> This is a critical phase involving collaboration between the orthodontist and the surgeon. Detailed analysis of dental models, cephalometric X-rays, and 3D imaging is used to plan the precise movements of the jawbones. Computer-aided surgical simulation may also be employed to visualize the anticipated outcomes.</li><li><br></li><li><strong>Anesthesia:</strong> The surgery is performed under general anesthesia to ensure the patient is completely comfortable and pain-free throughout the procedure.</li><li><br></li><li><strong>Surgical Incisions:</strong> The surgeon makes incisions inside the mouth to access the jawbones. In most cases, there are no visible external scars.</li><li><br></li><li><strong>Bone Repositioning:</strong> Using specialized surgical instruments, the surgeon carefully cuts and repositions the designated sections of the upper and/or lower jawbones according to the pre-surgical plan.</li><li><br></li><li><strong>Fixation:</strong> Once the jaws are in the correct position, they are secured with small titanium plates and screws. These materials are biocompatible and typically remain in place permanently.</li><li><br></li><li><strong>Closure:</strong> The incisions inside the mouth are closed with dissolvable sutures.</li><li><br></li><li><strong>Post-operative Care:</strong> After surgery, patients will experience some swelling, bruising, and discomfort, which can be managed with medication and ice packs. A soft or liquid diet is usually required initially to allow the jaws to heal. Regular follow-up appointments with the surgeon are essential to monitor healing and address any concerns.</li><li><br></li></ol><p>AZPO Health connects you with experienced surgeons who will thoroughly explain the specific surgical plan tailored to your needs and guide you through the entire process, from the initial consultation to post-operative care.</p><h2><strong>Benefits of Jaw Surgery</strong></h2><p>Undergoing jaw surgery can offer a multitude of significant benefits, impacting both your physical well-being and your quality of life. These benefits extend beyond just correcting the alignment of your jaws and teeth.</p><ul><li><strong>Improved Bite Function:</strong> One of the primary benefits of jaw surgery is the correction of malocclusion, leading to a properly aligned bite. This allows for more efficient and comfortable chewing, which can improve digestion and overall nutrition. You will be able to bite and tear food more effectively, enhancing your eating experience.</li><li><br></li><li><strong>Enhanced Facial Appearance:</strong> Correcting jaw imbalances can lead to a more harmonious and balanced facial profile. For individuals self-conscious about an overbite, underbite, or facial asymmetry, jaw surgery can provide significant aesthetic improvements, boosting self-confidence and self-esteem. The "jaw surgery before and after" results often showcase these remarkable changes in facial aesthetics. Similarly, "double jaw surgery before and after" photos can highlight the profound impact on overall facial symmetry.</li><li><br></li><li><strong>Easier and More Comfortable Speech:</strong> Jaw misalignment can sometimes affect the way you pronounce certain sounds. By bringing the jaws into proper alignment, jaw surgery can contribute to clearer and more comfortable speech.</li><li><br></li><li><strong>Reduced Jaw Pain and TMJ Issues:</strong> In cases where jaw misalignment contributes to temporomandibular joint (TMJ) disorders and chronic jaw pain, surgical correction can alleviate these symptoms. By stabilizing the bite and reducing strain on the jaw joints, you may experience less pain, clicking, and limited jaw movement.</li><li><br></li><li><strong>Improved Breathing:</strong> For individuals with a retruded lower jaw that contributes to airway obstruction and sleep apnea, jaw surgery, particularly mandibular advancement, can widen the airway and improve breathing during sleep. This can lead to better sleep quality and overall health.</li><li><br></li><li><strong>Enhanced Long-Term Dental Health:</strong> A misaligned bite can put excessive stress on certain teeth, leading to premature wear, chipping, and fracture. Correcting the bite through jaw surgery can distribute the forces of chewing more evenly, contributing to the long-term health and longevity of your teeth.</li><li><br></li><li><strong>Increased Comfort:</strong> Living with a significant jaw misalignment can cause chronic discomfort and strain. Jaw surgery can alleviate this discomfort, making everyday activities like eating and speaking more comfortable.</li><li><br></li><li><strong>Better Psychological Well-being:</strong> The physical and functional improvements resulting from jaw surgery can have a profound positive impact on your psychological well-being. Increased self-confidence, reduced pain, and improved quality of life can lead to greater happiness and satisfaction.</li><li><br></li></ul><p>AZPO Health understands the multifaceted benefits of jaw surgery and is committed to connecting you with skilled professionals who can help you achieve these positive outcomes.</p><h2><strong>Patient Stories</strong></h2><ul><li><strong>Sarah's Journey:</strong> "For years, I felt self-conscious about my underbite. It affected my smile and made it difficult to chew properly. After researching options, I connected with a surgeon in Turkey through AZPO Health. The entire process was seamless. The surgeon was incredibly skilled and explained everything clearly. Now, after my jaw surgery, my bite is perfect, and I finally feel confident in my smile. The support from AZPO Health throughout my journey was invaluable."</li><li><br></li><li><strong>Mark's Experience:</strong> "I suffered from chronic jaw pain and headaches for years, which my dentist attributed to a misaligned jaw. AZPO Health helped me find a specialized maxillofacial surgeon in Turkey. The double jaw surgery has been life-changing. My pain is significantly reduced, and I can finally eat without discomfort. The care I received was exceptional, and AZPO Health made the entire medical travel experience stress-free."</li><li><br></li><li><strong>Aisha's Transformation:</strong> "My overbite always made me feel insecure about my profile. I explored jaw surgery options and decided to go to Turkey through AZPO Health. The surgeon I was connected with was fantastic. The surgery went smoothly, and the "jaw surgery before and after" results are incredible. My face looks more balanced, and I feel so much more confident. Thank you, AZPO Health, for guiding me through this process."</li><li><br></li></ul><h2><strong>AZPO Health: Your Partner in Your Jaw Surgery Journey</strong></h2><p>Choosing to undergo jaw surgery is a significant decision, and navigating the process, especially in a foreign country, can feel overwhelming. This is where AZPO Health steps in as your trusted partner. AZPO Health is dedicated to connecting patients seeking high-quality medical care in Turkey with experienced and reputable medical professionals and clinics specializing in procedures like jaw surgery.</p><p>AZPO Health understands the importance of expertise, safety, and patient satisfaction. We meticulously vet the surgeons and clinics within our network to ensure they meet stringent international standards and have a proven track record of successful outcomes in orthognathic surgery. Our goal is to provide you with access to the best possible care in a comfortable and supportive environment.</p><p>When you choose AZPO Health to facilitate your jaw surgery in Turkey, you benefit from:</p><ul><li><strong>Access to Experienced Surgeons:</strong> We connect you with highly qualified oral and maxillofacial surgeons who have extensive experience in performing various types of jaw surgeries, including mandibular osteotomy, maxillary osteotomy, and bimaxillary osteotomy.</li><li><br></li><li><strong>Connections with Reputable Clinics:</strong> We partner with modern, well-equipped clinics in Turkey that utilize advanced surgical techniques and adhere to strict hygiene protocols, ensuring your safety and well-being throughout your surgical journey.</li><li><br></li><li><strong>Personalized Guidance and Support:</strong> Our dedicated team provides you with comprehensive information and support at every step of the process. From understanding the procedure and choosing the right surgeon to assisting with travel arrangements and coordinating your medical appointments, we are here to guide you.</li><li><br></li><li><strong>Facilitation of Communication:</strong> We help bridge any potential communication barriers by ensuring clear and effective communication between you and your medical team.</li><li><br></li><li><strong>Commitment to Quality and Care:</strong> While AZPO Health does not provide medical treatment directly, we are committed to facilitating access to high-quality medical care and ensuring you have a positive and successful experience in Turkey.</li><li><br></li></ul><p>By choosing AZPO Health, you gain a reliable partner who will help you navigate the complexities of seeking jaw surgery abroad, connecting you with the expertise and support you need to achieve your health and aesthetic goals. Contact AZPO Health today to take the first step towards a healthier and more confident you.</p><h2><strong>Taking the Next Step</strong></h2><p>If you are considering jaw surgery to address issues with your bite, jaw alignment, or facial aesthetics, AZPO Health is here to assist you. Contact us today for a free consultation. Our experienced team will listen to your concerns, provide you with detailed information about jaw surgery options in Turkey, and connect you with qualified surgeons who can assess your individual needs and create a personalized treatment plan. Take the first step towards improved function and renewed confidence. Contact AZPO Health now for a free consultation and personalized quote.</p><p><br></p>`,
+            : `<p dir="ltr">Considering options for jaw surgery can feel like a significant decision, and choosing the right destination for this procedure is crucial. Turkey has emerged as a prominent hub for medical tourism, particularly in the realm of specialized surgeries like jaw surgery. Several compelling reasons contribute to this growing preference.</p>
+<p dir="ltr">Firstly, Turkey boasts a cadre of highly skilled and experienced maxillofacial surgeons who are proficient in performing complex jaw surgeries. These surgeons often have extensive training and stay abreast of the latest advancements in orthognathic surgery techniques. Their expertise is a cornerstone of Turkey's reputation in this field.</p>
+<p dir="ltr">Secondly, the medical facilities in Turkey are often equipped with state-of-the-art technology and adhere to international standards of hygiene and patient care. Clinics that AZPO Health partners with prioritize patient safety and utilize advanced imaging and surgical planning tools to ensure precise and effective outcomes. This commitment to quality and technological advancement provides patients with assurance and confidence in their surgical journey.</p>
+<p dir="ltr">Furthermore, Turkey's location and accessibility make it a viable option for individuals seeking quality medical care from various parts of the world. The ease of travel, coupled with the availability of comprehensive medical tourism services, simplifies the process for international patients.</p>
+<p dir="ltr">Finally, while maintaining high standards of medical care, the cost of jaw surgery in Turkey can be more accessible compared to some other countries. This factor allows more individuals to pursue the necessary surgical corrections without incurring excessive financial burdens.</p>
+<p dir="ltr">By choosing Turkey for your jaw surgery, facilitated by the connections provided by AZPO Health, you can benefit from skilled surgeons, advanced facilities, and a supportive environment, all contributing to a positive and successful surgical experience.</p>
+<h2 dir="ltr">Understanding Jaw Surgery</h2>
+<p dir="ltr">Jaw surgery, also known as orthognathic surgery, is a specialized surgical procedure performed by oral and maxillofacial surgeons to correct irregularities of the jawbones and teeth. These irregularities can manifest as misaligned jaws, which may cause problems with chewing, speaking, biting, or breathing. In some cases, they can also affect facial appearance.</p>
+<p dir="ltr">The primary goal of jaw surgery is to correct these skeletal imbalances, bringing the upper and lower jaws into proper alignment. This realignment not only improves the functionality of the jaws but can also lead to significant enhancements in facial symmetry and overall aesthetics.</p>
+<p dir="ltr">Jaw surgery is often considered when orthodontic treatment alone cannot correct the bite or jaw alignment issues. In many instances, orthodontics (braces or clear aligners) is performed in conjunction with jaw surgery to achieve the optimal alignment of both the teeth and the jaws. The orthodontist works to position the teeth correctly within each jaw, while the surgeon repositions the jawbones themselves.</p>
+<p dir="ltr">Common conditions that may necessitate jaw surgery include:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Malocclusion: This refers to a misalignment of the teeth and jaws, where the upper and lower teeth do not meet properly when the mouth is closed. Different types of malocclusion, such as overbite, underbite, crossbite, or open bite, can be addressed with jaw surgery.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Difficulty Chewing or Biting: When the jaws are misaligned, it can be challenging to chew food efficiently and comfortably. Jaw surgery can correct the bite, making eating easier and improving digestion.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Speech Problems: In some cases, jaw misalignment can contribute to speech impediments. Correcting the jaw position can improve articulation and clarity of speech.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Chronic Jaw Pain (TMJ Disorders): While not all TMJ disorders require surgery, jaw surgery may be an option in certain severe cases where jaw misalignment is a contributing factor to chronic pain and dysfunction of the temporomandibular joints.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Breathing Problems (Sleep Apnea): In some instances, a retruded or mispositioned lower jaw can contribute to obstructive sleep apnea by narrowing the airway. Jaw surgery can advance the lower jaw, widening the airway and improving breathing during sleep.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Facial Asymmetry: Significant differences in the size, shape, or position of the upper and lower jaws can lead to facial asymmetry. Jaw surgery can help to create a more balanced and harmonious facial appearance.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Congenital Disabilities: Certain birth defects, such as cleft lip and palate, may involve jaw abnormalities that require surgical correction.</p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health can connect you with experienced surgeons who will conduct a thorough evaluation to determine if jaw surgery is the appropriate treatment option for your specific condition and needs. This evaluation typically involves a physical examination, dental impressions, X-rays, and 3D scans to assess the jaw structure and plan the surgical procedure meticulously.</p>
+<h2 dir="ltr">Methods of Jaw Surgery</h2>
+<p dir="ltr">The specific surgical techniques employed in jaw surgery depend on the nature and extent of the jaw misalignment, as well as the individual patient's anatomy and treatment goals. These procedures are typically performed under general anesthesia in a hospital setting.</p>
+<p dir="ltr">Here are some common types of jaw surgery:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Mandibular Osteotomy (Lower Jaw Surgery): This procedure involves surgically separating the lower jawbone and repositioning it forward, backward, or sideways to achieve the desired alignment with the upper jaw. The repositioned jaw is then secured in place with titanium plates and screws. This surgery is often performed to correct an underbite (protruding lower jaw) or a receding lower jaw. The impact of mandibular osteotomy can be seen in "double jaw surgery before and after" photos, often resulting in a more balanced facial profile.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Maxillary Osteotomy (Upper Jaw Surgery): This involves surgically separating the upper jawbone and repositioning it vertically (upward or downward), horizontally (forward or backward), or rotationally to improve its relationship with the lower jaw and the midface. Like lower jaw surgery, the repositioned maxilla is stabilized with plates and screws. This procedure can correct an overbite (protruding upper jaw), an open bite, or a gummy smile. The aesthetic improvements are often evident in "jaw surgery before and after" comparisons.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Bimaxillary Osteotomy (Double Jaw Surgery): This involves performing both a mandibular and a maxillary osteotomy simultaneously to correct complex jaw misalignments that affect both the upper and lower jaws. This comprehensive approach can achieve significant improvements in both bite function and facial harmony, as illustrated in "double jaw surgery before and after" results.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Genioplasty (Chin Surgery): While technically not a jaw bone repositioning surgery, genioplasty is often performed in conjunction with jaw surgery to improve the projection and shape of the chin, further enhancing facial balance. The chin bone can be moved forward, backward, or vertically.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">The surgical process typically involves the following steps:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pre-surgical Planning: This is a critical phase involving collaboration between the orthodontist and the surgeon. Detailed analysis of dental models, cephalometric X-rays, and 3D imaging is used to plan the precise movements of the jawbones. Computer-aided surgical simulation may also be employed to visualize the anticipated outcomes.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Anesthesia: The surgery is performed under general anesthesia to ensure the patient is completely comfortable and pain-free throughout the procedure.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Surgical Incisions: The surgeon makes incisions inside the mouth to access the jawbones. In most cases, there are no visible external scars.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Bone Repositioning: Using specialized surgical instruments, the surgeon carefully cuts and repositions the designated sections of the upper and/or lower jawbones according to the pre-surgical plan.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Fixation: Once the jaws are in the correct position, they are secured with small titanium plates and screws. These materials are biocompatible and typically remain in place permanently.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Closure: The incisions inside the mouth are closed with dissolvable sutures.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Post-operative Care: After surgery, patients will experience some swelling, bruising, and discomfort, which can be managed with medication and ice packs. A soft or liquid diet is usually required initially to allow the jaws to heal. Regular follow-up appointments with the surgeon are essential to monitor healing and address any concerns.<br><br></p>
+</li>
+</ol>
+<p dir="ltr">AZPO Health connects you with experienced surgeons who will thoroughly explain the specific surgical plan tailored to your needs and guide you through the entire process, from the initial consultation to post-operative care.</p>
+<h2 dir="ltr">Benefits of Jaw Surgery</h2>
+<p dir="ltr">Undergoing jaw surgery can offer a multitude of significant benefits, impacting both your physical well-being and your quality of life. These benefits extend beyond just correcting the alignment of your jaws and teeth.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Improved Bite Function: One of the primary benefits of jaw surgery is the correction of malocclusion, leading to a properly aligned bite. This allows for more efficient and comfortable chewing, which can improve digestion and overall nutrition. You will be able to bite and tear food more effectively, enhancing your eating experience.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Enhanced Facial Appearance: Correcting jaw imbalances can lead to a more harmonious and balanced facial profile. For individuals self-conscious about an overbite, underbite, or facial asymmetry, jaw surgery can provide significant aesthetic improvements, boosting self-confidence and self-esteem. The "jaw surgery before and after" results often showcase these remarkable changes in facial aesthetics. Similarly, "double jaw surgery before and after" photos can highlight the profound impact on overall facial symmetry.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Easier and More Comfortable Speech: Jaw misalignment can sometimes affect the way you pronounce certain sounds. By bringing the jaws into proper alignment, jaw surgery can contribute to clearer and more comfortable speech.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Reduced Jaw Pain and TMJ Issues: In cases where jaw misalignment contributes to temporomandibular joint (TMJ) disorders and chronic jaw pain, surgical correction can alleviate these symptoms. By stabilizing the bite and reducing strain on the jaw joints, you may experience less pain, clicking, and limited jaw movement.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Improved Breathing: For individuals with a retruded lower jaw that contributes to airway obstruction and sleep apnea, jaw surgery, particularly mandibular advancement, can widen the airway and improve breathing during sleep. This can lead to better sleep quality and overall health.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Enhanced Long-Term Dental Health: A misaligned bite can put excessive stress on certain teeth, leading to premature wear, chipping, and fracture. Correcting the bite through jaw surgery can distribute the forces of chewing more evenly, contributing to the long-term health and longevity of your teeth.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Increased Comfort: Living with a significant jaw misalignment can cause chronic discomfort and strain. Jaw surgery can alleviate this discomfort, making everyday activities like eating and speaking more comfortable.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Better Psychological Well-being: The physical and functional improvements resulting from jaw surgery can have a profound positive impact on your psychological well-being. Increased self-confidence, reduced pain, and improved quality of life can lead to greater happiness and satisfaction.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health understands the multifaceted benefits of jaw surgery and is committed to connecting you with skilled professionals who can help you achieve these positive outcomes.</p>
+<h2 dir="ltr">AZPO Health: Your Partner in Your Jaw Surgery Journey</h2>
+<p dir="ltr">Choosing to undergo jaw surgery is a significant decision, and navigating the process, especially in a foreign country, can feel overwhelming. This is where AZPO Health steps in as your trusted partner. AZPO Health is dedicated to connecting patients seeking high-quality medical care in Turkey with experienced and reputable medical professionals and clinics specializing in procedures like jaw surgery.</p>
+<p dir="ltr">AZPO Health understands the importance of expertise, safety, and patient satisfaction. We meticulously vet the surgeons and clinics within our network to ensure they meet stringent international standards and have a proven track record of successful outcomes in orthognathic surgery. Our goal is to provide you with access to the best possible care in a comfortable and supportive environment.</p>
+<p dir="ltr">When you choose AZPO Health to facilitate your jaw surgery in Turkey, you benefit from:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Access to Experienced Surgeons: We connect you with highly qualified oral and maxillofacial surgeons who have extensive experience in performing various types of jaw surgeries, including mandibular osteotomy, maxillary osteotomy, and bimaxillary osteotomy.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Connections with Reputable Clinics: We partner with modern, well-equipped clinics in Turkey that utilize advanced surgical techniques and adhere to strict hygiene protocols, ensuring your safety and well-being throughout your surgical journey.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Guidance and Support: Our dedicated team provides you with comprehensive information and support at every step of the process. From understanding the procedure and choosing the right surgeon to assisting with travel arrangements and coordinating your medical appointments, we are here to guide you.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Facilitation of Communication: We help bridge any potential communication barriers by ensuring clear and effective communication between you and your medical team.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Commitment to Quality and Care: While AZPO Health does not provide medical treatment directly, we are committed to facilitating access to high-quality medical care and ensuring you have a positive and successful experience in Turkey.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">By choosing AZPO Health, you gain a reliable partner who will help you navigate the complexities of seeking jaw surgery abroad, connecting you with the expertise and support you need to achieve your health and aesthetic goals. Contact AZPO Health today to take the first step towards a healthier and more confident you.</p>
+<h2 dir="ltr">Taking the Next Step</h2>
+<p dir="ltr">If you are considering jaw surgery to address issues with your bite, jaw alignment, or facial aesthetics, AZPO Health is here to assist you. Contact us today for a free consultation. Our experienced team will listen to your concerns, provide you with detailed information about jaw surgery options in Turkey, and connect you with qualified surgeons who can assess your individual needs and create a personalized treatment plan. Take the first step towards improved function and renewed confidence. Contact AZPO Health now for a free consultation and personalized quote.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Patient Stories</h2>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Sarah's Journey: "For years, I felt self-conscious about my underbite. It affected my smile and made it difficult to chew properly. After researching options, I connected with a surgeon in Turkey through AZPO Health. The entire process was seamless. The surgeon was incredibly skilled and explained everything clearly. Now, after my jaw surgery, my bite is perfect, and I finally feel confident in my smile. The support from AZPO Health throughout my journey was invaluable."<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Mark's Experience: "I suffered from chronic jaw pain and headaches for years, which my dentist attributed to a misaligned jaw. AZPO Health helped me find a specialized maxillofacial surgeon in Turkey. The double jaw surgery has been life-changing. My pain is significantly reduced, and I can finally eat without discomfort. The care I received was exceptional, and AZPO Health made the entire medical travel experience stress-free."<br><br></p>
+</li>
+</ul>
+<p dir="ltr"><strong id="docs-internal-guid-ee26960e-7fff-7db9-44fc-06fe8d40d422">Aisha's Transformation: "My overbite always made me feel insecure about my profile. I explored jaw surgery options and decided to go to Turkey through AZPO Health. The surgeon I was connected with was fantastic. The surgery went smoothly, and the "jaw surgery before and after" results are incredible. My face looks more balanced, and I feel so much more confident. Thank you, AZPO Health, for guiding me through this process."</strong></p>`,
       },
       imgCover: subNestedKey === "jaw-surgery" ? jawsurgery : null,
       subNestedKey: "jaw-surgery",

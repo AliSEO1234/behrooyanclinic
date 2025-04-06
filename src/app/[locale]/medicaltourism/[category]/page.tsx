@@ -1,4 +1,4 @@
-import PrevNextBtn from "@/features/treatment/prevNextTreat/prevNextBtn";
+// import PrevNextBtn from "@/features/treatment/prevNextTreat/prevNextBtn";
 import borderTreat from "@/assets/images/treatment/bordertreat.png";
 import eye from "@/assets/images/treatment/eye.png";
 import bgCate from "@/assets/images/treatment/bg-category.svg";
@@ -28,7 +28,7 @@ const Page = async ({ params }: PropsPageType) => {
               {fetchData?.descriptionTop}
             </p>
           </div>
-          <PrevNextBtn />
+          {/* <PrevNextBtn /> */}
         </div>
         <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 s1600:col-span-7 s1920:col-span-6 relative flex-right z-[2]">
           {/* text */}

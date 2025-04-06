@@ -20,7 +20,6 @@ import TableOfContentCard from "@/components/subNestedCategory/tableOfContentCar
 import health from "@/assets/images/healthlogo.png";
 import LeadForm from "@/components/leadForm";
 import { Accordion } from "@/components/ui/accordion";
-import { handleQuestions } from "@/staticData/questions";
 import QuestionAcco from "@/components/questionAccordion";
 import faqcover from "@/assets/images/faqcover.png";
 import posticon from "@/assets/images/post.svg";
@@ -80,17 +79,6 @@ const Page = async ({ params }: PropsPageType) => {
       isActive: true,
     },
   ];
-  const postList = [
-    "Discuss goals and get impressions/scans",
-    "Discuss goals and get impressions/scans",
-    "Discuss goals and get impressions/scans",
-    "Discuss goals and get impressions/scans",
-    "Discuss goals and get impressions/scans",
-    "Discuss goals and get impressions/scans",
-    "Discuss goals and get impressions/scans",
-    "Discuss goals and get impressions/scans",
-  ];
-  const questions = handleQuestions(locale);
   const circleList: {
     position: "left" | "right";
     xValue: number;
@@ -124,8 +112,7 @@ const Page = async ({ params }: PropsPageType) => {
                 return <TableOfContentCard key={index} {...card} />;
               }
             })}
-            {/* <div
-            ></div> */}
+            <div></div>
           </div>
         </div>
         <div>
@@ -233,7 +220,7 @@ const Page = async ({ params }: PropsPageType) => {
               </div>
               {/* category */}
               {fetchData?.benefits.categories[1]?.header &&
-                fetchData?.benefits.categories[1]?.desc && (
+                fetchData?.benefits.categories[1]?.decsList && (
                   <div className="text-[#474744]">
                     <div className="mb-8 s1280:mb-5">
                       <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
@@ -305,15 +292,15 @@ const Page = async ({ params }: PropsPageType) => {
         <section className="mb-10 relative z-[2]">
           {fetchData?.posts && fetchData?.posts.length > 0 && (
             <PrePostLayout
-              iconLabel={posticon}
-              itemList={postList}
-              position="post"
+            iconLabel={preicon}
+            itemList={fetchData.preList}
+            position="post"
             />
           )}
           {fetchData?.posts && fetchData?.posts.length > 0 && (
             <PrePostLayout
-              iconLabel={preicon}
-              itemList={postList}
+              iconLabel={posticon}
+              itemList={fetchData.posts}
               position="pre"
             />
           )}
@@ -402,11 +389,11 @@ const Page = async ({ params }: PropsPageType) => {
                 collapsible
                 className="order-2 s1280:order-1 col-span-12 s1280:col-span-6 grid grid-cols-12 gap-y-5 s1280:gap-y-3 4xl:gap-x-5 px-1 pb-2"
               >
-                {questions.slice(0, 5).map((qu, index) => {
-                  return <QuestionAcco key={index} item={index} {...qu} />;
+                {fetchData.faqs.map((qu, index) => {                  
+                  return <QuestionAcco key={index} item={index} answer={qu.answer} question={qu.question} />;
                 })}
               </Accordion>
-              <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 flex items-start justify-center">
+              <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 flex items-center justify-center">
                 <div className="w-full s430:w-[390px] h-[345px] s390:h-[362px] s412:h-[382px] s1280:w-[405px] s1280:h-[398px] s1512:w-[471px] s1512:h-[463px] s1728:w-[546px] s1728:h-[536px] s1920:w-[666px] s1920:h-[671px]">
                   <ImgFetcher src={faqcover} width={3000} height={3000} />
                 </div>

@@ -1,4 +1,4 @@
-import PrevNextBtn from "@/features/treatment/prevNextTreat/prevNextBtn";
+// import PrevNextBtn from "@/features/treatment/prevNextTreat/prevNextBtn";
 import borderTreat from "@/assets/images/treatment/bordertreat.png";
 import bgCover from "@/assets/images/treatment/bg-category.svg";
 import ImgFetcher from "@/components/imgFetcher";
@@ -38,7 +38,7 @@ const Page = async ({ params }: PropsPageType) => {
               nisi ut aliquip ex ea commodo consequat.{" "} */}
             </p>
           </div>
-          <PrevNextBtn />
+          {/* <PrevNextBtn /> */}
           {/* <div className="hidden s1280:flex-left gap-x-4 mt-6 s1512:mt-10 s1600:mt-16  text-[#00979A]">
             <div className="flex flex-col items-center justify-center">
               <span>
