@@ -220,7 +220,7 @@ const Page = async ({ params }: PropsPageType) => {
               </div>
               {/* category */}
               {fetchData?.benefits.categories[1]?.header &&
-                fetchData?.benefits.categories[1]?.decsList && (
+                fetchData?.benefits.categories[1]?.desc && (
                   <div className="text-[#474744]">
                     <div className="mb-8 s1280:mb-5">
                       <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
@@ -242,13 +242,13 @@ const Page = async ({ params }: PropsPageType) => {
                           }}
                         ></div>
                       </li>
-                      {fetchData?.benefits.categories[1].decsList && (
+                      {fetchData?.benefits.categories[1].desc && (
                         <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8">
                           <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
                             <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
                           </span>
                           <span>
-                            {fetchData.benefits.categories[1].decsList}
+                            {fetchData.benefits.categories[1].desc}
                           </span>
                         </li>
                       )}
