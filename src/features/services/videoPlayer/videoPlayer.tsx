@@ -33,7 +33,6 @@ const VideoPlayer = ({
       if (playPromise !== undefined) {
         playPromise
           .then(() => {
-            setTogglePlay(true);
             setHasPlayed(true);
             setIsLoading(false);
             setTimeout(() => {
@@ -47,19 +46,21 @@ const VideoPlayer = ({
       }
     } else {
       video.pause();
-      setTogglePlay(false);
     }
   };
 
-  // useEffect(() => {
-  //   const enableVideo = () => {
-  //     if (videoEl.current && videoEl.current.paused) {
-  //       // Auto-play logic is removed
-  //     }
-  //   };
-  //   document.addEventListener("click", enableVideo);
-  //   return () => document.removeEventListener("click", enableVideo);
-  // }, []);
+  useEffect(() => {
+    const video = videoEl.current;
+    if (!video) return;
+    const handlePlay = () => setTogglePlay(true);
+    const handlePause = () => setTogglePlay(false);
+    video.addEventListener("play", handlePlay);
+    video.addEventListener("pause", handlePause);
+    return () => {
+      video.removeEventListener("play", handlePlay);
+      video.removeEventListener("pause", handlePause);
+    };
+  }, []);
 
   const handleFullScreen = () => {
     if (videoEl.current) {
@@ -117,7 +118,7 @@ const VideoPlayer = ({
   useEffect(() => {
     if (!videoEl.current) return;
     const video = videoEl.current;
-    video.currentTime = 7;
+    video.currentTime = 0;
     const handleWaiting = () => setIsLoading(true);
     const handleCanPlay = () => setIsLoading(false);
     video.addEventListener("waiting", handleWaiting);
@@ -139,30 +140,26 @@ const VideoPlayer = ({
   const handleProgressChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (!videoEl.current) return;
 
-    const newTime = (parseFloat(e.target.value) / 100) * duration;
     const video = videoEl.current;
+    const wasPlaying = !video.paused;
+    const newTime = (parseFloat(e.target.value) / 100) * duration;
 
     setCurrentTime(newTime);
     video.currentTime = newTime;
 
-    if (video.paused) {
-      setIsLoading(true);
-      const playPromise = video.play();
+    setIsLoading(true);
 
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            setIsLoading(false);
-          })
-          .catch((err) => {
-            console.error("error in play video", err);
-            setIsLoading(false);
-          });
-      }
-    }
+    const playPromise = wasPlaying ? video.play() : Promise.resolve();
+    playPromise
+      .then(() => {
+        setTogglePlay(wasPlaying);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.error("error in play video", err);
+        setIsLoading(false);
+      });
   };
-
-
 
   return (
     <div className="relative w-fit" id="video-service">
@@ -173,9 +170,9 @@ const VideoPlayer = ({
           showLogo ? "relative" : ""
         }  overflow-hidden z-[2]`}
       >
-        <div className="bg-[#d2d2d2] rounded-[20px] s1280:rounded-[40px] w-full h-full absolute top-0 left-0"></div>
+        <div className="bg-black/50 backdrop-blur-[10px] rounded-[20px] s1280:rounded-[40px] w-full h-full absolute top-0 left-0"></div>
         {src && typeof src === "string" && (
-          <div className="w-full h-full relative">
+          <div className="w-full h-full relative rounded-[20px] s1280:rounded-[40px] overflow-hidden">
             <video
               poster="/images/videoCover.png"
               className="w-full h-full min-w-full max-w-full min-h-full max-h-full image-overlay bg-white"

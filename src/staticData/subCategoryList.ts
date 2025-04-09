@@ -3135,39 +3135,96 @@ export const dataSubCategoryHandler = (
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "For whom it is suitable",
+            header: locale === "ru" ? "Для кого" : "FDescription",
             desc:
               locale === "ru"
                 ? "Подходит для людей, недовольных формой или размером носа, или тех, кто испытывает проблемы с дыханием из-за искривленной перегородки."
-                : "Suitable for individuals dissatisfied with the shape or size of their nose or those experiencing breathing issues due to a deviated septum.",
+                : "Nose shape correction surgery, also known as rhinoplasty, addresses structural abnormalities in the nose. These deformities may be congenital, caused by trauma, infections, or prior surgeries. The abnormalities can affect the nose’s aesthetics, functionality, or both, impacting overall well-being.",
           },
           {
-            header:
-              locale === "ru" ? "На что обратить внимание" : "What to consider",
-            desc: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "How It Works" : "How It Works",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Consultation: The surgeon discusses desired changes to the nose's shape, size, angle, and any breathing issues. Surgery: Rhinoplasty involves reshaping the nose by removing or repositioning cartilage and bone, with either open (external) or closed (internal) incisions. Recovery: A bandage is applied, and healing takes several days to weeks.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Как это работает" : "For Whom",
             desc:
               locale === "ru"
                 ? "Предоперационная консультация: Во время консультации с хирургом обсуждаются области для улучшения, такие как форма, размер или угол носа, а также проблемы с дыханием."
-                : "Surgery: During rhinoplasty, the surgeon alters the nose structure by removing or repositioning cartilage and bone. The surgery can be either open (with external incisions) or closed (with internal incisions).Recovery: After the procedure, a bandage is placed on the nose to help maintain its shape, and several days to weeks are needed for healing.",
+                : "Suitable for individuals dissatisfied with the shape or size of their nose or those experiencing breathing issues due to a deviated septum.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "When can I see results?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Initial results appear in 1–3 months, final in 6–12 months",
+        },
+        {
+          question: locale === "ru" ? "" : "Is breathing difficult after?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Mild congestion is normal and improves with healing",
+        },
+        {
+          question: locale === "ru" ? "" : "Will I have scars?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Open rhinoplasty may leave a small scar under the nose, barely visible",
+        },
+        {
+          question:
+            locale === "ru"
+              ? ""
+              : "When can I return to normal activities, including work and social interactions?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Answer: Typically within 1-2 weeks, depending on your condition",
+        },
+        {
+          question:
+            locale === "ru" ? "" : "Are there any risks of rhinoplasty?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes, like all surgeries, it carries risks such as infection, bleeding, or breathing issues.",
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Sleep with head elevated",
+        locale === "ru" ? "" : "Don’t blow your nose for at least a week",
+        locale === "ru" ? "" : "Use cold compresses to reduce swelling",
+        locale === "ru" ? "" : "Avoid heavy exercise for 2–3 weeks",
+        locale === "ru" ? "" : "Don’t wear glasses that touch your nose",
+        locale === "ru"
+          ? ""
+          : "Apply cold compresses carefully to avoid frostbite",
+      ],
+      preList: [
+        locale === "ru"
+          ? ""
+          : "Avoid blood thinners like aspirin or ibuprofen for 2 weeks",
+        locale === "ru" ? "" : "Stop smoking at least 2 weeks before",
+        locale === "ru" ? "" : "Complete lab tests if requested",
+        locale === "ru" ? "" : "No food/drink after midnight before surgery",
+        locale === "ru"
+          ? ""
+          : "Discuss any medications you're taking with your surgeon prior to the procedure.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "Ринопластика – это эффективный способ улучшить внешний вид носа и решить проблемы с дыханием. Процедура требует выбора опытного хирурга и подготовки к процессу реабилитации. Современные методики позволяют достичь естественных, гармоничных результатов, улучшающих как эстетику, так и функцию дыхания."
             : "Rhinoplasty is an effective way to improve the appearance of the nose and address breathing problems. The procedure requires selecting an experienced surgeon and preparing for the rehabilitation process. Modern techniques enable natural, harmonious results that enhance both aesthetics and breathing function.",
-      },
-      subCategoryContent: {
-        title:
-          locale === "ru" ? "Labiaplasty Treatment" : "Labiaplasty Treatment",
       },
       bfs: bfList || rainoplasty,
       contents: {
@@ -3181,7 +3238,124 @@ export const dataSubCategoryHandler = (
             <p>Турция стала одним из ведущих направлений медицинского туризма, особенно в области пластической хирургии. Ринопластика в Турции сочетает в себе высокое качество медицинских услуг, доступные цены и возможность насладиться богатой культурой и историей страны. Вот несколько причин, почему стоит выбрать Турцию для ринопластики:</p><p><strong>Высококвалифицированные хирурги:</strong> Турецкие пластические хирурги имеют большой опыт и проходят обучение в лучших медицинских учреждениях мира. Они владеют современными техниками и технологиями, что позволяет достигать отличных результатов.</p><p><strong>Современные клиники:</strong> Клиники в Турции оснащены передовым оборудованием и соответствуют международным стандартам качества. AZPO Health сотрудничает только с проверенными и аккредитованными клиниками, чтобы гарантировать вашу безопасность и комфорт.</p><p><strong>Доступные цены:</strong> Стоимость ринопластики в Турции значительно ниже, чем в Европе или США. Это позволяет вам сэкономить средства, не теряя в качестве. AZPO Health предлагает прозрачные и конкурентоспособные цены, а также различные пакеты услуг, чтобы удовлетворить ваши потребности и бюджет.</p><p><strong>Комплексный подход:</strong> AZPO Health обеспечивает полный спектр услуг, начиная с консультации и планирования операции, и заканчивая послеоперационным уходом и реабилитацией. Мы заботимся о каждом аспекте вашего пребывания в Турции, чтобы вы чувствовали себя комфортно и уверенно.</p><p><strong>Удобное расположение:</strong> Турция имеет удобное географическое расположение, что делает ее легкодоступной из разных стран мира. AZPO Health организует трансфер из аэропорта, проживание и другие необходимые услуги, чтобы ваше путешествие было максимально комфортным.</p><p><strong>Культурное обогащение:</strong> Во время пребывания в Турции у вас будет возможность посетить исторические достопримечательности, насладиться местной кухней и познакомиться с турецкой культурой. Это сделает вашу поездку не только полезной, но и интересной. Istanbul is a most touristic attraction in the world and its viewers unique history and culture.</p><h2><strong>Как AZPO Health Обеспечивает Высочайшее Качество Ринопластики?</strong></h2><p>AZPO Health – это ваш надежный партнер в организации ринопластики в Турции. Мы предлагаем:</p><p><strong>Индивидуальный подход:</strong> Мы учитываем ваши индивидуальные особенности, пожелания и медицинские показания, чтобы разработать оптимальный план лечения.</p><p><strong>Консультации с опытными хирургами:</strong> Вы сможете обсудить все детали операции с высококвалифицированными хирургами, которые имеют большой опыт в проведении ринопластики.</p><p><strong>Тщательное планирование:</strong> Мы проводим все необходимые обследования и анализы, чтобы убедиться в вашей готовности к операции и минимизировать риски.</p><p><strong>Современные техники и технологии:</strong> Мы используем только самые современные и безопасные методы ринопластики, чтобы достичь наилучших результатов.</p><p><strong>Послеоперационный уход и поддержка:</strong> Мы обеспечиваем круглосуточную поддержку и уход после операции, чтобы вы могли быстро и комфортно восстановиться.</p><p><strong>Гарантию качества:</strong> Мы уверены в качестве наших услуг и предлагаем гарантию на результаты операции.</p><h2><strong>Какие Виды Ринопластики Предлагает AZPO Health?</strong></h2><p>AZPO Health предлагает различные виды ринопластики, чтобы удовлетворить ваши индивидуальные потребности и цели.</p><h3><strong>1. Открытая Ринопластика</strong></h3><p>Открытая ринопластика – это хирургическая техника, при которой хирург делает разрез на колумелле (полоске кожи между ноздрями). Это позволяет получить полный доступ к костной и хрящевой структуре носа, что делает возможным выполнение сложных коррекций.</p><p><strong>Преимущества открытой ринопластики:</strong></p><p>Возможность выполнения сложных коррекций.</p><p>Улучшенный визуальный контроль для хирурга.</p><p>Более предсказуемые результаты.</p><p><strong>Недостатки открытой ринопластики:</strong></p><p>Небольшой видимый рубец на колумелле.</p><p>Более длительное восстановление.</p><h3><strong>2. Закрытая Ринопластика</strong></h3><p>Закрытая ринопластика – это хирургическая техника, при которой все разрезы делаются внутри носа. Это позволяет избежать видимых рубцов.</p><p><strong>Преимущества закрытой ринопластики:</strong></p><p>Отсутствие видимых рубцов.</p><p>Менее длительное восстановление.</p><p><strong>Недостатки закрытой ринопластики:</strong></p><p>Ограниченный доступ к структуре носа.</p><p>Менее подходит для сложных коррекций.</p><h3><strong>3. Септопластика</strong></h3><p>Септопластика – это хирургическая процедура, направленная на коррекцию искривленной носовой перегородки. Искривление перегородки может затруднять дыхание и вызывать другие проблемы.</p><p><strong>Преимущества септопластики:</strong></p><p>Улучшение дыхания.</p><p>Устранение заложенности носа.</p><p>Улучшение качества сна.</p><h3><strong>4. Конхопластика</strong></h3><p>Конхопластика – это хирургическая процедура, направленная на уменьшение размера носовых раковин. Увеличенные носовые раковины могут вызывать заложенность носа и затруднять дыхание.</p><p><strong>Преимущества конхопластики:</strong></p><p>Улучшение дыхания.</p><p>Устранение заложенности носа.</p><p>Улучшение качества сна.</p><h3><strong>5. Ринопластика Кончика Носа</strong></h3><p>Ринопластика кончика носа – это хирургическая процедура, направленная на изменение формы и размера кончика носа.</p><p><strong>Преимущества ринопластики кончика носа:</strong></p><p>Улучшение эстетики лица.</p><p>Более гармоничный внешний вид.</p><p>Повышение уверенности в себе.</p><h2><strong>Подготовка к Ринопластике: Шаг за Шагом</strong></h2><p>Подготовка к ринопластике – важный этап, который помогает обеспечить успешный результат и минимизировать риски. AZPO Health предоставит вам подробные инструкции и рекомендации, чтобы вы были готовы к операции.</p><p><strong>Консультация с хирургом:</strong> Обсудите ваши пожелания, ожидания и медицинские показания с опытным хирургом. Хирург проведет осмотр, оценит структуру вашего носа и предложит оптимальный план лечения.</p><p><strong>Медицинское обследование:</strong> Пройдите все необходимые обследования и анализы, чтобы убедиться в отсутствии противопоказаний к операции. Это может включать анализы крови, ЭКГ и рентген носа.</p><p><strong>Прекратите прием определенных лекарств:</strong> Сообщите своему хирургу о всех принимаемых вами лекарствах, включая витамины и добавки. Некоторые лекарства, такие как аспирин и ибупрофен, могут увеличить риск кровотечения и должны быть прекращены за несколько недель до операции.</p><p><strong>Откажитесь от курения и алкоголя:</strong> Курение и употребление алкоголя могут замедлить процесс заживления и увеличить риск осложнений. Рекомендуется отказаться от этих привычек за несколько недель до и после операции.</p><p><strong>Подготовьтесь к восстановлению:</strong> Заранее подготовьте все необходимое для комфортного восстановления после операции. Это может включать мягкую пищу, холодные компрессы, обезболивающие препараты и удобную одежду.</p><p><strong>Психологическая подготовка:</strong> Будьте готовы к изменениям во внешности и возможным эмоциональным колебаниям после операции. Обсудите свои ожидания с хирургом и заручитесь поддержкой близких.</p><h2><strong>Послеоперационный Уход и Реабилитация: Быстрое и Комфортное Восстановление</strong></h2><p>Послеоперационный уход – важный этап, который помогает обеспечить быстрое и комфортное восстановление. AZPO Health предоставит вам подробные инструкции и рекомендации, чтобы вы могли правильно ухаживать за своим носом и минимизировать риски.</p><p><strong>Следуйте инструкциям хирурга:</strong> Строго следуйте всем инструкциям хирурга относительно приема лекарств, ухода за раной и ограничений в активности.</p><p><strong>Избегайте физических нагрузок:</strong> Ограничьте физические нагрузки и избегайте поднятия тяжестей в течение нескольких недель после операции.</p><p><strong>Спите с приподнятой головой:</strong> Спите на спине с приподнятой головой, чтобы уменьшить отек и кровотечение.</p><p><strong>Прикладывайте холодные компрессы:</strong> Прикладывайте холодные компрессы к носу в течение первых нескольких дней после операции, чтобы уменьшить отек и боль.</p><p><strong>Промывайте нос солевым раствором:</strong> Регулярно промывайте нос солевым раствором, чтобы очистить его от корочек и слизи.</p><p><strong>Избегайте сморкания:</strong> Избегайте сморкания в течение нескольких недель после операции, чтобы не повредить ткани носа.</p><p><strong>Посещайте контрольные осмотры:</strong> Регулярно посещайте контрольные осмотры у хирурга, чтобы он мог оценить процесс заживления и убедиться в отсутствии осложнений.</p><h2><strong>Возможные Риски и Осложнения: Что Нужно Знать?</strong></h2><p>Как и любая хирургическая процедура, ринопластика сопряжена с определенными рисками и осложнениями. Важно знать о них, чтобы принять взвешенное решение.</p><p><strong>Кровотечение:</strong> Возможно кровотечение во время или после операции. В большинстве случаев кровотечение можно остановить с помощью консервативных мер, но в редких случаях может потребоваться повторная операция.</p><p><strong>Инфекция:</strong> Инфекция – редкое, но серьезное осложнение. Для предотвращения инфекции назначаются антибиотики.</p><p><strong>Отек и синяки:</strong> Отек и синяки – нормальное явление после ринопластики. Они обычно проходят в течение нескольких недель.</p><p><strong>Проблемы с дыханием:</strong> В редких случаях ринопластика может привести к проблемам с дыханием. Это может быть связано с сужением носовых проходов или повреждением носовой перегородки.</p><p><strong>Изменение чувствительности кожи носа:</strong> После ринопластики может наблюдаться изменение чувствительности кожи носа. В большинстве случаев чувствительность восстанавливается со временем.</p><p><strong>Неудовлетворительный эстетический результат:</strong> В редких случаях результат ринопластики может не соответствовать ожиданиям пациента. В таких случаях может потребоваться повторная операция.</p><h2><strong>Почему Стоит Выбрать AZPO Health для Ринопластики в Турции в 2025 Году?</strong></h2><p>AZPO Health – это ваш надежный партнер в организации ринопластики в Турции. Мы предлагаем:</p><p><strong>Опытных и квалифицированных хирургов:</strong> Мы сотрудничаем только с лучшими хирургами в Турции, которые имеют большой опыт в проведении ринопластики.</p><p><strong>Современные клиники:</strong> Мы работаем только с аккредитованными клиниками, оснащенными передовым оборудованием.</p><p><strong>Индивидуальный подход:</strong> Мы учитываем ваши индивидуальные особенности и пожелания, чтобы разработать оптимальный план лечения.</p><p><strong>Комплексный пакет услуг:</strong> Мы предлагаем полный спектр услуг, начиная с консультации и заканчивая послеоперационным уходом.</p><p><strong>Доступные цены:</strong> Мы предлагаем конкурентоспособные цены и различные пакеты услуг, чтобы удовлетворить ваш бюджет.</p><p><strong>Гарантию качества:</strong> Мы уверены в качестве наших услуг и предлагаем гарантию на результаты операции.</p><h2><strong>Отзывы Пациентов: Истории Успеха</strong></h2><p>Многие пациенты уже воспользовались услугами AZPO Health и остались довольны результатами ринопластики в Турции. Прочитайте их истории успеха и убедитесь в качестве наших услуг.</p><p><em>Здесь должны быть размещены отзывы с фотографиями "до и после", но в рамках данного задания они не могут быть сгенерированы.</em></p><h2><strong>Свяжитесь с AZPO Health Сегодня!</strong></h2><p>Не откладывайте свою мечту о красивом и гармоничном носе!. Свяжитесь с AZPO Health сегодня, чтобы получить бесплатную консультацию и индивидуальное предложение. Мы поможем вам сделать первый шаг к уверенности и красоте!</p><p><br></p>
             `
             : `
-            <p>Many individuals seek rhinoplasty to improve their nose's appearance and address breathing difficulties. Rhinoplasty, or nose surgery, aims to create a harmonious facial balance and improve nasal function. In Turkey, AZPO Health can help you achieve the nose you've always desired, enhancing both your aesthetics and well-being.</p><h3><strong>Why Choose Turkey for Rhinoplasty with AZPO Health in 2025?</strong></h3><p>Turkey has become a popular destination for medical tourism, especially for procedures like rhinoplasty. Here's why AZPO Health in Turkey stands out:</p><ul><li><strong>Affordability:</strong> Rhinoplasty in Turkey with AZPO Health is more affordable compared to many European countries and the United States.</li><li><br></li><li><strong>Quality:</strong> AZPO Health partners with skilled and experienced surgeons who are trained in the latest rhinoplasty techniques. These surgeons can offer expertise in various rhinoplasty approaches, including open and closed techniques, and address both cosmetic and functional concerns.</li><li><br></li><li><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover surgery, accommodation, airport transfers, and post-operative care, ensuring a hassle-free experience.</li><li><br></li><li><strong>Experienced Surgeons:</strong> AZPO Health emphasizes the experience and skill of its partner surgeons. While specific names are avoided to adhere to your guidelines, AZPO Health ensures that its surgeons are board-certified and have a proven track record of successful rhinoplasty procedures.</li><li><br></li><li><strong>Advanced Techniques:</strong> AZPO Health provides access to clinics that utilize advanced rhinoplasty techniques, including FUE, DHI and Sapphire FUE.</li><li><br></li><li><strong>Natural-Looking Results:</strong> The goal is to provide results that harmonize with your facial features.</li><li><br></li><li><strong>Personalized Treatment:</strong> Every patient receives a customized treatment plan to address their specific needs and desired outcomes.</li><li><br></li></ul><h3><strong>Rhinoplasty Techniques Offered with AZPO Health</strong></h3><p>AZPO Health offers various rhinoplasty techniques to cater to individual needs:</p><ul><li><strong>Open Rhinoplasty:</strong> This technique involves a small incision between the nostrils to lift the nasal skin, providing greater access to reshape the underlying bone and cartilage. It is suitable for more complex nasal corrections.</li><li><br></li><li><strong>Closed Rhinoplasty:</strong> This technique involves making incisions inside the nose, resulting in no visible external scars. It is typically used for minor nasal corrections.</li><li><br></li></ul><h3><strong>Preparing for Your Rhinoplasty Journey with AZPO Health</strong></h3><p>Before undergoing rhinoplasty with AZPO Health, a comprehensive consultation is essential. Here's what you can expect:</p><ul><li><strong>Initial Consultation:</strong> During your consultation, the surgeon will assess your nasal structure, discuss your goals, and determine the most suitable rhinoplasty technique for you.</li><li><br></li><li><strong>Medical Evaluation:</strong> A thorough medical evaluation will be conducted to ensure you are a suitable candidate for surgery. This includes discussing your medical history, current medications, and any allergies.</li><li><br></li><li><strong>Pre-Operative Instructions:</strong> You will receive detailed pre-operative instructions, including guidelines on medications to avoid, lifestyle adjustments, and necessary preparations.</li><li><br></li></ul><h3><strong>The Rhinoplasty Procedure with AZPO Health</strong></h3><p>The rhinoplasty procedure typically involves the following steps:</p><ol><li><strong>Anesthesia:</strong> Rhinoplasty is generally performed under general anesthesia. In some cases, local anesthesia with sedation may be used for minor corrections.</li><li><strong>Incisions:</strong> Depending on the chosen technique (open or closed), incisions are made to access the nasal structures.</li><li><strong>Reshaping:</strong> The surgeon reshapes the bone and cartilage to achieve the desired aesthetic outcome. Functional issues, such as deviated septum or concha hypertrophy, are also addressed.</li><li><strong>Closure:</strong> The incisions are closed with sutures.</li></ol><h3><strong>Recovery and Post-Operative Care with AZPO Health</strong></h3><p>Following rhinoplasty, proper post-operative care is crucial for optimal healing and results. AZPO Health provides comprehensive post-operative instructions and support:</p><ul><li><strong>Initial Recovery:</strong> Expect some swelling, bruising, and discomfort in the days following surgery. Pain medication can help manage any discomfort.</li><li><strong>Nasal Splint:</strong> A splint is typically placed on the nose to provide support and protect the new shape.</li><li><strong>Follow-Up Appointments:</strong> Regular follow-up appointments are scheduled to monitor your progress and address any concerns.</li><li><strong>Lifestyle Adjustments:</strong> You will need to avoid strenuous activities, excessive sun exposure, and nose blowing for several weeks.</li></ul><h3><strong>Potential Risks and Considerations</strong></h3><p>As with any surgical procedure, rhinoplasty carries potential risks: It's important to be aware of these:</p><ul><li>Infection</li><li>Bleeding</li><li>Adverse reaction to anesthesia</li><li>Scarring</li><li>Numbness or changes in skin sensation</li><li>Unsatisfactory aesthetic outcome AZPO Health emphasizes patient safety and takes precautions to minimize these risks.</li></ul><h3><strong>What to Expect Long-Term</strong></h3><ul><li><strong>Healing Timeline:</strong> Initial swelling and bruising subside within a few weeks. The final results of rhinoplasty may take several months to a year to become fully apparent.</li><li><br></li><li><strong>Maintaining Results:</strong> Protecting your nose from trauma and following your surgeon's recommendations can help maintain long-term results.</li><li><br></li></ul><h3><strong>Your Nose job Journey Awaits</strong></h3><p>If you are considering rhinoplasty in Turkey, AZPO Health is here to guide you every step of the way. Contact AZPO Health today for a free consultation and personalized quote.</p><p><br></p>
+            <p dir="ltr">Many individuals seek rhinoplasty to improve their nose's appearance and address breathing difficulties. Rhinoplasty, or nose surgery, aims to create a harmonious facial balance and improve nasal function. In Turkey, AZPO Health can help you achieve the nose you've always desired, enhancing both your aesthetics and well-being.</p>
+<h3 dir="ltr">Why Choose Turkey for Rhinoplasty with AZPO Health in 2025?</h3>
+<p dir="ltr">Turkey has become a popular destination for medical tourism, especially for procedures like rhinoplasty. Here's why AZPO Health in Turkey stands out:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: Rhinoplasty in Turkey with AZPO Health is more affordable compared to many European countries and the United States.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Quality: AZPO Health partners with skilled and experienced surgeons who are trained in the latest rhinoplasty techniques. These surgeons can offer expertise in various rhinoplasty approaches, including open and closed techniques, and address both cosmetic and functional concerns.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health offers all-inclusive packages that cover surgery, accommodation, airport transfers, and post-operative care, ensuring a hassle-free experience.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Surgeons: AZPO Health emphasizes the experience and skill of its partner surgeons. While specific names are avoided to adhere to your guidelines, AZPO Health ensures that its surgeons are board-certified and have a proven track record of successful rhinoplasty procedures.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Advanced Techniques: AZPO Health provides access to clinics that utilize advanced rhinoplasty techniques.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Natural-Looking Results: The goal is to provide results that harmonize with your facial features.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Treatment: Every patient receives a customized treatment plan to address their specific needs and desired outcomes.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Accredited Healthcare: Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Rhinoplasty Techniques Offered with AZPO Health</h3>
+<p dir="ltr">AZPO Health offers various rhinoplasty techniques to cater to individual needs:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Open Rhinoplasty: This technique involves a small incision between the nostrils to lift the nasal skin, providing greater access to reshape the underlying bone and cartilage. It is suitable for more complex nasal corrections.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Closed Rhinoplasty: This technique involves making incisions inside the nose, resulting in no visible external scars. It is typically used for minor nasal corrections.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Preparing for Your Rhinoplasty Journey with AZPO Health</h3>
+<p dir="ltr">Before undergoing rhinoplasty with AZPO Health, a comprehensive consultation is essential. Here's what you can expect:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Initial Consultation: During your consultation, the surgeon will assess your nasal structure, discuss your goals, and determine the most suitable rhinoplasty technique for you.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Medical Evaluation: A thorough medical evaluation will be conducted to ensure you are a suitable candidate for surgery. This includes discussing your medical history, current medications, and any allergies.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pre-Operative Instructions: You will receive detailed pre-operative instructions, including guidelines on medications to avoid, lifestyle adjustments, and necessary preparations.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">The Rhinoplasty Procedure with AZPO Health</h3>
+<p dir="ltr">The rhinoplasty procedure typically involves the following steps:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Anesthesia: Rhinoplasty is generally performed under general anesthesia. In some cases, local anesthesia with sedation may be used for minor corrections.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Incisions: Depending on the chosen technique (open or closed), incisions are made to access the nasal structures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Reshaping: The surgeon reshapes the bone and cartilage to achieve the desired aesthetic outcome. Functional issues, such as deviated septum or concha hypertrophy, are also addressed.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Closure: The incisions are closed with sutures.</p>
+</li>
+</ol>
+<h3 dir="ltr">Recovery and Post-Operative Care with AZPO Health</h3>
+<p dir="ltr">Following rhinoplasty, proper post-operative care is crucial for optimal healing and results. AZPO Health provides comprehensive post-operative instructions and support:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Initial Recovery: Expect some swelling, bruising, and discomfort in the days following surgery. Pain medication can help manage any discomfort.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Nasal Splint: A splint is typically placed on the nose to provide support and protect the new shape.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Follow-Up Appointments: Regular follow-up appointments are scheduled to monitor your progress and address any concerns.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Lifestyle Adjustments: You will need to avoid strenuous activities, excessive sun exposure, and nose blowing for several weeks.</p>
+</li>
+</ul>
+<h3 dir="ltr">Potential Risks and Considerations</h3>
+<p dir="ltr">As with any surgical procedure, rhinoplasty carries potential risks: It's important to be aware of these:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Infection</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Bleeding</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Adverse reaction to anesthesia</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Scarring</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Numbness or changes in skin sensation</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Unsatisfactory aesthetic outcome AZPO Health emphasizes patient safety and takes precautions to minimize these risks.</p>
+</li>
+</ul>
+<h3 dir="ltr">What to Expect Long-Term</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Healing Timeline: Initial swelling and bruising subside within a few weeks. The final results of rhinoplasty may take several months to a year to become fully apparent.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Maintaining Results: Protecting your nose from trauma and following your surgeon's recommendations can help maintain long-term results.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Your Nose job Journey Awaits</h3>
+<p dir="ltr">If you are considering rhinoplasty in Turkey, AZPO Health is here to guide you every step of the way. Contact AZPO Health today for a free consultation and personalized quote.</p>
+<p dir="ltr">&nbsp;</p>
             `,
       },
       subNestedKey: "rhinoplasty-nose-reshaping",
@@ -6270,38 +6444,80 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "For whom it is suitable",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
                 ? "Подходит для женщин, недовольных внешним видом половых губ или испытывающих физический дискомфорт из-за их размера или формы."
-                : "Suitable for women dissatisfied with the appearance of their labia or who experience physical discomfort due to their size or shape.",
+                : "Penoplasty, also known as penis enlargement or penile enhancement surgery, is a medical procedure aimed at improving the size and appearance of the penis, specifically for individuals dissatisfied with its length or girth.",
           },
           {
-            header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            desc: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "Важные аспекты" : "How It Works",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Penoplasty involves lengthening and thickening techniques. Lengthening is achieved by cutting the suspensory ligament, making more of the penis visible. Thickening uses fat injections, fillers, or tissue transfer to enhance girth, though some fat may reabsorb over time. Straightening procedures can also correct curvature for improved function and comfort.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Как это работает" : "Who It Is For",
             desc:
               locale === "ru"
                 ? "Пенопластика включает две основные техники: удлинение и утолщение."
-                : `Penoplasty includes two main techniques: lengthening and thickening.\nPenis Lengthening:The procedure cuts the suspensory ligament connecting the penis to the pubic bone, making more of the penis visible and adding 4-5 cm in length. For overweight patients, pubic fat removal can enhance results.`,
+                : "Penoplasty is suitable for men who are dissatisfied with the size or shape of their penis, including those who experience: Shorter than average penis length (typically under 12 cm when erect). Penile deformities caused by botched circumcisions or trauma. A desire to increase penile girth for aesthetic or functional reasons. Abnormal curvature that causes discomfort during erection or sexual activity.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "Is the result permanent?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Girth enhancement is long-lasting; length varies",
+        },
+        {
+          question: locale === "ru" ? "" : "Does it affect sexual function?",
+          answer: locale === "ru" ? "" : "No, function is preserved",
+        },
+        {
+          question: locale === "ru" ? "" : "Will there be scars?",
+          answer: locale === "ru" ? "" : "Minimal, discreet incisions",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it painful?",
+          answer:
+            locale === "ru" ? "" : "Mild soreness and swelling are expected",
+        },
+        {
+          question: locale === "ru" ? "" : "Are results guaranteed?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Varies per individual, discuss goals beforehand",
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Avoid sexual activity for at least 4–6 weeks",
+        locale === "ru" ? "" : "Wear supportive underwear",
+        locale === "ru"
+          ? ""
+          : "Take all prescribed antibiotics and anti-inflammatory meds",
+        locale === "ru" ? "" : "Monitor for swelling or redness",
+        locale === "ru" ? "" : "Avoid physical activity for 2 weeks",
+      ],
+      preList: [
+        locale === "ru"
+          ? ""
+          : "Stop blood thinners and smoking 2–3 weeks before",
+        locale === "ru" ? "" : "Complete medical clearance and lab tests",
+        locale === "ru" ? "" : "Avoid shaving area to prevent irritation",
+        locale === "ru" ? "" : "Discuss expectations clearly with your surgeon",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Пенопластика может быть эффективным решением для мужчин, которые испытывают неуверенность в отношении размера или формы своего пениса и испытывают эмоциональный или психологический дискомфорт в результате этого. Процедура обеспечивает как физические, так и психологические преимущества, повышая самооценку и сексуальное благополучие. Однако важно проконсультироваться с квалифицированным хирургом, тщательно оценить потенциальные риски и внимательно следовать послеоперационным инструкциям для обеспечения оптимальных результатов. При тщательном рассмотрении и профессиональном руководстве пенопластика может значительно улучшить качество жизни человека как в сексуальном, так и в социальном плане."
+            ? ""
             : "Penoplasty can be an effective solution for men who are self-conscious about the size or shape of their penis and experience emotional or psychological distress as a result. The procedure provides both physical and psychological benefits, enhancing self-esteem and sexual well-being. However, it is essential to consult with a qualified surgeon, thoroughly evaluate the potential risks, and follow post-operative instructions carefully to ensure optimal results. With careful consideration and professional guidance, penoplasty can significantly improve a person’s quality of life, both sexually and socially.",
-      },
-      subCategoryContent: {
-        title:
-          locale === "ru" ? "Breast Lift Mastopexy" : "Breast Lift Mastopexy",
       },
       bfs: bfList,
       contents: {
@@ -6314,7 +6530,94 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
             ? `
         <p><span style="color: rgb(27, 28, 29);">Для столь деликатной и личной процедуры, как фаллопластика по увеличению полового члена, выбор места и поставщика медицинских услуг имеет первостепенное значение. Турция, в партнерстве с AZPO Health, предлагает уникальное сочетание преимуществ:</span></p><p>Специализированный опыт и конфиденциальный уход по доступной цене: Турция приобретает все большее признание как центр медицинского туризма, в том числе в таких специализированных областях, как реконструктивная и эстетическая урология. Это обусловлено наличием высококвалифицированных хирургов, обученных передовым методикам и приверженных принципам конфиденциальности пациентов. AZPO Health сотрудничает с избранными клиниками в Стамбуле, Анталии и Алании, обеспечивая доступ к хирургам, имеющим опыт в фаллопластике для увеличения полового члена, при этом поддерживая самые высокие стандарты конфиденциальности и предлагая значительно более доступные цены по сравнению со многими странами Европы или Северной Америки. Откройте для себя передовые хирургические решения без ущерба для приватности и финансовой доступности.</p><p><br></p><p>Комплексные, конфиденциальные пакеты услуг, разработанные с учетом ваших потребностей: AZPO Health понимает важность конфиденциальности и комфорта при рассмотрении фаллопластики полового члена. Мы предлагаем комплексные пакеты, разработанные для обеспечения беспрепятственного, конфиденциального и поддерживающего опыта на протяжении всего вашего путешествия в Турцию. Наши тщательно спланированные пакеты обычно включают:</p><p><br></p><p class="ql-indent-1">Индивидуальный VIP-трансфер: С момента вашего прибытия вас ждет индивидуальный и конфиденциальный трансфер из аэропорта, обеспечивающий вашу приватность и комфорт с самого начала.</p><p class="ql-indent-1">Уединенное и роскошное размещение: Восстановление будет проходить в тщательно отобранных, уединенных отелях или апартаментах класса люкс, где приоритетом являются ваш комфорт и конфиденциальность на протяжении всего пребывания.</p><p class="ql-indent-1">Персональный координатор, ориентированный на конфиденциальность: Вам будет назначен персональный координатор, понимающий важность конфиденциальности. Он станет вашим единственным контактным лицом, обеспечивающим конфиденциальную помощь во всех организационных вопросах, назначениях и коммуникациях на протяжении всего вашего пребывания.</p><p class="ql-indent-1">Приватные и подробные консультации с хирургом: Ваши консультации с нашими опытными хирургами будут проводиться в приватной и конфиденциальной обстановке, что позволит открыто и честно обсудить ваши цели, опасения и ожидания от фаллопластики по увеличению полового члена.</p><p class="ql-indent-1">Прозрачные, всеобъемлющие цены с гарантией конфиденциальности: AZPO Health обеспечивает прозрачное и всеобъемлющее ценообразование пакетов, покрывающее все медицинские расходы, связанные с вашей процедурой фаллопластики полового члена, включая операцию, анестезию, использование медицинских учреждений и стандартные послеоперационные медикаменты. Такой прозрачный подход обеспечивает финансовую ясность и исключает любые неожиданные расходы, поддерживая вашу конфиденциальность во всех финансовых вопросах.</p><p class="ql-indent-1">Персонализированный план послеоперационного ухода и конфиденциальная поддержка восстановления: Ваш план послеоперационного ухода будет разработан с учетом ваших конкретных потребностей и направлен на обеспечение оптимального заживления в условиях конфиденциальности. Ваш персональный координатор будет оказывать постоянную поддержку, уважая вашу приватность на протяжении всего периода восстановления.</p><p class="ql-indent-1">Спокойная и приватная обстановка для восстановления в Турции: Турция предлагает разнообразные спокойные и приватные места для вашего восстановления. Предпочитаете ли вы уединенную историческую атмосферу Стамбула, тихую прибрежную атмосферу Анталии или спокойную красоту Алании, вы сможете выбрать место, которое будет соответствовать вашему стремлению к уединенному и спокойному процессу выздоровления.</p><p>Опытные хирурги, специализирующиеся на увеличении мужских репродуктивных органов:** AZPO Health сотрудничает с сертифицированными пластическими хирургами, имеющими специальный опыт и подготовку в области фаллопластики по увеличению полового члена. Эти хирурги выбираются за их опыт в данной специализированной области, стремление к достижению естественных результатов и приверженность безопасности и конфиденциальности пациентов. Они применяют передовые техники, такие как дермальная жировая пластика, и используют биосовместимые филлеры, когда это уместно, всегда ориентируясь на достижение результатов, которые улучшают ваши естественные пропорции.</p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Изучение фаллопластики для увеличения полового члена: техники для гармоничного увеличения</span></h2><p><span style="color: rgb(27, 28, 29);">Фаллопластика по увеличению полового члена в AZPO Health проводится с акцентом на достижение эстетически привлекательных и естественных результатов. Наши хирурги отдают предпочтение методам, которые увеличивают как обхват, так и длину, сохраняя при этом естественные пропорции и функциональность.</span></p><p><span style="color: rgb(27, 28, 29);">Техники, обычно используемые для фаллопластики по увеличению полового члена:</span></p><p><span style="color: rgb(27, 28, 29);">В AZPO Health наиболее часто используемые техники фаллопластики по увеличению полового члена тщательно отбираются за их безопасность, эффективность и способность давать естественные результаты:</span></p><p>Дермальная жировая пластика для увеличения обхвата: Этот метод ценится за способность обеспечивать естественное и долговременное увеличение обхвата. С использованием микрохирургических техник жир аккуратно забирается с помощью липосакции из таких областей, как живот или бедра. Затем этот жир тщательно обрабатывается и стратегически вводится в ствол полового члена для увеличения окружности. Дермальная жировая пластика имеет преимущество использования собственных тканей пациента, сводя к минимуму риск аллергических реакций и способствуя естественному виду и ощущениям.</p><p><br></p><p>Филлеры гиалуроновой кислоты для увеличения обхвата (безоперационный вариант): Для мужчин, ищущих безоперационный подход к увеличению обхвата, филлеры гиалуроновой кислоты представляют собой жизнеспособный и эффективный вариант. Эти биосовместимые филлеры аккуратно вводятся в ствол полового члена для увеличения окружности. Хотя результаты носят временный характер и обычно сохраняются в течение 12-18 месяцев, филлеры гиалуроновой кислоты представляют собой менее инвазивную альтернативу с немедленными результатами и минимальным временем простоя.</p><p><br></p><p>Хирургические имплантаты (менее распространены для первичного эстетического увеличения): Хотя хирургическая имплантация протезов чаще ассоциируется с лечением эректильной дисфункции, в отдельных случаях и после тщательной консультации хирургические имплантаты могут обсуждаться как вариант комбинированного увеличения длины и обхвата. Однако для первичной эстетической фаллопластики по увеличению полового члена дермальная жировая пластика и филлеры обычно предпочтительнее из-за их естественных результатов и более низкого профиля риска. Хирурги AZPO Health тщательно оценят ваши индивидуальные потребности, чтобы определить, подходит ли вам операция по имплантации.</p><p><br></p><p><span style="color: rgb(27, 28, 29);">Преимущества выбора AZPO Health для фаллопластики по увеличению полового члена:</span></p><p>Естественный и гармоничный результат увеличения: Подход AZPO Health отдает приоритет достижению результатов, которые выглядят естественно и пропорциональны вашему телосложению, улучшая вашу общую эстетическую гармонию.</p><p>Повышение уверенности в себе и удовлетворенности своим телом: Многие мужчины испытывают значительный подъем самооценки и уверенности в своем теле после фаллопластики по увеличению полового члена, что приводит к улучшению интимных отношений и повышению чувства благополучия. Решение проблем, связанных с размером полового члена, может оказать глубокое положительное влияние на психологическое состояние.</p><p>Конфиденциальность и приватность: На протяжении всего вашего пути с AZPO Health ваша приватность и конфиденциальность являются первостепенными. Мы обеспечиваем конфиденциальную и поддерживающую атмосферу от консультации до послеоперационного ухода.</p><p>Передовые техники для достижения оптимальных результатов: Используя такие техники, как дермальная жировая пластика и биосовместимые филлеры, AZPO Health стремится обеспечить эффективные результаты с уменьшением рубцевания, более быстрым восстановлением и естественным видом и ощущениями.</p><p>Индивидуальные планы лечения, разработанные с учетом ваших целей: Хирурги AZPO Health верят в индивидуальный подход. Ваш план лечения будет разработан с учетом вашей конкретной анатомии, желаний и ожиданий, что обеспечит наиболее подходящий подход для достижения ваших уникальных целей по увеличению.</p><p><em style="color: rgb(27, 28, 29);">"Решение о фаллопластике по увеличению полового члена было для меня большим шагом, и выбор AZPO Health в Турции оказался лучшим решением, которое я мог принять. Конфиденциальность и профессионализм были выдающимися, а результаты дермальной жировой пластики выглядят невероятно естественно и оказали реальное влияние на мою уверенность в себе. Весь процесс был организован с такой заботой и уважением к моей приватности. Я искренне благодарен AZPO Health."</em><span style="color: rgb(27, 28, 29);"> – Анонимно, Германия</span></p><h2><span style="color: rgb(27, 28, 29);">AZPO Health: Ваш надежный партнер в конфиденциальной и экспертной фаллопластике в Турции</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health является ведущим организатором специализированного медицинского туризма в Турции, стремящимся предоставлять исключительный уход и преобразующий опыт для мужчин, желающих пройти фаллопластику полового члена в Турции. Мы привержены высочайшим стандартам конфиденциальности пациентов и медицинского превосходства. Мы понимаем деликатный характер этого пути и готовы поддерживать вас профессионализмом, тактичностью и уважением на каждом этапе.</span></p><p><span style="color: rgb(27, 28, 29);">Почему стоит выбрать AZPO Health для вашего путешествия по фаллопластике?</span></p><p>Бескомпромиссная приверженность приватности пациентов: Конфиденциальность – наш главный приоритет. Мы гарантируем конфиденциальное ведение всего вашего дела на каждом этапе вашего опыта, от первоначального обращения до послеоперационного ухода.</p><p>Партнерство с ведущими специалистами в области увеличения мужских репродуктивных органов: Мы сотрудничаем исключительно с высококвалифицированными иских репродуктивных органов, известными своим опытом в фаллопластике по увеличению полового члена и приверженностью этичному и конфиденциальному уходу за пациентами.</p><p>Персонализированная и чуткая система поддержки: Мы понимаем глубоко личный характер этой процедуры. Мы предлагаем индивидуальные консультации и индивидуальные планы лечения, гарантируя, что ваши конкретные проблемы и цели будут решены с тактом и пониманием.</p><p>Прозрачные и выгодные комплексные пакеты: Мы предлагаем четкие, всеобъемлющие цены на пакеты услуг, обеспечивающие прозрачность и исключительную ценность ваших инвестиций в личное благополучие и уверенность в себе.</p><p>Круглосуточная конфиденциальная помощь и поддержка: Наша специализированная и тактичная команда по уходу за пациентами доступна 24 часа в сутки, 7 дней в неделю, чтобы ответить на ваши вопросы, оказать помощь и обеспечить ваш комфорт и спокойствие на протяжении всего вашего пребывания в Турции.</p><p><span style="color: rgb(27, 28, 29);">Готовы ли вы открыть для себя возможности конфиденциальной и преображающей фаллопластики по увеличению полового члена в Турции с AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Свяжитесь с нами сегодня для получения бесплатной конфиденциальной консультации и индивидуального расчета стоимости! Просто отправьте нам сообщение, и наша экспертная и тактичная команда оперативно свяжется с вами, чтобы ответить на ваши вопросы и помочь вам сделать первый шаг на пути к повышению уверенности в себе и личной удовлетворенности. Откройте для себя конфиденциальный и экспертный уход, доступный для фаллопластики по увеличению полового члена в Турции с AZPO Health – вашим надежным партнером в специализированных процедурах по увеличению мужских репродуктивных органов.</span></p><p><br></p><p><br></p>
         `
-            : `<p>For a sensitive and personal procedure like phalloplasty for penile enlargement, the choice of location and provider is paramount. Turkey, in partnership with AZPO Health, offers a unique combination of advantages:</p><ul><li>Specialized Expertise and Discreet Care at an Accessible Price: Turkey has become a recognized center for medical tourism, including specialized areas like reconstructive and aesthetic urology. This is due to the presence of highly skilled surgeons trained in advanced techniques and committed to patient confidentiality. AZPO Health partners with select clinics across Istanbul, Antalya, and Alanya, ensuring access to surgeons experienced in phalloplasty penile enlargement, all while maintaining the highest standards of discretion and offering significantly more affordable costs compared to many countries in Europe or North America. Explore advanced surgical options without compromising privacy or financial accessibility.</li><li><br></li><li>Comprehensive, Discreet Packages Tailored to Your Needs: AZPO Health understands the importance of privacy and comfort when considering phalloplasty for penile. We offer all-inclusive packages designed to provide a seamless, discreet, and supportive experience throughout your journey in Turkey. Our packages are carefully crafted to include:</li><li><br></li><li class="ql-indent-1">Private VIP Airport Transfers: Discreet and comfortable private transportation from the airport to your accommodation and clinic, ensuring your confidentiality from arrival onwards.</li><li class="ql-indent-1">Secluded and Luxurious Accommodation: Recover in carefully selected, private hotels or apartments prioritizing your comfort and discretion during your stay.</li><li class="ql-indent-1">Dedicated Patient Coordinator with Confidentiality Focus: A personal patient coordinator, sensitive to your needs for privacy, will be your single point of contact, providing confidential assistance with all arrangements, appointments, and communication throughout your experience.</li><li class="ql-indent-1">Private and Thorough Consultations: Benefit from confidential and in-depth consultations with your experienced surgeon, ensuring your personal goals and concerns are addressed with the utmost discretion.</li><li class="ql-indent-1">All-Inclusive, Transparent Pricing with No Hidden Fees: Our package pricing is transparent and all-inclusive, covering surgical fees, anesthesia, hospital facilities, and standard post-operative medications, ensuring financial clarity and discretion.</li><li class="ql-indent-1">Personalized and Discreet Aftercare Plan: Receive a tailored aftercare plan focused on optimal healing and privacy, with ongoing support from your discreet patient coordinator.</li><li class="ql-indent-1">Opportunity for Private Recovery in a Tranquil Destination: Recover in peace and privacy amidst the beautiful and serene settings Turkey offers. Whether you seek the secluded historical charm of Istanbul, the quiet beaches of Antalya, or the peaceful atmosphere of Alanya, find a tranquil environment for your confidential recovery.</li><li>Experienced Surgeons in Male Genital Enhancement: AZPO Health collaborates with board-certified surgeons who have specific experience and training in phalloplasty for penile enlargement. These surgeons are chosen for their expertise in this specialized field, their commitment to achieving natural-looking results, and their dedication to patient safety and confidentiality.</li><li><br></li><li>Modern Clinics with Strict Privacy Protocols: Your procedure will be performed in state-of-the-art, accredited clinics that maintain the highest standards of patient privacy and confidentiality. These facilities are equipped with advanced technology and adhere to strict hygiene protocols, ensuring a safe and discreet surgical environment.</li><li><br></li></ul><h2>Understanding Phalloplasty for Penile Enlargement: Exploring Your Options</h2><p>Phalloplasty for penile enlargement, in the context of aesthetic procedures, refers to surgical techniques aimed at increasing the girth and/or length of the penis for cisgender men seeking enhancement. It's important to distinguish this from phalloplasty for gender affirmation, as the techniques and goals may differ. At AZPO Health in Turkey, we focus on providing options for cisgender men seeking penile enlargement through phalloplasty techniques.</p><p>Common Phalloplasty Techniques for Penile Enlargement Offered at AZPO Health:</p><p>While specific techniques and suitability will be determined during a personalized consultation, common approaches for phalloplasty penile enlargement may include:</p><ul><li><strong>Dermal Fat Grafting (Girth Enhancement):</strong> This technique involves harvesting fat from another area of the patient's body (often the abdomen or thighs) via liposuction. The fat is then processed and carefully injected into the penile shaft to increase girth. This is a minimally invasive option for girth enhancement.</li><li><br></li><li><strong>Hyaluronic Acid Fillers (Girth Enhancement):</strong> Dermal fillers composed of hyaluronic acid can be injected into the penile shaft to increase girth. This is a non-surgical option, offering temporary enhancement that typically lasts for 12-18 months.</li><li><br></li><li><strong>Penile Implant Surgery (Length and/or Girth):</strong> In some cases, surgical implantation of devices may be considered, though this is less common for primary aesthetic penile enlargement and more often used for erectile dysfunction. AZPO Health specialists can discuss if this approach is suitable based on individual needs and goals.</li><li><br></li></ul><h3><span style="color: rgb(67, 67, 67);">Benefits of Phalloplasty for Penile Enlargement:</span></h3><ul><li>Increased Penile Girth and/or Length: Achieve a perceived or measurable increase in penis size, addressing personal concerns about size and proportion.</li><li>Improved Body Image and Self-Confidence: Enhance self-esteem and body confidence, potentially leading to improved intimate relationships and overall well-being. For many men, addressing concerns about penis size can have a significant positive psychological impact.</li><li>Discreet and Personalized Approach: AZPO Health prioritizes a confidential and individualized approach, ensuring procedures are tailored to your specific anatomy and aesthetic goals, performed with the utmost discretion.</li></ul><h2>AZPO Health: Your Discreet and Expert Partner for Phalloplasty in Turkey</h2><p>AZPO Health is a leading facilitator of specialized and discreet medical tourism in Turkey. We are dedicated to providing exceptional care and transformative experiences for men seeking phalloplasty for penile in turkey, with an unwavering commitment to patient privacy and confidentiality. We understand the sensitive nature of this procedure and are here to support you with expertise, discretion, and respect throughout your journey.</p><p>Why Choose AZPO Health for Your Phalloplasty Journey?</p><ul><li>Uncompromising Commitment to Patient Privacy: Discretion is our highest priority. We ensure confidentiality at every stage of your experience, from your initial inquiry through your post-operative care.</li><li>Partnerships with Leading Specialists in Male Enhancement: We collaborate with highly respected and experienced surgeons specializing in male genital enhancement, renowned for their expertise in phalloplasty for penile enlargement and their dedication to ethical and confidential care.</li><li>Personalized and Compassionate Support: We understand that each patient's needs are unique and personal. We offer individualized consultations and treatment plans, ensuring your specific concerns and goals are addressed with sensitivity and respect.</li><li>Transparent and Value-Driven Pricing: We provide clear, all-inclusive package pricing, offering transparency and exceptional value for your investment in your well-being.</li><li>Dedicated 24/7 Discreet Assistance: Our discreet and supportive team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind throughout your entire experience in Turkey.</li></ul><p>Ready to explore discreet and transformative phalloplasty for penile enlargement in Turkey with AZPO Health?</p><p>Contact us today for a free, confidential consultation and personalized quote! Simply send us a message, and our expert and discreet team will promptly connect with you to answer your questions and guide you towards taking the first step in your journey to enhanced confidence and intimate well-being. Discover the possibilities of phalloplasty for penile enlargement in Turkey with AZPO Health – your trusted partner in discreet and specialized male enhancement procedures.</p><p><br></p>`,
+            : `<p dir="ltr">For a sensitive and personal procedure like phalloplasty for penile enlargement, the choice of location and provider is paramount. Turkey, in partnership with AZPO Health, offers a unique combination of advantages:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Specialized Expertise and Discreet Care at an Accessible Price: Turkey has become a recognized center for medical tourism, including specialized areas like reconstructive and aesthetic urology. This is due to the presence of highly skilled surgeons trained in advanced techniques and committed to patient confidentiality. AZPO Health partners with select clinics across Istanbul, Antalya, and Alanya, ensuring access to surgeons experienced in phalloplasty penile enlargement, all while maintaining the highest standards of discretion and offering significantly more affordable costs compared to many countries in Europe or North America. Explore advanced surgical options without compromising privacy or financial accessibility.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive, Discreet Packages Tailored to Your Needs: AZPO Health understands the importance of privacy and comfort when considering phalloplasty for penile. We offer all-inclusive packages designed to provide a seamless, discreet, and supportive experience throughout your journey in Turkey. Our packages are carefully crafted to include:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Private VIP Airport Transfers: Discreet and comfortable private transportation from the airport to your accommodation and clinic, ensuring your confidentiality from arrival onwards.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Secluded and Luxurious Accommodation: Recover in carefully selected, private hotels or apartments prioritizing your comfort and discretion during your stay.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Dedicated Patient Coordinator with Confidentiality Focus: A personal patient coordinator, sensitive to your needs for privacy, will be your single point of contact, providing confidential assistance with all arrangements, appointments, and communication throughout your experience.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Private and Thorough Consultations: Benefit from confidential and in-depth consultations with your experienced surgeon, ensuring your personal goals and concerns are addressed with the utmost discretion.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">All-Inclusive, Transparent Pricing with No Hidden Fees: Our package pricing is transparent and all-inclusive, covering surgical fees, anesthesia, hospital facilities, and standard post-operative medications, ensuring financial clarity and discretion.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Personalized and Discreet Aftercare Plan: Receive a tailored aftercare plan focused on optimal healing and privacy, with ongoing support from your discreet patient coordinator.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Opportunity for Private Recovery in a Tranquil Destination: Recover in peace and privacy amidst the beautiful and serene settings Turkey offers. Whether you seek the secluded historical charm of Istanbul, the quiet beaches of Antalya, or the peaceful atmosphere of Alanya, find a tranquil environment for your confidential recovery.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Surgeons in Male Genital Enhancement: AZPO Health collaborates with board-certified surgeons who have specific experience and training in phalloplasty for penile enlargement. These surgeons are chosen for their expertise in this specialized field, their commitment to achieving natural-looking results, and their dedication to patient safety and confidentiality.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Modern Clinics with Strict Privacy Protocols: Your procedure will be performed in state-of-the-art, accredited clinics that maintain the highest standards of patient privacy and confidentiality. These facilities are equipped with advanced technology and adhere to strict hygiene protocols, ensuring a safe and discreet surgical environment.Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Understanding Phalloplasty for Penile Enlargement: Exploring Your Options</h2>
+<p dir="ltr">Phalloplasty for penile enlargement, in the context of aesthetic procedures, refers to surgical techniques aimed at increasing the girth and/or length of the penis for cisgender men seeking enhancement. It's important to distinguish this from phalloplasty for gender affirmation, as the techniques and goals may differ. At AZPO Health in Turkey, we focus on providing options for cisgender men seeking penile enlargement through phalloplasty techniques.</p>
+<p dir="ltr">Common Phalloplasty Techniques for Penile Enlargement Offered at AZPO Health:</p>
+<p dir="ltr">While specific techniques and suitability will be determined during a personalized consultation, common approaches for phalloplasty penile enlargement may include:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Dermal Fat Grafting (Girth Enhancement): This technique involves harvesting fat from another area of the patient's body (often the abdomen or thighs) via liposuction. The fat is then processed and carefully injected into the penile shaft to increase girth. This is a minimally invasive option for girth enhancement.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Hyaluronic Acid Fillers (Girth Enhancement): Dermal fillers composed of hyaluronic acid can be injected into the penile shaft to increase girth. This is a non-surgical option, offering temporary enhancement that typically lasts for 12-18 months.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Penile Implant Surgery (Length and/or Girth): In some cases, surgical implantation of devices may be considered, though this is less common for primary aesthetic penile enlargement and more often used for erectile dysfunction. AZPO Health specialists can discuss if this approach is suitable based on individual needs and goals.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Benefits of Phalloplasty for Penile Enlargement:</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Increased Penile Girth and/or Length: Achieve a perceived or measurable increase in penis size, addressing personal concerns about size and proportion.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Improved Body Image and Self-Confidence: Enhance self-esteem and body confidence, potentially leading to improved intimate relationships and overall well-being. For many men, addressing concerns about penis size can have a significant positive psychological impact.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Discreet and Personalized Approach: AZPO Health prioritizes a confidential and individualized approach, ensuring procedures are tailored to your specific anatomy and aesthetic goals, performed with the utmost discretion.</p>
+</li>
+</ul>
+<h2 dir="ltr">AZPO Health: Your Discreet and Expert Partner for Phalloplasty in Turkey</h2>
+<p dir="ltr">AZPO Health is a leading facilitator of specialized and discreet medical tourism in Turkey. We are dedicated to providing exceptional care and transformative experiences for men seeking phalloplasty for penile in turkey, with an unwavering commitment to patient privacy and confidentiality. We understand the sensitive nature of this procedure and are here to support you with expertise, discretion, and respect throughout your journey.</p>
+<p dir="ltr">Why Choose AZPO Health for Your Phalloplasty Journey?</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Uncompromising Commitment to Patient Privacy: Discretion is our highest priority. We ensure confidentiality at every stage of your experience, from your initial inquiry through your post-operative care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Partnerships with Leading Specialists in Male Enhancement: We collaborate with highly respected and experienced surgeons specializing in male genital enhancement, renowned for their expertise in phalloplasty for penile enlargement and their dedication to ethical and confidential care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized and Compassionate Support: We understand that each patient's needs are unique and personal. We offer individualized consultations and treatment plans, ensuring your specific concerns and goals are addressed with sensitivity and respect.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Transparent and Value-Driven Pricing: We provide clear, all-inclusive package pricing, offering transparency and exceptional value for your investment in your well-being.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Dedicated 24/7 Discreet Assistance: Our discreet and supportive team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind throughout your entire experience in Turkey.</p>
+</li>
+</ul>
+<p dir="ltr">Ready to explore discreet and transformative phalloplasty for penile enlargement in Turkey with AZPO Health?</p>
+<p dir="ltr">Contact us today for a free, confidential consultation and personalized quote! Simply send us a message, and our expert and discreet team will promptly connect with you to answer your questions and guide you towards taking the first step in your journey to enhanced confidence and intimate well-being. Discover the possibilities of phalloplasty for penile enlargement in Turkey with AZPO Health &ndash; your trusted partner in discreet and specialized male enhancement procedures.</p>
+<p>&nbsp;</p>`,
       },
       imgCover:
         subNestedKey === "penile-enlargement-phalloplasty"
@@ -8763,34 +9066,103 @@ AZPO Health - ведущая компания медицинского тури�
         ],
         categories: [
           {
-            header: locale === "ru" ? "Who It’s For" : "Who It’s For",
+            header: locale === "ru" ? "Who It’s For" : "Description ",
             desc:
               locale === "ru"
                 ? `Bone grafting is recommended for individuals who experience:\n
                      Gum Disease: Severe periodontal conditions leading to bone loss around the teeth.
                      Jawbone Deterioration: Due to prolonged tooth loss or the use of ill-fitting dentures.
                      Dental Trauma: Accidents or injuries causing structural damage to the jawbone.`
-                : `Bone grafting is recommended for individuals who experience:\n
-                     Gum Disease: Severe periodontal conditions leading to bone loss around the teeth.
-                     Jawbone Deterioration: Due to prolonged tooth loss or the use of ill-fitting dentures.
-                     Dental Trauma: Accidents or injuries causing structural damage to the jawbone.`,
+                : "Bone grafting in dentistry is a procedure that restores lost bone in the jaw to support dental implants or treat bone loss from gum disease. The graft material, which can come from the patient, a donor, or synthetic sources, helps regenerate bone, creating a stable foundation for future dental work.",
           },
           {
-            header: locale === "ru" ? "Considerations" : "Considerations",
-            desc: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "How It Works" : "How It Works",
+            desc:
+              locale === "ru"
+                ? ""
+                : "The procedure begins with local anesthesia, followed by a small incision in the gum to expose the jawbone. The bone graft material is then placed in the targeted area, and the gum tissue is repositioned and sutured. Over time, the graft fuses with the existing bone, creating a stable foundation for future dental treatments.",
           },
           {
-            header: locale === "ru" ? "How it Works" : "How it Works",
+            header: locale === "ru" ? "Who It’s For" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "Bone grafting is a surgical procedure used to enhance bone regeneration in cases where the skeletal structure cannot heal naturally. It is most commonly performed in the jaw area to improve both functional and aesthetic outcomes, particularly in dental implant treatment."
-                : "Bone grafting is a surgical procedure used to enhance bone regeneration in cases where the skeletal structure cannot heal naturally. It is most commonly performed in the jaw area to improve both functional and aesthetic outcomes, particularly in dental implant treatments.",
+                : "Bone grafting is ideal for those with bone loss from gum disease, prolonged tooth loss, dental trauma, genetic conditions, or skeletal disorders. It’s especially crucial for patients needing dental implants but lacking sufficient bone density.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "What material is used?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Could be your bone, donor, animal, or synthetic",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it painful?",
+          answer: locale === "ru" ? "" : "Mild soreness, like an extraction",
+        },
+        {
+          question: locale === "ru" ? "" : "How long to heal?",
+          answer: locale === "ru" ? "" : "3–6 months for full bone integration",
+        },
+        {
+          question: locale === "ru" ? "" : "Can it fail?",
+          answer: locale === "ru" ? "" : "Rarely, if disturbed or infected",
+        },
+        {
+          question:
+            locale === "ru" ? "" : "Is graft always needed for implants?",
+          answer: locale === "ru" ? "" : "Only when bone is insufficient",
+        },
+        {
+          question:
+            locale === "ru"
+              ? ""
+              : "How long does swelling last after grafting?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Swelling usually decreases within 3-5 days.",
+        },
+        {
+          question:
+            locale === "ru"
+              ? ""
+              : "When can I resume normal activities after bone grafting?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "You can resume light activities after 1-2 weeks, but avoid intense exercise.",
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Do not disturb the graft site",
+        locale === "ru" ? "" : "Avoid smoking and strenuous activity",
+        locale === "ru" ? "" : "Use salt water rinse gently",
+        locale === "ru"
+          ? ""
+          : "Follow soft diet and avoid chewing on the graft side",
+        locale === "ru" ? "" : "Take prescribed meds and attend follow-up",
+        locale === "ru"
+          ? ""
+          : "Rest with your head elevated for the first 24-48 hours.",
+        locale === "ru" ? "" : "Avoid hot and cold foods.",
+        locale === "ru"
+          ? ""
+          : "Swelling and bruising are normal, use ice packs to reduce them.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Discuss graft material type with your dentist",
+        locale === "ru" ? "" : "Avoid smoking 1–2 weeks before",
+        locale === "ru"
+          ? ""
+          : "Disclose medications, especially bone-affecting ones",
+        locale === "ru" ? "" : "Prepare soft foods and arrange downtime",
+        locale === "ru" ? "" : "Maintain good oral hygiene.",
+        locale === "ru" ? "" : "Make sure to get plenty of rest.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -8808,7 +9180,139 @@ AZPO Health - ведущая компания медицинского тури�
           locale === "ru"
             ? `<p>Turkey has become a popular destination for medical tourism, especially for dental procedures like bone grafting. Here's why choosing AZPO Health in Turkey for your bone grafting needs is a smart decision:</p><p><strong>Affordability:</strong> Dental treatments in Turkey, including bone grafting, are significantly more affordable compared to Europe, the UK, and the US. You can save up to 70-90% on costs, even after factoring in travel and accommodation.</p><p><strong>Quality:</strong> AZPO Health boasts experienced and well-educated healthcare professionals. The clinics use high-quality materials and modern technologies, ensuring you receive world-class dental care.</p><p><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover treatment, accommodation, airport transfers, and even leisure activities, making your medical journey stress-free.</p><p><strong>Beautiful Location:</strong> Combine your treatment with a holiday! AZPO Health is located in Istanbul, Antalya, and Alanya, all popular tourist destinations with rich history and culture.</p><h3><strong>Understanding Bone Grafting</strong></h3><p>Bone grafting is a surgical procedure used to rebuild bone in the jaw when there is insufficient bone volume or density to support dental implants. This is often necessary due to:</p><p><strong>Tooth Loss:</strong> Prolonged tooth loss can lead to bone resorption (breakdown) in the jaw.</p><p><strong>Periodontal Disease:</strong> Gum disease can damage the bone and tissues supporting the teeth.</p><p><strong>Trauma:</strong> Injuries to the face can cause bone loss.</p><p><strong>Congenital Defects:</strong> Some individuals are born with insufficient bone in certain areas of the jaw.</p><h4><strong>Types of Bone Grafting Procedures</strong></h4><p>Several bone grafting techniques are available, depending on the location and extent of bone loss:</p><p><strong>Socket Preservation:</strong> This procedure is performed immediately after tooth extraction to prevent bone loss in the socket. The socket is filled with a bone graft material, and a protective membrane is placed over it.</p><p><strong>Ridge Augmentation:</strong> This technique is used to increase the width and height of the alveolar ridge (the bony ridge that supports the teeth). It is often required when bone loss has resulted in a narrow or thin ridge.</p><p><strong>Sinus Lift:</strong> This procedure is performed in the upper jaw when there is not enough bone height to place dental implants in the posterior (back) region. The sinus membrane is lifted, and bone graft material is placed to increase the bone volume.</p><p><strong>Block Bone Graft:</strong> This involves taking a block of bone from another area of the body (usually the jaw or hip) and transplanting it to the deficient area in the jaw. This is typically used for larger defects.</p><h4><strong>Bone Graft Materials</strong></h4><p>Various types of bone graft materials can be used:</p><p><strong>Autograft:</strong> Bone taken from the patient's own body. This is considered the gold standard as it has the highest success rate.</p><p><strong>Allograft:</strong> Bone taken from a human donor. It is thoroughly screened and sterilized to ensure safety.</p><p><strong>Xenograft:</strong> Bone taken from an animal source (usually bovine). It is processed to remove organic material and ensure biocompatibility.</p><p><strong>Alloplast:</strong> Synthetic bone graft materials made of calcium phosphate ceramics or other biocompatible materials.</p><h3><strong>The Bone Grafting Procedure</strong></h3><p>Here's what you can expect during your bone grafting journey with AZPO Health:</p><p><strong>Initial Consultation:</strong> A thorough examination, including X-rays or CT scans, to assess your bone volume and determine the best treatment plan.</p><p><strong>Treatment Planning:</strong> A detailed discussion of the procedure, including the type of bone graft material, the surgical technique, and the expected outcomes.</p><p><strong>Anesthesia:</strong> Local anesthesia is typically used, but sedation or general anesthesia may be available for anxious patients.</p><p><strong>Graft Placement:</strong> The gum tissue is opened, and the bone graft material is placed in the deficient area. A membrane may be used to protect the graft and promote healing.</p><p><strong>Closure:</strong> The gum tissue is closed with sutures.</p><p><strong>Healing Period:</strong> This can range from a few months to allow the bone graft to integrate with the existing bone.</p><p><strong>Implant Placement:</strong> Once the bone graft has healed, dental implants can be placed.</p><h3><strong>Why Bone Grafting for Dental Implants is Essential</strong></h3><p>Bone grafting is often a prerequisite for successful dental implant placement. Implants require sufficient bone support to ensure stability and long-term success. Without adequate bone, implants can fail. Bone grafting provides the necessary foundation for implants, restoring your ability to chew, speak, and smile with confidence.</p><h3><strong>What to Expect After Bone Grafting</strong></h3><p>Following bone grafting surgery, it's important to follow your surgeon's instructions carefully to ensure proper healing:</p><p><strong>Pain Management:</strong> Pain medication will be prescribed to manage any discomfort.</p><p><strong>Diet:</strong> A soft diet is recommended during the initial healing phase.</p><p><strong>Oral Hygiene:</strong> Gentle rinsing with an antibacterial mouthwash is essential to keep the area clean.</p><p><strong>Follow-up Appointments:</strong> Regular check-ups are necessary to monitor healing and ensure the graft is integrating properly.</p><h3><strong>Real Patient Stories</strong></h3><p><em>"I lost a tooth a few years ago and was told I didn't have enough bone for an implant. AZPO Health made bone grafting so easy and affordable. Now I have a beautiful implant that feels just like a real tooth!"</em> - Sarah J.</p><p><em>"I was nervous about getting a sinus lift, but the team at AZPO Health explained everything clearly and made me feel comfortable. The procedure was painless, and the results are amazing!"</em> - Michael K.</p><h3><strong>AZPO Health: Your Partner in Dental Restoration</strong></h3><p>AZPO Health is committed to providing exceptional dental care to international patients. Here's what sets AZPO Health apart:</p><p><strong>Experienced Surgeons:</strong> Our team consists of highly skilled and experienced oral surgeons specializing in bone grafting and dental implant procedures.</p><p><strong>State-of-the-Art Technology:</strong> We use advanced dental technology to ensure accurate diagnoses and precise treatment planning.</p><p><strong>Personalized Care:</strong> We tailor each treatment plan to meet your unique needs and goals.</p><p><strong>Affordable Prices:</strong> We offer competitive prices without compromising on quality.</p><p><strong>All-Inclusive Packages:</strong> Our packages cover all aspects of your treatment, making your experience convenient and stress-free.</p><p>Don't let bone loss stand in the way of your dream smile. Contact AZPO Health today for a free consultation and personalized quote. Let us help you rebuild your jaw and regain your confidence!</p><p><br></p>
           `
-            : `<p>Turkey has become a popular destination for medical tourism, especially for dental procedures like bone grafting. Here's why choosing AZPO Health in Turkey for your bone grafting needs is a smart decision:</p><p><strong>Affordability:</strong> Dental treatments in Turkey, including bone grafting, are significantly more affordable compared to Europe, the UK, and the US. You can save up to 70-90% on costs, even after factoring in travel and accommodation.</p><p><strong>Quality:</strong> AZPO Health boasts experienced and well-educated healthcare professionals. The clinics use high-quality materials and modern technologies, ensuring you receive world-class dental care.</p><p><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover treatment, accommodation, airport transfers, and even leisure activities, making your medical journey stress-free.</p><p><strong>Beautiful Location:</strong> Combine your treatment with a holiday! AZPO Health is located in Istanbul, Antalya, and Alanya, all popular tourist destinations with rich history and culture.</p><h3><strong>Understanding Bone Grafting</strong></h3><p>Bone grafting is a surgical procedure used to rebuild bone in the jaw when there is insufficient bone volume or density to support dental implants. This is often necessary due to:</p><p><strong>Tooth Loss:</strong> Prolonged tooth loss can lead to bone resorption (breakdown) in the jaw.</p><p><strong>Periodontal Disease:</strong> Gum disease can damage the bone and tissues supporting the teeth.</p><p><strong>Trauma:</strong> Injuries to the face can cause bone loss.</p><p><strong>Congenital Defects:</strong> Some individuals are born with insufficient bone in certain areas of the jaw.</p><h4><strong>Types of Bone Grafting Procedures</strong></h4><p>Several bone grafting techniques are available, depending on the location and extent of bone loss:</p><p><strong>Socket Preservation:</strong> This procedure is performed immediately after tooth extraction to prevent bone loss in the socket. The socket is filled with a bone graft material, and a protective membrane is placed over it.</p><p><strong>Ridge Augmentation:</strong> This technique is used to increase the width and height of the alveolar ridge (the bony ridge that supports the teeth). It is often required when bone loss has resulted in a narrow or thin ridge.</p><p><strong>Sinus Lift:</strong> This procedure is performed in the upper jaw when there is not enough bone height to place dental implants in the posterior (back) region. The sinus membrane is lifted, and bone graft material is placed to increase the bone volume.</p><p><strong>Block Bone Graft:</strong> This involves taking a block of bone from another area of the body (usually the jaw or hip) and transplanting it to the deficient area in the jaw. This is typically used for larger defects.</p><h4><strong>Bone Graft Materials</strong></h4><p>Various types of bone graft materials can be used:</p><p><strong>Autograft:</strong> Bone taken from the patient's own body. This is considered the gold standard as it has the highest success rate.</p><p><strong>Allograft:</strong> Bone taken from a human donor. It is thoroughly screened and sterilized to ensure safety.</p><p><strong>Xenograft:</strong> Bone taken from an animal source (usually bovine). It is processed to remove organic material and ensure biocompatibility.</p><p><strong>Alloplast:</strong> Synthetic bone graft materials made of calcium phosphate ceramics or other biocompatible materials.</p><h3><strong>The Bone Grafting Procedure</strong></h3><p>Here's what you can expect during your bone grafting journey with AZPO Health:</p><p><strong>Initial Consultation:</strong> A thorough examination, including X-rays or CT scans, to assess your bone volume and determine the best treatment plan.</p><p><strong>Treatment Planning:</strong> A detailed discussion of the procedure, including the type of bone graft material, the surgical technique, and the expected outcomes.</p><p><strong>Anesthesia:</strong> Local anesthesia is typically used, but sedation or general anesthesia may be available for anxious patients.</p><p><strong>Graft Placement:</strong> The gum tissue is opened, and the bone graft material is placed in the deficient area. A membrane may be used to protect the graft and promote healing.</p><p><strong>Closure:</strong> The gum tissue is closed with sutures.</p><p><strong>Healing Period:</strong> This can range from a few months to allow the bone graft to integrate with the existing bone.</p><p><strong>Implant Placement:</strong> Once the bone graft has healed, dental implants can be placed.</p><h3><strong>Why Bone Grafting for Dental Implants is Essential</strong></h3><p>Bone grafting is often a prerequisite for successful dental implant placement. Implants require sufficient bone support to ensure stability and long-term success. Without adequate bone, implants can fail. Bone grafting provides the necessary foundation for implants, restoring your ability to chew, speak, and smile with confidence.</p><h3><strong>What to Expect After Bone Grafting</strong></h3><p>Following bone grafting surgery, it's important to follow your surgeon's instructions carefully to ensure proper healing:</p><p><strong>Pain Management:</strong> Pain medication will be prescribed to manage any discomfort.</p><p><strong>Diet:</strong> A soft diet is recommended during the initial healing phase.</p><p><strong>Oral Hygiene:</strong> Gentle rinsing with an antibacterial mouthwash is essential to keep the area clean.</p><p><strong>Follow-up Appointments:</strong> Regular check-ups are necessary to monitor healing and ensure the graft is integrating properly.</p><h3><strong>Real Patient Stories</strong></h3><p><em>"I lost a tooth a few years ago and was told I didn't have enough bone for an implant. AZPO Health made bone grafting so easy and affordable. Now I have a beautiful implant that feels just like a real tooth!"</em> - Sarah J.</p><p><em>"I was nervous about getting a sinus lift, but the team at AZPO Health explained everything clearly and made me feel comfortable. The procedure was painless, and the results are amazing!"</em> - Michael K.</p><h3><strong>AZPO Health: Your Partner in Dental Restoration</strong></h3><p>AZPO Health is committed to providing exceptional dental care to international patients. Here's what sets AZPO Health apart:</p><p><strong>Experienced Surgeons:</strong> Our team consists of highly skilled and experienced oral surgeons specializing in bone grafting and dental implant procedures.</p><p><strong>State-of-the-Art Technology:</strong> We use advanced dental technology to ensure accurate diagnoses and precise treatment planning.</p><p><strong>Personalized Care:</strong> We tailor each treatment plan to meet your unique needs and goals.</p><p><strong>Affordable Prices:</strong> We offer competitive prices without compromising on quality.</p><p><strong>All-Inclusive Packages:</strong> Our packages cover all aspects of your treatment, making your experience convenient and stress-free.</p><p>Don't let bone loss stand in the way of your dream smile. Contact AZPO Health today for a free consultation and personalized quote. Let us help you rebuild your jaw and regain your confidence!</p><p><br></p>`,
+            : `<p dir="ltr">Turkey has become a popular destination for medical tourism, especially for dental procedures like bone grafting. Here's why choosing AZPO Health in Turkey for your bone grafting needs is a smart decision:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: Dental treatments in Turkey, including bone grafting, are significantly more affordable compared to Europe, the UK, and the US. You can save up to 70-90% on costs, even after factoring in travel and accommodation.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Quality: AZPO Health boasts experienced and well-educated healthcare professionals. The clinics use high-quality materials and modern technologies, ensuring you receive world-class dental care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health offers all-inclusive packages that cover treatment, accommodation, airport transfers, and even leisure activities, making your medical journey stress-free.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Accredited Healthcare: Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Beautiful Location: Combine your treatment with a holiday! AZPO Health is located in Istanbul, Antalya, and Alanya, all popular tourist destinations with rich history and culture.</p>
+</li>
+</ul>
+<h3 dir="ltr">Understanding Bone Grafting</h3>
+<p dir="ltr">Bone grafting is a surgical procedure used to rebuild bone in the jaw when there is insufficient bone volume or density to support dental implants. This is often necessary due to:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Tooth Loss: Prolonged tooth loss can lead to bone resorption (breakdown) in the jaw.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Periodontal Disease: Gum disease can damage the bone and tissues supporting the teeth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Trauma: Injuries to the face can cause bone loss.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Congenital Defects: Some individuals are born with insufficient bone in certain areas of the jaw.</p>
+</li>
+</ul>
+<h4 dir="ltr">Types of Bone Grafting Procedures</h4>
+<p dir="ltr">Several bone grafting techniques are available, depending on the location and extent of bone loss:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Socket Preservation: This procedure is performed immediately after tooth extraction to prevent bone loss in the socket. The socket is filled with a bone graft material, and a protective membrane is placed over it.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ridge Augmentation: This technique is used to increase the width and height of the alveolar ridge (the bony ridge that supports the teeth). It is often required when bone loss has resulted in a narrow or thin ridge.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Sinus Lift: This procedure is performed in the upper jaw when there is not enough bone height to place dental implants in the posterior (back) region. The sinus membrane is lifted, and bone graft material is placed to increase the bone volume.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Block Bone Graft: This involves taking a block of bone from another area of the body (usually the jaw or hip) and transplanting it to the deficient area in the jaw. This is typically used for larger defects.</p>
+</li>
+</ul>
+<h4 dir="ltr">Bone Graft Materials</h4>
+<p dir="ltr">Various types of bone graft materials can be used:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Autograft: Bone taken from the patient's own body. This is considered the gold standard as it has the highest success rate.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Allograft: Bone taken from a human donor. It is thoroughly screened and sterilized to ensure safety.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Xenograft: Bone taken from an animal source (usually bovine). It is processed to remove organic material and ensure biocompatibility.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Alloplast: Synthetic bone graft materials made of calcium phosphate ceramics or other biocompatible materials.</p>
+</li>
+</ul>
+<h3 dir="ltr">The Bone Grafting Procedure</h3>
+<p dir="ltr">Here's what you can expect during your bone grafting journey with AZPO Health:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Initial Consultation: A thorough examination, including X-rays or CT scans, to assess your bone volume and determine the best treatment plan.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Treatment Planning: A detailed discussion of the procedure, including the type of bone graft material, the surgical technique, and the expected outcomes.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Anesthesia: Local anesthesia is typically used, but sedation or general anesthesia may be available for anxious patients.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Graft Placement: The gum tissue is opened, and the bone graft material is placed in the deficient area. A membrane may be used to protect the graft and promote healing.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Closure: The gum tissue is closed with sutures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Healing Period: This can range from a few months to allow the bone graft to integrate with the existing bone.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Implant Placement: Once the bone graft has healed, dental implants can be placed.</p>
+</li>
+</ol>
+<h3 dir="ltr">Why Bone Grafting for Dental Implants is Essential</h3>
+<p dir="ltr">Bone grafting is often a prerequisite for successful dental implant placement. Implants require sufficient bone support to ensure stability and long-term success. Without adequate bone, implants can fail. Bone grafting provides the necessary foundation for implants, restoring your ability to chew, speak, and smile with confidence.</p>
+<h3 dir="ltr">What to Expect After Bone Grafting</h3>
+<p dir="ltr">Following bone grafting surgery, it's important to follow your surgeon's instructions carefully to ensure proper healing:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pain Management: Pain medication will be prescribed to manage any discomfort.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Diet: A soft diet is recommended during the initial healing phase.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Oral Hygiene: Gentle rinsing with an antibacterial mouthwash is essential to keep the area clean.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Follow-up Appointments: Regular check-ups are necessary to monitor healing and ensure the graft is integrating properly.</p>
+</li>
+</ul>
+<h3 dir="ltr">Real Patient Stories</h3>
+<p dir="ltr">"I lost a tooth a few years ago and was told I didn't have enough bone for an implant. AZPO Health made bone grafting so easy and affordable. Now I have a beautiful implant that feels just like a real tooth!" - Sarah J.</p>
+<p dir="ltr">"I was nervous about getting a sinus lift, but the team at AZPO Health explained everything clearly and made me feel comfortable. The procedure was painless, and the results are amazing!" - Michael K.</p>
+<h3 dir="ltr">AZPO Health: Your Partner in Dental Restoration</h3>
+<p dir="ltr">AZPO Health is committed to providing exceptional dental care to international patients. Here's what sets AZPO Health apart:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Surgeons: Our team consists of highly skilled and experienced oral surgeons specializing in bone grafting and dental implant procedures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">State-of-the-Art Technology: We use advanced dental technology to ensure accurate diagnoses and precise treatment planning.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Care: We tailor each treatment plan to meet your unique needs and goals.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordable Prices: We offer competitive prices without compromising on quality.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">All-Inclusive Packages: Our packages cover all aspects of your treatment, making your experience convenient and stress-free.</p>
+</li>
+</ul>
+<p dir="ltr">Don't let bone loss stand in the way of your dream smile. Contact AZPO Health today for a free consultation and personalized quote. Let us help you rebuild your jaw and regain your confidence!</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "bone-grafting" ? bonegrafting : null,
       subNestedKey: "bone-grafting",
@@ -9838,44 +10342,101 @@ These are just a few examples of the positive outcomes that can be achieved with
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "What is Stem cell therapy?",
+            header: locale === "ru" ? "Для кого" : "Desciption",
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
                 : "Stem cell therapy offers a promising approach for managing Peyronie’s disease by addressing inflammation, promoting tissue repair, and potentially improving erectile function. Below, the procedure, mechanisms of action, benefits, eligibility, and considerations for this innovative treatment are outlined.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "Considerations",
-            desc: locale === "ru" ? "" : "",
-          },
-          {
-            header:
-              locale === "ru"
-                ? "Как это работает"
-                : "How Does Mesenchymal Stem Cell Therapy Work?",
+            header: locale === "ru" ? "How It Works" : "How It Works",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-                : "Mesenchymal stem cells (MSCs) play a pivotal role in tissue repair and regeneration by differentiating into specialized cells when injected into the body. In the case of ED, MSCs are introduced into penile tissue, where they repair and regenerate damaged structures involved in achieving and maintaining erections.",
+                ? ""
+                : "Stem cells aid penile tissue repair through multiple mechanisms: Anti-inflammatory Effects: Reduce inflammation and promote healing. Tissue Regeneration: Differentiate into smooth muscle and endothelial cells for tissue repair. Collagen Remodeling: Break down fibrotic plaques and support healthy tissue formation. Angiogenesis: Enhance blood vessel growth for better oxygenation and recovery. Immunomodulation: Regulate immune responses to prevent further damage.",
+          },
+          {
+            header: locale === "ru" ? "Как это работает" : "Who It’s For",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Stem cell therapy is ideal for individuals with chronic Peyronie’s disease, persistent fibrotic plaques, significant curvature, pain, or erectile dysfunction. It offers a minimally invasive alternative for those unresponsive to other treatments or avoiding surgery.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "What is Peyronie’s Disease?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "A condition causing penile curvature from scar tissue",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it treatable?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes, with meds, injections, or surgery if needed",
+        },
+        {
+          question: locale === "ru" ? "" : "Can I still have sex?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes, if function is intact and discomfort is manageable",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it permanent?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "It can stabilize or worsen – early treatment helps",
+        },
+        {
+          question: locale === "ru" ? "" : "Does it cause ED?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "In some cases, yes – treatments address both",
+        },
+      ],
+      posts: [
+        locale === "ru"
+          ? ""
+          : "Follow medication schedule strictly (e.g., collagenase injections)",
+        locale === "ru"
+          ? ""
+          : "Avoid sexual activity during initial treatment phase",
+        locale === "ru" ? "" : "Report any worsening curvature or pain",
+        locale === "ru" ? "" : "Consider physical therapy if recommended",
+        locale === "ru"
+          ? ""
+          : "Schedule regular follow-ups with your urologist",
+        locale === "ru" ? "" : "Reduce alcohol and tobacco use.",
+        locale === "ru"
+          ? ""
+          : "Be patient, the treatment process may take time.",
+      ],
+      preList: [
+        locale === "ru"
+          ? ""
+          : "Undergo physical exam and imaging (e.g., ultrasound)",
+        locale === "ru" ? "" : "Discuss medications and sexual history",
+        locale === "ru" ? "" : "Avoid NSAIDs unless directed by your doctor",
+        locale === "ru"
+          ? ""
+          : "Prepare for potential medication or injection therapy",
+        locale === "ru"
+          ? ""
+          : "The treatment may take time, so manage your expectations.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
-            : "Mesenchymal stem cell therapy, particularly the secretome approach, represents a groundbreaking advancement in the treatment of erectile dysfunction. By promoting tissue repair and improving vascular function, it offers hope for patients who have not benefited from conventional therapies. Although further research and standardization are needed to refine this innovative treatment, early studies and clinical experiences suggest that it has the potential to revolutionize the management of ED, particularly for those with severe or refractory cases. For personalized consultation and detailed information about suitability, reaching out to a qualified medical professional is essential.",
-      },
-
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
+            ? ""
+            : "Stem cell therapy represents a groundbreaking option for treating Peyronie’s disease, offering benefits such as reduced penile curvature, pain relief, and improved erectile function. It is a safe and minimally invasive alternative for those who may not be candidates for surgery or have not found relief with other treatments. Patients considering this therapy should consult an experienced andrologist to discuss the suitability, potential outcomes, and any necessary approvals or preparations for the procedure.",
       },
       bfs: bfList,
       contents: {
@@ -9886,7 +10447,69 @@ These are just a few examples of the positive outcomes that can be achieved with
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>Turkey has become a popular choice for individuals seeking medical treatments abroad for several compelling reasons. While AZPO Health does not provide treatment directly, we connect you with reputable clinics and skilled doctors in Turkey who offer a range of Erectile Dysfunction treatments, including cutting-edge options like stem cell therapy.</p><p>Choosing Turkey for your treatment journey offers potential benefits such as:</p><ul><li><strong>Access to Experienced Medical Professionals:</strong> Turkish healthcare professionals, including urologists and specialists in sexual health, often have extensive training and experience in diagnosing and treating Erectile Dysfunction. AZPO Health partners with facilities that are known for their qualified medical teams.</li><li><strong>Modern Healthcare Facilities:</strong> The clinics and hospitals in Turkey that AZPO Health collaborates with are equipped with advanced medical technologies, allowing for comprehensive evaluations and the application of innovative treatments like stem cell therapy.</li><li><strong>Comprehensive Care Options:</strong> Depending on the underlying cause of your Erectile Dysfunction, the medical professionals in Turkey offer a variety of treatment approaches. Stem cell therapy is one of the advanced options that aims to address the cause of ED rather than just managing the symptoms.</li><li><strong>A Supportive Treatment Environment:</strong> Undergoing medical treatment in a new environment can be a significant decision. AZPO Health aims to facilitate a smooth and comfortable experience by connecting you with clinics that understand the needs of international patients.</li><li><strong>Potential for a Holistic Approach:</strong> While in Turkey for your treatment, you have the opportunity to recover in a unique cultural and historical setting, which can contribute to a positive overall experience.</li></ul><h2><strong>Erectile Dysfunction Treatment Options and&nbsp; Understanding Stem Cell Therapy</strong></h2><p>After a thorough medical and sexual history evaluation, along with necessary tests to understand the cause of your Erectile Dysfunction, various treatment options may be considered. Traditional approaches include drug therapy, herbal treatments, and injection methods. However, stem cell therapy represents a promising and innovative approach that aims to go beyond symptomatic relief.</p><p><strong>Stem Cell Therapy for Erectile Dysfunction:</strong></p><p>Stem cells possess the remarkable ability to transform into different types of cells in the body. In the context of Erectile Dysfunction, the principle behind stem cell therapy is to regenerate and repair the tissues within the penis that are crucial for achieving and maintaining an erection.</p><p>The penis has a sponge-like structure, known as the corpora cavernosa, which fills with blood upon sexual stimulation, leading to an erection. In many cases of Erectile Dysfunction, the functionality of the smooth muscles and blood vessels within this sponge-like tissue is compromised. Stem cell therapy aims to address this by:</p><ul><li><strong>Regenerating Penile Tissue:</strong> Stem cells can differentiate into the cells that form the smooth muscle and endothelial lining of the blood vessels within the corpora cavernosa. This regeneration can improve the structural integrity and function of the erectile tissue.</li><li><strong>Improving Blood Flow:</strong> By promoting the formation of healthy blood vessels (angiogenesis), stem cell therapy can enhance blood supply to the penis, which is essential for achieving and sustaining a firm erection.</li><li><strong>Addressing the Underlying Cause:</strong> Unlike some other treatments that primarily focus on temporarily improving blood flow, stem cell therapy is intended to eliminate the cause of Erectile Dysfunction by naturally restoring the function of the penile tissue.</li></ul><p><strong>The Process of Stem Cell Therapy for Erectile Dysfunction Treatment</strong></p><p><br></p><ol><li><strong>Comprehensive Evaluation:</strong> The process begins with a detailed examination of your medical and sexual history, along with necessary diagnostic tests to determine the underlying cause and severity of your Erectile Dysfunction.</li><li><strong>Determining the Appropriate Stem Cell Therapy:</strong> Based on your individual needs and medical assessment, the medical team will determine the most suitable type of stem cell therapy. Various types of stem cells, such as autologous (derived from your own body) or allogeneic (derived from a donor), may be considered. Sources of stem cells can include bone marrow, adipose tissue (fat), or umbilical cord tissue.</li><li><strong>Stem Cell Administration:</strong> The chosen stem cells are typically administered directly into the erectile tissue of the penis through injection. The specific technique and dosage will be determined by the medical team.</li><li><strong>Post-Treatment Monitoring:</strong> Following the stem cell therapy, you will be closely monitored by the medical team to assess the progress and outcome of the treatment.</li></ol><p><strong>Potential Benefits of Stem Cell Therapy for Erectile Dysfunction:</strong></p><ul><li><strong>Natural Method:</strong> Stem cell therapy utilizes the body's own regenerative capabilities to address Erectile Dysfunction.</li><li><strong>Targets the Root Cause:</strong> The aim is to restore the function of the penile tissue, potentially providing a more long-lasting solution compared to treatments that only manage symptoms.</li><li><strong>Potential for Significant Improvement:</strong> Clinical studies, as cited in research, have suggested that stem cell therapy can lead to significant improvements in erectile function, with some reporting a substantial increase in penile function. The extent of improvement can vary between individuals.</li></ul><p>It's important to have realistic expectations and understand that the outcomes of stem cell therapy can vary from person to person. The medical professionals in Turkey, whom AZPO Health can connect you with, will provide detailed information about the potential benefits and risks based on your specific condition.</p><h2><strong>Real Patient Experiences</strong></h2><ul><li><strong>John, 55:</strong> "For years, ED had taken a toll on my confidence and my relationship. I was hesitant about treatments, but the idea of stem cell therapy in Turkey, facilitated by AZPO Health, seemed like a natural way to address the problem. The medical team I connected with was thorough, and the procedure was straightforward. While the improvement wasn't immediate, over the following months, I noticed a significant and sustained difference. I feel like myself again."</li><li><br></li><li><strong>David, 62:</strong> "Being diagnosed with diabetes also brought on ED, which was frustrating. I tried pills, but they weren't always effective. When I learned about stem cell therapy in Turkey through AZPO Health, I was intrigued. The doctors I consulted with explained the process clearly. After the treatment, the change has been remarkable. My ability to achieve and maintain an erection has improved considerably. It has made a huge positive impact on my quality of life."</li><li><br></li><li><strong>Michael, 48:</strong> "After prostate surgery, ED was a challenging side effect. I was looking for a solution that could truly help me recover. AZPO Health guided me towards a clinic in Turkey offering stem cell therapy. The experience was professional, and the follow-up care was excellent. I'm thrilled with the results I've experienced. It feels like my body is functioning as it should again."</li><li><br></li></ul><h2><strong>AZPO Health: Your Partner in Exploring Erectile Dysfunction Treatment in Turkey</strong></h2><p>AZPO Health is dedicated to connecting you with reputable healthcare providers and facilitating your medical travel journey to Turkey. We understand that seeking treatment for Erectile Dysfunction is a personal and sensitive matter, and we are committed to providing you with the support and information you need to make informed decisions.</p><p>When you choose AZPO Health, you can expect:</p><ul><li><strong>Access to a Network of Experienced Professionals:</strong> We collaborate with clinics and doctors in Turkey who have expertise in diagnosing and treating Erectile Dysfunction, including offering advanced therapies like stem cell treatment.</li><li><strong>Personalized Guidance:</strong> We will assist you in understanding your treatment options and connecting you with the medical professionals who are best suited to address your specific needs.</li><li><strong>Facilitation of Your Medical Journey:</strong> While we do not provide medical treatment, we can help streamline the process of connecting with clinics in Turkey, understanding treatment plans, and navigating the logistics of your medical travel.</li><li><strong>Commitment to Quality and Confidentiality:</strong> We prioritize your well-being and ensure that you are connected with healthcare providers who adhere to high standards of medical care and respect your privacy.</li></ul><h2><strong>Take the First Step Towards Renewed Intimacy</strong></h2><p>If you are seeking a comprehensive and potentially transformative approach to Erectile Dysfunction treatment, including the innovative option of stem cell therapy, we encourage you to reach out to AZPO Health.</p><p><strong>Contact us today for a free consultation to discuss your needs and explore the possibilities of seeking Erectile Dysfunction treatment in Turkey.</strong></p><p>Our team is here to provide you with information, answer your questions, and connect you with the medical expertise that can help you regain your intimacy, confidence, and overall well-being. Text us to begin your journey towards a more fulfilling and active life.</p><p><br></p>`,
+            : `<p dir="ltr">Turkey has become a prominent destination for medical tourism, attracting individuals seeking high-quality medical treatments at affordable costs. The country boasts modern healthcare facilities, experienced medical professionals, and a commitment to providing international patients with comprehensive care. Choosing Turkey for your Peyronies-Disease treatment in turkey can offer several advantages:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Access to Innovative Treatments: Turkish medical facilities are increasingly offering advanced therapies like stem cell therapy for various conditions, including Peyronie's disease.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Medical Teams: The medical professionals in Turkey are often highly trained and experienced in their respective fields.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Care: Medical tourism in Turkey typically includes support services for international patients, making the treatment journey smoother.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">A Welcoming Environment: Turkey is known for its hospitality and cultural richness, providing an opportunity for patients to recover in a comfortable and engaging environment.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Accredited Hospitals:Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
+</li>
+</ul>
+<h2 dir="ltr">Exploring Peyronies Disease Treatment with Stemcell with AZPO Health</h2>
+<p dir="ltr">We understand the impact Peyronie's disease can have on your life, and we are dedicated to offering advanced and compassionate care. Our approach to Peyronies Disease treatment with stemcell focuses on utilizing the regenerative potential of stem cells to address the underlying causes of the condition.</p>
+<p dir="ltr">How Does Stem Cell Therapy Work for Peyronie's Disease?</p>
+<p dir="ltr">Stem cell therapy for Peyronie's disease typically involves the extraction of stem cells from a readily accessible source in your body, such as adipose tissue (fat). These stem cells are then processed and carefully administered into the affected area of the penis where the fibrous plaques have formed.</p>
+<p dir="ltr">The introduced stem cells can contribute to the healing process in several ways:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Modulating Inflammation: Stem cells can help regulate the inflammatory response that contributes to the development and progression of Peyronie's disease.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Promoting Angiogenesis: They can stimulate the formation of new blood vessels, improving blood flow to the affected tissues, which is crucial for healing.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Encouraging Tissue Regeneration: Stem cells have the potential to differentiate into cells that can help repair damaged tissue and potentially break down the existing scar tissue plaques.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Reducing Fibrosis: By influencing the cellular environment, stem cells may help to inhibit the excessive production of collagen that leads to plaque formation.</p>
+</li>
+</ul>
+<p dir="ltr">The Stem Cell Therapy Procedure with AZPO Health</p>
+<p dir="ltr">The stem cell therapy procedure for Peyronie's disease with AZPO Health is typically a minimally invasive outpatient procedure. The process generally involves the following steps:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Evaluation: Our medical experts will conduct a thorough evaluation of your condition, including a detailed medical history and physical examination, to determine your suitability for stem cell therapy.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Stem Cell Harvesting: If you are deemed a suitable candidate, stem cells will be harvested, typically from a small amount of adipose tissue obtained through a minimally invasive liposuction procedure.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Stem Cell Processing: The harvested tissue is then processed in a specialized laboratory to isolate and concentrate the stem cells.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Stem Cell Administration: The concentrated stem cells are carefully injected directly into the Peyronie's disease plaques in the penis. The administration technique will be tailored to your specific condition.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Post-Procedure Care and Follow-up: Following the procedure, you will receive detailed post-care instructions and will be scheduled for follow-up appointments to monitor your progress and assess the effectiveness of the treatment.</p>
+</li>
+</ol>
+<h2 dir="ltr">Real Patient Experiences</h2>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">John, 55: "For years, Peyronie's disease caused me significant pain and made intimacy very difficult. I had tried other treatments with limited success. After researching options in Turkey, I contacted AZPO Health. The team was incredibly supportive and explained the stem cell therapy process in detail. The procedure itself was straightforward, and while it took some time, I've noticed a significant improvement in my penile curvature and a reduction in pain. It has made a real difference in my quality of life."</p>
+<p dir="ltr">David, 62: "The curve in my penis had been bothering me for a while and affecting my confidence. I was hesitant about surgery, so I looked into alternative treatments. AZPO Health offered stem cell therapy, and the idea of using my body's own healing power appealed to me. The experience in Turkey was positive, and the medical team at AZPO Health was excellent. While the changes were gradual, I am very happy with the results I've achieved. It has given me renewed hope."</p>
+<h2 dir="ltr">Take the First Step Towards Healing</h2>
+<p dir="ltr">If Peyronie's disease is impacting your life, stem cell therapy with AZPO Health in Turkey could be a promising option to consider. Our dedicated team is here to provide you with more information, answer your questions, and help you determine if this innovative treatment is right for you. Contact us today to explore your treatment options and take the first step towards a healthier and more fulfilling future.</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "peyronies-disease" ? peyroniesdisease : null,
       subNestedKey: "peyronies-disease",
@@ -10019,41 +10642,127 @@ These are just a few examples of the positive outcomes that can be achieved with
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Who It’s For",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
-                : "Chronic orthopedic conditions:Such as joint degeneration, ligament injuries, or delayed fracture healing.",
+                : "Stem Cell Therapy for Men offers a modern, non-surgical approach to treat various health concerns, including joint pain, hair loss, and sexual wellness. By using the body’s natural healing cells, it promotes regeneration, reduces inflammation, and supports long-term recovery; helping men feel stronger, healthier, and more confident.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "Considerations",
-            desc: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "How It Works" : "How It Works",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Stem cells are collected from sources like fat tissue, bone marrow, or umbilical cord blood—fat being the easiest and richest source. After lab processing to purify the cells, they are injected or applied directly to damaged areas to promote healing and reduce inflammation. Recovery is monitored closely, with results appearing over weeks or months.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-                : "Stem cells are obtained from various sources, including bone marrow, adipose tissue (fat), or umbilical cord blood. Adipose tissue is particularly advantageous due to its abundance of stem cells, ease of collection, and high proliferation potential.",
+                : "Stem cell therapy is ideal for individuals with chronic orthopedic issues like joint or ligament damage, neurological disorders such as Parkinson’s or stroke, and heart conditions including heart failure. It also benefits those with skin concerns like wrinkles, scars, or burns, and patients who haven't responded to conventional treatments.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question:
+            locale === "ru" ? "" : "What conditions can stem cells treat?",
+          answer: locale === "ru" ? "" : "ED, Peyronie’s, joint pain, and more",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it safe?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Generally yes, when done by trained professionals",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it FDA-approved?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Some applications are still investigational",
+        },
+        {
+          question: locale === "ru" ? "" : "How long for results?",
+          answer:
+            locale === "ru" ? "" : "Weeks to months depending on condition",
+        },
+        {
+          question: locale === "ru" ? "" : "Are there side effects?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Minor swelling or soreness at injection site",
+        },
+        {
+          question:
+            locale === "ru"
+              ? ""
+              : "What is the success rate of stem cell therapy?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Success varies by individual and condition, but early intervention can lead to positive outcomes.",
+        },
+        {
+          question:
+            locale === "ru"
+              ? ""
+              : "How many sessions are required for treatment?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Multiple sessions are usually needed, with the plan determined by your doctor.",
+        },
+      ],
+      posts: [
+        locale === "ru"
+          ? ""
+          : "Limit physical activity for a few days post-injection",
+        locale === "ru"
+          ? ""
+          : "Stay hydrated and follow post-care instructions",
+        locale === "ru"
+          ? ""
+          : "Avoid NSAIDs unless prescribed (they may hinder stem cell action)",
+        locale === "ru" ? "" : "Attend follow-ups to track improvements",
+        locale === "ru"
+          ? ""
+          : "Follow lifestyle and dietary advice to support healing",
+        locale === "ru" ? "" : "Report pain or discomfort.",
+        locale === "ru"
+          ? ""
+          : "Avoid sexual activity as recommended by your urologist",
+        locale === "ru" ? "" : "Avoid extreme heat, cold, or pressure.",
+        locale === "ru" ? "" : "Avoid stress.",
+        locale === "ru" ? "" : "Be patient, as treatment effects take time.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Full consultation to assess eligibility",
+        locale === "ru"
+          ? ""
+          : "Blood tests, imaging, and medical history review",
+        locale === "ru"
+          ? ""
+          : "Avoid anti-inflammatory medications before procedure",
+        locale === "ru"
+          ? ""
+          : "Stop smoking and alcohol use prior to treatment",
+        locale === "ru" ? "" : "Weight management and physical health.",
+        locale === "ru" ? "" : "Share your psychological state.",
+        locale === "ru" ? "" : "Make sure to rest before the procedure.",
+        locale === "ru"
+          ? ""
+          : "The treatment may take time, so manage your expectations.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
             : "Stem cell therapy is a revolutionary medical treatment offering hope to patients with conditions previously deemed untreatable. By harnessing the regenerative power of stem cells, this therapy promotes natural healing, improves quality of life, and provides solutions for a wide range of medical and cosmetic needs. With proper evaluation and expert care, stem cell therapy continues to pave the way for advanced regenerative medicine, transforming lives one treatment at a time.",
-      },
-
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
       },
       bfs: bfList,
       contents: {
@@ -10064,7 +10773,114 @@ These are just a few examples of the positive outcomes that can be achieved with
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>As we navigate life, men may encounter various health issues that impact their quality of life. Stem cell therapy offers a promising avenue by utilizing the body’s remarkable ability to repair and regenerate damaged tissues. AZPO Health connects you with leading clinics in Turkey, providing access to this cutting-edge field of regenerative medicine.</p><h3><strong>Why Choose Turkey for Stem Cell Therapy for Men in 2025?</strong></h3><p>Turkey has emerged as a prominent global hub for medical tourism, and for good reason. In 2023, over 1.5 million patients utilized a medical tourism platform specializing in Turkey. The country attracts a significant number of individuals seeking various medical treatments, including innovative therapies like stem cell therapy. There are several compelling reasons why choosing Turkey for your stem cell therapy needs in 2025 is a wise decision:</p><p><strong>Advanced Medical Facilities and Expertise:</strong> Turkish hospitals and clinics that AZPO Health partners with are equipped with state-of-the-art technology and adhere to international standards of medical care. The healthcare professionals in Turkey often have extensive experience in their respective fields, including regenerative medicine. Many international medical students even come to Turkey for internships and training programs, indicating a strong foundation in medical education and practice.</p><p><strong>Cost-Effectiveness:</strong> One of the primary drivers for medical tourism in Turkey is the affordability of treatments compared to many European countries, the UK, and the USA. For instance, hair transplant costs in Turkey can be significantly lower than in the US or Europe. While the cost of stem cell therapy can vary widely depending on the specific condition and treatment protocol, Turkey often offers more accessible pricing without compromising on quality of care. This allows more individuals to benefit from innovative treatments like stem cell therapy.</p><p><strong>Holistic Healthcare Experience:</strong> Beyond the medical procedure itself, Turkey offers a welcoming and hospitable environment for international patients. Many patients find the opportunity to recover in a beautiful and culturally rich country to be a significant advantage. Istanbul, in particular, is a major touristic attraction with a unique history and culture, providing opportunities for sightseeing and cultural experiences during your medical trip. AZPO Health can assist in making your medical journey as smooth and comfortable as possible.</p><p><strong>Focus on Patient Care and Innovation:</strong> The medical tourism industry in Turkey is highly competitive, which drives a strong focus on patient satisfaction and continuous improvement in treatment methods. Clinics often invest in the latest research and technologies to offer the most advanced and effective therapies, including various applications of stem cell therapy. AZPO Health partners with clinics that prioritize patient safety, care, and the adoption of innovative medical practices.</p><h3><strong>Understanding Stem Cell Therapy for Men</strong></h3><p>Stem cell therapy involves the use of stem cells to treat or prevent a disease or condition. Stem cells are unique because they have the ability to self-renew and differentiate into various specialized cell types in the body. This remarkable capacity allows them to potentially repair damaged tissues, reduce inflammation, and promote healing in various parts of the body.</p><p><strong>Types of Stem Cells Used:</strong></p><p>The sources mention several types of stem cells that can be used in therapy:</p><ul><li><strong>Mesenchymal Stem Cells (MSCs):</strong> These are commonly derived from the patient's own adipose tissue (fat) or bone marrow. MSCs have the ability to differentiate into various cell types, including bone, cartilage, and fat cells, and they also secrete factors that promote tissue repair and modulate the immune system. Due to their ease of access and abundance, adipose tissue is often a preferred source. Bone marrow is another viable source.</li><li><strong>Fetal Stem Cells:</strong> These are derived from fetal tissue. Their use can be more complex due to ethical considerations and regulatory frameworks.</li><li><strong>Umbilical Cord Blood Stem Cells:</strong> These are collected from the umbilical cord after birth and are rich in hematopoietic stem cells (which give rise to blood cells) and also contain MSCs.</li></ul><p><strong>Treatment Protocols:</strong></p><p>The specific treatment protocol for stem cell therapy for men is highly individualized and depends on the patient's age, weight, condition, and the specific health concern being addressed. The sources indicate that treatment can be administered in different ways and schedules:</p><ul><li><strong>Administration Routes:</strong> The primary route mentioned is intravenous administration (through vascular access). Additionally, for certain conditions affecting male reproductive health, a direct injection to the sperm-producing ducts in the testis may be performed.</li><li><strong>Number and Frequency of Sessions:</strong> Treatment can involve 3 sessions spaced 45 days apart or 2 consecutive days.</li><li><strong>Personalized Approach:</strong> It is crucial to understand that the treatment protocol is precisely determined according to the patient's condition, and a different protocol may be applied for each individual. AZPO Health ensures that you are connected with clinics that conduct thorough evaluations to tailor the therapy to your specific needs.</li></ul><p><strong>Potential Applications and Benefits for Men:</strong></p><p>Stem cell therapy is being explored for a wide range of conditions that affect men. Based on the information in the sources and current research (not directly cited but for informational context):</p><ul><li><strong>Erectile Dysfunction (ED):</strong> Research suggests that stem cell therapy, particularly using MSCs derived from adipose tissue or bone marrow, may improve erectile function by promoting tissue repair and improving vascularization in the penis. Several clinical trials have investigated this application.</li><li><strong>Male Infertility (Oligospermia, Azoospermia):</strong> Stem cell therapy is being investigated as a potential treatment for non-obstructive azoospermia (lack of sperm in ejaculate) by aiming to regenerate or repair damaged germ cells in the testes. While still largely experimental, early results show promise for some individuals. Oligospermia (low sperm count) is also listed as a potential treatment area.</li><li><strong>Peyronie's Disease:</strong> This condition involves the formation of fibrous plaques in the penis, leading to curvature and pain. Stem cell therapy is being explored as a minimally invasive approach to reduce plaque formation, alleviate pain, and improve erectile function.</li><li><strong>Neurological Disorders:</strong> While not specific to men, stem cell therapy is being researched for various neurological conditions that can affect men, such as Alzheimer's disease, Parkinson's disease, and Multiple Sclerosis (MS). Stem cells may help by replacing damaged neurons or providing neuroprotective effects.</li><li><strong>Cardiovascular Diseases (Coronary Heart Diseases):</strong> Stem cell therapy is being investigated for its potential to repair damaged heart tissue and improve cardiac function in men with coronary heart diseases.</li><li><strong>Autoimmune Diseases (Lupus Disease, Ulcerative Colitis):</strong> Stem cells have immunomodulatory properties and are being studied for the treatment of autoimmune diseases that can affect men.</li><li><strong>Diabetes-Related Complications:</strong> Stem cell therapy is being explored for managing complications of diabetes, such as erectile dysfunction and potentially neuropathy.</li><li><strong>Rejuvenation and Anti-Aging:</strong> Stem cell therapy is also marketed for its potential to promote overall rejuvenation and address age-related decline.</li></ul><p>It is important to have realistic expectations and understand that stem cell therapy is an evolving field. The effectiveness can vary depending on the individual and the specific condition. AZPO Health connects you with qualified medical professionals who can provide a thorough evaluation and explain the potential benefits and limitations of stem cell therapy for your specific situation.</p><h3><strong>Real Patient Stories: Hope and Transformation</strong></h3><p><strong>John, 55, Istanbul:</strong> "For years, erectile dysfunction had cast a shadow over my life. I tried various medications with limited success and felt a significant loss of intimacy and confidence. After researching stem cell therapy in Turkey through AZPO Health, I decided to take a leap of faith. The entire process, from the initial consultation to the treatment sessions, was handled with utmost professionalism. While it wasn't an overnight miracle, over the following months, I experienced a gradual but noticeable improvement in my erectile function. It has truly given me back a part of my life I thought was lost."</p><p><strong>David, 48, London:</strong> "Being diagnosed with early-stage Peyronie's disease was devastating. The pain and curvature were affecting my relationships and overall well-being. I was hesitant about surgical options and started looking into less invasive treatments. AZPO Health connected me with a clinic in Alanya offering stem cell therapy for Peyronie's. The medical team was very thorough in explaining the procedure and managing my expectations. After a series of treatments, I'm delighted to say that the pain has significantly reduced, and the curvature has improved. It's given me renewed hope and a better quality of life."</p><p><strong>Michael, 62, Berlin:</strong> "Dealing with the progressive symptoms of Parkinson's disease was becoming increasingly challenging. While medication helped to some extent, I was looking for therapies that could potentially slow down the progression. Through AZPO Health, I learned about ongoing research in stem cell therapy for neurological disorders. I underwent a stem cell treatment in Istanbul, and while it's still early days, I have noticed a subtle but encouraging improvement in some of my motor skills. The support and care I received in Turkey were exceptional, and I feel optimistic about the future."</p><h3><strong>AZPO Health: Your Partner in Regenerative Wellness</strong></h3><p>AZPO Health is a reputable medical tourism company based in Turkey, dedicated to connecting patients with high-quality medical treatments and facilities. We understand that seeking medical treatment abroad can be a significant decision, and we strive to make the process as seamless, comfortable, and trustworthy as possible.</p><p><strong>Our Commitment to Quality and Expertise:</strong></p><ul><li>AZPO Health partners with carefully selected clinics and medical professionals in Turkey who have expertise in various fields, including regenerative medicine and stem cell therapy.</li><li>We prioritize facilities that adhere to international standards of medical care and utilize advanced technologies.</li><li>Our team is committed to providing you with accurate information and personalized support throughout your medical journey.</li><li>We emphasize clear communication and ensure that you have a thorough understanding of your treatment options and what to expect.</li></ul><p><strong>Facilitating Your Medical Journey:</strong></p><p>While AZPO Health does not provide medical treatment directly, we act as a bridge to connect you with the best possible care in Turkey. Our services include:</p><ul><li><strong>Connecting you with qualified clinics:</strong> We will help you find reputable clinics in Istanbul, Alanya, and other top destinations in Turkey that offer stem cell therapy for men based on your specific health needs.</li><li><strong>Arranging initial consultations:</strong> We can facilitate communication with medical professionals for preliminary assessments and to answer your questions.</li><li><strong>Providing comprehensive information:</strong> We offer detailed information about the treatment options, the clinics, and the overall medical travel experience in Turkey.</li><li><strong>Assistance with logistics:</strong> While we do not handle travel arrangements directly, we can provide guidance and recommendations for accommodation and other logistical aspects of your trip.</li><li><strong>Ongoing support:</strong> Our team is available to assist you before, during, and after your treatment in Turkey.</li></ul><p>At AZPO Health, our philosophy is centered around ensuring a positive and beneficial experience for every patient. We understand the importance of trust, transparency, and quality care in medical tourism.</p><h3><strong>Take the First Step Towards Renewed Vitality</strong></h3><p>Are you exploring options to address health concerns and enhance your well-being as a man? Stem cell therapy facilitated by AZPO Health in Turkey offers a promising and innovative approach. Contact us today for a free consultation and personalized quote. Discover how we can connect you with leading clinics and experienced medical professionals to explore the potential benefits of stem cell therapy for your specific needs. Your journey to a healthier and more vibrant future could begin right here.</p><p><br></p>`,
+            : `<p dir="ltr">As we navigate life, men may encounter various health issues that impact their quality of life. Stem cell therapy offers a promising avenue by utilizing the body&rsquo;s remarkable ability to repair and regenerate damaged tissues. AZPO Health connects you with leading clinics in Turkey, providing access to this cutting-edge field of regenerative medicine.</p>
+<h3 dir="ltr">Why Choose Turkey for Stem Cell Therapy for Men in 2025?</h3>
+<p dir="ltr">Turkey has emerged as a prominent global hub for medical tourism, and for good reason. In 2023, over 1.5 million patients utilized a medical tourism platform specializing in Turkey. The country attracts a significant number of individuals seeking various medical treatments, including innovative therapies like stem cell therapy. There are several compelling reasons why choosing Turkey for your stem cell therapy needs in 2025 is a wise decision:</p>
+<p dir="ltr">Advanced Medical Facilities and Expertise: Turkish hospitals and clinics that AZPO Health partners with are equipped with state-of-the-art technology and adhere to international standards of medical care. The healthcare professionals in Turkey often have extensive experience in their respective fields, including regenerative medicine. Many international medical students even come to Turkey for internships and training programs, indicating a strong foundation in medical education and practice.Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
+<p dir="ltr">Cost-Effectiveness: One of the primary drivers for medical tourism in Turkey is the affordability of treatments compared to many European countries, the UK, and the USA. For instance, hair transplant costs in Turkey can be significantly lower than in the US or Europe. While the cost of stem cell therapy can vary widely depending on the specific condition and treatment protocol, Turkey often offers more accessible pricing without compromising on quality of care. This allows more individuals to benefit from innovative treatments like stem cell therapy.</p>
+<p dir="ltr">Holistic Healthcare Experience: Beyond the medical procedure itself, Turkey offers a welcoming and hospitable environment for international patients. Many patients find the opportunity to recover in a beautiful and culturally rich country to be a significant advantage. Istanbul, in particular, is a major touristic attraction with a unique history and culture, providing opportunities for sightseeing and cultural experiences during your medical trip. AZPO Health can assist in making your medical journey as smooth and comfortable as possible.</p>
+<p dir="ltr">Focus on Patient Care and Innovation: The medical tourism industry in Turkey is highly competitive, which drives a strong focus on patient satisfaction and continuous improvement in treatment methods. Clinics often invest in the latest research and technologies to offer the most advanced and effective therapies, including various applications of stem cell therapy. AZPO Health partners with clinics that prioritize patient safety, care, and the adoption of innovative medical practices.</p>
+<h3 dir="ltr">Understanding Stem Cell Therapy for Men</h3>
+<p dir="ltr">Stem cell therapy involves the use of stem cells to treat or prevent a disease or condition. Stem cells are unique because they have the ability to self-renew and differentiate into various specialized cell types in the body. This remarkable capacity allows them to potentially repair damaged tissues, reduce inflammation, and promote healing in various parts of the body.</p>
+<p dir="ltr">Types of Stem Cells Used:</p>
+<p dir="ltr">The sources mention several types of stem cells that can be used in therapy:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Mesenchymal Stem Cells (MSCs): These are commonly derived from the patient's own adipose tissue (fat) or bone marrow. MSCs have the ability to differentiate into various cell types, including bone, cartilage, and fat cells, and they also secrete factors that promote tissue repair and modulate the immune system. Due to their ease of access and abundance, adipose tissue is often a preferred source. Bone marrow is another viable source.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Fetal Stem Cells: These are derived from fetal tissue. Their use can be more complex due to ethical considerations and regulatory frameworks.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Umbilical Cord Blood Stem Cells: These are collected from the umbilical cord after birth and are rich in hematopoietic stem cells (which give rise to blood cells) and also contain MSCs.</p>
+</li>
+</ul>
+<p dir="ltr">Treatment Protocols:</p>
+<p dir="ltr">The specific treatment protocol for stem cell therapy for men is highly individualized and depends on the patient's age, weight, condition, and the specific health concern being addressed. The sources indicate that treatment can be administered in different ways and schedules:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Administration Routes: The primary route mentioned is intravenous administration (through vascular access). Additionally, for certain conditions affecting male reproductive health, a direct injection to the sperm-producing ducts in the testis may be performed.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Number and Frequency of Sessions: Treatment can involve 3 sessions spaced 45 days apart or 2 consecutive days.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Approach: It is crucial to understand that the treatment protocol is precisely determined according to the patient's condition, and a different protocol may be applied for each individual. AZPO Health ensures that you are connected with clinics that conduct thorough evaluations to tailor the therapy to your specific needs.</p>
+</li>
+</ul>
+<p dir="ltr">Potential Applications and Benefits for Men:</p>
+<p dir="ltr">Stem cell therapy is being explored for a wide range of conditions that affect men. Based on the information in the sources and current research (not directly cited but for informational context):</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Erectile Dysfunction (ED): Research suggests that stem cell therapy, particularly using MSCs derived from adipose tissue or bone marrow, may improve erectile function by promoting tissue repair and improving vascularization in the penis. Several clinical trials have investigated this application.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Male Infertility (Oligospermia, Azoospermia): Stem cell therapy is being investigated as a potential treatment for non-obstructive azoospermia (lack of sperm in ejaculate) by aiming to regenerate or repair damaged germ cells in the testes. While still largely experimental, early results show promise for some individuals. Oligospermia (low sperm count) is also listed as a potential treatment area.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Peyronie's Disease: This condition involves the formation of fibrous plaques in the penis, leading to curvature and pain. Stem cell therapy is being explored as a minimally invasive approach to reduce plaque formation, alleviate pain, and improve erectile function.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Neurological Disorders: While not specific to men, stem cell therapy is being researched for various neurological conditions that can affect men, such as Alzheimer's disease, Parkinson's disease, and Multiple Sclerosis (MS). Stem cells may help by replacing damaged neurons or providing neuroprotective effects.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cardiovascular Diseases (Coronary Heart Diseases): Stem cell therapy is being investigated for its potential to repair damaged heart tissue and improve cardiac function in men with coronary heart diseases.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Autoimmune Diseases (Lupus Disease, Ulcerative Colitis): Stem cells have immunomodulatory properties and are being studied for the treatment of autoimmune diseases that can affect men.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Diabetes-Related Complications: Stem cell therapy is being explored for managing complications of diabetes, such as erectile dysfunction and potentially neuropathy.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Rejuvenation and Anti-Aging: Stem cell therapy is also marketed for its potential to promote overall rejuvenation and address age-related decline.</p>
+</li>
+</ul>
+<p dir="ltr">It is important to have realistic expectations and understand that stem cell therapy is an evolving field. The effectiveness can vary depending on the individual and the specific condition. AZPO Health connects you with qualified medical professionals who can provide a thorough evaluation and explain the potential benefits and limitations of stem cell therapy for your specific situation.</p>
+<h3 dir="ltr">Real Patient Stories: Hope and Transformation</h3>
+<p dir="ltr">John, 55, Istanbul: "For years, erectile dysfunction had cast a shadow over my life. I tried various medications with limited success and felt a significant loss of intimacy and confidence. After researching stem cell therapy in Turkey through AZPO Health, I decided to take a leap of faith. The entire process, from the initial consultation to the treatment sessions, was handled with utmost professionalism. While it wasn't an overnight miracle, over the following months, I experienced a gradual but noticeable improvement in my erectile function. It has truly given me back a part of my life I thought was lost."</p>
+<p dir="ltr">David, 48, London: "Being diagnosed with early-stage Peyronie's disease was devastating. The pain and curvature were affecting my relationships and overall well-being. I was hesitant about surgical options and started looking into less invasive treatments. AZPO Health connected me with a clinic in Alanya offering stem cell therapy for Peyronie's. The medical team was very thorough in explaining the procedure and managing my expectations. After a series of treatments, I'm delighted to say that the pain has significantly reduced, and the curvature has improved. It's given me renewed hope and a better quality of life."</p>
+<p dir="ltr">Michael, 62, Berlin: "Dealing with the progressive symptoms of Parkinson's disease was becoming increasingly challenging. While medication helped to some extent, I was looking for therapies that could potentially slow down the progression. Through AZPO Health, I learned about ongoing research in stem cell therapy for neurological disorders. I underwent a stem cell treatment in Istanbul, and while it's still early days, I have noticed a subtle but encouraging improvement in some of my motor skills. The support and care I received in Turkey were exceptional, and I feel optimistic about the future."</p>
+<h3 dir="ltr">AZPO Health: Your Partner in Regenerative Wellness</h3>
+<p dir="ltr">AZPO Health is a reputable medical tourism company based in Turkey, dedicated to connecting patients with high-quality medical treatments and facilities. We understand that seeking medical treatment abroad can be a significant decision, and we strive to make the process as seamless, comfortable, and trustworthy as possible.</p>
+<p dir="ltr">Our Commitment to Quality and Expertise:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">AZPO Health partners with carefully selected clinics and medical professionals in Turkey who have expertise in various fields, including regenerative medicine and stem cell therapy.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">We prioritize facilities that adhere to international standards of medical care and utilize advanced technologies.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Our team is committed to providing you with accurate information and personalized support throughout your medical journey.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">We emphasize clear communication and ensure that you have a thorough understanding of your treatment options and what to expect.</p>
+</li>
+</ul>
+<p dir="ltr">Facilitating Your Medical Journey:</p>
+<p dir="ltr">While AZPO Health does not provide medical treatment directly, we act as a bridge to connect you with the best possible care in Turkey. Our services include:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Connecting you with qualified clinics: We will help you find reputable clinics in Istanbul, Alanya, Antalya and other top destinations in Turkey that offer stem cell therapy for men based on your specific health needs.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Arranging initial consultations: We can facilitate communication with medical professionals for preliminary assessments and to answer your questions.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Providing comprehensive information: We offer detailed information about the treatment options, the clinics, and the overall medical travel experience in Turkey.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Assistance with logistics: While we do not handle travel arrangements directly, we can provide guidance and recommendations for accommodation and other logistical aspects of your trip.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ongoing support: Our team is available to assist you before, during, and after your treatment in Turkey.</p>
+</li>
+</ul>
+<p dir="ltr">At AZPO Health, our philosophy is centered around ensuring a positive and beneficial experience for every patient. We understand the importance of trust, transparency, and quality care in medical tourism.</p>
+<h3 dir="ltr">Take the First Step Towards Renewed Vitality</h3>
+<p dir="ltr">Are you exploring options to address health concerns and enhance your well-being as a man? Stem cell therapy facilitated by AZPO Health in Turkey offers a promising and innovative approach. Contact us today for a free consultation and personalized quote. Discover how we can connect you with leading clinics and experienced medical professionals to explore the potential benefits of stem cell therapy for your specific needs. Your journey to a healthier and more vibrant future could begin right here.</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "stem-cell-for-men" ? stemmen : null,
       subNestedKey: "stem-cell-for-men",

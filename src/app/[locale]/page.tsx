@@ -222,7 +222,7 @@ const Home = async ({
           </div>
           {/* Watch Your Health Journey */}
           <div className="mb-10 s1280:mb-[60px] relative z-[2]">
-            <div className="flex-bet mb-2 s1280:mb-10">
+            <div className="flex-bet mb-5 s1280:mb-10">
               <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[29%] s1728:w-[30%] s1920:w-[32%]" />
               <h2 className="flex-cen gap-x-1 font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1600:text-[40px]">
                 <span className="w-[48px] h-[34px] s1280:w-[65px] s1280:h-[46px]">
@@ -234,12 +234,12 @@ const Home = async ({
             </div>
             <div className="flex-cen relative">
               <VideoPlayer
-                className="w-[300px] h-[170px] s1280:w-[916px] s1280:h-[501px] object-cover"
+                className="w-[300px] h-[170px] s1280:w-[890px] s1280:h-[501px] object-cover"
                 toolsbarStyle="h-[38px] s1280:h-[57px]"
                 src={
                   locale === "ru"
                     ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                    : "https://www.youtube.com/watch?v=VEqbI7eBgJY"
+                    : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
                 }
               />
             </div>
