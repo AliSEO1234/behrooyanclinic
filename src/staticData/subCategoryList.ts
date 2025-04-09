@@ -5875,25 +5875,25 @@ export const dataSubCategoryHandler = (
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Здоровье Зубов" : "Pain Freedom",
+            title: locale === "ru" ? "Здоровье Зубов" : "Pain Relief",
             desc:
               locale === "ru"
                 ? "Профессиональное лечение для долгосрочного стоматологического благополучия"
-                : "Alleviates severe tooth pain, enabling comfortable chewing and speaking",
+                : "Eliminates the pain caused by infection or inflammation in the tooth.",
           },
           {
             title: locale === "ru" ? "Без Боли" : "Tooth Preservation",
             desc:
               locale === "ru"
                 ? "Современные методы обезболивания для комфортного лечения"
-                : "Saves natural tooth structure and maintains normal tooth function",
+                : "Keeps your natural tooth and avoids replacement.",
           },
           {
-            title: locale === "ru" ? "Ваша Улыбка" : "Lasting Health",
+            title: locale === "ru" ? "Ваша Улыбка" : "Stops Infection",
             desc:
               locale === "ru"
                 ? "Восстановление естественной функции и красоты зубов"
-                : "Prevents bacterial spread and provides long-term oral health benefits",
+                : "Prevents the spread of infection, protecting overall oral health.",
           },
         ],
         categories: [
@@ -5922,77 +5922,47 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Not during the procedure – some discomfort after is common",
+          question : locale === "ru" ? "" : "Is it painful?",
+          answer : locale === "ru" ? "" : "Not during the procedure – some discomfort after is common"
         },
         {
-          question: locale === "ru" ? "" : "How long does it take?",
-          answer: locale === "ru" ? "" : "1–2 visits, depending on the case",
+          question : locale === "ru" ? "" : "How long does it take?",
+          answer : locale === "ru" ? "" : "1–2 visits, depending on the case"
         },
         {
-          question: locale === "ru" ? "" : "Is a crown always needed?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Usually yes, to protect the tooth long-term",
+          question : locale === "ru" ? "" : "Is a crown always needed?",
+          answer : locale === "ru" ? "" : "Usually yes, to protect the tooth long-term"
         },
         {
-          question: locale === "ru" ? "" : "Can the infection return?",
-          answer:
-            locale === "ru" ? "" : "Rarely, if treatment is done properly",
+          question : locale === "ru" ? "" : "Can the infection return?",
+          answer : locale === "ru" ? "" : "Rarely, if treatment is done properly"
         },
         {
-          question: locale === "ru" ? "" : "Will the tooth look different?",
-          answer:
-            locale === "ru" ? "" : "Not with a crown – appearance is preserved",
+          question : locale === "ru" ? "" : "Will the tooth look different?",
+          answer : locale === "ru" ? "" : "Not with a crown – appearance is preserved"
         },
         {
-          question:
-            locale === "ru" ? "" : "Does my tooth weaken after a root canal?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, the tooth may weaken, so a crown is often recommended.",
+          question : locale === "ru" ? "" : "Does my tooth weaken after a root canal?",
+          answer : locale === "ru" ? "" : "Yes, the tooth may weaken, so a crown is often recommended."
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "What if my tooth breaks after a root canal?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Contact your dentist right away. A crown or other treatment may be needed.",
-        },
+          question : locale === "ru" ? "" : "What if my tooth breaks after a root canal?",
+          answer : locale === "ru" ? "" : "Contact your dentist right away. A crown or other treatment may be needed."
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Expect soreness for 2–3 days – use pain relievers",
-        locale === "ru"
-          ? ""
-          : "Avoid chewing on treated tooth until permanent filling/crown",
-        locale === "ru" ? "" : "Keep area clean – brush and floss gently",
-        locale === "ru" ? "" : "Follow-up for crown placement is critical",
-        locale === "ru" ? "" : "Use prescribed medications as directed",
-        locale === "ru" ? "" : "Avoid smoking.",
-        locale === "ru"
-          ? ""
-          : "Pain and swelling should subside within a few days.",
-        locale === "ru" ? "" : "Avoid hot or cold foods.",
+        locale === "ru" ? "" : "Expect soreness for 2–3 days – use pain relievers",
+locale === "ru" ? "" : "Avoid chewing on treated tooth until permanent filling/crown",
+locale === "ru" ? "" : "Keep the area clean – brush and floss gently",
+locale === "ru" ? "" : "Use prescribed medications as directed",
+locale === "ru" ? "" : "Avoid smoking/drinking alcohol",
+locale === "ru" ? "" : "Pain and swelling should subside within a few days.",
+locale === "ru" ? "" : "Avoid hot or cold foods."
       ],
       preList: [
-        locale === "ru" ? "" : "Take antibiotics if prescribed ahead of time",
-        locale === "ru" ? "" : "Eat a light meal unless told otherwise",
-        locale === "ru" ? "" : "Inform your dentist of any medical conditions",
-        locale === "ru" ? "" : "Expect the area to be numb during procedure",
-        locale === "ru"
-          ? ""
-          : "Avoid hard, hot, or cold foods on the day of treatment.",
-        locale === "ru" ? "" : "Clean your teeth before the treatment.",
+        locale === "ru" ? "" : "Eat a light meal before your appointment",
+locale === "ru" ? "" : "Do not smoke or drink alcohol on the day of treatment",
+locale === "ru" ? "" : "Wear comfortable clothes"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -6174,25 +6144,25 @@ export const dataSubCategoryHandler = (
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Perfect Smile" : "Perfect Smile",
+            title: locale === "ru" ? "Perfect Smile" : "Natural Aesthetics",
             desc:
               locale === "ru"
                 ? "Mimics natural teeth with ideal color reflection and transparency for flawless aesthetics"
-                : "Mimics natural teeth with ideal color reflection and transparency for flawless aesthetics",
+                : "Enhance tooth color, shape, and alignment for a flawless smile.",
           },
           {
-            title: locale === "ru" ? "Lasting Beauty" : "Lasting Beauty",
+            title: locale === "ru" ? "Lasting Beauty" : "Durable & Long-Lasting",
             desc:
               locale === "ru"
                 ? "Highly durable ceramic material with stable coloring that maintains appearance over time"
-                : "Highly durable ceramic material with stable coloring that maintains appearance over time",
+                : "Strong materials that resist wear and discoloration",
           },
           {
-            title: locale === "ru" ? "Gentle Treatment" : "Gentle Treatment",
+            title: locale === "ru" ? "Gentle Treatment" : "Minimally Invasive",
             desc:
               locale === "ru"
                 ? "Minimally invasive procedure that preserves natural tooth structure"
-                : "Minimally invasive procedure that preserves natural tooth structure",
+                : "Preserves most of the natural tooth structure.",
           },
         ],
         categories: [
@@ -7048,15 +7018,15 @@ AZPO Health - ведущая компания медицинского тури�
       title:
         locale === "ru"
           ? "Save Your Natural Smile with Expert Root Canal Therapy in Turkey"
-          : "Save Your Natural Smile with Expert Root Canal Therapy in Turkey",
+          : "Teeth Whitening: Achieve a Brighter Smile with AZPO Health in Turkey",
       descriptionTop:
         locale === "ru"
           ? "Tired of tooth pain and worried about losing your natural smile? Discover how root canal therapy in Turkey can be your affordable and high-quality solution. AZPO Health offers comprehensive dental care packages in Istanbul, Antalya, and Alanya, combining expert treatment with a relaxing medical tourism experience."
-          : "Tired of tooth pain and worried about losing your natural smile? Discover how root canal therapy in Turkey can be your affordable and high-quality solution. AZPO Health offers comprehensive dental care packages in Istanbul, Antalya, and Alanya, combining expert treatment with a relaxing medical tourism experience.",
+          : "Tired of stained teeth dimming your smile? Discover dazzling teeth whitening in Turkey with AZPO Health! Get safe, effective treatments at affordable prices, revealing your confident, radiant smile in 2025",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Pain Freedom" : "Pain Freedom",
+            title: locale === "ru" ? "" : "Safe & Non-Invasive",
             desc:
               locale === "ru"
                 ? "Alleviates severe tooth pain, enabling comfortable chewing and speaking"
@@ -7064,23 +7034,23 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             title:
-              locale === "ru" ? "Tooth Preservation" : "Tooth Preservation",
+              locale === "ru" ? "" : "Effective Results",
             desc:
               locale === "ru"
                 ? "Saves natural tooth structure and maintains normal tooth function"
-                : "Saves natural tooth structure and maintains normal tooth function",
+                : "Quickly removes various stains for a noticeably brighter smile.",
           },
           {
-            title: locale === "ru" ? "Lasting Health" : "Lasting Health",
+            title: locale === "ru" ? "Lasting Health" : "Gentle on Sensitivity",
             desc:
               locale === "ru"
                 ? "Prevents bacterial spread and provides long-term oral health benefits"
-                : "Prevents bacterial spread and provides long-term oral health benefits",
+                : "Suitable for sensitive teeth with minimal discomfort.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Who It’s For" : "Who It’s For",
+            header: locale === "ru" ? "" : "Description",
             desc:
               locale === "ru"
                 ? `
@@ -7088,45 +7058,218 @@ AZPO Health - ведущая компания медицинского тури�
                     Have severe tooth decay or damage to the pulp.Experience symptoms such as intense pain when chewing, prolonged sensitivity to hot or cold, or swelling and tenderness in the gums.Have a cracked or chipped tooth that has affected the pulp.Need to save a tooth from extraction due to pulp infection or injury.
                   `
                 : `
-                    Root canal treatment is necessary for individuals who:
-                    Have severe tooth decay or damage to the pulp.Experience symptoms such as intense pain when chewing, prolonged sensitivity to hot or cold, or swelling and tenderness in the gums.Have a cracked or chipped tooth that has affected the pulp.Need to save a tooth from extraction due to pulp infection or injury.
+                   Teeth Whitening is a professional whitening procedure that uses a combination of high-intensity LED light and hydrogen peroxide gel to lighten teeth. This method is effective at removing stains and discoloration caused by factors like coffee, wine, smoking, and aging. 
                   `,
           },
           {
-            header: locale === "ru" ? "Важные аспекты" : "Considerations",
-            desc: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "Важные аспекты" : "How It Works",
+            desc: locale === "ru" ? "" : "The procedure starts with a dental check-up and thorough cleaning. After protecting the gums and lips, a hydrogen peroxide-based whitening gel is applied and activated with LED light. For Zoom WhiteSpeed, the gel may be applied up to three times. The session ends with a protective paste to strengthen and protect the enamel.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Как это работает" : "For Whom",
             desc:
               locale === "ru"
-                ? "Your dentist or endodontist will evaluate the condition of the tooth through x-rays and clinical tests. If the pulp is found to be infected or inflamed, root canal treatment is recommended."
-                : "Your dentist or endodontist will evaluate the condition of the tooth through x-rays and clinical tests. If the pulp is found to be infected or inflamed, root canal treatment is recommended.",
+                ? ""
+                : "Teeth Whitening is suitable for individuals who have stained or discolored teeth due to lifestyle factors such as smoking, drinking coffee or wine, or natural aging. It is an ideal solution for anyone looking to quickly improve the appearance of their smile. ",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question : locale === "ru" ? "" : "How long do results last?",
+          answer : locale === "ru" ? "" : "6 months to 2 years depending on diet and habits"
+        },
+        {
+          question : locale === "ru" ? "" : "Is it safe?",
+          answer : locale === "ru" ? "" : "Yes, when done professionally"
+        },
+        {
+          question : locale === "ru" ? "" : "Will it hurt?",
+          answer : locale === "ru" ? "" : "Some sensitivity may occur, usually short-term"
+        },
+        {
+          question : locale === "ru" ? "" : "Can I whiten crowns or veneers?",
+          answer : locale === "ru" ? "" : "No, only natural teeth respond to whitening"
+        },
+        {
+          question : locale === "ru" ? "" : "How white will my teeth get?",
+          answer : locale === "ru" ? "" : "Depends on your natural shade and type of stains"
+        },
+        {
+          question : locale === "ru" ? "" : "Can teeth whitening be done during pregnancy and breastfeeding?",
+          answer : locale === "ru" ? "" : "It’s not recommended; consult a dentist first."
+        },
+        {
+          question : locale === "ru" ? "" : "How often can teeth whitening be done?",
+          answer : locale === "ru" ? "" : "Generally, every 6 months."
+        },
+        {
+          question : locale === "ru" ? "" : "Who should avoid?",
+          answer : locale === "ru" ? "" : "Individuals under 18, those with active infections/cavities or those with sensitive enamal."
+        }
+      ],
+      posts: [
+        locale === "ru" ? "" : "Avoid staining foods/drinks (coffee, red wine, berries) for 48 hrs",
+locale === "ru" ? "" : "No smoking for 24–48 hours",
+locale === "ru" ? "" : "Use a straw for beverages to minimize contact",
+locale === "ru" ? "" : "Expect temporary sensitivity",
+locale === "ru" ? "" : "Use desensitizing products if needed",
+locale === "ru" ? "" : "Avoid excessively hot and cold foods.",
+locale === "ru" ? "" : "Stay away from acidic foods like lemon, orange, and vinegar.",
+locale === "ru" ? "" : "Don’t neglect oral care after teeth whitening."
+      ],
+      preList: [
+        locale === "ru" ? "" : "Brush and floss before treatment",
+locale === "ru" ? "" : "Avoid coffee, tea, and smoking before procedure",
+locale === "ru" ? "" : "Inform dentist of any tooth sensitivity",
+locale === "ru" ? "" : "Use desensitizing toothpaste beforehand if advised",
+locale === "ru" ? "" : "Treat gum issues or cavities first; whitening works best on healthy teeth."
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "Root canal treatment is a highly effective procedure for saving a damaged or infected tooth, alleviating pain, and restoring normal function. With modern techniques, root canal therapy is relatively painless and quick, with most patients returning to normal activities the same day. By removing infection and preserving the natural tooth, root canal treatment helps maintain long-term oral health and prevent further complications. With proper care, treated teeth can last a lifetime, providing a lasting solution to tooth damage and infection."
-            : "Root canal treatment is a highly effective procedure for saving a damaged or infected tooth, alleviating pain, and restoring normal function. With modern techniques, root canal therapy is relatively painless and quick, with most patients returning to normal activities the same day. By removing infection and preserving the natural tooth, root canal treatment helps maintain long-term oral health and prevent further complications. With proper care, treated teeth can last a lifetime, providing a lasting solution to tooth damage and infection.",
+            : "Teeth Whitening is an effective and safe way to achieve a brighter, more confident smile. With its ability to treat a wide range of stains and minimal discomfort, it is a popular choice for people seeking to enhance their dental aesthetics. While it offers long-lasting results, maintaining your whitened smile requires proper oral care and avoiding stain-causing habits. Overall, Teeth Whitening provides a quick, non-invasive, and reliable option for anyone looking to improve the color of their teeth.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
             ? "Endodontic Excellence: Pain-Free Root Canal Therapy in Alanya Awaits You"
-            : "Endodontic Excellence: Pain-Free Root Canal Therapy in Alanya Awaits You",
+            : "Why Choose Turkey for Teeth Whitening with AZPO Health?",
         content:
           locale === "ru"
             ? `
         <p><span style="color: rgb(27, 28, 29);">Are you experiencing persistent toothache, sensitivity to hot and cold, or swelling around your gums? These could be signs that you need root canal therapy. Many people feel anxious about this procedure, but at AZPO Health in Turkey, we transform this experience. We understand your concerns and are dedicated to providing pain-free, effective root canal treatment, restoring your dental health and confidence. Let us address your pain points and guide you towards a healthier, happier smile.</span></p><h3><strong style="color: rgb(27, 28, 29);">Why Choose Turkey and AZPO Health for Your Root Canal Therapy?</strong></h3><p><span style="color: rgb(27, 28, 29);">When considering dental treatment, especially something as crucial as root canal therapy, choosing the right location and provider is paramount. Turkey has emerged as a leading destination for medical tourism, and for good reason. AZPO Health, with its clinics in Istanbul, Antalya, and Alanya, stands at the forefront of this revolution, offering world-class dental care with significant advantages.</span></p><p><span style="color: rgb(27, 28, 29);">Unmatched Quality and Expertise:</span></p><p><span style="color: rgb(27, 28, 29);">Turkey boasts a highly skilled and internationally trained dental professional community. Dentists in Turkey are proficient in the latest techniques and technologies, ensuring you receive treatment that meets global standards. AZPO Health is committed to employing only the best, with our endodontists possessing years of experience and specialized training in root canal procedures. We utilize state-of-the-art equipment and adhere to stringent hygiene protocols, guaranteeing a safe and effective treatment experience. Our clinics are modern, comfortable, and designed to provide a calming environment for our patients. We understand that dental procedures can be daunting, and we strive to make your experience as relaxed and stress-free as possible.</span></p><p><span style="color: rgb(27, 28, 29);">Affordability Without Compromise:</span></p><p><span style="color: rgb(27, 28, 29);">One of the most compelling reasons to choose Turkey for root canal therapy is the cost. Compared to Europe, the UK, or North America, dental treatments in Turkey are significantly more affordable. This cost-effectiveness does not mean a compromise on quality. At AZPO Health, we believe that everyone deserves access to excellent dental care. By choosing us, you can receive top-tier root canal therapy at a fraction of the price you would pay in your home country. This allows you to save significantly on treatment costs while enjoying a holiday in a beautiful country.</span></p><p><span style="color: rgb(27, 28, 29);">The AZPO Health Comprehensive Package:</span></p><p><span style="color: rgb(27, 28, 29);">AZPO Health goes beyond just providing exceptional dental treatment. We offer comprehensive packages designed to make your medical tourism journey seamless and stress-free. Our packages typically include:</span></p><p>Expert Root Canal Therapy: Performed by highly qualified and experienced endodontists using the latest techniques and materials.</p><p>Accommodation: Comfortable and convenient accommodation options in Istanbul, Antalya, or Alanya, depending on your chosen clinic location.</p><p>Airport Transfers: Hassle-free transfers to and from the airport, ensuring smooth arrival and departure.</p><p>In-country Transportation: Assistance with transportation to and from your appointments, making your stay comfortable and convenient.</p><p>Personalized Treatment Plan: A tailored treatment plan designed to meet your specific needs and dental condition.</p><p>Dedicated Patient Coordinator: A personal coordinator to assist you throughout your journey, from initial consultation to post-treatment care.</p><p>Post-Treatment Care and Guidance: Comprehensive aftercare instructions and support to ensure optimal healing and long-term success of your root canal therapy.</p><p><span style="color: rgb(27, 28, 29);">Choosing AZPO Health means choosing a holistic approach to dental care, combining expert treatment with a supportive and comfortable experience in a beautiful setting.</span></p><h3><strong style="color: rgb(27, 28, 29);">Understanding Root Canal Therapy: Saving Your Natural Tooth</strong></h3><p><span style="color: rgb(27, 28, 29);">What is Root Canal Therapy?</span></p><p><span style="color: rgb(27, 28, 29);">Root canal therapy, also known as endodontic treatment, is a procedure designed to save a tooth that is badly decayed or infected. The "root canal" refers to the hollow channels within the root of the tooth that contain the pulp, which is made up of nerves, blood vessels, and connective tissue. When this pulp becomes infected or damaged, it can cause significant pain and, if left untreated, can lead to tooth loss.</span></p><p><span style="color: rgb(27, 28, 29);">Why is Root Canal Therapy Necessary?</span></p><p><span style="color: rgb(27, 28, 29);">The pulp inside your tooth can become damaged or infected due to several reasons:</span></p><p>Deep Decay: Untreated cavities can reach the pulp, allowing bacteria to infect it.</p><p>Cracked or Chipped Tooth: Damage to the tooth can expose the pulp to bacteria.</p><p>Repeated Dental Procedures: Multiple fillings or dental work on the same tooth can sometimes irritate the pulp.</p><p>Trauma to the Tooth: An injury to the tooth, even without visible cracks, can damage the pulp.</p><p><span style="color: rgb(27, 28, 29);">If the infected pulp is not removed, it can cause:</span></p><p>Severe Pain: Persistent and intense toothache.</p><p>Abscess: A painful infection at the root of the tooth.</p><p>Bone Loss: Infection can spread to the surrounding bone.</p><p>Tooth Loss: Ultimately, the tooth may need to be extracted.</p><p><span style="color: rgb(27, 28, 29);">Methods of Root Canal Therapy at AZPO Health:</span></p><p><span style="color: rgb(27, 28, 29);">At AZPO Health, we employ advanced techniques to ensure effective and comfortable root canal treatment. The primary steps involved in root canal therapy are:</span></p><p>Diagnosis and Anesthesia: The procedure begins with a thorough examination, including X-rays, to assess the extent of the damage. Local anesthesia is administered to numb the tooth and surrounding area, ensuring a pain-free experience.</p><p>Accessing the Root Canal: A small opening is created on the crown of the tooth to access the pulp chamber and root canals.</p><p>Cleaning and Shaping the Canal: Using specialized instruments, the infected or damaged pulp is carefully removed from the root canals. The canals are then cleaned, disinfected, and shaped to prepare them for filling. We utilize rotary endodontics and apex locators for enhanced precision and efficiency.</p><p>Filling the Canal: Once the canals are thoroughly cleaned and shaped, they are filled with a biocompatible material, usually gutta-percha, along with a sealer to prevent bacteria from re-entering.</p><p>Restoration: The final step involves restoring the tooth to its full function and appearance. This usually involves placing a dental crown over the treated tooth to provide strength and protection. In some cases, a filling may be sufficient.</p><p><span style="color: rgb(27, 28, 29);">Benefits of Root Canal Therapy:</span></p><p>Pain Relief: Root canal therapy eliminates the source of tooth pain, providing immediate and lasting relief.</p><p>Tooth Preservation: It saves your natural tooth, preventing the need for extraction and replacement. Maintaining your natural teeth is always the best option for oral health.</p><p>Prevents Spread of Infection: Removing the infected pulp prevents the infection from spreading to other teeth and the jawbone.</p><p>Improved Oral Health: By treating the infection and restoring the tooth, root canal therapy contributes to overall oral health and well-being.</p><p>Restored Functionality: A treated tooth can function normally after root canal therapy, allowing you to chew, bite, and speak comfortably.</p><p>Aesthetics: With a crown, the treated tooth will look natural and blend seamlessly with your smile.</p><p><span style="color: rgb(27, 28, 29);">Don't let tooth pain control your life. Root canal therapy at AZPO Health offers a reliable and effective solution to restore your dental health and confidence.</span></p><h3><strong style="color: rgb(27, 28, 29);">Real Patient Stories: Restoring Smiles and Lives</strong></h3><p><span style="color: rgb(27, 28, 29);">Sarah from the UK:</span></p><p><span style="color: rgb(27, 28, 29);">"For months, I had been suffering from excruciating tooth pain. My dentist in the UK told me I needed a root canal, but the cost was incredibly high. A friend recommended AZPO Health in Turkey, and I decided to look into it. From my first online consultation, I was impressed. They were professional, answered all my questions, and the price was a fraction of what I was quoted at home. The procedure itself was painless, and the clinic was spotless. I was amazed by the level of care and expertise. Now, I'm pain-free and enjoying my holiday in Alanya. Thank you, AZPO Health, for saving my tooth and my wallet!"</span></p><p><span style="color: rgb(27, 28, 29);">David from Germany:</span></p><p><span style="color: rgb(27, 28, 29);">"I was very nervous about getting a root canal. I had heard stories about it being painful and unpleasant. But from the moment I arrived at AZPO Health in Istanbul, my fears were put to rest. The dentist was so gentle and explained every step of the process. I honestly felt no pain at all! The staff were incredibly kind and helpful, and the whole experience was much better than I ever imagined. I highly recommend AZPO Health to anyone needing dental work. They are truly exceptional."</span></p><p><span style="color: rgb(27, 28, 29);">Maria from the USA:</span></p><p><span style="color: rgb(27, 28, 29);">"Traveling to Turkey for dental work was a big decision, but it was the best decision I could have made. The cost of root canal therapy in the US is outrageous. AZPO Health offered a fantastic package that included everything – treatment, accommodation, transfers. The clinic in Antalya was beautiful, and the dentists were top-notch. I am so happy with the results and the care I received. I feel like I have my smile back, and I can eat without pain again. Thank you, AZPO Health!"</span></p><h3><strong style="color: rgb(27, 28, 29);">AZPO Health: Your Trusted Partner in Dental Excellence</strong></h3><p><span style="color: rgb(27, 28, 29);">AZPO Health is a leading medical tourism company in Turkey, dedicated to providing exceptional healthcare services to international patients. With clinics in Istanbul, Antalya, and Alanya, we specialize in aesthetic and health treatments, including advanced dentistry.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health?</span></p><p>Experienced and Qualified Professionals: Our team comprises highly skilled and experienced dentists, endodontists, and support staff who are committed to providing the highest standard of care.</p><p>State-of-the-Art Facilities: We utilize modern clinics equipped with the latest dental technology, ensuring precise and effective treatments.</p><p>Patient-Centered Approach: We prioritize your comfort and well-being, providing personalized care and attention throughout your treatment journey.</p><p>Multilingual Staff: Our team speaks multiple languages, ensuring clear communication and understanding throughout your experience.</p><p>Comprehensive Support: From initial consultation to post-treatment follow-up, we provide complete support and guidance.</p><p>Prime Locations: Our clinics are located in beautiful and accessible cities in Turkey – Istanbul, Antalya, and Alanya – allowing you to combine your treatment with a memorable vacation.</p><p><span style="color: rgb(27, 28, 29);">At AZPO Health, we understand the importance of a healthy and beautiful smile. We are committed to providing you with the best possible root canal therapy experience, restoring your dental health and confidence.</span></p><p><span style="color: rgb(27, 28, 29);">Ready to Save Your Smile?</span></p><p><span style="color: rgb(27, 28, 29);">Don't let tooth pain hold you back any longer. Contact AZPO Health today for a free consultation and discover how affordable and effective root canal therapy in Turkey can be. Take the first step towards a pain-free, healthy smile and a brighter future.</span></p><p><span style="color: rgb(27, 28, 29);">Contact us now for your personalized quote!</span></p><p><br></p><p><br></p>
           `
-            : `<p><span style="color: rgb(27, 28, 29);">Are you experiencing persistent toothache, sensitivity to hot and cold, or swelling around your gums? These could be signs that you need root canal therapy. Many people feel anxious about this procedure, but at AZPO Health in Turkey, we transform this experience. We understand your concerns and are dedicated to providing pain-free, effective root canal treatment, restoring your dental health and confidence. Let us address your pain points and guide you towards a healthier, happier smile.</span></p><h3><strong style="color: rgb(27, 28, 29);">Why Choose Turkey and AZPO Health for Your Root Canal Therapy?</strong></h3><p><span style="color: rgb(27, 28, 29);">When considering dental treatment, especially something as crucial as root canal therapy, choosing the right location and provider is paramount. Turkey has emerged as a leading destination for medical tourism, and for good reason. AZPO Health, with its clinics in Istanbul, Antalya, and Alanya, stands at the forefront of this revolution, offering world-class dental care with significant advantages.</span></p><p><span style="color: rgb(27, 28, 29);">Unmatched Quality and Expertise:</span></p><p><span style="color: rgb(27, 28, 29);">Turkey boasts a highly skilled and internationally trained dental professional community. Dentists in Turkey are proficient in the latest techniques and technologies, ensuring you receive treatment that meets global standards. AZPO Health is committed to employing only the best, with our endodontists possessing years of experience and specialized training in root canal procedures. We utilize state-of-the-art equipment and adhere to stringent hygiene protocols, guaranteeing a safe and effective treatment experience. Our clinics are modern, comfortable, and designed to provide a calming environment for our patients. We understand that dental procedures can be daunting, and we strive to make your experience as relaxed and stress-free as possible.</span></p><p><span style="color: rgb(27, 28, 29);">Affordability Without Compromise:</span></p><p><span style="color: rgb(27, 28, 29);">One of the most compelling reasons to choose Turkey for root canal therapy is the cost. Compared to Europe, the UK, or North America, dental treatments in Turkey are significantly more affordable. This cost-effectiveness does not mean a compromise on quality. At AZPO Health, we believe that everyone deserves access to excellent dental care. By choosing us, you can receive top-tier root canal therapy at a fraction of the price you would pay in your home country. This allows you to save significantly on treatment costs while enjoying a holiday in a beautiful country.</span></p><p><span style="color: rgb(27, 28, 29);">The AZPO Health Comprehensive Package:</span></p><p><span style="color: rgb(27, 28, 29);">AZPO Health goes beyond just providing exceptional dental treatment. We offer comprehensive packages designed to make your medical tourism journey seamless and stress-free. Our packages typically include:</span></p><p>Expert Root Canal Therapy: Performed by highly qualified and experienced endodontists using the latest techniques and materials.</p><p>Accommodation: Comfortable and convenient accommodation options in Istanbul, Antalya, or Alanya, depending on your chosen clinic location.</p><p>Airport Transfers: Hassle-free transfers to and from the airport, ensuring smooth arrival and departure.</p><p>In-country Transportation: Assistance with transportation to and from your appointments, making your stay comfortable and convenient.</p><p>Personalized Treatment Plan: A tailored treatment plan designed to meet your specific needs and dental condition.</p><p>Dedicated Patient Coordinator: A personal coordinator to assist you throughout your journey, from initial consultation to post-treatment care.</p><p>Post-Treatment Care and Guidance: Comprehensive aftercare instructions and support to ensure optimal healing and long-term success of your root canal therapy.</p><p><span style="color: rgb(27, 28, 29);">Choosing AZPO Health means choosing a holistic approach to dental care, combining expert treatment with a supportive and comfortable experience in a beautiful setting.</span></p><h3><strong style="color: rgb(27, 28, 29);">Understanding Root Canal Therapy: Saving Your Natural Tooth</strong></h3><p><span style="color: rgb(27, 28, 29);">What is Root Canal Therapy?</span></p><p><span style="color: rgb(27, 28, 29);">Root canal therapy, also known as endodontic treatment, is a procedure designed to save a tooth that is badly decayed or infected. The "root canal" refers to the hollow channels within the root of the tooth that contain the pulp, which is made up of nerves, blood vessels, and connective tissue. When this pulp becomes infected or damaged, it can cause significant pain and, if left untreated, can lead to tooth loss.</span></p><p><span style="color: rgb(27, 28, 29);">Why is Root Canal Therapy Necessary?</span></p><p><span style="color: rgb(27, 28, 29);">The pulp inside your tooth can become damaged or infected due to several reasons:</span></p><p>Deep Decay: Untreated cavities can reach the pulp, allowing bacteria to infect it.</p><p>Cracked or Chipped Tooth: Damage to the tooth can expose the pulp to bacteria.</p><p>Repeated Dental Procedures: Multiple fillings or dental work on the same tooth can sometimes irritate the pulp.</p><p>Trauma to the Tooth: An injury to the tooth, even without visible cracks, can damage the pulp.</p><p><span style="color: rgb(27, 28, 29);">If the infected pulp is not removed, it can cause:</span></p><p>Severe Pain: Persistent and intense toothache.</p><p>Abscess: A painful infection at the root of the tooth.</p><p>Bone Loss: Infection can spread to the surrounding bone.</p><p>Tooth Loss: Ultimately, the tooth may need to be extracted.</p><p><span style="color: rgb(27, 28, 29);">Methods of Root Canal Therapy at AZPO Health:</span></p><p><span style="color: rgb(27, 28, 29);">At AZPO Health, we employ advanced techniques to ensure effective and comfortable root canal treatment. The primary steps involved in root canal therapy are:</span></p><p>Diagnosis and Anesthesia: The procedure begins with a thorough examination, including X-rays, to assess the extent of the damage. Local anesthesia is administered to numb the tooth and surrounding area, ensuring a pain-free experience.</p><p>Accessing the Root Canal: A small opening is created on the crown of the tooth to access the pulp chamber and root canals.</p><p>Cleaning and Shaping the Canal: Using specialized instruments, the infected or damaged pulp is carefully removed from the root canals. The canals are then cleaned, disinfected, and shaped to prepare them for filling. We utilize rotary endodontics and apex locators for enhanced precision and efficiency.</p><p>Filling the Canal: Once the canals are thoroughly cleaned and shaped, they are filled with a biocompatible material, usually gutta-percha, along with a sealer to prevent bacteria from re-entering.</p><p>Restoration: The final step involves restoring the tooth to its full function and appearance. This usually involves placing a dental crown over the treated tooth to provide strength and protection. In some cases, a filling may be sufficient.</p><p><span style="color: rgb(27, 28, 29);">Benefits of Root Canal Therapy:</span></p><p>Pain Relief: Root canal therapy eliminates the source of tooth pain, providing immediate and lasting relief.</p><p>Tooth Preservation: It saves your natural tooth, preventing the need for extraction and replacement. Maintaining your natural teeth is always the best option for oral health.</p><p>Prevents Spread of Infection: Removing the infected pulp prevents the infection from spreading to other teeth and the jawbone.</p><p>Improved Oral Health: By treating the infection and restoring the tooth, root canal therapy contributes to overall oral health and well-being.</p><p>Restored Functionality: A treated tooth can function normally after root canal therapy, allowing you to chew, bite, and speak comfortably.</p><p>Aesthetics: With a crown, the treated tooth will look natural and blend seamlessly with your smile.</p><p><span style="color: rgb(27, 28, 29);">Don't let tooth pain control your life. Root canal therapy at AZPO Health offers a reliable and effective solution to restore your dental health and confidence.</span></p><h3><strong style="color: rgb(27, 28, 29);">Real Patient Stories: Restoring Smiles and Lives</strong></h3><p><span style="color: rgb(27, 28, 29);">Sarah from the UK:</span></p><p><span style="color: rgb(27, 28, 29);">"For months, I had been suffering from excruciating tooth pain. My dentist in the UK told me I needed a root canal, but the cost was incredibly high. A friend recommended AZPO Health in Turkey, and I decided to look into it. From my first online consultation, I was impressed. They were professional, answered all my questions, and the price was a fraction of what I was quoted at home. The procedure itself was painless, and the clinic was spotless. I was amazed by the level of care and expertise. Now, I'm pain-free and enjoying my holiday in Alanya. Thank you, AZPO Health, for saving my tooth and my wallet!"</span></p><p><span style="color: rgb(27, 28, 29);">David from Germany:</span></p><p><span style="color: rgb(27, 28, 29);">"I was very nervous about getting a root canal. I had heard stories about it being painful and unpleasant. But from the moment I arrived at AZPO Health in Istanbul, my fears were put to rest. The dentist was so gentle and explained every step of the process. I honestly felt no pain at all! The staff were incredibly kind and helpful, and the whole experience was much better than I ever imagined. I highly recommend AZPO Health to anyone needing dental work. They are truly exceptional."</span></p><p><span style="color: rgb(27, 28, 29);">Maria from the USA:</span></p><p><span style="color: rgb(27, 28, 29);">"Traveling to Turkey for dental work was a big decision, but it was the best decision I could have made. The cost of root canal therapy in the US is outrageous. AZPO Health offered a fantastic package that included everything – treatment, accommodation, transfers. The clinic in Antalya was beautiful, and the dentists were top-notch. I am so happy with the results and the care I received. I feel like I have my smile back, and I can eat without pain again. Thank you, AZPO Health!"</span></p><h3><strong style="color: rgb(27, 28, 29);">AZPO Health: Your Trusted Partner in Dental Excellence</strong></h3><p><span style="color: rgb(27, 28, 29);">AZPO Health is a leading medical tourism company in Turkey, dedicated to providing exceptional healthcare services to international patients. With clinics in Istanbul, Antalya, and Alanya, we specialize in aesthetic and health treatments, including advanced dentistry.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health?</span></p><p>Experienced and Qualified Professionals: Our team comprises highly skilled and experienced dentists, endodontists, and support staff who are committed to providing the highest standard of care.</p><p>State-of-the-Art Facilities: We utilize modern clinics equipped with the latest dental technology, ensuring precise and effective treatments.</p><p>Patient-Centered Approach: We prioritize your comfort and well-being, providing personalized care and attention throughout your treatment journey.</p><p>Multilingual Staff: Our team speaks multiple languages, ensuring clear communication and understanding throughout your experience.</p><p>Comprehensive Support: From initial consultation to post-treatment follow-up, we provide complete support and guidance.</p><p>Prime Locations: Our clinics are located in beautiful and accessible cities in Turkey – Istanbul, Antalya, and Alanya – allowing you to combine your treatment with a memorable vacation.</p><p><span style="color: rgb(27, 28, 29);">At AZPO Health, we understand the importance of a healthy and beautiful smile. We are committed to providing you with the best possible root canal therapy experience, restoring your dental health and confidence.</span></p><p><span style="color: rgb(27, 28, 29);">Ready to Save Your Smile?</span></p><p><span style="color: rgb(27, 28, 29);">Don't let tooth pain hold you back any longer. Contact AZPO Health today for a free consultation and discover how affordable and effective root canal therapy in Turkey can be. Take the first step towards a pain-free, healthy smile and a brighter future.</span></p><p><span style="color: rgb(27, 28, 29);">Contact us now for your personalized quote!</span></p><p><br></p><p><br></p>`,
+            : `<p dir="ltr">Turkey has become a popular destination for individuals seeking high-quality and affordable dental treatments, and teeth whitening is no exception. AZPO Health, with its locations in Istanbul, Antalya, and Alanya, offers a comprehensive package that combines exceptional dental care with a unique travel experience.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: One of the primary reasons people choose Turkey for dental treatments is the cost savings. Teeth whitening in Turkey is significantly more affordable compared to Europe, the UK, and the US. You can achieve a brighter smile without breaking the bank.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Quality: AZPO Health is committed to providing top-notch dental services, ensuring that you receive the best possible care. The clinics collaborate with skilled dentists and use high-quality materials and advanced technologies.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health offers all-inclusive packages that cover your treatment, accommodation, airport transfers, and other travel-related services. This makes the entire process stress-free and convenient.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Professionals: The dentists in AZPO Health are highly trained and experienced in performing teeth whitening procedures. They stay updated with the latest techniques and advancements in cosmetic dentistry.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Tourism Opportunity: Combining your teeth whitening treatment with a vacation in Turkey allows you to explore the country's rich history, culture, and natural beauty. Istanbul, Antalya, and Alanya offer a variety of attractions and activities to enjoy during your stay.</p>
+</li>
+</ul>
+<p dir="ltr">Understanding Teeth Whitening</p>
+<p dir="ltr">Teeth whitening is a cosmetic dental procedure that lightens the color of your teeth, removing stains and discoloration. It is a popular option for individuals who want to improve their smile's appearance.</p>
+<p dir="ltr">Methods of Teeth Whitening Offered by AZPO Health</p>
+<p dir="ltr">AZPO Health offers various teeth whitening methods to cater to different needs and preferences. The dentist will assess your oral health and recommend the most suitable option for you.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">In-Office Whitening: This procedure is performed at the dental clinic and provides immediate results. The dentist applies a high-concentration whitening gel to your teeth and may use a special light or laser to activate the gel. In-office whitening is a quick and effective way to achieve a dramatically brighter smile.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">At-Home Whitening Kits: AZPO Health also offers customized at-home whitening kits. The dentist will take impressions of your teeth to create custom-fitted trays. You will then apply the whitening gel to the trays and wear them for a specified period each day. At-home whitening kits offer a convenient way to gradually brighten your teeth under the guidance of your dentist.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Laser Teeth Whitening: This advanced method uses laser technology to enhance the effects of the whitening gel. Laser teeth whitening can provide quicker and more dramatic results compared to other methods.</p>
+</li>
+</ul>
+<p dir="ltr">Benefits of Each Method</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">In-Office Whitening:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Provides immediate and noticeable results.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Performed by a dental professional, ensuring safety and effectiveness.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Ideal for individuals who want a quick solution for a special occasion.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">At-Home Whitening Kits:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Convenient and can be done in the comfort of your own home.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">More gradual results, allowing you to control the level of whitening.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Cost-effective compared to in-office whitening.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Laser Teeth Whitening:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Offers quicker and more dramatic results.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Effective in removing stubborn stains and discoloration.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Provides long-lasting results.</p>
+</li>
+</ul>
+</ul>
+<p dir="ltr">What to Expect During the Teeth Whitening Process at AZPO Health</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Initial Consultation: A dentist will evaluate your oral health and discuss your teeth whitening goals. They will examine your teeth and gums, and determine the most suitable whitening method for you.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Professional Cleaning: Your teeth will be thoroughly cleaned to remove plaque, tartar, and surface stains. This will ensure that the whitening gel can effectively penetrate your teeth.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Whitening Treatment: The dentist will perform the selected whitening procedure. They will take precautions to protect your gums and soft tissues from irritation.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Post-Treatment Care: The dentist will provide you with instructions on how to care for your teeth after the whitening treatment. This may include avoiding certain foods and beverages that can stain your teeth, and using a sensitive toothpaste if you experience any tooth sensitivity.</p>
+</li>
+</ol>
+<p dir="ltr">Dummy Customer Testimonials</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Sarah from the UK: "I've always been self-conscious about my stained teeth. AZPO Health made the entire process so easy and comfortable. Now I can't stop smiling!"</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">David from the USA: "The teeth whitening treatment I received at AZPO Health was fantastic. The dentist was professional and the results exceeded my expectations. Plus, I got to explore Istanbul!"</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Emily from Canada: "I was hesitant about traveling to Turkey for dental work, but AZPO Health's all-inclusive package made it a breeze. The treatment was excellent and the price was unbeatable."</p>
+</li>
+</ul>
+<p dir="ltr">About AZPO Health</p>
+<p dir="ltr">AZPO Health is a leading medical tourism company in Turkey, with locations in Istanbul, Antalya, and Alanya. We specialize in providing high-quality and affordable dental treatments to international patients. Our team is dedicated to ensuring your comfort, safety, and satisfaction throughout your entire journey.</p>
+<p dir="ltr">AZPO Health is committed to:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Quality: We partner with reputable dental clinics that adhere to international standards of hygiene and safety.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Expertise: Our dentists are highly skilled and experienced in performing a wide range of dental procedures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Care: We tailor our treatments to meet your specific needs and goals.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: We offer competitive prices and transparent pricing policies.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Support: We provide assistance with travel arrangements, accommodation, and other logistics to ensure a seamless experience.</p>
+</li>
+</ul>
+<p dir="ltr">Don't let stained teeth hold you back from achieving your dream smile. Contact AZPO Health today for a free consultation and personalized quote.</p>
+<p>&nbsp;</p>`,
       },
       imgCover: subNestedKey === "teeth-whitening" ? teethwhiting : null,
       subNestedKey: "teeth-whitening",
