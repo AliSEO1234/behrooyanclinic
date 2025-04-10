@@ -37,7 +37,6 @@ const PatientServices = async ({ params }: PatientServicesType) => {
         <div className="flex-cen relative mb-20 s1280:mb-32 w-full">
           <VideoPlayer
             className="w-full s1280:w-[916px] s1280:h-[501px]"
-            toolsbarStyle="h-[38px] s1280:h-[57px]"
             src={
               locale === "ru"
                 ? "https://azpo.com/api/files/property-videos/site_health.mp4"

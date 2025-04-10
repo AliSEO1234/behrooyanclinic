@@ -3,6 +3,7 @@ import ImgFetcher from "@/components/imgFetcher";
 import { VideoPlayerType } from "@/types/videoPlayer/videoTypes";
 import healthlogo from "@/assets/images/healthlogo.png";
 import { SyntheticEvent, useState } from "react";
+import { getYouTubeVideoId } from "@/components/scripts/operations/getYoutubeId";
 const VideoPlayer = ({
   src,
   className,
@@ -10,16 +11,11 @@ const VideoPlayer = ({
   positionVideo,
 }: VideoPlayerType) => {
   // const [isLoading, setIsLoading] = useState(false);
-  const getYouTubeVideoId = (url: string): string | null => {
-    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
-    const match = url.match(regExp);
-    return match && match[2].length === 11 ? match[2] : null;
-  };
   const [errorYoutube , setErrorYoutube] = useState<boolean>(false)
   const [videoSrc, setVideoSrc] = useState(src);
   const handleError = (e: SyntheticEvent<HTMLIFrameElement, Event>) => {
     const target = e.target as HTMLIFrameElement;
-    console.log("davari");
+    console.log("davari" , videoSrc);
     
     if (target) {
       if (target.src.includes("youtube.com") || target.src.includes("youtu.be")) {

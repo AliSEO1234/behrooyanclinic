@@ -48,6 +48,7 @@ import CircleAnimate from "@/components/circleAnimate";
 import LeadForm from "@/components/leadForm";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
+import DialogPatientSpeakVideo from "@/components/dialogPatientSpeakVideo";
 
 const Home = async ({
   params,
@@ -235,7 +236,6 @@ const Home = async ({
             <div className="flex-cen relative">
               <VideoPlayer
                 className="w-[300px] h-[170px] s1280:w-[890px] s1280:h-[501px] object-cover"
-                toolsbarStyle="h-[38px] s1280:h-[57px]"
                 src={
                   locale === "ru"
                     ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
@@ -569,6 +569,7 @@ const Home = async ({
                 </div>
               </div>
               <div className="flex items-center justify-start flex-nowrap overflow-x-scroll scroll-hide s1280:overflow-x-hidden s1280:flex-row gap-x-3 s1512:gap-x-8 s1920:gap-x-10">
+                <DialogPatientSpeakVideo />
                 {patientContents.map(
                   ({ desc, header, service, serviceIcon, video }, index) => {
                     return (

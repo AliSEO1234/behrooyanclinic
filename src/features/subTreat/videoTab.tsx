@@ -9,7 +9,6 @@ const VideoTab = ({ videoSrc }: VideoTabType) => {
           showLogo
           positionVideo={"subnested"}
           src={videoSrc}
-          toolsbarStyle="h-[38px] s1280:h-[60px] border-[1px] border-white"
           className="w-full min-w-full h-[203px] s1280:w-[731px] s1280:min-w-[731px] s1280:h-[414px] s1512:w-[798px] s1512:min-w-[798px] s1512:h-[450px] s1600:w-[836px] s1600:min-w-[798px] s1600:h-[470px] s1728:w-[885px] s1728:min-w-[885px] s1728:h-[500px] s1920:w-[966px] s1920:h-[550px] s1920:min-w-[966px]"
         />
       </div>

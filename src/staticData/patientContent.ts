@@ -17,7 +17,7 @@ export const patientContents: {
     serviceIcon: dist1icon,
     header: "Timur's",
     desc: "Hair Transplant Journey",
-    video: "https://azpo.com/api/files/property-videos/otziv_1_eng.mp4",
+    video: "https://www.youtube.com/shorts/CUzIi1Yyikg",
   },
   {
     service: "Aesthetics",
@@ -25,7 +25,7 @@ export const patientContents: {
     serviceIcon: dist1icon,
     header: "Alexander's",
     desc: "Hair Transplant Journey",
-    video: "https://azpo.com/api/files/property-videos/otziv_2_eng.mp4",
+    video: "https://www.youtube.com/shorts/gvc__8i32cI",
   },
   {
     service: "Aesthetics",
@@ -33,7 +33,7 @@ export const patientContents: {
     serviceIcon: dist1icon,
     header: "Vadim's",
     desc: "Hair Transplant Journey",
-    video: "https://azpo.com/api/files/property-videos/otziv_3_en.mp4",
+    video: "https://www.youtube.com/shorts/9Tb9jafBfAI",
   },
   {
     service: "Aesthetics",
@@ -41,6 +41,6 @@ export const patientContents: {
     serviceIcon: dist1icon,
     header: "Ludmila's",
     desc: "Hip Replacement Surgery",
-    video: "https://azpohealth.com/api/files/content-videos/feedback_1.mp4",
+    video: "https://www.youtube.com/shorts/V9S1j1aldmM",
   },
 ];

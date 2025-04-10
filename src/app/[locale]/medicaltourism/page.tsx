@@ -83,7 +83,6 @@ const Treatments = async ({
         </div>
         <div className="flex-cen">
           <VideoPlayer
-            toolsbarStyle="h-[38px] s1280:h-[60px]"
             src={
               locale === "ru"
                 ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"

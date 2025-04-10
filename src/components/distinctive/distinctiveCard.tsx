@@ -3,7 +3,10 @@ import { DistinctiveType } from "@/types/distinctive/distinctiveType";
 import ImgFetcher from "../imgFetcher";
 import { useEffect, useRef, useState } from "react";
 import { FaPlay } from "react-icons/fa6";
-
+import { useAppContext } from "@/contexts/app-context/app-context";
+import { VideoType } from "@/types/videoPlayer/videoTypes";
+import axios from "axios";
+import cover from "@/assets/images/covervideo.png";
 const DistinctiveCard = ({
   desc,
   service,
@@ -12,48 +15,14 @@ const DistinctiveCard = ({
   className,
   icon,
 }: DistinctiveType) => {
+  const { setPatientSrcActive, setYoutubeShow } = useAppContext();
   const videoEl = useRef<HTMLVideoElement | null>(null);
-  const [poster, setPoster] = useState<string | null>(null);
+  const lastPart = video.substring(video.lastIndexOf("/") + 1);
+  console.log(lastPart);
   const handlePlay = () => {
-    if (videoEl.current) {
-      if (!document.fullscreenElement) {
-        videoEl.current
-          .requestFullscreen()
-          .then(() => {
-            videoEl.current?.classList.remove("object-cover");
-            videoEl.current!.play();
-          })
-          .catch((err) =>
-            console.error("Error attempting to enable full-screen mode:", err)
-          );
-      }
-    }
+    setPatientSrcActive(video);
+    setYoutubeShow(true);
   };
-  useEffect(() => {
-    const capturePoster = () => {
-      if (videoEl.current) {
-        const video = videoEl.current;
-        video.currentTime = 10;
-        video.addEventListener(
-          "seeked",
-          () => {
-            const canvas = document.createElement("canvas");
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            const ctx = canvas.getContext("2d");
-
-            if (ctx) {
-              ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-              setPoster(canvas.toDataURL("image/jpeg"));
-            }
-          },
-          { once: true }
-        );
-      }
-    };
-
-    capturePoster();
-  }, [video]);
 
   useEffect(() => {
     const handleFullscreenChange = () => {
@@ -67,6 +36,29 @@ const DistinctiveCard = ({
     return () =>
       document.removeEventListener("fullscreenchange", handleFullscreenChange);
   }, []);
+  const [videoInfo, setVideoInfo] = useState<VideoType>();
+  useEffect(() => {
+    const getVideoInfo = async () => {
+      try {
+        const youtubeInfo = await axios.get(
+          `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&id=${lastPart}&key=AIzaSyAiTg9KWrTYK7ppDEppPgc8zGehdd-cvIM`,
+          {
+            timeout: 10000,
+          }
+        );
+        if (youtubeInfo.status === 200) {
+          setVideoInfo(youtubeInfo.data);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getVideoInfo();
+  }, []);
+  useEffect(()=>{
+    console.log("Youtube info" , videoInfo);
+    
+  },[videoInfo])
   return (
     <div
       className={`${
@@ -74,15 +66,14 @@ const DistinctiveCard = ({
       } w-[221px] h-[222px] min-w-[221px] s1512:w-[250px] s1512:min-w-[250px] s1728:min-w-[295px] s1512:h-[250px] s1728:w-[295px] s1728:h-[295px] rounded-[20px] s1280:rounded-[40px] overflow-hidden relative`}
     >
       <div className="w-full h-full absolute top-0 left-0">
-        <video
-          crossOrigin="anonymous"
-          poster={poster || undefined}
-          ref={videoEl}
-          src={video}
-          preload="auto"
-          playsInline
-          className="w-full h-full object-cover"
-        ></video>
+        <ImgFetcher
+          className="object-cover"
+          src={
+            videoInfo ? videoInfo.items[0].snippet.thumbnails.medium.url : cover
+          }
+          width={900}
+          height={900}
+        />
         {/* <ImgFetcher src={videoSrc} width={2000} /> */}
       </div>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#FFFFFF00] to-[#20a1a3c3]">

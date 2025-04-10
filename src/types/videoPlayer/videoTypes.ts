@@ -3,7 +3,6 @@ import { StaticImageData } from "next/image";
 export type VideoPlayerType = {
   className?: string;
   src: string | undefined;
-  toolsbarStyle: string;
   showLogo? : boolean
   positionVideo? : "subnested"
 };
@@ -18,4 +17,19 @@ export type VideoDataType = {
 
 export type videoChangeType = {
   videoList: VideoDataType[];
+};
+export type VideoType = {
+  items: {
+    contentDetails: {
+      duration: string;
+    };
+    snippet: {
+      title: string;
+      thumbnails: {
+        medium: {
+          url: string;
+        };
+      };
+    };
+  }[];
 };

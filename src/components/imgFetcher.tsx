@@ -10,14 +10,13 @@ const ImgFetcher = ({
   className,
   dynamic = false,
 }: ImgFetcherType) => {
-  const link = dynamic ? src : src;
   return (
     <Image
       className={`w-full h-full min-w-full min-h-full max-w-full max-h-full ${
         className ? className : ""
       }`}
       loading={dynamic ? "lazy" : undefined}
-      src={link}
+      src={src}
       alt={title || ""}
       width={width ? width : 200}
       height={height ? height : 200}

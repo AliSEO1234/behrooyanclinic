@@ -31,6 +31,10 @@ type AppContextType = {
   imgsAbout: ImgType[];
   hamburgerMenu: boolean;
   setHamburgerMenu: Dispatch<SetStateAction<boolean>>;
+  patientSrcActive: string | null;
+  setPatientSrcActive: Dispatch<SetStateAction<string | null>>;
+  youtubeShow: boolean;
+  setYoutubeShow: Dispatch<SetStateAction<boolean>>;
 };
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -47,6 +51,8 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
   const [aboutGalleryIndex, setAboutGalleryIndex] = useState<string>("");
   const [imgsAbout, setImgsAbout] = useState<ImgType[]>([]);
   const [hamburgerMenu, setHamburgerMenu] = useState<boolean>(false);
+  const [patientSrcActive, setPatientSrcActive] = useState<string | null>(null);
+  const [youtubeShow, setYoutubeShow] = useState<boolean>(false);
   useEffect(() => {
     setTimeout(() => {
       setPopUpForm(true);
@@ -59,6 +65,9 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
   return (
     <AppContext.Provider
       value={{
+        youtubeShow, setYoutubeShow,
+        patientSrcActive,
+        setPatientSrcActive,
         hamburgerMenu,
         setHamburgerMenu,
         aboutGallery,
