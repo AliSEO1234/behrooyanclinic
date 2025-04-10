@@ -353,7 +353,7 @@ export const subCategoryHandler = (
       subCategoryKey: "hair-transplantation",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      videoPage: "https://azpo.com/api/files/property-videos/hair_category.mp4",
+      videoPage: "https://youtu.be/nFgBhpJvHQ8?si=XAn5N6gkJAzfUuxV",
       imgCover: tdAes,
     },
     {

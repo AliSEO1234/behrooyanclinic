@@ -86,8 +86,8 @@ const Treatments = async ({
             toolsbarStyle="h-[38px] s1280:h-[60px]"
             src={
               locale === "ru"
-                ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
+                ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
+                : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
             }
             className="w-[300px] h-[170px] s1280:w-[916px] s1280:h-[501px] object-cover"
           />

@@ -145,12 +145,12 @@ const Page = async ({ params }: PropsPageType) => {
           <VideoTab
             videoSrc={
               treat === "hair-transplantation"
-                ? "https://azpo.com/api/files/property-videos/hair_category.mp4"
+                ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
                 : fetchData?.video
-                ? "https://azpo.com/api/files/property-videos/dental_dr_ecenaz_eng.mp4"
+                ? "https://youtu.be/MI2Ed8Y_hnU?si=4IzIP-nXWpgQLjgf"
                 : locale === "ru"
-                ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
+                ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
+                : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
             }
           />
         </section>

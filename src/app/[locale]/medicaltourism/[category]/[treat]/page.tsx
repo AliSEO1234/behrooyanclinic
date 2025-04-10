@@ -90,8 +90,8 @@ const Page = async ({ params }: PropsPageType) => {
                   fetchData?.videoPage
                     ? fetchData.videoPage
                     : locale === "ru"
-                    ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                    : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
+                    ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
+                    : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
                 }
               />
             </div>

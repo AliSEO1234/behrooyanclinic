@@ -2,165 +2,41 @@
 import ImgFetcher from "@/components/imgFetcher";
 import { VideoPlayerType } from "@/types/videoPlayer/videoTypes";
 import healthlogo from "@/assets/images/healthlogo.png";
-import { ChangeEvent, useEffect, useRef, useState } from "react";
-import videoCover from "@/assets/images/videoCover.png";
-import { FaPause, FaPlay } from "react-icons/fa";
-import { AiOutlineFullscreen } from "react-icons/ai";
-import { PiSpeakerHighFill } from "react-icons/pi";
-import SpinnerLoading from "@/components/spinnerLoading";
+import { SyntheticEvent, useState } from "react";
 const VideoPlayer = ({
   src,
   className,
   showLogo = true,
-  toolsbarStyle,
   positionVideo,
 }: VideoPlayerType) => {
-  const [togglePlay, setTogglePlay] = useState<boolean>(false);
-  const videoEl = useRef<HTMLVideoElement | null>(null);
-  const [hasPlayed, setHasPlayed] = useState<boolean>(false);
-  const [currentTime, setCurrentTime] = useState<number>(0);
-  const [duration, setDuration] = useState<number>(0);
-  const [videoMuted, setVideoMuted] = useState<boolean>(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const handlePlayPause = () => {
-    if (!videoEl.current) return;
-    const video = videoEl.current;
-
-    if (video.paused) {
-      setIsLoading(true);
-      video.muted = true;
-      const playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            setHasPlayed(true);
-            setIsLoading(false);
-            setTimeout(() => {
-              video.muted = videoMuted;
-            }, 100);
-          })
-          .catch((err) => {
-            console.error("Error in play video", err);
-            setIsLoading(false);
-          });
-      }
-    } else {
-      video.pause();
-    }
+  // const [isLoading, setIsLoading] = useState(false);
+  const getYouTubeVideoId = (url: string): string | null => {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    return match && match[2].length === 11 ? match[2] : null;
   };
-
-  useEffect(() => {
-    const video = videoEl.current;
-    if (!video) return;
-    const handlePlay = () => setTogglePlay(true);
-    const handlePause = () => setTogglePlay(false);
-    video.addEventListener("play", handlePlay);
-    video.addEventListener("pause", handlePause);
-    return () => {
-      video.removeEventListener("play", handlePlay);
-      video.removeEventListener("pause", handlePause);
-    };
-  }, []);
-
-  const handleFullScreen = () => {
-    if (videoEl.current) {
-      const video = videoEl.current as HTMLVideoElement & {
-        webkitEnterFullscreen?: () => void;
-        webkitDisplayingFullscreen?: boolean;
-      };
-
-      if (document.fullscreenElement || video.webkitDisplayingFullscreen) {
-        setHasPlayed(true);
-        if (!video.paused) {
-          video.pause();
-          setTogglePlay(false);
-        }
-        if (document.exitFullscreen) {
-          document.exitFullscreen();
-        }
+  const [errorYoutube , setErrorYoutube] = useState<boolean>(false)
+  const [videoSrc, setVideoSrc] = useState(src);
+  const handleError = (e: SyntheticEvent<HTMLIFrameElement, Event>) => {
+    const target = e.target as HTMLIFrameElement;
+    console.log("davari");
+    
+    if (target) {
+      if (target.src.includes("youtube.com") || target.src.includes("youtu.be")) {
+        setErrorYoutube(true);
+        return
       } else {
-        setCurrentTime(video.currentTime);
-        if (video.requestFullscreen) {
-          video
-            .requestFullscreen()
-            .then(() => {
-              video.currentTime = currentTime;
-              video.play();
-              setTogglePlay(true);
-              setHasPlayed(true);
-            })
-            .catch((err) => console.error(err));
-        } else if (video.webkitEnterFullscreen) {
-          video.webkitEnterFullscreen();
-          video.play();
-          setTogglePlay(true);
-          setHasPlayed(true);
-        }
+        setErrorYoutube(true);
       }
     }
   };
-
-  useEffect(() => {
-    const handleExitFullScreen = () => {
-      if (!document.fullscreenElement) {
-        if (videoEl.current) {
-          setTogglePlay(false);
-          videoEl.current.pause();
-        }
-      }
-    };
-    document.addEventListener("fullscreenchange", handleExitFullScreen);
-    return () => {
-      document.removeEventListener("fullscreenchange", handleExitFullScreen);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!videoEl.current) return;
-    const video = videoEl.current;
-    video.currentTime = 0;
-    const handleWaiting = () => setIsLoading(true);
-    const handleCanPlay = () => setIsLoading(false);
-    video.addEventListener("waiting", handleWaiting);
-    video.addEventListener("canplay", handleCanPlay);
-    return () => {
-      video.removeEventListener("waiting", handleWaiting);
-      video.removeEventListener("canplay", handleCanPlay);
-    };
-  }, []);
-
-  const handleTimeUpdate = () => {
-    if (videoEl.current) {
-      setCurrentTime(videoEl.current.currentTime);
-      setDuration(videoEl.current.duration);
-      setIsLoading(false);
-    }
+  const handleTryAgain = () => {
+    setErrorYoutube(false);
+    setVideoSrc("");
+    setTimeout(() => {
+      setVideoSrc(src);
+    }, 100);
   };
-
-  const handleProgressChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (!videoEl.current) return;
-
-    const video = videoEl.current;
-    const wasPlaying = !video.paused;
-    const newTime = (parseFloat(e.target.value) / 100) * duration;
-
-    setCurrentTime(newTime);
-    video.currentTime = newTime;
-
-    setIsLoading(true);
-
-    const playPromise = wasPlaying ? video.play() : Promise.resolve();
-    playPromise
-      .then(() => {
-        setTogglePlay(wasPlaying);
-        setIsLoading(false);
-      })
-      .catch((err) => {
-        console.error("error in play video", err);
-        setIsLoading(false);
-      });
-  };
-
   return (
     <div className="relative w-fit" id="video-service">
       <div
@@ -168,38 +44,33 @@ const VideoPlayer = ({
           className ? className : ""
         } rounded-[20px] s1280:rounded-[40px] ${
           showLogo ? "relative" : ""
-        }  overflow-hidden z-[2]`}
+        }  overflow-hidden z-[2] ${errorYoutube && "shadow-[0px_4px_4px_#00000040]"}`}
       >
         <div className="bg-black/50 backdrop-blur-[10px] rounded-[20px] s1280:rounded-[40px] w-full h-full absolute top-0 left-0"></div>
-        {src && typeof src === "string" && (
+        {videoSrc && typeof src === "string" && (
           <div className="w-full h-full relative rounded-[20px] s1280:rounded-[40px] overflow-hidden">
-            <video
-              poster="/images/videoCover.png"
+            <iframe
+              // poster="/images/videoCover.png"
               className="w-full h-full min-w-full max-w-full min-h-full max-h-full image-overlay bg-white"
-              ref={videoEl}
-              src={src}
-              muted={videoMuted}
-              onTimeUpdate={handleTimeUpdate}
-              onLoadedMetadata={handleTimeUpdate}
-              playsInline
-            ></video>
-            {!hasPlayed && (
-              <ImgFetcher
-                width={3000}
-                height={3000}
-                src={videoCover}
-                className="object-cover absolute top-0 left-0 z-[0]"
-              />
-            )}
+              // ref={videoEl}
+              src={`https://www.youtube.com/embed/${getYouTubeVideoId(videoSrc)}?enablejsapi=1&rel=0`}
+              // muted={videoMuted}
+              allowFullScreen
+              // playsInline
+              onError={handleError}
+            ></iframe>
           </div>
         )}
+        {
+          errorYoutube && (
+            <div className="absolute top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center gap-y-2">
+              <p className="font-semibold s1280:text-[18px] text-stone-800">Please check your internet</p>
+              <button onClick={handleTryAgain} className="font-light hover:bg-[#25A6A9] hover:text-white rounded-[10px] px-3 py-1 anm outline-none border-none">Try again</button>
+            </div>
+          )
+        }
         {/* video controler */}
       </div>
-      {isLoading && (
-        <div className="w-full h-full absolute top-0 left-0 z-[2] bg-[#d2d2d227] rounded-[20px] s1280:rounded-[40px]">
-          <SpinnerLoading />
-        </div>
-      )}
       {showLogo && (
         <>
           <div
@@ -218,7 +89,7 @@ const VideoPlayer = ({
           </div>
         </>
       )}
-      <div className="absolute -bottom-10 s1280:-bottom-14 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex-cen px-5 s1280:px-20 s1512:px-32 z-[3]">
+      {/* <div className="absolute -bottom-10 s1280:-bottom-14 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex-cen px-5 s1280:px-20 s1512:px-32 z-[3]">
         <div
           className={` ${
             toolsbarStyle ? toolsbarStyle : ""
@@ -242,11 +113,6 @@ const VideoPlayer = ({
               onChange={handleProgressChange}
               className="w-full h-[3px] cursor-pointer"
             />
-            {/* <progress
-              className="w-full h-[3px] progVideoHome"
-              value="40"
-              max={100}
-            ></progress> */}
           </div>
           <div className="flex-cen gap-x-4">
             <div>
@@ -272,7 +138,7 @@ const VideoPlayer = ({
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
