@@ -30,17 +30,17 @@ import breatSubCategory from "@/assets/images/subCategory/Breast augmentation (i
 import genital from "@/assets/images/treatment/Genital Aesthetic.png";
 import labiaplastyGenital from "@/assets/images/subnested/Labiaplasty _ Barbie Look.png";
 import penileGenital from "@/assets/images/subnested/penile.jpg";
-import implantology from "@/assets/images/subCategory/implantology.jpg";
-import den64 from "@/assets/images/subnested/den64.jpg";
-import destigeneral from "@/assets/images/treatment/destigeneral.jpg";
-import rootcanal from "@/assets/images/subnested/rootcanal.jpg";
-import cosmeticdentistry from "@/assets/images/treatment/Cosmetic-Dentistry.jpg";
-import laminateveneers from "@/assets/images/subnested/Laminate Veneers.jpg";
-import restoryDenstiry from "@/assets/images/subCategory/restorative-dentistry.jpg";
-import dentistchoosing from "@/assets/images/subnested/dentist_choosing.jpg";
+import implantology from "@/assets/images/subCategory/implantology.png";
+import den64 from "@/assets/images/subnested/All on 6 Dental Implants.png";
+import destigeneral from "@/assets/images/subCategory/General Dentistry.png";
+import rootcanal from "@/assets/images/subnested/Root Canal Therapy.png";
+import cosmeticdentistry from "@/assets/images/subCategory/Cosmetic Dentistry.png";
+import laminateveneers from "@/assets/images/subnested/Laminate Veneers.png";
+import restoryDenstiry from "@/assets/images/subCategory/Restorative Dentistry.png";
+import dentistchoosing from "@/assets/images/subnested/Dental Crowns.png";
 import periodontics from "@/assets/images/treatment/periodontics.jpg";
-import hollywood from "@/assets/images/subCategory/Hollywood Smile.jpg";
-import teethwhiting from "@/assets/images/subCategory/Teeth Whitening.jpg";
+import hollywood from "@/assets/images/subnested/Holleywood Smile.png";
+import teethwhiting from "@/assets/images/subnested/Teeth Whitening.png";
 import orthodontics from "@/assets/images/subCategory/Orthodontics.jpg";
 import clearaligners from "@/assets/images/subCategory/Clear Aligners.jpg";
 import gumgrafting from "@/assets/images/subnested/Gum Grafting.jpg";
@@ -71,21 +71,21 @@ import momymakeover from "@/assets/images/subnested/Mommy Makeover.png";
 import breastreduc from "@/assets/images/subnested/Breast reduction.png";
 import malebreastreduc from "@/assets/images/subnested/Male breast reduction (Gynecomastia treatment).png";
 import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg";
-import implant from "@/assets/images/subnested/Implant Treatment .jpg"
+import implant from "@/assets/images/subnested/Implant Treatment.png"
 
-import fillings from "@/assets/images/subnested/Fillings.jpg";
-import rotinecheckupscleaning from "@/assets/images/subnested/RoutineCheck-upsCleanings.jpg";
-import toothextraction from "@/assets/images/subnested/Tooth Extractions.jpg";
+import fillings from "@/assets/images/subnested/Fillings.png";
+import rotinecheckupscleaning from "@/assets/images/subnested/Routine Check-ups and Cleanings.png";
+import toothextraction from "@/assets/images/subnested/Tooth Extractions.png";
 import jawsurgery from "@/assets/images/subnested/Jaw Surgery 1.jpg";
 import cataract from "@/assets/images/subnested/Cataract-Treatment 1.jpg";
 import retinaldisease from "@/assets/images/subnested/Retinal-Disease-Treatment 1.jpg";
-import xrays from "@/assets/images/subnested/Dental X-rays (2).jpg";
+import xrays from "@/assets/images/subnested/Dental X-rays.png";
 import fet from "@/assets/images/subnested/Frozen Embryo Transfer (FET).jpg";
 import ivf from "@/assets/images/subnested/In Vitro Fertilization (IVF).jpg";
 import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg";
 import smartlens from "@/assets/images/subnested/Smart lens.jpg";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.jpg";
-import dentalbonding from "@/assets/images/subnested/bonding.jpg"
+import dentalbonding from "@/assets/images/subnested/Dental Bonding.png"
 export const allSubCategory = [
   {
     img: hair,
