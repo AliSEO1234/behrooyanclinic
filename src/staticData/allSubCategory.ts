@@ -4,11 +4,11 @@ import body from "@/assets/images/treatment/Body Contouring.png";
 import breastCategory from "@/assets/images/treatment/Breast Surgery.png";
 // hair
 import Beard from "@/assets/images/subnested/Beard Transplant.png";
-import prp from "@/assets/images/subnested/PRP Hair Treatment.jpg";
-import DHI from "@/assets/images/subnested/DHI Hair Transplant.jpg";
-import Eyebrow from "@/assets/images/subnested/Eyebrow Transplant.jpg";
-import FUE from "@/assets/images/subnested/FUE Hair Transplant.jpg";
-import Mesotherapy from "@/assets/images/subnested/Mesotherapy for Hair.jpeg";
+import prp from "@/assets/images/subnested/PRP Hair Treatment.png";
+import DHI from "@/assets/images/subnested/DHI Hair Transplant.png";
+import Eyebrow from "@/assets/images/subnested/Eyebrow Transplant.png";
+import FUE from "@/assets/images/subnested/FUE Hair Transplant.png";
+import Mesotherapy from "@/assets/images/subnested/Mesotherapy for Hair.png";
 import Moustache from "@/assets/images/subnested/Moustache Transplant.png";
 import double from "@/assets/images/subnested/Double Chin Liposuction.png";
 // body contouring

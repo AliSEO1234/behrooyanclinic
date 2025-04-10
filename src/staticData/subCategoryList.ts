@@ -21,12 +21,12 @@ import otoplasty from "@/assets/images/subnested/Otoplasty.png";
 import ble from "@/assets/images/subnested/Blepharoplasty (Upper and Lower).png";
 // heir
 import double from "@/assets/images/subnested/Double Chin Liposuction.png";
-import prp from "@/assets/images/subnested/PRP Hair Treatment.jpg";
+import prp from "@/assets/images/subnested/PRP Hair Treatment.png";
 import Beard from "@/assets/images/subnested/Beard Transplant.png";
-import DHI from "@/assets/images/subnested/DHI Hair Transplant.jpg";
-import Eyebrow from "@/assets/images/subnested/Eyebrow Transplant.jpg";
-import FUE from "@/assets/images/subnested/FUE Hair Transplant.jpg";
-import Mesotherapy from "@/assets/images/subnested/Mesotherapy for Hair.jpeg";
+import DHI from "@/assets/images/subnested/DHI Hair Transplant.png";
+import Eyebrow from "@/assets/images/subnested/Eyebrow Transplant.png";
+import FUE from "@/assets/images/subnested/FUE Hair Transplant.png";
+import Mesotherapy from "@/assets/images/subnested/Mesotherapy for Hair.png";
 import Moustache from "@/assets/images/subnested/Moustache Transplant.png";
 import labiaplastyGenital from "@/assets/images/subnested/Labiaplasty _ Barbie Look.png";
 // import genital3d from "@/assets/images/subCategory/genital3d.png";
@@ -5573,40 +5573,99 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "For whom it is suitable",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
                 ? "Подходит для людей с избыточным весом или обвисшей кожей после значительного снижения веса, а также для тех, кто хочет улучшить форму бедер."
-                : "Suitable for individuals with excess weight or skin sagging after significant weight loss, or those wanting to improve the shape of their thighs.",
+                : "A thigh lift is a procedure designed to tighten the skin of the thighs, improving its firmness and contours. It uses either thread-lifting methods or surgical intervention to remove excess skin and fat, resulting in slimmer, firmer thighs.",
           },
           {
-            header: locale === "ru" ? "Особенности" : "Considerations",
-            desc: locale === "ru" ? "" : "",
-          },
-          {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Особенности" : "How it works",
             desc:
               locale === "ru"
-                ? "Процедура направлена на подтяжку кожи бедер, улучшая ее упругость и контуры. Для коррекции обвисшей кожи и уменьшения избыточных жировых отложений используются либо нитевой лифтинг, либо хирургические методики."
+                ? ""
                 : "The procedure aims to lift the skin of the thighs, improving its firmness and contours. Either thread lifting or surgical techniques are used to correct sagging skin and reduce excess fat deposits.",
+          },
+          {
+            header: locale === "ru" ? "Как это работает" : "For whom",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Suitable for individuals with excess weight or skin sagging after significant weight loss, or those wanting to improve the shape of their thighs.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "Will the scar be visible?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Usually placed in groin crease or inner thigh – fades over time",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Mild to moderate soreness – well managed with meds",
+        },
+        {
+          question:
+            locale === "ru" ? "" : "Can I combine this with liposuction?",
+          answer: locale === "ru" ? "" : "Yes, often done together",
+        },
+        {
+          question: locale === "ru" ? "" : "Will skin tighten immediately?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes, results are immediate but improve as swelling reduces",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it permanent?",
+          answer:
+            locale === "ru" ? "" : "Yes, with stable weight and good skin care",
+        },
+        {
+          question:
+            locale === "ru" ? "" : "What is the recovery time after surgery?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Light activities in 2-4 weeks, full recovery in 6-8 weeks.",
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Wear compression garment as directed",
+        locale === "ru"
+          ? ""
+          : "Walk lightly within 1–2 days to improve circulation",
+        locale === "ru" ? "" : "Avoid sitting or stretching thighs too much",
+        locale === "ru" ? "" : "Keep incisions dry and clean",
+        locale === "ru" ? "" : "Avoid workouts or sex for at least 4 weeks",
+        locale === "ru" ? "" : "Make sure to drink plenty of water.",
+        locale === "ru" ? "" : "-Avoid high temperatures.",
+        locale === "ru" ? "" : "Maintain a balanced diet.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Stop smoking and alcohol 2–4 weeks prior",
+        locale === "ru" ? "" : "Avoid blood thinners and certain supplements",
+        locale === "ru"
+          ? ""
+          : "Discuss all health conditions with your surgeon",
+        locale === "ru"
+          ? ""
+          : "Plan for 2 weeks of downtime and soft pants for comfort",
+        locale === "ru" ? "" : "Limit physical activity.",
+        locale === "ru" ? "" : "A stable diet and weight are recommended.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "Подтяжка бедер является эффективным методом улучшения формы и подтяжки кожи бедер, но важно правильно выбрать технику и хирурга, а также тщательно соблюдать процесс восстановления."
             : "A thigh lift is an effective method for improving the shape and tightening the skin of the thighs, but it’s important to choose the right technique and surgeon and follow the recovery process carefully.",
-      },
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Hair Transplant Treatment"
-            : "Hair Transplant Treatment",
       },
       bfs: bfList,
       contents: {
@@ -5617,7 +5676,235 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         content:
           locale === "ru"
             ? `<p>Вы стесняетесь носить короткие юбки и обтягивающие брюки из-за дряблой кожи на бедрах? Чувствуете дискомфорт и неуверенность в себе? AZPO Health понимает ваши переживания и предлагает эффективное решение – подтяжку бедер в Турции. Эта процедура поможет вам вернуть стройные, подтянутые ноги, о которых вы всегда мечтали.</p><h2><strong>Подтяжка бедер в Турции: ваш путь к идеальным ногам</strong></h2><p>С возрастом, после значительной потери веса или беременности кожа на бедрах может потерять эластичность и обвиснуть. Это происходит из-за уменьшения количества коллагена и эластина, которые отвечают за упругость кожи. Упражнения для подтяжки бедер и другие консервативные методы могут помочь улучшить тонус мышц, но они не всегда способны полностью устранить проблему обвисшей кожи. В таких случаях подтяжка бедер (подтяжка внутреннего бедра) может стать оптимальным решением.</p><p><strong>Что такое подтяжка бедер?</strong></p><p>Подтяжка бедер – это хирургическая процедура, направленная на удаление излишков кожи и подкожного жира в области бедер. В результате кожа становится более подтянутой и упругой, а контуры ног – более стройными и привлекательными. Существует несколько видов подтяжки бедер, выбор которых зависит от индивидуальных особенностей пациента и желаемого результата.</p><p><strong>Виды подтяжки бедер:</strong></p><p><strong>Внутренняя подтяжка бедер:</strong> Этот вид операции направлен на удаление излишков кожи с внутренней поверхности бедер. Разрез обычно делается в паховой складке и может простираться до колена, в зависимости от объема работы.</p><p><strong>Наружная подтяжка бедер:</strong> Этот вид операции направлен на подтяжку кожи с внешней поверхности бедер. Разрез делается вдоль линии бикини.</p><p><strong>Вертикальная подтяжка бедер:</strong> Этот вид операции применяется при значительном избытке кожи. Разрез делается вдоль внутренней поверхности бедра от паховой складки до колена.</p><p><strong>Подтяжка бедер и ягодиц:</strong> В некоторых случаях подтяжка бедер может быть выполнена одновременно с подтяжкой ягодиц для достижения более гармоничного результата.</p><p><strong>Почему стоит выбрать Турцию для подтяжки бедер?</strong></p><p>Турция стала одним из ведущих направлений медицинского туризма благодаря сочетанию высокого качества медицинских услуг, доступных цен и комфортного сервиса.</p><p><strong>Высококвалифицированные хирурги:</strong> В Турции работают опытные и квалифицированные пластические хирурги, которые владеют современными методиками подтяжки бедер.</p><p><strong>Современные клиники:</strong> Турецкие клиники оснащены передовым оборудованием, что позволяет проводить операции на высоком уровне.</p><p><strong>Доступные цены:</strong> Стоимость подтяжки бедер в Турции значительно ниже, чем в странах Европы или США. Это делает процедуру доступной для широкого круга пациентов.</p><p><strong>Комплексный сервис:</strong> AZPO Health предлагает полный спектр услуг, включающий трансфер, проживание и послеоперационный уход. Мы заботимся о каждом пациенте и делаем все возможное, чтобы ваше пребывание в Турции было комфортным и безопасным.</p><p><strong>Преимущества подтяжки бедер с AZPO Health:</strong></p><p><strong>Индивидуальный подход:</strong> Мы учитываем ваши индивидуальные особенности и пожелания, чтобы подобрать оптимальный вид операции и добиться наилучшего результата.</p><p><strong>Опытные хирурги:</strong> Наши хирурги имеют многолетний опыт проведения операций по подтяжке бедер и владеют современными методиками.</p><p><strong>Безопасность:</strong> Мы используем только сертифицированные материалы и оборудование, чтобы гарантировать безопасность процедуры.</p><p><strong>Комфорт:</strong> Мы предлагаем комфортное проживание в современных отелях и трансфер из аэропорта и обратно.</p><p><strong>Поддержка:</strong> Мы оказываем всестороннюю поддержку на всех этапах лечения, от консультации до послеоперационного ухода.</p><p><strong>Подготовка к подтяжке бедер:</strong></p><p>Перед операцией необходимо пройти консультацию с хирургом, который проведет осмотр, оценит состояние вашей кожи и подкожного жира, а также обсудит ваши ожидания от процедуры. Вам также будет необходимо сдать анализы и пройти обследование, чтобы убедиться в отсутствии противопоказаний.</p><p><strong>Рекомендации перед операцией:</strong></p><p>Прекратите курить за несколько недель до операции.</p><p>Избегайте приема аспирина и других препаратов, разжижающих кровь.</p><p>Сообщите врачу о всех принимаемых вами лекарствах и добавках.</p><p><strong>Как проходит операция:</strong></p><p>Операция по подтяжке бедер обычно проводится под общим наркозом и длится от 2 до 4 часов, в зависимости от объема работы. Хирург делает разрезы в соответствии с выбранным видом операции, удаляет излишки кожи и подкожного жира, а затем накладывает швы. В некоторых случаях может быть установлена дренажная трубка для отвода жидкости.</p><p><strong>Послеоперационный период:</strong></p><p>После операции вам необходимо будет остаться в клинике на несколько дней. В течение нескольких недель после операции необходимо носить компрессионное белье для уменьшения отека и поддержания кожи. Также необходимо избегать физических нагрузок и соблюдать все рекомендации врача.</p><p><strong>Рекомендации после операции:</strong></p><p>Носите компрессионное белье в течение рекомендованного срока.</p><p>Принимайте обезболивающие препараты по назначению врача.</p><p>Избегайте физических нагрузок в течение нескольких недель.</p><p>Регулярно посещайте врача для осмотра и контроля заживления.</p><p><strong>Возможные риски и осложнения:</strong></p><p>Как и любая хирургическая процедура, подтяжка бедер связана с определенными рисками и осложнениями. К ним относятся:</p><p>Инфекция</p><p>Кровотечение</p><p>Образование гематом</p><p>Медленное заживление ран</p><p>Изменение чувствительности кожи</p><p>Образование рубцов</p><p>Неудовлетворительный эстетический результат</p><p>Чтобы минимизировать риски и осложнения, важно тщательно выбирать хирурга и следовать всем его рекомендациям.</p><p><strong>Альтернативные методы подтяжки бедер:</strong></p><p>Помимо хирургической подтяжки бедер, существуют и другие методы, которые могут помочь улучшить контуры ног. К ним относятся:</p><p><strong>Липосакция:</strong> Этот метод позволяет удалить излишки жира из области бедер. Липосакция может быть выполнена как самостоятельно, так и в сочетании с подтяжкой бедер.</p><p><strong>Увеличение ягодиц филлером:</strong> Если вы хотите не только подтянуть бедра, но и увеличить объем ягодиц, можно рассмотреть вариант увеличения ягодиц филлером или увеличение ягодиц гиалуроновой кислотой. Однако стоит учитывать, что увеличение ягодиц филлером отзывы может быть разным, и необходимо тщательно выбирать специалиста и клинику. Также важно знать об увеличение ягодиц гиалуроновой кислотой последствия и риски.</p><p><strong>Увеличение ягодиц имплантами:</strong> Этот метод предполагает установку силиконовых имплантов в область ягодиц для увеличения их объема и улучшения формы.</p><p><strong>Увеличение ягодиц жиром (липофилинг):</strong> Этот метод предполагает пересадку собственного жира пациента из одной области тела (например, с живота или бедер) в область ягодиц.</p><p><strong>Увеличение ягодиц: стоит ли?</strong></p><p>Решение об увеличении ягодиц – это индивидуальный выбор. Важно взвесить все за и против, ознакомиться с различными методами и выбрать наиболее подходящий для вас. Если вы рассматриваете увеличение ягодиц филлером, важно найти опытного специалиста и ознакомиться с увеличение ягодиц филлером фото до и после, а также с увеличение ягодиц филлером цена. Также стоит учитывать, что увеличение ягодиц собственным жиром отзывы может быть более естественным, чем увеличение ягодиц имплантами.</p><p><strong>Упражнения для подтяжки ягодиц и бедер:</strong></p><p>Упражнения для подтяжки ягодиц и бедер могут помочь улучшить тонус мышц и придать ногам более подтянутый вид. Однако упражнения не способны полностью устранить проблему обвисшей кожи.</p><p><strong>Примеры упражнений:</strong></p><p>Приседания</p><p>Выпады</p><p>Ягодичный мостик</p><p>Махи ногами</p><p><strong>AZPO Health: ваш надежный партнер в мире медицинского туризма</strong></p><p>AZPO Health – это ведущая компания в сфере медицинского туризма, специализирующаяся на организации лечения в Турции. Мы сотрудничаем с лучшими клиниками и хирургами, чтобы предложить нашим пациентам качественное и доступное лечение. Мы берем на себя все организационные вопросы, чтобы вы могли сосредоточиться на своем здоровье и восстановлении.</p><p><strong>Почему стоит выбрать AZPO Health?</strong></p><p><strong>Опыт:</strong> Мы имеем многолетний опыт работы в сфере медицинского туризма и знаем, как организовать лечение на высоком уровне.</p><p><strong>Надежность:</strong> Мы сотрудничаем только с проверенными клиниками и хирургами, которые имеют безупречную репутацию.</p><p><strong>Индивидуальный подход:</strong> Мы учитываем ваши индивидуальные особенности и пожелания, чтобы подобрать оптимальный вариант лечения.</p><p><strong>Поддержка:</strong> Мы оказываем всестороннюю поддержку на всех этапах лечения, от консультации до послеоперационного ухода.</p><p><strong>Доступность:</strong> Мы предлагаем конкурентные цены на наши услуги и гибкие варианты оплаты.</p><p><strong>Сделайте первый шаг к идеальным ногам!</strong></p><p>Не откладывайте свою мечту о стройных и подтянутых бедрах! Свяжитесь с нами прямо сейчас, чтобы получить бесплатную консультацию и узнать стоимость подтяжки бедер в Турции. Наши специалисты ответят на все ваши вопросы и помогут вам сделать правильный выбор.</p><p><br></p>`
-            : `<p>Thigh lift surgery, also known as thighplasty, is a transformative cosmetic procedure designed to reshape your thighs by removing excess skin and fat. This surgery creates a smoother, more toned appearance, allowing you to feel confident and comfortable in your own skin. At AZPO Health, we combine the expertise of skilled surgeons, state-of-the-art facilities, and personalized care to deliver exceptional results and a rewarding experience.</p><h3><strong>Why Choose Turkey for Your Thigh Lift?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, attracting individuals from across the globe seeking high-quality and affordable cosmetic procedures. Here's why Turkey, and AZPO Health in particular, should be your top choice for thigh lift surgery:</p><ul><li><strong>Cost-Effectiveness:</strong> Thigh lift surgery in Turkey is significantly more affordable compared to many other countries, including the United States, the UK, and Australia. AZPO Health offers competitive pricing and transparent packages, allowing you to achieve your desired aesthetic goals without exceeding your budget.</li><li><strong>Experienced and Qualified Surgeons:</strong> AZPO Health partners with highly skilled and board-certified plastic surgeons specializing in thigh lift procedures. These surgeons possess extensive training and a wealth of experience, ensuring exceptional results and patient safety.</li><li><strong>State-of-the-Art Facilities:</strong> AZPO Health collaborates with modern, well-equipped hospitals and surgical centers that adhere to the highest international standards. These facilities utilize advanced technology and equipment to optimize surgical outcomes and patient comfort.</li><li><strong>Personalized Treatment Plans:</strong> At AZPO Health, we understand that every individual has unique needs and goals. Our surgeons conduct thorough consultations to assess your specific concerns and develop a customized treatment plan tailored to your body and desired results.</li><li><strong>Comprehensive Care:</strong> AZPO Health provides comprehensive care throughout your entire journey, from the initial consultation to post-operative recovery. Our team offers detailed pre-operative instructions, attentive post-operative care, and ongoing support to ensure a smooth and successful experience.</li><li><strong>Cultural Experience:</strong> Combining your surgery with a visit to Turkey allows you to explore the country's rich history, vibrant culture, and stunning landscapes. Istanbul, Antalya, and Alanya or Izmir offer a diverse range of attractions, from historical sites to beautiful beaches, providing a memorable and enriching experience.</li></ul><h3><strong>Understanding the Causes of Sagging Thigh Skin</strong></h3><p>Before exploring the different types of thigh lift procedures, it's helpful to understand the factors that contribute to sagging thigh skin. This knowledge empowers you to make informed decisions about your overall well-being and potential preventative measures.</p><ul><li><strong>Aging and Skin Elasticity:</strong> As we age, our bodies produce less collagen and elastin, the proteins responsible for skin firmness and elasticity. This natural decline leads to looser, thinner skin, making it more prone to sagging, particularly in areas like the thighs.</li><li><strong>Weight Fluctuations:</strong> Significant weight gain and loss can stretch the skin, reducing its elasticity and causing it to sag. Even if you achieve a stable weight, the stretched skin may not fully retract, resulting in loose skin on the thighs.</li><li><strong>Genetics:</strong> Genetic predisposition plays a role in skin elasticity and fat distribution. If your parents or other family members have experienced sagging thigh skin, you may be more likely to develop it as well.</li><li><strong>Sun Exposure:</strong> Excessive sun exposure can damage collagen and elastin fibers in the skin, accelerating the aging process and contributing to sagging.</li><li><strong>Lifestyle Factors:</strong> Factors such as smoking, poor diet, and lack of exercise can also negatively impact skin health and contribute to sagging.</li></ul><h3><strong>Are You an Ideal Candidate for Thigh Lift Surgery?</strong></h3><p>Thigh lift surgery can be a transformative procedure, but it's essential to determine if you're a suitable candidate. Here are some key factors considered during consultations at AZPO Health:</p><ul><li><strong>Excess Thigh Skin and Fat:</strong> You may be a good candidate if you have noticeable excess skin and stubborn fat deposits on your thighs that haven't responded adequately to diet and exercise. This includes concerns like inner thigh laxity.</li><li><strong>Stable Weight:</strong> Thigh lift surgery is not intended as a weight-loss solution but rather as a body contouring procedure for individuals who have already achieved a relatively stable weight.</li><li><strong>Good Overall Health:</strong> You should be in good general health, without any underlying medical conditions that could increase the risk of complications.</li><li><strong>Realistic Expectations:</strong> It's crucial to have realistic expectations about the results of thigh lift surgery. While the procedure can significantly improve the appearance of your thighs, it's not a miracle cure. Maintaining a healthy lifestyle through diet and exercise is essential to sustain long-term results.</li><li><strong>Commitment to Post-operative Care:</strong> Following your surgeon's instructions and attending regular follow-up appointments is crucial for optimal healing and recovery.</li><li><strong>Non-Smoker:</strong> Smoking can impair blood flow and delay healing. You may be required to quit smoking several weeks before and after surgery.</li></ul><p>If you're considering thigh lift surgery and are unsure if you're an ideal candidate, contact AZPO Health today! Our experienced team is here to answer your questions, address your concerns, and help you determine if this procedure is the right choice for you on your journey toward achieving your desired leg contour.</p><h3><strong>Types of Thigh Lift Procedures Offered at AZPO Health</strong></h3><p>AZPO Health offers a range of thigh lift procedures tailored to address specific concerns and achieve varying degrees of correction:</p><ol><li><strong>Full Thigh Lift:</strong> This comprehensive procedure addresses concerns from the groin area down to the knees, removing excess skin and tightening the remaining tissue. A full thigh lift creates a smoother, more toned appearance and is ideal for individuals with significant excess skin and laxity throughout the entire thigh.</li><li><strong>Medial (Inner) Thigh Lift:</strong> A medial thigh lift focuses on the inner thigh area, addressing sagging skin and excess fat in this region. The incision is typically placed in the groin crease, minimizing visibility. This option is suitable for those with concerns primarily concentrated on the inner thighs.</li><li><strong>Mini Thigh Lift:</strong> A mini thigh lift is a less invasive procedure targeting the upper inner thigh, primarily addressing drooping skin and stubborn fat deposits in this area. This option may be suitable if your excess skin and laxity are mild and localized to the upper portion of your thighs.</li><li><strong>Lateral (Outer) Thigh Lift:</strong> A lateral thigh lift addresses excess skin and fat on the outer thighs and hips. The incision is typically placed along the hip bone, allowing the surgeon to lift and tighten the outer thigh area.</li></ol><p>During your consultation with AZPO Health, our board-certified plastic surgeons will discuss these options in detail, answer your questions, and recommend the most suitable procedure to achieve your desired outcome.</p><h3><strong>Preparing for Your Thigh Lift Surgery: A Step-by-Step Guide</strong></h3><p>Proper preparation is crucial for ensuring a smooth and successful thigh lift surgery experience. Here's what you can expect when preparing for your procedure with AZPO Health:</p><ol><li><strong>Pre-operative Consultation:</strong> During your initial consultation, our surgeons will discuss your medical history, current medications, and any allergies you may have. They will perform a thorough physical examination to assess your overall health and suitability for surgery. This is your opportunity to ask any questions and discuss your expectations in detail.</li><li><br></li><li><strong>Pre-Surgical Instructions:</strong> Once you decide to proceed, our team will provide you with comprehensive pre-operative instructions. These instructions may include guidelines on:</li><li><br></li></ol><ul><li class="ql-indent-1"><strong>Medications:</strong> You may need to adjust or temporarily discontinue certain medications, such as blood thinners, before surgery.</li><li class="ql-indent-1"><strong>Smoking and Alcohol:</strong> You'll be advised to quit smoking and avoid alcohol consumption for several weeks before and after surgery, as these can impair healing.</li><li class="ql-indent-1"><strong>Diet and Nutrition:</strong> Maintaining a healthy diet and staying well-hydrated is essential for optimal healing.</li><li class="ql-indent-1"><strong>Hygiene:</strong> You may be instructed to shower with a special antibacterial soap the night before and the morning of your surgery.</li></ul><ol><li><strong>Preparing Mentally and Emotionally:</strong> Preparing mentally and emotionally for thigh lift surgery is equally important. Be realistic about your expectations and understand that the recovery process requires patience and commitment. Discussing your concerns and anxieties with loved ones or a therapist can be helpful in managing your emotional well-being throughout the process.</li><li><br></li><li><strong>Preparing Your Home Environment:</strong> Creating a comfortable and supportive environment at home for your recovery is essential. This might involve arranging for help with daily tasks, stocking up on necessary supplies, and ensuring you have comfortable clothing that won't irritate your incisions.</li><li><br></li></ol><h3><strong>What to Expect During Your Thigh Lift Procedure</strong></h3><p>On the day of your surgery, here's a general overview of what you can expect:</p><ol><li><strong>Arrival and Preparation:</strong> You'll arrive at the hospital or surgical center and be greeted by our friendly staff. You'll change into a surgical gown and meet with your surgeon and anesthesiologist.</li><li><br></li><li><strong>Anesthesia:</strong> Thigh lift surgery is typically performed under general anesthesia, ensuring you remain comfortably asleep throughout the procedure.</li><li><br></li><li><strong>The Surgical Process:</strong> The specific details of your thigh lift procedure will vary depending on the chosen technique. However, some general steps include:</li><li><br></li></ol><ul><li class="ql-indent-1"><strong>Making Incisions:</strong> The surgeon will make precise incisions based on the agreed-upon plan. The location and length of the incisions will depend on the type of thigh lift you're undergoing.</li><li class="ql-indent-1"><strong>Liposuction (Optional):</strong> In some cases, liposuction may be performed to remove excess fat deposits before skin tightening, further enhancing the overall contour of your thighs.</li><li class="ql-indent-1"><strong>Excess Skin Removal:</strong> The surgeon will carefully remove the excess skin, ensuring a smooth and contoured appearance.</li><li class="ql-indent-1"><strong>Tissue Tightening:</strong> The remaining skin will be meticulously tightened and re-draped to create a sculpted and lifted appearance.</li><li class="ql-indent-1"><strong>Incision Closure:</strong> The incisions will be meticulously closed with sutures or surgical glue to promote optimal healing.</li></ul><ol><li><strong>Post-operative Care:</strong> Following your thigh lift surgery, you will be transferred to a dedicated recovery room for monitoring until you are awake and stable. Our team will provide you with comprehensive instructions on post-operative care, including pain management, wound care, and wearing compression garments to support the healing process. You will likely stay overnight at the hospital for observation before being discharged home with detailed recovery instructions.</li><li><br></li></ol><h3><strong>Recovery and Post-Operative Care: Optimizing Your Results</strong></h3><p>Following your thigh lift surgery, proper recovery and post-operative care are essential for achieving optimal results and minimizing complications. Here's what you can expect during your recovery journey with AZPO Health:</p><ul><li><strong>Rest and Limited Activity:</strong> You'll need to rest your legs as much as possible for the first 10 days. Avoid strenuous activities, such as heavy lifting or vigorous exercise, for several weeks.</li><li><strong>Pain Management:</strong> You'll likely experience some discomfort and soreness after surgery. Our team will prescribe pain medication to help manage your pain and keep you comfortable.</li><li><strong>Wound Care:</strong> You'll receive detailed instructions on how to care for your incisions to prevent infection and promote healing. This may involve gently cleaning the incisions with mild soap and water and applying a sterile dressing.</li><li><strong>Compression Garments:</strong> Wearing compression garments is crucial for supporting the healing process, reducing swelling, and minimizing the risk of blood clots. You'll likely need to wear compression garments for several weeks.</li><li><strong>Follow-Up Appointments:</strong> Attending regular follow-up appointments with your surgeon is essential for monitoring your progress and addressing any concerns.</li><li><strong>Potential Complications:</strong> While complications are rare, it's essential to be aware of potential risks, such as infection, bleeding, fluid accumulation, or poor wound healing. Contact our team immediately if you experience any signs of complications.</li></ul><h3><strong>Understanding the Risks and Considerations of Thigh Lift Surgery</strong></h3><p>Like any surgical procedure, thigh lift surgery carries inherent risks and considerations. At AZPO Health, we prioritize your safety and well-being and are committed to providing you with complete transparency. Here's an overview of some potential risks and how we work to mitigate them:</p><ul><li><strong>Infection:</strong> As with any surgery, there's a risk of infection. Our team adheres to strict sterile techniques and protocols to minimize this risk.</li><li><strong>Bleeding:</strong> Bleeding is a potential complication during and after surgery. Our experienced surgeons use meticulous techniques and advanced equipment to minimize bleeding and ensure patient safety.</li><li><strong>Anesthesia Risks:</strong> General anesthesia is typically used for thighplasty. While generally safe, there are potential risks associated with any anesthesia use. We work closely with experienced anesthesiologists who will assess your medical history and individual needs to ensure a safe and comfortable experience.</li><li><strong>Scarring:</strong> Scarring is an inevitable part of the healing process. However, our surgeons utilize advanced techniques and meticulous suture placement to minimize the appearance of scars.</li><li><strong>Changes in Skin Sensation:</strong> Temporary changes in skin sensation, such as numbness or tingling, can occur after surgery. These typically resolve within a few weeks or months, but it's important to be aware of this potential side effect.</li><li><strong>Deep Vein Thrombosis (DVT):</strong> DVT is a blood clot that forms in a deep vein, usually in the legs. We take preventive measures to minimize the risk of DVT, such as using compression stockings and encouraging early mobilization after surgery.</li></ul><h3><strong>How Much Does Thigh Lift Surgery Cost in Turkey?</strong></h3><p>The cost of thigh lift surgery in Turkey can vary depending on several factors:</p><ul><li><strong>Surgical Technique:</strong> The specific technique used for your thigh lift (e.g., full thigh lift, medial thigh lift, mini thigh lift) can impact the cost.</li><li><strong>Hospital and Anesthesia Fees:</strong> The hospital or surgical center where your procedure is performed may have associated fees. The cost of anesthesia will also be factored into the overall cost.</li><li><strong>Post-operative Care:</strong> Post-operative care, which may include medications, compression garments, and follow-up appointments, impacts the total cost.</li></ul><p>Turkey offers competitive prices for thigh lift surgery compared to many other countries, making it a cost-effective option for many individuals seeking this procedure.</p><p>Instead of providing specific prices, we encourage you to contact AZPO Health for a free consultation and personalized quote. Our team will assess your individual needs and provide you with a detailed cost breakdown tailored to your specific situation.</p><h3><strong>Why Choose AZPO Health for Your Thigh Lift Surgery?</strong></h3><p>Choosing the right medical tourism provider is crucial for a successful and rewarding experience. Here's why AZPO Health stands out as a leader in thigh lift surgery in Turkey:</p><ul><li><strong>Expertise and Experience:</strong> AZPO Health partners with highly skilled and experienced plastic surgeons specializing in thigh lift procedures. Our surgeons are dedicated to providing exceptional results and personalized care.</li><li><strong>State-of-the-Art Facilities:</strong> We collaborate with modern, well-equipped hospitals and surgical centers that adhere to the highest international standards.</li><li><strong>Personalized Approach:</strong> We understand that every individual has unique needs and goals. Our team takes the time to listen to your concerns and develop a customized treatment plan tailored to your specific body and desired outcome.</li><li><strong>Comprehensive Care:</strong> We provide comprehensive care throughout your entire journey, from the initial consultation to post-operative recovery.</li><li><strong>Commitment to Safety and Transparency:</strong> We prioritize your safety and well-being and are committed to providing you with complete transparency throughout the process.</li></ul><h3><strong>Take the First Step Towards Your Transformation Today!</strong></h3><p>If you're ready to reclaim your confidence and achieve beautifully sculpted thighs, contact AZPO Health today for a free consultation! Our experienced team is here to answer your questions, address your concerns, and guide you through every step of your thigh lift journey. Let us help you achieve the smooth, toned legs you've always desired!</p><p><br></p>`,
+            : `<p dir="ltr">Thigh lift surgery, also known as thighplasty, is a transformative cosmetic procedure designed to reshape your thighs by removing excess skin and fat. This surgery creates a smoother, more toned appearance, allowing you to feel confident and comfortable in your own skin. At AZPO Health, we combine the expertise of skilled surgeons, state-of-the-art facilities, and personalized care to deliver exceptional results and a rewarding experience.</p>
+<h3 dir="ltr">Why Choose Turkey for Your Thigh Lift?</h3>
+<p dir="ltr">Turkey has emerged as a leading destination for medical tourism, attracting individuals from across the globe seeking high-quality and affordable cosmetic procedures. Here's why Turkey, and AZPO Health in particular, should be your top choice for thigh lift surgery:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cost-Effectiveness: Thigh lift surgery in Turkey is significantly more affordable compared to many other countries, including the United States, the UK, and Australia. AZPO Health offers competitive pricing and transparent packages, allowing you to achieve your desired aesthetic goals without exceeding your budget.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced and Qualified Surgeons: AZPO Health partners with highly skilled and board-certified plastic surgeons specializing in thigh lift procedures. These surgeons possess extensive training and a wealth of experience, ensuring exceptional results and patient safety.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">State-of-the-Art Facilities: AZPO Health collaborates with modern, well-equipped hospitals and surgical centers that adhere to the highest international standards. These facilities utilize advanced technology and equipment to optimize surgical outcomes and patient comfort.&nbsp;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Accredited Healthcare: Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Treatment Plans: At AZPO Health, we understand that every individual has unique needs and goals. Our surgeons conduct thorough consultations to assess your specific concerns and develop a customized treatment plan tailored to your body and desired results.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Care: AZPO Health provides comprehensive care throughout your entire journey, from the initial consultation to post-operative recovery. Our team offers detailed pre-operative instructions, attentive post-operative care, and ongoing support to ensure a smooth and successful experience.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cultural Experience: Combining your surgery with a visit to Turkey allows you to explore the country's rich history, vibrant culture, and stunning landscapes. Istanbul, Antalya, and Alanya or Izmir offer a diverse range of attractions, from historical sites to beautiful beaches, providing a memorable and enriching experience.</p>
+</li>
+</ul>
+<h3 dir="ltr">Understanding the Causes of Sagging Thigh Skin</h3>
+<p dir="ltr">Before exploring the different types of thigh lift procedures, it's helpful to understand the factors that contribute to sagging thigh skin. This knowledge empowers you to make informed decisions about your overall well-being and potential preventative measures.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Aging and Skin Elasticity: As we age, our bodies produce less collagen and elastin, the proteins responsible for skin firmness and elasticity. This natural decline leads to looser, thinner skin, making it more prone to sagging, particularly in areas like the thighs.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Weight Fluctuations: Significant weight gain and loss can stretch the skin, reducing its elasticity and causing it to sag. Even if you achieve a stable weight, the stretched skin may not fully retract, resulting in loose skin on the thighs.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Genetics: Genetic predisposition plays a role in skin elasticity and fat distribution. If your parents or other family members have experienced sagging thigh skin, you may be more likely to develop it as well.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Sun Exposure: Excessive sun exposure can damage collagen and elastin fibers in the skin, accelerating the aging process and contributing to sagging.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Lifestyle Factors: Factors such as smoking, poor diet, and lack of exercise can also negatively impact skin health and contribute to sagging.</p>
+</li>
+</ul>
+<h3 dir="ltr">Are You an Ideal Candidate for Thigh Lift Surgery?</h3>
+<p dir="ltr">Thigh lift surgery can be a transformative procedure, but it's essential to determine if you're a suitable candidate. Here are some key factors considered during consultations at AZPO Health:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Excess Thigh Skin and Fat: You may be a good candidate if you have noticeable excess skin and stubborn fat deposits on your thighs that haven't responded adequately to diet and exercise. This includes concerns like inner thigh laxity.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Stable Weight: Thigh lift surgery is not intended as a weight-loss solution but rather as a body contouring procedure for individuals who have already achieved a relatively stable weight.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Good Overall Health: You should be in good general health, without any underlying medical conditions that could increase the risk of complications.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Realistic Expectations: It's crucial to have realistic expectations about the results of thigh lift surgery. While the procedure can significantly improve the appearance of your thighs, it's not a miracle cure. Maintaining a healthy lifestyle through diet and exercise is essential to sustain long-term results.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Commitment to Post-operative Care: Following your surgeon's instructions and attending regular follow-up appointments is crucial for optimal healing and recovery.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Non-Smoker: Smoking can impair blood flow and delay healing. You may be required to quit smoking several weeks before and after surgery.</p>
+</li>
+</ul>
+<p dir="ltr">If you're considering thigh lift surgery and are unsure if you're an ideal candidate, contact AZPO Health today! Our experienced team is here to answer your questions, address your concerns, and help you determine if this procedure is the right choice for you on your journey toward achieving your desired leg contour.</p>
+<h3 dir="ltr">Types of Thigh Lift Procedures Offered at AZPO Health</h3>
+<p dir="ltr">AZPO Health offers a range of thigh lift procedures tailored to address specific concerns and achieve varying degrees of correction:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Full Thigh Lift: This comprehensive procedure addresses concerns from the groin area down to the knees, removing excess skin and tightening the remaining tissue. A full thigh lift creates a smoother, more toned appearance and is ideal for individuals with significant excess skin and laxity throughout the entire thigh.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Medial (Inner) Thigh Lift: A medial thigh lift focuses on the inner thigh area, addressing sagging skin and excess fat in this region. The incision is typically placed in the groin crease, minimizing visibility. This option is suitable for those with concerns primarily concentrated on the inner thighs.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Mini Thigh Lift: A mini thigh lift is a less invasive procedure targeting the upper inner thigh, primarily addressing drooping skin and stubborn fat deposits in this area. This option may be suitable if your excess skin and laxity are mild and localized to the upper portion of your thighs.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Lateral (Outer) Thigh Lift: A lateral thigh lift addresses excess skin and fat on the outer thighs and hips. The incision is typically placed along the hip bone, allowing the surgeon to lift and tighten the outer thigh area.</p>
+</li>
+</ol>
+<p dir="ltr">During your consultation with AZPO Health, our board-certified plastic surgeons will discuss these options in detail, answer your questions, and recommend the most suitable procedure to achieve your desired outcome.</p>
+<h3 dir="ltr">Preparing for Your Thigh Lift Surgery: A Step-by-Step Guide</h3>
+<p dir="ltr">Proper preparation is crucial for ensuring a smooth and successful thigh lift surgery experience. Here's what you can expect when preparing for your procedure with AZPO Health:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pre-operative Consultation: During your initial consultation, our surgeons will discuss your medical history, current medications, and any allergies you may have. They will perform a thorough physical examination to assess your overall health and suitability for surgery. This is your opportunity to ask any questions and discuss your expectations in detail.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pre-Surgical Instructions: Once you decide to proceed, our team will provide you with comprehensive pre-operative instructions. These instructions may include guidelines on:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Medications: You may need to adjust or temporarily discontinue certain medications, such as blood thinners, before surgery.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Smoking and Alcohol: You'll be advised to quit smoking and avoid alcohol consumption for several weeks before and after surgery, as these can impair healing.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Diet and Nutrition: Maintaining a healthy diet and staying well-hydrated is essential for optimal healing.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Hygiene: You may be instructed to shower with a special antibacterial soap the night before and the morning of your surgery.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Preparing Mentally and Emotionally: Preparing mentally and emotionally for thigh lift surgery is equally important. Be realistic about your expectations and understand that the recovery process requires patience and commitment. Discussing your concerns and anxieties with loved ones or a therapist can be helpful in managing your emotional well-being throughout the process.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Preparing Your Home Environment: Creating a comfortable and supportive environment at home for your recovery is essential. This might involve arranging for help with daily tasks, stocking up on necessary supplies, and ensuring you have comfortable clothing that won't irritate your incisions.<br><br></p>
+</li>
+</ol>
+<h3 dir="ltr">What to Expect During Your Thigh Lift Procedure</h3>
+<p dir="ltr">On the day of your surgery, here's a general overview of what you can expect:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Arrival and Preparation: You'll arrive at the hospital or surgical center and be greeted by our friendly staff. You'll change into a surgical gown and meet with your surgeon and anesthesiologist.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Anesthesia: Thigh lift surgery is typically performed under general anesthesia, ensuring you remain comfortably asleep throughout the procedure.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">The Surgical Process: The specific details of your thigh lift procedure will vary depending on the chosen technique. However, some general steps include:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Making Incisions: The surgeon will make precise incisions based on the agreed-upon plan. The location and length of the incisions will depend on the type of thigh lift you're undergoing.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Liposuction (Optional): In some cases, liposuction may be performed to remove excess fat deposits before skin tightening, further enhancing the overall contour of your thighs.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Excess Skin Removal: The surgeon will carefully remove the excess skin, ensuring a smooth and contoured appearance.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Tissue Tightening: The remaining skin will be meticulously tightened and re-draped to create a sculpted and lifted appearance.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Incision Closure: The incisions will be meticulously closed with sutures or surgical glue to promote optimal healing.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Post-operative Care: Following your thigh lift surgery, you will be transferred to a dedicated recovery room for monitoring until you are awake and stable. Our team will provide you with comprehensive instructions on post-operative care, including pain management, wound care, and wearing compression garments to support the healing process. You will likely stay overnight at the hospital for observation before being discharged home with detailed recovery instructions.<br><br></p>
+</li>
+</ol>
+<h3 dir="ltr">Recovery and Post-Operative Care: Optimizing Your Results</h3>
+<p dir="ltr">Following your thigh lift surgery, proper recovery and post-operative care are essential for achieving optimal results and minimizing complications. Here's what you can expect during your recovery journey with AZPO Health:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Rest and Limited Activity: You'll need to rest your legs as much as possible for the first 10 days. Avoid strenuous activities, such as heavy lifting or vigorous exercise, for several weeks.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pain Management: You'll likely experience some discomfort and soreness after surgery. Our team will prescribe pain medication to help manage your pain and keep you comfortable.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Wound Care: You'll receive detailed instructions on how to care for your incisions to prevent infection and promote healing. This may involve gently cleaning the incisions with mild soap and water and applying a sterile dressing.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Compression Garments: Wearing compression garments is crucial for supporting the healing process, reducing swelling, and minimizing the risk of blood clots. You'll likely need to wear compression garments for several weeks.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Follow-Up Appointments: Attending regular follow-up appointments with your surgeon is essential for monitoring your progress and addressing any concerns.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Potential Complications: While complications are rare, it's essential to be aware of potential risks, such as infection, bleeding, fluid accumulation, or poor wound healing. Contact our team immediately if you experience any signs of complications.</p>
+</li>
+</ul>
+<h3 dir="ltr">Understanding the Risks and Considerations of Thigh Lift Surgery</h3>
+<p dir="ltr">Like any surgical procedure, thigh lift surgery carries inherent risks and considerations. At AZPO Health, we prioritize your safety and well-being and are committed to providing you with complete transparency. Here's an overview of some potential risks and how we work to mitigate them:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Infection: As with any surgery, there's a risk of infection. Our team adheres to strict sterile techniques and protocols to minimize this risk.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Bleeding: Bleeding is a potential complication during and after surgery. Our experienced surgeons use meticulous techniques and advanced equipment to minimize bleeding and ensure patient safety.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Anesthesia Risks: General anesthesia is typically used for thighplasty. While generally safe, there are potential risks associated with any anesthesia use. We work closely with experienced anesthesiologists who will assess your medical history and individual needs to ensure a safe and comfortable experience.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Scarring: Scarring is an inevitable part of the healing process. However, our surgeons utilize advanced techniques and meticulous suture placement to minimize the appearance of scars.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Changes in Skin Sensation: Temporary changes in skin sensation, such as numbness or tingling, can occur after surgery. These typically resolve within a few weeks or months, but it's important to be aware of this potential side effect.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Deep Vein Thrombosis (DVT): DVT is a blood clot that forms in a deep vein, usually in the legs. We take preventive measures to minimize the risk of DVT, such as using compression stockings and encouraging early mobilization after surgery.</p>
+</li>
+</ul>
+<h3 dir="ltr">How Much Does Thigh Lift Surgery Cost in Turkey?</h3>
+<p dir="ltr">The cost of thigh lift surgery in Turkey can vary depending on several factors:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Surgical Technique: The specific technique used for your thigh lift (e.g., full thigh lift, medial thigh lift, mini thigh lift) can impact the cost.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Hospital and Anesthesia Fees: The hospital or surgical center where your procedure is performed may have associated fees. The cost of anesthesia will also be factored into the overall cost.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Post-operative Care: Post-operative care, which may include medications, compression garments, and follow-up appointments, impacts the total cost.</p>
+</li>
+</ul>
+<p dir="ltr">Turkey offers competitive prices for thigh lift surgery compared to many other countries, making it a cost-effective option for many individuals seeking this procedure.</p>
+<p dir="ltr">Instead of providing specific prices, we encourage you to contact AZPO Health for a free consultation and personalized quote. Our team will assess your individual needs and provide you with a detailed cost breakdown tailored to your specific situation.</p>
+<h3 dir="ltr">Why Choose AZPO Health for Your Thigh Lift Surgery?</h3>
+<p dir="ltr">Choosing the right medical tourism provider is crucial for a successful and rewarding experience. Here's why AZPO Health stands out as a leader in thigh lift surgery in Turkey:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Expertise and Experience: AZPO Health partners with highly skilled and experienced plastic surgeons specializing in thigh lift procedures. Our surgeons are dedicated to providing exceptional results and personalized care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">State-of-the-Art Facilities: We collaborate with modern, well-equipped hospitals and surgical centers that adhere to the highest international standards.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Approach: We understand that every individual has unique needs and goals. Our team takes the time to listen to your concerns and develop a customized treatment plan tailored to your specific body and desired outcome.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Care: We provide comprehensive care throughout your entire journey, from the initial consultation to post-operative recovery.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Commitment to Safety and Transparency: We prioritize your safety and well-being and are committed to providing you with complete transparency throughout the process.</p>
+</li>
+</ul>
+<h3 dir="ltr">Take the First Step Towards Your Transformation Today!</h3>
+<p dir="ltr">If you're ready to reclaim your confidence and achieve beautifully sculpted thighs, contact AZPO Health today for a free consultation! Our experienced team is here to answer your questions, address your concerns, and guide you through every step of your thigh lift journey. Let us help you achieve the smooth, toned legs you've always desired!</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "thigh-lift" ? thighlift : null,
       subNestedKey: "thigh-lift",
@@ -9354,40 +9641,99 @@ AZPO Health - ведущая компания медицинского тури�
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "For whom it is suitable",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
                 ? "Подходит для людей с избытком кожи или ослабленными мышцами живота. Идеально подходит для пациентов со стабильным весом и хорошим общим состоянием здоровья."
-                : "Suitable for individuals with excess skin or weakened abdominal muscles. Ideal for patients with stable weight and good overall health.",
+                : "Abdominoplasty, or a tummy tuck, removes excess skin and fat from the abdomen and tightens the abdominal muscles to create a flat, toned appearance. This procedure can also help improve core strength and address issues such as muscle separation caused by pregnancy or weight fluctuations.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "Considerations",
-            desc: locale === "ru" ? "" : "",
-          },
-          {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Важно учесть" : "How it works",
             desc:
               locale === "ru"
-                ? "Разрез делается вдоль нижней части живота. Удаляется избыток кожи и жира, и мышцы живота подтягиваются. Затем оставшаяся кожа растягивается для создания гладкой, ровной поверхности."
+                ? ""
                 : "An incision is made along the lower abdomen. Excess skin and fat are removed, and the abdominal muscles are tightened. The remaining skin is then stretched to create a smooth, flat surface.",
+          },
+          {
+            header: locale === "ru" ? "Как это работает" : "For whom",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Suitable for individuals with excess skin or weakened abdominal muscles. Ideal for patients with stable weight and good overall health.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "Does it remove stretch marks?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes, if they’re on the lower abdomen skin that’s removed",
+        },
+        {
+          question: locale === "ru" ? "" : "Can I get pregnant after?",
+          answer: locale === "ru" ? "" : "Yes, but it may reverse the results",
+        },
+        {
+          question: locale === "ru" ? "" : "Is liposuction included?",
+          answer: locale === "ru" ? "" : "Often combined, but ask your surgeon",
+        },
+        {
+          question: locale === "ru" ? "" : "Are results permanent?",
+          answer: locale === "ru" ? "" : "Yes, with stable weight",
+        },
+        {
+          question: locale === "ru" ? "" : "When can I return to work?",
+          answer: locale === "ru" ? "" : "Typically after 2–3 weeks",
+        },
+        {
+          question:
+            locale === "ru"
+              ? ""
+              : "Is there sensation loss in the abdomen after surgery?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Temporary loss is possible, but it usually improves in a few months.",
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Wear compression garment for 6 weeks",
+        locale === "ru"
+          ? ""
+          : "Drains may be placed – care for them as instructed",
+        locale === "ru" ? "" : "Avoid standing upright fully for 5–7 days",
+        locale === "ru" ? "" : "Walk lightly to prevent clots, but no workouts",
+        locale === "ru"
+          ? ""
+          : "Avoid lifting anything heavy for at least 6 weeks",
+        locale === "ru" ? "" : "Ensure your body gets enough rest.",
+        locale === "ru" ? "" : "Follow a high-protein diet.",
+        locale === "ru" ? "" : "Avoid extreme temperatures.",
+        locale === "ru" ? "" : "Avoid low-rise, tight, or waistband clothing.",
+        locale === "ru"
+          ? ""
+          : "Attend follow-up appointments as scheduled by your doctor.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Avoid smoking, alcohol, NSAIDs pre-op",
+        locale === "ru" ? "" : "Lab tests and medical clearance may be needed",
+        locale === "ru"
+          ? ""
+          : "Prepare for 2–3 weeks off work and help at home",
+        locale === "ru" ? "" : "Avoid crash dieting before surgery",
+        locale === "ru" ? "" : "Stop smoking at least 4-6 weeks prior.",
+        locale === "ru" ? "" : "Avoid using blood thinners.",
+        locale === "ru" ? "" : "Opt for a low-carb, high-protein diet.",
+        locale === "ru" ? "" : "Prepare loose clothing.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
             ? "Абдоминопластика значительно улучшает внешний вид живота и идеально подходит для тех, у кого есть избыток кожи или слабость мышц живота."
-            : "Abdominoplasty significantly improves the appearance of the abdomen and is ideal for those with excess skin or abdominal muscle weakness.",
-      },
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Hair Transplant Treatment"
-            : "Hair Transplant Treatment",
+            : "Abdominoplasty significantly improves the appearance of the abdomen and is ideal for those with excess skin or abdominal muscle weakness.By restoring a firmer, more contoured midsection, it enhances both aesthetics and overall core strength, contributing to better posture and confidence.",
       },
       bfs: bfList,
       contents: {
@@ -9398,7 +9744,163 @@ AZPO Health - ведущая компания медицинского тури�
         content:
           locale === "ru"
             ? `<h3><strong>абдоминопластика в Турции: Эффективное решение для восстановления эстетики живота</strong></h3><p>Многие женщины и мужчины сталкиваются с проблемой избыточной кожи и жировых отложений в области живота. Это может быть вызвано беременностью, родами, значительной потерей веса или возрастными изменениями. Обвисший живот не только влияет на внешний вид, но и может вызывать физический дискомфорт и психологические переживания. Подтяжка живота (абдоминопластика) в Турции – это хирургическая процедура, направленная на удаление избыточной кожи и жира, подтягивание мышц живота и формирование более стройного и подтянутого силуэта.</p><p><br></p><p><strong>Почему стоит выбрать Турцию для подтяжки живота?</strong></p><p>Турция является одним из ведущих направлений медицинского туризма, предлагая высококачественные медицинские услуги по доступным ценам. Подтяжка живота в Турции имеет ряд преимуществ:</p><p><strong>Высококвалифицированные хирурги:</strong> Турецкие пластические хирурги обладают большим опытом и expertise в проведении абдоминопластики, используя передовые методики и технологии.</p><p><strong>Современные клиники:</strong> Клиники AZPO Health оснащены современным оборудованием и предлагают комфортные условия для пациентов.</p><p><strong>Доступные цены:</strong> Стоимость подтяжки живота в Турции значительно ниже, чем в Европе или США, что делает эту процедуру доступной для широкого круга пациентов.</p><p><strong>Комплексный пакет услуг:</strong> AZPO Health предлагает комплексные пакеты услуг, включающие операцию, проживание, трансфер и послеоперационный уход. Это позволяет пациентам сэкономить время и деньги, получив при этом качественное медицинское обслуживание.</p><p><strong>Удобное расположение:</strong> Турция имеет удобное географическое расположение и развитую транспортную инфраструктуру, что облегчает путешествие для пациентов из разных стран.</p><p><strong>Различные методы подтяжки живота</strong></p><p>Существуют различные виды абдоминопластики, которые подбираются индивидуально в зависимости от потребностей пациента:</p><p><strong>Полная абдоминопластика:</strong> Этот метод предполагает разрез от одной бедренной кости до другой, чтобы удалить излишки кожи и жира, а также подтянуть мышцы живота. Может потребоваться перемещение пупка.</p><p><strong>Мини-абдоминопластика:</strong> Этот метод включает меньший разрез и предназначен для пациентов с небольшим количеством излишней кожи ниже пупка.</p><p><strong>Расширенная абдоминопластика:</strong> Этот метод включает разрез, аналогичный полной абдоминопластике, но также удаляет излишки кожи по бокам тела.</p><p><strong>Подтяжка живота по методу Tummy Tuck:</strong> Этот метод включает вертикальный разрез, а также горизонтальный разрез, и может быть лучшим вариантом для пациентов, которые потеряли значительное количество веса.</p><p><strong>Подтяжка живота нитями:</strong> малоинвазивная процедура, при которой специальные нити вводятся под кожу для подтяжки тканей. Этот метод подходит для пациентов с умеренным птозом (обвисанием) кожи и не требует длительного восстановления. Подтяжка живота нитями отзывы, как правило, положительные, но важно учитывать, что результат может быть менее выраженным, чем при классической абдоминопластике. Подтяжка живота нитями фото до и после помогут вам оценить возможный эффект от процедуры. Подтяжка живота нитями цена зависит от количества используемых нитей и клиники.</p><p><strong>Альтернативные методы подтяжки живота</strong></p><p><strong>Лазерная подтяжка живота:</strong> нехирургический метод, использующий лазерную энергию для стимуляции выработки коллагена и подтяжки кожи. Этот метод подходит для пациентов с незначительным птозом кожи и не требует длительного восстановления.</p><p><strong>Безоперационная подтяжка живота:</strong> включает различные процедуры, такие как RF-лифтинг, ультразвуковой лифтинг и криолиполиз, направленные на подтяжку кожи и уменьшение жировых отложений. Эти методы подходят для пациентов с небольшими проблемами и не требуют хирургического вмешательства.</p><p><strong>Реабилитация после подтяжки живота</strong></p><p>После подтяжки живота важно следовать рекомендациям врача для обеспечения быстрого и успешного восстановления. Обычно рекомендуется:</p><p>Ношение компрессионного белья для уменьшения отека и поддержки тканей.</p><p>Прием обезболивающих препаратов для облегчения дискомфорта.</p><p>Ограничение физической активности в течение нескольких недель.</p><p>Регулярные перевязки и уход за швами.</p><p>Соблюдение диеты, богатой белком, для ускорения заживления.</p><p><strong>Отзывы пациентов и фото до и после</strong></p><p>AZPO Health гордится своими довольными пациентами, которые достигли отличных результатов после подтяжки живота. Мы предлагаем ознакомиться с отзывами пациентов и посмотреть фото до и после, чтобы увидеть, как эта процедура может изменить вашу жизнь.</p><p><strong>Почему AZPO Health?</strong></p><p>AZPO Health – это ведущая компания в сфере медицинского туризма в Турции, специализирующаяся на трансплантации волос и пластической хирургии. Мы предлагаем:</p><p>Индивидуальный подход к каждому пациенту.</p><p>Команду опытных и квалифицированных хирургов.</p><p>Современные клиники, оснащенные передовым оборудованием.</p><p>Комплексные пакеты услуг по доступным ценам.</p><p>Круглосуточную поддержку и заботу о пациентах.</p><p><strong>Свяжитесь с нами для бесплатной консультации!</strong></p><p>Не упустите возможность вернуть себе стройный силуэт и уверенность в себе. Свяжитесь с AZPO Health сегодня, чтобы получить бесплатную консультацию и узнать больше о подтяжке живота в Турции. Мы поможем вам осуществить вашу мечту о красивом и здоровом теле!</p><p><br></p>`
-            : `<p>Turkey has become a leading destination for medical tourism, particularly for cosmetic procedures like tummy tucks. There are several compelling reasons why people from all over the world are choosing Turkey for their abdominoplasty:</p><ul><li><strong>Affordability:</strong> Compared to the UK, Europe, and the USA, Turkey offers significantly more affordable prices for cosmetic surgery. You can achieve your desired results without breaking the bank, with savings potentially covering travel and accommodation costs.</li><li><strong>High-Quality Healthcare:</strong> Turkey boasts modern medical centers and highly skilled medical professionals. Many Turkish surgeons have international training and experience, ensuring you receive excellent care. AZPO Health partners with top-tier clinics equipped with advanced technology to deliver safe and effective treatments.</li><li><strong>Experienced Surgeons:</strong> Turkish surgeons perform a high volume of tummy tuck procedures annually, honing their skills and expertise. This experience translates to improved outcomes and patient satisfaction.</li><li><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that streamline your medical travel experience. These packages typically include:</li><li class="ql-indent-1">Consultations with experienced surgeons</li><li class="ql-indent-1">Pre-operative assessments</li><li class="ql-indent-1">The tummy tuck procedure</li><li class="ql-indent-1">Anesthesia</li><li class="ql-indent-1">Hospital stay</li><li class="ql-indent-1">Post-operative care and follow-up appointments</li><li class="ql-indent-1">Accommodation</li><li class="ql-indent-1">Airport transfers</li><li><strong>A Chance for Recovery and Exploration:</strong> Combining your surgery with a trip to Turkey allows you to recover in a relaxing environment and explore Turkey's rich history and culture.</li></ul><h2><strong>Understanding the Tummy Tuck Procedure</strong></h2><p>A tummy tuck, or abdominoplasty, is a surgical procedure designed to improve the shape of your abdomen. It involves removing excess skin and fat, tightening abdominal muscles, and reshaping the tummy area. The procedure is typically recommended for individuals who have excess skin that cannot be eliminated through exercise or diet, often due to pregnancy or significant weight loss.</p><h3><strong>Types of Tummy Tuck Procedures</strong></h3><p>There are different types of tummy tuck procedures, and the best option for you will depend on your individual needs and goals:</p><ul><li><strong>Full Tummy Tuck:</strong> This involves an incision from hip to hip, allowing the surgeon to remove excess skin and fat, tighten abdominal muscles, and reposition the belly button.</li><li><strong>Mini Tummy Tuck:</strong> This procedure is suitable for individuals with excess skin and fat below the belly button. The incision is shorter than a full tummy tuck, and the belly button is not repositioned.</li><li><strong>Extended Tummy Tuck:</strong> This is similar to a full tummy tuck but involves a longer incision that extends around the hips to address excess skin on the flanks.</li></ul><h3><strong>What to Expect During the Procedure</strong></h3><ol><li><strong>Anesthesia:</strong> A tummy tuck is typically performed under general anesthesia, ensuring you are comfortable and pain-free throughout the procedure.</li><li><strong>Incision:</strong> Your surgeon will make an incision based on the type of tummy tuck you are having.</li><li><strong>Skin and Fat Removal:</strong> Excess skin and fat are removed from the abdomen.</li><li><strong>Muscle Tightening:</strong> Abdominal muscles are tightened and repaired.</li><li><strong>Closure:</strong> The remaining skin is pulled together and stitched closed. The belly button is repositioned if necessary.</li></ol><h2><strong>Recovery and Post-Operative Care</strong></h2><p>Following your tummy tuck in Turkey, proper recovery and post-operative care are crucial for achieving optimal results. Here's what you can expect:</p><ul><li><strong>Hospital Stay:</strong> You will likely need to stay in the hospital for one to two days after the procedure.</li><li><strong>Pain Management:</strong> Pain medication will help manage discomfort during the initial recovery period.</li><li><strong>Compression Garment:</strong> You'll need to wear a compression garment to support your abdomen and minimize swelling.</li><li><strong>Drains:</strong> Drainage tubes may be placed to prevent fluid buildup.</li><li><strong>Activity Restrictions:</strong> You'll need to avoid strenuous activities for several weeks.</li><li><strong>Follow-Up Appointments:</strong> Regular follow-up appointments with your surgeon are essential to monitor your progress.</li></ul><h2><strong>Realistic Expectations and Potential Risks</strong></h2><p>While a tummy tuck can provide significant improvements to your abdominal contour, it's important to have realistic expectations. A tummy tuck is not a weight-loss solution and is best suited for individuals who have already achieved a stable weight.</p><p>As with any surgical procedure, there are potential risks associated with a tummy tuck, including:</p><ul><li>Infection</li><li>Bleeding</li><li>Fluid buildup (seroma)</li><li>Poor wound healing</li><li>Scarring</li><li>Changes in skin sensation</li><li>Tissue damage</li><li>Blood clots</li></ul><p>Your surgeon will discuss these risks with you in detail during your consultation, ensuring you are fully informed before making a decision.</p><h2><strong>Tummy Tuck Before and After: Real Patient Transformations</strong></h2><p>One of the best ways to understand the potential benefits of a tummy tuck is to view before and after photos of real patients. These photos can provide a visual representation of the kind of results you can expect.</p><h2><strong>Why Choose AZPO Health for Your Tummy Tuck in Turkey?</strong></h2><p>At AZPO Health, we are committed to providing exceptional care and helping you achieve your desired outcome. Here's why you should choose us for your tummy tuck in Turkey:</p><ul><li><strong>Experienced and Qualified Surgeons:</strong> We partner with board-certified plastic surgeons with extensive experience in tummy tuck procedures.</li><li><strong>Personalized Treatment Plans:</strong> We tailor each treatment plan to your unique needs and goals, ensuring you receive the most appropriate procedure for your body.</li><li><strong>State-of-the-Art Facilities:</strong> We work with modern, accredited hospitals equipped with advanced technology.</li><li><strong>Comprehensive Support:</strong> We provide comprehensive support throughout your journey, from initial consultation to post-operative care.</li><li><strong>Commitment to Safety:</strong> Patient safety is our top priority. We adhere to the highest surgical standards and protocols to ensure optimal outcomes and minimize risks.</li></ul><h2><strong>Take the First Step Toward a New You!</strong></h2><p>Don't let excess skin and a weakened abdomen hold you back any longer. Contact AZPO Health today to schedule a free consultation with one of our experienced surgeons. We'll answer your questions, assess your individual needs, and provide you with a personalized quote for your tummy tuck in Turkey.</p><p><strong>Ready to reclaim your confidence and achieve the body you've always wanted?</strong></p><p><br></p><p><br></p>`,
+            : `<p dir="ltr">Turkey has become a leading destination for medical tourism, particularly for cosmetic procedures like tummy tucks. There are several compelling reasons why people from all over the world are choosing Turkey for their abdominoplasty:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: Compared to the UK, Europe, and the USA, Turkey offers significantly more affordable prices for cosmetic surgery. You can achieve your desired results without breaking the bank, with savings potentially covering travel and accommodation costs.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">High-Quality Healthcare: Turkey boasts modern medical centers and highly skilled medical professionals. Many Turkish surgeons have international training and experience, ensuring you receive excellent care. AZPO Health partners with top-tier clinics equipped with advanced technology to deliver safe and effective treatments.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Accredited Healthcare: Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Surgeons: Turkish surgeons perform a high volume of tummy tuck procedures annually, honing their skills and expertise. This experience translates to improved outcomes and patient satisfaction.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health offers all-inclusive packages that streamline your medical travel experience. These packages typically include:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Consultations with experienced surgeons</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Pre-operative assessments</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The tummy tuck procedure</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Anesthesia</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Hospital stay</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Post-operative care and follow-up appointments</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Accommodation</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Airport transfers</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">A Chance for Recovery and Exploration: Combining your surgery with a trip to Turkey allows you to recover in a relaxing environment and explore Turkey's rich history and culture.</p>
+</li>
+</ul>
+<h2 dir="ltr">Understanding the Tummy Tuck Procedure</h2>
+<p dir="ltr">A tummy tuck, or abdominoplasty, is a surgical procedure designed to improve the shape of your abdomen. It involves removing excess skin and fat, tightening abdominal muscles, and reshaping the tummy area. The procedure is typically recommended for individuals who have excess skin that cannot be eliminated through exercise or diet, often due to pregnancy or significant weight loss.</p>
+<h3 dir="ltr">Types of Tummy Tuck Procedures</h3>
+<p dir="ltr">There are different types of tummy tuck procedures, and the best option for you will depend on your individual needs and goals:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Full Tummy Tuck: This involves an incision from hip to hip, allowing the surgeon to remove excess skin and fat, tighten abdominal muscles, and reposition the belly button.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Mini Tummy Tuck: This procedure is suitable for individuals with excess skin and fat below the belly button. The incision is shorter than a full tummy tuck, and the belly button is not repositioned.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Extended Tummy Tuck: This is similar to a full tummy tuck but involves a longer incision that extends around the hips to address excess skin on the flanks.</p>
+</li>
+</ul>
+<h3 dir="ltr">What to Expect During the Procedure</h3>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Anesthesia: A tummy tuck is typically performed under general anesthesia, ensuring you are comfortable and pain-free throughout the procedure.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Incision: Your surgeon will make an incision based on the type of tummy tuck you are having.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Skin and Fat Removal: Excess skin and fat are removed from the abdomen.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Muscle Tightening: Abdominal muscles are tightened and repaired.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Closure: The remaining skin is pulled together and stitched closed. The belly button is repositioned if necessary.</p>
+</li>
+</ol>
+<h2 dir="ltr">Recovery and Post-Operative Care</h2>
+<p dir="ltr">Following your tummy tuck in Turkey, proper recovery and post-operative care are crucial for achieving optimal results. Here's what you can expect:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Hospital Stay: You will likely need to stay in the hospital for one to two days after the procedure.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pain Management: Pain medication will help manage discomfort during the initial recovery period.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Compression Garment: You'll need to wear a compression garment to support your abdomen and minimize swelling.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Drains: Drainage tubes may be placed to prevent fluid buildup.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Activity Restrictions: You'll need to avoid strenuous activities for several weeks.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Follow-Up Appointments: Regular follow-up appointments with your surgeon are essential to monitor your progress.</p>
+</li>
+</ul>
+<h2 dir="ltr">Realistic Expectations and Potential Risks</h2>
+<p dir="ltr">While a tummy tuck can provide significant improvements to your abdominal contour, it's important to have realistic expectations. A tummy tuck is not a weight-loss solution and is best suited for individuals who have already achieved a stable weight.</p>
+<p dir="ltr">As with any surgical procedure, there are potential risks associated with a tummy tuck, including:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Infection</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Bleeding</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Fluid buildup (seroma)</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Poor wound healing</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Scarring</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Changes in skin sensation</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Tissue damage</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Blood clots</p>
+</li>
+</ul>
+<p dir="ltr">Your surgeon will discuss these risks with you in detail during your consultation, ensuring you are fully informed before making a decision.</p>
+<h2 dir="ltr">Tummy Tuck Before and After: Real Patient Transformations</h2>
+<p dir="ltr">One of the best ways to understand the potential benefits of a tummy tuck is to view before and after photos of real patients. These photos can provide a visual representation of the kind of results you can expect.</p>
+<h2 dir="ltr">Why Choose AZPO Health for Your Tummy Tuck in Turkey?</h2>
+<p dir="ltr">At AZPO Health, we are committed to providing exceptional care and helping you achieve your desired outcome. Here's why you should choose us for your tummy tuck in Turkey:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced and Qualified Surgeons: We partner with board-certified plastic surgeons with extensive experience in tummy tuck procedures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Treatment Plans: We tailor each treatment plan to your unique needs and goals, ensuring you receive the most appropriate procedure for your body.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">State-of-the-Art Facilities: We work with modern, accredited hospitals equipped with advanced technology.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Support: We provide comprehensive support throughout your journey, from initial consultation to post-operative care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Commitment to Safety: Patient safety is our top priority. We adhere to the highest surgical standards and protocols to ensure optimal outcomes and minimize risks.</p>
+</li>
+</ul>
+<h2 dir="ltr">Take the First Step Toward a New You!</h2>
+<p dir="ltr">Don't let excess skin and a weakened abdomen hold you back any longer. Contact AZPO Health today to schedule a free consultation with one of our experienced surgeons. We'll answer your questions, assess your individual needs, and provide you with a personalized quote for your tummy tuck in Turkey.</p>
+<p dir="ltr">Ready to reclaim your confidence and achieve the body you've always wanted?</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "tummy-tuck-abdominoplasty" ? tumy : null,
       subNestedKey: "tummy-tuck-abdominoplasty",
@@ -10183,16 +10685,133 @@ These are just a few examples of the positive outcomes that can be achieved with
         locale === "ru"
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
           : "Trying for a baby but facing endless disappointment? Male infertility is a hidden struggle that affects millions, yet few talk about it. Low sperm count, poor motility, and hormonal imbalances can crush confidence and strain relationships. But there’s hope—solutions exist. Don’t suffer in silence. Take the first step today.",
-      benefits: null,
-      faqs: [],
-      posts: [],
-      preList: [],
-      conclusion: null,
-      subCategoryContent: {
-        title:
+      benefits: {
+        items: [
+          {
+            title: locale === "ru" ? "Новое Тело" : "Hormonal Therapy",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Restores hormonal balance to support natural sperm production.",
+          },
+          {
+            title: locale === "ru" ? "Гладкая Кожа" : "Surgical Interventions",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Improves sperm flow and quality by correcting structural issues.",
+          },
+          {
+            title:
+              locale === "ru"
+                ? "Идеальный Контур"
+                : "Assisted Reproductive Techniques (ART)",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Increases fertility chances through advanced methods like IUI, IVF, and ICSI.",
+          },
+        ],
+        categories: [
+          {
+            header: locale === "ru" ? "Для кого" : "Description",
+            desc:
+              locale === "ru"
+                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                : "Male infertility refers to a condition that hinders a man's ability to conceive a child naturally due to various medical or functional issues affecting the reproductive system. These problems may involve sperm production, quality, transportation, or hormonal regulation.",
+          },
+          {
+            header: locale === "ru" ? "Важно учесть" : "How it Works",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Male infertility treatments work by correcting hormonal, structural, or functional issues affecting sperm quality. Hormonal therapy stimulates sperm production, while surgery fixes anatomical problems like varicocele. ART methods, such as IUI, IVF, and ICSI, enhance fertilization chances, with IMSI selecting the healthiest sperm for better outcomes.",
+          },
+          {
+            header: locale === "ru" ? "Как это работает" : "Who It's For",
+            desc:
+              locale === "ru"
+                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                : "Male infertility treatments are for men with hormonal deficiencies, structural blockages, low sperm count, poor motility, or severe sperm abnormalities. They also benefit those with azoospermia or repeated IVF failures.",
+          },
+        ],
+      },
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "What causes male infertility?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Low sperm count, motility, hormonal or structural issues",
+        },
+        {
+          question: locale === "ru" ? "" : "Can it be treated?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes, with medications, surgery, or assisted reproduction",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it permanent?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Depends on cause; many cases are reversible",
+        },
+        {
+          question: locale === "ru" ? "" : "How is it diagnosed?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Semen analysis, hormone and genetic testing",
+        },
+        {
+          question: locale === "ru" ? "" : "Does lifestyle matter?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Absolutely – smoking, alcohol, stress impact fertility",
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Follow medication schedules strictly",
+        locale === "ru"
+          ? ""
+          : "Maintain healthy lifestyle (diet, sleep, avoid toxins)",
+        locale === "ru" ? "" : "Attend regular fertility follow-ups",
+        locale === "ru"
+          ? ""
+          : "Abstain from sex as recommended during treatment",
+        locale === "ru"
+          ? ""
+          : "Use antioxidant-rich foods: These can help improve sperm quality by neutralizing free radicals. Include foods like berries, nuts, and leafy greens.",
+        locale === "ru"
+          ? ""
+          : "Monitor for signs of infection: Watch for unusual swelling, redness, or discomfort in the area after any surgical intervention.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Undergo semen analysis and hormonal testing",
+        locale === "ru"
+          ? ""
+          : "Avoid heat exposure (saunas etc.) pre-evaluation",
+        locale === "ru" ? "" : "Avoid tight clothes pre-evaluation",
+        locale === "ru"
+          ? ""
+          : "Stop smoking, alcohol, and limit caffeine consumption",
+        locale === "ru" ? "" : "Provide full medical and reproductive history",
+        locale === "ru"
+          ? ""
+          : "Avoid exposure to environmental toxins: This includes reducing contact with chemicals, heavy metals, and pollution. These can negatively affect sperm quality",
+        locale === "ru"
+          ? ""
+          : "Ensure proper hydration: Dehydration can impact sperm health. Drink plenty of water prior to the evaluation",
+      ],
+      conclusion: {
+        title: locale === "ru" ? "Заключение" : "Conclusion",
+        desc:
           locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
+            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            : "Male infertility treatments offer effective solutions for overcoming various challenges related to sperm production and quality. By addressing hormonal imbalances, structural issues, and utilizing advanced reproductive techniques, these treatments significantly improve the chances of conception. With the right approach, many men can achieve successful outcomes, restoring fertility and enhancing their overall well-being.",
       },
       bfs: bfList,
       contents: {
@@ -10203,7 +10822,183 @@ These are just a few examples of the positive outcomes that can be achieved with
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>Turkey has become a leading destination for medical tourism, and for good reason. When it comes to male infertility, several factors make Turkey, and specifically AZPO Health, an attractive option:</p><ul><li><strong>High-Quality Care:</strong> AZPO Health adheres to international standards, ensuring that you receive the best possible care. The medical staff are well-educated and experienced, offering expertise in the latest techniques for diagnosing and treating male infertility.</li><li><strong>Affordability:</strong> Compared to Europe and the United States, Turkey offers significantly more affordable prices for medical procedures. This allows you to access advanced treatments without straining your finances.</li><li><strong>Comprehensive Packages:</strong> AZPO Health provides all-inclusive packages that cover everything from initial consultations and treatment to accommodation and transportation. This simplifies the process and allows you to focus on your health and well-being.</li><li><strong>A Welcoming Destination:</strong> Combining your treatment with a vacation in Turkey can make the experience more enjoyable. Istanbul, Antalya, and Alanya offer rich history, culture, and beautiful scenery.</li></ul><h2><strong>Understanding Male Infertility</strong></h2><p>Male infertility refers to a condition where a man is unable to contribute to conception after a year of trying to conceive with a female partner. It's a common issue, affecting up to 15% of men.</p><h3><strong>Causes of Male Infertility</strong></h3><p>Male infertility can arise from various factors:</p><ul><li><strong>Sperm Disorders:</strong> These are the most common causes and can include:</li><li class="ql-indent-1"><strong>Low sperm count (oligospermia):</strong> Fewer than 15 million sperm per milliliter of semen or fewer than 39 million per ejaculate.</li><li class="ql-indent-1"><strong>Poor sperm motility (asthenospermia):</strong> Sperm are unable to move efficiently.</li><li class="ql-indent-1"><strong>Abnormal sperm morphology (teratospermia):</strong> Sperm have an irregular shape, hindering their ability to fertilize an egg.</li><li class="ql-indent-1"><strong>Azoospermia:</strong> Complete absence of sperm in the ejaculate.</li><li><strong>Hormonal Imbalances:</strong> Hormones like testosterone play a vital role in sperm production. Imbalances can disrupt this process.</li><li><strong>Structural or Anatomical Issues:</strong> These can include blockages in the reproductive tract that prevent sperm from being ejaculated.</li><li><strong>Genetic Factors:</strong> Certain genetic conditions can affect sperm production or function.</li><li><strong>Lifestyle Factors:</strong> Factors such as obesity, smoking, excessive alcohol consumption, and drug use can negatively impact fertility.</li><li><strong>Infections and Medical Conditions:</strong> Infections like epididymitis or medical conditions like diabetes can contribute to infertility.</li><li><strong>Varicocele:</strong> Enlargement of the veins within the scrotum, which can affect sperm quality.</li></ul><h3><strong>Diagnosis of Male Infertility</strong></h3><p>Diagnosing male infertility typically involves a comprehensive evaluation:</p><ul><li><strong>Semen Analysis:</strong> This is a crucial test that assesses sperm count, motility, and morphology.</li><li><strong>Physical Examination:</strong> A doctor will examine the testicles and reproductive organs to identify any structural abnormalities.</li><li><strong>Hormone Testing:</strong> Blood tests are performed to measure hormone levels.</li><li><strong>Genetic Testing:</strong> This can help identify genetic causes of infertility.</li><li><strong>Scrotal Ultrasound:</strong> This imaging technique can help detect varicoceles or other abnormalities in the scrotum.</li></ul><h3><strong>Treatment Options with AZPO Health</strong></h3><p>AZPO Health offers a range of advanced treatment options tailored to your specific needs:</p><ol><li><strong>Lifestyle Modifications:</strong></li></ol><ul><li class="ql-indent-1">Adopting a healthy lifestyle can significantly improve sperm quality. This includes:</li><li class="ql-indent-2">Maintaining a balanced diet rich in fruits, vegetables, and lean protein.</li><li class="ql-indent-2">Regular exercise.</li><li class="ql-indent-2">Avoiding smoking, excessive alcohol consumption, and drug use.</li></ul><ol><li><strong>Medical Treatments:</strong></li></ol><ul><li class="ql-indent-1"><strong>Hormone Therapy:</strong> If hormonal imbalances are the cause, medications can help restore normal hormone levels and improve sperm production.</li><li class="ql-indent-1"><strong>Medications for Infections:</strong> Antibiotics can be used to treat infections affecting the reproductive system.</li></ul><ol><li><strong>Surgical Interventions:</strong></li></ol><ul><li class="ql-indent-1"><strong>Varicocelectomy:</strong> Surgical repair of a varicocele can improve sperm quality and increase the chances of natural conception.</li><li class="ql-indent-1"><strong>Surgical Sperm Retrieval:</strong> For men with blockages or who produce sperm but cannot ejaculate them, sperm can be surgically retrieved from the testicles. Techniques include:</li><li class="ql-indent-2"><strong>Testicular Sperm Extraction (TESE)</strong></li><li class="ql-indent-2"><strong>Microsurgical Epididymal Sperm Aspiration (MESA)</strong></li><li class="ql-indent-2"><strong>Percutaneous Epididymal Sperm Aspiration (PESA)</strong></li></ul><ol><li><strong>Assisted Reproductive Technologies (ART):</strong></li></ol><ul><li class="ql-indent-1"><strong>Intrauterine Insemination (IUI):</strong> Sperm are directly placed into the woman's uterus, increasing the chances of fertilization.</li><li class="ql-indent-1"><strong>In Vitro Fertilization (IVF):</strong> Eggs are retrieved from the woman's ovaries and fertilized with sperm in a laboratory. The resulting embryos are then transferred to the uterus.</li><li class="ql-indent-1"><strong>Intracytoplasmic Sperm Injection (ICSI):</strong> A single sperm is injected directly into an egg, used in conjunction with IVF.</li><li class="ql-indent-1"><strong>Sperm Selection Techniques (IMSI):</strong> Sperm is examined under high magnification to select the healthiest candidates for ICSI.</li></ul><ol><li><strong>Sperm Donation:</strong> This option involves using sperm from a screened donor to achieve fertilization. It is suitable for men with azoospermia or severe sperm abnormalities.</li></ol><h2><strong>Real Stories, Real Hope</strong></h2><p><em>John, 35, struggled with low sperm count for years. After undergoing hormone therapy and making lifestyle changes with AZPO Health, he and his wife conceived naturally.</em></p><p><em>David, 42, had a varicocele that affected his sperm quality. Following a varicocelectomy with AZPO Health, his sperm parameters improved significantly, leading to successful IVF.</em></p><p><em>Mark, 28, faced azoospermia due to a genetic condition. With sperm donation and IVF with AZPO Health, he and his partner welcomed a healthy baby boy.</em></p><h2><strong>Why AZPO Health?</strong></h2><p>AZPO Health is committed to providing compassionate, personalized care to help you overcome male infertility. Here's what sets AZPO Health apart:</p><ul><li><strong>Experienced Specialists:</strong> The medical team comprises highly skilled doctors with extensive experience in male infertility.</li><li><strong>State-of-the-Art Facilities:</strong> AZPO Health connects you with clinics and hospitals with cutting-edge technology and advanced techniques to ensure the best possible outcomes.</li><li><strong>Personalized Treatment Plans:</strong> Every patient receives an individualized treatment plan tailored to their specific needs and goals.</li><li><strong>Comprehensive Support:</strong> AZPO Health provides support throughout the entire journey, from initial consultation to post-treatment care.</li></ul><h2><strong>Take the First Step Towards Fatherhood</strong></h2><p>Don't let male infertility stand in the way of your dreams. Contact AZPO Health today for a free consultation and discover how we can help you achieve your goal of parenthood.</p><p><br></p>`,
+            : `<p dir="ltr">Turkey has become a leading destination for medical tourism, and for good reason. When it comes to male infertility, several factors make Turkey, and specifically AZPO Health, an attractive option:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">High-Quality Care: AZPO Health adheres to international standards, ensuring that you receive the best possible care. The medical staff are well-educated and experienced, offering expertise in the latest techniques for diagnosing and treating male infertility.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: Compared to Europe and the United States, Turkey offers significantly more affordable prices for medical procedures. This allows you to access advanced treatments without straining your finances.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health provides all-inclusive packages that cover everything from initial consultations and treatment to accommodation and transportation. This simplifies the process and allows you to focus on your health and well-being.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">A Welcoming Destination: Combining your treatment with a vacation in Turkey can make the experience more enjoyable. Istanbul, Antalya, and Alanya offer rich history, culture, and beautiful scenery.</p>
+</li>
+</ul>
+<h2 dir="ltr">Understanding Male Infertility</h2>
+<p dir="ltr">Male infertility refers to a condition where a man is unable to contribute to conception after a year of trying to conceive with a female partner. It's a common issue, affecting up to 15% of men.</p>
+<h3 dir="ltr">Causes of Male Infertility</h3>
+<p dir="ltr">Male infertility can arise from various factors:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Sperm Disorders: These are the most common causes and can include:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Low sperm count (oligospermia): Fewer than 15 million sperm per milliliter of semen or fewer than 39 million per ejaculate.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Poor sperm motility (asthenospermia): Sperm are unable to move efficiently.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Abnormal sperm morphology (teratospermia): Sperm have an irregular shape, hindering their ability to fertilize an egg.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Azoospermia: Complete absence of sperm in the ejaculate.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Hormonal Imbalances: Hormones like testosterone play a vital role in sperm production. Imbalances can disrupt this process.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Structural or Anatomical Issues: These can include blockages in the reproductive tract that prevent sperm from being ejaculated.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Genetic Factors: Certain genetic conditions can affect sperm production or function.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Lifestyle Factors: Factors such as obesity, smoking, excessive alcohol consumption, and drug use can negatively impact fertility.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Infections and Medical Conditions: Infections like epididymitis or medical conditions like diabetes can contribute to infertility.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Varicocele: Enlargement of the veins within the scrotum, which can affect sperm quality.</p>
+</li>
+</ul>
+<h3 dir="ltr">Diagnosis of Male Infertility</h3>
+<p dir="ltr">Diagnosing male infertility typically involves a comprehensive evaluation:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Semen Analysis: This is a crucial test that assesses sperm count, motility, and morphology.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Physical Examination: A doctor will examine the testicles and reproductive organs to identify any structural abnormalities.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Hormone Testing: Blood tests are performed to measure hormone levels.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Genetic Testing: This can help identify genetic causes of infertility.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Scrotal Ultrasound: This imaging technique can help detect varicoceles or other abnormalities in the scrotum.</p>
+</li>
+</ul>
+<h3 dir="ltr">Treatment Options with AZPO Health</h3>
+<p dir="ltr">AZPO Health offers a range of advanced treatment options tailored to your specific needs:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Lifestyle Modifications:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Adopting a healthy lifestyle can significantly improve sperm quality. This includes:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Maintaining a balanced diet rich in fruits, vegetables, and lean protein.</p>
+</li>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Regular exercise.</p>
+</li>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Avoiding smoking, excessive alcohol consumption, and drug use.</p>
+</li>
+</ul>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Medical Treatments:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Hormone Therapy: If hormonal imbalances are the cause, medications can help restore normal hormone levels and improve sperm production.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Medications for Infections: Antibiotics can be used to treat infections affecting the reproductive system.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Stem cell treatments: Although it's still considered an experimental field, stem cell therapy is already being used in many countries to stimulate sperm production or improve sperm quality. Success rates vary from person to person. For more detailed information, feel free to contact us.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Surgical Interventions:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Varicocelectomy: Surgical repair of a varicocele can improve sperm quality and increase the chances of natural conception.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Surgical Sperm Retrieval: For men with blockages or who produce sperm but cannot ejaculate them, sperm can be surgically retrieved from the testicles. Techniques include:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Testicular Sperm Extraction (TESE)</p>
+</li>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Microsurgical Epididymal Sperm Aspiration (MESA)</p>
+</li>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Percutaneous Epididymal Sperm Aspiration (PESA)</p>
+</li>
+</ul>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Assisted Reproductive Technologies (ART):</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Intrauterine Insemination (IUI): Sperm are directly placed into the woman's uterus, increasing the chances of fertilization.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">In Vitro Fertilization (IVF): Eggs are retrieved from the woman's ovaries and fertilized with sperm in a laboratory. The resulting embryos are then transferred to the uterus.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Intracytoplasmic Sperm Injection (ICSI): A single sperm is injected directly into an egg, used in conjunction with IVF.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Sperm Selection Techniques (IMSI): Sperm is examined under high magnification to select the healthiest candidates for ICSI.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Sperm Donation: This option involves using sperm from a screened donor to achieve fertilization. It is suitable for men with azoospermia or severe sperm abnormalities.</p>
+</li>
+</ol>
+<h2 dir="ltr">Real Stories, Real Hope</h2>
+<p dir="ltr">John, 35, struggled with low sperm count for years. After undergoing hormone therapy and making lifestyle changes with AZPO Health, he and his wife conceived naturally.</p>
+<p dir="ltr">David, 42, had a varicocele that affected his sperm quality. Following a varicocelectomy with AZPO Health, his sperm parameters improved significantly, leading to successful IVF.</p>
+<p dir="ltr">Mark, 28, faced azoospermia due to a genetic condition. With sperm donation and IVF with AZPO Health, he and his partner welcomed a healthy baby boy.</p>
+<h2 dir="ltr">Why AZPO Health?</h2>
+<p dir="ltr">AZPO Health is committed to providing compassionate, personalized care to help you overcome male infertility. Here's what sets AZPO Health apart:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Specialists: The medical team comprises highly skilled doctors with extensive experience in male infertility.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">State-of-the-Art Facilities: AZPO Health connects you with clinics and hospitals with cutting-edge technology and advanced techniques to ensure the best possible outcomes.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Treatment Plans: Every patient receives an individualized treatment plan tailored to their specific needs and goals.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Support: AZPO Health provides support throughout the entire journey, from initial consultation to post-treatment care.</p>
+</li>
+</ul>
+<h2 dir="ltr">Take the First Step Towards Fatherhood</h2>
+<p dir="ltr">Don't let male infertility stand in the way of your dreams. Contact AZPO Health today for a free consultation and discover how we can help you achieve your goal of parenthood.</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "male-infertility" ? maleFertility : null,
       subNestedKey: "male-infertility",
@@ -10220,70 +11015,10 @@ These are just a few examples of the positive outcomes that can be achieved with
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
           : "Is your sexual health affecting your confidence, relationships, and overall well-being? You’re not alone—and real solutions exist. Whether it’s Erectile Dysfunction, low libido, or performance concerns, advanced treatments in Turkey’s world-class medical centers offer hope and transformation. Start your journey with AZPO health now.",
       benefits: null,
-      // {
-      //   items: [
-      //     {
-      //       title: locale === "ru" ? "Новое Тело" : "Error Correction",
-      //       desc:
-      //         locale === "ru"
-      //           ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
-      //           : "Fixes severe vision problems when LASIK isn't suitable",
-      //     },
-      //     {
-      //       title: locale === "ru" ? "Гладкая Кожа" : "Vision Freedom",
-      //       desc:
-      //         locale === "ru"
-      //           ? "Избавление от растяжек и дефектов кожи для безупречного результата"
-      //           : "Reduces reliance on glasses and contacts for clear vision",
-      //     },
-      //     {
-      //       title: locale === "ru" ? "Идеальный Контур" : "Cataract Prevention",
-      //       desc:
-      //         locale === "ru"
-      //           ? "Создание привлекательного силуэта через устранение лишних тканей"
-      //           : "Helps protect against future cataract development",
-      //     },
-      //   ],
-      //   categories: [
-      //     {
-      //       header: locale === "ru" ? "Для кого" : "Who It’s For",
-      //       desc:
-      //         locale === "ru"
-      //           ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
-      //           : "Individuals over 40 with presbyopia or high refractive errors.Patients unsuitable for LASIK due to thin corneas or extreme vision correction needs.Those seeking a permanent solution to both refractive errors and potential cataracts.",
-      //     },
-      //     {
-      //       header: locale === "ru" ? "Важно учесть" : "Considerations",
-      //       desc: [
-      //         locale === "ru"
-      //           ? "Recovery: Can take several weeks, requiring specific post-operative positions, especially if a gas bubble is used.Risks: Infection, cataract formation, or increased intraocular pressure.Follow-Up Care: Regular monitoring to ensure proper healing and vision restoration."
-      //           : "Risks: Include infection, retinal detachment, or glare from the IOL, though these are rare.Recovery: May require weeks for complete stabilization of vision.Not Suitable For: People with certain retinal or corneal diseases.",
-      //       ],
-      //       // desc:
-      //       //   locale === "ru"
-      //       //     ? ""
-      //       //     : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
-      //     },
-      //     {
-      //       header: locale === "ru" ? "Как это работает" : "How it works",
-      //       desc:
-      //         locale === "ru"
-      //           ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-      //           : "RLE is a surgical procedure similar to cataract surgery. The eye's natural lens is removed and replaced with an artificial intraocular lens (IOL) to correct refractive errors such as severe myopia, hyperopia, or presbyopia. The procedure is performed under local anesthesia and involves minimal discomfort. The new lens eliminates the need for future cataract surgery.",
-      //     },
-      //   ],
-      // }
       faqs: [],
       posts: [],
       preList: [],
       conclusion: null,
-      // {
-      //   title: locale === "ru" ? "Заключение" : "Conclusion",
-      //   desc:
-      //     locale === "ru"
-      //       ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
-      //       : "RLE is an effective option for individuals with severe refractive errors or early cataracts, offering both vision correction and long-term prevention of cataracts. While it carries some risks, its success rate and dual benefits make it a valuable choice for eligible patients.",
-      // }
       subCategoryContent: {
         title:
           locale === "ru"
@@ -10551,45 +11286,99 @@ These are just a few examples of the positive outcomes that can be achieved with
         ],
         categories: [
           {
-            header:
-              locale === "ru" ? "Для кого" : "What is Erectile Dysfunction?",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
                 : "Erectile dysfunction (ED), also known as impotence, is the inability to achieve or maintain an erection sufficient for sexual activity. It can result from various causes, most commonly organic factors. Depending on the underlying cause and severity of ED, appropriate treatment options are determined.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "Considerations",
-            desc: locale === "ru" ? "" : "",
-          },
-          {
-            header:
-              locale === "ru"
-                ? "Как это работает"
-                : "How Does Mesenchymal Stem Cell Therapy Work?",
+            header: locale === "ru" ? "Важно учесть" : "How It Works",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-                : "Mesenchymal stem cells (MSCs) play a pivotal role in tissue repair and regeneration by differentiating into specialized cells when injected into the body. In the case of ED, MSCs are introduced into penile tissue, where they repair and regenerate damaged structures involved in achieving and maintaining erections.",
+                ? ""
+                : "Mesenchymal stem cells (MSCs) help repair and regenerate tissue by differentiating into specialized cells when injected into the body. For ED, MSCs are introduced into penile tissue, where they repair damaged structures, improve blood flow, and promote the formation of new blood vessels. Additionally, MSCs secrete bioactive molecules (secretome) such as growth factors and proteins, further supporting tissue repair through paracrine signaling.",
+          },
+          {
+            header: locale === "ru" ? "Как это работает" : "For Whom",
+            desc:
+              locale === "ru"
+                ? ""
+                : "This therapy is suitable for individuals with ED from organic causes (vascular, muscular, or neural damage), who don’t respond to conventional treatments, and have medical histories like diabetes, high blood pressure, or prostate surgery. It’s ideal for those preferring regenerative, minimally invasive options over surgery.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "What causes ED?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Blood flow issues, nerve damage, hormones, or stress",
+        },
+        {
+          question: locale === "ru" ? "" : "Are pills safe?",
+          answer: locale === "ru" ? "" : "Yes, under medical supervision",
+        },
+        {
+          question: locale === "ru" ? "" : "Will it go away on its own?",
+          answer:
+            locale === "ru" ? "" : "Sometimes, especially if stress-related",
+        },
+        {
+          question: locale === "ru" ? "" : "What if pills don’t work?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Other treatments include injections or devices",
+        },
+        {
+          question: locale === "ru" ? "" : "Can young men get ED?",
+          answer:
+            locale === "ru" ? "" : "Yes – often linked to anxiety or lifestyle",
+        },
+      ],
+      posts: [
+        locale === "ru"
+          ? ""
+          : "Take medications (e.g., PDE5 inhibitors) as prescribed",
+        locale === "ru"
+          ? ""
+          : "Continue lifestyle improvements (weight, exercise, diet)",
+        locale === "ru" ? "" : "Avoid recreational ED drugs unless approved",
+        locale === "ru"
+          ? ""
+          : "Treat underlying conditions (diabetes, hypertension)",
+        locale === "ru" ? "" : "Schedule follow-ups to monitor response",
+        locale === "ru"
+          ? ""
+          : "Avoid sexual activity for the duration recommended by your doctor.",
+        locale === "ru"
+          ? ""
+          : "Seek medical attention if you experience pain or discomfort.",
+        locale === "ru" ? "" : "Avoid stress.",
+        locale === "ru" ? "" : "Reduce tobacco and alcohol use.",
+      ],
+      preList: [
+        locale === "ru"
+          ? ""
+          : "Disclose all current medications and health conditions",
+        locale === "ru"
+          ? ""
+          : "Expect lab tests for testosterone or vascular health",
+        locale === "ru"
+          ? ""
+          : "Avoid alcohol, tobacco, and high-fat meals before testing",
+        locale === "ru"
+          ? ""
+          : "Be honest about psychological and lifestyle factors",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? ""
             : "Mesenchymal stem cell therapy, particularly the secretome approach, represents a groundbreaking advancement in the treatment of erectile dysfunction. By promoting tissue repair and improving vascular function, it offers hope for patients who have not benefited from conventional therapies. Although further research and standardization are needed to refine this innovative treatment, early studies and clinical experiences suggest that it has the potential to revolutionize the management of ED, particularly for those with severe or refractory cases. For personalized consultation and detailed information about suitability, reaching out to a qualified medical professional is essential.",
-      },
-
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
       },
       bfs: bfList,
       contents: {
@@ -10600,7 +11389,104 @@ These are just a few examples of the positive outcomes that can be achieved with
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>Turkey has become a popular choice for individuals seeking medical treatments abroad for several compelling reasons. While AZPO Health does not provide treatment directly, we connect you with reputable clinics and skilled doctors in Turkey who offer a range of Erectile Dysfunction treatments, including cutting-edge options like stem cell therapy.</p><p>Choosing Turkey for your treatment journey offers potential benefits such as:</p><ul><li><strong>Access to Experienced Medical Professionals:</strong> Turkish healthcare professionals, including urologists and specialists in sexual health, often have extensive training and experience in diagnosing and treating Erectile Dysfunction. AZPO Health partners with facilities that are known for their qualified medical teams.</li><li><strong>Modern Healthcare Facilities:</strong> The clinics and hospitals in Turkey that AZPO Health collaborates with are equipped with advanced medical technologies, allowing for comprehensive evaluations and the application of innovative treatments like stem cell therapy.</li><li><strong>Comprehensive Care Options:</strong> Depending on the underlying cause of your Erectile Dysfunction, the medical professionals in Turkey offer a variety of treatment approaches. Stem cell therapy is one of the advanced options that aims to address the cause of ED rather than just managing the symptoms.</li><li><strong>A Supportive Treatment Environment:</strong> Undergoing medical treatment in a new environment can be a significant decision. AZPO Health aims to facilitate a smooth and comfortable experience by connecting you with clinics that understand the needs of international patients.</li><li><strong>Potential for a Holistic Approach:</strong> While in Turkey for your treatment, you have the opportunity to recover in a unique cultural and historical setting, which can contribute to a positive overall experience.</li></ul><h2><strong>Erectile Dysfunction Treatment Options and&nbsp; Understanding Stem Cell Therapy</strong></h2><p>After a thorough medical and sexual history evaluation, along with necessary tests to understand the cause of your Erectile Dysfunction, various treatment options may be considered. Traditional approaches include drug therapy, herbal treatments, and injection methods. However, stem cell therapy represents a promising and innovative approach that aims to go beyond symptomatic relief.</p><p><strong>Stem Cell Therapy for Erectile Dysfunction:</strong></p><p>Stem cells possess the remarkable ability to transform into different types of cells in the body. In the context of Erectile Dysfunction, the principle behind stem cell therapy is to regenerate and repair the tissues within the penis that are crucial for achieving and maintaining an erection.</p><p>The penis has a sponge-like structure, known as the corpora cavernosa, which fills with blood upon sexual stimulation, leading to an erection. In many cases of Erectile Dysfunction, the functionality of the smooth muscles and blood vessels within this sponge-like tissue is compromised. Stem cell therapy aims to address this by:</p><ul><li><strong>Regenerating Penile Tissue:</strong> Stem cells can differentiate into the cells that form the smooth muscle and endothelial lining of the blood vessels within the corpora cavernosa. This regeneration can improve the structural integrity and function of the erectile tissue.</li><li><strong>Improving Blood Flow:</strong> By promoting the formation of healthy blood vessels (angiogenesis), stem cell therapy can enhance blood supply to the penis, which is essential for achieving and sustaining a firm erection.</li><li><strong>Addressing the Underlying Cause:</strong> Unlike some other treatments that primarily focus on temporarily improving blood flow, stem cell therapy is intended to eliminate the cause of Erectile Dysfunction by naturally restoring the function of the penile tissue.</li></ul><p><strong>The Process of Stem Cell Therapy for Erectile Dysfunction Treatment</strong></p><p><br></p><ol><li><strong>Comprehensive Evaluation:</strong> The process begins with a detailed examination of your medical and sexual history, along with necessary diagnostic tests to determine the underlying cause and severity of your Erectile Dysfunction.</li><li><strong>Determining the Appropriate Stem Cell Therapy:</strong> Based on your individual needs and medical assessment, the medical team will determine the most suitable type of stem cell therapy. Various types of stem cells, such as autologous (derived from your own body) or allogeneic (derived from a donor), may be considered. Sources of stem cells can include bone marrow, adipose tissue (fat), or umbilical cord tissue.</li><li><strong>Stem Cell Administration:</strong> The chosen stem cells are typically administered directly into the erectile tissue of the penis through injection. The specific technique and dosage will be determined by the medical team.</li><li><strong>Post-Treatment Monitoring:</strong> Following the stem cell therapy, you will be closely monitored by the medical team to assess the progress and outcome of the treatment.</li></ol><p><strong>Potential Benefits of Stem Cell Therapy for Erectile Dysfunction:</strong></p><ul><li><strong>Natural Method:</strong> Stem cell therapy utilizes the body's own regenerative capabilities to address Erectile Dysfunction.</li><li><strong>Targets the Root Cause:</strong> The aim is to restore the function of the penile tissue, potentially providing a more long-lasting solution compared to treatments that only manage symptoms.</li><li><strong>Potential for Significant Improvement:</strong> Clinical studies, as cited in research, have suggested that stem cell therapy can lead to significant improvements in erectile function, with some reporting a substantial increase in penile function. The extent of improvement can vary between individuals.</li></ul><p>It's important to have realistic expectations and understand that the outcomes of stem cell therapy can vary from person to person. The medical professionals in Turkey, whom AZPO Health can connect you with, will provide detailed information about the potential benefits and risks based on your specific condition.</p><h2><strong>Real Patient Experiences</strong></h2><ul><li><strong>John, 55:</strong> "For years, ED had taken a toll on my confidence and my relationship. I was hesitant about treatments, but the idea of stem cell therapy in Turkey, facilitated by AZPO Health, seemed like a natural way to address the problem. The medical team I connected with was thorough, and the procedure was straightforward. While the improvement wasn't immediate, over the following months, I noticed a significant and sustained difference. I feel like myself again."</li><li><br></li><li><strong>David, 62:</strong> "Being diagnosed with diabetes also brought on ED, which was frustrating. I tried pills, but they weren't always effective. When I learned about stem cell therapy in Turkey through AZPO Health, I was intrigued. The doctors I consulted with explained the process clearly. After the treatment, the change has been remarkable. My ability to achieve and maintain an erection has improved considerably. It has made a huge positive impact on my quality of life."</li><li><br></li><li><strong>Michael, 48:</strong> "After prostate surgery, ED was a challenging side effect. I was looking for a solution that could truly help me recover. AZPO Health guided me towards a clinic in Turkey offering stem cell therapy. The experience was professional, and the follow-up care was excellent. I'm thrilled with the results I've experienced. It feels like my body is functioning as it should again."</li><li><br></li></ul><h2><strong>AZPO Health: Your Partner in Exploring Erectile Dysfunction Treatment in Turkey</strong></h2><p>AZPO Health is dedicated to connecting you with reputable healthcare providers and facilitating your medical travel journey to Turkey. We understand that seeking treatment for Erectile Dysfunction is a personal and sensitive matter, and we are committed to providing you with the support and information you need to make informed decisions.</p><p>When you choose AZPO Health, you can expect:</p><ul><li><strong>Access to a Network of Experienced Professionals:</strong> We collaborate with clinics and doctors in Turkey who have expertise in diagnosing and treating Erectile Dysfunction, including offering advanced therapies like stem cell treatment.</li><li><strong>Personalized Guidance:</strong> We will assist you in understanding your treatment options and connecting you with the medical professionals who are best suited to address your specific needs.</li><li><strong>Facilitation of Your Medical Journey:</strong> While we do not provide medical treatment, we can help streamline the process of connecting with clinics in Turkey, understanding treatment plans, and navigating the logistics of your medical travel.</li><li><strong>Commitment to Quality and Confidentiality:</strong> We prioritize your well-being and ensure that you are connected with healthcare providers who adhere to high standards of medical care and respect your privacy.</li></ul><h2><strong>Take the First Step Towards Renewed Intimacy</strong></h2><p>If you are seeking a comprehensive and potentially transformative approach to Erectile Dysfunction treatment, including the innovative option of stem cell therapy, we encourage you to reach out to AZPO Health.</p><p><strong>Contact us today for a free consultation to discuss your needs and explore the possibilities of seeking Erectile Dysfunction treatment in Turkey.</strong></p><p>Our team is here to provide you with information, answer your questions, and connect you with the medical expertise that can help you regain your intimacy, confidence, and overall well-being. Text us to begin your journey towards a more fulfilling and active life.</p><p><br></p>`,
+            : `<p dir="ltr">Turkey has become a popular choice for individuals seeking medical treatments abroad for several compelling reasons. While AZPO Health does not provide treatment directly, we connect you with reputable clinics and skilled doctors in Turkey who offer a range of Erectile Dysfunction treatments, including cutting-edge options like stem cell therapy.</p>
+<p dir="ltr">Choosing Turkey for your treatment journey offers potential benefits such as:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Access to Experienced Medical Professionals: Turkish healthcare professionals, including urologists and specialists in sexual health, often have extensive training and experience in diagnosing and treating Erectile Dysfunction. AZPO Health partners with facilities that are known for their qualified medical teams.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Modern Healthcare Facilities: The clinics and hospitals in Turkey that AZPO Health collaborates with are equipped with advanced medical technologies, allowing for comprehensive evaluations and the application of innovative treatments like stem cell therapy.Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Care Options: Depending on the underlying cause of your Erectile Dysfunction, the medical professionals in Turkey offer a variety of treatment approaches. Stem cell therapy is one of the advanced options that aims to address the cause of ED rather than just managing the symptoms.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">A Supportive Treatment Environment: Undergoing medical treatment in a new environment can be a significant decision. AZPO Health aims to facilitate a smooth and comfortable experience by connecting you with clinics that understand the needs of international patients.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Potential for a Holistic Approach: While in Turkey for your treatment, you have the opportunity to recover in a unique cultural and historical setting, which can contribute to a positive overall experience.</p>
+</li>
+</ul>
+<h2 dir="ltr">Erectile Dysfunction Treatment Options and&nbsp; Understanding Stem Cell Therapy</h2>
+<p dir="ltr">After a thorough medical and sexual history evaluation, along with necessary tests to understand the cause of your Erectile Dysfunction, various treatment options may be considered. Traditional approaches include drug therapy, herbal treatments, and injection methods. However, stem cell therapy represents a promising and innovative approach that aims to go beyond symptomatic relief.</p>
+<p dir="ltr">Stem Cell Therapy for Erectile Dysfunction:</p>
+<p dir="ltr">Stem cells possess the remarkable ability to transform into different types of cells in the body. In the context of Erectile Dysfunction, the principle behind stem cell therapy is to regenerate and repair the tissues within the penis that are crucial for achieving and maintaining an erection.</p>
+<p dir="ltr">The penis has a sponge-like structure, known as the corpora cavernosa, which fills with blood upon sexual stimulation, leading to an erection. In many cases of Erectile Dysfunction, the functionality of the smooth muscles and blood vessels within this sponge-like tissue is compromised. Stem cell therapy aims to address this by:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Regenerating Penile Tissue: Stem cells can differentiate into the cells that form the smooth muscle and endothelial lining of the blood vessels within the corpora cavernosa. This regeneration can improve the structural integrity and function of the erectile tissue.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Improving Blood Flow: By promoting the formation of healthy blood vessels (angiogenesis), stem cell therapy can enhance blood supply to the penis, which is essential for achieving and sustaining a firm erection.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Addressing the Underlying Cause: Unlike some other treatments that primarily focus on temporarily improving blood flow, stem cell therapy is intended to eliminate the cause of Erectile Dysfunction by naturally restoring the function of the penile tissue.</p>
+</li>
+</ul>
+<p dir="ltr">The Process of Stem Cell Therapy for Erectile Dysfunction Treatment</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Evaluation: The process begins with a detailed examination of your medical and sexual history, along with necessary diagnostic tests to determine the underlying cause and severity of your Erectile Dysfunction.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Determining the Appropriate Stem Cell Therapy: Based on your individual needs and medical assessment, the medical team will determine the most suitable type of stem cell therapy. Various types of stem cells, such as autologous (derived from your own body) or allogeneic (derived from a donor), may be considered. Sources of stem cells can include bone marrow, adipose tissue (fat), or umbilical cord tissue.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Stem Cell Administration: The chosen stem cells are typically administered directly into the erectile tissue of the penis through injection. The specific technique and dosage will be determined by the medical team.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Post-Treatment Monitoring: Following the stem cell therapy, you will be closely monitored by the medical team to assess the progress and outcome of the treatment.</p>
+</li>
+</ol>
+<p dir="ltr">Potential Benefits of Stem Cell Therapy for Erectile Dysfunction:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Natural Method: Stem cell therapy utilizes the body's own regenerative capabilities to address Erectile Dysfunction.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Targets the Root Cause: The aim is to restore the function of the penile tissue, potentially providing a more long-lasting solution compared to treatments that only manage symptoms.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Potential for Significant Improvement: Clinical studies, as cited in research, have suggested that stem cell therapy can lead to significant improvements in erectile function, with some reporting a substantial increase in penile function. The extent of improvement can vary between individuals.</p>
+</li>
+</ul>
+<p dir="ltr">It's important to have realistic expectations and understand that the outcomes of stem cell therapy can vary from person to person. The medical professionals in Turkey, whom AZPO Health can connect you with, will provide detailed information about the potential benefits and risks based on your specific condition.</p>
+<h2 dir="ltr">Real Patient Experiences</h2>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">John, 55: "For years, ED had taken a toll on my confidence and my relationship. I was hesitant about treatments, but the idea of stem cell therapy in Turkey, facilitated by AZPO Health, seemed like a natural way to address the problem. The medical team I connected with was thorough, and the procedure was straightforward. While the improvement wasn't immediate, over the following months, I noticed a significant and sustained difference. I feel like myself again."<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">David, 62: "Being diagnosed with diabetes also brought on ED, which was frustrating. I tried pills, but they weren't always effective. When I learned about stem cell therapy in Turkey through AZPO Health, I was intrigued. The doctors I consulted with explained the process clearly. After the treatment, the change has been remarkable. My ability to achieve and maintain an erection has improved considerably. It has made a huge positive impact on my quality of life."<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Michael, 48: "After prostate surgery, ED was a challenging side effect. I was looking for a solution that could truly help me recover. AZPO Health guided me towards a clinic in Turkey offering stem cell therapy. The experience was professional, and the follow-up care was excellent. I'm thrilled with the results I've experienced. It feels like my body is functioning as it should again."<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">AZPO Health: Your Partner in Exploring Erectile Dysfunction Treatment in Turkey</h2>
+<p dir="ltr">AZPO Health is dedicated to connecting you with reputable healthcare providers and facilitating your medical travel journey to Turkey. We understand that seeking treatment for Erectile Dysfunction is a personal and sensitive matter, and we are committed to providing you with the support and information you need to make informed decisions.</p>
+<p dir="ltr">When you choose AZPO Health, you can expect:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Access to a Network of Experienced Professionals: We collaborate with clinics and doctors in Turkey who have expertise in diagnosing and treating Erectile Dysfunction, including offering advanced therapies like stem cell treatment.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Guidance: We will assist you in understanding your treatment options and connecting you with the medical professionals who are best suited to address your specific needs.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Facilitation of Your Medical Journey: While we do not provide medical treatment, we can help streamline the process of connecting with clinics in Turkey, understanding treatment plans, and navigating the logistics of your medical travel.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Commitment to Quality and Confidentiality: We prioritize your well-being and ensure that you are connected with healthcare providers who adhere to high standards of medical care and respect your privacy.</p>
+</li>
+</ul>
+<h2 dir="ltr">Take the First Step Towards Renewed Intimacy</h2>
+<p dir="ltr">If you are seeking a comprehensive and potentially transformative approach to Erectile Dysfunction treatment, including the innovative option of stem cell therapy, we encourage you to reach out to AZPO Health.</p>
+<p dir="ltr">Contact us today for a free consultation to discuss your needs and explore the possibilities of seeking Erectile Dysfunction treatment in Turkey.</p>
+<p dir="ltr">Our team is here to provide you with information, answer your questions, and connect you with the medical expertise that can help you regain your intimacy, confidence, and overall well-being. Text us to begin your journey towards a more fulfilling and active life.</p>
+<p dir="ltr">&nbsp;</p>`,
       },
       imgCover: subNestedKey === "erectile-dysfunction-ed" ? dyfunc : null,
       subNestedKey: "erectile-dysfunction-ed",
@@ -11235,28 +12121,75 @@ These are just a few examples of the positive outcomes that can be achieved with
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "For Whom",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
-                : "Suitable for individuals who are dissatisfied with the shape or size of their nose tip or want to enhance facial symmetry.",
+                : "Tip plasty is a specialized surgery aimed at altering the shape, size, or position of the tip of the nose. It is often a part of a broader rhinoplasty procedure, focusing specifically on improving the tip to achieve a more balanced and harmonious facial appearance.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "Considerations",
-            desc: locale === "ru" ? "" : "",
-          },
-          {
-            header: locale === "ru" ? "Как это работает" : "How It Works",
+            header: locale === "ru" ? "Важно учесть" : "How It Works",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-                : "Recovery: Recovery typically takes several days. A bandage may be applied to keep the tip in place, and it’s advised to avoid any trauma to the area in the initial weeks.Pre-operative Consultation: The surgeon discusses the desired changes to the nose tip, such as reducing its size, altering its shape, or improving symmetry.",
+                ? ""
+                : "Pre-operative Consultation: The surgeon discusses desired changes to the nose tip, such as size reduction or shape improvement. Surgery: Tip plasty is performed using a closed (internal) or open (external) technique to adjust the cartilage. Recovery: Recovery takes a few days, with a bandage to support the tip, and avoiding trauma in the first weeks.",
+          },
+          {
+            header: locale === "ru" ? "Как это работает" : "For Whom",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Suitable for individuals who are dissatisfied with the shape or size of their nose tip or want to enhance facial symmetry.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question:
+            locale === "ru" ? "" : "Is this less invasive than rhinoplasty?",
+          answer:
+            locale === "ru" ? "" : "Yes, recovery is often faster and easier",
+        },
+        {
+          question: locale === "ru" ? "" : "Can it fix a droopy nasal tip?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes, tipplasty can reshape and lift the tip",
+        },
+        {
+          question: locale === "ru" ? "" : "Are the results permanent?",
+          answer: locale === "ru" ? "" : "Yes, with proper healing",
+        },
+        {
+          question:
+            locale === "ru" ? "" : "When can I start physical activity?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Answer: Typically after 2-3 weeks, but check with your doctor",
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Keep head elevated",
+        locale === "ru" ? "" : "Avoid facial movements that stretch nose tip",
+        locale === "ru" ? "" : "No touching or manipulating the nose",
+        locale === "ru" ? "" : "Follow surgeon’s cleaning and medication plan",
+        locale === "ru"
+          ? ""
+          : "Avoid any trauma to the nose in the first few weeks for optimal recovery",
+      ],
+      preList: [
+        locale === "ru"
+          ? ""
+          : "Same as rhinoplasty (no blood thinners, no smoking, fast pre-surgery)",
+        locale === "ru"
+          ? ""
+          : "Discuss desired nasal tip shape with your surgeon",
+        locale === "ru"
+          ? ""
+          : "Discuss your expectations and any concerns regarding the shape of your nose with your surgeon to avoid misunderstandings.",
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
@@ -11264,20 +12197,85 @@ These are just a few examples of the positive outcomes that can be achieved with
             ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
             : "Tip plasty is an effective and safe procedure for correcting the nose tip, offering long-term results and improved harmony. It is ideal for those who do not require full rhinoplasty but wish to adjust specific features of the nose, enhancing their overall facial balance.",
       },
-
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
-      },
       bfs: bfList,
       contents: {
         title: locale === "ru" ? "" : "Why Choose Turkey for Your Tip Plasty?",
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>Turkey has emerged as a prominent destination for individuals seeking high-quality aesthetic procedures, and for good reason. The country boasts a wealth of skilled medical professionals who are proficient in the latest surgical techniques, including the delicate art of Tip Plasty. Many clinics in Turkey are equipped with modern facilities and adhere to international standards of care, ensuring patient safety and optimal outcomes.</p><p>Furthermore, undergoing a procedure like Tip Plasty in Turkey often presents a more cost-effective option compared to many other countries. This affordability does not compromise the quality of care, as the focus remains on delivering excellent results and a positive patient experience. By choosing Turkey through AZPO Health, you can potentially access world-class surgical expertise without incurring excessive financial burdens.</p><p>Beyond the medical advantages, opting for Tip Plasty in Turkey offers the opportunity to combine your procedure with a memorable travel experience. Istanbul, in particular, is a vibrant and culturally rich city that attracts millions of tourists annually. As you embark on your aesthetic journey, you can also explore historical sites, indulge in delicious cuisine, and immerse yourself in the unique Turkish culture. This combination of medical care and tourism can create a holistic and fulfilling experience.</p><p>AZPO Health facilitates your access to reputable clinics and experienced surgeons in Turkey, ensuring a seamless and well-supported journey from your initial inquiry to your post-procedure care. They connect you with professionals who understand the nuances of facial aesthetics and can tailor the Tip Plasty procedure to your specific needs and desires.</p><h3><strong>Understanding Tip Plasty: Refining the Nasal Tip</strong></h3><p>Tip Plasty is a specialized surgical procedure focused exclusively on reshaping the tip of the nose. Unlike a full rhinoplasty, which addresses the entire nasal structure, Tip Plasty targets the lower third of the nose, aiming to improve its definition, projection, rotation, and overall shape. This can involve refining a bulbous or wide tip, correcting asymmetry, adjusting the angle between the nose and the upper lip, or addressing a drooping tip.</p><p>The procedure typically involves making small incisions, often inside the nostrils (closed rhinoplasty) or with a small incision across the columella (the strip of skin between the nostrils – open rhinoplasty). Through these incisions, the surgeon carefully reshapes the cartilage that provides structure to the nasal tip. Techniques may include trimming, repositioning, or adding cartilage grafts (often taken from the septum or ear) to achieve the desired contour.</p><p><strong>Benefits of Tip Plasty:</strong></p><ul><li><strong>Refined Appearance:</strong> Tip Plasty can create a more delicate and defined nasal tip, enhancing the overall harmony of your face.</li><li><strong>Balanced Features:</strong> By addressing disproportion in the nasal tip, the procedure can bring your facial features into better balance.</li><li><strong>Improved Profile:</strong> Subtle changes to the nasal tip can significantly impact your profile view, making it more aesthetically pleasing.</li><li><strong>Increased Confidence:</strong> Achieving your desired nasal tip appearance can lead to greater self-esteem and confidence.</li><li><strong>Minimally Invasive:</strong> Compared to a full rhinoplasty, Tip Plasty is often less invasive, resulting in a potentially shorter recovery period.</li></ul><p>It's important to have realistic expectations about what Tip Plasty can achieve. While it can make significant improvements to the nasal tip, it does not typically address issues with the nasal bridge or breathing difficulties. If you have concerns beyond the nasal tip, a full rhinoplasty might be a more suitable option. During your consultation facilitated by AZPO Health, the connected surgeon will thoroughly assess your nasal anatomy and discuss the most appropriate approach to achieve your aesthetic goals.</p><h3><strong>Methods of Tip Plasty: Tailoring the Approach</strong></h3><p>The specific techniques used in your Tip Plasty will depend on your individual anatomy and the desired outcome. The surgeon connected through AZPO Health will determine the most suitable method during your consultation. Some common approaches include:</p><ul><li><strong>Cartilage Resection:</strong> This involves carefully trimming excess cartilage in the nasal tip to reduce its size or refine its shape.</li><li><strong>Suture Techniques:</strong> Non-absorbable sutures can be used to reshape and reposition the tip cartilages, creating a more defined and refined appearance.</li><li><strong>Cartilage Grafting:</strong> In some cases, cartilage grafts may be necessary to provide additional support, projection, or definition to the nasal tip. These grafts are often harvested from the nasal septum (the wall between the nostrils) or the ear cartilage.</li><li><strong>Tip Rotation and Projection:</strong> Techniques can be employed to adjust the angle of the nasal tip and how far it projects from the face, creating a more balanced profile.</li></ul><p>The choice between an open and closed approach will also be determined by the surgeon's assessment. The <strong>open rhinoplasty</strong> approach involves a small incision across the columella, providing the surgeon with greater visibility and access to the nasal tip structures. The <strong>closed rhinoplasty</strong> approach involves incisions only inside the nostrils, resulting in no visible external scarring. The suitability of each approach depends on the complexity of the desired changes.</p><p>The experienced surgeons within AZPO Health's network are skilled in both open and closed Tip Plasty techniques and will recommend the approach that will yield the best possible outcome for you. They prioritize achieving natural-looking results that are in harmony with your other facial features.</p><h3><strong>AZPO Health: Your Partner in Aesthetic Excellence in Turkey</strong></h3><p>AZPO Health is dedicated to connecting individuals seeking aesthetic enhancements with highly qualified medical professionals and reputable clinics in Turkey. They understand that choosing to undergo a surgical procedure is a significant decision, and they strive to make the entire process as smooth and stress-free as possible.</p><p>AZPO Health focuses on:</p><ul><li><strong>Connecting you with Experienced Surgeons:</strong> They partner with surgeons in Turkey who have extensive experience and a proven track record in performing Tip Plasty and other facial aesthetic procedures.</li><li><strong>Facilitating Comprehensive Consultations:</strong> AZPO Health helps arrange virtual or in-person consultations where you can discuss your goals, concerns, and expectations directly with the connected surgeon. This ensures clear communication and a personalized treatment plan.</li><li><strong>Providing Transparent Information:</strong> They offer detailed information about the procedure, the connected clinics, and the overall process, empowering you to make informed decisions.</li><li><strong>Assisting with Your Medical Travel:</strong> AZPO Health can provide guidance and support with your travel arrangements, including recommendations for accommodation and transportation in Turkey.</li><li><strong>Ensuring Quality and Care:</strong> They prioritize connecting you with clinics that adhere to high standards of medical care and patient safety.</li><li><strong>Offering Ongoing Support:</strong> AZPO Health remains available to address any questions or concerns you may have throughout your journey.</li></ul><p>AZPO Health acts as a facilitator, bridging the gap between you and the expertise available in Turkey for your Tip Plasty procedure. They are committed to providing a supportive and reliable service, helping you achieve your aesthetic aspirations with confidence.</p><h3><strong>Take the First Step Towards Your Desired Nasal Tip</strong></h3><p>If you are considering tip plasty to refine the appearance of your nasal tip, contact AZPO Health today for a free consultation and personalized quote. Their dedicated team is ready to listen to your goals, answer your questions, and connect you with experienced medical professionals in Turkey who can help you achieve the harmonious facial balance you desire. Reach out to AZPO Health to begin your journey towards a more confident and aesthetically pleasing you.</p><p><br></p>`,
+            : `<p dir="ltr">Turkey has emerged as a prominent destination for individuals seeking high-quality aesthetic procedures, and for good reason. The country boasts a wealth of skilled medical professionals who are proficient in the latest surgical techniques, including the delicate art of Tip Plasty. Many clinics in Turkey are equipped with modern facilities and adhere to international standards of care, ensuring patient safety and optimal outcomes.</p>
+<p dir="ltr">Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
+<p dir="ltr">Furthermore, undergoing a procedure like Tip Plasty in Turkey often presents a more cost-effective option compared to many other countries. This affordability does not compromise the quality of care, as the focus remains on delivering excellent results and a positive patient experience. By choosing Turkey through AZPO Health, you can potentially access world-class surgical expertise without incurring excessive financial burdens.</p>
+<p dir="ltr">Beyond the medical advantages, opting for Tip Plasty in Turkey offers the opportunity to combine your procedure with a memorable travel experience. Istanbul, in particular, is a vibrant and culturally rich city that attracts millions of tourists annually. As you embark on your aesthetic journey, you can also explore historical sites, indulge in delicious cuisine, and immerse yourself in the unique Turkish culture. This combination of medical care and tourism can create a holistic and fulfilling experience.</p>
+<p dir="ltr">AZPO Health facilitates your access to reputable clinics and experienced surgeons in Turkey, ensuring a seamless and well-supported journey from your initial inquiry to your post-procedure care. They connect you with professionals who understand the nuances of facial aesthetics and can tailor the Tip Plasty procedure to your specific needs and desires.</p>
+<p><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Understanding Tip Plasty: Refining the Nasal Tip</h3>
+<p dir="ltr">Tip Plasty is a specialized surgical procedure focused exclusively on reshaping the tip of the nose. Unlike a full rhinoplasty, which addresses the entire nasal structure, Tip Plasty targets the lower third of the nose, aiming to improve its definition, projection, rotation, and overall shape. This can involve refining a bulbous or wide tip, correcting asymmetry, adjusting the angle between the nose and the upper lip, or addressing a drooping tip.</p>
+<p dir="ltr">The procedure typically involves making small incisions, often inside the nostrils (closed rhinoplasty) or with a small incision across the columella (the strip of skin between the nostrils &ndash; open rhinoplasty). Through these incisions, the surgeon carefully reshapes the cartilage that provides structure to the nasal tip. Techniques may include trimming, repositioning, or adding cartilage grafts (often taken from the septum or ear) to achieve the desired contour.</p>
+<p dir="ltr">Benefits of Tip Plasty:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Refined Appearance: Tip Plasty can create a more delicate and defined nasal tip, enhancing the overall harmony of your face.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Balanced Features: By addressing disproportion in the nasal tip, the procedure can bring your facial features into better balance.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Improved Profile: Subtle changes to the nasal tip can significantly impact your profile view, making it more aesthetically pleasing.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Increased Confidence: Achieving your desired nasal tip appearance can lead to greater self-esteem and confidence.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Minimally Invasive: Compared to a full rhinoplasty, Tip Plasty is often less invasive, resulting in a potentially shorter recovery period.</p>
+</li>
+</ul>
+<p dir="ltr">It's important to have realistic expectations about what Tip Plasty can achieve. While it can make significant improvements to the nasal tip, it does not typically address issues with the nasal bridge or breathing difficulties. If you have concerns beyond the nasal tip, a full rhinoplasty might be a more suitable option. During your consultation facilitated by AZPO Health, the connected surgeon will thoroughly assess your nasal anatomy and discuss the most appropriate approach to achieve your aesthetic goals.</p>
+<h3 dir="ltr">Methods of Tip Plasty: Tailoring the Approach</h3>
+<p dir="ltr">The specific techniques used in your Tip Plasty will depend on your individual anatomy and the desired outcome. The surgeon connected through AZPO Health will determine the most suitable method during your consultation. Some common approaches include:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cartilage Resection: This involves carefully trimming excess cartilage in the nasal tip to reduce its size or refine its shape.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Suture Techniques: Non-absorbable sutures can be used to reshape and reposition the tip cartilages, creating a more defined and refined appearance.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cartilage Grafting: In some cases, cartilage grafts may be necessary to provide additional support, projection, or definition to the nasal tip. These grafts are often harvested from the nasal septum (the wall between the nostrils) or the ear cartilage.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Tip Rotation and Projection: Techniques can be employed to adjust the angle of the nasal tip and how far it projects from the face, creating a more balanced profile.</p>
+</li>
+</ul>
+<p dir="ltr">The choice between an open and closed approach will also be determined by the surgeon's assessment. The open rhinoplasty approach involves a small incision across the columella, providing the surgeon with greater visibility and access to the nasal tip structures. The closed rhinoplasty approach involves incisions only inside the nostrils, resulting in no visible external scarring. The suitability of each approach depends on the complexity of the desired changes.</p>
+<p dir="ltr">The experienced surgeons within AZPO Health's network are skilled in both open and closed Tip Plasty techniques and will recommend the approach that will yield the best possible outcome for you. They prioritize achieving natural-looking results that are in harmony with your other facial features.</p>
+<h3 dir="ltr">AZPO Health: Your Partner in Aesthetic Excellence in Turkey</h3>
+<p dir="ltr">AZPO Health is dedicated to connecting individuals seeking aesthetic enhancements with highly qualified medical professionals and reputable clinics in Turkey. They understand that choosing to undergo a surgical procedure is a significant decision, and they strive to make the entire process as smooth and stress-free as possible.</p>
+<p dir="ltr">AZPO Health focuses on:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Connecting you with Experienced Surgeons: They partner with surgeons in Turkey who have extensive experience and a proven track record in performing Tip Plasty and other facial aesthetic procedures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Facilitating Comprehensive Consultations: AZPO Health helps arrange virtual or in-person consultations where you can discuss your goals, concerns, and expectations directly with the connected surgeon. This ensures clear communication and a personalized treatment plan.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Providing Transparent Information: They offer detailed information about the procedure, the connected clinics, and the overall process, empowering you to make informed decisions.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Assisting with Your Medical Travel: AZPO Health can provide guidance and support with your travel arrangements, including recommendations for accommodation and transportation in Turkey.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ensuring Quality and Care: They prioritize connecting you with clinics that adhere to high standards of medical care and patient safety.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Offering Ongoing Support: AZPO Health remains available to address any questions or concerns you may have throughout your journey.</p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health acts as a facilitator, bridging the gap between you and the expertise available in Turkey for your Tip Plasty procedure. They are committed to providing a supportive and reliable service, helping you achieve your aesthetic aspirations with confidence.</p>
+<h3 dir="ltr">Take the First Step Towards Your Desired Nasal Tip</h3>
+<p dir="ltr">If you are considering tip plasty to refine the appearance of your nasal tip, contact AZPO Health today for a free consultation and personalized quote. Their dedicated team is ready to listen to your goals, answer your questions, and connect you with experienced medical professionals in Turkey who can help you achieve the harmonious facial balance you desire. Reach out to AZPO Health to begin your journey towards a more confident and aesthetically pleasing you.</p>
+<p>&nbsp;</p>`,
       },
       imgCover: subNestedKey === "tip-plasty" ? tipplasty : null,
       subNestedKey: "tip-plasty",

@@ -18,7 +18,7 @@ const Treatments = async ({
   }>;
 }) => {
   const { locale } = await params;
-  const services = handleServices(locale);
+  const services = handleServices();
   return (
     <div className="viewport-p bg-[#FCFCFC]">
       {/* header */}

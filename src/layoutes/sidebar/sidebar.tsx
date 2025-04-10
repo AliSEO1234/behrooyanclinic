@@ -22,7 +22,7 @@ const Sidebar = () => {
   const admins = handleAdmins(locale);
   const [api, setApi] = useState<CarouselApi>();
   const carouselRef = useRef<HTMLDivElement | null>(null);
-  const services = handleServices(locale);
+  const services = handleServices();
   useEffect(() => {
     if (!api) return;
 
@@ -33,7 +33,7 @@ const Sidebar = () => {
     });
   }, [api]);
   return (
-    <div className="hidden s1280:sticky s1280:top-0 s1280:flex s1280:flex-col w-full s1280:w-[318px] s1280:flex-shrink-0 s1280:min-w-[318px] s1600:w-[340px] s1600:min-w-[340px] rounded-[40px] shadow-[0_4px_15px_#0000001A] bg-white px-6 py-8">
+    <aside className="hidden s1280:sticky s1280:top-0 s1280:flex s1280:flex-col w-full s1280:w-[318px] s1280:flex-shrink-0 s1280:min-w-[318px] s1600:w-[340px] s1600:min-w-[340px] rounded-[40px] shadow-[0_4px_15px_#0000001A] bg-white px-6 py-8">
       <div className="s1280:mb-10">
         <div className="mb-4">
           <h3 className="font-bold s1280:text-[20px] text-[#25A6A9] text-center">
@@ -55,26 +55,24 @@ const Sidebar = () => {
           </button>
 
           <Carousel setApi={setApi} opts={{ loop: true }} className="w-full">
-          <CarouselContent ref={carouselRef}>
-            {admins.map((admin, index) => {
-              return (
-                <CarouselItem key={index}>
-                  <CarouselAdmin
-                    value={
-                      admin.desc
-                    }
-                    langs={admin.languages}
-                    image={admin.img}
-                    name={admin.name}
-                    userType="onlyView"
-                  />
-                </CarouselItem>
-              );
-            })}
-          </CarouselContent>
-          {/* <CarouselPrevious />
+            <CarouselContent ref={carouselRef}>
+              {admins.map((admin, index) => {
+                return (
+                  <CarouselItem key={index}>
+                    <CarouselAdmin
+                      value={admin.desc}
+                      langs={admin.languages}
+                      image={admin.img}
+                      name={admin.name}
+                      userType="onlyView"
+                    />
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+            {/* <CarouselPrevious />
           <CarouselNext /> */}
-        </Carousel>
+          </Carousel>
         </div>
         <div>
           <SidebarForm activeAdmin={activeAdmin} />
@@ -94,19 +92,16 @@ const Sidebar = () => {
                   className="w-full font-normal flex-bet hover:text-[#0CA5A5] anm text-[#333333]"
                 >
                   <span>{service.label}</span>
-                  <div className="flex-right gap-x-2">
-                    <span className="bg-[#0CA5A5] px-1 py-[2px] w-5 flex-cen rounded-[5px] text-white">{service.countService}</span>
-                    <span>
-                      <IoIosArrowForward className="size-5" />
-                    </span>
-                  </div>
+                  <span className="flex-right gap-x-2">
+                    <IoIosArrowForward className="size-5" />
+                  </span>
                 </Link>
               </div>
             );
           })}
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 export default Sidebar;

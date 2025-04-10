@@ -4,45 +4,73 @@ import fertility from "@/assets/images/icons/services/fertility.png";
 import eye from "@/assets/images/icons/services/eye.png";
 import dental from "@/assets/images/icons/services/dental.png";
 import aesthetics from "@/assets/images/icons/services/aesthetics.png";
-import { categoryDataHandler } from "../subCategoryList";
-const handleServices = (locale: string) => {
-  const countAethServices = categoryDataHandler("aesthetic", locale)
-    ?.subCategoryList.length;
-  const countDentalServices = categoryDataHandler("dental-treatments", locale)
-    ?.subCategoryList.length;
-  const countEyeServices = categoryDataHandler("eye-surgery", locale)
-    ?.subCategoryList.length;
-  const countFertilityServices = categoryDataHandler("fertility", locale)
-    ?.subCategoryList.length;
-  const countStemCellServices = categoryDataHandler("stem-cell", locale)
-    ?.subCategoryList.length;
+import { allSubCategory, allSubNestedCategory } from "../allSubCategory";
+const handleServices = () => {
+  // const countAethServices = categoryDataHandler("aesthetic", locale)
+  //   ?.subCategoryList.length;
+  const countAethServices = allSubCategory.filter(
+    (sub) => sub.categoryKey === "aesthetic"
+  ).length;
+  const counSubnestedAethServices = allSubNestedCategory.filter(
+    (subnested) => subnested.categoryKey === "aesthetic"
+  ).length;
+  
+  const countDentalServices = allSubCategory.filter(
+    (sub) => sub.categoryKey === "dental-treatments"
+  ).length;
+  const counSubnestedDentalServices = allSubNestedCategory.filter(
+    (subnested) => subnested.categoryKey === "dental-treatments"
+  ).length;
+
+
+  const countEyeServices = allSubCategory.filter(
+    (sub) => sub.categoryKey === "eye-surgery"
+  ).length;
+  const countSubnestedEyeServices = allSubNestedCategory.filter(
+    (subnested) => subnested.categoryKey === "eye-surgery"
+  ).length;
+
+
+  const countFertilityServices = allSubCategory.filter(
+    (sub) => sub.categoryKey === "fertility"
+  ).length;
+  const countSubnestedFertilityServices = allSubNestedCategory.filter(
+    (subnested) => subnested.categoryKey === "fertility"
+  ).length;
+
+  const countStemCellServices = allSubCategory.filter(
+    (sub) => sub.categoryKey === "stem-cell"
+  ).length;
+  const countSubnestedStemCellServices = allSubNestedCategory.filter(
+    (subnested) => subnested.categoryKey === "stem-cell"
+  ).length;
   const services: ServiceType[] = [
     {
-      countService: countAethServices || 0,
+      countService: countAethServices + counSubnestedAethServices || 0,
       img: aesthetics,
       label: "Aesthetics",
       path: "aesthetic",
     },
     {
-      countService: countDentalServices || 0,
+      countService: countDentalServices + counSubnestedDentalServices || 0,
       img: dental,
       label: "Dental",
       path: "dental-treatments",
     },
     {
-      countService: countEyeServices || 0,
+      countService: countEyeServices + countSubnestedEyeServices || 0,
       img: eye,
       label: "Eye Surgeries",
       path: "eye-surgery",
     },
     {
-      countService: countFertilityServices || 0,
+      countService: countFertilityServices + countSubnestedFertilityServices || 0,
       img: fertility,
       label: "Fertility",
       path: "fertility",
     },
     {
-      countService: countStemCellServices || 0,
+      countService: countStemCellServices + countSubnestedStemCellServices || 0,
       img: cell,
       label: "Stem Cell",
       path: "stem-cell",

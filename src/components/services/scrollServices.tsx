@@ -1,12 +1,10 @@
 "use client";
 import ServiceCard from "@/features/services/serviceCard";
 import handleServices from "@/staticData/services/handleServices";
-import { useLocale } from "next-intl";
 import { useEffect, useRef } from "react";
 
 const ScrollServices = () => {
-  const locale = useLocale();
-  const services = handleServices(locale) || [];
+  const services = handleServices() || [];
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
