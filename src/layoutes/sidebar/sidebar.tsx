@@ -22,7 +22,7 @@ const Sidebar = () => {
   const admins = handleAdmins(locale);
   const [api, setApi] = useState<CarouselApi>();
   const carouselRef = useRef<HTMLDivElement | null>(null);
-  const services = handleServices();
+  const services = handleServices(locale);
   useEffect(() => {
     if (!api) return;
 
