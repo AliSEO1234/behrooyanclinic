@@ -32,7 +32,7 @@ const ServiceCard = ({
       </div>
       <div className="mb-2 px-1 s1280:px-0">
         <h3
-          className={`text-center font-medium text-[#474744] ${
+          className={`text-center font-semibold text-[#474744] ${
             titleStyle ? titleStyle : ""
           }`}
         >
@@ -41,11 +41,13 @@ const ServiceCard = ({
         <p
           className={`text-[#888888] font-normal ${
             locale === "ru"
-              ? "text-[14px]"
-              : "s1280:text-[14px] s1512:text-[16px]"
+              ? "text-[12px]"
+              : "s1280:text-[13px] s1512:text-[15px]"
           } text-center line-clamp-1`}
         >
-          {countService}{" "}
+          <span className="font-bold">
+          {countService}
+          </span>{" "}
           {locale === "ru" ? "медицинских направлений" : "Service"}
         </p>
       </div>

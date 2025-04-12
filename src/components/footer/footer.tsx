@@ -33,8 +33,9 @@ const Footer = () => {
           </div>
           <div className="mb-4">
             <p className="font-normal s1280:text-[14px] s1600:text-[18px] s1728:text-[20px] s1728:pe-14 s1280:pe-4">
-              Your health, our priority – delivering world-class medical care
-              and seamless support tailored just for you.
+              {locale === "ru"
+                ? "Ваше здоровье — наш приоритет. Мы предоставляем медицинскую помощь мирового уровня и всестороннюю поддержку, адаптированную именно под вас."
+                : "Your health, our priority – delivering world-class medical care and seamless support tailored just for you."}
             </p>
           </div>
           {/* certificate */}
@@ -43,7 +44,7 @@ const Footer = () => {
         <div className="col-span-12 s1280:col-span-3 text-[#333333] s1512:ms-10">
           <div className="mb-5">
             <h3 className="font-medium text-[#00979A] s1280:text-[#333333] s1728:text-[20px]">
-              Our Branches
+              {locale === "ru" ? "Наши офисы" : "Our Branches"}
             </h3>
           </div>
           <div className="font-normal flex flex-col items-center justify-between gap-y-7 s1512:gap-y-6 s1600:pe-0 s1600:gap-y-14 s1728:gap-y-12">
@@ -53,7 +54,11 @@ const Footer = () => {
                 <ImgFetcher src={loc} />
               </div>
               <div>
-                <Link target="_blank" href="https://maps.app.goo.gl/fnzi83DnR94SLxDV6" className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
+                <Link
+                  target="_blank"
+                  href="https://maps.app.goo.gl/fnzi83DnR94SLxDV6"
+                  className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]"
+                >
                   Cumhuriyet Mahallesi Keykubat Bulvarı 270A/14 Alanya/Antalya
                 </Link>
               </div>
@@ -64,7 +69,11 @@ const Footer = () => {
                 <ImgFetcher src={loc} />
               </div>
               <div>
-                <Link target="_blank" href="https://maps.app.goo.gl/mE6RaiFLZBMRTiXU9" className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
+                <Link
+                  target="_blank"
+                  href="https://maps.app.goo.gl/mE6RaiFLZBMRTiXU9"
+                  className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]"
+                >
                   Fener mahallesi Bülent Ecevit Bulvarı Özdemir Plaza № 42/1,
                   07230 Muratpaşa/Antalya
                 </Link>
@@ -76,7 +85,11 @@ const Footer = () => {
                 <ImgFetcher src={loc} />
               </div>
               <div>
-                <Link href="https://maps.app.goo.gl/H2XHqc9pCpAkjdEg7n" target="_blank" className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]">
+                <Link
+                  href="https://maps.app.goo.gl/H2XHqc9pCpAkjdEg7n"
+                  target="_blank"
+                  className="s1280:text-[12px] s1512:text-[14px] s1728:text-[16px]"
+                >
                   Kayabaşı Mahallesi, Adnan Menderes Bulvarı, No: 5/A, Blok: B3,
                   Kat: 2, Daire: 12. Başakşehir/Istanbul
                 </Link>
@@ -89,9 +102,15 @@ const Footer = () => {
           <table className="text-[#333333] table-auto border-collapse w-full color">
             <thead>
               <tr className="font-medium s1728:text-[20px]">
-                <th className="text-start pb-2 w-[165px] s1728:w-[180px]">Our services</th>
-                <th className="text-start pb-2">Categories</th>
-                <th className="text-start pb-2">Useful Links</th>
+                <th className="text-start pb-2 w-[165px] s1728:w-[180px]">
+                  {locale === "ru" ? "Наши услуги" : "Our services"}
+                </th>
+                <th className="text-start pb-2">
+                  {locale === "ru" ? "" : "Categories"}
+                </th>
+                <th className="text-start pb-2">
+                  {locale === "ru" ? "" : "Useful Links"}
+                </th>
               </tr>
             </thead>
             <tbody className="space-y-10 s1280:text-[14px] s1728:text-[16px] style-item--table-footer">
@@ -107,12 +126,17 @@ const Footer = () => {
                     <span>Hair transplant</span>
                   </Link>
                 </td>
-                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href={`/${locale}/medicaltourism/aesthetic`} className="flex-left gap-x-2">
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7 s1280:w-[200px] s1512:w-[150px] s1728:w-[190px] s1920:w-[230px]">
+                  <Link
+                    href={`/${locale}/medicaltourism/aesthetic`}
+                    className="flex-left gap-x-2"
+                  >
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Aesthetic</span>
+                    <span className="line-clamp-1">
+                      {locale === "ru" ? "Эстетические процедуры" : "Aesthetic"}
+                    </span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
@@ -137,11 +161,14 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href={`/${locale}/medicaltourism/dental-treatments`} className="flex-left gap-x-2">
+                  <Link
+                    href={`/${locale}/medicaltourism/dental-treatments`}
+                    className="flex-left gap-x-2"
+                  >
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Dental</span>
+                    <span>{locale === "ru" ? "Стоматология" : "Dental"}</span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
@@ -169,11 +196,16 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href={`/${locale}/medicaltourism/eye-surgery`} className="flex-left gap-x-2">
+                  <Link
+                    href={`/${locale}/medicaltourism/eye-surgery`}
+                    className="flex-left gap-x-2"
+                  >
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Eye surgery</span>
+                    <span>
+                      {locale === "ru" ? "Хирургия глаза" : "Eye surgery"}
+                    </span>
                   </Link>
                 </td>
                 {/* <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
@@ -198,11 +230,18 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href={`/${locale}/medicaltourism/fertility`} className="flex-left gap-x-2">
+                  <Link
+                    href={`/${locale}/medicaltourism/fertility`}
+                    className="flex-left gap-x-2"
+                  >
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Fertility</span>
+                    <span className="line-clamp-1">
+                      {locale === "ru"
+                        ? "Репродуктивное здоровье"
+                        : "Fertility"}
+                    </span>
                   </Link>
                 </td>
                 {/* <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
@@ -227,11 +266,18 @@ const Footer = () => {
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
-                  <Link href={`/${locale}/medicaltourism/stem-cell`} className="flex-left gap-x-2">
+                  <Link
+                    href={`/${locale}/medicaltourism/stem-cell`}
+                    className="flex-left gap-x-2"
+                  >
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Stem cell</span>
+                    <span className="line-clamp-1">
+                      {locale === "ru"
+                        ? "Терапия стволовыми клетками"
+                        : "Stem cell"}
+                    </span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
@@ -251,7 +297,9 @@ const Footer = () => {
       <div className="flex flex-col items-start justify-start gap-y-4 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-between">
         <div className="order-2 s1280:order-1">
           <p className="text-[#474744] font-normal">
-            Copyright ©2025 All Rights Reserved
+            {locale === "ru"
+              ? "Авторские права ©2018 - 2025. Все права защищены."
+              : "Copyright ©2025 All Rights Reserved"}
           </p>
         </div>
         <div className="order-1 s1280:order-2 flex items-center justify-start flex-wrap s1280:flex-nowrap s1280:justify-end gap-x-4 text-[#0CA5A5] s1280:gap-x-2">
@@ -328,7 +376,7 @@ const Footer = () => {
               href="https://vk.com/azpohealth"
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
-              <IoLogoVk  className="size-5" />
+              <IoLogoVk className="size-5" />
             </Link>
           </div>
           <div>

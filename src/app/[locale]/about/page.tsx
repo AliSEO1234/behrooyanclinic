@@ -13,7 +13,7 @@ const Page = async ({params}:AboutPageType) => {
         <div className="s1280:mt-10 text-white hidden s1280:block">
           <h1 className="border-s-[4px] border-[#DEE8F3] font-bold s1280:text-[36px] s1512:text-[48px] s1280:ps-4 mb-8">
             {
-              locale === "ru" ? "О компании Azpo" : "About Azpo"
+              locale === "ru" ? "О нас" : "About Azpo"
             }
           </h1>
           {/* <p className="font-medium s1280:text-[20px] s1280:w-2/3 s1728:w-2/5">
@@ -27,7 +27,7 @@ const Page = async ({params}:AboutPageType) => {
         <div className="s1280:hidden px-3 mb-10">
           <h1 className="font-bold text-[#474744] text-[30px] border-s-[3px] border-[#2E5A90] ps-4 mb-4">
             {
-              locale === "ru" ? "О компании Azpo" : "About Azpo"
+              locale === "ru" ? "О нас" : "About Azpo"
             }
           </h1>
         </div>
@@ -35,8 +35,8 @@ const Page = async ({params}:AboutPageType) => {
         <div>
           <AboutTab
             trigerList={[
-              { keyTrigg: "about", title: locale === "ru" ? "О компании" : "About Azpo", id: 0 },
-              { keyTrigg: "branch", title: locale === "ru" ? "Наши отделения" : "Our branches", id: 1 },
+              { keyTrigg: "about", title: locale === "ru" ? "О нас" : "About Azpo", id: 0 },
+              { keyTrigg: "branch", title: locale === "ru" ? "Наши офисы" : "Our branches", id: 1 },
               { keyTrigg: "team", title:locale === "ru" ? "Наша команда" : "Our Team", id: 2 },
             ]}
           >

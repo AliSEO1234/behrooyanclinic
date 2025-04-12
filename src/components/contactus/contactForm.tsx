@@ -8,8 +8,10 @@ import { usePathname } from "next/navigation";
 import { ContactUsFormType } from "@/types/forms";
 import { sendFormFunc } from "@/server-APIs/formAPI";
 import { toast } from "react-toastify";
+import { useLocale } from "next-intl";
 
 const ContactForm = () => {
+  const locale = useLocale();
   const pathname = usePathname();
   const {
     handleSubmit,
@@ -82,12 +84,12 @@ const ContactForm = () => {
       className="grid grid-cols-12 contact-form s1280:gap-4 gap-y-4"
     >
       <div className="col-span-12 s1280:col-span-6">
-        <label>First name</label>
+        <label>{locale === "ru" ? "Имя" : "First name"}</label>
         <input
           {...register("firstName", { required: true })}
           autoComplete="off"
           type="text"
-          placeholder="First name"
+          placeholder={locale === "ru" ? "Имя" : "First name"}
           className={`px-4 ${
             errors.firstName && errors.firstName.type === "required"
               ? "ring-[1px] ring-rose-600"
@@ -96,12 +98,12 @@ const ContactForm = () => {
         />
       </div>
       <div className="col-span-12 s1280:col-span-6">
-        <label>Surname</label>
+        <label>{locale === "ru" ? "Фамилия" : "Surname"}</label>
         <input
           {...register("surname", { required: true })}
           autoComplete="off"
           type="text"
-          placeholder="Surname"
+          placeholder={locale === "ru" ? "Фамилия" : "Surname"}
           className={`px-4 ${
             errors.surname && errors.surname.type === "required"
               ? "ring-[1px] ring-rose-600"
@@ -110,7 +112,7 @@ const ContactForm = () => {
         />
       </div>
       <div className="col-span-12 s1280:col-span-6">
-        <label>Email</label>
+        <label>{locale === "ru" ? "Электронная почта" : "Email"}</label>
         <input
           {...register("email", { required: true })}
           className={`px-4 ${
@@ -120,11 +122,11 @@ const ContactForm = () => {
           }`}
           autoComplete="off"
           type="email"
-          placeholder="Email"
+          placeholder={locale === "ru" ? "Электронная почта" : "Email"}
         />
       </div>
       <div className="col-span-12 s1280:col-span-6">
-        <label>Phone</label>
+        <label>{locale === "ru" ? "Телефон" : "Phone"}</label>
         <div className="relative">
           <input
             {...register("phone", { required: true })}
@@ -137,13 +139,13 @@ const ContactForm = () => {
             }`}
             autoComplete="off"
             type="text"
-            placeholder="Phone"
+            placeholder={locale === "ru" ? "Телефон" : "Phone"}
           />
           <CountryCode codes={codes} setCodes={setCodes} />
         </div>
       </div>
       <div className="col-span-12">
-        <label>Message</label>
+        <label>{locale === "ru" ? "Сообщение" : "Message"}</label>
         <textarea
           {...register("message", { required: true })}
           className={`px-4 ${
@@ -151,12 +153,18 @@ const ContactForm = () => {
               ? "ring-[1px] ring-rose-600"
               : ""
           }`}
-          placeholder="Comments (not mandatory)"
+          placeholder={
+            locale === "ru"
+              ? "Комментарии (необязательно)"
+              : "Comments (not mandatory)"
+          }
           rows={8}
         />
       </div>
       <div className="col-span-12 flex-cen mb-2">
-        <p className="font-normal text-[#333333]">24 hour service</p>
+        <p className="font-normal text-[#333333]">
+          {locale === "ru" ? "Обслуживание 24/7" : "24 hour service"}
+        </p>
       </div>
       <div className="col-span-12">
         <button
@@ -164,9 +172,11 @@ const ContactForm = () => {
           type="submit"
           className="outline-none w-full h-[46px] rounded-[100px] text-white font-bold bg-[#0CA5A5]"
         >
-          {
-            loading ? "Loading..." : "Send request"
-          }
+          {loading
+            ? "Loading..."
+            : locale === "ru"
+            ? "Отправить запрос"
+            : "Send request"}
         </button>
       </div>
     </form>

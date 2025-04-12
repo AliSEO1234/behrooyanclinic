@@ -16,7 +16,9 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { IoIosArrowForward } from "react-icons/io";
 import { toast } from "react-toastify";
 import CountryCode from "../countryCode";
+import { useLocale } from "next-intl";
 const PatientServicesForm = () => {
+  const locale = useLocale();
   const pathname = usePathname();
   const { handleSubmit, register, setValue, watch, setError, reset } =
     useForm<PatientFormType>();
@@ -78,7 +80,7 @@ const PatientServicesForm = () => {
       name: fullname,
       phone,
       treatment,
-      pageUrl: pathname
+      pageUrl: pathname,
     });
 
     if (response) {
@@ -128,16 +130,18 @@ const PatientServicesForm = () => {
         </div>
         <div className="w-full flex flex-col items-center justify-start s1280:flex-row s1280:flex-wrap s1280:items-center s1280:justify-center gap-x-4 gap-y-2 s1728:gap-y-8 s1728:gap-x-10 s1280:w-[550px] s1512:w-[700px] s1728:w-[800px]">
           <div className="patient-form-item">
-            <label htmlFor="">Name & Surname</label>
+            <label htmlFor="">
+              {locale === "ru" ? "Имя & Фамилия" : "Name & Surname"}
+            </label>
             <input
               {...register("fullname", { required: true })}
               className="px-3"
               type="text"
-              placeholder="Name"
+              placeholder={locale === "ru" ? "Имя" : "Name"}
             />
           </div>
           <div className="patient-form-item">
-            <label htmlFor="">phone number</label>
+            <label>{locale === "ru" ? "Телефон" : "phone number"}</label>
             <div className="w-full relative">
               <input
                 {...register("phone", { required: true })}
@@ -145,7 +149,7 @@ const PatientServicesForm = () => {
                 type="text"
                 onChange={handlePhoneChange}
                 defaultValue={phoneValue}
-                placeholder="phone number"
+                placeholder={locale === "ru" ? "Телефон" : "phone number"}
               />
               <CountryCode codes={codes} setCodes={setCodes} />
             </div>
@@ -155,11 +159,15 @@ const PatientServicesForm = () => {
               htmlFor=""
               className="text-white font-medium s1280:text-[14px] inline-block mb-2"
             >
-              Treatment
+              {locale === "ru" ? "Лечение" : "Treatment"}
             </label>
             <ComboBox
               trigger={
-                treatmentSelected ? treatmentSelected.label : "Treatment"
+                treatmentSelected
+                  ? treatmentSelected.label
+                  : locale === "ru"
+                  ? "Лечение"
+                  : "Treatment"
               }
               className="w-full s1280:w-[250px] s1728:w-[320px] h-[48px] s1280:h-[38px] s1512:h-[48px] flex justify-between items-center px-3 bg-white rounded-[40px] text-[#898989] text-[14px] s1728:txt-[16px]"
               options={options}
@@ -169,12 +177,14 @@ const PatientServicesForm = () => {
             />
           </div>
           <div className="patient-form-item">
-            <label htmlFor="">Email</label>
+            <label htmlFor="">
+              {locale === "ru" ? "Электронная почта" : "Email"}
+            </label>
             <input
               {...register("email", { required: true })}
               className="px-3"
               type="email"
-              placeholder="Email"
+              placeholder={locale === "ru" ? "Электронная почта" : "Email"}
             />
           </div>
         </div>
@@ -187,7 +197,13 @@ const PatientServicesForm = () => {
             <span>
               <IoIosArrowForward className="size-5 s1512:size-7" />
             </span>
-            <span>{loading ? "Sending..." : "Let’s Connect"}</span>
+            <span>
+              {loading
+                ? "Sending..."
+                : locale === "ru"
+                ? "На связь!"
+                : "Let’s Connect"}
+            </span>
           </button>
         </div>
       </form>

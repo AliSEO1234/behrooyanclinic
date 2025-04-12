@@ -121,7 +121,7 @@ const LeadForm = ({ className }: LeadFormType) => {
                 {...register("phone", { required: true })}
                 onChange={handlePhoneChange}
                 defaultValue={phoneValue}
-                placeholder={locale==="ru" ? "Телефон" :"Phone"}
+                placeholder={locale === "ru" ? "Телефон" : "Phone"}
                 className="ps-20 s1280:ps-16 s1512:ps-20 pe-3 outline-none bg-white w-full h-[48px] s1280:h-[38px] s1512:h-[40px] s1728:h-[48px] s1512:text-[16px] s1280:text-[14px] placeholder:text-[#9996A0] font-medium rounded-[40px]"
                 type="text"
               />
@@ -157,7 +157,9 @@ const LeadForm = ({ className }: LeadFormType) => {
       </div>
       <div className="col-span-3 hidden s1280:flex relative pb-3 s1512:pb-[34px] s1728:pb-[38px]">
         <div className="h-[59px] bg-blue-6000 mt-auto flex-left gap-x-2">
-          <p className="font-bold s1280:text-[24px] text-white me-3">OR</p>
+          <p className="font-bold s1280:text-[24px] text-white me-3">
+            {locale === "ru" ? "или" : "OR"}
+          </p>
           <Link
             target="_blank"
             href="https://t.me/azpohealth"
