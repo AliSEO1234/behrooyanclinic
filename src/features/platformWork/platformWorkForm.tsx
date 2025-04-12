@@ -86,7 +86,7 @@ const PlatformWorkForm = () => {
         </h3>
       </div>
       <div className="col-span-12">
-        <label>Name & Surname</label>
+        <label>{locale === "ru" ? "Имя" : "Name & Surname"}</label>
         <input
           {...register("full_name", { required: true })}
           className="px-4"
@@ -116,7 +116,13 @@ const PlatformWorkForm = () => {
           {locale === "ru" ? "Выберите тип услуги" : "Choose your service type"}
         </label>
         <ComboBox
-          trigger={selectedOption ? selectedOption.label : "Treatment"}
+          trigger={
+            selectedOption
+              ? selectedOption.label
+              : locale === "ru"
+              ? "Лечение"
+              : "Treatment"
+          }
           className="flex-bet w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1"
           options={options}
           onChange={setSelectedOption}

@@ -34,7 +34,7 @@ const RoadmapCard = ({
         </div>
         <div className="py-2 s1280:py-0">
           <h3 className="px-5 s1280:p-0 text-[#00979A] font-medium text-[14px] text-center s1280:text-start s1280:text-[16px] s1512:text-[20px] s1280:mb-2 text">{title}</h3>
-          <p className="font-normal text-[#423D3D] text-center px-5 s1280:p-0 s1280:text-start text-[14px] s1280:text-[16px] s1512:text-[20px]">{desc}</p>
+          <p className="font-normal text-[#423D3D] text-center px-5 s1280:p-0 s1280:text-start text-[14px] s1280:text-[16px] s1512:text-[20px] line-clamp-3">{desc}</p>
         </div>
       </div>
     </div>

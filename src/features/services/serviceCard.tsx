@@ -30,7 +30,7 @@ const ServiceCard = ({
           {/* </div> */}
         </div>
       </div>
-      <div className="mb-2">
+      <div className="mb-2 px-1 s1280:px-0">
         <h3
           className={`text-center font-medium text-[#474744] ${
             titleStyle ? titleStyle : ""
@@ -38,18 +38,27 @@ const ServiceCard = ({
         >
           {title}
         </h3>
-        <p className="text-[#888888] font-normal s1280:text-[14px] s1512:text-[16px] text-center">
-          {countService} {locale==="ru" ? "медицинских направлений" : "Service"}
+        <p
+          className={`text-[#888888] font-normal ${
+            locale === "ru"
+              ? "text-[14px]"
+              : "s1280:text-[14px] s1512:text-[16px]"
+          } text-center line-clamp-1`}
+        >
+          {countService}{" "}
+          {locale === "ru" ? "медицинских направлений" : "Service"}
         </p>
       </div>
       <div className="flex-cen px-4">
         <button
-          onClick={() => router.push(`/${locale}/medicaltourism/${linkService}`)}
-          className={` bg-[#00979a] hover:bg-[#007A7D] anm text-white font-bold rounded-[40px] h-[48px] w-[156px] drop-shadow-[0px_4px_4px_#00000040] ${
+          onClick={() =>
+            router.push(`/${locale}/medicaltourism/${linkService}`)
+          }
+          className={` bg-[#00979a] hover:bg-[#007A7D] anm text-white font-bold rounded-[40px] h-[48px] w-[156px] drop-shadow-[0px_4px_4px_#00000040] ${locale === "ru" ? "w-full" : ""} ${
             linkStyle ? linkStyle : linkStyle
           }`}
         >
-          View services
+          {locale === "ru" ? "Посмотреть услуги" : "View services"}
         </button>
       </div>
     </div>

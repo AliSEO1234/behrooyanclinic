@@ -40,7 +40,6 @@ import apoint from "@/assets/images/apointment.svg";
 import online from "@/assets/images/online.svg";
 import VideoPlayerCom from "@/features/videoPlayer/videoPlayer";
 import { FeedbackCardType } from "@/types/feedback/feebackLayout";
-import { patientContents } from "@/staticData/patientContent";
 import { FaPlay } from "react-icons/fa6";
 import ComplimentaryConsultationForm from "@/features/complimentaryConsultationForm";
 import ScrollServices from "@/components/services/scrollServices";
@@ -49,6 +48,7 @@ import LeadForm from "@/components/leadForm";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import DialogPatientSpeakVideo from "@/components/dialogPatientSpeakVideo";
+import { handlePatient } from "@/staticData/patientContent";
 
 const Home = async ({
   params,
@@ -172,6 +172,7 @@ const Home = async ({
       topValue: 5200,
     },
   ];
+  const patientContents = handlePatient(locale)
   return (
     <>
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
@@ -228,8 +229,14 @@ const Home = async ({
           {/* Watch Your Health Journey */}
           <div className="mb-10 s1280:mb-[60px] relative z-[2]">
             <div className="flex-bet mb-5 s1280:mb-10">
-              <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[29%] s1728:w-[30%] s1920:w-[32%]" />
-              <h2 className="flex-cen gap-x-1 font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1600:text-[40px]">
+              <hr
+                className={`border-[1px] border-[#333333] border-dashed ${
+                  locale === "ru"
+                    ? "s1280:w-[22%] s1728:w-[20%]"
+                    : "s1280:w-[32%] s1600:w-[29%] s1728:w-[30%] s1920:w-[32%]"
+                } w-[4%] s375:w-[7%] `}
+              />
+              <h2 className="flex-cen gap-x-1 font-semibold text-[12px] s1280:text-[24px] s1512:text-[30px] s1600:text-[40px]">
                 <span className="w-[48px] h-[34px] s1280:w-[65px] s1280:h-[46px]">
                   <ImgFetcher src={videoIcon} />
                 </span>
@@ -239,7 +246,13 @@ const Home = async ({
                     : "Watch Your Health Journey"}
                 </span>
               </h2>
-              <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[29%] s1728:w-[30%] s1920:w-[32%]" />
+              <hr
+                className={`border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] ${
+                  locale === "ru"
+                    ? "s1280:w-[22%] s1728:w-[20%]"
+                    : "s1280:w-[32%] s1600:w-[29%] s1728:w-[30%] s1920:w-[32%]"
+                } `}
+              />
             </div>
             <div className="flex-cen relative">
               <VideoPlayer
@@ -394,7 +407,7 @@ const Home = async ({
                     : "HELPING PATIENTS FROM AROUND THE GLOBE!!"}
                 </h3>
                 <h4 className="font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1728:text-[40px] mb-1">
-                  {locale === "ru" ? "Наша" : "Our"}
+                  {locale === "ru" ? "Наша" : "Our"}{" "}
                   <span className="text-[#00979A]">
                     {locale === "ru" ? "Миссия" : "Mission"}
                   </span>
@@ -455,7 +468,9 @@ const Home = async ({
           <div className="mb-10 s1280:mb-[60px] relative z-[2]">
             <div className="mb-10">
               <h2 className="[text-shadow:_0_4px_4px_#00000040] text-center text-[#474744] font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1600:text-[40px] s1728:text-[48px]">
-                We Appreciate Your Thoughts
+                {locale === "ru"
+                  ? "Мы ценим ваше мнение"
+                  : "We Appreciate Your Thoughts"}
               </h2>
             </div>
             <div>
@@ -654,7 +669,7 @@ const Home = async ({
           </FillScrollLayout>
           {/* Video Distinctive Features */}
           <FillScrollLayout
-            classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-5 s1728:mt-2 s1920:mt-1"
+            classLabel="hidden s1280:flex-cen s1280:mt-2 s1512:mt-2 s1600:mt-5 s1728:mt-2 s1920:mt-1"
             className="mt-10 s1280:h-[340px] s1512:h-[380px] s1728:h-[471px] s1728:pt-20 s1920:h-[453px] s1280:ps-[25px] s1280:pt-14 s1280:-mt-40 s1512:-mt-[150px] s1600:-mt-52 s1728:-mt-36 s1920:-mt-24"
             order="second"
             title={locale === "ru" ? "Отзывы пациентов" : "Patients Speak"}

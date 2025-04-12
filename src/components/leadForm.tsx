@@ -95,13 +95,15 @@ const LeadForm = ({ className }: LeadFormType) => {
         >
           <hr className="mx-auto w-[101px] h-[3px] bg-white rounded-[10px] my-2 s1280:hidden" />
           <p className="font-bold s1512:text-[20px] s1728:text-[24px] text-center s1280:text-start text-white">
-            Are you ready for a health checkup?
+            {locale === "ru"
+              ? "Вы готовы пройти медицинское обследование?"
+              : "Are you ready for a health checkup?"}
           </p>
           <div className="grid grid-cols-12 gap-y-4 s1280:gap-x-2 s1280:gap-y-6 mt-4 s1280:mt-6 s1920:gap-y-10">
             <div className="col-span-12 s1280:col-span-6">
               <input
                 {...register("fullName", { required: true })}
-                placeholder="Name"
+                placeholder={locale === "ru" ? "Имя" : "Name"}
                 className="px-3 outline-none bg-white w-full h-[48px] s1280:h-[38px] s1512:h-[40px] s1728:h-[48px] s1512:text-[16px] s1280:text-[14px] placeholder:text-[#9996A0] font-medium rounded-[40px]"
                 type="text"
               />
@@ -109,7 +111,7 @@ const LeadForm = ({ className }: LeadFormType) => {
             <div className="col-span-12 s1280:col-span-6">
               <input
                 {...register("email", { required: true })}
-                placeholder="Email"
+                placeholder={locale === "ru" ? "Электронная почта" : "Email"}
                 className="px-3 outline-none bg-white w-full h-[48px] s1280:h-[38px] s1512:h-[40px] s1728:h-[48px] s1512:text-[16px] s1280:text-[14px] placeholder:text-[#9996A0] font-medium rounded-[40px]"
                 type="email"
               />
@@ -119,7 +121,7 @@ const LeadForm = ({ className }: LeadFormType) => {
                 {...register("phone", { required: true })}
                 onChange={handlePhoneChange}
                 defaultValue={phoneValue}
-                placeholder="Phone"
+                placeholder={locale==="ru" ? "Телефон" :"Phone"}
                 className="ps-20 s1280:ps-16 s1512:ps-20 pe-3 outline-none bg-white w-full h-[48px] s1280:h-[38px] s1512:h-[40px] s1728:h-[48px] s1512:text-[16px] s1280:text-[14px] placeholder:text-[#9996A0] font-medium rounded-[40px]"
                 type="text"
               />
@@ -139,7 +141,11 @@ const LeadForm = ({ className }: LeadFormType) => {
                     loading ? "top-0" : "group-hover:-top-full"
                   } group-hover:-top-full left-0 text-center flex-cen anm`}
                 >
-                  {loading ? "Sending..." : "Send Request"}
+                  {loading
+                    ? "Sending..."
+                    : locale === "ru"
+                    ? "Отправить запрос"
+                    : "Send Request"}
                 </div>
                 <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
                   <LucideSendHorizontal className="size-5" />

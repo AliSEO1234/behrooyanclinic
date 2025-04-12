@@ -30,7 +30,7 @@ const ScrollServices = () => {
             title={label}
             linkService={path}
             linkStyle=" text-[18px] s1512:text-[18px]"
-            titleStyle=" text-[20px] s1512:text-[20px]"
+            titleStyle={`${locale=== "ru" ? "text-[14px] s1512:text-[16px]" : "text-[20px] s1512:text-[20px]"}`}
             imgStyle="p-4 w-[190px] h-[190px] s1280:h-[180px] s1280:w-[180px] s1512:h-[220px] s1512:w-[220px] s1728:w-[250px] s1728:h-[250px]"
             className="treatments__card-container w-[210px] min-w-[210px] s1512:w-[252px] s1512:min-w-[252px] s1600:w-[262px]  s1600:min-w-[262px] s1728:w-[282px] s1728:min-w-[282px] snap-center"
           />

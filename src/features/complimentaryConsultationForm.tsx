@@ -122,7 +122,7 @@ const ComplimentaryConsultationForm = () => {
         <input
           {...register("email", { required: true })}
           className="homepage-input px-4"
-          placeholder="Email"
+          placeholder={locale === "ru" ? "Электронная почта" : "Email"}
           type="text"
         />
       </div>
