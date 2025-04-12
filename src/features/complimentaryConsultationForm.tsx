@@ -6,12 +6,14 @@ import { options } from "@/staticData/optionsForm";
 import { OptionType } from "@/types/comboBox/comboType";
 import { HomePageFormType } from "@/types/forms";
 import { LucideSendHorizontal } from "lucide-react";
+import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const ComplimentaryConsultationForm = () => {
+  const locale = useLocale();
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
   const pathnme = usePathname();
   const [codes, setCodes] = useState<OptionType | null>({
@@ -86,13 +88,19 @@ const ComplimentaryConsultationForm = () => {
         <input
           {...register("full_name", { required: true })}
           className="homepage-input px-4"
-          placeholder="Name & Surname"
+          placeholder={locale === "ru" ? "Имя" : "Name & Surname"}
           type="text"
         />
       </div>
       <div className="col-span-12 s1280:col-span-2 h-fit">
         <ComboBox
-          trigger={selectedOption ? selectedOption.label : "Treatment"}
+          trigger={
+            selectedOption
+              ? selectedOption.label
+              : locale === "ru"
+              ? "Лечение"
+              : "Treatment"
+          }
           className="flex-bet s1728:text-[16px] w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-medium text-[#898989] bg-white"
           options={options}
           onChange={setSelectedOption}
@@ -105,7 +113,7 @@ const ComplimentaryConsultationForm = () => {
           onChange={handlePhoneChange}
           defaultValue={phoneValue}
           className="homepage-input ps-20 pe-4"
-          placeholder="Phone Number"
+          placeholder={locale==="ru" ? "Телефон" :"Phone Number"}
           type="text"
         />
         <CountryCode codes={codes} setCodes={setCodes} />
@@ -129,7 +137,7 @@ const ComplimentaryConsultationForm = () => {
               loading ? "top-0" : "group-hover:-top-full"
             } group-hover:-top-full left-0 text-center flex-cen anm`}
           >
-            {loading ? "Sending..." : "Let’s Connect"}
+            {loading ? "Sending..." : locale === "ru" ? "На связь!" : "Let’s Connect"}
           </div>
           <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
             <LucideSendHorizontal className="size-5" />

@@ -20,6 +20,31 @@ html {
   -webkit-mask-image: none !important;
 }
 @layer components {
+  /* editor styles */
+  .text-editor ul {
+    list-style-type: disc !important;
+    padding-left: 20px !important;
+    margin: 10px 0 !important;
+  }
+
+  .text-editor ol {
+    list-style-type: decimal !important;
+    padding-left: 20px !important;
+    margin: 10px 0 !important;
+  }
+
+  .text-editor li {
+    margin-bottom: 5px !important;
+    color: inherit !important;
+    font-size: inherit !important;
+  }
+  .text-editor table,
+  .text-editor table td,
+  .text-editor table th {
+    border: 1px solid #000 !important;
+    border-collapse: collapse !important;
+    padding: 8px !important;
+  }
   /* subnested style class */
   .sub-nested-home-first-section {
     @apply viewport-p grid grid-cols-12 gap-y-3 mt-4 s1280:mt-10 s1512:mt-20 shadow-[0px_2px_12.9px_0px_#00979A1C] rounded-b-[40px] s1280:mb-4 relative;
@@ -86,7 +111,7 @@ html {
     @apply s1280:h-[463px] s1280:w-[259px] s1600:w-[330px] s1600:h-[589px];
   }
   .benefits-card {
-    @apply  z-[2] bg-white shadow-[0px_4px_15px_#00000010] rounded-[20px] s1280:rounded-[40px] px-4 py-2 leading-[17px] s1280:px-4 s1728:px-6 s1280:py-4 s1280:leading-[25px] w-[208px] h-[104px] s1280:w-[269px] s1728:w-[357px] s1280:h-[130px];
+    @apply z-[2] bg-white shadow-[0px_4px_15px_#00000010] rounded-[20px] s1280:rounded-[40px] px-4 py-2 leading-[17px] s1280:px-4 s1728:px-6 s1280:py-4 s1280:leading-[25px] w-[208px] h-[104px] s1280:w-[269px] s1728:w-[357px] s1280:h-[130px];
   }
   .benefits-card h3 {
     @apply font-medium text-[#3EBB9A] text-[14px] s1280:text-[16px] s1728:text-[20px] line-clamp-1;

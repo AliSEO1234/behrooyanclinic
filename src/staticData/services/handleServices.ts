@@ -5,7 +5,7 @@ import eye from "@/assets/images/icons/services/eye.png";
 import dental from "@/assets/images/icons/services/dental.png";
 import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import { allSubCategory, allSubNestedCategory } from "../allSubCategory";
-const handleServices = () => {
+const handleServices = (locale : string) => {
   // const countAethServices = categoryDataHandler("aesthetic", locale)
   //   ?.subCategoryList.length;
   const countAethServices = allSubCategory.filter(
@@ -48,31 +48,31 @@ const handleServices = () => {
     {
       countService: countAethServices + counSubnestedAethServices || 0,
       img: aesthetics,
-      label: "Aesthetics",
+      label: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
       path: "aesthetic",
     },
     {
       countService: countDentalServices + counSubnestedDentalServices || 0,
       img: dental,
-      label: "Dental",
+      label: locale=== "ru" ? "Стоматология" : "Dental",
       path: "dental-treatments",
     },
     {
       countService: countEyeServices + countSubnestedEyeServices || 0,
       img: eye,
-      label: "Eye Surgeries",
+      label: locale ==="ru" ? "Офтальмологические операции" : "Eye Surgeries",
       path: "eye-surgery",
     },
     {
       countService: countFertilityServices + countSubnestedFertilityServices || 0,
       img: fertility,
-      label: "Fertility",
+      label: locale === "ru" ? "Репродуктивное здоровье" : "Fertility",
       path: "fertility",
     },
     {
       countService: countStemCellServices + countSubnestedStemCellServices || 0,
       img: cell,
-      label: "Stem Cell",
+      label: locale === "ru" ? "Лечение стволовыми клетками" : "Stem Cell",
       path: "stem-cell",
     },
   ];

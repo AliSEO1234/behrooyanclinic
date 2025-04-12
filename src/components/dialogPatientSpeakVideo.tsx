@@ -8,14 +8,9 @@ import {
   DialogTitle,
 } from "./ui/dialog";
 import { useAppContext } from "@/contexts/app-context/app-context";
-import { useEffect } from "react";
 
 const DialogPatientSpeakVideo = () => {
   const { youtubeShow, setYoutubeShow, patientSrcActive } = useAppContext();
-  useEffect(()=>{
-    console.log(patientSrcActive);
-    
-  },[patientSrcActive])
   return (
     <Dialog open={youtubeShow} onOpenChange={setYoutubeShow}>
       <DialogContent className="flex-cen bg-transparent border-none shadow-none" onClick={() =>setYoutubeShow(false)}>

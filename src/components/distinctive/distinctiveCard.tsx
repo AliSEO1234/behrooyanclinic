@@ -18,7 +18,6 @@ const DistinctiveCard = ({
   const { setPatientSrcActive, setYoutubeShow } = useAppContext();
   const videoEl = useRef<HTMLVideoElement | null>(null);
   const lastPart = video.substring(video.lastIndexOf("/") + 1);
-  console.log(lastPart);
   const handlePlay = () => {
     setPatientSrcActive(video);
     setYoutubeShow(true);
@@ -55,10 +54,6 @@ const DistinctiveCard = ({
     };
     getVideoInfo();
   }, []);
-  useEffect(()=>{
-    console.log("Youtube info" , videoInfo);
-    
-  },[videoInfo])
   return (
     <div
       className={`${

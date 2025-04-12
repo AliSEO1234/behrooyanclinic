@@ -90,7 +90,7 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}`}
                 >
-                  Home Page
+                  {locale === "ru" ? "Главная страница" : "Home Page"}
                 </Link>
               </div>
               <div>
@@ -98,7 +98,9 @@ const Navbar = () => {
                   <NavigationMenuList>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger className="p-0 hover:bg-inherit focus:bg-inherit hover:text-[#00979A] s1280:text-[14px] s1512:text-[16px] s1728:text-[18px]">
-                        Medical branches
+                        {
+                          locale === "ru" ? "Медицинские направления" : "Medical branches"
+                        }
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="w-[900px] py-3">
@@ -149,7 +151,9 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/clinics`}
                 >
-                  Hospital & Clinics
+                  {
+                    locale === "ru" ? "Больницы и клиники" : "Hospital & Clinics"
+                  }
                 </Link>
               </div>
               <div>
@@ -157,7 +161,9 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/patient-services`}
                 >
-                  Patient Services
+                  {
+                    locale === "ru" ? "Услуги для пациентов" : "Patient Services"
+                  }
                 </Link>
               </div>
               {/* <div>
@@ -170,7 +176,9 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/about`}
                 >
-                  About Us
+                  {
+                    locale === "ru" ? "О нас" : "About Us"
+                  }   
                 </Link>
               </div>
               <div>
@@ -178,7 +186,9 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/contact-us`}
                 >
-                  Contact Us
+                  {
+                    locale === "ru" ? "Свяжитесь с нами"  : "Contact Us"
+                  }
                 </Link>
               </div>
             </div>

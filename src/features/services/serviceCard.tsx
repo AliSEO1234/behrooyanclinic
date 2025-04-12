@@ -39,7 +39,7 @@ const ServiceCard = ({
           {title}
         </h3>
         <p className="text-[#888888] font-normal s1280:text-[14px] s1512:text-[16px] text-center">
-          {countService} Service
+          {countService} {locale==="ru" ? "медицинских направлений" : "Service"}
         </p>
       </div>
       <div className="flex-cen px-4">

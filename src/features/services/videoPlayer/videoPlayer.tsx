@@ -15,8 +15,6 @@ const VideoPlayer = ({
   const [videoSrc, setVideoSrc] = useState(src);
   const handleError = (e: SyntheticEvent<HTMLIFrameElement, Event>) => {
     const target = e.target as HTMLIFrameElement;
-    console.log("davari" , videoSrc);
-    
     if (target) {
       if (target.src.includes("youtube.com") || target.src.includes("youtu.be")) {
         setErrorYoutube(true);

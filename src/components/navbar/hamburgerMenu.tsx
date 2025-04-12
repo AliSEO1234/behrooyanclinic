@@ -91,21 +91,33 @@ const HamburgerMenu = () => {
             <div>
               <ul className="flex flex-col items-start gap-y-6 font-medium text-[#474744]">
                 <li>
-                  <Link href={`/${locale}`}>Home Page</Link>
-                </li>
-                <li>
-                  <Link href={`/${locale}/patient-services`}>
-                    Patient Services
+                  <Link href={`/${locale}`}>
+                    {locale === "ru" ? "Главная страница" : "Home Page"}
                   </Link>
                 </li>
                 <li>
-                  <Link href={`/${locale}/clinics`}>Hospital & Clinics</Link>
+                  <Link href={`/${locale}/patient-services`}>
+                    {locale === "ru"
+                      ? "Услуги для пациентов"
+                      : "Patient Services"}
+                  </Link>
                 </li>
                 <li>
-                  <Link href={`/${locale}/contact-us`}>Contact Us</Link>
+                  <Link href={`/${locale}/clinics`}>
+                    {locale === "ru"
+                      ? "Больницы и клиники"
+                      : "Hospital & Clinics"}
+                  </Link>
                 </li>
                 <li>
-                  <Link href={`/${locale}/about`}>About Us</Link>
+                  <Link href={`/${locale}/contact-us`}>{
+                    locale === "ru" ? "Свяжитесь с нами"  : "Contact Us"
+                  }</Link>
+                </li>
+                <li>
+                  <Link href={`/${locale}/about`}>{
+                    locale === "ru" ? "О нас" : "About Us"
+                  }</Link>
                 </li>
                 <li className="w-full">
                   <Accordion type="single" collapsible>

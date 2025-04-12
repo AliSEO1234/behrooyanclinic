@@ -6,12 +6,14 @@ import { options } from "@/staticData/optionsForm";
 import { OptionType } from "@/types/comboBox/comboType";
 import { HomePlatformWorkFormType } from "@/types/forms";
 import { LucideSendHorizontal } from "lucide-react";
+import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const PlatformWorkForm = () => {
+  const locale = useLocale();
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
   const [codes, setCodes] = useState<OptionType | null>({
     id: 0,
@@ -78,7 +80,9 @@ const PlatformWorkForm = () => {
       {/* platform__form-container  */}
       <div className="col-span-12 ">
         <h3 className="text-center font-bold text-[20px] s1280:text-[18px] s1728:text-[28px] text-[#0CA5A5]">
-          Fill out the form to receive advice
+          {locale === "ru"
+            ? "Заполните форму для получения консультации"
+            : "Fill out the form to receive advice"}
         </h3>
       </div>
       <div className="col-span-12">
@@ -86,12 +90,14 @@ const PlatformWorkForm = () => {
         <input
           {...register("full_name", { required: true })}
           className="px-4"
-          placeholder="Name & Surname"
+          placeholder={locale === "ru" ? "Имя" : "Name & Surname"}
           type="text"
         />
       </div>
       <div className="col-span-12">
-        <label htmlFor="phone-our-work">Phone Number</label>
+        <label htmlFor="phone-our-work">
+          {locale === "ru" ? "Телефон" : "Phone Number"}
+        </label>
         <div className="relative">
           <input
             {...register("phone", { required: true })}
@@ -99,14 +105,16 @@ const PlatformWorkForm = () => {
             defaultValue={phoneValue}
             className="ps-20 pe-4"
             id="phone-our-work"
-            placeholder="Number"
+            placeholder={locale === "ru" ? "Телефон" : "Number"}
             type="text"
           />
           <CountryCode codes={codes} setCodes={setCodes} />
         </div>
       </div>
       <div className="col-span-12">
-        <label htmlFor="">Choose your service type</label>
+        <label htmlFor="">
+          {locale === "ru" ? "Выберите тип услуги" : "Choose your service type"}
+        </label>
         <ComboBox
           trigger={selectedOption ? selectedOption.label : "Treatment"}
           className="flex-bet w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1"
@@ -119,7 +127,7 @@ const PlatformWorkForm = () => {
       <div className="col-span-12 flex-cen">
         <button className="font-bold w-full h-[54px] text-center rounded-[40px] group relative overflow-hidden">
           <div className="z-[2] bg-[#0CA5A5] text-white w-full h-full absolute top-0 group-hover:-top-full left-0 text-center flex-cen anm">
-            Send Message
+            {locale === "ru" ? "Отправить сообщение" : "Send Message"}
           </div>
           <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
             <LucideSendHorizontal className="size-5" />

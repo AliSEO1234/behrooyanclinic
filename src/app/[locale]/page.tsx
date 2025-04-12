@@ -182,7 +182,9 @@ const Home = async ({
               AZPO Health
             </h1>
             <p className="font-medium text-[18px] s1280:text-[24px] text-white">
-              Trust, Care, and Wellness Beyond Borders
+              {locale === "ru"
+                ? "Доверие, забота и здоровье без границ"
+                : "Trust, Care, and Wellness Beyond Borders"}
             </p>
             <div className="mt-5">
               <a
@@ -194,7 +196,9 @@ const Home = async ({
                     <FaPlay className="size-4 ms-[2px]" />
                   </span>
                 </span>
-                <span>What We Do?</span>
+                <span>
+                  {locale === "ru" ? "Наша деятельность" : "What We Do?"}
+                </span>
               </a>
             </div>
           </div>
@@ -208,7 +212,7 @@ const Home = async ({
             <div className="flex-bet mb-5 s1280:mb-10">
               <div>
                 <h2 className="font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px] treat-shadow">
-                  Treatments
+                  {locale === "ru" ? "Медицинские направления" : "Treatments"}
                 </h2>
               </div>
               {/* <div className="flex-right">
@@ -229,7 +233,11 @@ const Home = async ({
                 <span className="w-[48px] h-[34px] s1280:w-[65px] s1280:h-[46px]">
                   <ImgFetcher src={videoIcon} />
                 </span>
-                <span>Watch Your Health Journey</span>{" "}
+                <span>
+                  {locale === "ru"
+                    ? "Как проходит ваше лечение: шаг за шагом"
+                    : "Watch Your Health Journey"}
+                </span>
               </h2>
               <hr className="border-[1px] border-[#333333] border-dashed w-[4%] s375:w-[7%] s1280:w-[32%] s1600:w-[29%] s1728:w-[30%] s1920:w-[32%]" />
             </div>
@@ -254,15 +262,18 @@ const Home = async ({
                   <span className="w-[42px] h-[42px] s1280:w-[70px] s1280:h-[53px]">
                     <ImgFetcher src={medalIcon} />
                   </span>
-                  <span>Your Treatment Roadmap</span>
+                  <span>
+                    {locale === "ru"
+                      ? "Ваш план лечения"
+                      : "Your Treatment Roadmap"}
+                  </span>
                 </h2>
                 <hr className="border-[1px] border-[#333333] border-dashed w-[6%] s375:w-[9%] s390:w-[10%] s1280:w-[33%] s1600:w-[30%] s1728:w-[31%] s1920:w-[33%]" />
               </div>
               <p className="text-center s1280:text-[24px] s1512:text-[28px] s1728:text-[29px] font-normal text-[#333333]">
-                We are here to make your medical journey as smooth and
-                reassuring as possible, with a dedicated team of doctors,
-                healthcare professionals, and experienced patient coordinators
-                supporting you every step of the way.
+                {locale === "ru"
+                  ? "Наша цель — сделать ваше медицинское путешествие максимально комфортным и спокойным. На каждом этапе вас будут сопровождать квалифицированные врачи, медицинские специалисты и опытные координаторы, чтобы обеспечить вам уверенность и поддержку."
+                  : "We are here to make your medical journey as smooth and reassuring as possible, with a dedicated team of doctors, healthcare professionals, and experienced patient coordinators supporting you every step of the way."}
               </p>
             </div>
             <div className="grid grid-cols-12 s1280:gap-y-[10px] s1280:px-10 s1600:px-20 s1728:px-34 s1920:px-36">
@@ -270,8 +281,16 @@ const Home = async ({
                 order={1}
                 align="left"
                 cover={passport}
-                title="Personalized Consultation & Treatment Planning"
-                desc="The process starts when clients contact us. We assess their needs, arrange consultations, and design a customized treatment plan with clear and transparent cost estimates."
+                title={
+                  locale === "ru"
+                    ? "Индивидуальная консультация и планирование лечения"
+                    : "Personalized Consultation & Treatment Planning"
+                }
+                desc={
+                  locale === "ru"
+                    ? "Процесс начинается, когда клиенты связываются с нами. Мы оцениваем их потребности, организуем консультации и разрабатываем индивидуальный план лечения с чёткой и прозрачной сметой расходов."
+                    : "The process starts when clients contact us. We assess their needs, arrange consultations, and design a customized treatment plan with clear and transparent cost estimates."
+                }
                 className="s1280:w-[650px] s1280:h-[150px] s1512:w-[872px] s1512:h-[185px] s1728:w-[55%] s1920:w-[50%]"
               />
               <div className="col-span-12 flex-cen">
@@ -281,8 +300,16 @@ const Home = async ({
                 order={2}
                 align="right"
                 cover={air}
-                title="Online & Pre-Travel Arrangements"
-                desc="Clients consult with their doctor online to address any questions before traveling. We assist with booking flights, accommodation, transfers,and visa support if needed."
+                title={
+                  locale === "ru"
+                    ? "Онлайн-услуги и подготовка к путешествию"
+                    : "Online & Pre-Travel Arrangements"
+                }
+                desc={
+                  locale === "ru"
+                    ? "Перед поездкой пациенты проходят онлайн-консультацию с врачом, чтобы получить ответы на все вопросы. Мы также оказываем помощь в бронировании авиабилетов, выборе жилья, организации трансферов и предоставляем визовую поддержку, если это требуется."
+                    : "Clients consult with their doctor online to address any questions before traveling. We assist with booking flights, accommodation, transfers,and visa support if needed."
+                }
                 className="s1280:w-[650px] s1280:h-[150px] s1512:w-[872px] s1512:h-[185px] s1728:w-[55%] s1920:w-[50%]"
               />
               <div className="col-span-12 flex-cen">
@@ -292,8 +319,16 @@ const Home = async ({
                 order={3}
                 align="left"
                 cover={earth}
-                title="Receiving World-Class Treatment"
-                desc="Clients are supported throughout their treatment with regular updates, and follow-up care is arranged post-treatment for a seamless experience."
+                title={
+                  locale === "ru"
+                    ? "Медицинское обслуживание мирового уровня"
+                    : "Receiving World-Class Treatment"
+                }
+                desc={
+                  locale === "ru"
+                    ? "Пациенты получают всестороннюю поддержку на протяжении всего лечения, включая оперативную информацию о результатах обследования и ходе лечения, а также комплексное послеоперационное сопровождение для плавного и эффективного восстановления."
+                    : "Clients are supported throughout their treatment with regular updates, and follow-up care is arranged post-treatment for a seamless experience."
+                }
                 className="s1280:w-[650px] s1280:h-[150px] s1512:w-[872px] s1512:h-[185px] s1728:w-[55%] s1920:w-[50%]"
               />
               <div className="col-span-12 flex-cen">
@@ -304,8 +339,16 @@ const Home = async ({
                 endArrow
                 align="right"
                 cover={date}
-                title=" 7/24 Ongoing Support"
-                desc="Our relationship doesn’t end with the treatment. We remain available for questions, additional assistance, and long-term care."
+                title={
+                  locale === "ru"
+                    ? "Круглосуточная поддержка 7 дней в неделю"
+                    : "7/24 Ongoing Support"
+                }
+                desc={
+                  locale === "ru"
+                    ? "Наше сотрудничество не заканчивается после завершения лечения. Мы остаемся на связи для консультаций и дополнительной помощи."
+                    : "Our relationship doesn’t end with the treatment. We remain available for questions, additional assistance, and long-term care."
+                }
                 className="s1280:w-[650px] s1280:h-[150px] s1512:w-[872px] s1512:h-[185px] s1728:w-[55%] s1920:w-[50%]"
               />
             </div>
@@ -346,25 +389,20 @@ const Home = async ({
             <div className="col-span-12 s1280:col-span-6 flex flex-col mt-16 s1280:mt-0 px-2 s412:px-4 s1600:px-0">
               <div className="mb-10 s1280:mb-2">
                 <h3 className="text-[14px] s390:text-[15px] s1280:text-[20px] s1512:text-[24px] s1600:text-[28px] s1728:text-[30px] font-semibold text-[#00979A] mb-5">
-                  HELPING PATIENTS FROM AROUND THE GLOBE!!
+                  {locale === "ru"
+                    ? "Оказываем помощь пациентам со всего мира!"
+                    : "HELPING PATIENTS FROM AROUND THE GLOBE!!"}
                 </h3>
                 <h4 className="font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1728:text-[40px] mb-1">
-                  Our <span className="text-[#00979A]">Mission</span>
+                  {locale === "ru" ? "Наша" : "Our"}
+                  <span className="text-[#00979A]">
+                    {locale === "ru" ? "Миссия" : "Mission"}
+                  </span>
                 </h4>
                 <p className="text-[#474744] font-medium text-[14px] s1512:text-[16px] s1600:text-[18px] s1728:text-[20px] s1512:leading-[30px]">
-                  At AzpoHealth, we aim to transform healthcare from a routine
-                  process into an inspiring journey. Our goal is to make
-                  advanced medical technologies accessible to patients
-                  worldwide, providing the most suitable treatment plans and
-                  ensuring access to high-quality healthcare. From the moment
-                  you step into Turkey until you return home, we’ll be with you
-                  every step of the way, supporting you to become the best
-                  version of yourself. Our team of expert doctors and
-                  professionals will be continuously by your side, offering
-                  guidance and support throughout your treatment, ensuring the
-                  safest and most comfortable experience possible. Welcome to a
-                  new age of medical tourism, where your path to wellness meets
-                  the excitement of discovering new possibilities.
+                  {locale === "ru"
+                    ? "В AzpoHealth мы стремимся превратить медицинское обслуживание из рутинного процесса в вдохновляющее путешествие. Наша цель — сделать передовые медицинские технологии доступными для пациентов по всему миру, предлагая наилучшие варианты лечения и гарантируя доступ к качественной медицинской помощи. С момента вашего прибытия в Турцию и до возвращения домой мы будем с вами на каждом этапе пути, помогая вам стать лучшей версией себя. Наша команда опытных врачей и специалистов будет рядом на протяжении всего лечения, обеспечивая поддержку, безопасность и максимальный комфорт. Добро пожаловать в новую эпоху медицинского туризма, где путь к здоровью сочетается с радостью открытия новых возможностей."
+                    : "At AzpoHealth, we aim to transform healthcare from a routine process into an inspiring journey. Our goal is to make advanced medical technologies accessible to patients worldwide, providing the most suitable treatment plans and ensuring access to high-quality healthcare. From the moment you step into Turkey until you return home, we’ll be with you every step of the way, supporting you to become the best version of yourself. Our team of expert doctors and professionals will be continuously by your side, offering guidance and support throughout your treatment, ensuring the safest and most comfortable experience possible. Welcome to a new age of medical tourism, where your path to wellness meets the excitement of discovering new possibilities."}
                 </p>
               </div>
               <div className="font-medium text-[#474744] mt-auto flex flex-col items-start justify-end gap-y-4 s1512:gap-y-6 text-[14px] s1280:text-[20px]">
@@ -375,7 +413,11 @@ const Home = async ({
                   </div>
                   <ArrowHelping />
                   <div className="helping__small-text-container">
-                    <p>Stay Updated About Your Health</p>
+                    <p>
+                      {locale === "ru"
+                        ? "Следите за состоянием здоровья"
+                        : "Stay Updated About Your Health"}
+                    </p>
                   </div>
                 </div>
                 <div className="flex justify-start items-center gap-x-3">
@@ -385,7 +427,11 @@ const Home = async ({
                   </div>
                   <ArrowHelping />
                   <div className="helping__small-text-container">
-                    <p>Check Your Results Online</p>
+                    <p>
+                      {locale === "ru"
+                        ? "Проверьте результаты онлайн"
+                        : "Check Your Results Online"}
+                    </p>
                   </div>
                 </div>
                 <div className="flex justify-start items-center gap-x-3">
@@ -395,7 +441,11 @@ const Home = async ({
                   </div>
                   <ArrowHelping />
                   <div className="helping__small-text-container">
-                    <p>Manage Your Appointments</p>
+                    <p>
+                      {locale === "ru"
+                        ? "Управляйте визитами к врачу"
+                        : "Manage Your Appointments"}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -426,7 +476,11 @@ const Home = async ({
             <div className="flex flex-col items-center gap-y-4 s1280:hidden">
               <div className="flex justify-between items-center w-full">
                 <InfoHealthCard
-                  title="Successful Consultations"
+                  title={
+                    locale === "ru"
+                      ? "Успешные консультации"
+                      : "Successful Consultations"
+                  }
                   value="10000+"
                 />
                 <BundleIcon
@@ -434,7 +488,11 @@ const Home = async ({
                   destination="top"
                 />
                 <InfoHealthCard
-                  title="Healthcare Professionals"
+                  title={
+                    locale === "ru"
+                      ? "Медицинские специалисты"
+                      : "Healthcare Professionals"
+                  }
                   value="2.500"
                 />
               </div>
@@ -443,19 +501,35 @@ const Home = async ({
                 destination="bottom"
               />
               <div className="flex justify-between items-center w-full">
-                <InfoHealthCard title="Patient Satisfaction Rate" value="90%" />
+                <InfoHealthCard
+                  title={
+                    locale === "ru"
+                      ? "Уровень удовлетворенности пациентов"
+                      : "Patient Satisfaction Rate"
+                  }
+                  value="90%"
+                />
                 <BundleIcon
                   className="w-[120px] h-[67px] top-5"
                   destination="top"
                 />
-                <InfoHealthCard title="Top Specialists" value="200" />
+                <InfoHealthCard
+                  title={
+                    locale === "ru" ? "Ведущие специалисты" : "Top Specialists"
+                  }
+                  value="200"
+                />
               </div>
             </div>
             <div className="home__info-container--bottom hidden s1280:flex items-center s1280:justify-between">
               <InfoIntersectionObserver />
               <InfoHealthCard
                 order={1}
-                title="Successful Consultations"
+                title={
+                  locale === "ru"
+                    ? "Успешные консультации"
+                    : "Successful Consultations"
+                }
                 value="10000+"
               />
               <BundleIcon
@@ -465,7 +539,11 @@ const Home = async ({
               />
               <InfoHealthCard
                 order={2}
-                title="Healthcare Professionals"
+                title={
+                  locale === "ru"
+                    ? "Медицинские специалисты"
+                    : "Healthcare Professionals"
+                }
                 value="2.500"
               />
               <BundleIcon
@@ -475,7 +553,11 @@ const Home = async ({
               />
               <InfoHealthCard
                 order={3}
-                title="Patient Satisfaction Rate"
+                title={
+                  locale === "ru"
+                    ? "Уровень удовлетворенности пациентов"
+                    : "Patient Satisfaction Rate"
+                }
                 value="90%"
               />
               <BundleIcon
@@ -483,7 +565,13 @@ const Home = async ({
                 className="w-[246px] s1600:w-[346px] h-[67px] s1600:h-[80px] top-24 s1600:top-24"
                 destination="top"
               />
-              <InfoHealthCard order={4} title="Top Specialists" value="200" />
+              <InfoHealthCard
+                order={4}
+                title={
+                  locale === "ru" ? "Ведущие специалисты" : "Top Specialists"
+                }
+                value="200"
+              />
             </div>
           </div>
           <LeadForm className="s1280:mb-20" />
@@ -492,7 +580,7 @@ const Home = async ({
             className="s1280:h-[852px] s1512:h-[780px] s1600:h-[898px] s1728:h-[884px] s1920:h-[819px] s1280:px-[25px] s1280:pt-28 s1512:pt-24 s1600:pt-20 s1728:pt-32"
             order="first"
             classLabel="flex-cen s1280:mt-2 s1512:mt-1 s1600:mt-4 s1728:mt-0"
-            title="Why choose us?"
+            title={locale === "ru" ? "Почему выбирают нас?" : "Why choose us?"}
           >
             <div className="grid grid-cols-12 gap-y-10 px-2 s1280:gap-y-0 s1280:gap-x-10 s1600:gap-x-[55px] s1728:gap-x-[40px] s1920:gap-x-[75px] z-[3]">
               <div className="col-span-12 s1280:col-span-3 s1512:col-span-4 relative">
@@ -511,30 +599,56 @@ const Home = async ({
               <div className="col-span-12 s1280:col-span-9 s1512:col-span-8 grid grid-cols-12 s1280:gap-x-5 s1600:gap-x-[26px] s1920:gap-x-[39px] gap-y-[32px]">
                 <ChooseUsCard
                   className="col-span-12 s1280:col-span-6"
-                  desc="What sets us apart is our dedication to personalized, reliable care. Our expert doctors and patient coordinators truly understand your needs. From the first contact, we provide one-on-one consultations to craft the best treatment plan for you. We stand by you as a trusted guide on your healthcare journey."
-                  header="High Expertise"
+                  desc={
+                    locale === "ru"
+                      ? "Наша отличительная черта — индивидуальный подход, внимание к деталям и качественный уход. Наши квалифицированные врачи и координаторы внимательно учитывают все ваши потребности. С первого обращения мы детально изучаем ваш случай и разрабатываем оптимальный план лечения. Мы сопровождаем вас на протяжении всего пути, предоставляя квалифицированную поддержку и гарантируя комфортное лечение."
+                      : "What sets us apart is our dedication to personalized, reliable care. Our expert doctors and patient coordinators truly understand your needs. From the first contact, we provide one-on-one consultations to craft the best treatment plan for you. We stand by you as a trusted guide on your healthcare journey."
+                  }
+                  header={
+                    locale === "ru" ? "Высокая квалификация" : "High Expertise"
+                  }
                   index={1}
                 />
                 <ChooseUsCard
                   className="col-span-12 s1280:col-span-6"
-                  desc="Throughout your medical journey in Turkey Azpo Health team will take care of everything—treatment, transfers, accommodation, and visas—so you can focus on your recovery. Your case is thoroughly assessed by top specialists and double-checked by Azpo's consultant doctors to guarantee the highest quality care. All you need to do is trust the process and leave it to Azpo Health."
-                  header="360-degree Service"
+                  desc={
+                    locale === "ru"
+                      ? "На протяжении всего вашего медицинского пути в Турции команда Azpo Health позаботится о всех аспектах — лечении, трансферах, размещении и визах, чтобы вы могли сосредоточиться на своем здоровье. Ваш случай будет тщательно оценен ведущими специалистами и дополнительно проверен консультирующими врачами Azpo, чтобы гарантировать самое высокое качество обслуживания. Все, что вам нужно — это довериться профессионалам и оставить все в руках Azpo Health."
+                      : "Throughout your medical journey in Turkey Azpo Health team will take care of everything—treatment, transfers, accommodation, and visas—so you can focus on your recovery. Your case is thoroughly assessed by top specialists and double-checked by Azpo's consultant doctors to guarantee the highest quality care. All you need to do is trust the process and leave it to Azpo Health."
+                  }
+                  header={
+                    locale === "ru"
+                      ? "Полный спектр услуг"
+                      : "360-degree Service"
+                  }
                   index={3}
                 />
                 <ChooseUsCard
                   className="col-span-12 s1280:col-span-6"
-                  desc="With 20 years of experience serving international clients and building strong partnerships, we have have a deep understanding of your needs and ensure seamless coordination. Our expert team and strong medical partnerships enable us to recommend the best solutions. Anticipating every detail, we stand by you with unwavering support before, during, and after your treatment"
-                  header="Long-term Experience"
+                  desc={
+                    locale === "ru"
+                      ? "Благодаря 20-летнему опыту работы с международными клиентами и укреплению партнерских связей, мы глубоко понимаем ваши потребности и обеспечиваем безупречную координацию. Наши эксперты и медицинские партнеры помогают нам предлагать оптимальные решения. Мы учитываем все нюансы и всегда рядом, предоставляя поддержку на каждом этапе — до, во время и после лечения."
+                      : "With 20 years of experience serving international clients and building strong partnerships, we have have a deep understanding of your needs and ensure seamless coordination. Our expert team and strong medical partnerships enable us to recommend the best solutions. Anticipating every detail, we stand by you with unwavering support before, during, and after your treatment"
+                  }
+                  header={
+                    locale === "ru"
+                      ? "Многолетний опыт"
+                      : "Long-term Experience"
+                  }
                   index={2}
                 />
                 <ChooseUsCard
                   className="col-span-12 s1280:col-span-6"
-                  desc="Thanks to our years of experience and extensive network, we’re here to support you in top health tourism destinations in Turkey, including Istanbul, Antalya, Alanya, Ankara, Izmir, Samsun, and Cappadocia, as well as in several countries with well-established medical tourism. No matter where you choose to receive treatment and benefit from our services, our local representatives are ready to offer you the best service in that city."
-                  header="Network"
+                  desc={
+                    locale === "ru"
+                      ? "Благодаря 20-летнему опыту работы с международными клиентами и укреплению партнерских связей, мы глубоко понимаем ваши потребности и обеспечиваем безупречную координацию. Наши эксперты и медицинские партнеры помогают нам предлагать оптимальные решения. Мы учитываем все нюансы и всегда рядом, предоставляя поддержку на каждом этапе — до, во время и после лечения."
+                      : "Thanks to our years of experience and extensive network, we’re here to support you in top health tourism destinations in Turkey, including Istanbul, Antalya, Alanya, Ankara, Izmir, Samsun, and Cappadocia, as well as in several countries with well-established medical tourism. No matter where you choose to receive treatment and benefit from our services, our local representatives are ready to offer you the best service in that city."
+                  }
+                  header={
+                    locale === "ru" ? "Большая партнерская сеть" : "Network"
+                  }
                   index={4}
                 />
-                {/* <div className="col-span-12 s1280:col-span-6"></div>
-                <div className="col-span-12 s1280:col-span-6"></div> */}
               </div>
             </div>
           </FillScrollLayout>
@@ -543,13 +657,13 @@ const Home = async ({
             classLabel="hidden s1280:flex-cen s1280:mt-3 s1512:mt-2 s1600:mt-5 s1728:mt-2 s1920:mt-1"
             className="mt-10 s1280:h-[340px] s1512:h-[380px] s1728:h-[471px] s1728:pt-20 s1920:h-[453px] s1280:ps-[25px] s1280:pt-14 s1280:-mt-40 s1512:-mt-[150px] s1600:-mt-52 s1728:-mt-36 s1920:-mt-24"
             order="second"
-            title="Patients Speak"
+            title={locale === "ru" ? "Отзывы пациентов" : "Patients Speak"}
           >
             <div className="w-full z-[3]">
               <div className="flex items-center justify-between s1280:justify-end mb-10 s1280:mb-5">
                 <div className="s1280:hidden">
                   <h2 className="font-semibold text-[20px] text-[#333333] s1280:hidden">
-                    Patients Speak
+                    {locale === "ru" ? "Отзывы пациентов" : "Patients Speak"}
                   </h2>
                 </div>
                 <div className="s1280:hidden">
@@ -557,7 +671,7 @@ const Home = async ({
                     href={`/${locale}/medicaltourism`}
                     className="flex-cen gap-x-1 font-normal text-[14px] text-[#00979A]"
                   >
-                    <span>See All</span>
+                    <span>{locale === "ru" ? "Весь список" : "See All"}</span>
                     <span>
                       <IoIosArrowForward className="size-4" />
                     </span>
@@ -595,7 +709,7 @@ const Home = async ({
           </FillScrollLayout>
           {/* experience */}
           <FillScrollLayout
-            title="Distinctive Features"
+            title={locale === "ru" ? "Преимущества" : "Distinctive Features"}
             order="third"
             classLabel=" flex-cen s1280:mt-2 s1512:mt-1 s1600:mt-4 s1728:mt-0"
             className="s1280:h-[385px] s1280:pt-40 s1280:mt-0 relative"
@@ -607,21 +721,32 @@ const Home = async ({
               <ImgFetcher src={experienceIcon} width={2000} />
             </div>
             <div className="grid grid-cols-12 gap-y-10 s1280:-mt-5 s1280:gap-x-[61px] s1512:gap-x-[42px] s1600:gap-x-[85px] s1728:gap-x-[114px] s1920::gap-x-[175px] s1280:px-[25px] s1600:px-[20px] s1728:px-10 s1920:px-[44px] z-[3]">
-              <ExperienceCard icon={noIcon} title="No upfront fees" />
+              <ExperienceCard
+                icon={noIcon}
+                title={locale === "ru" ? "Без предоплаты" : "No upfront fees"}
+              />
               <ExperienceCard
                 icon={pay}
-                title="Payments directly at the clinic"
+                title={
+                  locale === "ru"
+                    ? "Оплата непосредственно в клинике"
+                    : "Payments directly at the clinic"
+                }
               />
               <ExperienceCard
                 icon={freeconsul}
-                title="Free video consultation with the Dr’s"
+                title={
+                  locale === "ru"
+                    ? "Бесплатная видеоконсультация с врачом"
+                    : "Free video consultation with the Dr’s"
+                }
               />
             </div>
           </FillScrollLayout>
           {/* blog azpo */}
           <FillScrollLayout
             className="s1280:pt-14 s1280:h-[750px] s1280:-mt-9 mt-10 s1512:-mt-10 s1600:-mt-9 s1728:-mt-6 s1920:-mt-10"
-            title="AZPO Blog"
+            title={locale === "ru" ? "Блог AZPO" : "AZPO Blog"}
             order="fourth"
             classLabel="hidden s1280:flex-cen ms-4 s1280:mt-2 s1512:mt-2 s1600:mt-5 s1728:mt-1"
           >
@@ -629,7 +754,7 @@ const Home = async ({
               <div className="flex items-center justify-between s1280:justify-end mb-10 s1280:mb-5">
                 <div className="s1280:hidden">
                   <h2 className="font-semibold text-[20px] text-[#333333]">
-                    AZPO Blog
+                    {locale === "ru" ? "Блог AZPO" : "AZPO Blog"}
                   </h2>
                 </div>
                 <div>
@@ -650,7 +775,11 @@ const Home = async ({
           <div className="my-10 s1280:my-0">
             <div className="flex items-center justify-center s1280:justify-end s1280:-mt-[93px] s1512:-mt-4 s1600:mt-0 s1728:mt-4 s1920:mt-8 mb-10">
               <h2 className="text-[#3D3D3D] font-semibold text-[20px] s1280:text-[28px] s1512:text-[30px] s1728:text-[48px]">
-                How <span className="text-[#0CA5A5]">our platform</span> works
+                {locale === "ru" ? "Как" : "How"}{" "}
+                <span className="text-[#0CA5A5]">
+                  {locale === "ru" ? "работает наша" : "our platform"}
+                </span>
+                {locale === "ru" ? "платформа" : "works"}
               </h2>
             </div>
             <div className="grid grid-cols-12 gap-y-[49px] s1280:gap-y-0 s1280:gap-x-[25px] s1512:gap-x-[33px] s1600:gap-x-[25px] s1728:gap-x-[53px]">
@@ -660,18 +789,36 @@ const Home = async ({
               <div className="order-2 col-span-12 s1280:col-span-4 s1512:col-span-3 flex flex-col items-center justify-end gap-y-5 px-2 s1280:px-0">
                 <InfoCard
                   counter={1}
-                  desc="Sign up and fill in your medical history securely. Setting up your profile this way would ensure that you stay up-to-date with your medical processes."
-                  title="Create Your Profile"
+                  desc={
+                    locale === "ru"
+                      ? "Зарегистрируйтесь и заполните свою медицинскую историю. Это поможет вам отслеживать все медицинские процедуры."
+                      : "Sign up and fill in your medical history securely. Setting up your profile this way would ensure that you stay up-to-date with your medical processes."
+                  }
+                  title={
+                    locale === "ru" ? "Создайте профиль" : "Create Your Profile"
+                  }
                 />
                 <InfoCard
                   counter={2}
-                  desc="Select from our range of services and book a consultation. Booking a consultation with HealNet is fairly simple and straight-forward."
-                  title="Choose Your Service"
+                  desc={
+                    locale === "ru"
+                      ? "Выберите услугу из нашего списка и забронируйте консультацию. Бронирование консультации с Azpo Health — это просто и удобно."
+                      : "Select from our range of services and book a consultation. Booking a consultation with HealNet is fairly simple and straight-forward."
+                  }
+                  title={
+                    locale === "ru" ? "Выберите услугу" : "Choose Your Service"
+                  }
                 />
                 <InfoCard
                   counter={3}
-                  desc="Have a virtual consultation with one of our certified specialists, or go for a physical visit to the doctor in case you opted for a physical check-up."
-                  title="Meet Your Doctor"
+                  desc={
+                    locale === "ru"
+                      ? "Пройдите виртуальную консультацию с одним из сертифицированных специалистов или посетите врача лично, если выбрали очную консультацию."
+                      : "Have a virtual consultation with one of our certified specialists, or go for a physical visit to the doctor in case you opted for a physical check-up."
+                  }
+                  title={
+                    locale === "ru" ? "Встреча с врачом" : "Meet Your Doctor"
+                  }
                 />
               </div>
               <div className="order-1 s1280:order-3 col-span-12 s1280:col-span-4 s1512:col-span-5 relative flex items-start justify-center s1512:justify-end">
@@ -685,7 +832,9 @@ const Home = async ({
                     </div>
                     <div>
                       <p className="font-bold text-[14px] s1600:text-[16px] text-[#474744]">
-                        Best Certified Team of Specialists
+                        {locale === "ru"
+                          ? "Команда лучших специалистов"
+                          : "Best Certified Team of Specialists"}
                       </p>
                     </div>
                   </div>

@@ -255,6 +255,7 @@ const Page = async ({ params }: PropsPageType) => {
                     </ul>
                   </div>
                 )}
+                
               <div className="text-[#474744]">
                 <div className="mb-8 s1280:mb-5">
                   <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">

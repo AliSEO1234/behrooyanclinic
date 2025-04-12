@@ -35,7 +35,7 @@ const SubContent = ({
           }}
         />
         <motion.div
-          className={`transition-all text-[14px] s1280:text-[20px] font-normal text-start overflow-hidden ${
+          className={`transition-all text-[14px] s1280:text-[20px] font-normal text-start overflow-hidden text-editor ${
             isFull ? "block" : "hidden"
           }`}
           initial={{ opacity: 0, height: 0 }}
