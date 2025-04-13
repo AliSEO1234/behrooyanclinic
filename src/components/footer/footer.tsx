@@ -126,7 +126,7 @@ const Footer = () => {
                     <span>Hair transplant</span>
                   </Link>
                 </td>
-                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7 s1280:w-[200px] s1512:w-[150px] s1728:w-[190px] s1920:w-[230px]">
+                <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7 s1280:w-[200px] s1512:w-[140px] s1728:w-[190px] s1920:w-[230px]">
                   <Link
                     href={`/${locale}/medicaltourism/aesthetic`}
                     className="flex-left gap-x-2"
