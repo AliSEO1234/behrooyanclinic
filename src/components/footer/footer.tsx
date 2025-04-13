@@ -19,14 +19,14 @@ const Footer = () => {
       <div className="grid grid-cols-12 gap-y-6 s1280:gap-y-0 s1280:gap-x-5 s1280:mb-6">
         <div className="col-span-12 s1280:col-span-4">
           <div className="flex items-start justify-start gap-x-2 mb-4">
-            <div className="w-[72px] h-[72px] s1280:w-[49px] s1280:h-[49px] s1600:w-[72px] s1600:h-[72px]">
+            <div className="w-[49px] h-[49px] s1600:w-[72px] s1600:h-[72px]">
               <ImgFetcher src={health} />
             </div>
             <div className="text-[#00979A]">
-              <p className="font-black text-[32px] s412:text-[40px] s1280:text-[24px] s1600:text-[40px] s412:-mt-2 s1280:-mt-0 s1920:-mt-2">
+              <p className="font-black text-[20px] s412:text-[40px] s1280:text-[24px] s1600:text-[40px] s412:-mt-2 s1280:-mt-0 s1920:-mt-2 mb-1">
                 AZPO
               </p>
-              <p className="font-bold s412:text-[20px] s1280:text-[16px] s1600:text-[20px] -mt-2 s412:-mt-2 s1280:-mt-0 s1920:-mt-2">
+              <p className="font-bold s1280:text-[16px] s1600:text-[20px] -mt-2 s412:-mt-2 s1280:-mt-0 s1920:-mt-2">
                 Health
               </p>
             </div>

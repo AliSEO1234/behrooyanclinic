@@ -259,7 +259,7 @@ export const allSubNestedCategory = [
   },
   {
     img: Mesotherapy,
-    title: "Mesotherapy Hair",
+    title: "Mesotherapy Hair Treatment ",
     description:
       "Is thinning hair affecting your confidence? Discover the transformative power of hair mesotherapy at AZPO Health in Turkey. Our expert treatments in Istanbul, Antalya, and Alanya stimulate hair growth, nourish your scalp, and restore your hair's natural vitality. Contact us today for a free consultation and reclaim your youthful appearance!",
     path: "mesotherapy-hair",
