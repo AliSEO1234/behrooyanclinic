@@ -5650,7 +5650,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
 <p dir="ltr" role="presentation">Laser Liposuction: This method uses laser energy to liquefy fat cells, making them easier to remove.</p>
 </li>
 </ul>
-<p dir="ltr">During your consultation, surgeons will assess your body composition and discuss the most appropriate liposuction technique to achieve your desired outcome.</p>
+<p dir="ltr">During your consultation, surgeons will assess your body composition and discuss the most appropriate liposuction technique to achieve your desired outcome</p>
 <h2 dir="ltr">What to Expect During Your Liposuction Journey with AZPO Health</h2>
 <ol>
 <li dir="ltr" aria-level="1">
