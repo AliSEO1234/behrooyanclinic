@@ -76,8 +76,8 @@ const LeadForm = ({ className }: LeadFormType) => {
           className="hidden s1280:block object-cover"
         />
         <ImgFetcher
-          width={2000}
-          height={80000}
+          width={1500}
+          height={800}
           src={leadphone}
           className="s1280:hidden object-cover"
         />

@@ -41,8 +41,8 @@ const PatientServices = async ({ params }: PatientServicesType) => {
             className="w-full s1280:w-[916px] s1280:h-[501px]"
             src={
               locale === "ru"
-                ? "https://azpo.com/api/files/property-videos/site_health.mp4"
-                : "https://azpo.com/api/files/property-videos/site_health_en.mp4"
+                ? "https://www.youtube.com/watch?v=ocHaJi7XUOw"
+                : "https://www.youtube.com/watch?v=VEqbI7eBgJY"
             }
           />
         </div>
