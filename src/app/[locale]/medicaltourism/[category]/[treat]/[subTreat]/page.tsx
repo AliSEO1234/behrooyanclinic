@@ -247,15 +247,13 @@ const Page = async ({ params }: PropsPageType) => {
                           <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
                             <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
                           </span>
-                          <span>
-                            {fetchData.benefits.categories[1].desc}
-                          </span>
+                          <span>{fetchData.benefits.categories[1].desc}</span>
                         </li>
                       )}
                     </ul>
                   </div>
                 )}
-                
+
               <div className="text-[#474744]">
                 <div className="mb-8 s1280:mb-5">
                   <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
@@ -293,9 +291,9 @@ const Page = async ({ params }: PropsPageType) => {
         <section className="mb-10 relative z-[2]">
           {fetchData?.posts && fetchData?.posts.length > 0 && (
             <PrePostLayout
-            iconLabel={preicon}
-            itemList={fetchData.preList}
-            position="post"
+              iconLabel={preicon}
+              itemList={fetchData.preList}
+              position="post"
             />
           )}
           {fetchData?.posts && fetchData?.posts.length > 0 && (
@@ -310,7 +308,7 @@ const Page = async ({ params }: PropsPageType) => {
         {fetchData?.conclusion && (
           <section className="relative mb-10 s1280:mb-16 z-[2]">
             <BorderSubNested
-              label="Conclusion"
+              label={fetchData?.conclusion.title || "Conclusion"}
               className="w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1512:mb-8"
               labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
             />
@@ -390,8 +388,15 @@ const Page = async ({ params }: PropsPageType) => {
                 collapsible
                 className="order-2 s1280:order-1 col-span-12 s1280:col-span-6 grid grid-cols-12 gap-y-5 s1280:gap-y-3 4xl:gap-x-5 px-1 pb-2"
               >
-                {fetchData.faqs.map((qu, index) => {                  
-                  return <QuestionAcco key={index} item={index} answer={qu.answer} question={qu.question} />;
+                {fetchData.faqs.map((qu, index) => {
+                  return (
+                    <QuestionAcco
+                      key={index}
+                      item={index}
+                      answer={qu.answer}
+                      question={qu.question}
+                    />
+                  );
                 })}
               </Accordion>
               <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 flex items-center justify-center">

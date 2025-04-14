@@ -607,7 +607,7 @@ export const subCategoryHandler = (
 </li>
 </ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Partnership with Reputable Clinics: AZPO Health collaborates with leading dental clinics in Turkeyrenowned for their specialization in implantology and aesthetic dentistry. These clinics are equipped with state-of-the-art technology and staffed by highly skilled and experienced dental professionals, ensuring you receive exceptional care in a modern and comfortable environment.&nbsp;</p>
+<p dir="ltr" role="presentation">Partnership with Reputable Clinics: AZPO Health collaborates with leading dental clinics in Turkey renowned for their specialization in implantology and aesthetic dentistry. These clinics are equipped with state-of-the-art technology and staffed by highly skilled and experienced dental professionals, ensuring you receive exceptional care in a modern and comfortable environment.&nbsp;</p>
 </li>
 </ul>
 <p dir="ltr">Types of Dental Implantology Treatments Available in Turkey with AZPO Health:</p>
