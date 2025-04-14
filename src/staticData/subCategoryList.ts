@@ -3797,9 +3797,10 @@ export const dataSubCategoryHandler = (
 <p dir="ltr" role="presentation">Numbness or changes in skin sensation</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Unsatisfactory aesthetic outcome AZPO Health emphasizes patient safety and takes precautions to minimize these risks.</p>
+<p dir="ltr" role="presentation">Unsatisfactory aesthetic outcome.</p>
 </li>
 </ul>
+<p>AZPO Health emphasizes patient safety and takes precautions to minimize these risks.</p>
 <h3 dir="ltr">What to Expect Long-Term</h3>
 <ul>
 <li dir="ltr" aria-level="1">
@@ -3811,7 +3812,7 @@ export const dataSubCategoryHandler = (
 </ul>
 <h3 dir="ltr">Your Nose job Journey Awaits</h3>
 <p dir="ltr">If you are considering rhinoplasty in Turkey, AZPO Health is here to guide you every step of the way. Contact AZPO Health today for a free consultation and personalized quote.</p>
-<p dir="ltr">&nbsp;</p>
+<p>&nbsp;</p>
             `,
       },
       subNestedKey: "rhinoplasty-nose-reshaping",
