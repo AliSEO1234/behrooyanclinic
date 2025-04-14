@@ -5830,21 +5830,21 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
             desc:
               locale === "ru"
                 ? "Удаляет устойчивые жировые отложения, не поддающиеся диете и упражнениям."
-                : "Targets stubborn fat deposits that persist despite lifestyle changes, offering permanent removal.",
+                : "Permanently removes stubborn fat resistant to lifestyle changes.",
           },
           {
             title: locale === "ru" ? "Моделирование тела" : "Body Sculpting",
             desc:
               locale === "ru"
                 ? "Улучшает контуры тела для создания гармоничной и привлекательной фигуры."
-                : "Enhances natural contours and proportions, creating a more balanced and aesthetically pleasing shape.",
+                : "Enhances natural contours for a balanced shape.",
           },
           {
             title: locale === "ru" ? "Синергия лечения" : "Treatment Synergy",
             desc:
               locale === "ru"
                 ? "Эффективно сочетается с другими косметическими процедурами."
-                : "Seamlessly integrates with other cosmetic procedures for comprehensive body transformation results.",
+                : "Complements other procedures for full-body transformation.",
           },
         ],
         categories: [
@@ -5956,7 +5956,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
 <p dir="ltr" role="presentation">Affordability: Liposuction in Turkey is significantly more affordable compared to the UK, Europe, or the USA.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Quality: Turkish doctors and healthcare staff are well-educated and experienced, with many international medicine students coming to Turkey for internships and training programs. Facilities like Liv Hospital and ACIBADEM Beauty Center offer top-quality services with state-of-the-art medical facilities and highly-trained staff.</p>
+<p dir="ltr" role="presentation">Quality: Turkish doctors and healthcare staff are well-educated and experienced, with many international medicine students coming to Turkey for internships and training programs. top-quality services with state-of-the-art medical facilities and highly-trained staff.</p>
 </li>
 <li dir="ltr" aria-level="1">
 <p dir="ltr" role="presentation">Comprehensive Packages: Companies like AZPO Health offer comprehensive packages that can include airport transfers, hotel accommodations, and post-operative care, making the entire process stress-free.</p>
