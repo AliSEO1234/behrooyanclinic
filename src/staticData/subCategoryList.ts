@@ -3797,7 +3797,7 @@ export const dataSubCategoryHandler = (
 <p dir="ltr" role="presentation">Numbness or changes in skin sensation</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Unsatisfactory aesthetic outcome.</p>
+<p dir="ltr" role="presentation">Unsatisfactory aesthetic outcome</p>
 </li>
 </ul>
 <p>AZPO Health emphasizes patient safety and takes precautions to minimize these risks.</p>
@@ -5650,7 +5650,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
 <p dir="ltr" role="presentation">Laser Liposuction: This method uses laser energy to liquefy fat cells, making them easier to remove.</p>
 </li>
 </ul>
-<p dir="ltr">During your consultation, surgeons will assess your body composition and discuss the most appropriate liposuction technique to achieve your desired outcome</p>
+<p dir="ltr">During your consultation, surgeons will assess your body composition and discuss the most appropriate liposuction technique to achieve your desired outcome.</p>
 <h2 dir="ltr">What to Expect During Your Liposuction Journey with AZPO Health</h2>
 <ol>
 <li dir="ltr" aria-level="1">
