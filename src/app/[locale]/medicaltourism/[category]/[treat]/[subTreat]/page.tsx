@@ -68,7 +68,7 @@ const Page = async ({ params }: PropsPageType) => {
     },
     {
       link: "advantages",
-      label: "Advantages",
+      label: "What is it?",
       icon: advantageicon,
       isActive: true,
     },

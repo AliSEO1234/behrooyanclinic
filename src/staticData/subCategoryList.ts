@@ -3351,14 +3351,14 @@ export const dataSubCategoryHandler = (
             desc:
               locale === "ru"
                 ? "Достижение идеально естественных бровей, которые гармонично сочетаются с чертами лица"
-                : "Achieve perfectly natural-looking eyebrows that blend seamlessly with your facial features",
+                : "Achieve perfectly natural-looking eyebrows that blend with your facial features",
           },
           {
             title: locale === "ru" ? "Улучшенная форма" : "Enhanced Shape",
             desc:
               locale === "ru"
                 ? " Индивидуально разработанная архитектура бровей для обрамления лица и подчеркивания естественных черт"
-                : "Custom-designed eyebrow architecture to frame your face and complement your natural features",
+                : "Custom-designed eyebrows to frame your face and enhance your features.",
           },
           {
             title:
@@ -3366,7 +3366,7 @@ export const dataSubCategoryHandler = (
             desc:
               locale === "ru"
                 ? "Наслаждайтесь длительным результатом, который устраняет необходимость ежедневного макияжа и ухода"
-                : "Enjoy lasting results that eliminate the need for daily makeup and maintenance routines",
+                : "Enjoy lasting results that eliminate the need for daily makeup and routines",
           },
         ],
         categories: [
@@ -3643,7 +3643,7 @@ export const dataSubCategoryHandler = (
           answer:
             locale === "ru"
               ? ""
-              : "Answer: Typically within 1-2 weeks, depending on your condition",
+              : "Typically within 1-2 weeks, depending on your condition",
         },
         {
           question:
@@ -3902,7 +3902,7 @@ export const dataSubCategoryHandler = (
           answer:
             locale === "ru"
               ? ""
-              : "Answer: Typically after 2-3 weeks, but check with your doctor",
+              : "Typically after 2-3 weeks, but check with your doctor",
         },
       ],
       posts: [
@@ -4328,7 +4328,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
           answer:
             locale === "ru"
               ? ""
-              : "Answer: Typically after 2-3 weeks, but check with your doctor",
+              : "Typically after 2-3 weeks, but check with your doctor",
         },
       ],
       posts: [
@@ -13239,7 +13239,7 @@ These are just a few examples of the positive outcomes that can be achieved with
           answer:
             locale === "ru"
               ? ""
-              : "Answer: Typically after 2-3 weeks, but check with your doctor",
+              : "Typically after 2-3 weeks, but check with your doctor",
         },
       ],
       posts: [
@@ -13435,7 +13435,7 @@ These are just a few examples of the positive outcomes that can be achieved with
           answer:
             locale === "ru"
               ? ""
-              : "Answer: Typically after 2-3 weeks, but check with your doctor",
+              : "Typically after 2-3 weeks, but check with your doctor",
         },
       ],
       posts: [
