@@ -4522,7 +4522,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
           : "Otoplasty Surgery in Turkey: Rediscover Confidence with Natural-Looking Results",
       descriptionTop:
         locale === "ru"
-          ? "Вас беспокоит форма ваших ушей? Вы чувствуете дискомфорт и неуверенность в себе из-за лопоухости или других деформаций? AZPO Health предлагает современное и эффективное решение – отопластику в лучших клиниках Турции. Мы поможем вам обрести желаемую форму ушей, вернуть уверенность в себе и улучшить качество жизни."
+          ? ""
           : "Are you concerned about prominent or misshapen ears? AZPO Health in Turkey offers otoplasty surgery to reshape your ears, boost your self-esteem, and provide natural, long-lasting results.",
       benefits: {
         items: [
@@ -4550,48 +4550,258 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "For whom it is suitable",
+            header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
-                ? "Подходит для людей с эстетическими проблемами ушей, такими как оттопыренные или асимметричные уши, а также для детей с подобными дефектами."
+                ? ""
+                : "Otoplasty is a surgical procedure designed to reshape or resize the ears. It addresses aesthetic ear defects such as excessive protrusion, asymmetry, or other abnormalities. This procedure is particularly popular among individuals who feel self-conscious about the appearance of their ears.",
+          },
+          {
+            header: locale === "ru" ? "Особенности" : "How it works",
+            desc: locale === "ru" ? "" : "Otoplasty involves the surgical correction of the ear shape, size, or position, often performed for protruding ears or asymmetrical ones. The procedure typically involves removing excess cartilage and tightening the ear tissue. Incisions are usually made behind the ear to minimize visible scarring, and sutures help maintain the new shape as the ear heals.",
+          },
+          {
+            header: locale === "ru" ? "Как это работает" : "For whom",
+            desc:
+              locale === "ru"
+                ? ""
                 : "Suitable for individuals with aesthetic ear issues, such as protruding or asymmetrical ears, as well as children with similar defects.",
-          },
-          {
-            header: locale === "ru" ? "Особенности" : "Considerations",
-            desc: locale === "ru" ? "" : "",
-          },
-          {
-            header: locale === "ru" ? "Как это работает" : "How it works",
-            desc:
-              locale === "ru"
-                ? "Отопластика включает в себя хирургическую коррекцию формы, размера или положения ушей, часто выполняемую при оттопыренных или асимметричных ушах. Процедура обычно включает удаление избыточного хряща и подтяжку ушной ткани."
-                : "Otoplasty involves the surgical correction of the ear shape, size, or position, often performed for protruding ears or asymmetrical ones. The procedure typically involves removing excess cartilage and tightening the ear tissue.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+      
+      {
+        question : locale === "ru" ? "" : "Is otoplasty painful?",
+        answer : locale === "ru" ? "" : "It is generally well tolerated. Most patients feel mild pressure or tightness around the ears for a few days. Pain medications help manage discomfort.",
+      },
+      {
+        question : locale === "ru" ? "" : "Will there be visible scars?",
+        answer : locale === "ru" ? "" : "The incisions are usually hidden behind the ears or within natural creases. Over time, scars fade and are barely noticeable.",
+      },
+      {
+        question : locale === "ru" ? "" : "How soon can I return to work or school?",
+        answer : locale === "ru" ? "" : "Most people return within 5–7 days, though children may need up to 10 days depending on activity levels.",
+      },
+      {
+        question : locale === "ru" ? "" : "Are the results permanent?",
+        answer : locale === "ru" ? "" : "Yes, the new ear position is typically permanent. Minor settling or changes may occur during healing, but revisions are rare.",
+      },
+      {
+        question : locale === "ru" ? "" : "Can both children and adults have this surgery?",
+        answer : locale === "ru" ? "" : "Yes. Otoplasty is safe and effective for children (typically age 5+) and adults who are healthy and have realistic expectations.",
+      },
+    ],
+      posts: [
+        locale === "ru" ? "" : "A bandage or head wrap will be applied after surgery — keep it on and dry until the surgeon removes or changes it.",
+        locale === "ru" ? "" : "Sleep with your head elevated and avoid sleeping on your sides for at least 2 weeks.",
+        locale === "ru" ? "" : "Keep the incision area clean and dry. If prescribed, apply antibiotic ointment carefully as directed.",
+        locale === "ru" ? "" : "Avoid strenuous activity, gym, swimming, or heavy lifting for 3–4 weeks.",
+        locale === "ru" ? "" : "After the initial bandage is removed, you may be asked to wear a soft headband (day and night for the first week, then only at night for a few more weeks).",
+        locale === "ru" ? "" : "Mild bruising and swelling are normal and usually resolve within 1–2 weeks.",
+        locale === "ru" ? "" : "Avoid wearing glasses or masks with behind-the-ear loops until fully healed, or use tape/extensions to avoid pressure.",
+      ],
+      preList: [
+        locale === "ru" ? "" : "Avoid blood thinners (aspirin, ibuprofen), herbal supplements, and alcohol for at least 7 days before surgery to reduce bleeding risk.",
+        locale === "ru" ? "" : "Stop smoking at least 2 weeks prior — it delays healing.",
+        locale === "ru" ? "" : "Wash your hair thoroughly the night before surgery. Do not apply hair gels, sprays, or oils.",
+        locale === "ru" ? "" : "Do not eat or drink anything after midnight before surgery if general anesthesia is planned.",
+        locale === "ru" ? "" : "Arrange transportation and a caregiver to assist you during the first 24 hours post-op.",
+        locale === "ru" ? "" : "Inform your surgeon of any chronic conditions, medications, or history of ear infections.",
+        
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Отопластика является эффективной процедурой для улучшения внешнего вида ушей, повышения самооценки и устранения дискомфорта, вызванного эстетическими дефектами ушей."
+            ? ""
             : "Otoplasty is an effective procedure for improving the appearance of the ears, increasing self-esteem, and eliminating discomfort caused by aesthetic ear defects.",
-      },
-      subCategoryContent: {
-        title: locale === "ru" ? "Otoplasty Treatment" : "Otoplasty Treatment",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
             ? "Почему стоит выбрать Турцию для отопластики?"
-            : "Why Choose Turkey for Otoplasty?",
+            : "Tired of hiding your ears? AZPO Health provides expert otoplasty solutions in Turkey for a harmonious and confident new you.",
         content:
           locale === "ru"
             ? `<p>Турция стала одним из ведущих направлений медицинского туризма, и отопластика не исключение. Вот несколько причин, почему пациенты выбирают именно эту страну:</p><p><strong>Высокое качество медицинских услуг:</strong> Турецкие клиники оснащены современным оборудованием, а хирурги обладают большим опытом и высокой квалификацией. Многие врачи проходили обучение и стажировку в лучших медицинских центрах мира.</p><p><strong>Доступная стоимость:</strong> Цены на отопластику в Турции значительно ниже, чем в Европе или США. Это позволяет получить качественную медицинскую помощь без ущерба для бюджета. AZPO Health предлагает конкурентоспособные цены, делая отопластику доступной для широкого круга пациентов.</p><p><strong>Комплексный пакет услуг:</strong> AZPO Health берет на себя все организационные вопросы, связанные с поездкой, проживанием и медицинским обслуживанием. Мы предлагаем полный спектр услуг, чтобы сделать ваше пребывание в Турции максимально комфортным и беззаботным.</p><p><strong>Удобное расположение:</strong> Турция имеет удобное географическое положение и развитую транспортную инфраструктуру. Добраться до Стамбула, Анталии или Аланьи не составит труда из любой точки мира.</p><p><strong>Сервис высокого уровня:</strong> AZPO Health предоставляет индивидуальный подход к каждому пациенту, учитывая все его пожелания и потребности. Наши сотрудники говорят на разных языках, включая русский, и всегда готовы оказать необходимую помощь и поддержку.</p><p><strong>Что такое отопластика и какие проблемы она решает?</strong></p><p>Отопластика – это хирургическая процедура, направленная на изменение формы, размера или положения ушей. Она помогает решить следующие проблемы:</p><p><strong>Лопоухость:</strong> Это наиболее распространенная причина обращения к отопластике. Операция позволяет уменьшить угол между ухом и головой, делая уши менее выступающими.</p><p><strong>Асимметрия ушей:</strong> Отопластика помогает скорректировать разницу в форме или размере между ушами, восстанавливая гармонию лица.</p><p><strong>Деформации ушной раковины:</strong> Операция может исправить различные дефекты, такие как заостренные уши (уши эльфа), скрученные уши или другие врожденные аномалии.</p><p><strong>Посттравматические деформации:</strong> Отопластика может восстановить форму ушей после травм или несчастных случаев.</p><p><strong>Как проходит консультация и подготовка к отопластике в AZPO Health?</strong></p><p>Первый шаг к преображению – это консультация с опытным хирургом AZPO Health. Во время консультации врач:</p><p>Оценивает состояние ваших ушей и определяет оптимальный метод коррекции.</p><p>Обсуждает ваши пожелания и ожидания от операции.</p><p>Проводит необходимые измерения и фотографирование.</p><p>Объясняет ход операции, возможные риски и период восстановления.</p><p>Отвечает на все ваши вопросы.</p><p>Перед операцией вам необходимо будет пройти медицинское обследование, включающее анализы крови и другие исследования. Важно сообщить врачу о всех принимаемых вами лекарствах и имеющихся заболеваниях.</p><p><strong>Какие методы отопластики используются в AZPO Health?</strong></p><p>AZPO Health предлагает различные методы отопластики, в зависимости от индивидуальных потребностей пациента:</p><p><strong>Традиционная отопластика:</strong> Этот метод предполагает выполнение разреза за ухом для доступа к хрящу. Хирург изменяет форму хряща, удаляет излишки кожи и фиксирует ухо в новом положении с помощью швов.</p><p><strong>Бесшовная отопластика:</strong> Этот метод является менее инвазивным и предполагает использование специальных нитей для формирования новой формы уха без разрезов. Он подходит для коррекции небольших деформаций и лопоухости.</p><p><strong>Реконструкция ушной раковины:</strong> Этот метод используется для восстановления уха после травм или при врожденном отсутствии ушной раковины (микротии). Он может включать использование хрящевых трансплантатов из ребер или искусственных материалов.</p><p><strong>Как проходит операция отопластики в AZPO Health?</strong></p><p>Отопластика обычно проводится под местной анестезией, но в некоторых случаях может быть использован общий наркоз. Операция длится от 1 до 3 часов, в зависимости от сложности.</p><p>Хирург делает разрез за ухом или на передней поверхности ушной раковины, в зависимости от выбранного метода.</p><p>Хрящ моделируется и фиксируется в новом положении.</p><p>Излишки кожи удаляются.</p><p>Разрез закрывается швами.</p><p>На уши накладывается специальная повязка для фиксации и защиты.</p><p><strong>Реабилитация после отопластики</strong></p><p>После операции необходимо соблюдать рекомендации врача для успешного восстановления.</p><p>В течение первых нескольких дней после операции необходимо носить фиксирующую повязку.</p><p>Швы обычно снимают через 7-10 дней.</p><p>В течение нескольких недель следует избегать физических нагрузок и травм ушей.</p><p>Может наблюдаться отек и синяки, которые проходят в течение 2-3 недель.</p><p>Окончательный результат отопластики можно оценить через несколько месяцев, когда полностью сойдет отек и ткани заживут.</p><p><strong>Риски и осложнения отопластики</strong></p><p>Как и любая хирургическая процедура, отопластика сопряжена с определенными рисками.</p><p>Инфекция.</p><p>Кровотечение.</p><p>Образование гематомы.</p><p>Рубцевание.</p><p>Асимметрия ушей.</p><p>Изменение чувствительности кожи ушей.</p><p>Неудовлетворительный эстетический результат.</p><p>Однако, при соблюдении всех рекомендаций врача и выборе опытного хирурга, риск осложнений минимален.</p><p><strong>Противопоказания к отопластике</strong></p><p>Отопластика имеет некоторые противопоказания, которые необходимо учитывать.</p><p>Воспалительные заболевания ушей.</p><p>Нарушения свертываемости крови.</p><p>Тяжелые хронические заболевания.</p><p>Беременность и период лактации.</p><p>Психические расстройства.</p><p><strong>Почему стоит выбрать AZPO Health для отопластики в Турции?</strong></p><p><strong>Опытные хирурги:</strong> Мы сотрудничаем с лучшими пластическими хирургами Турции, имеющими большой опыт в проведении отопластики.</p><p><strong>Современные клиники:</strong> Наши клиники оснащены самым современным оборудованием, что гарантирует безопасность и эффективность процедур.</p><p><strong>Индивидуальный подход:</strong> Мы учитываем все ваши пожелания и потребности, разрабатывая индивидуальный план лечения.</p><p><strong>Доступные цены:</strong> Мы предлагаем конкурентоспособные цены на отопластику в Турции, делая ее доступной для широкого круга пациентов.</p><p><strong>Полный спектр услуг:</strong> Мы берем на себя все организационные вопросы, связанные с вашей поездкой и лечением, чтобы вы могли полностью сосредоточиться на своем здоровье.</p><p><strong>Гарантия качества:</strong> Мы уверены в качестве наших услуг и предоставляем гарантию на выполненные работы.</p><p><strong>Отзывы пациентов AZPO Health</strong></p><p><em>"Я всегда стеснялась своих лопоухих ушей. Благодаря AZPO Health я сделала отопластику в Турции и теперь чувствую себя намного увереннее. Операция прошла успешно, и результат превзошел все мои ожидания!"</em> - <strong>Елена, 28 лет</strong></p><p><em>"Я очень доволен сервисом AZPO Health. Они организовали все на высшем уровне, начиная от трансфера и заканчивая проживанием. Хирург был очень внимательным и профессиональным. Рекомендую!"</em> - <strong>Александр, 35 лет</strong></p><p><strong>Сделайте первый шаг к преображению!</strong></p><p>Не откладывайте свою мечту о красивых и гармоничных ушах! Свяжитесь с нами прямо сейчас, чтобы получить бесплатную консультацию и узнать больше об отопластике в Турции! AZPO Health поможет вам вернуть уверенность в себе и изменить свою жизнь к лучшему!</p><p><br></p>`
-            : `<p>Turkey has emerged as a leading destination for medical tourism, particularly for cosmetic procedures like otoplasty. Several factors contribute to its popularity:</p><p><strong>Affordable Prices:</strong> Otoplasty in Turkey offers significant cost savings compared to many European and North American countries.</p><p><strong>Experienced Surgeons:</strong> Turkey boasts highly skilled and experienced plastic surgeons specializing in otoplasty.</p><p><strong>Advanced Technology:</strong> Turkish clinics utilize state-of-the-art facilities and advanced surgical techniques to ensure optimal results.</p><p><strong>Comprehensive Packages:</strong> AZPO Health provides comprehensive otoplasty packages that include surgery, accommodation, airport transfers, and post-operative care.</p><p><strong>Beautiful Destination:</strong> Combine your otoplasty procedure with a memorable vacation in Turkey, exploring its rich history, vibrant culture, and stunning landscapes. Istanbul, Antalya and Alanya are some of the most beautiful cities that AZPO Health offers.</p><h3><strong>Understanding Otoplasty: What to Expect</strong></h3><p>Otoplasty, also known as ear pinning or ear correction surgery, is a surgical procedure designed to improve the appearance of the ears. The procedure can address various concerns, including:</p><p><strong>Protruding Ears:</strong> Reducing the projection of ears that stick out too far from the head.</p><p><strong>Macrotia:</strong> Reducing the size of abnormally large ears.</p><p><strong>Misshapen Ears:</strong> Correcting irregularities in ear shape, such as cupped or shell ears.</p><p><strong>Asymmetrical Ears:</strong> Improving the symmetry between the two ears.</p><h3><strong>Are You a Good Candidate for Otoplasty?</strong></h3><p>Ideal candidates for otoplasty are generally healthy individuals who are unhappy with the appearance of their ears. Considerations for candidacy include:</p><p><strong>Age:</strong> Otoplasty can be performed on children after the ears have reached full size, typically around age five, and on adults of any age.</p><p><strong>Health:</strong> Candidates should be in good overall health, without any underlying medical conditions that could impair healing.</p><p><strong>Psychological Well-being:</strong> It's essential to have realistic expectations about the outcome of the surgery and to undergo the procedure for personal reasons, rather than to please others.</p><p><strong>Ear Deformities</strong>: Otoplasty can address a range of congenital ear deformities.</p><h3><strong>Otoplasty Techniques: Tailored to Your Needs</strong></h3><p>AZPO Health offers various otoplasty techniques to address individual needs and achieve the best possible results. The specific technique used will depend on the nature of the ear deformity and the desired outcome:</p><p><strong>Ear Pinning:</strong> This technique involves making an incision behind the ear to reshape the cartilage and reduce the ear's projection. Sutures are used to hold the cartilage in its new position.</p><p><strong>Ear Reshaping:</strong> This technique addresses irregularities in ear shape by reshaping the cartilage and removing excess skin.</p><p><strong>Combination Techniques:</strong> In some cases, a combination of techniques may be used to achieve the desired result.</p><h3><strong>The Otoplasty Procedure: A Step-by-Step Guide</strong></h3><p>The otoplasty procedure typically involves the following steps:</p><p><strong>Anesthesia:</strong> The procedure is performed under local or general anesthesia, ensuring a comfortable and pain-free experience.</p><p><strong>Incision:</strong> The surgeon makes an incision behind the ear or within the ear crease, depending on the chosen technique.</p><p><strong>Cartilage Reshaping:</strong> The cartilage is carefully molded and shaped to achieve the desired ear aesthetics.</p><p><strong>Excess Skin Removal:</strong> If necessary, any excess skin is removed.</p><p><strong>Suturing:</strong> The incisions are closed with fine stitches.</p><h3><strong>Recovery and Post-Operative Care</strong></h3><p>Following otoplasty, it's essential to follow your surgeon's instructions carefully to ensure proper healing and minimize the risk of complications. Key aspects of recovery include:</p><p><strong>Wearing a Headband:</strong> A bandage or headband is typically worn for several weeks to protect the ears and support the new shape.</p><p><strong>Pain Management:</strong> Pain medication can help manage any discomfort during the initial recovery period.</p><p><strong>Avoiding Strenuous Activities:</strong> Strenuous activities and contact sports should be avoided for several weeks to prevent trauma to the ears.</p><p><strong>Sleeping Position:</strong> Sleeping on your back with your head elevated can help reduce swelling.</p><p><strong>Follow-Up Appointments:</strong> Regular follow-up appointments with your surgeon are crucial to monitor your progress and address any concerns.</p><h3><strong>Long-Term Results and Maintenance</strong></h3><p>Otoplasty provides long-lasting results, with most patients experiencing a significant improvement in the appearance of their ears. To maintain your results, it's essential to:</p><p><strong>Protect Your Ears:</strong> Shield your ears from direct sunlight and physical trauma.</p><p><strong>Maintain a Healthy Weight:</strong> Significant weight fluctuations can affect the overall appearance of your ears.</p><p><strong>Follow-Up Appointments:</strong> Keep your scheduled appointments with your surgeon to monitor your progress.</p><h3><strong>Potential Risks and Complications</strong></h3><p>As with any surgical procedure, otoplasty carries potential risks and complications. These are rare, but it’s important to be aware of them:</p><p><strong>Infection</strong></p><p><strong>Bleeding</strong></p><p><strong>Scarring</strong></p><p><strong>Changes in Skin Sensation</strong></p><p><strong>Asymmetry</strong></p><p><strong>Dissatisfaction with Results</strong></p><h3><strong>Transforming Lives Through Otoplasty: Real Patient Stories</strong></h3><p>At AZPO Health, we are committed to providing compassionate care and exceptional results. Many patients get their ear pinning Turkey done in our clinics. We understand the emotional impact of ear deformities and the transformative power of otoplasty. Here are some stories from our satisfied patients:</p><p>"I had always been self-conscious about my protruding ears. After otoplasty at AZPO Health, I finally feel confident and comfortable with my appearance."</p><p>"The team at AZPO Health was amazing. They listened to my concerns, answered all my questions, and provided exceptional care throughout the entire process."</p><p>"I am so happy with the results of my otoplasty. My ears look natural and balanced, and I feel like a new person."</p><h3><strong>Why Choose AZPO Health for Your Otoplasty in Turkey?</strong></h3><p>AZPO Health is a leading medical tourism company specializing in hair transplants and cosmetic procedures in Turkey. We are committed to providing our patients with the highest quality care, personalized attention, and exceptional results. Here's why you should choose us for your otoplasty procedure:</p><p><strong>Experienced Surgeons:</strong> Our team includes highly skilled and experienced plastic surgeons specializing in otoplasty.</p><p><strong>State-of-the-Art Facilities:</strong> We utilize advanced technology and modern facilities to ensure your safety and comfort.</p><p><strong>Personalized Treatment Plans:</strong> We tailor our treatment plans to meet your unique needs and goals.</p><p><strong>Comprehensive Care:</strong> We provide comprehensive care, from the initial consultation to post-operative follow-up.</p><p><strong>Affordable Prices:</strong> We offer competitive prices without compromising on quality.</p><p><strong>International Patient Support:</strong> We provide comprehensive support services for international patients, including airport transfers, accommodation assistance, and translation services.</p><h3><strong>Take the First Step Towards a More Confident You!</strong></h3><p>Don't let ear-related insecurities hold you back any longer. Contact AZPO Health today for a free consultation and personalized quote. Our expert team will listen to your concerns, answer your questions, and develop a customized treatment plan to help you achieve your desired ear aesthetics. Rediscover your confidence and embrace a more harmonious and balanced appearance with otoplasty at AZPO Health in Turkey!</p><p><br></p>`,
+            : `<p dir="ltr">Many individuals experience self-consciousness due to the size, shape, or projection of their ears. Otoplasty, or ear pinning surgery, offers a solution to reshape and reposition the ears, creating a more balanced and aesthetically pleasing appearance. AZPO Health specializes in providing exceptional otoplasty procedures in Turkey, combining affordability, quality, and personalized care.</p>
+<h3 dir="ltr">Why Choose Turkey for Otoplasty?</h3>
+<p dir="ltr">Turkey has emerged as a leading destination for medical tourism, particularly for cosmetic procedures like otoplasty. Several factors contribute to its popularity:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordable Prices: Otoplasty in Turkey offers significant cost savings compared to many European and North American countries.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Surgeons: Turkey boasts highly skilled and experienced plastic surgeons specializing in otoplasty.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Advanced Technology/Accredited Hospitals: Turkish clinics utilize state-of-the-art facilities and advanced surgical techniques to ensure optimal results.Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health provides comprehensive otoplasty packages that include surgery, accommodation, airport transfers, and post-operative care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Beautiful Destination: Combine your otoplasty procedure with a memorable vacation in Turkey, exploring its rich history, vibrant culture, and stunning landscapes. Istanbul, Antalya and Alanya are some of the most beautiful cities that AZPO Health offers.</p>
+</li>
+</ul>
+<h3 dir="ltr">Understanding Otoplasty: What to Expect</h3>
+<p dir="ltr">Otoplasty, also known as ear pinning or ear correction surgery, is a surgical procedure designed to improve the appearance of the ears. The procedure can address various concerns, including:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Protruding Ears: Reducing the projection of ears that stick out too far from the head.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Macrotia: Reducing the size of abnormally large ears.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Misshapen Ears: Correcting irregularities in ear shape, such as cupped or shell ears.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Asymmetrical Ears: Improving the symmetry between the two ears.</p>
+</li>
+</ul>
+<h3 dir="ltr">Are You a Good Candidate for Otoplasty?</h3>
+<p dir="ltr">Ideal candidates for otoplasty are generally healthy individuals who are unhappy with the appearance of their ears. Considerations for candidacy include:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Age: Otoplasty can be performed on children after the ears have reached full size, typically around age five, and on adults of any age.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Health: Candidates should be in good overall health, without any underlying medical conditions that could impair healing.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Psychological Well-being: It's essential to have realistic expectations about the outcome of the surgery and to undergo the procedure for personal reasons, rather than to please others.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ear Deformities: Otoplasty can address a range of congenital ear deformities.</p>
+</li>
+</ul>
+<h3 dir="ltr">Otoplasty Techniques: Tailored to Your Needs</h3>
+<p dir="ltr">AZPO Health offers various otoplasty techniques to address individual needs and achieve the best possible results. The specific technique used will depend on the nature of the ear deformity and the desired outcome:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ear Pinning: This technique involves making an incision behind the ear to reshape the cartilage and reduce the ear's projection. Sutures are used to hold the cartilage in its new position.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ear Reshaping: This technique addresses irregularities in ear shape by reshaping the cartilage and removing excess skin.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Combination Techniques: In some cases, a combination of techniques may be used to achieve the desired result.</p>
+</li>
+</ul>
+<h3 dir="ltr">The Otoplasty Procedure: A Step-by-Step Guide</h3>
+<p dir="ltr">The otoplasty procedure typically involves the following steps:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Anesthesia: The procedure is performed under local or general anesthesia, ensuring a comfortable and pain-free experience.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Incision: The surgeon makes an incision behind the ear or within the ear crease, depending on the chosen technique.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cartilage Reshaping: The cartilage is carefully molded and shaped to achieve the desired ear aesthetics.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Excess Skin Removal: If necessary, any excess skin is removed.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Suturing: The incisions are closed with fine stitches.</p>
+</li>
+</ol>
+<h3 dir="ltr">Recovery and Post-Operative Care</h3>
+<p dir="ltr">Following otoplasty, it's essential to follow your surgeon's instructions carefully to ensure proper healing and minimize the risk of complications. Key aspects of recovery include:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Wearing a Headband: A bandage or headband is typically worn for several weeks to protect the ears and support the new shape.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pain Management: Pain medication can help manage any discomfort during the initial recovery period.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Avoiding Strenuous Activities: Strenuous activities and contact sports should be avoided for several weeks to prevent trauma to the ears.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Sleeping Position: Sleeping on your back with your head elevated can help reduce swelling.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Follow-Up Appointments: Regular follow-up appointments with your surgeon are crucial to monitor your progress and address any concerns.</p>
+</li>
+</ul>
+<h3 dir="ltr">Long-Term Results and Maintenance</h3>
+<p dir="ltr">Otoplasty provides long-lasting results, with most patients experiencing a significant improvement in the appearance of their ears. To maintain your results, it's essential to:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Protect Your Ears: Shield your ears from direct sunlight and physical trauma.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Maintain a Healthy Weight: Significant weight fluctuations can affect the overall appearance of your ears.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Follow-Up Appointments: Keep your scheduled appointments with your surgeon to monitor your progress.</p>
+</li>
+</ul>
+<h3 dir="ltr">Potential Risks and Complications</h3>
+<p dir="ltr">As with any surgical procedure, otoplasty carries potential risks and complications. These are rare, but it&rsquo;s important to be aware of them:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Infection</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Bleeding</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Scarring</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Changes in Skin Sensation</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Asymmetry</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Dissatisfaction with Results</p>
+</li>
+</ul>
+<h3 dir="ltr">Transforming Lives Through Otoplasty: Real Patient Stories</h3>
+<p dir="ltr">At AZPO Health, we are committed to providing compassionate care and exceptional results. Many patients get their ear pinning Turkey done in our clinics. We understand the emotional impact of ear deformities and the transformative power of otoplasty. Here are some stories from our satisfied patients:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">"I had always been self-conscious about my protruding ears. After otoplasty at AZPO Health, I finally feel confident and comfortable with my appearance."</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">"The team at AZPO Health was amazing. They listened to my concerns, answered all my questions, and provided exceptional care throughout the entire process."</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">"I am so happy with the results of my otoplasty. My ears look natural and balanced, and I feel like a new person."</p>
+</li>
+</ul>
+<h3 dir="ltr">Why Choose AZPO Health for Your Otoplasty in Turkey?</h3>
+<p dir="ltr">AZPO Health is a leading medical tourism company specializing in hair transplants and cosmetic procedures in Turkey. We are committed to providing our patients with the highest quality care, personalized attention, and exceptional results. Here's why you should choose us for your otoplasty procedure:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Surgeons: Our team includes highly skilled and experienced plastic surgeons specializing in otoplasty.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">State-of-the-Art Facilities: We utilize advanced technology and modern facilities to ensure your safety and comfort.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Treatment Plans: We tailor our treatment plans to meet your unique needs and goals.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Care: We provide comprehensive care, from the initial consultation to post-operative follow-up.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordable Prices: We offer competitive prices without compromising on quality.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">International Patient Support: We provide comprehensive support services for international patients, including airport transfers, accommodation assistance, and translation services.</p>
+</li>
+</ul>
+<h3 dir="ltr">Take the First Step Towards a More Confident You!</h3>
+<p dir="ltr">Don't let ear-related insecurities hold you back any longer. Contact AZPO Health today for a free consultation and personalized quote. Our expert team will listen to your concerns, answer your questions, and develop a customized treatment plan to help you achieve your desired ear aesthetics. Rediscover your confidence and embrace a more harmonious and balanced appearance with otoplasty at AZPO Health in Turkey!</p>
+<p>&nbsp;</p>`,
       },
       subNestedKey: "otoplasty",
       imgCover: subNestedKey === "otoplasty" ? otoplasty : null,
