@@ -4593,21 +4593,21 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
     ],
       posts: [
-        locale === "ru" ? "" : "A bandage or head wrap will be applied after surgery — keep it on and dry until the surgeon removes or changes it.",
-        locale === "ru" ? "" : "Sleep with your head elevated and avoid sleeping on your sides for at least 2 weeks.",
-        locale === "ru" ? "" : "Keep the incision area clean and dry. If prescribed, apply antibiotic ointment carefully as directed.",
-        locale === "ru" ? "" : "Avoid strenuous activity, gym, swimming, or heavy lifting for 3–4 weeks.",
-        locale === "ru" ? "" : "After the initial bandage is removed, you may be asked to wear a soft headband (day and night for the first week, then only at night for a few more weeks).",
-        locale === "ru" ? "" : "Mild bruising and swelling are normal and usually resolve within 1–2 weeks.",
-        locale === "ru" ? "" : "Avoid wearing glasses or masks with behind-the-ear loops until fully healed, or use tape/extensions to avoid pressure.",
+        locale === "ru" ? "" : "Keep the bandage or head wrap dry and in place.",
+        locale === "ru" ? "" : "Sleep elevated; avoid lying on your side for 2 weeks.",
+        locale === "ru" ? "" : "Keep the incision clean; use ointments if prescribed.",
+        locale === "ru" ? "" : "No exercise, swimming, or lifting for 3–4 weeks.",
+        locale === "ru" ? "" : "Wear a headband as advised — usually for 1–3 weeks.",
+        locale === "ru" ? "" : "Swelling and bruising are normal; fade in 1–2 weeks.",
+        locale === "ru" ? "" : "Avoid pressure from glasses or mask straps behind the ears.",
       ],
       preList: [
-        locale === "ru" ? "" : "Avoid blood thinners (aspirin, ibuprofen), herbal supplements, and alcohol for at least 7 days before surgery to reduce bleeding risk.",
-        locale === "ru" ? "" : "Stop smoking at least 2 weeks prior — it delays healing.",
-        locale === "ru" ? "" : "Wash your hair thoroughly the night before surgery. Do not apply hair gels, sprays, or oils.",
-        locale === "ru" ? "" : "Do not eat or drink anything after midnight before surgery if general anesthesia is planned.",
-        locale === "ru" ? "" : "Arrange transportation and a caregiver to assist you during the first 24 hours post-op.",
-        locale === "ru" ? "" : "Inform your surgeon of any chronic conditions, medications, or history of ear infections.",
+        locale === "ru" ? "" : "Stop blood thinners, herbal supplements, and alcohol 7 days before.",
+        locale === "ru" ? "" : "Quit smoking at least 2 weeks before surgery.",
+        locale === "ru" ? "" : "Wash hair the night before; no hair products on surgery day.",
+        locale === "ru" ? "" : "No food or drink after midnight if under general anesthesia.",
+        locale === "ru" ? "" : "Arrange a ride and someone to help post-surgery.",
+        locale === "ru" ? "" : "Inform your doctor of medical conditions or medications.",
         
       ],
       conclusion: {
@@ -5046,7 +5046,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
 <p dir="ltr">Turkey has emerged as a leading destination for medical tourism, and for good reason. Here's why choosing AZPO Health for your brow lift surgery in Turkey is a smart decision:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Cost-Effectiveness: Brow lift surgery cost in Turkey is significantly lower compared to many Western countries. This allows you to achieve your aesthetic goals without straining your budget. AZPO Health can provide a personalized cost estimate for your brow lift surgery in Istanbul, Turkey.<br><br></p>
+<p dir="ltr" role="presentation">Cost-Effectiveness: Brow lift surgery cost in Turkey is significantly lower compared to many Western countries. This allows you to achieve your aesthetic goals without straining your budget. AZPO Health can provide a personalized cost estimate for your brow lift surgery in Turkey.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
 <p dir="ltr" role="presentation">Experienced and Qualified Surgeons: AZPO Health partners with highly skilled and board-certified plastic surgeons in Turkey who specialize in facial rejuvenation procedures, including brow lifts. These surgeons possess the expertise and artistic vision to deliver exceptional, natural-looking results.<br><br></p>

@@ -5,7 +5,6 @@ import BenefCard from "@/components/benefits/benefCard";
 import BenefBorder from "@/components/benefits/benefBorder";
 import person from "@/assets/images/subTreatment/person.svg";
 import consider from "@/assets/images/subTreatment/consider.svg";
-import drag from "@/assets/images/subTreatment/drag.svg";
 import BFSwiper from "@/features/BF/BFSwiper";
 import SubContent from "@/components/shortLongDesc";
 
@@ -349,28 +348,6 @@ const Page = async ({ params }: PropsPageType) => {
                 dynamic={Boolean(bfCurrentLinks)}
                 bfList={fetchData?.bfs || []}
               />
-            </div>
-            <div className=" hidden s1280:block s1280:-mt-16">
-              {/* <div className="s1280:h-[340px] s1600:h-[360px] s1920:h-[420px]">
-              <ImgFetcher
-                className="object-cover object-top  clip-path-custom s1280:scale-75"
-                width={1000}
-                height={1000}
-                src={pile}
-              />
-            </div> */}
-              <div className="mt-20">
-                <div className="mb-4">
-                  <p className="text-center font-normal text-[#7E7D7D]">
-                    Drag the Pill to explore more Patient
-                  </p>
-                </div>
-                <div className="flex-cen">
-                  <div className="s1280:w-[66px] h-[56px]">
-                    <ImgFetcher src={drag} />
-                  </div>
-                </div>
-              </div>
             </div>
           </section>
         )}
