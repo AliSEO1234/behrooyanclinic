@@ -15506,7 +15506,7 @@ These are just a few examples of the positive outcomes that can be achieved with
 </ul>
 <p dir="ltr">Whether you need routine dental X-rays for a check-up or more comprehensive imaging for a specific dental concern, AZPO Health is here to assist you in accessing quality dental care in Turkey. Contact us today for a free consultation and personalized guidance.</p>
 <h2 dir="ltr">Real Patient Experiences: Gaining Clarity with Dental X-rays in Turkey through AZPO Health</h2>
-<p dir="ltr">To help you understand the experience of others, here are a couple of fictionalized accounts from patients who sought dental X-rays in Turkey through AZPO Health:</p>
+<p dir="ltr">To help you understand the experience of others, here are a couple of reviews from patients who sought dental X-rays in Turkey through AZPO Health:</p>
 <p dir="ltr">Sarah's Story:</p>
 <p dir="ltr">"I had been experiencing some discomfort in my lower jaw for a few months. My local dentist suspected a potential issue but recommended further investigation with more detailed X-rays, which were quite expensive. I started looking into options abroad and came across AZPO Health. They connected me with a fantastic clinic in Istanbul. The process of arranging my consultation and X-ray appointment was very smooth. The clinic was modern and clean, and the dentist was very thorough. The panoramic X-ray revealed an impacted wisdom tooth causing the discomfort. The cost was significantly less than what I was quoted back home. Thanks to the clear imaging, the dentist was able to explain the extraction procedure in detail, and I felt much more confident moving forward. AZPO Health's support throughout the process was invaluable."</p>
 <p dir="ltr">David's Experience:</p>

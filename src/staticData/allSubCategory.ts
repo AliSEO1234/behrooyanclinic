@@ -305,7 +305,7 @@ export const allSubNestedCategory = [
   },
   {
     img: double,
-    title: "Double chin iposuction",
+    title: "Double chin liposuction",
     description:
       "Tired of seeing a stubborn double chin in photos or the mirror? No matter how much you diet or exercise, that extra fat under your chin just won’t go away? It’s frustrating—but there’s a solution. With Double Chin Liposuction in Turkey, you can achieve a sleek, sculpted jawline and bring back your youthful, confident look. AZPO Health connects you with top cosmetic specialists who use advanced, minimally invasive techniques for smooth, natural-looking results.",
     path: "double-chin-liposuction",
