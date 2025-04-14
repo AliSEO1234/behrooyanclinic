@@ -5,7 +5,7 @@ import leaddesk from "@/assets/images/leaddesk.png";
 import leadphone from "@/assets/images/leadPhone.png";
 import { OptionType } from "@/types/comboBox/comboType";
 import { FormItemType, LeadFormType } from "@/types/forms";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CountryCode from "./forms/countryCode";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { LucideSendHorizontal } from "lucide-react";
@@ -34,17 +34,11 @@ const LeadForm = ({ className }: LeadFormType) => {
     let inputValue = e.target.value;
 
     if (!inputValue.startsWith(codes?.key || "")) {
-      inputValue = `${codes?.key || ""}${inputValue.replace(/^\+\d+/, "")}`;
+      inputValue = inputValue.replace(/^\+\d+/, "");
     }
     inputValue = inputValue.replace(/[^0-9+]/g, "");
-
     setValue("phone", inputValue);
   };
-  useEffect(() => {
-    if (codes) {
-      setValue("phone", codes.key);
-    }
-  }, [codes, setValue]);
 
   const onSubmit: SubmitHandler<FormItemType> = async ({
     email,
@@ -57,7 +51,7 @@ const LeadForm = ({ className }: LeadFormType) => {
       name: fullName,
       pageUrl: pathname,
       throughEmail: 1,
-      phone,
+      phone: codes?.key + phone,
     });
     if (response) {
       toast.success("Request sent successfully.");

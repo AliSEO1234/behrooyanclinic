@@ -42,18 +42,12 @@ const PatientServicesForm = () => {
     let inputValue = e.target.value;
 
     if (!inputValue.startsWith(codes?.key || "")) {
-      inputValue = `${codes?.key || ""}${inputValue.replace(/^\+\d+/, "")}`;
+      inputValue = inputValue.replace(/^\+\d+/, "");
     }
     inputValue = inputValue.replace(/[^0-9+]/g, "");
 
     setValue("phone", inputValue);
   };
-  useEffect(() => {
-    if (codes) {
-      setValue("phone", codes.key);
-    }
-  }, [codes, setValue]);
-
   const [loading, setLoading] = useState<boolean>(false);
   const onSubmit: SubmitHandler<PatientFormType> = async ({
     email,
@@ -78,7 +72,7 @@ const PatientServicesForm = () => {
     const response = await sendFormFunc({
       email,
       name: fullname,
-      phone,
+      phone: codes?.key + phone,
       treatment,
       pageUrl: pathname,
     });

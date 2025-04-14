@@ -30,17 +30,12 @@ const SidebarForm = ({ activeAdmin }: { activeAdmin: string }) => {
     let inputValue = e.target.value;
 
     if (!inputValue.startsWith(codes?.key || "")) {
-      inputValue = `${codes?.key || ""}${inputValue.replace(/^\+\d+/, "")}`;
+      inputValue = inputValue.replace(/^\+\d+/, "");
     }
     inputValue = inputValue.replace(/[^0-9+]/g, "");
 
     setValue("phone", inputValue);
   };
-  useEffect(() => {
-    if (codes) {
-      setValue("phone", codes.key);
-    }
-  }, [codes, setValue]);
 
   const [loading, setLoading] = useState<boolean>(false);
   const onSubmit: SubmitHandler<SideBarType> = async ({
@@ -62,16 +57,14 @@ const SidebarForm = ({ activeAdmin }: { activeAdmin: string }) => {
       setLoading(false);
       return;
     }
-
     const response = await sendFormFunc({
       activeAdmin: activeAdmin,
       email,
       name: full_name,
       treatment,
-      phone,
+      phone: codes?.key + phone,
       pageUrl: pathname,
     });
-
     if (response) {
       setLoading(false);
       toast.success("Request sent successfully.");
@@ -135,7 +128,11 @@ const SidebarForm = ({ activeAdmin }: { activeAdmin: string }) => {
           disabled={loading}
           className="font-bold w-full h-[48px] text-center rounded-[40px] group s1280:text-[18px]  text-white relative overflow-hidden"
         >
-          <div className={`z-[2] bg-[#0CA5A5] w-full h-full absolute top-0 ${loading ? "top-0" : "group-hover:-top-full"}  left-0 text-center flex-cen anm`}>
+          <div
+            className={`z-[2] bg-[#0CA5A5] w-full h-full absolute top-0 ${
+              loading ? "top-0" : "group-hover:-top-full"
+            }  left-0 text-center flex-cen anm`}
+          >
             {loading ? "Loading..." : "let’s connect"}
           </div>
           <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">

@@ -32,17 +32,12 @@ const ComplimentaryConsultationForm = () => {
     let inputValue = e.target.value;
 
     if (!inputValue.startsWith(codes?.key || "")) {
-      inputValue = `${codes?.key || ""}${inputValue.replace(/^\+\d+/, "")}`;
+      inputValue = inputValue.replace(/^\+\d+/, "");
     }
     inputValue = inputValue.replace(/[^0-9+]/g, "");
 
     setValue("phone", inputValue);
   };
-  useEffect(() => {
-    if (codes) {
-      setValue("phone", codes.key);
-    }
-  }, [codes, setValue]);
   const [loading, setLoading] = useState<boolean>(false);
   const onSubmit: SubmitHandler<HomePageFormType> = async ({
     email,
@@ -66,6 +61,7 @@ const ComplimentaryConsultationForm = () => {
     const response = await sendFormFunc({
       email,
       name: full_name,
+      phone: codes?.key + phone,
       pageUrl: pathnme,
       throughEmail: 1,
       treatment,
@@ -113,7 +109,7 @@ const ComplimentaryConsultationForm = () => {
           onChange={handlePhoneChange}
           defaultValue={phoneValue}
           className="homepage-input ps-20 pe-4"
-          placeholder={locale==="ru" ? "Телефон" :"Phone Number"}
+          placeholder={locale === "ru" ? "Телефон" : "Phone Number"}
           type="text"
         />
         <CountryCode codes={codes} setCodes={setCodes} />
@@ -137,7 +133,11 @@ const ComplimentaryConsultationForm = () => {
               loading ? "top-0" : "group-hover:-top-full"
             } group-hover:-top-full left-0 text-center flex-cen anm`}
           >
-            {loading ? "Sending..." : locale === "ru" ? "На связь!" : "Let’s Connect"}
+            {loading
+              ? "Sending..."
+              : locale === "ru"
+              ? "На связь!"
+              : "Let’s Connect"}
           </div>
           <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
             <LucideSendHorizontal className="size-5" />

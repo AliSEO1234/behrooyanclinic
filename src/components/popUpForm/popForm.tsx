@@ -32,20 +32,12 @@ const PopForm = () => {
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let inputValue = e.target.value;
-
     if (!inputValue.startsWith(codes?.key || "")) {
-      inputValue = `${codes?.key || ""}${inputValue.replace(/^\+\d+/, "")}`;
+      inputValue = inputValue.replace(/^\+\d+/, "");
     }
     inputValue = inputValue.replace(/[^0-9+]/g, "");
-
     setValue("phone", inputValue);
   };
-  useEffect(() => {
-    if (codes) {
-      setValue("phone", codes.key);
-    }
-  }, [codes, setValue]);
-
   const [loading, setLoading] = useState<boolean>(false);
   const onSubmit: SubmitHandler<PopFormType> = async ({
     email,
@@ -68,7 +60,7 @@ const PopForm = () => {
     }
     const response = await sendFormFunc({
       name: full_name,
-      phone: phoneValue,
+      phone: codes?.key+phone,
       treatment,
       email,
       pageUrl: pathname,

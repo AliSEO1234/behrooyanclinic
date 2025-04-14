@@ -32,17 +32,12 @@ const PlatformWorkForm = () => {
     let inputValue = e.target.value;
 
     if (!inputValue.startsWith(codes?.key || "")) {
-      inputValue = `${codes?.key || ""}${inputValue.replace(/^\+\d+/, "")}`;
+      inputValue = inputValue.replace(/^\+\d+/, "");
     }
     inputValue = inputValue.replace(/[^0-9+]/g, "");
 
     setValue("phone", inputValue);
   };
-  useEffect(() => {
-    if (codes) {
-      setValue("phone", codes.key);
-    }
-  }, [codes, setValue]);
   const onSubmit: SubmitHandler<HomePlatformWorkFormType> = async ({
     full_name,
     phone,
@@ -60,7 +55,7 @@ const PlatformWorkForm = () => {
     }
     const response = await sendFormFunc({
       name: full_name,
-      phone: phoneValue,
+      phone: codes?.key + phone,
       treatment,
       pageUrl: pathnme,
     });

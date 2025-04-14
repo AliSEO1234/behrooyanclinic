@@ -3,7 +3,7 @@ import { ContactusFormType } from "@/types/contactTypes";
 import { SubmitHandler, useForm } from "react-hook-form";
 import CountryCode from "../forms/countryCode";
 import { OptionType } from "@/types/comboBox/comboType";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { ContactUsFormType } from "@/types/forms";
 import { sendFormFunc } from "@/server-APIs/formAPI";
@@ -33,18 +33,12 @@ const ContactForm = () => {
     let inputValue = e.target.value;
 
     if (!inputValue.startsWith(codes?.key || "")) {
-      inputValue = `${codes?.key || ""}${inputValue.replace(/^\+\d+/, "")}`;
+      inputValue = inputValue.replace(/^\+\d+/, "");
     }
     inputValue = inputValue.replace(/[^0-9+]/g, "");
 
     setValue("phone", inputValue);
   };
-  useEffect(() => {
-    if (codes) {
-      setValue("phone", codes.key);
-    }
-  }, [codes, setValue]);
-
   const [loading, setLoading] = useState<boolean>(false);
   const onSubmit: SubmitHandler<ContactusFormType> = async ({
     email,
@@ -64,7 +58,7 @@ const ContactForm = () => {
       email,
       name: firstName + " " + surname,
       throughEmail: 1,
-      phone,
+      phone : codes?.key+phone,
       message,
       pageUrl: pathname,
     });

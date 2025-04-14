@@ -18,7 +18,7 @@ export const handleAdmins = (locale: string) => {
       img: parinaz,
     },
     {
-      name: "Aynur",
+      name: "Aylin",
       languages: [gr, turkey],
       desc: locale === "ru" ? "Patient Coordinators" : "Patient Coordinators",
       img: health,

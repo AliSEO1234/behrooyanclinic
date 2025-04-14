@@ -45,8 +45,6 @@ import ComplimentaryConsultationForm from "@/features/complimentaryConsultationF
 import ScrollServices from "@/components/services/scrollServices";
 import CircleAnimate from "@/components/circleAnimate";
 import LeadForm from "@/components/leadForm";
-import Link from "next/link";
-import { IoIosArrowForward } from "react-icons/io";
 import DialogPatientSpeakVideo from "@/components/dialogPatientSpeakVideo";
 import { handlePatient } from "@/staticData/patientContent";
 
@@ -681,23 +679,8 @@ const Home = async ({
                     {locale === "ru" ? "Отзывы пациентов" : "Patients Speak"}
                   </h2>
                 </div>
-                <div className="s1280:hidden">
-                  <Link
-                    href={`/${locale}/medicaltourism`}
-                    className="flex-cen gap-x-1 font-normal text-[14px] text-[#00979A]"
-                  >
-                    <span>{locale === "ru" ? "Весь список" : "See All"}</span>
-                    <span>
-                      <IoIosArrowForward className="size-4" />
-                    </span>
-                  </Link>
-                  {/* <SeeAll
-                    className="h-[40px] w-[89px] s1280:w-[170px] s1600:w-[194px] s1600:text-[20px] s1280:h-[54px] text-[14px] s1280:text-[18px]"
-                    link="/"
-                  /> */}
-                </div>
               </div>
-              <div className="flex items-center justify-start flex-nowrap overflow-x-scroll scroll-hide s1280:overflow-x-hidden s1280:flex-row gap-x-3 s1512:gap-x-8 s1920:gap-x-10">
+              <div className="flex items-center justify-start flex-nowrap overflow-x-scroll scroll-hide s1280:overflow-x-hidden s1280:justify-center s1280:flex-row gap-x-3 s1280:gap-x-6 s1512:gap-x-8 s1920:gap-x-10">
                 <DialogPatientSpeakVideo />
                 {patientContents.map(
                   ({ desc, header, service, serviceIcon, video }, index) => {
@@ -713,12 +696,6 @@ const Home = async ({
                     );
                   }
                 )}
-                <div className="s1512:ms-5 hidden s1280:block">
-                  <SeeAll
-                    className="h-[40px] w-[89px] s1280:w-[170px] s1600:w-[194px] s1600:text-[20px] s1280:h-[54px] text-[14px] s1280:text-[18px]"
-                    link={`/${locale}/medicaltourism`}
-                  />
-                </div>
               </div>
             </div>
           </FillScrollLayout>
