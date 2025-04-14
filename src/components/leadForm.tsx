@@ -70,8 +70,9 @@ const LeadForm = ({ className }: LeadFormType) => {
     >
       <div className="w-full absolute top-0 left-0  h-[567px] max-h-full">
         <ImgFetcher
-          width={2000}
-          height={80000}
+
+          width={1500}
+          height={800}
           src={leaddesk}
           className="hidden s1280:block object-cover"
         />

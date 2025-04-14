@@ -4599,7 +4599,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
 </ul>
 <h4 dir="ltr">Take the First Step Towards a New You!</h4>
 <p dir="ltr">Don't let a double chin hold you back any longer. Contact AZPO Health today for a free consultation and personalized quote. Our experienced team will answer all your questions and help you determine if double chin liposuction is the right choice for you. Rediscover your jawline and your confidence with AZPO Health!</p>
-<p dir="ltr">&nbsp;</p>`,
+<p>&nbsp;</p>`,
       },
       subNestedKey: "double-chin-liposuction",
       imgCover: subNestedKey === "double-chin-liposuction" ? double : null,

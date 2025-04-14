@@ -9,12 +9,14 @@ const ImgFetcher = ({
   width,
   className,
   dynamic = false,
+  unoptimized = false
 }: ImgFetcherType) => {
   return (
     <Image
       className={`w-full h-full min-w-full min-h-full max-w-full max-h-full ${
         className ? className : ""
       }`}
+      unoptimized={unoptimized}
       loading={dynamic ? "lazy" : undefined}
       src={src}
       alt={title || ""}

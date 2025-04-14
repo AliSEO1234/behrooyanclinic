@@ -7,4 +7,5 @@ export type ImgFetcherType = {
   height?: number;
   dynamic?: boolean;
   className? : string
+  unoptimized? : boolean
 };
