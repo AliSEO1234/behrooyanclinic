@@ -86,10 +86,7 @@ const Navbar = () => {
               className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1280:gap-x-6 s1512:gpa-x-10 s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-12 text-[#474744] anm`}
             >
               <div>
-                <Link
-                  className="hover:text-[#25A6A9] anm"
-                  href={`/${locale}`}
-                >
+                <Link className="hover:text-[#25A6A9] anm" href={`/${locale}`}>
                   {locale === "ru" ? "Главная страница" : "Home Page"}
                 </Link>
               </div>
@@ -98,9 +95,9 @@ const Navbar = () => {
                   <NavigationMenuList>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger className="p-0 hover:bg-inherit focus:bg-inherit hover:text-[#00979A] s1280:text-[14px] s1512:text-[16px] s1728:text-[18px]">
-                        {
-                          locale === "ru" ? "Медицинские направления" : "Medical branches"
-                        }
+                        {locale === "ru"
+                          ? "Медицинские направления"
+                          : "Medical branches"}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="w-[900px] py-3">
@@ -113,12 +110,12 @@ const Navbar = () => {
                                   key={index}
                                 >
                                   <Link
-                                    className={`flex-bet gap-x-2 hover:bg-[#fafafa] py-2 px-3 text-[#474744] anm font-medium ${
+                                    className="flex-bet gap-x-2 hover:bg-[#fafafa] py-2 px-3 text-[#474744] anm font-medium hover:text-[#00979A]"
+                                    href={
                                       service.isActive
-                                        ? "hover:text-[#00979A] hover:bg-[#fafafa]"
-                                        : "pointer-events-none"
-                                    }`}
-                                    href={`/${locale}/medicaltourism/${service.key}`}
+                                        ? `/${locale}/medicaltourism/${service.key}`
+                                        : `/${locale}/coming-soon`
+                                    }
                                   >
                                     <span className="line-clamp-1">
                                       {service.label}
@@ -151,9 +148,9 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/clinics`}
                 >
-                  {
-                    locale === "ru" ? "Больницы и клиники" : "Hospital & Clinics"
-                  }
+                  {locale === "ru"
+                    ? "Больницы и клиники"
+                    : "Hospital & Clinics"}
                 </Link>
               </div>
               <div>
@@ -161,9 +158,9 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/patient-services`}
                 >
-                  {
-                    locale === "ru" ? "Услуги для пациентов" : "Patient Services"
-                  }
+                  {locale === "ru"
+                    ? "Услуги для пациентов"
+                    : "Patient Services"}
                 </Link>
               </div>
               {/* <div>
@@ -176,9 +173,7 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/about`}
                 >
-                  {
-                    locale === "ru" ? "О нас" : "About Us"
-                  }   
+                  {locale === "ru" ? "О нас" : "About Us"}
                 </Link>
               </div>
               <div>
@@ -186,9 +181,7 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/contact-us`}
                 >
-                  {
-                    locale === "ru" ? "Свяжитесь с нами"  : "Contact Us"
-                  }
+                  {locale === "ru" ? "Свяжитесь с нами" : "Contact Us"}
                 </Link>
               </div>
             </div>

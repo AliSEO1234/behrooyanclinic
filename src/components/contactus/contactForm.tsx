@@ -167,7 +167,7 @@ const ContactForm = () => {
           className="outline-none w-full h-[46px] rounded-[100px] text-white font-bold bg-[#0CA5A5]"
         >
           {loading
-            ? "Loading..."
+            ? locale === "ru" ? "Загрузка..." :  "Loading..."
             : locale === "ru"
             ? "Отправить запрос"
             : "Send request"}

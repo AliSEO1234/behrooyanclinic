@@ -20,6 +20,10 @@ html {
   -webkit-mask-image: none !important;
 }
 @layer components {
+  /* .soon style */
+  .soon-input {
+    @apply bg-white outline-none rounded-[40px] border border-[#9996A0] w-full h-[48px] s1280:h-10 s1512:h-12;
+  }
   /* editor styles */
   .text-editor ul {
     list-style-type: disc !important;

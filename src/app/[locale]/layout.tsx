@@ -37,7 +37,7 @@ const RootLayout = async ({
       >
         <AppProvider>
           <ToastContainer position="top-center" draggable />
-          <PopForm />
+          {/* <PopForm /> */}
           <Navbar />
           {/* <FixBoxs /> */}
           <UpArrow />
