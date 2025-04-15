@@ -33,12 +33,13 @@ const Page = async ({ params }: PropsPageType) => {
   const { subTreat, locale, treat } = await params;
   const bfRelations = handleBFRelation();
   const findSubnestedRelation = bfRelations.find((bf) => bf.path === subTreat);
+  const isVersion2 = findSubnestedRelation?.isVersion2
   const handleBfList = () => {
-    const basePath = `/${findSubnestedRelation?.driveFolder}/${findSubnestedRelation?.sizeNameFolder}/`;
+    const basePath = `${isVersion2 ? "before_after_folder_2" : "before_after_folder"}/${findSubnestedRelation?.driveFolder}/${findSubnestedRelation?.sizeNameFolder}/`;
     let bfLinkList: string[] | null = [];
     if (findSubnestedRelation?.images) {
       for (const bf of findSubnestedRelation!.images) {
-        const concatPath = basePath.concat(bf);
+        const concatPath = basePath.concat(bf);        
         bfLinkList.push(concatPath);
       }
     } else {

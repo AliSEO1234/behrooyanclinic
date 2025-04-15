@@ -14,7 +14,7 @@ const BFSwiper = ({
   dynamic: boolean;
 }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const fetchLinkImg = `https://azpohealth.com/api/files/content-images/before_after_folder`;
+  const fetchLinkImg = `https://azpohealth.com/api/files/content-images/`;
   return (
     <Swiper
       spaceBetween={40}
