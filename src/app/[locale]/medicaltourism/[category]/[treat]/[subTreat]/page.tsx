@@ -95,6 +95,7 @@ const Page = async ({ params }: PropsPageType) => {
       topValue: 2200,
     },
   ];
+  
   return (
     <>
       <section className="sub-nested-home-first-section">

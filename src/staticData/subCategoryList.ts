@@ -1395,7 +1395,33 @@ export const subCategoryHandler = (
            <p>Considering undergoing medical treatment in a foreign country can bring about several questions. Let's explore why Turkey has become a prominent destination for individuals seeking high-quality eye disease treatments.</p><p>Turkey has emerged as a leading hub for medical tourism, and for good reason. One of the primary attractions is the affordability of medical procedures compared to many European countries, the United States, or the UK. This cost-effectiveness extends to various medical fields, including specialized eye care. You can potentially access advanced treatments and consultations with experienced medical professionals at a significantly lower cost without compromising on the quality of care.</p><p>Beyond the financial aspect, Turkey boasts a cadre of well-educated and experienced doctors and healthcare staff. Many Turkish medical professionals have received training in internationally recognized institutions and possess extensive experience in diagnosing and treating a wide spectrum of eye diseases. The healthcare professionals in Turkey often perform a high volume of procedures annually, contributing to their skill and expertise.</p><p>Furthermore, Turkey is home to modern and well-equipped medical facilities, including hospitals and clinics that utilize cutting-edge technology in diagnostics and treatment. This commitment to advanced medical infrastructure ensures that patients have access to the latest innovations in eye care.</p><p>Another compelling reason to consider Turkey for your eye disease treatment is the opportunity for medical tourism. Istanbul, in particular, is a highly visited city with a rich history and culture. Combining your treatment with a chance to explore historical sites, experience a vibrant culture, and enjoy the hospitality of Turkey can make your medical journey a more positive and memorable experience.</p><p>Moreover, facilities like Cevre Hospital believe in staying ahead of the curve by constantly researching and learning from the best surgeons and clinics around the world, adopting the best techniques to provide the best possible care for their patients. This dedication to continuous improvement suggests a commitment to providing high standards in medical treatments.</p><h3><strong>Understanding Eye Disease Treatments Available</strong></h3><p>Eye diseases encompass a broad range of conditions that can affect different parts of the eye and impact vision. Accessing appropriate and timely treatment is crucial for managing these conditions, preventing vision loss, and maintaining overall eye health. While the specific types of treatments available depend on the individual diagnosis, let's discuss some general categories and considerations for eye disease treatments you might find in Turkey through AZPO Health.</p><p>It's important to recognize that clear communication between you and the medical team is paramount for achieving optimal results. Therefore, a thorough consultation is a vital first step in any treatment process.</p><p>For individuals with common vision problems like nearsightedness (myopia), farsightedness (hyperopia), or astigmatism, refractive surgeries such as LASIK or PRK might be options to reduce or eliminate the need for glasses or contact lenses. Another innovative technique for vision correction is intraocular lens implantation (IOL), which involves replacing the eye's natural lens with an artificial one to improve vision. Turkey offers these advanced vision correction procedures with experienced ophthalmologists and modern technology.</p><p>Cataracts, a clouding of the eye's natural lens, are a common age-related condition that can impair vision. Treatment typically involves cataract surgery, where the clouded lens is removed and replaced with a clear artificial lens. This is a widely performed procedure in Turkey with high success rates.</p><p>Glaucoma is a condition that damages the optic nerve, often due to increased pressure inside the eye. Various treatments are available to manage glaucoma and prevent vision loss, including eye drops, laser therapy, and surgery. Timely diagnosis and consistent management are crucial for this condition.</p><p>Retinal disorders, such as macular degeneration and diabetic retinopathy, can affect the light-sensitive tissue at the back of the eye. Treatments for these conditions may include laser therapy, injections, and surgery, depending on the specific diagnosis and stage of the disease.</p><p>Eye infections, injuries, and other less common eye diseases also require specialized medical attention. Turkey's comprehensive healthcare system includes specialists who can diagnose and treat these conditions effectively.</p><p>Furthermore, for individuals considering cosmetic procedures related to the eyes, such as blepharoplasty (eyelid surgery) to address drooping eyelids or under-eye bags, Turkey offers experienced plastic surgeons who can perform these procedures. While primarily cosmetic, blepharoplasty can sometimes improve vision if excess upper eyelid skin obstructs the field of view.</p><p>When you choose AZPO Health for your eye disease treatment in Turkey, you can expect a personalized approach. The medical team will conduct a thorough assessment of your condition, discuss your treatment options in detail, and tailor a plan to meet your specific needs and goals. Clear explanations of the procedures, potential benefits, and any associated risks will be provided to help you make informed decisions about your eye care journey.</p><h3><strong>AZPO Health: Your Partner in Eye Health in Turkey</strong></h3><p>AZPO Health is a reputable medical tourism company in Turkey dedicated to providing high-quality healthcare services to international patients. We understand that seeking medical treatment abroad can be a significant decision, and we are here to guide you through every step of the process.</p><p>Our network includes experienced and skilled ophthalmologists and medical facilities across top touristic destinations in Turkey. We carefully select our partners based on their expertise, reputation, and commitment to patient care. When you choose AZPO Health, you can be confident that you will be connected with qualified medical professionals who specialize in treating a wide range of eye diseases.</p><p>We prioritize clear and open communication to ensure that you are fully informed and comfortable throughout your treatment journey. From your initial inquiry to your post-treatment follow-up, our team will be available to answer your questions, address your concerns, and provide the support you need. We can assist with arranging virtual consultations, helping you understand your treatment options, and coordinating your travel and accommodation in Turkey.</p><p>AZPO Health is committed to facilitating a seamless and stress-free medical travel experience. We strive to provide personalized care that is tailored to your individual needs and preferences. Our goal is to ensure that you receive the best possible medical treatment while enjoying a comfortable and positive experience in Turkey.</p><h3><strong>Take the First Step Towards Clearer Vision</strong></h3><p>Don't let eye diseases compromise your vision and quality of life. Contact AZPO Health today for a free consultation and personalized quote for your eye disease treatment in Turkey. Our dedicated team is ready to answer your questions and guide you on your journey to better eye health.</p><p><br></p>
             `
             : `
-         <p>Embarking on a fertility journey is a significant decision, and choosing the right destination for treatment is crucial. Turkey has emerged as a leading hub for medical tourism, particularly in the realm of <strong>fertility</strong> and <strong>assisted reproduction</strong>, and for good reason.</p><p>Firstly, accessibility and cost-effectiveness are significant factors. Compared to many countries in Europe and North America, the cost of <strong>fertility</strong> treatments in Turkey is often considerably more affordable without compromising on the quality of care. This allows more individuals and couples to pursue their dreams of parenthood without the added financial burden.</p><p>Secondly, Turkey boasts state-of-the-art medical facilities and highly skilled healthcare professionals specializing in <strong>fertility</strong> and <strong>assisted reproduction</strong>. Hospitals and clinics dedicated to reproductive health are equipped with the latest technologies and adhere to international standards of medical practice. The expertise of the medical teams ensures that patients receive comprehensive and advanced treatments tailored to their specific needs.</p><p>Furthermore, the overall experience of seeking medical treatment in Turkey can be a positive one. The country is renowned for its hospitality and cultural richness. Patients often find comfort in the supportive environment and the opportunity to combine their treatment with a chance to explore the beautiful and historic sites of Turkey, particularly Istanbul.</p><p>AZPO Health understands the emotional and physical journey involved in seeking <strong>fertility</strong> treatments. We are committed to providing exceptional care and support to international patients every step of the way. From your initial inquiry to post-treatment follow-up, we strive to make your experience as seamless and stress-free as possible. We recognize that traveling for medical procedures can be daunting, so we've designed our services to provide comprehensive care beyond just the medical procedure itself.</p><p><strong>Understanding Fertility Treatments Offered in Turkey</strong></p><p>AZPO Health offers access to a comprehensive range of <strong>fertility</strong> treatments in Turkey, utilizing advanced medical technologies and evidence-based practices. Our experienced medical partners specialize in various <strong>assisted reproduction</strong> techniques, ensuring that we can address a wide spectrum of <strong>fertility</strong> challenges.</p><p>One of the most well-known <strong>fertility</strong> treatments is In Vitro Fertilization (IVF). IVF involves retrieving mature eggs from a woman's ovaries and fertilizing them with sperm in a laboratory [Implied by 4, 6, 17]. The resulting embryos are then transferred back to the woman's uterus to potentially implant and develop into a pregnancy. IVF is often recommended for various <strong>fertility</strong> issues, including blocked fallopian tubes, male factor infertility, and unexplained infertility.</p><p>Intracytoplasmic Sperm Injection (ICSI) is a specialized form of IVF where a single sperm is directly injected into an egg to facilitate fertilization. ICSI is particularly beneficial in cases of severe male factor infertility, where sperm count, motility, or morphology are significantly compromised.</p><p>For individuals or couples who have experienced repeated implantation failure with traditional IVF, preimplantation genetic testing (PGT) may be recommended. PGT involves analyzing embryos for genetic abnormalities before they are transferred to the uterus, potentially increasing the chances of a successful pregnancy.</p><p>Ovulation induction is another <strong>fertility</strong> treatment that helps women who have irregular or absent ovulation. Medications are used to stimulate the ovaries to produce and release mature eggs, increasing the likelihood of natural conception or enhancing the success of other <strong>assisted reproduction</strong> techniques like intrauterine insemination (IUI).</p><p>Intrauterine insemination (IUI) involves placing washed and concentrated sperm directly into a woman's uterus around the time of ovulation. IUI can be helpful for mild male factor infertility, cervical factor infertility, or unexplained infertility. It is a less invasive <strong>fertility</strong> treatment option compared to IVF.</p><p>Beyond these core <strong>fertility</strong> treatments, our partner clinics also offer advanced procedures such as egg donation, sperm donation, and embryo donation for individuals or couples who require these options to achieve their <strong>fertility</strong> goals. These processes are conducted with the utmost confidentiality and ethical considerations.</p><p>Throughout your <strong>fertility</strong> journey with AZPO Health, you will have access to comprehensive support services. This includes thorough initial assessments, personalized treatment plans developed by experienced specialists, and ongoing care and guidance throughout the process. We understand that <strong>fertility</strong> treatments can be emotionally demanding, and our team is dedicated to providing a compassionate and understanding environment.</p><p><strong>Patient Testimonials: Real Stories of Hope</strong></p><p><em>Please note: The following testimonials are fictional and created to illustrate potential patient experiences, in line with the provided guidelines.</em></p><p><strong>Sarah from the UK shares her IVF journey:</strong> "After years of trying to conceive, my husband and I felt like we had exhausted all options. The cost of IVF in the UK was a significant barrier for us. A friend who had a positive experience with medical tourism suggested looking into Turkey. That's when we found AZPO Health. From our first virtual consultation, we felt supported and informed. The clinic in Istanbul was modern and the medical team was incredibly professional and caring. The entire process was much more affordable than we had anticipated, and we were thrilled when our IVF treatment was successful. We are now parents to a beautiful baby girl, and we are forever grateful to AZPO Health for making our dream a reality."</p><p><strong>David and Maria from the USA recount their ICSI experience:</strong> "We were facing male factor infertility, and our doctor recommended ICSI. The costs in the US were overwhelming. We started researching options abroad and came across AZPO Health in Turkey. The online information was comprehensive, and the communication with their team was excellent. They answered all our questions and made us feel comfortable about traveling for treatment. The medical professionals in Turkey were highly skilled, and the level of care we received was exceptional. We are overjoyed to share that our ICSI treatment was a success, and we are expecting our first child. Thank you, AZPO Health, for giving us this incredible gift."</p><p><strong>Emma from Canada talks about egg donation:</strong> "Deciding to pursue egg donation was a difficult decision, but AZPO Health made the process feel supported and respectful. They provided us with extensive information and helped us find a suitable donor. The clinic in Turkey was discreet and professional, and the medical team was incredibly sensitive to our situation. The entire experience was handled with the utmost care and confidentiality. We are now a happy family, thanks to the compassionate support and expert care we received through AZPO Health."</p><p><strong>About AZPO Health: Your Trusted Partner in Fertility</strong></p><p>AZPO Health is a leading medical tourism company based in Turkey, specializing in connecting international patients with top-tier healthcare services. We understand that seeking <strong>fertility</strong> treatments abroad requires trust and confidence in your chosen provider. At AZPO Health, we prioritize your well-being and are committed to providing a seamless and positive experience throughout your <strong>fertility</strong> journey.</p><p>Our reputation is built on our dedication to quality, expertise, and a patient-centric approach. We partner with carefully selected clinics and hospitals in Turkey that boast experienced medical professionals, advanced technologies, and a proven track record of success in <strong>fertility</strong> and <strong>assisted reproduction</strong>.</p><p>We understand that every individual's <strong>fertility</strong> journey is unique. That's why we offer personalized support and guidance, starting with a virtual consultation to understand your specific needs and medical history. Our team will help you navigate the options available and develop a tailored treatment plan that aligns with your goals.</p><p>AZPO Health is committed to ensuring your comfort and convenience during your medical trip to Turkey. We provide comprehensive support services, including assistance with travel arrangements, accommodation, and logistics, allowing you to focus on your treatment and well-being. Our multilingual team is readily available to address any questions or concerns you may have, ensuring clear communication and peace of mind.</p><p>We adhere to the highest ethical standards and prioritize the confidentiality of our patients. You can trust AZPO Health to handle your <strong>fertility</strong> journey with the utmost discretion and respect.</p><p><strong>Take the First Step Towards Parenthood</strong></p><p>Your dream of starting or expanding your family is within reach. Contact AZPO Health today for a free consultation and take the first step towards your personalized <strong>fertility</strong> treatment plan in Turkey. Let us be your trusted partner in this life-changing journey.</p>
+         <p dir="ltr">Embarking on a fertility journey is a significant decision, and choosing the right destination for treatment is crucial. Turkey has emerged as a leading hub for medical tourism, particularly in the realm of fertility and assisted reproduction, and for good reason.</p>
+<p dir="ltr">Firstly, accessibility and cost-effectiveness are significant factors. Compared to many countries in Europe and North America, the cost of fertility treatments in Turkey is often considerably more affordable without compromising on the quality of care. This allows more individuals and couples to pursue their dreams of parenthood without the added financial burden.</p>
+<p dir="ltr">Secondly, Turkey boasts state-of-the-art medical facilities and highly skilled healthcare professionals specializing in fertility and assisted reproduction. Hospitals and clinics dedicated to reproductive health are equipped with the latest technologies and adhere to international standards of medical practice. The expertise of the medical teams ensures that patients receive comprehensive and advanced treatments tailored to their specific needs.Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
+<p dir="ltr">Furthermore, the overall experience of seeking medical treatment in Turkey can be a positive one. The country is renowned for its hospitality and cultural richness. Patients often find comfort in the supportive environment and the opportunity to combine their treatment with a chance to explore the beautiful and historic sites of Turkey, particularly Istanbul, Antalya, Alanya, and İzmir.</p>
+<p dir="ltr">AZPO Health understands the emotional and physical journey involved in seeking fertility treatments. We are committed to providing exceptional care and support to international patients every step of the way. From your initial inquiry to post-treatment follow-up, we strive to make your experience as seamless and stress-free as possible. We recognize that traveling for medical procedures can be daunting, so we've designed our services to provide comprehensive care beyond just the medical procedure itself.</p>
+<p dir="ltr">Understanding Fertility Treatments Offered in Turkey</p>
+<p dir="ltr">AZPO Health offers access to a comprehensive range of fertility treatments in Turkey, utilizing advanced medical technologies and evidence-based practices. Our experienced medical partners specialize in various assisted reproduction techniques, ensuring that we can address a wide spectrum of fertility challenges.&nbsp;</p>
+<p dir="ltr">One of the most well-known fertility treatments is In Vitro Fertilization (IVF). IVF involves retrieving mature eggs from a woman's ovaries and fertilizing them with sperm in a laboratory [Implied by 4, 6, 17]. The resulting embryos are then transferred back to the woman's uterus to potentially implant and develop into a pregnancy. IVF is often recommended for various fertility issues, including blocked fallopian tubes, male factor infertility, and unexplained infertility.</p>
+<p dir="ltr">Intracytoplasmic Sperm Injection (ICSI) is a specialized form of IVF where a single sperm is directly injected into an egg to facilitate fertilization. ICSI is particularly beneficial in cases of severe male factor infertility, where sperm count, motility, or morphology are significantly compromised.</p>
+<p dir="ltr">For individuals or couples who have experienced repeated implantation failure with traditional IVF, preimplantation genetic testing (PGT) may be recommended. PGT involves analyzing embryos for genetic abnormalities before they are transferred to the uterus, potentially increasing the chances of a successful pregnancy.</p>
+<p dir="ltr">Ovulation induction is another fertility treatment that helps women who have irregular or absent ovulation. Medications are used to stimulate the ovaries to produce and release mature eggs, increasing the likelihood of natural conception or enhancing the success of other assisted reproduction techniques like intrauterine insemination (IUI).</p>
+<p dir="ltr">Intrauterine insemination (IUI) involves placing washed and concentrated sperm directly into a woman's uterus around the time of ovulation. IUI can be helpful for mild male factor infertility, cervical factor infertility, or unexplained infertility. It is a less invasive fertility treatment option compared to IVF.</p>
+<p dir="ltr">Beyond these core fertility treatments, our partner clinics also offer advanced procedures such as egg donation, sperm donation, and embryo donation for individuals or couples who require these options to achieve their fertility goals. These processes are conducted with the utmost confidentiality and ethical considerations.</p>
+<p dir="ltr">Throughout your fertility journey with AZPO Health, you will have access to comprehensive support services. This includes thorough initial assessments, personalized treatment plans developed by experienced specialists, and ongoing care and guidance throughout the process. We understand that fertility treatments can be emotionally demanding, and our team is dedicated to providing a compassionate and understanding environment.</p>
+<p dir="ltr">Patient Testimonials: Real Stories of Hope</p>
+<p dir="ltr">Please note: The following testimonials are fictional and created to illustrate potential patient experiences, in line with the provided guidelines.</p>
+<p dir="ltr">Sarah from the UK shares her IVF journey: "After years of trying to conceive, my husband and I felt like we had exhausted all options. The cost of IVF in the UK was a significant barrier for us. A friend who had a positive experience with medical tourism suggested looking into Turkey. That's when we found AZPO Health. From our first virtual consultation, we felt supported and informed. The clinic in Istanbul was modern and the medical team was incredibly professional and caring. The entire process was much more affordable than we had anticipated, and we were thrilled when our IVF treatment was successful. We are now parents to a beautiful baby girl, and we are forever grateful to AZPO Health for making our dream a reality."</p>
+<p dir="ltr">David and Maria from the USA recount their ICSI experience: "We were facing male factor infertility, and our doctor recommended ICSI. The costs in the US were overwhelming. We started researching options abroad and came across AZPO Health in Turkey. The online information was comprehensive, and the communication with their team was excellent. They answered all our questions and made us feel comfortable about traveling for treatment. The medical professionals in Turkey were highly skilled, and the level of care we received was exceptional. We are overjoyed to share that our ICSI treatment was a success, and we are expecting our first child. Thank you, AZPO Health, for giving us this incredible gift."</p>
+<p dir="ltr">Emma from Canada talks about egg donation: "Deciding to pursue egg donation was a difficult decision, but AZPO Health made the process feel supported and respectful. They provided us with extensive information and helped us find a suitable donor. The clinic in Turkey was discreet and professional, and the medical team was incredibly sensitive to our situation. The entire experience was handled with the utmost care and confidentiality. We are now a happy family, thanks to the compassionate support and expert care we received through AZPO Health."</p>
+<p dir="ltr">About AZPO Health: Your Trusted Partner in Fertility</p>
+<p dir="ltr">AZPO Health is a leading medical tourism company based in Turkey, specializing in connecting international patients with top-tier healthcare services. We understand that seeking fertility treatments abroad requires trust and confidence in your chosen provider. At AZPO Health, we prioritize your well-being and are committed to providing a seamless and positive experience throughout your fertility journey.</p>
+<p dir="ltr">Our reputation is built on our dedication to quality, expertise, and a patient-centric approach. We partner with carefully selected clinics and hospitals in Turkey that boast experienced medical professionals, advanced technologies, and a proven track record of success in fertility and assisted reproduction.</p>
+<p dir="ltr">We understand that every individual's fertility journey is unique. That's why we offer personalized support and guidance, starting with a virtual consultation to understand your specific needs and medical history. Our team will help you navigate the options available and develop a tailored treatment plan that aligns with your goals.</p>
+<p dir="ltr">AZPO Health is committed to ensuring your comfort and convenience during your medical trip to Turkey. We provide comprehensive support services, including assistance with travel arrangements, accommodation, and logistics, allowing you to focus on your treatment and well-being. Our multilingual team is readily available to address any questions or concerns you may have, ensuring clear communication and peace of mind.</p>
+<p dir="ltr">We adhere to the highest ethical standards and prioritize the confidentiality of our patients. You can trust AZPO Health to handle your fertility journey with the utmost discretion and respect.</p>
+<p dir="ltr">Take the First Step Towards Parenthood</p>
+<p dir="ltr"><strong id="docs-internal-guid-232b3aab-7fff-e249-765c-6488701a2c5e">Your dream of starting or expanding your family is within reach. Contact AZPO Health today for a free consultation and take the first step towards your personalized fertility treatment plan in Turkey. Let us be your trusted partner in this life-changing journey.</strong></p>
         `,
       },
       subCategoryKey: "fertility-assisted-reproduction",
@@ -2714,28 +2740,28 @@ export const dataSubCategoryHandler = (
       posts: [
         locale === "ru"
           ? ""
-          : "Don’t wash hair or apply products for 24 hours.",
+          : "Don’t wash hair or apply products for 24 hours",
         locale === "ru"
           ? ""
-          : "Avoid swimming, sauna, or sun exposure for 2–3 days.",
-        locale === "ru" ? "" : "Resume mild shampoo use after 48 hours.",
-        locale === "ru" ? "" : "Avoid scratching or massaging the scalp.",
-        locale === "ru" ? "" : "Complete 6–10 sessions for optimal results.",
+          : "Avoid swimming, sauna, or sun exposure for 2–3 days",
+        locale === "ru" ? "" : "Resume mild shampoo use after 48 hours",
+        locale === "ru" ? "" : "Avoid scratching or massaging the scalp",
+        locale === "ru" ? "" : "Complete 6–10 sessions for optimal results",
       ],
       preList: [
         locale === "ru"
           ? ""
-          : "Avoid using Minoxidil, hair dyes, or harsh shampoos 3 days before.",
+          : "Avoid using Minoxidil, hair dyes, or harsh shampoos 3 days before",
         locale === "ru"
           ? ""
-          : "No alcohol, caffeine, or anti-inflammatories for 3 days.",
+          : "No alcohol, caffeine, or anti-inflammatories for 3 days",
         locale === "ru"
           ? ""
-          : "Eat a light meal and drink water before arriving.",
-        locale === "ru" ? "" : "Don’t wash hair the day of treatment.",
+          : "Eat a light meal and drink water before arriving",
+        locale === "ru" ? "" : "Don’t wash hair the day of treatment",
         locale === "ru"
           ? ""
-          : "Tell your doctor about medications and allergies.",
+          : "Tell your doctor about medications and allergies",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -5061,8 +5087,8 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "",
-            desc: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "Для кого" : "Description",
+            desc: locale === "ru" ? "" : "A brow lift (or brow surgery) is a cosmetic surgical procedure aimed at lifting and improving the shape of the eyebrows, as well as eliminating signs of aging in the forehead area. This surgery addresses drooping brows, forehead wrinkles, and creates a fresher, younger look.",
           },
           {
             header: locale === "ru" ? "" : "For whom",
@@ -6107,7 +6133,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
             desc:
               locale === "ru"
                 ? "Гарантированное улучшение внешнего вида рук на длительный срок"
-                : "Experience permanent improvement in arm appearance with professional contouring",
+                : "Permanent improvement in arm with professional contouring",
           },
           {
             title: locale === "ru" ? "Гладкая Кожа" : "Skin Solutions",
@@ -6925,7 +6951,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
             desc:
               locale === "ru"
                 ? "Создание идеальных пропорций и естественного объема для вашей красоты"
-                : "Improves breast volume and creates a more balanced, aesthetically pleasing appearance",
+                : "Improves breast volume and creates a more balanced, aesthetic appearance",
           },
           {
             title: locale === "ru" ? "Точный Баланс" : "Perfect Balance",
@@ -12351,7 +12377,7 @@ AZPO Health - ведущая компания медицинского тури�
             desc:
               locale === "ru"
                 ? ""
-                : "Stimulates the body’s own repair process without the need for medications or surgery.",
+                : "Activates natural healing without drugs or surgery.",
           },
           {
             title:
@@ -12367,7 +12393,7 @@ AZPO Health - ведущая компания медицинского тури�
             desc:
               locale === "ru"
                 ? ""
-                : "Provides durable improvements by addressing the root causes, not just the symptoms.",
+                : "Addresses root causes for lasting results.",
           },
         ],
         categories: [
@@ -12994,22 +13020,22 @@ AZPO Health - ведущая компания медицинского тури�
             title: locale === "ru" ? "Новое Тело" : "Natural Healing",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
-                : "Stem cells boost body's self-repair mechanisms, minimizing need for invasive procedures",
+                ? ""
+                : "Enhances the body’s self-repair, reducing need for surgery",
           },
           {
             title: locale === "ru" ? "Гладкая Кожа" : "Treatment Versatility",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
-                : "Applications span multiple medical fields including dermatology, cardiology and neurology",
+                ? ""
+                : "Effective in many fields like skin, heart, and nerves",
           },
           {
             title: locale === "ru" ? "Идеальный Контур" : "Cell Regeneration",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
-                : "Stem cells adapt to various tissue types, enabling comprehensive damage repair",
+                ? ""
+                : "Adapts to different tissues for thorough repair",
           },
         ],
         categories: [
@@ -13301,8 +13327,11 @@ AZPO Health - ведущая компания медицинского тури�
                 : "Chronic orthopedic conditions:Such as joint degeneration, ligament injuries, or delayed fracture healing.Cardiac conditions:Such as ischemic heart disease or heart failure.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "Considerations",
-            desc: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "Важно учесть" : "Description",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Stem cell therapy has emerged as a promising treatment for various orthopedic conditions, leveraging the body’s natural ability to heal and regenerate tissues. This innovative approach involves using stem cells, which have the unique potential to transform into specialized cells, to repair damaged joints, tendons, cartilage, and other musculoskeletal structures.",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
@@ -13339,7 +13368,222 @@ AZPO Health - ведущая компания медицинского тури�
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>Turkey has become a popular destination for medical tourism, especially for orthopedic stem cell therapy, for several compelling reasons. AZPO Health combines quality, affordability, and comprehensive care to offer an exceptional experience.</p><ul><li><strong>High-Quality Medical Expertise:</strong> Turkish hospitals and medical centers are equipped with advanced technology and staffed by experienced and highly trained medical professionals. AZPO Health collaborates with some of the best specialists in orthopedic stem cell therapy, ensuring that patients receive top-notch care. Many international medicine students come to Turkey for training programs.</li><li><br></li><li><strong>Affordability:</strong> The cost of orthopedic stem cell therapy in Turkey is significantly lower compared to many European countries, the United States or the UK. This cost-effectiveness doesn't compromise the quality of care; instead, it makes advanced medical treatments more accessible.</li><li><br></li><li><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover not only the medical procedure but also accommodation, airport transfers, and post-operative care. This comprehensive approach ensures a stress-free and comfortable experience for international patients.</li><li><br></li><li><strong>Holistic Tourism Experience</strong>: Combining medical treatment with a vacation in a country rich in history and culture, such as Turkey, provides a unique healing environment. Patients can recover while enjoying the beautiful landscapes and historical sites of Turkey. Turkey ranks among the most visited countries, offering unique history and culture.</li><li><br></li></ul><h3><strong>Understanding Orthopedic Stem Cell Therapy</strong></h3><p>Orthopedic Stem Cell Therapy is a cutting-edge approach that harnesses the body's natural healing capabilities to repair damaged musculoskeletal tissues. Stem cells are unique because they can differentiate into specialized cells, such as cartilage, bone, tendon, and muscle cells. By injecting these cells into damaged areas, the therapy aims to reduce pain, improve function, and promote tissue regeneration.</p><h3><strong>Methods of Orthopedic Stem Cell Therapy</strong></h3><p>Several methods are used to deliver stem cell therapy for orthopedic conditions:</p><ol><li><strong>Bone Marrow Aspirate Concentrate (BMAC):</strong></li><li><br></li></ol><ul><li class="ql-indent-1">Stem cells are harvested from the patient’s bone marrow, typically from the pelvic bone.</li><li class="ql-indent-1">The harvested tissue is processed to concentrate the stem cells.</li><li class="ql-indent-1">The concentrated stem cells are injected into the injured site, such as a damaged joint or tendon, under imaging guidance.</li><li class="ql-indent-1">BMAC is commonly used to treat osteoarthritis, cartilage defects, and non-union fractures.</li></ul><ol><li><strong>Adipose-Derived Stem Cells (ADSCs):</strong></li><li><br></li></ol><ul><li class="ql-indent-1">Stem cells are extracted from the patient’s adipose tissue, usually from the abdomen, through a minimally invasive liposuction procedure.</li><li class="ql-indent-1">The extracted fat tissue is processed to isolate and concentrate the stem cells.</li><li class="ql-indent-1">The concentrated ADSCs are injected into the affected area.</li><li class="ql-indent-1">ADSCs are often used in treating joint pain, soft tissue injuries, and骨缺损. Adipose tissue is favored for its abundance and ease of access.</li></ul><ol><li><strong>Peripheral Blood Stem Cells (PBSC):</strong></li><li><br></li></ol><ul><li class="ql-indent-1">Stem cells are mobilized from the bone marrow into the bloodstream using specific growth factors.</li><li class="ql-indent-1">Blood is drawn from the patient, and stem cells are separated using a process called apheresis.</li><li class="ql-indent-1">The collected stem cells are injected into the damaged orthopedic site.</li><li class="ql-indent-1">PBSC therapy is utilized in treating avascular necrosis and promoting bone regeneration.</li></ul><h3><strong>Benefits of Each Method</strong></h3><ul><li><strong>BMAC:</strong></li><li class="ql-indent-1"><strong>High concentration of growth factors:</strong> Enhances tissue repair.</li><li class="ql-indent-1"><strong>Autologous source:</strong> Reduces the risk of immune rejection.</li><li class="ql-indent-1"><strong>Versatility:</strong> Effective in treating a wide range of orthopedic conditions.</li><li><strong>ADSCs:</strong></li><li class="ql-indent-1"><strong>Abundant source of stem cells:</strong> Easier to obtain a large number of cells.</li><li class="ql-indent-1"><strong>Minimally invasive:</strong> Liposuction is a relatively simple and safe procedure.</li><li class="ql-indent-1"><strong>Potential for differentiation:</strong> Can differentiate into various cell types needed for orthopedic repair.</li><li><strong>PBSC:</strong></li><li class="ql-indent-1"><strong>Non-invasive harvesting:</strong> Avoids the need for bone marrow extraction.</li><li class="ql-indent-1"><strong>Systemic effects:</strong> Mobilized stem cells can have broader regenerative effects.</li></ul><h3><strong>Conditions Treated with Orthopedic Stem Cell Therapy</strong></h3><p>Orthopedic stem cell therapy can address a variety of conditions:</p><ul><li><strong>Osteoarthritis:</strong> Reduces pain and inflammation, promotes cartilage regeneration.</li><li><strong>Tendon Injuries:</strong> Accelerates the healing of tendinitis, tennis elbow, and rotator cuff tears.</li><li><strong>Ligament Injuries:</strong> Supports the repair of sprains and tears in ligaments like the ACL and MCL.</li><li><strong>Cartilage Defects:</strong> Stimulates the growth of new cartilage in damaged joint surfaces.</li><li><strong>Non-union Fractures:</strong> Promotes bone healing in fractures that have failed to heal properly.</li><li><strong>Avascular Necrosis:</strong> Restores blood supply and prevents bone collapse in conditions like hip osteonecrosis.</li></ul><h3><strong>The Orthopedic Stem Cell Therapy Procedure with AZPO Health</strong></h3><p>AZPO Health provides a structured and patient-centered approach to orthopedic stem cell therapy:</p><ol><li><strong>Initial Consultation:</strong></li></ol><ul><li class="ql-indent-1">A comprehensive evaluation is conducted to assess the patient’s medical history, current condition, and treatment goals.</li><li class="ql-indent-1">Imaging tests, such as X-rays or MRIs, are performed to evaluate the extent of tissue damage.</li><li class="ql-indent-1">The medical team determines if the patient is a suitable candidate for stem cell therapy and discusses the potential benefits and risks.</li></ul><ol><li><strong>Stem Cell Harvesting:</strong></li></ol><ul><li class="ql-indent-1">Depending on the chosen method (BMAC, ADSCs, or PBSC), stem cells are harvested using minimally invasive techniques.</li><li class="ql-indent-1">The procedure is performed under local anesthesia or light sedation to ensure patient comfort.</li></ul><ol><li><strong>Stem Cell Processing:</strong></li></ol><ul><li class="ql-indent-1">The harvested tissue or blood is processed in a state-of-the-art laboratory to isolate and concentrate the stem cells.</li><li class="ql-indent-1">Quality control measures are implemented to ensure the purity and viability of the stem cells.</li></ul><ol><li><strong>Injection and Delivery:</strong></li></ol><ul><li class="ql-indent-1">The concentrated stem cells are precisely injected into the damaged orthopedic site under imaging guidance, such as ultrasound or fluoroscopy.</li><li class="ql-indent-1">Additional growth factors or scaffolding materials may be added to enhance the regenerative process.</li></ul><ol><li><strong>Post-operative Care and Rehabilitation:</strong></li></ol><ul><li class="ql-indent-1">Patients receive detailed post-operative instructions and pain management strategies.</li><li class="ql-indent-1">A customized rehabilitation program is designed to restore strength, flexibility, and function.</li><li class="ql-indent-1">Follow-up appointments are scheduled to monitor progress and adjust the treatment plan as needed.</li></ul><h3><strong>Real Stories, Real Hope: Patient Testimonials</strong></h3><ul><li><strong>John, 55, Osteoarthritis Patient:</strong> <em>"I had been suffering from knee pain for years, and nothing seemed to help. After undergoing stem cell therapy with AZPO Health, I experienced significant pain relief and improved mobility. I can now enjoy walking and playing with my grandchildren again!"</em></li><li><strong>Sarah, 42, Tendon Injury Patient:</strong> <em>"As an avid tennis player, I was devastated when I tore my Achilles tendon. The stem cell therapy with AZPO Health helped me heal faster than expected, and I was back on the court in just a few months!"</em></li><li><strong>David, 60, Non-union Fracture Patient:</strong> <em>"I had a broken leg that wouldn't heal, and doctors were talking about amputation. AZPO Health's stem cell therapy gave me a second chance. My fracture finally healed, and I can walk without pain!"</em></li></ul><h3><strong>Take the First Step Towards a Pain-Free Future</strong></h3><p>Ready to explore how orthopedic stem cell therapy with AZPO Health can help you reclaim your active life? Contact us today for a free consultation and personalized quote. Let us help you embark on your journey to natural healing and lasting relief.</p><p><br></p>`,
+            : `<p dir="ltr">Turkey has become a popular destination for medical tourism, especially for orthopedic stem cell therapy, for several compelling reasons. AZPO Health combines quality, affordability, and comprehensive care to offer an exceptional experience.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">High-Quality Medical Expertise: Turkish hospitals and medical centers are equipped with advanced technology and staffed by experienced and highly trained medical professionals. AZPO Health collaborates with some of the best specialists in orthopedic stem cell therapy, ensuring that patients receive top-notch care. Many international medicine students come to Turkey for training programs.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: The cost of orthopedic stem cell therapy in Turkey is significantly lower compared to many European countries, the United States or the UK. This cost-effectiveness doesn't compromise the quality of care; instead, it makes advanced medical treatments more accessible.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health offers all-inclusive packages that cover not only the medical procedure but also accommodation, airport transfers, and post-operative care. This comprehensive approach ensures a stress-free and comfortable experience for international patients.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Holistic Tourism Experience: Combining medical treatment with a vacation in a country rich in history and culture, such as Turkey, provides a unique healing environment. Patients can recover while enjoying the beautiful landscapes and historical sites of Turkey. Turkey ranks among the most visited countries, offering unique history and culture.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Understanding Orthopedic Stem Cell Therapy</h3>
+<p dir="ltr">Orthopedic Stem Cell Therapy is a cutting-edge approach that harnesses the body's natural healing capabilities to repair damaged musculoskeletal tissues. Stem cells are unique because they can differentiate into specialized cells, such as cartilage, bone, tendon, and muscle cells. By injecting these cells into damaged areas, the therapy aims to reduce pain, improve function, and promote tissue regeneration.</p>
+<h3 dir="ltr">Methods of Orthopedic Stem Cell Therapy</h3>
+<p dir="ltr">Several methods are used to deliver stem cell therapy for orthopedic conditions:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Bone Marrow Aspirate Concentrate (BMAC):<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Stem cells are harvested from the patient&rsquo;s bone marrow, typically from the pelvic bone.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The harvested tissue is processed to concentrate the stem cells.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The concentrated stem cells are injected into the injured site, such as a damaged joint or tendon, under imaging guidance.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">BMAC is commonly used to treat osteoarthritis, cartilage defects, and non-union fractures.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Adipose-Derived Stem Cells (ADSCs):<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Stem cells are extracted from the patient&rsquo;s adipose tissue, usually from the abdomen, through a minimally invasive liposuction procedure.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The extracted fat tissue is processed to isolate and concentrate the stem cells.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The concentrated ADSCs are injected into the affected area.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">ADSCs are often used in treating joint pain, soft tissue injuries, and骨缺损. Adipose tissue is favored for its abundance and ease of access.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Peripheral Blood Stem Cells (PBSC):<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Stem cells are mobilized from the bone marrow into the bloodstream using specific growth factors.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Blood is drawn from the patient, and stem cells are separated using a process called apheresis.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The collected stem cells are injected into the damaged orthopedic site.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">PBSC therapy is utilized in treating avascular necrosis and promoting bone regeneration.</p>
+</li>
+</ul>
+</ol>
+<h3 dir="ltr">Benefits of Each Method</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">BMAC:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">High concentration of growth factors: Enhances tissue repair.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Autologous source: Reduces the risk of immune rejection.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Versatility: Effective in treating a wide range of orthopedic conditions.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">ADSCs:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Abundant source of stem cells: Easier to obtain a large number of cells.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Minimally invasive: Liposuction is a relatively simple and safe procedure.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Potential for differentiation: Can differentiate into various cell types needed for orthopedic repair.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">PBSC:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Non-invasive harvesting: Avoids the need for bone marrow extraction.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Systemic effects: Mobilized stem cells can have broader regenerative effects.</p>
+</li>
+</ul>
+</ul>
+<h3 dir="ltr">Conditions Treated with Orthopedic Stem Cell Therapy</h3>
+<p dir="ltr">Orthopedic stem cell therapy can address a variety of conditions:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Osteoarthritis: Reduces pain and inflammation, promotes cartilage regeneration.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Tendon Injuries: Accelerates the healing of tendinitis, tennis elbow, and rotator cuff tears.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ligament Injuries: Supports the repair of sprains and tears in ligaments like the ACL and MCL.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Cartilage Defects: Stimulates the growth of new cartilage in damaged joint surfaces.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Non-union Fractures: Promotes bone healing in fractures that have failed to heal properly.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Avascular Necrosis: Restores blood supply and prevents bone collapse in conditions like hip osteonecrosis.</p>
+</li>
+</ul>
+<h3 dir="ltr">The Orthopedic Stem Cell Therapy Procedure with AZPO Health</h3>
+<p dir="ltr">AZPO Health provides a structured and patient-centered approach to orthopedic stem cell therapy:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Initial Consultation:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">A comprehensive evaluation is conducted to assess the patient&rsquo;s medical history, current condition, and treatment goals.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Imaging tests, such as X-rays or MRIs, are performed to evaluate the extent of tissue damage.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The medical team determines if the patient is a suitable candidate for stem cell therapy and discusses the potential benefits and risks.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Stem Cell Harvesting:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Depending on the chosen method (BMAC, ADSCs, or PBSC), stem cells are harvested using minimally invasive techniques.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The procedure is performed under local anesthesia or light sedation to ensure patient comfort.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Stem Cell Processing:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The harvested tissue or blood is processed in a state-of-the-art laboratory to isolate and concentrate the stem cells.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Quality control measures are implemented to ensure the purity and viability of the stem cells.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Injection and Delivery:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">The concentrated stem cells are precisely injected into the damaged orthopedic site under imaging guidance, such as ultrasound or fluoroscopy.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Additional growth factors or scaffolding materials may be added to enhance the regenerative process.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Post-operative Care and Rehabilitation:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Patients receive detailed post-operative instructions and pain management strategies.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">A customized rehabilitation program is designed to restore strength, flexibility, and function.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Follow-up appointments are scheduled to monitor progress and adjust the treatment plan as needed.</p>
+</li>
+</ul>
+</ol>
+<h3 dir="ltr">Real Stories, Real Hope: Patient Testimonials</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">John, 55, Osteoarthritis Patient: "I had been suffering from knee pain for years, and nothing seemed to help. After undergoing stem cell therapy with AZPO Health, I experienced significant pain relief and improved mobility. I can now enjoy walking and playing with my grandchildren again!"</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Sarah, 42, Tendon Injury Patient: "As an avid tennis player, I was devastated when I tore my Achilles tendon. The stem cell therapy with AZPO Health helped me heal faster than expected, and I was back on the court in just a few months!"</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">David, 60, Non-union Fracture Patient: "I had a broken leg that wouldn't heal, and doctors were talking about amputation. AZPO Health's stem cell therapy gave me a second chance. My fracture finally healed, and I can walk without pain!"</p>
+</li>
+</ul>
+<h3 dir="ltr">Take the First Step Towards a Pain-Free Future</h3>
+<p dir="ltr">Ready to explore how orthopedic stem cell therapy with AZPO Health can help you reclaim your active life? Contact us today for a free consultation and personalized quote. Let us help you embark on your journey to natural healing and lasting relief.</p>
+<p>&nbsp;</p>`,
       },
       imgCover:
         subNestedKey === "orthopedic-stem-cell-therapy" ? orthopedic : null,
@@ -14653,7 +14897,7 @@ AZPO Health - ведущая компания медицинского тури�
             desc:
               locale === "ru"
                 ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
-                : "SBreast reduction surgery reduces the size of the breasts by removing excess tissue, fat, and skin. This procedure alleviates physical discomfort and improves body proportions.",
+                : "Breast reduction surgery reduces the size of the breasts by removing excess tissue, fat, and skin. This procedure alleviates physical discomfort and improves body proportions.",
           },
           {
             header: locale === "ru" ? "" : "How it works",
@@ -17584,7 +17828,7 @@ AZPO Health - ведущая компания медицинского тури�
           },
           {
             header: locale === "ru" ? "" : "How It Works",
-            decs:
+            desc:
               locale === "ru"
                 ? ""
                 : "In Vitro Fertilization (IVF) is a reproductive technology where eggs are fertilized outside the body. The process involves stimulating egg production, retrieving and fertilizing eggs in a lab, then transferring developed embryos to the uterus. This controlled environment helps overcome fertility challenges.",
