@@ -10,7 +10,7 @@ import clinic9 from "@/assets/images/clinics/clinicsPhoto/9.jpg";
 import clinic10 from "@/assets/images/clinics/clinicsPhoto/10.jpg";
 import clinic11 from "@/assets/images/clinics/clinicsPhoto/11.jpg";
 import clinic12 from "@/assets/images/clinics/clinicsPhoto/12.jpg";
-import clinic13 from "@/assets/images/clinics/clinicsPhoto/13.jpg";
+// import clinic13 from "@/assets/images/clinics/clinicsPhoto/13.jpg";
 import clinic14 from "@/assets/images/clinics/clinicsPhoto/14.jpg";
 import clinic15 from "@/assets/images/clinics/clinicsPhoto/15.jpg";
 import clinic16 from "@/assets/images/clinics/clinicsPhoto/16.jpg";
@@ -78,11 +78,11 @@ export const clinicsData = [
     img: clinic12,
     link: "https://istanbulbaskentuniversitesi.com",
   },
-  {
-    label: "Kolan İnternational Hospital",
-    img: clinic13,
-    link: "https://kolanhastanesi.com.tr",
-  },
+  // {
+  //   label: "Kolan İnternational Hospital",
+  //   img: clinic13,
+  //   link: "https://kolanhastanesi.com.tr",
+  // },
   {
     label: "Medistate Hospital",
     img: clinic14,

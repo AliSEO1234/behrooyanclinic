@@ -26,16 +26,16 @@ const PatientServicCard = ({
       >
         <div className="w-[190px] h-[251px] s1280:w-[291px] s1280:h-[384px] s1512:w-[356px] s1512:h-[481px] s1728:w-[413px] s1728:h-[558px] s1920:w-[451px] s1920:h-[608px] rounded-[20px] s1280:rounded-[40px] overflow-hidden">
           <ImgFetcher
-            width={1000}
-            height={1000}
+            width={800}
+            height={800}
             className="object-cover"
             src={photos[0]}
           />
         </div>
         <div className="w-[106px] h-[157px] s1280:w-[162px] s1280:h-[241px] s1512:w-[198px] s1512:h-[301px] s1728:w-[230px] s1728:h-[350px] s1920:w-[250px] s1920:h-[383px] overflow-hidden rounded-[20px] s1280:rounded-[20px] s1280:-mt-5">
           <ImgFetcher
-            width={1000}
-            height={1000}
+            width={800}
+            height={800}
             className="object-cover"
             src={photos[1]}
           />

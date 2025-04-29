@@ -10,15 +10,12 @@ import date from "@/assets/images/icons/date.png";
 import air from "@/assets/images/icons/air.png";
 import earth from "@/assets/images/icons/earth.png";
 import RoadmapArrowMobile from "@/components/roadmap/roadmapArrowMobile";
-import help1 from "@/assets/images/icons/home/helptop.jpg";
-import help2 from "@/assets/images/icons/home/helpunder.jpg";
 import ArrowHelping from "@/components/arrowHelping";
 import FeedBackLayout from "@/layoutes/feedbackLayoute/feedbackLayoute";
 import InfoHealthCard from "@/components/infoHealth/infoHealthCard";
 import heart from "@/assets/images/icons/heart.svg";
 import BundleIcon from "@/components/infoHealth/bundleIcon";
 import FillScrollLayout from "@/layoutes/fillScrollLayout/fillScrollLayout";
-import chooseUs from "@/assets/images/chooseus.jpg";
 import ChooseUsCard from "@/components/chooseUs/chooseUsCard";
 import SeeAll from "@/components/seeAll";
 import DistinctiveCard from "@/components/distinctive/distinctiveCard";
@@ -34,7 +31,6 @@ import PlatformWorkForm from "@/features/platformWork/platformWorkForm";
 import InfoCard from "@/features/platformWork/infoCard";
 import pltWork from "@/assets/images/workPlatform.png";
 import doctorIcon from "@/assets/images/doctorPltWork.svg";
-// import ring from "@/assets/images/ring.svg";
 import phone from "@/assets/images/phone.svg";
 import apoint from "@/assets/images/apointment.svg";
 import online from "@/assets/images/online.svg";
@@ -47,7 +43,9 @@ import CircleAnimate from "@/components/circleAnimate";
 import LeadForm from "@/components/leadForm";
 import DialogPatientSpeakVideo from "@/components/dialogPatientSpeakVideo";
 import { handlePatient } from "@/staticData/patientContent";
-
+import our1 from "@/assets/images/our1.png"
+import our2 from "@/assets/images/our2.png"
+import whyus from "@/assets/images/whychooseus.png"
 const Home = async ({
   params,
 }: {
@@ -370,12 +368,12 @@ const Home = async ({
             <div className="col-span-12 s1280:col-span-6 relative">
               <div className="helping__image-container--top flex items-center justify-center s1280:justify-end">
                 <div className="w-[320px] h-[206px] s390:w-[336px] s412:w-[366px] s1280:w-[366px] s1280:h-[206px] s1512:w-[439px] s1512:h-[247px] s1920:w-[528px] s1920:h-[297px] rounded-[40px] overflow-hidden">
-                  <ImgFetcher width={1000} src={help1} />
+                  <ImgFetcher className="object-cover" width={1500} height={1500} src={our1} />
                 </div>
               </div>
               <div className="helping__image-container--bottom hidden s1280:flex-left s1280:-mt-20">
                 <div className="s1280:w-[345px] s1280:h-[405px] s1512:w-[433px] s1512:h-[438px] s1600:w-[454px] s1600:h-[460px] s1728:w-[480px] s1728:h-[487px] s1920:w-[474px] s1920:h-[437px] rounded-[40px] overflow-hidden ">
-                  <ImgFetcher width={1000} src={help2} />
+                  <ImgFetcher className="object-cover" width={1500} height={1500} src={our2} />
                 </div>
               </div>
               {/* consultation */}
@@ -600,8 +598,9 @@ const Home = async ({
                 <div className="w-full h-[289px] s1280:h-full rounded-tr-[50px] rounded-bl-[50px] overflow-hidden">
                   <ImgFetcher
                     className="object-cover"
-                    src={chooseUs}
-                    width={2000}
+                    src={whyus}
+                    width={1500}
+                    height={1500}
                   />
                 </div>
                 {/* icon */}

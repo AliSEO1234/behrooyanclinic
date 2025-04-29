@@ -39,10 +39,10 @@ import dentistchoosing from "@/assets/images/subnested/Dental Crowns.png";
 // import body3d from "@/assets/images/subCategory/Body contouring.png";
 import hollywood from "@/assets/images/subnested/Holleywood Smile.png";
 import teethwhiting from "@/assets/images/subnested/Teeth Whitening.png";
-import clearaligners from "@/assets/images/subCategory/Clear Aligners.jpg";
-import gumgrafting from "@/assets/images/subnested/Gum Grafting.jpg";
-import bonegrafting from "@/assets/images/subnested/Bone Grafting.jpg";
-import lasergumtreatments from "@/assets/images/subCategory/laser gum.jpg";
+import clearaligners from "@/assets/images/subnested/ClearAligners.png";
+import gumgrafting from "@/assets/images/subnested/Gum Grafting.png";
+import bonegrafting from "@/assets/images/subnested/Bone Grafting.png";
+import lasergumtreatments from "@/assets/images/subnested/Periodontics.png";
 import { bfPublic } from "./BFs/publicBFs";
 import { rainoplasty } from "./BFs/rhinoplastyNoseReshapingBFs";
 import glocama from "@/assets/images/subnested/Glaucoma.jpg";
@@ -50,25 +50,25 @@ import intraocularImg from "@/assets/images/subnested/Intraocular.jpg";
 import diabetic from "@/assets/images/subCategory/Diabetic.jpg";
 import corneal from "@/assets/images/subnested/Corneal Transplant.jpg";
 import maleFertility from "@/assets/images/subnested/Male-Infertility.jpg";
-import malesexual from "@/assets/images/subnested/Male Sexual Health Issues.jpg";
+import malesexual from "@/assets/images/subnested/Male sexual health issues.png";
 import orthopedic from "@/assets/images/subnested/Orthopedic Stem Cell Therapy 1.jpg";
 import stemmen from "@/assets/images/subnested/Stem Cell men.jpg";
 import neurological from "@/assets/images/subnested/Neurological Stem Cell.jpg";
-import dyfunc from "@/assets/images/subnested/Erectile Dysfunction.jpg";
-import tipplasty from "@/assets/images/subnested/Tip Plasty (Nose Tip Correction).jpg";
-import almondeye from "@/assets/images/subnested/Aesthetic Almond-Shaped Eyes - Bilateral Canthoplasty.jpg";
+import dyfunc from "@/assets/images/subnested/Erectile Dysfunction.png";
+import tipplasty from "@/assets/images/subnested/Tipplasty.png";
+import almondeye from "@/assets/images/subnested/almond.png";
 import facelift from "@/assets/images/subnested/Facelift.png";
-import bichecktomy from "@/assets/images/subnested/Bichecktomy.jpg";
+import bichecktomy from "@/assets/images/subnested/Bichectomy.png";
 import momymakeover from "@/assets/images/subnested/Mommy Makeover.png";
 import breastreduc from "@/assets/images/subnested/Breast reduction.png";
 import malebreastreduc from "@/assets/images/subnested/Male breast reduction (Gynecomastia treatment).png";
 import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg";
 import implant from "@/assets/images/subnested/Implant Treatment.png";
-import peyroniesdisease from "@/assets/images/subnested/PeyroniDisease1.jpg";
+import peyroniesdisease from "@/assets/images/subnested/PeyronieDisease.png";
 import fillings from "@/assets/images/subnested/Fillings.png";
 import rotinecheckupscleaning from "@/assets/images/subnested/Routine Check-ups and Cleanings.png";
 import toothextraction from "@/assets/images/subnested/Tooth Extractions.png";
-import jawsurgery from "@/assets/images/subnested/Jaw Surgery 1.jpg";
+import jawsurgery from "@/assets/images/subnested/Jaw Surgery.png";
 import cataract from "@/assets/images/subnested/Cataract-Treatment 1.jpg";
 import retinaldisease from "@/assets/images/subnested/Retinal-Disease-Treatment 1.jpg";
 import xrays from "@/assets/images/subnested/Dental X-rays.png";
@@ -76,7 +76,7 @@ import fet from "@/assets/images/subnested/Frozen Embryo Transfer (FET).jpg";
 import ivf from "@/assets/images/subnested/In Vitro Fertilization (IVF).jpg";
 import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg";
 import smartlens from "@/assets/images/subnested/Smart lens.jpg";
-import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.jpg";
+import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.png";
 import dentalbonding from "@/assets/images/subnested/Dental Bonding.png";
 export const categoryDataHandler = (key: string, locale: string) => {
   const findSubCategories = allSubCategory.filter(
@@ -1394,35 +1394,54 @@ export const subCategoryHandler = (
             ? `
            <p>Considering undergoing medical treatment in a foreign country can bring about several questions. Let's explore why Turkey has become a prominent destination for individuals seeking high-quality eye disease treatments.</p><p>Turkey has emerged as a leading hub for medical tourism, and for good reason. One of the primary attractions is the affordability of medical procedures compared to many European countries, the United States, or the UK. This cost-effectiveness extends to various medical fields, including specialized eye care. You can potentially access advanced treatments and consultations with experienced medical professionals at a significantly lower cost without compromising on the quality of care.</p><p>Beyond the financial aspect, Turkey boasts a cadre of well-educated and experienced doctors and healthcare staff. Many Turkish medical professionals have received training in internationally recognized institutions and possess extensive experience in diagnosing and treating a wide spectrum of eye diseases. The healthcare professionals in Turkey often perform a high volume of procedures annually, contributing to their skill and expertise.</p><p>Furthermore, Turkey is home to modern and well-equipped medical facilities, including hospitals and clinics that utilize cutting-edge technology in diagnostics and treatment. This commitment to advanced medical infrastructure ensures that patients have access to the latest innovations in eye care.</p><p>Another compelling reason to consider Turkey for your eye disease treatment is the opportunity for medical tourism. Istanbul, in particular, is a highly visited city with a rich history and culture. Combining your treatment with a chance to explore historical sites, experience a vibrant culture, and enjoy the hospitality of Turkey can make your medical journey a more positive and memorable experience.</p><p>Moreover, facilities like Hospital believe in staying ahead of the curve by constantly researching and learning from the best surgeons and clinics around the world, adopting the best techniques to provide the best possible care for their patients. This dedication to continuous improvement suggests a commitment to providing high standards in medical treatments.</p><h3><strong>Understanding Eye Disease Treatments Available</strong></h3><p>Eye diseases encompass a broad range of conditions that can affect different parts of the eye and impact vision. Accessing appropriate and timely treatment is crucial for managing these conditions, preventing vision loss, and maintaining overall eye health. While the specific types of treatments available depend on the individual diagnosis, let's discuss some general categories and considerations for eye disease treatments you might find in Turkey through AZPO Health.</p><p>It's important to recognize that clear communication between you and the medical team is paramount for achieving optimal results. Therefore, a thorough consultation is a vital first step in any treatment process.</p><p>For individuals with common vision problems like nearsightedness (myopia), farsightedness (hyperopia), or astigmatism, refractive surgeries such as LASIK or PRK might be options to reduce or eliminate the need for glasses or contact lenses. Another innovative technique for vision correction is intraocular lens implantation (IOL), which involves replacing the eye's natural lens with an artificial one to improve vision. Turkey offers these advanced vision correction procedures with experienced ophthalmologists and modern technology.</p><p>Cataracts, a clouding of the eye's natural lens, are a common age-related condition that can impair vision. Treatment typically involves cataract surgery, where the clouded lens is removed and replaced with a clear artificial lens. This is a widely performed procedure in Turkey with high success rates.</p><p>Glaucoma is a condition that damages the optic nerve, often due to increased pressure inside the eye. Various treatments are available to manage glaucoma and prevent vision loss, including eye drops, laser therapy, and surgery. Timely diagnosis and consistent management are crucial for this condition.</p><p>Retinal disorders, such as macular degeneration and diabetic retinopathy, can affect the light-sensitive tissue at the back of the eye. Treatments for these conditions may include laser therapy, injections, and surgery, depending on the specific diagnosis and stage of the disease.</p><p>Eye infections, injuries, and other less common eye diseases also require specialized medical attention. Turkey's comprehensive healthcare system includes specialists who can diagnose and treat these conditions effectively.</p><p>Furthermore, for individuals considering cosmetic procedures related to the eyes, such as blepharoplasty (eyelid surgery) to address drooping eyelids or under-eye bags, Turkey offers experienced plastic surgeons who can perform these procedures. While primarily cosmetic, blepharoplasty can sometimes improve vision if excess upper eyelid skin obstructs the field of view.</p><p>When you choose AZPO Health for your eye disease treatment in Turkey, you can expect a personalized approach. The medical team will conduct a thorough assessment of your condition, discuss your treatment options in detail, and tailor a plan to meet your specific needs and goals. Clear explanations of the procedures, potential benefits, and any associated risks will be provided to help you make informed decisions about your eye care journey.</p><h3><strong>AZPO Health: Your Partner in Eye Health in Turkey</strong></h3><p>AZPO Health is a reputable medical tourism company in Turkey dedicated to providing high-quality healthcare services to international patients. We understand that seeking medical treatment abroad can be a significant decision, and we are here to guide you through every step of the process.</p><p>Our network includes experienced and skilled ophthalmologists and medical facilities across top touristic destinations in Turkey. We carefully select our partners based on their expertise, reputation, and commitment to patient care. When you choose AZPO Health, you can be confident that you will be connected with qualified medical professionals who specialize in treating a wide range of eye diseases.</p><p>We prioritize clear and open communication to ensure that you are fully informed and comfortable throughout your treatment journey. From your initial inquiry to your post-treatment follow-up, our team will be available to answer your questions, address your concerns, and provide the support you need. We can assist with arranging virtual consultations, helping you understand your treatment options, and coordinating your travel and accommodation in Turkey.</p><p>AZPO Health is committed to facilitating a seamless and stress-free medical travel experience. We strive to provide personalized care that is tailored to your individual needs and preferences. Our goal is to ensure that you receive the best possible medical treatment while enjoying a comfortable and positive experience in Turkey.</p><h3><strong>Take the First Step Towards Clearer Vision</strong></h3><p>Don't let eye diseases compromise your vision and quality of life. Contact AZPO Health today for a free consultation and personalized quote for your eye disease treatment in Turkey. Our dedicated team is ready to answer your questions and guide you on your journey to better eye health.</p><p><br></p>
             `
-            : `
-         <p dir="ltr">Embarking on a fertility journey is a significant decision, and choosing the right destination for treatment is crucial. Turkey has emerged as a leading hub for medical tourism, particularly in the realm of fertility and assisted reproduction, and for good reason.</p>
+            : `<p dir="ltr">Embarking on a fertility journey is a significant decision, and choosing the right destination for treatment is crucial. Turkey has emerged as a leading hub for medical tourism, particularly in the realm of fertility and assisted reproduction, and for good reason.</p>
+<p dir="ltr">&nbsp;</p>
 <p dir="ltr">Firstly, accessibility and cost-effectiveness are significant factors. Compared to many countries in Europe and North America, the cost of fertility treatments in Turkey is often considerably more affordable without compromising on the quality of care. This allows more individuals and couples to pursue their dreams of parenthood without the added financial burden.</p>
+<p dir="ltr">&nbsp;</p>
 <p dir="ltr">Secondly, Turkey boasts state-of-the-art medical facilities and highly skilled healthcare professionals specializing in fertility and assisted reproduction. Hospitals and clinics dedicated to reproductive health are equipped with the latest technologies and adhere to international standards of medical practice. The expertise of the medical teams ensures that patients receive comprehensive and advanced treatments tailored to their specific needs.Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
+<p dir="ltr">&nbsp;</p>
 <p dir="ltr">Furthermore, the overall experience of seeking medical treatment in Turkey can be a positive one. The country is renowned for its hospitality and cultural richness. Patients often find comfort in the supportive environment and the opportunity to combine their treatment with a chance to explore the beautiful and historic sites of Turkey, particularly Istanbul, Antalya, Alanya, and İzmir.</p>
+<p dir="ltr">&nbsp;</p>
 <p dir="ltr">AZPO Health understands the emotional and physical journey involved in seeking fertility treatments. We are committed to providing exceptional care and support to international patients every step of the way. From your initial inquiry to post-treatment follow-up, we strive to make your experience as seamless and stress-free as possible. We recognize that traveling for medical procedures can be daunting, so we've designed our services to provide comprehensive care beyond just the medical procedure itself.</p>
-<p dir="ltr">Understanding Fertility Treatments Offered in Turkey</p>
+<p dir="ltr">&nbsp;</p>
+<h2 dir="ltr"><strong>Understanding Fertility Treatments Offered in Turkey</strong></h2>
+<p>&nbsp;</p>
 <p dir="ltr">AZPO Health offers access to a comprehensive range of fertility treatments in Turkey, utilizing advanced medical technologies and evidence-based practices. Our experienced medical partners specialize in various assisted reproduction techniques, ensuring that we can address a wide spectrum of fertility challenges.&nbsp;</p>
-<p dir="ltr">One of the most well-known fertility treatments is In Vitro Fertilization (IVF). IVF involves retrieving mature eggs from a woman's ovaries and fertilizing them with sperm in a laboratory [Implied by 4, 6, 17]. The resulting embryos are then transferred back to the woman's uterus to potentially implant and develop into a pregnancy. IVF is often recommended for various fertility issues, including blocked fallopian tubes, male factor infertility, and unexplained infertility.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">One of the most well-known fertility treatments is In Vitro Fertilization (IVF). IVF involves retrieving mature eggs from a woman's ovaries and fertilizing them with sperm in a laboratory. The resulting embryos are then transferred back to the woman's uterus to potentially implant and develop into a pregnancy. IVF is often recommended for various fertility issues, including blocked fallopian tubes, male factor infertility, and unexplained infertility.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">Intracytoplasmic Sperm Injection (ICSI) is a specialized form of IVF where a single sperm is directly injected into an egg to facilitate fertilization. ICSI is particularly beneficial in cases of severe male factor infertility, where sperm count, motility, or morphology are significantly compromised.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">For individuals or couples who have experienced repeated implantation failure with traditional IVF, preimplantation genetic testing (PGT) may be recommended. PGT involves analyzing embryos for genetic abnormalities before they are transferred to the uterus, potentially increasing the chances of a successful pregnancy.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">Ovulation induction is another fertility treatment that helps women who have irregular or absent ovulation. Medications are used to stimulate the ovaries to produce and release mature eggs, increasing the likelihood of natural conception or enhancing the success of other assisted reproduction techniques like intrauterine insemination (IUI).</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">Intrauterine insemination (IUI) involves placing washed and concentrated sperm directly into a woman's uterus around the time of ovulation. IUI can be helpful for mild male factor infertility, cervical factor infertility, or unexplained infertility. It is a less invasive fertility treatment option compared to IVF.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">Beyond these core fertility treatments, our partner clinics also offer advanced procedures such as egg donation, sperm donation, and embryo donation for individuals or couples who require these options to achieve their fertility goals. These processes are conducted with the utmost confidentiality and ethical considerations.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">Throughout your fertility journey with AZPO Health, you will have access to comprehensive support services. This includes thorough initial assessments, personalized treatment plans developed by experienced specialists, and ongoing care and guidance throughout the process. We understand that fertility treatments can be emotionally demanding, and our team is dedicated to providing a compassionate and understanding environment.</p>
-<p dir="ltr">Patient Testimonials: Real Stories of Hope</p>
-<p dir="ltr">Please note: The following testimonials are created to illustrate potential patient experiences, in line with the provided guidelines.</p>
+<h3 dir="ltr">Patient Testimonials: Real Stories of Hope</h3>
 <p dir="ltr">Sarah from the UK shares her IVF journey: "After years of trying to conceive, my husband and I felt like we had exhausted all options. The cost of IVF in the UK was a significant barrier for us. A friend who had a positive experience with medical tourism suggested looking into Turkey. That's when we found AZPO Health. From our first virtual consultation, we felt supported and informed. The clinic in Istanbul was modern and the medical team was incredibly professional and caring. The entire process was much more affordable than we had anticipated, and we were thrilled when our IVF treatment was successful. We are now parents to a beautiful baby girl, and we are forever grateful to AZPO Health for making our dream a reality."</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">David and Maria from the USA recount their ICSI experience: "We were facing male factor infertility, and our doctor recommended ICSI. The costs in the US were overwhelming. We started researching options abroad and came across AZPO Health in Turkey. The online information was comprehensive, and the communication with their team was excellent. They answered all our questions and made us feel comfortable about traveling for treatment. The medical professionals in Turkey were highly skilled, and the level of care we received was exceptional. We are overjoyed to share that our ICSI treatment was a success, and we are expecting our first child. Thank you, AZPO Health, for giving us this incredible gift."</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">Emma from Canada talks about egg donation: "Deciding to pursue egg donation was a difficult decision, but AZPO Health made the process feel supported and respectful. They provided us with extensive information and helped us find a suitable donor. The clinic in Turkey was discreet and professional, and the medical team was incredibly sensitive to our situation. The entire experience was handled with the utmost care and confidentiality. We are now a happy family, thanks to the compassionate support and expert care we received through AZPO Health."</p>
-<p dir="ltr">About AZPO Health: Your Trusted Partner in Fertility</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">About AZPO Health: Your Trusted Partner in Fertility</h2>
 <p dir="ltr">AZPO Health is a leading medical tourism company based in Turkey, specializing in connecting international patients with top-tier healthcare services. We understand that seeking fertility treatments abroad requires trust and confidence in your chosen provider. At AZPO Health, we prioritize your well-being and are committed to providing a seamless and positive experience throughout your fertility journey.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">Our reputation is built on our dedication to quality, expertise, and a patient-centric approach. We partner with carefully selected clinics and hospitals in Turkey that boast experienced medical professionals, advanced technologies, and a proven track record of success in fertility and assisted reproduction.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">We understand that every individual's fertility journey is unique. That's why we offer personalized support and guidance, starting with a virtual consultation to understand your specific needs and medical history. Our team will help you navigate the options available and develop a tailored treatment plan that aligns with your goals.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">AZPO Health is committed to ensuring your comfort and convenience during your medical trip to Turkey. We provide comprehensive support services, including assistance with travel arrangements, accommodation, and logistics, allowing you to focus on your treatment and well-being. Our multilingual team is readily available to address any questions or concerns you may have, ensuring clear communication and peace of mind.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <p dir="ltr">We adhere to the highest ethical standards and prioritize the confidentiality of our patients. You can trust AZPO Health to handle your fertility journey with the utmost discretion and respect.</p>
-<p dir="ltr">Take the First Step Towards Parenthood</p>
-<p dir="ltr"><strong id="docs-internal-guid-232b3aab-7fff-e249-765c-6488701a2c5e">Your dream of starting or expanding your family is within reach. Contact AZPO Health today for a free consultation and take the first step towards your personalized fertility treatment plan in Turkey. Let us be your trusted partner in this life-changing journey.</strong></p>
-        `,
+<p dir="ltr">&nbsp;</p>
+<h3 dir="ltr"><span style="color: #7e8c8d !important">Take the First Step Towards Parenthood</span></h3>
+<p>&nbsp;</p>
+<p dir="ltr"><strong id="docs-internal-guid-48fa00ae-7fff-6375-af44-c435da56cdec">Your dream of starting or expanding your family is within reach. Contact AZPO Health today for a free consultation and take the first step towards your personalized fertility treatment plan in Turkey. Let us be your trusted partner in this life-changing journey.</strong></p>`,
       },
       subCategoryKey: "fertility-assisted-reproduction",
       categoryKey: findCategory,
@@ -18108,7 +18127,7 @@ AZPO Health - ведущая компания медицинского тури�
           : "Frozen Embryo Transfer in Turkey - Your Path to Parenthood",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? ""
           : "Are you dreaming of holding your baby but facing challenges with natural conception or previous fertility treatments? Could the answer to your hopes lie in a gentle, yet highly effective approach in a welcoming land renowned for its medical expertise? Explore the possibility of frozen embryo transfer in Turkey, and let AZPO Health guide you towards a brighter future.",
       benefits: {
         items: [
@@ -18116,60 +18135,89 @@ AZPO Health - ведущая компания медицинского тури�
             title: locale === "ru" ? "Новое Тело" : "Success Rates",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? ""
                 : "FET boosts success with optimized timing and viable embryos.",
           },
           {
             title: locale === "ru" ? "Гладкая Кожа" : "Less Stress",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? ""
                 : "Avoids ovarian stimulation, making the process gentler.",
           },
           {
             title: locale === "ru" ? "Идеальный Контур" : "Cost Savings",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? ""
                 : "Uses frozen embryos, reducing IVF cycle costs.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "" : "Who Is IVF For?",
+            header: locale === "ru" ? "" : "Description",
             desc:
               locale === "ru"
                 ? ""
-                : "Women with Failed Fresh IVF: FET provides another chance using previously frozen embryos from unsuccessful IVF cycles.Women with Low Egg Quality or Need Breaks: FET helps those with poor ovarian reserve by avoiding repeated stimulation, and allows couples to pause between cycles.",
+                : "Frozen Embryo Transfer (FET) is a process where a previously frozen embryo is thawed and transferred to the uterus. It allows pregnancy attempts without a full IVF cycle. The uterus is prepared with hormones to support implantation.",
           },
           {
-            header: locale === "ru" ? "" : "Considerations",
-            desc: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "" : "How It Works",
+            desc: locale === "ru" ? "" : "The Frozen Embryo Transfer (FET) process begins with embryo freezing, where extra embryos from IVF are preserved through vitrification to maintain their quality for future use. When ready for transfer, the embryos are carefully thawed and evaluated for viability. Meanwhile, the uterus is prepared with hormone therapy involving estrogen and progesterone to create an optimal environment for implantation. The healthiest embryo or embryos are then transferred into the uterus using a thin catheter. About two weeks later, a blood test is performed to monitor hCG levels and confirm pregnancy.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "For Whom",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
-                : "Frozen Embryo Transfer (FET) is when frozen embryos are thawed and transferred to a woman's uterus to achieve pregnancy. This procedure typically follows IVF, using stored excess embryos. FET is popular as it effectively increases pregnancy chances while being less physically demanding.",
+                ? ""
+                : "Frozen Embryo Transfer (FET) is a suitable option for several situations. It offers a second chance for those who have experienced a failed IVF cycle by using previously frozen embryos. For individuals with low egg quality, FET allows the use of preserved embryos without the need for repeated ovarian stimulation, giving the body time to recover. It also provides a way to preserve extra embryos for future pregnancies, offering more opportunities for family planning. Additionally, FET is ideal for those who wish to delay pregnancy, as it allows embryos to be safely stored and used when the timing is right.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question : locale === "ru" ? "Is FET painful?" : "Is FET painful?",
+          answer : locale === "ru" ? "No, it’s a quick, painless procedure similar to a Pap smear." : "No, it’s a quick, painless procedure similar to a Pap smear"
+        },
+        {
+          question : locale === "ru" ? "How long until I know if it worked?" : "How long until I know if it worked?",
+          answer : locale === "ru" ? "About 10–14 days after transfer via blood pregnancy test." : "About 10–14 days after transfer via blood pregnancy test"
+        },
+        {
+          question : locale === "ru" ? "Can I move around normally after FET?" : "Can I move around normally after FET?",
+          answer : locale === "ru" ? "Yes, light walking and normal daily activities are fine after the first day." : "Yes, light walking and normal daily activities are fine after the first day"
+        },
+        {
+          question : locale === "ru" ? "How many embryos are usually transferred?" : "How many embryos are usually transferred?",
+          answer : locale === "ru" ? "Usually one, but your doctor may recommend more based on your situation." : "Usually one, but your doctor may recommend more based on your situation"
+        },
+        {
+          question : locale === "ru" ? "Does frozen embryo transfer success differ from fresh?" : "Does frozen embryo transfer success differ from fresh?",
+          answer : locale === "ru" ? "No — success rates for frozen transfers are often as good or better than fresh." : "No — success rates for frozen transfers are often as good or better than fresh"
+        }
+      ],
+      posts: [
+        locale === "ru" ? "" : "Rest for the day after the embryo transfer", 
+        locale === "ru" ? "" : "Continue hormone medications exactly as prescribed", 
+        locale === "ru" ? "" : "Avoid heavy lifting, strenuous exercise, or running for about 1–2 weeks", 
+        locale === "ru" ? "" : "No sexual intercourse until after your pregnancy test", 
+        locale === "ru" ? "" : "Eat healthy foods and stay hydrated", 
+        locale === "ru" ? "" : "Attend your scheduled pregnancy blood test (usually 10–14 days later)", 
+      ],
+      preList: [
+        locale === "ru" ? "" : "Follow your hormone schedule exactly (estrogen, progesterone, etc.)", 
+        locale === "ru" ? "" : "Attend all ultrasound and blood test appointments on time", 
+        locale === "ru" ? "" : "Avoid smoking, alcohol, and caffeine during preparation", 
+        locale === "ru" ? "" : "Stay hydrated and eat a balanced, healthy diet", 
+        locale === "ru" ? "" : "Limit stress — keep a calm environment before transfer day", 
+        locale === "ru" ? "" : "Inform your doctor about any recent illnesses or medications", 
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? ""
             : "Frozen Embryo Transfer (FET) has become a key part of assisted reproductive technology, providing an effective and flexible solution for many couples struggling with infertility. The ability to store embryos and transfer them at a later time has increased pregnancy success rates, reduced physical and emotional strain on the woman, and made fertility treatments more affordable. With its lower risk of multiple pregnancies and shorter treatment timeline, FET is an important tool for individuals seeking to expand their families. If you're considering fertility treatment, consulting a reproductive specialist can help determine if FET is the right choice for you and your journey to parenthood.",
-      },
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
       },
       bfs: bfList,
       contents: {
@@ -18180,7 +18228,113 @@ AZPO Health - ведущая компания медицинского тури�
         content:
           locale === "ru"
             ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
-            : `<p>Turkey has emerged as a leading destination for medical tourism, particularly in the field of fertility treatments. Several compelling factors contribute to this growing popularity:</p><ul><li><strong>High-Quality Medical Care:</strong> Turkish fertility clinics are often equipped with advanced technologies and adhere to international standards of medical practice. The healthcare professionals in this field are frequently experienced and skilled in performing various assisted reproductive techniques, including frozen embryo transfer.</li><li><strong>Affordability:</strong> Compared to many countries in Europe and North America, the cost of fertility treatments, including IVF and FET, is often more accessible in Turkey. This can make the dream of parenthood a tangible reality for individuals and couples who might find the expenses prohibitive elsewhere.</li><li><strong>Experienced Professionals:</strong> The medical teams in Turkish fertility clinics often have extensive experience in handling diverse cases and employing the latest advancements in reproductive medicine. This expertise can be crucial for optimizing the chances of a successful frozen embryo transfer.</li><li><strong>Comprehensive Care and Support:</strong> Many clinics in Turkey understand the emotional and physical journey involved in fertility treatments. They often provide comprehensive care, including consultations, treatment planning, the procedure itself, and post-transfer support.</li><li><strong>A Welcoming Environment:</strong> Beyond the medical aspects, Turkey offers a rich cultural experience and warm hospitality to international patients. Combining your treatment with the opportunity to experience the beauty and history of Turkey can make your journey more positive and memorable.</li><li><strong>Facilitation by AZPO Health:</strong> AZPO Health acts as a bridge, connecting you with reputable and experienced fertility clinics in Turkey. We streamline the process, helping you find the right clinic based on your individual needs and providing support throughout your medical travel experience.</li></ul><h3><strong>What is Frozen Embryo Transfer (FET)?</strong></h3><p>Frozen embryo transfer is a procedure where embryos that were previously created through IVF and then cryopreserved (frozen) are thawed and transferred back into a woman's uterus with the goal of achieving a pregnancy. This process offers several advantages and has become an integral part of modern IVF treatment.</p><h4><strong>The Process of Frozen Embryo Transfer: A Step-by-Step Look</strong></h4><p>Understanding the steps involved in a frozen embryo transfer can help alleviate anxiety and prepare you for the journey:</p><ol><li><strong>Consultation and Treatment Planning:</strong> Your journey typically begins with a thorough consultation with a fertility specialist at one of the clinics in AZPO Health's network. Your medical history, previous fertility treatment outcomes, and current health status will be evaluated to determine if FET is the appropriate course of action. A personalized treatment plan will be developed, outlining the timeline and any necessary preparations.</li><li><strong>Endometrial Preparation:</strong> The focus of the FET cycle is to prepare the lining of your uterus (endometrium) to be receptive to embryo implantation. There are different approaches to endometrial preparation:</li></ol><ul><li class="ql-indent-1"><strong>Natural Cycle FET:</strong> If you have regular menstrual cycles, your natural ovulation can be monitored through blood tests and ultrasound scans. The thawed embryo(s) will be transferred around the time of your natural ovulation.</li><li class="ql-indent-1"><strong>Medicated Cycle FET:</strong> In a medicated cycle, you will receive hormonal medications, typically estrogen and progesterone, to thicken and prepare the uterine lining. This approach offers more control over the timing of the transfer.</li></ul><ol><li><strong>Embryo Thawing:</strong> Once your uterine lining is deemed ready, the cryopreserved embryo(s) selected for transfer will be carefully thawed in the laboratory by experienced embryologists. Modern freezing techniques, such as vitrification, have significantly improved the survival rates of thawed embryos.</li><li><strong>Embryo Transfer:</strong> The embryo transfer procedure is typically quick and relatively painless. A thin, flexible catheter containing the thawed embryo(s) is gently passed through your cervix and into your uterus, where the embryo(s) are released. The procedure is usually guided by ultrasound to ensure accurate placement.</li><li><strong>Post-Transfer Support:</strong> After the embryo transfer, you will receive instructions regarding any necessary medications, such as progesterone to support the uterine lining. You will also be advised on activity levels and any precautions to take during the waiting period before the pregnancy test.</li><li><strong>Pregnancy Test:</strong> Approximately two weeks after the embryo transfer, a blood test will be performed to determine if pregnancy has occurred. The waiting period can be emotionally challenging, and the clinic staff, along with AZPO Health, will be there to offer support.</li></ol><h4><strong>Benefits of Choosing Frozen Embryo Transfer</strong></h4><p>Opting for a frozen embryo transfer can offer several advantages compared to a fresh embryo transfer:</p><ul><li><strong>Improved Endometrial Receptivity:</strong> In a fresh IVF cycle, the high hormone levels used for ovarian stimulation can sometimes negatively impact the receptivity of the uterine lining. Freezing embryos allows your body to return to a more natural hormonal state before the transfer, potentially increasing the chances of successful implantation.</li><li><strong>Opportunity for Preimplantation Genetic Testing (PGT):</strong> If desired, embryos can be biopsied and frozen, allowing for genetic screening (PGT) to identify chromosomally normal embryos before transfer. This can be particularly beneficial for women of advanced maternal age or those with a history of recurrent miscarriages or previous pregnancies with chromosomal abnormalities.</li><li><strong>Increased Flexibility and Convenience:</strong> FET offers greater flexibility in scheduling the embryo transfer. It allows for a break between the ovarian stimulation and the transfer, which can be beneficial both physically and emotionally. You can also choose to undergo the transfer in a cycle that is more convenient for your personal and work commitments.</li><li><strong>Reduced Risk of Ovarian Hyperstimulation Syndrome (OHSS):</strong> OHSS is a potential complication of ovarian stimulation in IVF. Freezing all embryos and performing the transfer in a subsequent cycle significantly reduces the risk of developing or experiencing severe OHSS.</li><li><strong>Potential for Transfer of Fewer Embryos:</strong> With improved freezing and thawing techniques and potentially enhanced endometrial receptivity, clinics may recommend transferring a single embryo (elective single embryo transfer - eSET) in an FET cycle, which can reduce the risk of multiple pregnancies.</li><li><strong>Utilization of Surplus Embryos:</strong> If more embryos of good quality are created during an IVF cycle than can be safely transferred fresh, cryopreservation allows these remaining embryos to be used in future FET cycles, potentially leading to more chances of pregnancy without undergoing another full IVF stimulation cycle.</li></ul><h3><strong>Why Partner with AZPO Health for Your FET in Turkey?</strong></h3><p>Navigating the complexities of medical travel and fertility treatments can be daunting. AZPO Health is here to simplify this journey for you, providing support and guidance every step of the way. By choosing to work with us for your frozen embryo transfer in Turkey, you can benefit from:</p><ul><li><strong>Access to Reputable Clinics:</strong> We have established partnerships with carefully selected fertility clinics in Turkey known for their high success rates, experienced medical teams, and patient-centered approach.</li><li><strong>Personalized Guidance:</strong> Our dedicated team will understand your unique situation and preferences, helping you find the clinic that best aligns with your needs.</li><li><strong>Seamless Coordination:</strong> We assist with coordinating your travel arrangements, accommodation, and appointments, ensuring a smooth and stress-free experience.</li><li><strong>Clear Communication:</strong> We facilitate clear communication between you and the chosen clinic, addressing any questions or concerns you may have throughout the process.</li><li><strong>Ongoing Support:</strong> We provide continuous support before, during, and after your treatment in Turkey, ensuring you feel informed and cared for.</li><li><strong>Focus on Quality and Trust:</strong> AZPO Health is committed to connecting you with healthcare providers who adhere to high medical standards and prioritize patient safety and well-being.</li></ul><h3><strong>Real Stories, Real Hope: Patient Testimonials</strong></h3><p>While each individual's fertility journey is unique, hearing from others who have undergone frozen embryo transfer in Turkey can offer encouragement and hope.</p><p><strong>Sarah from the UK:</strong> "After several unsuccessful fresh IVF cycles at home, we were feeling disheartened. A friend recommended looking into fertility treatment in Turkey, and we found AZPO Health. They connected us with a wonderful clinic, and the FET process was so much smoother. We are now overjoyed to be expecting our first child! The care we received was excellent, and the cost was significantly lower than what we had paid previously. Thank you, AZPO Health, for making our dream come true."</p><p><strong>Mark and Lisa from the USA:</strong> "We had a few good quality embryos left over from our initial IVF cycle. When we decided to try for a second child, FET in Turkey through AZPO Health seemed like a logical step. The entire experience was well-organized, and the medical team was fantastic. We were impressed by the professionalism and the advanced technology used. Our FET was successful, and we are now parents to two beautiful children. We highly recommend considering Turkey for fertility treatment."</p><p><strong>Aisha from Canada:</strong> "As a single woman pursuing motherhood, I felt overwhelmed by the options. AZPO Health provided me with clear information and connected me with a clinic in Turkey that had extensive experience with single mothers by choice. The FET process was carefully explained, and I felt supported throughout. The outcome was positive, and I am now a proud mother. I am so grateful to AZPO Health for their guidance and support."</p><p><br></p><h3><strong>Taking the Next Step Towards Your Dream</strong></h3><p>If you are considering frozen embryo transfer and are looking for high-quality, affordable care in a welcoming environment, Turkey could be the right destination for you. Let AZPO Health be your trusted partner in this important journey.</p><p>We understand that making the decision to pursue fertility treatment abroad is a significant one. Our team is here to provide you with the information and support you need to feel confident and informed.</p><p><strong>Contact AZPO Health today for a free consultation and personalized quote.</strong> Take the first step towards realizing your dream of building a family. We are here to guide you towards a brighter future.</p>`,
+            : `<p dir="ltr">Turkey has emerged as a leading destination for medical tourism, particularly in the field of fertility treatments. Several compelling factors contribute to this growing popularity:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">High-Quality Medical Care: Turkish fertility clinics are often equipped with advanced technologies and adhere to international standards of medical practice. The healthcare professionals in this field are frequently experienced and skilled in performing various assisted reproductive techniques, including frozen embryo transfer.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: Compared to many countries in Europe and North America, the cost of fertility treatments, including IVF and FET, is often more accessible in Turkey. This can make the dream of parenthood a tangible reality for individuals and couples who might find the expenses prohibitive elsewhere.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Professionals: The medical teams in Turkish fertility clinics often have extensive experience in handling diverse cases and employing the latest advancements in reproductive medicine. This expertise can be crucial for optimizing the chances of a successful frozen embryo transfer.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Care and Support: Many clinics in Turkey understand the emotional and physical journey involved in fertility treatments. They often provide comprehensive care, including consultations, treatment planning, the procedure itself, and post-transfer support.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">A Welcoming Environment: Beyond the medical aspects, Turkey offers a rich cultural experience and warm hospitality to international patients. Combining your treatment with the opportunity to experience the beauty and history of Turkey can make your journey more positive and memorable.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Facilitation by AZPO Health: AZPO Health acts as a bridge, connecting you with reputable and experienced fertility clinics in Turkey. We streamline the process, helping you find the right clinic based on your individual needs and providing support throughout your medical travel experience.</p>
+</li>
+</ul>
+<h3 dir="ltr">What is Frozen Embryo Transfer (FET)?</h3>
+<p dir="ltr">Frozen embryo transfer is a procedure where embryos that were previously created through IVF and then cryopreserved (frozen) are thawed and transferred back into a woman's uterus with the goal of achieving a pregnancy. This process offers several advantages and has become an integral part of modern IVF treatment.</p>
+<h4 dir="ltr">The Process of Frozen Embryo Transfer: A Step-by-Step Look</h4>
+<p dir="ltr">Understanding the steps involved in a frozen embryo transfer can help alleviate anxiety and prepare you for the journey:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Consultation and Treatment Planning: Your journey typically begins with a thorough consultation with a fertility specialist at one of the clinics in AZPO Health's network. Your medical history, previous fertility treatment outcomes, and current health status will be evaluated to determine if FET is the appropriate course of action. A personalized treatment plan will be developed, outlining the timeline and any necessary preparations.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Endometrial Preparation: The focus of the FET cycle is to prepare the lining of your uterus (endometrium) to be receptive to embryo implantation. There are different approaches to endometrial preparation:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Natural Cycle FET: If you have regular menstrual cycles, your natural ovulation can be monitored through blood tests and ultrasound scans. The thawed embryo(s) will be transferred around the time of your natural ovulation.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Medicated Cycle FET: In a medicated cycle, you will receive hormonal medications, typically estrogen and progesterone, to thicken and prepare the uterine lining. This approach offers more control over the timing of the transfer.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Embryo Thawing: Once your uterine lining is deemed ready, the cryopreserved embryo(s) selected for transfer will be carefully thawed in the laboratory by experienced embryologists. Modern freezing techniques, such as vitrification, have significantly improved the survival rates of thawed embryos.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Embryo Transfer: The embryo transfer procedure is typically quick and relatively painless. A thin, flexible catheter containing the thawed embryo(s) is gently passed through your cervix and into your uterus, where the embryo(s) are released. The procedure is usually guided by ultrasound to ensure accurate placement.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Post-Transfer Support: After the embryo transfer, you will receive instructions regarding any necessary medications, such as progesterone to support the uterine lining. You will also be advised on activity levels and any precautions to take during the waiting period before the pregnancy test.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pregnancy Test: Approximately two weeks after the embryo transfer, a blood test will be performed to determine if pregnancy has occurred. The waiting period can be emotionally challenging, and the clinic staff, along with AZPO Health, will be there to offer support.</p>
+</li>
+</ol>
+<h4 dir="ltr">Benefits of Choosing Frozen Embryo Transfer</h4>
+<p dir="ltr">Opting for a frozen embryo transfer can offer several advantages compared to a fresh embryo transfer:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Improved Endometrial Receptivity: In a fresh IVF cycle, the high hormone levels used for ovarian stimulation can sometimes negatively impact the receptivity of the uterine lining. Freezing embryos allows your body to return to a more natural hormonal state before the transfer, potentially increasing the chances of successful implantation.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Opportunity for Preimplantation Genetic Testing (PGT): If desired, embryos can be biopsied and frozen, allowing for genetic screening (PGT) to identify chromosomally normal embryos before transfer. This can be particularly beneficial for women of advanced maternal age or those with a history of recurrent miscarriages or previous pregnancies with chromosomal abnormalities.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Increased Flexibility and Convenience: FET offers greater flexibility in scheduling the embryo transfer. It allows for a break between the ovarian stimulation and the transfer, which can be beneficial both physically and emotionally. You can also choose to undergo the transfer in a cycle that is more convenient for your personal and work commitments.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Reduced Risk of Ovarian Hyperstimulation Syndrome (OHSS): OHSS is a potential complication of ovarian stimulation in IVF. Freezing all embryos and performing the transfer in a subsequent cycle significantly reduces the risk of developing or experiencing severe OHSS.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Potential for Transfer of Fewer Embryos: With improved freezing and thawing techniques and potentially enhanced endometrial receptivity, clinics may recommend transferring a single embryo (elective single embryo transfer - eSET) in an FET cycle, which can reduce the risk of multiple pregnancies.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Utilization of Surplus Embryos: If more embryos of good quality are created during an IVF cycle than can be safely transferred fresh, cryopreservation allows these remaining embryos to be used in future FET cycles, potentially leading to more chances of pregnancy without undergoing another full IVF stimulation cycle.</p>
+</li>
+</ul>
+<h3 dir="ltr">Why Partner with AZPO Health for Your FET in Turkey?</h3>
+<p dir="ltr">Navigating the complexities of medical travel and fertility treatments can be daunting. AZPO Health is here to simplify this journey for you, providing support and guidance every step of the way. By choosing to work with us for your frozen embryo transfer in Turkey, you can benefit from:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Access to Reputable Clinics: We have established partnerships with carefully selected fertility clinics in Turkey known for their high success rates, experienced medical teams, and patient-centered approach.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Guidance: Our dedicated team will understand your unique situation and preferences, helping you find the clinic that best aligns with your needs.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Seamless Coordination: We assist with coordinating your travel arrangements, accommodation, and appointments, ensuring a smooth and stress-free experience.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Clear Communication: We facilitate clear communication between you and the chosen clinic, addressing any questions or concerns you may have throughout the process.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ongoing Support: We provide continuous support before, during, and after your treatment in Turkey, ensuring you feel informed and cared for.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Focus on Quality and Trust: AZPO Health is committed to connecting you with healthcare providers who adhere to high medical standards and prioritize patient safety and well-being.</p>
+</li>
+</ul>
+<h3 dir="ltr">Real Stories, Real Hope: Patient Testimonials</h3>
+<p dir="ltr">While each individual's fertility journey is unique, hearing from others who have undergone frozen embryo transfer in Turkey can offer encouragement and hope.</p>
+<p dir="ltr">Sarah from the UK: "After several unsuccessful fresh IVF cycles at home, we were feeling disheartened. A friend recommended looking into fertility treatment in Turkey, and we found AZPO Health. They connected us with a wonderful clinic, and the FET process was so much smoother. We are now overjoyed to be expecting our first child! The care we received was excellent, and the cost was significantly lower than what we had paid previously. Thank you, AZPO Health, for making our dream come true."</p>
+<p dir="ltr">Mark and Lisa from the USA: "We had a few good quality embryos left over from our initial IVF cycle. When we decided to try for a second child, FET in Turkey through AZPO Health seemed like a logical step. The entire experience was well-organized, and the medical team was fantastic. We were impressed by the professionalism and the advanced technology used. Our FET was successful, and we are now parents to two beautiful children. We highly recommend considering Turkey for fertility treatment."</p>
+<p dir="ltr">Aisha from Canada: "As a single woman pursuing motherhood, I felt overwhelmed by the options. AZPO Health provided me with clear information and connected me with a clinic in Turkey that had extensive experience with single mothers by choice. The FET process was carefully explained, and I felt supported throughout. The outcome was positive, and I am now a proud mother. I am so grateful to AZPO Health for their guidance and support."</p>
+<p><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Taking the Next Step Towards Your Dream</h3>
+<p dir="ltr">If you are considering frozen embryo transfer and are looking for high-quality, affordable care in a welcoming environment, Turkey could be the right destination for you. Let AZPO Health be your trusted partner in this important journey.</p>
+<p dir="ltr">We understand that making the decision to pursue fertility treatment abroad is a significant one. Our team is here to provide you with the information and support you need to feel confident and informed.</p>
+<p><strong id="docs-internal-guid-c87934ac-7fff-d93b-5158-ce83ff698906">Contact AZPO Health today for a free consultation and personalized quote. Take the first step towards realizing your dream of building a family. We are here to guide you towards a brighter future.</strong></p>`,
       },
       imgCover: subNestedKey === "fet-frozen-embryo-transfer" ? fet : null,
       subNestedKey: "fet-frozen-embryo-transfer",

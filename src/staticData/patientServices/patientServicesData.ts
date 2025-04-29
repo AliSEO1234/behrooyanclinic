@@ -1,15 +1,16 @@
-import pat1 from "@/assets/images/patient-services/pat1.jpg";
-import pat2 from "@/assets/images/patient-services/pat2.jpg";
-import pat3 from "@/assets/images/patient-services/pat3.jpg";
-import pat4 from "@/assets/images/patient-services/pat4.jpg";
-import pat5 from "@/assets/images/patient-services/pat5.jpg";
-import pat6 from "@/assets/images/patient-services/pat6.jpg";
-import pat7 from "@/assets/images/patient-services/pat7.jpg";
-import pat8 from "@/assets/images/patient-services/pat8.jpg";
-import pat9 from "@/assets/images/patient-services/pat9.jpg";
-import pat10 from "@/assets/images/patient-services/pat10.jpg";
-import pat11 from "@/assets/images/patient-services/pat11.jpg";
-import pat12 from "@/assets/images/patient-services/pat12.jpg";
+import pat1 from "@/assets/images/patient-services/patient1.png";
+import pat2 from "@/assets/images/patient-services/patientsub1.png";
+import pat3 from "@/assets/images/patient-services/patient2.png";
+import pat4 from "@/assets/images/patient-services/patientsub2.png";
+import pat5 from "@/assets/images/patient-services/patient3.png";
+import pat6 from "@/assets/images/patient-services/patientsub3.png";
+import pat7 from "@/assets/images/patient-services/patient4.png";
+import pat8 from "@/assets/images/patient-services/patientsub4.png";
+import pat9 from "@/assets/images/patient-services/patient5.png";
+import pat10 from "@/assets/images/patient-services/patientsub5.png";
+import pat11 from "@/assets/images/patient-services/patient6.png";
+import pat12 from "@/assets/images/patient-services/patientsub6.png";
+
 export const handlePatientServices = (locale: string) => {
   const patientServices = [
     {
@@ -24,7 +25,7 @@ export const handlePatientServices = (locale: string) => {
           : "We understand how important it is to prepare for your medical journey even before you leave home. That's why we offer convenient and informative online consultations with leading specialists. You’ll have the opportunity to discuss your plans, ask questions to doctors and medical consultants, and receive initial recommendations from the comfort of your home. This step helps you make informed decisions, plan your treatment, and better prepare for your trip. We’re always available to ensure you have full clarity about the treatment process, making your journey towards health as transparent and straightforward as possible.",
     },
     {
-      photos: [pat3, pat4],
+      photos: [pat4,pat3],
       label:
         locale === "ru"
           ? "Наша служба поддержки — это не просто помощь 24/7."
@@ -44,7 +45,7 @@ export const handlePatientServices = (locale: string) => {
           : "How about a big, soft bed? It’s well known that the most important aspect of any trip is where you will be staying. Carefully selected accommodation, tailored to your needs and budget, will make you feel at home throughout your treatment journey. No matter which city you’re in, we will ensure both comfort and a convenient location, offering exclusive conditions for an unforgettable travel experience.Your comfort is our priority!",
     },
     {
-      photos: [pat7, pat8],
+      photos: [pat8,pat7],
       label: locale === "ru" ? "Услуги трансфера" : "Transfer Services",
       desc:
         locale === "ru"
@@ -62,7 +63,7 @@ export const handlePatientServices = (locale: string) => {
       Trust us and focus on what matters most — your health. We will take care of everything else to make your journey comfortable and effortless.`,
     },
     {
-      photos: [pat11, pat12],
+      photos: [pat12,pat11],
       label:
         locale === "ru"
           ? "Индивидуальные экскурсии по городу"
