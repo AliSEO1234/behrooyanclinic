@@ -7,6 +7,7 @@ import PopForm from "@/components/popUpForm/popForm";
 import WhatsAppLink from "@/components/fixOptions/whatsappLink";
 import UpArrow from "@/components/fixOptions/upArrow";
 import { ToastContainer } from "react-toastify";
+import Script from "next/script";
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Azpo Health",
@@ -30,6 +31,20 @@ const RootLayout = async ({
   const { locale } = await params;
   return (
     <html lang={locale}>
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-WJ13ZVNGZJ"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WJ13ZVNGZJ');
+          `}
+        </Script>
+      </head>
       <body
         className={`${
           locale === "en" ? "font-inter" : "font-pt-sans"
