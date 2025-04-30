@@ -47,22 +47,22 @@ import gumgrafting from "@/assets/images/subnested/Gum Grafting.png";
 import lasergumtreatments from "@/assets/images/subnested/Periodontics.png";
 import oralsurgery from "@/assets/images/subnested/Oral Surgery.png";
 import bonegrafting from "@/assets/images/subnested/Bone Grafting.png";
-import glocama from "@/assets/images/subnested/Glaucoma.jpg";
-import intraocularImg from "@/assets/images/subnested/Intraocular.jpg";
+import glocama from "@/assets/images/subnested/Glaucoma treatment.png";
+import intraocularImg from "@/assets/images/subnested/Intraocular lens (IOL) implantation.png";
 import eyedesis from "@/assets/images/subCategory/Eye disease.jpg";
 import surgical from "@/assets/images/subCategory/Surgical.jpg";
-import diabetic from "@/assets/images/subCategory/Diabetic.jpg";
-import corneal from "@/assets/images/subnested/Corneal Transplant.jpg";
-import maleFertility from "@/assets/images/subnested/Male-Infertility.jpg";
+import diabetic from "@/assets/images/subnested/Diabetic retinopathy treatment.png";
+import corneal from "@/assets/images/subnested/Corneal transplantation.png";
+import maleFertility from "@/assets/images/subnested/Male Infertility.png";
 import asissfertility from "@/assets/images/subCategory/fertility assisted reproduction.jpg";
 import malesecual from "@/assets/images/subCategory/Male Sexual.jpg";
 import malesexual from "@/assets/images/subnested/Male sexual health issues.png";
 import peyroniesdisease from "@/assets/images/subnested/PeyronieDisease.png";
 import dyfunc from "@/assets/images/subnested/Erectile Dysfunction.png";
 import theregemed from "@/assets/images/subCategory/therapy Regenerative Medicine.jpg";
-import orthopedic from "@/assets/images/subnested/Orthopedic Stem Cell Therapy 1.jpg";
-import stemmen from "@/assets/images/subnested/Stem Cell men.jpg";
-import neurological from "@/assets/images/subnested/Neurological Stem Cell.jpg";
+import orthopedic from "@/assets/images/subnested/Orthopedic Stem Cell Therapy.png";
+import stemmen from "@/assets/images/subnested/Stem Cell Treatments for Men.png";
+import neurological from "@/assets/images/subnested/Neurological Stem Cell Therapy.png";
 import tipplasty from "@/assets/images/subnested/Tipplasty.png";
 import almondeye from "@/assets/images/subnested/almond.png";
 import facelift from "@/assets/images/subnested/Facelift.png";
@@ -71,21 +71,21 @@ import momymakeover from "@/assets/images/subnested/Mommy Makeover.png";
 import breastreduc from "@/assets/images/subnested/Breast reduction.png";
 import malebreastreduc from "@/assets/images/subnested/Male breast reduction (Gynecomastia treatment).png";
 import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg";
-import implant from "@/assets/images/subnested/Implant Treatment.png"
+import implant from "@/assets/images/subnested/Implant Treatment.png";
 
 import fillings from "@/assets/images/subnested/Fillings.png";
 import rotinecheckupscleaning from "@/assets/images/subnested/Routine Check-ups and Cleanings.png";
 import toothextraction from "@/assets/images/subnested/Tooth Extractions.png";
 import jawsurgery from "@/assets/images/subnested/Jaw Surgery.png";
-import cataract from "@/assets/images/subnested/Cataract-Treatment 1.jpg";
-import retinaldisease from "@/assets/images/subnested/Retinal-Disease-Treatment 1.jpg";
+import cataract from "@/assets/images/subnested/Cataract treatment.png";
+import retinaldisease from "@/assets/images/subnested/Retinal disease treatment.png";
 import xrays from "@/assets/images/subnested/Dental X-rays.png";
-import fet from "@/assets/images/subnested/Frozen Embryo Transfer (FET).jpg";
-import ivf from "@/assets/images/subnested/In Vitro Fertilization (IVF).jpg";
+import fet from "@/assets/images/subnested/FET (Frozen Embryo Transfer).png";
+import ivf from "@/assets/images/subnested/IVF (In Vitro Fertilization).png";
 import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg";
 import smartlens from "@/assets/images/subnested/Smart lens.jpg";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.png";
-import dentalbonding from "@/assets/images/subnested/Dental Bonding.png"
+import dentalbonding from "@/assets/images/subnested/Dental Bonding.png";
 export const allSubCategory = [
   {
     img: hair,
@@ -447,7 +447,7 @@ export const allSubNestedCategory = [
   },
   {
     img: dentalbonding,
-    title: "Dental Bonding",  
+    title: "Dental Bonding",
     description:
       "Are you self-conscious about minor imperfections in your smile, such as chipped, cracked, stained, or unevenly spaced teeth? Imagine a quick, effective, and affordable solution that can transform your smile and boost your confidence. In Turkey, skilled dental professionals offer high-quality dental bonding procedures, and AZPO Health is here to connect you with the expertise you need for a brighter, more confident you.",
     categoryKey: "dental-treatments",
