@@ -43,7 +43,7 @@ import clearaligners from "@/assets/images/subnested/ClearAligners.png";
 import gumgrafting from "@/assets/images/subnested/Gum Grafting.png";
 import bonegrafting from "@/assets/images/subnested/Bone Grafting.png";
 import lasergumtreatments from "@/assets/images/subnested/Periodontics.png";
-import { bfPublic } from "./BFs/publicBFs";
+// import { bfPublic } from "./BFs/publicBFs";
 import { rainoplasty } from "./BFs/rhinoplastyNoseReshapingBFs";
 import glocama from "@/assets/images/subnested/Glaucoma treatment.png";
 import intraocularImg from "@/assets/images/subnested/Intraocular lens (IOL) implantation.png";
@@ -1683,7 +1683,7 @@ export const dataSubCategoryHandler = (
             ? "Метод FUE – это современный, безопасный и эффективный способ восстановления волос. Он подходит большинству пациентов, но успех зависит от выбора правильной клиники и соблюдения послепроцедурных рекомендаций."
             : "The FUE method is a modern, safe, and effective way to restore hair. It is suitable for most patients, but success depends on selecting the right clinic and adhering to post-procedure recommendations.",
       },
-      bfs: bfPublic,
+      bfs: bfList,
       contents: {
         title:
           locale === "ru"

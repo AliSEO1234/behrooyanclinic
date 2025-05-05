@@ -34,12 +34,15 @@ const Page = async ({ params }: PropsPageType) => {
   const bfRelations = handleBFRelation();
   const findSubnestedRelation = bfRelations.find((bf) => bf.path === subTreat);
   const isVersion2 = findSubnestedRelation?.isVersion2
+  const isVersion3 = findSubnestedRelation?.isVersion3
   const handleBfList = () => {
-    const basePath = `${isVersion2 ? "before_after_folder_2" : "before_after_folder"}/${findSubnestedRelation?.driveFolder}/${findSubnestedRelation?.sizeNameFolder}/`;
+    const basePath = `${isVersion2 ? "before_after_folder_2" : isVersion3 ? "before_after_folder_3" : "before_after_folder"}/${findSubnestedRelation?.driveFolder}${isVersion3 ? "/" : `/${findSubnestedRelation?.sizeNameFolder}/`}`;
+    
+    
     let bfLinkList: string[] | null = [];
     if (findSubnestedRelation?.images) {
       for (const bf of findSubnestedRelation!.images) {
-        const concatPath = basePath.concat(bf);        
+        const concatPath = basePath.concat(bf);
         bfLinkList.push(concatPath);
       }
     } else {
@@ -47,12 +50,15 @@ const Page = async ({ params }: PropsPageType) => {
     }
     return bfLinkList;
   };
+  // international-projects
   const bfCurrentLinks = handleBfList();
+  
   const fetchData = dataSubCategoryHandler(
     subTreat,
     locale,
     bfCurrentLinks ? bfCurrentLinks : null
   );
+  
   const tableOfContents = [
     {
       link: "patient-bf",
@@ -137,7 +143,7 @@ const Page = async ({ params }: PropsPageType) => {
           <CircleAnimate key={index} {...circle} />
         ))}
         {/* video */}
-        <section id="video" className="sub-nested-video-section">
+        <div id="video" className="sub-nested-video-section">
           <BorderSubNested
             label="Video"
             className="sub-nested-video-label"
@@ -154,10 +160,10 @@ const Page = async ({ params }: PropsPageType) => {
                 : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
             }
           />
-        </section>
+        </div>
         {/* benefits */}
         {fetchData?.benefits && (
-          <section id="advantages" className="sub-nested-advantages">
+          <div id="advantages" className="sub-nested-advantages">
             <div>
               <div>
                 <div className="w-full">
@@ -286,10 +292,10 @@ const Page = async ({ params }: PropsPageType) => {
                 </ul>
               </div>
             </div>
-          </section>
+          </div>
         )}
         <LeadForm className="my-10 relative z-[2]" />
-        <section className="mb-10 relative z-[2]">
+        <div className="mb-10 relative z-[2]">
           {fetchData?.posts && fetchData?.posts.length > 0 && (
             <PrePostLayout
               iconLabel={preicon}
@@ -304,10 +310,10 @@ const Page = async ({ params }: PropsPageType) => {
               position="pre"
             />
           )}
-        </section>
+        </div>
         {/*  Conclusion */}
         {fetchData?.conclusion && (
-          <section className="relative mb-10 s1280:mb-16 z-[2]">
+          <div className="relative mb-10 s1280:mb-16 z-[2]">
             <BorderSubNested
               label={fetchData?.conclusion.title || "Conclusion"}
               className="w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1512:mb-8"
@@ -316,11 +322,11 @@ const Page = async ({ params }: PropsPageType) => {
             <p className="font-light s1280:font-medium s1280:text-[16px] s1512:text-[18px] s1728:text-[20px] text-center s1280:px-32 s1512:px-44 s1600:px-56 s1728:px-64 text-[#474744] leading-[30px] z-[3]">
               {fetchData?.conclusion.desc}
             </p>
-          </section>
+          </div>
         )}
         {/* before && after */}
         {Boolean(bfCurrentLinks) && (
-          <section
+          <div
             id="patient-bf"
             className="mb-[24px] s1280:mb-20 relative z-[2]"
           >
@@ -351,11 +357,11 @@ const Page = async ({ params }: PropsPageType) => {
                 bfList={fetchData?.bfs || []}
               />
             </div>
-          </section>
+          </div>
         )}
         {/* faq */}
         {fetchData?.faqs && fetchData.faqs.length > 0 && (
-          <section className="mb-10 s1280:mb-16 relative z-[2]">
+          <div className="mb-10 s1280:mb-16 relative z-[2]">
             <BorderSubNested
               label="Frequently Asked Questions"
               className=" w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-10 s1512:mb-12"
@@ -384,10 +390,10 @@ const Page = async ({ params }: PropsPageType) => {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         )}
         {/* content */}
-        <section className="relative z-[2]" id="content">
+        <div className="relative z-[2]" id="content">
           <BorderSubNested
             label="Content"
             className=" w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-10 s1512:mb-12"
@@ -397,7 +403,7 @@ const Page = async ({ params }: PropsPageType) => {
             header={fetchData?.contents.title || ""}
             desc={fetchData?.contents.content || ""}
           />
-        </section>
+        </div>
       </section>
     </>
   );

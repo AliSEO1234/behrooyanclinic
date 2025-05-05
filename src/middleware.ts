@@ -8,9 +8,11 @@ export async function middleware(req: NextRequest) {
   if (
     path.startsWith("/videos") ||
     path.startsWith("/images") ||
+    // path.includes("/en/sitemap.xml") ||
     path === "/health.ico" || 
     path === "/favicon.ico" || 
-    path === "/robots.txt"
+    path === "/robots.txt"||
+    path === "/sitemap.xml"
   ) {
     return NextResponse.next();
   }

@@ -2,6 +2,10 @@
 
 # dependencies
 /node_modules
+/src/app/api/sitemap
+/public/sitemap.xml
+/public/en
+/public/rob.txt
 /.pnp
 .pnp.*
 .yarn/*
