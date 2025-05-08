@@ -29,7 +29,7 @@ import breatSubCategory from "@/assets/images/subCategory/Breast augmentation (i
 // genital
 import genital from "@/assets/images/treatment/Genital Aesthetic.png";
 import labiaplastyGenital from "@/assets/images/subnested/Labiaplasty _ Barbie Look.png";
-import penileGenital from "@/assets/images/subnested/penile.jpg";
+import penileGenital from "@/assets/images/subnested/PeyronieDisease.png";
 import implantology from "@/assets/images/subCategory/implantology.png";
 import den64 from "@/assets/images/subnested/All on 6 Dental Implants.png";
 import destigeneral from "@/assets/images/subCategory/General Dentistry.png";
@@ -70,7 +70,7 @@ import bichecktomy from "@/assets/images/subnested/Bichectomy.png";
 import momymakeover from "@/assets/images/subnested/Mommy Makeover.png";
 import breastreduc from "@/assets/images/subnested/Breast reduction.png";
 import malebreastreduc from "@/assets/images/subnested/Male breast reduction (Gynecomastia treatment).png";
-import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg";
+import veginal from "@/assets/images/subnested/Vaginal Tightening.png";
 import implant from "@/assets/images/subnested/Implant Treatment.png";
 
 import fillings from "@/assets/images/subnested/Fillings.png";

@@ -30,7 +30,7 @@ import Mesotherapy from "@/assets/images/subnested/Mesotherapy for Hair.png";
 import Moustache from "@/assets/images/subnested/Moustache Transplant.png";
 import labiaplastyGenital from "@/assets/images/subnested/Labiaplasty _ Barbie Look.png";
 // import genital3d from "@/assets/images/subCategory/genital3d.png";
-import penileGenital from "@/assets/images/subnested/penile.jpg";
+import penileGenital from "@/assets/images/subnested/PeyronieDisease.png";
 import den64 from "@/assets/images/subnested/All on 6 Dental Implants.png";
 import rootcanal from "@/assets/images/subnested/Root Canal Therapy.png";
 import laminateveneers from "@/assets/images/subnested/Laminate Veneers.png";
@@ -62,7 +62,7 @@ import bichecktomy from "@/assets/images/subnested/Bichectomy.png";
 import momymakeover from "@/assets/images/subnested/Mommy Makeover.png";
 import breastreduc from "@/assets/images/subnested/Breast reduction.png";
 import malebreastreduc from "@/assets/images/subnested/Male breast reduction (Gynecomastia treatment).png";
-import veginal from "@/assets/images/subnested/Vaginal Tightening.jpg";
+import veginal from "@/assets/images/subnested/Vaginal Tightening.png";
 import implant from "@/assets/images/subnested/Implant Treatment.png";
 import peyroniesdisease from "@/assets/images/subnested/PeyronieDisease.png";
 import fillings from "@/assets/images/subnested/Fillings.png";
@@ -4003,7 +4003,7 @@ export const dataSubCategoryHandler = (
             desc:
               locale === "ru"
                 ? ""
-                : "Consultation: The surgeon reviews goals like skin removal, fat correction, or eyelid enhancement. Upper Blepharoplasty: Lifts sagging eyelids with hidden incisions. Lower Blepharoplasty: Removes excess fat/skin, sometimes addressing pigmentation or laxity.Recovery: Healing takes weeks, aided by bandages or strips. Please change the sequence of “Benefits” with “For Whom”",
+                : "Consultation: The surgeon reviews goals like skin removal, fat correction, or eyelid enhancement. Upper Blepharoplasty: Lifts sagging eyelids with hidden incisions. Lower Blepharoplasty: Removes excess fat/skin, sometimes addressing pigmentation or laxity.Recovery: Healing takes weeks, aided by bandages or strips.",
           },
           {
             header: locale === "ru" ? "Как это работает" : "For Whom",
