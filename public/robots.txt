@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /*?*
 Disallow: /ru
 Host: azpohealth.com
-Sitemap: https://trust-united.com/sitemap.xml
+Sitemap: https://azpohealth.com/sitemap.xml
