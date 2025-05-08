@@ -606,7 +606,7 @@ const Home = async ({
           >
             <div className="grid grid-cols-12 gap-y-10 px-2 s1280:gap-y-0 s1280:gap-x-10 s1600:gap-x-[55px] s1728:gap-x-[40px] s1920:gap-x-[75px] z-[3]">
               <div className="col-span-12 s1280:col-span-3 s1512:col-span-4 relative">
-                <div className="w-full h-[289px] s1280:h-full rounded-tr-[50px] rounded-bl-[50px] overflow-hidden">
+                <div className="w-full h-[289px] s1280:h-[546px] s1512:h-[510px] s1728:h-[540px] rounded-tr-[50px] rounded-bl-[50px] overflow-hidden">
                   <ImgFetcher
                     className="object-cover"
                     src={locale === "ru" ? whyus : whyusen}
