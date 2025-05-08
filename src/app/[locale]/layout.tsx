@@ -8,19 +8,27 @@ import WhatsAppLink from "@/components/fixOptions/whatsappLink";
 import UpArrow from "@/components/fixOptions/upArrow";
 import { ToastContainer } from "react-toastify";
 import Script from "next/script";
+import { headers } from "next/headers";
 export const dynamic = "force-dynamic";
-export const metadata: Metadata = {
-  title: "Azpo Health",
-  description: "Health with Azpo",
-  icons: {
-    icon: "/health.ico",
-  },
-  robots: {
-    index: false,
-    follow: false,
-  },
+type Props = {
+  params: Promise<{ locale: string }>;
 };
-
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const headerRequest = await headers();
+  const host = headerRequest.get("host");
+  return {
+    title: "Azpo Health",
+    description: "Health with Azpo",
+    alternates: {
+      canonical: `https://${host}/${locale}`,
+    },
+    robots: {
+      index: locale === "en" ? true : false,
+      follow: locale === "en" ? true : false,
+    },
+  };
+}
 const RootLayout = async ({
   children,
   params,
