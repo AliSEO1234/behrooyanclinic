@@ -9,12 +9,41 @@ import Sidebar from "@/layoutes/sidebar/sidebar";
 import TreatCard from "@/features/treatment/treatCard";
 import { categoryDataHandler } from "@/staticData/subCategoryList";
 import SubContent from "@/components/shortLongDesc";
+import { Metadata } from "next";
+import { titleCategorySeoHandler } from "@/staticData/seoDataList";
+import { headers } from "next/headers";
 type PropsPageType = {
   params: Promise<{ category: string; locale: string }>;
 };
+type Props = {
+  params: Promise<{ category: string; locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { category, locale } = await params;
+  const headerRequest = await headers();
+  const host = headerRequest.get("host");
+  const categoriesSEO = titleCategorySeoHandler(locale);
+  const findCategory = categoriesSEO.find(
+    (cat) => cat.path === category.toString()
+  );
+  const currentTitle = findCategory?.title || "Azpo Health";
+  const currentMeta = findCategory?.meta || "Azpo Health";
+  return {
+    title: currentTitle,
+    description: currentMeta,
+    alternates: {
+      canonical: `https://${host}/${locale}/medicaltourism/${findCategory?.path}`,
+    },
+    robots: {
+      index: locale === "en" ? true : false,
+      follow: locale === "en" ? true : false,
+    },
+  };
+}
 const Page = async ({ params }: PropsPageType) => {
-  const { category, locale } = await params;  
-  const fetchData = categoryDataHandler(category, locale);  
+  const { category, locale } = await params;
+  const fetchData = categoryDataHandler(category, locale);
   return (
     <div className="bg-[#FCFCFC]">
       <div className="grid grid-cols-12 gap-y-5 s1280:gap-y-0 mt-16 s1512:mt-20 ps-[10px] s430:ps-5 pt-10 s1280:ps-[71px] s1512:ps-[79px] s1600:ps-[85px] s1728:ps-[100px] s1920:ps-[131px] rounded-b-[40px] shadow-[0px_19px_30px_-25px_#0000001C] overflow-hidden mb-10 s1280:mb-20 pb-5 s1280:pb-0 s1280:h-[520px] s1512:h-[620px] s1728:h-[750px]">
@@ -33,7 +62,7 @@ const Page = async ({ params }: PropsPageType) => {
         <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 s1600:col-span-7 s1920:col-span-6 relative flex-right z-[2]">
           {/* text */}
           <h1 className="s1280:hidden line-clamp-2 absolute top-0 left-0 font-bold text-[30px] text-[#00979A] w-1/2">
-          {fetchData?.title}
+            {fetchData?.title}
           </h1>
           {/* phone */}
           <div className="s1280:hidden w-[200px] h-[500px]">
@@ -48,7 +77,12 @@ const Page = async ({ params }: PropsPageType) => {
             <ImgFetcher width={3000} height={3000} src={bgCate} />
           </div>
           <div className="w-[320px] h-[320px] s1280:w-[404px] s1280:h-[404px] s1512:w-[487px] s1512:h-[473px] s1600:w-[473px] s1600:h-[473px] s1728:w-[503px] s1728:h-[503px] s1920:w-[578px] s1920:h-[578px] absolute top-1/2 s1280:top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <ImgFetcher className="object-cover" width={3000} height={3000} src={fetchData?.imgCover || eye} />
+            <ImgFetcher
+              className="object-cover"
+              width={3000}
+              height={3000}
+              src={fetchData?.imgCover || eye}
+            />
           </div>
         </div>
       </div>

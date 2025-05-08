@@ -43,9 +43,10 @@ import CircleAnimate from "@/components/circleAnimate";
 import LeadForm from "@/components/leadForm";
 import DialogPatientSpeakVideo from "@/components/dialogPatientSpeakVideo";
 import { handlePatient } from "@/staticData/patientContent";
-import our1 from "@/assets/images/our1.png"
-import our2 from "@/assets/images/our2.png"
-import whyus from "@/assets/images/whychooseus.png"
+import our1 from "@/assets/images/our1.png";
+import our2 from "@/assets/images/our2.png";
+import whyus from "@/assets/images/whychooseus.png";
+import whyusen from "@/assets/images/whychooseusen.jpg";
 const Home = async ({
   params,
 }: {
@@ -168,7 +169,7 @@ const Home = async ({
       topValue: 5200,
     },
   ];
-  const patientContents = handlePatient(locale)
+  const patientContents = handlePatient(locale);
   return (
     <>
       <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]">
@@ -368,12 +369,22 @@ const Home = async ({
             <div className="col-span-12 s1280:col-span-6 relative">
               <div className="helping__image-container--top flex items-center justify-center s1280:justify-end">
                 <div className="w-[320px] h-[206px] s390:w-[336px] s412:w-[366px] s1280:w-[366px] s1280:h-[206px] s1512:w-[439px] s1512:h-[247px] s1920:w-[528px] s1920:h-[297px] rounded-[40px] overflow-hidden">
-                  <ImgFetcher className="object-cover" width={1500} height={1500} src={our1} />
+                  <ImgFetcher
+                    className="object-cover"
+                    width={1500}
+                    height={1500}
+                    src={our1}
+                  />
                 </div>
               </div>
               <div className="helping__image-container--bottom hidden s1280:flex-left s1280:-mt-20">
                 <div className="s1280:w-[345px] s1280:h-[405px] s1512:w-[433px] s1512:h-[438px] s1600:w-[454px] s1600:h-[460px] s1728:w-[480px] s1728:h-[487px] s1920:w-[474px] s1920:h-[437px] rounded-[40px] overflow-hidden ">
-                  <ImgFetcher className="object-cover" width={1500} height={1500} src={our2} />
+                  <ImgFetcher
+                    className="object-cover"
+                    width={1500}
+                    height={1500}
+                    src={our2}
+                  />
                 </div>
               </div>
               {/* consultation */}
@@ -598,7 +609,7 @@ const Home = async ({
                 <div className="w-full h-[289px] s1280:h-full rounded-tr-[50px] rounded-bl-[50px] overflow-hidden">
                   <ImgFetcher
                     className="object-cover"
-                    src={whyus}
+                    src={locale === "ru" ? whyus : whyusen}
                     width={1500}
                     height={1500}
                   />

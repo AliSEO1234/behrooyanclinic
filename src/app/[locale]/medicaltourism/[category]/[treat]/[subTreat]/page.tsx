@@ -26,19 +26,61 @@ import preicon from "@/assets/images/pre.svg";
 import PrePostLayout from "@/layoutes/prePostLayout/presPostLayout";
 import SubTreatAdvantagesIntersectionObserver from "@/components/scripts/sub-treat-advantages-intersection.observer";
 import CircleAnimate from "@/components/circleAnimate";
+import { Metadata } from "next";
+import { headers } from "next/headers";
+import { titleSubNestedCategorySeoHandler } from "@/staticData/seoDataList";
 type PropsPageType = {
   params: Promise<{ treat: string; subTreat: string; locale: string }>;
 };
+type Props = {
+  params: Promise<{
+    category: string;
+    treat: string;
+    subTreat: string;
+    locale: string;
+  }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { category, treat,subTreat , locale } = await params;
+  const headerRequest = await headers();
+  const host = headerRequest.get("host");
+  const categoriesSEO = titleSubNestedCategorySeoHandler(locale);
+  const findSubNestedCategory = categoriesSEO.find(
+    (cat) => cat.path === subTreat.toString()
+  );
+
+  const currentTitle = findSubNestedCategory?.title || "Azpo Health";
+  const currentMeta = findSubNestedCategory?.meta || "Azpo Health";
+  return {
+    title: currentTitle,
+    description: currentMeta,
+    alternates: {
+      canonical: `https://${host}/${locale}/medicaltourism/${category}/${treat}/${findSubNestedCategory?.path}`,
+    },
+    robots: {
+      index: locale === "en" ? true : false,
+      follow: locale === "en" ? true : false,
+    },
+  };
+}
 const Page = async ({ params }: PropsPageType) => {
   const { subTreat, locale, treat } = await params;
   const bfRelations = handleBFRelation();
   const findSubnestedRelation = bfRelations.find((bf) => bf.path === subTreat);
-  const isVersion2 = findSubnestedRelation?.isVersion2
-  const isVersion3 = findSubnestedRelation?.isVersion3
+  const isVersion2 = findSubnestedRelation?.isVersion2;
+  const isVersion3 = findSubnestedRelation?.isVersion3;
   const handleBfList = () => {
-    const basePath = `${isVersion2 ? "before_after_folder_2" : isVersion3 ? "before_after_folder_3" : "before_after_folder"}/${findSubnestedRelation?.driveFolder}${isVersion3 ? "/" : `/${findSubnestedRelation?.sizeNameFolder}/`}`;
-    
-    
+    const basePath = `${
+      isVersion2
+        ? "before_after_folder_2"
+        : isVersion3
+        ? "before_after_folder_3"
+        : "before_after_folder"
+    }/${findSubnestedRelation?.driveFolder}${
+      isVersion3 ? "/" : `/${findSubnestedRelation?.sizeNameFolder}/`
+    }`;
+
     let bfLinkList: string[] | null = [];
     if (findSubnestedRelation?.images) {
       for (const bf of findSubnestedRelation!.images) {
@@ -52,13 +94,13 @@ const Page = async ({ params }: PropsPageType) => {
   };
   // international-projects
   const bfCurrentLinks = handleBfList();
-  
+
   const fetchData = dataSubCategoryHandler(
     subTreat,
     locale,
     bfCurrentLinks ? bfCurrentLinks : null
   );
-  
+
   const tableOfContents = [
     {
       link: "patient-bf",
@@ -101,7 +143,7 @@ const Page = async ({ params }: PropsPageType) => {
       topValue: 2200,
     },
   ];
-  
+
   return (
     <>
       <section className="sub-nested-home-first-section">
@@ -326,10 +368,7 @@ const Page = async ({ params }: PropsPageType) => {
         )}
         {/* before && after */}
         {Boolean(bfCurrentLinks) && (
-          <div
-            id="patient-bf"
-            className="mb-[24px] s1280:mb-20 relative z-[2]"
-          >
+          <div id="patient-bf" className="mb-[24px] s1280:mb-20 relative z-[2]">
             <div className="font-bold flex-left relative w-fit mb-5">
               <h2 className="s1280:text-[48px]">
                 {locale === "ru" ? "До" : "Before"}

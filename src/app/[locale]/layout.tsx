@@ -32,6 +32,10 @@ const RootLayout = async ({
   return (
     <html lang={locale}>
       <head>
+        <meta
+          name="google-site-verification"
+          content="m7Y1gxqGqvxUM10l6dzuqSM8FlrtbhYUdzjGuUjgkz0"
+        />
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-WJ13ZVNGZJ"

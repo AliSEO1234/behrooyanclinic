@@ -6,9 +6,29 @@ import {
   handlePatientServices,
 } from "@/staticData/patientServices/patientServicesData";
 import PatientServicCard from "@/components/patientServices/patientServicCard";
+import { Metadata } from "next";
+import { headers } from "next/headers";
 type PatientServicesType = {
   params: Promise<{ locale: string }>;
 };
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const headerRequest = await headers();
+  const host = headerRequest.get("host");
+  return {
+    title : "Patient Services Azpo",
+    alternates: {
+      canonical: `https://${host}/${locale}/patient-services`,
+    },
+    robots: {
+      index: locale === "en" ? true : false,
+      follow: locale === "en" ? true : false,
+    },
+  };
+}
 const PatientServices = async ({ params }: PatientServicesType) => {
   const { locale } = await params;
   const patientServices = handlePatientServices(locale);

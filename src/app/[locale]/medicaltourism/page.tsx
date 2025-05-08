@@ -10,6 +10,25 @@ import ServiceSlider from "@/features/services/serviceSlider/serviceSlider";
 import SubContent from "@/components/shortLongDesc";
 import { medicalTourismContent } from "@/staticData/medicalTourismContent";
 import handleServices from "@/staticData/services/handleServices";
+import { Metadata } from "next";
+import { headers } from "next/headers";
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const headerRequest = await headers();
+  const host = headerRequest.get("host");
+  return {
+    alternates: {
+      canonical: `https://${host}/${locale}/medicaltourism`,
+    },
+    robots: {
+      index: locale === "en" ? true : false,
+      follow: locale === "en" ? true : false,
+    },
+  };
+}
 const Treatments = async ({
   params,
 }: {

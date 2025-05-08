@@ -4,6 +4,25 @@ import pres from "@/assets/images/clinics/pres.png";
 import ImgFetcher from "@/components/imgFetcher";
 import { clinicsData } from "@/staticData/clinics/clinicsData";
 import ClinicCard from "@/components/clinics/clinicCard";
+import { Metadata } from "next";
+import { headers } from "next/headers";
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const headerRequest = await headers();
+  const host = headerRequest.get("host");
+  return {
+    alternates: {
+      canonical: `https://${host}/${locale}/clinics`,
+    },
+    robots: {
+      index: locale === "en" ? true : false,
+      follow: locale === "en" ? true : false,
+    },
+  };
+}
 const Clinics = () => {
   return (
     <>

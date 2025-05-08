@@ -2,7 +2,7 @@
 import ImgFetcher from "@/components/imgFetcher";
 import { ServiceCardType } from "@/types/services/service";
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 const ServiceCard = ({
   className,
   title,
@@ -13,7 +13,6 @@ const ServiceCard = ({
   linkStyle,
   linkService,
 }: ServiceCardType) => {
-  const router = useRouter();
   const locale = useLocale();
   return (
     <div
@@ -52,16 +51,14 @@ const ServiceCard = ({
         </p>
       </div>
       <div className="flex-cen px-4">
-        <button
-          onClick={() =>
-            router.push(`/${locale}/medicaltourism/${linkService}`)
-          }
-          className={` bg-[#00979a] hover:bg-[#007A7D] anm text-white font-bold rounded-[40px] h-[48px] w-[156px] drop-shadow-[0px_4px_4px_#00000040] ${locale === "ru" ? "w-full" : ""} ${
+        <Link
+        href={`/${locale}/medicaltourism/${linkService}`}
+          className={`flex-cen bg-[#00979a] hover:bg-[#007A7D] anm text-white font-bold rounded-[40px] h-[48px] w-[156px] drop-shadow-[0px_4px_4px_#00000040] ${locale === "ru" ? "w-full" : ""} ${
             linkStyle ? linkStyle : linkStyle
           }`}
         >
           {locale === "ru" ? "Посмотреть услуги" : "View services"}
-        </button>
+        </Link>
       </div>
     </div>
   );

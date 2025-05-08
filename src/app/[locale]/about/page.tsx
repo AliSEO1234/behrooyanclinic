@@ -3,7 +3,27 @@ import AboutTab from "@/components/about/aboutTab";
 import OurBranches from "@/components/about/ourBranches";
 import OurTeam from "@/components/about/ourTeam";
 import { AboutPageType } from "@/types/about/aboutPageType";
+import { Metadata } from "next";
+import { headers } from "next/headers";
 
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const headerRequest = await headers();
+  const host = headerRequest.get("host");
+  return {
+    title: "About Us Azpo",
+    alternates: {
+      canonical: `https://${host}/${locale}/about`,
+    },
+    robots: {
+      index: locale === "en" ? true : false,
+      follow: locale === "en" ? true : false,
+    },
+  };
+}
 const Page = async ({params}:AboutPageType) => {
   const {locale} = await params
   return (

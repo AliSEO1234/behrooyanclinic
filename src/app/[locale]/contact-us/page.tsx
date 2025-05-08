@@ -1,9 +1,25 @@
 import BranchContactCard from "@/components/contactus/branchContactCard";
 import ContactForm from "@/components/contactus/contactForm";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Azpo Contact us",
+import { headers } from "next/headers";
+type Props = {
+  params: Promise<{ locale: string }>;
 };
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const headerRequest = await headers();
+  const host = headerRequest.get("host");
+  return {
+    title: "Contact Us Azpo",
+    alternates: {
+      canonical: `https://${host}/${locale}/contact-us`,
+    },
+    robots: {
+      index: locale === "en" ? true : false,
+      follow: locale === "en" ? true : false,
+    },
+  };
+}
 const ContactUs = async ({
   params,
 }: {

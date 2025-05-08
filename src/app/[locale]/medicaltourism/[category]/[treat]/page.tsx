@@ -11,9 +11,39 @@ import TreatCard from "@/features/treatment/treatCard";
 import eye1 from "@/assets/images/treatment/eye1.jpg";
 import SubContent from "@/components/shortLongDesc";
 import { subCategoryHandler } from "@/staticData/subCategoryList";
+import { Metadata } from "next";
+import { headers } from "next/headers";
+import { titleSubCategorySeoHandler } from "@/staticData/seoDataList";
 type PropsPageType = {
   params: Promise<{ category: string; treat: string; locale: string }>;
 };
+type Props = {
+  params: Promise<{ category: string; treat: string; locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { category, treat, locale } = await params;
+  const headerRequest = await headers();
+  const host = headerRequest.get("host");
+  const categoriesSEO = titleSubCategorySeoHandler(locale);
+  const findSubCategory = categoriesSEO.find(
+    (cat) => cat.path === treat.toString()
+  );
+
+  const currentTitle = findSubCategory?.title || "Azpo Health";
+  const currentMeta = findSubCategory?.meta || "Azpo Health";
+  return {
+    title: currentTitle,
+    description: currentMeta,
+    alternates: {
+      canonical: `https://${host}/${locale}/medicaltourism/${category}/${findSubCategory?.path}`,
+    },
+    robots: {
+      index: locale === "en" ? true : false,
+      follow: locale === "en" ? true : false,
+    },
+  };
+}
 const Page = async ({ params }: PropsPageType) => {
   const { treat, locale, category } = await params;
   const fetchData = subCategoryHandler(category, treat, locale);
@@ -58,7 +88,7 @@ const Page = async ({ params }: PropsPageType) => {
         <div className="order-1 s1280:order-2 col-span-12 s1280:col-span-6 s1600:col-span-7 s1728:col-span-6 s1920:col-span-6 relative flex-right z-[2]">
           {/* text */}
           <h1 className="s1280:hidden line-clamp-2 absolute top-0 left-0 font-bold text-[30px] text-[#00979A] w-1/2">
-          {fetchData?.title}
+            {fetchData?.title}
           </h1>
           {/* phone */}
           <div className="s1280:hidden w-[200px] h-[500px]">
