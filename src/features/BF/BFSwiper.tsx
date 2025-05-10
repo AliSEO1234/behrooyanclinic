@@ -14,7 +14,7 @@ const BFSwiper = ({
   dynamic: boolean;
 }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const fetchLinkImg = process.env.NEXT_PUBLIC_IMAGE_ADDRESS;
+  const fetchLinkImg = "https://azpohealth.com/api/files/content-images/";
   
   return (
     <Swiper
