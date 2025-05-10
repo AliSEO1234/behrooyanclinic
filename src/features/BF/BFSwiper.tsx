@@ -45,6 +45,7 @@ const BFSwiper = ({
             <ImgFetcher
               width={3000}
               height={3000}
+              unoptimized
               src={dynamic ? `${fetchLinkImg}${src}` : src}
             />
           </SwiperSlide>
