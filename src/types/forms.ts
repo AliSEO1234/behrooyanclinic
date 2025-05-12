@@ -14,6 +14,7 @@ export type PopFormType = {
   treatment: string;
   phone: string;
   email  :string
+  token : string
 };
 export type SideBarType = {
   full_name : string

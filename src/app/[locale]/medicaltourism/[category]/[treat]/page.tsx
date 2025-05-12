@@ -116,8 +116,8 @@ const Page = async ({ params }: PropsPageType) => {
                 showLogo={false}
                 className="w-[300px] h-[170px] s1280:w-[684px] s1280:h-[385px] s1512:w-[798px] s1512:h-[450px] s1600:w-[836px] s1600:h-[470px] s1728:w-[885px] s1728:h-[500px]  s1920:w-[996px] s1920:h-[560px]"
                 src={
-                  fetchData?.videoPage
-                    ? fetchData.videoPage
+                  fetchData?.video
+                    ? fetchData.video
                     : locale === "ru"
                     ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
                     : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"

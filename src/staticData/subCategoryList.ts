@@ -353,7 +353,7 @@ export const subCategoryHandler = (
       subCategoryKey: "hair-transplantation",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      videoPage: "https://youtu.be/nFgBhpJvHQ8?si=XAn5N6gkJAzfUuxV",
+      video: "https://youtu.be/nFgBhpJvHQ8?si=XAn5N6gkJAzfUuxV",
       imgCover: tdAes,
     },
     {
@@ -830,7 +830,7 @@ export const subCategoryHandler = (
 <p>&nbsp;</p>
         `,
       },
-      videoPage: "https://www.youtube.com/watch?v=jdA_AMQgLOc",
+      video: "https://youtu.be/4tNxEcepwEY?si=P_qXhP0pLP-FT4i4",
       subCategoryKey: "implantology",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
@@ -1307,6 +1307,7 @@ export const subCategoryHandler = (
         `,
       },
       subCategoryKey: "eye-disease-treatments",
+      video : "https://youtu.be/6DSuBLpRip8?si=_IG7f_9NGwIjb1HO",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
       imgCover: eye3d,
@@ -1354,6 +1355,7 @@ export const subCategoryHandler = (
       },
       subCategoryKey: "surgical-implant-procedures",
       categoryKey: findCategory,
+      video: "https://youtu.be/6DSuBLpRip8?si=zOQbwTN2xgGXJipi",
       subNestedList: findSubNestedList,
       imgCover: eye3d,
     },
@@ -8159,6 +8161,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
 <p dir="ltr">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your full arch restoration needs, answer your questions, and help you plan your journey to a renewed and confident smile with 4 Dental Implants in turkey or 6 Dental-Implants in turkey through AZPO Health. Your transformation starts now!</p>
 <p>&nbsp;</p>`,
       },
+      video:"https://youtu.be/4tNxEcepwEY?si=8WLzBdNz-VF99PUf",
       imgCover: subNestedKey === "6-4-dental-implants" ? den64 : null,
       subNestedKey: "6-4-dental-implants",
     },

@@ -11,9 +11,10 @@ import { options } from "@/staticData/optionsForm";
 import CountryCode from "../forms/countryCode";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { PopFormType } from "@/types/forms";
-import { sendFormFunc } from "@/server-APIs/formAPI";
 import { toast } from "react-toastify";
 import { usePathname } from "next/navigation";
+import { sendFormAction } from "@/actions/formAction";
+// import axios from "axios";
 const PopForm = () => {
   const pathname = usePathname();
   const { handleSubmit, register, setValue, watch, setError, reset } =
@@ -38,13 +39,26 @@ const PopForm = () => {
     inputValue = inputValue.replace(/[^0-9+]/g, "");
     setValue("phone", inputValue);
   };
+  // useEffect(() => {
+  //   const fetchToken = async () => {
+  //     const host =
+  //       process.env.NEXT_PUBLIC_FORM_TOKEN_HOST || "https://azpohealth.com";
+  //     const getToken = await axios.get(
+  //       `${host}/api-front/form/token-generator`
+  //     );
+  //     setValue("token" , getToken.data)
+  //   };
+  //   fetchToken();
+  // }, [setValue]);
   const [loading, setLoading] = useState<boolean>(false);
   const onSubmit: SubmitHandler<PopFormType> = async ({
     email,
     full_name,
     phone,
     treatment,
+    token,
   }) => {
+    if(!token) return
     setLoading(true);
     if (isNaN(+phone)) {
       setError("phone", { type: "validate", message: "The number is wrong." });
@@ -58,14 +72,13 @@ const PopForm = () => {
       setLoading(false);
       return;
     }
-    const response = await sendFormFunc({
+    const response = await sendFormAction({
       name: full_name,
-      phone: codes?.key+phone,
+      phone: codes?.key + phone,
       treatment,
       email,
       pageUrl: pathname,
     });
-
     if (response) {
       setLoading(false);
       setTimeout(() => {
@@ -74,7 +87,7 @@ const PopForm = () => {
       toast.success("Request sent successfully.");
     } else {
       setLoading(false);
-      toast.error("There was a problem sending the request.");
+      toast.error("A problem occurred. Please try again later.");
     }
     reset();
   };
@@ -171,6 +184,7 @@ const PopForm = () => {
               type="text"
             />
           </div>
+          {/* <input {...register("token")} type="hidden" /> */}
         </div>
         <div className="flex items-center s1280:justify-end">
           <button

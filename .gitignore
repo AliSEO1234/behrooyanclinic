@@ -2,8 +2,9 @@
 
 # dependencies
 /node_modules
-/src/app/api/sitemap
+/src/app/api-front/sitemap
 /public/en/sitemap.xml
+/public/sitemap.xml
 # /public/en
 # /public/rob.txt
 /.pnp

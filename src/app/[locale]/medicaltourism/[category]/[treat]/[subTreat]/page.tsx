@@ -42,7 +42,7 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { category, treat,subTreat , locale } = await params;
+  const { category, treat, subTreat, locale } = await params;
   const headerRequest = await headers();
   const host = headerRequest.get("host");
   const categoriesSEO = titleSubNestedCategorySeoHandler(locale);
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 const Page = async ({ params }: PropsPageType) => {
-  const { subTreat, locale, treat } = await params;
+  const { subTreat, locale } = await params;
   const bfRelations = handleBFRelation();
   const findSubnestedRelation = bfRelations.find((bf) => bf.path === subTreat);
   const isVersion2 = findSubnestedRelation?.isVersion2;
@@ -193,10 +193,8 @@ const Page = async ({ params }: PropsPageType) => {
           />
           <VideoTab
             videoSrc={
-              treat === "hair-transplantation"
-                ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
-                : fetchData?.video
-                ? "https://youtu.be/MI2Ed8Y_hnU?si=4IzIP-nXWpgQLjgf"
+              fetchData?.video
+                ? fetchData.video
                 : locale === "ru"
                 ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
                 : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
