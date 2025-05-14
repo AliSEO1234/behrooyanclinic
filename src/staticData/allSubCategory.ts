@@ -55,7 +55,7 @@ import diabetic from "@/assets/images/subnested/Diabetic retinopathy treatment.p
 import corneal from "@/assets/images/subnested/Corneal transplantation.png";
 import maleFertility from "@/assets/images/subnested/Male Infertility.png";
 import asissfertility from "@/assets/images/subCategory/fertility assisted reproduction.jpg";
-import malesecual from "@/assets/images/subCategory/Male Sexual.jpg";
+import malesecual from "@/assets/images/subnested/Male sexual health issues.png";
 import malesexual from "@/assets/images/subnested/Male sexual health issues.png";
 import peyroniesdisease from "@/assets/images/subnested/PeyronieDisease.png";
 import dyfunc from "@/assets/images/subnested/Erectile Dysfunction.png";
@@ -82,7 +82,7 @@ import retinaldisease from "@/assets/images/subnested/Retinal disease treatment.
 import xrays from "@/assets/images/subnested/Dental X-rays.png";
 import fet from "@/assets/images/subnested/FET (Frozen Embryo Transfer).png";
 import ivf from "@/assets/images/subnested/IVF (In Vitro Fertilization).png";
-import lasiksurgery from "@/assets/images/subnested/LASIK surgery.jpg";
+import lasiksurgery from "@/assets/images/subnested/LASIK surgery.png";
 import smartlens from "@/assets/images/subnested/Smart lens.jpg";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.png";
 import dentalbonding from "@/assets/images/subnested/Dental Bonding.png";
