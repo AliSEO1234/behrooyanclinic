@@ -75,7 +75,7 @@ import xrays from "@/assets/images/subnested/Dental X-rays.png";
 import fet from "@/assets/images/subnested/FET (Frozen Embryo Transfer).png";
 import ivf from "@/assets/images/subnested/IVF (In Vitro Fertilization).png";
 import lasiksurgery from "@/assets/images/subnested/LASIK surgery.png";
-import smartlens from "@/assets/images/subnested/Smart lens.jpg";
+import smartlens from "@/assets/images/subnested/Smart Lens in Turkey.png";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.png";
 import dentalbonding from "@/assets/images/subnested/Dental Bonding.png";
 export const categoryDataHandler = (key: string, locale: string) => {
