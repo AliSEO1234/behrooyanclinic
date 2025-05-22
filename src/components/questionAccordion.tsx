@@ -17,7 +17,7 @@ const QuestionAcco = ({ answer, item, question }: NewQuestionType) => {
       <AccordionTrigger className="hover:no-underline bg-white font-semibold text-[14px] s1280:text-[16px] s1512:text-[18px] s1728:text-[20px] text-[#474744] px-6">
         {question}
       </AccordionTrigger>
-      <AccordionContent className="bg-white py-4 px-6 mt-2 font-light text-[12px] s1280:text-[14px] s1512:text-[16px] s1728:text-[18px] text-[#333333] s1280:leading-[147%]">
+      <AccordionContent className="bg-white py-2 px-6 font-light text-[12px] s1280:text-[14px] s1512:text-[16px] s1728:text-[18px] text-[#333333] s1280:leading-[147%]">
         {answer}
       </AccordionContent>
     </AccordionItem>
