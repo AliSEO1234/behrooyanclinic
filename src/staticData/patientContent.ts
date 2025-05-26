@@ -16,6 +16,14 @@ export const handlePatient = (locale: string) => {
       service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
       serivceKey: "aesthetic",
       serviceIcon: dist1icon,
+      header: "Maliba",
+      desc: "Hair Transplant Journey",
+      video: "https://youtu.be/gsQ849f0x-I?si=sQ3nz3PbXQ7O3zFw",
+    },
+    {
+      service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
+      serivceKey: "aesthetic",
+      serviceIcon: dist1icon,
       header: "Timur's",
       desc: "Hair Transplant Journey",
       video: "https://www.youtube.com/shorts/CUzIi1Yyikg",
@@ -36,14 +44,7 @@ export const handlePatient = (locale: string) => {
     //   desc: "Hair Transplant Journey",
     //   video: "https://www.youtube.com/shorts/9Tb9jafBfAI",
     // },
-    {
-      service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
-      serivceKey: "aesthetic",
-      serviceIcon: dist1icon,
-      header: "Maliba",
-      desc: "Hair Transplant Journey",
-      video: "https://youtu.be/gsQ849f0x-I?si=sQ3nz3PbXQ7O3zFw",
-    },
+
     {
       service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
       serivceKey: "aesthetic",
@@ -53,5 +54,5 @@ export const handlePatient = (locale: string) => {
       video: "https://www.youtube.com/shorts/V9S1j1aldmM",
     },
   ];
-  return patientContents
+  return patientContents;
 };
