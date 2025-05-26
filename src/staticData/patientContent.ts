@@ -28,13 +28,21 @@ export const handlePatient = (locale: string) => {
       desc: "Hair Transplant Journey",
       video: "https://www.youtube.com/shorts/gvc__8i32cI",
     },
+    // {
+    //   service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
+    //   serivceKey: "aesthetic",
+    //   serviceIcon: dist1icon,
+    //   header: "Vadim's",
+    //   desc: "Hair Transplant Journey",
+    //   video: "https://www.youtube.com/shorts/9Tb9jafBfAI",
+    // },
     {
       service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
       serivceKey: "aesthetic",
       serviceIcon: dist1icon,
-      header: "Vadim's",
+      header: "Maliba",
       desc: "Hair Transplant Journey",
-      video: "https://www.youtube.com/shorts/9Tb9jafBfAI",
+      video: "https://youtu.be/gsQ849f0x-I?si=sQ3nz3PbXQ7O3zFw",
     },
     {
       service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",

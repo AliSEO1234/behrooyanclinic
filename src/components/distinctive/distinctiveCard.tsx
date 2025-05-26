@@ -17,7 +17,7 @@ const DistinctiveCard = ({
 }: DistinctiveType) => {
   const { setPatientSrcActive, setYoutubeShow } = useAppContext();
   const videoEl = useRef<HTMLVideoElement | null>(null);
-  const lastPart = video.substring(video.lastIndexOf("/") + 1);
+  const lastPart = video.substring(video.lastIndexOf("/") + 1).split("?")[0];
   const handlePlay = () => {
     setPatientSrcActive(video);
     setYoutubeShow(true);
@@ -53,7 +53,9 @@ const DistinctiveCard = ({
       }
     };
     getVideoInfo();
-  }, []);
+  }, [lastPart]);
+  console.log(videoInfo?.items?.[0]?.snippet?.thumbnails?.medium?.url);
+  
   return (
     <div
       className={`${
@@ -63,9 +65,7 @@ const DistinctiveCard = ({
       <div className="w-full h-full absolute top-0 left-0">
         <ImgFetcher
           className="object-cover"
-          src={
-            videoInfo ? videoInfo.items[0].snippet.thumbnails.medium.url : cover
-          }
+          src={videoInfo?.items?.[0]?.snippet?.thumbnails?.medium?.url || cover}
           width={900}
           height={900}
         />
