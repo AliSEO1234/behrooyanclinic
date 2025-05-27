@@ -1602,6 +1602,7 @@ export const subCategoryHandler = (
       subCategoryKey: "male-sexual-therapy",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
+      video : "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
       imgCover: stemcell,
     },
     // Stem Cell Therapy & Regenerative Medicine
@@ -1647,6 +1648,7 @@ export const subCategoryHandler = (
       },
       subCategoryKey: "therapy-regenerative-medicine",
       categoryKey: findCategory,
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
       subNestedList: findSubNestedList,
       imgCover: stemcell,
     },
@@ -12681,6 +12683,7 @@ AZPO Health - ведущая компания медицинского тури�
       imgCover:
         subNestedKey === "male-sexual-health-issues" ? malesexual : null,
       subNestedKey: "male-sexual-health-issues",
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
     },
     // Peyronies-Disease
     {
@@ -12890,6 +12893,7 @@ AZPO Health - ведущая компания медицинского тури�
       },
       imgCover: subNestedKey === "peyronies-disease" ? peyroniesdisease : null,
       subNestedKey: "peyronies-disease",
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
     },
     // Peyronies-Disease
     {
@@ -13132,6 +13136,7 @@ AZPO Health - ведущая компания медицинского тури�
       },
       imgCover: subNestedKey === "erectile-dysfunction-ed" ? dyfunc : null,
       subNestedKey: "erectile-dysfunction-ed",
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
     },
     // Stem-Cell-Treatments-for-Men
     {
@@ -13412,6 +13417,7 @@ AZPO Health - ведущая компания медицинского тури�
       },
       imgCover: subNestedKey === "stem-cell-for-men" ? stemmen : null,
       subNestedKey: "stem-cell-for-men",
+      video:"https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
     },
     // Orthopedic-Stem-Cell-Therapy
     {
@@ -13718,6 +13724,7 @@ AZPO Health - ведущая компания медицинского тури�
       imgCover:
         subNestedKey === "orthopedic-stem-cell-therapy" ? orthopedic : null,
       subNestedKey: "orthopedic-stem-cell-therapy",
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
     },
     // neu...-Stem-Cell-Therapy
     {
@@ -13943,6 +13950,7 @@ AZPO Health - ведущая компания медицинского тури�
       },
       imgCover: subNestedKey === "neurological-therapy" ? neurological : null,
       subNestedKey: "neurological-therapy",
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
     },
     // tipplasty
     {

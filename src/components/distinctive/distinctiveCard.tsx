@@ -53,9 +53,7 @@ const DistinctiveCard = ({
       }
     };
     getVideoInfo();
-  }, [lastPart]);
-  console.log(videoInfo?.items?.[0]?.snippet?.thumbnails?.medium?.url);
-  
+  }, [lastPart]);  
   return (
     <div
       className={`${

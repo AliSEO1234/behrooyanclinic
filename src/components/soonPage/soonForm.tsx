@@ -41,8 +41,6 @@ const SoonForm = () => {
     fullName,
     phone,
   }) => {
-    console.log(email, fullName, codes?.key + phone);
-
     setLoading(true);
     const response = await sendFormFunc({
       email,

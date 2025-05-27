@@ -13,11 +13,11 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { countryCodes } from "@/staticData/countryCodes";
+import { countries } from "@/staticData/countryCodes";
 
 const CountryCode = ({ setCodes, codes, className }: CountryCodeType) => {
-  const [countryList, setCountryList] = useState<CountrycodeItemType[]>(countryCodes);
-  const allCountries :CountrycodeItemType[]=countryCodes;
+  const [countryList, setCountryList] = useState<CountrycodeItemType[]>(countries);
+  const allCountries :CountrycodeItemType[]=countries;
   const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
 
 

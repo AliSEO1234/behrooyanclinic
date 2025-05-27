@@ -791,9 +791,7 @@ export const handleBFRelation = () => {
 
   return bfRelations;
 };
-// document.querySelectorAll(".KL4NAf").forEach(e=>console.log(e.innerHTML))
-// const elementsArray = Array.from(document.querySelectorAll(".KL4NAf")).map(e => e.innerHTML);
-// console.log(elementsArray);
+
 // 'fue-hair-transplant',
 // 'dhi-hair-transplant',
 // 'prp-hair-treatment',
