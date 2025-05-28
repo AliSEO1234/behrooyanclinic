@@ -787,6 +787,22 @@ export const handleBFRelation = () => {
         "Before After 88.png",
       ],
     },
+    {
+      isVersion3: true,
+      driveFolder: "IMPLANTOLOGY",
+      sizeNameFolder: "",
+      path: "implant-treatment",
+      images: [
+        "Before After 1317.png",
+        "Before After 1318.png",
+        "Before After 1338.png",
+        "Before After 1372.png",
+        "Before After 1382.png",
+        "Before After 1400.png",
+        "Before After 1417.png",
+        "Before After 1418.png",
+      ],
+    },
   ];
 
   return bfRelations;
