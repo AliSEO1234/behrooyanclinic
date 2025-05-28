@@ -1,19 +1,19 @@
 "use client";
 
+import { Skeleton } from "@/components/ui/skeleton";
 import { Suspense } from "react";
 
 const VideoPlayerCom = () => {
   return (
-    <div className="w-full h-full s1280:h-screen absolute top-0 left-0 z-[2]">
+    <div className="video-header">
       <Suspense
-      // fallback={}
+      fallback={<Skeleton className="w-full h-full" />}
       >
         <video
           autoPlay
           muted
           loop={true}
           playsInline
-          className="w-full object-cover h-full"
           src="/videos/videohealth1.mp4"
         />
       </Suspense>

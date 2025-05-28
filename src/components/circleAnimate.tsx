@@ -1,6 +1,7 @@
 "use client";
 
 import { CircleAnimateType } from "@/types/circleAnimate";
+import clsx from "clsx";
 import { motion } from "framer-motion";
 
 const CircleAnimate = ({ position, topValue, xValue }: CircleAnimateType) => {
@@ -28,10 +29,9 @@ const CircleAnimate = ({ position, topValue, xValue }: CircleAnimateType) => {
         repeat: Infinity,
         ease: "easeInOut",
       }}
-      className={`w-0 h-0 absolute top-[${topValue}px] 
-        ${
-          position === "left" ? `left-[${xValue}px]` : `right-[${xValue}px]`
-        } z-[1] shadow-[0_0_150px_150px_#00979a1f] backdrop-blur-[313px] bg-[#00979a1f]`}
+      className={clsx(
+        `circle-animate ${position === "left" ? `left-[${xValue}px]` : `right-[${xValue}px]`}`
+      )}
     />
   );
 };

@@ -63,13 +63,14 @@ const RootLayout = async ({
         } relative bg-[#FCFCFC]`}
       >
         <AppProvider>
-          <ToastContainer position="top-center" draggable />
-          {/* <PopForm /> */}
           <Navbar />
-          {/* <FixBoxs /> */}
-          <UpArrow />
-          <WhatsAppLink />
-          <main>{children}</main>
+          <main>
+            {/* <PopForm /> */}
+            <ToastContainer position="top-center" draggable />
+            <UpArrow />
+            <WhatsAppLink />
+            {children}
+          </main>
           <Footer />
         </AppProvider>
       </body>

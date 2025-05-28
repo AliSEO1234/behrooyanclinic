@@ -186,7 +186,7 @@ const Home = async ({
           </p>
           <div>
             <a href="#video-service" className="what-do-link">
-              <span >
+              <span>
                 <span>
                   <FaPlay />
                 </span>
@@ -203,25 +203,19 @@ const Home = async ({
         {circleList.map((circle, index) => (
           <CircleAnimate key={index} {...circle} />
         ))}
-        <div className="mb-10 s1280:mb-[60px] z-[2] relative">
+        <section className="mb-10 s1280:mb-[60px] z-[2] relative">
           <div className="flex-bet mb-5 s1280:mb-10">
             <div>
               <h2 className="font-semibold text-[20px] s1280:text-[36px] s1512:text-[40px] s1728:text-[48px] treat-shadow">
                 {locale === "ru" ? "Медицинские направления" : "Treatments"}
               </h2>
             </div>
-            {/* <div className="flex-right">
-                <SeeAll
-                  className="h-[40px] w-[89px] s1280:w-[170px] s1280:h-[54px] text-[14px] s1280:text-[18px]"
-                  link={`/${locale}/medicaltourism`}
-                />
-              </div> */}
           </div>
           {/* show service */}
           <ScrollServices />
-        </div>
+        </section>
         {/* Watch Your Health Journey */}
-        <div className="mb-10 s1280:mb-[60px] relative z-[2]">
+        <section className="mb-10 s1280:mb-[60px] relative z-[2]">
           <div className="flex-bet mb-5 s1280:mb-10">
             <hr
               className={`border-[1px] border-[#333333] border-dashed ${
@@ -258,9 +252,9 @@ const Home = async ({
               }
             />
           </div>
-        </div>
+        </section>
         {/* Your Treatment Roadmap */}
-        <div className="mb-10 s1280:mb-[80px] relative z-[2]">
+        <section className="mb-10 s1280:mb-[80px] relative z-[2]">
           {/* <RoadmapIntersectionObserver /> */}
           <div className="mb-2 s1280:mb-10">
             <div className="flex-bet mb-4">
@@ -359,10 +353,10 @@ const Home = async ({
               className="s1280:w-[650px] s1280:h-[150px] s1512:w-[872px] s1512:h-[185px] s1728:w-[55%] s1920:w-[50%]"
             />
           </div>
-        </div>
+        </section>
         {/* helping */}
         <HelpingIntersectionObserver />
-        <div className="mb-10 s1280:mb-[60px] bg-white shadow-[0_4px_15px_0_#0000001A] rounded-[40px] grid grid-cols-12 pt-4 pb-8 s1280:p-[27px] s1728:px-[30px] s1920:px-[70px] s1920:py-[38px] s1280:gap-x-[36px] s1512:gap-x-[42px] s1600:gap-x-[48px] relative z-[2]">
+        <section className="mb-10 s1280:mb-[60px] bg-white shadow-[0_4px_15px_0_#0000001A] rounded-[40px] grid grid-cols-12 pt-4 pb-8 s1280:p-[27px] s1728:px-[30px] s1920:px-[70px] s1920:py-[38px] s1280:gap-x-[36px] s1512:gap-x-[42px] s1600:gap-x-[48px] relative z-[2]">
           <div className="col-span-12 s1280:col-span-6 relative">
             <div className="helping__image-container--top flex items-center justify-center s1280:justify-end">
               <div className="w-[320px] h-[206px] s390:w-[336px] s412:w-[366px] s1280:w-[366px] s1280:h-[206px] s1512:w-[439px] s1512:h-[247px] s1920:w-[528px] s1920:h-[297px] rounded-[40px] overflow-hidden">
@@ -467,9 +461,9 @@ const Home = async ({
               </div>
             </div>
           </div>
-        </div>
+        </section>
         {/* We Appreciate Your Thoughts */}
-        <div className="mb-10 s1280:mb-[60px] relative z-[2]">
+        <section className="mb-10 s1280:mb-[60px] relative z-[2]">
           <div className="mb-10">
             <h2 className="[text-shadow:_0_4px_4px_#00000040] text-center text-[#474744] font-semibold text-[20px] s1280:text-[24px] s1512:text-[30px] s1600:text-[40px] s1728:text-[48px]">
               {locale === "ru"
@@ -481,9 +475,9 @@ const Home = async ({
             <FeedBackLayout feedbackList={feedBackOne} align="right" />
             <FeedBackLayout feedbackList={feedBackTwo} align="left" />
           </div>
-        </div>
+        </section>
         {/* information about Azpo Health */}
-        <div className="mb-10 s1280:mb-[200px] relative z-[2]">
+        <section className="mb-10 s1280:mb-[200px] relative z-[2]">
           <div className="flex-bet mb-[10px] s1280:mb-16">
             <hr className="w-[42%] s1280:w-[44%] s1512:w-[45%] s1600:w-[46%] h-0 border-[1px] border-dashed border-[#333333]" />
             <div className="w-[42px] h-[42px] s1280:w-[100px] s1280:h-[100px]">
@@ -592,7 +586,7 @@ const Home = async ({
               value="200"
             />
           </div>
-        </div>
+        </section>
         <LeadForm className="s1280:mb-20" />
         {/* Why choose us? */}
         <FillScrollLayout
@@ -838,8 +832,6 @@ const Home = async ({
           </div>
         </div>
       </section>
-      {/* <div className="bg-gradient-to-b from-[#FFFFFF] via-[#FFFFFF12] via-4% to-[#FCFCFC]"> */}
-      {/* </div> */}
     </>
   );
 };

@@ -1,22 +1,21 @@
 import { BlogCardType } from "@/types/blog/blogType";
 import ImgFetcher from "../imgFetcher";
 
-const BlogCard = ({
-  blogDate,
-  desc,
-  img,
-  title,
-  className,
-}: BlogCardType) => {
+const BlogCard = ({ blogDate, desc, img, title, className }: BlogCardType) => {
   return (
-    <div
+    <article
       className={`${
         className ? className : ""
       } home__blog--card-container flex flex-col col-span-12 s1280:col-span-3 rounded-t-[500px] py-4 rounded-b-[80px] border-t-[5px] border-[#86D1AB] shadow-[0_4px_15px_0_#0000001A] bg-white`}
     >
       <div className="flex-cen mb-3">
         <div className="home__blog--image-container w-[274px] h-[274px] s390:w-[295px] s390:h-[295px] s1280:w-[223px] s1280:h-[223px] s1512:w-[274px] s1512:h-[274px] s1600:w-[278px] s1600:h-[278px] s1728:w-[295px] s1728:h-[295px]  rounded-full overflow-hidden">
-          <ImgFetcher className="object-cover" src={img} width={500} height={500} />
+          <ImgFetcher
+            className="object-cover"
+            src={img}
+            width={500}
+            height={500}
+          />
         </div>
       </div>
       <div className="px-2 mb-2">
@@ -31,9 +30,11 @@ const BlogCard = ({
         </p>
       </div>
       <div className="flex-cen mt-auto">
-        <button className="bg-[#86D1AB] text-[18px] s1280:text-[18px] font-bold text-center w-[173px] h-[44px] rounded-[40px] text-white">Read More</button>
+        <button className="bg-[#86D1AB] text-[18px] s1280:text-[18px] font-bold text-center w-[173px] h-[44px] rounded-[40px] text-white">
+          Read More
+        </button>
       </div>
-    </div>
+    </article>
   );
 };
 export default BlogCard;

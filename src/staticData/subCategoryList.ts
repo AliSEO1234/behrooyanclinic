@@ -78,6 +78,7 @@ import lasiksurgery from "@/assets/images/subnested/LASIK surgery.png";
 import smartlens from "@/assets/images/subnested/Smart Lens in Turkey.png";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.png";
 import dentalbonding from "@/assets/images/subnested/Dental Bonding.png";
+import healthlogo from "@/assets/images/healthlogo.png" 
 export const categoryDataHandler = (key: string, locale: string) => {
   const findSubCategories = allSubCategory.filter(
     (sub) => sub.categoryKey === key
@@ -418,6 +419,125 @@ export const subCategoryHandler = (
     (subNested) => subNested.subCategoryKey === key
   );
   const categoryList = [
+    {
+      id: 0,
+      title:
+        locale === "ru"
+          ? ""
+          : "Bariatric-Surgery in Turkey - Your Path to Health and Confidence",
+      descriptionTop:
+        locale === "ru"
+          ? ""
+          : "Are you facing the daily struggles associated with excess weight, such as reduced mobility, fatigue, or related health conditions? Many people feel self-conscious or limited by their weight, impacting their quality of life. Finding a treatment that offers significant, long-term weight loss can seem daunting. Bariatric surgery offers a powerful tool to help individuals regain control of their health and unlock a more active, fulfilling future.",
+      videoContents: {
+        title:
+          locale === "ru"
+            ? ""
+            : "Benefits of Bariatric Surgery in Turkey",
+        desc:
+          locale === "ru"
+            ? ""
+            : "Considering medical treatment abroad can bring up many questions about quality, cost, and logistics. For those considering bariatric surgery, Turkey has emerged as a leading global destination, attracting patients from around the world due to its combination of medical excellence and appealing patient experience. Undertaking bariatric surgery in Turkey allows you to address your health concerns with confidence, knowing you are accessing experienced care in modern facilities, often with significant advantages in terms of affordability and ease of travel coordination.",
+      },
+      subCategoryContent: {
+        title:
+          locale === "ru"
+            ? ""
+            : "Bariatric Surgery Treatment",
+      },
+      contents: {
+        title:
+          locale === "ru"
+            ? ""
+            : "Understanding Bariatric Surgery and Its Potential",
+        content:
+          locale === "ru"
+            ? ``
+            : `
+        <p dir="ltr">So, what is bariatric surgery? It's a group of surgical procedures designed to help individuals with severe obesity achieve substantial weight loss and improve related health conditions. These surgeries work by altering the digestive system in ways that restrict the amount of food you can eat, reduce the absorption of calories and nutrients, or a combination of both.</p>
+<p dir="ltr">Bariatric surgery is typically considered when traditional weight loss methods, such as diet and exercise, have not been successful and obesity poses serious health risks. Conditions that can be improved by bariatric surgery include type 2 diabetes, hypertension, and sleep apnea. It is important to understand that while these operations can lead to dramatic weight loss, they are major procedures that require lifelong commitment to dietary and lifestyle changes and carry potential risks.</p>
+<p dir="ltr">Eligibility for bariatric surgery often depends on factors like Body Mass Index (BMI) and the presence of weight-related health problems. Typically, candidates include individuals with a BMI of 40 or higher (considered morbid obesity), or those with a BMI between 35 and 40 who suffer from significant obesity-related conditions. In some instances, individuals with a BMI between 30 and 34 with severe weight-related health issues might also be candidates. A thorough clinical evaluation is always performed before surgery to determine suitability and discuss all treatment options.</p>
+<h3 dir="ltr">Common types of bariatric surgery procedures include:</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Gastric Sleeve Surgery (Sleeve Gastrectomy): This procedure involves removing a large portion of the stomach, creating a smaller, tube-shaped stomach. This physically restricts the amount of food the patient can consume. It is a widely performed procedure.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Roux-en-Y Gastric Bypass: Considered a "gold standard" for many patients, this surgery involves creating a small pouch at the top of the stomach and connecting it directly to a section of the small intestine, bypassing a significant portion of the stomach and the upper part of the small intestine. This procedure restricts food intake and also reduces calorie and nutrient absorption.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Adjustable Gastric Banding: While less common now, this involves placing an inflatable band around the upper part of the stomach to create a small pouch. The band can be adjusted to control the size of the opening from the pouch to the rest of the stomach.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Biliopancreatic Diversion with Duodenal Switch (BPD-DS): This is a more complex procedure that involves removing a large part of the stomach and rerouting a significant portion of the small intestine to limit both food intake and nutrient absorption.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Intragastric Balloon: This non-surgical option involves placing a balloon into the stomach endoscopically and inflating it to take up space, promoting feelings of fullness. It is typically a temporary measure, usually remaining in place for 6-12 months.</p>
+</li>
+</ul>
+<p dir="ltr">The choice of procedure depends on your individual health status, weight loss goals, and the assessment by medical professionals. Experienced surgical teams utilize advanced techniques, including laparoscopic (minimally invasive) methods and sometimes robotic surgery, to enhance comfort and promote faster recovery.</p>
+<h4 dir="ltr">Why Choose Turkey for Your Bariatric Surgery?</h4>
+<p dir="ltr">Turkey has solidified its position as a premier destination for medical tourism, particularly for procedures like bariatric surgery. Several compelling factors contribute to this popularity in 2025:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Significant Cost Savings: One of the primary draws is the affordability. The cost of bariatric surgery in Turkey can be substantially lower compared to many Western countries, often offering savings of 50&ndash;70%. These competitive prices make life-changing surgery accessible to a wider range of people. It's important to remember that while avoiding specific price ranges is our policy to provide a personalized quote, the overall cost advantage is a well-documented benefit.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">High Quality of Care and Expertise: Turkey boasts a high caliber of medical professionals and modern hospitals. Many facilities meet international standards, providing first-class medical expertise and facilities. The surgical teams often have extensive experience and training, utilizing techniques and safety standards comparable to those found in major medical centers globally. The focus is on delivering comparable outcomes and safety for patients.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Medical Tourism Services: Turkish providers are well-attuned to the needs of international patients. They offer comprehensive packages designed to make the experience smooth and stress-free. These services often bundle pre-operative tests and consultations, the surgery itself, hospital stay, post-operative follow-up and diet planning, hotel accommodation for recovery, ground transportation (including airport transfers), and interpreter services. This all-inclusive approach removes much of the logistical burden for patients traveling from abroad.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Favorable Exchange Rates and Lower Overhead: The economic landscape in Turkey, including favorable exchange rates and lower operational costs for hospitals, contributes to the ability to offer procedures at more competitive rates without compromising the quality of care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Tourism and Recovery Opportunities: Turkey's appeal as a tourist destination allows patients to combine their medical journey with a recovery period in a new environment. Cities like Istanbul, Antalya, or Izmir offer rich cultural experiences, beautiful landscapes, or relaxing resort settings, which can be beneficial during downtime. This "medical holiday" aspect is highly appreciated by many patients.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Reduced Wait Times: Compared to some countries where wait lists for bariatric surgery can be long, scheduling in Turkey is often more flexible, allowing patients to arrange their surgery within a relatively short timeframe.</p>
+</li>
+</ul>
+<p dir="ltr">The popularity is evident in the number of international patients choosing Turkey for weight-loss surgery. It has become a leading destination for those seeking effective treatment for obesity with the added advantages of a streamlined medical tourism experience.</p>
+<h4 dir="ltr">The Bariatric Surgery Journey with AZPO Health</h4>
+<p dir="ltr">Embarking on the path to weight loss through surgery is a significant decision, and having expert guidance is crucial. At AZPO Health, we specialize in connecting patients with reputable medical facilities and experienced teams in Turkey for procedures like bariatric surgery in Turkey. Our focus is on ensuring you receive comprehensive, high-quality care tailored to your needs.</p>
+<p dir="ltr">Your journey begins with a thorough evaluation conducted by experienced medical professionals. This involves discussing your medical history, current health status, and weight loss goals. You will undergo necessary pre-operative tests and consultations to assess your suitability for surgery. Medical teams, often including surgeons, endocrinologists, nutritionists, and physiotherapists, work together to develop a personalized plan.</p>
+<p dir="ltr">Once the surgical plan is established, our focus shifts to preparing you for the procedure and facilitating your travel. We understand that traveling for medical treatment can be complex, which is why we assist with logistics, aiming to make your experience as smooth and stress-free as possible. Services can include coordinating appointments, arranging transfers, and suggesting suitable accommodation near the medical facility. For those unable to travel initially, virtual consultations may also be an option to discuss your goals and assess suitability remotely. Clear communication is prioritized throughout, with multilingual staff or interpreter services available to ensure you feel understood and informed every step of the way.</p>
+<p dir="ltr">The surgery itself is performed in modern, well-equipped medical facilities by skilled surgical teams. Following the procedure, you will have a period of recovery in the hospital, typically 2&ndash;3 nights for procedures like sleeve gastrectomy or gastric bypass. The medical team provides attentive post-operative care, managing pain and monitoring your progress.</p>
+<p dir="ltr">Recovery continues after hospital discharge. This phase is crucial for healing and adapting to new dietary requirements. You will receive detailed instructions on post-operative care, including dietary guidelines and activity restrictions. Nutrition support is a vital part of this journey, with dieticians providing personalized meal plans and guidance on necessary vitamins or supplements. Follow-up appointments are scheduled to track your progress and address any questions or concerns. Maintaining good oral hygiene is also essential during recovery. Avoiding smoking and alcohol is strongly advised as these can hinder healing.</p>
+<p dir="ltr">It's worth noting that female patients planning to have children in the near future should discuss this, as pregnancy is generally not recommended within 24 months of obesity surgery.</p>
+<p dir="ltr">Throughout this entire process, from your initial consultation to post-operative follow-up, AZPO Health acts as your partner, connecting you with the support and expertise you need at our partner clinics and hospitals.</p>
+<h4 dir="ltr">Patient Stories</h4>
+<p dir="ltr">Hearing from those who have undergone this transformation can be incredibly insightful. Here are a few hypothetical stories reflecting experiences with bariatric surgery facilitated through services like AZPO Health:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Maria's Story: "For years, my weight held me back. I tried everything, but nothing lasted. I heard about bariatric surgery cost being more affordable in Turkey and started researching. AZPO Health connected me with a fantastic facility. From the moment I arrived, everything was handled &ndash; transfers, appointments, and there was always someone to explain things in English. The surgery went smoothly, and the care was excellent. The support I received with diet planning after was invaluable. I'm now losing weight steadily and feel like I have my life back."</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">David's Experience: "My type 2 diabetes was getting worse, and my doctor recommended weight loss surgery. The cost in my home country was prohibitive. A friend suggested looking into medical tourism in Turkey. I contacted AZPO Health, and they guided me through the entire process. The medical team I was matched with was top-notch, answering all my questions about what is bariatric surgery and which procedure was right for me. Recovering in a comfortable hotel they helped arrange, with easy access to follow-ups, made a huge difference. My health markers are already improving dramatically."</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Aisha's Journey: "I was nervous about traveling for surgery, but the comprehensive package arranged through AZPO Health put my mind at ease. They took care of everything from airport pickup to my hotel stay and getting me to the hospital. The medical staff at the hospital were incredibly caring, and the facility was very modern. I felt very safe and well-looked after throughout my stay for my bariatric surgery in Turkey. The results are exactly what I hoped for, and I'm so grateful for the support."</p>
+</li>
+</ul>
+<p dir="ltr">These stories highlight the positive impact of bariatric surgery and the value of the comprehensive services available to international patients in Turkey.</p>
+<h4 dir="ltr">Taking the Next Step Towards a Healthier You</h4>
+<p dir="ltr">If you are considering bariatric surgery as a solution for weight loss and improving your health, Turkey offers a compelling combination of quality, affordability, and comprehensive patient support. Understanding what is bariatric surgery, exploring the potential benefits and risks, and choosing the right medical partner are crucial steps.</p>
+<p dir="ltr">By choosing services facilitated by AZPO Health, you are connecting with experienced medical professionals and modern facilities dedicated to helping you achieve your weight loss and health goals through bariatric surgery in Turkey. You don't have to navigate this journey alone. Our network of reputable providers and our commitment to patient care ensure you receive the support you need every step of the way.</p>
+<p dir="ltr">To learn more about bariatric surgery cost options tailored to your specific needs and to determine if this life-changing procedure is right for you, the best approach is to consult with medical experts. They can provide a personalized assessment and detailed information.</p>
+<p dir="ltr">Ready to explore your options and take the first step towards a healthier future?</p>
+<p dir="ltr">Contact AZPO Health today for a free consultation and personalized quote.</p>
+<p>&nbsp;</p>
+        `,
+      },
+      subCategoryKey: "bariatric-surgery",
+      categoryKey: findCategory,
+      subNestedList: findSubNestedList,
+      video: "https://youtu.be/nFgBhpJvHQ8?si=XAn5N6gkJAzfUuxV",
+      imgCover: tdAes,
+    },
+
+
     {
       id: 0,
       title:
@@ -1665,6 +1785,1513 @@ export const dataSubCategoryHandler = (
   bfList: string[] | null
 ) => {
   const categoryList = [
+    // bariatric-surgery
+    {
+      id: 0,
+      title:
+        locale === "ru"
+          ? ""
+          : "Achieve Your Weight Loss Goals with Gastric Sleeve Surgery in Turkey",
+      descriptionTop:
+        locale === "ru"
+          ? ""
+          : "A transformative journey towards a healthier you with gastric sleeve surgery, a leading bariatric procedure offered by AZPO Health in Turkey. If you've struggled with obesity and related health issues, gastric sleeve surgery in Turkey provides an effective, safe, and affordable solution. AZPO Health partners with the best, internationally accredited clinics and highly experienced bariatric surgeons across Turkey's top destinations, ensuring you receive world-class care tailored to your needs.",
+      benefits: {
+        items: [
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Weight Loss Benefits",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Significant weight reduction and improved overall health conditions",
+          },
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Quick Recovery",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Laparoscopic surgery ensures minimal scarring and faster healing time",
+          },
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Appetite Control",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Reduces ghrelin hormone production leading to decreased hunger",
+          },
+        ],
+        categories: [
+          {
+            header: locale === "ru" ? "" : "Description",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Gastric sleeve surgery is a weight loss procedure where about 75–80% of the stomach is removed, leaving a smaller, tube-shaped stomach. This helps reduce appetite and food intake. It’s usually done laparoscopically and can lead to significant weight loss, while also improving conditions like type 2 diabetes, high blood pressure, and sleep apnea.",
+          },
+          {
+            header: locale === "ru" ? "Что следует учитывать" : "How it works",
+            desc:
+              locale === "ru"
+                ? ""
+                : "The surgeon removes a significant portion of the stomach, leaving a sleeve-like structure. The procedure is typically performed laparoscopically (minimally invasive), which diminishes recovery time and scarting. The stomach's ability to intake the food inside is significantly reduced, which decreases the amount of food consumed.",
+          },
+          {
+            header: locale === "ru" ? "" : "Who It’s For:",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Individuals with a BMI (Body Mass Index) of 40 or higher. Those with a BMI of 35 or higher and obesity-related health conditions like diabetes or hypertension. Individuals who have tried and failed to lose weight through diet and exercise.",
+          },
+        ],
+      },
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "Is gastric sleeve permanent?",
+          answer: locale === "ru" ? "" : "Yes, part of the stomach is removed.",
+        },
+        {
+          question: locale === "ru" ? "" : "How much weight will I lose?",
+          answer: locale === "ru" ? "" : "Typically 60–70% of excess weight in 1–2 years.",
+        },
+        {
+          question: locale === "ru" ? "" : "Will I feel hungry?",
+          answer: locale === "ru" ? "" : "Much less — the hunger hormone (ghrelin) is reduced.",
+        },
+        {
+          question: locale === "ru" ? "" : "Can I regain weight?",
+          answer: locale === "ru" ? "" : "Possible if diet and habits aren’t maintained.",
+        },
+        {
+          question: locale === "ru" ? "" : "What is the recovery like after gastric sleeve surgery?",
+          answer: locale === "ru" ? "" : "Hospital stay is 2–3 days; full recovery in 2–4 weeks.",
+        },
+        {
+          question: locale === "ru" ? "" : "When can I return to work?",
+          answer: locale === "ru" ? "" : "Usually 1–2 weeks post-op depending on your job.",
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Start with clear liquids, then advance diet per plan",
+        locale === "ru" ? "" : "Walk daily to prevent clots and aid digestion",
+        locale === "ru" ? "" : "Take prescribed vitamins and medications daily",
+        locale === "ru" ? "" : "Avoid carbonated drinks and large portions",
+        locale === "ru" ? "" : "No lifting over 10 lbs for 4–6 weeks",
+      ],
+      preList:  [
+        locale === "ru" ? "" : "Follow a 2-week pre-op liquid diet as directed",
+        locale === "ru" ? "" : "Stop smoking and alcohol 2 weeks before surgery",
+        locale === "ru" ? "" : "Avoid aspirin, ibuprofen, or blood thinners 7 days prior",
+        locale === "ru" ? "" : "Stay active — light walking is encouraged",
+        locale === "ru" ? "" : "Arrange for help at home and transportation",
+        locale === "ru" ? "" : "Inform your surgeon of any health issues or medications",
+      ],
+      conclusion: {
+        title: locale === "ru" ? "Заключение" : "Conclusion",
+        desc:
+          locale === "ru"
+            ? ""
+            : "Gastric Sleeve is an effective, minimally invasive weight-loss procedure that offers lasting weight loss and health improvements. It is most suitable for individuals with severe obesity who are ready to make lifestyle changes and commit to a long-term strategy for success. But do not forget, think wisely. The operation cannot be undone.",
+      },
+      bfs: bfList,
+      contents: {
+        title:
+          locale === "ru"
+            ? ""
+            : "Why Choose Gastric Sleeve Surgery in Turkey with AZPO Health?",
+        content:
+          locale === "ru"
+            ? ``
+            : `<div dir="ltr" align="left">
+<div dir="ltr" align="left">
+<div dir="ltr" align="left">
+<p dir="ltr">Turkey has rapidly become a global leader in medical tourism, especially for bariatric procedures like the gastric sleeve. Choosing gastric sleeve surgery in Turkey through AZPO Health offers distinct advantages:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Expertise and Quality: AZPO Health collaborates exclusively with top-tier hospitals and clinics in major Turkish cities like Istanbul, Antalya, and Izmir. These facilities are often internationally accredited (e.g., JCI certified) and staffed by highly skilled bariatric surgeons with extensive experience and international training. You receive care that meets or exceeds global standards.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Advanced Techniques: Surgeons utilize the latest laparoscopic techniques and state-of-the-art equipment, ensuring procedures are safe, effective, and minimally invasive.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Care Packages: AZPO Health provides all-inclusive packages designed for international patients. These typically cover preoperative consultations and tests, the surgery itself, hospital stay, post-operative care, dietician support, accommodation, airport and local transfers, and interpreter services. This hassle-free approach allows you to focus entirely on your recovery.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: The gastric sleeve surgery cost in Turkey is significantly lower than in many Western countries, offering savings of up to 70% without compromising on quality.</p>
+</li>
+</ul>
+<h3 dir="ltr">How Much is Gastric Sleeve Surgery in Turkey?</h3>
+<p dir="ltr">One of the most compelling reasons medical tourists choose Turkey is the cost-effectiveness.The prices usually include a comprehensive package covering most medical and logistical aspects of your trip. AZPO Health ensures transparent pricing with no hidden fees, providing exceptional value for world-class treatment.</p>
+<h2 dir="ltr">The AZPO Health Gastric Sleeve Journey</h2>
+<p dir="ltr">When you choose AZPO Health for your gastric sleeve turkey experience, you receive dedicated support from start to finish:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Initial Consultation: Remote consultations to discuss your goals, medical history, and eligibility.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Travel Coordination: Assistance with planning your trip (though flights are typically booked separately).</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Arrival and Pre-Op: Airport pickup, transfer to your hotel, and comprehensive preoperative tests and consultations at the clinic.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">The Surgery: Performed by a leading bariatric surgeon in a modern, accredited hospital.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Hospital Stay: Typically 2-3 nights with attentive nursing care.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Recovery and Support: Transfer to a comfortable hotel for initial recovery, with follow-up checks and detailed dietary guidance from a dietician.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Aftercare: Continued remote support from AZPO Health once you return home.</p>
+</li>
+</ol>
+<h2 dir="ltr">Important Considerations and Recovery</h2>
+<p dir="ltr">While gastric sleeve surgery offers remarkable benefits, it's essential to understand the commitments involved:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Irreversibility: The procedure permanently removes a large portion of the stomach and cannot be undone.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Lifelong Commitment: Sustained weight loss requires permanent adherence to dietary guidelines, regular exercise, and healthy habits.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Nutritional Monitoring: Although less common than with bypass surgery, monitoring for potential vitamin and mineral deficiencies is important. Supplements may be recommended.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Recovery: Initial recovery involves a liquid and then soft food diet. Most patients return to work and light activities within 2-4 weeks, with full recovery taking several months.</p>
+</li>
+</ul>
+<h2 dir="ltr">Take the First Step with AZPO Health</h2>
+<p dir="ltr">Ready to transform your health and life with gastric sleeve surgery in Turkey? AZPO Health is here to guide you every step of the way, providing access to the best surgeons and facilities in Turkey's most desirable locations. Experience exceptional care, significant savings, and a supportive journey tailored just for you.</p>
+<p dir="ltr">Contact AZPO Health today for a free consultation and discover how gastric sleeve surgery can help you achieve lasting weight loss and improved well-being.</p>
+<p dir="ltr">&nbsp;</p>
+</div>
+</div>
+</div>`,
+      },
+      subNestedKey: "gastric-sleeve-surgery",
+      imgCover: subNestedKey === "gastric-sleeve-surgery" ? healthlogo : null,
+    },
+    {
+      id: 0,
+      title:
+        locale === "ru"
+          ? ""
+          : "Feeling Trapped by Obesity? Roux-en-Y Gastric Bypass in Turkey Could Be Your Path to Freedom",
+      descriptionTop:
+        locale === "ru"
+          ? ""
+          : "Living with severe obesity can feel like a constant battle. Perhaps you've tried countless diets and exercise plans, only to find the weight returning, leaving you feeling frustrated and hopeless. Maybe you're facing serious health problems like type 2 diabetes, high blood pressure, or sleep apnea, which limit your daily activities and impact your overall well-being.  We understand the challenges you face, and we connect you with Turkey's most reputable clinics and highly experienced bariatric surgeons specializing in transformative weight-loss procedures, including the renowned Roux-en-Y Gastric Bypass.",
+      benefits: {
+        items: [
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Weight Control",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Quick and effective surgical solution for sustainable weight management",
+          },
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Health Benefits",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Resolves multiple conditions including diabetes, sleep apnea, and high cholesterol",
+          },
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Proven Results",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Demonstrates lasting success in weight loss and overall life quality improvement",
+          },
+        ],
+        categories: [
+          {
+            header: locale === "ru" ? "" : "Description",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Gastric Bypass (Roux-en-Y) is a common weight loss surgery that reduces stomach size and bypasses part of the small intestine to limit food intake and calorie absorption. A more extensive version removes the lower stomach and connects the remaining pouch directly to the last part of the small intestine, skipping the first two sections entirely.",
+          },
+          {
+            header: locale === "ru" ? "Что следует учитывать" : "How it works",
+            desc:
+              locale === "ru"
+                ? ""
+                : "The surgeon creates a small pouch at the top of the stomach and attaches it directly to the small intestine, bypassing the rest of the stomach. This procedure reduces food intake and limits calorie absorption by rerouting the digestive tract. It also results in significant hormonal changes, which contribute to improved insulin sensitivity and reduced hunger.",
+          },
+          {
+            header: locale === "ru" ? "" : "Who It’s For:",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Individuals with a BMI of 40 or higher. Those with a BMI of 35 or higher and obesity-related health conditions. People who have not been successful with traditional weight loss methods like diet and exercise.",
+          },
+        ],
+      },
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "How does gastric bypass work?",
+          answer: locale === "ru" ? "" : "It shrinks your stomach and reroutes intestines to absorb less food.",
+        },
+        {
+          question: locale === "ru" ? "" : "How much weight will I lose?",
+          answer: locale === "ru" ? "" : "60–80% of excess weight in 1–2 years.",
+        },
+        {
+          question: locale === "ru" ? "" : "What are dumping symptoms?",
+          answer: locale === "ru" ? "" : "Nausea and diarrhea from eating sweets or fatty foods.",
+        },
+        {
+          question: locale === "ru" ? "" : "Will I need supplements?",
+          answer: locale === "ru" ? "" : "Yes, for life to prevent deficiencies.",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it reversible?",
+          answer: locale === "ru" ? "" : "Technically yes, but rarely done.",
+        },
+        {
+          question: locale === "ru" ? "" : "Can weight be regained after surgery?",
+          answer: locale === "ru" ? "" : "Weight can return, but healthy habits help keep it off.",
+        },
+        {
+          question: locale === "ru" ? "" : "What is the recovery like after gastric bypass surgery?",
+          answer: locale === "ru" ? "" : "Hospital stay is 2–3 days; recovery takes 3–4 weeks.",
+        },
+      ],
+      posts: [
+        locale === "ru" ? "" : "Start with clear liquids, move to pureed foods",
+        locale === "ru" ? "" : "Take daily vitamins (B12, iron, calcium, multivitamin)",
+        locale === "ru" ? "" : "Eat small, slow meals and chew thoroughly",
+        locale === "ru" ? "" : "Avoid sweets and high-fat foods",
+        locale === "ru" ? "" : "Walk daily and avoid heavy lifting 4–6 weeks",
+      ],
+      preList:  [
+        locale === "ru" ? "" : "Follow a low-carb liquid diet for 1–2 weeks",
+        locale === "ru" ? "" : "Stop smoking and avoid alcohol",
+        locale === "ru" ? "" : "Stop NSAIDs and blood thinners 1 week before",
+        locale === "ru" ? "" : "Complete pre-op labs and nutrition class",
+        locale === "ru" ? "" : "Arrange post-op support and transport",
+      ],
+      conclusion: {
+        title: locale === "ru" ? "Заключение" : "Conclusion",
+        desc:
+          locale === "ru"
+            ? ""
+            : "Gastric Bypass is a highly effective and proven method for long-term weight loss. It's ideal for those with severe obesity who are committed to permanent lifestyle changes. While the procedure offers substantial benefits, it requires careful management to avoid nutrient deficiencies and complications.",
+      },
+      bfs: bfList,
+      contents: {
+        title:
+          locale === "ru"
+            ? ""
+            : "Comparing Roux-en-Y Gastric Bypass and Gastric Sleeve",
+        content:
+          locale === "ru"
+            ? ``
+            : `<div dir="ltr" align="left">
+<div dir="ltr" align="left">
+<div dir="ltr" align="left">
+<p dir="ltr">Understanding the differences between major bariatric procedures is crucial. Here&rsquo;s how Roux-en-Y Gastric Bypass compares to Gastric Sleeve:</p>
+<div dir="ltr" align="left">
+<table style="width: 98.6361% !important"><colgroup><col style="width: 33.3227% !important" width="208"><col style="width: 33.3227% !important" width="208"><col style="width: 33.3227% !important" width="208"></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr">Feature</p>
+</td>
+<td>
+<p dir="ltr">Roux-en-Y Gastric Bypass</p>
+</td>
+<td>
+<p dir="ltr">Gastric Sleeve (Sleeve Gastrectomy)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Procedure Type</p>
+</td>
+<td>
+<p dir="ltr">Restrictive &amp; Malabsorptive</p>
+</td>
+<td>
+<p dir="ltr">Restrictive</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">How it Works</p>
+</td>
+<td>
+<p dir="ltr">Creates a small pouch, bypasses most stomach &amp; upper intestine.</p>
+</td>
+<td>
+<p dir="ltr">Removes ~80% of the stomach, creating a smaller sleeve.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Intestines</p>
+</td>
+<td>
+<p dir="ltr">Rerouted.</p>
+</td>
+<td>
+<p dir="ltr">Not rerouted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Weight Loss</p>
+</td>
+<td>
+<p dir="ltr">Often more rapid and slightly higher (~50%+ excess weight).</p>
+</td>
+<td>
+<p dir="ltr">Significant (60-70% excess weight loss typical).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Nutrient Issues</p>
+</td>
+<td>
+<p dir="ltr">Higher risk, requires lifelong supplements.</p>
+</td>
+<td>
+<p dir="ltr">Lower risk of deficiencies.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Reversibility</p>
+</td>
+<td>
+<p dir="ltr">Typically irreversible.</p>
+</td>
+<td>
+<p dir="ltr">Irreversible.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Best For</p>
+</td>
+<td>
+<p dir="ltr">Severe obesity, Type 2 Diabetes, significant acid reflux.</p>
+</td>
+<td>
+<p dir="ltr">Effective weight loss with lower risk of nutrient issues.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Common Choice?</p>
+</td>
+<td>
+<p dir="ltr">Considered "gold standard" for certain conditions.</p>
+</td>
+<td>
+<p dir="ltr">Most popular bariatric surgery worldwide and in Turkey.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr">&nbsp;</p>
+<p dir="ltr">While Gastric Sleeve is currently more common globally and in Turkey, Roux-en-Y Gastric Bypass remains a critical and highly effective option, especially for patients requiring more significant metabolic changes.</p>
+<h3 dir="ltr">Why Choose Turkey for Your Roux-en-Y Gastric Bypass in Turkey?</h3>
+<p dir="ltr">Turkey has become a premier destination for medical tourists seeking bariatric surgery, including the Roux-en-Y Gastric Bypass. AZPO Health ensures you benefit from:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Exceptional Cost Savings: Undergoing Roux-en-Y Gastric Bypass in Turkey offers significant cost savings compared to having the procedure in the US or Western Europe, making it a popular choice for international patients seeking high-quality care at more affordable rates.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">World-Class Medical Standards: We partner exclusively with internationally accredited hospitals using the latest technology and adhering to global safety protocols.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Highly Skilled Surgeons: Turkish bariatric surgeons are often internationally trained, members of global surgical societies (like IFSO), and possess vast experience in performing complex Roux-en-Y Gastric Bypass surgery.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">All-Inclusive Packages: AZPO Health facilitates packages that typically cover surgery, hospital stay (2-3 nights), pre-op tests, post-op care, dietician support, accommodation, and local transportation for a stress-free experience.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Renowned Hospitality and Tourism: Recover in comfort in major cities like Istanbul, known for their excellent clinics and cultural attractions, or choose scenic coastal locations like Antalya or Izmir.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Prompt Scheduling: Avoid long waiting lists common in many countries and schedule your surgery conveniently.</p>
+</li>
+</ul>
+<h3 dir="ltr">Understanding the Risks and Considerations of Roux-en-Y Gastric Bypass</h3>
+<p dir="ltr">While highly effective, Roux-en-Y Gastric Bypass is a major surgery with specific risks and long-term considerations:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Malabsorption and Nutrient Deficiencies: Due to bypassing part of the small intestine, lifelong vitamin and mineral supplementation (e.g., B12, iron, calcium, vitamin D) is essential to prevent deficiencies. Regular blood tests are required to monitor levels.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Dumping Syndrome: Consuming high-sugar or high-fat foods can cause rapid emptying into the small intestine, leading to nausea, vomiting, dizziness, sweating, and diarrhea. Dietary discipline is crucial.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Irreversibility: The procedure is generally considered permanent.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Surgical Complications: Potential risks include bleeding, infection, blood clots, bowel obstruction, or leaks at the connection points (anastomosis). These risks are minimized by choosing experienced surgeons and accredited facilities.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Lifelong Commitment: Success requires permanent changes to diet, portion sizes, eating habits, and a commitment to regular follow-up care.</p>
+</li>
+</ul>
+<p dir="ltr">The AZPO Health team and our partnered specialists ensure you receive thorough counseling on these aspects to make an informed decision and prepare for the necessary lifestyle adjustments.</p>
+<h3 dir="ltr">The AZPO Health Advantage: Expertise, Trust, and Personalized Care</h3>
+<p dir="ltr">Choosing AZPO Health for your Roux-en-Y Gastric Bypass in Turkey ensures you are supported by a team committed to the highest standards:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Elite Network: We connect you only with Turkey's leading bariatric centers and surgeons with proven track records.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Full Transparency: We provide clear, detailed information about the Roux-en-Y Gastric Bypass surgery, costs, and the entire medical travel process.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Dedicated Support: Our team offers personalized assistance from your initial inquiry through your recovery, ensuring a smooth and comfortable experience.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Quality Assurance: We prioritize your safety and well-being by partnering exclusively with facilities meeting stringent international quality standards.</p>
+</li>
+</ul>
+<h3 dir="ltr">Begin Your Transformation with AZPO Health</h3>
+<p dir="ltr">Are you ready to take control of your health with the Roux-en-Y Gastric Bypass? Let AZPO Health be your guide to accessing exceptional bariatric care in Turkey. Our knowledgeable team is ready to provide detailed information, answer your questions, and assist you in planning your medical journey.</p>
+<p dir="ltr">Contact AZPO Health today for a free, no-obligation consultation and take the first step towards a healthier future!</p>
+<strong id="docs-internal-guid-3ef40c2f-7fff-2d67-a241-d96d9b4b80f8"></strong></div>
+<strong id="docs-internal-guid-59f14645-7fff-8c19-18ef-747f38ca074d"></strong></div>
+</div>`,
+      },
+      subNestedKey: "roux-gastric-bypass",
+      imgCover: subNestedKey === "roux-gastric-bypass" ? healthlogo : null,
+    },
+    {
+      id: 0,
+      title:
+        locale === "ru"
+          ? ""
+          : "Seeking a Reversible Weight Loss Solution? Consider Adjustable Gastric Banding in Turkey",
+      descriptionTop:
+        locale === "ru"
+          ? ""
+          : "Are you exploring weight loss surgery options but feel hesitant about permanent changes to your body? Perhaps you're looking for a less invasive approach to help manage obesity and its related health challenges. If diet and exercise haven't provided the lasting results you need, and you prefer a procedure that can be adjusted or even reversed, Adjustable Gastric Banding might be the right path for you.",
+      benefits: {
+        items: [
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Easy Adjustments",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Customizable band that can be modified or completely removed as needed",
+          },
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Safer Choice",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Minimally invasive procedure with reduced surgical complications",
+          },
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Steady Progress",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Controlled weight reduction that minimizes health risks during the process",
+          },
+        ],
+        categories: [
+          {
+            header: locale === "ru" ? "" : "Description",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Adjustable Gastric Banding, commonly known as Lap-Band, is a minimally invasive weight-loss surgery that involves placing an inflatable band around the upper part of the stomach to create a small pouch. This limits the amount of food that the stomach can hold.",
+          },
+          {
+            header: locale === "ru" ? "Что следует учитывать" : "How it works",
+            desc:
+              locale === "ru"
+                ? ""
+                : "An adjustable band is placed around the upper portion of the stomach, creating a small pouch above the band. The band can be tightened or loosened by adding or removing saline, allowing for controlled restriction of food intake. This procedure reduces hunger and increases the feeling of fullness after eating",
+          },
+          {
+            header: locale === "ru" ? "" : "Who It’s For:",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Individuals with a BMI of 30-40 who haven't found success with diet and exercise. Those who prefer a reversible procedure over permanent surgery. Patients who are looking for a less invasive bariatric surgery.",
+          },
+        ],
+      },
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "What is a gastric band?",
+          answer: locale === "ru" ? "" : "A silicone ring placed around the stomach to restrict food intake.",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it adjustable?",
+          answer: locale === "ru" ? "" : "Yes, via saline fills through a port under your skin.",
+        },
+        {
+          question: locale === "ru" ? "" : "Will I need surgery for removal?",
+          answer: locale === "ru" ? "" : "Yes, if removal is needed.",
+        },
+        {
+          question: locale === "ru" ? "" : "How much weight will I lose?",
+          answer: locale === "ru" ? "" : "Typically 40–50% of excess weight.",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it still commonly used?",
+          answer: locale === "ru" ? "" : "Less often now due to newer options.",
+        },
+        {
+          question: locale === "ru" ? "" : "Can weight be regained after adjustable gastric band surgery?",
+          answer: locale === "ru" ? "" : "Yes, if healthy habits aren't maintained.",
+        },
+        {
+          question: locale === "ru" ? "" : "What is the recovery like after gastric band surgery?",
+          answer: locale === "ru" ? "" : "Most return to normal within 1 week.",
+        },
+      ],
+      posts: [
+        locale === "ru"
+          ? ""
+          : "Start with liquids, progress to soft foods",
+        locale === "ru"
+          ? ""
+          : "Eat slowly, chew thoroughly, and stop at fullness",
+        locale === "ru"
+          ? ""
+          : "No drinking with meals — wait 30 minutes",
+        locale === "ru"
+          ? ""
+          : "Follow up for band adjustments (fills)",
+        locale === "ru"
+          ? ""
+          : "Avoid vomiting by eating mindfully",
+      ],
+      preList: [
+        locale === "ru"
+          ? ""
+          : "Follow a pre-op diet as advised",
+        locale === "ru" ? "" : "Stop smoking and alcohol 1–2 weeks before",
+        locale === "ru"
+          ? ""
+          : "Avoid blood thinners and NSAIDs",
+        locale === "ru"
+          ? ""
+          : "Attend a nutritional consult and psych eval",
+        locale === "ru"
+          ? ""
+          : "Arrange post-op support and help at home",
+      ],
+      conclusion: {
+        title: locale === "ru" ? "Заключение" : "Conclusion",
+        desc:
+          locale === "ru"
+            ? ""
+            : "Adjustable Gastric Banding offers a less invasive, reversible option for weight loss, but it tends to result in slower, more gradual weight loss. It is best for patients looking for a non-permanent solution with adjustable parameters.",
+      },
+      bfs: bfList,
+      contents: {
+        title:
+          locale === "ru"
+            ? ""
+            : "Comparing Adjustable Gastric Banding to Other Bariatric Surgeries",
+        content:
+          locale === "ru"
+            ? ``
+            : `<div dir="ltr" align="left">
+<div dir="ltr" align="left">
+<div dir="ltr" align="left">
+<table style="width: 99.761% !important"><colgroup><col style="width: 24.9967% !important" width="156"><col style="width: 24.9967% !important" width="156"><col style="width: 24.9967% !important" width="156"><col style="width: 24.9967% !important" width="156"></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr">Feature</p>
+</td>
+<td>
+<p dir="ltr">Adjustable Gastric Banding</p>
+</td>
+<td>
+<p dir="ltr">Gastric Sleeve Surgery</p>
+</td>
+<td>
+<p dir="ltr">Roux-en-Y Gastric Bypass</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Procedure Type</p>
+</td>
+<td>
+<p dir="ltr">Restrictive (Adjustable)</p>
+</td>
+<td>
+<p dir="ltr">Restrictive</p>
+</td>
+<td>
+<p dir="ltr">Restrictive &amp; Malabsorptive</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">How it Works</p>
+</td>
+<td>
+<p dir="ltr">Band creates small pouch</p>
+</td>
+<td>
+<p dir="ltr">Removes ~80% of stomach</p>
+</td>
+<td>
+<p dir="ltr">Creates pouch &amp; bypasses intestine</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Invasiveness</p>
+</td>
+<td>
+<p dir="ltr">Minimally Invasive</p>
+</td>
+<td>
+<p dir="ltr">Minimally Invasive</p>
+</td>
+<td>
+<p dir="ltr">Minimally Invasive (more complex)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Reversibility</p>
+</td>
+<td>
+<p dir="ltr">Yes</p>
+</td>
+<td>
+<p dir="ltr">No</p>
+</td>
+<td>
+<p dir="ltr">Typically No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Adjustability</p>
+</td>
+<td>
+<p dir="ltr">Yes (via port)</p>
+</td>
+<td>
+<p dir="ltr">No</p>
+</td>
+<td>
+<p dir="ltr">No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Weight Loss</p>
+</td>
+<td>
+<p dir="ltr">More gradual, often less total</p>
+</td>
+<td>
+<p dir="ltr">Significant</p>
+</td>
+<td>
+<p dir="ltr">Significant &amp; often rapid</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Nutrient Issues</p>
+</td>
+<td>
+<p dir="ltr">Low risk</p>
+</td>
+<td>
+<p dir="ltr">Lower risk</p>
+</td>
+<td>
+<p dir="ltr">Higher risk</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Follow-up Needs</p>
+</td>
+<td>
+<p dir="ltr">High (for adjustments)</p>
+</td>
+<td>
+<p dir="ltr">Moderate</p>
+</td>
+<td>
+<p dir="ltr">High (for monitoring)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Long-Term Issues</p>
+</td>
+<td>
+<p dir="ltr">Band slippage/erosion possible</p>
+</td>
+<td>
+<p dir="ltr">Potential reflux</p>
+</td>
+<td>
+<p dir="ltr">Dumping syndrome, deficiencies</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 dir="ltr">&nbsp;</h3>
+<h3 dir="ltr">Why Choose Turkey for Your Adjustable Gastric Banding in Turkey?</h3>
+<p dir="ltr">Opting for Adjustable Gastric Banding in Turkey through AZPO Health provides compelling advantages:</p>
+<strong><br></strong>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Significant Cost Savings: Adjustable Gastric Banding in Turkey offers much more affordable options compared to the US or Western Europe, making high-quality care more accessible to international patients.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Surgeons &amp; Clinics: Although less common now, Turkish bariatric surgeons are skilled in performing gastric banding procedures in modern, internationally accredited facilities.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Medical Tourism Packages: AZPO Health helps coordinate packages that often include the surgery, pre-operative tests, hospital stay, follow-up adjustments (initial), accommodation, and local transfers, simplifying your medical journey.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">High Standards of Care: Receive care that meets international standards, with multilingual staff often available to assist international patients.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Opportunity for Travel: Combine your procedure with a stay in one of Turkey&rsquo;s beautiful and historic locations, allowing for a comfortable recovery environment.</p>
+</li>
+</ul>
+<h3 dir="ltr">Understanding the Risks and Considerations of Adjustable Gastric Banding</h3>
+<p dir="ltr">While less invasive initially, Adjustable Gastric Banding comes with specific risks and long-term considerations:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Slower Weight Loss: Weight loss is generally more gradual and potentially less significant compared to sleeve or bypass procedures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Need for Adjustments: Regular follow-up visits are required to adjust the band's tightness for optimal results. International patients may need to arrange these adjustments back home.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Potential Complications: Risks include band slippage, band erosion into the stomach, port infection or leakage, or esophageal dilation.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Re-operation Rate: A significant number of patients may require further surgery over time to fix complications, adjust the band, or remove it entirely, sometimes converting to a different bariatric procedure like a sleeve or bypass.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Strict Lifestyle Adherence: Success heavily depends on the patient's commitment to dietary changes and portion control. The band restricts solid food intake, but high-calorie liquids can undermine weight loss.</p>
+</li>
+</ul>
+<p dir="ltr">Our associated medical teams will discuss these potential issues thoroughly during your consultation.</p>
+<h3 dir="ltr">The AZPO Health Advantage: Expertise, Trust, and Patient-Centered Care</h3>
+<p dir="ltr">AZPO Health is committed to providing a safe, transparent, and supportive medical tourism experience, upholding the principles of Expertise, Authoritativeness, and Trustworthiness (EEAT):</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Vetted Partners: We collaborate only with reputable Turkish clinics and surgeons experienced in bariatric procedures, including Adjustable Gastric Banding.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Clear Communication: We ensure you receive comprehensive information about the procedure, potential outcomes, risks, and costs.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Support: Our team assists you at every step, from initial consultation and travel arrangements to post-operative coordination.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Focus on Quality: Your safety and satisfaction are our priorities. We connect you with facilities adhering to international standards.</p>
+</li>
+</ul>
+<h3 dir="ltr">Take the Next Step with AZPO Health</h3>
+<p dir="ltr">If you believe Adjustable Gastric Banding is the right choice for your weight loss journey, let AZPO Health connect you with expert care in Turkey. We are here to provide the information and support you need to make an informed decision.</p>
+<p dir="ltr">Contact AZPO Health today for a free consultation and explore your options for a healthier future!</p>
+<strong id="docs-internal-guid-59f14645-7fff-8c19-18ef-747f38ca074d"></strong></div>
+</div>`,
+      },
+      subNestedKey: "adjustable-gastric-banding",
+      imgCover: subNestedKey === "adjustable-gastric-banding" ? healthlogo : null,
+    },
+    {
+      id: 0,
+      title:
+        locale === "ru"
+          ? ""
+          : "Facing Extreme Obesity? Biliopancreatic Diversion with Duodenal Switch (BPD/DS) in Turkey Offers Powerful Results",
+      descriptionTop:
+        locale === "ru"
+          ? ""
+          : "For individuals grappling with severe or morbid obesity (often defined as a BMI of 50 or higher), the journey can be incredibly challenging. Standard weight loss methods may have proven ineffective, and even other bariatric surgeries might not offer the profound, lasting weight loss needed to significantly improve health and reclaim quality of life. If you find yourself in this situation, feeling overwhelmed by the health complications of extreme obesity and seeking the most potent surgical solution available, Biliopancreatic Diversion with Duodenal Switch (BPD/DS) could be the answer.",
+      benefits: {
+        items: [
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Weight Loss",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Patients can lose significant weight rapidly and see major health improvements.",
+          },
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Health Benefits",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Many patients experience improvements in diabetes and blood pressure.",
+          },
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Lasting Results",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Most patients maintain significant weight loss over many years.",
+          },
+        ],
+        categories: [
+          {
+            header: locale === "ru" ? "" : "Description",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Biliopancreatic Diversion with Duodenal Switch (BPD/DS) is a complex weight-loss surgery that combines both gastric restriction and malabsorption techniques. It is particularly effective for those with severe obesity. It is the less preferred surgery of all.",
+          },
+          {
+            header: locale === "ru" ? "Что следует учитывать" : "How it works",
+            desc:
+              locale === "ru"
+                ? ""
+                : "The procedure begins with a sleeve gastrectomy to reduce the stomach size. The second step involves bypassing a large portion of the small intestine, reducing both food intake and nutrient absorption. This causes both restriction (limiting the amount of food that can be eaten) and malabsorption (reducing how many calories and nutrients are absorbed).",
+          },
+          {
+            header: locale === "ru" ? "" : "Who It’s For:",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Individuals with a BMI of 50 or higher (morbid obesity). Patients who have not had success with other bariatric procedures. Those committed to long-term lifestyle changes and follow-up care.",
+          },
+        ],
+      },
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "How is BPD/DS different?",
+          answer: locale === "ru" ? "" : "It combines a sleeve gastrectomy and intestinal bypass.",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it more effective?",
+          answer: locale === "ru" ? "" : "Yes — highest weight loss and diabetes remission.",
+        },
+        {
+          question: locale === "ru" ? "" : "What are the risks?",
+          answer: locale === "ru" ? "" : "Higher risk of vitamin deficiency and diarrhea.",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it reversible?",
+          answer: locale === "ru" ? "" : "Very complex and rarely reversed.",
+        },
+        {
+          question: locale === "ru" ? "" : "Will I need lifelong supplements?",
+          answer: locale === "ru" ? "" : "Yes — strict compliance is essential.",
+        },
+        {
+          question: locale === "ru" ? "" : "What is the recovery like after duodenal switch surgery?",
+          answer: locale === "ru" ? "" : "Hospital stay is 3–4 days; full recovery in 4–6 weeks.",
+        },
+      ],
+      posts: [
+        locale === "ru"
+          ? ""
+          : "Follow a slow progression diet (liquid to solid)",
+        locale === "ru"
+          ? ""
+          : "Take all prescribed supplements for life",
+        locale === "ru"
+          ? ""
+          : "Eat protein-rich meals and avoid high-fat foods",
+        locale === "ru"
+          ? ""
+          : "Walk daily, avoid lifting for 4–6 weeks",
+      ],
+      preList: [
+        locale === "ru"
+          ? ""
+          : "Stop smoking and drinking alcohol",
+        locale === "ru" ? "" : "Avoid NSAIDs and anticoagulants",
+        locale === "ru"
+          ? ""
+          : "Complete full blood work and evaluations",
+        locale === "ru"
+          ? ""
+          : "Discuss risks and high supplement needs with your team",
+      ],
+      conclusion: {
+        title: locale === "ru" ? "Заключение" : "Conclusion",
+        desc:
+          locale === "ru"
+            ? ""
+            : "The Biliopancreatic Diversion with Duodenal Switch is one of the most effective surgeries for patients with severe obesity. While it offers significant weight loss and health improvements, it requires lifelong commitment to supplementation and careful monitoring of nutritional intake.",
+      },
+      bfs: bfList,
+      contents: {
+        title:
+          locale === "ru"
+            ? ""
+            : "Comparing BPD/DS to Other Bariatric Surgeries",
+        content:
+          locale === "ru"
+            ? ``
+            : `<div dir="ltr" align="left">
+<div dir="ltr" align="left">
+<table style="width: 98.6361% !important"><colgroup><col style="width: 24.9927% !important" width="156"><col style="width: 24.9927% !important" width="156"><col style="width: 24.9927% !important" width="156"><col style="width: 24.9927% !important" width="156"></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr">Feature</p>
+</td>
+<td>
+<p dir="ltr">BPD/DS</p>
+</td>
+<td>
+<p dir="ltr">Gastric Sleeve Surgery</p>
+</td>
+<td>
+<p dir="ltr" style="text-align: left !important">Roux-en-Y Gastric Bypass</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Procedure Type</p>
+</td>
+<td>
+<p dir="ltr">Restrictive &amp; Highly Malabsorptive</p>
+</td>
+<td>
+<p dir="ltr">Restrictive</p>
+</td>
+<td>
+<p dir="ltr">Restrictive &amp; Malabsorptive</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">How it Works</p>
+</td>
+<td>
+<p dir="ltr">Sleeve + Major intestinal bypass</p>
+</td>
+<td>
+<p dir="ltr">Removes ~80% of stomach</p>
+</td>
+<td>
+<p dir="ltr">Creates pouch &amp; bypasses intestine</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Complexity</p>
+</td>
+<td>
+<p dir="ltr">High</p>
+</td>
+<td>
+<p dir="ltr">Moderate</p>
+</td>
+<td>
+<p dir="ltr">High</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Weight Loss</p>
+</td>
+<td>
+<p dir="ltr">Highest potential (70%+)</p>
+</td>
+<td>
+<p dir="ltr">Significant (60-70%)</p>
+</td>
+<td>
+<p dir="ltr">Significant (~50%+)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Nutrient Issues</p>
+</td>
+<td>
+<p dir="ltr">Very High Risk - Lifelong monitoring needed</p>
+</td>
+<td>
+<p dir="ltr">Lower risk</p>
+</td>
+<td>
+<p dir="ltr">Higher risk</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Diabetes Resolution</p>
+</td>
+<td>
+<p dir="ltr">Highest rate</p>
+</td>
+<td>
+<p dir="ltr">Good rate</p>
+</td>
+<td>
+<p dir="ltr">Very good rate</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Commonality</p>
+</td>
+<td>
+<p dir="ltr">Less common, specialized centers</p>
+</td>
+<td>
+<p dir="ltr">Most common</p>
+</td>
+<td>
+<p dir="ltr">Common, "gold standard"</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 dir="ltr">&nbsp;</h3>
+<h3 dir="ltr">Why Choose Turkey for Biliopancreatic Diversion with Duodenal Switch (BPD/DS)?</h3>
+<p dir="ltr">Choosing Turkey for a complex procedure like Biliopancreatic Diversion with Duodenal Switch (BPD/DS) through AZPO Health offers distinct advantages:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Access to Specialized Expertise: This surgery requires highly skilled and experienced surgeons. AZPO Health connects you with centers of excellence in Turkey known for performing complex bariatric revisions and procedures like BPD/DS.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Significant Cost Efficiency: Despite being the most complex bariatric procedure, undergoing this surgery in Turkey remains far more cost-effective compared to the US or Western Europe, where prices are significantly higher.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">High Standards of Medical Care: Our partner facilities are internationally accredited, utilize advanced laparoscopic technology, and follow rigorous safety protocols essential for complex surgeries.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Support Packages: We facilitate packages covering the surgery, extensive preoperative evaluations, longer hospital stays if needed, specialized postoperative nutritional guidance, accommodation, and transfers, ensuring comprehensive care coordination.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Focus on International Patients: Turkish clinics are experienced in catering to the needs of medical tourists, providing multilingual support and detailed long-term follow-up plans crucial after BPD/DS.</p>
+</li>
+</ul>
+<h3 dir="ltr">Understanding the Significant Risks and Lifelong Considerations of BPD/DS</h3>
+<p dir="ltr">Biliopancreatic Diversion with Duodenal Switch (BPD/DS) carries higher risks and demands more significant lifelong commitment than other bariatric surgeries:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Major Nutritional Deficiencies: The extensive intestinal bypass leads to severe malabsorption of fats, proteins, and crucial vitamins and minerals (especially fat-soluble vitamins A, D, E, K, iron, calcium, zinc, B vitamins). Lifelong, high-dose supplementation and rigorous monitoring via regular blood tests are absolutely mandatory to prevent severe health consequences like anemia, osteoporosis, and neurological problems.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">More Frequent Bowel Movements: Patients often experience more frequent, looser, and potentially foul-smelling stools due to fat malabsorption.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Higher Surgical Risk: As a more complex procedure, the initial surgical risks (like leaks, bleeding, or infections) are slightly higher compared to sleeve or bypass.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Longer Recovery: Recovery time may be longer than for simpler bariatric procedures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Strict Dietary Adherence: While protein intake is crucial, managing fat intake and ensuring adequate hydration are vital.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Lifelong Follow-Up: Regular, lifelong follow-up with a specialized bariatric team (including surgeon, dietitian, and primary care physician) is non-negotiable.</p>
+</li>
+</ul>
+<p dir="ltr">The decision to undergo BPD/DS must be made with a full understanding of these commitments.</p>
+<h3 dir="ltr">The AZPO Health Advantage: Guiding You Through Complex Care</h3>
+<p dir="ltr">Undergoing a complex surgery like Biliopancreatic Diversion with Duodenal Switch (BPD/DS) requires exceptional support and expertise. AZPO Health upholds the highest standards of Expertise, Authoritativeness, and Trustworthiness (EEAT):</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Specialized Network: We connect you specifically with surgeons and centers highly experienced in performing BPD/DS and managing its complex aftercare.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">In-Depth Information: We ensure you receive thorough education about the procedure, the profound lifestyle changes required, and the potential risks involved.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Coordination: Our team provides dedicated support throughout your journey, managing logistics and ensuring seamless communication with the medical team.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Prioritizing Safety: Your health is paramount. We only partner with facilities demonstrating excellence in patient safety and surgical outcomes for complex bariatric cases.</p>
+</li>
+</ul>
+<h3 dir="ltr">Take the Decisive Step with AZPO Health</h3>
+<p dir="ltr">If you are considering Biliopancreatic Diversion with Duodenal Switch (BPD/DS) as a solution for severe obesity, let AZPO Health provide the expert guidance and connection to specialized care in Turkey. We are here to facilitate a safe, informed, and supportive process.</p>
+<p dir="ltr">Contact AZPO Health today for a free consultation to discuss if BPD/DS is the right option for you and learn more about our specialized programs in Turkey.</p>
+<strong id="docs-internal-guid-2e7f1eef-7fff-8718-4fd1-da423bce7c7d"></strong></div>`,
+      },
+      subNestedKey: "bpd-ds",
+      imgCover: subNestedKey === "bpd-ds" ? healthlogo : null,
+    },
+    {
+      id: 0,
+      title:
+        locale === "ru"
+          ? ""
+          : "Struggling with Weight Loss but Not Ready for Surgery? The Intragastric Balloon Can Help",
+      descriptionTop:
+        locale === "ru"
+          ? ""
+          : "Losing weight can be a difficult and often discouraging journey. If you've tried various diets and exercise programs without lasting success, but the idea of permanent weight loss surgery feels like too big a step, you might be looking for a less invasive option. Feeling frustrated by stubborn weight and its impact on your health and confidence is common, but there are effective, non-surgical solutions available.",
+      benefits: {
+        items: [
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "No Surgery",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Completely non-invasive procedure with no incisions required",
+          },
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Weight Results",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Average total body weight loss of 10-15% post-treatment",
+          },
+          {
+            title:
+              locale === "ru"
+                ? ""
+                : "Health Benefits",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Reduces obesity-related health risks and offers quick recovery time",
+          },
+        ],
+        categories: [
+          {
+            header: locale === "ru" ? "Кому это подходит" : "Description",
+            desc:
+              locale === "ru"
+                ? ""
+                : "The intragastric balloon is a non-surgical weight-loss procedure designed to help individuals lose weight by reducing hunger and promoting earlier satiety. A soft, saline- or gas-filled balloon (400-700 cc) is temporarily placed in the stomach, occupying space and limiting food intake.",
+          },
+          {
+            header: locale === "ru" ? "Что следует учитывать" : "How it works",
+            desc:
+              locale === "ru"
+                ? ""
+                : "The gastric balloon is placed into the stomach endoscopically under mild sedation and then filled with saline or gas. The 20–30 minute procedure requires no incisions.Duration: It stays in the stomach for 6–12 months, depending on the type, and is removed the same way.Weight Loss Mechanism: The balloon limits stomach space, helping patients feel full with less food, and is combined with a supervised diet and lifestyle plan.",
+          },
+          {
+            header: locale === "ru" ? "" : "Who It’s For:",
+            desc:
+              locale === "ru"
+                ? ""
+                : "Individuals with a BMI of 30-40 who are unable to lose weight through traditional methods. Patients not eligible or ready for bariatric surgery. Those willing to commit to a structured diet and lifestyle program.",
+          },
+        ],
+      },
+      faqs: [
+        {
+          question: locale === "ru" ? "" : "What is a gastric balloon?",
+          answer: locale === "ru" ? "" : "A temporary silicone balloon that reduces hunger.",
+        },
+        {
+          question: locale === "ru" ? "" : "Is it permanent?",
+          answer: locale === "ru" ? "" : "No — removed after 6 months.",
+        },
+        {
+          question: locale === "ru" ? "" : "Will I feel it inside?",
+          answer: locale === "ru" ? "" : "You may feel full or slightly bloated.",
+        },
+        {
+          question: locale === "ru" ? "" : "How much weight can I lose?",
+          answer: locale === "ru" ? "" : "Typically 10–15% of total body weight.",
+        },
+        {
+          question: locale === "ru" ? "" : "Can it be repeated?",
+          answer: locale === "ru" ? "" : "Yes, but not recommended back-to-back without a break.",
+        },
+        {
+          question: locale === "ru" ? "" : "What is the recovery like after balloon placement?",
+          answer: locale === "ru" ? "" : "Same-day discharge; mild discomfort for a few days.",
+        },
+      ],
+      posts: [
+        locale === "ru"
+          ? ""
+          : "Start with clear liquids, then soft foods",
+        locale === "ru"
+          ? ""
+          : "Expect nausea or cramping for a few days",
+        locale === "ru"
+          ? ""
+          : "Avoid overeating or carbonated drinks",
+        locale === "ru"
+          ? ""
+          : "Take anti-nausea meds if prescribed",
+        locale === "ru"
+          ? ""
+          : "Balloon is removed after 6 months — plan accordingly",
+      ],
+      preList: [
+        locale === "ru"
+          ? ""
+          : "Follow pre-procedure diet (often liquid 1–2 days)",
+        locale === "ru" ? "" : "No eating or drinking 8–12 hours before the procedure",
+        locale === "ru"
+          ? ""
+          : "Stop smoking and alcohol 3–5 days prior",
+        locale === "ru"
+          ? ""
+          : "Discuss acid reflux or stomach issues with your doctor",
+        locale === "ru"
+          ? ""
+          : "Arrange transport — this is outpatient with sedation",
+      ],
+      conclusion: {
+        title: locale === "ru" ? "Заключение" : "Conclusion",
+        desc:
+          locale === "ru"
+            ? ""
+            : "The intragastric balloon is a safe and effective option for individuals seeking a non-surgical weight-loss method. While it offers notable benefits in conjunction with diet and exercise, it requires a strong commitment to lifestyle modifications for sustained success after the balloon is removed.",
+      },
+      bfs: bfList,
+      contents: {
+        title:
+          locale === "ru"
+            ? ""
+            : "Comparing Intragastric Balloon to Surgical Options",
+        content:
+          locale === "ru"
+            ? ``
+            : `
+              <div dir="ltr" align="left">
+<table style="width: 99.1282% !important"><colgroup><col style="width: 24.9925% !important" width="156"><col style="width: 24.9925% !important" width="156"><col style="width: 24.9925% !important" width="156"><col style="width: 24.9925% !important" width="156"></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr">Feature</p>
+</td>
+<td>
+<p dir="ltr">Intragastric Balloon</p>
+</td>
+<td>
+<p dir="ltr">Gastric Sleeve Surgery</p>
+</td>
+<td>
+<p dir="ltr">Roux-en-Y Gastric Bypass</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Procedure Type</p>
+</td>
+<td>
+<p dir="ltr">Non-Surgical, Temporary</p>
+</td>
+<td>
+<p dir="ltr">Surgical, Permanent</p>
+</td>
+<td>
+<p dir="ltr">Surgical, Permanent</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">How it Works</p>
+</td>
+<td>
+<p dir="ltr">Occupies stomach space</p>
+</td>
+<td>
+<p dir="ltr">Removes ~80% of stomach</p>
+</td>
+<td>
+<p dir="ltr">Creates pouch &amp; bypasses intestine</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Invasiveness</p>
+</td>
+<td>
+<p dir="ltr">Endoscopic (No Incision)</p>
+</td>
+<td>
+<p dir="ltr">Minimally Invasive</p>
+</td>
+<td>
+<p dir="ltr">Minimally Invasive (more complex)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Reversibility</p>
+</td>
+<td>
+<p dir="ltr">Yes (Removed after 6-12mo)</p>
+</td>
+<td>
+<p dir="ltr">No</p>
+</td>
+<td>
+<p dir="ltr">Typically No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Weight Loss</p>
+</td>
+<td>
+<p dir="ltr">Moderate (10-15% typical)</p>
+</td>
+<td>
+<p dir="ltr">Significant</p>
+</td>
+<td>
+<p dir="ltr">Significant &amp; often rapid</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Nutrient Issues</p>
+</td>
+<td>
+<p dir="ltr">Minimal</p>
+</td>
+<td>
+<p dir="ltr">Lower risk</p>
+</td>
+<td>
+<p dir="ltr">Higher risk</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Duration</p>
+</td>
+<td>
+<p dir="ltr">Temporary (6-12 months)</p>
+</td>
+<td>
+<p dir="ltr">Permanent</p>
+</td>
+<td>
+<p dir="ltr">Permanent</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 dir="ltr">Why Choose Turkey for Your Intragastric Balloon Procedure?</h3>
+<p dir="ltr">Turkey is an excellent choice for the Intragastric-Balloon procedure, facilitated by AZPO Health:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Affordability: Intragastric balloon programs in Turkey are considerably more cost-effective than in many Western countries, often including insertion, the device, removal, and even accommodation or transfers as part of a comprehensive package.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">High-Quality Clinics: We partner with modern, well-equipped clinics and experienced gastroenterologists or bariatric specialists skilled in endoscopic procedures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Comprehensive Packages: AZPO Health helps arrange packages that often include the procedure (insertion and removal), medical consultations, dietician support, hotel stays, and local transportation, ensuring a smooth experience.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Experienced Medical Teams: Turkish medical professionals are accustomed to international patients and often provide multilingual support.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Pleasant Recovery Environment: Combine your procedure with a stay in attractive locations like Istanbul, Antalya, or Izmir.</p>
+</li>
+</ul>
+<h3 dir="ltr">Understanding the Risks and Considerations of the Intragastric Balloon</h3>
+<p dir="ltr">While non-surgical, the Intragastric-Balloon has considerations:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Temporary Solution: The balloon is removed after 6-12 months. Long-term weight maintenance depends entirely on maintaining the lifestyle changes adopted during the treatment period. Weight regain is possible if habits are not sustained.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Side Effects: Nausea, vomiting, abdominal pain, or discomfort are common in the first few days after insertion as the body adjusts. These are usually managed with medication.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Dietary Adjustments: You will need to follow specific dietary guidelines (e.g., smaller portions, avoiding certain foods) while the balloon is in place.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Rare Complications: Though infrequent, risks include balloon deflation (which requires removal), blockage, or stomach irritation/ulcers.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Not Suitable for Everyone: Exclusions include patients with previous stomach surgery, large hiatal hernias, severe acid reflux, or certain medical conditions.</p>
+</li>
+</ul>
+<p dir="ltr">Our partnered specialists will discuss these points in detail during your consultation.</p>
+<h3 dir="ltr">The AZPO Health Advantage: Expertise, Trust, and Dedicated Support</h3>
+<p dir="ltr">Choosing AZPO Health for your Intragastric-Balloon procedure in Turkey means you benefit from our commitment to Expertise, Authoritativeness, and Trustworthiness:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Carefully Selected Partners: We connect you with reputable clinics and specialists known for their success with endoscopic weight loss procedures.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Transparency: We provide clear information about the procedure, costs, potential outcomes, and the entire medical travel process.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Personalized Guidance: Our team supports you from your first inquiry through your procedure and follow-up, ensuring a seamless journey.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Quality and Safety Focus: We prioritize your health by partnering only with facilities that meet high standards of care and patient safety.</p>
+</li>
+</ul>
+<h3 dir="ltr">Start Your Non-Surgical Weight Loss Journey with AZPO Health</h3>
+<p dir="ltr">If you're ready to take a significant step towards weight loss without undergoing surgery, the Intragastric-Balloon could be your ideal starting point. Let AZPO Health connect you with expert care in Turkey.</p>
+<p dir="ltr">Contact AZPO Health today for a free consultation to learn more about the Intragastric-Balloon and see if it's the right fit for you!</p>
+              `,
+      },
+      subNestedKey: "intragastric-balloon",
+      imgCover: subNestedKey === "intragastric-balloon" ? healthlogo : null,
+    },
+    
     // hair
     // fue
     {

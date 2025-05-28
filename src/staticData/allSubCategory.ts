@@ -86,6 +86,7 @@ import lasiksurgery from "@/assets/images/subnested/LASIK surgery.png";
 import smartlens from "@/assets/images/subnested/Smart Lens in Turkey.png";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.png";
 import dentalbonding from "@/assets/images/subnested/Dental Bonding.png";
+import healthlogo from "@/assets/images/healthlogo.png" 
 export const allSubCategory = [
   {
     img: hair,
@@ -126,6 +127,14 @@ export const allSubCategory = [
       "Considering genital aesthetic surgery to address personal concerns or enhance your intimate well-being? Turkey has become a leading destination for these specialized procedures, offering discreet, high-quality care. Discover how AZPO Health connects you with expert surgeons and all-inclusive packages for a comfortable and transformative experience.",
     categoryKey: "aesthetic",
     path: "genital-aesthetic",
+  },
+  {
+    img: healthlogo,
+    title: "Bariatric Surgery",
+    description:
+      "Are you facing the daily struggles associated with excess weight, such as reduced mobility, fatigue, or related health conditions? Many people feel self-conscious or limited by their weight, impacting their quality of life. Finding a treatment that offers significant, long-term weight loss can seem daunting. Bariatric surgery offers a powerful tool to help individuals regain control of their health and unlock a more active, fulfilling future.",
+    categoryKey: "aesthetic",
+    path: "bariatric-surgery",
   },
   // dental
   {
@@ -229,6 +238,55 @@ export const allSubCategory = [
   },
 ];
 export const allSubNestedCategory = [
+  // bariatric-surgery
+  {
+    img: healthlogo,
+    title: "Intragastric Balloon in Turkey",
+    description:
+      "Losing weight can be a difficult and often discouraging journey. If you've tried various diets and exercise programs without lasting success, but the idea of permanent weight loss surgery feels like too big a step, you might be looking for a less invasive option. Feeling frustrated by stubborn weight and its impact on your health and confidence is common, but there are effective, non-surgical solutions available.",
+    path: "intragastric-balloon",
+    categoryKey: "aesthetic",
+    subCategoryKey: "bariatric-surgery",
+  },
+  {
+    img: healthlogo,
+    title: "Biliopancreatic Diversion with Duodenal Switch (BPD/DS) in Turkey",
+    description:
+      "For individuals grappling with severe or morbid obesity (often defined as a BMI of 50 or higher), the journey can be incredibly challenging. Standard weight loss methods may have proven ineffective, and even other bariatric surgeries might not offer the profound, lasting weight loss needed to significantly improve health and reclaim quality of life. If you find yourself in this situation, feeling overwhelmed by the health complications of extreme obesity and seeking the most potent surgical solution available, Biliopancreatic Diversion with Duodenal Switch (BPD/DS) could be the answer.",
+    path: "bpd-ds",
+    categoryKey: "aesthetic",
+    subCategoryKey: "bariatric-surgery",
+  },
+  {
+    img: healthlogo,
+    title: "Adjustable Gastric Banding in Turkey",
+    description:
+      "Are you exploring weight loss surgery options but feel hesitant about permanent changes to your body? Perhaps you're looking for a less invasive approach to help manage obesity and its related health challenges. If diet and exercise haven't provided the lasting results you need, and you prefer a procedure that can be adjusted or even reversed, Adjustable Gastric Banding might be the right path for you.",
+    path: "adjustable-gastric-banding",
+    categoryKey: "aesthetic",
+    subCategoryKey: "bariatric-surgery",
+  },
+  {
+    img: healthlogo,
+    title: "Roux-en-Y Gastric Bypass Surgery",
+    description:
+      "Living with severe obesity can feel like a constant battle. Perhaps you've tried countless diets and exercise plans, only to find the weight returning, leaving you feeling frustrated and hopeless. Maybe you're facing serious health problems like type 2 diabetes, high blood pressure, or sleep apnea, which limit your daily activities and impact your overall well-being.  We understand the challenges you face, and we connect you with Turkey's most reputable clinics and highly experienced bariatric surgeons specializing in transformative weight-loss procedures, including the renowned Roux-en-Y Gastric Bypass.",
+    path: "roux-gastric-bypass",
+    categoryKey: "aesthetic",
+    subCategoryKey: "bariatric-surgery",
+  },
+  {
+    img: healthlogo,
+    title: "Gastric Sleeve Surgery in Turkey",
+    description:
+      "A transformative journey towards a healthier you with gastric sleeve surgery, a leading bariatric procedure offered by AZPO Health in Turkey. If you've struggled with obesity and related health issues, gastric sleeve surgery in Turkey provides an effective, safe, and affordable solution. AZPO Health partners with the best, internationally accredited clinics and highly experienced bariatric surgeons across Turkey's top destinations, ensuring you receive world-class care tailored to your needs.",
+    path: "gastric-sleeve-surgery",
+    categoryKey: "aesthetic",
+    subCategoryKey: "bariatric-surgery",
+  },
+
+
+
   // hair-transplantation
   {
     img: FUE,

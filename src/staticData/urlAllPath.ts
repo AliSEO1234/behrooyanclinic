@@ -8,6 +8,7 @@ export const pathsCategory = [
 
 export const pathsSubCategory = [
     "hair-transplantation",
+    "bariatric-surgery",
     "facial-aesthetic-surgery",
     "body-contouring",
     "breast-surgery",

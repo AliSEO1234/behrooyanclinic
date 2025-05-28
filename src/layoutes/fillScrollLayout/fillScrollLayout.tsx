@@ -1349,9 +1349,8 @@ const BorderLayoutAbout = ({
     //   );
     // }
   }
-
   return (
-    <div className={`${className ? className : ""} round40 s1280:relative`}>
+    <section className={`${className ? className : ""} round40 s1280:relative`}>
       <div
         className={`${
           classLabel ? classLabel : "flex-cen"
@@ -1365,7 +1364,7 @@ const BorderLayoutAbout = ({
         {children}
       </div>
       {renderSVG(order)}
-    </div>
+    </section>
   );
 };
 export default BorderLayoutAbout;

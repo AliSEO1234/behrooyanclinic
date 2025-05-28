@@ -63,14 +63,14 @@ const LeadForm = ({ className }: LeadFormType) => {
     reset();
   };
   return (
-    <div
+    <section
+      aria-labelledby="lead-form"
       className={`${
         className || ""
       } grid grid-cols-12 relative h-[567px] max-h-[567px] s1280:h-[259px] s1512:h-[306px] s1728:h-[346px] s1920:h-[374px] rounded-[40px] overflow-hidden `}
     >
       <div className="w-full absolute top-0 left-0  h-[567px] max-h-full">
         <ImgFetcher
-
           width={1500}
           height={800}
           src={leaddesk}
@@ -184,7 +184,7 @@ const LeadForm = ({ className }: LeadFormType) => {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default LeadForm;

@@ -15,7 +15,7 @@ const ServiceCard = ({
 }: ServiceCardType) => {
   const locale = useLocale();
   return (
-    <div
+    <article
       className={`${
         className && className
       } bg-white rounded-b-[80px] rounded-t-[400px] shadow-[0px_4px_15px_#0000001A] pb-4 pt-3`}
@@ -44,23 +44,21 @@ const ServiceCard = ({
               : "s1280:text-[13px] s1512:text-[15px]"
           } text-center line-clamp-1`}
         >
-          <span className="font-bold">
-          {countService}
-          </span>{" "}
+          <span className="font-bold">{countService}</span>{" "}
           {locale === "ru" ? "медицинских направлений" : "Service"}
         </p>
       </div>
       <div className="flex-cen px-4">
         <Link
-        href={`/${locale}/medicaltourism/${linkService}`}
-          className={`flex-cen bg-[#00979a] hover:bg-[#007A7D] anm text-white font-bold rounded-[40px] h-[48px] w-[156px] drop-shadow-[0px_4px_4px_#00000040] ${locale === "ru" ? "w-full" : ""} ${
-            linkStyle ? linkStyle : linkStyle
-          }`}
+          href={`/${locale}/medicaltourism/${linkService}`}
+          className={`flex-cen bg-[#00979a] hover:bg-[#007A7D] anm text-white font-bold rounded-[40px] h-[48px] w-[156px] drop-shadow-[0px_4px_4px_#00000040] ${
+            locale === "ru" ? "w-full" : ""
+          } ${linkStyle ? linkStyle : linkStyle}`}
         >
           {locale === "ru" ? "Посмотреть услуги" : "View services"}
         </Link>
       </div>
-    </div>
+    </article>
   );
 };
 export default ServiceCard;

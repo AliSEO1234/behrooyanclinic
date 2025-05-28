@@ -2,7 +2,7 @@ import { ChooseUsCardType } from "@/types/chooseUs/chooseUsType";
 
 const ChooseUsCard = ({ desc, header, index, className ,end = false }: ChooseUsCardType) => {
   return (
-    <div
+    <article
       className={`${
         className && className
       } relative bg-white rounded-[40px] shadow-[0_4px_4px_0px_#00000040] ${end ? "" : "mb-[32px]"} s1280:mb-6 px-4 pb-5 s1280:px-3 s1280:pb-8 s1280:pt-4`}
@@ -19,7 +19,7 @@ const ChooseUsCard = ({ desc, header, index, className ,end = false }: ChooseUsC
       <div className="rounded-full bg-white shadow-choose-us w-[35px] h-[35px] text-[14px] s1280:w-[54px] s1280:h-[54px] absolute -left-3 -top-3 s1280:left-0 flex-cen text-[#00979A] s1280:text-[20px] font-semibold">
         {index}
       </div>
-    </div>
+    </article>
   );
 };
 export default ChooseUsCard;
