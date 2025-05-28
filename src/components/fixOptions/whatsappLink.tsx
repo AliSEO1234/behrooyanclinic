@@ -16,9 +16,9 @@ import { useLocale } from "next-intl";
 
 const WhatsAppLink = () => {
   const [whatsapp, setWhatsapp] = useState<boolean>(false);
-  const locale = useLocale()
+  const locale = useLocale();
   return (
-    <DropdownMenu onOpenChange={setWhatsapp} open={whatsapp}>
+    <DropdownMenu modal={false} onOpenChange={setWhatsapp} open={whatsapp}>
       <DropdownMenuTrigger
         data-aos="fade-up"
         className={`w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-[#00979A] p-2 outline-none fixed bottom-5 right-5 z-[5] ${

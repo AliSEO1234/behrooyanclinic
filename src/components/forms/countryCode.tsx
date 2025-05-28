@@ -1,7 +1,4 @@
-import {
-  CountrycodeItemType,
-  CountryCodeType,
-} from "@/types/countryCode";
+import { CountrycodeItemType, CountryCodeType } from "@/types/countryCode";
 import { ChangeEvent, useEffect, useState } from "react";
 import {
   DropdownMenu,
@@ -16,10 +13,10 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { countries } from "@/staticData/countryCodes";
 
 const CountryCode = ({ setCodes, codes, className }: CountryCodeType) => {
-  const [countryList, setCountryList] = useState<CountrycodeItemType[]>(countries);
-  const allCountries :CountrycodeItemType[]=countries;
+  const [countryList, setCountryList] =
+    useState<CountrycodeItemType[]>(countries);
+  const allCountries: CountrycodeItemType[] = countries;
   const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
-
 
   const handleFilterCountries = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.toLowerCase();
@@ -36,7 +33,11 @@ const CountryCode = ({ setCodes, codes, className }: CountryCodeType) => {
     }
   }, [countriesDrop, allCountries]);
   return (
-    <DropdownMenu open={countriesDrop} onOpenChange={setCountriesDrop}>
+    <DropdownMenu
+      modal={false}
+      open={countriesDrop}
+      onOpenChange={setCountriesDrop}
+    >
       <DropdownMenuTrigger
         className={`absolute top-1/2 -translate-y-1/2 left-3 outline-none flex-cen gap-x-1 text-[#9996A0] hover:text-[#00979A] anm border-none ${
           className ? className : "2s1280:text-[14] w-16"

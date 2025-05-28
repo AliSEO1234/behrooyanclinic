@@ -17,7 +17,7 @@ const DropDownCustom = ({
 }: ChangeDropdownType) => {
   const [dropdown, setDropDown] = useState<boolean>(false);
   return (
-    <DropdownMenu open={dropdown} onOpenChange={setDropDown}>
+    <DropdownMenu modal={false} open={dropdown} onOpenChange={setDropDown}>
       <DropdownMenuTrigger className="outline-none" asChild>
         <button className={`${trigStyle}`}>
           <span>{trigText}</span>

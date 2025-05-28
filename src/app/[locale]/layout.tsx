@@ -9,6 +9,7 @@ import UpArrow from "@/components/fixOptions/upArrow";
 import { ToastContainer } from "react-toastify";
 import Script from "next/script";
 import { headers } from "next/headers";
+import PopForm from "@/components/popUpForm/popForm";
 export const dynamic = "force-dynamic";
 type Props = {
   params: Promise<{ locale: string }>;
@@ -65,7 +66,7 @@ const RootLayout = async ({
         <AppProvider>
           <Navbar />
           <main>
-            {/* <PopForm /> */}
+            <PopForm />
             <ToastContainer position="top-center" draggable />
             <UpArrow />
             <WhatsAppLink />

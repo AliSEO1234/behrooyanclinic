@@ -17,9 +17,13 @@ const ChangeLanguage = ({ BodyWidth, trigStyle }: ChangeLanguageType) => {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const currentPath = pathname.split("/").filter(path=> Boolean(path)).slice(1).join("/")  
+  const currentPath = pathname
+    .split("/")
+    .filter((path) => Boolean(path))
+    .slice(1)
+    .join("/");
   return (
-    <DropdownMenu open={changeLang} onOpenChange={setChangeLang}>
+    <DropdownMenu modal={false} open={changeLang} onOpenChange={setChangeLang}>
       <DropdownMenuTrigger className="outline-none" asChild>
         <button
           className={`flex-cen gap-x-2 ${trigStyle} text-[12px] s1600:text-[18px] font-normal bg-[#DAEDE6] rounded-[40px] text-[#25A6A9]`}
