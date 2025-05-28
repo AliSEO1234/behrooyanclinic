@@ -107,7 +107,7 @@ const Page = async ({ params }: PropsPageType) => {
           </div>
         </div>
       </div>
-      <div className="viewport-p">
+      <div className="viewport-size">
         {/* videos */}
         <div className="grid grid-cols-12 gap-y-8 s1280:gap-y-0 s1280:mb-20 s1280:gap-x-20 s1920:gap-x-32">
           <div className="order-2 s1280:order-1 col-span-12 s1280:col-span-7 flex items-center justify-start">

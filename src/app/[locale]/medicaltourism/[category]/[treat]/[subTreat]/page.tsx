@@ -180,7 +180,7 @@ const Page = async ({ params }: PropsPageType) => {
         {/* <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 w-[75%] h-[50px] rounded-b-[400px] z-10 bg-rose-600"></div> */}
       </section>
       {/* content */}
-      <section className="viewport-p bg-[#FCFCFC]">
+      <section className="viewport-size bg-[#FCFCFC]">
         {circleList.map((circle, index) => (
           <CircleAnimate key={index} {...circle} />
         ))}

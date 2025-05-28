@@ -20,11 +20,40 @@ html {
   -webkit-mask-image: none !important;
 }
 @layer components {
+  /* #################### home page #################### */
+  .first-section {
+    @apply relative s1280:h-screen flex flex-col items-center;
+  }
+  .first-section .initial-box {
+    @apply flex flex-col items-center justify-center z-[3] relative mb-6 s1280:mb-0 w-fit p-3 rounded-[38px] bg-gradient-to-r from-[#FFFFFF6E] to-[#25A6A945] mt-24 s1512:mt-36;
+  }
+  .first-section .initial-box h1 {
+    @apply font-black text-[24px] s1280:text-[32px] text-white h1-homepage-shadow;
+  }
+  .first-section .initial-box p {
+    @apply font-medium text-[18px] s1280:text-[24px] text-white mb-5;
+  }
+  .first-section .what-do-link {
+    @apply flex-cen w-fit gap-x-2 text-white s1280:text-[18px] s1512:text-[20px] font-semibold;
+  }
+  .first-section .what-do-link > span:first-child {
+    @apply bg-[#DAEDE6] rounded-full flex-cen p-1 w-10 h-10;
+  }
+  .first-section .what-do-link > span:first-child span {
+    @apply w-full h-full bg-[#25A6A9] hover:bg-[#0c797b] anm rounded-full flex-cen text-white;
+  }
+  .first-section .what-do-link > span:first-child span svg {
+    @apply size-4 ms-[2px];
+  }
+  /* .first-section .what-do-link span:first-child{
+
+  } */
+
   /* .soon style */
   .soon-input {
     @apply bg-white outline-none rounded-[40px] border border-[#9996A0] w-full h-[48px] s1280:h-10 s1512:h-12;
   }
-  
+
   /* editor styles */
   .text-editor ul {
     list-style-type: disc !important;
@@ -52,7 +81,7 @@ html {
   }
   /* subnested style class */
   .sub-nested-home-first-section {
-    @apply viewport-p grid grid-cols-12 gap-y-3 mt-4 s1280:mt-10 s1512:mt-20 shadow-[0px_2px_12.9px_0px_#00979A1C] rounded-b-[40px] s1280:mb-4 relative;
+    @apply viewport-size grid grid-cols-12 gap-y-3 mt-4 s1280:mt-10 s1512:mt-20 shadow-[0px_2px_12.9px_0px_#00979A1C] rounded-b-[40px] s1280:mb-4 relative;
   }
   .sub-nested-home-first-section > div:first-child {
     @apply order-2 s1280:order-1 col-span-12 s1280:col-span-6;
@@ -378,7 +407,7 @@ html {
     text-shadow: 0px 1px 4px 0px #00000040;
   }
   /* vieport style */
-  .viewport-p {
+  .viewport-size {
     @apply px-[10px] s430:px-5 py-10 s1280:px-[71px] s1512:px-[79px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px];
   }
   .form-platform-work-end div label {

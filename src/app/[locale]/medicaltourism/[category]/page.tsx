@@ -86,7 +86,7 @@ const Page = async ({ params }: PropsPageType) => {
           </div>
         </div>
       </div>
-      <div className="viewport-p">
+      <div className="viewport-size">
         {/* service categoryies */}
         <div>
           <div>

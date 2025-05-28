@@ -2,9 +2,7 @@ import PatientServicesForm from "@/components/forms/patient-services/patientServ
 import health from "@/assets/images/healthlogo.png";
 import ImgFetcher from "@/components/imgFetcher";
 import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
-import {
-  handlePatientServices,
-} from "@/staticData/patientServices/patientServicesData";
+import { handlePatientServices } from "@/staticData/patientServices/patientServicesData";
 import PatientServicCard from "@/components/patientServices/patientServicCard";
 import { Metadata } from "next";
 import { headers } from "next/headers";
@@ -19,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const headerRequest = await headers();
   const host = headerRequest.get("host");
   return {
-    title : "Patient Services Azpo",
+    title: "Patient Services Azpo",
     alternates: {
       canonical: `https://${host}/${locale}/patient-services`,
     },
@@ -33,7 +31,7 @@ const PatientServices = async ({ params }: PatientServicesType) => {
   const { locale } = await params;
   const patientServices = handlePatientServices(locale);
   return (
-    <div className="viewport-p">
+    <div className="viewport-size">
       {/* header */}
       <div className="mt-16 s1280:mt-32 mb-20">
         <div className="grid grid-cols-12 s1280:gap-x-5 mb-60 s1280:mb-10">

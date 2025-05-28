@@ -29,7 +29,7 @@ const Page = async ({
   ];
   return (
     <>
-      <section className="viewport-p mt-16 s1280:mt-16 s1512:mt-20 relative z-[2]">
+      <section className="viewport-size mt-16 s1280:mt-16 s1512:mt-20 relative z-[2]">
         <div className="text-[#25A6A9] flex flex-col items-center justify-center mb-3">
           <h1 className="font-extrabold text-[24px] s1280:text-[32px] s1512:text-[36px] s1728:text-[40px] s1920:text-[48px] text-center mb-3">
             {locale === "ru" ? "Скоро будет..." : "Coming Soon..."}
@@ -45,11 +45,13 @@ const Page = async ({
             href={`/${locale}`}
             className="font-bold text-[#25A6A9] s1512:text-[18px] s1728:text-[20px] s1920:text-[24px] border-b border-[#25A6A9]"
           >
-            {locale === "ru" ? "Перейти на главную страницу" : "Go to home page"}
+            {locale === "ru"
+              ? "Перейти на главную страницу"
+              : "Go to home page"}
           </Link>
         </div>
       </section>
-      <section className="viewport-p grid grid-cols-12 s1280:gap-x-8 s1512:gap-x-12 s1728:gap-x-20 -mt-14">
+      <section className="viewport-size grid grid-cols-12 s1280:gap-x-8 s1512:gap-x-12 s1728:gap-x-20 -mt-14">
         {circleList.map((circle, index) => (
           <CircleAnimate key={index} {...circle} />
         ))}

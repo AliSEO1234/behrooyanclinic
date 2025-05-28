@@ -15,7 +15,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 const Footer = () => {
   const locale = useLocale();
   return (
-    <footer className="px-7 pt-5 pb-2 s1280:viewport-p bg-white shadow-[0px_0px_9.6px_#00000014] rounded-t-[40px] s1280:rounded-t-[100px] relative z-[2]">
+    <footer className="px-7 pt-5 pb-2 s1280:viewport-size bg-white shadow-[0px_0px_9.6px_#00000014] rounded-t-[40px] s1280:rounded-t-[100px] relative z-[2]">
       <div className="grid grid-cols-12 gap-y-6 s1280:gap-y-0 s1280:gap-x-5 s1280:mb-6">
         <div className="col-span-12 s1280:col-span-4">
           <div className="flex items-start justify-start gap-x-2 mb-4">
