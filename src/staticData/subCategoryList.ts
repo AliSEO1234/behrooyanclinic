@@ -533,7 +533,7 @@ export const subCategoryHandler = (
       subCategoryKey: "bariatric-surgery",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      video: "https://youtu.be/nFgBhpJvHQ8?si=XAn5N6gkJAzfUuxV",
+      // video: "https://youtu.be/nFgBhpJvHQ8?si=XAn5N6gkJAzfUuxV",
       imgCover: tdAes,
     },
 
