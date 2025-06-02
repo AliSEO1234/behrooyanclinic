@@ -80,9 +80,6 @@ const Page = async ({ params }: PropsPageType) => {
     }/${findSubnestedRelation?.driveFolder}${
       isVersion3 ||isVersion2 ? "/" : `/${findSubnestedRelation?.sizeNameFolder}/`
     }`;
-    console.log(basePath);
-    
-
     let bfLinkList: string[] | null = [];
     if (findSubnestedRelation?.images) {
       for (const bf of findSubnestedRelation!.images) {
