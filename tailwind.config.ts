@@ -9,6 +9,7 @@ export default {
     "./src/layoutes/**/*.{ts,tsx}",
     "./src/features/**/*.{ts,tsx}",
   ],
+  
   theme: {
   	extend: {
   		fontFamily: {
