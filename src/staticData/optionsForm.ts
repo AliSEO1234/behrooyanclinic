@@ -17,12 +17,8 @@ export const options = [
   },
   { isActive: true, label: "Stem Cell", key: "stem-cell", id: 3 },
   { isActive: false, label: "Orthopedics", key: "aesthetic", id: 10 },
-  {
-    isActive: false,
-    label: "Bariatric (Weight Loss) Surgery",
-    key: "aesthetic",
-    id: 11,
-  },
+
+  { isActive: false, label: "Organ Transplants", key: "aesthetic", id: 16 },
   { isActive: true, label: "Fertility", key: "fertility", id: 4 },
   {
     isActive: false,
@@ -30,7 +26,6 @@ export const options = [
     key: "aesthetic",
     id: 12,
   },
-  
   {
     isActive: false,
     label: "General & Laparoscopic Surgery",
@@ -45,7 +40,12 @@ export const options = [
   },
   { isActive: false, label: "Nephrology & Urology", key: "aesthetic", id: 14 },
   { isActive: false, label: "Spine Surgeries", key: "aesthetic", id: 15 },
-  { isActive: false, label: "Organ Transplants", key: "aesthetic", id: 16 },
+  {
+    isActive: true,
+    label: "Bariatric (Weight Loss) Surgery",
+    key: "aesthetic/bariatric-surgery",
+    id: 11,
+  },
   {
     isActive: false,
     label: "ENT (Ear, Nose, and Throat) Surgery",
@@ -61,5 +61,4 @@ export const options = [
   { isActive: false, label: "Oncology", key: "aesthetic", id: 20 },
   { isActive: false, label: "Addiction Treatment", key: "aesthetic", id: 21 },
   { isActive: false, label: "Wellness", key: "aesthetic", id: 22 },
-  
 ];

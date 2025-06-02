@@ -78,8 +78,10 @@ const Page = async ({ params }: PropsPageType) => {
         ? "before_after_folder_3"
         : "before_after_folder"
     }/${findSubnestedRelation?.driveFolder}${
-      isVersion3 ? "/" : `/${findSubnestedRelation?.sizeNameFolder}/`
+      isVersion3 ||isVersion2 ? "/" : `/${findSubnestedRelation?.sizeNameFolder}/`
     }`;
+    console.log(basePath);
+    
 
     let bfLinkList: string[] | null = [];
     if (findSubnestedRelation?.images) {

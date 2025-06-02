@@ -56,9 +56,9 @@ const PopForm = () => {
     full_name,
     phone,
     treatment,
-    token,
+    // token,
   }) => {
-    if(!token) return
+    // if(!token) return
     setLoading(true);
     if (isNaN(+phone)) {
       setError("phone", { type: "validate", message: "The number is wrong." });
