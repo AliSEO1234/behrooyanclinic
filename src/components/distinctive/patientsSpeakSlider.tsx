@@ -1,73 +1,70 @@
 "use client";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 import DistinctiveCard from "./distinctiveCard";
 import { handlePatient } from "@/staticData/patientContent";
 import { useLocale } from "next-intl";
+import DialogPatientSpeakVideo from "../dialogPatientSpeakVideo";
+import { useRef } from "react";
+import { IoIosArrowBack } from "react-icons/io";
 
 const PatientsSpeakSlider = () => {
   const locale = useLocale();
   const patientContents = handlePatient(locale);
-  
+  const parentRef = useRef<HTMLDivElement | null>(null);
+  const scrollLeft = () => {
+    if (parentRef.current) {
+      parentRef.current.scrollBy({ left: -250, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (parentRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = parentRef.current;
+      const maxScroll = scrollWidth - clientWidth;
+
+      if (scrollLeft < maxScroll) {
+        parentRef.current.scrollBy({ left: 250, behavior: "smooth" });
+      }
+    }
+  };
   return (
-    <div className="w-full">
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={20}
-        loop={false}
-        breakpoints={{
-          375: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-          },
-          640: {
-            slidesPerView: 1.5,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 25,
-          },
-          1024: {
-            slidesPerView: 2.5,
-            spaceBetween: 30,
-          },
-          1280: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          1512: {
-            slidesPerView: 4,
-            spaceBetween: 35,
-          },
-        }}
-        grabCursor={true}
-        touchRatio={1}
-        touchAngle={45}
-        simulateTouch={true}
-        allowTouchMove={true}
-        className="pb-4 !mt-10 w-[260px] sm:w-full relative"
+    <div className="relative z-[4] overflow-hidden rounded-[20px] s1280:rounded-[40px]">
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 z-[5] bg-[#00979A]/10 backdrop-blur-[10px] shadow-[0px_5px_50px_#00979A] h-full hidden md:flex-cen px-2">
+        <button
+          onClick={scrollLeft}
+          className="hidden 2xl:flex-cen anm w-10 h-10 rounded-full bg-[#00979A] text-white hover:text-[#00979A] hover:bg-white"
+        >
+          <IoIosArrowBack className="size-6" />
+        </button>
+      </div>
+      <div
+        ref={parentRef}
+        className="flex items-center justify-start flex-nowrap overflow-x-scroll scroll-hide s1280:flex-row gap-x-3 s1280:gap-x-6 s1512:gap-x-8 s1920:gap-x-10 snap-x"
       >
+        <DialogPatientSpeakVideo />
         {patientContents.map(
           ({ desc, header, service, serviceIcon, video }, index) => {
             return (
-              <SwiperSlide key={`slide-${index}`} className="!flex !flex-col gap-x-5">
-                <DistinctiveCard
-                  icon={serviceIcon}
-                  service={service}
-                  title={header}
-                  video={video}
-                  desc={desc}
-                />
-              </SwiperSlide>
+              <DistinctiveCard
+                icon={serviceIcon}
+                service={service}
+                title={header}
+                video={video}
+                desc={desc}
+                key={index}
+              />
             );
           }
         )}
-      </Swiper>
-      <div className="swiper-pagination"></div>
+      </div>
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 z-[5] bg-[#00979A]/10 backdrop-blur-[10px] shadow-[0px_5px_50px_#00979A] h-full hidden md:flex-cen px-2">
+        <button
+          onClick={scrollRight}
+          className="hidden 2xl:flex-cen anm w-10 h-10 rounded-full bg-[#00979A] text-white hover:text-[#00979A] hover:bg-white"
+        >
+          <IoIosArrowBack className="size-6 rotate-180" />
+        </button>
+      </div>
     </div>
   );
 };

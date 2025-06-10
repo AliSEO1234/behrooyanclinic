@@ -41,8 +41,6 @@ import ComplimentaryConsultationForm from "@/features/complimentaryConsultationF
 import ScrollServices from "@/components/services/scrollServices";
 import CircleAnimate from "@/components/circleAnimate";
 import LeadForm from "@/components/leadForm";
-import DialogPatientSpeakVideo from "@/components/dialogPatientSpeakVideo";
-// import { handlePatient } from "@/staticData/patientContent";
 import our1 from "@/assets/images/our1.png";
 import our2 from "@/assets/images/our2.png";
 import whyus from "@/assets/images/whychooseus.png";
@@ -170,7 +168,6 @@ const Home = async ({
       topValue: 5200,
     },
   ];
-  // const patientContents = handlePatient(locale);
   return (
     <>
       <section
@@ -678,10 +675,7 @@ const Home = async ({
                 </h2>
               </div>
             </div>
-              <PatientsSpeakSlider />
-              <DialogPatientSpeakVideo />
-            {/* <div className="flex items-center justify-start flex-nowrap overflow-x-scroll scroll-hide s1280:overflow-x-hidden s1280:justify-center s1280:flex-row gap-x-3 s1280:gap-x-6 s1512:gap-x-8 s1920:gap-x-10">
-            </div> */}
+            <PatientsSpeakSlider />
           </div>
         </FillScrollLayout>
         {/* experience */}

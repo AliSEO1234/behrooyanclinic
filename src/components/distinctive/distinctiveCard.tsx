@@ -53,12 +53,12 @@ const DistinctiveCard = ({
       }
     };
     getVideoInfo();
-  }, [lastPart]);  
+  }, [lastPart]);
   return (
     <div
       className={`${
         className && className
-      } h-[222px] w-full rounded-[20px] s1280:rounded-[40px] overflow-hidden relative`}
+      } w-[221px] h-[222px] min-w-[221px] s1512:w-[250px] s1512:min-w-[250px] s1728:min-w-[295px] s1512:h-[250px] s1728:w-[295px] s1728:h-[295px] rounded-[20px] s1280:rounded-[40px] overflow-hidden relative snap-start scroll-ml-3`}
     >
       <div className="w-full h-full absolute top-0 left-0">
         <ImgFetcher

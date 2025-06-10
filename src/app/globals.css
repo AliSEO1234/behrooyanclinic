@@ -21,12 +21,9 @@ html {
 }
 @layer components {
   /* patients speak */
-  .swiper-pagination {
-    position: absolute;
-    bottom: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  /* .next-btn-shadow-patients-speak{
+    @apply w-10 h-[222px] s1512:h-[250px] bg-rose-400 content-[""] absolute top-0 right-0 z-[5]
+  } */
   /* #################### services card #################### */
   .service-card {
     @apply bg-white rounded-b-[80px] rounded-t-[400px] shadow-[0px_4px_15px_#0000001A] pb-4 pt-3;
