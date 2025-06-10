@@ -18,7 +18,7 @@ import BundleIcon from "@/components/infoHealth/bundleIcon";
 import FillScrollLayout from "@/layoutes/fillScrollLayout/fillScrollLayout";
 import ChooseUsCard from "@/components/chooseUs/chooseUsCard";
 import SeeAll from "@/components/seeAll";
-import DistinctiveCard from "@/components/distinctive/distinctiveCard";
+// import DistinctiveCard from "@/components/distinctive/distinctiveCard";
 import ExperienceCard from "@/components/experience/experienceCard";
 import noIcon from "@/assets/images/icons/experience/noicon.svg";
 import freeconsul from "@/assets/images/icons/experience/freeconsul.svg";
@@ -42,11 +42,12 @@ import ScrollServices from "@/components/services/scrollServices";
 import CircleAnimate from "@/components/circleAnimate";
 import LeadForm from "@/components/leadForm";
 import DialogPatientSpeakVideo from "@/components/dialogPatientSpeakVideo";
-import { handlePatient } from "@/staticData/patientContent";
+// import { handlePatient } from "@/staticData/patientContent";
 import our1 from "@/assets/images/our1.png";
 import our2 from "@/assets/images/our2.png";
 import whyus from "@/assets/images/whychooseus.png";
 import whyusen from "@/assets/images/whychooseusen.jpg";
+import PatientsSpeakSlider from "@/components/distinctive/patientsSpeakSlider";
 const Home = async ({
   params,
 }: {
@@ -169,7 +170,7 @@ const Home = async ({
       topValue: 5200,
     },
   ];
-  const patientContents = handlePatient(locale);
+  // const patientContents = handlePatient(locale);
   return (
     <>
       <section
@@ -677,23 +678,10 @@ const Home = async ({
                 </h2>
               </div>
             </div>
-            <div className="flex items-center justify-start flex-nowrap overflow-x-scroll scroll-hide s1280:overflow-x-hidden s1280:justify-center s1280:flex-row gap-x-3 s1280:gap-x-6 s1512:gap-x-8 s1920:gap-x-10">
+              <PatientsSpeakSlider />
               <DialogPatientSpeakVideo />
-              {patientContents.map(
-                ({ desc, header, service, serviceIcon, video }, index) => {
-                  return (
-                    <DistinctiveCard
-                      icon={serviceIcon}
-                      service={service}
-                      title={header}
-                      video={video}
-                      desc={desc}
-                      key={index}
-                    />
-                  );
-                }
-              )}
-            </div>
+            {/* <div className="flex items-center justify-start flex-nowrap overflow-x-scroll scroll-hide s1280:overflow-x-hidden s1280:justify-center s1280:flex-row gap-x-3 s1280:gap-x-6 s1512:gap-x-8 s1920:gap-x-10">
+            </div> */}
           </div>
         </FillScrollLayout>
         {/* experience */}
