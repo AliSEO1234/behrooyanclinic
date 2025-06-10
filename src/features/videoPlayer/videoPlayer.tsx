@@ -6,13 +6,6 @@ const VideoPlayerCom = () => {
   return (
     <div className="video-header">
       <Suspense fallback={<VideoPlayerSkeleton />}>
-        {/* <video
-          autoPlay
-          muted
-          loop={true}
-          playsInline
-          src="/videos/videohealth1.mp4"
-        /> */}
         <ReactPlayer
           url={`/videos/videohealth1.mp4`}
           playing
