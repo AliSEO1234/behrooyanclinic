@@ -46,9 +46,8 @@ const Treatments = async ({
           <div className="mb-3 s1280:mb-20 s1728:mb-10">
             <h1 className="text-[30px] s1280:text-[30px] s1512:text-[40px] s1920:text-[60px] font-black s1280:font-semibold text-[#00979A] mb-4 s1280:mb-10">
               {locale === "ru"
-                ? "Медицинский туризм в Турции: Ваш путь к первоклассному здравоохранению"
+                ? "Медицинский туризм в Турции: откройте для себя путь к высококачественному лечению и заботе."
                 : "Medical Tourism in Turkey - Your Gateway to World-Class Healthcare"}
-              Treatments
             </h1>
             {/* <p className="font-semibold flex-left gap-x-1 text-[14px] s1280:text-[24px] text-[#00979A] [text-shadow:0_2px_3px_#00000040] mb-4">
               <span>85</span>
@@ -56,7 +55,7 @@ const Treatments = async ({
             </p> */}
             <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[28px] s1920:text-[30px] leading-[22px] s1280:leading-[27px] s1512:leading-[32px] s1728:leading-[40px] s1280:pe-24 s1600:pe-40 s1728:pe-72 s1920:pe-80">
               {locale === "ru"
-                ? "Ищете доступное и качественное медицинское обслуживание? Откройте для себя медицинский туризм в Турции! AZPO Health предлагает комплексные пакеты для различных медицинских нужд, от косметической хирургии до специализированных процедур. Совместите заботу о здоровье с уникальным культурным опытом."
+                ? "Ищете доступное и качественное медицинское обслуживание? Откройте для себя мир медицинского туризма в Турции с AZPO Health! Мы предлагаем комплексные пакеты услуг, которые охватывают всё – от косметической хирургии до специализированных процедур. Объедините заботу о своём здоровье с незабываемым культурным опытом в Турции."
                 : "Seeking affordable, high-quality healthcare? Discover medical tourism in Turkey! AZPO Health offers comprehensive packages for various medical needs, from cosmetic surgery to specialized treatments. Combine your health journey with a unique cultural experience."}
             </p>
           </div>

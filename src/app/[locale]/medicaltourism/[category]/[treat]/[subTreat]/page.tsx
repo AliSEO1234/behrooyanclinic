@@ -78,7 +78,9 @@ const Page = async ({ params }: PropsPageType) => {
         ? "before_after_folder_3"
         : "before_after_folder"
     }/${findSubnestedRelation?.driveFolder}${
-      isVersion3 ||isVersion2 ? "/" : `/${findSubnestedRelation?.sizeNameFolder}/`
+      isVersion3 || isVersion2
+        ? "/"
+        : `/${findSubnestedRelation?.sizeNameFolder}/`
     }`;
     let bfLinkList: string[] | null = [];
     if (findSubnestedRelation?.images) {
@@ -232,38 +234,42 @@ const Page = async ({ params }: PropsPageType) => {
             </div>
             <div>
               {/* category */}
-              <div className="text-[#474744]">
-                <div className="mb-8 s1280:mb-5">
-                  <h4 className="">
-                    <span className="w-[18px] h-[39px]">
-                      <ImgFetcher src={person} />
-                    </span>
-                    <span>
-                      {fetchData?.benefits.categories[0]?.header || ""}
-                    </span>
-                  </h4>
+              {fetchData?.benefits.categories[0]?.header && (
+                <div className="text-[#474744]">
+                  <div className="mb-8 s1280:mb-5">
+                    <h4 className="">
+                      <span className="w-[18px] h-[39px]">
+                        <ImgFetcher src={person} />
+                      </span>
+                      <span>
+                        {fetchData?.benefits.categories[0]?.header || ""}
+                      </span>
+                    </h4>
+                  </div>
+                  <ul className="font-normal flex flex-col gap-y-6 relative">
+                    {/* border dashed */}
+                    <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
+                      <div
+                        className="w-0 h-full"
+                        style={{
+                          border: "1px dashed",
+                          borderImageSource:
+                            "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                          borderImageSlice: 1,
+                        }}
+                      ></div>
+                    </li>
+                    <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
+                      <span className="absolute top-2 left-0 w-[18px] flex-cen">
+                        <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                      </span>
+                      <span>
+                        {fetchData?.benefits.categories[0]?.desc || []}
+                      </span>
+                    </li>
+                  </ul>
                 </div>
-                <ul className="font-normal flex flex-col gap-y-6 relative">
-                  {/* border dashed */}
-                  <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                    <div
-                      className="w-0 h-full"
-                      style={{
-                        border: "1px dashed",
-                        borderImageSource:
-                          "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
-                        borderImageSlice: 1,
-                      }}
-                    ></div>
-                  </li>
-                  <li className="text-[14px] s1512:text-[20px] s1920:text-[23px] z-[2] flex items-start justify-start gap-x-4 relative ps-8 s1280:ps-8">
-                    <span className="absolute top-2 left-0 w-[18px] flex-cen">
-                      <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                    </span>
-                    <span>{fetchData?.benefits.categories[0]?.desc || []}</span>
-                  </li>
-                </ul>
-              </div>
+              )}
               {/* category */}
               {fetchData?.benefits.categories[1]?.header &&
                 fetchData?.benefits.categories[1]?.desc && (
