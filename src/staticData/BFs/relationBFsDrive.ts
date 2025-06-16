@@ -598,8 +598,8 @@ export const handleBFRelation = () => {
       sizeNameFolder: "",
       path: "6-4-dental-implants",
       images: [
-        "Before After 1405.png",
-        "Before After 1374.png",
+        /* "Before After 1405.png",
+        "Before After 1374.png", */
         "Before After 1356.png",
         "Before After 1353.png",
         "Before After 1352.png",
