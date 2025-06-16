@@ -19,24 +19,26 @@ const PopForm = () => {
   const pathname = usePathname();
   const { handleSubmit, register, setValue, watch, setError, reset } =
     useForm<PopFormType>();
+  const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
   const { setPopUpForm, popUpForm } = useAppContext();
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
-  const [codes, setCodes] = useState<OptionType | null>({
-    id: 0,
-    key: "+90",
-    label: "Turkey",
-  });
+  const [codes, setCodes] = useState<OptionType | null>(null);
   useEffect(() => {
     setValue("treatment", `${selectedOption?.label},${selectedOption?.key}`);
   }, [selectedOption, setValue]);
   const phoneValue = watch("phone", "");
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!codes) {
+      setCountriesDrop(true);
+      e.target.value = "";
+      return;
+    }
     let inputValue = e.target.value;
     if (!inputValue.startsWith(codes?.key || "")) {
       inputValue = inputValue.replace(/^\+\d+/, "");
+      inputValue = inputValue.replace(/[^0-9+]/g, "");
     }
-    inputValue = inputValue.replace(/[^0-9+]/g, "");
     setValue("phone", inputValue);
   };
   // useEffect(() => {
@@ -156,7 +158,12 @@ const PopForm = () => {
                 placeholder="Phone Number"
                 type="text"
               />
-              <CountryCode codes={codes} setCodes={setCodes} />
+              <CountryCode
+                countriesDrop={countriesDrop}
+                setCountriesDrop={setCountriesDrop}
+                codes={codes}
+                setCodes={setCodes}
+              />
             </div>
           </div>
           <div className="w-full s1280:w-fit">

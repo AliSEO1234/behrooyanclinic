@@ -16,23 +16,24 @@ const SoonForm = () => {
   const locale = useLocale();
   const { setValue, watch, handleSubmit, register, reset } =
     useForm<FormItemType>();
-  const [codes, setCodes] = useState<OptionType | null>({
-    id: 0,
-    key: "+90",
-    label: "Turkey",
-  });
+  const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
+  const [codes, setCodes] = useState<OptionType | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const pathname = usePathname();
   const router = useRouter();
   const phoneValue = watch("phone", "");
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!codes) {
+      setCountriesDrop(true);
+      e.target.value = "";
+      return;
+    }
     let inputValue = e.target.value;
-
     if (!inputValue.startsWith(codes?.key || "")) {
       inputValue = inputValue.replace(/^\+\d+/, "");
+      inputValue = inputValue.replace(/[^0-9+]/g, "");
     }
-    inputValue = inputValue.replace(/[^0-9+]/g, "");
     setValue("phone", inputValue);
   };
 
@@ -99,6 +100,8 @@ const SoonForm = () => {
           type="text"
         />
         <CountryCode
+          countriesDrop={countriesDrop}
+          setCountriesDrop={setCountriesDrop}
           className="s1280:text-[14px] s1512:text-[16px]"
           codes={codes}
           setCodes={setCodes}

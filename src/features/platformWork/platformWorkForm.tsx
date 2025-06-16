@@ -15,11 +15,8 @@ import { toast } from "react-toastify";
 const PlatformWorkForm = () => {
   const locale = useLocale();
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
-  const [codes, setCodes] = useState<OptionType | null>({
-    id: 0,
-    key: "+90",
-    label: "Turkey",
-  });
+  const [codes, setCodes] = useState<OptionType | null>(null);
+  const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
   const pathnme = usePathname();
   const { handleSubmit, register, setValue, watch, setError, reset } =
     useForm<HomePlatformWorkFormType>();
@@ -29,13 +26,16 @@ const PlatformWorkForm = () => {
   const phoneValue = watch("phone", "");
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!codes) {
+      setCountriesDrop(true);
+      e.target.value = "";
+      return;
+    }
     let inputValue = e.target.value;
-
     if (!inputValue.startsWith(codes?.key || "")) {
       inputValue = inputValue.replace(/^\+\d+/, "");
+      inputValue = inputValue.replace(/[^0-9+]/g, "");
     }
-    inputValue = inputValue.replace(/[^0-9+]/g, "");
-
     setValue("phone", inputValue);
   };
   const onSubmit: SubmitHandler<HomePlatformWorkFormType> = async ({
@@ -103,7 +103,12 @@ const PlatformWorkForm = () => {
             placeholder={locale === "ru" ? "Телефон" : "Number"}
             type="text"
           />
-          <CountryCode codes={codes} setCodes={setCodes} />
+          <CountryCode
+            countriesDrop={countriesDrop}
+            setCountriesDrop={setCountriesDrop}
+            codes={codes}
+            setCodes={setCodes}
+          />
         </div>
       </div>
       <div className="col-span-12">

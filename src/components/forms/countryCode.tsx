@@ -12,11 +12,10 @@ import {
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { countries } from "@/staticData/countryCodes";
 
-const CountryCode = ({ setCodes, codes, className }: CountryCodeType) => {
+const CountryCode = ({ setCodes, codes, className ,countriesDrop ,setCountriesDrop }: CountryCodeType) => {
   const [countryList, setCountryList] =
     useState<CountrycodeItemType[]>(countries);
   const allCountries: CountrycodeItemType[] = countries;
-  const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
 
   const handleFilterCountries = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.toLowerCase();
@@ -43,7 +42,7 @@ const CountryCode = ({ setCodes, codes, className }: CountryCodeType) => {
           className ? className : "2s1280:text-[14] w-16"
         }`}
       >
-        <span>{codes ? codes.key : "+90"}</span>
+        <span>{codes ? codes.key : "Code"}</span>
         <span>
           <MdKeyboardArrowDown className="size-5 data-[state=open]:rotate-180" />
         </span>

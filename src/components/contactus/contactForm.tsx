@@ -22,21 +22,21 @@ const ContactForm = () => {
     reset,
     formState: { errors },
   } = useForm<ContactUsFormType>();
-  const [codes, setCodes] = useState<OptionType | null>({
-    id: 0,
-    key: "+90",
-    label: "Turkey",
-  });
+  const [codes, setCodes] = useState<OptionType | null>(null);
+  const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
   const phoneValue = watch("phone", "");
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!codes) {
+      setCountriesDrop(true);
+      e.target.value = "";
+      return;
+    }
     let inputValue = e.target.value;
-
     if (!inputValue.startsWith(codes?.key || "")) {
       inputValue = inputValue.replace(/^\+\d+/, "");
+      inputValue = inputValue.replace(/[^0-9+]/g, "");
     }
-    inputValue = inputValue.replace(/[^0-9+]/g, "");
-
     setValue("phone", inputValue);
   };
   const [loading, setLoading] = useState<boolean>(false);
@@ -58,7 +58,7 @@ const ContactForm = () => {
       email,
       name: firstName + " " + surname,
       throughEmail: 1,
-      phone : codes?.key+phone,
+      phone: codes?.key + phone,
       message,
       pageUrl: pathname,
     });
@@ -135,7 +135,12 @@ const ContactForm = () => {
             type="text"
             placeholder={locale === "ru" ? "Телефон" : "Phone"}
           />
-          <CountryCode codes={codes} setCodes={setCodes} />
+          <CountryCode
+            countriesDrop={countriesDrop}
+            setCountriesDrop={setCountriesDrop}
+            codes={codes}
+            setCodes={setCodes}
+          />
         </div>
       </div>
       <div className="col-span-12">
@@ -167,7 +172,9 @@ const ContactForm = () => {
           className="outline-none w-full h-[46px] rounded-[100px] text-white font-bold bg-[#0CA5A5]"
         >
           {loading
-            ? locale === "ru" ? "Загрузка..." :  "Loading..."
+            ? locale === "ru"
+              ? "Загрузка..."
+              : "Loading..."
             : locale === "ru"
             ? "Отправить запрос"
             : "Send request"}

@@ -22,14 +22,11 @@ const PatientServicesForm = () => {
   const pathname = usePathname();
   const { handleSubmit, register, setValue, watch, setError, reset } =
     useForm<PatientFormType>();
+  const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
   const [treatmentSelected, setTreatmentSelected] = useState<OptionType | null>(
     null
   );
-  const [codes, setCodes] = useState<OptionType | null>({
-    id: 0,
-    key: "+90",
-    label: "Turkey",
-  });
+  const [codes, setCodes] = useState<OptionType | null>(null);
   useEffect(() => {
     setValue(
       "treatment",
@@ -39,13 +36,16 @@ const PatientServicesForm = () => {
   const phoneValue = watch("phone", "");
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!codes) {
+      setCountriesDrop(true);
+      e.target.value = "";
+      return;
+    }
     let inputValue = e.target.value;
-
     if (!inputValue.startsWith(codes?.key || "")) {
       inputValue = inputValue.replace(/^\+\d+/, "");
+      inputValue = inputValue.replace(/[^0-9+]/g, "");
     }
-    inputValue = inputValue.replace(/[^0-9+]/g, "");
-
     setValue("phone", inputValue);
   };
   const [loading, setLoading] = useState<boolean>(false);
@@ -145,7 +145,12 @@ const PatientServicesForm = () => {
                 defaultValue={phoneValue}
                 placeholder={locale === "ru" ? "Телефон" : "phone number"}
               />
-              <CountryCode codes={codes} setCodes={setCodes} />
+              <CountryCode
+                countriesDrop={countriesDrop}
+                setCountriesDrop={setCountriesDrop}
+                codes={codes}
+                setCodes={setCodes}
+              />
             </div>
           </div>
           <div className="w-full s1280:w-fit">

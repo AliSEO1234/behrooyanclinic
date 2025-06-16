@@ -16,12 +16,9 @@ import { clsx } from "clsx";
 const ComplimentaryConsultationForm = () => {
   const locale = useLocale();
   const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
+  const [countriesDrop , setCountriesDrop] = useState<boolean>(false)
   const pathnme = usePathname();
-  const [codes, setCodes] = useState<OptionType | null>({
-    id: 0,
-    key: "+90",
-    label: "Turkey",
-  });
+  const [codes, setCodes] = useState<OptionType | null>(null);
   const { handleSubmit, register, setValue, watch, setError, reset } =
     useForm<HomePageFormType>();
   useEffect(() => {
@@ -30,13 +27,16 @@ const ComplimentaryConsultationForm = () => {
   const phoneValue = watch("phone", "");
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!codes) {
+      setCountriesDrop(true);
+      e.target.value = ""
+      return;
+    }
     let inputValue = e.target.value;
-
     if (!inputValue.startsWith(codes?.key || "")) {
       inputValue = inputValue.replace(/^\+\d+/, "");
+      inputValue = inputValue.replace(/[^0-9+]/g, "");
     }
-    inputValue = inputValue.replace(/[^0-9+]/g, "");
-
     setValue("phone", inputValue);
   };
   const [loading, setLoading] = useState<boolean>(false);
@@ -110,7 +110,7 @@ const ComplimentaryConsultationForm = () => {
           placeholder={locale === "ru" ? "Телефон" : "Phone Number"}
           type="text"
         />
-        <CountryCode codes={codes} setCodes={setCodes} />
+        <CountryCode countriesDrop={countriesDrop} setCountriesDrop={setCountriesDrop} codes={codes} setCodes={setCodes} />
       </div>
       <div>
         <input

@@ -9,14 +9,17 @@ export type CountryType = {
     root: string;
     suffixes?: string[];
   };
-}
+};
 export type CountrycodeItemType = {
-  label : string
-  key : string
-  id: number
-}
+  label: string;
+  key: string;
+  id: number;
+};
 export type CountryCodeType = {
   setCodes: Dispatch<SetStateAction<OptionType | null>>;
-  codes : OptionType | null
-  className? : string 
+  codes: OptionType | null;
+  className?: string;
+
+  countriesDrop: boolean;
+  setCountriesDrop: Dispatch<SetStateAction<boolean>>;
 };
