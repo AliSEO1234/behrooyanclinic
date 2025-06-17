@@ -113,6 +113,7 @@ const Home = async ({
           ? ""
           : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏",
     },
+    
     // {
     //   fullName: locale === "ru" ? "" : "Mozhgaan panahi",
     //   rateCount: 5,
