@@ -428,11 +428,11 @@ export const categoryDataHandler = (key: string, locale: string) => {
       id: 0,
       title:
         locale === "ru"
-          ? "Офтальмология в Турции: верните ясность зрения и краски жизни!"
+          ? "Откройте для себя кристально чистое зрение с офтальмологией в Турции"
           : "Discover Crystal-Clear Vision with Ophthalmology in Turkey",
       descriptionTop:
         locale === "ru"
-          ? "Устали от тусклого мира, размытых контуров и ограничений, которые накладывают проблемы со зрением? Современная офтальмология в Турции – это ваш шанс вновь увидеть мир ярким и четким, вернуть уверенность и наслаждаться каждым моментом полноценной жизни. AZPO Health поможет вам в этом!"
+          ? "Пусть ваше зрение будет ясным — не позволяйте болезням глаз и дискомфорту наслаждаться жизнью. С AZPO Health вы получаете доступ к ведущим офтальмологам Турции, использующим передовые технологии и индивидуальный подход к каждому пациенту. От лазерной коррекции зрения до операций по удалению катаракты, лечения глаукомы, пересадки роговицы и установки трифокальных линз — наша команда экспертов обеспечивает высококачественное лечение по доступной цене, учитывая ваши потребности и особенности."
           : "Don’t let blurred vision, eye conditions, or discomfort hold you back! At AZPO Health, we connect you with top-tier eye specialists in Turkey, offering advanced, personalized treatments using the latest medical technology.From laser vision correction to cataract surgery, glaucoma treatment, and corneal transplants, our expert team ensures affordable, high-quality care tailored to your needs.",
       subCategoryContent: {
         title:
@@ -441,266 +441,82 @@ export const categoryDataHandler = (key: string, locale: string) => {
       contents: {
         title:
           locale === "ru"
-            ? "Почему стоит выбрать Турцию для лечения глаз?"
+            ? "Почему стоит выбрать Турцию для офтальмологического лечения?"
             : "Why Choose Turkey for Ophthalmology?",
         content:
           locale === "ru"
-            ? `<p dir="ltr">Турция давно зарекомендовала себя как одно из ведущих направлений медицинского туризма, и офтальмология не является исключением. Здесь сочетаются несколько ключевых факторов, которые делают лечение глаз в Турции особенно привлекательным:</p>
+            ? `<p dir="ltr">Турция заслужено стала популярным направлением для тех, кто ищет качественное и доступное лечение глаз. Современные клиники, опытные врачи и комплексные пакеты от AZPO Health позволяют не только получить лечение мирового уровня, но и насладиться уникальным опытом путешествия.</p>
+<p dir="ltr">Качество и аккредитация:</p>
+<p dir="ltr">Турецкие медицинские учреждения соответствуют международным стандартам, оснащены передовыми технологиями и сотрудничают с высококвалифицированными офтальмологами. Многие клиники имеют международные сертификаты, что гарантирует высокий уровень обслуживания. AZPO Health работает с ведущими медицинскими центрами, предлагая вам доступ к самым современным методам лечения. Турция занимает одно из ведущих мест в мире по количеству клиник с международной аккредитацией JCI, на март 2025 года в стране их 30.</p>
+<p dir="ltr">Экономия без потери качества: стоимость офтальмологических процедур в Турции на 50-70% ниже, чем в Европе или США, что позволяет получить качественное лечение, не превышая бюджета. AZPO Health предлагает прозрачные цены и выгодные пакеты, гарантируя вам отличное соотношение цены и качества.</p>
+<p dir="ltr">Комплексный подход: мы предлагаем пакеты &laquo;все включено&raquo;, которые покрывают все аспекты вашего лечения: от первичной консультации и операции до проживания, трансфера и послеоперационного ухода. Такой подход обеспечит вам комфорт и спокойствие на каждом этапе вашего лечения.</p>
+<p dir="ltr">Опытные специалисты: в Турции работают высококвалифицированные офтальмологи с многолетним опытом и международной практикой. AZPO Health сотрудничает с ведущими специалистами, чтобы предоставить индивидуальное и эффективное лечение.</p>
+<p dir="ltr">Медицина и путешествие: лечение в Турции &mdash; это не только восстановление здоровья, но и уникальная возможность путешествовать. Страна богата историческими памятниками, природными красотами и яркими культурными традициями. Мы поможем вам организовать поездку и обеспечим комфортный отдых, чтобы ваше лечение прошло максимально комфортно.</p>
+<h2 dir="ltr">Офтальмология: искусство сохранения ясного зрения</h2>
+<p dir="ltr">Офтальмология &mdash; это медицинская дисциплина, которая занимается диагностикой, лечением и профилактикой заболеваний глаз. Офтальмологи &mdash; это специалисты, которые не только помогают улучшить зрение, но и проводят операции, сохраняющие здоровье глаз на протяжении всей жизни.</p>
+<h2 dir="ltr">Что собой представляет офтальмология?&nbsp;</h2>
+<p dir="ltr">Офтальмология охватывает широкий спектр услуг, начиная от стандартных осмотров зрения и заканчивая сложными хирургическими операциями. Офтальмологи помогают при различных заболеваниях глаз, таких как:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Высочайший уровень медицинских технологий и квалификации врачей. Турецкие клиники оснащены самым современным оборудованием для диагностики и лечения глазных заболеваний. Врачи регулярно проходят обучение и стажировки в ведущих мировых центрах, имеют огромный опыт и применяют передовые методики.&nbsp;</p>
+<p dir="ltr" role="presentation">Проблемы с рефракцией (близорукость, дальнозоркость, астигматизм)</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Катаракта</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Глаукома</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Диабетическая ретинопатия</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Заболевания макулы (макулярная дегенерация)</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Инфекции и травмы глаз</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Роговица и другие патологические изменения</p>
 </li>
 </ul>
-<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Хирургия глаз в Турции</h3>
+<p dir="ltr">Хирургия глаз в Турции становится все более востребованной благодаря сочетанию доступности и высокого качества. В Турции проводят различные виды офтальмологических операций, каждая из которых направлена на лечение конкретных заболеваний глаз. К числу наиболее распространённых процедур относятся:</p>
+<p dir="ltr">&bull; LASIK (Laser-Assisted In Situ Keratomileusis): это популярная рефракционная операция для коррекции близорукости, дальнозоркости и астигматизма. Процесс включает использование лазера для изменения формы роговицы, что значительно улучшает зрение и снижает или полностью устраняет потребность в очках и контактных линзах. Операция отличается быстрым восстановлением и высокой успешностью.</p>
+<p dir="ltr">&bull; Хирургия катаракты: катаракта &mdash; это помутнение естественной линзы глаза, что приводит к размытости зрения. Во время операции удаляется помутневшая линза и заменяется искусственной. Эта процедура помогает восстановить зрение и существенно улучшить качество жизни пациентов.</p>
+<p dir="ltr">&bull; Пересадка роговицы: пересадка роговицы проводится, если роговица повреждена или больна. В ходе операции она заменяется на здоровую роговицу от донора. Это важная процедура для людей с тяжелыми заболеваниями роговицы, значительно улучшающая зрение.</p>
+<p dir="ltr">&bull; Хирургия глаукомы: глаукома &mdash; это заболевание, которое повреждает зрительный нерв, часто из-за повышения внутриглазного давления. Операции при глаукоме направлены на снижение этого давления и предотвращение дальнейшего повреждения нерва. В зависимости от типа и стадии заболевания выбирается наиболее подходящий вид хирургического вмешательства.</p>
+<p dir="ltr">&bull; Хирургия сетчатки: хирургия сетчатки используется для лечения заболеваний сетчатки, таких как отслоение, диабетическая ретинопатия и макулярные дыры. Эти процедуры помогают предотвратить потерю зрения и восстанавливают зрительные функции.</p>
+<p dir="ltr">&bull; Рефракционная замена хрусталика (RLE): эта операция включает замену естественного хрусталика глаза на искусственный, чтобы скорректировать рефракционные ошибки. Рефракционная замена подходит для людей с пресбиопией или высокими рефракционными нарушениями, которые не могут пройти LASIK.</p>
+<p dir="ltr">&bull; Лазерная коррекция зрения (PRK, LASEK): PRK (фоторефракционная кератэктомия) и LASEK (лазерная эпителиальная кератомилезия) &mdash; это альтернативные методы коррекции зрения для тех, кому LASIK не подходит. Эти процедуры включают использование лазера для изменения формы роговицы, но с немного другой техникой подготовки поверхности роговицы.</p>
+<h3 dir="ltr">Какой метод хирургии глаз считается самым безопасным?</h3>
+<p dir="ltr">Безопасность офтальмологических операций зависит от ряда факторов: диагноза, общего состояния здоровья пациента, особенностей глаз и, конечно, квалификации врача. Хотя ни одна операция не бывает полностью безрисковой, современные технологии и высокоточные методики значительно снизили возможные осложнения и повысили эффективность вмешательств.</p>
+<p dir="ltr">Наиболее важный шаг &mdash; это индивидуальное обследование у опытного офтальмохирурга, который сможет подобрать оптимальное и безопасное решение именно для вас.</p>
+<h2 dir="ltr">AZPO Health &mdash; ваш надежный партнер в восстановлении зрения</h2>
+<p dir="ltr">AZPO Health &mdash; одна из ведущих компаний в сфере медицинского туризма в Турции. Мы специализируемся на организации офтальмологического лечения высокого уровня для иностранных пациентов и предлагаем широкий спектр процедур, адаптированных под индивидуальные потребности.</p>
+<p dir="ltr">Почему выбирают AZPO Health?</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступная стоимость лечения. В сравнении с европейскими странами, США и Канадой, цены на офтальмологические процедуры в Турции значительно ниже. Это дает возможность получить высококачественную медицинскую помощь, не выходя за рамки бюджета.</p>
+<p dir="ltr" role="presentation">Опытная медицинская команда: мы сотрудничаем с квалифицированными и опытными офтальмологами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные клиники: наши партнёрские больницы оснащены передовыми технологиями для проведения глазных операций.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальные планы лечения: мы разрабатываем индивидуальные планы лечения на основе тщательной диагностики зрения и целей пациента.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Прозрачные и доступные цены: предлагаем конкурентоспособные цены без скрытых платежей.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексные пакеты &laquo;все включено&raquo;: от трансферов и проживания до полного медицинского сопровождения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Многоязычная поддержка: наша команда говорит на нескольких языках и предоставляет услуги перевода, обеспечивая комфорт и понимание на всех этапах лечения.</p>
 </li>
 </ul>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комплексный подход и индивидуальный сервис. Health предоставляет полный спектр услуг &ndash; от консультации и диагностики до послеоперационного наблюдения и реабилитации. Мы заботимся о каждом пациенте, учитывая все его потребности и пожелания, и создаем максимально комфортные условия для лечения.</p>
-</li>
-</ul>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Удобное расположение и развитая инфраструктура. Турция &ndash; страна с богатой историей и культурой, прекрасным климатом и гостеприимными людьми. Совместите лечение с отдыхом, насладитесь красотами Стамбула, Анталии или Алании.<br><br></p>
-</li>
-</ul>
-<h2 dir="ltr">Что такое офтальмология?</h2>
-<p dir="ltr">Офтальмология &ndash; это раздел медицины, который занимается изучением строения, функций и заболеваний глаз, а также разработкой методов их диагностики, лечения и профилактики. Глаза &ndash; один из самых важных органов восприятия, ведь около 90% информации о внешнем мире мы получаем именно через зрение. Поэтому так важно заботиться о здоровье глаз и своевременно обращаться к специалистам для диагностики и лечения.</p>
-<p dir="ltr">Какие заболевания лечит офтальмолог?</p>
-<p dir="ltr">Офтальмология охватывает широкий спектр заболеваний глаз. Среди наиболее распространенных:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Нарушения рефракции: близорукость, дальнозоркость, астигматизм.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Катаракта: помутнение хрусталика глаза, приводящее к снижению зрения.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Глаукома: повышение внутриглазного давления, повреждающее зрительный нерв.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Заболевания сетчатки: диабетическая ретинопатия, возрастная макулярная дегенерация.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Воспалительные заболевания: конъюнктивит, блефарит, увеит.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Травмы глаза.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Косоглазие и другие нарушения подвижности глаз.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Заболевания слезных путей.</p>
-</li>
-</ul>
-<h2 dir="ltr">Основные направления офтальмологии в Турции</h2>
-<p dir="ltr">Турецкие клиники предлагают широкий спектр офтальмологических услуг, от диагностики и консервативного лечения до сложных хирургических вмешательств. Рассмотрим основные направления:</p>
-<ol>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Рефракционная хирургия:<br><br></p>
-</li>
-<ul>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">LASIK (лазерный кератомилез): один из самых популярных методов коррекции зрения, позволяющий устранить близорукость, дальнозоркость и астигматизм. В ходе процедуры лазер изменяет форму роговицы, улучшая фокусировку изображения на сетчатке.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">ФРК (фоторефракционная кератэктомия): альтернативный метод лазерной коррекции зрения, при котором перед воздействием лазера удаляется верхний слой роговицы.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">SMILE (Small Incision Lenticule Extraction): современная технология коррекции зрения, при которой изменение формы роговицы осуществляется через микроскопический разрез.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Имплантация факичных линз: метод, при котором внутрь глаза устанавливаются специальные линзы без удаления собственного хрусталика.&nbsp;</p>
-</li>
-</ul>
-</ol>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ol start="2">
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Хирургия катаракты:<br><br></p>
-</li>
-<ul>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Факоэмульсификация: современный и наиболее распространенный метод удаления катаракты, при котором помутневший хрусталик разрушается с помощью ультразвука и удаляется через микроразрез.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Имплантация интраокулярной линзы (ИОЛ): процедура, при которой после удаления катаракты на место естественного хрусталика устанавливается искусственная линза, позволяющая восстановить зрение.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Лазерная хирургия катаракты: современный метод удаления катаракты с использованием фемтосекундного лазера, который повышает точность и безопасность операции.</p>
-</li>
-</ul>
-</ol>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ol start="3">
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Лечение глаукомы:<br><br></p>
-</li>
-<ul>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Медикаментозная терапия: использование глазных капель для снижения внутриглазного давления.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Лазерная хирургия глаукомы: селективная лазерная трабекулопластика (SLT), лазерная иридотомия для улучшения оттока внутриглазной жидкости и снижения давления.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Хирургическое лечение глаукомы: трабекулэктомия, установка дренажных устройств для нормализации оттока внутриглазной жидкости.</p>
-</li>
-</ul>
-</ol>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ol start="4">
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Лечение заболеваний сетчатки:<br><br></p>
-</li>
-<ul>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Лазерная коагуляция сетчатки: укрепление сетчатки при дистрофиях и разрывах.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Интравитреальные инъекции: введение лекарственных препаратов непосредственно в стекловидное тело глаза при макулярной дегенерации и диабетической ретинопатии.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Витрэктомия: хирургическое удаление стекловидного тела с последующим введением его заменителя.</p>
-</li>
-</ul>
-</ol>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ol start="5">
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Офтальмология для детей:<br><br></p>
-</li>
-<ul>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Диагностика и лечение косоглазия.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Лечение амблиопии ("ленивого глаза").</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Коррекция врожденных аномалий развития глаз.</p>
-</li>
-</ul>
-</ol>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ol start="6">
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Хирургия век (блефаропластика):<br><br></p>
-</li>
-<ul>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Коррекция опущения верхнего века.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Удаление избытков кожи и жира с верхних и нижних век.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Устранение "мешков" под глазами.</p>
-</li>
-</ul>
-</ol>
-<h2 dir="ltr">Современные методы диагностики в офтальмологии</h2>
-<p dir="ltr">Точная диагностика &ndash; залог успешного лечения. Турецкие клиники используют самые современные методы обследования глаз:</p>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Оптическая когерентная томография (ОКТ): позволяет получить детализированные изображения сетчатки и зрительного нерва, выявляя изменения на ранних стадиях.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Компьютерная периметрия: определяет границы поля зрения и помогает выявить скотомы (выпадения поля зрения) при глаукоме и других заболеваниях.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Тонометрия: измерение внутриглазного давления &ndash; важный метод диагностики глаукомы.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Ультразвуковое исследование (УЗИ) глаза: позволяет визуализировать внутренние структуры глаза при непрозрачных средах, таких как катаракта.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Флюоресцентная ангиография (ФАГ): исследование сосудов сетчатки с использованием контрастного вещества.</p>
-</li>
-</ul>
-<h2 dir="ltr">Подготовка к лечению глаз в Турции</h2>
-<p dir="ltr">Чтобы лечение в Турции прошло максимально успешно, важно тщательно подготовиться к поездке. AZPO Health окажет поддержку на каждом этапе:</p>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ol>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Консультация с офтальмологом: предоставьте результаты предыдущих обследований, чтобы мы могли оценить вашу ситуацию и подобрать оптимальную программу лечения.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Выбор клиники и врача: мы сотрудничаем с лучшими офтальмологическими клиниками Турции и поможем вам выбрать специалиста с учетом вашего диагноза и пожеланий.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Оформление документов: мы поможем вам с оформлением визы, страховки и других необходимых документов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Организация поездки: мы забронируем для вас авиабилеты и отель, организуем трансфер из аэропорта в клинику и обратно.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Перевод и сопровождение: наши опытные переводчики будут рядом с вами на протяжении всех консультаций и обследований, обеспечивая полное понимание между вами и врачами, чтобы вы чувствовали себя уверенно и спокойно.</p>
-</li>
-</ol>
-<h2 dir="ltr">Ваш путь к восстановлению после лечения</h2>
-<p dir="ltr">После успешного лечения в Турции вы сможете вернуться к полноценной жизни, наполненной яркими красками и четкими очертаниями. Однако важно помнить о необходимости соблюдать рекомендации врача и проходить регулярные обследования.</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Послеоперационный период: соблюдайте все рекомендации врача, используйте назначенные капли и мази, избегайте физических нагрузок, а также посещения бани и сауны.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Реабилитация: в некоторых случаях может потребоваться реабилитация, направленная на восстановление зрительных функций.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Регулярные осмотры: посещайте офтальмолога для контроля состояния глаз и своевременного выявления возможных осложнений.</p>
-</li>
-</ul>
-<h2 dir="ltr">AZPO Health: ваш надежный партнер в мире офтальмологии</h2>
-<p dir="ltr">AZPO Health &ndash; команда профессионалов с многолетним опытом организации медицинского туризма в Турции. Мы предлагаем:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальный подход к каждому пациенту.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Тщательный выбор клиник и врачей.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Полный спектр услуг, от консультации до послеоперационного наблюдения.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступные цены и гибкая система скидок.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Гарантию качества и безопасности лечения.</p>
-</li>
-</ul>
-<p dir="ltr">Доверьте свое зрение профессионалам! Свяжитесь с нами прямо сейчас для получения бесплатной консультации и индивидуального плана лечения!</p>
-<h2 dir="ltr">Отзывы пациентов</h2>
-<p dir="ltr">"Я очень долго мучилась от катаракты, и зрение ухудшалось с каждым днем. В AZPO Health мне помогли выбрать отличную клинику и опытного хирурга. Операция прошла успешно, и теперь я вижу мир как в молодости! Огромное спасибо!"</p>
-<p dir="ltr">"У моего ребенка было косоглазие, и мы очень переживали. В AZPO Health нам предложили несколько вариантов лечения, и мы выбрали операцию. Результат превзошел все наши ожидания! Глазки стали ровными, и ребенок чувствует себя намного увереннее."</p>
-<p dir="ltr">"Я всегда мечтала избавиться от очков. В AZPO Health мне сделали лазерную коррекцию зрения, и теперь я вижу на все сто процентов! Это просто невероятно! Спасибо за новую жизнь!"</p>
-<h2 dir="ltr">Часто задаваемые вопросы</h2>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Какие гарантии на лечение предоставляются?<br><br>Мы сотрудничаем исключительно с проверенными клиниками, которые обладают лицензиями и сертификатами качества. Мы гарантируем, что лечение будет проведено в соответствии с мировыми стандартами.</p>
-</li>
-</ul>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Как оплатить лечение?<br><br>Оплата производится непосредственно в клинике после проведения консультации и согласования плана лечения. Возможна оплата наличными или банковской картой.<br><br></p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Нужен ли мне переводчик?<br><br>Мы предоставляем услуги переводчика на всех этапах лечения, чтобы вы чувствовали себя комфортно и уверенно.<br><br></p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Как долго длится поездка?<br><br>Продолжительность поездки зависит от типа лечения и индивидуальных особенностей пациента. Обычно она составляет от 3 до 10 дней.<br><br></p>
-</li>
-</ul>
-<p dir="ltr"><strong id="docs-internal-guid-ad45fc77-7fff-e80f-ca03-b8dcaa1a8409">Что делать после возвращения домой?<br><br>Мы предоставим вам подробные рекомендации по послеоперационному уходу и свяжемся с вами через несколько недель для контроля состояния.</strong></p>`
+<h3 dir="ltr">Сделайте первый шаг к ясному взгляду на мир!</h3>
+<p dir="ltr">Проблемы со зрением не должны ограничивать вашу жизнь. Обратитесь в AZPO Health за бесплатной консультацией и индивидуальным предложением. Доверьте свое зрение экспертам &mdash; и откройте для себя мир в новом свете.</p>
+<p>&nbsp;</p>`
             : `
           <p>Turkey has become a popular destination for individuals seeking high-quality and affordable ophthalmological care. With modern hospitals, experienced specialists, and comprehensive packages, AZPO Health offers a unique opportunity to combine world-class medical treatment with a memorable travel experience.</p><p><strong>Quality and Accreditation:</strong></p><p><strong>Turkish hospitals and clinics adhere to international standards, boasting state-of-the-art technology and employing highly trained ophthalmologists. Many facilities have international certifications, ensuring that patients receive the highest quality of care. AZPO Health partners with leading medical institutions to provide access to cutting-edge treatments and experienced medical professionals.</strong></p><p><strong>Cost-Effectiveness:</strong></p><p><strong>Ophthalmology procedures in Turkey are often more affordable compared to many Western countries. This cost advantage allows patients to access high-quality medical care without exceeding their budget. AZPO Health offers transparent pricing options and comprehensive packages, ensuring that patients receive excellent value for their investment.</strong></p><p><strong>Comprehensive Packages:</strong></p><p><strong>AZPO Health provides all-inclusive packages that cover every aspect of your medical journey. These packages typically include pre-operative consultations, surgery fees, accommodation, airport transfers, and post-operative care. This comprehensive approach ensures a seamless and stress-free experience for international patients.</strong></p><p><strong>Experienced Specialists:</strong></p><p><strong>Turkey boasts a large number of experienced ophthalmologists specializing in various eye surgeries. These specialists have extensive training and experience in their respective fields, ensuring that patients receive personalized and effective treatment. AZPO Health collaborates with a network of skilled and experienced ophthalmologists committed to delivering the best possible outcomes.</strong></p><p><strong>Tourism and Hospitality:</strong></p><p><strong>Beyond medical care, Turkey offers a rich cultural experience and numerous tourist attractions. Patients can combine their treatment with the opportunity to explore historical sites, beautiful landscapes, and vibrant cities. AZPO Health assists patients with travel arrangements and provides access to local support, ensuring a comfortable and enjoyable stay.</strong></p><h2><strong>Understanding Ophthalmology</strong></h2><p>Ophthalmology is a branch of medicine that deals with the study, diagnosis, and treatment of eye disorders. Ophthalmologists are medical doctors who specialize in eye and vision care. They are trained to perform eye exams, diagnose and treat eye diseases, prescribe medications, and perform eye surgery.</p><h3><strong>What is Ophthalmology?</strong></h3><p>Ophthalmology encompasses a wide range of services, from routine eye exams to complex surgical procedures. Ophthalmologists treat various eye conditions, including:</p><ul><li>Refractive errors (nearsightedness, farsightedness, astigmatism)</li><li>Cataracts</li><li>Glaucoma</li><li>Diabetic retinopathy</li><li>Macular degeneration</li><li>Corneal diseases</li><li>Eye infections</li><li>Eye injuries</li><li>Eye cancers</li></ul><h3><strong>Eye Surgery in Turkey</strong></h3><p>Eye surgery in Turkey has become increasingly popular due to its affordability and quality. Several types of eye surgeries are performed in Turkey, each designed to address specific eye conditions. Some of the most common types of eye surgeries include:</p><ul><li><strong>LASIK (Laser-Assisted In Situ Keratomileusis):</strong> LASIK is a popular refractive surgery used to correct nearsightedness, farsightedness, and astigmatism. The procedure involves using a laser to reshape the cornea, improving vision and reducing or eliminating the need for glasses or contact lenses. LASIK is known for its quick recovery time and high success rate.</li><li><strong>Cataract Surgery:</strong> Cataracts are a clouding of the natural lens of the eye, leading to blurred vision. Cataract surgery involves removing the clouded lens and replacing it with an artificial lens implant. This procedure is highly effective in restoring vision and improving the quality of life for individuals with cataracts.</li><li><strong>Corneal Transplant Surgery:</strong> Corneal transplant surgery is performed to replace a damaged or diseased cornea with a healthy cornea from a donor. This procedure is necessary for individuals with severe corneal damage or disease and can significantly improve vision.</li><li><strong>Glaucoma Surgery:</strong> Glaucoma is a condition that damages the optic nerve, often due to increased pressure inside the eye. Glaucoma surgery aims to reduce the pressure in the eye and prevent further damage to the optic nerve. Different types of glaucoma surgeries are available, depending on the specific type and severity of glaucoma.</li><li><strong>Retinal Surgery:</strong> Retinal surgery is performed to treat various conditions affecting the retina, such as retinal detachment, diabetic retinopathy, and macular holes. These procedures aim to prevent vision loss and restore vision.</li><li><strong>Refractive Lens Exchange (RLE):</strong> Refractive lens exchange involves replacing the natural lens of the eye with an artificial lens to correct refractive errors. RLE is suitable for individuals with presbyopia or high refractive errors who may not be candidates for LASIK.</li><li><strong>Laser Eye Surgery (PRK, LASEK):</strong> PRK (Photorefractive Keratectomy) and LASEK (Laser Epithelial Keratomileusis) are alternative vision correction options when LASIK is not suitable. These procedures involve using a laser to reshape the cornea, similar to LASIK, but with different techniques for preparing the corneal surface.</li><li><strong>Strabismus Surgery:</strong> Strabismus surgery is performed to correct misalignment of the eyes (crossed eyes) and improve binocular vision. This surgery is typically performed in cases where glasses or other treatments have not been effective.</li></ul><h3><strong>What is the Safest Eye Surgery Method?</strong></h3><p>The safety of an eye surgery method depends on various factors, including the patient’s specific condition, medical history, and the skill and experience of the ophthalmologist. All surgical procedures carry some level of risk; however, advancements in technology and techniques have significantly improved the safety and effectiveness of various eye surgeries.</p><p>It’s crucial to undergo a thorough evaluation by a qualified eye surgeon who can recommend the safest and most effective treatment for individual needs.</p><h2><strong>AZPO Health: Your Partner in Vision Correction</strong></h2><p>AZPO Health is a leading medical tourism company in Turkey, specializing in providing high-quality ophthalmology services to international patients. AZPO Health offers a comprehensive range of eye treatments and surgeries, tailored to meet individual needs and preferences.</p><p><strong>Why Choose AZPO Health?</strong></p><ul><li><strong>Experienced Medical Team:</strong> AZPO Health partners with skilled and experienced ophthalmologists.</li><li><strong>State-of-the-Art Facilities:</strong> AZPO Health works with modern hospitals and clinics equipped with advanced technology for performing eye surgeries.</li><li><strong>Personalized Treatment Plans:</strong> AZPO Health provides individualized treatment plans based on a thorough evaluation of the patient’s eye health and vision goals.</li><li><strong>Affordable Pricing:</strong> AZPO Health offers competitive and transparent pricing options.</li><li><strong>Comprehensive Packages:</strong> AZPO Health provides all-inclusive packages that cover every aspect of the medical journey.</li><li><strong>Multilingual Support:</strong> AZPO Health offers multilingual staff and translation services to ensure clear communication and a comfortable experience for international patients.</li></ul><h3><strong>Take the First Step Towards Clearer Vision!</strong></h3><p>Don't let vision problems hold you back any longer. Contact AZPO Health today for a free consultation and personalized quote. Our expert medical team is ready to help you achieve clearer vision and a brighter future!</p><p><br></p>
           `,
@@ -745,24 +561,115 @@ export const categoryDataHandler = (key: string, locale: string) => {
       id: 0,
       title:
         locale === "ru"
-          ? "Discover Crystal-Clear Vision with Ophthalmology in Turkey"
+          ? "Терапия стволовыми клетками в Турции | Раскройте силу естественного восстановления организма в 2025 году"
           : "Stem Cell Treatments in Turkey | Unlock Your Body’s Natural Healing Power in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Don’t let blurred vision, eye conditions, or discomfort hold you back! At AZPO Health, we connect you with top-tier eye specialists in Turkey, offering advanced, personalized treatments using the latest medical technology.From laser vision correction to cataract surgery, glaucoma treatment, and corneal transplants, our expert team ensures affordable, high-quality care tailored to your needs."
+          ? "Представьте, что возможно восстановить повреждённые ткани, вернуть подвижность, избавиться от хронической боли — и все это без операций. Терапия стволовыми клетками меняет подход к лечению, открывая новые горизонты в восстановлении после травм, борьбе с хроническими заболеваниями и даже бесплодием. Будущее медицины уже наступило. Не просто подавляйте симптомы — начните восстановление изнутри. Откройте для себя новые возможности уже сегодня."
           : "Imagine regenerating damaged tissues, restoring function, and reducing pain—all without invasive surgery. Stem cell therapy is transforming medicine, offering groundbreaking treatments for injuries, chronic diseases, and even infertility. The future of healing isn’t coming—it’s already here. Don’t just treat symptoms; repair and rejuvenate from within. Explore the possibilities today",
       subCategoryContent: {
         title:
-          locale === "ru" ? "Stem cell Treatments" : "Stem cell Treatments",
+          locale === "ru" ? "Лечение стволовыми клетками" : "Stem cell Treatments",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Ophthalmology?"
+            ? "Почему стоит выбрать Турцию для терапии стволовыми клетками?"
             : "Discover the Possibilities of Stem Cell Treatments in Turkey",
         content:
           locale === "ru"
-            ? ``
+            ? `<p dir="ltr">Турция по праву считается одним из ведущих направлений медицинского туризма. Здесь сочетаются высокое качество медицинской помощи, разумная стоимость лечения и теплое отношение к зарубежным пациентам. С AZPO Health вы получаете не просто лечение, а продуманный и всесторонний подход:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Качество: мы сотрудничаем с современными клиниками и сертифицированными специалистами, обладающими богатым опытом в терапии стволовыми клетками. Все учреждения соответствуют международным стандартам качества и используют передовые методы лечения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступность: стоимость терапии в Турции значительно ниже, чем в большинстве европейских стран и США. AZPO Health предлагает прозрачные расценки и индивидуальные планы лечения, соответствующие разным возможностям и потребностям.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полное сопровождение: мы берем на себя все организационные моменты &mdash; от первой консультации и медицинского планирования до размещения, трансферов и постпроцедурного сопровождения. Вы можете сосредоточиться на своем здоровье, не беспокоясь о деталях.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Что представляет собой терапия стволовыми клетками?</h3>
+<p dir="ltr">Терапия стволовыми клетками задействует природный ресурс организма &mdash; его способность к самовосстановлению. Уникальность стволовых клеток заключается в их способности превращаться в различные типы специализированных клеток, что позволяет эффективно использовать их при лечении множества заболеваний и восстановлении поврежденных тканей.</p>
+<h4 dir="ltr">Виды лечения стволовыми клетками</h4>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Терапия PRP (богатая тромбоцитами плазма): хотя PRP-терапия технически не является формой лечения стволовыми клетками, еe часто применяют вместе с ней или как самостоятельный метод для ускорения заживления и регенерации тканей. В ходе процедуры берется небольшое количество крови пациента, которое затем обрабатывается для получения концентрата тромбоцитов &mdash; источников факторов роста, стимулирующих восстановление. PRP активно используется при выпадении волос для укрепления ослабленных волосяных фолликулов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Терапия мезенхимальными стволовыми клетками (MSC): этот метод основан на использовании мезенхимальных стволовых клеток, которые получают из костного мозга, жировой ткани или пуповинной крови. Эти клетки способны превращаться в различные типы тканей &mdash; костную, хрящевую, мышечную &mdash; и применяются при лечении ортопедических заболеваний, аутоиммунных расстройств и нарушений нервной системы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гемопоэтическая трансплантация стволовых клеток (HSCT): в рамках этой процедуры поврежденные или дефектные кроветворные стволовые клетки заменяются на здоровые. Чаще всего трансплантация применяется при лечении онкогематологических заболеваний, таких как лейкемия, лимфома и множественная миелома. Существует два основных вида HSCT: аутологичная (с использованием собственных клеток пациента) и аллогенная (с применением донорского материала).</p>
+</li>
+</ul>
+<h4 dir="ltr">Методы применения</h4>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Инъекции: стволовые клетки вводятся непосредственно в пораженную область &mdash; сустав, кожу головы или поврежденную ткань. Этот метод широко используется при ортопедических заболеваниях, выпадении волос и омоложении кожи.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургическая имплантация: в некоторых случаях стволовые клетки имплантируют хирургическим путем непосредственно в поврежденные ткани. Такой подход обеспечивает точную доставку клеток и часто применяется совместно с реконструктивными операциями.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Внутривенное введение: при системных заболеваниях, таких как аутоиммунные патологии и неврологические расстройства, стволовые клетки вводятся внутривенно. Это позволяет клеткам распространяться по всему организму и воздействовать на несколько пораженных зон.<br><br></p>
+</li>
+</ul>
+<h4 dir="ltr">Преимущества терапии стволовыми клетками</h4>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Естественное восстановление: терапия активирует внутренние механизмы организма, способствуя заживлению и регенерации тканей.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Минимальная инвазивность: большинство процедур выполняются с помощью инъекций или небольших разрезов, что снижает болезненность, минимизирует риск рубцевания и сокращает время восстановления по сравнению с традиционными операциями.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Широкий спектр применения: терапия эффективна при лечении ортопедических заболеваний, выпадения волос, возрастных изменений кожи, аутоиммунных и неврологических нарушений.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Длительный эффект: во многих случаях лечение обеспечивает продолжительное облегчение и улучшение функционального состояния организма, однако срок сохранения результата зависит от индивидуальных особенностей пациента и характера заболевания.<br><br></p>
+</li>
+</ul>
+<h4 dir="ltr">Заболевания, лечащиеся терапией стволовыми клетками</h4>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Выпадение волос: терапия стволовыми клетками, включая PRP-терапию, стимулирует рост волос, укрепляет волосяные фолликулы и улучшает общую густоту волос.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ортопедические заболевания: терапия помогает восстанавливать поврежденный хрящ, сухожилия и связки, снижает боль и улучшает функцию суставов при таких состояниях, как остеоартрит, ревматоидный артрит и спортивные травмы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Аутоиммунные заболевания: стволовые клетки способны модулировать иммунную систему и уменьшать воспаление при аутоиммунных болезнях, таких как рассеянный склероз, волчанка и ревматоидный артрит.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Омоложение кожи: терапия способствует улучшению текстуры кожи, уменьшению морщин и укреплению общего здоровья кожи за счет стимуляции выработки коллагена и регенерации тканей.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Неврологические расстройства: терапия стволовыми клетками исследуется как потенциальное лечение для неврологических заболеваний, таких как инсульт, травмы спинного мозга и болезнь Паркинсона.</p>
+</li>
+</ul>
+<h3 dir="ltr">Почему стоит выбрать AZPO Health?</h3>
+<p dir="ltr">AZPO Health &mdash; ведущая компания в сфере медицинского туризма в Турции, специализирующаяся на терапии стволовыми клетками и других современных медицинских процедурах. Наши офисы расположены в Стамбуле, Анталии и Аланье, что обеспечивает удобный доступ к услугам мирового уровня.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытная медицинская команда: мы сотрудничаем с высококвалифицированными врачами, специализирующимися на терапии стволовыми клетками. Наши специалисты обеспечивают персонализированный подход и стремятся к оптимальным результатам.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные медицинские учреждения: мы работаем с клиниками и больницами, оснащенными по последнему слову техники и соответствующими международным стандартам качества и безопасности. По состоянию на март 2025 года в Турции насчитывается 30 медицинских учреждений с аккредитацией JCI.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальные планы лечения: мы понимаем, что каждый пациент уникален. Врачи проводят тщательную оценку состояния и разрабатывают персонализированный план лечения, учитывающий ваши потребности и цели.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полное сопровождение: мы оказываем поддержку на всех этапах вашего медицинского путешествия &mdash; от организации поездки, проживания и трансфера до послеоперационного ухода.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Стремление к совершенству: мы придерживаемся строгих этических норм, заботимся о безопасности и удовлетворенности пациентов и стремимся обеспечить лучший результат лечения.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Готовы узнать больше о возможностях терапии стволовыми клетками? Свяжитесь с AZPO Health уже сегодня для бесплатной консультации и индивидуального предложения. Наша команда ответит на все ваши вопросы и поможет на каждом этапе.</p>
+<p dir="ltr">&nbsp;</p>`
             : `
          <p>Considering stem cell therapy? Turkey offers a unique combination of advanced medical facilities, experienced specialists, and cost-effective solutions. Learn how AZPO Health can guide you through a seamless and supportive treatment journey.</p><p><br></p><p><br></p><h3><strong>Why Choose Turkey for Stem Cell Treatments?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. The country offers a unique blend of high-quality healthcare, affordability, and a welcoming environment for international patients. When it comes to stem cell treatments, AZPO Health provides a comprehensive package that ensures a smooth and successful experience.</p><ul><li><strong>Quality:</strong> AZPO Health partners with state-of-the-art facilities and highly qualified medical professionals specializing in stem cell therapies. These experts adhere to international standards and utilize the latest techniques to deliver optimal results.</li><li><strong>Affordability:</strong> Compared to many European countries and the United States, Turkey offers significantly more affordable healthcare options. AZPO Health provides transparent pricing and personalized treatment plans to suit various budgets.</li><li><strong>Comprehensive Package:</strong> AZPO Health takes care of every aspect of your medical journey, from initial consultation and treatment planning to accommodation, transportation, and post-operative care. This all-inclusive approach minimizes stress and allows you to focus on your health and recovery.</li></ul><h3><strong>Understanding Stem Cell Treatments</strong></h3><p>Stem cell treatments harness the body's natural ability to repair and regenerate damaged tissues. Stem cells are unique in that they can differentiate into various specialized cell types, making them valuable in treating a wide range of conditions.</p><h4><strong>Types of Stem Cell Treatments</strong></h4><ul><li><strong>PRP (Platelet-Rich Plasma) Therapy:</strong> While technically not a stem cell treatment, PRP therapy is often used in conjunction with stem cell procedures or as a standalone treatment to enhance healing and tissue regeneration. PRP involves extracting a small sample of your blood and processing it to concentrate the platelets, which contain growth factors that stimulate tissue repair. PRP is used for hair loss to strengthen weak hair follicles.</li><li><strong>Mesenchymal Stem Cell Therapy:</strong> This type of stem cell therapy utilizes mesenchymal stem cells (MSCs), which can be sourced from bone marrow, adipose tissue (fat), or umbilical cord blood. MSCs have the ability to differentiate into various cell types, including bone, cartilage, and muscle cells, making them useful in treating orthopedic conditions, autoimmune diseases, and neurological disorders.</li><li><strong>Hematopoietic Stem Cell Transplantation (HSCT):</strong> HSCT involves replacing damaged or defective blood-forming stem cells with healthy ones. This procedure is primarily used to treat hematological cancers and disorders, such as leukemia, lymphoma, and multiple myeloma. There are two main types of HSCT: autologous (using the patient's own stem cells) and allogeneic (using stem cells from a donor).</li></ul><h4><strong>Methods of Application</strong></h4><ul><li><strong>Injection:</strong> Stem cells can be directly injected into the affected area, such as a joint, scalp, or damaged tissue. This method is commonly used for orthopedic conditions, hair loss, and skin rejuvenation.</li><li><strong>Surgical Implantation:</strong> In some cases, stem cells may be surgically implanted into the damaged tissue. This approach allows for precise delivery of the cells and is often used in conjunction with reconstructive surgeries.</li><li><strong>Intravenous Infusion:</strong> For systemic conditions, such as autoimmune diseases and neurological disorders, stem cells may be administered intravenously. This allows the cells to circulate throughout the body and target multiple affected areas.</li></ul><h4><strong>Benefits of Stem Cell Treatments</strong></h4><ul><li><strong>Natural Healing:</strong> Stem cell treatments utilize the body's own repair mechanisms, promoting natural healing and tissue regeneration.</li><li><strong>Minimally Invasive:</strong> Many stem cell procedures are minimally invasive, involving injections or small incisions. This results in less pain, scarring, and recovery time compared to traditional surgeries.</li><li><strong>Wide Range of Applications:</strong> Stem cell treatments have shown promise in treating a diverse array of conditions, including orthopedic problems, hair loss, skin aging, autoimmune diseases, and neurological disorders.</li><li><strong>Long-Lasting Results:</strong> In many cases, stem cell treatments can provide long-lasting relief and improved function. However, the longevity of results can vary depending on the individual and the condition being treated.</li></ul><h4><strong>Conditions Treated with Stem Cell Therapy</strong></h4><ul><li><strong>Hair Loss:</strong> Stem cell treatments, including PRP therapy, can stimulate hair growth, strengthen hair follicles, and improve overall hair density.</li><li><strong>Orthopedic Conditions:</strong> Stem cell therapy can help repair damaged cartilage, tendons, and ligaments, reducing pain and improving joint function in conditions like osteoarthritis, rheumatoid arthritis, and sports injuries.</li><li><strong>Autoimmune Diseases:</strong> Stem cell treatments can modulate the immune system and reduce inflammation in autoimmune diseases such as multiple sclerosis, lupus, and rheumatoid arthritis.</li><li><strong>Skin Rejuvenation:</strong> Stem cell therapy can improve skin texture, reduce wrinkles, and enhance overall skin health by stimulating collagen production and tissue regeneration.</li><li><strong>Neurological Disorders:</strong> Stem cell treatments are being explored as a potential therapy for neurological disorders such as stroke, spinal cord injury, and Parkinson's disease.</li></ul><p><br></p><h3><strong>Why Choose AZPO Health?</strong></h3><p>AZPO Health is a leading medical tourism company in Turkey, specializing in stem cell treatments and other advanced medical procedures. With locations in Istanbul, Antalya, and Alanya, AZPO Health offers convenient access to world-class healthcare services.</p><ul><li><strong>Experienced Medical Team:</strong> we partner with highly skilled and experienced doctors specializing in stem cell therapies. These experts are dedicated to providing personalized care and achieving optimal outcomes.</li><li><strong>State-of-the-Art Facilities: </strong>We works with modern, well-equipped hospitals and clinics that adhere to international standards of quality and safety.</li><li><strong>Personalized Treatment Plans:</strong> We understand that every patient is unique. The medical team will conduct a thorough evaluation of your condition and develop a customized treatment plan tailored to your specific needs and goals.</li><li><strong>Comprehensive Support:</strong> we provides comprehensive support throughout your medical journey, including assistance with travel arrangements, accommodation, transportation, and post-operative care.</li><li><strong>Commitment to Excellence:</strong> We are committed to providing exceptional patient care and delivering the best possible results. The company adheres to strict ethical guidelines and prioritizes patient safety and satisfaction.</li></ul><p>Ready to explore the possibilities of stem cell treatments? Contact AZPO Health today for a free consultation and personalized quote. Our team is here to answer your questions and guide you through every step of the process.</p><p><br></p>
           `,
@@ -913,20 +820,20 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Пересадка волос в Турции: естественные, постоянные результаты в 2025 году!"
+          ? "Пересадка волос в Турции 2025 году"
           : "Hair Transplant in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Устали от истончения волос или залысин? Откройте для себя доступные решения для пересадки волос мирового класса в AZPO Health в Стамбуле, Анталье и Аланье, Турция. Верните себе молодость и уверенность с нашей опытной медицинской командой и современными технологиями."
+          ? "Если вы сталкиваетесь с проблемой выпадения волос, Турция — один из ведущих мировых центров для пересадки волос. Здесь сочетаются высококвалифицированные хирурги, современные технологии и выгодные цены. Используйте передовые методы, такие как FUE и DHI, чтобы получить естественный и долговременный результат, одновременно наслаждаясь комфортным медицинским обслуживанием с AZPO Health. Доступно, эффективно и способно изменить вашу жизнь — зачем откладывать?"
           : "Struggling with hair loss? Turkey is the world’s #1 destination for hair transplants—combining top-tier surgeons, cutting-edge technology, and unbeatable prices. Get natural, permanent results with advanced techniques like FUE and DHI, all while enjoying a luxury medical experience in Turkey with AZPO Health. Affordable, effective, and life-changing—why wait?",
       videoContents: {
         title:
           locale === "ru"
-            ? "Пересадка волос в Турции: восстановите свои волосы, верните свою уверенность!"
+            ? "Почему стоит выбрать пересадку волос в Турции вместе с AZPO Health"
             : "Why Choose Hair Transplantation in Turkey with AZPO Health?",
         desc:
           locale === "ru"
-            ? "Мечтаете о роскошных, густых волосах? AZPO Health предлагает современные процедуры пересадки волос в Турции, разработанные с учетом ваших потребностей. Скажите «да» новой уверенности, естественным результатам и заботливому уходу профессионалов. Ваше преображение начинается здесь!"
+            ? "Мы обеспечиваем полное сопровождение, включая консультации с квалифицированными врачами, помощь с оформлением визы и страховки, организацию трансферов и проживания, а также персонального координатора, который будет сопровождать вас на каждом этапе. AZPO Health объединяет опыт лучших хирургов и предлагает разумные цены, гарантируя высокое качество услуг без лишних затрат. Успешная пересадка волос заметно улучшит ваш внешний вид, повысит самооценку и поможет вернуть уверенность и внутреннее равновесие."
             : "Comprehensive Care: AZPO Health provides end-to-end support, including consultations with in-house doctors, visa assistance, insurance guidance, airport transfers, hotel arrangements, and a dedicated patient coordinator.Expertise and Affordability: AZPO Health combines the expertise of skilled surgeons with affordable prices, ensuring high-quality care without financial strain.Positive Impact: A successful hair transplant can significantly improve your appearance and self-confidence, helping you regain a sense of well-being.",
       },
       subCategoryContent: {
@@ -938,135 +845,58 @@ export const subCategoryHandler = (
       contents: {
         title:
           locale === "ru"
-            ? "Почему стоит выбрать Турцию для пересадки волос?"
+            ? "Почему Турция — лучший выбор для пересадки волос?"
             : "Why Choose Turkey for Hair Transplantation?",
         content:
           locale === "ru"
-            ? `<p dir="ltr">Турция стала мировым лидером в сфере пересадки волос, привлекая пациентов со всех уголков планеты.&nbsp; Высокий уровень медицины, доступные цены и уникальная атмосфера страны делают это направление не просто популярным, а по-настоящему лучшим.</p>
-<p dir="ltr">Доступность: один из ключевых факторов, привлекающих пациентов в Турцию, &mdash; это значительно более доступная стоимость процедур по пересадке волос по сравнению с другими странами. Более низкие расходы на жизнь и оплату труда позволяют предлагать конкурентоспособные цены на медицинские услуги. AZPO Health придерживается принципов прозрачности в ценообразовании, обеспечивая пациентам высококачественное лечение без лишних затрат.</p>
-<p dir="ltr">Качество и опыт: Турция известна медицинскими учреждениями мирового уровня и высококвалифицированными специалистами в области восстановления волос. Многие клиники успешно проводят процедуры пересадки волос уже более 25 лет, что обеспечивает высокий уровень профессионализма и накопленных знаний. AZPO Health делает акцент на опыт и передовые методики лечения выпадения волос, гарантируя пациентам первоклассный уход и естественные результаты.</p>
-<p dir="ltr">Передовые технологии: турецкие клиники активно инвестируют в передовые медицинские технологии и оборудование, обеспечивая пациентам доступ к самым современным методам лечения. AZPO Health идет в ногу с инновациями, применяя передовые технологии для достижения максимальных результатов и естественного эффекта.</p>
-<p dir="ltr">Комплексные пакеты: AZPO Health и другие клиники предлагают пакеты, которые включают все аспекты лечения, начиная от консультаций и заканчивая послеоперационным уходом. В таких пакетах предусмотрены VIP-транспорт и другие услуги для вашего удобства и спокойствия на протяжении всего процесса.</p>
-<p dir="ltr">Направление медицинского туризма: благодаря своему стратегическому расположению на пересечении Европы и Азии, страна является удобным и доступным направлением для иностранных пациентов. Турция предлагает не только высококачественное медицинское обслуживание, но и богатое историческое и культурное наследие, позволяя пациентам получить уникальные впечатления и насладиться путешествиями в перерывах между процедурами.</p>
-<h2 dir="ltr">Стоимость пересадки волос в Турции: доступное и эффективное решение</h2>
-<p dir="ltr">Доступность пересадки волос в Турции является важным фактором для многих иностранных пациентов. Хотя конкретные цены могут варьироваться в зависимости от индивидуальных потребностей и объема процедуры, Турция обычно предлагает более конкурентоспособные цены, чем Европа или Северная Америка.</p>
-<p dir="ltr">Факторы, влияющие на стоимость: на стоимость пересадки волос могут влиять несколько факторов, в том числе используемый метод (FUE, DHI и т. д.), количество необходимых графтов, а также местоположение и репутация клиники.</p>
-<p dir="ltr">Оптимальное соотношение цены и качества: несмотря на доступную стоимость, турецкие клиники поддерживают высокие стандарты медицинского обслуживания. Пациенты получают экспертное лечение и превосходные результаты без лишних затрат.</p>
-<p dir="ltr">Свяжитесь с AZPO Health для получения индивидуального предложения: получите точную информацию о стоимости, учитывающей ваши потребности. Запишитесь на бесплатную консультацию и получите персональное предложение.</p>
-<h2 dir="ltr">Цены на пересадку волос в Турции: на что рассчитывать</h2>
-<p dir="ltr">Важно понимать, что включено в общую стоимость пакета по пересадке волос. Многие клиники предлагают пакеты &laquo;все включено&raquo;, чтобы сделать процесс максимально удобным для иностранных пациентов.</p>
-<p dir="ltr">Стандартные услуги: эти пакеты часто включают в себя саму процедуру пересадки волос, предоперационные консультации и обследования, послеоперационный уход и медикаменты, а также проживание, трансфер из аэропорта и услуги перевода.</p>
-<p dir="ltr">Скрытые расходы: надежные клиники предоставляют полную информацию о всех возможных расходах, чтобы избежать неприятных сюрпризов для пациентов.</p>
-<p dir="ltr">Свяжитесь с AZPO Health для получения прозрачной информации о ценах: AZPO Health придерживается политики полной прозрачности и предоставит детальную разбивку всех затрат, связанных с вашим индивидуальным планом лечения.</p>
-<h2 dir="ltr">Стоимость пересадки волос в Турции: инвестиция в вашу уверенность</h2>
-<p dir="ltr">Решение о пересадке волос &mdash; это инвестиция в вашу самооценку и качество жизни. Стоимость процедуры следует рассматривать в контексте потенциальных преимуществ восстановления волос и повышения уверенности.</p>
-<p dir="ltr">Долгосрочная ценность: пересадка волос предоставляет постоянное решение проблемы выпадения волос. Пересаженные волосяные фолликулы устойчивы к действию дигидротестостерона (ДГТ), гормона, вызывающего облысение.</p>
-<p dir="ltr">Повышение самооценки: восстановление густых волос может значительно улучшить ваш имидж и уверенность в себе. Это может положительно сказаться на различных аспектах вашей жизни, включая социальные взаимодействия и карьерные перспективы.</p>
-<p dir="ltr">Свяжитесь с AZPO Health, чтобы обсудить свои цели: мы понимаем, как важен процесс пересадки волос для изменения вашей жизни, и готовы помочь вам достичь лучших результатов. Свяжитесь с нами для бесплатной консультации, чтобы обсудить ваши цели и узнать все доступные варианты.</p>
-<h2 dir="ltr">Пересадка волос в Турции: создание естественного образа</h2>
-<p dir="ltr">Линия роста волос &mdash; ключевой элемент успешной пересадки. Опытный хирург способен создать естественную линию роста, которая гармонично подчеркнет черты вашего лица и соответствует вашему возрасту.</p>
-<p dir="ltr">Индивидуальный дизайн: во время консультации хирург тщательно оценит особенности вашего лица и обсудит желаемую форму и густоту линии роста волос.</p>
-<p dir="ltr">Художественная укладка: хирург тщательно имплантирует отдельные волосяные фолликулы, чтобы воспроизвести естественный рисунок роста волос. Фолликулы обычно размещают вдоль передней части линии роста волос, создавая мягкий, перистый край.</p>
-<p dir="ltr">Опыт AZPO Health: квалифицированные хирурги AZPO Health обладают как художественным видением, так и техническим мастерством для создания линий роста волос, которые выглядят естественно и незаметно.</p>
-<h2 dir="ltr">Пересадка волос в Турции: передовые методы для достижения оптимальных результатов</h2>
-<p dir="ltr">Турция стала центром передовых методов пересадки волос, предлагая клиники с разнообразными вариантами, учитывающими индивидуальные потребности. AZPO Health предлагает следующие современные методы:</p>
-<p dir="ltr">Экстракция фолликулярных объединений (FUE): метод FUE заключается в извлечении отдельных волосяных фолликулов из донорской области (чаще всего с задней части головы) и пересадке их в область реципиента.</p>
-<p dir="ltr">Сапфировая пересадка волос FUE: сапфировая FUE &mdash; это усовершенствованный вариант техники FUE, при котором используются лезвия из сапфира, что позволяет добиться более точных и аккуратных разрезов.</p>
+            ? `<p dir="ltr">Турция стала популярным направлением для пересадки волос благодаря современным клиникам, опытным врачам и новейшим технологиям. Стоимость процедуры здесь может быть до 80% ниже, чем в Европе и США, что привлекает пациентов со всего мира. При этом уровень медицинского обслуживания остается на высоком уровне &mdash; многие клиники применяют инновационные методы и соответствуют международным стандартам.</p>
+<p dir="ltr">Кроме того, Турция &mdash; отличное место для сочетания лечения и отдыха. Города, такие как Стамбул, Аланья, Анталия, Измир и Каппадокия, предлагают богатое культурное наследие, исторические памятники и яркую атмосферу, что сделает ваше пребывание не только полезным, но и приятным. AZPO Health сотрудничает с ведущими хирургами и аккредитованными медицинскими учреждениями, чтобы обеспечить вам наилучший уход и поддержку.</p>
+<h3 dir="ltr">Процедуры пересадки волос, предлагаемые в Турции</h3>
+<p dir="ltr">AZPO Health предлагает широкий спектр современных методов пересадки волос, которые учитывают индивидуальные потребности каждого пациента:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Более гладкие разрезы: сапфировые лезвия обеспечивают более гладкие и точные разрезы по сравнению с традиционными стальными лезвиями. Это снижает повреждение тканей и способствует более быстрому заживлению.</p>
+<p dir="ltr" role="presentation">Извлечение фолликулярных единиц (FUE): малоинвазивная техника, при которой отдельные волосяные фолликулы извлекаются из донорской зоны и пересаживаются в облысевшие участки. Метод не требует разрезов и швов, что минимизирует образование рубцов и сокращает время восстановления.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Плотная укладка: метод сапфировой FUE позволяет более плотно размещать волосяные фолликулы, что способствует увеличению общей плотности волос.</p>
+<p dir="ltr" role="presentation">Прямая имплантация волос (DHI): более продвинутая версия метода FUE с использованием ручки Choi, которая позволяет имплантировать фолликулы непосредственно в кожу головы без предварительных разрезов. Это обеспечивает высокую точность и естественный внешний вид.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Дополнительные процедуры: в AZPO Health также доступны пересадка бровей, бороды и усов, а также терапия PRP и мезотерапия.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">Прямая имплантация волос (DHI): техника DHI &mdash; это популярный метод пересадки волос, который предоставляет пациентам минимально инвазивный вариант восстановления волос. Во время процедуры используется ручка Чой или специализированный инструмент для имплантации отдельных волосяных фолликулов непосредственно в область реципиента, без необходимости разрезов или швов. Этот точный процесс имплантации обеспечивает естественную линию роста волос и способствует более густой шевелюре.</p>
-<h2 dir="ltr">Волосы для имплантации в Турции: долговечное решение</h2>
-<p dir="ltr">Пересадка волос, также известная как имплантация, предоставляет долговечное решение проблемы выпадения волос.</p>
-<p dir="ltr">Устойчивость донорских волос: пересаженные волосяные фолликулы берутся из участков кожи головы, которые генетически устойчивы к выпадению. Это обеспечивает долговечность роста пересаженных волос на протяжении многих лет.</p>
-<p dir="ltr">Реалистичные ожидания: хотя пересадка волос дает долгосрочные результаты, важно иметь реалистичные ожидания. Пересаженные волосы могут сначала выпасть, прежде чем начнется их новый рост. Полные результаты процедуры могут проявиться через несколько месяцев.</p>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<h2 dir="ltr">Имплантация волос для мужчин в Турции: восстановите свою молодость и уверенность</h2>
-<p dir="ltr">Выпадение волос &mdash; частая проблема среди мужчин. Пересадка волос помогает вернуть молодой вид и значительно повысить уверенность в себе.</p>
-<p dir="ltr">Лечение мужского облысения: пересадка волос является высокоэффективным методом лечения мужского облысения, также известного как андрогенетическая алопеция.</p>
-<p dir="ltr">Индивидуальные планы лечения: AZPO Health разрабатывает персонализированные планы лечения, учитывающие уникальные потребности и цели каждого пациента.</p>
-<p dir="ltr">Опытные хирурги: команда высококвалифицированных хирургов AZPO Health имеет богатый опыт в проведении пересадки волос для мужчин, гарантируя естественные и долговечные результаты.</p>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<h2 dir="ltr">Цена пересадки волос в Турции: ключевые факторы, которые следует учитывать</h2>
-<p dir="ltr">Цена пересадки волос в Турции может варьироваться в зависимости от нескольких факторов. Важно учитывать эти факторы при оценке ваших возможностей.</p>
+<h3 dir="ltr">Стоимость пересадки волос в Турции</h3>
+<p dir="ltr">Цена процедуры зависит от нескольких факторов:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Количество графтов: необходимое количество графтов для достижения желаемого результата будет влиять на общую стоимость.</p>
+<p dir="ltr" role="presentation">Количество трансплантатов: зависит от степени выпадения волос и желаемой густоты.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Используемая техника: различные методы пересадки волос (FUE, DHI, Sapphire FUE) имеют разные стоимости, связанные с их применением.</p>
+<p dir="ltr" role="presentation">Выбранный метод: стоимость отличается для различных техник, таких как FUE и DHI.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Репутация и местоположение клиники: репутация и расположение клиники также могут влиять на цену процедуры.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Пакеты &laquo;все включено&raquo;: многие клиники предлагают пакеты &laquo;все включено&raquo;, которые могут обеспечить экономию средств и удобство для пациентов.</p>
+<p dir="ltr" role="presentation">Опыт хирурга и статус клиники: квалификация врача и репутация медицинского центра влияют на цену.<br><br></p>
 </li>
 </ul>
-<h2 dir="ltr">Пересадка волос с медицинским туризмом: лечение, совмещенное с увлекательным путешествием</h2>
-<p dir="ltr">Решение о пересадке волос в Турции дает возможность совместить лечение с незабываемым путешествием.</p>
-<p dir="ltr">Откройте для себя Стамбул, Анталию и Аланию: AZPO Health имеет офисы в этих удивительных городах, предлагая вам уникальное сочетание медицинского обслуживания и путешествий.</p>
-<p dir="ltr">Культурный опыт: Турция славится своей богатой историей и культурным наследием, предлагая туристам разнообразие достопримечательностей и увлекательных развлечений.</p>
-<p dir="ltr">Отдых и восстановление: после процедуры важно выделить время для отдыха и восстановления в комфортной и благоприятной обстановке.</p>
-<h2 dir="ltr">Медицинский туризм и пересадка волос в Турции: растущая тенденция</h2>
-<p dir="ltr">Тенденция медицинского туризма для пересадки волос в Турции продолжает набирать популярность.</p>
-<p dir="ltr">Положительные результаты: пациенты, выбравшие Турцию для пересадки волос, часто сообщают о высоком уровне удовлетворенности результатами и общими впечатлениями.</p>
-<p dir="ltr">Экономичность: экономия средств, связанная с медицинским туризмом в Турции, может быть значительной, что делает восстановление волос доступным для более широкого круга людей.</p>
-<p dir="ltr">Высококачественный уход: несмотря на более низкие затраты, турецкие клиники поддерживают высокие стандарты медицинского обслуживания и безопасности пациентов.</p>
-<h2 dir="ltr">Пакеты медицинского туризма в Турции по пересадке волос: удобство и выгодные условия</h2>
-<p dir="ltr">Многие клиники предлагают пакеты медицинского туризма, разработанные для упрощения процесса для иностранных пациентов. Эти пакеты обычно включают различные услуги, которые обеспечивают беспроблемный и комфортный опыт.</p>
-<p dir="ltr">Комплексная поддержка: от трансфера из аэропорта до проживания и послеоперационного ухода &mdash; эти пакеты обеспечивают комплексную поддержку на протяжении всего вашего путешествия.</p>
-<p dir="ltr">Экономия затрат: пакеты &laquo;все включено&raquo; часто позволяют существенно сэкономить по сравнению с бронированием каждой услуги отдельно.</p>
-<p dir="ltr">Индивидуальные пакеты AZPO Health: Свяжитесь с AZPO Health, чтобы узнать больше о наших индивидуальных пакетах медицинского туризма и о том, как мы можем адаптировать их под ваши уникальные потребности.</p>
-<h2 dir="ltr">Медицинский туризм в Турции по пересадке волос: решение, меняющее жизнь</h2>
-<p dir="ltr">Решение о пересадке волос через медицинский туризм в Турции &mdash; это шаг, который может кардинально изменить вашу жизнь, оказав значительное влияние на уверенность в себе и общее благополучие.</p>
+<p dir="ltr">Турция предлагает конкурентоспособные цены на пересадку волос благодаря низким затратам на рабочую силу, более низкой стоимости жизни и выгодному курсу валют.</p>
+<h3 dir="ltr">Почему стоит выбрать AZPO Health для пересадки волос?</h3>
+<p dir="ltr">AZPO Health предлагает полный комплекс услуг, обеспечивающий комфортное и беспроблемное прохождение медицинского туризма:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Восстановите свою уверенность: верните густоту волос и вновь почувствуйте уверенность в себе.</p>
+<p dir="ltr" role="presentation">Комплексное обслуживание: консультации с опытными врачами нашей клиники, которые проведут оценку состояния волос и подберут оптимальный план лечения.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Улучшите свой внешний вид: достигните более молодого и привлекательного облика.</p>
+<p dir="ltr" role="presentation">Помощь с визой и страхованием: мы сопровождаем вас на всех этапах оформления визы и страховых документов, чтобы упростить процесс приезда в Турцию.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Улучшите качество своей жизни: почувствуйте положительное влияние пересадки волос на ваши социальные взаимодействия, карьерные возможности и общее качество жизни.</p>
+<p dir="ltr" role="presentation">Индивидуальная поддержка: для каждого пациента назначается персональный координатор, который сопровождает и консультирует на всех этапах лечения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Организация логистики: трансфер из аэропорта, бронирование гостиницы и транспорт к медицинским процедурам &ndash; все это берем на себя.<br><br></p>
 </li>
 </ul>
-<h2 dir="ltr">Отзывы клиентов</h2>
-<p dir="ltr">&laquo;Я много лет боролся с выпадением волос, и это действительно влияло на мою уверенность. Я решил поехать в Турцию на пересадку волос с AZPO Health, и это было лучшим решением, которое я когда-либо принимал. Персонал был невероятно профессиональным и поддерживающим, а результаты потрясающие. Я чувствую себя новым человеком!!&raquo; - Джон Д.</p>
-<p dir="ltr">&laquo;Я не решался ехать за границу на лечение, но AZPO Health сделала весь процесс таким простым и беззаботным. Клиника была на высшем уровне, а хирург &mdash; невероятно квалифицирован. Я очень довольна своей новой линией роста волос и настоятельно рекомендую AZPO Health всем, кто рассматривает возможность пересадки волос.&raquo;. - Сара М.</p>
-<h2 dir="ltr">AZPO Health: лидер в области медицинского туризма&nbsp;</h2>
-<p dir="ltr">AZPO Health &mdash; ведущая компания в сфере медицинского туризма, специализирующаяся на пересадке волос в Турции. Мы имеем офисы в Стамбуле, Анталии и Алании, предоставляя доступ к медицинским учреждениям мирового класса, опытным врачам и передовым технологиям.</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Репутация и опыт: мы имеем подтвержденный послужной список успешных процедур по восстановлению волос и множество довольных пациентов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Приверженность качеству: мы стремимся предоставлять самые высокие стандарты ухода и обеспечения безопасности для наших пациентов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальный подход: мы понимаем, что каждый пациент уникален, и разрабатываем индивидуальные планы лечения, учитывая ваши потребности и цели.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комплексная поддержка: мы предоставляем всестороннюю поддержку на протяжении всего вашего пути &mdash; от первоначальной консультации до послеоперационного ухода.</p>
-</li>
-</ul>
-<h2 dir="ltr">Сделайте первый шаг к восстановлению густых волос!</h2>
-<p dir="ltr">Не позволяйте выпадению волос ограничивать вас! Свяжитесь с AZPO Health уже сегодня для бесплатной консультации и индивидуального предложения. Наша опытная медицинская команда оценит ваши потребности и разработает персонализированный план лечения, который поможет вам достичь желаемых результатов.</p>
-<p dir="ltr"><strong>&nbsp;</strong></p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Бесплатная консультация: обсудите свои проблемы с выпадением волос и узнайте о возможных решениях с нашими опытными хирургами.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальное предложение: получите подробную информацию о стоимости, связанной с вашим персонализированным планом лечения.</p>
-</li>
-</ul>
-<p dir="ltr"><strong id="docs-internal-guid-6152ca0e-7fff-a621-9681-5a90dd4acac5">Измените свою жизнь: восстановите уверенность и получите густые, естественно выглядящие волосы, о которых вы всегда мечтали.</strong></p>`
+<h3 dir="ltr">Сделайте первый шаг к восстановлению волос!</h3>
+<p dir="ltr">Свяжитесь с AZPO Health уже сегодня для бесплатной консультации и индивидуального расчета стоимости процедуры. Наша команда экспертов оценит ваши потребности, ответит на все вопросы и поможет пройти путь к новым, здоровым волосам в Турции.</p>
+<p dir="ltr">&nbsp;</p>`
             : `
         <p>Turkey has become a leading destination for hair transplantation due to its world-class medical facilities, experienced surgeons, and state-of-the-art technology. The cost of hair transplant procedures in Turkey is significantly lower compared to Europe and the United States, making it an attractive option for international patients. Despite the lower costs, the quality of care remains high, with many clinics using advanced techniques and adhering to international standards.</p><p>Turkey's popularity as a medical tourism destination also allows patients to combine their treatment with a vacation. Istanbul, Alanya, Antalya and Izmir, in particular, offer a rich cultural experience with historical sites and vibrant city life. AZPO Health partners with top surgeons in Turkey, ensuring patients receive the best possible care in accredited hospitals.</p><h3><strong>Hair Transplantation Procedures Offered in Turkey</strong></h3><p>AZPO Health offers a range of advanced hair transplantation techniques to suit individual needs:</p><p><strong>Follicular Unit Extraction (FUE):</strong> This minimally invasive technique involves extracting individual hair follicles from the donor area and transplanting them to the recipient area. FUE does not require incisions or sutures, resulting in minimal scarring and a faster recovery time.</p><p><strong>Direct Hair Implantation (DHI):</strong> DHI is a more advanced version of FUE that uses a Choi pen to directly implant hair follicles into the scalp without prior incisions. This technique allows for greater precision and natural-looking results.</p><p><strong>Other Options:</strong> AZPO Health also offer other specialized procedures such as eyebrow transplants, beard transplants, and PRP therapy for hair loss.</p><h3><strong>Hair Transplantation Cost in Turkey</strong></h3><p>The cost of a hair transplant in Turkey is influenced by several factors:</p><p><strong>Number of Grafts:</strong> The extent of hair loss and the desired density affect the number of grafts required.</p><p><strong>Surgical Technique:</strong> Different techniques like FUE and DHI have varying costs.</p><p><strong>Clinic and Surgeon Expertise:</strong> The experience and qualifications of the surgeon and the clinic's reputation can influence the price.</p><p>Turkey offers more affordable prices for hair transplant procedures compared to other countries due to lower labor costs, cost of living, and favorable exchange rates.</p><h3><strong>Why Choose AZPO Health for Hair Transplantation?</strong></h3><p>AZPO Health provides comprehensive services to ensure a seamless and stress-free experience for medical tourists:</p><p><strong>360-Degree Service:</strong> AZPO Health offers complete support, including consultations with in-house doctors who can assess your condition and recommend the best treatment plan.</p><p><strong>Visa and Insurance Assistance:</strong> AZPO Health assists clients with visa applications and insurance paperwork, simplifying the process of traveling to Turkey for treatment.</p><p><strong>Personalized Support:</strong> A dedicated patient coordinator is assigned to each client, providing personalized assistance throughout their journey.</p><p><strong>Logistics Management:</strong> AZPO Health handles airport transfers, hotel arrangements, and transportation to and from medical appointments.</p><h3><strong>Take the First Step Towards Hair Restoration</strong></h3><p>Contact AZPO Health today for a free consultation and personalized quote. Our experienced team will assess your needs, answer your questions, and guide you through every step of your hair transplant journey in Turkey.</p><p><br></p>
         `,
@@ -1310,33 +1140,105 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? ""
+          ? "Контурная пластика тела в Турции — обретите новое тело и уверенность"
           : "Body Contouring in Turkey - Reshape Your Body and Renew Your Confidence!",
       descriptionTop:
         locale === "ru"
-          ? ""
+          ? "Пора воплотить мечту о стройном, гармоничном теле. Современная контурная пластика в Турции — это не просто путь к внешнему обновлению, но и к внутренней гармонии и уверенности в себе."
           : "Achieve the body of your dreams with advanced body contouring procedures in Turkey. Experience world-class medical care, personalized treatment plans, and stunning results.",
       videoContents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Контурная пластика: создайте идеальные очертания своего тела в 2025 году"
             : "Body Contouring: Sculpt Your Ideal Silhouette in 2025",
         desc:
           locale === "ru"
-            ? ""
+            ? "Контурная пластика помогает скорректировать силуэт, устранить локальные жировые отложения и подтянуть кожу. Эти процедуры особенно актуальны для тех, кто столкнулся с избытком кожи или упрямыми жировыми зонами после значительной потери веса. AZPO Health сотрудничает с ведущими клиниками и сертифицированными хирургами Турции, предлагая экспертные решения, полностью адаптированные под индивидуальные цели и анатомические особенности каждого пациента."
             : "Body contouring procedures help reshape the body, eliminate excess fat, and tighten the skin. These treatments are especially beneficial for individuals struggling with stubborn fat deposits or excess skin after significant weight loss. AZPO Health connects patients with top clinics and hospitals in Turkey, offering expert solutions tailored to individual needs.",
       },
       subCategoryContent: {
         title:
           locale === "ru"
-            ? "Facial aesthetic surgery"
+            ? "Процедуры по коррекции контуров тела"
             : "Body contouring treatments",
       },
       contents: {
-        title: locale === "ru" ? "" : "Body Contouring in Turkey",
+        title: locale === "ru" ? "Контурная пластика тела в Турции" : "Body Contouring in Turkey",
         content:
           locale === "ru"
-            ? ""
+            ? `<p dir="ltr">Контурная пластика тела, также известная как скульптинг тела, включает в себя медицинские и хирургические процедуры, направленные на изменение формы тела через удаление жира, подтяжку кожи и улучшение общих контуров. AZPO Health сотрудничает с ведущими клиниками и больницами Турции, предлагая высококачественные решения для контурной пластики, которые сочетают доступность и индивидуальный подход.</p>
+<h3 dir="ltr">Почему стоит выбрать Турцию для контурной пластики тела?</h3>
+<p dir="ltr">Турция стала популярным направлением для медицинского туризма, особенно для процедур контурной пластики. Вот почему многие пациенты выбирают Турцию:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступность: в сравнении с США, Великобританией и Европой, цены на косметические процедуры в Турции значительно ниже, что позволяет достичь эстетических целей без перерасхода бюджета.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Качество: турецкие врачи и медицинские специалисты обладают высокой квалификацией и обширным опытом, успешно выполняя тысячи процедур каждый год. Многие международные студенты медвузов приезжают в Турцию для получения специализированного обучения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">&nbsp;Комплексные пакеты: AZPO Health соединяет пациентов с клиниками, которые предлагают пакеты &laquo;все включено&raquo; &mdash; трансфер, проживание и послеоперационный уход для максимально комфортного и спокойного лечения.</p>
+</li>
+</ul>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h3 dir="ltr">Что представляет собой процедура контурной пластики тела</h3>
+<p dir="ltr">Контурная пластика тела &mdash; это комплекс хирургических и нехирургических процедур, направленных на улучшение формы и пропорций тела. Хирургические методы дают более выраженные и долгосрочные результаты, но требуют времени на восстановление. Ниже представлены основные процедуры, которые помогают создать желаемый силуэт.</p>
+<h4 dir="ltr">Липосакция</h4>
+<p dir="ltr">Липосакция &mdash; это хирургическое удаление избыточных жировых отложений из таких зон, как шея, руки, живот и бёдра. Это не способ снижения веса, а процедура моделирования тела для людей с устойчивым весом. При сниженной эластичности кожи липосакция часто сочетается с другими видами коррекции.</p>
+<p dir="ltr">Абдоминопластика (подтяжка живота)</p>
+<p dir="ltr">Абдоминопластика позволяет удалить излишки кожи и жира в области живота, одновременно укрепляя мышцы брюшной стенки. Эта процедура особенно эффективна после беременности или значительной потери веса. Для комплексного преображения может сочетаться с липосакцией или подтяжкой бёдер.</p>
+<h4 dir="ltr">Подтяжка бёдер (тайпластика)</h4>
+<p dir="ltr">Подтяжка бёдер направлена на устранение избытка кожи и жира, возвращая ногам гладкость и тонус. Существуют разные техники: для внутренней, внешней или задней поверхности бёдер. Выбор метода зависит от индивидуальных особенностей и целей пациента.</p>
+<h4 dir="ltr">Брахиопластика (подтяжка рук)</h4>
+<p dir="ltr">Процедура позволяет избавиться от провисания кожи и жировых отложений в области плеч и верхней части рук. Брахиопластика особенно актуальна для людей, прошедших через резкое снижение веса или возрастные изменения кожи.</p>
+<h4 dir="ltr">Контурная пластика ягодиц (BBL или импланты)</h4>
+<p dir="ltr">Коррекция формы ягодиц может быть выполнена с помощью пересадки собственного жира (BBL) или установки силиконовых имплантов. Оба метода направлены на увеличение объёма и создание более выразительного, гармоничного контура.</p>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h3 dir="ltr">Дополнительные эстетические процедуры контурной пластики тела</h3>
+<p dir="ltr">AZPO Health помогает пациентам найти клиники, предлагающие широкий спектр дополнительных косметических процедур, включая:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подтяжка бровей (фронтопластика): процедура позволяет приподнять опущенные брови, разгладить морщины в области лба и межбровья, придавая лицу более молодой, открытый и свежий вид.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Отопластика (коррекция формы ушей): хирургическая коррекция формы или положения ушей помогает достичь более гармоничных черт лица и устранить эстетический дискомфорт, связанный с выступающими или асимметричными ушами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Блефаропластика (пластика век): удаление излишков кожи и жировых отложений на верхних и/или нижних веках позволяет вернуть глазам выразительность и устранить признаки усталости и возрастных изменений.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лабиопластика (эстетическая коррекция половых губ): деликатная процедура по изменению формы и размеров малых половых губ направлена на повышение комфорта, устранение физического дискомфорта и достижение эстетического баланса.</p>
+</li>
+</ul>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h3 dir="ltr">Почему выбирают AZPO Health</h3>
+<p dir="ltr">Выбирая AZPO Health для контурной пластики тела в Турции, вы доверяете своё преображение профессионалам, которые ценят индивидуальность и стремятся к совершенству. С нами вы получаете:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход: каждому пациенту подбирается персонализированный план лечения с учетом анатомических особенностей, целей и ожиданий. Никаких шаблонных решений &mdash; только то, что действительно подходит именно вам.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высококвалифицированные хирурги: с вами работают сертифицированные пластические хирурги с большим опытом в области контурной пластики. Это специалисты, которым доверяют и местные пациенты, и гости из-за рубежа.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные клиники и технологии: AZPO Health сотрудничает только с проверенными клиниками и медицинскими центрами, соответствующими международным стандартам безопасности, стерильности и технического оснащения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полное сопровождение: мы рядом на каждом этапе: от первой консультации до полного восстановления. Ваша уверенность и спокойствие &mdash; наш приоритет, а команда всегда готова ответить на любые вопросы.</p>
+</li>
+</ul>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h3 dir="ltr">Свяжитесь с AZPO Health уже сегодня</h3>
+<p dir="ltr">Готовы преобразить свое тело и вернуть уверенность? Оставьте заявку на бесплатную консультацию &mdash; и получите персональное предложение от лучших клиник Турции. Эксперты AZPO Health с заботой и вниманием проведут вас по пути к вашему новому образу.</p>
+<p dir="ltr">&nbsp;</p>`
             : `
        <p>Body contouring, also known as body sculpting, encompasses medical and surgical procedures designed to reshape the body by eliminating fat, tightening skin, and improving overall contours. AZPO Health collaborates with leading clinics and hospitals in Turkey to provide high-quality body contouring solutions that combine affordability with personalized care.</p><h3><strong>Why Choose Turkey for Body Contouring?</strong></h3><p>Turkey has emerged as a premier destination for medical tourism, particularly for body contouring procedures. Here’s why many patients choose Turkey:</p><ul><li><strong>Affordability:</strong> Compared to the United States, the UK, and Europe, Turkey offers significantly lower prices for cosmetic procedures, making it easier to achieve aesthetic goals within budget.</li><li><strong>Quality:</strong> Turkish doctors and healthcare professionals are highly trained and experienced, performing numerous procedures annually. Many international medical students come to Turkey for specialized training.</li><li><strong>Comprehensive Packages:</strong> AZPO Health connects patients with clinics that provide all-inclusive packages, covering transportation, accommodation, and post-operative care for a stress-free experience.</li></ul><h3><strong>Understanding Body Contouring Procedures</strong></h3><p>Body contouring includes both surgical and non-surgical options to address different aesthetic concerns. While surgical procedures generally yield more dramatic results, they also involve a longer recovery period.</p><h4><strong>Liposuction</strong></h4><p>Liposuction is a surgical technique that removes excess fat from specific body areas, such as the neck, arms, abdomen, and thighs. It is not a weight-loss solution but a body sculpting procedure for individuals with stable weight. In cases of poor skin elasticity, liposuction is often combined with other contouring procedures. Double chin liposuction is particularly popular in Turkey.</p><h4><strong>Tummy Tuck (Abdominoplasty)</strong></h4><p>A tummy tuck removes excess skin and fat from the abdomen while tightening the abdominal muscles. This procedure significantly enhances abdominal appearance, particularly after pregnancy or major weight loss. It can be combined with other treatments, such as liposuction or a thigh lift, for a more complete transformation.</p><h4><strong>Thigh Lift (Thighplasty)</strong></h4><p>A thigh lift removes excess skin and fat from the thighs, resulting in a smoother and more toned appearance. There are different types of thigh lifts, targeting either the inner or outer thighs. A consultation with a specialist will help determine the best approach based on individual needs.</p><h4><strong>Arm Lift (Brachioplasty)</strong></h4><p>An arm lift removes sagging skin and fat from the upper arms, creating a more defined and youthful look. This procedure is ideal for individuals who have experienced significant weight loss or age-related skin laxity.</p><h4><strong>Neck Lift (Platysmaplasty)</strong></h4><p>A neck lift tightens the muscles, removes excess skin, and enhances jawline definition. It is an effective procedure for addressing aging signs such as jowls, loose skin, and wrinkles in the neck area.</p><h4><strong>Brazilian Butt Lift (BBL)</strong></h4><p>A Brazilian Butt Lift (BBL) involves liposuction to remove fat from areas like the hips, abdomen, or thighs, which is then reinjected into the buttocks to enhance volume and shape. This procedure creates a fuller, more lifted buttock appearance.</p><h3><strong>Additional Body Contouring Procedures</strong></h3><p>AZPO Health connects patients with clinics offering additional cosmetic procedures, including:</p><ul><li><strong>Brow Lift (Forehead Lift):</strong> Reduces sagging brows and forehead wrinkles, enhancing facial aesthetics.</li><li><strong>Otoplasty (Ear Pinning):</strong> Reshapes or repositions the ears for a more balanced look.</li><li><strong>Blepharoplasty (Eyelid Surgery):</strong> Removes excess skin and fat from the eyelids to rejuvenate the eyes.</li><li><strong>Labiaplasty (Vulval Surgery):</strong> Reshapes the labia minora for improved comfort and aesthetics.</li></ul><h3><strong>The AZPO Health Advantage</strong></h3><p>Choosing AZPO Health for body contouring procedures in Turkey ensures access to:</p><ul><li><strong>Personalized Treatment Plans:</strong> Clinics and hospitals develop customized treatment plans based on individual anatomy, goals, and expectations.</li><li><strong>Experienced Surgeons:</strong> Patients receive care from board-certified plastic surgeons specializing in body contouring.</li><li><strong>State-of-the-Art Facilities:</strong> AZPO Health partners with top-tier hospitals and clinics in Turkey that adhere to international safety and technology standards.</li><li><strong>Comprehensive Support:</strong> Assistance is provided throughout the entire journey, from initial consultation to post-operative care.</li></ul><h3><strong>Contact AZPO Health Today</strong></h3><p>Ready to transform your body and regain your confidence? Contact AZPO Health for a free consultation and personalized quote. The expert team will guide you through every step of your body contouring journey in Turkey.</p><p><br></p>
         `,
@@ -1555,20 +1457,20 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Генитальная эстетика в Турции: обретите уверенность и гармонию"
+          ? "Интимная пластика в Турции: уверенность, комфорт и забота о себе"
           : "Genital Aesthetic Surgery in Turkey: Enhance Your Confidence and Well-being",
       descriptionTop:
         locale === "ru"
-          ? "Задумываетесь об интимной пластике, чтобы решить деликатные проблемы или улучшить качество жизни? Турция – одно из ведущих направлений для этих специализированных процедур, предлагая конфиденциальность и медицинские услуги высочайшего уровня. AZPO Health поможет вам найти опытных хирургов и предложит комплексные пакеты, обеспечивая комфорт и безопасное преображение."
+          ? "Желаете улучшить внешний вид или функции интимной зоны? Узнайте, как эстетическая хирургия гениталий в Турции предлагает индивидуальный подход с участием квалифицированных специалистов, обеспечивая высококлассный уход и комфортную атмосферу для повышения вашей уверенности в себе."
           : "Are you seeking to improve the appearance or function of your intimate area? Discover how genital aesthetic surgery in Turkey offers personalized solutions with experienced medical professionals, combining high-quality care with a supportive environment for your journey to enhanced self-esteem.",
       videoContents: {
         title:
           locale === "ru"
-            ? "Генитальная эстетика: верните себе комфорт и интимную гармонию с AZPO Health"
+            ? "Откройте возможности интимной эстетической хирургии"
             : "Explore the Possibilities of Genital Aesthetic Surgery",
         desc:
           locale === "ru"
-            ? "Испытываете дискомфорт, стеснение,  недовольство внешним видом или функциями интимной зоны? Генитальная эстетическая хирургия поможет решить широкий спектр вопросов – от косметических улучшений до функциональных изменений. AZPO Health в Турции предоставляет доступ к опытным специалистам и предлагает индивидуальный подход, чтобы вы чувствовали себя уверенно и комфортно."
+            ? "Рассматриваете эстетическую хирургию гениталий? В Турции предлагается широкий выбор процедур, индивидуально адаптированных под ваши потребности — от улучшения комфорта и внешнего вида до восстановления функций. Страна известна высоким уровнем медицины и внимательным, ориентированным на пациента подходом, гарантирующим безопасность и отличный результат."
             : "Considering genital aesthetic surgery? Understand the range of procedures available in Turkey, tailored to address individual needs and goals, from enhancing comfort and appearance to improving functional aspects, all within a country renowned for its medical expertise and patient-focused approach.",
       },
       subCategoryContent: {
@@ -1580,127 +1482,57 @@ export const subCategoryHandler = (
       contents: {
         title:
           locale === "ru"
-            ? "Почему Турция – идеальный выбор для генитальной эстетики с AZPO Health?"
+            ? "Почему стоит выбрать Турцию для эстетической хирургии интимной зоны?"
             : "Why Choose Turkey for Your Genital Aesthetic Surgery?",
         content:
           locale === "ru"
-            ? `<p dir="ltr">Почему Турция &ndash; идеальный выбор для генитальной эстетики с AZPO Health?</p>
-<p dir="ltr">Когда речь идет о таких деликатных процедурах, как генитальная эстетика, выбор направления и провайдера имеет первостепенное значение. Турция и AZPO Health предлагают уникальное сочетание преимуществ:</p>
+            ? `<p dir="ltr">Турция зарекомендовала себя как одно из ведущих направлений медицинского туризма &mdash; и это не случайно. При выборе эстетической хирургии гениталий Турция предлагает ряд неоспоримых преимуществ. В числе ключевых факторов &mdash; возможность получить качественное лечение по доступной цене. Хотя стоимость процедур варьируется в зависимости от конкретной операции и индивидуальных потребностей пациента, в целом Турция предлагает более выгодные условия по сравнению с большинством европейских стран и США. Благодаря разумной стоимости, процедура становится доступной для большего числа женщин.</p>
+<p dir="ltr">Кроме привлекательной стоимости, Турция может похвастаться высококвалифицированными и опытными специалистами в области косметической хирургии, включая эстетику половых органов. Многие хирурги обучены современным методикам и работают в соответствии с международными медицинскими стандартами, что гарантирует безопасность пациентов и оптимальные результаты. Медицинские учреждения оснащены передовым оборудованием, обеспечивая высокий уровень медицинского обслуживания.</p>
+<p dir="ltr">Помимо этого, многие организации, занимающиеся медицинским туризмом в Турции, предлагают комплексный сервис, учитывающий уникальные потребности иностранных пациентов. В их услуги входит помощь с организацией поездки, подбором проживания, переводом, а также сопровождение и рекомендации по послеоперационному уходу. Все это направлено на то, чтобы сделать процесс лечения максимально комфортным, позволяя пациентам сосредоточиться на восстановлении.</p>
+<p dir="ltr">Стратегическое расположение Турции и ее богатое культурное наследие также добавляют привлекательности. Пациенты часто совмещают лечение с посещением оживленного Стамбула или живописных регионов страны, что способствует расслаблению и культурному обогащению в период восстановления. Гостеприимство и радушие местных жителей создают дополнительный комфорт и положительное впечатление у иностранных гостей, выбирающих Турцию для медицинского лечения.</p>
+<h3 dir="ltr">Эстетическая хирургия гениталий: что нужно знать</h3>
+<p dir="ltr">Эстетическая хирургия гениталий включает ряд процедур, направленных на улучшение внешнего вида и иногда функций мужских и женских половых органов. К этим процедурам часто обращаются по разным причинам, таким как устранение дискомфорта, неудовлетворенность внешним видом или функциональные проблемы. Важно понимать, что это индивидуальные методы лечения, адаптированные под потребности и цели каждого пациента.</p>
+<h3 dir="ltr">Эстетическая хирургия женских половых органов</h3>
+<p dir="ltr">Для женщин наиболее распространёнными процедурами являются лабиопластика &mdash; коррекция формы малых половых губ (внутренних складок вульвы). Эта операция помогает устранить проблемы с размером, формой или асимметрией, которые могут вызывать дискомфорт во время физических нагрузок или интимной близости. Также часто выполняется вагинопластика &mdash; подтяжка влагалища, которая может быть необходима после родов или с возрастными изменениями для улучшения ощущений и комфорта.</p>
+<p dir="ltr">Термин &laquo;вагинальное омоложение&raquo; охватывает различные методы, направленные на улучшение внешнего вида и функций влагалища и окружающих тканей. Это может включать лазерные или другие малоинвазивные процедуры, а также хирургические вмешательства, такие как вагинопластика. В некоторых случаях процедуры проводятся и на больших половых губах (наружных складках вульвы) или в области лобка для улучшения контура и эстетики.</p>
+<p dir="ltr">В рамках операций, подтверждающих гендерную идентичность, эстетические процедуры на женских половых органах, включая лабиопластику и вагинопластику, играют важную роль в помощи трансгендерным людям привести внешний вид в соответствие с их гендерной самоидентификацией. Такие процедуры обычно сочетают эстетические и функциональные задачи, направленные на создание естественного внешнего вида и улучшение общего самочувствия. В этих случаях также важна гормональная терапия.</p>
+<h3 dir="ltr">Эстетическая хирургия мужских половых органов</h3>
+<p dir="ltr">Эстетическая хирургия мужских половых органов, хотя обсуждается реже, также направлена на улучшение внешнего вида и функции полового члена и мошонки. К таким процедурам относится фаллопластика &mdash; увеличение длины или обхвата полового члена, хотя безопасность и эффективность некоторых методов остаются предметом обсуждений. Скротопластика &mdash; операция по изменению формы или уменьшению размера мошонки, которая выполняется как по косметическим причинам, так и для устранения дискомфорта.</p>
+<p dir="ltr">Любое решение об эстетической хирургии гениталий должно приниматься только после тщательной консультации с квалифицированными медицинскими специалистами. На консультации обсуждаются индивидуальные цели, история болезни, возможные риски и преимущества, а также ожидаемые результаты процедуры. Персонализированный план лечения &mdash; залог того, что операция будет максимально соответствовать вашим потребностям и ожиданиям.</p>
+<p dir="ltr">Методы лечения</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Конфиденциальность и медицинский опыт мирового уровня по исключительной цене: Турция завоевала мировое признание как ведущее направление медицинского туризма, в том числе в таких специализированных областях, как генитальная эстетика. Эта репутация основана на работе высококвалифицированных и тактичных пластических хирургов, владеющих новейшими методиками, приверженных принципам конфиденциальности и использующих материалы премиум-класса. AZPO Health сотрудничает с избранными клиниками в Стамбуле, Анталии и Алании, известными своим опытом в генитальных эстетических операциях, гарантируя вам медицинское обслуживание мирового уровня с максимальной конфиденциальностью &ndash; и все это по значительно более доступной цене, чем во многих западных странах. Вы можете получить доступ к узкоспециализированным процедурам без ущерба для качества или приватности.</p>
+<p dir="ltr" role="presentation">Лабиопластика: хирургическая коррекция формы малых половых губ для устранения проблем с размером, формой или асимметрией.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комплексные пакеты услуг для вашего конфиденциального путешествия. Мы понимаем, что конфиденциальность и удобство имеют первостепенное значение, когда вы рассматриваете генитальную эстетику. AZPO Health предлагает комплексные пакеты, разработанные для вашего комфорта, приватности и спокойствия на протяжении всего пребывания в Турции. Наши тщательно продуманные пакеты обычно включают:</p>
+<p dir="ltr" role="presentation">Вагинопластика: хирургическое сужение влагалища для улучшения комфорта и ощущений.</p>
 </li>
-<ul>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Конфиденциальный VIP-трансфер: персональный и комфортный трансфер из аэропорта до вашего отеля и клиники, обеспечивающий вашу приватность с момента прибытия.</p>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Вагинальное омоложение: более широкий термин, включающий различные хирургические и нехирургические методы для улучшения внешнего вида и функций влагалища и окружающих тканей.</p>
 </li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Приватное и роскошное размещение: размещение в тщательно отобранных, уединенных и комфортабельных отелях или апартаментах, где приватность и комфорт являются приоритетом на протяжении всего вашего пребывания.</p>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пенопластика: процедуры, направленные на увеличение длины или объема полового члена.</p>
 </li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Персональный мультиязычный координатор: ваш личный помощник, свободно владеющий вашим языком, станет надежным проводником на каждом этапе вашего пути. Он обеспечит конфиденциальную поддержку во всех организационных вопросах, встречах и коммуникациях, создавая для вас комфортные условия и гарантируя безупречный, приватный опыт.</p>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Скротопластика: хирургическая коррекция формы или уменьшение размера мошонки.</p>
 </li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Прозрачное ценообразование &ldquo;все включено&rdquo;: наши пакеты предлагают прозрачное и всеобъемлющее ценообразование, которое покрывает хирургические расходы, анестезию, пребывание в клинике и стандартные послеоперационные препараты, исключая финансовые неожиданности и обеспечивая полную конфиденциальность в финансовых вопросах. Узнайте цены на генитальную эстетику в Турции и убедитесь в их привлекательности.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Персонализированный и конфиденциальный план восстановления: получите индивидуальный план послеоперационного восстановления, разработанный для оптимального заживления и комфортного восстановления в выбранном вами месте проживания, с постоянной поддержкой вашего координатора.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Возможность приватного восстановления в живописном месте: совместите процедуру с уединенным и спокойным восстановлением в красивых уголках Турции. Независимо от того, предпочитаете ли вы историческую атмосферу уединенных уголков Стамбула, тихие пляжи Анталии или спокойное очарование Алании, Турция предлагает разнообразные места для конфиденциального и восстанавливающего отдыха.</p>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гендерная хирургия: совокупность операций для трансгендерных пациентов, позволяющих привести внешние физические признаки в соответствие с их гендерной идентичностью.</p>
 </li>
 </ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Высококвалифицированные и узкопрофильные хирурги: AZPO Health сотрудничает исключительно с сертифицированными пластическими хирургами, специализирующимися на генитальной эстетике. Эти хирурги известны своим мастерством, тактичностью и стремлением к достижению естественных результатов, при этом основное внимание уделяется комфорту и конфиденциальности пациента. Они обладают глубокими знаниями нюансов генитальных эстетических операций и привержены высочайшим этическим стандартам врачебной практики и приватности.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Современные клиники, где приватность &ndash; приоритет: ваша процедура будет проходить в современных, аккредитованных клиниках, известных своей уединенной атмосферой и соблюдением строгих протоколов конфиденциальности и гигиены. Эти клиники оснащены передовыми технологиями и созданы для обеспечения вашего комфорта и приватности на протяжении всего хирургического процесса.</p>
-</li>
-</ul>
-<h2 dir="ltr">Изучение генитальной эстетики: верните себе комфорт и уверенность</h2>
-<p dir="ltr">Генитальная эстетика включает ряд процедур, направленных на решение как эстетических, так и функциональных проблем интимной зоны. Эти процедуры становятся все более востребованными среди людей, стремящихся повысить комфорт, уверенность в себе и интимное благополучие. AZPO Health в Турции предлагает как женскую генитальную эстетику, так и процедуры для мужчин.</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Распространенные виды процедур женской генитальной эстетики:</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">&nbsp;Лабиопластика: эта процедура направлена на уменьшение размера и изменение формы малых или больших половых губ для устранения проблем, связанных с их размером, асимметрией или дискомфортом. Лабиопластика &ndash; одна из наиболее часто запрашиваемых процедур женской генитальной эстетики.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Редукция капюшона клитора: уменьшает избыток кожи вокруг клитора для повышения чувствительности и улучшения эстетики.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Вагинопластика: процедура, сужающая влагалищный канал, часто востребована женщинами, которые испытывают потерю тонуса мышц влагалища после родов или с возрастом.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Гименопластика: хирургическое восстановление девственной плевы.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Монспластика (лифтинг лобка): уменьшает избыток жира и подтягивает лобок для более гладкого контура.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Увеличение точки G: усиливает точку G посредством инъекций филлеров для повышения чувствительности.</p>
-</li>
-</ul>
-<p dir="ltr">Распространенные виды процедур мужской генитальной эстетики:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Фаллопластика (увеличение члена): увеличивает окружность и/или длину полового члена с использованием различных техник, включая филлеры или липофилинг.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Ревизия после обрезания: корректирует неудовлетворительные результаты предыдущего обрезания.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Скротопластика (уменьшение или подтяжка мошонки): изменяет форму и подтягивает мошонку для устранения провисания или дискомфорта.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Френулопластика: корректирует уздечку полового члена.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Коррекция мошоночной складки: устранение кожной складки между половым членом и мошонкой.</p>
-</li>
-</ul>
-<p dir="ltr">Преимущества генитальной эстетики:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">&nbsp;Повышение комфорта и функциональности: устранение физического дискомфорта, раздражения или боли, связанных с увеличенными половыми губами, потерей тонуса влагалища или другими функциональными проблемами.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Повышение уверенности в себе и улучшение образа тела: уменьшение стеснения и улучшение восприятия внешнего вида интимной зоны, что способствует повышению уверенности как в интимной жизни, так и в повседневной. Многие пациенты отмечают положительные изменения в эмоциональном благополучии после генитальной эстетической операции.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Повышение интимной удовлетворенности: в некоторых случаях процедуры могут улучшить сексуальную чувствительность и удовольствие как для женщин, так и для их партнеров.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальные и конфиденциальные решения: решение деликатных проблем в конфиденциальной и поддерживающей обстановке, с процедурами, адаптированными к вашей уникальной анатомии.</p>
-</li>
-</ul>
-<p dir="ltr">&ldquo;Долгие годы я чувствовала себя неловко и некомфортно из-за увеличенных малых половых губ. Лабиопластика в AZPO Health в Турции изменила мою жизнь. Операция прошла с полной конфиденциальностью, уход был на высшем уровне, а результаты превзошли все мои ожидания. Теперь я чувствую себя комфортно и уверенно в своем теле. Спасибо, AZPO Health, за вашу тактичность и профессионализм!&rdquo; &ndash; Анонимно, Москва, Россия.</p>
-<h2 dir="ltr">AZPO Health: ваш надежный партнер в конфиденциальной генитальной эстетике в Турции</h2>
-<p dir="ltr">AZPO Health &ndash; ведущий организатор конфиденциального и специализированного медицинского туризма в Турции, стремящийся обеспечить исключительный уход и преображающий опыт с высочайшим уважением к приватности и конфиденциальности пациентов. Мы понимаем деликатный характер генитальной эстетики и прилагаем все усилия, чтобы поддерживать вас с профессионализмом, тактичностью и неизменной поддержкой на протяжении всего вашего пути.</p>
-<p dir="ltr">Почему стоит выбрать AZPO Health для вашего путешествия в мир генитальной эстетики?</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Приверженность к непоколебимой конфиденциальности: мы ставим вашу приватность превыше всего, обеспечивая конфиденциальность на каждом этапе вашего путешествия, от первого обращения до послеоперационного ухода.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Партнерство с ведущими специалистами: мы сотрудничаем исключительно с уважаемыми и опытными пластическими хирургами, специализирующимися на генитальной эстетике, которые известны своим профессионализмом, этичным подходом и приверженностью конфиденциальности пациентов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальный и чуткий подход: мы понимаем, что потребности каждого пациента уникальны. Мы предлагаем индивидуальные консультации и планы лечения, гарантируя, что ваши личные проблемы будут решены с тактом и уважением.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Прозрачное и конкурентоспособное ценообразование: мы предлагаем четкие пакетные цены &ldquo;все включено&rdquo;, обеспечивая прозрачность и ценность ваших инвестиций в ваше благополучие. Узнайте цены на генитальную эстетику в Турции у наших консультантов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Круглосуточная поддержка: наша тактичная и внимательная команда доступна круглосуточно, чтобы ответить на ваши вопросы, оказать помощь и обеспечить ваш комфорт и спокойствие на протяжении всей поездки.</p>
-</li>
-</ul>
-<p dir="ltr">Готовы ли вы открыть для себя мир конфиденциальной и преображающей генитальной эстетики в Турции с AZPO Health?</p>
-<p dir="ltr"><strong id="docs-internal-guid-f6f8d0fc-7fff-4d73-1305-7f142fcb2f69">Свяжитесь с нами сегодня, чтобы получить бесплатную и конфиденциальную консультацию, а также индивидуальное предложение! Напишите нам, и наша опытная и тактичная команда оперативно свяжется с вами, ответит на все вопросы и поможет вам сделать первый шаг на пути к уверенности и гармонии. Откройте для себя возможности генитальной эстетики в Турции с AZPO Health &ndash; вашим надежным партнером в деликатной и специализированной медицинской помощи. Узнайте стоимость процедур и начните свой путь к преображению уже сегодня!</strong></p>`
+<h3 dir="ltr">Реальные истории: отзывы пациентов</h3>
+<p dir="ltr">Сара, Великобритания: &laquo;Много лет я испытывала неуверенность из-за внешнего вида моих малых половых губ. Это сказывалось на моей уверенности в интимной жизни и даже во время занятий спортом. Изучив доступные варианты, я решила сделать лабиопластику в Турции при поддержке AZPO Health. Весь процесс был прекрасно организован: от первой онлайн-консультации до послеоперационного ухода я чувствовала поддержку и была информирована на каждом этапе. Хирург, с которым меня связали, проявил высокий профессионализм и внимательно выслушал все мои пожелания. Результаты изменили мою жизнь &mdash; теперь я чувствую себя комфортно и уверенно в своем теле. Искренне рекомендую рассмотреть этот вариант с AZPO Health.&raquo;</p>
+<p dir="ltr">Майкл, США: &laquo;Я давно хотел пройти небольшую косметическую процедуру, но беспокоился о высокой стоимости в своей стране. Благодаря AZPO Health я смог связаться с клиникой в Турции, специализирующейся на эстетической хирургии мужских гениталий. Сначала я сомневался, стоит ли ехать за границу на операцию, но команда AZPO Health сделала весь процесс максимально простым и понятным. Они ответили на все мои вопросы, организовали поездку, а медицинское обслуживание в Турции оказалось на высочайшем уровне. Хирург был очень опытным, и я очень доволен результатом. Весь опыт &mdash; от начала и до конца &mdash; был исключительно положительным.&raquo;</p>
+<h3 dir="ltr">AZPO Health &mdash; ваш надежный партнер в сфере эстетического здоровья</h3>
+<p dir="ltr">AZPO Health выступает в роли надежного посредника, связывая пациентов с проверенными медицинскими специалистами и клиниками в Турции для проведения эстетических и оздоровительных процедур. Мы понимаем, что решение о хирургическом вмешательстве, особенно таком деликатном, как эстетическая хирургия гениталий, требует тщательного обдумывания и доверия. Наша задача &mdash; сделать ваш путь максимально прозрачным и комфортным.</p>
+<p dir="ltr">Мы тщательно отбираем врачей и медицинские учреждения, с которыми сотрудничаем в Турции, гарантируя высокие стандарты качества, профессионализм и ориентацию на удовлетворение потребностей пациентов. Несмотря на то, что процедуры проводятся в независимых клиниках, AZPO Health обеспечивает всестороннюю поддержку на всех этапах вашего лечения.</p>
+<p dir="ltr">С момента вашего первого обращения мы стремимся понять ваши индивидуальные цели и подобрать опытных хирургов, способных эффективно их реализовать. Мы помогаем организовать виртуальные консультации, чтобы вы могли обсудить все вопросы и ожидания с врачом, не выходя из дома. Этот первый контакт важен для установления доверия и комфортного начала лечения.</p>
+<p dir="ltr">AZPO Health предоставляет полную информацию, необходимую для принятия осознанного решения. Мы расскажем о доступных процедурах, объясним их преимущества и возможные риски, а также ответим на все ваши вопросы. Наша команда поддержит вас, чтобы вы чувствовали себя уверенно и подготовлено на каждом этапе.</p>
+<p dir="ltr">Мы также понимаем сложности, связанные с поездкой за границу для медицинского лечения. Хотя сами процедуры мы не проводим, мы оказываем помощь в организации поездки и предоставляем рекомендации для комфортного пребывания в Турции. Наша цель &mdash; свести к минимуму стресс, связанный с медицинским туризмом, чтобы вы могли сосредоточиться на своем здоровье и восстановлении.</p>
+<p dir="ltr">В AZPO Health конфиденциальность и безопасность ваших данных &mdash; наш приоритет. Мы гарантируем, что вся личная и медицинская информация будет храниться с максимальной осторожностью и уважением. Мы создаем поддерживающую и надежную среду, где вы сможете уверенно идти к желаемым эстетическим и функциональным результатам.</p>
+<h3 dir="ltr">Начните путь к уверенности в себе</h3>
+<p dir="ltr">Готовы узнать больше о возможностях эстетической хирургии гениталий в Турции? Свяжитесь с AZPO Health уже сегодня для бесплатной консультации и получения индивидуального предложения. Наша команда всегда готова ответить на ваши вопросы и помочь пройти все этапы на пути к улучшению вашего самочувствия и уверенности.</p>
+<p>&nbsp;</p>`
             : `
             <p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When considering genital aesthetic surgery, choosing Turkey offers several compelling advantages. One significant factor is the potential for cost-effective treatment without compromising on quality. While specific prices vary based on the procedure and individual needs, Turkey often provides more accessible options compared to many European countries or the United States. This affordability allows individuals to pursue the aesthetic and functional improvements they desire without undue financial burden.</p><p>Beyond cost, Turkey boasts a cadre of highly skilled and experienced medical professionals specializing in various fields of cosmetic surgery, including genital aesthetics. These surgeons are often trained in the latest techniques and adhere to international medical standards, ensuring patient safety and optimal outcomes. Facilities are frequently equipped with advanced technology, contributing to the delivery of high-quality care.</p><p>Furthermore, many medical tourism providers in Turkey understand the unique needs of international patients. They offer comprehensive support services that extend beyond the surgical procedure itself. This can include assistance with travel arrangements, accommodation, language interpretation, and post-operative care guidance. The aim is to make the entire experience as smooth and stress-free as possible, allowing patients to focus on their well-being and recovery.</p><p>Turkey's strategic location and rich cultural history also add to its appeal. Patients undergoing treatment can often combine their medical journey with opportunities to explore the vibrant city of Istanbul or other scenic regions, offering a chance for relaxation and cultural enrichment during their recovery period. The hospitality and welcoming culture of Turkey further contribute to a positive overall experience for international visitors seeking medical care.</p><h3><strong>Understanding Genital Aesthetic Surgery</strong></h3><p>Genital aesthetic surgery encompasses a range of procedures designed to improve the appearance and sometimes the function of the male and female genitalia. These procedures are often sought by individuals for various reasons, including addressing discomfort, dissatisfaction with appearance, or functional concerns. It's important to understand that these are personalized treatments tailored to individual needs and goals.</p><h3><span style="color: rgb(67, 67, 67);">Female Genital Aesthetic Surgery</span></h3><p>For women, common procedures include <strong>labiaplasty</strong>, which involves reshaping the labia minora (the inner folds of the vulva). This procedure can address concerns about the size, shape, or asymmetry of the labia, which can sometimes cause discomfort during physical activity or intimacy. Another frequently considered surgery is <strong>vaginoplasty</strong>, aimed at tightening the vagina. This can be sought after childbirth or due to age-related changes to improve sensation and comfort.</p><p><strong>Vaginal rejuvenation</strong> is another term used in this context, and it can encompass various techniques aimed at enhancing the overall appearance and function of the vagina and surrounding tissues. This might include laser treatments or other minimally invasive methods, although surgical options like vaginoplasty are also part of this broader category. Procedures may also address the labia majora (the outer folds of the vulva) or the mons pubis to improve contour and appearance.</p><p>In the context of gender-affirming surgeries, female genital aesthetic procedures like labiaplasty and vaginoplasty play a crucial role in helping transgender individuals align their physical appearance with their gender identity. These procedures often involve a combination of aesthetic and functional goals to create a natural appearance and improve overall well-being. Hormone therapy is an important consideration in these cases.</p><h3><span style="color: rgb(67, 67, 67);">Male Genital Aesthetic Surgery</span></h3><p>While perhaps less frequently discussed, male genital aesthetic surgery also addresses concerns related to the appearance and function of the penis and scrotum. Procedures can include <strong>penoplasty</strong>, aimed at increasing the length or girth of the penis, although the safety and effectiveness of some augmentation methods are subjects of ongoing discussion. <strong>Scrotoplasty</strong> is another procedure that involves reshaping or reducing the size of the scrotum, often for cosmetic reasons or to alleviate discomfort.</p><p>It's important to note that any decision regarding genital aesthetic surgery should be made after thorough consultation with experienced medical professionals. These consultations involve a detailed discussion of individual goals, medical history, potential risks and benefits, and the expected outcomes of the chosen procedure. Personalized treatment plans are crucial to ensure that the surgery meets the individual's specific needs and desires.</p><p><strong>Treatment Options</strong></p><ul><li><strong>Labiaplasty:</strong> Surgical reshaping of the labia minora to address size, shape, or asymmetry concerns.</li><li><strong>Vaginoplasty:</strong> Surgical tightening of the vagina to improve comfort and sensation.</li><li><strong>Vaginal Rejuvenation:</strong> A broader term encompassing various surgical and non-surgical techniques to enhance the appearance and function of the vagina and surrounding tissues.</li><li><strong>Penoplasty:</strong> Procedures aimed at increasing penile length or girth.</li><li><strong>Scrotoplasty:</strong> Surgical reshaping or reduction of the scrotum.</li><li><strong>Gender-Affirming Genital Surgeries:</strong> A range of procedures for transgender individuals to align their physical characteristics with their gender identity.</li></ul><h3><strong>Real Experiences: Patient Testimonials</strong></h3><p><strong>Sarah, UK:</strong> "For years, I felt self-conscious due to the appearance of my labia. It affected my confidence in intimate situations and even during exercise. After researching my options, I decided to have labiaplasty in Turkey through AZPO Health. The entire process was so well-organized. From the initial virtual consultation to the post-operative care, I felt supported and informed. The surgeon I was connected with was incredibly professional and listened carefully to my concerns. The results have been life-changing, and I finally feel comfortable and confident in my own skin. I highly recommend considering this option through AZPO Health."</p><p><strong>Michael, USA:</strong> "I had been considering a minor procedure for cosmetic reasons for a while but was concerned about the cost in my home country. AZPO Health connected me with a clinic in Turkey for male genital aesthetic surgery. I was initially hesitant about traveling abroad for surgery, but the team at AZPO Health made the process seamless. They answered all my questions, arranged everything, and the medical care I received in Turkey was excellent. The surgeon was highly skilled, and I am very happy with the outcome. It was a positive experience from start to finish."</p><h3><strong>AZPO Health: Your Partner in Aesthetic Well-being</strong></h3><p>AZPO Health serves as a trusted bridge connecting patients with reputable medical professionals and facilities in Turkey for aesthetic and health-related procedures. We understand that considering any surgical procedure, especially one as personal as genital aesthetic surgery, requires careful consideration and trust. Our role is to facilitate a smooth and transparent journey for you.</p><p>We meticulously vet the medical professionals and clinics we partner with in Turkey, ensuring they adhere to high standards of care, possess relevant expertise, and have a strong commitment to patient satisfaction. While treatments are performed in these independent facilities, AZPO Health is dedicated to providing you with comprehensive support throughout your experience.</p><p>From your initial inquiry, we strive to understand your specific needs and connect you with experienced surgeons who can address your goals effectively. We can assist with arranging virtual consultations, allowing you to discuss your concerns and expectations with a medical professional from the comfort of your own home. This initial interaction is crucial for building trust and ensuring you feel comfortable moving forward.</p><p>AZPO Health is committed to providing you with all the necessary information to make informed decisions about your treatment. We can guide you through the different types of procedures available, explain the potential benefits and risks, and answer any questions you may have about the process. Our team is dedicated to ensuring you feel confident and well-prepared at every stage of your journey.</p><p>We also understand the logistical aspects of traveling abroad for medical care. While we do not provide the medical treatments ourselves, we can offer guidance and support with travel arrangements and connect you with resources to facilitate a comfortable stay in Turkey. Our aim is to minimize the stress associated with medical tourism, allowing you to focus on your health and well-being.</p><p>At AZPO Health, your privacy and confidentiality are paramount. We ensure that your personal and medical information is handled with the utmost discretion throughout the entire process. Our commitment is to provide a supportive and trustworthy environment where you feel empowered to pursue the aesthetic and functional improvements you desire.</p><h3><strong>Take the First Step Towards Enhanced Confidence</strong></h3><p>Are you ready to explore the possibilities of genital aesthetic surgery in Turkey? Contact AZPO Health today for a free consultation and personalized quote. Our dedicated team is here to answer your questions and guide you through the next steps in your journey towards enhanced confidence and well-being.</p><p><br></p>
         `,
@@ -2571,36 +2403,56 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Eye Disease Treatments in Turkey"
+          ? "Лечение заболеваний глаз в Турции"
           : "Eye Disease Treatments in Turkey",
       descriptionTop:
         locale === "ru"
-          ? "Don't let eye diseases impact your life and well-being any longer. At AZPO Health in Turkey, we offer a range of advanced treatments and expert care to help you see clearly again. Discover how our specialized services can provide the vision solutions you've been searching for."
+          ? "Не позволяйте проблемам со зрением влиять на качество вашей жизни. В AZPO Health мы предлагаем современные методы лечения и профессиональную медицинскую помощь, чтобы вы могли вновь наслаждаться ясным зрением. Наши индивидуальные программы помогут вам найти эффективное решение, подходящее именно вам."
           : "Don't let eye diseases impact your life and well-being any longer. At AZPO Health in Turkey, we offer a range of advanced treatments and expert care to help you see clearly again. Discover how our specialized services can provide the vision solutions you've been searching for.",
       videoContents: {
         title:
           locale === "ru"
-            ? "Seeking effective and reliable solutions for your eye health concerns? "
-            : "Seeking effective and reliable solutions for your eye health concerns? ",
+            ? "Ищете надежное и безопасное лечение заболеваний глаз?"
+            : "Seeking effective and reliable solutions for your eye health concerns?",
         desc:
           locale === "ru"
-            ? "Eye Disease Treatments with AZPO Health in Turkey, we provide access to experienced medical professionals and modern facilities. We understand the importance of clear vision and offer tailored treatment plans to address various eye conditions, helping you regain your visual comfort and confidence."
+            ? "AZPO Health предоставляет доступ к высококвалифицированным специалистам и клиникам, оснащенными передовыми технологиями. Мы понимаем, насколько важно сохранить зрение, поэтому разрабатываем индивидуальные планы лечения, которые помогают восстановить четкое зрение и вернуть уверенность в себе."
             : "Eye Disease Treatments with AZPO Health in Turkey, we provide access to experienced medical professionals and modern facilities. We understand the importance of clear vision and offer tailored treatment plans to address various eye conditions, helping you regain your visual comfort and confidence.",
       },
       subCategoryContent: {
         title:
-          locale === "ru" ? "Eye disease treatments" : "Eye disease treatments",
+          locale === "ru" ? "Лечение заболеваний глаз" : "Eye disease treatments",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Your Eye Disease Treatments?"
+            ? "Почему стоит выбрать Турцию для лечения заболеваний глаз?"
             : "Why Choose Turkey for Your Eye Disease Treatments?",
         content:
           locale === "ru"
-            ? `
-           <p>Considering undergoing medical treatment in a foreign country can bring about several questions. Let's explore why Turkey has become a prominent destination for individuals seeking high-quality eye disease treatments.</p><p>Turkey has emerged as a leading hub for medical tourism, and for good reason. One of the primary attractions is the affordability of medical procedures compared to many European countries, the United States, or the UK. This cost-effectiveness extends to various medical fields, including specialized eye care. You can potentially access advanced treatments and consultations with experienced medical professionals at a significantly lower cost without compromising on the quality of care.</p><p>Beyond the financial aspect, Turkey boasts a cadre of well-educated and experienced doctors and healthcare staff. Many Turkish medical professionals have received training in internationally recognized institutions and possess extensive experience in diagnosing and treating a wide spectrum of eye diseases. The healthcare professionals in Turkey often perform a high volume of procedures annually, contributing to their skill and expertise.</p><p>Furthermore, Turkey is home to modern and well-equipped medical facilities, including hospitals and clinics that utilize cutting-edge technology in diagnostics and treatment. This commitment to advanced medical infrastructure ensures that patients have access to the latest innovations in eye care.</p><p>Another compelling reason to consider Turkey for your eye disease treatment is the opportunity for medical tourism. Istanbul, in particular, is a highly visited city with a rich history and culture. Combining your treatment with a chance to explore historical sites, experience a vibrant culture, and enjoy the hospitality of Turkey can make your medical journey a more positive and memorable experience.</p><p>Moreover, facilities like Hospital believe in staying ahead of the curve by constantly researching and learning from the best surgeons and clinics around the world, adopting the best techniques to provide the best possible care for their patients. This dedication to continuous improvement suggests a commitment to providing high standards in medical treatments.</p><h3><strong>Understanding Eye Disease Treatments Available</strong></h3><p>Eye diseases encompass a broad range of conditions that can affect different parts of the eye and impact vision. Accessing appropriate and timely treatment is crucial for managing these conditions, preventing vision loss, and maintaining overall eye health. While the specific types of treatments available depend on the individual diagnosis, let's discuss some general categories and considerations for eye disease treatments you might find in Turkey through AZPO Health.</p><p>It's important to recognize that clear communication between you and the medical team is paramount for achieving optimal results. Therefore, a thorough consultation is a vital first step in any treatment process.</p><p>For individuals with common vision problems like nearsightedness (myopia), farsightedness (hyperopia), or astigmatism, refractive surgeries such as LASIK or PRK might be options to reduce or eliminate the need for glasses or contact lenses. Another innovative technique for vision correction is intraocular lens implantation (IOL), which involves replacing the eye's natural lens with an artificial one to improve vision. Turkey offers these advanced vision correction procedures with experienced ophthalmologists and modern technology.</p><p>Cataracts, a clouding of the eye's natural lens, are a common age-related condition that can impair vision. Treatment typically involves cataract surgery, where the clouded lens is removed and replaced with a clear artificial lens. This is a widely performed procedure in Turkey with high success rates.</p><p>Glaucoma is a condition that damages the optic nerve, often due to increased pressure inside the eye. Various treatments are available to manage glaucoma and prevent vision loss, including eye drops, laser therapy, and surgery. Timely diagnosis and consistent management are crucial for this condition.</p><p>Retinal disorders, such as macular degeneration and diabetic retinopathy, can affect the light-sensitive tissue at the back of the eye. Treatments for these conditions may include laser therapy, injections, and surgery, depending on the specific diagnosis and stage of the disease.</p><p>Eye infections, injuries, and other less common eye diseases also require specialized medical attention. Turkey's comprehensive healthcare system includes specialists who can diagnose and treat these conditions effectively.</p><p>Furthermore, for individuals considering cosmetic procedures related to the eyes, such as blepharoplasty (eyelid surgery) to address drooping eyelids or under-eye bags, Turkey offers experienced plastic surgeons who can perform these procedures. While primarily cosmetic, blepharoplasty can sometimes improve vision if excess upper eyelid skin obstructs the field of view.</p><p>When you choose AZPO Health for your eye disease treatment in Turkey, you can expect a personalized approach. The medical team will conduct a thorough assessment of your condition, discuss your treatment options in detail, and tailor a plan to meet your specific needs and goals. Clear explanations of the procedures, potential benefits, and any associated risks will be provided to help you make informed decisions about your eye care journey.</p><h3><strong>AZPO Health: Your Partner in Eye Health in Turkey</strong></h3><p>AZPO Health is a reputable medical tourism company in Turkey dedicated to providing high-quality healthcare services to international patients. We understand that seeking medical treatment abroad can be a significant decision, and we are here to guide you through every step of the process.</p><p>Our network includes experienced and skilled ophthalmologists and medical facilities across top touristic destinations in Turkey. We carefully select our partners based on their expertise, reputation, and commitment to patient care. When you choose AZPO Health, you can be confident that you will be connected with qualified medical professionals who specialize in treating a wide range of eye diseases.</p><p>We prioritize clear and open communication to ensure that you are fully informed and comfortable throughout your treatment journey. From your initial inquiry to your post-treatment follow-up, our team will be available to answer your questions, address your concerns, and provide the support you need. We can assist with arranging virtual consultations, helping you understand your treatment options, and coordinating your travel and accommodation in Turkey.</p><p>AZPO Health is committed to facilitating a seamless and stress-free medical travel experience. We strive to provide personalized care that is tailored to your individual needs and preferences. Our goal is to ensure that you receive the best possible medical treatment while enjoying a comfortable and positive experience in Turkey.</p><h3><strong>Take the First Step Towards Clearer Vision</strong></h3><p>Don't let eye diseases compromise your vision and quality of life. Contact AZPO Health today for a free consultation and personalized quote for your eye disease treatment in Turkey. Our dedicated team is ready to answer your questions and guide you on your journey to better eye health.</p><p><br></p>
-            `
+            ? `<p dir="ltr">Принятие решения о прохождении лечения за границей может вызвать множество вопросов. Однако Турция по праву считается одним из ведущих направлений для тех, кто ищет высококачественную офтальмологическую помощь.</p>
+<p dir="ltr">Одно из главных преимуществ &mdash; доступная стоимость медицинских услуг при неизменно высоком уровне качества. В сравнении с Европой, США и Великобританией, лечение в Турции обойдется значительно дешевле, при этом вы получите доступ к передовым методам и консультациям у опытных специалистов.</p>
+<p dir="ltr">Турецкие врачи проходят обучение в признанных международных учреждениях и обладают обширной практикой в диагностике и лечении широкого спектра глазных заболеваний. Большой поток пациентов и частая практика делают их настоящими профессионалами своего дела.</p>
+<p dir="ltr">Клиники и госпитали в Турции оснащены современным оборудованием и используют передовые технологии, что позволяет обеспечивать максимально эффективное и безопасное лечение.</p>
+<p dir="ltr">Одним из больших преимуществ лечения в Турции является возможность совмещение медицинской поездки с путешествием. Стамбул, Анталья, Алания, Измир и Анкара &mdash; это города, которые впечатляют своей историей, культурой и уникальной атмосферой. Лечение в Турции &mdash; это не только профессиональная забота о вашем здоровье, но и шанс получить незабываемые впечатления и яркие воспоминания.</p>
+<h3 dir="ltr">Методы лечения заболеваний глаз</h3>
+<p dir="ltr">Заболевания глаз могут затрагивать различные части органа зрения, влияя на качество жизни и зрение. Важно вовремя обратиться за лечением, чтобы предотвратить потерю зрения и сохранить здоровье глаз. В Турции через AZPO Health вам доступны высококачественные и эффективные методы лечения, адаптированные под ваши индивидуальные потребности.</p>
+<p dir="ltr">Успех лечения зависит от взаимопонимания с медицинской командой, поэтому подробная консультация &mdash; это важный первый шаг на пути к восстановлению.</p>
+<p dir="ltr">Для коррекции распространённых зрительных нарушений, таких как близорукость, дальнозоркость и астигматизм, предлагаются такие операции, как LASIK и PRK. Эти рефракционные вмешательства позволяют избавиться от необходимости носить очки или контактные линзы, восстановив чёткость зрения. Также возможна имплантация интраокулярных линз (IOL), что позволяет улучшить зрение путем замены естественной линзы.</p>
+<p dir="ltr">Катаракта &mdash; это помутнение естественного хрусталика глаза, которое часто встречается с возрастом и может нарушать зрение. Лечение обычно включает хирургическое удаление катаракты с заменой помутневшего хрусталика на прозрачный искусственный. Эта процедура широко распространена в Турции и отличается высокой эффективностью.</p>
+<p dir="ltr">Глаукома &mdash; это заболевание, при котором повреждается зрительный нерв из-за повышенного давления внутри глаза. Для контроля глаукомы и предотвращения потери зрения применяются различные методы: глазные капли, лазерная терапия и хирургическое вмешательство. Важно своевременно диагностировать заболевание и обеспечить его регулярное лечение.</p>
+<p dir="ltr">Заболевания сетчатки, такие как макулярная дегенерация или диабетическая ретинопатия, затрагивают светочувствительную ткань в задней части глаза. В зависимости от стадии заболевания могут быть назначены лазерная терапия, инъекции или операции.</p>
+<p dir="ltr">Инфекции глаз, травмы и другие редкие заболевания также требуют квалифицированной помощи. Турция обладает современными медицинскими учреждениями и опытными специалистами, которые эффективно справляются с такими проблемами.</p>
+<p dir="ltr">Кроме того, для тех, кто интересуется косметическими процедурами, такими как блефаропластика (пластика век) для устранения обвисших век или мешков под глазами, Турция предлагает высококлассных пластических хирургов. Хотя эта операция в основном косметическая, она может улучшить зрение, если избыток кожи верхнего века ограничивает поле зрения.</p>
+<p dir="ltr">Выбирая AZPO Health для лечения заболеваний глаз в Турции, вы получаете индивидуальный подход, который учитывает все особенности вашего состояния. Наша команда проведет всестороннюю диагностику, подберет наилучшие методы лечения и создаст план, полностью соответствующий вашим потребностям и целям.</p>
+<h3 dir="ltr">AZPO Health: ваш надежный партнер в лечении заболеваний глаз в Турции</h3>
+<p dir="ltr">AZPO Health &mdash; признанный лидер в сфере медицинского туризма в Турции, предоставляющая высококачественные медицинские услуги международным пациентам. Мы понимаем, что решение о лечении за границей &mdash; это важный шаг, и готовы сопровождать вас на каждом этапе.</p>
+<p dir="ltr">Наша сеть включает в себя опытных и квалифицированных офтальмологов и медицинские учреждения, расположенные в самых популярных туристических направлениях Турции. Мы тщательно отбираем партнеров, основываясь на их профессионализме, репутации и заботе о пациентах. Выбирая AZPO Health, вы можете быть уверены, что будете работать с квалифицированными специалистами, которые занимаются лечением широкого спектра заболеваний глаз.</p>
+<p dir="ltr">Мы ставим на первое место ясную и открытую коммуникацию, чтобы вы всегда были информированы и чувствовали себя комфортно в ходе всего процесса лечения. С первого запроса и до последующего контроля после лечения наша команда всегда готова ответить на ваши вопросы, решить ваши проблемы и предоставить всю необходимую поддержку. Мы поможем организовать онлайн консультации, разъяснить все возможные варианты лечения и организовать вашу поездку и размещение в Турции.</p>
+<p dir="ltr">AZPO Health стремится сделать ваш медицинский туризм комфортным и беззаботным. Мы предлагаем персонализированное обслуживание, которое будет соответствовать вашим индивидуальным потребностям и предпочтениям. Наша цель &mdash; обеспечить вам наилучшее медицинское обслуживание при комфортных условиях в Турции.</p>
+<h3 dir="ltr">Сделайте первый шаг к ясному и здоровому зрению!</h3>
+<p dir="ltr">Не позволяйте заболеваниям глаз ограничивать вашу жизнь. Обратитесь в AZPO Health для бесплатной консультации и индивидуального&nbsp; предложения. Мы поможем вам сделать первый шаг к лучшему зрению</p>
+<p dir="ltr">&nbsp;</p>`
             : `
          <p>Considering undergoing medical treatment in a foreign country can bring about several questions. Let's explore why Turkey has become a prominent destination for individuals seeking high-quality eye disease treatments.</p><p>Turkey has emerged as a leading hub for medical tourism, and for good reason. One of the primary attractions is the affordability of medical procedures compared to many European countries, the United States, or the UK. This cost-effectiveness extends to various medical fields, including specialized eye care. You can potentially access advanced treatments and consultations with experienced medical professionals at a significantly lower cost without compromising on the quality of care.</p><p>Beyond the financial aspect, Turkey boasts a cadre of well-educated and experienced doctors and healthcare staff. Many Turkish medical professionals have received training in internationally recognized institutions and possess extensive experience in diagnosing and treating a wide spectrum of eye diseases. The healthcare professionals in Turkey often perform a high volume of procedures annually, contributing to their skill and expertise.</p><p>Furthermore, Turkey is home to modern and well-equipped medical facilities, including hospitals and clinics that utilize cutting-edge technology in diagnostics and treatment. This commitment to advanced medical infrastructure ensures that patients have access to the latest innovations in eye care.</p><p>Another compelling reason to consider Turkey for your eye disease treatment is the opportunity for medical tourism. Istanbul, in particular, is a highly visited city with a rich history and culture. Combining your treatment with a chance to explore historical sites, experience a vibrant culture, and enjoy the hospitality of Turkey can make your medical journey a more positive and memorable experience.</p><p>Moreover, facilities like Hospital believe in staying ahead of the curve by constantly researching and learning from the best surgeons and clinics around the world, adopting the best techniques to provide the best possible care for their patients. This dedication to continuous improvement suggests a commitment to providing high standards in medical treatments.</p><h3><strong>Understanding Eye Disease Treatments Available</strong></h3><p>Eye diseases encompass a broad range of conditions that can affect different parts of the eye and impact vision. Accessing appropriate and timely treatment is crucial for managing these conditions, preventing vision loss, and maintaining overall eye health. While the specific types of treatments available depend on the individual diagnosis, let's discuss some general categories and considerations for eye disease treatments you might find in Turkey through AZPO Health.</p><p>It's important to recognize that clear communication between you and the medical team is paramount for achieving optimal results. Therefore, a thorough consultation is a vital first step in any treatment process.</p><p>For individuals with common vision problems like nearsightedness (myopia), farsightedness (hyperopia), or astigmatism, refractive surgeries such as LASIK or PRK might be options to reduce or eliminate the need for glasses or contact lenses. Another innovative technique for vision correction is intraocular lens implantation (IOL), which involves replacing the eye's natural lens with an artificial one to improve vision. Turkey offers these advanced vision correction procedures with experienced ophthalmologists and modern technology.</p><p>Cataracts, a clouding of the eye's natural lens, are a common age-related condition that can impair vision. Treatment typically involves cataract surgery, where the clouded lens is removed and replaced with a clear artificial lens. This is a widely performed procedure in Turkey with high success rates.</p><p>Glaucoma is a condition that damages the optic nerve, often due to increased pressure inside the eye. Various treatments are available to manage glaucoma and prevent vision loss, including eye drops, laser therapy, and surgery. Timely diagnosis and consistent management are crucial for this condition.</p><p>Retinal disorders, such as macular degeneration and diabetic retinopathy, can affect the light-sensitive tissue at the back of the eye. Treatments for these conditions may include laser therapy, injections, and surgery, depending on the specific diagnosis and stage of the disease.</p><p>Eye infections, injuries, and other less common eye diseases also require specialized medical attention. Turkey's comprehensive healthcare system includes specialists who can diagnose and treat these conditions effectively.</p><p>Furthermore, for individuals considering cosmetic procedures related to the eyes, such as blepharoplasty (eyelid surgery) to address drooping eyelids or under-eye bags, Turkey offers experienced plastic surgeons who can perform these procedures. While primarily cosmetic, blepharoplasty can sometimes improve vision if excess upper eyelid skin obstructs the field of view.</p><p>When you choose AZPO Health for your eye disease treatment in Turkey, you can expect a personalized approach. The medical team will conduct a thorough assessment of your condition, discuss your treatment options in detail, and tailor a plan to meet your specific needs and goals. Clear explanations of the procedures, potential benefits, and any associated risks will be provided to help you make informed decisions about your eye care journey.</p><h3><strong>AZPO Health: Your Partner in Eye Health in Turkey</strong></h3><p>AZPO Health is a reputable medical tourism company in Turkey dedicated to providing high-quality healthcare services to international patients. We understand that seeking medical treatment abroad can be a significant decision, and we are here to guide you through every step of the process.</p><p>Our network includes experienced and skilled ophthalmologists and medical facilities across top touristic destinations in Turkey. We carefully select our partners based on their expertise, reputation, and commitment to patient care. When you choose AZPO Health, you can be confident that you will be connected with qualified medical professionals who specialize in treating a wide range of eye diseases.</p><p>We prioritize clear and open communication to ensure that you are fully informed and comfortable throughout your treatment journey. From your initial inquiry to your post-treatment follow-up, our team will be available to answer your questions, address your concerns, and provide the support you need. We can assist with arranging virtual consultations, helping you understand your treatment options, and coordinating your travel and accommodation in Turkey.</p><p>AZPO Health is committed to facilitating a seamless and stress-free medical travel experience. We strive to provide personalized care that is tailored to your individual needs and preferences. Our goal is to ensure that you receive the best possible medical treatment while enjoying a comfortable and positive experience in Turkey.</p><h3><strong>Take the First Step Towards Clearer Vision</strong></h3><p>Don't let eye diseases compromise your vision and quality of life. Contact AZPO Health today for a free consultation and personalized quote for your eye disease treatment in Turkey. Our dedicated team is ready to answer your questions and guide you on your journey to better eye health.</p><p><br></p>
         `,
@@ -2616,38 +2468,94 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Eye Disease Treatments in Turkey"
+          ? "Глазная хирургия и имплантация в Турции"
           : "Eye Surgical & Implant Procedures in Turkey",
       descriptionTop:
         locale === "ru"
-          ? "Are you tired of struggling with vision problems, from cataracts and refractive errors to the limitations of glasses and contact lenses? Discover how advanced eye surgical & implant procedures in Turkey offered through AZPO Health can provide you with a renewed sense of sight and a brighter future."
+          ? "Устали от постоянной борьбы с проблемами зрения — будь то катаракта, рефракционные нарушения или неудобства, связанные с очками и линзами? Современные методы офтальмохирургии и имплантации, предлагаемые AZPO Health в Турции, помогут вам вновь обрести чёткое зрение и подарят уверенность в завтрашнем дне."
           : "Are you tired of struggling with vision problems, from cataracts and refractive errors to the limitations of glasses and contact lenses? Discover how advanced eye surgical & implant procedures in Turkey offered through AZPO Health can provide you with a renewed sense of sight and a brighter future.",
       videoContents: {
         title:
           locale === "ru"
-            ? "Eye Surgeries in Turkey: See the World Clearly Again"
+            ? "Хирургия глаз в Турции: откройте для себя мир с новой ясностью"
             : "Eye Surgeries in Turkey: See the World Clearly Again",
         desc:
           locale === "ru"
-            ? "Seeking solutions for various eye conditions, including vision correction, cataract treatment, and more complex eye disorders? Explore the comprehensive range of eye surgeries in Turkey facilitated by AZPO Health, where experienced medical professionals and state-of-the-art facilities can help you achieve optimal visual health and well-being."
+            ? "Ищете эффективное решение для восстановления зрения — будь то коррекция рефракции, лечение катаракты или более сложные глазные патологии? С AZPO Health вы получаете доступ к широкому спектру офтальмологических процедур в Турции, проводимых опытными специалистами с использованием передовых технологий. Мы поможем вам вернуть ясность взгляда и улучшить качество жизни."
             : "Seeking solutions for various eye conditions, including vision correction, cataract treatment, and more complex eye disorders? Explore the comprehensive range of eye surgeries in Turkey facilitated by AZPO Health, where experienced medical professionals and state-of-the-art facilities can help you achieve optimal visual health and well-being.",
       },
       subCategoryContent: {
         title:
           locale === "ru"
-            ? "Eye disease treatments"
+            ? "Хирургические процедуры имплантации"
             : "Surgical implant procedures",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Your Eye Surgical & Implant Procedures in 2025?"
+            ? "Почему стоит выбрать Турцию для хирургии и имплантации в офтальмологии в 2025 году?"
             : "Why Choose Turkey for Your Eye Surgical & Implant Procedures in 2025?",
         content:
           locale === "ru"
-            ? `
-           <p>Considering undergoing medical treatment in a foreign country can bring about several questions. Let's explore why Turkey has become a prominent destination for individuals seeking high-quality eye disease treatments.</p><p>Turkey has emerged as a leading hub for medical tourism, and for good reason. One of the primary attractions is the affordability of medical procedures compared to many European countries, the United States, or the UK. This cost-effectiveness extends to various medical fields, including specialized eye care. You can potentially access advanced treatments and consultations with experienced medical professionals at a significantly lower cost without compromising on the quality of care.</p><p>Beyond the financial aspect, Turkey boasts a cadre of well-educated and experienced doctors and healthcare staff. Many Turkish medical professionals have received training in internationally recognized institutions and possess extensive experience in diagnosing and treating a wide spectrum of eye diseases. The healthcare professionals in Turkey often perform a high volume of procedures annually, contributing to their skill and expertise.</p><p>Furthermore, Turkey is home to modern and well-equipped medical facilities, including hospitals and clinics that utilize cutting-edge technology in diagnostics and treatment. This commitment to advanced medical infrastructure ensures that patients have access to the latest innovations in eye care.</p><p>Another compelling reason to consider Turkey for your eye disease treatment is the opportunity for medical tourism. Istanbul, in particular, is a highly visited city with a rich history and culture. Combining your treatment with a chance to explore historical sites, experience a vibrant culture, and enjoy the hospitality of Turkey can make your medical journey a more positive and memorable experience.</p><p>Moreover, facilities like Hospital believe in staying ahead of the curve by constantly researching and learning from the best surgeons and clinics around the world, adopting the best techniques to provide the best possible care for their patients. This dedication to continuous improvement suggests a commitment to providing high standards in medical treatments.</p><h3><strong>Understanding Eye Disease Treatments Available</strong></h3><p>Eye diseases encompass a broad range of conditions that can affect different parts of the eye and impact vision. Accessing appropriate and timely treatment is crucial for managing these conditions, preventing vision loss, and maintaining overall eye health. While the specific types of treatments available depend on the individual diagnosis, let's discuss some general categories and considerations for eye disease treatments you might find in Turkey through AZPO Health.</p><p>It's important to recognize that clear communication between you and the medical team is paramount for achieving optimal results. Therefore, a thorough consultation is a vital first step in any treatment process.</p><p>For individuals with common vision problems like nearsightedness (myopia), farsightedness (hyperopia), or astigmatism, refractive surgeries such as LASIK or PRK might be options to reduce or eliminate the need for glasses or contact lenses. Another innovative technique for vision correction is intraocular lens implantation (IOL), which involves replacing the eye's natural lens with an artificial one to improve vision. Turkey offers these advanced vision correction procedures with experienced ophthalmologists and modern technology.</p><p>Cataracts, a clouding of the eye's natural lens, are a common age-related condition that can impair vision. Treatment typically involves cataract surgery, where the clouded lens is removed and replaced with a clear artificial lens. This is a widely performed procedure in Turkey with high success rates.</p><p>Glaucoma is a condition that damages the optic nerve, often due to increased pressure inside the eye. Various treatments are available to manage glaucoma and prevent vision loss, including eye drops, laser therapy, and surgery. Timely diagnosis and consistent management are crucial for this condition.</p><p>Retinal disorders, such as macular degeneration and diabetic retinopathy, can affect the light-sensitive tissue at the back of the eye. Treatments for these conditions may include laser therapy, injections, and surgery, depending on the specific diagnosis and stage of the disease.</p><p>Eye infections, injuries, and other less common eye diseases also require specialized medical attention. Turkey's comprehensive healthcare system includes specialists who can diagnose and treat these conditions effectively.</p><p>Furthermore, for individuals considering cosmetic procedures related to the eyes, such as blepharoplasty (eyelid surgery) to address drooping eyelids or under-eye bags, Turkey offers experienced plastic surgeons who can perform these procedures. While primarily cosmetic, blepharoplasty can sometimes improve vision if excess upper eyelid skin obstructs the field of view.</p><p>When you choose AZPO Health for your eye disease treatment in Turkey, you can expect a personalized approach. The medical team will conduct a thorough assessment of your condition, discuss your treatment options in detail, and tailor a plan to meet your specific needs and goals. Clear explanations of the procedures, potential benefits, and any associated risks will be provided to help you make informed decisions about your eye care journey.</p><h3><strong>AZPO Health: Your Partner in Eye Health in Turkey</strong></h3><p>AZPO Health is a reputable medical tourism company in Turkey dedicated to providing high-quality healthcare services to international patients. We understand that seeking medical treatment abroad can be a significant decision, and we are here to guide you through every step of the process.</p><p>Our network includes experienced and skilled ophthalmologists and medical facilities across top touristic destinations in Turkey. We carefully select our partners based on their expertise, reputation, and commitment to patient care. When you choose AZPO Health, you can be confident that you will be connected with qualified medical professionals who specialize in treating a wide range of eye diseases.</p><p>We prioritize clear and open communication to ensure that you are fully informed and comfortable throughout your treatment journey. From your initial inquiry to your post-treatment follow-up, our team will be available to answer your questions, address your concerns, and provide the support you need. We can assist with arranging virtual consultations, helping you understand your treatment options, and coordinating your travel and accommodation in Turkey.</p><p>AZPO Health is committed to facilitating a seamless and stress-free medical travel experience. We strive to provide personalized care that is tailored to your individual needs and preferences. Our goal is to ensure that you receive the best possible medical treatment while enjoying a comfortable and positive experience in Turkey.</p><h3><strong>Take the First Step Towards Clearer Vision</strong></h3><p>Don't let eye diseases compromise your vision and quality of life. Contact AZPO Health today for a free consultation and personalized quote for your eye disease treatment in Turkey. Our dedicated team is ready to answer your questions and guide you on your journey to better eye health.</p><p><br></p>
-            `
+            ? `<p dir="ltr">Турция зарекомендовала себя как один из ведущих центров мирового медицинского туризма, особенно в области офтальмологии. Современные технологии, опытные специалисты и внимательное отношение к каждому пациенту делают лечение здесь действительно эффективным и комфортным. Вот почему всё больше людей выбирают Турцию для восстановления зрения:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опыт и профессионализм врачей: турецкие офтальмологи &mdash; это высококвалифицированные специалисты, прошедшие обучение в международных клиниках и владеющие новейшими методиками лечения. Они регулярно повышают свою квалификацию и следят за последними достижениями в области хирургии глаза.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современное оборудование и технологии: клиники, с которыми сотрудничает AZPO Health, оснащены передовой техникой и применяют инновационные подходы к диагностике и лечению заболеваний глаз. Это обеспечивает высокую точность, безопасность и эффективность процедур.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Широкий спектр услуг: от лазерной коррекции зрения и удаления катаракты до сложных вмешательств с установкой интраокулярных линз &mdash; в Турции доступны все виды офтальмохирургии. AZPO Health подберет для вас подходящего специалиста и организует весь процесс лечения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступная стоимость без потери качеств: стоимость процедур в Турции может быть до 70% ниже, чем в странах Европы или США. При этом уровень медицинской помощи остается на высоте благодаря сильной системе здравоохранения и государственной поддержке сектора.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полное сопровождение пациента: команда AZPO Health берет на себя заботу о вашем комфорте: мы организуем консультации, лечение, трансферы, проживание и остаёмся на связи на всех этапах &mdash; до и после процедуры.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Идеальное место для восстановления: мягкий климат, природная красота, морское побережье и богатая культура создают все условия для приятного и спокойного периода реабилитации.</p>
+</li>
+</ul>
+<h3 dir="ltr">Хирургия и имплантация глаз в Турции с AZPO Health: современный подход к восстановлению зрения</h3>
+<p dir="ltr">С AZPO Health вы получаете доступ к широкому спектру современных офтальмологических операций и имплантационных процедур, разработанных для эффективного решения различных проблем со зрением. Вот ключевые направления, которые могут быть актуальны для вас в 2025 году:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Операция по удалению катаракты с имплантацией интраокулярной линзы (ИОЛ): катаракта &mdash; это возрастное заболевание, при котором мутнеет естественный хрусталик. Операция по удалению катаракты включает замену мутного хрусталика на искусственную линзу, называемую интраокулярной линзой (ИОЛ). В 2025 году доступны различные типы ИОЛ, включая монофокальные, мультифокальные и торические линзы, что позволяет подобрать индивидуальное решение для коррекции зрения. Это высокоэффективный способ восстановления четкого зрения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Рефракционная хирургия (LASIK, PRK, SMILE): если вы хотите избавиться от очков или контактных линз, рефракционная хирургия &mdash; это отличный вариант. Методы LASIK, PRK и SMILE позволяют с помощью лазера изменить форму роговицы, что эффективно помогает при близорукости, дальнозоркости и астигматизме. Врач, основываясь на вашем индивидуальном обследовании, подберет наиболее подходящий метод коррекции зрения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пересадка роговицы (кератопластика):<br>при заболеваниях или повреждениях роговицы, которые приводят к снижению зрения, возможна пересадка роговицы. Заменив поврежденную ткань на здоровую донорскую, эта процедура помогает восстановить зрение и устранить болезненные ощущения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургическое лечение глаукомы:<br>глаукома &mdash; это заболевание, которое повреждает зрительный нерв и может привести к слепоте. Существует несколько хирургических методов, направленных на снижение внутриглазного давления &mdash; главного фактора риска глаукомы. Среди них минимально инвазивные операции (MIGS), трабекулэктомия и лазерные процедуры.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургия сетчатки: сетчатка глаза играет ключевую роль в восприятии света. При таких заболеваниях, как отслоение сетчатки, макулярная дегенерация и диабетическая ретинопатия, применяются операции, такие как витрэктомия, склеральное пломбирование и лазерная коагуляция, с целью сохранения и улучшения зрения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Операции на глазных мышцах: косоглазие, или страбизм, может нарушить как зрение, так и внешний вид. Хирургия глазных мышц позволяет скорректировать положение глаз, восстанавливая нормальное зрение и улучшая эстетическое восприятие.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пластика век (блефаропластика):<br>хотя блефаропластика часто воспринимается как косметическая процедура, она также может значительно улучшить зрение, если опущенные веки препятствуют нормальному обзору. Операция включает удаление лишней кожи, жира и мышц, что помогает освежить внешний вид глаз.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Имплантация интраокулярной линзы (ИОЛ) для коррекции рефракционных ошибок / Трифокальные линзы: помимо операции на катаракту, имплантация ИОЛ может быть использована для коррекции значительных нарушений рефракции, даже если катаракты нет. Это решение обеспечит стабильное улучшение зрения для тех, кто не является кандидатом на лазерную коррекцию.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Офтальмоонкология: офтальмоонкология занимается лечением опухолей глаз &mdash; как доброкачественных, так и злокачественных. Это включает диагностику и лечение опухолей, возникающих внутри глаза, на веках, в глазнице и конъюнктиве.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лечение других заболеваний глаз:<br>Турция также предлагает передовые хирургические методы лечения множества других глазных заболеваний, включая лечение рака глаза, отслоение сетчатки, кератоконус и многое другое. AZPO Health поможет вам подобрать правильного специалиста и оптимальный план лечения для каждого случая.</p>
+</li>
+</ul>
+<p dir="ltr">Во время консультации, организованной AZPO Health, опытные офтальмологи тщательно оценят состояние вашего зрения, обсудят ваши конкретные пожелания и цели по улучшению зрения, а также порекомендуют наиболее подходящие хирургические процедуры и имплантацию. Они подробно объяснят процесс, включая используемые техники, ожидаемые результаты и этапы восстановления.</p>
+<h3 dir="ltr">Сделайте первый шаг к более четкому зрению уже сегодня.</h3>
+<p dir="ltr">Не позволяйте проблемам со зрением мешать вашей жизни. Свяжитесь с AZPO Health сегодня для бесплатной консультации и узнайте о возможностях офтальмологических операций и имплантации в Турции. Наша опытная и заботливая команда готова ответить на все ваши вопросы, учесть ваши потребности и помочь вам начать путь к яркому и ясному зрению.</p>
+<p dir="ltr">&nbsp;</p>`
             : `
          <p>Turkey has gained international recognition for its exceptional healthcare services, particularly in specialized fields like ophthalmology. Here’s why considering Turkey for your <strong>eye surgical &amp; implant procedures</strong> through AZPO Health is a smart choice in 2025:</p><ul><li><strong>Highly Skilled Medical Professionals:</strong> Turkey boasts a large number of experienced and board-certified ophthalmologists who are proficient in the latest surgical techniques and advancements in vision care. Many have received training from leading international institutions and are dedicated to providing the highest standards of patient care.</li><li><strong>State-of-the-Art Facilities and Technology:</strong> Hospitals and clinics in Turkey that partner with AZPO Health are equipped with cutting-edge diagnostic and surgical technologies. This ensures that you have access to the most advanced treatments available, leading to better outcomes and increased safety. Facilities regularly update their equipment to stay at the forefront of medical innovation.</li><li><strong>Comprehensive Range of Procedures:</strong> Whether you are considering routine vision correction surgery like LASIK or more complex procedures such as cataract surgery with intraocular lens (IOL) implants, or treatment for other eye conditions, Turkey offers a wide spectrum of <strong>eye surgeries</strong>. AZPO Health can connect you with specialists who excel in the specific procedure you need.</li><li><strong>Cost-Effective Solutions:</strong> Compared to many other countries, the cost of medical procedures, including <strong>eye surgeries and implants</strong>, in Turkey is significantly more affordable. This allows you to access high-quality treatment without incurring excessive financial burdens. The cost-effectiveness does not compromise the quality of care; rather, it reflects Turkey's healthcare system and economic factors.</li><li><strong>Seamless and Supportive Patient Journey:</strong> AZPO Health is committed to providing a smooth and stress-free experience for international patients. From the initial consultation to post-operative care, we assist you every step of the way, including travel arrangements and accommodation guidance. Our goal is to make your medical journey as comfortable and convenient as possible.</li><li><strong>Beautiful Destination for Recovery:</strong> Combining your medical treatment with a recovery period in Turkey offers the opportunity to experience the country's rich history, vibrant culture, and stunning landscapes. Recover in a relaxing environment and return home feeling both healthier and rejuvenated.</li></ul><h3><strong>Understanding the Range of Eye Surgical &amp; Implant Procedures Available</strong></h3><p>Through AZPO Health, you can access a variety of <strong>eye surgical &amp; implant procedures</strong> tailored to address different vision problems and eye conditions. Here are some of the key procedures you might consider in 2025:</p><ul><li><strong>Cataract Surgery with Intraocular Lens (IOL) Implants:</strong> Cataracts, the clouding of the eye's natural lens, are a common age-related condition. Cataract surgery involves removing the clouded lens and replacing it with an artificial lens called an intraocular lens (IOL). In 2025, various types of IOLs are available, including monofocal, multifocal, and toric lenses, allowing for customized vision correction after surgery. This procedure is a highly effective way to restore clear vision.</li><li><strong>Refractive Surgery (LASIK, PRK, SMILE):</strong> If you are looking to reduce or eliminate your dependence on glasses or contact lenses, refractive surgery might be an option. LASIK (laser-assisted in situ keratomileusis), PRK (photorefractive keratectomy), and SMILE (small incision lenticule extraction) are laser procedures that reshape the cornea to correct nearsightedness (myopia), farsightedness (hyperopia), and astigmatism. The best technique for you will depend on your individual eye characteristics, which will be thoroughly assessed during your consultation.</li><li><strong>Corneal Transplantation:</strong> Damage or disease to the cornea can significantly impair vision. Corneal transplantation, also known as keratoplasty, involves replacing the damaged cornea with healthy donor tissue. This procedure can restore vision and alleviate pain for individuals with various corneal conditions.</li><li><strong>Glaucoma Surgery:</strong> Glaucoma is a condition that damages the optic nerve and can lead to vision loss and blindness if left untreated. Various surgical procedures are available to lower intraocular pressure (IOP), the primary risk factor for glaucoma. These may include minimally invasive glaucoma surgery (MIGS), trabeculectomy, and laser treatments.</li><li><strong>Retinal Surgery:</strong> The retina is the light-sensitive tissue at the back of the eye. Conditions like retinal detachment, macular degeneration, and diabetic retinopathy can affect vision. Surgical interventions, including vitrectomy, scleral buckling, and laser photocoagulation, can help to treat these conditions and preserve or improve vision.</li><li><strong>Eye Muscle Surgery:</strong> Strabismus, or misaligned eyes, can affect both vision and appearance. Eye muscle surgery involves adjusting the muscles that control eye movement to align the eyes properly. This can improve binocular vision and cosmetic appearance.</li><li><strong>Eyelid Surgery (Blepharoplasty):</strong> While often considered a cosmetic procedure, blepharoplasty can also have functional benefits by improving vision obstructed by drooping eyelids. It involves removing excess skin, fat, and muscle from the upper and/or lower eyelids to rejuvenate the appearance of the eyes.</li><li><strong>Intraocular Lens (IOL) Implants for Refractive Errors:</strong> In addition to cataract surgery, IOLs can also be implanted to correct significant refractive errors, even if cataracts are not present. This offers a permanent solution for individuals who may not be suitable candidates for laser refractive surgery.</li><li><strong>Treatment for Other Eye Conditions:</strong> Turkey also offers advanced surgical treatments for a wide range of other eye conditions, including eye cancer treatment, treatment of retinal detachment, keratoconus treatment, and more. Whatever your specific needs, AZPO Health can help you find the right specialist and treatment plan.</li></ul><p>During your consultation facilitated by AZPO Health, experienced ophthalmologists will thoroughly evaluate your eye health, discuss your specific concerns and visual goals, and recommend the most appropriate <strong>eye surgical &amp; implant procedures</strong> for you. They will explain the details of the procedure, including the techniques involved, the expected outcomes, and the recovery process.</p><h3><strong>AZPO Health: Your Partner in Achieving Clearer Vision</strong></h3><p>AZPO Health is a leading medical tourism facilitator in Turkey, dedicated to connecting international patients with top-tier healthcare providers specializing in various medical fields, including ophthalmology. When you choose AZPO Health for your <strong>eye surgical &amp; implant procedures</strong>, you benefit from:</p><ul><li><strong>Access to a Network of Reputable Clinics and Surgeons:</strong> We carefully select our partner hospitals and clinics based on their expertise, experience, accreditation, and commitment to patient safety and satisfaction.</li><li><strong>Personalized Assistance and Guidance:</strong> Our experienced team will guide you through every step of the process, from helping you choose the right procedure and specialist to assisting with travel logistics and accommodation arrangements.</li><li><strong>Comprehensive Information and Support:</strong> We provide you with detailed information about the procedures, the facilities, and what to expect during your medical journey. We are always available to answer your questions and address any concerns you may have.</li><li><strong>Commitment to Quality and Care:</strong> AZPO Health prioritizes your well-being and strives to ensure that you receive the highest quality of care throughout your treatment in Turkey.</li></ul><h3><strong>Take the First Step Towards Clearer Vision Today</strong></h3><p>Don't let vision problems hold you back any longer. Contact AZPO Health today for a free consultation and explore your options for <strong>eye surgical &amp; implant procedures in Turkey</strong>. Our friendly and knowledgeable team is ready to answer your questions, discuss your needs, and help you embark on a journey towards a brighter, clearer future.</p>
         `,
@@ -2663,38 +2571,79 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Eye Disease Treatments in Turkey"
+          ? "Надежда начинается здесь: лечение бесплодия мирового уровня в Турции в 2025 году"
           : "Fertility & Assisted Reproduction in Turkey",
       descriptionTop:
         locale === "ru"
-          ? "Are you tired of struggling with vision problems, from cataracts and refractive errors to the limitations of glasses and contact lenses? Discover how advanced eye surgical & implant procedures in Turkey offered through AZPO Health can provide you with a renewed sense of sight and a brighter future."
+          ? "Столкнулись с трудностями на пути к зачатию? Ведущие клиники Турции предлагают передовые методы лечения бесплодия — ЭКО, ИКСИ, донорство яйцеклеток — с высокой эффективностью и по доступным ценам. Вас ждут современные технологии, индивидуальный подход и искренняя забота — всё это в гостеприимной и красивой стране. Ваш путь к родительству может начаться уже сегодня."
           : "Are you dreaming of starting or expanding your family but facing challenges? Discover how AZPO Health in Turkey can be your partner, offering a ray of hope with world-class fertility treatments and compassionate care, guiding you towards the joyous journey of parenthood.",
       videoContents: {
         title:
           locale === "ru"
-            ? "Eye Surgeries in Turkey: See the World Clearly Again"
+            ? "Поиск лучшей клиники по лечению бесплодия в Турции"
             : "Fertility treatments in Turkey",
         desc:
           locale === "ru"
-            ? "Seeking solutions for various eye conditions, including vision correction, cataract treatment, and more complex eye disorders? Explore the comprehensive range of eye surgeries in Turkey facilitated by AZPO Health, where experienced medical professionals and state-of-the-art facilities can help you achieve optimal visual health and well-being."
+            ? "AZPO Health сотрудничает с лучшими клиниками Турции, где работают опытные специалисты и применяются передовые репродуктивные технологии. Мы сопровождаем вас на всем пути — от первой консультации до завершения лечения. Индивидуальный подход, чуткость и поддержка — вот что отличает наш сервис. Сделайте шаг навстречу своей мечте о семье — мы будем рядом на каждом этапе."
             : "Considering fertility treatments can feel overwhelming, but it doesn't have to. AZPO Health in Turkey provides a supportive environment and access to a range of advanced reproductive technologies. Let us address your concerns and motivations, offering personalized solutions tailored to your unique path to conceiving.",
       },
       subCategoryContent: {
         title:
           locale === "ru"
-            ? "Eye disease treatments"
+            ? "Фертильность и вспомогательная репродукция"
             : "Fertility & assisted reproduction",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Your Eye Surgical & Implant Procedures in 2025?"
+            ? "Почему стоит выбрать Турцию для лечения бесплодия?"
             : "Why Choose Turkey for Fertility & Assisted Reproduction?",
         content:
           locale === "ru"
-            ? `
-           <p>Considering undergoing medical treatment in a foreign country can bring about several questions. Let's explore why Turkey has become a prominent destination for individuals seeking high-quality eye disease treatments.</p><p>Turkey has emerged as a leading hub for medical tourism, and for good reason. One of the primary attractions is the affordability of medical procedures compared to many European countries, the United States, or the UK. This cost-effectiveness extends to various medical fields, including specialized eye care. You can potentially access advanced treatments and consultations with experienced medical professionals at a significantly lower cost without compromising on the quality of care.</p><p>Beyond the financial aspect, Turkey boasts a cadre of well-educated and experienced doctors and healthcare staff. Many Turkish medical professionals have received training in internationally recognized institutions and possess extensive experience in diagnosing and treating a wide spectrum of eye diseases. The healthcare professionals in Turkey often perform a high volume of procedures annually, contributing to their skill and expertise.</p><p>Furthermore, Turkey is home to modern and well-equipped medical facilities, including hospitals and clinics that utilize cutting-edge technology in diagnostics and treatment. This commitment to advanced medical infrastructure ensures that patients have access to the latest innovations in eye care.</p><p>Another compelling reason to consider Turkey for your eye disease treatment is the opportunity for medical tourism. Istanbul, in particular, is a highly visited city with a rich history and culture. Combining your treatment with a chance to explore historical sites, experience a vibrant culture, and enjoy the hospitality of Turkey can make your medical journey a more positive and memorable experience.</p><p>Moreover, facilities like Hospital believe in staying ahead of the curve by constantly researching and learning from the best surgeons and clinics around the world, adopting the best techniques to provide the best possible care for their patients. This dedication to continuous improvement suggests a commitment to providing high standards in medical treatments.</p><h3><strong>Understanding Eye Disease Treatments Available</strong></h3><p>Eye diseases encompass a broad range of conditions that can affect different parts of the eye and impact vision. Accessing appropriate and timely treatment is crucial for managing these conditions, preventing vision loss, and maintaining overall eye health. While the specific types of treatments available depend on the individual diagnosis, let's discuss some general categories and considerations for eye disease treatments you might find in Turkey through AZPO Health.</p><p>It's important to recognize that clear communication between you and the medical team is paramount for achieving optimal results. Therefore, a thorough consultation is a vital first step in any treatment process.</p><p>For individuals with common vision problems like nearsightedness (myopia), farsightedness (hyperopia), or astigmatism, refractive surgeries such as LASIK or PRK might be options to reduce or eliminate the need for glasses or contact lenses. Another innovative technique for vision correction is intraocular lens implantation (IOL), which involves replacing the eye's natural lens with an artificial one to improve vision. Turkey offers these advanced vision correction procedures with experienced ophthalmologists and modern technology.</p><p>Cataracts, a clouding of the eye's natural lens, are a common age-related condition that can impair vision. Treatment typically involves cataract surgery, where the clouded lens is removed and replaced with a clear artificial lens. This is a widely performed procedure in Turkey with high success rates.</p><p>Glaucoma is a condition that damages the optic nerve, often due to increased pressure inside the eye. Various treatments are available to manage glaucoma and prevent vision loss, including eye drops, laser therapy, and surgery. Timely diagnosis and consistent management are crucial for this condition.</p><p>Retinal disorders, such as macular degeneration and diabetic retinopathy, can affect the light-sensitive tissue at the back of the eye. Treatments for these conditions may include laser therapy, injections, and surgery, depending on the specific diagnosis and stage of the disease.</p><p>Eye infections, injuries, and other less common eye diseases also require specialized medical attention. Turkey's comprehensive healthcare system includes specialists who can diagnose and treat these conditions effectively.</p><p>Furthermore, for individuals considering cosmetic procedures related to the eyes, such as blepharoplasty (eyelid surgery) to address drooping eyelids or under-eye bags, Turkey offers experienced plastic surgeons who can perform these procedures. While primarily cosmetic, blepharoplasty can sometimes improve vision if excess upper eyelid skin obstructs the field of view.</p><p>When you choose AZPO Health for your eye disease treatment in Turkey, you can expect a personalized approach. The medical team will conduct a thorough assessment of your condition, discuss your treatment options in detail, and tailor a plan to meet your specific needs and goals. Clear explanations of the procedures, potential benefits, and any associated risks will be provided to help you make informed decisions about your eye care journey.</p><h3><strong>AZPO Health: Your Partner in Eye Health in Turkey</strong></h3><p>AZPO Health is a reputable medical tourism company in Turkey dedicated to providing high-quality healthcare services to international patients. We understand that seeking medical treatment abroad can be a significant decision, and we are here to guide you through every step of the process.</p><p>Our network includes experienced and skilled ophthalmologists and medical facilities across top touristic destinations in Turkey. We carefully select our partners based on their expertise, reputation, and commitment to patient care. When you choose AZPO Health, you can be confident that you will be connected with qualified medical professionals who specialize in treating a wide range of eye diseases.</p><p>We prioritize clear and open communication to ensure that you are fully informed and comfortable throughout your treatment journey. From your initial inquiry to your post-treatment follow-up, our team will be available to answer your questions, address your concerns, and provide the support you need. We can assist with arranging virtual consultations, helping you understand your treatment options, and coordinating your travel and accommodation in Turkey.</p><p>AZPO Health is committed to facilitating a seamless and stress-free medical travel experience. We strive to provide personalized care that is tailored to your individual needs and preferences. Our goal is to ensure that you receive the best possible medical treatment while enjoying a comfortable and positive experience in Turkey.</p><h3><strong>Take the First Step Towards Clearer Vision</strong></h3><p>Don't let eye diseases compromise your vision and quality of life. Contact AZPO Health today for a free consultation and personalized quote for your eye disease treatment in Turkey. Our dedicated team is ready to answer your questions and guide you on your journey to better eye health.</p><p><br></p>
-            `
+            ? `<p dir="ltr">Турция привлекает пациентов со всего мира благодаря высокому качеству медицинской помощи и безупречной репутации в сфере репродуктивной медицины. Турецкие больницы и клиники оснащены по последнему слову техники и соответствуют международным медицинским стандартам. Врачи и специалисты в области репродуктивной медицины обладают высокой квалификацией, обширным практическим опытом и постоянно следят за последними достижениями в своей области. Вы можете рассчитывать на медицинскую помощь, соответствующую, а зачастую и превосходящую уровень клиник в США и Европе.</p>
+<p dir="ltr">Кроме того, стоимость лечения в Турции зачастую значительно ниже, чем в других странах, включая США и большинство стран Европы. Такая доступность достигается не за счет качества медицинской помощи, а благодаря особенностям местной системы здравоохранения и экономическим факторам. Выбирая Турцию, вы получаете возможность пройти больше циклов лечения и воспользоваться более широким спектром репродуктивных технологий &mdash; без финансовых перегрузок. AZPO Health обеспечивает прозрачность в вопросах ценообразования и поможет вам заранее разобраться в полной стоимости лечения, а также во всех финансовых аспектах на протяжении всего пути.</p>
+<p dir="ltr">Помимо высокого медицинского уровня и экономической выгоды, Турция предлагает всестороннюю поддержку международным пациентам. Медицинский туризм здесь хорошо развит, и клиники, с которыми сотрудничает AZPO Health, имеют большой опыт работы с иностранными пациентами. Мы позаботимся о каждом этапе вашего путешествия: поможем с организацией перелета, проживанием, трансфером, языковой поддержкой и всеми бытовыми деталями. Вы сможете сосредоточиться на лечении, зная, что все остальное находится в надежных руках.</p>
+<p dir="ltr">А еще Турция &mdash; это удивительное сочетание древней культуры, живописной природы и теплого гостеприимства. Ваше медицинское путешествие может стать не только шагом к мечте о ребёнке, но и особенным, запоминающимся опытом. Стамбул, Анталья и Аланья &mdash; города, где работает AZPO Health &mdash; полны энергии, достопримечательностей и душевного уюта.</p>
+<h3 dir="ltr">Возможности лечения бесплодия в Турции</h3>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">Лечение бесплодия в Турции включает разнообразные процедуры и методы, направленные на помощь отдельным пациентам и парам в достижении желанной беременности. Выбор конкретного варианта лечения зависит от множества факторов &mdash; причины бесплодия, медицинской истории пациента и индивидуальных предпочтений. AZPO Health свяжет вас с опытными специалистами, которые проведут детальное обследование и разработают персонализированный план лечения, учитывая ваши уникальные потребности.</p>
+<p dir="ltr">Ниже представлены основные методы лечения бесплодия, применяемые в Турции:</p>
+<p dir="ltr">Экстракорпоральное оплодотворение (ЭКО): это одна из самых известных и эффективных вспомогательных репродуктивных технологий (ВРТ). Суть метода &mdash; извлечение зрелых яйцеклеток из яичников женщины и их оплодотворение спермой в лабораторных условиях. Полученные эмбрионы переносятся в матку с целью успешной имплантации и наступления беременности. ЭКО рекомендуется при различных проблемах, таких как закупорка или повреждение маточных труб, нарушения овуляции, эндометриоз, мужское бесплодие и необъяснимое бесплодие.</p>
+<p dir="ltr">Внутриматочная инсеминация (ВМИ): менее инвазивная процедура, при которой сперматозоиды вводятся непосредственно в матку во время овуляции. Это повышает количество сперматозоидов у яйцеклетки и увеличивает вероятность оплодотворения. ВМИ применяется при легких формах мужского бесплодия, необъяснимом бесплодии или проблемах с цервикальной слизью.</p>
+<p dir="ltr">Донорство яйцеклеток: для женщин, которые не могут забеременеть собственными яйцеклетками из-за возраста, преждевременной недостаточности яичников или генетических заболеваний, возможен вариант с использованием донорских яйцеклеток. Они оплодотворяются спермой предполагаемого отца или донорской спермой методом ЭКО, после чего эмбрионы переносятся в матку реципиентки.</p>
+<p dir="ltr">Донорство спермы: при тяжелом мужском бесплодии или отсутствии сперматозоидов в эякуляте используется сперма здорового донора для оплодотворения яйцеклеток с помощью ВМИ или ЭКО.</p>
+<p dir="ltr">Донорство эмбрионов: этот вариант подходит для тех, кто не может использовать собственные яйцеклетки или сперматозоиды, либо для пациентов, которым другие методы ВРТ не помогли. Донорские эмбрионы переносятся в матку женщины.</p>
+<p dir="ltr">Предимплантационное генетическое тестирование (ПГТ): генетический скрининг эмбрионов, созданных методом ЭКО, перед их переносом в матку. ПГТ позволяет выявить хромосомные аномалии и генетические нарушения, что повышает шансы на успешную и здоровую беременность, а также снижает риск выкидыша. Рекомендуется женщинам старшего возраста, парам с историей выкидышей и тем, у кого есть наследственные заболевания.</p>
+<p dir="ltr">Клиники по лечению бесплодия в Турции, с которыми сотрудничает AZPO Health, предоставят вам всесторонние консультации для выбора оптимального плана лечения. Специалисты подробно расскажут о процедурах, их преимуществах и возможных рисках, ответят на все ваши вопросы, чтобы вы чувствовали себя уверенно и комфортно на протяжении всего пути к родительству.</p>
+<h3 dir="ltr">О компании AZPO Health</h3>
+<p dir="ltr">AZPO Health &mdash; ведущая компания в сфере медицинского туризма, базирующаяся в Турции. Мы специализируемся на обеспечении связи иностранных пациентов с проверенными и аккредитованными медицинскими учреждениями по широкому спектру направлений, включая лечение бесплодия. Наша миссия &mdash; сделать медицинский туризм доступным, комфортным и высококачественным, гарантируя пациентам лучший уход в благоприятной обстановке.</p>
+<p dir="ltr">Мы понимаем, что лечение бесплодия &mdash; важный и зачастую сложный процесс, и готовы поддерживать вас на каждом его этапе. Наша квалифицированная команда окажет поддержку в следующих вопросах:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сотрудничеством с ведущими клиниками: мы сотрудничаем только с клиниками, которые имеют высокую репутацию, используют современные технологии и соответствуют международным медицинским стандартам.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предоставлением подробной информации: вы получите исчерпывающие сведения о методах лечения, клиниках-партнерах и том, что ожидать во время вашего медицинского путешествия.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Организацией онлайн консультаций: возможность обсудить ваш случай и варианты лечения с экспертами дистанционно &mdash; без необходимости покидать дом.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помощью в организации поездки: мы поможем с бронированием авиабилетов, трансфером и выбором жилья, подходящего под ваши требования и бюджет.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Языковой поддержкой: наши специалисты обеспечат качественный перевод и коммуникацию с медицинской командой.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальным сопровождением: мы понимаем, что каждый пациент уникален, поэтому обеспечиваем персональный подход и внимание к вашим пожеланиям.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Прозрачным ценообразованием: совместно с клиниками-партнерами мы гарантируем честные и понятные цены, чтобы вы могли заранее оценить все расходы.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Сделайте первый шаг к созданию семьи&nbsp;</h3>
+<p dir="ltr">Готовы узнать больше о возможностях лечения бесплодия в Турции? Свяжитесь с AZPO Health сегодня, чтобы получить бесплатную консультацию и индивидуальное предложение. Наша дружелюбная и квалифицированная команда ответит на все вопросы и поможет пройти весь путь к долгожданному родительству.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Embarking on a fertility journey is a significant decision, and choosing the right destination for treatment is crucial. Turkey has emerged as a leading hub for medical tourism, particularly in the realm of fertility and assisted reproduction, and for good reason.</p>
 <p dir="ltr">&nbsp;</p>
 <p dir="ltr">Firstly, accessibility and cost-effectiveness are significant factors. Compared to many countries in Europe and North America, the cost of fertility treatments in Turkey is often considerably more affordable without compromising on the quality of care. This allows more individuals and couples to pursue their dreams of parenthood without the added financial burden.</p>
@@ -2754,38 +2703,84 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Eye Disease Treatments in Turkey"
+          ? "Мужское сексуальное и репродуктивное здоровье — лечение стволовыми клетками в Турции"
           : "Male Sexual & Reproductive Health Stem Cell Therapy in Turkey",
       descriptionTop:
         locale === "ru"
-          ? "Are you tired of struggling with vision problems, from cataracts and refractive errors to the limitations of glasses and contact lenses? Discover how advanced eye surgical & implant procedures in Turkey offered through AZPO Health can provide you with a renewed sense of sight and a brighter future."
+          ? "Ищете современные решения для восстановления сексуального здоровья и репродуктивных функций? Познакомьтесь с лечением стволовыми клетками для мужского сексуального и репродуктивного здоровья в Турции — инновационными методами, направленными на эффективное решение различных проблем и повышение качества жизни."
           : "Are you seeking innovative solutions to revitalize your sexual health and reproductive capabilities? Discover the potential of male sexual & reproductive health stem cell therapy in Turkey, offering cutting-edge treatments designed to address various concerns and improve your quality of life.",
       videoContents: {
         title:
           locale === "ru"
-            ? "Eye Surgeries in Turkey: See the World Clearly Again"
+            ? "Лечение стволовыми клетками в Турции с AZPO Health"
             : "Stem Cell Therapy in Turkey with AZPO Health",
         desc:
           locale === "ru"
-            ? "Seeking solutions for various eye conditions, including vision correction, cataract treatment, and more complex eye disorders? Explore the comprehensive range of eye surgeries in Turkey facilitated by AZPO Health, where experienced medical professionals and state-of-the-art facilities can help you achieve optimal visual health and well-being."
+            ? "Если вы ищете передовые методы лечения в комфортной и доступной локации, Турция — один из лидеров в области терапии стволовыми клетками. Здесь применяются новейшие технологии и работают опытные специалисты, которые предлагают индивидуальный подход и активно развивают перспективные направления регенеративной медицины."
             : "Looking for advanced medical treatments in a welcoming and accessible location? Turkey has emerged as a leading destination for stem cell therapy, providing state-of-the-art facilities and experienced medical professionals dedicated to offering personalized care and exploring the promising avenues of regenerative medicine.",
       },
       subCategoryContent: {
         title:
           locale === "ru"
-            ? "Eye disease treatments"
+            ? "Мужская сексуальная терапия Лечение"
             : "Male sexual therapy Treatments",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Your Eye Surgical & Implant Procedures in 2025?"
+            ? "Почему стоит выбрать Турцию для лечения стволовыми клетками при мужском сексуальном и репродуктивном здоровье?"
             : "Why Choose Turkey for Male Sexual & Reproductive Health Stem Cell Therapy?",
         content:
           locale === "ru"
-            ? `
-           <p>Considering undergoing medical treatment in a foreign country can bring about several questions. Let's explore why Turkey has become a prominent destination for individuals seeking high-quality eye disease treatments.</p><p>Turkey has emerged as a leading hub for medical tourism, and for good reason. One of the primary attractions is the affordability of medical procedures compared to many European countries, the United States, or the UK. This cost-effectiveness extends to various medical fields, including specialized eye care. You can potentially access advanced treatments and consultations with experienced medical professionals at a significantly lower cost without compromising on the quality of care.</p><p>Beyond the financial aspect, Turkey boasts a cadre of well-educated and experienced doctors and healthcare staff. Many Turkish medical professionals have received training in internationally recognized institutions and possess extensive experience in diagnosing and treating a wide spectrum of eye diseases. The healthcare professionals in Turkey often perform a high volume of procedures annually, contributing to their skill and expertise.</p><p>Furthermore, Turkey is home to modern and well-equipped medical facilities, including hospitals and clinics that utilize cutting-edge technology in diagnostics and treatment. This commitment to advanced medical infrastructure ensures that patients have access to the latest innovations in eye care.</p><p>Another compelling reason to consider Turkey for your eye disease treatment is the opportunity for medical tourism. Istanbul, in particular, is a highly visited city with a rich history and culture. Combining your treatment with a chance to explore historical sites, experience a vibrant culture, and enjoy the hospitality of Turkey can make your medical journey a more positive and memorable experience.</p><p>Moreover, facilities like Hospital believe in staying ahead of the curve by constantly researching and learning from the best surgeons and clinics around the world, adopting the best techniques to provide the best possible care for their patients. This dedication to continuous improvement suggests a commitment to providing high standards in medical treatments.</p><h3><strong>Understanding Eye Disease Treatments Available</strong></h3><p>Eye diseases encompass a broad range of conditions that can affect different parts of the eye and impact vision. Accessing appropriate and timely treatment is crucial for managing these conditions, preventing vision loss, and maintaining overall eye health. While the specific types of treatments available depend on the individual diagnosis, let's discuss some general categories and considerations for eye disease treatments you might find in Turkey through AZPO Health.</p><p>It's important to recognize that clear communication between you and the medical team is paramount for achieving optimal results. Therefore, a thorough consultation is a vital first step in any treatment process.</p><p>For individuals with common vision problems like nearsightedness (myopia), farsightedness (hyperopia), or astigmatism, refractive surgeries such as LASIK or PRK might be options to reduce or eliminate the need for glasses or contact lenses. Another innovative technique for vision correction is intraocular lens implantation (IOL), which involves replacing the eye's natural lens with an artificial one to improve vision. Turkey offers these advanced vision correction procedures with experienced ophthalmologists and modern technology.</p><p>Cataracts, a clouding of the eye's natural lens, are a common age-related condition that can impair vision. Treatment typically involves cataract surgery, where the clouded lens is removed and replaced with a clear artificial lens. This is a widely performed procedure in Turkey with high success rates.</p><p>Glaucoma is a condition that damages the optic nerve, often due to increased pressure inside the eye. Various treatments are available to manage glaucoma and prevent vision loss, including eye drops, laser therapy, and surgery. Timely diagnosis and consistent management are crucial for this condition.</p><p>Retinal disorders, such as macular degeneration and diabetic retinopathy, can affect the light-sensitive tissue at the back of the eye. Treatments for these conditions may include laser therapy, injections, and surgery, depending on the specific diagnosis and stage of the disease.</p><p>Eye infections, injuries, and other less common eye diseases also require specialized medical attention. Turkey's comprehensive healthcare system includes specialists who can diagnose and treat these conditions effectively.</p><p>Furthermore, for individuals considering cosmetic procedures related to the eyes, such as blepharoplasty (eyelid surgery) to address drooping eyelids or under-eye bags, Turkey offers experienced plastic surgeons who can perform these procedures. While primarily cosmetic, blepharoplasty can sometimes improve vision if excess upper eyelid skin obstructs the field of view.</p><p>When you choose AZPO Health for your eye disease treatment in Turkey, you can expect a personalized approach. The medical team will conduct a thorough assessment of your condition, discuss your treatment options in detail, and tailor a plan to meet your specific needs and goals. Clear explanations of the procedures, potential benefits, and any associated risks will be provided to help you make informed decisions about your eye care journey.</p><h3><strong>AZPO Health: Your Partner in Eye Health in Turkey</strong></h3><p>AZPO Health is a reputable medical tourism company in Turkey dedicated to providing high-quality healthcare services to international patients. We understand that seeking medical treatment abroad can be a significant decision, and we are here to guide you through every step of the process.</p><p>Our network includes experienced and skilled ophthalmologists and medical facilities across top touristic destinations in Turkey. We carefully select our partners based on their expertise, reputation, and commitment to patient care. When you choose AZPO Health, you can be confident that you will be connected with qualified medical professionals who specialize in treating a wide range of eye diseases.</p><p>We prioritize clear and open communication to ensure that you are fully informed and comfortable throughout your treatment journey. From your initial inquiry to your post-treatment follow-up, our team will be available to answer your questions, address your concerns, and provide the support you need. We can assist with arranging virtual consultations, helping you understand your treatment options, and coordinating your travel and accommodation in Turkey.</p><p>AZPO Health is committed to facilitating a seamless and stress-free medical travel experience. We strive to provide personalized care that is tailored to your individual needs and preferences. Our goal is to ensure that you receive the best possible medical treatment while enjoying a comfortable and positive experience in Turkey.</p><h3><strong>Take the First Step Towards Clearer Vision</strong></h3><p>Don't let eye diseases compromise your vision and quality of life. Contact AZPO Health today for a free consultation and personalized quote for your eye disease treatment in Turkey. Our dedicated team is ready to answer your questions and guide you on your journey to better eye health.</p><p><br></p>
-            `
+            ? `<p dir="ltr">При выборе лечения за границей важно учитывать несколько факторов, и Турция выделяется как отличный вариант для терапии стволовыми клетками в области мужского сексуального и репродуктивного здоровья.</p>
+<p dir="ltr">Во-первых, Турция значительно инвестировала в развитие своей медицинской инфраструктуры, оснащая современные больницы и клиники новейшим оборудованием. Эти учреждения соответствуют международным стандартам гигиены и ухода за пациентами, обеспечивая безопасные и комфортные условия для лечения.</p>
+<p dir="ltr">Во-вторых, стоимость медицинских услуг в Турции зачастую существенно ниже, чем во многих европейских странах и США. Это касается и передовых методов, таких как терапия стволовыми клетками, что делает их более доступными для пациентов, ищущих инновационные решения. Хотя конкретные цены не приводятся, доступность медицинского обслуживания является важным преимуществом страны.</p>
+<p dir="ltr">В-третьих, Турция стала центром медицинского туризма благодаря высокой квалификации врачей и медицинских команд, имеющих опыт в широком спектре процедур, включая регенеративную терапию. При выборе терапии стволовыми клетками особенно важно обращаться в клиники с подтвержденной экспертизой в этой быстро развивающейся области.</p>
+<p dir="ltr">Кроме того, выгодное географическое расположение Турции облегчает доступ для многих международных пациентов &mdash; страна располагает удобными аэропортами и часто предлагает упрощенные визовые процедуры, что снижает сложности, связанные с поездкой на лечение.</p>
+<p dir="ltr">Наконец, вы можете совместить медицинское лечение с возможностью познакомиться с богатой культурой, историей и живописными городами Турции, что способствует улучшению общего самочувствия и делает поездку более комфортной и приятной.</p>
+<h3 dir="ltr">Как работает терапия стволовыми клетками при мужском сексуальном и репродуктивном здоровье</h3>
+<p dir="ltr">Лечение стволовыми клетками &mdash; это вид регенеративной медицины, направленный на восстановление повреждённых тканей и функций организма с помощью естественных механизмов исцеления или введения специализированных стволовых клеток. Стволовые клетки &mdash; уникальные клетки, способные превращаться в разные типы тканей и стимулировать восстановление за счёт выделения факторов роста и других полезных веществ.</p>
+<p dir="ltr">В сфере мужского сексуального и репродуктивного здоровья лечение стволовыми клетками активно исследуется как способ лечения различных состояний. Особенно многообещающие результаты демонстрируют исследования в области эректильной дисфункции (ЭД).</p>
+<p dir="ltr">Эректильная дисфункция (ЭД): исследования показывают, что лечение стволовыми клетками может стать эффективным вариантом лечения ЭД, особенно в случаях, когда традиционные препараты, например ингибиторы ФДЭ-5, не дают результата. Для этого используют различные виды стволовых клеток &mdash; мезенхимальные клетки из костного мозга (BM-MSCs) и жировой ткани (ADSCs). Их вводят непосредственно в половой член (интракавernosное введение), чтобы стимулировать регенерацию сосудов и улучшить кровоток, что необходимо для нормальной эрекции. Клинические испытания отмечают значительное улучшение функции и повышение удовлетворенности пациентов после такой терапии.</p>
+<p dir="ltr">Олигоспермия и бесплодие: в этой области исследования продолжаются, однако терапия стволовыми клетками рассматривается как перспективное средство для лечения мужского бесплодия, в частности олигоспермии (низкое количество сперматозоидов). Мезенхимальные клетки могут улучшить микросреду в яичках, способствуя нормальному производству спермы. В некоторых случаях клетки вводят напрямую в семенные канальцы.</p>
+<p dir="ltr">Болезнь Пейрони: лечение стволовыми клетками изучается как малоинвазивный метод лечения болезни Пейрони &mdash; состояния, при котором в половом члене образуются фиброзные бляшки, вызывающие искривление и боль. Задача терапии &mdash; уменьшить бляшки и восстановить функцию органа.</p>
+<p dir="ltr">Стоит учитывать, что несмотря на большие перспективы, лечение стволовыми клетками &mdash; это еще развивающаяся область медицины. Протоколы лечения, виды используемых клеток и результаты могут варьироваться. Поэтому важна тщательная диагностика и консультация опытных специалистов для определения, подходит ли данный метод именно вам.</p>
+<h3 dir="ltr">Методы терапии стволовыми клетками от AZPO Health</h3>
+<p dir="ltr">AZPO Health сотрудничает с ведущими клиниками Турции, предлагающими разнообразные подходы к лечению стволовыми клетками в области мужского сексуального и репродуктивного здоровья. Выбор конкретного метода зависит от вашего состояния и медицинской истории. Основные варианты лечения включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Аутологичное лечение мезенхимальными стволовыми клетками: использование собственных клеток пациента, обычно получаемых из жировой ткани или костного мозга. Жировая ткань предпочтительна благодаря ее доступности и общему. Забранные клетки обрабатываются и вводятся в целевую зону.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лечение с применением фетальных стволовых клеток: некоторые клиники используют фетальные клетки. Этот метод отличается и назначается в зависимости от диагноза и протоколов клиники.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Внутривенное введение: в отдельных случаях стволовые клетки вводятся внутривенно для системного воздействия и общего стимулирования регенерации организма.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Местные инъекции: при таких состояниях, как эректильная дисфункция или болезнь Пейрони, стволовые клетки вводятся непосредственно в пораженные участки (например, в половой член или яички) для более точечного воздействия.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Протокол лечения &mdash; количество вводимых клеток и частота процедур &mdash; подбирается индивидуально с учетом возраста, веса, общего состояния и рекомендаций врачей. Обычно курс включает 2&ndash;3 сеанса с интервалом в несколько недель или несколько процедур подряд в течение нескольких дней.</p>
+<h3 dir="ltr">Преимущества выбора лечения стволовыми клетками через AZPO Health</h3>
+<p dir="ltr">Обращаясь в AZPO Health для лечения стволовыми клетками в области мужского сексуального и репродуктивного здоровья в Турции, вы получаете множество преимуществ:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытные специалисты: AZPO Health сотрудничает с проверенными клиниками и высококвалифицированными медицинскими командами Турции, специализирующимися на регенеративной медицине.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход: врачи проводят всестороннее обследование и разрабатывают персонализированные планы лечения с учетом ваших потребностей.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддержка на всех этапах: команда AZPO Health помогает с информацией, организацией поездки и координацией медицинского обслуживания в Турции.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высокие стандарты качества и безопасности: мы сотрудничаем только с клиниками, обеспечивающими надлежащий уровень безопасности и качества лечения.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Сделайте первый шаг к восстановлению сексуального здоровья</h3>
+<p dir="ltr">Если вы рассматриваете лечение мужских сексуальных и репродуктивных проблем и хотите узнать больше о терапии стволовыми клетками в Турции, свяжитесь с AZPO Health. Мы готовы предоставить подробную информацию, ответить на все вопросы, организовать консультацию с опытными специалистами и подготовить индивидуальное предложение. Начните свой путь к улучшению здоровья и качества жизни уже сегодня.</p>
+<p>&nbsp;</p>`
             : `
          <p>When considering medical treatments abroad, several factors come into play, and Turkey stands out as an excellent choice for male sexual &amp; reproductive health stem cell therapy.</p><p>Firstly, Turkey has invested significantly in its healthcare infrastructure, boasting modern hospitals and clinics equipped with the latest technologies. These facilities often adhere to international standards of hygiene and patient care, ensuring a safe and comfortable treatment environment.</p><p>Secondly, the cost of medical procedures in Turkey is often more affordable compared to many European countries or the United States. This cost-effectiveness extends to advanced treatments like stem cell therapy, making it a more accessible option for individuals seeking these innovative approaches. While specific prices aren't provided directly, the general affordability of healthcare in Turkey is a significant advantage.</p><p>Thirdly, Turkey has become a hub for medical tourism due to the expertise of its medical professionals. Many doctors and medical teams have experience in a wide range of treatments, including regenerative therapies. When considering stem cell therapy, it's essential to seek out clinics and professionals with specific expertise in this evolving field.</p><p>Moreover, Turkey's location offers ease of access for many international patients, with well-connected airports and visa policies that are often straightforward. This reduces the logistical burden of traveling for treatment.</p><p>Finally, combining your medical journey with the opportunity to experience Turkey's rich culture, history, and vibrant cities can enhance your overall well-being and make the trip a more positive experience.</p><h3><strong>Understanding Stem Cell Therapy for Male Sexual &amp; Reproductive Health</strong></h3><p>Stem cell therapy is a form of regenerative medicine that aims to repair damaged tissues and restore function by utilizing the body's own healing capabilities or through the introduction of specialized stem cells. Stem cells are unique cells with the ability to differentiate into various cell types in the body and can also promote tissue repair through the secretion of growth factors and other beneficial molecules.</p><p>In the context of male sexual and reproductive health, stem cell therapy is being explored for various conditions, with promising research and clinical trials underway, particularly in the area of erectile dysfunction (ED).</p><p><strong>Erectile Dysfunction (ED):</strong> Research has shown that stem cell therapy may offer a potential treatment for ED, particularly in cases where traditional treatments like PDE5 inhibitors are ineffective. Studies have investigated the use of different types of stem cells, including bone marrow-derived mesenchymal stem cells (BM-MSCs) and adipose-derived stem cells (ADSCs). These cells are often administered directly into the penis (intracavernous injection) to promote the regeneration of blood vessels and improve blood flow, which is crucial for achieving and maintaining an erection. Some clinical trials have reported significant improvements in erectile function and patient satisfaction following stem cell therapy.</p><p><strong>Oligospermia and Infertility:</strong> While research in this area is ongoing, stem cell therapy is also being investigated as a potential treatment for male infertility conditions like oligospermia (low sperm count). The approach in these cases often involves administering mesenchymal stem cells, which may help to improve the environment for sperm production in the testes. Some protocols involve direct injection into the sperm-producing ducts.</p><p><strong>Peyronie's Disease:</strong> Stem cell therapy is being explored as a minimally invasive option for Peyronie's disease, a condition characterized by the formation of fibrous plaques in the penis that can cause curvature and pain. The goal of stem cell therapy in this context is to reduce the plaque and improve penile function.</p><p>It is important to note that while stem cell therapy shows great promise, it is still an evolving field, and the specific protocols, types of stem cells used, and treatment outcomes can vary. A thorough evaluation by experienced medical professionals is crucial to determine if stem cell therapy is a suitable option for your specific condition.</p><h3><strong>Methods of Stem Cell Therapy Offered</strong></h3><p>AZPO Health collaborates with leading clinics in Turkey that offer various approaches to male sexual and reproductive health stem cell therapy. The specific method recommended will depend on your individual condition and medical history. Common approaches include:</p><ul><li><strong>Autologous Mesenchymal Stem Cell Therapy:</strong> This involves using mesenchymal stem cells derived from your own body, typically from adipose tissue (fat) or bone marrow. Adipose tissue is often preferred due to its abundance and ease of access. The harvested cells are processed and then administered back into the target area.</li><li><strong>Fetal Stem Cell Therapy:</strong> Some clinics may offer treatment using fetal stem cells. The use of fetal stem cells is a different approach and may be considered based on the specific condition and the clinic's protocols.</li><li><strong>Intravenous Administration:</strong> In some cases, stem cells may be administered intravenously (through vascular access) to exert systemic effects and promote overall regeneration.</li><li><strong>Local Injection:</strong> For conditions like ED or Peyronie's disease, direct injection of stem cells into the affected area (e.g., penis, testes) is a common method to target the damaged tissues directly.</li></ul><p>The treatment protocol, including the number of cells administered and the frequency of sessions, is personalized based on your age, weight, condition, and the medical team's assessment. Some protocols may involve 2-3 sessions spaced several weeks apart or shorter, consecutive-day treatments.</p><h3><strong>Benefits of Choosing Stem Cell Therapy Through AZPO Health</strong></h3><p>Choosing AZPO Health for your male sexual and reproductive health stem cell therapy in Turkey offers several advantages:</p><ul><li><strong>Access to Experienced Professionals:</strong> AZPO Health partners with reputable clinics and experienced medical teams in Turkey who are knowledgeable in the field of regenerative medicine.</li><li><strong>Personalized Treatment Plans:</strong> The medical professionals will conduct thorough evaluations to understand your specific needs and develop a personalized treatment plan tailored to your condition.</li><li><strong>Support Throughout Your Journey:</strong> AZPO Health aims to provide comprehensive support, assisting you with information, travel arrangements, and coordination of your medical care in Turkey.</li><li><strong>Commitment to Quality and Safety:</strong> AZPO Health emphasizes working with facilities that maintain high standards of quality and patient safety.</li></ul><h3><strong>Take the First Step Towards Renewed Sexual Health</strong></h3><p>If you are exploring options for male sexual and reproductive health concerns and are interested in learning more about the potential of stem cell therapy in Turkey, we encourage you to reach out to AZPO Health. Our team is ready to provide you with more information, answer your questions, and connect you with experienced medical professionals for a free consultation and personalized quote. Contact us today to begin your journey towards improved well-being and a better quality of life.</p><p><br></p>
         `,
@@ -2801,38 +2796,55 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Eye Disease Treatments in Turkey"
+          ? "Терапия стволовыми клетками и регенеративная медицина в Турции – новая эра исцеления!"
           : "Stem Cell Therapy & Regenerative Medicine in Turkey – A New Era of Healing!",
       descriptionTop:
         locale === "ru"
-          ? "Are you tired of struggling with vision problems, from cataracts and refractive errors to the limitations of glasses and contact lenses? Discover how advanced eye surgical & implant procedures in Turkey offered through AZPO Health can provide you with a renewed sense of sight and a brighter future."
+          ? "Ищете современные и эффективные способы восстановления здоровья и жизненной энергии? Терапия стволовыми клетками и регенеративная медицина в Турции открывают перед пациентами революционные возможности — от восстановления поврежденных тканей до лечения хронических заболеваний и улучшения общего самочувствия. Благодаря передовым медицинским технологиям и высококвалифицированным специалистам, эти методы становятся новым этапом на пути к долгосрочному выздоровлению и высокому качеству жизни."
           : "Looking for advanced, innovative treatments to restore health and vitality? Stem Cell Therapy & Regenerative Medicine in Turkey offer groundbreaking solutions for tissue repair, disease management, and overall well-being. With cutting-edge medical advancements and expert specialists, these treatments provide new hope for lasting recovery and improved quality of life.",
       videoContents: {
         title:
           locale === "ru"
-            ? "Eye Surgeries in Turkey: See the World Clearly Again"
+            ? "Индивидуальный подход к терапии стволовыми клетками с AZPO Health"
             : "Stem Cell Therapy treatments with AZPO Health",
         desc:
           locale === "ru"
-            ? "Seeking solutions for various eye conditions, including vision correction, cataract treatment, and more complex eye disorders? Explore the comprehensive range of eye surgeries in Turkey facilitated by AZPO Health, where experienced medical professionals and state-of-the-art facilities can help you achieve optimal visual health and well-being."
+            ? "Нуждаетесь в индивидуальном и эффективном лечении? AZPO Health предлагает в Турции передовые методы терапии стволовыми клетками, разработанные с учетом ваших уникальных потребностей. Мы сопровождаем вас на каждом этапе — от первой консультации до полного восстановления — обеспечивая заботу, внимание и поддержку в процессе вашего исцеления и возвращения к активной жизни."
             : "Looking for personalized and effective regenerative medicine approaches? AZPO Health in Turkey specializes in advanced Stem Cell Therapy treatments tailored to your unique health needs. Our commitment is to provide comprehensive care and support throughout your journey towards improved health and vitality.",
       },
       subCategoryContent: {
         title:
           locale === "ru"
-            ? "Eye disease treatments"
+            ? "Терапия и регенеративная медицина"
             : "Therapy & Regenerative Medicine treatments",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Your Eye Surgical & Implant Procedures in 2025?"
+            ? "Откройте потенциал терапии стволовыми клетками и регенеративной медицины в Турции с AZPO Health"
             : "Discover the Potential of Stem Cell Therapy & Regenerative Medicine in Turkey with AZPO Health",
         content:
           locale === "ru"
-            ? `
-           <p>Considering undergoing medical treatment in a foreign country can bring about several questions. Let's explore why Turkey has become a prominent destination for individuals seeking high-quality eye disease treatments.</p><p>Turkey has emerged as a leading hub for medical tourism, and for good reason. One of the primary attractions is the affordability of medical procedures compared to many European countries, the United States, or the UK. This cost-effectiveness extends to various medical fields, including specialized eye care. You can potentially access advanced treatments and consultations with experienced medical professionals at a significantly lower cost without compromising on the quality of care.</p><p>Beyond the financial aspect, Turkey boasts a cadre of well-educated and experienced doctors and healthcare staff. Many Turkish medical professionals have received training in internationally recognized institutions and possess extensive experience in diagnosing and treating a wide spectrum of eye diseases. The healthcare professionals in Turkey often perform a high volume of procedures annually, contributing to their skill and expertise.</p><p>Furthermore, Turkey is home to modern and well-equipped medical facilities, including hospitals and clinics that utilize cutting-edge technology in diagnostics and treatment. This commitment to advanced medical infrastructure ensures that patients have access to the latest innovations in eye care.</p><p>Another compelling reason to consider Turkey for your eye disease treatment is the opportunity for medical tourism. Istanbul, in particular, is a highly visited city with a rich history and culture. Combining your treatment with a chance to explore historical sites, experience a vibrant culture, and enjoy the hospitality of Turkey can make your medical journey a more positive and memorable experience.</p><p>Moreover, facilities like Hospital believe in staying ahead of the curve by constantly researching and learning from the best surgeons and clinics around the world, adopting the best techniques to provide the best possible care for their patients. This dedication to continuous improvement suggests a commitment to providing high standards in medical treatments.</p><h3><strong>Understanding Eye Disease Treatments Available</strong></h3><p>Eye diseases encompass a broad range of conditions that can affect different parts of the eye and impact vision. Accessing appropriate and timely treatment is crucial for managing these conditions, preventing vision loss, and maintaining overall eye health. While the specific types of treatments available depend on the individual diagnosis, let's discuss some general categories and considerations for eye disease treatments you might find in Turkey through AZPO Health.</p><p>It's important to recognize that clear communication between you and the medical team is paramount for achieving optimal results. Therefore, a thorough consultation is a vital first step in any treatment process.</p><p>For individuals with common vision problems like nearsightedness (myopia), farsightedness (hyperopia), or astigmatism, refractive surgeries such as LASIK or PRK might be options to reduce or eliminate the need for glasses or contact lenses. Another innovative technique for vision correction is intraocular lens implantation (IOL), which involves replacing the eye's natural lens with an artificial one to improve vision. Turkey offers these advanced vision correction procedures with experienced ophthalmologists and modern technology.</p><p>Cataracts, a clouding of the eye's natural lens, are a common age-related condition that can impair vision. Treatment typically involves cataract surgery, where the clouded lens is removed and replaced with a clear artificial lens. This is a widely performed procedure in Turkey with high success rates.</p><p>Glaucoma is a condition that damages the optic nerve, often due to increased pressure inside the eye. Various treatments are available to manage glaucoma and prevent vision loss, including eye drops, laser therapy, and surgery. Timely diagnosis and consistent management are crucial for this condition.</p><p>Retinal disorders, such as macular degeneration and diabetic retinopathy, can affect the light-sensitive tissue at the back of the eye. Treatments for these conditions may include laser therapy, injections, and surgery, depending on the specific diagnosis and stage of the disease.</p><p>Eye infections, injuries, and other less common eye diseases also require specialized medical attention. Turkey's comprehensive healthcare system includes specialists who can diagnose and treat these conditions effectively.</p><p>Furthermore, for individuals considering cosmetic procedures related to the eyes, such as blepharoplasty (eyelid surgery) to address drooping eyelids or under-eye bags, Turkey offers experienced plastic surgeons who can perform these procedures. While primarily cosmetic, blepharoplasty can sometimes improve vision if excess upper eyelid skin obstructs the field of view.</p><p>When you choose AZPO Health for your eye disease treatment in Turkey, you can expect a personalized approach. The medical team will conduct a thorough assessment of your condition, discuss your treatment options in detail, and tailor a plan to meet your specific needs and goals. Clear explanations of the procedures, potential benefits, and any associated risks will be provided to help you make informed decisions about your eye care journey.</p><h3><strong>AZPO Health: Your Partner in Eye Health in Turkey</strong></h3><p>AZPO Health is a reputable medical tourism company in Turkey dedicated to providing high-quality healthcare services to international patients. We understand that seeking medical treatment abroad can be a significant decision, and we are here to guide you through every step of the process.</p><p>Our network includes experienced and skilled ophthalmologists and medical facilities across top touristic destinations in Turkey. We carefully select our partners based on their expertise, reputation, and commitment to patient care. When you choose AZPO Health, you can be confident that you will be connected with qualified medical professionals who specialize in treating a wide range of eye diseases.</p><p>We prioritize clear and open communication to ensure that you are fully informed and comfortable throughout your treatment journey. From your initial inquiry to your post-treatment follow-up, our team will be available to answer your questions, address your concerns, and provide the support you need. We can assist with arranging virtual consultations, helping you understand your treatment options, and coordinating your travel and accommodation in Turkey.</p><p>AZPO Health is committed to facilitating a seamless and stress-free medical travel experience. We strive to provide personalized care that is tailored to your individual needs and preferences. Our goal is to ensure that you receive the best possible medical treatment while enjoying a comfortable and positive experience in Turkey.</p><h3><strong>Take the First Step Towards Clearer Vision</strong></h3><p>Don't let eye diseases compromise your vision and quality of life. Contact AZPO Health today for a free consultation and personalized quote for your eye disease treatment in Turkey. Our dedicated team is ready to answer your questions and guide you on your journey to better eye health.</p><p><br></p>
-            `
+            ? `<p dir="ltr">Турция стала одним из ведущих направлений медицинского туризма &mdash; и на это есть веские причины. В таких передовых сферах, как терапия стволовыми клетками и регенеративная медицина, страна предлагает множество преимуществ для пациентов со всего мира. Одним из ключевых факторов является доступная стоимость лечения по сравнению с большинством европейских стран, Великобританией и США. При этом качество медицинской помощи остаётся на высоком уровне: клиники оборудованы по последнему слову техники и работают с опытными, квалифицированными специалистами.</p>
+<p dir="ltr">Помимо финансовых выгод, в Турции активно развивается система здравоохранения с множеством авторитетных медицинских центров и врачей, которые получают всё больше признания в таких специализированных направлениях, как терапия стволовыми клетками. Благодаря удачному расположению Турции добраться сюда удобно из разных уголков мира, а сочетание медицинского лечения с погружением в уникальную культуру и историю страны превращает процесс восстановления в полноценное и вдохновляющее путешествие.</p>
+<p dir="ltr">Терапия стволовыми клетками &mdash; это революционный подход в медицине, основанный на способности организма к самовосстановлению. Стволовые клетки обладают уникальной способностью к самоподдержанию и превращению в различные специализированные типы клеток, что делает их незаменимыми для восстановления повреждённых тканей и лечения широкого спектра заболеваний. В рамках регенеративной медицины терапия стволовыми клетками занимает центральное место, предлагая новые решения для состояний, которые ранее считались неизлечимыми.</p>
+<p dir="ltr">AZPO Health предоставляет доступ к этим передовым методам лечения как для мужчин, так и для женщин, адаптируя протоколы под индивидуальные особенности пациента и его диагноз. Источником стволовых клеток могут быть мезенхимальные клетки, полученные из жировой ткани или костного мозга пациента, а также фетальные стволовые клетки &mdash; выбор зависит от состояния пациента. Количество вводимых клеток и график процедур подбираются индивидуально с учётом возраста, веса и медицинских показаний. Протоколы могут включать несколько сеансов с интервалами или проходить в формате последовательных дней &mdash; всё зависит от конкретной ситуации.</p>
+<p dir="ltr">Для мужчин терапия стволовыми клетками активно изучается при ряде состояний, включая эректильную дисфункцию (ЭД). Исследования показывают, что терапия стволовыми клетками может стать эффективной альтернативой для мужчин, не реагирующих на традиционные методы лечения ЭД. В клинических испытаниях изучалось применение аутологичных регенеративных клеток, полученных из жировой ткани (ADRCs), и получены обнадеживающие результаты по восстановлению эректильной функции, особенно у мужчин с постоперационной ЭД (например, после простатэктомии). Кроме того, терапия стволовыми клетками рассматривается как малоинвазивный метод лечения болезни Пейрони &mdash; для уменьшения искривления, боли и улучшения эректильной функции за счет восстановления тканей.</p>
+<p dir="ltr">Ортопедическая терапия стволовыми клетками открывает новые возможности для пациентов с заболеваниями опорно-двигательного аппарата. Стволовые клетки могут вводиться непосредственно в пораженные области, например, в суставы, чтобы стимулировать регенерацию и восстановление тканей, снижать боль и улучшать подвижность. Это направление особенно актуально при остеоартрите и других дегенеративных заболеваниях суставов, предлагая менее инвазивную альтернативу хирургическому вмешательству или ускоряя восстановление после операций. Мезенхимальные стволовые клетки, способные превращаться в костную, хрящевую и соединительную ткань, находят здесь особое применение.</p>
+<p dir="ltr">Неврологическая терапия стволовыми клетками &mdash; еще одно перспективное направление. Неврологические расстройства, включая поражения центральной и периферической нервной системы, создают значительное бремя для пациентов и систем здравоохранения. Стволовые клетки могут использоваться для восстановления поврежденных нервных тканей или модуляции патологических процессов. Клинические исследования уже охватывают использование нейрональных, гемопоэтических и мезенхимальных стволовых клеток при рассеянном склерозе, инсульте, травмах спинного мозга и других состояниях. Хотя область ещё развивается, первые результаты обнадеживают и показывают потенциал для улучшения качества жизни пациентов.</p>
+<p dir="ltr">В лечении аутоиммунных и воспалительных заболеваний терапия стволовыми клетками рассматривается как способ модулировать иммунную систему и снижать воспаление. Аутоиммунные заболевания возникают, когда иммунитет начинает атаковать собственные ткани организма. Гемопоэтическая трансплантация стволовых клеток (HSCT) позволяет &laquo;перезапустить&raquo; иммунную систему и используется при тяжелых, устойчивых к лечению аутоиммунных патологиях. Кроме того, мезенхимальные стволовые клетки обладают выраженными иммуносупрессивными свойствами и исследуются в терапии ряда воспалительных и аутоиммунных состояний.</p>
+<p dir="ltr">Гемопоэтическая трансплантация стволовых клеток &mdash; это уже признанный метод лечения различных заболеваний крови и онкологических заболеваний. Процедура заключается в замене повреждённых или дефектных кроветворных клеток на здоровые. Применяются как собственные (аутологичные) стволовые клетки пациента, так и донорские (аллогенные). Данный вид лечения жизненно важен при таких диагнозах, как лейкемия, лимфома и другие гематологические заболевания, открывая путь к ремиссии или даже излечению.</p>
+<p dir="ltr">В AZPO Health мы понимаем, насколько важно иметь доверие и четкую информацию при выборе терапии стволовыми клетками. Наша опытная команда оказывает полную поддержку: от первой консультации до послеоперационного ухода. Мы сотрудничаем с проверенными медицинскими учреждениями Турции, соблюдающими высокие стандарты безопасности и качества, чтобы вы получили лучшее лечение на всех этапах пути к выздоровлению.</p>
+<h3 dir="ltr">Почему стоит выбрать AZPO Health для терапии стволовыми клетками в Турции?</h3>
+<p dir="ltr">AZPO Health &mdash; ведущий оператор медицинского туризма в Турции, специализирующийся на организации высококачественного лечения, включая терапию стволовыми клетками и регенеративную медицину. Мы ставим во главу угла здоровье и комфорт наших пациентов, обеспечивая максимально гладкое и надежное медицинское путешествие. Наши ключевые преимущества:</p>
+<p dir="ltr">&bull; Индивидуальный подход: мы понимаем, что каждый случай уникален, поэтому разрабатываем персонализированные планы лечения совместно с опытными специалистами, учитывая особенности вашего состояния и потребности организма.</p>
+<p dir="ltr">&bull; Доступ к ведущим специалистам: мы сотрудничаем только с проверенными клиниками и медицинскими центрами Турции, обладающими высокой экспертизой в области терапии стволовыми клетками и регенеративной медицины.</p>
+<p dir="ltr">&bull; Комплексное сопровождение: от первой консультации и организации поездки до постпроцедурного наблюдения &mdash; вы получаете полную поддержку на всех этапах лечения.</p>
+<p dir="ltr">&bull; Высокие стандарты качества и безопасности: все партнерские медицинские учреждения соответствуют международным протоколам и требованиям, гарантируя пациентам безопасную и эффективную терапию.</p>
+<p dir="ltr">&bull; Прозрачность и честность: мы предоставляем понятную и подробную информацию о методах лечения, процедурах и стоимости &mdash; никаких скрытых условий.</p>
+<p dir="ltr">&bull; Международная аккредитация: Турция занимает одно из ведущих мест в мире по числу медицинских учреждений, аккредитованных по стандарту JCI. По состоянию на март 2025 года в стране насчитывается 30 таких клиник.</p>
+<p dir="ltr">Сделайте первый шаг к восстановлению здоровья уже сегодня. Свяжитесь с AZPO Health &mdash; получите бесплатную консультацию и индивидуальное предложение. Мы поможем вам раскрыть потенциал современной терапии стволовыми клетками и вернуть качество жизни.</p>
+<p dir="ltr">&nbsp;</p>`
             : `
          <p>Turkey has emerged as a significant destination for medical tourism, and for good reason. When it comes to cutting-edge fields like <strong>Stem Cell Therapy &amp; Regenerative Medicine in Turkey</strong>, several factors make it an attractive option for patients worldwide. One of the primary advantages is the affordability of treatments compared to many European countries, the UK, and the USA. This cost-effectiveness does not compromise the quality of care, as Turkish medical facilities are often equipped with advanced technologies and staffed by experienced professionals.</p><p>Beyond the financial benefits, Turkey boasts a healthcare system with numerous reputable medical centers and skilled practitioners who are gaining recognition in specialized areas such as stem cell therapy. The country's strategic location also makes it easily accessible, and combining medical treatment with the opportunity to experience Turkey's rich history and culture can enhance the overall patient experience.</p><p><strong>Stem Cell Therapy</strong> represents a revolutionary approach to medicine by harnessing the body's own regenerative capabilities. Stem cells are unique in their ability to self-renew and differentiate into various specialized cell types, making them invaluable for repairing damaged tissues and treating a wide range of diseases. In the realm of <strong>regenerative medicine</strong>, stem cell therapy is a cornerstone, offering potential solutions for conditions that were once considered untreatable.</p><p>AZPO Health is dedicated to providing access to these groundbreaking <strong>Stem Cell Treatments for Men</strong> and women, tailoring protocols to individual patient needs and medical conditions. The source of stem cells can vary, including mesenchymal stem cells derived from the patient's own adipose tissue or bone marrow, as well as fetal stem cells, with the specific choice depending on the patient's condition. The number of cells administered and the treatment schedule are carefully determined based on factors such as age, weight, and the specific condition being addressed. Treatment can involve multiple sessions spaced over time or consecutive-day protocols, ensuring a personalized approach for each patient.</p><p>For men, <strong>Stem Cell Treatments for Men</strong> are being explored for various conditions, including erectile dysfunction (ED). Research suggests that stem cell therapy may offer a promising alternative for men who are unresponsive to traditional ED treatments. Clinical trials have investigated the use of autologous adipose-derived regenerative cells (ADRCs) with some success in improving erectile function, particularly in men who developed ED after prostatectomy. While further research is needed, stem cell therapy presents a less invasive option compared to other interventions. Additionally, stem cell therapy is being considered for Peyronie's disease, aiming to address penile curvature, pain, and erectile dysfunction through tissue regeneration.</p><p><strong>Orthopedic Stem Cell Therapy</strong> offers hope for individuals suffering from various musculoskeletal conditions. Stem cells can be injected into targeted areas, such as joints, to stimulate healing and tissue regeneration, potentially alleviating pain and improving mobility. This approach is being explored for conditions like osteoarthritis and other degenerative joint diseases, aiming to provide a less invasive alternative to surgery or to enhance recovery after orthopedic procedures. The use of mesenchymal stem cells, known for their ability to differentiate into bone, cartilage, and other connective tissues, makes them particularly relevant in orthopedic applications.</p><p><strong>Neurological Stem Cell Therapy</strong> is another exciting area of research and potential treatment. Neurological disorders, encompassing a wide range of conditions affecting the central and peripheral nervous systems, represent a significant global disease burden. Stem cell therapy offers a promising avenue for treating these complex conditions by using stem cells to repair damaged neural tissues or modulate disease processes. Clinical trials have explored the application of various types of stem cells, including neural, hematopoietic, and mesenchymal stem cells, for neurological indications such as multiple sclerosis, stroke, and spinal cord injuries. While the field is still evolving, early studies suggest the potential of stem cell therapy to improve the quality of life for individuals with neurological disorders.</p><p>In the realm of <strong>Autoimmune and Inflammatory Conditions</strong>, stem cell therapy is being investigated for its potential to modulate the immune system and reduce inflammation. Autoimmune diseases occur when the body's immune system mistakenly attacks healthy tissues. Stem cell therapy, particularly hematopoietic stem cell transplantation (HSCT), aims to "reset" the immune system, offering a potential treatment for severe autoimmune conditions that have not responded to conventional therapies. Mesenchymal stem cells also possess immunomodulatory properties, making them a subject of interest in the treatment of various inflammatory and autoimmune diseases.</p><p><strong>Hematopoietic (Blood) Stem Cell Transplants</strong> are an established treatment for various blood disorders and cancers. This procedure involves replacing damaged or defective blood-forming stem cells with healthy ones. Autologous HSCT uses the patient's own stem cells, while allogeneic HSCT uses stem cells from a compatible donor. This type of stem cell transplant is crucial for treating conditions like leukemia, lymphoma, and other blood-related diseases, offering the possibility of a cure or long-term disease control.</p><p>At AZPO Health, we understand that considering stem cell therapy involves many questions and a need for trust and reliable information. Our experienced team is committed to providing comprehensive support, from the initial consultation to post-treatment care. We work with reputable medical facilities in Turkey that adhere to high standards of safety and quality, ensuring that patients receive the best possible care throughout their treatment journey.</p><p><br></p><h3><strong>Why Choose AZPO Health for Your Stem Cell Therapy in Turkey?</strong></h3><p>AZPO Health is a leading medical tourism facilitator in Turkey, specializing in connecting patients with high-quality medical treatments, including <strong>Stem Cell Therapy &amp; Regenerative Medicine in Turkey</strong>. We prioritize patient well-being and strive to make your medical journey as seamless and comfortable as possible. Our services include:</p><ul><li><strong>Personalized Treatment Plans:</strong> We understand that each patient is unique, and we work closely with medical professionals to develop treatment plans tailored to your specific condition and needs.</li><li><strong>Access to Experienced Specialists:</strong> We partner with reputable clinics and hospitals in Turkey that have expertise in various <strong>Stem Cell Therapy</strong> applications.</li><li><strong>Comprehensive Support:</strong> From initial consultation and travel arrangements to post-treatment follow-up, we provide comprehensive support every step of the way.</li><li><strong>Commitment to Quality and Safety:</strong> We ensure that the medical facilities we work with adhere to international standards of quality and safety.</li><li><strong>Transparent Communication:</strong> We provide clear and transparent information about treatment options, procedures, and costs.</li></ul><p>Take the first step towards exploring the potential benefits of <strong>Stem Cell Therapy &amp; Regenerative Medicine in Turkey</strong>. Contact AZPO Health today for a free consultation and personalized quote. Discover how our tailored treatments can help you on your journey to improved health and well-being.</p>
         `,
@@ -4369,58 +4381,58 @@ export const dataSubCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Пересадка волос методом FUE: восстановите густоту и естественную красоту волос на долгие годы"
+          ? "Пересадка волос методом FUE в Турции | Страдаете от выпадения волос?"
           : "FUE Hair Transplant in Turkey | Struggling with Hair Loss?",
       descriptionTop:
         locale === "ru"
-          ? "Устали от редеющих волос и залысин? Откройте для себя пересадку волос методом FUE в Турции – современную технологию, обеспечивающую минимальную инвазивность и естественный результат. Верните себе уверенность и молодость вместе с AZPO Health!"
+          ? "Тонкие волосы, залысины или облысение мешают вам чувствовать себя уверенно? Это касается не только внешности — потеря волос влияет на внутреннее состояние и настроение. Но есть выход. Пересадка волос по технологии FUE в Турции — это современное, безопасное и малотравматичное решение. Натуральный результат, отсутствие рубцов и разумная стоимость делают этот метод популярным во всем мире. Пора снова полюбить свое отражение в зеркале!"
           : "Thinning hair, a receding hairline, or bald patches stealing your confidence? You’re not alone. Hair loss isn’t just cosmetic—it affects how you feel every day. But there’s a solution. Advanced FUE hair transplants in Turkey offer natural, scar-free results at a fraction of the cost. Ready to restore your look?",
       benefits: {
         items: [
           {
             title:
               locale === "ru"
-                ? "Минимально инвазивная процедура"
+                ? "Минимально инвазивная техника"
                 : "Minimally invasive procedure",
             desc:
               locale === "ru"
-                ? "минимальная травматизация тканей и быстрое восстановление."
+                ? "щадящий подход, меньше травм кожи и быстрое восстановление."
                 : "A gentle surgical technique that reduces trauma and promotes faster healing.",
           },
           {
             title:
               locale === "ru"
-                ? "Отсутствие видимых шрамов"
+                ? "Без заметных рубцов"
                 : "No visible scars",
             desc:
               locale === "ru"
-                ? "процедура оставляет минимальные рубцы, сохраняя естественный внешний вид."
+                ? "остаются лишь микроскопические следы, незаметные глазу."
                 : "The procedure leaves minimal scarring, maintaining a natural appearance.",
           },
           {
             title:
               locale === "ru"
-                ? "Естественность пересаженных волос"
+                ? "Естественный результат"
                 : "Natural look of transplanted hair",
             desc:
               locale === "ru"
-                ? "пересаженные волосы гармонично вписываются в естественную линию роста, обеспечивая натуральный результат."
+                ? "волосы после пересадки выглядят так же натурально, как и родные."
                 : "Results blend seamlessly with existing hair for authentic appearance.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Кому это подходит" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Процедура подходит как мужчинам, так и женщинам с локальными участками выпадения волос, но требуется достаточное количество здоровых волос в донорской зоне."
+                ? "FUE (Follicular Unit Extraction — экстракция фолликулярных единиц) — это современная техника пересадки волос. Отдельные волосяные фолликулы берутся из донорской зоны (обычно с затылочной части головы) и пересаживаются в участки с облысением или истончением волос. Это позволяет восстановить естественную густоту и внешний вид волос."
                 : "The FUE method (Follicular Unit Extraction) is a hair restoration technique in which individual hair follicles are extracted from the donor area of the scalp (usually from the back of the head) and transplanted to areas with hair loss or thinning to restore natural density and appearance.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? null : "How it works",
             desc:
               locale === "ru"
-                ? "Волосяные фолликулы аккуратно извлекаются и имплантируются в заранее подготовленные микроканалы в проблемной зоне. Это обеспечивает естественную густоту волос и стимулирует их рост."
+                ? null
                 : "Extraction: Hair follicles are taken from the donor area. Preparation: Follicles are sorted and preserved. Implantation: Placed into tiny channels in the recipient area. Growth: Hair grows naturally over time.",
           },
           {
@@ -4472,112 +4484,171 @@ export const dataSubCategoryHandler = (
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Метод FUE – это современный, безопасный и эффективный способ восстановления волос, который подходит большинству пациентов. Однако успех процедуры зависит от выбора квалифицированной клиники и строгого соблюдения послепроцедурных рекомендаций."
+            ? "Метод FUE — это безопасный, эффективный и проверенный способ восстановить волосы и уверенность в себе. Он подходит большинству пациентов, однако успех процедуры во многом зависит от выбора клиники и соблюдения всех рекомендаций после пересадки."
             : "The FUE method is a modern, safe, and effective way to restore hair. It is suitable for most patients, but success depends on selecting the right clinic and adhering to post-procedure recommendations.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Подробное описание процедуры пересадки волос FUE (Follicular Unit Extraction)"
+            ? "Почему стоит выбрать Турцию для пересадки волос методом FUE"
             : "Why Choose Turkey for Your FUE Hair Transplant?",
         content:
           locale === "ru"
-            ? `<p dir="ltr">Выпадение волос может существенно повлиять на вашу самооценку и уверенность в себе. К счастью, современные методы пересадки волос, такие как FUE (Follicular Unit Extraction), предлагают эффективное и долговечное решение этой проблемы. AZPO Health предоставляет высококачественные услуги по пересадке волос в Турции, предлагая передовые технологии, опытных специалистов и доступные цены.</p>
-<h3 dir="ltr">Почему Турция &ndash; идеальное место для пересадки волос?</h3>
-<p dir="ltr">Турция стала одним из ведущих направлений медицинского туризма, особенно в области пересадки волос, и этому есть несколько причин:</p>
+            ? `<p dir="ltr">Турция давно зарекомендовала себя как один из ведущих мировых центров по пересадке волос, привлекая пациентов со всего мира. Этому способствуют сразу несколько факторов, которые делают страну идеальным выбором для восстановления волос с помощью метода FUE.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Доступность</h3>
+<p dir="ltr">Одно из ключевых преимуществ &mdash; заметно более низкая стоимость процедуры по сравнению с другими странами. Это связано с уровнем жизни и затрат на медицинские услуги в Турции. AZPO Health предлагает прозрачную ценовую политику, благодаря которой пациенты получают высококачественное лечение без финансового стресса. При этом итоговая стоимость зачастую на 60&ndash;70% ниже, чем в Европе или США.</p>
+<h3 dir="ltr">&nbsp;Высокий уровень медицины&nbsp;</h3>
+<p dir="ltr">Турецкие клиники оснащены по последнему слову техники и имеют большой опыт в области трансплантации волос. Многие врачи проводят пересадки уже более 25 лет, а в ряде клиник успешно выполнены десятки тысяч процедур. AZPO Health сотрудничает с ведущими специалистами страны и обеспечивает пациентов высоким уровнем медицинского сопровождения и впечатляющими результатами.</p>
+<h3 dir="ltr">Современные технологии</h3>
+<p dir="ltr">Турецкие клиники быстро внедряют новейшие разработки в области трансплантации волос. AZPO Health применяет передовые методики FUE и использует инновационное оборудование, что позволяет добиваться максимально естественного результата с минимальным травматизмом и быстрым восстановлением.</p>
+<h3 dir="ltr">Комплексные пакеты</h3>
+<p dir="ltr">Для иностранных пациентов AZPO Health предлагает комплексные пакеты &laquo;все включено&raquo;: переводы, трансферы, проживание, консультации, саму процедуру и послеоперационное сопровождение. Это упрощает организацию поездки и делает лечение комфортным и понятным.</p>
+<h3 dir="ltr">Идеальное направление для медицинского туризма</h3>
+<p dir="ltr">Турция &mdash; это не просто центр медицинского туризма, но и страна с теплым климатом, богатой историей и восточным гостеприимством. Объедините пересадку волос с путешествием по Стамбулу, Анталии, Аланье, Измиру или Каппадокии &mdash; и ваш визит превратится в яркое и вдохновляющее приключение.</p>
+<h2 dir="ltr">Пересадка волос методом FUE: что это и как работает?<br><br></h2>
+<p dir="ltr">FUE (Follicular Unit Extraction) : это современная методика пересадки волос, при которой отдельные волосяные фолликулы извлекаются из донорской зоны (обычно с затылка) и пересаживаются в области с выпадением волос. Метод FUE отличается минимальной инвазивностью, естественным внешним видом и сравнительно быстрым восстановлением.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Процедура FUE: пошаговая инструкция</h3>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Консультация и планирование: на первом этапе вы встречаетесь с хирургом AZPO Health, который оценивает состояние волос, обсуждает ваши цели и определяет, подходит ли вам метод FUE. Врач осматривает кожу головы, оценивает плотность волос в донорской зоне и разрабатывает индивидуальный план для достижения желаемой линии роста и густоты волос.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подготовка: в день проведения процедуры при необходимости осуществляется стрижка или бритье волос в области донорства. Кожа головы тщательно очищается, затем вводится местная анестезия, чтобы обезболить донорскую и реципиентную зоны и сделать процесс максимально комфортным.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Извлечение фолликулов: с помощью специального микроинструмента диаметром от 0,7 до 1,1 мм хирург аккуратно извлекает отдельные фолликулы из донорской зоны. Процедура проводится максимально бережно, чтобы сохранить целостность фолликулов и минимизировать травму кожи.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сохранение фолликулов: извлеченные фолликулы помещаются в специальный раствор (гипотермозоль), который поддерживает их жизнеспособность до момента пересадки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подготовка реципиентной зоны: в области выпадения волос делаются маленькие надрезы с учетом направления и угла роста волос, а также их густоты &mdash; это создает каналы для имплантации фолликулов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Имплантация фолликулов: фолликулы аккуратно размещаются в подготовленные каналы с учетом естественного направления роста волос, чтобы результат выглядел максимально натурально.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Послеоперационный уход: после процедуры вы получите подробные рекомендации по уходу за пересаженными волосами &mdash; как правильно мыть голову, какие препараты применять для предотвращения инфекции и какие нагрузки стоит временно исключить.<br><br></p>
+</li>
+</ol>
+<h3 dir="ltr">Преимущества метода FUE</h3>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступность: стоимость процедур в Турции значительно ниже, чем в Европе или Северной Америке. Это объясняется более низкими затратами на проживание и оплату труда, что позволяет клиникам предлагать конкурентоспособные цены без ущерба для качества. AZPO Health придерживается прозрачной ценовой политики, обеспечивая пациентов высококачественным лечением без переплат.</p>
+<p dir="ltr" role="presentation">Минимальная инвазивность: без крупных разрезов и швов, что снижает риск рубцевания и ускоряет восстановление.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Качество и опыт: турецкие клиники оснащены современным оборудованием и работают с высококвалифицированными врачами, имеющими многолетний опыт в области восстановления волос. Многие специалисты обладают более чем 25-летним стажем, что гарантирует высокий уровень профессионализма. AZPO Health гордится своей репутацией и опытом, обеспечивая пациентам уход на высшем уровне.</p>
+<p dir="ltr" role="presentation">Естественный внешний вид: точное размещение каждого фолликула обеспечивает натуральную линию роста и густоту волос.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Передовые технологии: турецкие клиники активно инвестируют в новейшие медицинские технологии и оборудование, предлагая пациентам самые современные методы лечения. AZPO Health постоянно следит за инновациями в области пересадки волос, чтобы обеспечивать своим пациентам наилучшие результаты.</p>
+<p dir="ltr" role="presentation">Универсальность: подходит для различных типов и текстур волос.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комплексные пакеты услуг: многие клиники, в том числе AZPO Health, предлагают комплексные пакеты, которые охватывают все этапы лечения. Включает VIP-трансфер, проживание, послеоперационный уход и другие удобства.</p>
+<p dir="ltr" role="presentation">Отсутствие линейного рубца: в отличие от метода FUT, при FUE не остается заметного рубца в донорской зоне, что особенно важно для любителей коротких стрижек.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Медицинский туризм: Турция имеет удобное расположение, соединяя Европу и Азию, что делает ее легкодоступной для международных пациентов. Богатая история и культурное наследие страны предлагают пациентам незабываемые впечатления, помимо высококачественного медицинского обслуживания.</p>
+<p dir="ltr" role="presentation">Возможность частичной стрижки: необязательно сбривать всю голову.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">Передовые методы пересадки волос от AZPO Health</h3>
-<p dir="ltr">Мы предлагаем широкий выбор методов пересадки волос, учитывая индивидуальные потребности каждого пациента.</p>
+<h3 dir="ltr">Подходит ли вам метод FUE?</h3>
+<p dir="ltr">Метод FUE подходит людям с различными типами выпадения волос, включая:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">FUE (Follicular Unit Extraction): метод FUE заключается в извлечении отдельных волосяных фолликулов из донорской зоны (обычно с задней части головы) и их пересадке в область, где наблюдается выпадение волос. Этот метод является минимально инвазивным и не требует разрезов или швов, что способствует минимальному рубцеванию и более быстрому восстановлению.</p>
+<p dir="ltr" role="presentation">Андрогенетическую алопецию у мужчин.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">DHI (Direct Hair Implantation): DHI &mdash; усовершенствованная версия FUE, при которой используются специализированные инструменты, такие как ручка Choi, для прямой имплантации волосяных фолликулов в кожу головы. Это обеспечивает более высокую точность и контроль над углом и глубиной имплантации, что позволяет достичь более естественного результата. Метод DHI также позволяет проводить пересадку волос без необходимости бритья.</p>
+<p dir="ltr" role="presentation">Андрогенетическую алопецию у женщин.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Sapphire FUE: Sapphire FUE &mdash; это усовершенствованный метод FUE, при котором используются сапфировые лезвия. Сапфировые лезвия создают более гладкие и точные разрезы по сравнению с традиционными стальными, что минимизирует повреждение тканей и способствует более быстрому заживлению. Метод Sapphire FUE также позволяет более плотно размещать волосяные фолликулы, что обеспечивает большую общую плотность волос.</p>
+<p dir="ltr" role="presentation">Редеющую линию волос.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Истончение волос.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Выпадение волос после травм или ожогов.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">Выбор метода пересадки волос зависит от индивидуальных особенностей пациента, степени выпадения волос и желаемого результата. Специалисты AZPO Health проведут тщательную консультацию, чтобы подобрать наиболее подходящий метод для вас.</p>
-<h3 dir="ltr">Преимущества пересадки волос</h3>
-<p dir="ltr">Пересадка волос обладает рядом преимуществ для тех, кто сталкивается с проблемой выпадения волос:</p>
+<p dir="ltr">Чтобы узнать, подходит ли вам этот метод, запишитесь на консультацию в AZPO Health для полного обследования и персональной рекомендации.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Современные технологии FUE от AZPO Health</h2>
+<p dir="ltr">AZPO Health предлагает самые передовые и эффективные техники пересадки волос методом FUE для достижения лучших результатов.</p>
+<h3 dir="ltr">Сапфировый FUE</h3>
+<p dir="ltr">Сапфировый FUE &mdash; разновидность метода, при которой для надрезов используются лезвия из сапфира. Они создают более гладкие и точные разрезы по сравнению с обычными стальными лезвиями, что снижает повреждение тканей и ускоряет заживление. Благодаря сапфировым лезвиям возможно более плотное размещение фолликулов, что обеспечивает более густые волосы.</p>
+<h3 dir="ltr">Прямая имплантация волос (DHI)</h3>
+<p dir="ltr">DHI &mdash; усовершенствованная версия FUE с использованием специального инструмента &mdash; ручки-имплантера Choi. Он позволяет одновременно создавать каналы и имплантировать фолликулы, уменьшая время нахождения фолликулов вне организма и повышая их приживаемость. DHI обеспечивает более точное размещение фолликулов, что дает естественную линию роста волос и улучшенную густоту.</p>
+<h2 dir="ltr">Важность естественной линии роста волос</h2>
+<p dir="ltr">Линия роста волос &mdash; ключевой элемент успешной пересадки. Опытный хирург создаст натуральную линию, которая гармонирует с чертами вашего лица.</p>
+<h3 dir="ltr">Индивидуальный подход&nbsp;</h3>
+<p dir="ltr">На консультации врач оценивает структуру лица, обсуждает желаемую форму и плотность линии роста волос, учитывая возраст, пол и общую эстетику, чтобы сделать результат максимально естественным.</p>
+<h3 dir="ltr">Точная имплантация</h3>
+<p dir="ltr">Хирург аккуратно размещает отдельные фолликулы, повторяя естественный рисунок роста волос. По краю линии обычно имплантируют одиночные волосы для создания мягкого, натурального эффекта.</p>
+<h3 dir="ltr">Опыт AZPO Health</h3>
+<p dir="ltr">Хирурги AZPO Health обладают высоким уровнем мастерства и художественным подходом, что позволяет создавать абсолютно естественные и незаметные линии роста волос.</p>
+<h2 dir="ltr">Жизнь после пересадки волос методом FUE: чего ожидать&nbsp;</h2>
+<p dir="ltr">Понимание этапов восстановления после пересадки волос FUE &mdash; ключ к комфортному и успешному заживлению.</p>
+<h4 dir="ltr">Первые недели после процедуры</h4>
+<p dir="ltr">Сразу после процедуры возможны незначительные болевые ощущения, лёгкая отёчность и покраснение в зоне пересадки. Это нормальная реакция организма, и обычно такие симптомы проходят в течение нескольких дней. При необходимости врач порекомендует обезболивающие или подходящие безрецептурные средства для облегчения дискомфорта.</p>
+<p dir="ltr">Очень важно строго соблюдать послеоперационные рекомендации специалиста. Обычно они включают временный отказ от физической активности, ношение свободных головных уборов и бережное мытье головы с использованием специального шампуня.</p>
+<h3 dir="ltr">Фаза выпадения</h3>
+<p dir="ltr">В течение первых недель или месяцев может произойти временное выпадение пересаженных волос &mdash; это так называемая фаза &laquo;шоковой потери&raquo;. Поводов для беспокойства нет: волосяные фолликулы остаются на месте, и вскоре на их месте начнут расти новые крепкие волосы.</p>
+<h4 dir="ltr">Новый рост волос</h4>
+<p dir="ltr">Через несколько месяцев после процедуры вы заметите появление новых волос в зоне пересадки. Сначала они могут быть тонкими и редкими, но со временем станут гуще и крепче.</p>
+<h4 dir="ltr">Окончательный результат</h4>
+<p dir="ltr">Полное обновление и утолщение волос занимает до 12&ndash;18 месяцев. Терпение &mdash; ваш лучший союзник: результаты становятся всё более заметными с каждым месяцем.</p>
+<h4 dir="ltr">Долгосрочный уход</h4>
+<p dir="ltr">Хотя результаты пересадки FUE считаются постоянными, важно поддерживать здоровье волос: использовать щадящие шампуни, избегать агрессивной химии, защищать волосы от чрезмерного солнца, не пренебрегать регулярным уходом.<br><br></p>
+<h4 dir="ltr">Питание и физическая активность</h4>
+<p dir="ltr">Здоровое питание после процедуры важно не только для общего самочувствия, но и для роста новых волос. Белки, витамины и минералы &mdash; необходимые строительные материалы для ваших фолликулов.</p>
+<p dir="ltr">Физические нагрузки можно постепенно возвращать через 1&ndash;2 недели после пересадки. Легкие занятия, например, прогулки или йога, допустимы раньше, а интенсивные тренировки лучше отложить, чтобы дать коже головы время на восстановление.</p>
+<h3 dir="ltr">PRP-терапия: как усилить эффект от пересадки волос FUE</h3>
+<p dir="ltr">Терапия обогащенной тромбоцитами плазмой (PRP) &mdash; это современный метод регенеративного лечения, который помогает улучшить результаты пересадки волос методом FUE.</p>
+<h4 dir="ltr">Как работает PRP</h4>
+<p dir="ltr">Процедура начинается с забора небольшого количества вашей крови. Её обрабатывают в специальной центрифуге, чтобы получить концентрат тромбоцитов &mdash; компонентов, богатых факторами роста. Этот концентрат затем вводится в кожу головы, где стимулирует регенерацию тканей, улучшает кровообращение и активизирует рост волос..</p>
+<h3 dir="ltr">Преимущества PRP</h3>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Долговечное решение: пересаженные волосяные фолликулы берутся из областей кожи головы, генетически устойчивых к выпадению волос. Это гарантирует, что пересаженные волосы будут продолжать расти на протяжении многих лет.</p>
+<p dir="ltr" role="presentation">Ускоряет восстановление после процедуры<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Естественный вид: опытные хирурги могут создать естественную линию роста волос, которая будет гармонировать с вашими чертами лица и возрастом. AZPO Health использует передовые методы, чтобы достичь максимально естественных результатов.</p>
+<p dir="ltr" role="presentation">Снижает воспаление и дискомфорт<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Повышение самооценки: восстановление густых волос может значительно улучшить вашу самооценку и уверенность в себе. Это может положительно повлиять на различные аспекты вашей жизни, включая социальные взаимодействия и карьерные возможности.</p>
+<p dir="ltr" role="presentation">Увеличивает густоту и прочность волос<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повышает выживаемость пересаженных фолликулов<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Укрепляет ослабленные волосы и стимулирует их рост<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">Что ожидать после пересадки волос</h3>
-<p dir="ltr">После пересадки волос важно иметь реалистичные ожидания. Пересаженные волосы могут сначала выпасть, прежде чем начнется новый рост. Для достижения полного результата может потребоваться несколько месяцев.</p>
-<p dir="ltr">Соблюдение послеоперационных инструкций, предоставленных вашим хирургом, имеет решающее значение для успешного результата пересадки волос. Это может включать отказ от интенсивной физической активности, ношение свободных головных уборов для защиты области лечения и прием назначенных лекарств.</p>
-<h3 dir="ltr">Уход за волосами после пересадки</h3>
-<p dir="ltr">Правильный уход за волосами после пересадки играет ключевую роль в сохранении результатов и поддержании здоровья пересаженных волос.</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Сбалансированная диета: здоровое питание, богатое витаминами и минералами, необходимо для нормального роста волос. Включайте в рацион продукты, богатые белком, цинком, железом и омега-3 жирными кислотами.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Избегайте стресса: стресс может негативно сказываться на состоянии волос, способствуя их выпадению. Чтобы снизить его влияние, уделяйте внимание методам расслабления и управления стрессом, таким как йога, медитация, прогулки на свежем воздухе или увлекательные хобби.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Откажитесь от курения: курение может ухудшить кровообращение в коже головы, что может повлиять на рост волос.</p>
-</li>
-</ul>
-<h3 dir="ltr">Отзывы клиентов</h3>
-<p dir="ltr">Многие пациенты, прошедшие пересадку волос в AZPO Health, выражают высокую степень удовлетворенности результатами и общим опытом. Они отмечают профессионализм и внимательность персонала, использование современного оборудования и естественный вид пересаженных волос.</p>
-<h3 dir="ltr">AZPO Health: ваш надежный партнер в восстановлении волос</h3>
-<p dir="ltr">AZPO Health &ndash; ведущая компания в сфере медицинского туризма, специализирующаяся на пересадке волос в Турции. Мы предлагаем:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Мировые медицинские учреждения: наши клиники в Стамбуле, Анталии и Алании оснащены современным оборудованием и соответствуют самым высоким стандартам качества.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Опытные врачи: наша команда состоит из высококвалифицированных хирургов с многолетним опытом в области восстановления волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальный подход: мы понимаем, что каждый пациент уникален, и разрабатываем индивидуальные планы лечения для достижения наилучших результатов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комплексная поддержка: мы предоставляем всестороннюю поддержку на протяжении всего вашего путешествия, от первоначальной консультации до послеоперационного ухода.</p>
-</li>
-</ul>
-<h3 dir="ltr">Сделайте первый шаг к густым волосам!</h3>
-<p dir="ltr">Не позволяйте проблемам с волосами повлиять на вашу уверенность! Свяжитесь с AZPO Health сегодня для бесплатной консультации и индивидуального расчета стоимости. Наша опытная медицинская команда оценит ваши потребности и разработает персонализированный план лечения, который поможет вам достичь желаемых результатов.</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Бесплатная консультация: поделитесь своими переживаниями по поводу выпадения волос, и наши опытные хирурги предложат вам профессиональные рекомендации, чтобы выбрать наиболее эффективное решение для восстановления.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальный расчет стоимости: узнайте точную стоимость вашего лечения и получите ясную картину всех необходимых затрат.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Преобразите свою жизнь: верните уверенность в себе и наслаждайтесь густыми, естественными волосами, о которых вы всегда мечтали.</p>
-</li>
-</ul>
-<p dir="ltr">Свяжитесь с нами прямо сейчас, чтобы узнать все о пересадке волос методом FUE в Турции и начать свой путь к восстановлению волос!</p>
+<h3 dir="ltr">Кому подходит PRP?</h3>
+<p dir="ltr">PRP-терапия может стать эффективным дополнением к пересадке волос методом FUE. Чтобы понять, подойдёт ли она именно вам, обсудите этот вопрос с врачом AZPO Health. Он оценит состояние ваших волос и кожи головы и подберет оптимальный план лечения.</p>
+<h2 dir="ltr">Почему стоит выбрать AZPO Health для пересадки волос методом FUE?</h2>
+<p dir="ltr">AZPO Health &mdash; ведущая компания в сфере медицинского туризма, специализирующаяся на пересадке волос в Турции. Мы сотрудничаем с клиниками, соответствующими международным стандартам, и предлагаем передовые технологии, опытных специалистов и индивидуальный подход к каждому пациенту.</p>
+<h3 dir="ltr">Репутация и профессионализм</h3>
+<p dir="ltr">У нас &mdash; богатый опыт успешных процедур по восстановлению волос и сотни довольных пациентов. Хирурги AZPO Health обладают высокой квалификацией и узкой специализацией в методе FUE, что позволяет добиваться естественного, стойкого результата.</p>
+<h3 dir="ltr">Гарантия качества&nbsp;</h3>
+<p dir="ltr">Мы придерживаемся строгих стандартов безопасности и стерильности. Все процедуры проводятся с использованием современного оборудования и сертифицированных материалов, а клиники соответствуют международным протоколам медицинской помощи.</p>
+<h3 dir="ltr">Индивидуальный подход&nbsp;</h3>
+<p dir="ltr">Каждый пациент уникален, и мы это ценим. Наши врачи учитывают особенности внешности, структуру волос, пожелания и цели пациента, чтобы разработать персональный план лечения с максимально предсказуемым и эстетичным результатом.</p>
+<h3 dir="ltr">Полное сопровождение&nbsp;</h3>
+<p dir="ltr">Наша команда поддержит вас на всех этапах: от первой онлайн-консультации до ухода после процедуры. Мы берем на себя организацию трансфера, проживания и все необходимое, чтобы ваше медицинское путешествие было комфортным и спокойным.</p>
+<h2 dir="ltr">Реальные истории пациентов&nbsp;</h2>
+<p dir="ltr">&nbsp;&laquo;Я много лет боролся с выпадением волос, и это сильно сказывалось на моей уверенности в себе. В какой-то момент я решился на пересадку волос и выбрал AZPO Health в Турции &mdash; и это было лучшее решение в моей жизни. Персонал оказался невероятно профессиональным и заботливым, а результат превзошел все ожидания. Я чувствую себя совершенно другим человеком!&raquo; &mdash; Джон Д.</p>
+<p dir="ltr">&laquo;Сначала я сомневалась, стоит ли ехать за границу на медицинскую процедуру, но AZPO Health сделали весь процесс простым и беззаботным. Клиника &mdash; на высшем уровне, а хирург &mdash; настоящий мастер. Я в восторге от своей новой линии роста волос и с уверенностью рекомендую AZPO Health всем, кто задумывается о пересадке волос.&raquo; &mdash; Сара М</p>
+<h2 dir="ltr">Сделайте первый шаг к густым и здоровым волосам!</h2>
+<p dir="ltr">Не давайте выпадению волос влиять на вашу жизнь! Обратитесь в AZPO Health уже сегодня &mdash; получите бесплатную консультацию и индивидуальный расчет стоимости. Наша команда экспертов подберет для вас оптимальный план лечения и поможет добиться естественного и стойкого результата.</p>
+<h3 dir="ltr">Бесплатная консультация&nbsp;</h3>
+<p dir="ltr">Обсудите вашу ситуацию с квалифицированными хирургами и получите рекомендации.</p>
+<h3 dir="ltr">Индивидуальный расчет</h3>
+<p dir="ltr">Подробный план лечения с прозрачной стоимостью, без скрытых платежей.</p>
+<h3 dir="ltr">Новая жизнь с новой прической</h3>
+<p dir="ltr">Верните себе уверенность и наслаждайтесь густыми, здоровыми волосами.</p>
+<h2 dir="ltr">Свяжитесь с нами сегодня!</h2>
 <p dir="ltr">&nbsp;</p>`
             : `
             <p dir="ltr">Turkey has become a leading destination for hair transplantation, attracting individuals from across the globe seeking effective and affordable solutions to hair loss. Several factors contribute to this popularity, making Turkey an attractive choice for your FUE hair transplant.</p>
@@ -4740,56 +4811,56 @@ export const dataSubCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "DHI Пересадка Волос в Турции: Естественно, Навсегда, Безболезненно!"
+          ? "DHI пересадка волос в Турции: естественный и стойкий результат!"
           : "DHI Hair Transplant in Turkey: Achieve Natural, Lasting Results!",
       descriptionTop:
         locale === "ru"
-          ? "Откройте для себя превосходство DHI пересадки волос в лучших клиниках Стамбула, Анталии и Алании. Гарантия естественных результатов и пожизненной густоты волос! "
+          ? "Страдаете от выпадения волос? Откройте для себя инновационную технику DHI в Турции — безболезненное и постоянное решение для естественного вида. AZPO Health предлагает профессиональный подход, комплексные пакеты услуг и впечатляющие результаты в лучших клиниках страны."
           : "Suffering from hair loss? Discover the innovative DHI technique in Turkey for a natural-looking, painless, and permanent solution. AZPO Health offers expertise, comprehensive packages, and stunning results in top locations in Turkey.",
       benefits: {
         items: [
           {
             title:
               locale === "ru"
-                ? "Выживаемость фолликулов"
+                ? "Высокая приживаемость"
                 : "Enhanced Follicle Survival",
             desc:
               locale === "ru"
-                ? "Минимальное время между извлечением и пересадкой улучшает приживаемость"
+                ? "Быстрая пересадка улучшает выживаемость фолликулов и эффективность процедуры."
                 : "Faster transplantation improves graft survival rates",
           },
           {
             title:
-              locale === "ru" ? "Бережное отношение к коже" : "Gentle on Skin",
+              locale === "ru" ? "Минимальная травматизация" : "Gentle on Skin",
             desc:
               locale === "ru"
-                ? "Современная техника снижает травматизацию и улучшает заживление"
+                ? "Современные технологии уменьшают повреждение кожи, ускоряя заживление."
                 : "Advanced technique reduces tissue trauma, leading to better healing and minimal scarring",
           },
           {
             title:
               locale === "ru"
-                ? "Естественный результат"
+                ? "Натуральный эффект"
                 : "Natural-Looking Results",
             desc:
               locale === "ru"
-                ? "Точное размещение обеспечивает естественный рост и направление волос"
+                ? "Точное размещение фолликулов обеспечивает естественный рост и внешний вид."
                 : "Precise control over placement ensures hair grows in natural patterns and angles",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? null : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? null
+                ? "Метод DHI (Direct Hair Implantation — прямая имплантация волос) представляет собой технику пересадки, при которой фолликулы извлекаются и сразу же имплантируются в кожу головы без предварительного создания каналов."
                 : "The DHI method (Direct Hair Implantation) is a hair transplant technique where hair follicles are extracted and immediately implanted into the scalp without the need to create channels beforehand.",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How it works",
             desc:
               locale === "ru"
-                ? "Волосяные фолликулы извлекаются с помощью микроинструмента и пересаживаются специальным имплантационным устройством (DHI-пером), которое одновременно создает канал и размещает волос. Это позволяет более точно контролировать угол, глубину и направление роста волос."
+                ? "Фолликулы волос извлекаются с помощью микроинструмента и пересаживаются специальным устройством — DHI-ручкой, которая одновременно создаёт канал и помещает волос. Это обеспечивает точный контроль над углом, глубиной и направлением роста волос."
                 : "Hair follicles are extracted using a micro-tool and transplanted with a special implanting device (DHI pen), which simultaneously creates a channel and places the hair. This allows for more precise control over the angle, depth, and direction of hair growth.",
           },
           {
@@ -4841,150 +4912,238 @@ export const dataSubCategoryHandler = (
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Метод DHI — это современная технология пересадки волос, обеспечивающая естественный результат с минимальными рисками."
+            ? "Метод DHI — это современная технология пересадки волос, которая обеспечивает естественный внешний вид с минимальными рисками и комфортным восстановлением."
             : "The DHI method is a modern hair transplant technology that ensures natural-looking results with minimal risks.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Почему Турция – лучшее место для DHI пересадки волос в 2025 году?"
+            ? "Почему стоит выбрать Турцию для пересадки волос?"
             : "Why Choose Turkey for Your Hair Transplant?",
         content:
           locale === "ru"
-            ? `<p dir="ltr">Турция прочно зарекомендовала себя как ведущее направление для пересадки волос, и на то есть веские причины. В 2025 году эта тенденция только укрепилась, предлагая пациентам со всего мира сочетание высокого качества, доступной цены и отличного сервиса. AZPO Health предоставляет полный спектр услуг, делая процесс пересадки волос максимально комфортным и эффективным.</p>
-<p dir="ltr">Преимущества выбора Турции для пересадки волос:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступная цена: Цены на пересадку волос в Турции значительно ниже, чем в Европе или США. Это позволяет получить качественную процедуру, не переплачивая. AZPO Health предлагает прозрачную ценовую политику и отсутствие скрытых платежей.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Высокое качество медицинских услуг: Турецкие клиники оснащены самым современным оборудованием, а врачи обладают многолетним опытом и международным признанием. AZPO Health сотрудничает с лучшими клиниками в Стамбуле, Анталии и Алании, гарантируя высочайшие стандарты медицинского обслуживания.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Опыт и профессионализм врачей: Турецкие хирурги имеют богатый опыт в проведении DHI пересадки волос. Они постоянно совершенствуют свои навыки и применяют самые передовые техники. AZPO Health гордится своей командой квалифицированных специалистов, обладающих художественным видением и техническим мастерством для создания естественной линии роста волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комплексный пакет услуг: AZPO Health предлагает полный пакет услуг, который включает в себя все этапы процедуры: от первой консультации до послеоперационного ухода. Вам не придется беспокоиться об организационных вопросах &ndash; мы все берем на себя. Пакет услуг AZPO Health включает VIP-трансфер, проживание в комфортабельном отеле и послеоперационный уход.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Удобное расположение: Турция имеет стратегическое расположение между Европой и Азией, что делает ее легкодоступной для пациентов со всего мира. Кроме того, Турция &ndash; это страна с богатой историей и культурой, что позволит вам совместить лечение с приятным отдыхом.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Медицинский туризм: Турция активно развивает направление медицинского туризма, предлагая иностранным пациентам комфортные условия и качественное обслуживание. AZPO Health имеет многолетний опыт работы с иностранными пациентами и знает, как сделать ваше пребывание в Турции максимально комфортным и безопасным.</p>
-</li>
-</ul>
-<h3 dir="ltr">Что такое DHI (Direct Hair Implantation) и как это работает?</h3>
-<p dir="ltr">DHI (Direct Hair Implantation) &ndash; это передовой метод пересадки волос, который является усовершенствованной версией FUE (Follicular Unit Extraction). Основное отличие заключается в способе имплантации волосяных фолликулов. При DHI используются специальные инструменты Choi Pen, которые позволяют одновременно открывать канал и имплантировать фолликул.</p>
-<p dir="ltr">Этапы процедуры DHI пересадки волос:</p>
+            ? `<p dir="ltr">Турция стала одним из ведущих направлений для пересадки волос, привлекая пациентов со всего мира, которые ищут доступные и качественные решения. Несколько ключевых факторов делают Турцию отличным выбором для медицинского туризма.</p>
+<h3 dir="ltr">Доступность</h3>
+<p dir="ltr">Одной из главных причин популярности Турции является выгодная стоимость процедур. Уровень жизни и затраты на труд здесь значительно ниже, чем в большинстве стран Европы и Северной Америки. Это позволяет клиникам предлагать конкурентоспособные цены без снижения качества обслуживания.</p>
+<h3 dir="ltr">Качество и опыт</h3>
+<p dir="ltr">Турецкие клиники оснащены современным оборудованием, а специалисты обладают высокой квалификацией и многолетним опытом в области пересадки волос. Многие из них успешно работают более 25 лет, что обеспечивает высокую эффективность процедур и довольных пациентов. AZPO Health делает особый акцент на профессионализме и опыте своих врачей.</p>
+<h3 dir="ltr">Современные технологии</h3>
+<p dir="ltr">Клиники Турции активно внедряют новейшие медицинские технологии и методы, что позволяет проводить процедуры максимально точно, эффективно и комфортно для пациента. AZPO Health всегда использует передовые техники для достижения наилучших результатов.</p>
+<h3 dir="ltr">Медицинский туризм</h3>
+<p dir="ltr">Стратегическое расположение Турции между Европой и Азией обеспечивает удобный доступ для международных пациентов. Гостеприимство и комфорт создают благоприятную атмосферу для успешного лечения. Кроме того, богатое культурное наследие страны позволяет совместить медицинскую процедуру с приятным путешествием. AZPO Health имеет представительства в таких крупных городах, как Анталия, Стамбул и Аланья, а также сотрудничает с ведущими клиниками и больницами по всей стране.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Как работает пересадка волос техникой DHI<br><br></h2>
+<p dir="ltr">Прямая имплантации волос (DHI) &mdash; это современная техника пересадки волос, являющаяся разновидностью техники извлечения фолликулярных единиц (FUE). Эта минимально инвазивная процедура предназначена для восстановления волос в зонах облысения или истончения.</p>
+<h3 dir="ltr">Как работает техника DHI</h3>
+<p dir="ltr">При пересадке волос техникой DHI используется специальный инструмент &mdash; имплантер-ручка Choi. Благодаря ей хирург напрямую имплантирует извлеченные фолликулы в зону пересадки без предварительного создания разрезов, что отличает этот метод от классического FUE.</p>
 <ol>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Консультация: На первой консультации врач оценивает состояние ваших волос, определяет причину выпадения и разрабатывает индивидуальный план лечения. AZPO Health предлагает бесплатную онлайн-консультацию, чтобы вы могли получить предварительную оценку, не выходя из дома.</p>
+<p dir="ltr" role="presentation">Извлечение: волосяные фолликулы по одному аккуратно извлекаются из донорской зоны, как правило, с затылка. Этот этап аналогичен методу FUE.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Подготовка: Перед процедурой необходимо пройти медицинское обследование и сдать анализы. Врач также дает рекомендации по подготовке к операции, например, избегать приема определенных лекарств и алкоголя.</p>
+<p dir="ltr" role="presentation">Имплантация: извлеченные фолликулы загружаются в имплантер-ручку Choi, с помощью которой хирург непосредственно внедряет их в зону пересадки.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Экстракция фолликулов: Врач извлекает волосяные фолликулы из донорской зоны (обычно затылочной области) с помощью специальных инструментов. При DHI используются микроинструменты, что позволяет минимизировать повреждение кожи и избежать образования рубцов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Имплантация фолликулов: Извлеченные фолликулы помещаются в Choi Pen и имплантируются в зону облысения. Врач контролирует угол и глубину имплантации, что позволяет добиться максимально естественной линии роста волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Послеоперационный уход: После процедуры необходимо соблюдать рекомендации врача по уходу за волосами и кожей головы. AZPO Health предоставляет подробные инструкции и поддержку на всех этапах восстановления.</p>
+<p dir="ltr" role="presentation">Без разрезов: в отличие от традиционных техник, DHI не требует предварительного создания каналов в коже головы &mdash; имплантер-ручка одновременно формирует небольшой канал и размещает фолликул.<br><br></p>
 </li>
 </ol>
-<p dir="ltr">Преимущества DHI пересадки волос:</p>
+<h3 dir="ltr">Преимущества техники DHI</h3>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Минимальная инвазивность: DHI &ndash; это минимально инвазивная процедура, которая не требует разрезов и наложения швов. Это означает, что восстановление происходит быстрее и менее болезненно.</p>
+<p dir="ltr" role="presentation">Минимальная травматичность: это минимально инвазивная процедура, которая уменьшает травматизацию кожи головы и сокращает время восстановления.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Естественный результат: DHI позволяет добиться максимально естественной линии роста волос, так как врач контролирует угол и глубину имплантации каждого фолликула.</p>
+<p dir="ltr" role="presentation">Естественный результат: высокая точность контроля глубины, угла и направления имплантации обеспечивает естественную линию роста и равномерную густоту волос.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Высокая приживаемость фолликулов: Благодаря использованию Choi Pen, фолликулы меньше подвергаются внешнему воздействию и лучше приживаются.</p>
+<p dir="ltr" role="presentation">Минимальный риск рубцевания: отсутствие разрезов значительно снижает вероятность появления шрамов.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Отсутствие рубцов: При DHI не делаются разрезы, поэтому на коже не остается рубцов. Это особенно важно для пациентов, которые предпочитают носить короткую стрижку.</p>
+<p dir="ltr" role="presentation">Высокая приживаемость фолликулов: быстрая имплантация сокращает время нахождения фолликулов вне организма, что повышает их выживаемость.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Быстрое восстановление: После DHI пациенты могут вернуться к обычному образу жизни уже через несколько дней.</p>
+<p dir="ltr" role="presentation">Плотная посадка волос: техника позволяет максимально плотно размещать фолликулы, что особенно важно для создания густой шевелюры.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">Пересадка волос методом DHI: Кому подходит эта процедура?</h3>
-<p dir="ltr">DHI пересадка волос подходит как мужчинам, так и женщинам, страдающим от различных видов облысения. Эта процедура особенно эффективна в следующих случаях:</p>
+<h2 dir="ltr">DHI против других техник пересадки волос</h2>
+<p dir="ltr">Хотя метод DHI имеет множество преимуществ, важно понимать, как он сравнивается с другими популярными техниками пересадки волос, такими как FUE и Sapphire FUE.</p>
+<h3 dir="ltr">DHI против FUE</h3>
+<p dir="ltr">DHI против FUE</p>
+<p dir="ltr">Обе техники &mdash; DHI и FUE &mdash; предполагают извлечение отдельных фолликулов из донорской зоны. Главное отличие заключается в способе имплантации:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Андрогенетическая алопеция (облысение по мужскому типу): DHI позволяет восстановить волосы в области лба и макушки.</p>
+<p dir="ltr" role="presentation">При FUE хирург предварительно делает небольшие надрезы в зоне пересадки, после чего имплантирует фолликулы.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Рубцовая алопеция: DHI может быть использована для пересадки волос в области рубцов после травм или операций.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Необходимость увеличения густоты волос: DHI позволяет увеличить густоту волос в определенных зонах.</p>
+<p dir="ltr" role="presentation">При DHI используется специальный инструмент &mdash; ручка Choi, позволяющая одновременно создавать маленький канал и имплантировать фолликул, без предварительных надрезов. Это снижает травматизм и ускоряет заживление.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">DHI не рекомендуется в следующих случаях:</p>
+<p dir="ltr">Техника DHI считается более усовершенствованным и точным вариантом FUE.<br><br></p>
+<h3 dir="ltr">DHI против Sapphire FUE</h3>
+<p dir="ltr">Sapphire FUE &mdash; это разновидность FUE, при которой надрезы создаются лезвиями из сапфира. Они обеспечивают более гладкие и точные надрезы, что снижает повреждение тканей и ускоряет восстановление.</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Диффузное выпадение волос: При диффузном выпадении волос, когда волосы выпадают равномерно по всей голове, DHI может быть неэффективна.</p>
+<p dir="ltr" role="presentation">Sapphire FUE предполагает создание надрезов сапфировыми лезвиями до имплантации фолликулов.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Серьезные заболевания кожи головы: При наличии серьезных заболеваний кожи головы необходимо сначала пройти лечение, а затем рассматривать возможность пересадки волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Плохая свертываемость крови: При плохой свертываемости крови повышается риск кровотечений во время и после операции.</p>
+<p dir="ltr" role="presentation">DHI же использует ручку Choi для прямой имплантации без предварительных надрезов.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">Пересадка волос на голове методом DHI: Чего ожидать после процедуры?</h3>
-<p dir="ltr">После DHI пересадки волос важно соблюдать все рекомендации врача для достижения оптимального результата.</p>
-<p dir="ltr">Этапы восстановления после DHI:</p>
+<p dir="ltr">Обе техники обеспечивают высокую точность и естественный результат.<br><br></p>
+<h2 dir="ltr">Кому подходит техника DHI?</h2>
+<p dir="ltr">Техника DHI эффективна при различных типах выпадения волос. Рассмотреть процедуру могут следующие категории пациентов:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Первые дни: В первые дни после процедуры необходимо избегать физических нагрузок, не мыть голову и спать на спине, чтобы не повредить пересаженные фолликулы.</p>
+<p dir="ltr" role="presentation">Люди с андрогенетической алопецией (мужским или женским типом облысения).</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Первые недели: В течение первых двух недель необходимо аккуратно мыть голову специальным шампунем и наносить лосьон, рекомендованный врачом. Также необходимо избегать прямых солнечных лучей и посещения сауны.</p>
+<p dir="ltr" role="presentation">Пациенты с выпадением волос из-за травм, ожогов или других повреждений кожи головы.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Первые месяцы: Через несколько недель после процедуры пересаженные волосы начнут выпадать &ndash; это нормальный процесс, называемый "шоковым выпадением". Новые волосы начнут расти через 3-4 месяца.</p>
+<p dir="ltr" role="presentation">Те, у кого стабильный характер выпадения волос (без активного прогрессирования).</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Окончательный результат: Окончательный результат DHI пересадки волос можно оценить через 12-18 месяцев. К этому времени пересаженные волосы полностью приживутся и начнут расти.</p>
+<p dir="ltr" role="presentation">Обычно рекомендуется для пациентов старше 25 лет, когда процесс выпадения волос более предсказуем.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Люди с хорошим общим состоянием здоровья.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">Советы по уходу за волосами после DHI:</p>
+<h2 dir="ltr">Что ожидать во время процедуры DHI?</h2>
+<p dir="ltr">Процедура обычно занимает от 6 до 8 часов и включает следующие этапы:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Консультация: оценка состояния волос, обсуждение целей и определение подходящего метода.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подготовка: выбривание донорской зоны и введение местной анестезии.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Извлечение: аккуратное удаление фолликулов по одному с помощью специального инструмента.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Имплантация: загрузка фолликулов в ручку Choi и их непосредственное введение в зону пересадки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Послеоперационный уход: подробные рекомендации по уходу за кожей головы и ускорению заживления.<br><br></p>
+</li>
+</ol>
+<h2 dir="ltr">Восстановление и результаты</h2>
+<p dir="ltr">Период восстановления после пересадки волос методом DHI достаточно короткий.</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Правильное питание: Правильное питание играет важную роль в росте волос. Употребляйте продукты, богатые белком, витаминами и минералами.</p>
+<p dir="ltr" role="presentation">Начальный этап восстановления: в первые дни кожа головы может быть чувствительной, возможно появление отека и покраснения, которые обычно проходят в течение нескольких дней.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Избегайте стресса: Стресс может негативно сказаться на росте волос. Старайтесь избегать стрессовых ситуаций и находить время для отдыха и релаксации.</p>
+<p dir="ltr" role="presentation">Выпадение волос: в течение первых недель после процедуры может наблюдаться выпадение пересаженных волос &mdash; это нормальное явление, называемое &laquo;шоковой потерей&raquo;.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Бережный уход: Избегайте использования агрессивных шампуней и средств для укладки волос. Не злоупотребляйте феном и утюжком.</p>
+<p dir="ltr" role="presentation">Рост новых волос: новый рост волос обычно начинается через несколько месяцев после пересадки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Окончательные результаты: полный эффект процедуры становится заметен через 12&ndash;18 месяцев.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">DHI пересадка волос цена в Турции в 2025: Как получить лучшее предложение от AZPO Health?</h3>
-<p dir="ltr">Стоимость DHI пересадки волос в Турции зависит от нескольких факторов:</p>
+<h2 dir="ltr">Уход за пересаженными волосами</h2>
+<p dir="ltr">Для успешного приживания и роста волос крайне важно соблюдать рекомендации по уходу:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Количество пересаженных фолликулов: Чем больше фолликулов необходимо пересадить, тем выше будет цена.</p>
+<p dir="ltr" role="presentation">Следуйте всем указаниям вашего хирурга.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Клиника: Цены в разных клиниках могут отличаться. AZPO Health сотрудничает с лучшими клиниками, предлагая конкурентоспособные цены.</p>
+<p dir="ltr" role="presentation">Избегайте интенсивных физических нагрузок в первые несколько недель.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Опыт и квалификация врача: Опыт и квалификация врача также влияют на цену. AZPO Health работает с опытными и квалифицированными врачами.</p>
+<p dir="ltr" role="presentation">Защищайте кожу головы, используя свободные головные уборы.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Пакет услуг: AZPO Health предлагает различные пакеты услуг, которые могут включать трансфер, проживание и другие дополнительные услуги.</p>
+<p dir="ltr" role="presentation">Мойте волосы аккуратно, применяя мягкий шампунь и избегая трения в области пересадки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Соблюдайте сбалансированную диету, богатую витаминами и минералами, чтобы поддержать рост волос.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">Чтобы узнать точную стоимость DHI пересадки волос в вашем случае, свяжитесь с AZPO Health для бесплатной консультации. Мы разработаем индивидуальный план лечения и предложим вам лучшее предложение.</p>
-<p dir="ltr">Не откладывайте свою мечту о густых и красивых волосах! Свяжитесь с AZPO Health прямо сейчас!</p>
-<h3 dir="ltr">Пересадка волос в Турции: Верните уверенность в себе с AZPO Health!</h3>
+<h2 dir="ltr">Рекомендации по образу жизни для поддержки роста волос</h2>
+<p dir="ltr">Помимо постоперационного ухода, для улучшения результата рекомендуется:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Питаться здоровой пищей, богатой белком, цинком, железом и омега-3 жирными кислотами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обеспечивать организм достаточным количеством жидкости, регулярно употребляя воду.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Избегать агрессивных химических процедур, чрезмерного использования горячих стайлинговых приборов и тугих причесок.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Управлять стрессом с помощью йоги, медитации или прогулок на свежем воздухе.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Регулярно заниматься физической активностью, улучшая кровообращение кожи головы, но не допускать чрезмерных нагрузок сразу после процедуры.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Рассмотреть возможность проведения PRP-терапии для стимуляции роста волос и повышения их густоты.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Роль витаминов и минералов</h2>
+<p dir="ltr">Витамины и минералы играют ключевую роль в росте и здоровье волос. Обратите внимание на следующие важные нутриенты:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Витамин А: способствует росту и обновлению клеток.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Витамины группы В: необходимы для энергетического обмена и метаболизма клеток.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Витамин С: мощный антиоксидант, защищающий волосяные фолликулы от повреждений.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Витамин D: участвует в цикле роста волос.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Витамин E: поддерживает здоровье кожи головы благодаря антиоксидантному действию.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Цинк: важен для роста и восстановления волос.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Железо: обеспечивает доставку кислорода к волосяным фолликулам.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">О компании AZPO Health</h2>
+<p dir="ltr">AZPO Health &mdash; ведущая компания в сфере медицинского туризма, специализирующаяся на пересадке волос в Турции. С офисами в Стамбуле, Анталии и Аланье мы предлагаем услуги на высоком уровне: современное оборудование, опытные врачи и лучшие клиники.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Репутация и опыт: многолетняя практика и множество довольных пациентов подтверждают нашу надежность.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высокие стандарты качества: мы гарантируем безопасность и тщательный уход на всех этапах лечения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход: учитываем особенности каждого пациента и разрабатываем персонализированные планы лечения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексная поддержка: сопровождаем вас от консультации до полного восстановления после процедуры.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Сделайте первый шаг к густым и здоровым волосам!</h2>
+<p dir="ltr">Не позволяйте выпадению волос влиять на вашу уверенность в себе. Свяжитесь с AZPO Health уже сегодня, чтобы получить бесплатную консультацию и индивидуальное предложение. Наша опытная команда врачей оценит ваши индивидуальные особенности и подберет оптимальный план лечения.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Бесплатная консультация: обсудите проблему выпадения волос и возможные решения с нашими экспертами.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальное предложение: Получите подробный расчет стоимости на основе вашего индивидуального плана лечения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Преображение: верните уверенность в себе и осуществите мечту о густых и естественных волосах.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Отзывы клиентов</h2>
+<p dir="ltr">&laquo;Я много лет боролся с выпадением волос, и это сильно влияло на мою самооценку. Я решился поехать в Турцию на пересадку методом DHI с AZPO Health &mdash; и это было лучшее решение в моей жизни. Персонал невероятно профессионален и внимателен, а результат превзошел все ожидания. Я чувствую себя новым человеком!&raquo; &mdash; Джон Д.</p>
+<p dir="ltr">&laquo;Сначала я сомневалась, стоит ли ехать за границу на лечение, но AZPO Health сделали всё максимально просто и комфортно. Клиника &mdash; на высшем уровне, а хирург &mdash; настоящий мастер. Я в восторге от своей новой линии роста волос и рекомендую AZPO Health всем, кто рассматривает пересадку.&raquo; &mdash; Сара М.</p>
+<p dir="ltr">&laquo;Перед тем как выбрать AZPO Health, я провёл серьёзное исследование. С первой консультации и до послеоперационного периода команда была великолепна. Они учли все мои пожелания и составили идеальный план лечения. Результаты говорят сами за себя &mdash; у меня снова густые, естественные волосы, а уверенность в себе на высоте!&raquo; &mdash; Майкл Б.</p>
 <p dir="ltr">&nbsp;</p>`
             : `
             <p dir="ltr">Turkey has become a leading destination for hair transplantation, attracting individuals from around the globe seeking affordable, high-quality solutions. Several key factors contribute to this popularity, making Turkey a prime choice for medical tourism.</p>
@@ -5217,20 +5376,20 @@ export const dataSubCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "PRP-терапия для волос: восстановите густоту и здоровье ваших волос"
+          ? "PRP в Турции: современное решение против выпадения и истончения волос"
           : "PRP Hair Treatment in Turkey – Regrow, Strengthen, Thrive!",
       descriptionTop:
         locale === "ru"
-          ? "Остановите выпадение волос и верните уверенность в себе с помощью PRP-терапии в AZPO Health. Естественный метод восстановления волос для мужчин и женщин в 2025 году. Запишитесь на бесплатную консультацию прямо сейчас!"
+          ? "Страдаете от выпадения или истончения волос? AZPO Health поможет вам найти лучшие клиники в Стамбуле, Анталии, Измире и Аланье, где проводится PRP-терапия для волос — современная процедура, которая активирует волосяные фолликулы, снижает выпадение и способствует росту густых, крепких волос с помощью естественных факторов вашего организма."
           : "Struggling with hair thinning or hair loss? AZPO Health connects you with top clinics in Istanbul, Antalya, Izmir, and Alanya, offering PRP Hair Transplant—a cutting-edge treatment that stimulates hair follicles, reduces shedding, and promotes thicker, healthier hair using your body’s natural growth factors.",
       benefits: {
         items: [
           {
             title:
-              locale === "ru" ? "Восстановление волос" : "Natural Hair Revival",
+              locale === "ru" ? "Натуральное восстановление волос" : "Natural Hair Revival",
             desc:
               locale === "ru"
-                ? "натуральное решение против выпадения волос и для их укрепления."
+                ? "природный способ вернуть силу и здоровье волосам"
                 : "All-natural solution to restore hair strength and stop hair loss",
           },
           {
@@ -5240,24 +5399,24 @@ export const dataSubCategoryHandler = (
                 : "Root Strengthening Solution",
             desc:
               locale === "ru"
-                ? "эффективное лечение для здоровых и крепких корней волос."
+                ? "глубокая стимуляция роста и укрепление волосяных фолликулов"
                 : "Advanced treatment for stronger roots and thicker hair",
           },
           {
             title:
-              locale === "ru" ? "Усиление густоты волос" : "Hair Density Boost",
+              locale === "ru" ? "Повышение густоты" : "Hair Density Boost",
             desc:
               locale === "ru"
-                ? "инновационная формула для придания объема и густоты вашим волосам."
+                ? "эффект визуальной плотности и объема уже после курса процедур"
                 : "Innovative formula to enhance hair density and fullness",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? null : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? null
+                ? "PRP (богатая тромбоцитами плазма) — это регенеративная терапия, основанная на естественных механизмах восстановления организма. Из небольшой порции вашей крови выделяется концентрат тромбоцитов и факторов роста, который затем вводится в кожу головы с помощью тонких инъекций."
                 : "Platelet-Rich Plasma (PRP) is a regenerative therapy that utilizes the body's natural healing abilities by concentrating platelets and growth factors found in blood. It involves drawing a small amount of the patient’s blood, processing it to separate the platelet-rich plasma, and reintroducing this concentrated substance back into the body via injection.",
           },
           {
@@ -5265,14 +5424,14 @@ export const dataSubCategoryHandler = (
               locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? "Обогащенная тромбоцитами плазма извлекается из крови пациента и вводится в кожу головы. Этот процесс стимулирует рост волос, улучшает кровообращение и укрепляет волосяные фолликулы, способствуя их восстановлению и улучшению состояния волос."
+                ? "Обогащенная тромбоцитами плазма выделяется из крови пациента и вводится в кожу головы. Это активирует спящие фолликулы, усиливает кровообращение и укрепляет корни волос, способствуя их естественному росту. Процедура проводится с помощью ультратонких игл, что обеспечивает максимальную точность и комфорт, направленно воздействуя на нужные зоны для достижения выраженного и устойчивого результата."
                 : "Platelet-rich plasma is extracted from the patient's blood and injected into the scalp. This stimulates hair growth, improves circulation, and strengthens the hair follicles.The procedure is performed with fine needles, ensuring precise delivery to targeted areas for optimal results.",
           },
           {
-            header: locale === "ru" ? "Для кого" : "For Whom",
+            header: locale === "ru" ? "Кому подойдет" : "For Whom",
             desc:
               locale === "ru"
-                ? "Идеально подходит как для мужчин, так и для женщин, страдающих от ранних признаков выпадения волос, их истончения или утраты густоты, обеспечивая эффективное восстановление и укрепление."
+                ? "Идеально подойдет и мужчинам, и женщинам, столкнувшимся с первыми признаками выпадения или истончения волос."
                 : "Suitable for both men and women in the early stages of hair loss, thinning, or reduced hair density.",
           },
         ],
@@ -5317,151 +5476,173 @@ export const dataSubCategoryHandler = (
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "PRP-терапия – безопасный и эффективный способ укрепления волос и замедления их выпадения. Однако для поддержания длительного эффекта необходимы регулярные процедуры."
+            ? "PRP-терапия — это безопасный, эффективный и малоинвазивный способ остановить выпадение волос и восстановить их естественный рост.Для стойкого результата рекомендуется пройти курс процедур. Метод также используется в дерматологии, ортопедии и эстетической медицине благодаря своей универсальности, минимальным побочным эффектам и долгосрочному действию. PRP — это современное решение для тех, кто ценит здоровье, натуральность и устойчивый результат."
             : "PRP therapy is a safe and effective way to strengthen hair and slow down hair loss, but regular treatments are necessary to maintain the effect.Whether for improving skin texture, reversing hair loss, or managing orthopedic conditions, PRP offers a safe, natural, and minimally invasive solution with lasting benefits. With its wide range of applications and minimal side effects, PRP has become a go-to option for those seeking effective and holistic wellness treatments.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "PRP-терапия для волос: подробное руководство"
+            ? "Почему стоит выбрать Турцию и AZPO Health для PRP-терапии волос?"
             : "Why Choose Turkey for PRP Hair Treatment with AZPO Health?",
         content:
           locale === "ru"
-            ? `<p dir="ltr">Выпадение волос &ndash; распространенная проблема, с которой сталкиваются миллионы людей по всему миру. В 2025 году, благодаря стремительному развитию медицинских технологий, PRP-терапия (плазмолифтинг) стала одним из самых эффективных методов восстановления волос. В AZPO Health мы предлагаем передовые решения для борьбы с выпадением волос, помогая нашим клиентам вернуть густые, здоровые и сильные волосы.</p>
-<h3 dir="ltr">Что такое PRP-терапия?</h3>
-<p dir="ltr">PRP-терапия (плазмолифтинг) &ndash; это инновационная медицинская процедура, в основе которой лежит использование собственной крови пациента для стимуляции регенерации тканей и роста волос. Обогащенная тромбоцитами плазма (PRP) содержит высокую концентрацию факторов роста, которые активируют процессы заживления, укрепляют волосяные фолликулы и способствуют восстановлению густоты волос.</p>
-<h4 dir="ltr">Как работает PRP-терапия?</h4>
+            ? `<p dir="ltr">Турция &mdash; один из мировых лидеров в сфере медицинского туризма, и PRP-терапия здесь особенно популярна. Вот почему лечение с AZPO Health &mdash; это разумный и выгодный выбор:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступные цены: стоимость PRP-процедур в Турции значительно ниже, чем в странах Европы и Северной Америки. Azpo Health включает в себя процедуру PRP в качестве бесплатного бонуса для пациентов, перенесших пересадку волос &mdash; это идеальное дополнение для улучшения и поддержки ваших результатов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытные врачи: в Турции работают специалисты с большим опытом в области восстановления волос. Команда AZPO Health владеет всеми современными методиками PRP и трансплантации волос.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные технологии: клиники постоянно инвестируют в передовое оборудование. AZPO Health использует инновационные подходы, чтобы обеспечить максимально эффективное и безопасное лечение.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полный сервис: мы предлагаем комплексные пакеты, включающие трансферы, сопровождение, переводы и заботу на всех этапах &mdash; от первого контакта до возвращения домой.</p>
+</li>
+</ul>
+<h2 dir="ltr">Как работает PRP-терапия?</h2>
+<p dir="ltr">PRP (Platelet-Rich Plasma) &mdash; это безоперационная процедура, которая использует ресурсы вашего организма для активации роста волос.</p>
+<p dir="ltr">Процесс проходит в несколько этапов:</p>
 <ol>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Забор крови: из вены пациента берется небольшое количество крови (обычно 10&ndash;20 мл).</p>
+<p dir="ltr" role="presentation">Забор крови: берется небольшое количество крови у пациента.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Центрифугирование: кровь помещается в центрифугу, где разделяется на компоненты: эритроциты, лейкоциты и плазму, обогащенную тромбоцитами.</p>
+<p dir="ltr" role="presentation">Центрифугирование: кровь обрабатывается в центрифуге, чтобы выделить плазму.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Извлечение PRP: обогащенная тромбоцитами плазма отделяется и подготавливается для введения.</p>
+<p dir="ltr" role="presentation">Извлечение PRP: выделяется часть, богатая тромбоцитами и факторами роста.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Инъекция PRP: полученная плазма вводится в кожу головы в зонах истончения или выпадения волос с помощью микроинъекций. Факторы роста в тромбоцитах стимулируют волосяные фолликулы, улучшают кровообращение и активируют рост новых волос.</p>
+<p dir="ltr" role="presentation">Инъекция в кожу головы: препарат вводится в зоны истончения волос.<br><br></p>
 </li>
 </ol>
-<h3 dir="ltr">Преимущества PRP-терапии для волос</h3>
-<p dir="ltr">PRP-терапия предлагает ряд преимуществ для тех, кто ищет эффективное решение проблемы выпадения волос:</p>
+<p dir="ltr">Факторы роста активируют спящие фолликулы, усиливают кровоснабжение и улучшают общее состояние кожи головы.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Преимущества PRP при выпадении волос:</h2>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Естественный метод: используется собственная кровь пациента, что минимизирует риск аллергических реакций и побочных эффектов.</p>
+<p dir="ltr" role="presentation">Стимулирует рост волос: инъекции PRP активируют спящие волосяные фолликулы, побуждая их перейти в фазу активного роста.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Стимуляция роста волос: факторы роста в PRP активируют волосяные фолликулы, способствуя появлению новых волос и укреплению существующих.</p>
+<p dir="ltr" role="presentation">Укрепляет волосы: PRP укрепляет волосяные фолликулы, снижая их ломкость и уменьшая выпадение волос.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Улучшение состояния кожи головы: PRP-терапия улучшает кровообращение и питание кожи головы, что способствует здоровью волос.</p>
+<p dir="ltr" role="presentation">Увеличивает густоту волос: процедура способствует утолщению отдельных волосков, благодаря чему волосы выглядят более плотными и объемными.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Минимальный период восстановления: процедура малоинвазивна и не требует длительного реабилитационного периода.</p>
+<p dir="ltr" role="presentation">Улучшает здоровье кожи головы: PRP улучшает кровоснабжение кожи головы, обеспечивая волосяные фолликулы необходимыми питательными веществами и кислородом для полноценного роста.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Подходит для мужчин и женщин: PRP-терапия эффективно помогает как мужчинам, так и женщинам в борьбе с различными видами выпадения волос.</p>
+<p dir="ltr" role="presentation">Безоперационная процедура: PRP-терапия проводится без разрезов, швов и рубцов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Минимальный период реабилитации: процедура не требует долгого восстановления, и вы сможете вскоре вернуться к привычному образу жизни.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">Показания для PRP-терапии</h3>
-<p dir="ltr">PRP-терапия рекомендуется в следующих случаях:</p>
+<h3 dir="ltr">ЭPRP или пересадка волос: что подходит именно вам?</h3>
+<p dir="ltr">PRP-терапия часто используется как дополнительное лечение при пересадке волос. Если пересадка волос обеспечивает постоянное решение проблемы выпадения за счёт переноса фолликулов в залысевшие участки, то PRP-терапия может усилить результат, стимулируя рост в пересаженных фолликулах и улучшая состояние кожи головы вокруг них.</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Андрогенная алопеция: выпадение волос, вызванное генетической предрасположенностью и гормональными изменениями.</p>
+<p dir="ltr" role="presentation">PRP подходит для:<br><br></p>
 </li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Очаговая алопеция: аутоиммунное заболевание, приводящее к выпадению волос на отдельных участках головы.</p>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Людей с истончением волос или ранней стадией выпадения.<br><br></p>
 </li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Истончение волос: постепенное снижение густоты волос по всей поверхности головы.</p>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Тех, кто хочет улучшить здоровье кожи головы.<br><br></p>
 </li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Укрепление волосяных фолликулов: способствует улучшению здоровья, силы и структуры волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Вспомогательная терапия после пересадки волос: помогает ускорить заживление и стимулирует рост пересаженных волос.</p>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Желающих восстановить волосы без хирургического вмешательства.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">PRP-терапия в AZPO Health: почему нас выбирают?</h3>
-<p dir="ltr">AZPO Health &ndash; ведущая компания в сфере медицинского туризма, специализирующаяся на пересадке и восстановлении волос в Турции. Наши клиники в Стамбуле, Анталии и Алании предлагают передовые технологии, высококачественные услуги и индивидуальный подход к каждому пациенту.</p>
-<h4 dir="ltr">Преимущества выбора AZPO Health:</h4>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пересадка волос подходит для:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Людей с выраженным выпадением или облысением.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Тех, кто ищет постоянное решение проблемы потери волос.<br><br></p>
+</li>
+</ul>
+</ul>
+<p dir="ltr">AZPO Health включает PRP-терапию в подарок для пациентов, проходящих пересадку волос &mdash; это идеальное дополнение для усиления и поддержания результата.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Комбинирование PRP с другими методами восстановления волос</h3>
+<p dir="ltr">PRP-терапия эффективно сочетается с другими методиками для достижения лучших результатов:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Опытные специалисты: Наши специалисты обладают многолетним опытом в области PRP-терапии и пересадки волос.</p>
+<p dir="ltr" role="presentation">PRP после пересадки волос: применение PRP после операции ускоряет заживление, улучшает приживаемость пересаженных фолликул и стимулирует рост новых волос.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Современное оборудование: мы используем передовое медицинское оборудование для достижения наилучших результатов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальный подход: мы разрабатываем индивидуальные планы лечения, учитывая особенности и потребности каждого пациента.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступные цены: мы предлагаем доступные цены на PRP-терапию и другие процедуры восстановления волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комплексный сервис: сопровождаем вас на каждом этапе: от первичной консультации до полного восстановления, обеспечивая комфорт и качественный послеоперационный уход.</p>
+<p dir="ltr" role="presentation">PRP в сочетании с мезотерапией: комбинирование с мезотерапией, при которой в кожу головы вводятся лекарственные препараты, обеспечивает комплексное лечение выпадения волос.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">Как проходит процедура PRP-терапии в AZPO Health?</h3>
+<h3 dir="ltr">Чего ожидать во время процедуры PRP в AZPO Health</h3>
 <ol>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Консультация: встреча с нашим специалистом для оценки состояния волос и определения показаний к PRP-терапии.</p>
+<p dir="ltr" role="presentation">Консультация: специалист AZPO Health оценит состояние ваших волос, обсудит цели и определит, подходит ли вам PRP-терапия.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Забор крови: у пациента берется небольшое количество крови для дальнейшей обработки.</p>
+<p dir="ltr" role="presentation">Забор крови: у вас возьмут небольшой образец крови.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Приготовление PRP: кровь обрабатывается в центрифуге, чтобы выделить плазму, обогащенную тромбоцитами.</p>
+<p dir="ltr" role="presentation">Подготовка к PRP: кровь обработают для выделения плазмы, богатой тромбоцитами.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Инъекция PRP: полученная плазма вводится в кожу головы с помощью микроинъекций. Процедура занимает 30&ndash;60 минут.</p>
+<p dir="ltr" role="presentation">Подготовка кожи головы: кожа головы будет очищена и подготовлена к инъекциям.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Послепроцедурный уход: после процедуры пациент получает рекомендации по уходу за кожей головы и волосами.</p>
+<p dir="ltr" role="presentation">Введение PRP: плазма вводится в целевые участки кожи головы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Уход после процедуры: вы получите рекомендации по уходу за кожей головы после лечения.<br><br></p>
 </li>
 </ol>
-<h3 dir="ltr">Что ожидать после PRP-терапии?</h3>
-<p dir="ltr">После PRP-терапии вы можете заметить следующие изменения:</p>
+<h3 dir="ltr">Восстановление и результаты</h3>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Уменьшение выпадения волос: уже через несколько недель после начала курса PRP-терапии выпадение волос замедляется.</p>
+<p dir="ltr" role="presentation">Восстановление: время восстановления после PRP-терапии минимальное. Возможно лёгкое покраснение или отёк в местах инъекций, которые обычно проходят в течение нескольких дней.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Улучшение качества волос: волосы становятся крепче, гуще, приобретают здоровый блеск.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Рост новых волос: спустя несколько месяцев в зонах истончения появляются новые, более плотные волосы.</p>
+<p dir="ltr" role="presentation">Результаты: первые заметные изменения появляются спустя несколько месяцев после процедуры &mdash; начинается активный рост волос, увеличивается их густота, улучшается общее состояние кожи головы. Для достижения максимального эффекта может понадобиться курс из нескольких сеансов PRP.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">Для максимального эффекта рекомендуется пройти курс PRP-терапии, состоящий из нескольких процедур с интервалом в несколько недель.</p>
-<h3 dir="ltr">Возможные побочные эффекты</h3>
-<p dir="ltr">PRP-терапия считается безопасной процедурой, однако, как и при любом медицинском вмешательстве, возможны некоторые побочные эффекты:</p>
+<h3 dir="ltr">Отзывы клиентов</h3>
+<p dir="ltr">&laquo;Я уже начал терять надежду на густые волосы, но после нескольких сеансов PRP в AZPO Health увидел новый рост, а оставшиеся волосы стали значительно гуще. Очень благодарен!&raquo; &mdash; Марк Л.</p>
+<p dir="ltr">&laquo;PRP-терапия в AZPO Health прошла быстро, легко и безболезненно. Результаты превзошли ожидания &mdash; мои волосы выглядят и ощущаются здоровее, чем за последние годы!&raquo; &mdash; Джессика К.</p>
+<h3 dir="ltr">О компании AZPO Health</h3>
+<p dir="ltr">AZPO Health &mdash; ведущая компания в области медицинского туризма, специализирующаяся на пересадке волос и PRP-терапии в Турции. Мы предлагаем услуги мирового уровня, опытных врачей и современное оборудование.</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Небольшая боль или дискомфорт в месте инъекции.</p>
+<p dir="ltr" role="presentation">Репутация и опыт: у нас множество успешных случаев восстановления волос и довольных пациентов.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Покраснение и отек кожи головы.</p>
+<p dir="ltr" role="presentation">Высокие стандарты качества: мы придерживаемся строгих стандартов ухода и безопасности.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Кратковременные головные боли.</p>
+<p dir="ltr" role="presentation">Индивидуальный подход: для каждого пациента разрабатываем персонализированный план лечения с учётом его целей и особенностей.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Редко &ndash; инфекция или аллергическая реакция.</p>
+<p dir="ltr" role="presentation">Полная поддержка: сопровождаем вас на всех этапах &mdash; от первой консультации до послепроцедурного ухода.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">Эти побочные эффекты обычно проходят в течение нескольких дней.</p>
-<h3 dir="ltr">Отзывы пациентов AZPO Health</h3>
-<p dir="ltr">&laquo;Я долгое время боролся с выпадением волос, и PRP-терапия в AZPO Health стала для меня настоящим спасением. Уже после нескольких процедур я заметил, что волосы стали гуще и сильнее. Спасибо профессионалам AZPO Health!&raquo; &ndash; Иван, 45 лет</p>
-<p dir="ltr">&laquo;После родов у меня сильно выпадали волосы. PRP-терапия в AZPO Health помогла мне восстановить прежнюю густоту волос. Я очень довольна результатом!&raquo; &ndash; Елена, 32 года</p>
-<h3 dir="ltr">Стоимость PRP-терапии в Турции</h3>
-<p dir="ltr">Стоимость PRP-терапии в Турции зависит от клиники и количества процедур. В AZPO Health мы предлагаем доступные цены и гибкие варианты оплаты. Свяжитесь с нами для получения подробной консультации и расчета стоимости, исходя из ваших индивидуальных потребностей.</p>
-<h3 dir="ltr">Свяжитесь с нами сегодня!</h3>
-<p dir="ltr">Не откладывайте решение проблемы выпадения волос! Свяжитесь с AZPO Health сегодня и запишитесь на бесплатную консультацию. Наши специалисты разработают индивидуальный план лечения, чтобы вернуть вам густые и здоровые волосы, а также уверенность в себе.</p>
-<p dir="ltr">AZPO Health &ndash; ваш путь к здоровым и густым волосам в 2025 году!</p>
-<p dir="ltr">&nbsp;</p>`
+<h3 dir="ltr">Сделайте первый шаг к здоровым и густым волосам!</h3>
+<p dir="ltr">Не позволяйте выпадению волос снижать вашу уверенность! Свяжитесь с AZPO Health уже сегодня для бесплатной консультации и индивидуального предложения. Наши специалисты оценят ваши потребности и подберут оптимальное лечение.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Бесплатная консультация: обсудите свои проблемы и варианты решения с экспертами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальное предложение: получите подробную смету с учетом всех услуг.</p>
+</li>
+</ul>
+<p dir="ltr"><strong id="docs-internal-guid-cf327c48-7fff-86f7-846e-70f202da7efa">Преобразите свою жизнь: верните себе уверенность и густые, здоровые волосы вашей мечты.</strong></p>`
             : `
            <p dir="ltr">Turkey has become a popular destination for medical tourism, and for good reason. Here's why choosing Turkey and AZPO Health for your PRP hair treatment is a smart decision:</p>
 <ul>
@@ -5627,11 +5808,11 @@ export const dataSubCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Мезотерапия для волос: эффективное восстановление и стимуляция роста"
+          ? "Мезотерапия волос в Турции – восстановите здоровье волос и уверенность в себе!"
           : "Hair Mesotherapy in Turkey – Revitalize Your Hair, Restore Your Confidence!",
       descriptionTop:
         locale === "ru"
-          ? "Мезотерапия для волос – это современная процедура, направленная на улучшение состояния кожи головы и стимуляцию роста волос. Она помогает бороться с выпадением волос, укрепляет волосяные фолликулы и придает волосам здоровый и ухоженный вид. Эта процедура особенно эффективна для тех, кто ищет нехирургические методы восстановления волос."
+          ? "Вас беспокоит выпадение или истончение волос? Не позволяйте этому влиять на вашу самооценку! AZPO Health предлагает современные процедуры мезотерапии волос в лучших клиниках Стамбула, Анталии, Измира и Аланьи. Это неинвазивный метод, который стимулирует волосяные фолликулы, улучшает состояние кожи головы и активизирует естественный рост волос. Больше густоты, силы и здоровья — без хирургического вмешательства."
           : "Struggling with thinning hair? Don’t let hair loss define you! AZPO Health connects you with top clinics in Istanbul, Antalya, Izmir, and Alanya offering advanced Hair Mesotherapy treatments. This non-surgical solution stimulates hair follicles, improves scalp health, and promotes natural hair regrowth for thicker and stronger locks",
       benefits: {
         items: [
@@ -5642,36 +5823,36 @@ export const dataSubCategoryHandler = (
                 : "Enhanced Blood Flow",
             desc:
               locale === "ru"
-                ? "стимулирует циркуляцию крови в коже головы, что способствует здоровому росту волос."
+                ? "активизирует циркуляцию крови в коже головы, усиливая питание волосяных фолликулов."
                 : "Boosts scalp circulation to deliver nutrients and promote healthier hair growth.",
           },
           {
             title:
               locale === "ru"
-                ? "Укрепленные корни волос"
+                ? "Укрепление корней волос"
                 : "Fortified Hair Roots",
             desc:
               locale === "ru"
-                ? "процедура укрепляет фолликулы изнутри, обеспечивая стойкий и долговременный результат."
+                ? "фолликулы получают поддержку изнутри для длительного эффекта."
                 : "Strengthens follicles from within for lasting hair health.",
           },
           {
             title:
               locale === "ru"
-                ? "Естественная густота волос"
+                ? "Естественная густота"
                 : "Natural Hair Density",
             desc:
               locale === "ru"
-                ? "мезотерапия способствует восстановлению и улучшению густоты волос, придавая им более объемный и здоровый вид."
+                ? "мезотерапия способствует росту новых, крепких и плотных волос."
                 : "Achieve fuller, thicker hair through targeted mesotherapy.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? null : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? null
+                ? "Мезотерапия — это процедура, направленная на улучшение состояния волос и кожи головы. В кожу головы вводится специальный коктейль из активных веществ, который стимулирует рост волос, укрепляет волосяные фолликулы и улучшает питание тканей."
                 : "Mesotherapy is a treatment aimed at improving the condition of the hair and scalp. It involves injecting a cocktail of active ingredients directly into the scalp to stimulate hair growth, strengthen follicles, and improve tissue nourishment.",
           },
           {
@@ -5679,14 +5860,14 @@ export const dataSubCategoryHandler = (
               locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? "Витамины, минералы, аминокислоты и другие активные вещества вводятся непосредственно в кожу головы с помощью тонких игл."
+                ? "В кожу головы вводятся витамины, минералы, аминокислоты и другие активные компоненты, которые стимулируют рост волос и улучшают их общее состояние."
                 : "Vitamins, minerals, amino acids, and other active substances are injected into the scalp, stimulating hair growth and enhancing its condition.",
           },
           {
-            header: locale === "ru" ? "Для кого" : "For Whom",
+            header: locale === "ru" ? null : "For Whom",
             desc:
               locale === "ru"
-                ? "Подходит для людей с истончением волос и эффективна для тех, кто сталкивается с начальной стадией выпадения волос или желает улучшить состояние кожи головы, способствуя здоровому росту волос."
+                ? null
                 : "Suitable for individuals with thinning hair, early-stage hair loss, or those looking to improve scalp health.",
           },
         ],
@@ -5731,180 +5912,156 @@ export const dataSubCategoryHandler = (
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Мезотерапия – это эффективный метод стимуляции роста волос и улучшения их здоровья, который требует регулярности и внимательного ухода после процедуры для достижения лучших результатов."
+            ? "Мезотерапия — эффективный способ стимулировать рост волос и улучшить их здоровье. Однако процедура требует регулярности и соблюдения рекомендаций по уходу после курса."
             : "Mesotherapy is an effective method to stimulate hair growth and improve hair health, but it requires consistency and attention to post-treatment care.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Почему стоит выбрать мезотерапию для волос в 2025 году?"
+            ? "Почему стоит выбрать Турцию для мезотерапии волос?"
             : "Why Choose Turkey for Hair Mesotherapy?",
         content:
           locale === "ru"
-            ? `<p dir="ltr">В 2025 году мезотерапия продолжает оставаться одним из самых востребованных и эффективных методов лечения проблем с волосами. Процедура, заключающаяся во введении активных веществ непосредственно в кожу головы, дает впечатляющие результаты в укреплении волос, стимуляции их роста и улучшении общего состояния. Мезотерапия помогает не только предотвратить выпадение волос, но и вернуть им естественный блеск и густоту. Рассмотрим, что делает этот метод таким популярным, и почему он является отличным выбором для восстановления здоровья ваших волос.</p>
-<p dir="ltr">Что такое мезотерапия и как она работает?</p>
-<p dir="ltr">Мезотерапия &ndash; это нехирургическая процедура, при которой в кожу головы вводятся специальные коктейли, содержащие витамины, минералы, аминокислоты и другие полезные вещества. Эти инъекции направляют активные компоненты прямо к волосяным фолликулам, питая и стимулируя их деятельность. В результате улучшается кровообращение в коже головы, укрепляются корни волос, а также стимулируется их рост.</p>
-<p dir="ltr">Преимущества мезотерапии для волос:</p>
-<ol>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Стимуляция роста волос: мезотерапия активизирует волосяные фолликулы, способствуя ускоренному и здоровому росту волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Укрепление волос: полезные вещества насыщают корни, уменьшая их ломкость и снижая риск выпадения.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Улучшение кровообращения: инъекции стимулируют приток крови к коже головы, обеспечивая лучшее питание волосяных фолликулов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Восстановление структуры волос: мезотерапия помогает восстановить поврежденные волосы, делая их более блестящими и здоровыми.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Борьба с перхотью и себореей: мезотерапия помогает нормализовать работу сальных желез, снижая проявления перхоти и себореи.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальный подход: состав мезотерапевтического коктейля подбирается индивидуально, учитывая потребности и особенности каждого пациента.&nbsp;</p>
-</li>
-</ol>
-<p dir="ltr">Кому подходит мезотерапия?</p>
-<p dir="ltr">Мезотерапия подходит как женщинам, так и мужчинам, которые сталкиваются с различными проблемами волос:</p>
+            ? `<p dir="ltr">Турция давно зарекомендовала себя как один из лидеров в сфере медицинского туризма, особенно в области восстановления волос. Это стало возможным благодаря современным медицинским технологиям, высокому уровню подготовки специалистов и доступным ценам. AZPO Health использует эти преимущества, предлагая комплексные программы мезотерапии в Стамбуле, Анталии, Измире, Каппадокии и Аланье &mdash; чтобы ваш путь к здоровым волосам был легким, комфортным и результативным.</p>
+<h4 dir="ltr">Преимущества лечения в Турции:</h4>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Выпадение волос (алопеция): помогает замедлить процесс выпадения и активизировать рост новых волос.</p>
+<p dir="ltr" role="presentation">Доступная цена: мезотерапия волос в Турции стоит до 70% дешевле, чем в странах Европы и Северной Америки, без ущерба для качества и безопасности.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Редкие и тонкие волосы: процедура способствует увеличению густоты и укреплению структуры волос.</p>
+<p dir="ltr" role="presentation">Опытные специалисты: наши партнерские клиники сотрудничают с врачами, специализирующимися на восстановлении волос и обладающими многолетним практическим опытом.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Сухие и ломкие волосы: мезотерапия помогает восстановить структуру, увлажнить и повысить эластичность волос.</p>
+<p dir="ltr" role="presentation">Современное оборудование: клиники оснащены передовыми технологиями, которые обеспечивают точные, эффективные и безопасные процедуры.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Перхоть и себорея: мезотерапия нормализует работу сальных желез, уменьшая проявления перхоти и себореи.</p>
+<p dir="ltr" role="presentation">Пакеты &laquo;все включено&raquo;: AZPO Health предлагает удобные комплексные пакеты, включающие лечение, трансфер, проживание и постпроцедурное сопровождение.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Мезотерапия для волос помогает женщинам восстановить волосы после беременности, родов или гормональных изменений, улучшая их состояние и стимулируя рост.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Мезотерапия волос для мужчин до и после демонстрирует отличные результаты в борьбе с облысением и улучшении общего состояния волос.</p>
+<p dir="ltr" role="presentation">Идеальное направление для путешествия: Турция легко доступна для пациентов со всего мира, а богатая культура, кухня и природа делают поездку не только полезной, но и приятной.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">Почему выбирают Турцию для мезотерапии волос?</p>
-<p dir="ltr">Турция по праву занимает лидирующие позиции в сфере медицинского туризма, предлагая передовые технологии, высокий уровень сервиса и доступные цены. Вот несколько причин выбрать именно Турцию для мезотерапии волос:</p>
-<ol>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Высококвалифицированные специалисты: в турецких клиниках работают опытные врачи, чьи знания и навыки в области мезотерапии позволяют добиваться выдающихся результатов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Современные технологии: клиники оснащены современным оборудованием, обеспечивающим высокую эффективность и безопасность каждой процедуры.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступные цены: мезотерапия в Турции обходится значительно дешевле, чем в Европе или США, оставаясь при этом качественной и эффективной.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комплексный подход: турецкие клиники обеспечивают полный цикл медицинского обслуживания &ndash; от первичной консультации и диагностики, до проведения процедуры и последующего ухода.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Удобное расположение: благоприятное географическое положение и развитая транспортная инфраструктура делают Турцию легко доступной для пациентов со всего мира.</p>
-</li>
-</ol>
-<p dir="ltr">Как проходит процедура мезотерапии в Турции с AZPO Health?</p>
-<p dir="ltr">AZPO Health &ndash; ведущая компания в сфере медицинского туризма в Турции, предоставляющая полный комплекс услуг для организации мезотерапии волос. Процесс сотрудничества с нами включает несколько ключевых этапов:</p>
-<ol>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Консультация: свяжитесь с AZPO Health для бесплатной консультации и оценки состояния ваших волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Выбор клиники: AZPO Health поможет вам выбрать лучшую клинику в Стамбуле, Анталии или Алании, основываясь на ваших потребностях и предпочтениях.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Диагностика:&nbsp; в клинике проводится тщательная диагностика состояния кожи головы и волос для определения оптимального состава мезотерапевтического коктейля.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Процедура: мезотерапия проводится врачом с использованием тонких игл для инъекций в кожу головы. Процесс длится от 30 до 60 минут и, как правило, сопровождается минимальным дискомфортом.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Послепроцедурный уход: после процедуры вам будут даны индивидуальные рекомендации по уходу за кожей головы и волосами, что поможет вам достичь наилучших результатов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Поддерживающие процедуры: для поддержания результата рекомендуется пройти курс из нескольких сеансов мезотерапии.</p>
-</li>
-</ol>
-<p dir="ltr">Мезотерапия для волос от выпадения:</p>
-<p dir="ltr">Выпадение волос &ndash; одна из самых распространенных проблем, с которой сталкиваются многие женщины и мужчины. Мезотерапия представляет собой эффективный метод борьбы с этой проблемой, поскольку она способствует укреплению волосяных фолликулов и стимулирует рост новых волос, восстанавливая их здоровье и густоту.</p>
-<p dir="ltr">Преимущества мезотерапии от выпадения волос:</p>
+<h3 dir="ltr">Что представляет собой мезотерапия волос?</h3>
+<p dir="ltr">Мезотерапия &mdash; это неинвазивная процедура, направленная на улучшение состояния волос и кожи головы. В процессе лечения под кожу головы вводится индивидуально подобранный коктейль из витаминов, минералов, аминокислот и других активных веществ. Этот состав стимулирует рост новых волос, укрепляет волосяные луковицы и улучшает питание тканей. Мезотерапия помогает при следующих проблемах:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Улучшение питания волосяных фолликулов: мезотерапевтические коктейли содержат витамины, минералы и аминокислоты, необходимые для здоровья волос.</p>
+<p dir="ltr" role="presentation">Истончение волос: укрепляет фолликулы и способствует росту более плотных и здоровых волос.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Активизация кровообращения: инъекции способствуют улучшению циркуляции крови в коже головы, что обеспечивает более эффективное питание волосяных фолликулов и стимулирует их активность.</p>
+<p dir="ltr" role="presentation">Выпадение волос: замедляет процесс выпадения, активизируя спящие фолликулы и оздоравливая кожу головы.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Снижение воспаления: мезотерапия способствует уменьшению воспалительных процессов в коже головы, что помогает устранить одну из причин выпадения волос.</p>
+<p dir="ltr" role="presentation">Перхоть и заболевания кожи головы: уменьшает воспаление и питает кожу головы, облегчая такие состояния, как перхоть.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Восстановление гормонального баланса: некоторые компоненты мезотерапевтических коктейлей способствуют нормализации гормонального фона, что особенно важно при гормональном выпадении волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Цена мезотерапии для волос зависит от клиники, состава коктейля, количества процедур и используемых препаратов. Тем не менее, в Турции она остается доступной и является выгодным решением для восстановления волос.</p>
+<p dir="ltr" role="presentation">Алопеция ареата: в некоторых случаях может использоваться как вспомогательное лечение при очаговой алопеции (аутоиммунной форме выпадения волос).</p>
 </li>
 </ul>
-<p dir="ltr">Мезотерапия для волос отзывы:</p>
-<p dir="ltr">Многие пациенты, прошедшие курс мезотерапии в Турции, отмечают значительное улучшение состояния волос:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Уменьшение выпадения волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Увеличение густоты и объема волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Улучшение структуры и блеска волос.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Снижение перхоти и зуда кожи головы.</p>
-</li>
-</ul>
-<p dir="ltr">Мезотерапия волос в Турции &ndash; это процедура, которая пользуется популярностью благодаря высокой эффективности и доступной стоимости. AZPO Health работает только с сертифицированными клиниками и проверенными поставщиками, что гарантирует качество и безопасность лечения.</p>
-<p dir="ltr">Что учитывать перед началом мезотерапии?</p>
-<p dir="ltr">Прежде чем решиться на мезотерапию, важно учесть несколько факторов:</p>
+<h4 dir="ltr">Процедура мезотерапии с AZPO Health</h4>
+<p dir="ltr">В AZPO Health мы проводим процедуру мезотерапии с особой точностью и вниманием к деталям, чтобы гарантировать максимальный эффект и комфорт для каждого пациента. Процесс включает несколько этапов:</p>
 <ol>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Консультация с врачом: необходимо проконсультироваться с трихологом или дерматологом, чтобы определить причину проблем с волосами и подобрать оптимальный состав мезотерапевтического коктейля.</p>
+<p dir="ltr" role="presentation">Консультация: на первичной консультации опытный врач оценит состояние ваших волос и кожи головы, обсудит ваши ожидания и подберет индивидуальный состав для лечения.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Выбор клиники: важно выбирать клиники с хорошей репутацией и опытными специалистами, чтобы минимизировать риски и достичь наилучших результатов.</p>
+<p dir="ltr" role="presentation">Подготовка: перед процедурой кожа головы тщательно очищается и дезинфицируется для обеспечения полной стерильности.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальные особенности: важно учитывать особенности организма, такие как аллергии или хронические заболевания, чтобы избежать нежелательных реакций.</p>
+<p dir="ltr" role="presentation">Инъекции: с помощью тонкой иглы витаминно-минеральный коктейль вводится в кожу головы точечно &mdash; в зоны, где необходимо стимулировать рост волос.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Реалистичные ожидания: следует понимать, что мезотерапия не дает мгновенных результатов, и для достижения заметного эффекта потребуется пройти курс из нескольких процедур.</p>
+<p dir="ltr" role="presentation">Уход после процедуры: вы получите подробные рекомендации по уходу, чтобы ускорить восстановление и усилить эффект от лечения.<br><br></p>
 </li>
 </ol>
-<p dir="ltr">Альтернативы мезотерапии</p>
-<p dir="ltr">Помимо мезотерапии, существует множество других эффективных методов лечения проблем с волосами, таких как:</p>
+<h3 dir="ltr">Преимущества мезотерапии</h3>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">PRP-терапия: инъекции плазмы, обогащенной тромбоцитами, стимулируют рост волос и улучшают их состояние.</p>
+<p dir="ltr" role="presentation">Безоперационный метод: отличная альтернатива пересадке волос &mdash; без хирургического вмешательства.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Миноксидил и финастерид: эти препараты часто используются для лечения выпадения волос, однако они могут иметь побочные эффекты и требуют продолжительного применения для достижения устойчивых результатов.</p>
+<p dir="ltr" role="presentation">Минимальный восстановительный период: после процедуры можно сразу вернуться к повседневным делам.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Лазерная терапия: лазерные процедуры стимулируют рост волос, улучшая кровообращение в коже головы и способствуя укреплению волосяных фолликулов.</p>
+<p dir="ltr" role="presentation">Индивидуальный подход: состав препарата подбирается с учетом ваших потребностей и целей.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Трансплантация волос: хирургический метод, при котором здоровые волосяные фолликулы пересаживаются из донорской зоны в область облысения, обеспечивая естественный и долговременный результат.</p>
+<p dir="ltr" role="presentation">Улучшение структуры волос: волосы становятся крепче, гуще и здоровее.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">DHI Transplantation Method: современная техника пересадки волос, которая отличается высокой точностью и минимальной инвазивностью. В отличие от традиционной трансплантации, при методе DHI процесс пересадки волос выполняется с использованием специального инструмента &ndash; Choi Implanter Pen.&nbsp;</p>
+<p dir="ltr" role="presentation">Безопасность и эффективность: процедура проводится сертифицированными специалистами с использованием проверенных препаратов.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">Мезотерапия в сочетании с пересадкой волос</p>
-<p dir="ltr">Мезотерапия является эффективным дополнением к пересадке волос, способствуя лучшей приживаемости фолликулов, стимулируя их рост и улучшая состояние кожи головы. Многие клиники предлагают комплексные программы, включающие пересадку волос и мезотерапию, для достижения наилучших результатов.</p>
-<p dir="ltr">Заключение</p>
-<p dir="ltr">Мезотерапия для волос &ndash; это эффективный и безопасный метод восстановления здоровья волос, который пользуется заслуженной популярностью во всем мире. Выбирая Турцию и AZPO Health, вы получаете доступ к высококачественным услугам, современным технологиям и доступным ценам. Свяжитесь с AZPO Health сегодня для бесплатной консультации и узнайте, как мезотерапия может вернуть вашим волосам красоту и здоровье!</p>
+<h3 dir="ltr">Сравнение мезотерапии с пересадкой волос</h3>
+<p dir="ltr">Мезотерапия &mdash; отличный вариант для многих, кто сталкивается с проблемой выпадения волос, но важно понимать, чем она отличается от других методов восстановления, таких как экстракция фолликулярных единиц (FUE) и прямая имплантация волос (DHI). Мезотерапия идеально подходит для профилактики выпадения и укрепления существующих волос. Однако, если волосы уже утрачены, пересадка остаётся единственным способом их полноценного восстановления.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Трансплантация волос по технологии FUE: техника FUE (Follicular Unit Extraction) предполагает бережное извлечение отдельных волосяных фолликулов из донорской зоны &mdash; чаще всего с затылочной части головы &mdash; и пересадку их в области с поредевшими или отсутствующими волосами. Это малоинвазивная хирургическая процедура, дающая долговременный результат и особенно эффективная при выраженном облысении.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пересадка волос по технологии DHI: техника DHI (Direct Hair Implantation) представляет собой усовершенствованный вариант FUE, при котором используется специальный инструмент &mdash; имплантер Choi. Он позволяет напрямую внедрять волосяные фолликулы в кожу головы без предварительных надрезов. Такая техника обеспечивает максимальную точность размещения волос, минимизирует травматичность и повышает уровень приживаемости пересаженных фолликулов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мезотерапия: это нехирургическая процедура, направленная на стимуляцию роста волос и улучшение их качества за счет интенсивного питания кожи головы и волосяных фолликулов. Этот метод особенно эффективен для людей с начальной стадией выпадения волос или с их истончением, которые стремятся укрепить существующие волосы, улучшить их здоровье и внешний вид.</p>
+</li>
+</ul>
+<p dir="ltr">Выбор между мезотерапией, FUE и DHI зависит от степени выпадения волос, ожидаемых результатов и предпочтений относительно хирургических или нехирургических методов лечения. Специалисты AZPO Health помогут вам подобрать оптимальный план, учитывая индивидуальные особенности, цели и пожелания.</p>
+<h3 dir="ltr">Дополнительные процедуры для усиления эффекта мезотерапии</h3>
+<p dir="ltr">Чтобы улучшить результаты мезотерапии, специалисты AZPO Health могут рекомендовать комбинированный подход с другими методами лечения:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">PRP-терапия (богатая тромбоцитами плазма): предполагает инъекции плазмы, обогащенной тромбоцитами, полученной из вашей собственной крови. Такая процедура активизирует рост волос и улучшает питание волосяных фолликулов. В сочетании с мезотерапией PRP может значительно ускорить рост волос и повысить общую эффективность лечения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Низкоинтенсивная лазерная терапия (LLLT): это терапия с использованием лазеров низкой интенсивности, направленных на стимуляцию волосяных фолликулов и улучшение кровоснабжения кожи головы. В комплексе с мезотерапией она усиливает её воздействие и способствует более заметному росту волос.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Уход за волосами после мезотерапии</h3>
+<p dir="ltr">Для того чтобы результат от мезотерапии сохранялся надолго, важно соблюдать грамотный уход за волосами и вести здоровый образ жизни. Вот несколько полезных рекомендаций:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Соблюдайте рекомендации врача: внимательно следуйте всем инструкциям, которые вы получите от медицинской команды AZPO Health. Это включает в себя ограничения на физическую активность, особенности гигиены и использование рекомендованных средств по уходу за волосами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Питайтесь сбалансированно: употребляйте продукты, богатые витаминами, минералами и белком &mdash; например, шпинат, яйца, орехи, бобовые и цельнозерновые культуры. Это укрепляет волосы изнутри и поддерживает их рост.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Избегайте агрессивной химии: откажитесь от средств с сульфатами, парабенами и другими агрессивными компонентами. Используйте мягкие, натуральные шампуни и кондиционеры, чтобы не пересушивать кожу головы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Снижайте уровень стресса: хронический стресс негативно влияет на состояние волос. Найдите подходящие вам способы расслабления &mdash; йога, медитация, дыхательные практики или прогулки на свежем воздухе помогут восстановить баланс.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Регулярно массируйте кожу головы: &nbsp;легкий массаж стимулирует приток крови к волосяным луковицам, улучшая их питание и активизируя рост новых волос.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддерживайте водный баланс: пейте достаточное количество воды в течение дня &mdash; это необходимо для нормального функционирования организма и здоровья кожи головы.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Почему стоит выбрать AZPO Health&nbsp;</h3>
+<p dir="ltr">AZPO Health предоставляет высококачественные услуги по восстановлению волос в Турции, сочетая профессионализм, современные технологии и индивидуальный подход к каждому клиенту. Вот что делает нас особенными:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытная команда специалистов: в нашей команде работают врачи и медицинские профессионалы с многолетним опытом в проведении мезотерапии и других процедур по восстановлению волос.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные клиники: мы сотрудничаем с лицензированными медицинскими центрами, оснащенными новейшим оборудованием, что гарантирует безопасность и эффективность процедур.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальные планы лечения: каждое лечение подбирается с учетом ваших личных потребностей, чтобы обеспечить максимально эффективный результат.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексное сопровождение: AZPO Health предлагает полный пакет услуг, включающий лечение, проживание, трансфер и постпроцедурный уход &mdash; для вашего удобства и спокойствия.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гарантия качества: мы придерживаемся высоких стандартов качества и безопасности, чтобы сделать ваш опыт максимально комфортным и результативным.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Сделайте первый шаг к здоровым и густым волосам!</h3>
+<p dir="ltr">Не позволяйте выпадению волос снижать вашу уверенность. Свяжитесь с AZPO Health уже сегодня для бесплатной консультации и персонального предложения. Наши специалисты оценят состояние ваших волос и кожи головы, обсудят цели и разработают индивидуальный план мезотерапии, который поможет вам добиться желаемого результата.</p>
+<h3 dir="ltr">Отзывы наших клиентов</h3>
+<p dir="ltr">&laquo;Я долго боролась с истончением волос и решила попробовать мезотерапию с AZPO Health. Результаты превзошли ожидания &mdash; волосы стали гуще, крепче и заметно здоровее. Вся команда была очень внимательной и профессиональной на каждом этапе.&raquo; &mdash; Сара Дж.</p>
+<p dir="ltr">&laquo;Я сомневался в необходимости пересадки волос, поэтому выбрал мезотерапию. Это было отличное решение &mdash; процедура безболезненная, а первые результаты появились уже через несколько месяцев. Моя уверенность в себе значительно выросла!&raquo; &mdash; Майкл Б.</p>
 <p dir="ltr">&nbsp;</p>`
             : `
            <p dir="ltr">Turkey has emerged as a leading destination for medical tourism, particularly for hair restoration procedures, due to its world-class medical facilities, experienced healthcare professionals, and affordable prices. AZPO Health leverages these advantages to offer comprehensive mesotherapy packages in Istanbul, Antalya, Izmir, Cappadocia and Alanya, ensuring a seamless and rewarding experience for our clients.</p>
@@ -6057,60 +6214,60 @@ export const dataSubCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Пересадка бороды: верните уверенность и мужественность в 2025 году!"
+          ? "Пересадка бороды в Турции — подчеркните свою индивидуальность"
           : "Beard Transplant in Turkey – Get the Confident Look You Deserve!",
       descriptionTop:
         locale === "ru"
-          ? "Забудьте о редкой и неравномерной бороде! AZPO Health предлагает передовые решения по пересадке бороды в Турции, чтобы вы могли создать идеальный образ, о котором всегда мечтали. Мы поможем вам восстановить густоту и форму бороды, придав вашему лицу выразительность и мужественность."
+          ? "Мечтаете о густой, четко очерченной бороде? С AZPO Health вы легко добьетесь желаемого — мы сотрудничаем с лучшими экспертами Турции и предлагаем передовые технологии пересадки для естественного и долговечного эффекта."
           : "Struggling with patchy facial hair? Want a thicker, more defined beard? AZPO Health connects you with top specialists in Turkey, offering advanced beard transplant techniques for a natural, permanent solution. Transform Your Appearance with a Beard Transplant: Affordable Solutions in Turkey",
       benefits: {
         items: [
           {
             title:
-              locale === "ru" ? "Естественная эстетика" : "Natural Aesthetics",
+              locale === "ru" ? "Натуральный результат" : "Natural Aesthetics",
             desc:
               locale === "ru"
-                ? "результаты гармонично сочетаются с существующими волосами на лице, создавая естественный и аутентичный вид."
+                ? "пересаженные волосы гармонируют с естественной растительностью лица."
                 : "Results blend seamlessly with existing facial hair, creating a natural and authentic appearance",
           },
           {
             title:
-              locale === "ru" ? "Улучшенные очертания" : "Enhanced Definition",
+              locale === "ru" ? "Четкие и выразительные контуры" : "Enhanced Definition",
             desc:
               locale === "ru"
-                ? "достижение более полного покрытия и четко очерченного контура бороды для более мужественного профиля лица."
+                ? "вы получаете густую, равномерную и эстетически привлекательную бороду."
                 : "Achieve fuller coverage and well-defined beard contours for a more masculine facial profile",
           },
           {
             title:
-              locale === "ru" ? "Долговременное решение" : "Lasting Solution",
+              locale === "ru" ? "Пожизненный эффект" : "Lasting Solution",
             desc:
               locale === "ru"
-                ? "однократная процедура обеспечивает пожизненный результат без необходимости постоянного ухода."
+                ? "один раз — на всю жизнь. Пересаженные волосы продолжают расти как обычные."
                 : "One-time procedure provides lifelong results without the need for ongoing maintenance",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? null : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? null
+                ? "Пересадка бороды — это косметическая процедура, направленная на восстановление или создание более густой и оформленной бороды. Она особенно востребована среди мужчин, стремящихся улучшить внешний вид, скрыть шрамы или скорректировать естественный рост волос."
                 : "A beard transplant is a cosmetic procedure aimed at restoring or creating a fuller beard. This method is popular among men who want to improve their appearance, cover scars, or adjust the natural shape of their beard.",
           },
           {
             header:
-              locale === "ru" ? "Как это работает" : "How It Works",
+              locale === "ru" ? "Как проходит процедура?" : "How It Works",
             desc:
               locale === "ru"
-                ? "Извлечение волос донора: волосы берутся из донорской зоны (обычно с затылочной части головы) методом FUE (Follicular Unit Extraction). Подготовка фолликулов: извлеченные фолликулы обрабатываются и подготавливаются к пересадке. Имплантация: волосы пересаживаются в зоны, требующие коррекции, с учетом естественного направления, угла и плотности роста бороды."
+                ? "Процедура пересадки волос проходит в несколько этапов. Сначала происходит извлечение донорских волос — как правило, волосы берутся с затылочной области с помощью метода FUE (экстракция фолликулярных единиц). Затем извлечённые волосяные фолликулы аккуратно обрабатываются и подготавливаются к пересадке. На заключительном этапе подготовленные фолликулы имплантируются в зоны с недостаточным ростом, с учётом естественного угла, направления и плотности бороды."
                 : "Donor Hair Extraction: Hair is taken from the donor area (usually the back of the head) using the FUE (Follicular Unit Extraction) method. Follicle Preparation: The extracted follicles are processed and prepared for transplantation. Implantation: The hair is transplanted into areas that need correction, considering the natural direction, angle, and density of the beard growth.",
           },
           {
-            header: locale === "ru" ? "Для кого" : "For Whom",
+            header: locale === "ru" ? null : "For Whom",
             desc:
               locale === "ru"
-                ? "Эта процедура идеально подходит для мужчин с редким или отсутствующим ростом бороды, а также для тех, кто желает улучшить форму и контуры своей бороды, придавая ей более выразительный и аккуратный вид."
+                ? null
                 : "This procedure is suitable for men with sparse or no beard growth, as well as those who want to enhance the contours of their beard.",
           },
         ],
@@ -6458,14 +6615,14 @@ export const dataSubCategoryHandler = (
             title: locale === "ru" ? "Естественный вид" : "Natural Look",
             desc:
               locale === "ru"
-                ? "гармоничное сочетание с натуральными волосами."
+                ? "пересаженные волосы выглядят натурально и гармонично."
                 : "Blends seamlessly for a balanced, authentic appearance.",
           },
           {
             title: locale === "ru" ? "Улучшенный объем" : "Enhanced Volume",
             desc:
               locale === "ru"
-                ? "густые усы с четкими контурами."
+                ? "усы становятся гуще, с чёткими линиями и регулируемой толщиной."
                 : "Provides fuller, denser growth with defined contours.",
           },
           {
@@ -6473,7 +6630,7 @@ export const dataSubCategoryHandler = (
               locale === "ru" ? "Пожизненное решение" : "Lifelong Solution",
             desc:
               locale === "ru"
-                ? "волосы растут на всю жизнь после приживления."
+                ? "волосы приживаются и растут всю жизнь."
                 : "Transplanted hair grows naturally for life.",
           },
         ],
@@ -6487,10 +6644,10 @@ export const dataSubCategoryHandler = (
           },
           {
             header:
-              locale === "ru" ? "Как это работает" : "How It Works",
+              locale === "ru" ? "Как проходит процедура" : "How It Works",
             desc:
               locale === "ru"
-                ? "Извлечение волос донора: волосы для пересадки берутся из донорской зоны, обычно с задней или боковых частей головы, где волосы обладают лучшими характеристиками для трансплантации. Для извлечения волос применяется метод FUE (Follicular Unit Extraction), который не требует разрезов или швов. Подготовка фолликулов: извлеченные фолликулы обрабатываются и подготавливаются к имплантации в область усов. Имплантация: фолликулы имплантируются в необходимые участки с учетом естественного направления и угла роста, что обеспечивает натуральный результат."
+                ? "Сначала волосы берутся из донорской зоны (затылок или бока) методом FUE — без разрезов и швов. Затем фолликулы обрабатываются и пересаживаются в область усов с учётом естественного направления роста для максимально натурального результата."
                 : "Donor Hair Extraction: Hair is taken from the back or sides of the head using the FUE method, avoiding cuts or stitches. Follicle Preparation: Extracted follicles are processed for implantation. Implantation: Follicles are placed with precise angles for a natural look.",
           },
           {
@@ -6905,7 +7062,7 @@ export const dataSubCategoryHandler = (
 <h3 dir="ltr">Сделайте первый шаг к вашей мечте!</h3>
 <p dir="ltr">Не откладывайте свою мечту о красивых и густых усах на потом! Свяжитесь с нами прямо сейчас, чтобы получить бесплатную консультацию и узнать больше о возможностях пересадки усов с AZPO Health. Наши специалисты ответят на все ваши вопросы и помогут выбрать оптимальный метод лечения.</p>
 <p dir="ltr">AZPO Health &ndash; ваш путь к уверенности и безупречному внешнему виду!</p>
-<p>&nbsp;</p>`
+<p dir="ltr">&nbsp;</p>`
             : `
            <p dir="ltr">Turkey has become a leading destination for medical tourism, particularly for hair restoration procedures like moustache transplants. Here's why AZPO Health in Turkey stands out:</p>
 <ul>
@@ -7029,11 +7186,11 @@ export const dataSubCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Пересадка бровей: восстановите естественную красоту и уверенность в себе!"
+          ? "Пересадка бровей в Турции — восстановите свою естественную красоту и уверенность!"
           : "Eyebrow Transplant in Turkey – Restore Your Natural Beauty & Confidence!",
       descriptionTop:
         locale === "ru"
-          ? "Надоели редкие или отсутствующие брови? AZPO Health предлагает пересадку бровей в Турции – естественное, безболезненное и долговременное решение для восстановления формы и густоты бровей в 2025 году!"
+          ? "Устали от редких, редеющих или слишком выщипанных бровей? Брови играют важную роль в формировании вашего образа, подчеркивают выражение лица и придают гармонию внешности. Когда они начинают редеть, возникает ощущение, что чего-то не хватает. Компания AZPO Health предлагает услуги ведущих специалистов Турции по пересадке бровей, которая выглядит максимально натурально и дает постоянный результат. Используя передовые технологии, мы восстанавливаем густоту, форму и симметрию бровей, даря вам выразительный и ухоженный образ. Забудьте о ежедневном использовании карандашей и микроблейдинга — теперь вы можете наслаждаться настоящими и долговечными результатами."
           : "Tired of thin, patchy, or over-plucked brows? Your eyebrows define your face, frame your expressions, and enhance your natural beauty—but when they start thinning, it can feel like something’s missing. AZPO Health connects you with top specialists in Turkey for natural-looking, permanent eyebrow transplants. Using advanced techniques, we restore fullness, shape, and symmetry, giving you the bold, beautifully framed look you deserve. No more daily brow pencils or microblading touch-ups—just real, lasting results.",
       benefits: {
         items: [
@@ -7041,46 +7198,46 @@ export const dataSubCategoryHandler = (
             title: locale === "ru" ? "Естественный вид" : "Natural Look",
             desc:
               locale === "ru"
-                ? "натуральные брови, подчеркивающие черты лица."
+                ? "брови выглядят натурально и идеально сочетаются с чертами лица."
                 : "Achieve perfectly natural-looking eyebrows that blend with your facial features",
           },
           {
-            title: locale === "ru" ? "Идеальная форма" : "Enhanced Shape",
+            title: locale === "ru" ? "Индивидуальная форма" : "Enhanced Shape",
             desc:
               locale === "ru"
-                ? "индивидуально подобранный контур."
+                ? "брови формируются с учетом особенностей вашего лица, подчеркивая его красоту."
                 : "Custom-designed eyebrows to frame your face and enhance your features.",
           },
           {
             title:
-              locale === "ru" ? "Долговечный результат" : "Permanent Results",
+              locale === "ru" ? "Долговечность" : "Permanent Results",
             desc:
               locale === "ru"
-                ? "без необходимости ежедневного макияжа."
+                ? "результат сохраняется надолго, избавляя от необходимости ежедневного макияжа и коррекции."
                 : "Enjoy lasting results that eliminate the need for daily makeup and routines",
           },
         ],
         categories: [ 
           {
-            header: locale === "ru" ? null : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? null
+                ? "Пересадка бровей — это косметическая операция, направленная на восстановление формы и густоты бровей, улучшение их контура и заполнение участков с отсутствием волос. Процедура подходит людям, потерявшим брови из-за травм, ожогов, генетических особенностей или чрезмерного выщипывания."
                 : "An eyebrow transplant is a cosmetic procedure designed to restore the shape and thickness of eyebrows, enhance their contours, or fill in areas where hair does not grow. This surgery is suitable for people who have lost their eyebrows due to injury, burns, genetic factors, or excessive plucking.",
           },
           {
             header:
-              locale === "ru" ? "Как это работает" : "How It Works",
+              locale === "ru" ? "Как проходит процедура" : "How It Works",
             desc:
               locale === "ru"
-                ? "Процедура начинается с извлечения волос-доноров, которые обычно берутся с затылочной части головы, где волосы наиболее густые и крепкие. Для этого используется метод FUE (Follicular Unit Extraction), который обеспечивает безболезненное удаление фолликулов и минимальные следы. Затем извлечённые фолликулы обрабатываются и подготавливаются к пересадке. На заключительном этапе волосы аккуратно имплантируются в зону бровей с учетом естественного направления и угла роста, что позволяет достичь максимально натурального и эстетичного результата."
+                ? "Процедура включает несколько этапов. Сначала волосы извлекаются из донорской зоны, чаще всего с затылка, где они более густые и крепкие. Применяется метод FUE (Follicular Unit Extraction) — безболезненный и щадящий способ с минимальными следами. Затем извлечённые фолликулы обрабатываются и подготавливаются к пересадке в область бровей. На заключительном этапе волосы пересаживаются с учётом естественного направления и угла роста, что обеспечивает максимально естественный и гармоничный результат."
                 : "Donor Hair Extraction: Hair is taken from the donor area, most often from the back of the head, where the hair is typically thicker and stronger. The FUE (Follicular Unit Extraction) method is commonly used to extract the follicles painlessly, leaving minimal marks. Follicle Preparation: The extracted follicles are processed and prepared for implantation in the eyebrow area. Implantation: The hair is transplanted into the eyebrow area, considering the natural growth direction and angle to ensure the most natural look.",
           },
           {
-            header: locale === "ru" ? "Для кого" : "For Whom",
+            header: locale === "ru" ? "Кому подходит процедура" : "For Whom",
             desc:
               locale === "ru"
-                ? "Подходит для людей с редкими или тонкими бровями, а также тех, кто утратил их (например, из-за ожогов или чрезмерного выщипывания)."
+                ? "Пересадка бровей подходит тем, у кого брови редкие, тонкие или полностью отсутствуют — например, из-за ожогов, травм или чрезмерного выщипывания. Она имеет ряд преимуществ. Во-первых, брови выглядят естественно и гармонично сочетаются с чертами лица. Во-вторых, форма бровей подбирается индивидуально, с учётом особенностей внешности, что помогает подчеркнуть её красоту. И наконец, результат сохраняется надолго, избавляя от необходимости ежедневного макияжа и постоянной коррекции."
                 : "Suitable for people with sparse, thin eyebrows or those who have lost them (e.g., due to burns or excessive plucking).",
           },
         ],
@@ -7122,206 +7279,115 @@ export const dataSubCategoryHandler = (
         locale === "ru" ? "Обсудите с хирургом желаемую форму бровей заранее, чтобы добиться идеального результата." : "Discuss desired shape with your surgeon."
       ],
       conclusion: {
-        title: locale === "ru" ? "Заключение" : "Conclusion",
+        title: locale === "ru" ? "Вывод" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Пересадка бровей - это эффективное решение для восстановления редких или утраченных бровей, а также для улучшения их формы и густоты. Благодаря современным методам результаты выглядят естественно и сохраняются надолго, что делает эту процедуру популярной среди людей, желающих иметь красивые и ухоженные брови без необходимости постоянного использования косметических средств."
+            ? "Пересадка бровей — это эффективный способ вернуть утраченную густоту и форму, подчеркнуть природную красоту и уверенность в себе. Благодаря современным методам результаты выглядят естественно и сохраняются надолго, что делает эту процедуру все более популярной среди тех, кто хочет иметь красивые и ухоженные брови без постоянного использования косметики."
             : "Eyebrow transplantation is an effective solution for restoring lost or sparse eyebrows, enhancing their shape and thickness. Thanks to modern techniques, the results appear natural and last a long time, making this procedure popular among individuals who want beautiful, well-groomed eyebrows without the need for constant cosmetic products.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Почему пересадка бровей так популярна в 2025 году?"
+            ? "Почему стоит выбрать Турцию для пересадки бровей?"
             : "Why Choose Turkey for Your Eyebrow Transplant?",
         content:
           locale === "ru"
-            ? `<p dir="ltr">Пересадка бровей - это косметическая процедура, направленная на восстановление формы и густоты бровей, улучшение их контуров или заполнение участков, где волосы не растут. Она подходит для людей, у которых брови были утрачены из-за травм, ожогов, генетических особенностей или избыточного выщипывания. В 2025 году эта процедура стала ещё более востребованной благодаря развитию технологий и высокой квалификации специалистов.</p>
-<p dir="ltr">Преимущества пересадки бровей:</p>
+            ? `<p dir="ltr">Турция давно зарекомендовала себя как один из лидеров в сфере медицинского туризма, особенно в области восстановления волос и пересадки бровей. Вот несколько причин, почему люди со всего мира выбирают именно Турцию:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Естественный вид: пересаженные брови выглядят абсолютно натурально, так как для процедуры используются собственные волосы пациента.</p>
+<p dir="ltr" role="presentation">Доступная стоимость: цены на пересадку бровей в Турции значительно ниже, чем в США или странах Европы. Это объясняется более низкими затратами на труд и выгодным курсом валюты &mdash; при этом качество услуг остается на высоком уровне.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Долговременный результат: в отличие от татуажа или микроблейдинга, пересаженные брови продолжают расти и сохраняются на протяжении многих лет.</p>
+<p dir="ltr" role="presentation">Опытные хирурги: в Турции работает большое количество квалифицированных специалистов с многолетним опытом в области трансплантации волос. Они владеют современными техниками и добиваются максимально естественного результата.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Минимальная травматичность: современные методы пересадки, такие как FUE, позволяют провести процедуру безболезненно и с минимальными следами.</p>
+<p dir="ltr" role="presentation">Современные технологии: турецкие клиники инвестируют в передовое медицинское оборудование и технологии, обеспечивая пациентам доступ к самым эффективным и инновационным методам лечения. Часто применяется, например, метод прямой имплантации волос (DHI).</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Восстановление уверенности в себе: красивые брови подчеркивают черты лица и помогают чувствовать себя более привлекательно и уверенно.</p>
+<p dir="ltr" role="presentation">Комплексные пакеты услуг:&nbsp; AZPO Health и другие авторитетные компании в сфере медтуризма предлагают пакеты &laquo;все включено&raquo;: саму процедуру, проживание, трансферы из аэропорта, а также послеоперационный уход. Это делает процесс максимально комфортным и избавляет пациентов от лишних забот.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высокая успешность процедур: пересадка бровей в Турции отличается высокой степенью эффективности &mdash; многие клиники сообщают об успехе в более чем 90% случаев. Это заслуга как профессионализма врачей, так и применения современных технологий и комплексного подхода к уходу за пациентами.</p>
 </li>
 </ul>
-<h3 dir="ltr">Как проходит процедура пересадки бровей в AZPO Health?</h3>
-<p dir="ltr">В AZPO Health мы используем передовые методы пересадки бровей, чтобы обеспечить нашим пациентам наилучшие результаты. Процедура включает несколько этапов:</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Методы пересадки бровей</h3>
+<p dir="ltr">Существует несколько техник пересадки бровей, каждая из которых имеет свои преимущества. В AZPO Health мы используем в основном следующие методы:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">FUE (экстракция фолликулярных единиц): это малоинвазивная техника, при которой отдельные фолликулы извлекаются из донорской зоны (обычно с затылка) при помощи микроинструмента. Затем они аккуратно пересаживаются в зону бровей. Метод FUE обеспечивает минимальные следы и быстрое восстановление по сравнению с устаревшими методиками.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">DHI (прямая имплантация волос): &nbsp;это усовершенствованная версия FUE, при которой используется специальный инструмент &mdash; имплантер Choi. С его помощью фолликулы сразу вживляются в зону бровей без предварительных разрезов. Такой подход уменьшает травматичность, ускоряет заживление и позволяет более точно контролировать угол и глубину имплантации. DHI особенно популярен для пересадки бровей благодаря возможности создать максимально естественный результат.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Выбор метода будет зависеть от ваших индивидуальных потребностей и рекомендаций специалиста AZPO Health.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h3 dir="ltr">Что ожидать от процедуры пересадки бровей с AZPO Health</h3>
+<p dir="ltr">С AZPO Health мы делаем всё возможное, чтобы ваша процедура пересадки бровей прошла максимально комфортно и без стресса. Вот как будет выглядеть весь процесс:</p>
 <ol>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Консультация: на первом этапе вы встречаетесь с нашим специалистом, который оценивает состояние ваших бровей, помогает определить желаемую форму и густоту, а также отвечает на все ваши вопросы.</p>
+<p dir="ltr" role="presentation">Онлайн-консультация: ваш путь начинается с онлайн-консультации, на которой вы сможете обсудить свои цели и пожелания с одним из наших опытных специалистов. Мы оценим вашу ситуацию и определим, подходите ли вы для процедуры пересадки бровей.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Подготовка: перед операцией вам необходимо пройти обследование и сдать анализы, чтобы исключить возможные противопоказания.</p>
+<p dir="ltr" role="presentation">Очная консультация и планирование: по прибытию в Турцию вы встретитесь с хирургом на очной консультации. Врач осмотрит область бровей, обсудит с вами желаемую форму и густоту, после чего разработает персонализированный план лечения. Также будет проведён тест на аллергию.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Извлечение донорских волос: волосы берутся из донорной зоны, чаще всего с затылка или задней части головы, где волосы обычно более густые и прочные. Обычно применяется метод FUE (Follicular Unit Extraction), который позволяет безболезненно извлекать фолликулы с минимальными следами.</p>
+<p dir="ltr" role="presentation">Проведение процедуры: процедура пересадки бровей обычно длится несколько часов и проводится под местной анестезией для вашего комфорта. Хирург аккуратно извлечет волосяные фолликулы из донорской зоны и пересадит их в область бровей, учитывая естественное направление и угол роста волосков.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Подготовка фолликулов: извлеченные фолликулы обрабатываются и подготавливаются к имплантации в область бровей.</p>
+<p dir="ltr" role="presentation">Послеоперационный уход: сразу после процедуры область бровей будет аккуратно забинтована для защиты пересаженных графтов. Вы получите подробные инструкции по уходу за бровями &mdash; как умываться, чего избегать, какие процедуры временно не проводить.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Имплантация: волосы пересаживаются в зону бровей с учетом их естественного направления и угла роста, чтобы добиться максимально натурального и гармоничного результата.</p>
+<p dir="ltr" role="presentation">Сопровождение и контроль: мы обеспечим вас полным сопровождением на всех этапах &mdash; от первой консультации до полного восстановления. Наша команда будет следить за прогрессом и ответит на все ваши вопросы в процессе заживления.</p>
 </li>
 </ol>
-<p dir="ltr">Методы пересадки бровей, используемые в AZPO Health:</p>
+<h3 dir="ltr">Восстановление и результат</h3>
+<p dir="ltr">Период восстановления после пересадки бровей, как правило, проходит легко. В первые дни может наблюдаться небольшая отёчность, синяки или лёгкий дискомфорт в обработанной зоне &mdash; это нормальная реакция, которая быстро проходит при соблюдении рекомендаций и использовании холодных компрессов.</p>
+<p dir="ltr">Обратите внимание: в течение первых недель пересаженные волоски могут выпасть &mdash; это естественный процесс, называемый &laquo;шоковой потерей&raquo;. Уже через 3&ndash;4 месяца начинается рост новых волос, а окончательный результат проявится в течение 6&ndash;12 месяцев.</p>
+<p dir="ltr">Так как пересаженные волоски продолжают расти, потребуется регулярное подравнивание и уход, чтобы сохранить аккуратную форму бровей.</p>
+<h3 dir="ltr">Подходит ли вам пересадка бровей?</h3>
+<p dir="ltr">Пересадка бровей &mdash; отличное решение для тех, кто:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">FUE (Follicular Unit Extraction): Это современный и малотравматичный метод, при котором волосяные фолликулы извлекаются по одному из донорской зоны и пересаживаются в область бровей. Метод FUE не оставляет шрамов и обеспечивает быстрый процесс восстановления.</p>
+<p dir="ltr" role="presentation">страдает от редких или тонких бровей из-за генетики, частого выщипывания или возрастных изменений;</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">DHI (Direct Hair Implantation): этот метод включает использование специального инструмента &ndash; имплантера Choi, который позволяет пересаживать волосяные фолликулы непосредственно в кожу бровей без предварительного создания каналов. DHI обеспечивает точный контроль над углом и глубиной имплантации, что позволяет достичь максимально естественного результата.&nbsp;</p>
+<p dir="ltr" role="presentation">утратил брови в результате травмы, ожогов или медицинских состояний;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">хочет скорректировать форму бровей, сделать их более выразительными и симметричными;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">находится в хорошем общем состоянии здоровья и имеет реалистичные ожидания от процедуры.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">Почему стоит выбрать AZPO Health для пересадки бровей в Турции?</h3>
-<p dir="ltr">AZPO Health &ndash; ведущая компания в сфере медицинского туризма, специализирующаяся на пересадке волос и бровей в Турции. Мы предлагаем нашим пациентам:</p>
+<p dir="ltr">Процедура подходит всем людям старше 18 лет. Чтобы точно определить, подходит ли вам пересадка бровей, мы приглашаем вас на консультацию с экспертами AZPO Health.</p>
+<h3 dir="ltr">AZPO Health &mdash; ваш надежный партнер в восстановлении бровей</h3>
+<p dir="ltr">AZPO Health &mdash; ведущая компания в сфере медицинского туризма, специализирующаяся на пересадке волос в Турции. Мы обеспечиваем наших клиентов высочайшим уровнем медицинской помощи, персонализированным подходом и естественными, эстетичными результатами.</p>
+<p dir="ltr">Вот что отличает нас:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Высококвалифицированных специалистов: наши врачи обладают многолетним опытом в проведении операций по пересадке бровей и используют самые современные техники.</p>
+<p dir="ltr" role="presentation">Опытные хирурги: мы сотрудничаем с лучшими специалистами Турции, обладающими многолетним опытом в области пересадки бровей и применяющими самые современные методики.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Передовые технологии: мы используем только сертифицированное оборудование и инструменты, чтобы обеспечить безопасность и эффективность процедуры.</p>
+<p dir="ltr" role="presentation">Современные клиники: мы работаем только с аккредитованными клиниками и больницами, оснащенными передовым медицинским оборудованием, что гарантирует комфорт и безопасность.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальный подход: мы учитываем все ваши пожелания и особенности, чтобы создать брови, соответствующие вашим ожиданиям.</p>
+<p dir="ltr" role="presentation">Пакеты &laquo;все включено&raquo;: наши комплексные пакеты охватывают все этапы процедуры, включая трансферы, проживание и послеоперационный уход.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступные цены: мы предлагаем конкурентоспособные цены на пересадку бровей в Турции, делая эту процедуру доступной для широкого круга пациентов.</p>
+<p dir="ltr" role="presentation">Индивидуальный подход:каждая программа лечения разрабатывается индивидуально с учетом ваших целей и анатомических особенностей.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комфортное пребывание: мы заботимся о вашем комфорте во время пребывания в Турции, предлагая трансфер из аэропорта, проживание в комфортабельных отелях и сопровождение на всех этапах лечения.</p>
+<p dir="ltr" role="presentation">Впечатляющие результаты:мы стремимся к тому, чтобы вы не просто восстановили форму бровей, но и почувствовали уверенность в себе.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">Преимущества пересадки бровей в Турции:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Высокое качество: турецкие клиники предлагают пересадку бровей, соответствующую мировым стандартам.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступные цены: стоимость пересадки бровей в Турции значительно ниже, чем в Европе или США.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Удобное расположение: Турция &ndash; популярное туристическое направление с развитой инфраструктурой и удобным транспортным сообщением.</p>
-</li>
-</ul>
-<h3 dir="ltr">Кому подходит пересадка бровей?</h3>
-<p dir="ltr">Пересадка бровей может быть отличным решением для людей, которые:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Имеют редкие или отсутствующие брови.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Недовольны формой или контуром своих бровей.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Потеряли брови из-за травм, ожогов или заболеваний.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Чрезмерно выщипывали брови в прошлом.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Хотят улучшить внешний вид и обрести уверенность в себе.</p>
-</li>
-</ul>
-<p dir="ltr">Противопоказания:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Заболевания крови.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Сахарный диабет в стадии декомпенсации.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Онкологические заболевания.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Острые инфекционные заболевания.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Психические расстройства.</p>
-</li>
-</ul>
-<h3 dir="ltr">Реабилитация после пересадки бровей</h3>
-<p dir="ltr">После пересадки бровей важно соблюдать все рекомендации врача, чтобы обеспечить быстрое и успешное восстановление. В первые дни после операции необходимо:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Избегать физических нагрузок и посещения сауны.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Не трогать и не чесать область бровей.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Обрабатывать брови антисептическим раствором.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Принимать обезболивающие препараты при необходимости.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Спать на спине, чтобы не травмировать пересаженные фолликулы.</p>
-</li>
-</ul>
-<p dir="ltr">Окончательный результат пересадки бровей можно оценить через 9-12 месяцев, когда волосяные фолликулы полностью приживутся и начнут активно расти.</p>
-<h3 dir="ltr">Возможные риски и осложнения</h3>
-<p dir="ltr">Как и любая медицинская процедура, пересадка бровей может быть связана с некоторыми рисками и осложнениями:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Инфекция.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Кровотечение.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Отек.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Покраснение.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Отторжение фолликулов.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Неудовлетворительный результат.</p>
-</li>
-</ul>
-<p dir="ltr">Однако, при выборе опытного специалиста и соблюдении всех рекомендаций врача, риск возникновения осложнений минимален.</p>
-<h3 dir="ltr">Альтернативные методы восстановления бровей</h3>
-<p dir="ltr">Если вы не готовы к пересадке бровей, существуют альтернативные методы восстановления их формы и густоты:</p>
-<ul>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Микроблейдинг: это процедура, при которой в кожу бровей вводятся пигменты, имитирующие волоски. Микроблейдинг обеспечивает временный эффект (до 1-2 лет).</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Татуаж: это более долговечный метод, при котором пигменты вводятся в более глубокие слои кожи. Татуаж может выглядеть менее естественно, чем пересадка бровей.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Косметические средства: существуют различные гели, карандаши и тени для бровей, которые помогают визуально увеличить их густоту и изменить форму.</p>
-</li>
-</ul>
-<p dir="ltr">Однако, ни один из этих методов не обеспечивает такого естественного и долговременного результата, как пересадка бровей.</p>
-<h3 dir="ltr">Отзывы наших пациентов</h3>
-<p dir="ltr">"Я долго мечтала о красивых бровях, но боялась делать пересадку. В AZPO Health мне все подробно объяснили и успокоили. Результат превзошел все мои ожидания! Брови выглядят естественно, и я чувствую себя намного увереннее!" &ndash; Елена, 35 лет</p>
-<p dir="ltr">"После ожога у меня практически не было бровей. Пересадка в AZPO Health стала для меня настоящим спасением! Врачи сделали все профессионально, и теперь у меня снова есть красивые брови!" &ndash; Сергей, 42 года</p>
-<h3 dir="ltr">Часто задаваемые вопросы</h3>
-<p dir="ltr">Сколько стоит пересадка бровей в Турции?</p>
-<p dir="ltr">Стоимость пересадки бровей зависит от множества факторов, включая выбранный метод пересадки, количество необходимых графтов и особенности клиники. Свяжитесь с нами для получения бесплатной консультации и индивидуального расчета стоимости.</p>
-<p dir="ltr">Как долго длится операция по пересадке бровей?</p>
-<p dir="ltr">Операция обычно занимает от 3 до 5 часов.</p>
-<p dir="ltr">Нужно ли брить брови перед пересадкой?</p>
-<p dir="ltr">Обычно брить брови не требуется. Врач может попросить вас подстричь волоски в области бровей для облегчения процедуры.</p>
-<p dir="ltr">Будут ли видны шрамы после пересадки бровей?</p>
-<p dir="ltr">При использовании метода FUE шрамы практически не видны.</p>
-<p dir="ltr">Когда я увижу результат после пересадки бровей?</p>
-<p dir="ltr">Первые результаты можно увидеть через 3-4 месяца, а окончательный результат &ndash; через 9-12 месяцев.</p>
-<h3 dir="ltr">Сделайте первый шаг к красивым бровям уже сегодня!</h3>
-<p dir="ltr">Не откладывайте свою мечту о красивых бровях на потом! Свяжитесь с AZPO Health прямо сейчас, чтобы получить бесплатную консультацию и узнать больше о пересадке бровей в Турции. Мы поможем вам обрести уверенность в себе и подчеркнуть вашу естественную красоту!</p>
-<p dir="ltr">AZPO Health: Ваш надежный партнер в мире медицинского туризма!</p>
+<p dir="ltr">Готовы преобразить свои брови и вернуть уверенность? Свяжитесь с AZPO Health уже сегодня, чтобы получить бесплатную консультацию и индивидуальное предложение!</p>
 <p dir="ltr">&nbsp;</p>`
             : `
            <p dir="ltr">Turkey has emerged as a leading destination for medical tourism, particularly for hair restoration procedures like eyebrow transplants. There are several compelling reasons why people from all over the world choose Turkey for their eyebrow restoration needs:</p>
@@ -8308,35 +8374,35 @@ export const dataSubCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Лабиопластика в Турции: Верните уверенность и комфорт в 2025 году!"
+          ? "Лабиопластика в Турции: верните себе комфорт и уверенность"
           : "Labiaplasty in Turkey: Rediscover Comfort and Confidence",
       descriptionTop:
         locale === "ru"
-          ? ""
+          ? "Испытываете физический дискомфорт или чувствуете неуверенность из-за увеличенных или асимметричных половых губ? Лабиопластика в Турции с AZPO Health — это безопасное и эффективное решение, которое помогает вернуть телесный комфорт, уверенность и гармонию с собой. Под заботой опытных пластических хирургов вы сможете добиться желаемого эстетического результата и повысить качество жизни."
           : "Are you experiencing discomfort or self-consciousness due to enlarged or asymmetrical labia?. Labiaplasty in Turkey with AZPO Health offers a safe, effective solution to restore your comfort, confidence, and well-being. Under the care of experienced surgeons, you can achieve the aesthetic results you desire.",
       benefits: {
         items: [
           {
             title:
-              locale === "ru" ? "Эстетическое улучшение" : "Image Benefits",
+              locale === "ru" ? "Естественный результат" : "Image Benefits",
             desc:
               locale === "ru"
-                ? "Улучшение внешнего вида интимной зоны повышает самооценку."
+                ? "гармоничный внешний вид и улучшение телесного самовосприятия."
                 : "Natural-looking results boost confidence and enhance physical comfort.",
           },
           {
             title: locale === "ru" ? "Физический комфорт" : "Daily Comfort",
             desc:
               locale === "ru"
-                ? "Устранение дискомфорта при ежедневной активности."
+                ? "уменьшение трения и раздражения при повседневной активности."
                 : "Less friction during activities leads to improved mobility.",
           },
           {
             title:
-              locale === "ru" ? "Эмоциональное благополучие" : "Mental Health",
+              locale === "ru" ? "Психологический комфорт" : "Mental Health",
             desc:
               locale === "ru"
-                ? "Повышение уверенности в себе и улучшение качества жизни."
+                ? "больше уверенности, меньше тревожности, лучше качество жизни."
                 : "Better self-image reduces anxiety and enhances life satisfaction.",
           },
         ],
@@ -8345,92 +8411,69 @@ export const dataSubCategoryHandler = (
             header: locale === "ru" ? "Для кого" : "Description",
             desc:
               locale === "ru"
-                ? "Подходит для женщин, недовольных внешним видом половых губ или испытывающих физический дискомфорт из-за их размера или формы."
+                ? "Лабиопластика — это хирургическая процедура, направленная на изменение формы и размера половых губ. Она помогает улучшить внешний вид интимной зоны и устранить физический дискомфорт, вызванный увеличением тканей."
                 : "Labiaplasty is a surgical procedure aimed at altering the size and shape of the labia, often performed to improve aesthetic appearance and increase comfort. Labiaplasty can involve reducing the size of the labia majora to relieve discomfort caused by hypertrophy (enlargement) of the labia.",
           },
           {
             header:
-              locale === "ru" ? "На что обратить внимание" : "How it works",
+              locale === "ru" ? "Как проходит процедура" : "How it works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Операция проводится под местной или общей анестезией. Хирург делает аккуратные надрезы на малых половых губах, удаляет излишки ткани и придаёт области более симметричную, эстетичную форму. После вмешательства возможны легкие отеки и чувствительность, которые обычно проходят в течение нескольких недель. По желанию пациентки можно достичь так называемого «Barbie Look»— максимально аккуратного и компактного результата."
                 : "Labiaplasty involves making small incisions in the labia minora to remove excess tissue and reshape the area. The procedure is performed under local or general anesthesia. After surgery, there may be swelling and discomfort, but these symptoms typically subside within a few weeks.It creates a more aesthetic and symmetrical appearance, sometimes with a Barbie Look (hyper-symmetrical and compact labia).",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For whom",
+            header: locale === "ru" ? "Кому подходит" : "For whom",
             desc:
               locale === "ru"
-                ? "Лабиапластика — это хирургическая процедура, которая изменяет форму и размер больших или малых половых губ путем удаления избыточной ткани для создания более эстетичного и симметричного вида, иногда с достижением эффекта Барби(гиперсимметричные и компактные половые губы)."
+                ? "Лабиопластика рекомендована женщинам, которые испытывают дискомфорт при движении, во время занятий спортом или половой близости, а также тем, кто недоволен внешним видом интимной зоны."
                 : "Suitable for women dissatisfied with the appearance of their labia or who experience physical discomfort due to their size or shape.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Tenderness for a few days is normal, managed with meds",
+          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer : locale === "ru" ? "Легкая болезненность в течение нескольких дней - это нормально и обычно хорошо контролируется обезболивающими." : "Tenderness for a few days is normal, managed with meds"
         },
         {
-          question: locale === "ru" ? "" : "Will there be visible scars?",
-          answer: locale === "ru" ? "" : "Scars are small and fade over time",
+          question : locale === "ru" ? "Будут ли видны шрамы?" : "Will there be visible scars?",
+          answer : locale === "ru" ? "Шрамы минимальны и со временем становятся менее заметными." : "Scars are small and fade over time"
         },
         {
-          question: locale === "ru" ? "" : "Can I exercise after?",
-          answer:
-            locale === "ru" ? "" : "Light walking only for first 1–2 weeks",
+          question : locale === "ru" ? "Могу ли я заниматься спортом после процедуры?" : "Can I exercise after?",
+          answer : locale === "ru" ? "В первые 1–2 недели рекомендуется только лёгкая активность, например, прогулки." : "Light walking only for first 1–2 weeks"
         },
         {
-          question: locale === "ru" ? "" : "Is it safe?",
-          answer: locale === "ru" ? "" : "Yes, when done by qualified surgeons",
+          question : locale === "ru" ? "Это безопасно?" : "Is it safe?",
+          answer : locale === "ru" ? "Да, при условии, что процедура проводится квалифицированным и опытным хирургом." : "Yes, when done by qualified surgeons"
         },
         {
-          question: locale === "ru" ? "" : "Will it affect sensitivity?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Most patients report no change or improved comfort",
-        },
+          question : locale === "ru" ? "Повлияет ли это на чувствительность?" : "Will it affect sensitivity?",
+          answer : locale === "ru" ? "В большинстве случаев чувствительность сохраняется; некоторые пациенты даже отмечают улучшение комфорта." : "Most patients report no change or improved comfort"
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Apply cold compresses over clothing to reduce swelling",
-        locale === "ru"
-          ? ""
-          : "Keep area clean and dry, use sitz baths if recommended",
-        locale === "ru"
-          ? ""
-          : "Avoid tight clothing and sexual activity for 4–6 weeks",
-        locale === "ru"
-          ? ""
-          : "Take all prescribed medications and pain relief",
-        locale === "ru"
-          ? ""
-          : "Monitor for signs of infection (fever, odor, pus)",
-        locale === "ru"
-          ? ""
-          : "Be cautious with sitz baths to avoid irritation or damage to the area",
+        locale === "ru" ? "Прикладывайте холодные компрессы поверх одежды, чтобы уменьшить отек." : "Apply cold compresses over clothing to reduce swelling",
+        locale === "ru" ? "Поддерживайте чистоту и сухость в зоне вмешательства; при необходимости используйте сидячие ванны по рекомендации врача." : "Keep area clean and dry, use sitz baths if recommended",
+        locale === "ru" ? "Избегайте тесной одежды и половой активности в течение 4–6 недель." : "Avoid tight clothing and sexual activity for 4–6 weeks",
+        locale === "ru" ? "Принимайте все назначенные лекарства и обезболивающие строго по инструкции." : "Take all prescribed medications and pain relief",
+        locale === "ru" ? "Следите за признаками инфекции: повышенная температура, неприятный запах или гнойные выделения." : "Monitor for signs of infection (fever, odor, pus)",
+        locale === "ru" ? "Используйте сидячие ванны с осторожностью, чтобы избежать раздражения или повреждения ткани." : "Be cautious with sitz baths to avoid irritation or damage to the area"
       ],
       preList: [
-        locale === "ru" ? "" : "Avoid NSAIDs and supplements 1 week before",
-        locale === "ru" ? "" : "Stop smoking 2–3 weeks before",
-        locale === "ru"
-          ? ""
-          : "Shave or trim the area as instructed pre-surgery",
-        locale === "ru" ? "" : "Wear loose cotton underwear and bring a pad",
-        locale === "ru" ? "" : "Arrange time off for rest (at least 3–5 days)",
-        locale === "ru"
-          ? ""
-          : "Inform your doctor of any chronic illnesses or allergies that could affect healing.",
+        locale === "ru" ? "Избегайте приема НПВП и биодобавок за 7 дней до операции." : "Avoid NSAIDs and supplements 1 week before",
+        locale === "ru" ? "Воздержитесь от курения за 2–3 недели до процедуры." : "Stop smoking 2–3 weeks before",
+        locale === "ru" ? "Побрейте или аккуратно подстригите зону вмешательства согласно рекомендациям врача." : "Shave or trim the area as instructed pre-surgery",
+        locale === "ru" ? "Наденьте свободное хлопковое нижнее белье и возьмите с собой гигиеническую прокладку." : "Wear loose cotton underwear and bring a pad",
+        locale === "ru" ? "Запланируйте не менее 3–5 дней на восстановление и отдых." : "Arrange time off for rest (at least 3–5 days)",
+        locale === "ru" ? "Обязательно сообщите врачу о любых хронических заболеваниях или аллергиях, которые могут повлиять на заживление." : "Inform your doctor of any chronic illnesses or allergies that could affect healing."
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Лабиапластика является эффективным методом улучшения эстетики интимной зоны и устранения дискомфорта."
+            ? "лабиопластика — это не только способ улучшить внешний вид интимной зоны, но и возможность устранить физический и эмоциональный дискомфорт. Процедура помогает женщинам не только чувствовать себя комфортнее в повседневной жизни, но и вернуть уверенность в себе, что в целом положительно влияет на качество жизни."
             : "Labiaplasty is an effective method for enhancing the aesthetics of the intimate area and eliminating discomfort. It can also improve confidence and overall quality of life for those experiencing physical or emotional distress.",
       },
       bfs: bfList,
@@ -8441,7 +8484,119 @@ export const dataSubCategoryHandler = (
             : "Why Choose Turkey for Labiaplasty?",
         content:
           locale === "ru"
-            ? `<p>Турция стала одним из ведущих направлений медицинского туризма, и на это есть веские причины.</p><p><strong>Высокое качество медицинских услуг:</strong> Турецкие клиники, такие как Hospital и AZPO Health, предлагают современные технологии и опытных хирургов, специализирующихся на интимной хирургии. Многие врачи свободно владеют английским языком, что облегчает общение для иностранных пациентов.</p><p><strong>Доступные цены:</strong> Стоимость лабиопластики в Турции значительно ниже, чем в Европе или США. Это позволяет получить качественную медицинскую помощь без ущерба для бюджета.</p><p><strong>Комплексный пакет услуг:</strong> AZPO Health предлагает комплексные пакеты услуг, включающие предоперационные консультации, операцию, послеоперационный уход и проживание. Это обеспечивает комфортное и беззаботное пребывание в Турции.</p><p><strong>Удобное расположение:</strong> Стамбул – красивый и исторический город, предлагающий прекрасную возможность совместить лечение с отдыхом. Вы сможете насладиться богатой культурой и достопримечательностями во время своего пребывания.</p><h3><strong>Что такое лабиопластика?</strong></h3><p>Лабиопластика – это хирургическая процедура, направленная на изменение формы и размера половых губ. Она может быть выполнена по различным причинам, включая:</p><p><strong>Эстетические соображения:</strong> Многие женщины недовольны внешним видом своих половых губ и хотят улучшить их форму и размер.</p><p><strong>Физический дискомфорт:</strong> Увеличенные половые губы могут вызывать дискомфорт при ношении обтягивающей одежды, занятиях спортом или половой жизни.</p><p><strong>Медицинские показания:</strong> В некоторых случаях лабиопластика может быть рекомендована для устранения медицинских проблем, таких как хроническое раздражение или инфекции.</p><h3><strong>Виды лабиопластики</strong></h3><p>Существуют различные виды лабиопластики, и выбор конкретной техники зависит от индивидуальных потребностей и целей пациентки.</p><p><strong>Триминговая резекция:</strong> Это наиболее распространенный метод, при котором избыточная ткань половых губ просто удаляется.</p><p><strong>V-образная резекция:</strong> Этот метод позволяет сохранить естественный контур половых губ.</p><p><strong>Клиторальная редукция капюшона:</strong> Эта процедура направлена на уменьшение избыточной кожи вокруг клитора.</p><p><strong>Лабиопластика с использованием лазера:</strong> Лазер позволяет более точно и аккуратно удалять ткани.</p><h3><strong>Подготовка к лабиопластике</strong></h3><p>Перед лабиопластикой необходимо пройти консультацию с хирургом, который оценит ваше состояние здоровья и обсудит ваши цели и ожидания. Важно сообщить врачу о любых имеющихся заболеваниях, аллергиях и принимаемых лекарствах.</p><p>Вам также могут быть даны следующие рекомендации:</p><p>Прекратить прием аспирина и других препаратов, разжижающих кровь, за несколько недель до операции.</p><p>Воздержаться от курения и употребления алкоголя за несколько дней до операции.</p><p>Сделать необходимые анализы и обследования.</p><h3><strong>Процесс лабиопластики</strong></h3><p>Лабиопластика обычно проводится под местной анестезией, хотя в некоторых случаях может быть использована общая анестезия. Хирург делает надрезы и удаляет избыточную ткань половых губ. Затем накладываются швы. Процедура обычно занимает от 1 до 2 часов.</p><h3><strong>Восстановление после лабиопластики</strong></h3><p>После лабиопластики важно соблюдать рекомендации врача для обеспечения быстрого и беспроблемного восстановления.</p><p>Принимайте обезболивающие препараты по назначению врача.</p><p>Прикладывайте холодные компрессы к области операции для уменьшения отека и боли.</p><p>Носите свободную одежду, чтобы избежать раздражения.</p><p>Избегайте физических нагрузок и половой жизни в течение нескольких недель.</p><p>Соблюдайте гигиену и регулярно обрабатывайте швы антисептиком.</p><h3><strong>Риски и осложнения</strong></h3><p>Как и любая хирургическая процедура, лабиопластика сопряжена с определенными рисками и осложнениями. К ним относятся:</p><p>Инфекция.</p><p>Кровотечение.</p><p>Отек и синяки.</p><p>Боль.</p><p>Изменение чувствительности.</p><p>Рубцевание.</p><p>Неудовлетворительный эстетический результат.</p><p>Однако, при выборе опытного хирурга и соблюдении всех рекомендаций врача, риск осложнений минимален.</p><h3><strong>Лабиопластика: до и после</strong></h3><p>Многие женщины, перенесшие лабиопластику, отмечают значительное улучшение качества жизни. Они чувствуют себя более уверенно и комфортно в своей интимной зоне. Фотографии до и после лабиопластики могут помочь вам увидеть потенциальные результаты процедуры.</p><h3><strong>Альтернативы лабиопластике</strong></h3><p>Существуют нехирургические методы коррекции интимной зоны, такие как лазерное омоложение и радиочастотная терапия. Однако, они не дают таких выраженных и долгосрочных результатов, как лабиопластика.</p><h3><strong>Противопоказания</strong></h3><p>Воспалительные процессы в интимной зоне</p><p>Венерические заболевания</p><p>Беременность и период лактации</p><p>Онкологические заболевания</p><p>Нарушения свертываемости крови</p><p>Психические расстройства</p><h3><strong>Лабиопластика в AZPO Health</strong></h3><p>AZPO Health – это ведущая компания в сфере медицинского туризма, специализирующаяся на пересадке волос и косметической хирургии в Турции. Мы сотрудничаем с лучшими клиниками в Стамбуле, Анталии и Алании, предлагая нашим пациентам высококачественные услуги по доступным ценам.</p><p>Наши преимущества:</p><p>Опытные и квалифицированные хирурги.</p><p>Современное оборудование и технологии.</p><p>Индивидуальный подход к каждому пациенту.</p><p>Комплексные пакеты услуг.</p><p>Безупречный сервис и поддержка на всех этапах лечения.</p><p>Мы понимаем, что решение о лабиопластике – это важный шаг, и мы готовы предоставить вам всю необходимую информацию и поддержку. Свяжитесь с нами сегодня для бесплатной консультации и узнайте, как лабиопластика в Турции может изменить вашу жизнь!</p><p><br></p>`
+            ? `<p dir="ltr">Турция по праву занимает лидирующие позиции в сфере медицинского туризма, особенно когда речь идет о косметических операциях, включая лабиопластику. Популярность страны объясняется несколькими важными факторами:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Квалифицированные специалисты с международным опытом: в Турции работают признанные эксперты в области лабиопластики &mdash; хирурги с большим опытом и отличной репутацией. Их профессиональные команды известны вниманием к деталям и стремлением к идеальному результату. AZPO Health тщательно отбирает клиники и специалистов, сотрудничая только с теми, кто соответствует самым высоким стандартам в сфере эстетической хирургии.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступная стоимость при высоком качестве: лабиопластика в Турции стоит значительно дешевле, чем в большинстве западных стран, при этом качество медицинских услуг остается на высочайшем уровне. AZPO Health гарантирует прозрачную ценовую политику и предоставит вам индивидуальный расчет, учитывающий все особенности процедуры.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Передовые технологии и комфортные условия: медицинские учреждения Турции оснащены современным оборудованием, соответствующим международным стандартам. AZPO Health сотрудничает исключительно с сертифицированными и аккредитованными клиниками, где безопасность, стерильность и комфорт пациента являются приоритетом.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход и сопровождение: каждая женщина приходит с уникальными запросами, и мы ценим это. AZPO Health предлагает персонализированное решение, начиная с первой консультации и заканчивая полным восстановлением после операции. Мы сопровождаем вас на всех этапах пути, обеспечивая внимательный и чуткий подход.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Идеальные условия для восстановления: Стамбул &mdash; не только центр передовой медицины, но и место, где легко совместить лечение с отдыхом. Восстановление здесь проходит в атмосфере спокойствия, вдохновляющей архитектуры и культурного богатства. Это помогает быстрее прийти в себя и почувствовать уверенность в своем обновленном теле.</p>
+</li>
+</ul>
+<h2 dir="ltr">Подходит ли вам лабиопластика?</h2>
+<p dir="ltr">Эта процедура может быть рекомендована, если вы сталкиваетесь с одним или несколькими из следующих факторов:&nbsp;&nbsp;</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Увеличенные или асимметричные половые губы вызывают дискомфорт во время физической активности или полового акта.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хроническое раздражение или боль из-за гипертрофии половых губ.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">&nbsp;Комплексы или неудовлетворенность внешним видом интимной зоны.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Затруднения при ношении облегающей одежды.</p>
+</li>
+</ul>
+<p dir="ltr">Для проведения процедуры необходимо быть старше 18 лет и иметь общее хорошее состояние здоровья.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Техники лабиопластики: индивидуальные решения для ваших потребностей</h3>
+<p dir="ltr">Существует несколько методов лабиопластики, каждый из которых направлен на решение различных эстетических и физиологических задач. Хирурги, сотрудничающие с AZPO Health, владеют широким спектром техник и подберут оптимальный вариант именно для вас:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Классическая лабиопластика: предполагает прямое хирургическое удаление избыточной ткани малых половых губ.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Клиновидная резекция: удаляется клиновидный участок ткани с сохранением естественного края губ.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лазерная лабиопластика:используется лазер для точного моделирования формы с минимальной кровопотерей.</p>
+</li>
+</ul>
+<p dir="ltr">Во время консультации врач подробно объяснит особенности каждого метода, их плюсы и возможные риски, чтобы вы могли принять взвешенное решение с полным пониманием процесса.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Ваш путь к лабиопластике с AZPO Health&nbsp;</h2>
+<p dir="ltr">Мы стремимся обеспечить вам комфортное, безопасное и понятное сопровождение на каждом этапе. Вот как выглядит процесс:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Онлайн-консультация: первый шаг &mdash; дистанционная беседа с одним из наших специалистов. Вы сможете поделиться своими ожиданиями, задать важные вопросы и рассказать о состоянии здоровья.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальная оценка: на основе ваших анатомических особенностей и целей врач разработает персонализированный план процедуры.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подробное информирование и забота: вы получите всю необходимую информацию о самой операции, восстановительном периоде и возможных рисках. Мы сделаем все, чтобы вы чувствовали себя уверенно и спокойно на каждом этапе.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Проведение процедуры: лабиопластика проходит под местной анестезией и обычно занимает от одного до двух часов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Восстановление и сопровождение: после операции вы получите рекомендации по уходу, а наша команда будет оставаться на связи, чтобы помочь в случае любых вопросов. Мы рекомендуем провести в Турции не менее 5 дней после процедуры для комфортного восстановления и наблюдения врача.</p>
+</li>
+</ol>
+<h2 dir="ltr">Риски и важные моменты&nbsp;</h2>
+<p dir="ltr">Как и любая хирургическая операция, лабиопластика связана с определенными рисками, среди которых:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Инфекция</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Кровотечение</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Рубцы</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Изменение чувствительности</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Асимметрия<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Наши опытные хирурги принимают все необходимые меры для минимизации этих рисков и обеспечения вашей безопасности. Во время консультации мы подробно обсудим возможные осложнения и ответим на все ваши вопросы.</p>
+<h2 dir="ltr">Стоимость лабиопластики в Турции</h2>
+<p dir="ltr">Цена на лабиопластику в Турции зависит от выбранной техники и индивидуальных особенностей пациента. В целом, стоимость значительно ниже, чем во многих западных странах. AZPO Health гарантирует прозрачное и конкурентоспособное ценообразование. Свяжитесь с нами сегодня для бесплатной консультации и получения индивидуального расчета.</p>
+<h2 dir="ltr">Почему стоит выбрать AZPO Health для лабиопластики в Турции?</h2>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Профессиональные хирурги: в нашей команде работают высококвалифицированные и опытные хирурги, специализирующиеся на пластике половых губ.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход: мы внимательно учитываем ваши уникальные потребности и пожелания, чтобы обеспечить максимально эффективное и комфортное лечение.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современное оборудование: сотрудничаем только с аккредитованными клиниками, оснащенными передовыми технологиями для вашей безопасности и удобства.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексная поддержка: сопровождаем вас на всех этапах &mdash; от первичной консультации до полного восстановления после операции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Выгодные цены: мы предлагаем конкурентоспособные и прозрачные цены, что делает лабиопластику доступной для более широкого круга пациентов.</p>
+</li>
+</ul>
+<h2 dir="ltr">Сделайте первый шаг к обретению уверенности в себе</h2>
+<p dir="ltr">Не позволяйте дискомфорту или неуверенности управлять вашей жизнью. Свяжитесь с AZPO Health уже сегодня для бесплатной консультации и узнайте, как лабиопластика в Турции может изменить вашу жизнь!</p>
+<p dir="ltr">&nbsp;</p>`
             : `Turkey has become a leading destination for medical tourism, particularly for cosmetic procedures like labiaplasty. This popularity is due to several factors:
 Experienced and Qualified Surgeons: Turkey boasts highly skilled and experienced surgeons specializing in labiaplasty. teams renowned for their expertise and dedication to achieving exceptional results. At AZPO Health, we maintain the same commitment to excellence, ensuring our surgeons are at the forefront of their field.
 Affordable Prices: Compared to many Western countries, labiaplasty in Turkey offers significantly more affordable prices without compromising on quality. AZPO Health is committed to providing transparent and competitive pricing, encouraging you to contact us for a personalized quote.
@@ -9271,53 +9426,53 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       id: 0,
       title:
         locale === "ru"
-          ? "Подтяжка Бедер в Турции: Верните Стройность и Уверенность в 2025 году!"
+          ? "Пластика бедер в Турции: измените форму ваших бедер — верните себе уверенность в себе!"
           : "Thighplasty in Turkey: Reshape Your Thighs, Restore Your Confidence!",
       descriptionTop:
         locale === "ru"
-          ? "Вы чувствуете дискомфорт и неуверенность из-за обвисшей кожи на бедрах? Возрастные изменения, значительная потеря веса или генетическая предрасположенность могут привести к потере эластичности кожи в этой области. Это может ограничивать ваш выбор одежды, мешать активному образу жизни и негативно сказываться на самооценке. Но не отчаивайтесь! В AZPO Health мы предлагаем современное и эффективное решение – подтяжку бедер в Турции, которая поможет вам вернуть стройные контуры и уверенность в себе."
+          ? "Избегаете носить шорты или купальники из-за обвисшей кожи на бедрах? Ощущаете дискомфорт или натирания от лишней кожи? Вы не одиноки. Многие сталкиваются с этой проблемой после значительного похудения, с возрастом или из-за генетики. Пластика бедер — это хирургическая операция, которая помогает убрать избыток кожи и жира, возвращая ногам более стройный и молодой вид. В AZPO Health мы понимаем, как это может влиять на уверенность в себе — и готовы поддержать вас на пути к обновлению."
           : "Do you avoid shorts or swimsuits because you're self-conscious about loose skin on your thighs? Does the excess skin cause chafing or discomfort? You're not alone. Many individuals experience sagging thigh skin due to weight loss, aging, or genetics. Thighplasty, or thigh lift surgery, can remove excess skin and fat, reshaping your thighs for a more toned and youthful appearance. At AZPO Health, we understand how frustrating this can be, and we're here to offer a solution with hope and assurance.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Лифтинг" : "Skin Lift",
+            title: locale === "ru" ? "Подтяжка кожи" : "Skin Lift",
             desc:
               locale === "ru"
-                ? "Восстановление упругости кожи для более молодого вида."
+                ? "возвращение упругости и гладкости, более молодой и ухоженный вид."
                 : "Restores elasticity and firmness for a smoother, youthful look.",
           },
           {
-            title: locale === "ru" ? "Контуры" : "Body Shape",
+            title: locale === "ru" ? "Скульптурирование фигуры" : "Body Shape",
             desc:
               locale === "ru"
-                ? "Процедуры для создания привлекательных пропорций бедер."
+                ? "коррекция контуров бедер для создания гармоничных и сбалансированных пропорций."
                 : "Reshapes thigh areas for balanced, attractive proportions.",
           },
           {
-            title: locale === "ru" ? "Коррекция" : "Fat Care",
+            title: locale === "ru" ? "Избавление от излишков жира" : "Fat Care",
             desc:
               locale === "ru"
-                ? "Удаление избыточных тканей для достижения стройного силуэта."
+                ? "удаление лишней ткани и жировых отложений — для стройного, подтянутого профиля."
                 : "Removes excess tissue and fat for a sleeker, toned profile.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "For whom it is suitable",
+            header: locale === "ru" ? "Кому подойдет" : "For whom it is suitable",
             desc:
               locale === "ru"
-                ? "Подходит для людей с избыточным весом или обвисшей кожей после значительного снижения веса, а также для тех, кто хочет улучшить форму бедер."
+                ? "идеально подходит для людей с избыточным весом или дряблой кожей после значительного похудения, а также для тех, кто хочет улучшить форму своих бедер."
                 : "Suitable for individuals with excess weight or skin sagging after significant weight loss, or those wanting to improve the shape of their thighs.",
           },
           {
-            header: locale === "ru" ? "Особенности" : "Considerations",
-            desc: locale === "ru" ? "" : "",
+            header: locale === "ru" ? "Описание" : "Considerations",
+            desc: locale === "ru" ? "Это процедура, направленная на подтяжку и укрепление кожи внутренней или внешней поверхности бёдер. В зависимости от особенностей пациента применяются хирургические методы или нитевые технологии. В ходе операции удаляется излишняя кожа и жировая ткань, а оставшаяся кожа подтягивается для создания более гладкого и эстетичного контура." : "This procedure is aimed at tightening and firming the skin on the inner or outer thighs. Depending on the patient's individual characteristics, either surgical methods or thread lifting techniques are used. During the operation, excess skin and fat tissue are removed, and the remaining skin is tightened to create a smoother and more aesthetically pleasing contour.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Как проходит процедура" : "How it works",
             desc:
               locale === "ru"
-                ? "Процедура направлена на подтяжку кожи бедер, улучшая ее упругость и контуры. Для коррекции обвисшей кожи и уменьшения избыточных жировых отложений используются либо нитевой лифтинг, либо хирургические методики."
+                ? "хирург делает разрезы вдоль линий тела, чтобы минимизировать видимость шрамов. Затем проводится удаление лишней ткани и подтяжка кожи, которая фиксируется с помощью швов. В результате формируется гармоничный силуэт с выраженными пропорциями. Нитевые методики применяются при незначительном обвисании — они менее инвазивны и подходят для легкой коррекции."
                 : "The procedure aims to lift the skin of the thighs, improving its firmness and contours. Either thread lifting or surgical techniques are used to correct sagging skin and reduce excess fat deposits.",
           },
         ],
@@ -9329,22 +9484,219 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Подтяжка бедер является эффективным методом улучшения формы и подтяжки кожи бедер, но важно правильно выбрать технику и хирурга, а также тщательно следовать процессу восстановления."
+            ? "подтяжка бедер — надёжный способ вернуть коже упругость и придать ногам более эстетичный, подтянутый вид. Ключ к успешному результату — грамотный выбор хирурга и ответственное соблюдение всех этапов восстановления. При правильном подходе вы не только преобразите силуэт, но и почувствуете уверенность, легкость и комфорт в собственном теле."
             : "A thigh lift is an effective method for improving the shape and tightening the skin of the thighs, but it’s important to choose the right technique and surgeon and follow the recovery process carefully.",
       },
       subCategoryContent: {
         title:
-          locale === "ru" ? "Thighplasty Treatment" : "Thighplasty Treatment",
+          locale === "ru" ? "Лечение бедренной пластики" : "Thighplasty Treatment",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Почему Турция – идеальное место для подтяжки бедер?"
+            ? "Как пластика бедер помогает вернуть стройность и уверенность в себе"
             : "Why Choose Turkey for Your Thighplasty?",
         content:
           locale === "ru"
-            ? `<p>Турция давно зарекомендовала себя как ведущий центр медицинского туризма, особенно в области пластической хирургии. AZPO Health предлагает вам воспользоваться всеми преимуществами:</p><p><strong>Высококвалифицированные хирурги:</strong> Наши хирурги обладают богатым опытом и экспертизой в проведении операций по подтяжке бедер, используя самые современные техники.</p><p><strong>Современное оборудование:</strong> Мы сотрудничаем с лучшими клиниками в Стамбуле, Анталии и Алании, оснащенными передовым оборудованием для достижения оптимальных результатов.</p><p><strong>Доступные цены:</strong> Стоимость подтяжки бедер в Турции значительно ниже, чем в Европе или США, при этом качество услуг остается на высочайшем уровне.</p><p><strong>Комплексный подход:</strong> AZPO Health обеспечивает полный спектр услуг, включая консультацию, предоперационное обследование, операцию, послеоперационный уход и проживание.</p><p><strong>Удобство и комфорт:</strong> Мы заботимся о вашем комфорте на каждом этапе, предлагая трансфер из аэропорта, проживание в комфортабельных отелях и сопровождение персонального координатора.</p><h3><strong>Кому подходит подтяжка бедер (феморопластика)?</strong></h3><p>Подтяжка бедер, также известная как феморопластика, может быть рекомендована в следующих случаях:</p><p><strong>Избыток кожи на бедрах:</strong> Если у вас наблюдается значительное обвисание кожи в области бедер, которое не поддается коррекции с помощью физических упражнений или диеты.</p><p><strong>Потеря эластичности кожи:</strong> Возрастные изменения или резкая потеря веса привели к потере упругости кожи на бедрах.</p><p><strong>Улучшение контуров тела:</strong> Вы хотите улучшить форму бедер и сделать их более подтянутыми и стройными.</p><p><strong>Повышение уверенности в себе:</strong> Вы чувствуете дискомфорт и неуверенность из-за внешнего вида ваших бедер.</p><h3><strong>Какие виды подтяжки бедер существуют?</strong></h3><p>В зависимости от ваших индивидуальных потребностей и анатомических особенностей, хирург может рекомендовать один из следующих видов подтяжки бедер:</p><p><strong>Внутренняя подтяжка бедер:</strong> Разрез делается в паховой складке, что позволяет удалить избыток кожи с внутренней поверхности бедра. Этот метод подходит для пациентов с умеренным обвисанием кожи.</p><p><strong>Вертикальная подтяжка бедер:</strong> Разрез проходит вдоль внутренней поверхности бедра от паховой складки до колена. Этот метод применяется при значительном избытке кожи.</p><p><strong>Мини-подтяжка бедер:</strong> Небольшой разрез делается только в верхней части внутренней поверхности бедра. Подходит для пациентов с небольшим избытком кожи в этой области.</p><p><strong>Латеральная подтяжка бедер:</strong> Разрез делается вдоль внешней поверхности бедра. Этот метод позволяет подтянуть кожу на внешней стороне бедра и улучшить контуры ягодиц.</p><h3><strong>Как проходит операция по подтяжке бедер в AZPO Health?</strong></h3><p><strong>Консультация:</strong> Вы проходите онлайн-консультацию с опытным хирургом AZPO Health, который оценивает ваши потребности и ожидания, а также определяет наиболее подходящий метод подтяжки бедер.</p><p><strong>Предоперационное обследование:</strong> В одной из клиник-партнеров AZPO Health в Турции вы проходите необходимые анализы и обследования, чтобы убедиться в отсутствии противопоказаний к операции.</p><p><strong>Операция:</strong> Операция проводится под общей анестезией и занимает от 2 до 4 часов, в зависимости от объема работы. Хирург выполняет разрез, удаляет избыток кожи и жировой ткани, а затем подтягивает и фиксирует кожу, формируя новые контуры бедра.</p><p><strong>Послеоперационный период:</strong> После операции вы остаетесь в клинике под наблюдением медицинского персонала в течение нескольких дней. Вам назначаются обезболивающие препараты и антибиотики для предотвращения инфекции.</p><p><strong>Реабилитация:</strong> После выписки из клиники вам необходимо следовать рекомендациям врача по уходу за раной, ношению компрессионного белья и ограничению физической активности. Полное восстановление занимает от нескольких недель до нескольких месяцев.</p><h3><strong>Подтяжка Бедер: Что Вас Ожидает?</strong></h3><p><strong>Первые дни после операции:</strong> В первые дни после операции вы можете испытывать некоторый дискомфорт и болезненность в области бедер. Это нормальная реакция организма, и врач назначит вам обезболивающие препараты, чтобы облегчить ваше состояние. Важно соблюдать постельный режим и избегать резких движений.</p><p><strong>Первые недели восстановления:</strong> В течение первых нескольких недель необходимо носить компрессионное белье, чтобы уменьшить отек и поддержать заживление тканей. Следует избегать интенсивных физических нагрузок и следовать рекомендациям врача по уходу за швами.</p><p><strong>Долгосрочные результаты:</strong> Окончательные результаты подтяжки бедер можно оценить через несколько месяцев, когда полностью сойдет отек и ткани примут окончательную форму. Вы сможете наслаждаться более стройными и подтянутыми бедрами, что положительно скажется на вашей уверенности и самооценке.</p><h3><strong>Риски и осложнения</strong></h3><p>Как и любое хирургическое вмешательство, подтяжка бедер сопряжена с определенными рисками и осложнениями. Важно обсудить их с хирургом перед операцией:</p><p><strong>Инфекция:</strong> Для предотвращения инфекции назначаются антибиотики.</p><p><strong>Кровотечение:</strong> В редких случаях может потребоваться переливание крови.</p><p><strong>Образование гематом:</strong> Небольшие гематомы обычно рассасываются самостоятельно.</p><p><strong>Нарушение чувствительности кожи:</strong> В области разреза может наблюдаться временное снижение чувствительности.</p><p><strong>Неудовлетворительный результат:</strong> В редких случаях может потребоваться коррекция.</p><p><strong>Тромбоз:</strong> Для предотвращения тромбоза назначаются антикоагулянты и рекомендуется ранняя мобилизация.</p><p><strong>Плохое заживление ран:</strong> В редких случаях заживление ран может быть замедленным, особенно у пациентов с сахарным диабетом или курящих.</p><h3><strong>Альтернативные методы</strong></h3><p>В некоторых случаях, в качестве альтернативы подтяжке бедер, могут быть рассмотрены следующие методы:</p><p><strong>Липосакция:</strong> Удаление избытка жировой ткани из области бедер. Липосакция может быть эффективна при наличии локальных жировых отложений, но не решает проблему обвисшей кожи.</p><p><strong>Радиочастотный лифтинг:</strong> Подтяжка кожи с помощью радиочастотной энергии. Этот метод может улучшить упругость кожи, но не дает такого выраженного эффекта, как хирургическая подтяжка.</p><p><strong>Нитевой лифтинг:</strong> Подтяжка кожи с помощью специальных нитей. Этот метод может быть использован для коррекции небольшого обвисания кожи, но не подходит для пациентов со значительным избытком кожи.</p><h3><strong>Что нужно учитывать перед операцией?</strong></h3><p><strong>Обсудите свои ожидания с хирургом:</strong> Важно четко понимать, каких результатов можно достичь с помощью подтяжки бедер.</p><p><strong>Сообщите о всех имеющихся заболеваниях:</strong> Хирург должен знать о всех ваших заболеваниях и принимаемых лекарствах.</p><p><strong>Прекратите курить:</strong> Курение ухудшает кровообращение и может замедлить заживление ран.</p><p><strong>Подготовьтесь к периоду реабилитации:</strong> Вам понадобится время для восстановления, поэтому спланируйте свой график заранее.</p><h3><strong>Отзывы наших пациентов</strong></h3><p>"(Имя Фамилия), 45 лет: После резкой потери веса у меня сильно обвисла кожа на бедрах. Операция по подтяжке бедер в AZPO Health полностью изменила мою жизнь! Я снова чувствую себя уверенно и комфортно в своем теле."</p><p>"(Имя Фамилия), 52 года: Я долго стеснялась носить короткие юбки из-за некрасивой формы бедер. После подтяжки бедер в AZPO Health я могу с гордостью демонстрировать свои ноги!"</p><h3><strong>AZPO Health: Ваш надежный партнер на пути к красоте и уверенности</strong></h3><p>AZPO Health – это команда профессионалов, которая поможет вам осуществить вашу мечту о стройных и подтянутых бедрах. Мы предлагаем:</p><p><strong>Индивидуальный подход:</strong> Мы учитываем ваши индивидуальные потребности и пожелания, разрабатывая персонализированный план лечения.</p><p><strong>Опытные хирурги:</strong> Наши хирурги обладают высокой квалификацией и опытом в проведении операций по подтяжке бедер.</p><p><strong>Современные клиники:</strong> Мы сотрудничаем с лучшими клиниками в Турции, оснащенными передовым оборудованием.</p><p><strong>Доступные цены:</strong> Мы предлагаем конкурентоспособные цены на наши услуги, делая подтяжку бедер доступной для широкого круга пациентов.</p><p><strong>Полный спектр услуг:</strong> Мы обеспечиваем полный спектр услуг, включая консультацию, предоперационное обследование, операцию, послеоперационный уход и проживание.</p><h3><strong>Сделайте первый шаг к стройным бедрам уже сегодня!</strong></h3><p>Свяжитесь с нами прямо сейчас для получения бесплатной консультации и индивидуального расчета стоимости подтяжки бедер в Турции. Наши специалисты ответят на все ваши вопросы и помогут вам сделать правильный выбор.</p><p><br></p>`
+            ? `<p dir="ltr">Пластика бёдер в Турции &mdash; это решение для тех, кто хочет избавиться от обвисшей кожи и лишнего жира на ногах, вернуть стройный контур и уверенность в себе. Это не просто косметическая операция &mdash; это шаг к улучшению самочувствия, комфорта и качества жизни.</p>
+<h2 dir="ltr">Почему стоит выбрать Турцию для пластики бедер?</h2>
+<p dir="ltr">Турция давно зарекомендовала себя как одно из ведущих направлений в области медицинского туризма. Вот несколько причин, почему всё больше людей доверяют свою трансформацию именно здесь:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высокое качество медицины: турецкие хирурги владеют современными техниками и регулярно проходят международное обучение. AZPO Health сотрудничает только с проверенными клиниками и профессионалами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступные цены: стоимость операции здесь в разы ниже, чем в Европе или США, при этом качество ничем не уступает.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пакеты &laquo;все включено&raquo;: в стоимость наших пакетов входит не только сама операция, но и проживание, трансферы, послеоперационное наблюдение. Мы берём на себя все организационные вопросы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Возможность отдохнуть: после операции вы можете насладиться отдыхом на Средиземноморском побережье, погулять по улицам Стамбула или провести несколько дней в солнечной Аланье.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сертифицированные клиники: на март 2025 года в Турции работают 30 клиник с международной аккредитацией JCI &mdash; это гарантирует высокий стандарт медицинской помощи.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Подходит ли вам пластика бедер?</h2>
+<p dir="ltr">Пластика бедер &mdash; это процедура коррекции контуров тела, а не метод снижения веса. Показания к проведению пластики бедер:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">У вас есть избыточная кожа или жировые отложения в области бёдер, которые не уходят с помощью спорта и питания;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ваш вес стабилен;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Вы недовольны формой бёдер и хотите более подтянутый силуэт;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Вы находитесь в хорошем общем состоянии здоровья;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">У вас реалистичные ожидания относительно результата.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Чтобы точно определить, подходит ли вам процедура, рекомендуем записаться на консультацию к пластическому хирургу AZPO Health.</p>
+<h3 dir="ltr">Виды пластики бедер</h3>
+<p dir="ltr">Выбор метода зависит от ваших целей и анатомических особенностей. Возможны следующие варианты:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Медиальная (внутренняя) пластика бедер: удаляется лишняя кожа и жир с внутренней стороны бедер. Разрез обычно проходит в паховой складке.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Латеральная (внешняя) пластика: корректирует внешний контур бедра, разрез может тянуться от паха к ягодичной области.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полная пластика бедер: затрагивает внутреннюю и внешнюю часть бедер, подходит при выраженном избытке тканей.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мини-пластика бедер: более щадящая процедура &mdash; для тех, у кого есть незначительные избытки кожи в верхней части внутренней поверхности бедра.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Расширенная медиальная пластика: применяется при выраженной дряблости кожи и более глубоких изменениях тканей.</p>
+</li>
+</ul>
+<p dir="ltr">Во время личной консультации хирург оценит состояние тканей и порекомендует оптимальный метод коррекции.</p>
+<h3 dir="ltr">Как проходит операция по подтяжке бедер</h3>
+<p dir="ltr">Правильная подготовка &mdash; ключ к успешной и комфортной операции по подтяжке бёдер. На этом этапе вас ожидает:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предоперационная консультация: врач внимательно изучит вашу историю болезни, обсудит цели процедуры и проведет осмотр. Это отличная возможность задать все интересующие вопросы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Рекомендации перед операцией: вы получите подробные инструкции о том, что можно и нельзя делать до операции &mdash; возможно, потребуется прекратить прием некоторых лекарств, отказаться от алкоголя и курения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Медицинские обследования: для подтверждения готовности к хирургии может потребоваться сдать анализы крови и пройти дополнительные обследования.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Психологическая подготовка: важно иметь реалистичные ожидания и понимать особенности процесса восстановления.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подготовка дома: организуйте комфортное пространство для восстановления и позаботьтесь о поддержке в быту на первые дни после операции.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Как проходит операция по подтяжке бедер</h3>
+<p dir="ltr">В день операции:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Анестезия: для вашего комфорта используется общая анестезия.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Разрезы: хирург сделает аккуратные разрезы в соответствии с выбранной техникой, размещая их так, чтобы рубцы были минимально заметны.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Липосакция (по показаниям): при необходимости выполняется липосакция для удаления лишнего жира и улучшения контуров.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удаление и подтяжка кожи: избыточная кожа удаляется, оставшаяся &mdash; подтягивается и равномерно распределяется для создания гладкого, подтянутого силуэта.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Закрытие разрезов: разрезы зашиваются нитями или фиксируются хирургическим клеем.</p>
+</li>
+</ol>
+<p dir="ltr">Обычно после пластики бедер в Турции рекомендуется одна ночь в клинике и три ночи в отеле. Длительность операции &mdash; около часа. Вернуться к работе и обычной активности можно примерно через 7 дней.&nbsp;</p>
+<h3 dir="ltr">Безоперационные альтернативы</h3>
+<p dir="ltr">Хотя хирургия дает самый заметный результат, при умеренной степени обвисания кожи можно рассмотреть менее инвазивные методы:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Радиочастотный лифтинг: тепловое воздействие стимулирует выработку коллагена и улучшает упругость кожи.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ультразвуковая терапия: помогает подтянуть кожу и уменьшить жировые отложения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Инъекционные процедуры: улучшают текстуру кожи и уменьшают проявления целлюлита.</p>
+</li>
+</ul>
+<p dir="ltr">Важно понимать, что безоперационные методы дают более мягкий и постепенный эффект по сравнению с хирургией.</p>
+<h3 dir="ltr">Комбинирование с другими процедурами</h3>
+<p dir="ltr">Для более комплексного преображения пластика бедер может сочетаться с другими операциями:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Липосакция: для удаления локальных жировых отложений.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Абдоминопластика: коррекция избытка кожи и жира в области живота.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подтяжка ягодиц: улучшение контура нижней части тела.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексная подтяжка тела: Одновременная коррекция нескольких зон для максимального результата.</p>
+</li>
+</ul>
+<p dir="ltr">Комбинация процедур подходит не всем и требует индивидуального обсуждения с хирургом.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Восстановление и уход после операции</h3>
+<p dir="ltr">Правильный уход после пластики бедер &mdash; ключ к успешному заживлению и отличному результату. Основные моменты восстановления:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Компрессионное белье: Ношение специального компрессионного изделия помогает снизить отек и поддерживает ткани.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Уход за ранами: вы получите подробные рекомендации по уходу за швами, чтобы избежать инфекций.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обезболивание: для снижения дискомфорта в первые дни после операции назначаются обезболивающие препараты.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ограничение активности: рекомендуется избегать интенсивных физических нагрузок в течение нескольких недель для правильного восстановления.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Контрольные визиты: регулярные осмотры у хирурга важны для мониторинга процесса заживления.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Риски и важные моменты</h3>
+<p dir="ltr">Как и при любой операции, пластика бедер связана с определёнными рисками, среди которых:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Инфекция: для минимизации риска применяются строгие стерильные методики.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Кровотечение: опытные хирурги используют аккуратные техники для снижения кровопотерь.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Риски анестезии: анестезиологи тщательно анализируют вашу медицинскую историю для обеспечения безопасности.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Рубцы: современные методы сводят к минимуму видимость шрамов, а после операции доступны процедуры по уходу за ними.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Изменение чувствительности кожи: возможны временные онемение или покалывание.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Тромбоз глубоких вен (ТГВ): для профилактики назначается ношение компрессионных чулок.</p>
+</li>
+</ul>
+<p dir="ltr">Обязательно обсудите возможные риски с хирургом и имейте реалистичные ожидания.</p>
+<h3 dir="ltr">Стоимость пластики бедер в Турции</h3>
+<p dir="ltr">Цена подтяжки бедер в Турции зависит от опыта хирурга, выбранной методики, клиники, а также стоимости анестезии и послеоперационного ухода. Для получения точной и персональной информации свяжитесь с AZPO Health &mdash; бесплатная консультация и расчет стоимости включены.</p>
+<h3 dir="ltr">Почему выбирают AZPO Health для пластики бедер в Турции?</h3>
+<p dir="ltr">AZPO Health обеспечивает безопасность, комфорт и высокий уровень обслуживания. Наши преимущества:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытные хирурги: сотрудничаем с квалифицированными и сертифицированными специалистами с опытом в пластике бедер.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход: каждый план лечения составляется с учётом ваших личных целей и особенностей.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные клиники: работаем только с аккредитованными учреждениями, оснащенными современным оборудованием.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полная поддержка: мы сопровождаем вас на всех этапах &mdash; от первой консультации до послеоперационного ухода.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Прозрачное ценообразование: во время консультации вы получаете понятную и подробную информацию о стоимости.</p>
+</li>
+</ul>
+<h3 dir="ltr">Сделайте первый шаг к красивым и подтянутым бедрам!</h3>
+<p dir="ltr">Если вы хотите избавиться от обвисшей кожи и обрести уверенность в себе, свяжитесь с AZPO Health уже сегодня! Мы ответим на все ваши вопросы, развеем сомнения и поможем определить, подходит ли вам пластика бёдер в Турции.</p>
+<p dir="ltr">Запишитесь на бесплатную консультацию и получите персональное предложение!</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p>Turkey has become a popular destination for medical tourism, and for good reason. When considering thighplasty, Turkey offers a unique combination of factors:</p><p><strong>High-Quality Care:</strong> Turkey boasts skilled and experienced plastic surgeons who are trained in the latest techniques. AZPO Health partners with top-tier medical facilities to ensure you receive the best possible care.</p><p><strong>Affordability:</strong> Compared to many European countries and the United States, thighplasty cost in Turkey is significantly more affordable. This allows you to achieve your desired results without breaking the bank.</p><p><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover surgery, accommodation, transportation, and post-operative care, making your journey as smooth and stress-free as possible.</p><p><strong>Cultural Experience:</strong> Combine your surgery with a memorable vacation. Istanbul, Antalya, and Alanya offer rich history, stunning landscapes, and delicious cuisine.</p><h3><strong>Are You an Ideal Candidate for Thighplasty?</strong></h3><p>Thighplasty isn't a weight-loss solution, but rather a body contouring procedure. You might be an ideal candidate if:</p><p>You have excess skin and stubborn fat deposits on your thighs that haven't responded to diet and exercise.</p><p>You have a relatively stable weight.</p><p>You are bothered by the appearance of your thighs and desire a more toned look.</p><p>You are in good overall health.</p><p>You have realistic expectations about the outcome of the surgery.</p><p>The best way to determine if thigh lift surgery in Turkey is right for you is to consult with a qualified plastic surgeon at AZPO Health.</p><h3><strong>Types of Thigh Lift Procedures</strong></h3><p>The specific type of thighplasty will depend on your individual needs and the areas you want to target. Here are some common types of thigh lift procedures:</p><p><strong>Inner Thigh Lift (Medial Thigh Lift):</strong> This procedure addresses excess skin and fat on the inner thighs. The incision is typically made in the groin crease.</p><p><strong>Outer Thigh Lift (Lateral Thigh Lift):</strong> This targets the outer thighs and may involve an incision extending from the groin around to the back of the hip.</p><p><strong>Full Thigh Lift (Bilateral Thigh Lift):</strong> A full thigh lift addresses excess skin and fat on both the inner and outer thighs. This may involve incisions along the inner thigh and around the hip.</p><p><strong>Mini Thigh Lift:</strong> This is a less invasive procedure that addresses a small amount of excess skin in the upper inner thigh.</p><p><strong>Extended Medial Thigh Lift:</strong> An extended medial thigh lift in Turkey addresses concerns like inner thigh laxity.</p><p>During your consultation, the surgeon will assess your anatomy and recommend the most suitable procedure to achieve your goals.</p><h3><strong>Preparing for Your Thighplasty Journey</strong></h3><p>Proper preparation is crucial for a smooth and successful thigh lift surgery experience. Here's what you can expect:</p><p><strong>Pre-Operative Consultation:</strong> Your surgeon will review your medical history, discuss your goals, and perform a physical exam. This is the time to ask any questions you have.</p><p><strong>Pre-Surgical Instructions:</strong> You'll receive detailed instructions on what to do and avoid before surgery. This may include stopping certain medications, avoiding alcohol, and quitting smoking.</p><p><strong>Medical Evaluations:</strong> You may need to undergo blood tests and other medical evaluations to ensure you are fit for surgery.</p><p><strong>Mental and Emotional Preparation:</strong> It's important to have realistic expectations and understand the recovery process.</p><p><strong>Home Preparation:</strong> Prepare your home for your recovery by arranging for help with daily tasks and creating a comfortable space.</p><h3><strong>What to Expect During the Thigh Lift Procedure</strong></h3><p>On the day of your surgery:</p><p><strong>Anesthesia:</strong> You will receive general anesthesia to ensure you are comfortable throughout the procedure.</p><p><strong>Incisions:</strong> The surgeon will make precise incisions based on the chosen technique. Incision placement is strategic to minimize scarring.</p><p><strong>Liposuction (Optional):</strong> Liposuction may be used to remove excess fat and further contour the thighs.</p><p><strong>Skin Removal and Tightening:</strong> Excess skin will be removed, and the remaining skin will be tightened and re-draped to create a smoother, more toned appearance.</p><p><strong>Incision Closure:</strong> Incisions will be closed with sutures or surgical glue.</p><p>The thigh lifting in Turkey process typically involves a hospital stay of one night and a hotel stay of three nights. The operation time is approximately one hour. Return to work and social life can be expected within seven days.</p><h3><strong>Non-Surgical Alternatives</strong></h3><p>While surgery offers the most dramatic results, non-surgical options can provide some improvement for mild to moderate skin laxity. These may include:</p><p><strong>Radiofrequency:</strong> This treatment uses energy to heat the skin and stimulate collagen production.</p><p><strong>Ultrasound:</strong> Ultrasound therapy can also tighten skin and reduce fat.</p><p><strong>Injectable Treatments:</strong> Certain injectables can improve skin texture and reduce the appearance of cellulite.</p><p>It’s important to note that non-surgical options provide more subtle results compared to surgery.</p><h3><strong>Combining Thighplasty with Other Procedures</strong></h3><p>To achieve a more comprehensive body transformation, thighplasty can be combined with other procedures. Common combinations include:</p><p><strong>Liposuction:</strong> To remove stubborn fat pockets.</p><p><strong>Tummy Tuck:</strong> To address excess skin and fat in the abdomen.</p><p><strong>Buttock Lift:</strong> To enhance the overall lower body contour.</p><p><strong>Body Lift:</strong> For a more extensive body contouring, addressing multiple areas.</p><p>Combining procedures is not suitable for everyone and should be discussed with your surgeon.</p><h3><strong>Recovery and Post-Procedure Care</strong></h3><p>Proper aftercare is essential for optimal healing and results. Key aspects of recovery include:</p><p><strong>Compression Garments:</strong> Wearing compression garments helps reduce swelling and support the tissues.</p><p><strong>Wound Care:</strong> You'll receive instructions on how to care for your incisions to prevent infection.</p><p><strong>Pain Management:</strong> Pain medication can help manage discomfort during the initial recovery period.</p><p><strong>Limited Activity:</strong> Avoid strenuous activities for several weeks to allow proper healing.</p><p><strong>Follow-Up Appointments:</strong> Regular follow-up appointments with your surgeon are important to monitor your progress.</p><h3><strong>Understanding the Risks and Considerations</strong></h3><p>Like all surgeries, thighplasty carries potential risks. These include:</p><p><strong>Infection:</strong> Strict sterile techniques are used to minimize this risk.</p><p><strong>Bleeding:</strong> Experienced surgeons use meticulous techniques to minimize bleeding.</p><p><strong>Anesthesia Risks:</strong> Experienced anesthesiologists carefully assess your medical history.</p><p><strong>Scarring:</strong> Surgeons use advanced techniques to minimize the appearance of scars, and post-operative scar management options are available.</p><p><strong>Changes in Skin Sensation:</strong> Temporary numbness or tingling can occur.</p><p><strong>Deep Vein Thrombosis (DVT):</strong> Preventative measures are taken, such as compression stockings.</p><p>It's important to discuss these risks with your surgeon and have realistic expectations.</p><h3><strong>Thighplasty Cost in Turkey</strong></h3><p>The thigh lift in Turkey cost can vary based on the surgeon's experience, the surgical technique used, the facility, anesthesia fees, and post-operative care. Contact AZPO Health for a free consultation and personalized quote, as prices are not included.</p><h3><strong>Why Choose AZPO Health for Your Thighplasty in Turkey?</strong></h3><p>AZPO Health is committed to providing you with a safe, comfortable, and rewarding experience. Here's what sets us apart:</p><p><strong>Experienced Surgeons:</strong> AZPO Health partners with highly skilled and board-certified plastic surgeons with expertise in thighplasty.</p><p><strong>Personalized Care:</strong> We tailor each treatment plan to your individual needs and goals.</p><p><strong>State-of-the-Art Facilities:</strong> We work with modern, accredited hospitals equipped with the latest technology.</p><p><strong>Comprehensive Support:</strong> From your initial consultation to post-operative care, we're with you every step of the way.</p><p><strong>Transparent Pricing:</strong> We provide clear and detailed cost breakdowns during your consultation.</p><h3><strong>Take the First Step Towards Smoother, More Contoured Thighs!</strong></h3><p>If you're ready to say goodbye to sagging thigh skin and hello to a more confident you, contact AZPO Health today! Our team is here to answer your questions, address your concerns, and help you determine if thighplasty in Turkey is the right choice for you.</p><p><strong>Contact us now for a free consultation and personalized quote!</strong></p><p><br></p><p><br></p>`,
       },
       subNestedKey: "thighplasty-in-turkey",
@@ -9354,11 +9706,11 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       id: 0,
       title:
         locale === "ru"
-          ? "Подтяжка бровей в Турции: ваш путь к преображению"
+          ? "Подтяжка бровей в Турции в 2025 году"
           : "Brow Lift Surgery in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "С возрастом кожа теряет эластичность, что может привести к опущению бровей и появлению морщин на лбу. Это порой создает ощущение усталости, гнева или печали, несмотря на то, что вы чувствуете себя прекрасно. Подтяжка бровей – эффективное решение для возвращения бровям их естественного положения, разглаживания морщин и придания взгляду открытости и привлекательности."
+          ? "Опускающиеся брови, морщины на лбу или нависшие веки делают вас уставшим, старше или менее выразительным? Не позволяйте возрасту влиять на вашу внешность — освежите и приподнимите взгляд с помощью профессиональной подтяжки бровей в Турции. В AZPO Health мы подберем для вас лучших хирургов, специализирующихся на этой процедуре, чтобы обеспечить естественный и гармоничный результат."
           : "Are sagging brows, forehead wrinkles, or hooded eyelids making you look tired, older, or less expressive? Don’t let aging define you—refresh and lift your look with expert Brow Lift Surgery in Turkey. At AZPO Health, we connect you with top-tier surgeons who specialize in Brow Lift Surgery and giving you natural-looking results.",
       benefits: {
         items: [
@@ -9366,225 +9718,255 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
             title: locale === "ru" ? "Гладкая кожа" : "Smooth Skin",
             desc:
               locale === "ru"
-                ? "эффективное устранение морщин и омоложение кожи лба."
+                ? "устранение морщин на лбу для молодого и свежего вида."
                 : "Eliminates forehead wrinkles for a more youthful appearance",
           },
           {
-            title: locale === "ru" ? "Яркий взгляд" : "Fresh Eyes",
+            title: locale === "ru" ? "Свежий взгляд" : "Fresh Eyes",
             desc:
               locale === "ru"
-                ? "естественный лифтинг бровей для более выразительных глаз."
+                ? "приподнятые брови создают естественное и молодое выражение лица. "
                 : "Lifts eyebrows to create a naturally refreshed look",
           },
           {
-            title: locale === "ru" ? "Уверенность в себе" : "Natural Beauty",
+            title: locale === "ru" ? "Естественная красота" : "Natural Beauty",
             desc:
               locale === "ru"
-                ? "Уверенность в себе: естественное преображение за счёт коррекции опущенных бровей."
+                ? "Корректирует нависшие брови и повышает уверенность в себе за счет естественного результата."
                 : "Corrects heavy brows while boosting confidence through natural results",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? null : "Description",
-            desc: locale === "ru" ? null : "A brow lift (or brow surgery) is a cosmetic surgical procedure aimed at lifting and improving the shape of the eyebrows, as well as eliminating signs of aging in the forehead area. This surgery addresses drooping brows, forehead wrinkles, and creates a fresher, younger look.",
+            header: locale === "ru" ? "Описание" : "Description",
+            desc: locale === "ru" ? "Подтяжка бровей — это косметическая операция, направленная на поднятие и улучшение формы бровей, а также на устранение признаков старения в области лба. Процедура помогает избавиться от опущенных бровей и морщин, возвращая лицу свежесть и молодость." : "A brow lift (or brow surgery) is a cosmetic surgical procedure aimed at lifting and improving the shape of the eyebrows, as well as eliminating signs of aging in the forehead area. This surgery addresses drooping brows, forehead wrinkles, and creates a fresher, younger look.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Как проходит операция" : "How it works",
             desc:
               locale === "ru"
-                ? "во время процедуры хирург выполняет разрезы вдоль линии роста волос или чуть выше бровей. Кожа и ткани подтягиваются, чтобы приподнять брови, разгладить морщины на лбу и вернуть лицу свежий и молодой вид. В некоторых случаях также может проводиться коррекция положения лба и удаление лишней кожи. Восстановление после подтяжки бровей занимает обычно 1-2 недели, в этот период пациентам рекомендуется избегать интенсивных физических нагрузок и внимательно следовать послеоперационным рекомендациям для максимально эффективного заживления."
+                ? "Во время процедуры хирург делает небольшие разрезы вдоль линии роста волос или прямо над бровями. Затем кожа и мягкие ткани подтягиваются для приподнятия бровей и разглаживания лобных морщин. В некоторых случаях также корректируется положение лба и удаляются излишки кожи. Восстановительный период обычно занимает от 1 до 2 недель. В это время важно избегать сильных физических нагрузок и соблюдать все рекомендации врача."
                 : "During the procedure, the surgeon makes incisions along the hairline or just above the eyebrows. The skin and tissues are tightened to lift the brows and smooth forehead wrinkles. In some cases, adjustments to the forehead position and removal of excess skin may also be performed. Recovery from a brow lift typically takes 1 to 2 weeks, with patients advised to avoid intense physical activity and follow post-surgical instructions for healing.",
           },
           {
-            header: locale === "ru" ? "Для кого" : "For whom",
+            header: locale === "ru" ? null : "For whom",
             desc:
               locale === "ru"
-                ? "процедура идеально подходит людям с опущенными бровями или обвисшей кожей лба, которые придают взгляду усталый или возрастной вид. Она также подходит тем, кто хочет улучшить внешний вид глаз и лба без применения более инвазивных методов. Рекомендуется для тех, кто испытывает дискомфорт из-за морщин и складок на лбу."
+                ? null
                 : "Ideal for people with drooping brows or sagging forehead skin, making the eyes appear tired or aged. Suitable for those who want to enhance the appearance of their eyes and forehead without undergoing more invasive procedures. Also recommended for individuals who experience discomfort from forehead wrinkles and folds.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "Будут ли мои брови выглядеть естественно?" : "Will my eyebrows look natural?",
-          answer:
-            locale === "ru"
-              ? "Да, современные техники обеспечивают деликатный лифтинг для свежего и естественного вида."
-              : "Yes, modern techniques lift subtly for a refreshed look",
+          question : locale === "ru" ? "Будут ли мои брови выглядеть естественно?" : "Will my eyebrows look natural?",
+          answer : locale === "ru" ? "Да, современные методы позволяют приподнять брови деликатно, сохраняя естественное выражение лица." : "Yes, modern techniques lift subtly for a refreshed look"
         },
         {
-          question: locale === "ru" ? "Это больно?" : "Is it painful?",
-          answer:
-            locale === "ru"
-              ? "Процедура вызывает лишь чувство натяжения и лёгкий дискомфорт, но не сильную боль."
-              : "Mostly tightness and mild discomfort, not severe pain",
+          question : locale === "ru" ? "Это больно?" : "Is it painful?",
+          answer : locale === "ru" ? "Обычно ощущается легкое напряжение или дискомфорт, но сильная боль бывает редко и легко контролируется." : "Mostly tightness and mild discomfort, not severe pain"
         },
         {
-          question: locale === "ru" ? "Результат сохраняется навсегда?" : "Are the results permanent?",
-          answer:
-            locale === "ru"
-              ? "Результаты сохраняются от 5 до 10 лет в зависимости от ухода и возрастных изменений."
-              : "Results last 5–10 years, depending on aging and skin care",
+          question : locale === "ru" ? "Результаты постоянные?" : "Are the results permanent?",
+          answer : locale === "ru" ? "Эффект сохраняется в среднем от 5 до 10 лет, в зависимости от индивидуальных особенностей, ухода за кожей и процесса старения." : "Results last 5–10 years, depending on aging and skin care"
         },
         {
-          question: locale === "ru" ? "Можно ли наносить макияж после процедуры?" : "Can I wear makeup after?",
-          answer:
-            locale === "ru"
-              ? "Да, макияж можно наносить после заживления — обычно через 1–2 недели с разрешения врача."
-              : "After healing – usually in 1–2 weeks with surgeon’s approval",
+          question : locale === "ru" ? "Могу ли я наносить макияж после процедуры?" : "Can I wear makeup after?",
+          answer : locale === "ru" ? "Да, как правило, спустя 1–2 недели после заживления и с одобрения вашего хирурга." : "After healing – usually in 1–2 weeks with surgeon’s approval"
         },
         {
-          question: locale === "ru" ? "Изменится ли форма глаз?" : "Will it change my eye shape?",
-          answer:
-            locale === "ru"
-              ? "Нет, процедура приподнимает только брови и не влияет на форму глаз."
-              : "No, it lifts brows but doesn’t change eye shape",
+          question : locale === "ru" ? "Изменится ли форма моих глаз?" : "Will it change my eye shape?",
+          answer : locale === "ru" ? "Нет, процедура приподнимает только брови и не влияет на форму глаз." : "No, it lifts brows but doesn’t change eye shape"
         },
         {
-          question: locale === "ru" ? "Опустятся ли брови со временем после операции?" : "Will my eyebrows droop after the surgery?",
-          answer:
-            locale === "ru"
-              ? "Брови будут приподняты и оформлены, но со временем могут немного опуститься из-за естественного старения."
-              : "Your eyebrows will be lifted and defined, but may droop over time with aging.",
-        },
+          question : locale === "ru" ? "Будут ли мои брови со временем снова опускаться?" : "-Will my eyebrows droop after the surgery?",
+          answer : locale === "ru" ? "С возрастом возможен незначительный естественный опуск бровей, но общий эффект подтяжки сохраняется надолго." : "Your eyebrows will be lifted and defined, but may droop over time with aging."
+        }
       ],
 
       posts: [
-        locale === "ru"
-          ? "Держите голову приподнятой и используйте холодные компрессы."
-          : "Keep head elevated and use cold compresses",
-        locale === "ru"
-          ? "Избегайте наклонов и подъёма тяжестей."
-          : "Avoid bending over or heavy lifting",
-        locale === "ru"
-          ? "Ожидается чувство стянутости в области лба, отёки и лёгкие синяки."
-          : "Expect forehead tightness, swelling, and mild bruising",
-        locale === "ru"
-          ? "Следуйте рекомендациям по уходу за швами (обычно они скрыты в линии роста волос)."
-          : "Follow wound care for incisions (usually hidden in hairline)",
-        locale === "ru"
-          ? "Избегайте воздействия солнца и используйте солнцезащитный крем на рубцы после заживления."
-          : "Avoid sun exposure and use sunscreen on scars once healed",
-        locale === "ru"
-          ? "Избегайте интенсивной физической активности."
-          : "Avoid strenuous activities.",
-        locale === "ru"
-          ? "Ограничьте активную мимику лица."
-          : "Limit facial expressions.",
-        locale === "ru"
-          ? "Избегайте экстремально высоких и низких температур."
-          : "Avoid extreme hot and cold temperatures.",
+        locale === "ru" ? "Держите голову приподнятой и прикладывайте холодные компрессы для уменьшения отека." : "Keep head elevated and use cold compresses",
+        locale === "ru" ? "Избегайте наклонов вперед и подъема тяжестей." : "Avoid bending over or heavy lifting",
+        locale === "ru" ? "Легкая отечность, синяки и ощущение напряжения на лбу — нормальные явления." : "Expect forehead tightness, swelling, and mild bruising",
+        locale === "ru" ? "Тщательно следуйте рекомендациям по уходу за ранами, особенно если разрезы расположены в линии роста волос." : "Follow wound care for incisions (usually hidden in hairline)",
+        locale === "ru" ? "Избегайте прямого солнечного света; после заживления наносите солнцезащитный крем на область швов." : "Avoid sun exposure and use sunscreen on scars once healed",
+        locale === "ru" ? "Воздержитесь от интенсивной физической активности." : "Avoid strenuous activities.",
+        locale === "ru" ? "Старайтесь ограничить активную мимику." : "Limit facial expressions.",
+        locale === "ru" ? "Избегайте воздействия экстремально горячих или холодных температур." : "Avoid extreme hot and cold temperatures."
       ],
 
       preList: [
-        locale === "ru"
-          ? "Избегайте алкоголя и препаратов, разжижающих кровь, за 1–2 недели до процедуры."
-          : "Avoid alcohol and blood thinners for 1–2 weeks before",
-        locale === "ru"
-          ? "Прекратите курение за несколько недель до операции."
-          : "Stop smoking several weeks before surgery",
-        locale === "ru"
-          ? "Обсудите с врачом вашу историю болезней и перенесённые процедуры в области лба."
-          : "Discuss medical history and any past forehead procedures",
-        locale === "ru"
-          ? "Заранее организуйте транспорт и помощь в уходе после операции."
-          : "Arrange transportation and post-op care support",
-        locale === "ru"
-          ? "Не ешьте и не пейте за 6 часов до процедуры, если будет использоваться анестезия."
-          : "Avoid eating or drinking for 6 hours before surgery if anesthesia is applied.",
-        locale === "ru"
-          ? "Обратите внимание на тщательную очистку лица и волос перед процедурой."
-          : "Pay attention to cleaning your face and hair before the surgery.",
-        locale === "ru"
-          ? "Убедитесь, что вы хорошо выспались перед процедурой."
-          : "Make sure to get enough rest.",
+        locale === "ru" ? "Избегайте употребления алкоголя и разжижающих кровь средств за 1–2 недели до операции." : "Avoid alcohol and blood thinners for 1–2 weeks before",
+        locale === "ru" ? "Прекратите курение как минимум за несколько недель до процедуры." : "Stop smoking several weeks before surgery",
+        locale === "ru" ? "Обсудите с врачом вашу медицинскую историю и любые ранее проведенные процедуры в области лба." : "Discuss medical history and any past forehead procedures",
+        locale === "ru" ? "Заранее организуйте транспорт и помощь на период восстановления." : "Arrange transportation and post-op care support",
+        locale === "ru" ? "Не ешьте и не пейте за 6 часов до операции, если планируется общий наркоз." : "Avoid eating or drinking for 6 hours before surgery if anesthesia is applied.",
+        locale === "ru" ? "Перед операцией убедитесь, что кожа лица и волосы чистые." : "Pay attention to cleaning your face and hair before the surgery.",
+        locale === "ru" ? "Убедитесь, что вы хорошо отдохнули перед операцией." : "Make sure to get enough rest."
       ],
       conclusion: {
-        title: locale === "ru" ? "Заключение" : "Conclusion",
+        title: locale === "ru" ? null : "Conclusion",
         desc:
           locale === "ru"
-            ? "подтяжка бровей – это эффективный способ омолодить лицо, особенно в области лба и глаз. Она помогает устранить признаки старения, разглаживает морщины и улучшает общий внешний вид, возвращая лицу свежесть и молодость."
+            ? null
             : "A brow lift is an effective procedure for rejuvenating the face, particularly in the forehead and eye areas. It helps eliminate signs of aging and improves overall appearance, restoring youthfulness and freshness.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Почему стоит выбрать Турцию для подтяжки бровей?"
+            ? "Почему стоит делать подтяжку бровей в Турции"
             : "Why Brow Lift Surgery in Turkey",
         content:
           locale === "ru"
-            ? `<p dir="ltr">Турция &ndash; одно из самых популярных направлений медицинского туризма, где сочетаются высококачественные косметические процедуры и доступные цены. AZPO Health работает с лучшими клиниками Стамбула, Анталии и Алании, где вас ждут опытные специалисты и новейшие технологии. Мы обеспечим вам полный спектр услуг, создавая комфорт и безопасность на протяжении всего вашего пути.</p>
+            ? `<p dir="ltr">С возрастом гравитация, воздействие солнца и генетика приводят к опущению бровей и появлению глубоких морщин на лбу. Это может создавать усталый, сердитый или даже грустный вид, который не отражает ваших настоящих эмоций. Подтяжка бровей, или лобная подтяжка, &mdash; хирургическая процедура, направленная на коррекцию этих изменений. Она приподнимает и меняет положение бровей, возвращая им молодой и естественный вид. Прохождение процедуры подтяжки бровей в Турции &mdash; это уникальная возможность получить качественное медицинское обслуживание по доступной цене и совместить лечение с путешествием. AZPO Health &mdash; ваш надежный партнер в организации подтяжки бровей в Турции, предлагающий эффективные решения для обновления внешности и повышения уверенности в себе.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Почему выбирают Турцию для подтяжки бровей?</h3>
+<p dir="ltr">Турция уверенно занимает лидирующие позиции в медицинском туризме &mdash; и на это есть веские причины. Вот почему AZPO Health &mdash; лучший выбор для вашей операции:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Высокое качество медицинских услуг: турецкие клиники оборудованы современными технологиями, а врачи применяют передовые методы и технологии для обеспечения наилучших результатов.</p>
+<p dir="ltr" role="presentation">Доступная стоимость: подтяжка бровей в Турции стоит значительно дешевле, чем во многих западных странах. Это позволяет достичь желаемого результата без чрезмерных затрат. Мы предоставим вам персонализированную смету стоимости процедуры.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Опытные хирурги: наши специалисты имеют многолетний опыт в проведении операций по подтяжке бровей и постоянно совершенствуют свои навыки.</p>
+<p dir="ltr" role="presentation">Опытные и сертифицированные хирурги: AZPO Health сотрудничает с высококвалифицированными пластическими хирургами Турции, специализирующимися на омолаживающих операциях лица, включая подтяжку бровей. Наши специалисты сочетают профессионализм и художественный подход для создания естественных и впечатляющих результатов.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступные цены: стоимость подтяжки бровей в Турции значительно ниже, чем в Европе или США.</p>
+<p dir="ltr" role="presentation">Современные методы: турецкие клиники применяют передовые технологии и минимально инвазивные техники, такие как эндоскопическая подтяжка бровей, что обеспечивает более быстрое восстановление, минимальные рубцы и комфортное проведение процедуры.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комплексный пакет услуг: AZPO Health предоставляет полный спектр услуг, включая трансфер, проживание, языковую поддержку и послеоперационный уход, чтобы ваше пребывание было максимально комфортным и безопасным.</p>
+<p dir="ltr" role="presentation">Комплексные пакеты услуг: AZPO Health предлагает полные пакеты, включающие консультации, операцию, трансфер, проживание и послеоперационный уход, чтобы сделать ваш путь к обновленному взгляду максимально удобным и беззаботным.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">Методы подтяжки бровей, предлагаемые AZPO Health</h3>
-<p dir="ltr">AZPO Health предлагает различные методы подтяжки бровей, чтобы удовлетворить индивидуальные потребности каждого пациента.</p>
+<p dir="ltr">Кому подходит подтяжка бровей?</p>
+<p dir="ltr">Подтяжка бровей &mdash; отличный вариант, если у вас есть:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Эндоскопическая подтяжка бровей: малоинвазивная процедура, при которой через небольшие разрезы в волосистой части головы вводятся эндоскоп и специальные инструменты. Хирург подтягивает ткани лба и фиксирует их в новом положении. Этот метод обеспечивает минимальные рубцы и короткий период восстановления.</p>
+<p dir="ltr" role="presentation">Опущенные брови и нависшие веки, которые делают взгляд усталым и придают лицу возраст;</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Коронарная подтяжка бровей: более традиционный метод, при котором разрез выполняется вдоль линии роста волос от уха до уха. Хирург удаляет излишки кожи и подтягивает ткани лба. Этот метод подходит для пациентов с выраженным опущением бровей и глубокими морщинами на лбу.</p>
+<p dir="ltr" role="presentation">Глубокие морщины на лбу и складки между бровями, которые хочется разгладить;</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Подтяжка бровей нитями: менее инвазивная процедура, при которой под кожу вводятся специальные нити, подтягивающие и фиксирующие брови в новом положении. Этот метод обеспечивает быстрый эффект и не требует длительного восстановления.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Подтяжка лба и бровей ботоксом: инъекции ботокса могут временно приподнять брови и разгладить морщины на лбу. Этот метод подходит для пациентов с незначительным опущением бровей и мимическими морщинами.</p>
+<p dir="ltr" role="presentation">Асимметрия бровей, которую нужно скорректировать для более гармоничного облика.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">Как проходит процедура подтяжки бровей в AZPO Health?</h3>
+<p dir="ltr">Идеальные кандидаты на процедуру в Турции обычно обладают следующими характеристиками:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Наличие заметных признаков старения &mdash; опущение бровей, нависание век или выраженные морщины на лбу;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хорошее общее здоровье, необходимое для безопасного проведения операции;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Реалистичные ожидания относительно результатов;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Позитивный настрой и готовность следовать рекомендациям врача после операции.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Если вы не уверены, подходит ли вам эта процедура, свяжитесь с AZPO Health для консультации. Наши специалисты оценят ваши индивидуальные особенности и помогут определить оптимальный план лечения.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Техники подтяжки бровей в Турции: чего ожидать</h3>
+<p dir="ltr">В AZPO Health доступны различные техники подтяжки бровей, чтобы максимально соответствовать вашим потребностям:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Эндоскопическая подтяжка бровей: &nbsp;минимально инвазивный метод с маленькими разрезами в волосистой части головы. С помощью эндоскопа хирург аккуратно поднимает и фиксирует ткани. Данная техника сокращает время восстановления и минимизирует рубцы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Коронарная подтяжка бровей: классический способ с разрезом по всей ширине лба от уха до уха. Позволяет добиться более выраженного эффекта, но требует более длительного периода восстановления и может оставить заметные шрамы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Височная подтяжка бровей:разрезы выполняются в области висков. Метод подходит при умеренном опущении бровей и позволяет приподнять их внешние края для естественного результата.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Во время консультации хирург оценит строение вашего лица, выслушает ваши пожелания и подберет наиболее подходящую технику.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Процедура подтяжки бровей: пошаговый процесс</h3>
+<p dir="ltr">Конкретные шаги могут варьироваться в зависимости от выбранного метода, но обычно процедура подтяжки бровей с AZPO Health включает следующие этапы:</p>
 <ol>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Консультация: вы связываетесь с AZPO Health для получения бесплатной консультации. Наши специалисты оценивают вашу ситуацию и подбирают наиболее подходящий метод подтяжки бровей.</p>
+<p dir="ltr" role="presentation">Обезболивание: ваш комфорт &mdash; наш главный приоритет. Мы обсудим варианты анестезии, чтобы обеспечить безболезненное и максимально комфортное проведение операции.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Планирование поездки: мы помогаем вам организовать поездку в Турцию, включая трансфер, проживание и языковую поддержку.</p>
+<p dir="ltr" role="presentation">Создание разрезов: хирург выполняет точные разрезы в зависимости от выбранной методики. При минимально инвазивных техниках разрезы обычно скрыты в линии роста волос.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Обследование: в клинике вы проходите обследование у хирурга, который проводит детальную оценку и назначает необходимые анализы.</p>
+<p dir="ltr" role="presentation">Коррекция тканей: хирург аккуратно приподнимает и перемещает подкожные ткани, разглаживает лоб и поднимает брови. При необходимости проводится корректировка положения мышц для более стойкого результата.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Операция: операция проводится под местной или общей анестезией, в зависимости от выбранного метода.</p>
+<p dir="ltr" role="presentation">Закрытие ран: разрезы аккуратно зашиваются или фиксируются специальными кожными клеями, что помогает минимизировать рубцы.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Восстановление: после операции вы остаетесь в клинике под наблюдением врачей в течение нескольких дней. Мы обеспечим вас всеми необходимыми рекомендациями по уходу за кожей и восстановлению, чтобы процесс реабилитации прошел максимально комфортно и эффективно.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Послеоперационный уход: AZPO Health обеспечивает послеоперационное наблюдение и поддержку, чтобы гарантировать успешное восстановление и достижение желаемых результатов.</p>
+<p dir="ltr" role="presentation">Наложение повязки: на область лба может быть наложена повязка, чтобы обеспечить поддержку тканей и способствовать более быстрому заживлению.</p>
 </li>
 </ol>
-<h3 dir="ltr">Отзывы наших клиентов</h3>
-<p dir="ltr">"Я очень довольна результатом подтяжки бровей! Мое лицо выглядит моложе и свежее. Спасибо AZPO Health за высокий профессионализм и внимание!!" &ndash; Елена, 45 лет.</p>
-<p dir="ltr">"Я долго сомневалась, стоит ли делать операцию, но AZPO Health развеяли все мои страхи. Все прошло идеально, и я очень счастлива!" &ndash; Ольга, 52 года.</p>
-<h3 dir="ltr">AZPO Health: ваш надежный партнер в Турции</h3>
-<p dir="ltr">AZPO Health &ndash; ведущая компания в сфере медицинского туризма, специализирующаяся на пересадке волос и косметической хирургии. Мы сотрудничаем с лучшими клиниками и опытными врачами в Турции, чтобы предоставить нашим клиентам услуги высокого качества и незабываемый опыт.</p>
+<h3 dir="ltr">Восстановление и послеоперационный уход</h3>
+<p dir="ltr">Понимание процесса восстановления важно для принятия взвешенного решения о подтяжке бровей. Вот ориентировочные сроки и этапы после операции с AZPO Health:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальный подход: мы учитываем ваши пожелания и потребности, чтобы предложить наилучшее решение.</p>
+<p dir="ltr" role="presentation">Сразу после операции: возможно появление отёков, синяков и дискомфорта. Для облегчения боли назначаются обезболивающие препараты.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Прозрачность и честность: мы предоставляем полную информацию о процедурах, ценах и возможных рисках.</p>
+<p dir="ltr" role="presentation">Первая неделя: держите голову приподнятой и прикладывайте холодные компрессы для снижения отеков. Избегайте интенсивных физических нагрузок.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Безопасность и комфорт: мы заботимся о вашей безопасности и комфорте на каждом этапе путешествия.</p>
+<p dir="ltr" role="presentation">2-4 недели: отеки и синяки постепенно спадут. Можно вернуться к работе и лёгкой активности.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Несколько месяцев: окончательный результат станет заметен, когда ткани полностью заживут и стабилизируются.<br><br></p>
 </li>
 </ul>
-<h3 dir="ltr">Свяжитесь с нами прямо сейчас!</h3>
-<p dir="ltr">Не откладывайте свою мечту о молодости и красоте! Свяжитесь с AZPO Health прямо сейчас, чтобы получить бесплатную консультацию и узнать все подробности о подтяжке бровей в Турции.</p>
+<h3 dir="ltr">Потенциальные риски и осложнения</h3>
+<p dir="ltr">Как и любая хирургическая процедура, подтяжка бровей сопряжена с определенными рисками и возможными осложнениями:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Инфекции<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Кровотечения<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гематомы<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повреждение нервов<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Выпадение волос<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ассиметрия<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Недостаточная или чрезмерная коррекция<br><br></p>
+</li>
+</ul>
+<p dir="ltr">В AZPO Health мы строго соблюдаем все протоколы безопасности, чтобы свести эти риски к минимуму и обеспечить максимально комфортное и успешное восстановление.</p>
+<h3 dir="ltr">Безоперационные методы подтяжки бровей</h3>
+<p dir="ltr">Хотя хирургическая подтяжка бровей дает самый заметный и долговременный эффект, существуют и менее инвазивные альтернативы для омоложения:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ботокс: расслабляет мышцы, вызывающие морщины на лбу и между бровями, делая кожу более гладкой и молодой.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Дермальные филлеры: придают объем и подъем бровям, создавая более четкий и выразительный контур.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Нитевой лифтинг: минимально инвазивная процедура с введением специальных нитей под кожу для подтяжки и поддержки бровей.</p>
+</li>
+</ul>
+<h3 dir="ltr">Отзывы наших пациентов</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">&laquo;Я долго стеснялась опущенных бровей и морщин на лбу. После подтяжки в AZPO Health я выгляжу намного моложе! Результат естественный, я очень довольна.&raquo; &mdash; Сара<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">&laquo;Долгое время думал о подтяжке бровей, но беспокоился о цене. AZPO Health помогли мне осуществить мечту без лишних затрат. Весь процесс прошёл на высшем уровне.&raquo; &mdash; Майкл<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Свяжитесь с AZPO Health уже сегодня!</h3>
+<p dir="ltr">Хотите избавиться от усталого взгляда и получить свежий, уверенный взгляд? Запишитесь на бесплатную консультацию в AZPO Health и получите персонализированный расчёт стоимости. Наши специалисты будут сопровождать вас на каждом этапе, обеспечивая безопасность, комфорт и отличный результат.</p>
 <p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">As we age, the effects of gravity, sun exposure, and genetics can lead to sagging brows and deep forehead wrinkles. This can create a tired, angry, or even sad appearance, regardless of how you truly feel. A brow lift, also known as a forehead lift, is a surgical procedure designed to address these concerns, lifting and repositioning the brows to a more youthful and natural-looking position. Undergoing brow lift surgery in Turkey offers a unique opportunity to combine high-quality medical care with an affordable and accessible travel destination. AZPO Health is your partner for brow lift surgery in Turkey, offering a transformative solution to help you regain a refreshed and confident appearance.</p>
 <h3 dir="ltr">Why Choose Turkey for Your Brow Lift?</h3>
@@ -12799,56 +13181,56 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       id: 0,
       title:
         locale === "ru"
-          ? "Фаллопластика полового члена в Турции: индивидуальное увеличение с применением передовых техник с AZPO Health"
+          ? "Увеличение полового члена в Турции с AZPO Health"
           : "Phalloplasty for Penile Enlargement in Turkey: Explore Enhancement Options with AZPO Health",
       descriptionTop:
         locale === "ru"
-          ? "Если вы рассматриваете фаллопластику для увеличения полового члена и хотите повысить уверенность в себе, Турция с AZPO Health может стать идеальным выбором для реализации ваших целей. Мы предлагаем вам профессиональный подход и всестороннюю поддержку на каждом этапе: от консультаций до успешной реабилитации. Наша задача – обеспечить вам конфиденциальность, комфорт и качественное лечение, доверив вас лучшим специалистам, которые помогут воплотить ваши желания в реальность."
+          ? "Задумываетесь об увеличении пениса и хотите чувствовать себя увереннее в собственной мужской привлекательности? Турция сегодня входит в число наиболее уважаемых стран в области интимной хирургии. AZPO Health поможет вам пройти этот путь с деликатностью, заботой и профессиональной медицинской поддержкой."
           : "Considering phalloplasty for penile enlargement to enhance your confidence and address personal desires? Turkey has emerged as a respected destination for men seeking these specialized procedures. Discover how AZPO Health can connect you with experienced surgeons and comprehensive support for a discreet and empowering journey.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Быстрый успех" : "Confidence Boost",
+            title: locale === "ru" ? "Уверенность в себе" : "Confidence Boost",
             desc:
               locale === "ru"
-                ? "повышает уверенность и улучшает самооценку после процедуры."
+                ? "операция помогает повысить самооценку и сексуальную уверенность."
                 : "Enhances self-esteem and sexual confidence after the surgical procedure.",
           },
           {
-            title: locale === "ru" ? "Лучшая функция" : "Better Function",
+            title: locale === "ru" ? "Улучшение функции" : "Better Function",
             desc:
               locale === "ru"
-                ? "улучшает качество интимной жизни и удовлетворенность отношениями."
+                ? "благодаря эстетическим улучшениям возможно повышение качества сексуальной жизни и удовлетворенности в отношениях."
                 : "Improves sexual experiences and relationship satisfaction through enhanced aesthetics",
           },
           {
-            title: locale === "ru" ? "Надёжный результат" : "Safe Results",
+            title: locale === "ru" ? "Надежные результаты" : "Safe Results",
             desc:
               locale === "ru"
-                ? "процедура обеспечивает длительные улучшения с коротким периодом восстановления."
+                ? "процедура дает длительный эффект при минимальном восстановительном периоде, особенно при соблюдении рекомендаций врача."
                 : "Permanent improvements with minimal recovery time under proper anesthesia",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? null : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? null
+                ? "Фаллопластика, или хирургическое увеличение пениса, — это процедура, направленная на улучшение длины и/или толщины полового члена. Она проводится для мужчин, испытывающих дискомфорт или недовольство своей анатомией."
                 : "Penoplasty, also known as penis enlargement or penile enhancement surgery, is a medical procedure aimed at improving the size and appearance of the penis, specifically for individuals dissatisfied with its length or girth.",
           },
           {
-            header: locale === "ru" ? null : "How It Works",
+            header: locale === "ru" ? "Как проходит процедура" : "How It Works",
             desc:
               locale === "ru"
-                ? null
+                ? "удлинения и утолщения пениса. Удлинение достигается путём пересечения связок, удерживающих орган внутри тела, благодаря чему становится видимой его большая часть. Для увеличения объёма применяются инъекции собственного жира, дермальные наполнители или пересадка тканей — при этом часть жира может со временем рассосаться. Также возможно проведение процедур по выпрямлению, если есть выраженная кривизна, что способствует улучшению функциональности и повышению комфорта."
                 : "Penoplasty involves lengthening and thickening techniques. Lengthening is achieved by cutting the suspensory ligament, making more of the penis visible. Thickening uses fat injections, fillers, or tissue transfer to enhance girth, though some fat may reabsorb over time. Straightening procedures can also correct curvature for improved function and comfort.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It Is For",
+            header: locale === "ru" ? "Кому подойдет процедура" : "Who It Is For",
             desc:
               locale === "ru"
-                ? "Фаллопластика — это операция по увеличению полового члена, включающая удлинение, утолщение и выпрямление. Удлинение достигается за счёт рассечения поддерживающей связки, что добавляет 4–5 см длины. Утолщение выполняется с помощью инъекций жира или филлеров, при этом часть жира сохраняется надолго. При искривлениях проводится выпрямление для восстановления формы и функции."
+                ? "Фаллопластика подходит мужчинам, недовольным размером или формой полового члена. К показаниям относятся длина пениса ниже средней (менее 12 см в состоянии эрекции), деформации после неудачного обрезания или травм, желание увеличить обхват по эстетическим или функциональным причинам, а также аномальное искривление, вызывающее дискомфорт при эрекции или во время полового акта."
                 : "Penoplasty is suitable for men who are dissatisfied with the size or shape of their penis, including those who experience: Shorter than average penis length (typically under 12 cm when erect). Penile deformities caused by botched circumcisions or trauma. A desire to increase penile girth for aesthetic or functional reasons. Abnormal curvature that causes discomfort during erection or sexual activity.",
           },
         ],
@@ -12892,107 +13274,87 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Пенопластика может быть эффективным решением для мужчин, которые чувствуют неуверенность в отношении размера или формы своего пениса, испытывая при этом эмоциональный или психологический дискомфорт. Эта процедура не только приносит физические улучшения, но и оказывает положительное влияние на самооценку, сексуальное благополучие и уверенность в себе. Важно проконсультироваться с опытным хирургом, который поможет оценить все риски и даст рекомендации по послеоперационному уходу, чтобы обеспечить наилучший результат. При ответственном подходе и квалифицированном обслуживании пенопластика способна значительно улучшить качество жизни, как в сексуальной, так и в социальной сфере."
+            ? "Фаллопластика может стать эффективным решением для мужчин, испытывающих эмоциональный дискомфорт или психологические комплексы, связанные с размером или формой полового члена. Эта операция способна принести как физические, так и психоэмоциональные улучшения — повысить уверенность в себе и качество интимной жизни. Тем не менее крайне важно проконсультироваться с квалифицированным хирургом, тщательно взвесить все возможные риски и строго следовать рекомендациям в период восстановления. При ответственном подходе фаллопластика может существенно улучшить качество жизни."
             : "Penoplasty can be an effective solution for men who are self-conscious about the size or shape of their penis and experience emotional or psychological distress as a result. The procedure provides both physical and psychological benefits, enhancing self-esteem and sexual well-being. However, it is essential to consult with a qualified surgeon, thoroughly evaluate the potential risks, and follow post-operative instructions carefully to ensure optimal results. With careful consideration and professional guidance, penoplasty can significantly improve a person’s quality of life, both sexually and socially.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Почему стоит выбрать Турцию для фаллопластики по увеличению полового члена с AZPO Health?"
+            ? "Почему стоит выбрать фаллопластику в Турции с AZPO Health?"
             : "Why Choose Turkey for Phalloplasty for Penile Enlargement with AZPO Health?",
         content:
           locale === "ru"
-            ? `<p dir="ltr">Для столь деликатной и личной процедуры, как фаллопластика, выбор клиники имеет решающее значение. Турция, в сотрудничестве с AZPO Health, предлагает уникальное сочетание исключительных преимуществ:</p>
+            ? `<p dir="ltr">Фаллопластика &mdash; деликатная и личная процедура, и выбор страны и клиники имеет первостепенное значение. AZPO Health, предлагает уникальные преимущества:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Экспертный подход и конфиденциальность по доступной цене: Турция становится все более популярным центром медицинского туризма, включая такие специализированные области, как реконструктивная и эстетическая урология. Это связано с наличием высококвалифицированных хирургов, освоивших передовые методики и придерживающихся строгих принципов конфиденциальности пациентов. AZPO Health сотрудничает с избранными клиниками в Стамбуле, Анталии и Алании, предоставляя доступ к опытным хирургам, специализирующимся на фаллопластике для увеличения полового члена. Мы обеспечиваем самые высокие стандарты конфиденциальности и предлагаем значительно более доступные цены по сравнению с рядом стран Европы и Северной Америки. Откройте для себя инновационные хирургические методы, которые обеспечивают полную конфиденциальность и доступные цены.</p>
+<p dir="ltr" role="presentation">Узкопрофильные специалисты и конфиденциальный подход по разумной цене: Турция признана одним из ведущих направлений в сфере реконструктивной и эстетической урологии. Здесь работают хирурги с международной подготовкой, владеющие передовыми методиками. AZPO Health сотрудничает только с проверенными клиниками в Стамбуле, Анталье и Аланье, предоставляя доступ к специалистам с опытом в фаллопластике и гарантируя высокий уровень конфиденциальности. При этом стоимость процедур здесь значительно ниже, чем в большинстве стран Европы и Северной Америки.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Комплексные пакеты услуг, разработанные с учетом ваших потребностей: AZPO Health понимает, насколько важны конфиденциальность и комфорт при решении о фаллопластике полового члена. Мы предлагаем пакеты, которые обеспечивают беспрепятственный, конфиденциальный и поддерживающий опыт на протяжении всего вашего путешествия в Турцию. Наши тщательно разработанные пакеты обычно включают:</p>
+<p dir="ltr" role="presentation">Комплексные пакеты: мы понимаем, насколько важны комфорт и анонимность. Поэтому AZPO Health предлагает пакеты &laquo;под ключ&raquo;, которые включают все необходимое для спокойного и безопасного пребывания:<br><br></p>
 </li>
 <ul>
 <li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Индивидуальный VIP-трансфер: с момента вашего прибытия вас встретит индивидуальный трансфер, который обеспечит вам максимальное удобство и полную приватность.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Уединенное и роскошное размещение: в процессе восстановления вас разместят в эксклюзивных, уединенных отелях или апартаментах класса люкс, где особое внимание уделяется вашему комфорту и полной конфиденциальности на протяжении всего пребывания.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Персональный координатор, заботящийся о вашей конфиденциальности: для вашего удобства будет назначен персональный координатор, который учитывает важность вашей конфиденциальности. Он будет вашим единственным контактным лицом, обеспечивая конфиденциальную помощь в организации всех вопросов, назначений и коммуникаций на протяжении всего вашего пребывания.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Конфиденциальные и подробные консультации с хирургом: ваши консультации с нашими опытными хирургами будут проводиться в приватной и конфиденциальной обстановке, что позволит открыто и честно обсудить ваши цели, опасения и ожидания от фаллопластики по увеличению полового члена.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Полная прозрачность в ценообразовании с гарантией конфиденциальности: AZPO Health предлагает ясные и прозрачные цены, которые полностью покрывают все медицинские расходы, связанные с фаллопластикой полового члена, включая операцию, анестезию, использование медицинских учреждений и стандартные послеоперационные медикаменты. Такой подход гарантирует финансовую ясность и исключает неожиданные расходы.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Индивидуальный план послеоперационного ухода и конфиденциальная поддержка восстановления: ваш план восстановления будет адаптирован с учетом ваших уникальных потребностей, обеспечивая максимально комфортный процесс заживления в условиях полной конфиденциальности. Персональный координатор будет поддерживать вас на каждом этапе, уважая вашу приватность и обеспечивая необходимую помощь в процессе реабилитации.</p>
-</li>
-<li dir="ltr" aria-level="2">
-<p dir="ltr" role="presentation">Спокойная и конфиденциальная&nbsp; обстановка для восстановления в Турции: Турция предлагает широкий выбор спокойных и приватных мест для вашего восстановления. Независимо от того, предпочитаете ли вы уединенную атмосферу исторического Стамбула, мирную прибрежную тишину Анталии или спокойную красоту Алании, вы найдете идеальное место, которое обеспечит спокойствие и конфиденциальность во время вашего восстановления.</p>
+<p dir="ltr" role="presentation">Индивидуальные VIP-трансферы : конфиденциальная и удобная встреча в аэропорту и сопровождение до клиники или отеля.<br><br>◦ Уединенное и комфортабельное проживание: отели и апартаменты, подобранные с акцентом на приватность и комфорт.<br><br>◦ Персональный координатор &ndash; ваш надежный помощник, который будет сопровождать вас на всех этапах, соблюдая полную конфиденциальность.<br><br>◦ Приватные консультации: подробные встречи с хирургом, где обсуждаются ваши цели и желания в обстановке полного доверия.<br><br>◦ Прозрачное ценообразование: фиксированная стоимость без скрытых платежей, включая операцию, анестезию, клинику и стандартные медикаменты.<br><br>◦ Индивидуальный план восстановления &ndash; продуманный подход к реабилитации с акцентом на комфорт и конфиденциальность.<br><br>◦ Восстановление в спокойной атмосфере &ndash; Стамбул, Анталия и Аланья предлагают живописные места, идеальные для восстановления и отдыха.<br><br></p>
 </li>
 </ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Опытные хирурги, специализирующиеся на увеличении мужских репродуктивных органов: AZPO Health сотрудничает только с сертифицированными пластическими хирургами, обладающими специализированным опытом в области фаллопластики по увеличению полового члена. Эти специалисты выбираются за их высокую квалификацию, стремление достичь естественных и гармоничных результатов, а также за приверженность безопасности и конфиденциальности пациентов. Хирурги применяют передовые методы, такие как дермальная жировая пластика и биосовместимые филлеры, когда это необходимо, всегда ориентируясь на улучшение естественных пропорций и достижение долгосрочных, естественных результатов.</p>
+<p dir="ltr" role="presentation">Опытные хирурги: AZPO Health сотрудничает с сертифицированными специалистами, имеющими глубокий опыт в области фаллопластики. Эти хирурги славятся естественными результатами, бережным отношением и вниманием к деталям.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные клиники с соблюдением строгих норм конфиденциальности: все процедуры проводятся в аккредитованных медицинских учреждениях, оснащенных передовыми технологиями и соблюдающих международные протоколы гигиены и конфиденциальности. На март 2025 года в Турции насчитывается 30 медицинских учреждений, аккредитованных JCI &mdash; одного из самых авторитетных стандартов в мировой медицине.<br><br></p>
 </li>
 </ul>
-<h2 dir="ltr">Фаллопластика по увеличению полового члена: техники для естественного и гармоничного результата</h2>
-<p dir="ltr">Фаллопластика по увеличению полового члена в AZPO Health ориентирована на достижение эстетически привлекательных и естественных результатов. Наши хирурги применяют методы, которые способствуют увеличению как обхвата, так и длины, при этом сохраняются естественные пропорции и функциональность.</p>
-<p dir="ltr">Техники, обычно используемые для фаллопластики по увеличению полового члена: в AZPO Health наиболее часто используемые техники фаллопластики по увеличению полового члена тщательно отбираются на основе их безопасности, эффективности и способности обеспечивать естественные результаты:</p>
+<h2 dir="ltr">Фаллопластика: обзор доступных техник и возможностей</h2>
+<p dir="ltr">Фалопластика в эстетической хирургии&nbsp; &mdash; это совокупность хирургических методов, направленных на увеличение длины и/или толщины полового члена у мужчин, стремящихся к улучшению его внешнего вида и ощущений. Важно отличать эти процедуры от фаллопластики, проводимой в рамках гендерного перехода, поскольку их цели и хирургические подходы существенно различаются. В AZPO Health мы предлагаем решения именно для цисгендерных мужчин, желающих увеличить размер пениса.</p>
+<p dir="ltr">Конкретный метод и его применимость определяются индивидуально на консультации, однако чаще всего используются следующие техники:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Дермальная жировая пластика для увеличения обхвата: этот метод востребован за способность обеспечивать естественное и долговечное увеличение обхвата. С использованием микрохирургических техник жир аккуратно извлекается через липосакцию из таких областей, как живот или бедра. Затем он тщательно обрабатывается и стратегически вводится в ствол полового члена для увеличения окружности. Дермальная жировая пластика имеет важное преимущество: использование собственных тканей пациента, что минимизирует риск аллергических реакций и способствует естественному виду и ощущениям.</p>
+<p dir="ltr" role="presentation">Трансплантация жировой ткани (увеличение объема): жир забирается с другой части тела пациента (обычно с живота или бёдер) с помощью липосакции, затем обрабатывается и вводится в ствол полового члена для увеличения его толщины. Это минимально инвазивная процедура для увеличения объёма.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Филлеры гиалуроновой кислоты для увеличения обхвата (безоперационный метод): для мужчин, предпочитающих безоперационный метод увеличения обхвата, филлеры гиалуроновой кислоты являются эффективным и безопасным вариантом. Эти биосовместимые филлеры аккуратно вводятся в ствол полового члена, увеличивая его окружность. Хотя результаты носят временный характер и обычно сохраняются от 12 до 18 месяцев, данный метод является менее инвазивным и обеспечивает немедленные результаты с минимальным временем восстановления.</p>
+<p dir="ltr" role="presentation">Филлеры на основе гиалуроновой кислоты (увеличение объема): гиалуроновая кислота вводится в ствол полового члена с целью увеличения объёма. Этот нехирургический метод обеспечивает временный эффект, который обычно сохраняется от 12 до 18 месяцев.<br><br></p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Хирургические имплантаты (менее распространены для первичного эстетического увеличения): хотя хирургическая имплантация протезов чаще используется для лечения эректильной дисфункции, в некоторых случаях после тщательной консультации этот метод может быть рассмотрен как вариант для комбинированного увеличения длины и обхвата. Однако для первичной эстетической фаллопластики по увеличению полового члена дермальная жировая пластика и филлеры чаще предпочитаются, так как они обеспечивают более естественные результаты и имеют более низкий риск. Хирурги AZPO Health внимательно оценят ваши индивидуальные потребности, чтобы определить, подходит ли вам операция по имплантации.</p>
+<p dir="ltr" role="presentation">Имплантация протезов (увеличение длины и/или толщины): в некоторых случаях может рассматриваться установка хирургических имплантатов, однако этот метод чаще используется для лечения эректильной дисфункции, чем для чисто эстетического увеличения полового члена. Специалисты AZPO Health помогут определить, подходит ли этот метод именно вам, исходя из ваших индивидуальных потребностей и желаемых результатов.<br><br></p>
 </li>
 </ul>
-<p dir="ltr">Преимущества выбора AZPO Health для фаллопластики по увеличению полового члена:</p>
+<h3 dir="ltr">Преимущества фаллопластики для увеличения пениса:</h3>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Естественный и гармоничный результат увеличения: в AZPO Health мы ориентируемся на получение результатов, которые естественно и пропорционально соответствуют вашему телосложению, улучшая общую эстетическую гармонию и поддерживая баланс между внешним видом и функциональностью.</p>
+<p dir="ltr" role="presentation">Увеличение обхвата и/или длины полового члена: достижение заметного увеличения размера, которое помогает устранить личные переживания, связанные с размером и пропорциями.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Повышение уверенности в себе и удовлетворенности своим телом: многие мужчины отмечают значительное улучшение самооценки и уверенности в себе после фаллопластики по увеличению полового члена. Это способствует улучшению интимных отношений и общему психоэмоциональному состоянию. Решение вопросов, связанных с размером полового члена, может оказать глубокое положительное влияние на психологическое благополучие.</p>
+<p dir="ltr" role="presentation">Улучшение внешнего вида и уверенности в себе: повышение самооценки и уверенности в собственном теле, что может положительно сказаться на интимных отношениях и общем самочувствии. Для многих мужчин решение вопросов, связанных с размером пениса, оказывает значительное положительное психологическое влияние.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Конфиденциальность и приватность: в AZPO Health мы придаем исключительное значение вашей конфиденциальности и приватности на каждом этапе вашего пути. Мы создаем безопасную и поддерживающую атмосферу, обеспечивая максимальную защищенность и внимание к вашим личным вопросам, начиная с первой консультации и до полного завершения послеоперационного восстановления.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Передовые техники для достижения оптимальных результатов: в AZPO Health мы применяем передовые методы, такие как дермальная жировая пластика и биосовместимые филлеры, чтобы обеспечить вам максимально эффективные результаты с минимальными следами вмешательства, ускоренным восстановлением и естественным внешним видом, при этом сохраняя комфортные ощущения.</p>
-</li>
-<li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальные планы лечения, разработанные с учетом ваших целей: хирурги AZPO Health придерживаются принципа персонализированного подхода. Ваш план лечения будет разработан с учетом вашей анатомии, желаемых результатов и ожиданий, чтобы обеспечить наиболее эффективный путь к достижению ваших уникальных целей по увеличению.</p>
+<p dir="ltr" role="presentation">Деликатный и индивидуальный подход: AZPO Health уделяет особое внимание конфиденциальности и индивидуальному подходу, гарантируя, что процедуры подбираются с учётом анатомических особенностей и эстетических целей пациента и выполняются с максимальной тщательностью.</p>
 </li>
 </ul>
-<p dir="ltr">&laquo;Решение о фаллопластике по увеличению полового члена было для меня большим шагом, и выбор AZPO Health в Турции оказался лучшим решением, которое я мог принять. Конфиденциальность и профессионализм были на высшем уровне, а результаты дермальной жировой пластики выглядят невероятно естественно и оказали значительное влияние на мою уверенность в себе. Весь процесс был организован с максимальной заботой и уважением к моей приватности. Я искренне благодарен AZPO Health.&raquo; &ndash; Анонимно, Германия</p>
-<h2 dir="ltr">AZPO Health: ваш надежный партнер в конфиденциальной и профессиональной фаллопластике в Турции</h2>
-<p dir="ltr">AZPO Health &ndash; это ведущий организатор медицинского туризма в Турции, предлагающий уникальные и высококачественные услуги для мужчин, которые хотят пройти фаллопластику полового члена. Мы гарантируем соблюдение самых строгих стандартов конфиденциальности и медицинского превосходства. Понимая всю деликатность этого процесса, мы обеспечиваем внимательную, профессиональную и тактичную поддержку на каждом этапе, помогая вам достичь желаемых результатов с максимальным комфортом и уважением к вашей конфиденциальности.</p>
+<h2 dir="ltr">AZPO Health: ваш надежный и партнер по фаллопластике в Турции</h2>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">AZPO Health &mdash; признанный эксперт в области медицинского туризма в Турции. Мы обеспечиваем высокий уровень заботы и конфиденциальную поддержку мужчинам, выбирающим фаллопластику для увеличения полового члена. Понимая деликатность процедуры, мы гарантируем абсолютную приватность, профессионализм и уважение к вашим личным границам &mdash; от первого обращения до полного восстановления.</p>
 <p dir="ltr">Почему стоит выбрать AZPO Health для фаллопластики?</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Безусловная приверженность приватности пациентов: конфиденциальность &ndash; наш главный приоритет. Мы обеспечиваем полную защиту ваших данных и конфиденциальное ведение всех этапов вашего пути, начиная с первого обращения и заканчивая послеоперационным уходом.</p>
+<p dir="ltr" role="presentation">Конфиденциальность: Защита личной информации пациента &mdash; наш безусловный приоритет. Мы обеспечиваем полную конфиденциальность на всех этапах &mdash; от первого обращения до послеоперационного сопровождения.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Партнерство с ведущими специалистами в области увеличения мужских репродуктивных органов: мы сотрудничаем исключительно с высококвалифицированными хирургами, обладающими обширным опытом в фаллопластике по увеличению полового члена, и привержены этичному и конфиденциальному уходу за пациентами.</p>
+<p dir="ltr" role="presentation">Сотрудничество с ведущими специалистами: AZPO Health работает только с проверенными и высококвалифицированными хирургами, специализирующимися на фаллопластике и эстетических процедурах по увеличению полового члена. Наши партнеры известны своим профессионализмом, этичным подходом и безукоризненной репутацией.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальная и чуткая система поддержки: мы осознаем, насколько личной является эта процедура. Мы предоставляем персональные консультации и составляем индивидуальные планы лечения, чтобы ваши уникальные проблемы и цели были решены с максимальным тактом и вниманием.</p>
+<p dir="ltr" role="presentation">Индивидуальный подход с вниманием и уважением: мы понимаем, что каждая ситуация уникальна. Поэтому предлагаем персонализированные консультации и тщательно составленные планы лечения, учитывающие все ваши цели, особенности и предпочтения.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Прозрачные и выгодные комплексные пакеты: мы предлагаем тщательно разработанные пакеты, обеспечивающие полную прозрачность и исключительную ценность, гарантируя, что ваши инвестиции в личное благополучие и уверенность принесут максимальный результат.</p>
+<p dir="ltr" role="presentation">Прозрачное и честное ценообразование: мы предоставляем&nbsp; комплексные пакеты без скрытых расходов с оптимальным соотношением цены и качества.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Круглосуточная конфиденциальная помощь и поддержка: наша заботливая и профессиональная команда по уходу за пациентами доступна 24/7, готова ответить на все ваши вопросы, предоставить необходимую помощь и гарантировать ваш комфорт и спокойствие на каждом этапе пребывания в Турции.</p>
+<p dir="ltr" role="presentation">Круглосуточная ненавязчивая поддержка: наша заботливая команда всегда на связи &mdash; 24/7. Мы готовы ответить на любые вопросы, помочь в организации всех деталей и обеспечить ваше спокойствие и комфорт на каждом этапе пребывания в Турции.</p>
 </li>
 </ul>
-<p dir="ltr">Готовы ли вы сделать шаг к преображению и открыть для себя возможности фаллопластики по увеличению полового члена в Турции с AZPO Health?</p>
-<p dir="ltr">Свяжитесь с нами сегодня для получения бесплатной консультации и индивидуального расчета стоимости! Просто отправьте нам сообщение, и наша экспертная команда быстро свяжется с вами, чтобы ответить на все вопросы и помочь вам сделать первый шаг на пути к повышению уверенности и личной удовлетворенности. Откройте для себя экспертный уход, доступный для фаллопластики по увеличению полового члена в Турции с AZPO Health &ndash; вашим надежным партнером в специализированных процедурах по улучшению мужского здоровья.</p>
+<p dir="ltr">Готовы узнать больше о конфиденциальной и эффективной фаллопластике для увеличения пениса в Турции с AZPO Health?</p>
+<p dir="ltr">Свяжитесь с нами сегодня для бесплатной конфиденциальной консультации и индивидуального расчета стоимости. Отправьте нам сообщение, и специалисты AZPO Health свяжутся с вами в кратчайшие сроки, чтобы ответить на все вопросы и помочь уверенно начать путь к улучшению уверенности и интимного комфорта. Откройте для себя современные возможности фаллопластики в Турции с нашим надежным сопровождением.</p>
 <p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">For a sensitive and personal procedure like phalloplasty for penile enlargement, the choice of location and provider is paramount. Turkey, in partnership with AZPO Health, offers a unique combination of advantages:</p>
 <ul>
@@ -16864,134 +17226,181 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Лечение диабетической ретинопатии (витрэктомия) в Турции в 2025 году"
           : "Diabetic Retinopathy Treatment (Vitrectomy) in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Страдаете от затуманенного зрения, «мошек» перед глазами или нарушенного ночного зрения из-за диабета? Откройте для себя надежду и эффективные решения для лечения диабетической ретинопатии в Турции. AZPO Health поможет вам найти лучшие клиники и специалистов, обеспечивающих передовые методы терапии и высококлассную медицинскую помощь для вашего зрения."
           : "Are you experiencing blurred vision, seeing spots or floaters, or having difficulty with your night vision due to diabetes? Discover hope and effective solutions for diabetic retinopathy in Turkey. AZPO Health connects you with leading medical facilities for advanced treatment, ensuring the best possible care to protect your eyesight.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Retinal Care",
+            title: locale === "ru" ? "Здоровье сетчатки" : "Retinal Care",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "точное и эффективное лечение заболеваний, угрожающих сетчатке."
                 : "Specialized treatment for vision-threatening conditions that affect the retina",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Vision Protection",
+            title: locale === "ru" ? "Сохранение зрения" : "Vision Protection",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "профессиональный подход к защите и восстановлению зрения."
                 : "Expert services to maintain and enhance eyesight in retinal complications",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Diabetic Treatment",
+            title: locale === "ru" ? "Комплексная помощь" : "Diabetic Treatment",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "комплексное лечение зрения при диабетических осложнениях."
                 : "Specialized care for diabetes-related vision damage and eye complications",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Диабетическая ретинопатия — одно из серьезных осложнений сахарного диабета, которое может привести к потере зрения. Повышенный уровень сахара в крови  разрушает мелкие капилляры сетчатки, вызывая их повреждение, отек и кровоизлияния, что со временем приводит к ухудшению зрения. Заболевание может затронуть оба глаза."
                 : "Diabetic retinopathy is a complication of diabetes that can threaten vision health. High blood sugar levels associated with diabetes can affect the eyes, damaging the small blood vessels in the retina and causing fluid leakage. This can lead to retinal swelling and blurred vision. Diabetic retinopathy can occur in both eyes.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How It Works",
+            header: locale === "ru" ? "Как проходит процедура" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Витрэктомия — это микрохирургическая операция, в ходе которой из глаза удаляется стекловидное тело. Она применяется при отслойке сетчатки, макулярных разрывах и осложнениях диабетической ретинопатии, включая кровоизлияния и фиброз. На место стекловидного тела вводят физиологический раствор, газ или силиконовое масло для поддержания формы глаза и восстановления тканей. Современные технологии позволяют максимально точно и бережно работать с сетчаткой."
                 : "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It’s For",
+            header: locale === "ru" ? "Кому показана витрэктомия" : "Who It’s For",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Пациентам с тяжелыми повреждениями сетчатки (отслойка, разрывы). Людям с диабетической ретинопатией, сопровождающейся кровоизлияниями или образованием рубцовой ткани."
                 : "Patients with severe retinal issues, such as detachment or holes. Individuals with diabetic retinopathy causing bleeding or scarring.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Can it be reversed?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Early stages can be managed, advanced damage is permanent",
+          question : locale === "ru" ? "Можно ли это обратить?" : "Can it be reversed?",
+          answer : locale === "ru" ? "Ранние стадии можно контролировать, однако продвинутое повреждение является необратимым." : "Early stages can be managed, advanced damage is permanent"
         },
         {
-          question: locale === "ru" ? "" : "Does treatment hurt?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Laser or injections are usually well tolerated",
+          question : locale === "ru" ? "Больно ли лечение?" : "Does treatment hurt?",
+          answer : locale === "ru" ? "Лазерная терапия или инъекции обычно хорошо переносятся." : "Laser or injections are usually well tolerated"
         },
         {
-          question: locale === "ru" ? "" : "Will I go blind?",
-          answer:
-            locale === "ru" ? "" : "Not if managed early and consistently",
+          question : locale === "ru" ? "Я ослепну?" : "Will I go blind?",
+          answer : locale === "ru" ? "Нет, если вовремя контролировать ранние стадии и придерживаться лечения." : "Not if managed early and consistently"
         },
         {
-          question: locale === "ru" ? "" : "How often are treatments needed?",
-          answer:
-            locale === "ru" ? "" : "Varies based on severity and response",
+          question : locale === "ru" ? "Как часто нужны процедуры?" : "How often are treatments needed?",
+          answer : locale === "ru" ? "Частота процедур зависит от степени заболевания и реакции на лечение." : "Varies based on severity and response"
         },
         {
-          question: locale === "ru" ? "" : "Can surgery fix it?",
-          answer:
-            locale === "ru" ? "" : "Vitrectomy may help in advanced cases",
+          question : locale === "ru" ? "Может ли операция это исправить?" : "Can surgery fix it?",
+          answer : locale === "ru" ? "Витректомия может помочь в более тяжелых случаях." : "Vitrectomy may help in advanced cases"
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "What are the side effects of the treatment?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Temporary eye sensitivity, redness, or blurred vision may occur.",
-        },
+          question : locale === "ru" ? "Каковы побочные эффекты лечения?" : "What are the side effects of the treatment?",
+          answer : locale === "ru" ? "Временно могут возникнуть чувствительность глаз, покраснение или размытое зрение." : "Temporary eye sensitivity, redness, or blurred vision may occur."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Use prescribed eye drops or medications",
-        locale === "ru" ? "" : "Monitor vision changes closely",
-        locale === "ru" ? "" : "Avoid strenuous activity and heavy lifting",
-        locale === "ru" ? "" : "Attend regular follow-up exams",
-        locale === "ru" ? "" : "Control diabetes to prevent further damage",
-        locale === "ru" ? "" : "Wear sunglasses and avoid bright lights.",
-        locale === "ru" ? "" : "Avoid smoking as it harms eye health.",
+        locale === "ru" ? "Используйте назначенные глазные капли или лекарства." : "Use prescribed eye drops or medications",
+        locale === "ru" ? "Тщательно следите за изменениями в зрении." : "Monitor vision changes closely",
+        locale === "ru" ? "Избегайте физических нагрузок и подъема тяжестей." : "Avoid strenuous activity and heavy lifting",
+        locale === "ru" ? "Регулярно посещайте контрольные осмотры." : "Attend regular follow-up exams",
+        locale === "ru" ? "Контролируйте сахарный диабет, чтобы предотвратить дальнейшие повреждения." : "Control diabetes to prevent further damage",
+        locale === "ru" ? "Носите солнечные очки и избегайте яркого света." : "Wear sunglasses and avoid bright lights.",
+        locale === "ru" ? "Воздержитесь от курения, так как это вредит здоровью глаз." : "Avoid smoking as it harms eye health."
       ],
       preList: [
-        locale === "ru" ? "" : "Control blood sugar levels consistently",
-        locale === "ru" ? "" : "Schedule a comprehensive eye exam",
-        locale === "ru" ? "" : "Inform doctor about all medications",
-        locale === "ru" ? "" : "Avoid blood thinners if instructed",
-        locale === "ru" ? "" : "Adopt a healthy lifestyle.",
-        locale === "ru" ? "" : "Avoid smoking",
+        locale === "ru" ? "Постоянно контролируйте уровень сахара в крови" : "Control blood sugar levels consistently",
+        locale === "ru" ? "Запланируйте комплексное обследование глаз" : "Schedule a comprehensive eye exam",
+        locale === "ru" ? "Сообщите врачу о всех принимаемых лекарствах" : "Inform doctor about all medications",
+        locale === "ru" ? "Избегайте разжижающих кровь препаратов, если это предписано" : "Avoid blood thinners if instructed",
+        locale === "ru" ? "Придерживайтесь здорового образа жизни" : "Adopt a healthy lifestyle.",
+        locale === "ru" ? "Воздержитесь от курения" : "Avoid smoking"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Витрэктомия — важный метод лечения тяжелых заболеваний сетчатки, который помогает сохранить зрение и улучшить его качество. Несмотря на необходимость послеоперационного восстановления, ее эффективность делает процедуру неотъемлемой частью современной офтальмологии."
             : "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Your Diabetic Retinopathy Treatment?"
+            ? "Почему стоит выбрать Турцию для лечения диабетической ретинопатии?"
             : "Why Choose Turkey for Your Diabetic Retinopathy Treatment?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Выбор страны для прохождения медицинского лечения &mdash; важный шаг. Турция зарекомендовала себя как одно из ведущих направлений для пациентов, ищущих качественную и доступную медицинскую помощь, особенно в таких высокоспециализированных областях, как офтальмология и лечение диабетической ретинопатии. Вот ключевые причины, по которым Турция является отличным выбором для вашего лечения:</p>
+<p dir="ltr">Опытные офтальмологи: в Турции работает множество высококвалифицированных специалистов, обладающих значительным опытом в диагностике и лечении заболеваний сетчатки, включая диабетическую ретинопатию. Многие из них проходили обучение за рубежом и используют самые современные методы диагностики и терапии, обеспечивая индивидуальный подход и высокие стандарты медицинской помощи.</p>
+<p dir="ltr">Современные клиники и технологии: медицинские учреждения, с которыми сотрудничает AZPO Health, оснащены передовым оборудованием, необходимым для точной диагностики и эффективного лечения. Это включает в себя такие технологии, как оптическая когерентная томография (OCT), цифровая фундус-фотография, лазерная терапия и высокотехнологичные операционные. На март 2025 года в Турции насчитывается 30 клиник, аккредитованных JCI, что свидетельствует о высоком уровне медицинского обслуживания.</p>
+<p dir="ltr">Комплексный и индивидуальный подход: турецкие специалисты уделяют большое внимание детальному изучению состояния пациента, истории болезни и индивидуальных особенностей. Это позволяет разрабатывать персонализированные планы лечения и сопровождать пациента на всех этапах &mdash; от первичной консультации до реабилитации. Такой подход способствует более эффективному восстановлению и высокому уровню удовлетворенности пациентов.</p>
+<p dir="ltr">Доступная стоимость лечения: лечение в Турции обходится на 50&ndash;70% дешевле по сравнению с рядом других стран, при этом качество медицинских услуг остается на высоком уровне. Это делает Турцию привлекательной для пациентов, ищущих эффективные и экономически выгодные решения в области офтальмологии.</p>
+<p dir="ltr">Лечение с максимальным комфортом и вниманием к деталям: Турция предлагает удобную и организованную систему медицинского туризма. AZPO Health оказывает полное сопровождение: помогает с выбором клиники и врача, организует перелет, трансфер, проживание и медицинские консультации. Все это позволяет пациентам сосредоточиться на лечении и восстановлении.</p>
+<p dir="ltr">Восстановление в живописной и гостеприимной стране: лечение в Турции &mdash; это не только качественная медицина, но и возможность восстановиться в атмосфере красоты и уюта. Города, такие как Стамбул, Анталья, Измир и Алания, дарят гармонию культуры, теплого климата и природных красот &mdash; идеальные условия для реабилитации.</p>
+<h2 dir="ltr">Диабетическая ретинопатия: причины, стадии и способы лечения</h2>
+<p dir="ltr">Диабетическая ретинопатия &mdash; это серьезное заболевание глаз, которое может развиваться у людей с диабетом (типа 1 и типа 2). Оно возникает, когда высокий уровень сахара в крови повреждает маленькие кровеносные сосуды сетчатки &mdash; светочувствительной ткани на задней части глаза. Со временем это повреждение может привести к потере зрения и даже слепоте, если не принять меры. Раннее выявление и своевременное вмешательство имеют решающее значение для контроля диабетической ретинопатии и сохранения зрения.</p>
+<p dir="ltr">Стадии диабетической ретинопатии:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Неопролиферативная диабетическая ретинопатия (NPDR): это начальная стадия заболевания, когда кровеносные сосуды сетчатки ослабевают, и появляются маленькие выпячивания, называемые микроаневризмами. В сетчатку может просачиваться кровь и жидкость. На более поздних стадиях NPDR сосуды могут быть заблокированы.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пролиферативная диабетическая ретинопатия (PDR): это более тяжелая стадия, при которой сетчатка начинает формировать новые кровеносные сосуды (неоваскуляризация), пытаясь обеспечить себя кислородом. Однако эти новые сосуды очень хрупкие и могут кровоточить в стекловидное тело (желеобразное вещество внутри глаза), что приводит к появлению &ldquo;плавающих пятен&rdquo;, размытости зрения или даже сильной потере зрения. Также может образовываться рубцовая ткань, что в свою очередь может привести к отслоению сетчатки.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Методы лечения диабетической ретинопатии:</p>
+<p dir="ltr">Основной целью лечения диабетической ретинопатии является замедление или остановка прогрессирования заболевания и предотвращение потери зрения. Конкретное лечение зависит от стадии и тяжести заболевания. Офтальмологи, с которыми AZPO Health может вас связать, используют несколько эффективных методов лечения:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лазерная фотокоагуляция: это распространенная процедура для лечения как NPDR, так и PDR. При фокальной лазерной терапии лазером запечатываются маленькие утечки в кровеносных сосудах, чтобы уменьшить накопление жидкости в сетчатке. При рассеянной (панретинальной) фотокоагуляции лазерные ожоги наносятся на участки сетчатки, находящиеся вдали от макулы (центральной части сетчатки, ответственной за четкое и детализированное зрение). Это помогает уменьшить аномальные сосуды в PDR и предотвратить их дальнейший рост. Лазерное лечение обычно проводится в амбулаторных условиях.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Инъекции анти-VEGF: VEGF (фактор роста эндотелия сосудов): это белок, который стимулирует рост новых кровеносных сосудов. В случае диабетической ретинопатии, особенно при макулярном отеке (отеки в макуле) и PDR, препараты анти-VEGF могут вводиться непосредственно в стекловидное тело глаза. Эти препараты блокируют VEGF, уменьшая рост аномальных сосудов и снижая утечку жидкости. Существует несколько препаратов анти-VEGF, и частота инъекций зависит от индивидуальной реакции пациента и используемого препарата.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Инъекции кортикостероидов: в некоторых случаях диабетического макулярного отека кортикостероиды могут быть введены в глаз для уменьшения воспаления и накопления жидкости. Однако такие инъекции могут вызывать побочные эффекты, такие как повышение внутриглазного давления и развитие катаракты, поэтому они используются, когда анти-VEGF лечение не дает должных результатов или не подходит.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Витрэктомия: это хирургическая процедура, которая проводится при более тяжелых стадиях PDR, особенно когда в стекловидном теле происходит сильное кровоизлияние, которое не проходит самостоятельно, или когда происходит отслойка сетчатки из-за рубцовой ткани. Во время витрэктомии хирург удаляет стекловидное тело, загрязненное кровью, и заменяет его прозрачным раствором. Также могут быть удалены рубцовые ткани и проведена операция по восстановлению отслоившейся сетчатки. Витрэктомия обычно выполняется под местной или общей анестезией.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Реальные истории: отзывы пациентов</h2>
+<p dir="ltr">История Сары:</p>
+<p dir="ltr">&laquo;С диабетом я живу уже много лет и начала замечать, что зрение стало размытым, и мне стало трудно читать и четко видеть. Мой врач поставил диагноз диабетическая ретинопатия и предложил лечение, которое оказалось довольно дорогим. Я начала искать альтернативы и наткнулась на AZPO Health. Они связали меня с отличной глазной клиникой в Стамбуле. Врачи, с которыми я столкнулась, оказались настоящими профессионалами своего дела. Они тщательно и доступно объяснили все этапы лечения, что дало мне уверенность и спокойствие. После лазерной терапии я почувствовала явные улучшения, а забота и внимание, которые я получила, были на высшем уровне. Мое зрение стабилизировалось, и я безмерно благодарна AZPO Health за то, что они сделали лечение доступным и позволили мне сохранить зрение.&raquo;</p>
+<p dir="ltr">Опыт Джона:</p>
+<p dir="ltr">&laquo; Плавающие пятна в зрении становились все более беспокойными, и я начал переживать, как диабетическая ретинопатия повлияет на мою работу. Путешествие за границу для лечения сначала казалось сложным, но AZPO Health сделала этот процесс простым и беспроблемным. Клиника, которую они порекомендовали в Турции, была оснащена самым современным оборудованием, а врач оказался настоящим экспертом. Мне провели инъекции анти-VEGF, и результаты не заставили себя долго ждать &mdash; зрение значительно улучшилось. Дополнительная поддержка и внимание на всех этапах лечения были безупречными. Я с уверенностью рекомендую лечение в Турции через AZPO Health.&raquo;</p>
+<p dir="ltr">История Марии:</p>
+<p dir="ltr">&laquo;Когда мне поставили диагноз пролиферативной диабетической ретинопатии, я испугалась, что могу потерять зрение. Однако AZPO Health связала меня с опытной хирургической командой в Стамбуле, и мне была проведена витрэктомия. Операция прошла успешно, и вся команда сопровождала меня на каждом этапе восстановления. Моё зрение было сохранено, и я благодарна за высокий профессионализм и доступность лечения в Турции. AZPO Health оказали мне неоценимую поддержку в этот сложный период.&raquo;</p>
+<h2 dir="ltr">AZPO Health: ваш надежный партнер в сохранении зрения</h2>
+<p dir="ltr">AZPO Health с гордостью помогает вам найти опытных и проверенных медицинских специалистов и клиники в Турции для эффективного лечения диабетической ретинопатии. Мы понимаем, насколько важно сохранить ясность зрения и как много тревоги могут вызывать заболевания глаз. Наша миссия &mdash; сделать ваш опыт медицинского туризма максимально комфортным и безопасным, обеспечив высококачественную заботу о вашем зрении.</p>
+<p dir="ltr">При выборе AZPO Health вы получаете:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сеть квалифицированных специалистов: мы работаем с ведущими офтальмологами и клиниками Турции, специализирующимися на лечении диабетической ретинопатии.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальная поддержка: наша заботливая команда будет рядом с вами на всех этапах &mdash; от первичной консультации и организации поездки до полного восстановления и послеоперационного сопровождения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Первоклассное лечение: мы гарантируем, что все рекомендованные нами учреждения соответствуют международным стандартам и применяют новейшие методы лечения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Оптимальное соотношение цены и качества: мы подбираем для вас эффективные варианты лечения по разумной стоимости, сохраняя высокий уровень медицинской помощи и технологий.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Конфиденциальность и доверие: ваша конфиденциальность и безопасность &mdash; наши главные приоритеты. Мы с заботой относимся к вашим данным и гарантируем надежность на каждом этапе сотрудничества.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Не позволяйте диабетической ретинопатии угрожать вашему зрению.&nbsp; AZPO Health предлагает пути к экспертному лечению диабетической ретинопатии в Турции. Сделайте первый шаг к сохранению зрения &mdash; свяжитесь с нами для бесплатной консультации.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Choosing the right location for medical treatment is a significant decision, and Turkey has emerged as a leading destination for individuals seeking high-quality and affordable healthcare, particularly in specialized fields like ophthalmology and the treatment of diabetic retinopathy. Here's why Turkey stands out as an excellent choice for your treatment journey:</p>
 <p dir="ltr">Access to Experienced Specialists: Turkey boasts a large number of highly skilled and experienced ophthalmologists who specialize in retinal diseases, including diabetic retinopathy. These specialists are proficient in the latest diagnostic techniques and treatment modalities, ensuring you receive expert care tailored to your specific condition. Many have international training and stay updated with the most recent advancements in the field.</p>
 <p dir="ltr">Advanced Medical Facilities: Hospitals and clinics in Turkey that AZPO Health partners with are equipped with cutting-edge technology and advanced medical equipment necessary for the accurate diagnosis and effective treatment of diabetic retinopathy. This includes state-of-the-art imaging systems like optical coherence tomography (OCT) and fundus photography, as well as advanced laser treatment options and surgical facilities.</p>
@@ -17476,149 +17885,295 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Преодоление мужского бесплодия в 2025 году"
           : "Understanding and Overcoming Male Infertility in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Пытаетесь зачать ребенка, но все заканчивается разочарованием? Мужское бесплодие — деликатная, но распространенная проблема, о которой редко говорят открыто. Низкое качество спермы, слабая подвижность сперматозоидов и гормональные сбои могут подорвать уверенность и внести напряжение в отношения. Но выход есть — современные решения действительно работают. Не оставайтесь с этой проблемой наедине. Сделайте первый шаг уже сегодня."
           : "Trying for a baby but facing endless disappointment? Male infertility is a hidden struggle that affects millions, yet few talk about it. Low sperm count, poor motility, and hormonal imbalances can crush confidence and strain relationships. But there’s hope—solutions exist. Don’t suffer in silence. Take the first step today.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Hormonal Therapy",
+            title: locale === "ru" ? "Гормональная терапия" : "Hormonal Therapy",
             desc:
               locale === "ru"
-                ? ""
+                ? "восстанавливает естественный сперматогенез."
                 : "Restores hormonal balance to support natural sperm production.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Surgical Interventions",
+            title: locale === "ru" ? "Хирургическое лечение" : "Surgical Interventions",
             desc:
               locale === "ru"
-                ? ""
+                ? "устраняет структурные проблемы, улучшая качество спермы."
                 : "Improves sperm flow and quality by correcting structural issues.",
           },
           {
             title:
               locale === "ru"
-                ? "Идеальный Контур"
+                ? "ВРТ при мужском бесплодии"
                 : "Assisted Reproductive Techniques (ART)",
             desc:
               locale === "ru"
-                ? ""
+                ? "расширяют возможности зачатия при тяжелых формах мужского бесплодия."
                 : "Increases fertility chances through advanced methods like IUI, IVF, and ICSI.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Мужское бесплодие — это нарушение, при котором мужчина сталкивается с трудностями зачатия ребенка естественным способом. Причинами могут быть как медицинские, так и функциональные сбои в работе репродуктивной системы, включая недостаточную выработку сперматозоидов, их низкое качество, проблемы с их транспортировкой или гормональный дисбаланс."
                 : "Male infertility refers to a condition that hinders a man's ability to conceive a child naturally due to various medical or functional issues affecting the reproductive system. These problems may involve sperm production, quality, transportation, or hormonal regulation.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How it Works",
+            header: locale === "ru" ? "Как это работает" : "How it Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Лечение мужского бесплодия направлено на устранение гормональных, анатомических и функциональных причин, снижающих качество спермы. Гормональная терапия помогает восстановить нормальную выработку сперматозоидов, а хирургические методы позволяют исправить такие нарушения, как варикоцеле. Современные вспомогательные репродуктивные технологии — включая ВМИ, ЭКО и ИКСИ — значительно повышают вероятность зачатия. Метод IMSI дополнительно обеспечивает отбор наиболее жизнеспособных сперматозоидов для достижения максимального успеха."
                 : "Male infertility treatments work by correcting hormonal, structural, or functional issues affecting sperm quality. Hormonal therapy stimulates sperm production, while surgery fixes anatomical problems like varicocele. ART methods, such as IUI, IVF, and ICSI, enhance fertilization chances, with IMSI selecting the healthiest sperm for better outcomes.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It's For",
+            header: locale === "ru" ? "Кому подходит" : "Who It's For",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Лечение мужского бесплодия показано мужчинам с гормональными нарушениями, анатомическими аномалиями, сниженным количеством и подвижностью сперматозоидов, а также с серьёзными морфологическими отклонениями. Оно также актуально для пациентов с азооспермией или тем, кто пережил неудачные попытки ЭКО."
                 : "Male infertility treatments are for men with hormonal deficiencies, structural blockages, low sperm count, poor motility, or severe sperm abnormalities. They also benefit those with azoospermia or repeated IVF failures.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What causes male infertility?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Low sperm count, motility, hormonal or structural issues",
+          question : locale === "ru" ? "Что вызывает мужское бесплодие?" : "What causes male infertility?",
+          answer : locale === "ru" ? "Причинами могут быть низкое количество сперматозоидов, их сниженная подвижность, гормональные нарушения или структурные проблемы." : "Low sperm count, motility, hormonal or structural issues"
         },
         {
-          question: locale === "ru" ? "" : "Can it be treated?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, with medications, surgery, or assisted reproduction",
+          question : locale === "ru" ? "Можно ли вылечить мужское бесплодие?" : "Can it be treated?",
+          answer : locale === "ru" ? "Да, в некоторых случаях помогают медикаментозное лечение, хирургическое вмешательство или вспомогательные репродуктивные технологии." : "Yes, with medications, surgery, or assisted reproduction"
         },
         {
-          question: locale === "ru" ? "" : "Is it permanent?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Depends on cause; many cases are reversible",
+          question : locale === "ru" ? "Бесплодие всегда является постоянным?" : "Is it permanent?",
+          answer : locale === "ru" ? "Это зависит от причины; многие случаи мужского бесплодия поддаются лечению." : "Depends on cause; many cases are reversible"
         },
         {
-          question: locale === "ru" ? "" : "How is it diagnosed?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Semen analysis, hormone and genetic testing",
+          question : locale === "ru" ? "Как диагностируется мужское бесплодие?" : "How is it diagnosed?",
+          answer : locale === "ru" ? "Основные методы диагностики включают анализ спермы, гормональные и генетические исследования." : "Semen analysis, hormone and genetic testing"
         },
         {
-          question: locale === "ru" ? "" : "Does lifestyle matter?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Absolutely – smoking, alcohol, stress impact fertility",
-        },
+          question : locale === "ru" ? "Влияет ли образ жизни на фертильность?" : "Does lifestyle matter?",
+          answer : locale === "ru" ? "Безусловно. Курение, употребление алкоголя, стресс и другие факторы образа жизни существенно влияют на качество спермы." : "Absolutely – smoking, alcohol, stress impact fertility"
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Follow medication schedules strictly",
-        locale === "ru"
-          ? ""
-          : "Maintain healthy lifestyle (diet, sleep, avoid toxins)",
-        locale === "ru" ? "" : "Attend regular fertility follow-ups",
-        locale === "ru"
-          ? ""
-          : "Abstain from sex as recommended during treatment",
-        locale === "ru"
-          ? ""
-          : "Use antioxidant-rich foods: These can help improve sperm quality by neutralizing free radicals. Include foods like berries, nuts, and leafy greens.",
-        locale === "ru"
-          ? ""
-          : "Monitor for signs of infection: Watch for unusual swelling, redness, or discomfort in the area after any surgical intervention.",
+        locale === "ru" ? "Строго соблюдайте назначенный график приема лекарств." : "Follow medication schedules strictly",
+        locale === "ru" ? "Поддерживайте здоровый образ жизни: следите за питанием, режимом сна и избегайте воздействия токсичных веществ." : "Maintain healthy lifestyle (diet, sleep, avoid toxins)",
+        locale === "ru" ? "Регулярно посещайте консультации по вопросам фертильности." : "Attend regular fertility follow-ups",
+        locale === "ru" ? "Воздерживайтесь от половой активности в период лечения в соответствии с рекомендациями врача." : "Abstain from sex as recommended during treatment",
+        locale === "ru" ? "Включайте в рацион продукты, богатые антиоксидантами, такие как ягоды, орехи и листовые овощи - они помогают улучшить качество спермы, нейтрализуя свободные радикалы." : "Use antioxidant-rich foods: These can help improve sperm quality by neutralizing free radicals. Include foods like berries, nuts, and leafy greens.",
+        locale === "ru" ? "Следите за признаками возможной инфекции: обращайте внимание на необычные отеки, покраснение или дискомфорт в области хирургического вмешательства и при необходимости немедленно обращайтесь к врачу." : "Monitor for signs of infection: Watch for unusual swelling, redness, or discomfort in the area after any surgical intervention."
       ],
       preList: [
-        locale === "ru" ? "" : "Undergo semen analysis and hormonal testing",
-        locale === "ru"
-          ? ""
-          : "Avoid heat exposure (saunas etc.) pre-evaluation",
-        locale === "ru" ? "" : "Avoid tight clothes pre-evaluation",
-        locale === "ru"
-          ? ""
-          : "Stop smoking, alcohol, and limit caffeine consumption",
-        locale === "ru" ? "" : "Provide full medical and reproductive history",
-        locale === "ru"
-          ? ""
-          : "Avoid exposure to environmental toxins: This includes reducing contact with chemicals, heavy metals, and pollution. These can negatively affect sperm quality",
-        locale === "ru"
-          ? ""
-          : "Ensure proper hydration: Dehydration can impact sperm health. Drink plenty of water prior to the evaluation",
+        locale === "ru" ? "Пройдите обследование, включающее анализ спермы и гормональные исследования." : "Undergo semen analysis and hormonal testing",
+        locale === "ru" ? "Избегайте воздействия тепла (сауны, бани и горячие ванны) за несколько дней до обследования." : "Avoid heat exposure (saunas etc.) pre-evaluation",
+        locale === "ru" ? "Откажитесь от ношения тесной одежды перед сдачей анализов." : "Avoid tight clothes pre-evaluation",
+        locale === "ru" ? "Прекратите курение, употребление алкоголя и ограничьте потребление кофеина." : "Stop smoking, alcohol, and limit caffeine consumption",
+        locale === "ru" ? "Предоставьте врачу полную медицинскую и репродуктивную историю." : "Provide full medical and reproductive history",
+        locale === "ru" ? "Минимизируйте контакт с экологическими токсинами: старайтесь избегать воздействия химикатов, тяжёлых металлов и загрязняющих веществ, так как они могут ухудшить качество спермы." : "Avoid exposure to environmental toxins: This includes reducing contact with chemicals, heavy metals, and pollution. These can negatively affect sperm quality",
+        locale === "ru" ? "Следите за уровнем гидратации: обезвоживание может негативно сказаться на здоровье спермы. Перед обследованием пейте достаточное количество воды." : "Ensure proper hydration: Dehydration can impact sperm health. Drink plenty of water prior to the evaluation"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Современные методы лечения мужского бесплодия дают реальные шансы на восстановление репродуктивной функции и достижение долгожданного зачатия. Индивидуальный подход, комплексная диагностика и использование передовых технологий позволяют эффективно решить проблему и вернуть уверенность в завтрашнем дне. Не откладывайте — сделайте первый шаг к отцовству уже сегодня."
             : "Male infertility treatments offer effective solutions for overcoming various challenges related to sperm production and quality. By addressing hormonal imbalances, structural issues, and utilizing advanced reproductive techniques, these treatments significantly improve the chances of conception. With the right approach, many men can achieve successful outcomes, restoring fertility and enhancing their overall well-being.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для лечения мужского бесплодия?"
             : "Why Choose Turkey for Male Infertility Treatment?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Турция давно зарекомендовала себя как одно из ведущих направлений медицинского туризма &mdash; и не без оснований. В вопросах мужского бесплодия страна, а особенно компания AZPO Health, предлагает ряд весомых преимуществ:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высокое качество медицинской помощи: AZPO Health работает по международным стандартам, гарантируя высокий уровень лечения. Медицинский персонал &mdash; опытные специалисты с профильным образованием, владеющие современными методиками диагностики и терапии мужского бесплодия.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступность: по сравнению с Европой и США, лечение в Турции обходится значительно дешевле, что позволяет пройти передовые процедуры без сильной финансовой нагрузки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексные пакеты услуг: AZPO Health предлагает пакеты &laquo;все включено&raquo; &mdash; от первичных консультаций и лечения до проживания и трансфера. Мы берём на себя все организационные вопросы, чтобы вы могли полностью сосредоточиться на своем здоровье.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Привлекательное направление: лечение можно совместить с отдыхом. Стамбул, Анталья и Аланья &mdash; это богатая культура, история и живописные пейзажи, делающие поездку еще приятнее.</p>
+</li>
+</ul>
+<h2 dir="ltr">Понимание мужского бесплодия</h2>
+<p dir="ltr">Мужское бесплодие &mdash; это состояние, при котором мужчина не способен к естественному зачатию после года регулярных попыток с партнершей. Эта проблема встречается примерно у 15% мужчин.</p>
+<h3 dir="ltr">Основные причины мужского бесплодия</h3>
+<p dir="ltr">Мужское бесплодие может быть вызвано различными факторами:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Проблемы со спермой: это наиболее распространенные причины, которые могут включать:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Олигоспермия: уменьшение количества сперматозоидов (меньше 15 млн на мл или менее 39 млн на эякулят).</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Астеноспермия: снижение подвижности сперматозоидов.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Тератоспермия: аномальная форма сперматозоидов, снижающая их способность к оплодотворению.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">&nbsp;Азооспермия: полное отсутствие сперматозоидов в семенной жидкости.&nbsp; Мужское бесплодие может быть вызвано различными факторами:</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гормональные нарушения: сбои в уровне тестостерона и других гормонов могут нарушать процесс образования спермы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Анатомические дефекты: препятствия в семявыводящих путях, мешающие выходу сперматозоидов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Генетические факторы: наследственные отклонения, влияющие на качество и количество спермы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Вредные привычки и образ жизни: курение, избыточный вес, злоупотребление алкоголем и наркотиками негативно сказываются на фертильности.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Инфекции и хронические болезни: воспалительные процессы и заболевания, такие как диабет, также могут стать причиной бесплодия.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Варикоцеле: расширение вен в мошонке, которое снижает качество спермы и её количество.<br>&nbsp;</p>
+</li>
+</ul>
+<h3 dir="ltr">Диагностика мужского бесплодия</h3>
+<p dir="ltr">Диагностика мужского бесплодия обычно включает комплексное обследование:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Анализ спермы: ключевое исследование для оценки количества, подвижности и строения сперматозоидов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Физикальный осмотр: врач проверяет яички и половые органы на предмет возможных структурных изменений.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Тесты на гормоны: анализ крови для определения уровня гормонов, влияющих на репродукцию.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Генетическое обследование: помогает выявить наследственные факторы, влияющие на бесплодие.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">УЗИ мошонки: ультразвуковое исследование для обнаружения варикоцеле или других аномалий в мошонке.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Возможности лечения с AZPO Health</h3>
+<p dir="ltr">AZPO Health предлагает разнообразные современные методы лечения, индивидуально подобранные с учетом ваших медицинских показаний:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Изменение образа жизни:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Здоровый образ жизни может значительно улучшить качество спермы. Включает в себя:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Соблюдение сбалансированной диеты, богатой фруктами, овощами и нежирным белком.</p>
+</li>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Регулярные физические нагрузки.</p>
+</li>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Отказ от курения, употребления алкоголя и наркотиков.<br><br></p>
+</li>
+</ul>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Медикаментозное лечение:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Гормональная терапия: при гормональных нарушениях препараты помогают восстановить нормальный уровень гормонов и стимулировать выработку сперматозоидов.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Антибиотики: используются для лечения инфекций, затрагивающих репродуктивную систему.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Стволовые клетки: хотя терапия стволовыми клетками всё ещё считается экспериментальной, она уже применяется во многих странах для стимуляции сперматогенеза или улучшения качества спермы. Эффективность зависит от индивидуальных особенностей. За подробной информацией свяжитесь с нами.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургическое вмешательство:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Варикоцелэктомия: хирургическое устранение варикоцеле может улучшить качество спермы и повысить шансы на естественное зачатие.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Хирургическое извлечение сперматозоидов: подходит мужчинам с обструкцией или тем, у кого сперматозоиды не выводятся естественным путём. Используемые техники:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Извлечение спермы из яичка (TESE)</p>
+</li>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Микрохирургическая аспирация из придатка яичка (MESA)</p>
+</li>
+<li dir="ltr" aria-level="3">
+<p dir="ltr" role="presentation">Пункционная аспирация из придатка яичка (PESA)<br><br></p>
+</li>
+</ul>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Вспомогательные репродуктивные технологии (ВРТ):</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Внутриматочная инсеминация (ВМИ): сперма вводится прямо в матку женщины для повышения вероятности оплодотворения.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Экстракорпоральное оплодотворение (ЭКО): яйцеклетки извлекаются из яичников женщины и оплодотворяются сперматозоидами в лаборатории. Полученные эмбрионы переносятся в матку.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">ИКСИ (интрацитоплазматическая инъекция сперматозоида): один сперматозоид вводится непосредственно в яйцеклетку, используется совместно с ЭКО.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Методы отбора сперматозоидов (IMSI): под микроскопом высокого увеличения выбираются самые здоровые сперматозоиды для ИКСИ.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Донорство спермы: использование спермы от проверенного донора &mdash; подходящий вариант для мужчин с азооспермией или тяжелыми нарушениями сперматогенеза.</p>
+</li>
+</ol>
+<h3 dir="ltr">Реальные истории</h3>
+<p dir="ltr">Джон, 35 лет, в течение нескольких лет безуспешно пытался стать отцом из-за низкой концентрации сперматозоидов. Благодаря гормональной терапии и переходу на здоровый образ жизни с помощью специалистов AZPO Health, ему удалось добиться естественного зачатия.</p>
+<p dir="ltr">Дэвид, 42 года, долгое время не мог стать отцом из-за варикоцеле, которое негативно влияло на качество спермы. После проведенной операции показатели значительно улучшились, и попытка ЭКО увенчалась успехом &mdash; семья ждет пополнения.</p>
+<p dir="ltr">Марк, 28 лет, столкнулся с азооспермией, вызванной генетическими нарушениями. AZPO Health предложила решение с использованием донорской спермы и ЭКО, в результате чего Марк и его партнерша стали счастливыми родителями здорового малыша.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Почему выбирают AZPO Health?</h3>
+<p dir="ltr">AZPO Health стремится обеспечить каждому пациенту заботливый и индивидуальный подход, помогая эффективно справиться с мужским бесплодием. Вот что выделяет нас среди других:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Профессиональная команда: наши специалисты обладают глубокой экспертизой и многолетним опытом в диагностике и лечении мужского бесплодия.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современное оборудование: мы работаем с клиниками, использующими современное оборудование и новейшие методы лечения, что повышает шансы на успешный результат.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальные планы лечения: каждый план лечения разрабатывается с учетом индивидуальных особенностей, истории здоровья и целей пациента.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полная поддержка: мы сопровождаем вас на всех этапах &mdash; от первичной консультации до ухода после лечения.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Сделайте первый шаг к отцовству</h2>
+<p dir="ltr">Не позволяйте мужскому бесплодию встать на пути к вашей мечте стать родителем. Обратитесь в AZPO Health уже сегодня &mdash; получите бесплатную консультацию и узнайте, как наши специалисты помогут вам приблизиться к желанной цели.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Turkey has become a leading destination for medical tourism, and for good reason. When it comes to male infertility, several factors make Turkey, and specifically AZPO Health, an attractive option:</p>
 <ul>
 <li dir="ltr" aria-level="1">
@@ -17999,143 +18554,179 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Болезнь Пейрони и инновационная терапия стволовыми клетками в Турции"
           : "Peyronie's Disease and Innovative Stem Cell Therapy in Turkey",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Испытываете дискомфорт, искривление полового члена или сложности в интимной жизни? Болезнь Пейрони может серьезно повлиять на качество жизни — но терапия стволовыми клетками в Турции открывает перед вами неинвазивную альтернативу хирургии. Этот метод снижает объем фиброзных бляшек, восстанавливает естественные функции и помогает вернуть уверенность — под наблюдением опытных специалистов. Сделайте первый шаг к облегчению и восстановлению уже сегодня."
           : "Struggling with discomfort, curvature, or intimacy challenges? Peyronie’s Disease can be frustrating—but Stem Cell Therapy in Turkey offers a groundbreaking, non-surgical solution. This innovative treatment reduces plaque, restores natural function, and improves confidence with expert care. Take the first step toward relief and recovery today.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Curvature Treatment",
+            title: locale === "ru" ? "Коррекция искривления" : "Curvature Treatment",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "терапия помогает уменьшить фиброз и выпрямить половой член."
                 : "Stem cell therapy reshapes fibrotic tissue to improve penile curvature",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Pain Management",
+            title: locale === "ru" ? "Обезболивание" : "Pain Management",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "противовоспалительный эффект снижает болевой синдром."
                 : "Anti-inflammatory effects of stem cells reduce pain in Peyronie's disease",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Enhanced Function",
+            title: locale === "ru" ? "Улучшение функции" : "Enhanced Function",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "Восстановление тканей улучшает эрекцию и повышает уверенность."
                 : "Improved blood flow and tissue repair restore erectile function and confidence",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Desciption",
+            header: locale === "ru" ? "Описание" : "Desciption",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Терапия стволовыми клетками предлагает современный и многообещающий подход к лечению болезни Пейрони. Она направлена на снижение воспаления, восстановление тканей и потенциальное улучшение эректильной функции. Ниже описаны основные этапы процедуры, механизмы её действия, преимущества, показания и важные моменты, которые стоит учитывать перед началом лечения."
                 : "Stem cell therapy offers a promising approach for managing Peyronie’s disease by addressing inflammation, promoting tissue repair, and potentially improving erectile function. Below, the procedure, mechanisms of action, benefits, eligibility, and considerations for this innovative treatment are outlined.",
           },
           {
-            header: locale === "ru" ? "How It Works" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Стволовые клетки способствуют восстановлению тканей полового члена благодаря своему комплексному действию. Они обладают противовоспалительным эффектом, снижая воспаление и ускоряя заживление. Способствуют регенерации, превращаясь в гладкомышечные и эндотелиальные клетки для восстановления повреждённых структур. Участвуют в ремоделировании коллагена, разрушая фиброзные бляшки и формируя здоровую ткань. Также стимулируют ангиогенез — рост новых кровеносных сосудов, что улучшает питание тканей и ускоряет их восстановление. Дополнительно они регулируют иммунный ответ, предотвращая дальнейшее повреждение."
                 : "Stem cells aid penile tissue repair through multiple mechanisms: Anti-inflammatory Effects: Reduce inflammation and promote healing. Tissue Regeneration: Differentiate into smooth muscle and endothelial cells for tissue repair. Collagen Remodeling: Break down fibrotic plaques and support healthy tissue formation. Angiogenesis: Enhance blood vessel growth for better oxygenation and recovery. Immunomodulation: Regulate immune responses to prevent further damage.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It’s For",
+            header: locale === "ru" ? "Кому подойдет это лечение" : "Who It’s For",
             desc:
               locale === "ru"
-                ? ""
+                ? "Терапия стволовыми клетками идеально подходит для людей с хронической болезнью Пейрони, стойкими фиброзными бляшками, значительным искривлением, болью или эректильной дисфункцией. Она предлагает минимально инвазивную альтернативу для тех, кто не реагирует на другие методы лечения или избегает хирургического вмешательства."
                 : "Stem cell therapy is ideal for individuals with chronic Peyronie’s disease, persistent fibrotic plaques, significant curvature, pain, or erectile dysfunction. It offers a minimally invasive alternative for those unresponsive to other treatments or avoiding surgery.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What is Peyronie’s Disease?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "A condition causing penile curvature from scar tissue",
+          question : locale === "ru" ? "Что такое болезнь Пейрони?" : "What is Peyronie’s Disease?",
+          answer : locale === "ru" ? "Это заболевание, которое вызывает искривление пениса из-за образования рубцовой ткани, что может приводить к дискомфорту." : "A condition causing penile curvature from scar tissue"
         },
         {
-          question: locale === "ru" ? "" : "Is it treatable?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, with meds, injections, or surgery if needed",
+          question : locale === "ru" ? "Можно ли это лечить?" : "Is it treatable?",
+          answer : locale === "ru" ? "Да, болезнь Пейрони поддается лечению с помощью медикаментов, инъекций или, при необходимости, хирургического вмешательства." : "Yes, with meds, injections, or surgery if needed"
         },
         {
-          question: locale === "ru" ? "" : "Can I still have sex?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, if function is intact and discomfort is manageable",
+          question : locale === "ru" ? "Могу ли я продолжать сексуальную активность?" : "Can I still have sex?",
+          answer : locale === "ru" ? "Да, при условии, что функция сохранена, и дискомфорт можно контролировать." : "Yes, if function is intact and discomfort is manageable"
         },
         {
-          question: locale === "ru" ? "" : "Is it permanent?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "It can stabilize or worsen – early treatment helps",
+          question : locale === "ru" ? "Это состояние permanentное?" : "Is it permanent?",
+          answer : locale === "ru" ? "Оно может как стабилизироваться, так и ухудшаться, но раннее обращение за лечением помогает остановить прогрессирование." : "It can stabilize or worsen – early treatment helps"
         },
         {
-          question: locale === "ru" ? "" : "Does it cause ED?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "In some cases, yes – treatments address both",
-        },
+          question : locale === "ru" ? "Может ли это привести к эректильной дисфункции?" : "Does it cause ED?",
+          answer : locale === "ru" ? "В некоторых случаях да, но с применением соответствующих методов лечения можно решить обе проблемы." : "In some cases, yes – treatments address both"
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Follow medication schedule strictly (e.g., collagenase injections)",
-        locale === "ru"
-          ? ""
-          : "Avoid sexual activity during initial treatment phase",
-        locale === "ru" ? "" : "Report any worsening curvature or pain",
-        locale === "ru" ? "" : "Consider physical therapy if recommended",
-        locale === "ru"
-          ? ""
-          : "Schedule regular follow-ups with your urologist",
-        locale === "ru" ? "" : "Reduce alcohol and tobacco use.",
-        locale === "ru"
-          ? ""
-          : "Be patient, the treatment process may take time.",
+        locale === "ru" ? "Соблюдайте строгий график приема назначенных препаратов, таких как инъекции коллагеназы." : "Follow medication schedule strictly (e.g., collagenase injections)",
+        locale === "ru" ? "На начальном этапе лечения воздерживайтесь от сексуальной активности." : "Avoid sexual activity during initial treatment phase",
+        locale === "ru" ? "В случае ухудшения искривления или возникновения болевых ощущений немедленно сообщите об этом врачу." : "Report any worsening curvature or pain",
+        locale === "ru" ? "Если врач рекомендовал, рассмотрите возможность физиотерапевтического лечения." : "Consider physical therapy if recommended",
+        locale === "ru" ? "Регулярно посещайте уролога для контрольных визитов." : "Schedule regular follow-ups with your urologist",
+        locale === "ru" ? "Постарайтесь сократить потребление алкоголя и табака." : "Reduce alcohol and tobacco use.",
+        locale === "ru" ? "Будьте терпеливы: процесс лечения требует времени, и результаты могут проявиться не сразу." : "Be patient, the treatment process may take time."
       ],
       preList: [
-        locale === "ru"
-          ? ""
-          : "Undergo physical exam and imaging (e.g., ultrasound)",
-        locale === "ru" ? "" : "Discuss medications and sexual history",
-        locale === "ru" ? "" : "Avoid NSAIDs unless directed by your doctor",
-        locale === "ru"
-          ? ""
-          : "Prepare for potential medication or injection therapy",
-        locale === "ru"
-          ? ""
-          : "The treatment may take time, so manage your expectations.",
+        locale === "ru" ? "Пройдите медицинское обследование (например, ультразвук)." : "Undergo physical exam and imaging (e.g., ultrasound)",
+        locale === "ru" ? "Поделитесь с врачом информацией о принимаемых вами медикаментах и вашей половой истории." : "Discuss medications and sexual history",
+        locale === "ru" ? "Избегайте применения НПВП, если они не были прописаны врачом." : "Avoid NSAIDs unless directed by your doctor",
+        locale === "ru" ? "Будьте готовы к возможному назначению медикаментозного лечения или инъекционной терапии." : "Prepare for potential medication or injection therapy",
+        locale === "ru" ? "Лечение может занять некоторое время, поэтому важно правильно управлять своими ожиданиями." : "The treatment may take time, so manage your expectations."
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? ""
+            ? "Терапия стволовыми клетками — это инновационное направление в лечении болезни Пейрони, которое предлагает эффективное и щадящее решение без хирургии. Метод помогает снизить искривление, устранить боль и улучшить половую функцию. Перед началом терапии важно проконсультироваться с квалифицированным андрологом, чтобы определить показания, прогноз и все необходимые этапы подготовки к процедуре."
             : "Stem cell therapy represents a groundbreaking option for treating Peyronie’s disease, offering benefits such as reduced penile curvature, pain relief, and improved erectile function. It is a safe and minimally invasive alternative for those who may not be candidates for surgery or have not found relief with other treatments. Patients considering this therapy should consult an experienced andrologist to discuss the suitability, potential outcomes, and any necessary approvals or preparations for the procedure.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит рассмотреть лечение болезни Пейрони в Турции?"
             : "Why Consider Turkey for Your Erectile Dysfunction Treatment?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Турция давно зарекомендовала себя как одно из ведущих направлений в сфере медицинского туризма, предлагая пациентам со всего мира высококачественное лечение по доступным ценам. Страна сочетает современные технологии, опыт медицинских специалистов и внимательный подход к международным пациентам. Лечение болезни Пейрони в Турции имеет ряд преимуществ:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к передовым методам терапии: турецкие клиники активно внедряют инновационные подходы, включая стволовую терапию при болезни Пейрони и других заболеваниях.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высококвалифицированные специалисты: турецкие врачи обладают международной подготовкой и широким практическим опытом.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полное сопровождение пациентов: программы медицинского туризма включают комплексное обслуживание и поддержку иностранных пациентов на каждом этапе.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комфортная и гостеприимная атмосфера: Турция известна теплым приемом, культурным богатством и условиями, благоприятными для восстановления.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Клиники с международной аккредитацией: Турция занимает лидирующие позиции по количеству аккредитованных учреждений &mdash; по состоянию на март 2025 года здесь насчитывается 30 медицинских центров с аккредитацией JCI.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Лечение стволовыми клетками при болезни Пейрони с AZPO Health&nbsp;</h2>
+<p dir="ltr">Мы понимаем, насколько болезнь Пейрони может повлиять на качество жизни мужчины, и предлагаем продуманный, щадящий и современный подход к лечению. В AZPO Health мы используем регенеративные возможности стволовых клеток для восстановления тканей и устранения первопричин заболевания. Наш приоритет &mdash; безопасность, эффективность и индивидуальный подход к каждому пациенту.</p>
+<h3 dir="ltr">Как работает терапия стволовыми клетками при болезни Пейрони?</h3>
+<p dir="ltr">Терапия стволовыми клетками при болезни Пейрони, как правило, включает извлечение стволовых клеток из доступного источника в организме пациента, например, из жировой ткани. Эти клетки затем обрабатываются и аккуратно вводятся в пораженную область полового члена, где сформировались фиброзные бляшки.</p>
+<p dir="ltr">Введенные стволовые клетки способствуют восстановлению тканей несколькими способами:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Регуляция воспаления: стволовые клетки помогают регулировать воспалительный процесс, который играет ключевую роль в развитии и прогрессировании болезни Пейрони.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Стимуляция ангиогенеза: они способствуют образованию новых кровеносных сосудов, улучшая кровоснабжение пораженных тканей, что критически важно для их заживления.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Регенерация тканей: стволовые клетки обладают способностью дифференцироваться в клетки, способные восстанавливать поврежденные ткани и, возможно, разрушать уже существующие фиброзные бляшки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Снижение фиброза: воздействуя на клеточную среду, стволовые клетки могут тормозить избыточную выработку коллагена, которая приводит к образованию рубцовой ткани.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Как проходит процедура терапии стволовыми клетками в AZPO Health</h3>
+<p dir="ltr">Процедура терапии стволовыми клетками при болезни Пейрони в клинике AZPO Health обычно проводится амбулаторно и является минимально инвазивной. Этапы процедуры включают:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексное обследование: наши специалисты проведут детальную оценку состояния пациента, включая анализ анамнеза и физикальное обследование, чтобы определить, подходит ли вам эта терапия.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Забор стволовых клеток: при подтверждении показаний к лечению проводится забор жировой ткани с помощью щадящей липосакции для последующего извлечения стволовых клеток.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обработка материала: полученная ткань обрабатывается в специализированной лаборатории для выделения и концентрирования стволовых клеток.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Введение стволовых клеток: концентрированные клетки вводятся непосредственно в область фиброзных бляшек. Методика введения подбирается индивидуально в зависимости от особенностей заболевания.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Послеоперационный уход и наблюдение: после процедуры вы получите подробные рекомендации по уходу, а также план последующих визитов для контроля результатов и оценки эффективности терапии.<br><br></p>
+</li>
+</ol>
+<h2 dir="ltr">Реальных истории пациентов&nbsp;</h2>
+<p><strong>&nbsp;</strong></p>
+<p dir="ltr">Джон, 55 лет:</p>
+<p dir="ltr">&laquo;На протяжении многих лет болезнь Пейрони причиняла мне сильную боль и мешала интимной близости. Я перепробовал разные методы лечения, но без особого эффекта. Изучив доступные варианты в Турции, я обратился в AZPO Health. Команда проявила большое внимание и подробно рассказала о процессе терапии стволовыми клетками. Процедура прошла легко, и хотя на восстановление ушло некоторое время, я заметил заметное выпрямление полового члена и снижение боли. Это действительно изменило мою жизнь к лучшему.&raquo;</p>
+<p dir="ltr">Дэвид, 62 года:</p>
+<p dir="ltr">&laquo;Искривление вызывало у меня дискомфорт и подрывало уверенность в себе. Я избегал хирургического вмешательства и начал искать альтернативные решения. В AZPO Health мне предложили терапию стволовыми клетками, и идея задействовать ресурсы собственного организма мне очень откликнулась. Опыт лечения в Турции оказался позитивным, а медицинская команда &mdash; высокопрофессиональной. Улучшения происходили постепенно, но я очень доволен достигнутыми результатами. Я снова почувствовал надежду.&raquo;</p>
+<p><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Откройте для себя путь к исцелению<br><br></h2>
+<p dir="ltr">Если болезнь Пейрони ухудшает качество вашей жизни, терапия стволовыми клетками с AZPO Health предложит вам современный и бережный способ лечения. Наша команда готова предоставить вам подробную информацию, ответить на все вопросы и помочь определить, подходит ли вам этот метод. Свяжитесь с нами сегодня, чтобы обсудить варианты лечения и сделать первый шаг к здоровью и уверенности в будущем.</p>
+<p>&nbsp;</p>`
             : `<p dir="ltr">Turkey has become a prominent destination for medical tourism, attracting individuals seeking high-quality medical treatments at affordable costs. The country boasts modern healthcare facilities, experienced medical professionals, and a commitment to providing international patients with comprehensive care. Choosing Turkey for your Peyronies-Disease treatment in turkey can offer several advantages:</p>
 <ul>
 <li dir="ltr" aria-level="1">
@@ -18209,141 +18800,214 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Боретесь с эректильной дисфункцией? Верните уверенность и близость вместе с лечением в Турции!"
           : "Struggling with Erectile Dysfunction? Regain Your Confidence & Intimacy in Turkey!",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Чувствуете разочарование или неуверенность из-за эректильной дисфункции? Вы не одиноки, и с этим можно справиться. Современные методы позволяют восстановить уверенность и страсть, устраняя причину, а не только симптомы. В AZPO Health мы предлагаем передовое лечение в Турции, включая терапию стволовыми клетками для естественного восстановления сексуальной функции. Забудьте о временных решениях — получите реальные, долговременные результаты."
           : "Does ED have you feeling frustrated, disconnected, or less like yourself? You’re not alone—and you don’t have to accept it. Imagine restoring your performance, confidence, and passion with a cutting-edge solution that targets the root cause.At AZPO Health, we connect you to advanced Erectile Dysfunction treatments in Turkey, including revolutionary Stem Cell Therapy—designed to naturally repair, regenerate, and revitalize your sexual function. No more temporary fixes—just real, lasting results.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Vascular Revival",
+            title: locale === "ru" ? "Восстановление сосудов" : "Vascular Revival",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "улучшение кровообращения в тканях полового члена."
                 : "Enhances blood circulation in penile tissue through advanced stem cell treatment",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Tissue Regeneration",
+            title: locale === "ru" ? "Регенерация тканей" : "Tissue Regeneration",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "восстановление ключевых структур, включая гладкую мускулатуру и эндотелий."
                 : "Rebuilds vital penile structures including smooth muscle and endothelial tissues",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Safe Solutions",
+            title: locale === "ru" ? "Безопасность и эффективность" : "Safe Solutions",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "длительный терапевтический эффект с минимальными побочными реакциями, особенно при тяжёлых формах ЭД."
                 : "Long-lasting treatment effective for severe ED cases with minimal adverse effects",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Эректильная дисфункция (ЭД), или импотенция, — это неспособность достичь или удержать эрекцию, достаточную для полноценной сексуальной активности. Причины могут быть разными, но чаще всего связаны с органическими факторами. Выбор метода лечения зависит от причины и степени выраженности проблемы."
                 : "Erectile dysfunction (ED), also known as impotence, is the inability to achieve or maintain an erection sufficient for sexual activity. It can result from various causes, most commonly organic factors. Depending on the underlying cause and severity of ED, appropriate treatment options are determined.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Мезенхимальные стволовые клетки (МСК) обладают способностью восстанавливать и регенерировать ткани, превращаясь в специализированные клетки. При лечении ЭД МСК вводятся в ткани полового члена, где они помогают восстанавливать повреждённые структуры, улучшают кровообращение и стимулируют рост новых сосудов. Кроме того, МСК выделяют биологически активные вещества (secretome), способствующие восстановлению тканей через паракринные сигналы."
                 : "Mesenchymal stem cells (MSCs) help repair and regenerate tissue by differentiating into specialized cells when injected into the body. For ED, MSCs are introduced into penile tissue, where they repair damaged structures, improve blood flow, and promote the formation of new blood vessels. Additionally, MSCs secrete bioactive molecules (secretome) such as growth factors and proteins, further supporting tissue repair through paracrine signaling.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For Whom",
+            header: locale === "ru" ? "Для кого подходит" : "For Whom",
             desc:
               locale === "ru"
-                ? ""
+                ? "Данный метод рекомендован людям с эректильной дисфункцией, вызванной органическими причинами (повреждения сосудов, мышц или нервов), которые не реагируют на традиционное лечение. Часто это пациенты с такими сопутствующими заболеваниями, как диабет, гипертония или после операций на предстательной железе. Терапия особенно актуальна для тех, кто предпочитает регенеративные и малоинвазивные методы вместо хирургического вмешательства."
                 : "This therapy is suitable for individuals with ED from organic causes (vascular, muscular, or neural damage), who don’t respond to conventional treatments, and have medical histories like diabetes, high blood pressure, or prostate surgery. It’s ideal for those preferring regenerative, minimally invasive options over surgery.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What causes ED?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Blood flow issues, nerve damage, hormones, or stress",
+          question : locale === "ru" ? "Что может вызывать эректильную дисфункцию?" : "What causes ED?",
+          answer : locale === "ru" ? "Основными причинами могут быть нарушения кровообращения, повреждения нервов, гормональные изменения или стресс." : "Blood flow issues, nerve damage, hormones, or stress"
         },
         {
-          question: locale === "ru" ? "" : "Are pills safe?",
-          answer: locale === "ru" ? "" : "Yes, under medical supervision",
+          question : locale === "ru" ? "Насколько безопасны таблетки для лечения ЭД?" : "Are pills safe?",
+          answer : locale === "ru" ? "Таблетки безопасны, если они принимаются под наблюдением врача." : "Yes, under medical supervision"
         },
         {
-          question: locale === "ru" ? "" : "Will it go away on its own?",
-          answer:
-            locale === "ru" ? "" : "Sometimes, especially if stress-related",
+          question : locale === "ru" ? "Пройдет ли это само собой?" : "Will it go away on its own?",
+          answer : locale === "ru" ? "В некоторых случаях, особенно если причина связана со стрессом, проблема может исчезнуть сама собой." : "Sometimes, especially if stress-related"
         },
         {
-          question: locale === "ru" ? "" : "What if pills don’t work?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Other treatments include injections or devices",
+          question : locale === "ru" ? "Что делать, если таблетки не помогают?" : "What if pills don’t work?",
+          answer : locale === "ru" ? "Если таблетки не дают результата, можно рассмотреть альтернативные методы лечения, такие как инъекции или специализированные устройства." : "Other treatments include injections or devices"
         },
         {
-          question: locale === "ru" ? "" : "Can young men get ED?",
-          answer:
-            locale === "ru" ? "" : "Yes – often linked to anxiety or lifestyle",
-        },
+          question : locale === "ru" ? "Могут ли молодые мужчины столкнуться с эректильной дисфункцией?" : "Can young men get ED?",
+          answer : locale === "ru" ? "Да, это возможно, и часто связано с тревожностью или неправильным образом жизни." : "Yes – often linked to anxiety or lifestyle"
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Take medications (e.g., PDE5 inhibitors) as prescribed",
-        locale === "ru"
-          ? ""
-          : "Continue lifestyle improvements (weight, exercise, diet)",
-        locale === "ru" ? "" : "Avoid recreational ED drugs unless approved",
-        locale === "ru"
-          ? ""
-          : "Treat underlying conditions (diabetes, hypertension)",
-        locale === "ru" ? "" : "Schedule follow-ups to monitor response",
-        locale === "ru"
-          ? ""
-          : "Avoid sexual activity for the duration recommended by your doctor.",
-        locale === "ru"
-          ? ""
-          : "Seek medical attention if you experience pain or discomfort.",
-        locale === "ru" ? "" : "Avoid stress.",
-        locale === "ru" ? "" : "Reduce tobacco and alcohol use.",
+        locale === "ru" ? "Принимайте лекарства, такие как ингибиторы ФДЭ5, строго по назначению врача." : "Take medications (e.g., PDE5 inhibitors) as prescribed",
+        locale === "ru" ? "Работайте над улучшением образа жизни: следите за весом, занимайтесь физическими упражнениями и придерживайтесь сбалансированной диеты." : "Continue lifestyle improvements (weight, exercise, diet)",
+        locale === "ru" ? "Избегайте использования препаратов для лечения эректильной дисфункции, если они не были одобрены вашим врачом." : "Avoid recreational ED drugs unless approved",
+        locale === "ru" ? "Лечите сопутствующие заболевания, такие как диабет и гипертензия, согласно рекомендациям специалиста." : "Treat underlying conditions (diabetes, hypertension)",
+        locale === "ru" ? "Регулярно проходите контрольные осмотры для оценки эффективности лечения." : "Schedule follow-ups to monitor response",
+        locale === "ru" ? "Соблюдайте рекомендации врача по срокам воздержания от сексуальной активности." : "Avoid sexual activity for the duration recommended by your doctor.",
+        locale === "ru" ? "Обратитесь за медицинской помощью, если испытываете боль или дискомфорт." : "Seek medical attention if you experience pain or discomfort.",
+        locale === "ru" ? "Старайтесь избегать стрессовых ситуаций." : "Avoid stress.",
+        locale === "ru" ? "Сократите потребление табака и алкоголя." : "Reduce tobacco and alcohol use."
       ],
       preList: [
-        locale === "ru"
-          ? ""
-          : "Disclose all current medications and health conditions",
-        locale === "ru"
-          ? ""
-          : "Expect lab tests for testosterone or vascular health",
-        locale === "ru"
-          ? ""
-          : "Avoid alcohol, tobacco, and high-fat meals before testing",
-        locale === "ru"
-          ? ""
-          : "Be honest about psychological and lifestyle factors",
+        locale === "ru" ? "Укажите все принимаемые лекарства и существующие заболевания." : "Disclose all current medications and health conditions",
+        locale === "ru" ? "Подготовьтесь к лабораторным тестам, включая анализы на уровень тестостерона и состояние сосудов." : "Expect lab tests for testosterone or vascular health",
+        locale === "ru" ? "Перед тестированием избегайте употребления алкоголя, табака и высокожирной пищи." : "Avoid alcohol, tobacco, and high-fat meals before testing",
+        locale === "ru" ? "Будьте откровенны относительно психологических факторов и жизненных обстоятельств, которые могут повлиять на результаты." : "Be honest about psychological and lifestyle factors"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? ""
+            ? "Терапия мезенхимальными стволовыми клетками, в том числе методом secretome, представляет собой революционный прорыв в лечении эректильной дисфункции. Стимулируя восстановление тканей и улучшая сосудистую функцию, она открывает новые возможности для пациентов, которым не помогли стандартные методы. Хотя данный подход требует дальнейших исследований и стандартизации, уже сейчас первые клинические данные и опыт подтверждают его эффективность, особенно при тяжелых и рефрактерных формах ЭД.Для получения персональной консультации и оценки вашей ситуации обратитесь к квалифицированным специалистам AZPO Health."
             : "Mesenchymal stem cell therapy, particularly the secretome approach, represents a groundbreaking advancement in the treatment of erectile dysfunction. By promoting tissue repair and improving vascular function, it offers hope for patients who have not benefited from conventional therapies. Although further research and standardization are needed to refine this innovative treatment, early studies and clinical experiences suggest that it has the potential to revolutionize the management of ED, particularly for those with severe or refractory cases. For personalized consultation and detailed information about suitability, reaching out to a qualified medical professional is essential.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для лечения эректильной дисфункции?"
             : "Why Consider Turkey for Your Erectile Dysfunction Treatment?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Турция становится всё более популярным направлением для медицинского туризма по нескольким весомым причинам. Хотя AZPO Health не осуществляет лечение напрямую, мы связываем вас с проверенными клиниками и высококвалифицированными специалистами, которые предлагают широкий спектр методов лечения эректильной дисфункции, включая инновационные технологии, такие как, терапия стволовыми клетками.</p>
+<p dir="ltr">Выбор Турции для прохождения лечения открывает перед вами такие потенциальные преимущества, как:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытные медицинские специалисты: врачи в Турции &mdash; урологи и специалисты по сексуальному здоровью &mdash; обладают высокой квалификацией и богатым клиническим опытом в диагностике и лечении эректильной дисфункции. AZPO Health сотрудничает исключительно с клиниками, зарекомендовавшими себя как надежные медицинские учреждения с высокопрофессиональными командами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные медицинские учреждения: наши партнерские клиники оснащены передовым оборудованием, позволяющим проводить комплексные обследования и применять инновационные методы лечения, включая терапию стволовыми клетками. Турция входит в число мировых лидеров по количеству аккредитованных учреждений: по данным на март 2025 года в стране действует 30 медицинских центров, сертифицированных JCI (Joint Commission International).</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный и комплексный подход к лечению: в зависимости от причин, вызвавших эректильную дисфункцию, турецкие врачи подбирают наиболее эффективные методы терапии. Терапия стволовыми клетками направлена на устранение первопричины заболевания, а не только на временное снятие симптомов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комфортная среда для иностранных пациентов: AZPO Health делает все возможное, чтобы ваше пребывание было максимально комфортным. Мы сотрудничаем с клиниками, хорошо знакомыми с особенностями медицинского туризма и потребностями иностранных пациентов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Возможность восстановления в благоприятной атмосфере: проходя лечение в Турции, вы не только получаете высококачественную медицинскую помощь, но и находитесь в культурно богатой и живописной стране. Это способствует более быстрому восстановлению и улучшению общего эмоционального состояния.</p>
+</li>
+</ul>
+<h2 dir="ltr">Методы лечения эректильной дисфункци: как работает терапия стволовыми клетками<br><br></h2>
+<p dir="ltr">После всестороннего анализа медицинского и сексуального анамнеза, а также проведения необходимых диагностических процедур для выявления причины эректильной дисфункции, врач может предложить различные варианты лечения. К традиционным методам относятся медикаментозная терапия, фитопрепараты и инъекционные средства. Однако одной из наиболее перспективных и инновационных методик является терапия стволовыми клетками, направленная не только на устранение симптомов, но и на восстановление функций на клеточном уровне.</p>
+<p dir="ltr">Терапия стволовыми клетками при эректильной дисфункции:&nbsp;</p>
+<p dir="ltr">Стволовые клетки обладают уникальной способностью трансформироваться в различные типы клеток организма. В контексте лечения эректильной дисфункции этот метод основан на регенерации и восстановлении тканей полового члена, необходимых для полноценной эрекции.</p>
+<p dir="ltr">Половой член содержит губчатую структуру &mdash; кавернозные тела, которые при сексуальной стимуляции наполняются кровью, обеспечивая эрекцию. При эректильной дисфункции зачастую нарушается работа гладкой мускулатуры и кровеносных сосудов, находящихся в этих тканях. Терапия стволовыми клетками направлена на восстановление этих функций следующим образом:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Регенерация тканей полового члена: стволовые клетки способны превращаться в клетки гладкой мускулатуры и эндотелиальные клетки сосудов, способствуя восстановлению структуры и функциональности эректильной ткани.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение кровообращения: терапия активирует процессы ангиогенеза &mdash; образования новых кровеносных сосудов, улучшая приток крови к пещеристым телам и обеспечивая устойчивую эрекцию.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Воздействие на первопричину: в отличие от традиционных методов, направленных на временное улучшение кровотока, стволовая терапия фокусируется на устранении основной причины ЭД &mdash; восстановлении тканей и нормализации функции сосудов.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Процесс терапии стволовыми клетками при лечении эректильной дисфункции</h3>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексная диагностика: лечение начинается с тщательного анализа вашей медицинской и сексуальной истории, а также проведения необходимых диагностических исследований. Это позволяет определить причину и степень выраженности эректильной дисфункции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подбор оптимального метода терапии: на основе результатов обследования и ваших индивидуальных потребностей врачи подбирают наиболее подходящий вид терапии стволовыми клетками. В зависимости от случая могут использоваться аутологичные клетки (полученные из тканей самого пациента) или аллогенные (донорские). Источником клеток может быть костный мозг, жировая ткань или пуповинная ткань.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Введение стволовых клеток: подготовленные клетки вводятся непосредственно в эректильную ткань полового члена с помощью инъекции. Методика и дозировка определяются индивидуально, в зависимости от клинической картины и рекомендаций лечащего врача.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Регулярные осмотры: после процедуры вы проходите регулярные осмотры и контрольные обследования для оценки эффективности лечения и общего состояния. Команда специалистов сопровождает вас на всех этапах восстановления.</p>
+</li>
+</ol>
+<p dir="ltr">Процесс терапии стволовыми клетками при лечении эректильной дисфункции:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Естественный подход: терапия использует внутренние регенеративные возможности организма для восстановления эректильной функции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Воздействие на корень проблемы: основная задача метода &mdash; восстановить структуру и функциональность тканей полового члена, а не просто временно снять симптомы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Возможность значительного улучшения: клинические исследования демонстрируют заметное улучшение эректильной функции у многих пациентов после применения терапии стволовыми клетками, однако результаты могут различаться в зависимости от индивидуальных особенностей организма.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Важно иметь реалистичные ожидания и понимать, что эффект лечения варьируется у разных людей. Медицинские специалисты в Турции, с которыми вас может связать AZPO Health, предоставят подробную информацию о возможных преимуществах и рисках лечения с учетом вашей ситуации.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Отзывы реальных пациентов</h2>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Джон, 55 лет:&nbsp; &laquo;В течение многих лет эректильная дисфункция серьезно подрывала мою уверенность и отношения. Сначала я сомневался в эффективности лечения, но идея терапии стволовыми клетками в Турции, которую организовала AZPO Health, показалась мне естественным и многообещающим решением. Медицинская команда проявила высокий профессионализм, а сама процедура прошла гладко. Улучшения не были мгновенными, но со временем я почувствовал значительные и устойчивые изменения. Сейчас я вновь ощущаю себя полноценным мужчиной.&raquo;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Дэвид, 62 года: &laquo;Диабет усугубил мою эректильную дисфункцию, и это было очень тяжело. Я пробовал медикаменты, но они не всегда помогали. Узнав о терапии стволовыми клетками в Турции через AZPO Health, я заинтересовался и решил попробовать. Врачи подробно объяснили весь процесс, что меня успокоило. После лечения результаты превзошли ожидания &mdash; моя способность к эрекции заметно улучшилась, и это значительно повысило качество моей жизни.&raquo;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Майкл, 48 лет: &nbsp;&laquo;После операции на простате эректильная дисфункция стала серьезным вызовом для меня. Я искал эффективное решение для восстановления. AZPO Health помог найти клинику в Турции, где применяют терапию стволовыми клетками. Весь процесс проходил под тщательным контролем профессионалов, а последующий уход был на высшем уровне. Я очень доволен результатами и снова чувствую, что мое тело работает так, как должно.&raquo;<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">AZPO Health: ваш надежный партнер в выборе лечения эректильной дисфункции в Турции</h2>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">AZPO Health помогает вам связаться с проверенными клиниками и опытными специалистами в Турции, обеспечивая поддержку на каждом этапе вашего медицинского путешествия. Мы понимаем, что лечение эректильной дисфункции &mdash; очень личное и деликатное решение, поэтому стремимся предоставить всю необходимую информацию и комфортные условия для выбора оптимального варианта.</p>
+<p dir="ltr">Выбирая AZPO Health, вы получаете:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к ведущим специалистам: мы сотрудничаем с клиниками и врачами, обладающими глубокими знаниями и опытом в диагностике и лечении эректильной дисфункции, включая инновационные методы, такие как терапия стволовыми клетками.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход: наша команда поможет разобраться в доступных вариантах лечения и подобрать именно тех специалистов, которые максимально соответствуют вашим потребностям.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддержку в организации лечения: мы не оказываем медицинские услуги напрямую, но помогаем упростить процесс выбора клиники, планирования лечения и оформления медицинской поездки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гарантию качества и конфиденциальности: для нас важны ваше здоровье и комфорт, поэтому мы сотрудничаем только с клиниками, которые соблюдают высокие стандарты и бережно относятся к личным данным пациентов.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Сделайте первый шаг к возобновлению интимной близости</h2>
+<p dir="ltr">Если вы заинтересованы в комплексном и современном подходе к лечению эректильной дисфункции, включая инновационную терапию стволовыми клетками, свяжитесь с AZPO Health.</p>
+<p dir="ltr">Свяжитесь с нами прямо сейчас для бесплатной консультации, чтобы получить подробную информацию и подобрать оптимальное лечение эректильной дисфункции в Турции.</p>
+<p dir="ltr">Наша команда всегда готова поделиться необходимой информацией, ответить на ваши вопросы и подобрать опытных врачей, которые помогут вернуть уверенность, восстановить интимные отношения и улучшить качество жизни. Напишите нам и сделайте первый шаг к более полноценной и активной жизни.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Turkey has become a popular choice for individuals seeking medical treatments abroad for several compelling reasons. While AZPO Health does not provide treatment directly, we connect you with reputable clinics and skilled doctors in Turkey who offer a range of Erectile Dysfunction treatments, including cutting-edge options like stem cell therapy.</p>
 <p dir="ltr">Choosing Turkey for your treatment journey offers potential benefits such as:</p>
 <ul>
@@ -18452,169 +19116,239 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Терапия стволовыми клетками для мужчин: верните себе жизненную энергию"
           : "Stem Cell Therapy for Men: Rediscover Your Vitality",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Сталкиваетесь с возрастными изменениями или проблемами со здоровьем, которые влияют на ваше мужское благополучие? Представьте терапию, которая активирует природные способности вашего организма к восстановлению, помогая вернуть бодрость и жизненную энергию. Терапия стволовыми клетками от AZPO Health в Турции — это современное решение для тех, кто хочет сохранить здоровье и молодость"
           : "Feeling the weight of age or specific health challenges affecting your well-being as a man? Imagine a therapy that harnesses your body's own healing power to rejuvenate and address these concerns, offering a renewed sense of vitality and hope. stem cell therapy, facilitated by AZPO Health in Turkey, could be the innovative solution you've been seeking for a healthier future.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Natural Healing",
+            title: locale === "ru" ? "Естественное восстановление" : "Natural Healing",
             desc:
               locale === "ru"
-                ? ""
+                ? "усиливает собственные механизмы организма, уменьшая потребность в операциях."
                 : "Enhances the body’s self-repair, reducing need for surgery",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Treatment Versatility",
+            title: locale === "ru" ? "Широкое применение" : "Treatment Versatility",
             desc:
               locale === "ru"
-                ? ""
+                ? "эффективна в лечении проблем кожи, сердца и нервной системы."
                 : "Effective in many fields like skin, heart, and nerves",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Cell Regeneration",
+            title: locale === "ru" ? "Регенерация" : "Cell Regeneration",
             desc:
               locale === "ru"
-                ? ""
+                ? "адаптируется к разным типам тканей для полноценного восстановления."
                 : "Adapts to different tissues for thorough repair",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Терапия стволовыми клетками для мужчин представляет собой современный нехирургический способ лечения различных проблем со здоровьем, таких как боль в суставах, выпадение волос и улучшение сексуального здоровья. Используя естественные клетки организма, она стимулирует регенерацию, снижает воспаление и поддерживает длительное восстановление, помогая мужчинам чувствовать себя сильнее, здоровее и увереннее в себе."
                 : "Stem Cell Therapy for Men offers a modern, non-surgical approach to treat various health concerns, including joint pain, hair loss, and sexual wellness. By using the body’s natural healing cells, it promotes regeneration, reduces inflammation, and supports long-term recovery; helping men feel stronger, healthier, and more confident.",
           },
           {
-            header: locale === "ru" ? "How It Works" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Стволовые клетки получают из жировой ткани, костного мозга или пуповинной крови — жир считается самым простым и богатым источником. После лабораторной обработки и очистки клетки вводятся или наносятся прямо на повреждённые участки, чтобы стимулировать заживление и уменьшить воспаление. Восстановление тщательно контролируется, а первые результаты проявляются спустя несколько недель или месяцев."
                 : "Stem cells are collected from sources like fat tissue, bone marrow, or umbilical cord blood—fat being the easiest and richest source. After lab processing to purify the cells, they are injected or applied directly to damaged areas to promote healing and reduce inflammation. Recovery is monitored closely, with results appearing over weeks or months.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It’s For",
+            header: locale === "ru" ? null : "Who It’s For",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? null
                 : "Stem cell therapy is ideal for individuals with chronic orthopedic issues like joint or ligament damage, neurological disorders such as Parkinson’s or stroke, and heart conditions including heart failure. It also benefits those with skin concerns like wrinkles, scars, or burns, and patients who haven't responded to conventional treatments.",
           },
         ],
       },
       faqs: [
         {
-          question:
-            locale === "ru" ? "" : "What conditions can stem cells treat?",
-          answer: locale === "ru" ? "" : "ED, Peyronie’s, joint pain, and more",
+          question : locale === "ru" ? "Какие заболевания могут лечить стволовые клетки?" : "What conditions can stem cells treat?",
+          answer : locale === "ru" ? "ЭД, болезнь Пейрони, боль в суставах и множество других состояний." : "ED, Peyronie’s, joint pain, and more"
         },
         {
-          question: locale === "ru" ? "" : "Is it safe?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Generally yes, when done by trained professionals",
+          question : locale === "ru" ? "Это безопасно?" : "Is it safe?",
+          answer : locale === "ru" ? "В целом, да, при условии, что лечение проводится опытным специалистом." : "Generally yes, when done by trained professionals"
         },
         {
-          question: locale === "ru" ? "" : "Is it FDA-approved?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Some applications are still investigational",
+          question : locale === "ru" ? "Это одобрено FDA?" : "Is it FDA-approved?",
+          answer : locale === "ru" ? "Некоторые области применения стволовых клеток находятся на стадии исследования и еще не имеют полного одобрения." : "Some applications are still investigational"
         },
         {
-          question: locale === "ru" ? "" : "How long for results?",
-          answer:
-            locale === "ru" ? "" : "Weeks to months depending on condition",
+          question : locale === "ru" ? "Как долго ждать результатов?" : "How long for results?",
+          answer : locale === "ru" ? "Результаты могут проявиться от нескольких недель до нескольких месяцев, в зависимости от конкретного состояния." : "Weeks to months depending on condition"
         },
         {
-          question: locale === "ru" ? "" : "Are there side effects?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Minor swelling or soreness at injection site",
+          question : locale === "ru" ? "Есть ли побочные эффекты?" : "Are there side effects?",
+          answer : locale === "ru" ? "Возможны незначительные отеки или болезненность в месте инъекции." : "Minor swelling or soreness at injection site"
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "What is the success rate of stem cell therapy?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Success varies by individual and condition, but early intervention can lead to positive outcomes.",
+          question : locale === "ru" ? "Каков процент успеха терапии стволовыми клетками?" : "What is the success rate of stem cell therapy?",
+          answer : locale === "ru" ? "Успех терапии зависит от индивидуальных факторов и состояния пациента. Раннее вмешательство может значительно повысить вероятность положительных результатов." : "Success varies by individual and condition, but early intervention can lead to positive outcomes."
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "How many sessions are required for treatment?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Multiple sessions are usually needed, with the plan determined by your doctor.",
-        },
+          question : locale === "ru" ? "Сколько сеансов необходимо для лечения?" : "How many sessions are required for treatment?",
+          answer : locale === "ru" ? "Обычно требуется несколько сеансов. План лечения определяется вашим врачом в зависимости от состояния и реакции организма." : "Multiple sessions are usually needed, with the plan determined by your doctor."
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Limit physical activity for a few days post-injection",
-        locale === "ru"
-          ? ""
-          : "Stay hydrated and follow post-care instructions",
-        locale === "ru"
-          ? ""
-          : "Avoid NSAIDs unless prescribed (they may hinder stem cell action)",
-        locale === "ru" ? "" : "Attend follow-ups to track improvements",
-        locale === "ru"
-          ? ""
-          : "Follow lifestyle and dietary advice to support healing",
-        locale === "ru" ? "" : "Report pain or discomfort.",
-        locale === "ru"
-          ? ""
-          : "Avoid sexual activity as recommended by your urologist",
-        locale === "ru" ? "" : "Avoid extreme heat, cold, or pressure.",
-        locale === "ru" ? "" : "Avoid stress.",
-        locale === "ru" ? "" : "Be patient, as treatment effects take time.",
+        locale === "ru" ? "Ограничьте физическую активность в течение нескольких дней после инъекции." : "Limit physical activity for a few days post-injection",
+        locale === "ru" ? "Поддерживайте водный баланс и следуйте рекомендациям по уходу после процедуры." : "Stay hydrated and follow post-care instructions",
+        locale === "ru" ? "Избегайте приема НПВП, если они не назначены врачом, так как они могут повлиять на эффективность стволовых клеток." : "Avoid NSAIDs unless prescribed (they may hinder stem cell action)",
+        locale === "ru" ? "Регулярно посещайте контрольные осмотры для мониторинга улучшений." : "Attend follow-ups to track improvements",
+        locale === "ru" ? "Соблюдайте рекомендации по питанию и образу жизни, способствующие заживлению." : "Follow lifestyle and dietary advice to support healing",
+        locale === "ru" ? "Немедленно сообщайте врачу о боли или дискомфорте." : "Report pain or discomfort.",
+        locale === "ru" ? "Воздержитесь от сексуальной активности, как указано вашим урологом." : "Avoid sexual activity as recommended by your urologist",
+        locale === "ru" ? "Избегайте воздействия экстремальных температур (горячих и холодных), а также сильного давления." : "Avoid extreme heat, cold, or pressure.",
+        locale === "ru" ? "Минимизируйте стресс." : "Avoid stress.",
+        locale === "ru" ? "" : "Be patient, as treatment effects take time."
       ],
       preList: [
-        locale === "ru" ? "" : "Full consultation to assess eligibility",
-        locale === "ru"
-          ? ""
-          : "Blood tests, imaging, and medical history review",
-        locale === "ru"
-          ? ""
-          : "Avoid anti-inflammatory medications before procedure",
-        locale === "ru"
-          ? ""
-          : "Stop smoking and alcohol use prior to treatment",
-        locale === "ru" ? "" : "Weight management and physical health.",
-        locale === "ru" ? "" : "Share your psychological state.",
-        locale === "ru" ? "" : "Make sure to rest before the procedure.",
-        locale === "ru"
-          ? ""
-          : "The treatment may take time, so manage your expectations.",
+        locale === "ru" ? "Пройдите тщательную консультацию для оценки необходимости и возможности лечения." : "Full consultation to assess eligibility",
+        locale === "ru" ? "Сдайте необходимые анализы крови, пройдите визуализацию и обсудите свою медицинскую историю." : "Blood tests, imaging, and medical history review",
+        locale === "ru" ? "Избегайте приема противовоспалительных препаратов перед процедурой." : "Avoid anti-inflammatory medications before procedure",
+        locale === "ru" ? "Прекратите курение и употребление алкоголя за несколько дней до лечения." : "Stop smoking and alcohol use prior to treatment",
+        locale === "ru" ? "Контролируйте вес и поддерживайте физическое здоровье." : "Weight management and physical health.",
+        locale === "ru" ? "Поделитесь своим психологическим состоянием с врачом." : "Share your psychological state.",
+        locale === "ru" ? "Убедитесь, что вы хорошо отдохнули перед процедурой." : "Make sure to rest before the procedure.",
+        locale === "ru" ? "Лечение может занять время, поэтому важно управлять своими ожиданиями." : "The treatment may take time, so manage your expectations."
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Терапия стволовыми клетками — революционное лечение, дающее надежду пациентам с ранее считавшимися неизлечимыми заболеваниями. Используя регенеративный потенциал стволовых клеток, этот метод способствует естественному восстановлению, улучшает качество жизни и предлагает решения для множества медицинских и косметических задач. При правильной оценке состояния и профессиональном сопровождении терапия стволовыми клетками продолжает открывать новые горизонты в регенеративной медицине, меняя жизнь пациентов с каждым новым курсом лечения."
             : "Stem cell therapy is a revolutionary medical treatment offering hope to patients with conditions previously deemed untreatable. By harnessing the regenerative power of stem cells, this therapy promotes natural healing, improves quality of life, and provides solutions for a wide range of medical and cosmetic needs. With proper evaluation and expert care, stem cell therapy continues to pave the way for advanced regenerative medicine, transforming lives one treatment at a time.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Полное руководство по терапии стволовыми клетками для мужчин"
             : "Comprehensive Insights into Stem Cell Therapy for Men",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">В течение жизни мужчины могут сталкиваться с различными проблемами со здоровьем, которые влияют на качество их жизни. Терапия стволовыми клетками &mdash; это перспективное направление, использующее уникальные способности организма восстанавливать и регенерировать поврежденные ткани. Компания AZPO Health предоставляет доступ к ведущим клиникам Турции, предлагая инновационные методы регенеративной медицины.</p>
+<h3 dir="ltr">Почему стоит выбрать Турцию для терапии стволовыми клетками для мужчин в 2025 году?</h3>
+<p dir="ltr">Турция стала одним из мировых лидеров в сфере медицинского туризма &mdash; и не случайно. В 2023 году более 1,5 миллиона пациентов воспользовались медицинскими услугами Турции через специализированные платформы. Страна привлекает множество людей, ищущих качественное лечение, включая инновационные процедуры, такие как терапия стволовыми клетками. Вот основные причины, почему Турция &mdash; отличный выбор для лечения в 2025 году:</p>
+<p dir="ltr">Современные медицинские учреждения и высокий уровень специалистов: бльницы и клиники Турции, с которыми сотрудничает AZPO Health, оснащены современным оборудованием и соответствуют международным стандартам. Врачи обладают богатым опытом, включая области регенеративной медицины. Многие иностранные студенты-медики приезжают сюда на стажировки и обучение, что говорит о высоком уровне медицинского образования и практики. Турция входит в число лидеров по количеству медицинских учреждений, аккредитованных JCI &mdash; по состоянию на март 2025 года их в стране уже 30.<br><br></p>
+<p dir="ltr">Экономическая доступность: одним из главных факторов популярности медицинского туризма в Турции является доступная стоимость лечения по сравнению со многими европейскими странами, Великобританией и США. Например, пересадка волос в Турции часто обходится значительно дешевле, чем в США или Европе. Цена терапии стволовыми клетками варьируется в зависимости от заболевания и протокола лечения, но в целом Турция предлагает конкурентоспособные цены при высоком уровне качества, что позволяет большему числу людей получить доступ к передовым методам лечения.<br><br></p>
+<p dir="ltr">Комплексный подход к медицинскому туризму: помимо самой процедуры, Турция предлагает комфортные и гостеприимные условия для иностранных пациентов. Многие отмечают, что возможность восстановиться в красивой и культурно насыщенной стране &mdash; важное преимущество. Особенно выделяется Стамбул &mdash; крупный туристический центр с богатой историей и культурой, где можно совместить лечение с экскурсиями и культурными мероприятиями. AZPO Health помогает сделать ваше медицинское путешествие максимально комфортным и удобным.<br><br></p>
+<p dir="ltr">Фокус на заботе о пациентах и инновациях: конкуренция на рынке медицинского туризма в Турции стимулирует клиники уделять особое внимание удовлетворенности пациентов и постоянному совершенствованию методов лечения. Медицинские центры активно внедряют новейшие исследования и технологии, предлагая самые современные и эффективные процедуры, включая различные направления терапии стволовыми клетками. AZPO Health сотрудничает только с клиниками, которые ставят безопасность пациентов, высокое качество ухода и инновационный подход во главу угла.<br><br></p>
+<h3 dir="ltr">Как работает терапия стволовыми клетками у мужчин <br><br></h3>
+<p dir="ltr">Терапия стволовыми клетками &mdash; это современный метод лечения и профилактики различных заболеваний, основанный на уникальных свойствах этих клеток. Стволовые клетки способны к самообновлению и превращению в различные специализированные клетки организма. Благодаря этому они могут способствовать восстановлению повреждённых тканей, снижению воспаления и активации процессов заживления в организме.</p>
+<p dir="ltr">Типы стволовых клеток, используемых в терапии:</p>
+<p dir="ltr">В источниках упоминаются несколько типов стволовых клеток, которые применяются в терапии:&nbsp;</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мезенхимальные стволовые клетки (МСК): Обычно получают из жировой ткани (адипозной) или костного мозга самого пациента. МСК могут дифференцироваться в различные типы клеток, включая клетки костей, хрящей и жировой ткани. Кроме того, они выделяют вещества, способствующие восстановлению тканей и модулирующие иммунную систему. Из-за лёгкости получения и их большого количества жировая ткань часто является предпочтительным источником. Костный мозг также является эффективным источником.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Фетальные стволовые клетки: получаются из тканей плода. Их использование связано с более сложными этическими и правовыми аспектами.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Стволовые клетки пуповинной крови: Извлекаются из пуповинной крови после рождения и богаты гематопоэтическими стволовыми клетками (которые дают начало клеткам крови), а также содержат мезенхимальные стволовые клетки.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Протоколы лечения:</p>
+<p dir="ltr">Протокол лечения с использованием стволовых клеток для мужчин разрабатывается индивидуально &mdash; с учетом возраста, веса, общего состояния здоровья и конкретной медицинской проблемы. В зависимости от этих факторов может варьироваться как способ введения клеток, так и частота процедур:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Методы введения: наиболее распространённый способ &mdash; внутривенное введение через сосудистый доступ. В отдельных случаях, особенно при нарушениях в области мужского репродуктивного здоровья, может применяться прямое введение в семявыносящие протоки яичек.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Количество и частота процедур: в зависимости от состояния пациента курс может включать три процедуры с интервалом в 45 дней или два последовательных сеанса, проводимых с минимальным интервалом.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход: каждая терапевтическая программа разрабатывается индивидуально. На выбор схемы лечения влияют общее состояние здоровья, возраст, вес и конкретные цели терапии. AZPO Health сотрудничает с клиниками, которые проводят комплексную диагностику и формируют персонализированный план лечения с учетом всех особенностей пациента.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Возможности применения терапии и терапевтический потенциал для мужчин<br><br></p>
+<p dir="ltr">Согласно современным исследованиям и доступным источникам, стволовые клетки обладают потенциалом восстанавливать повреждённые ткани, снижать воспаление и стимулировать регенерацию, что делает их перспективным методом в лечении различных заболеваний, таких как:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Эректильная дисфункция (ЭД): Исследования показывают, что стволовые клетки, особенно мезенхимальные (из жировой ткани или костного мозга), могут способствовать восстановлению тканей и улучшению кровоснабжения полового члена, что помогает в улучшении эректильной функции. По этому направлению проводятся клинические исследования.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мужское бесплодие (олигоспермия, азооспермия): стволовая терапия рассматривается как потенциальный метод лечения необструктивной азооспермии (отсутствие сперматозоидов в эякуляте), с целью восстановления или регенерации повреждённых герминативных клеток в яичках. Хотя метод пока остается экспериментальным, первые результаты внушают надежду. Также исследуется возможность улучшения при олигоспермии (низком количестве сперматозоидов).</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Болезнь Пейрони: заболевание сопровождается образованием фиброзных бляшек в половом члене, вызывая его искривление и боль. Стволовая терапия изучается как малоинвазивный способ уменьшения бляшек, снятия боли и улучшения эректильной функции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Неврологические заболевания: хотя эти состояния не являются специфическими только для мужчин, терапия стволовыми клетками исследуется при болезнях Альцгеймера, Паркинсона и рассеянном склерозе. Стволовые клетки могут способствовать замене повреждённых нейронов или обеспечивать нейропротекцию.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сердечно-сосудистые заболевания (ишемическая болезнь сердца): ведутся исследования по использованию стволовых клеток для восстановления сердечной ткани и улучшения функции сердца у пациентов с ишемической болезнью.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Аутоиммунные заболевания (волчанка, язвенный колит): благодаря выраженным иммуномодулирующим свойствам, стволовые клетки активно изучаются как перспективный метод терапии аутоиммунных заболеваний, включая волчанку и язвенный колит.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Осложнения, связанные с диабетом: Ведутся исследования использования терапии стволовыми клетками для лечения осложнений диабета, таких как эректильная дисфункция и возможная диабетическая нейропатия.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Омоложение и борьба со старением: также терапия рекламируется как метод общего омоложения организма и замедления возрастных изменений.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Важно иметь реалистичные ожидания и понимать, что терапия стволовыми клетками остаётся активно развивающимся направлением медицины. Эффективность может варьироваться в зависимости от состояния пациента и конкретного диагноза. AZPO Health сотрудничает с квалифицированными медицинскими специалистами, которые проводят всестороннюю оценку и помогают понять, какие именно результаты можно ожидать в вашем случае.</p>
+<h3 dir="ltr">Реальные отзывы пациентов&nbsp;</h3>
+<p dir="ltr">Джон, 55 лет, Стамбул:</p>
+<p dir="ltr">&laquo;Много лет эректильная дисфункция отбрасывала тень на мою жизнь. Я перепробовал разные препараты, но результат оставался неудовлетворительным. Это подорвало мою уверенность и близость в отношениях. Когда я узнал о терапии стволовыми клетками в Турции через AZPO Health, решился попробовать. С самого начала &mdash; от консультации до самой процедуры &mdash; всё было организовано профессионально и с заботой. Это не дало мгновенного результата, но в течение следующих месяцев я начал замечать устойчивое улучшение. Я снова почувствовал себя уверенно&nbsp; &mdash; вернул то, что уже считал утраченной частью себя&raquo;.</p>
+<p dir="ltr">Дэвид, 48 лет, Лондон:</p>
+<p dir="ltr">&laquo;Диагноз &mdash; начальная стадия болезни Пейрони &mdash; стал настоящим ударом. Боль, искривление, напряженность в отношениях.&nbsp; Все это подтачивало мою уверенность. Хирургическое вмешательство казалось слишком радикальным, и я стал искать альтернативу. С AZPO Health я вышел на клинику в Аланье, где предлагали терапию стволовыми клетками. Врачи всё подробно объяснили, и мы вместе выстроили реалистичные ожидания. После курса лечения боль ушла почти полностью, а искривление стало менее выраженным. Это не просто облегчение &mdash; это возвращение к полноценной жизни&raquo;.</p>
+<p dir="ltr">Майкл, 62 года, Берлин:</p>
+<p dir="ltr">&laquo;Симптомы болезни Паркинсона постепенно осложняли повседневную жизнь. Медикаменты помогали, но не останавливали прогресс. Я стал искать подходы, способные замедлить развитие болезни. Благодаря AZPO Health я узнал о терапии стволовыми клетками в Турции и прошёл курс в Стамбуле. Хотя прошло не так много времени, я уже заметил обнадеживающие изменения в координации и моторике. Внимание и забота со стороны команды были на высоком уровне. И теперь я смотрю в будущее с надеждой&raquo;.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">AZPO Health &mdash; ваш проводник в мир регенеративной медицины</h2>
+<p dir="ltr">AZPO Health &mdash; эксперт в области медицинского туризма в Турции, которому доверяют пациенты со всего мира. Мы помогаем пациентам из разных стран находить высококлассные клиники и специалистов, предлагающих эффективные решения в области регенеративной медицины. Мы знаем, что решение отправиться на лечение за границу требует доверия &mdash; именно поэтому делаем все, чтобы этот путь был понятным, комфортным и безопасным.</p>
+<p dir="ltr">Качество и экспертность &mdash; основа нашей работы</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мы сотрудничаем с тщательно отобранными клиниками и сертифицированными врачами, имеющими опыт в терапии стволовыми клетками и смежных направлениях.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Все наши партнеры работают по международным стандартам и применяют современные медицинские технологии.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Вы получаете полную, честную информацию и персональное сопровождение на каждом этапе.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мы делаем акцент на прозрачной и понятной коммуникации &mdash; чтобы вы точно знали, что вас ждет и какие есть варианты.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Организация вашего лечения за рубежом</p>
+<p dir="ltr">Хотя AZPO Health не проводит медицинских процедур напрямую, мы &mdash; ваш мост к передовому лечению в Турции. Вот как мы можем вам помочь:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подбор клиник и специалистов: мы подберем проверенные клиники в Стамбуле, Аланье, Анталии и других городах, соответствующие вашим индивидуальным запросам.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Организация консультаций: поможем связаться с врачами, чтобы вы могли задать вопросы и пройти предварительную оценку.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Достоверная информация: предоставим исчерпывающие сведения о процедурах, клиниках и особенностях лечения в Турции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помощь с логистикой: хотя мы не занимаемся прямым бронированием, но с радостью поможем вам сориентироваться в вопросах проживания и других деталей поездки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддержка на каждом этапе: наша команда на связи до, во время и после вашей медицинской поездки.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">В AZPO Health мы ставим во главу угла заботу о каждом пациенте и стремимся сделать его опыт максимально комфортным и результативным. Мы ценим доверие, открытость и высокий уровень медицинской помощи &mdash; ключевые принципы, на которых строится медицинский туризм.</p>
+<h3 dir="ltr">Начните путь к восстановлению здоровья и жизненных сил</h3>
+<p dir="ltr">Ищете современное решение для улучшения мужского здоровья и общего самочувствия? Стволовая терапия, которую предлагает AZPO Health в Турции, представляет собой инновационный и перспективный метод восстановления. Свяжитесь с нами уже сегодня, чтобы получить бесплатную консультацию и индивидуальный расчёт стоимости. Мы поможем вам найти проверенные клиники и квалифицированных специалистов, которые подберут оптимальное лечение, соответствующее именно вашим потребностям. Сделайте уверенный шаг навстречу крепкому здоровью и новому качеству жизни.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">As we navigate life, men may encounter various health issues that impact their quality of life. Stem cell therapy offers a promising avenue by utilizing the body&rsquo;s remarkable ability to repair and regenerate damaged tissues. AZPO Health connects you with leading clinics in Turkey, providing access to this cutting-edge field of regenerative medicine.</p>
 <h3 dir="ltr">Why Choose Turkey for Stem Cell Therapy for Men in 2025?</h3>
 <p dir="ltr">Turkey has emerged as a prominent global hub for medical tourism, and for good reason. In 2023, over 1.5 million patients utilized a medical tourism platform specializing in Turkey. The country attracts a significant number of individuals seeking various medical treatments, including innovative therapies like stem cell therapy. There are several compelling reasons why choosing Turkey for your stem cell therapy needs in 2025 is a wise decision:</p>
@@ -18733,86 +19467,341 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Ортопедическая терапия стволовыми клетками: верните себе активную жизнь"
           : "Orthopedic Stem Cell Therapy: Reclaim Your Active Life",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "А что если восстановление суставов возможно без операций — с помощью ресурсов собственного организма? Ортопедическая терапия стволовыми клетками активирует естественные процессы регенерации, способствуя восстановлению хрящей, снижению боли и возвращению подвижности. Артрит, спортивные травмы, хроническая боль — этот инновационный подход помогает вернуться к активной жизни: свободной, сильной и без боли!"
           : "What if you could heal your joints naturally—without surgery? Orthopedic Stem Cell Therapy uses your body’s own regenerative power to repair cartilage, reduce pain, and restore mobility. Whether it’s arthritis, sports injuries, or chronic pain, this cutting-edge treatment gets you moving again—stronger, faster, pain-free!",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Natural Healing",
+            title: locale === "ru" ? "Натуральное восстановление" : "Natural Healing",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "активация саморегенерации без операций."
                 : "Stem cells boost self-repair, reducing invasive treatment needs.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Versatile Applications",
+            title: locale === "ru" ? "Универсальность" : "Versatile Applications",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "применяется в разных областях медицины."
                 : "Used in dermatology, orthopedics, cardiology, neurology, and cosmetic fields.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Regenerative Power",
+            title: locale === "ru" ? "Регенерация" : "Regenerative Power",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "восстановление тканей за счёт превращения в нужные клетки."
                 : "Cells differentiate into various types to address diverse tissue damage.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Who It’s For",
+            header: locale === "ru" ? null : "Who It’s For",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? null
                 : "Chronic orthopedic conditions:Such as joint degeneration, ligament injuries, or delayed fracture healing.Cardiac conditions:Such as ischemic heart disease or heart failure.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? ""
+                ? "Терапия стволовыми клетками — это современное направление в лечении ортопедических заболеваний, основанное на способности организма к самовосстановлению. Метод использует стволовые клетки — уникальные клетки, способные превращаться в различные типы тканей и восстанавливать повреждённые суставы, хрящи, сухожилия и другие элементы опорно-двигательной системы."
                 : "Stem cell therapy has emerged as a promising treatment for various orthopedic conditions, leveraging the body’s natural ability to heal and regenerate tissues. This innovative approach involves using stem cells, which have the unique potential to transform into specialized cells, to repair damaged joints, tendons, cartilage, and other musculoskeletal structures.",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Лечение проходит в несколько этапов. Сначала проводится **сбор стволовых клеток**, чаще всего из жировой ткани, так как она является богатым и легко доступным источником. Затем в **лабораторных условиях клетки изолируют, очищают и подготавливают** для достижения наилучшего терапевтического эффекта. После подготовки **стволовые клетки вводятся** в зону повреждений — инъекционно или с помощью хирургической процедуры — для стимуляции регенерации и уменьшения воспаления. Завершающий этап — **восстановление и наблюдение**, в течение которого пациенты находятся под контролем специалистов. Первые улучшения обычно заметны уже через несколько недель и усиливаются со временем."
                 : "For conditions requiring surgery, stem cells are applied during the procedure, ensuring precise delivery to the affected area.Stem cells are administered to damaged or diseased tissues through injection or surgical procedures. The cells initiate repair by promoting tissue regeneration and reducing inflammation.",
           },
         ],
       },
-      faqs: [],
-      posts: [],
-      preList: [],
+      faqs: [
+        {
+          question : locale === "ru" ? "Какие заболевания можно лечить с помощью стволовых клеток?" : "What can it treat?",
+          answer : locale === "ru" ? "Артрит, травмы сухожилий, дегенерация суставов и другие заболевания." : "Arthritis, tendon injuries, joint degeneration"
+        },
+        {
+          question : locale === "ru" ? "Как долго длится эффект?" : "How long does it last?",
+          answer : locale === "ru" ? "Результаты могут варьироваться, обычно от нескольких месяцев до нескольких лет." : "Results vary but can last months to years"
+        },
+        {
+          question : locale === "ru" ? "Могут ли стволовые клетки заменить операцию?" : "Will it replace surgery?",
+          answer : locale === "ru" ? "В некоторых случаях да, особенно на ранних и умеренных стадиях заболевания." : "Sometimes – helpful for early to moderate cases"
+        },
+        {
+          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer : locale === "ru" ? "Обычно ощущается легкая болезненность, серьезной боли не ожидается." : "Mild soreness, but no major pain expected"
+        },
+        {
+          question : locale === "ru" ? "Когда я смогу вернуться к спорту?" : "How soon can I return to sports?",
+          answer : locale === "ru" ? "Обычно через 2–6 недель, в зависимости от области лечения." : "2–6 weeks depending on area treated"
+        },
+        {
+          question : locale === "ru" ? "Насколько безопасна терапия стволовыми клетками?" : "How safe is stem cell therapy?",
+          answer : locale === "ru" ? "Это безопасная процедура, если она проводится опытными специалистами." : "It's safe when done by experienced professionals."
+        }
+      ],
+      posts: [
+        locale === "ru" ? "Отдыхайте в течение нескольких дней." : "Rest the treated joint for a few days",
+        locale === "ru" ? "Используйте компрессию, подъем и лед при необходимости." : "Use compression, elevation, and ice if needed",
+        locale === "ru" ? "Избегайте НПВП, если только врач не рекомендовал их." : "Avoid NSAIDs unless directed",
+        locale === "ru" ? "Возобновляйте легкую активность согласно рекомендациям (избегайте ударных нагрузок)." : "Resume light movement as advised (no high-impact activity)",
+        locale === "ru" ? "Пройдите контрольный осмотр для оценки прогресса." : "Follow up for progress evaluation",
+        locale === "ru" ? "Обратитесь к врачу, если ощущаете боль или дискомфорт." : "Consult your doctor if you experience pain or discomfort.",
+        locale === "ru" ? "Продолжайте поддерживать водный баланс, употребляя достаточное количество воды." : "Continue to drink adequate amounts of water.",
+        locale === "ru" ? "Сократите потребление табака и алкоголя." : "Reduce cigarette and alcohol consumption.",
+        locale === "ru" ? "Оберегайте обработанную область от травм." : "Protect the treated area.",
+        locale === "ru" ? "Следите за контрольным весом." : "Pay attention to weight control.",
+        locale === "ru" ? "Будьте терпеливы - восстановление может занять время." : "Recovery may take time, so be patient."
+      ],
+      preList: [
+        locale === "ru" ? "Пройдите МРТ или рентген для оценки повреждений суставов или тканей." : "MRI or X-rays to assess joint or tissue damage",
+        locale === "ru" ? "Прекратите прием противовоспалительных средств за 1 неделю до процедуры." : "Discontinue anti-inflammatories 1 week before",
+        locale === "ru" ? "Избегайте инъекций кортикостероидов перед лечением." : "Avoid corticosteroid injections prior to procedure",
+        locale === "ru" ? "Воздержитесь от курения и следуйте диетическим рекомендациям." : "Stop smoking and follow dietary advice",
+        locale === "ru" ? "Поделитесь с врачом своей полной медицинской историей." : "Inform your doctor of your complete medical history.",
+        locale === "ru" ? "Позаботьтесь о достаточном отдыхе перед процедурой." : "Make sure to rest."
+      ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Терапия стволовыми клетками — это прорыв в современной медицине, дарующий шанс тем, кто ранее считал свое состояние безнадежным. Используя мощный регенеративный потенциал организма, этот метод способствует естественному восстановлению, улучшает качество жизни и открывает новые горизонты в лечении и профилактике заболеваний. При профессиональной диагностике и индивидуальном подходе терапия становится частью будущего медицины — безопасной, эффективной и по-настоящему трансформирующей жизнь."
             : "Stem cell therapy is a revolutionary medical treatment offering hope to patients with conditions previously deemed untreatable. By harnessing the regenerative power of stem cells, this therapy promotes natural healing, improves quality of life, and provides solutions for a wide range of medical and cosmetic needs. With proper evaluation and expert care, stem cell therapy continues to pave the way for advanced regenerative medicine, transforming lives one treatment at a time.",
-      },
-
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Corneal-Transplantation",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для ортопедической терапии стволовыми клетками?"
             : "Why Choose Turkey for Orthopedic Stem Cell Therapy?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Турция стала одним из самых популярных направлений для медицинского туризма, особенно в сфере ортопедической терапии стволовыми клетками &mdash; и на это есть веские причины. AZPO Health сочетает качество, доступность и комплексный подход, обеспечивая пациентам высокий уровень медицинской помощи и комфорта.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высокий уровень медицинской квалификации: турецкие клиники оснащены передовыми технологиями и укомплектованы опытными и высококвалифицированными врачами. AZPO Health сотрудничает с ведущими врачами, специализирующимися на ортопедической терапии стволовыми клетками, что гарантирует пациентам качественное и профессиональное лечение. Не случайно многие иностранные студенты-медики приезжают в Турцию для прохождения обучения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступная стоимость: стоимость ортопедической терапии стволовыми клетками в Турции значительно ниже, чем в большинстве европейских стран, США или Великобритании. При этом доступность не влияет на качество: пациенты получают передовое лечение по разумной цене.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексные пакеты: AZPO Health предлагает &laquo;все включено&raquo; &mdash; медицинские процедуры, проживание, трансфер из аэропорта и послеоперационное сопровождение. Такой подход обеспечивает комфорт и спокойствие для иностранных пациентов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гармоничное сочетание лечения и отдыха: Турция &mdash; это не только медицина, но и удивительная страна с богатой историей, культурой и природой. Совмещая лечение с путешествием, пациенты получают особую атмосферу восстановления. Турция входит в число самых посещаемых стран мира, предлагая уникальное сочетание лечебного и туристического опыта.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Что такое ортопедическая терапия стволовыми клетками?</h3>
+<p dir="ltr">Ортопедическая терапия стволовыми клетками &mdash; это современный метод лечения, использующий естественные способности организма к восстановлению поврежденных тканей опорно-двигательной системы. Стволовые клетки уникальны тем, что могут превращаться в специализированные клетки &mdash; такие как хрящевая, костная, сухожильная или мышечная ткань. При введении в поврежденные участки эти клетки способствуют регенерации тканей, уменьшению боли и улучшению функций суставов и конечностей.</p>
+<h3 dir="ltr">Методы ортопедической терапии стволовыми клетками</h3>
+<p dir="ltr">Существует несколько методов введения стволовых клеток при ортопедических заболеваниях:</p>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p dir="ltr">1. Концентрат костномозгового аспирата (BMAC):</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Стволовые клетки извлекаются из костного мозга пациента, обычно из подвздошной кости таза.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полученный материал обрабатывается для концентрации стволовых клеток.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Концентрированные клетки вводятся в поврежденную область (например, в сустав или сухожилие) под контролем визуализации (УЗИ, рентген).</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Метод BMAC часто применяется при остеоартрите, повреждениях хрящей и незаживающих переломах.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p dir="ltr">2. Стволовые клетки, полученные из жировой ткани (ADSCs):</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Стволовые клетки извлекаются из жировой ткани пациента (обычно с области живота) с помощью малоинвазивной процедуры липосакции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Жировая ткань обрабатывается для выделения и концентрации стволовых клеток.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Концентрированные ADSCs вводятся в пораженную зону.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Эти клетки часто применяются при болях в суставах, повреждениях мягких тканей и дефектах костей. Жировая ткань считается удобным источником благодаря своей доступности и богатству клетками.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p dir="ltr">3. Стволовые клетки периферической крови (PBSC):</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">С помощью специальных факторов роста стволовые клетки мобилизуются из костного мозга в кровоток.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Из крови пациента берётся проба, а стволовые клетки отделяются в процессе, называемом аферез.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Собранные клетки вводятся в поражённую ортопедическую зону.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Метод PBSC применяется при аваскулярном некрозе и для стимуляции регенерации костной ткани.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h3 dir="ltr">Преимущества каждого метода</h3>
+<p dir="ltr">BMAC:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высокая концентрация факторов роста: усиливает восстановление тканей.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Аутологичный материал (собственные клетки пациента): минимизирует риск отторжения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Универсальность: эффективно применяется при широком спектре ортопедических патологий.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">ADSCs:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обилие клеток: позволяет легко получить большое количество стволовых клеток.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Минимально инвазивно: липосакция &mdash; простая и безопасная процедура.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Потенциал дифференциации: клетки способны превращаться в различные типы, необходимые для восстановления тканей.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">PBSC:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Безболезненный забор: не требует пункции костного мозга.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Системное воздействие: мобилизованные клетки могут оказывать более широкое регенеративное действие на организм.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Заболевания, поддающиеся лечению с помощью ортопедической терапии стволовыми клетками</h3>
+<p dir="ltr">Ортопедическая терапия стволовыми клетками эффективна при лечении широкого спектра заболеваний:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Остеоартрит: уменьшает боль и воспаление, стимулирует восстановление хрящевой ткани.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повреждения сухожилий: ускоряет заживление при тендините, &laquo;локте теннисиста&raquo;, разрывах вращательной манжеты плеча.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повреждения связок: способствует восстановлению при растяжениях и разрывах, в том числе связок коленного сустава (ACL, MCL и др.).</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Дефекты хряща: активирует рост новой хрящевой ткани в посаженных суставах.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Несрастающиеся переломы: стимулирует регенерацию костной ткани в случаях, когда обычное заживление не происходит.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Аваскулярный некроз: восстанавливает кровоснабжение и предотвращает разрушение костной ткани (например, при остеонекрозе головки бедренной кости).<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Процедура ортопедической терапии стволовыми клетками с AZPO Health построена на четком и индивидуальном подходе, направленном на максимальный комфорт и результат для пациента:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Первичная консультация<br><br></p>
+</li>
+</ol>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Проводится комплексная оценка состояния пациента: сбор анамнеза, анализ симптомов и постановка целей лечения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Назначаются диагностические исследования (рентген, МРТ и др.) для точного определения степени повреждений.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Врачебная команда оценивает показания к терапии стволовыми клетками, разъясняет возможные риски и преимущества.<br><br></p>
+</li>
+</ul>
+<ol start="2">
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Забор стволовых клеток<br><br></p>
+</li>
+</ol>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">В зависимости от выбранного метода (BMAC, ADSCs или PBSC), клетки извлекаются с помощью малоинвазивных технологий.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Процедура проводится под местной анестезией или лёгкой седацией для максимального комфорта пациента.<br><br></p>
+</li>
+</ul>
+<ol start="3">
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обработка клеток<br><br></p>
+</li>
+</ol>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Забранный материал отправляется в современную лабораторию, где клетки изолируются и концентрируются.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Проводится строгий контроль качества: проверяются чистота, жизнеспособность и активность клеток.<br><br></p>
+</li>
+</ul>
+<ol start="4">
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Введение клеток<br><br></p>
+</li>
+</ol>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Концентрированные стволовые клетки точно вводятся в зону повреждения под контролем УЗИ, флюороскопии или других методов визуализации.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">При необходимости применяются факторы роста или специальные матриксы для усиления регенеративного эффекта.<br><br></p>
+</li>
+</ul>
+<ol start="5">
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Постпроцедурный уход и реабилитация<br><br></p>
+</li>
+</ol>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пациент получает подробные рекомендации по восстановлению и обезболиванию.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Разрабатывается индивидуальная программа реабилитации для восстановления силы, подвижности и функции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Проводятся регулярные контрольные осмотры для оценки динамики и корректировки плана лечения.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Реальные истории, реальная надежда: отзывы пациентов</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Джон, 55 лет, пациент с остеоартритом:<br>&laquo;Я страдал от боли в колене многие годы, и ничего не помогало. После терапии стволовыми клетками в AZPO Health боль значительно уменьшилась, а подвижность улучшилась. Теперь я снова наслаждаюсь прогулками и играю с внуками!&raquo;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сара, 42 года, пациент с повреждением сухожилия: &laquo;Я &mdash; заядлая теннисистка и была очень расстроена, когда порвала ахиллово сухожилие. Терапия стволовыми клетками в AZPO Health помогла мне восстановиться быстрее, чем я ожидала, и уже через несколько месяцев я вернулась на корт!&raquo;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Дэвид, 60 лет, пациент с несросшимся переломом: &laquo;У меня была сломана нога, которая не заживала, и врачи говорили об ампутации. Терапия стволовыми клетками в AZPO Health дала мне второй шанс. Мой перелом наконец зажил, и теперь я могу ходить без боли!&raquo;<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Сделайте первый шаг к жизни без боли</h3>
+<p dir="ltr">Хотите узнать, как ортопедическая терапия стволовыми клетками с AZPO Health поможет вернуть активность? Свяжитесь с нами сегодня для бесплатной консультации и индивидуального расчета стоимости. Позвольте нам помочь вам начать путь к естественному исцелению и долгосрочному облегчению.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Turkey has become a popular destination for medical tourism, especially for orthopedic stem cell therapy, for several compelling reasons. AZPO Health combines quality, affordability, and comprehensive care to offer an exceptional experience.</p>
 <ul>
 <li dir="ltr" aria-level="1">
@@ -19040,139 +20029,227 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Терапия стволовыми клетками при неврологических заболеваниях в Турции — 2025"
           : "Neurological Stem Cell Therapy in Turkey 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Столкнулись ли вы или ваши близкие с неврологическими заболеваниями и ищете новые методы лечения?  В Турции доступны медицинские центры, специализирующиеся на лечении неврологических заболеваний с помощью стволовых клеток — инновационном методе, который может помочь восстановить здоровье. Свяжитесь с AZPO Health для консультации и подбора подходящего медицинского центра."
           : "Are you or a loved one facing the challenges of a neurological condition, longing for advancements that offer a ray of hope? In Turkey, you can find access to clinics specializing in stem cell therapies for neurological disorders, potentially offering a path toward improved well-being and a brighter future. Contact AZPO Health to explore your options for connecting with these specialized medical centers.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Neural Protection",
+            title: locale === "ru" ? "Нейропротекция" : "Neural Protection",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "выделение защитных веществ, предотвращающих повреждение нейронов и поддерживающих их выживание."
                 : "Stem cells release protective factors that prevent neuron damage and support survival.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Cell Growth",
+            title: locale === "ru" ? "Рост клеток" : "Cell Growth",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "замещение поврежденных нейронов и глиальных клеток с восстановлением нервных связей."
                 : "Replaces damaged neurons and glial cells to repair neural pathways.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Health Benefits",
+            title: locale === "ru" ? "Общее улучшение здоровья" : "Health Benefits",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "снижение воспаления, улучшение моторных, сенсорных и когнитивных функций."
                 : "Reduces inflammation and improves motor, sensory and cognitive functions.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Терапия стволовыми клетками направлена на восстановление повреждённых нейронов, снижение воспаления и стимуляцию регенерации. Она применяется при таких состояниях, как болезнь Паркинсона, инсульт, боковой амиотрофический склероз (БАС), рассеянный склероз и травмы спинного мозга. Терапия способствует замещению утраченных клеток, защите сохранившихся нейронов и ускорению восстановления. Несмотря на перспективы, вопросы по интеграции клеток и долгосрочной эффективности остаются предметом активных исследований."
                 : "Stem cell therapy in neurological diseases aims to repair damaged neurons, reduce inflammation, and promote regeneration. It offers potential treatment for conditions like Parkinson’s, stroke, ALS, multiple sclerosis, and spinal cord injuries by replacing lost cells, protecting existing neurons, and enhancing recovery. While promising, challenges like cell integration and long-term effectiveness remain areas of ongoing research.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "Who It’s For",
+            header: locale === "ru" ? null : "Who It’s For",
             desc:
               locale === "ru"
-                ? ""
+                ? null
                 : "Stem cell therapy helps repair neurons and promote regeneration in neurological disorders. It replaces lost neurons in Parkinson’s, aids recovery in stroke, and preserves brain function in Huntington’s. In ALS, it protects motor neurons to slow progression, while in MS, it enhances remyelination and reduces inflammation. For spinal cord injuries, it supports nerve repair with some functional recovery but carries risks.",
           },
           {
             header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Стволовые клетки могут быть получены из костного мозга, пуповинной крови или тканей плода в зависимости от целей лечения. После извлечения они проходят этап очистки и, при необходимости, модификации для усиления терапевтического эффекта. Введение клеток осуществляется с помощью инъекций или внутривенно, под контролем визуализации для точности процедуры. После введения стволовые клетки либо дифференцируются в новые клетки, либо выделяют биологически активные вещества, способствующие восстановлению повреждённых тканей."
                 : "Stem Cell Sources: Derived from bone marrow, cord blood, or fetal tissues based on treatment needs. Processing: Purified and sometimes modified for enhanced therapeutic effects. Administration: Delivered via injection or bloodstream with imaging guidance.  Functionality: Differentiate into new cells or release factors to aid repair.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What conditions does it help?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Parkinson’s, MS, stroke recovery, spinal injuries",
+          question : locale === "ru" ? "Какие заболевания могут лечиться с помощью стволовых клеток?" : "What conditions does it help?",
+          answer : locale === "ru" ? "Болезнь Паркинсона, рассеянный склероз, восстановление после инсульта, травмы спины." : "Parkinson’s, MS, stroke recovery, spinal injuries"
         },
         {
-          question: locale === "ru" ? "" : "Is it proven?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Still under research but promising in some areas",
+          question : locale === "ru" ? "Подтверждены ли результаты терапии стволовыми клетками?" : "Is it proven?",
+          answer : locale === "ru" ? "Терапия находится на стадии исследования, однако в некоторых областях результаты многообещающие." : "Still under research but promising in some areas"
         },
         {
-          question: locale === "ru" ? "" : "How are cells administered?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Via lumbar puncture, IV, or targeted injection",
+          question : locale === "ru" ? "Как вводятся стволовые клетки?" : "How are cells administered?",
+          answer : locale === "ru" ? "Клетки могут вводиться через люмбальную пункцию, внутривенно или целенаправленную инъекцию." : "Via lumbar puncture, IV, or targeted injection"
         },
         {
-          question: locale === "ru" ? "" : "Are results immediate?",
-          answer:
-            locale === "ru" ? "" : "No – improvements take weeks to months",
+          question : locale === "ru" ? "Существуют ли немедленные результаты?" : "Are results immediate?",
+          answer : locale === "ru" ? "Улучшения обычно происходят через несколько недель или месяцев." : "No – improvements take weeks to months"
         },
         {
-          question: locale === "ru" ? "" : "Are there risks?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Low, but infection and inflammation are possible",
-        },
+          question : locale === "ru" ? "Есть ли риски при терапии стволовыми клетками?" : "Are there risks?",
+          answer : locale === "ru" ? "Риски низкие, но возможны инфекции и воспаления." : "Low, but infection and inflammation are possible"
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Monitor for any changes in symptoms",
-        locale === "ru"
-          ? ""
-          : "Continue existing medications unless instructed",
-        locale === "ru" ? "" : "Avoid heavy exertion in first few days",
-        locale === "ru"
-          ? ""
-          : "Report any signs of fever, headache, or worsening function",
-        locale === "ru" ? "" : "Attend neurologist follow-ups as scheduled",
-        locale === "ru" ? "" : "Report any pain or discomfort.",
-        locale === "ru" ? "" : "Drink an adequate amount of water.",
-        locale === "ru" ? "" : "Avoid excessive stress and anxiety.",
-        locale === "ru" ? "" : "Avoid smoking and alcohol use.",
-        locale === "ru" ? "" : "Gradually increase physical activities.",
+        locale === "ru" ? "Внимательно следите за изменениями в симптомах." : "Monitor for any changes in symptoms",
+        locale === "ru" ? "Продолжайте прием назначенных лекарств, если не указано иное." : "Continue existing medications unless instructed",
+        locale === "ru" ? "В первые несколько дней избегайте интенсивных физических нагрузок." : "Avoid heavy exertion in first few days",
+        locale === "ru" ? "При появлении лихорадки, головной боли или ухудшении состояния немедленно сообщите об этом врачу." : "Report any signs of fever, headache, or worsening function",
+        locale === "ru" ? "Регулярно посещайте плановые консультации у невролога." : "Attend neurologist follow-ups as scheduled",
+        locale === "ru" ? "В случае боли или дискомфорта не стесняйтесь обратиться за помощью." : "Report any pain or discomfort.",
+        locale === "ru" ? "Убедитесь, что поддерживаете водный баланс, употребляя достаточное количество жидкости." : "Drink an adequate amount of water.",
+        locale === "ru" ? "Старайтесь минимизировать стресс и беспокойство." : "Avoid excessive stress and anxiety.",
+        locale === "ru" ? "Ограничьте курение и употребление алкоголя." : "Avoid smoking and alcohol use.",
+        locale === "ru" ? "Постепенно увеличивайте физическую активность, следуя рекомендациям специалиста." : "Gradually increase physical activities."
       ],
       preList: [
-        locale === "ru"
-          ? ""
-          : "Review of medical history and current therapies",
-        locale === "ru"
-          ? ""
-          : "Discuss goals and expected outcomes with neurologist",
-        locale === "ru" ? "" : "May require lab work or genetic screening",
-        locale === "ru" ? "" : "Reduce cigarette and alcohol use.",
-        locale === "ru" ? "" : "Ensure adequate sleep and rest.",
-        locale === "ru" ? "" : "Share your psychological condition.",
+        locale === "ru" ? "Пройдите обследование (МРТ, КТ и другие методы)." : "Review of medical history and current therapies",
+        locale === "ru" ? "Изучите свою медицинскую историю и текущее лечение." : "Discuss goals and expected outcomes with neurologist",
+        locale === "ru" ? "Обсудите с неврологом цели и ожидаемые результаты лечения." : "May require lab work or genetic screening",
+        locale === "ru" ? "Возможно, потребуется анализ крови или генетический скрининг." : "Reduce cigarette and alcohol use.",
+        locale === "ru" ? "Сократите потребление сигарет и алкоголя." : "Ensure adequate sleep and rest.",
+        locale === "ru" ? "Обеспечьте себе достаточный сон и отдых." : "Share your psychological condition."
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Терапия стволовыми клетками — перспективное направление в лечении неврологических заболеваний, открывающее возможности для регенерации, нейропротекции и восстановления функций. Однако методика все еще развивается и требует дальнейших исследований для оптимизации, повышения безопасности и улучшения результатов. Несмотря на это, терапия уже дарит надежду пациентам с тяжелыми неврологическими заболеваниями и открывает двери в новую эпоху регенеративной медицины."
             : "Stem cell therapy represents a promising frontier in the treatment of neurological disorders, offering potential for regeneration, neuroprotection, and functional recovery. However, the therapy is still in its developmental stages, requiring further research to optimize techniques, ensure safety, and improve outcomes. Despite these challenges, stem cell therapy continues to provide hope for patients with debilitating neurological conditions, paving the way for a new era in regenerative medicine.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Подробная информация о терапии стволовыми клетками при неврологических заболеваниях в Турции"
             : "Detailed Information on Neurological Stem Cell Therapy in Turkey",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Разбираться в сложностях неврологических заболеваний бывает очень сложно, а поиск эффективных методов лечения зачастую сопровождается неопределенностью. Терапия стволовыми клетками &mdash; одно из многообещающих направлений в современной медицине и перспективный способ лечения различных неврологических расстройств. AZPO Health готова помочь вам узнать о возможностях прохождения этой инновационной терапии в Турции.</p>
+<h3 dir="ltr">Почему стоит выбрать Турцию для терапии стволовыми клетками при неврологических заболеваниях?</h3>
+<p dir="ltr">Турция становится все более популярным направлением для медицинского туризма по ряду причин. Одним из главных факторов является более доступная стоимость медицинских услуг по сравнению со многими странами Европы и США. Это дает возможность получить передовое лечение, включая терапию стволовыми клетками, без чрезмерных затрат.</p>
+<p dir="ltr">Кроме того, Турция обладает современной системой здравоохранения с высококвалифицированными специалистами и современными клиниками. Многие медицинские учреждения, с которыми сотрудничает AZPO Health, имеют опыт работы в различных узкоспециализированных областях, включая инновационные методы лечения, такие как терапия стволовыми клетками. Особое внимание к качеству и заботе о пациентах делает Турцию привлекательным выбором для тех, кто ищет медицинскую помощь за рубежом.</p>
+<p dir="ltr">Дополнительно, выгодное географическое расположение Турции и ее богатое культурное наследие позволяют пациентам и их семьям совместить лечение с возможностью посетить уникальные и красивые места страны. Особенно популярен город Стамбул &mdash; культурный центр с богатой историей и современными удобствами, что помогает создать комфортные и позитивные условия во время лечения.</p>
+<p dir="ltr">AZPO Health выступает в роли надежного посредника, помогая связаться с проверенными клиниками и опытными специалистами в Турции, предлагающими терапию стволовыми клетками при неврологических заболеваниях. Мы понимаем, насколько важно подобрать именно тот медицинский центр, который соответствует вашим индивидуальным потребностям, и стремимся предоставить всю необходимую информацию и поддержку для принятия взвешенного решения.</p>
+<p><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Как работает терапия стволовыми клетками при неврологических заболеваниях<br><br></h3>
+<p dir="ltr">Терапия стволовыми клетками при неврологических расстройствах предполагает использование стволовых клеток для возможного восстановления повреждений, вызванных заболеванием, или для модуляции его течения. Стволовые клетки &mdash; это уникальные клетки, способные дифференцироваться в различные типы клеток организма и обладающие способностью к самообновлению. Благодаря этим свойствам они активно изучаются в области регенеративной медицины.</p>
+<p dir="ltr">Различные типы стволовых клеток исследуются с целью оценки их терапевтического потенциала при неврологических заболеваниях. К основным видам относятся:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мезенхимальные стволовые клетки (МСК): мультипотентные стромальные клетки, способные превращаться в костные, хрящевые, жировые клетки и другие. Обычно их получают из жировой ткани, костного мозга или пуповинной крови. МСК обладают иммуномодулирующими и нейропротекторными свойствами, что делает их перспективными для лечения воспалительных и дегенеративных неврологических заболеваний.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гематопоэтические стволовые клетки (ГСК): клетки, образующие кровь, преимущественно находящиеся в костном мозге. Трансплантация ГСК является проверенным методом лечения некоторых видов рака крови и аутоиммунных заболеваний нервной системы.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Нейральные стволовые клетки (НСК): способные к самообновлению клетки, которые могут дифференцироваться в основные типы клеток нервной системы &mdash; нейроны, астроциты и олигодендроциты. Ведутся исследования по применению НСК для замены поврежденных нервных тканей.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индуцированные плюрипотентные стволовые клетки (ИПСК): взрослые клетки, перепрограммированные в эмбрионоподобное состояние, что позволяет им превращаться в любые типы клеток организма. Преимущество иПСК в том, что для их получения не требуется эмбриональная ткань, а клетки могут быть созданы из собственных тканей пациента, что снижает риск иммунного отторжения.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Методы проведения терапии зависят от типа стволовых клеток и характера заболевания. Основные подходы включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Внутривенное введение: клетки вводятся в кровоток через капельницу, что позволяет им циркулировать и достигать пораженных участков нервной системы.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Прямое введение: клетки вводятся непосредственно в поврежденную область мозга или спинного мозга для доставки более высокой концентрации клеток в место поражения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Внутриспинномозговое введение: клетки вводятся в спинномозговую жидкость, окружающую головной и спинной мозг, что обеспечивает более эффективную доставку в центральную нервную систему.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Потенциальные преимущества терапии стволовыми клетками при неврологических заболеваниях активно изучаются, но предварительные результаты выглядят многообещающими:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Снижение воспаления: многие неврологические заболевания сопровождаются хроническим воспалением, способствующим повреждению тканей. МСК обладают иммуномодулирующим эффектом, который может помочь уменьшить воспаление в нервной системе.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Нейропротекция: стволовые клетки выделяют факторы роста и другие вещества, которые защищают нейроны от повреждений и поддерживают их выживание.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Стимуляция регенерации: в ряде случаев клетки могут дифференцироваться в нервные клетки или активировать собственные регенеративные механизмы организма для восстановления повреждённых тканей.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение функций: за счет воздействия на основные патологические процессы терапия может способствовать улучшению моторных, когнитивных и других неврологических функций.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Важно понимать, что терапия стволовыми клетками при неврологических заболеваниях &mdash; это всё ещё развивающаяся область медицины. Несмотря на растущее количество доказательств её потенциала, это не универсальное и гарантированное средство лечения. Эффективность зависит от многих факторов: конкретного заболевания, стадии болезни, типа и источника стволовых клеток, а также индивидуальной реакции пациента. AZPO Health поможет вам связаться с клиниками, предоставляющими подробную информацию о доступных методах терапии стволовыми клетками, подходящих именно для вашего случая.</p>
+<p dir="ltr">Заболевания, лечащиеся с помощью терапии стволовыми клетками</p>
+<p dir="ltr">Терапия стволовыми клетками применяется для лечения различных заболеваний, включая:</p>
+<p dir="ltr">Гематологические заболевания</p>
+<p dir="ltr">Лейкемия, лимфома и апластическая анемия &mdash; трансплантация стволовых клеток способствует восстановлению клеток, формирующих кровь, и дает надежду пациентам с заболеваниями крови.</p>
+<h3 dir="ltr">Нарушения развития</h3>
+<h3 dir="ltr">Детский церебральный паралич, расстройства аутистического спектра &mdash; исследования показывают, что стволовые клетки могут снижать воспаление в мозге и поддерживать восстановление нервных тканей, что потенциально улучшает моторные функции и когнитивные способности у некоторых пациентов.</h3>
+<p dir="ltr">Неврологические заболевания</p>
+<p dir="ltr"><br>Рассеянный склероз, болезнь Паркинсона &mdash; стволовые клетки способны замедлять прогрессирование болезни, способствуя восстановлению нервных клеток и улучшению функций мозга. Инсульт и травмы спинного мозга &mdash; стволовые клетки могут поддерживать регенерацию нервных тканей, помогая пациентам восстанавливать утраченные функции после серьезных повреждений.</p>
+<p dir="ltr">Сердечно-сосудистые заболевания</p>
+<p dir="ltr">Восстановление после инфаркта &mdash; стволовые клетки способствуют ремонту сердечной ткани и снижению обширных повреждений после инфаркта.</p>
+<p dir="ltr">Аутоиммунные заболевания</p>
+<p dir="ltr">Ревматоидный артрит, волчанка &mdash; стволовые клетки помогают регулировать иммунную систему, снижая воспаление и замедляя прогрессирование аутоиммунных заболеваний.</p>
+<p dir="ltr">Эндокринные заболевания</p>
+<p dir="ltr">Сахарный диабет 1 типа &mdash; изучаются возможности стволовых клеток по регенерации клеток поджелудочной железы, ответственных за выработку инсулина.</p>
+<p dir="ltr">Дегенеративные заболевания суставов</p>
+<p dir="ltr">Остеоартрит, повреждения хрящей и связок &mdash; стволовые клетки могут способствовать регенерации суставных тканей, улучшая подвижность и снижая боль.</p>
+<p dir="ltr">Офтальмологические заболевания</p>
+<p dir="ltr">Возрастная макулярная дегенерация, пигментный ретинит &mdash; стволовые клетки исследуются как способ регенерации сетчатки, что потенциально помогает пациентам с прогрессирующей потерей зрения.</p>
+<p dir="ltr">Косметические и дерматологические применения</p>
+<p dir="ltr">Выпадение волос &mdash; терапия стволовыми клетками в сочетании с PRP укрепляет волосяные фолликулы, увеличивает густоту волос и стимулирует их рост.</p>
+<p dir="ltr">Омоложение кожи&nbsp;</p>
+<p dir="ltr">Стволовые клетки улучшают текстуру кожи, уменьшают морщины и стимулируют выработку коллагена, улучшая внешний вид кожи.</p>
+<p dir="ltr">Важно!</p>
+<p dir="ltr">Хотя терапия стволовыми клетками демонстрирует многообещающие результаты при лечении этих заболеваний, она не гарантирует полного излечения. В ряде случаев терапия может замедлить прогрессирование болезни, облегчить симптомы и повысить качество жизни, но полное восстановление не всегда возможно. Результаты зависят от конкретного заболевания, состояния пациента и реакции организма на лечение.</p>
+<h3 dir="ltr">Реальные истории пациентов&nbsp;</h3>
+<p dir="ltr">Сохраняя конфиденциальность пациентов и клиник, мы делимся примерами реальных историй людей, которые прошли нейрональную стволовую терапию в Турции при поддержке AZPO Health:&nbsp;</p>
+<h3 dir="ltr">Отзыв 1: улучшение симптомов рассеянного склероза</h3>
+<p dir="ltr">&laquo;Много лет я боролась с изнуряющими проявлениями рассеянного склероза. Моя подвижность ухудшалась, а усталость делала повседневные задачи крайне трудными. После долгих поисков вариантов лечения я связалась с AZPO Health и узнала о клиниках в Турции, предлагающих стволовую терапию для пациентов с РС. Команда AZPO была невероятно отзывчивой &mdash; они ответили на все мои вопросы и помогли подобрать специализированную клинику.Лечение включало несколько инфузий мезенхимальных стволовых клеток. Это не было мгновенным чудом, но в течение следующих месяцев я заметила постепенное и значительное улучшение &mdash; у меня появилось больше энергии, и я стала легче двигаться. Это дало мне надежду и улучшило качество жизни.&raquo;</p>
+<h3 dir="ltr">Отзыв 2: улучшение моторных функций после травмы спинного мозга</h3>
+<p dir="ltr">&laquo;После травмы спинного мозга мне сказали, что значительное восстановление двигательных функций маловероятно. Но я не сдался и вместе с семьёй начал искать альтернативные методы. Мы узнали о терапии стволовыми клетками и обратились в AZPO Health, где нам помогли найти клинику в Турции, специализирующуюся на таких случаях. Лечение включало введение стволовых клеток и реабилитацию. Это был сложный путь, но при поддержке врачей и благодаря участию команды AZPO я начал чувствовать и немного двигать нижними конечностями. Это подтверждает потенциал этой терапии и профессионализм медиков в Турции.&raquo;</p>
+<h3 dir="ltr">Отзыв 3: замедление прогрессирования болезни Паркинсона</h3>
+<p dir="ltr">&laquo;Жизнь с болезнью Паркинсона &mdash; это постоянная борьба с дрожью и скованностью. Я боялся прогрессирования болезни и хотел найти лечение, которое могло бы хотя бы замедлить этот процесс. AZPO Health предоставили мне информацию о возможностях терапии стволовыми клетками в Турции именно для таких случаев. После тщательного изучения я решился на инфузии мезенхимальных стволовых клеток. Хотя это только начало моего пути, мой невролог уже отметил стабилизацию симптомов, и в целом я чувствую себя лучше. Я благодарен AZPO Health за то, что помогли мне найти этот шанс.&raquo;</p>
+<p><strong>&nbsp;</strong></p>
+<h3 dir="ltr">AZPO Health &mdash; ваш надежный партнер в поиске нейрональной стволовой терапии в Турции</h3>
+<p dir="ltr">AZPO Health &mdash; это компания в сфере медицинского туризма, которая помогает пациентам найти качественные лечебные решения в Турции. Мы понимаем, что лечение за границей &mdash; важный шаг, и сопровождаем вас на каждом этапе.</p>
+<p dir="ltr">Мы предлагаем:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Информацию: предоставляем подробные данные о нейрональной стволовой терапии, ее преимуществах и особенностях лечения в Турции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подбор клиник: сотрудничаем с тщательно отобранными клиниками, специализирующимися на передовых методах, включая терапию стволовыми клетками при неврологических заболеваниях.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помощь в коммуникации: помогаем наладить контакт между вами и медицинскими специалистами в Турции, учитывая языковые и культурные особенности.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддержка в организации поездки: хотя мы не занимаемся туризмом напрямую, мы можем подсказать надежные ресурсы и дать рекомендации по проживанию и логистике.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сопровождение: мы остаемся с вами на протяжении всего лечения &mdash; от первого обращения до контроля после терапии.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health делает ставку на качество и доверие. Мы заботимся о том, чтобы клиники, с которыми мы сотрудничаем, соответствовали высоким медицинским стандартам и имели опытных специалистов. Наша цель &mdash; дать вам возможность принимать осознанные решения о своем здоровье и обеспечить комфортный опыт лечения за рубежом.</p>
+<p><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Сделайте следующий шаг</h3>
+<p dir="ltr">Если вы рассматриваете возможность прохождения нейрональной стволовой терапии в Турции &mdash; свяжитесь с AZPO Health. Получите бесплатную консультацию и персональную информацию о подходящих вариантах. Мы поможем вам исследовать все возможности и найти путь к лучшему будущему.</p>
+<p>&nbsp;</p>`
             : `<p dir="ltr">Navigating the complexities of neurological disorders can be overwhelming, and the search for effective treatments is often filled with uncertainty. Stem cell therapy has emerged as a promising area of research and potential treatment for a range of neurological conditions. AZPO Health is here to guide you through the possibilities of accessing these innovative approaches in Turkey.</p>
 <h3 dir="ltr">Why Consider Turkey for Neurological Stem Cell Therapy?</h3>
 <p dir="ltr">Turkey has become an increasingly popular destination for medical tourism for several compelling reasons. One significant factor is the affordability of medical procedures compared to many other countries in Europe and the USA. This allows individuals to explore advanced treatment options like neurological stem cell therapy without incurring exorbitant costs.</p>
@@ -20133,142 +21210,145 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Ваш путь к преображению после материнства в Турции в 2025 году"
           : "Your Mommy Makeover Journey in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Материнство может оставлять следы на вашем теле, и эти изменения порой снижают уверенность в себе. Комплекс процедур «преображение мамочки» в Турции с AZPO Health предлагает всеобъемлющее решение для восстановления вашей внешности, чтобы вы снова почувствовали себя уверенно. Откройте для себя возможности и сделайте первый шаг к новой уверенности в себе."
           : "Are you feeling the impact of motherhood on your body, noticing changes that leave you less confident? A mommy makeover in Turkey with AZPO health offers a comprehensive solution to rejuvenate your appearance, helping you feel like yourself again. Explore the possibilities and take the first step towards renewed confidence.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Body Restoration",
+            title: locale === "ru" ? "Восстановление тела" : "Body Restoration",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "полное физическое восстановление после родов с акцентом на несколько зон для достижения наилучших результатов."
                 : "Complete postpartum physical recovery focusing on multiple areas for optimal results.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Quick Recovery",
+            title: locale === "ru" ? "Быстрое восстановление" : "Quick Recovery",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "эффективное заживление благодаря стратегически подобранным процедурам."
                 : "Efficient healing process through strategic combination of therapeutic procedures.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Confidence Boost",
+            title: locale === "ru" ? "Повышение уверенности" : "Confidence Boost",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "улучшение самооценки и эмоционального состояния благодаря преобразующему эффекту."
                 : "Enhancement of self-image and emotional wellbeing through transformative results.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "«преображение мамочки»  — это набор косметических операций, направленных на восстановление тела после беременности и родов. Обычно включает абдоминопластику, коррекцию груди и липосакцию."
                 : "A Mommy Makeover is a set of cosmetic surgeries aimed at restoring the body after pregnancy and childbirth. It typically includes a tummy tuck, breast correction, and liposuction.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How it works",
+            header: locale === "ru" ? "Как это работает" : "How it works",
             desc:
               locale === "ru"
-                ? ""
+                ? "процедуры подбираются индивидуально в зависимости от потребностей пациентки. В большинстве случаев фокус направлен на грудь, живот и жировые отложения. Многие процедуры могут быть выполнены за одну сессию."
                 : "Individual procedures are selected based on the patient’s needs. Most commonly, the focus is on the breast, abdomen, and fat deposits. Many procedures can be performed in a single session.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For whom",
+            header: locale === "ru" ? "Для кого" : "For whom",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура идеально подходит для женщин, завершивших репродуктивную функцию, находящихся в хорошем состоянии здоровья, с стабильным весом и желающих вернуть контуры своего тела, как до беременности."
                 : "This procedure is ideal for women who have completed childbearing, are in good health with a stable weight, and wish to restore their pre-pregnancy contours.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What procedures are included?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Typically breast lift/augmentation, tummy tuck, and liposuction",
+          question : locale === "ru" ? "Какие процедуры включены?" : "What procedures are included?",
+          answer : locale === "ru" ? "Обычно это подтяжка/увеличение груди, абдоминопластика и липосакция." : "Typically breast lift/augmentation, tummy tuck, and liposuction"
         },
         {
-          question: locale === "ru" ? "" : "How long is recovery?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "2–3 weeks initial rest, full healing 6–8 weeks",
+          question : locale === "ru" ? "Как долго длится восстановление?" : "How long is recovery?",
+          answer : locale === "ru" ? "Первоначальный заживление - 2–3 недели, полное заживление - 6–8 недель." : "2–3 weeks initial rest, full healing 6–8 weeks"
         },
         {
-          question:
-            locale === "ru" ? "" : "Can I breastfeed after a mommy makeover?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "If augmentation avoids gland ducts, yes – but discuss with surgeon",
+          question : locale === "ru" ? "Могу ли я кормить грудью после маммопластики?" : "Can I breastfeed after a mommy makeover?",
+          answer : locale === "ru" ? "Если увеличение не затрагивает молочные протоки, да - но обсудите это с хирургом." : "If augmentation avoids gland ducts, yes – but discuss with surgeon"
         },
         {
-          question: locale === "ru" ? "" : "Will I lose weight from this?",
-          answer:
-            locale === "ru" ? "" : "No, it's body contouring, not weight loss",
+          question : locale === "ru" ? "Потеряю ли я вес от этого?" : "Will I lose weight from this?",
+          answer : locale === "ru" ? "Нет, это контурирование тела, а не метод похудения." : "No, it's body contouring, not weight loss"
         },
         {
-          question: locale === "ru" ? "" : "Are results permanent?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "With stable weight and no future pregnancies, yes",
-        },
+          question : locale === "ru" ? "Результаты постоянные?" : "Are results permanent?",
+          answer : locale === "ru" ? "Да, при стабильном весе и отсутствии будущих беременностей." : "With stable weight and no future pregnancies, yes"
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Wear compression garments as directed",
-        locale === "ru"
-          ? ""
-          : "Avoid lifting anything over 5 kg (including children) for 4–6 weeks",
-        locale === "ru"
-          ? ""
-          : "Sleep on back with legs elevated if combined with tummy tuck",
-        locale === "ru"
-          ? ""
-          : "Manage drains (if used) and keep incisions clean",
-        locale === "ru"
-          ? ""
-          : "Attend follow-ups and limit physical activity for 6 weeks",
-        locale === "ru" ? "" : "Stay hydrated.",
-        locale === "ru" ? "" : "Maintain a healthy diet.",
-        locale === "ru" ? "" : "Protect yourself from the sun.",
+        locale === "ru" ? "Носите компрессионные изделия в соответствии с указаниями." : "Wear compression garments as directed",
+        locale === "ru" ? "Избегайте подъема предметов весом более 5 кг (включая детей) в течение 4–6 недель." : "Avoid lifting anything over 5 kg (including children) for 4–6 weeks",
+        locale === "ru" ? "Спите на спине с приподнятыми ногами, если операция сочеталась с абдоминопластикой." : "Sleep on back with legs elevated if combined with tummy tuck",
+        locale === "ru" ? "Ухаживайте за дренажами (если они использовались) и поддерживайте чистоту разрезов." : "Manage drains (if used) and keep incisions clean",
+        locale === "ru" ? "Посещайте контрольные осмотры и ограничьте физическую активность в течение 6 недель." : "Attend follow-ups and limit physical activity for 6 weeks",
+        locale === "ru" ? "Пейте достаточное количество воды." : "Stay hydrated.",
+        locale === "ru" ? "Соблюдайте здоровую диету." : "Maintain a healthy diet.",
+        locale === "ru" ? "Защищайте себя от солнца." : "Protect yourself from the sun."
       ],
       preList: [
-        locale === "ru" ? "" : "Stop smoking at least 6 weeks prior",
-        locale === "ru" ? "" : "Avoid NSAIDs and supplements 2 weeks before",
-        locale === "ru" ? "" : "Complete lab tests and medical clearance",
-        locale === "ru" ? "" : "Maintain a stable weight for 6+ months",
-        locale === "ru"
-          ? ""
-          : "Arrange for 2–3 weeks of help post-op (especially with childcare)",
-        locale === "ru"
-          ? ""
-          : "-Avoid blood thinners, aspirin, ibuprofen, and certain herbal supplements.",
-        locale === "ru" ? "" : "Maintain body hygiene.",
-        locale === "ru" ? "" : "Ensure adequate rest.",
+        locale === "ru" ? "Прекратите курить как минимум за 6 недель до операции." : "Stop smoking at least 6 weeks prior",
+        locale === "ru" ? "Избегайте НПВП и добавок за 2 недели до операции." : "Avoid NSAIDs and supplements 2 weeks before",
+        locale === "ru" ? "Пройдите лабораторные тесты и получите медицинское разрешение." : "Complete lab tests and medical clearance",
+        locale === "ru" ? "Поддерживайте стабильный вес в течение как минимум 6 месяцев." : "Maintain a stable weight for 6+ months",
+        locale === "ru" ? "Организуйте помощь на 2–3 недели после операции (особенно для ухода за детьми)." : "Arrange for 2–3 weeks of help post-op (especially with childcare)",
+        locale === "ru" ? "Избегайте разжижающих кровь средств, аспирина, и некоторых травяных добавок." : "-Avoid blood thinners, aspirin, ibuprofen, and certain herbal supplements.",
+        locale === "ru" ? "Соблюдайте гигиену тела." : "Maintain body hygiene.",
+        locale === "ru" ? "Обеспечьте достаточный отдых." : "Ensure adequate rest."
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "«преображение мамочки» предлагает индивидуальные решения для коррекции изменений тела, вызванных беременностью, восстанавливая привлекательные контуры и возвращая уверенность в себе."
             : "A Mommy Makeover offers personalized solutions to address the body changes caused by pregnancy, restoring attractive contours.",
       },
       bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Choose Turkey for Your Mommy Makeover?",
+          locale === "ru" ? "Почему стоит выбрать Турцию для «преображения мамочки»?" : "Why Choose Turkey for Your Mommy Makeover?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Решение о проведении &laquo;преображение мамочки&raquo; &mdash; это важный шаг, и выбор подходящего места для процедуры играет ключевую роль в обеспечении комфортного и успешного результата. Турция стала одним из ведущих направлений медицинского туризма, особенно для косметических процедур, таких как &laquo;преображение мамочки&raquo;. Вот несколько весомых причин, почему люди со всего мира выбирают Турцию для своих трансформационных процедур.</p>
+<p dir="ltr">Одним из главных преимуществ является доступность медицинских услуг в Турции. По сравнению с западными странами, такими как США, Великобритания и Австралия, стоимость &laquo;Преображения мамочки&raquo; в Турции значительно ниже (до 70%). Это не влияет на качество услуг, а обусловлено такими факторами, как более низкие эксплуатационные расходы и выгодный обменный курс. Таким образом, вы можете достичь желаемого результата без значительных финансовых затрат.</p>
+<p dir="ltr">Кроме того, Турция известна своими авторитетными медицинскими учреждениями, оснащенными современными технологиями и высококвалифицированными специалистами. Многие хирурги, специализирующиеся на косметической хирургии, обладают значительным опытом и глубоким пониманием всех нюансов &laquo;Преображения мамочки&raquo;. Эти профессионалы предлагают индивидуальные подходы и гарантируют персонализированный уход для каждого пациента, обеспечивая оптимальные результаты.</p>
+<p dir="ltr">Не менее важным аспектом является стратегическое расположение Турции и ее богатое культурное наследие, что делает страну привлекательным направлением для медицинских туристов. Пациенты часто совмещают лечение с периодом восстановления или коротким отдыхом, наслаждаясь историческими памятниками и культурой Турции. Такой комплексный подход улучшает общий опыт пребывания.</p>
+<p dir="ltr">Языковой барьер может стать проблемой для иностранных пациентов, однако большинство клиник и медицинских центров в Турции предлагают многоязычный персонал, что обеспечивает комфортное и понятное общение на протяжении всего процесса. Эта поддержка распространяется на все этапы &mdash; от консультации до послеоперационного ухода, что дает уверенность и спокойствие пациентам, приехавшим из других стран.</p>
+<h3 dir="ltr">Ознакомление с процедурой &laquo;преображение мамочки&raquo;</h3>
+<p dir="ltr">&laquo;Пображение мамочки&raquo; &mdash; это не просто набор процедур, а целый путь восстановления гармонии и красоты тела после изменений, связанных с беременностью, родами и грудным вскармливанием. Каждая женщина уникальна, и потому план преображения подбирается индивидуально, в зависимости от ее пожеланий и потребностей.</p>
+<p dir="ltr">Обычно &laquo;преображение мамочки&raquo; включает в себя такие процедуры, как увеличение груди или подтяжка, чтобы вернуть утерянный объем и исправить изменения формы. Часто к комплексу добавляется абдоминопластика (пластика живота), направленная на удаление лишней кожи и жира, а также подтяжку мышц, чтобы избавиться от так называемого &laquo;фартука&raquo;. Липосакция помогает устранить стойкие жировые отложения, придавая телу более стройный и подтянутый вид. В некоторых случаях рассматривается контурирование тела, например, подтяжка бедер.</p>
+<p dir="ltr">Каждый шаг начинается с личной консультации, на которой мы внимательно выслушаем все ваши пожелания и переживания. Подробно изучив ваши особенности и цели, мы создаем индивидуальный план преображения, который поможет вам достичь наилучших результатов. Операция проводится с использованием современного оборудования и под общим наркозом, а её продолжительность зависит от количества выбранных процедур.</p>
+<p dir="ltr">Цель &laquo;преображения мамочки&raquo; &mdash; это не только улучшение внешнего вида, но и восстановление уверенности в себе, возвращение гармонии и ощущения собственного тела.</p>
+<h3 dir="ltr">Преимущества процедуры &laquo;преображение мамочки&raquo;</h3>
+<p dir="ltr">Процедура &laquo;преображение мамочки&raquo; предоставляет множество преимуществ для женщин, которые хотят восстановить форму после беременности и повысить уверенность в себе. Сочетание нескольких процедур в рамках одного хирургического плана позволяет достичь комплексного преображения.</p>
+<p dir="ltr">Одним из главных преимуществ является улучшение внешнего вида, что значительно повышает самооценку и восприятие собственного тела. Восстановление объема и формы груди, подтяжка живота и избавление от лишнего жира помогут женщине чувствовать себя более уверенно и комфортно.</p>
+<p dir="ltr">Помимо эстетических изменений, &laquo;преображение мамочки&raquo; также оказывает положительное влияние на психологическое состояние. Ощущение уверенности в своей внешности способствует росту самооценки и улучшению качества жизни. Множество женщин отмечают, что после процедуры они вновь начинают чувствовать себя так, как до беременности.</p>
+<p dir="ltr">Кроме того, объединение нескольких операций в один сеанс помогает сделать восстановление более эффективным, сокращая время, которое нужно для полноценного восстановления, по сравнению с поэтапным проведением каждого вмешательства.</p>
+<h3 dir="ltr">Подготовка к &laquo;преображению мамочки&raquo; в Турции</h3>
+<p dir="ltr">Правильная подготовка является важнейшим этапом для успешного и комфортного преображения. Процесс начинается с первичной консультации, которую можно провести онлайн для международных пациентов. Во время консультации вы обсудите свою медицинскую историю, цели и все вопросы, которые вас беспокоят.</p>
+<p dir="ltr">Если вы решитесь на операцию, вам будет предоставлен подробный план подготовки, который соответствует вашим индивидуальным потребностям. Эти рекомендации могут включать корректировку приема медикаментов, изменения в диете и образе жизни, такие как отказ от курения. Важно следовать этим указаниям, чтобы максимально повысить безопасность и результат операции.</p>
+<p dir="ltr">Не забывайте, что открытое общение с вашей медицинской командой &mdash; ключ к успешной подготовке. Вы можете свободно задавать вопросы, обсуждать любые переживания и быть уверены, что осведомлены о каждом этапе процесса.</p>
+<h3 dir="ltr">Восстановление и последующий уход после преображения</h3>
+<p dir="ltr">Период восстановления после операции может варьироваться в зависимости от проведенных процедур, но обычно занимает от нескольких недель до нескольких месяцев для начального заживления. Важно помнить, что после операции можно ожидать временные неприятные ощущения, отёки и синяки. Для снятия боли врач назначит обезболивающие препараты.</p>
+<p dir="ltr">Очень важно следовать послеоперационным рекомендациям вашего хирурга для оптимального заживления и минимизации рисков. Эти рекомендации будут включать ограничения по физической активности, уход за ранами и контрольные осмотры. В первые недели после операции необходимо соблюдать режим покоя, чтобы организм мог восстановиться.</p>
+<p dir="ltr">Хотя начальное восстановление обычно занимает несколько недель, окончательные результаты операции станут видны через несколько месяцев, когда отеки спадут, а ткани займут окончательное положение. Важно сохранять терпение и реалистичные ожидания в течение всего процесса восстановления.</p>
+<h3 dir="ltr">Почему &laquo;преображение мамочки&raquo; &mdash; это отличный выбор</h3>
+<p dir="ltr">Выбор комплекса процедур &laquo;преображения мамочки&raquo; &mdash; это важный шаг к восстановлению вашей фигуры и улучшению общего самочувствия. Материнство приносит много радости, но также оставляет физические изменения, которые могут повлиять на вашу уверенность в себе. Процедура &laquo;преображение мамочки&raquo; предоставляет индивидуальный подход, помогая вам вернуть форму, в которой вы будете чувствовать себя уверенно и комфортно.</p>
+<p dir="ltr">Сочетание таких процедур, как восстановление формы груди и контурирование живота, позволяет достичь комплексного результата &mdash; подтянутой и молодой внешности. Это не только способствует улучшению внешнего вида, но и дает значительный рост уверенности, улучшая общее качество жизни.</p>
+<p dir="ltr">Также, выбор &laquo;преображения мамочки&raquo; в Турции с AZPO Health предоставляет возможность получить высококачественное лечение по доступной цене.&nbsp;</p>
+<p dir="ltr">AZPO Health обеспечит вам индивидуальную заботу, связывая с надежными клиниками и гарантируя полное сопровождение на каждом этапе &mdash; от консультации до послеоперационного ухода. Это позволит вам с уверенностью сосредоточиться на своем преображении и насладиться процессом.</p>
+<p dir="ltr">Чтобы узнать, как AZPO Health может стать вашим надежным проводником в процессе &laquo;преображения мамочки&raquo; в Турции и предложить персонализированное решение, свяжитесь с нами уже сегодня для бесплатной консультации.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Considering a mommy makeover is a significant decision, and choosing the right location is crucial for a comfortable and successful experience. Turkey has emerged as a leading destination for medical tourism, particularly for cosmetic procedures like mommy makeovers. There are several compelling reasons why individuals from across the globe are opting for Turkey for their transformative journeys.</p>
 <p dir="ltr">One of the primary attractions is the affordability of medical procedures in Turkey. Compared to many Western countries like the United States, the United Kingdom, and Australia, the cost of a mommy makeover in Turkey is significantly lower. This doesn't compromise the quality of care; rather, it's due to factors such as lower overhead expenses and favorable exchange rates. This makes achieving your aesthetic goals more accessible.</p>
 <p dir="ltr">Beyond cost, Turkey boasts numerous reputable medical facilities equipped with modern technology and experienced healthcare professionals. Many surgeons specializing in cosmetic surgery have extensive training and a deep understanding of the procedures involved in a mommy makeover. These professionals are adept at tailoring treatments to individual needs, ensuring personalized care and optimal results.</p>
@@ -20308,128 +21388,216 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Уменьшение груди в Турции в 2025 году"
           : "Breast Reduction in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Чувствуете физическое и эмоциональное бремя из-за слишком больших грудей? Постоянный дискомфорт, боль и ограничения в повседневной жизни становятся настоящей борьбой? В Турции вы найдете опытных хирургов и современные клиники, специализирующиеся на операции по уменьшению груди. Это может стать вашим шагом к восстановлению комфорта и улучшению качества жизни. Свяжитесь с AZPO Health сегодня, чтобы узнать о возможных решениях и сделать первый шаг к более комфортной и уверенной жизни."
           : "Feeling burdened by the physical and emotional weight of overly large breasts? Is discomfort, pain, or limitations in your daily life becoming a constant struggle? In Turkey, you can find experienced surgeons and modern facilities that specialize in breast reduction surgery, offering a potential pathway to renewed comfort and improved well-being. Contact AZPO Health today to explore your options and take the first step towards a more balanced and confident you.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Pain Relief",
+            title: locale === "ru" ? "Облегчение боли" : "Pain Relief",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "Устраняет дискомфорт в спине, шее и плечах, улучшая повседневное самочувствие."
                 : "Alleviates discomfort in back, neck, and shoulders for improved daily comfort.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Better Posture",
+            title: locale === "ru" ? "Улучшение осанки" : "Better Posture",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "Помогает сохранять правильное положение позвоночника и способствует активному образу жизни."
                 : "Helps maintain proper spine alignment and supports active lifestyle.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Body Balance",
+            title: locale === "ru" ? "Баланс тела" : "Body Balance",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "Улучшает естественные пропорции тела, создавая более гармоничный внешний вид."
                 : "Enhances natural body proportions for a more harmonious appearance.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "операция по уменьшению груди позволяет уменьшить ее размер путем удаления излишков ткани, жира и кожи. Эта процедура помогает устранить физический дискомфорт и улучшить пропорции тела."
                 : "Breast reduction surgery reduces the size of the breasts by removing excess tissue, fat, and skin. This procedure alleviates physical discomfort and improves body proportions.",
           },
           {
-            header: locale === "ru" ? "" : "How it works",
+            header: locale === "ru" ? "Как это работает" : "How it works",
             desc:
               locale === "ru"
-                ? ""
+                ? "хирург выполняет разрезы для удаления лишней ткани и формирования новой формы груди. Соски перемещаются на более высокое положение. Процедура длится 2-3 часа под общим наркозом."
                 : "The surgeon makes incisions to remove excess tissue and reshape the breasts. The nipples are repositioned to a higher position. The procedure takes 2–3 hours under general anesthesia.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For whom",
+            header: locale === "ru" ? "Для кого" : "For whom",
             desc:
               locale === "ru"
-                ? ""
+                ? "подходит для женщин с чрезмерно большими грудями, испытывающих дискомфорт, трудности при подборе одежды, а также для здоровых пациентов с реалистичными ожиданиями."
                 : "Suitable for women with excessively large breasts who experience discomfort, those with difficulties finding suitable clothing, and patients in good health with realistic expectations.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Can I still breastfeed?",
-          answer:
-            locale === "ru" ? "" : "Sometimes, depends on surgical technique",
+          question : locale === "ru" ? "Могу ли я продолжать кормить грудью после операции?" : "Can I still breastfeed?",
+          answer : locale === "ru" ? "В некоторых случаях - да. Это зависит от используемой хирургической техники. Обсудите это с вашим хирургом заранее." : "Sometimes, depends on surgical technique"
         },
         {
-          question: locale === "ru" ? "" : "Will insurance cover it?",
-          answer:
-            locale === "ru" ? "" : "If deemed medically necessary, often yes",
+          question : locale === "ru" ? "Покрывается ли операция страховкой?" : "Will insurance cover it?",
+          answer : locale === "ru" ? "Если процедура признана медицински необходимой (например, при хронической боли), страховая компания может её покрыть." : "If deemed medically necessary, often yes"
         },
         {
-          question: locale === "ru" ? "" : "Will it relieve back pain?",
-          answer: locale === "ru" ? "" : "Yes, many patients report relief",
+          question : locale === "ru" ? "Уменьшит ли операция боль в спине?" : "Will it relieve back pain?",
+          answer : locale === "ru" ? "Да, многие пациенты сообщают об облегчении боли в спине, плечах и шее после уменьшения груди." : "Yes, many patients report relief"
         },
         {
-          question: locale === "ru" ? "" : "Are the results permanent?",
-          answer:
-            locale === "ru" ? "" : "Yes, but weight changes can alter outcome",
+          question : locale === "ru" ? "Являются ли результаты постоянными?" : "Are the results permanent?",
+          answer : locale === "ru" ? "Да, но значительные изменения в весе могут повлиять на форму и размер груди." : "Yes, but weight changes can alter outcome"
         },
         {
-          question: locale === "ru" ? "" : "How long until swelling subsides?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "2–4 weeks for most swelling, full healing in 2–3 months",
-        },
+          question : locale === "ru" ? "Как долго сохраняется отек?" : "How long until swelling subsides?",
+          answer : locale === "ru" ? "Умеренный отек может сохраняться в течение 2–4 недель. Полное заживление занимает обычно 2–3 месяца." : "2–4 weeks for most swelling, full healing in 2–3 months"
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Wear surgical bra as directed",
-        locale === "ru" ? "" : "Avoid upper body movement or exercise",
-        locale === "ru" ? "" : "Keep incisions dry and clean",
-        locale === "ru" ? "" : "Rest on back to avoid breast pressure",
-        locale === "ru" ? "" : "Follow-up for suture removal or wound checks",
-        locale === "ru"
-          ? ""
-          : "Monitor stitches for signs of infection and contact your doctor if necessary.",
+        locale === "ru" ? "Носите хирургический бюстгальтер в соответствии с указаниями врача." : "Wear surgical bra as directed",
+        locale === "ru" ? "Избегайте движений верхней части тела и физических нагрузок в первые недели." : "Avoid upper body movement or exercise",
+        locale === "ru" ? "Держите разрезы сухими и чистыми, соблюдая рекомендации по уходу." : "Keep incisions dry and clean",
+        locale === "ru" ? "Отдыхайте на спине, чтобы избежать давления на грудную область." : "Rest on back to avoid breast pressure",
+        locale === "ru" ? "Запланируйте контрольный визит для снятия швов или осмотра." : "Follow-up for suture removal or wound checks",
+        locale === "ru" ? "Наблюдайте за состоянием швов - при признаках инфекции немедленно обратитесь к врачу.." : "Monitor stitches for signs of infection and contact your doctor if necessary."
       ],
       preList: [
-        locale === "ru"
-          ? ""
-          : "Stop smoking and avoid blood thinners for 2 weeks",
-        locale === "ru" ? "" : "Pre-op mammogram may be required",
-        locale === "ru"
-          ? ""
-          : "Discuss any back or neck pain related to breast size",
-        locale === "ru" ? "" : "Arrange help at home for at least 1 week",
-        locale === "ru" ? "" : "Stay hydrated and prepare loose clothing",
-        locale === "ru"
-          ? ""
-          : "Discuss any allergies or chronic conditions with your surgeon, as these may affect healing",
+        locale === "ru" ? "Воздержитесь от курения за 4–6 недель до операции для оптимального заживления и снижения риска осложнений." : "Stop smoking and avoid blood thinners for 2 weeks",
+        locale === "ru" ? "Избегайте разжижающих кровь средств за 2 недели до операции." : "Pre-op mammogram may be required",
+        locale === "ru" ? "Может потребоваться маммография перед операцией." : "Discuss any back or neck pain related to breast size",
+        locale === "ru" ? "Обсудите с хирургом любые боли в спине или шее, связанные с размером груди." : "Arrange help at home for at least 1 week",
+        locale === "ru" ? "Организуйте помощь дома как минимум на 1 неделю после операции." : "Stay hydrated and prepare loose clothing",
+        locale === "ru" ? "Поддерживайте водный баланс и подготовьте свободную одежду для удобства." : "Discuss any allergies or chronic conditions with your surgeon, as these may affect healing"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "уменьшение груди значительно улучшает качество жизни, снимает физический дискомфорт и делает внешний вид более эстетичным."
             : "Breast reduction improves quality of life by alleviating discomfort and enhancing aesthetic appeal.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для операции по уменьшению груди?"
             : "Why Choose Turkey for Your Breast Reduction Surgery?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Операция по уменьшению груди &mdash; это важное решение, и выбор места для ее проведения имеет большое значение. Турция стала одним из ведущих направлений медицинского туризма, особенно для косметических операций, таких как уменьшение груди. Несколько факторов объясняют растущую популярность этой страны.</p>
+<p dir="ltr">Во-первых, Турция славится высококвалифицированными и опытными пластическими хирургами, которые успешно проводят различные косметические процедуры, включая уменьшение груди. Многие хирурги прошли международное обучение и следят за последними достижениями в области хирургии. AZPO Health помогает вам связаться с надежными клиниками и специалистами, которые специализируются на операции по уменьшению груди.</p>
+<p dir="ltr">Во-вторых, стоимость операции по уменьшению груди в Турции часто значительно ниже, чем в большинстве западных стран. Это не означает снижение качества; скорее, это объясняется более низкими эксплуатационными расходами и выгодными обменными курсами. Выбирая Турцию для проведения операции, вы можете получить высококачественное лечение по более доступной цене.</p>
+<p dir="ltr">В-третьих, Турция предлагает современные медицинские учреждения, оснащенные новейшими технологиями. Эти клиники соответствуют международным стандартам гигиены и безопасности, что обеспечивает комфорт и безопасность для пациентов, проходящих хирургические процедуры. AZPO Health работает с клиниками, которые делают акцент на качестве обслуживания и безопасности пациентов.</p>
+<p dir="ltr">Кроме того, Турция предлагает не только высококачественные медицинские услуги, но и богатое культурное наследие, а также живописные города. Пациенты могут совмещать операцию с посещением исторических достопримечательностей, наслаждаться местной кухней и гостеприимством, превращая своё лечение в незабываемое культурное путешествие.</p>
+<h2 dir="ltr">Операция уменьшения груди: ключевые моменты<br><br></h2>
+<p dir="ltr">Операция по уменьшению груди, или редукционная маммопластика, &mdash; это хирургическая процедура, направленная на удаление избыточного жира, железистой ткани и кожи с груди. Целью операции является достижение размера груди, более пропорционального вашему телу, устранение дискомфорта, связанного с большими грудями, а также улучшение эстетического вида.</p>
+<p dir="ltr">Процедура обычно включает разрезы, расположенные вокруг груди. Их форма зависит от объема удаляемой ткани и анатомии груди пациента. Распространенные схемы разрезов включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Уменьшение с помощью липосакции: в некоторых случаях, если основной проблемой является избыточный жир, используется липосакция. Она может проводиться как отдельная процедура или в сочетании с минимальными разрезами для уменьшения объема груди. Липосакция включает введение тонкой трубки (канюли) через небольшие разрезы для отсасывания жира.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Круговой разрез (доунообразный или лифтинг Бенелли): этот разрез делается вокруг ареолы (пигментированная кожа вокруг соска). Обычно он применяется для женщин с умеренным увеличением груди и хорошей эластичностью кожи.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Вертикальный разрез (лифтинг &ldquo;леденец&rdquo; или L-образный): этот разрез сочетает круговой с вертикальным, который идет от ареолы до складки под грудью. Такой подход используется при умеренном и значительном увеличении груди.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обратный T-образный разрез (якорный или по системе Уайза): этот разрез включает круговой разрез вокруг ареолы, вертикальный разрез до складки под грудью и горизонтальный разрез вдоль складки. Эта схема применяется при значительном увеличении груди, когда требуется удалить большое количество кожи для формирования желаемой формы и объема.</p>
+</li>
+</ul>
+<p dir="ltr">Во время операции хирург удаляет избыточную ткань и кожу, изменяет форму оставшейся ткани груди и перемещает сосок и ареолу в более естественное и молодое положение. Разрезы затем закрываются с помощью швов.</p>
+<p dir="ltr">Преимущества операции по уменьшению груди могут быть значительными и включают в себя:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Снятие физического дискомфорта: хронические боли в спине, шее и плечах &mdash; частая проблема при избыточном объеме груди. Уменьшение груди помогает устранить эти ощущения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Уменьшение раздражения кожи: складки под грудью могут вызывать трение, потливость и сыпь. Удаление избыточной ткани помогает решить эти дерматологические проблемы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение осанки и дыхания: большой вес груди влияет на осанку и может затруднять дыхание. После операции пациенты часто отмечают значительное улучшение.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повышенный комфорт при физической активности: уменьшение груди облегчает физическую активность, позволяя комфортно заниматься спортом и вести активный образ жизни.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Уверенность в себе и положительное восприятие тела: пропорциональная форма груди помогает многим женщинам чувствовать себя более уверенно и комфортно в собственном теле.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Одежда лучше сидит по фигуре: женщинам с большой грудью часто сложно подобрать подходящую одежду. После операции становится проще найти одежду, которая хорошо сидит.</p>
+</li>
+</ul>
+<h2 dir="ltr">Методы и преимущества уменьшения груди</h2>
+<p dir="ltr">Выбор конкретной хирургической техники зависит от множества факторов: размера и формы груди, объема удаляемой ткани, эластичности кожи и желаемого результата. Подходящий метод будет подобран врачом во время личной консультации.</p>
+<p dir="ltr">Липосакция: может применяться как основной способ, так и в сочетании с другими техниками. Она особенно эффективна при избыточном жировом компоненте груди. Преимущества:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Минимальные рубцы: процедура требует лишь небольших разрезов, благодаря чему следы от вмешательства почти незаметны.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Более быстрое восстановление: по сравнению с классическими методами, липосакция предполагает меньший период реабилитации.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Точная коррекция формы: позволяет врачу аккуратно моделировать контуры груди, добиваясь естественного результата.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Методы с иссечением тканей (периареолярный, вертикальный, якорный разрез): &nbsp;эти техники применяются при необходимости значительного уменьшения объёма груди и кожного лоскута. Несмотря на более выраженные шрамы, они обеспечивают максимальный эффект. Преимущества:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удаление больших объемов ткани: эффективны при значительном увеличении груди.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение формы: позволяют не только уменьшить грудь, но и приподнять ее, придав более молодую и эстетичную форму.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Долговременный результат: эффект от операции сохраняется на протяжении многих лет.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Вне зависимости от выбранного метода, цель операции &mdash; облегчить физический дискомфорт, улучшить пропорции тела и повысить качество жизни.</p>
+<h2 dir="ltr">Отзывы реальных пациентов</h2>
+<p dir="ltr">Хотя мы не можем делиться личными данными пациентов, вот несколько примеров отзывов тех, кто прошел операцию по уменьшению груди:</p>
+<p dir="ltr">Отзыв 1:</p>
+<p dir="ltr">&laquo;Годы страданий от болей в спине и шее из-за большой груди. После операции в Турции разница ощутима: боли исчезли, я чувствую легкость и могу носить подходящую одежду. Моя уверенность в себе значительно возросла. Весь процесс был организован профессионально и с вниманием.&raquo;</p>
+<p dir="ltr">Отзыв 2:</p>
+<p dir="ltr">&laquo;Я всегда чувствовала себя неуверенно из-за размера груди. Операция изменила мое восприятие себя, и моя самооценка значительно улучшилась. Хирурги и клиники в Турции &mdash; на высоком уровне.&raquo;</p>
+<p dir="ltr">Отзыв 3:</p>
+<p dir="ltr">&laquo;Раздражение под грудью доставляло постоянный дискомфорт. После операции эта проблема ушла. Я чувствую себя гораздо комфортнее и увереннее. Все было организовано на высшем уровне, и я ощущала заботу на каждом этапе.&raquo;</p>
+<p dir="ltr">Эти отзывы подчеркивают, как операция может улучшить физическое и эмоциональное состояние.</p>
+<h2 dir="ltr">AZPO Health: ваш надежный помощник в операции по уменьшению груди</h2>
+<p dir="ltr">AZPO Health помогает вам найти проверенные клиники и опытных хирургов в Турции для операции по уменьшению груди. Мы понимаем, что решение о проведении операции за рубежом требует доверия и точной информации. AZPO Health организует ваш медицинский путь, предлагая:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Связь с квалифицированными и опытными пластическими хирургами, специализирующимися на уменьшении груди.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Информацию о клиниках с международными аккредитациями, современным оборудованием и высокими стандартами ухода.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помощь в организации виртуальных консультаций для обсуждения ваших целей и оценки возможности проведения процедуры.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддержку и сопровождение на протяжении всего медицинского путешествия.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Открытое общение и оперативное разрешение любых ваших вопросов и сомнений.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health гарантирует безопасный, комфортный и положительный опыт для всех, кто ищет операцию по уменьшению груди в Турции. Мы ставим ваше благополучие в приоритет и стремимся соединить вас с лучшими медицинскими специалистами.</p>
+<h2 dir="ltr">Сделайте первый шаг к комфорту и уверенности</h2>
+<p dir="ltr">Если вы рассматриваете операцию по уменьшению груди и хотите узнать больше о возможностях в Турции, свяжитесь с AZPO Health для бесплатной консультации. Наша команда готова предоставить вам всю необходимую информацию и провести через весь процесс. Восстановите комфорт, улучшите уверенность в себе и сделайте первый шаг к более сбалансированной и полноценной жизни. Свяжитесь с AZPO Health для подробной информации.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Considering breast reduction surgery is a significant decision, and choosing the right place for your procedure is paramount. Turkey has emerged as a leading destination for medical tourism, particularly for cosmetic surgeries like breast reduction. Several compelling factors contribute to this growing popularity.</p>
 <p dir="ltr">Firstly, Turkey boasts a cadre of highly skilled and experienced plastic surgeons who are proficient in performing various cosmetic procedures, including breast reduction surgery. Many of these surgeons have received international training and stay abreast of the latest surgical techniques and advancements. AZPO Health can connect you with reputable clinics and qualified surgeons who specialize in breast reduction surgery.</p>
 <p dir="ltr">Secondly, the cost of breast reduction surgery in Turkey is often significantly more affordable compared to many Western countries. This cost-effectiveness does not necessarily translate to lower quality; rather, it is often due to factors such as lower overhead costs and favorable exchange rates. By choosing Turkey for your breast reduction surgery, you may find high-quality care at a more accessible price point.</p>
@@ -20539,11 +21707,11 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Мужская пластика груди в Турции"
           : "Male Breast Reduction in Turkey",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Скрываетесь под мешковатой одеждой? Чувствуете себя неуверенно без рубашки? Вы не одиноки — и вам не обязательно мириться с этим. AZPO Health предлагает доступ к лучшим пластическим хирургам Турции, специализирующимся на уменьшении груди у мужчин. Вместе с нами вы сможете обрести подтянутую, мужественную грудь, вернуть уверенность и чувствовать себя комфортно в своем теле."
           : `
           Tired of hiding under baggy clothes? Feeling self-conscious every time you take off your shirt? You’re not alone—but you don’t have to live like this.\n
           At AZPO Health, we connect you with top-tier surgeons in Turkey specializing in male breast reduction—giving you a sculpted, masculine chest so you can walk with confidence and finally feel at home in your own body.
@@ -20551,111 +21719,181 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Size Reduction",
+            title: locale === "ru" ? "Уменьшение размера" : "Size Reduction",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "Уменьшает размер груди и возвращает телу гармоничные пропорции."
                 : "Decreases breast volume to achieve more balanced proportions",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Enhanced Comfort",
+            title: locale === "ru" ? "Комфорт в повседневной жизн" : "Enhanced Comfort",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "Избавление от физического дискомфорта и скованности в движениях."
                 : "Alleviates physical discomfort and improves daily activities",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Better Confidence",
+            title: locale === "ru" ? "Уверенность в себе" : "Better Confidence",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "Помогает достичь желаемого внешнего вида и укрепляет самооценку."
                 : "Helps achieve desired appearance and increases self-esteem",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "операция по уменьшению груди у мужчин направлена на лечение гинекомастии — состояния, при котором увеличивается грудная железа. Процедура позволяет сформировать более плоский, четкий и мужественный контур груди."
                 : "Male breast reduction surgery treats gynecomastia, a condition characterized by the enlargement of breast tissue. The procedure helps achieve a flatter, more masculine chest contour.",
           },
           {
-            header: locale === "ru" ? "" : "How it works",
+            header: locale === "ru" ? "Как проходит операция" : "How it works",
             desc:
               locale === "ru"
-                ? ""
+                ? "в зависимости от клинической картины удаляется избыточная жировая и/или железистая ткань — с помощью липосакции или хирургического иссечения. В запущенных случаях может потребоваться также удаление лишней кожи. Операция проводится под общей анестезией или местным обезболиванием с седацией."
                 : "Excess tissue and fat are removed using liposuction or excision. In more severe cases, excess skin is also removed. The surgery is performed under general anesthesia or local anesthesia with sedation.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For whom",
+            header: locale === "ru" ? "Кому подходит" : "For whom",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "подходит мужчинам с стойкой гинекомастией, не поддающейся лечению диетой и тренировками. Идеально для тех, кто испытывает психологический или физический дискомфорт."
                 : "Suitable for men with persistent gynecomastia that does not respond to diet and exercise. Ideal for those experiencing psychological or physical discomfort.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Will the fat come back?",
-          answer: locale === "ru" ? "" : "Not if weight is stable",
+          question : locale === "ru" ? "Вернется ли жир после операции?" : "Will the fat come back?",
+          answer : locale === "ru" ? "Нет, если вы поддерживаете стабильный вес, жировая ткань в обработанных зонах не возвращается." : "Not if weight is stable"
         },
         {
-          question: locale === "ru" ? "" : "Is liposuction always used?",
-          answer: locale === "ru" ? "" : "Often combined with tissue excision",
+          question : locale === "ru" ? "Всегда ли используется липосакция?" : "Is liposuction always used?",
+          answer : locale === "ru" ? "Часто да - липосакция сочетается с удалением ткани для более точного моделирования контуров." : "Often combined with tissue excision"
         },
         {
-          question: locale === "ru" ? "" : "Will there be scarring?",
-          answer: locale === "ru" ? "" : "Minimal and often around the areola",
+          question : locale === "ru" ? "Будут ли рубцы?" : "Will there be scarring?",
+          answer : locale === "ru" ? "Да, но они минимальны и, как правило, располагаются вокруг ареолы, где менее заметны." : "Minimal and often around the areola"
         },
         {
-          question: locale === "ru" ? "" : "When can I return to the gym?",
-          answer: locale === "ru" ? "" : "4–6 weeks, depending on healing",
+          question : locale === "ru" ? "Когда можно вернуться к тренировкам?" : "When can I return to the gym?",
+          answer : locale === "ru" ? "Обычно через 4–6 недель, в зависимости от индивидуальных темпов заживления." : "4–6 weeks, depending on healing"
         },
         {
-          question: locale === "ru" ? "" : "Are results permanent?",
-          answer: locale === "ru" ? "" : "Yes, with healthy weight maintenance",
-        },
+          question : locale === "ru" ? "Постоянны ли результаты?" : "Are results permanent?",
+          answer : locale === "ru" ? "Да, при условии сохранения здорового образа жизни и стабильного веса." : "Yes, with healthy weight maintenance"
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Wear compression vest for 4–6 weeks",
-        locale === "ru" ? "" : "Avoid chest workouts or upper body lifting",
-        locale === "ru" ? "" : "Keep incision sites clean",
-        locale === "ru" ? "" : "Expect mild bruising and swelling",
-        locale === "ru" ? "" : "Attend follow-ups to monitor healing",
-        locale === "ru"
-          ? ""
-          : "Wear the compression vest as directed for optimal healing",
+        locale === "ru" ? "- Носите компрессионный жилет в течение 4–6 недель, согласно рекомендациям врача." : "Wear compression vest for 4–6 weeks",
+        locale === "ru" ? "Избегайте тренировок грудной мышцы и подъема верхней части тела в период восстановления." : "Avoid chest workouts or upper body lifting",
+        locale === "ru" ? "Поддерживайте чистоту в области разрезов, чтобы предотвратить инфекцию." : "Keep incision sites clean",
+        locale === "ru" ? "Будьте готовы к легким синякам и отекам -  это нормальная часть заживления." : "Expect mild bruising and swelling",
+        locale === "ru" ? "Регулярно посещайте контрольные осмотры, чтобы врач мог отслеживать динамику восстановления." : "Attend follow-ups to monitor healing",
+        locale === "ru" ? "Продолжайте носить компрессионный жилет столько, сколько порекомендует врач - это важно для правильного заживления и финального результата." : "Wear the compression vest as directed for optimal healing"
       ],
       preList: [
-        locale === "ru" ? "" : "Avoid blood thinners and smoking 2 weeks prior",
-        locale === "ru" ? "" : "Lab tests and chest imaging may be required",
-        locale === "ru" ? "" : "Discontinue alcohol before surgery",
-        locale === "ru" ? "" : "Arrange help at home for the first 2–3 days",
-        locale === "ru"
-          ? ""
-          : "Discuss medications and hormone levels with your doctor",
-        locale === "ru"
-          ? ""
-          : "Inform your surgeon about any chronic conditions or allergies that could affect recovery",
+        locale === "ru" ? "Избегайте приема разжижающих кровь препаратов и курения за 2 недели до операции." : "Avoid blood thinners and smoking 2 weeks prior",
+        locale === "ru" ? "Может потребоваться прохождение лабораторных анализов и рентгенография грудной клетки - уточните у вашего врача." : "Lab tests and chest imaging may be required",
+        locale === "ru" ? "Прекратите употребление алкоголя минимум за несколько дней до процедуры." : "Discontinue alcohol before surgery",
+        locale === "ru" ? "Организуйте помощь дома на первые 2–3 дня после операции для комфортного восстановления." : "Arrange help at home for the first 2–3 days",
+        locale === "ru" ? "Обсудите с врачом прием лекарств и уровень гормонов, особенно если вы проходите гормональную терапию." : "Discuss medications and hormone levels with your doctor",
+        locale === "ru" ? "Сообщите хирургу о любых хронических заболеваниях или аллергиях, так как это может повлиять на процесс заживления и восстановление." : "Inform your surgeon about any chronic conditions or allergies that could affect recovery"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "операция по уменьшению груди у мужчин — это эффективное решение гинекомастии. Она возвращает телу естественные линии, обеспечивает стойкий эффект и помогает вновь ощутить комфорт в своем теле."
             : "Male breast reduction surgery effectively treats gynecomastia, restoring a natural masculine chest contour.This procedure provides long-lasting results, boosting confidence and improving overall body proportions.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Операция по уменьшению мужской груди в Турции: что важно знать"
             : "Understanding Male Breast Reduction in Turkey",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Решение избавиться от гинекомастии &mdash; увеличения грудной ткани у мужчин, становится важным шагом для тех, кто стремится улучшить свой внешний вид и общее самочувствие. Сегодня Турция зарекомендовала себя как одно из самых популярных направлений для проведения подобных операций &mdash; и на это есть веские причины.</p>
+<h3 dir="ltr">Почему стоит выбрать Турцию для операции по уменьшению груди у мужчин?</h3>
+<p dir="ltr">Турция прочно закрепилась в числе мировых лидеров в сфере медицинского туризма. Ежегодно сюда приезжают пациенты со всего мира, чтобы пройти косметические и медицинские процедуры. Существует несколько причин, по которым мужчины выбирают именно Турцию для операции по уменьшению груди.</p>
+<p dir="ltr">Во-первых, стоимость операции здесь значительно доступнее, чем в странах Европы или США. Это позволяет пациентам получить квалифицированную медицинскую помощь без чрезмерных финансовых затрат. Хотя итоговая цена зависит от клиники и индивидуальных особенностей пациента, соотношение &laquo;цена&ndash;качество&raquo; остаётся одним из лучших в мире.</p>
+<p dir="ltr">Во-вторых, в Турции работают опытные и сертифицированные пластические хирурги, специализирующиеся на эстетической хирургии, в том числе и на коррекции гинекомастии. Партнёрская сеть AZPO Health включает проверенные клиники и тщательно отобранных врачей, чтобы вы могли быть уверены в безопасности и профессионализме специалистов.</p>
+<p dir="ltr">В-третьих, Турция обладает развитой инфраструктурой медицинского туризма: помощь в организации поездки, бронировании проживания и языковая поддержка делают процесс максимально удобным и комфортным для иностранных пациентов. Команда AZPO Health сопровождает вас на всех этапах, предоставляя полное сопровождение и поддержку в течение всего медицинского путешествия.</p>
+<p dir="ltr">Наконец, период восстановления после операции можно совместить с отдыхом и знакомством с богатой культурой, историей и достопримечательностями Турции, что делает опыт еще более позитивным и запоминающимся.</p>
+<h3 dir="ltr">Что представляет собой операция по уменьшению груди у мужчин?</h3>
+<p dir="ltr">Операция по уменьшению груди у мужчин (также называемая хирургией гинекомастии) направлена на уменьшение объема увеличенной грудной ткани, чтобы создать более плоский, подтянутый и мужественный контур груди. Причины гинекомастии могут быть разными: гормональные нарушения, наследственность, прием определенных медикаментов или наличие сопутствующих заболеваний.</p>
+<p dir="ltr">Метод проведения операции зависит от степени выраженности проблемы и ее причин. Чаще всего применяются следующие техники:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Липосакция: применяется, если увеличение груди связано в основном с избытком жировой ткани. Через небольшие проколы вводится тонкая трубка (канюля), через которую удаляется жир. Липосакция может использоваться отдельно или в комбинации с другими методами.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургическое иссечение: подходит в случаях, когда наблюдается избыток железистой ткани, кожи или выраженное провисание. Через разрезы удаляется лишняя ткань и кожа. Размещение и размер разрезов зависят от индивидуальных особенностей и объема вмешательства.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комбинированный метод (липосакция + иссечение): во многих случаях для достижения наилучшего результата применяется комбинация обеих техник: липосакция устраняет жировую ткань, а хирургическое иссечение &mdash; железистую ткань и избыток кожи, формируя более эстетичный контур.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Во время консультации, организованной через AZPO Health, специалист тщательно оценит вашу ситуацию, выслушает ожидания и предложит оптимальный план лечения. Также вам объяснят детали операции, возможные риски, ожидаемые результаты, тип анестезии и особенности послеоперационного восстановления.</p>
+<p dir="ltr">Преимущества операции по уменьшению груди</p>
+<p dir="ltr">Хирургическое уменьшение груди у мужчин дает как физические, так и психологические преимущества, среди которых:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Более выразительный контур груди: главное преимущество &mdash; более плоская, подтянутая и мужественная грудь, что положительно влияет на общий облик тела.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Уверенность в себе и высокая самооценка: уменьшение груди помогает избавиться от чувства неловкости и повысить уверенность в себе.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лучшее прилегание одежды: после операции одежда сидит лучше, появляется больше свободы выбора стиля и материалов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комфорт при физической активности: избыточная грудная ткань может вызывать дискомфорт или ограничивать движения во время тренировок &mdash; операция решает эту проблему.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Позитивное восприятие своего тела: пропорциональная грудь помогает сформировать здоровый образ себя и улучшает общее психологическое состояние.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Отзывы клиентов</p>
+<p dir="ltr">Много лет я стеснялся своей увеличенной груди. Избегал снимать рубашку на пляже или у бассейна &mdash; это сильно било по самооценке. Я рассматривал операцию в своей стране, но стоимость оказалась слишком высокой. Друг посоветовал обратить внимание на медицинский туризм в Турции, и я связался с AZPO Health. Они сопровождали меня на каждом этапе, а хирург, которого они мне подобрали, оказался просто отличным. Операция прошла успешно, и теперь я наконец-то чувствую себя комфортно в своем теле. Это было лучшее решение в моей жизни&raquo;. &mdash; Марк, Великобритания</p>
+<p dir="ltr">&laquo;С подросткового возраста я страдал от гинекомастии. Это был не только физический, но и эмоциональный дискомфорт. Я узнал о высоком уровне медицины в Турции и связался с AZPO Health. Они были очень внимательными, ответили на все мои вопросы и подобрали клинику с отличной репутацией. Все было организовано профессионально. Теперь, после операции, я больше не стыжусь своей груди. Спасибо, AZPO Health!&raquo; &mdash; Дэвид, Канада</p>
+<p dir="ltr">&laquo;Сначала я сомневался по поводу поездки за границу для операции, но AZPO Health сделали процесс максимально простым и спокойным. Они помогли мне найти квалифицированного хирурга и сопровождали на каждом этапе &mdash; от первой онлайн-консультации до послеоперационного восстановления. Стоимость в Турции оказалась значительно ниже, чем в моей стране, а качество медицинского ухода &mdash; на высшем уровне. Я в восторге от результата и очень благодарен AZPO Health за все!&raquo; &mdash; Джеймс, США</p>
+<p dir="ltr">AZPO Health: ваш надежный партнер по уменьшению груди у мужчин в Турции</p>
+<p dir="ltr">AZPO Health &mdash; это проверенный организатор медицинского туризма, базирующийся в Турции. Мы помогаем международным пациентам получить доступ к ведущим специалистам и сертифицированным клиникам, специализирующимся на хирургии гинекомастии.</p>
+<p dir="ltr">Хотя AZPO Health не предоставляет медицинские услуги напрямую, мы выступаем надежным связующим звеном между вами и профессиональными хирургами, обеспечивая комфорт и безопасность на каждом этапе пути.</p>
+<p dir="ltr">С AZPO Health вы получаете доступ к следующим преимуществам:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к опытным хирургам: мы подбираем проверенных специалистов с подтвержденной квалификацией и опытом в пластической хирургии.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход: персональный координатор учтет ваши цели и предпочтения и предложит оптимальные решения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подробную информацию: вы получите полное досье на клинику, врача и саму процедуру.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Организацию консультаций: поможем организовать онлайн или очную встречу с врачом для обсуждения плана лечения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помощь с логистикой: при необходимости мы организуем перелет, проживание и трансфер из аэропорта.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Постоянную поддержку: мы на связи до, во время и после операции, чтобы вы чувствовали себя уверенно и спокойно.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Аккредитованные клиники: Турция входит в число стран с самым высоким количеством JCI-аккредитованных медицинских учреждений &mdash; на март 2025 года таких клиник насчитывается 30.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Конфиденциальность и безопасность: мы обеспечиваем защиту вашей личной информации и заботимся о вашем комфорте и здоровье.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Сделайте первый шаг к уверенному себе. Свяжитесь с AZPO Health уже сегодня и получите бесплатную консультацию и индивидуальное предложение по операции по уменьшению груди у мужчин в Турции.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Choosing to address gynecomastia, or enlarged male breast tissue, is a significant decision for many men seeking to improve their physical appearance and overall well-being. Turkey has emerged as a popular destination for individuals considering male breast reduction surgery, and for good reason.</p>
 <p dir="ltr">Why Choose Turkey for Male Breast Reduction?</p>
 <p dir="ltr">Turkey has established itself as a leading hub for medical tourism, attracting patients from across the globe for various cosmetic and medical procedures. Several factors contribute to its popularity for male breast reduction surgery.</p>
@@ -20743,130 +21981,268 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Восстановите интимное здоровье и уверенность с вагинопластикой в Турции — лучший выбор женщин в 2025 году"
           : "Vaginal Tightening in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Если вы сталкиваетесь с дискомфортом или снижением удовлетворенности из-за ослабления влагалищных мышц, специалисты AZPO Health в Турции предлагают эффективное решение — вагинопластику. Эта процедура помогает восстановить тонус мышц, улучшить качество интимной жизни и вернуть уверенность в себе. Доверьтесь профессионалам и сделайте шаг к улучшению самочувствия и комфорта."
           : `
           Do you feel like something’s changed? A loss of tightness, discomfort, or a dip in confidence affecting your intimate life? You’re not alone—and you don’t have to settle.At AZPO Health, we connect you with leading specialists in Turkey offering advanced vaginal tightening (vaginoplasty) treatments designed to restore comfort, confidence, and pleasure.
           `,
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Vaginal Firmness",
+            title: locale === "ru" ? "Повышение чувствительности" : "Vaginal Firmness",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "восстановление упругости и тонуса мышц для большего сексуального удовлетворения."
                 : "Helps restore natural elasticity and tone for enhanced sensation.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Sexual Performance",
+            title: locale === "ru" ? "Улучшение поддержки тазового дна" : "Sexual Performance",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "укрепление мышц влагалища, снижение риска недержания и других проблем."
                 : "Improves intimate experiences and boosts confidence levels.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Physical Comfort",
+            title: locale === "ru" ? "Рост уверенности" : "Physical Comfort",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "повышение самооценки и улучшение интимного комфорта за счет восстановления функций и внешнего вида."
                 : "Relieves discomfort from tissue changes and stretching.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Вагинопластика — это хирургическое вмешательство, позволяющее подтянуть и реконструировать влагалищный канал. Чаще всего её проводят для восстановления тонуса и прочности влагалища после родов, возрастных изменений или травм. Также процедура помогает решить функциональные проблемы, такие как снижение чувствительности во время интимной близости или слабость мышц тазового дна."
                 : "Vaginal tightening is a procedure aimed at restoring tone and firmness to the vaginal tissues, especially after childbirth or with age. Over time, vaginal tissues may lose their elasticity and firmness, which can cause discomfort and reduce sexual sensations. Vaginal tightening helps restore the normal state of the tissues, improving quality of life and sexual health.",
           },
           {
-            header: locale === "ru" ? "" : "How it works",
+            header: locale === "ru" ? "Как проходит операция" : "How it works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процесс начинается с консультации, на которой оценивается степень ослабления тканей и обсуждаются ваши цели. Во время операции удаляется лишняя ткань влагалища, а мышцы подтягиваются для улучшения упругости и поддержки. При необходимости проводится дополнительная реконструкция промежности. Разрезы аккуратно зашиваются, чтобы обеспечить оптимальное заживление."
                 : "The procedure can be performed using various methods, including surgical intervention or non-invasive technologies such as laser treatment. It is important to note that these procedures can be beneficial not only for enhancing sexual sensations but also for correcting functional issues such as urinary incontinence or other disorders.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For whom",
+            header: locale === "ru" ? "Кому подходит вагинопластика" : "For whom",
             desc:
               locale === "ru"
-                ? ""
+                ? "Вагинопластика рекомендуется женщинам, столкнувшимся с ослаблением влагалищных мышц после родов, возрастных изменений или по врождённым причинам. Также процедура эффективна при травмах или после интимных операций. Она помогает восстановить мышечный тонус, усилить чувствительность и укрепить тазовое дно."
                 : "Suitable for women who experience reduced vaginal tone after childbirth or due to aging. Ideal for women with excessive tissue stretching who wish to improve both the appearance and functionality of the vagina. Women who suffer from mild urinary incontinence related to weakened tissues may also benefit.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Is the result immediate?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Some feel immediate improvement, full effects in weeks",
+          question : locale === "ru" ? "Результат виден сразу?" : "Is the result immediate?",
+          answer : locale === "ru" ? "Многие пациенты ощущают улучшение практически сразу, однако полное проявление результатов происходит через несколько недель." : "Some feel immediate improvement, full effects in weeks"
         },
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer:
-            locale === "ru" ? "" : "Mild soreness, managed with medication",
+          question : locale === "ru" ? "Будет ли это болезненно?" : "Is it painful?",
+          answer : locale === "ru" ? "Легкая болезненность, которую легко контролировать с помощью назначенных медикаментов." : "Mild soreness, managed with medication"
         },
         {
-          question: locale === "ru" ? "" : "Can it affect sensation?",
-          answer:
-            locale === "ru" ? "" : "Often improves sensitivity and tightness",
+          question : locale === "ru" ? "Повлияет ли это на чувствительность?" : "Can it affect sensation?",
+          answer : locale === "ru" ? "Часто приводит к улучшению чувствительности и ощущению упругости в области." : "Often improves sensitivity and tightness"
         },
         {
-          question: locale === "ru" ? "" : "Is it permanent?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Results last years but may change with childbirth or aging",
+          question : locale === "ru" ? "Результаты сохранятся надолго?" : "Is it permanent?",
+          answer : locale === "ru" ? "Результаты сохраняются на долгие годы, хотя они могут измениться с возрастом или после родов." : "Results last years but may change with childbirth or aging"
         },
         {
-          question: locale === "ru" ? "" : "Is it safe?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, with experienced doctors and proper care",
-        },
+          question : locale === "ru" ? "Насколько безопасна процедура?" : "Is it safe?",
+          answer : locale === "ru" ? "Процедура абсолютно безопасна, если ее выполняет опытный хирург и вы следуете всем рекомендациям по восстановлению." : "Yes, with experienced doctors and proper care"
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Avoid sexual activity and tampon use for 4–6 weeks",
-        locale === "ru" ? "" : "Maintain hygiene, use recommended washes only",
-        locale === "ru" ? "" : "Wear cotton underwear and avoid tight clothing",
-        locale === "ru"
-          ? ""
-          : "Take prescribed antibiotics or pain relief as directed",
-        locale === "ru" ? "" : "No intense workouts for at least 2 weeks",
+        locale === "ru" ? "Избегайте сексуальной активности и использования тампонов в течение 4–6 недель." : "Avoid sexual activity and tampon use for 4–6 weeks",
+        locale === "ru" ? "Соблюдайте интимную гигиену, используя только рекомендованные средства для очищения." : "Maintain hygiene, use recommended washes only",
+        locale === "ru" ? "Носите свободное хлопковое белье и избегайте тесной одежды." : "Wear cotton underwear and avoid tight clothing",
+        locale === "ru" ? "Принимайте назначенные антибиотики и обезболивающие строго по указаниям врача." : "Take prescribed antibiotics or pain relief as directed",
+        locale === "ru" ? "Воздержитесь от интенсивных физических нагрузок как минимум на 2 недели." : "No intense workouts for at least 2 weeks"
       ],
       preList: [
-        locale === "ru"
-          ? ""
-          : "Avoid intercourse and tampon use 48 hours prior",
-        locale === "ru" ? "" : "No blood thinners or smoking 1 week before",
-        locale === "ru" ? "" : "Clean the area thoroughly before procedure",
-        locale === "ru"
-          ? ""
-          : "Wear loose underwear and arrange rest time post-op",
+        locale === "ru" ? "Избегайте половых контактов и использования тампонов за 48 часов до процедуры." : "Avoid intercourse and tampon use 48 hours prior",
+        locale === "ru" ? "Не принимайте препараты, разжижающие кровь, и откажитесь от курения как минимум за 1 неделю до." : "No blood thinners or smoking 1 week before",
+        locale === "ru" ? "Тщательно очистите обрабатываемую область перед процедурой." : "Clean the area thoroughly before procedure",
+        locale === "ru" ? "Носите свободное хлопковое нижнее белье и запланируйте время для отдыха после процедуры." : "Wear loose underwear and arrange rest time post-op"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? ""
+            ? "Вагинопластика — это надежное решение для восстановления тонуса и функции влагалища. При соблюдении рекомендаций врача, вы сможете надолго сохранить результаты и почувствовать уверенность, гармонию и комфорт в повседневной жизни."
             : "Vaginal tightening helps improve physical and emotional well-being, restores self-confidence, and enhances intimate life.By addressing issues like vaginal laxity, it can lead to greater comfort, increased satisfaction during intimacy, and a more youthful, rejuvenated feeling. This procedure offers a holistic approach to enhancing quality of life for many women.",
       },
       bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Choose Turkey for Vaginal Tightening?",
+          locale === "ru" ? "Вагинопластика с AZPO Health: ответы на ваши вопросы" : "Why Choose Turkey for Vaginal Tightening?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Вагинопластика &mdash; это хирургическая процедура, направленная на восстановление структуры и функций влагалища. Также её называют интимным омоложением или хирургической подтяжкой влагалища. Многие женщины прибегают к этой операции после родов, с возрастом или при наличии вырожденных особенностей. В AZPO Health мы понимаем, насколько личной и деликатной может быть эта тема, поэтому подходим к каждому случаю с максимальной заботой и вниманием.</p>
+<h3 dir="ltr">Почему стоит выбрать Турцию для проведения вагинопластики?</h3>
+<p dir="ltr">Турция &mdash; один из лидеров в сфере медицинского туризма, особенно когда речь идет об эстетических процедурах. Вагинопластика здесь пользуется большой популярностью благодаря нескольким важным преимуществам:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступная цена: стоимость операции в Турции значительно ниже, чем в странах Европы и США &mdash; экономия может достигать до 70%. При этом AZPO Health предлагает высокое качество медицинских услуг по конкурентной цене, делая процедуру доступной для большего числа женщин.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытные хирурги: мы сотрудничаем только с сертифицированными и проверенными специалистами, которые обладают большим опытом в области эстетической гинекологии. Наши хирурги используют современные методики и гарантируют высокий уровень удовлетворенности пациентов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные клиники: все партнерские клиники AZPO Health аккредитованы и соответствуют международным стандартам. Оборудование, условия и подход к пациенту обеспечивают безопасное и комфортное прохождение всей процедуры.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексный подход: мы предлагаем пакеты &laquo;все включено&raquo;: первичная онлайн-консультация, организация операции, послеоперационное наблюдение, проживание, трансферы &mdash; все аспекты вашей поездки берет на себя команда AZPO Health. Вам остаётся сосредоточиться на восстановлении и собственном комфорте.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Культурный опыт: совмещая операцию по вагинопластике с поездкой в Турцию, вы получаете возможность насладиться богатым историческим наследием, живой культурой и живописной природой этой страны. Особенно стоит посетить Стамбул, Анталию и Измир &mdash; города, где Восток встречается с Западом, а уникальная атмосфера, исторические памятники, оживленные рынки и гастрономические открытия сделают ваше путешествие по-настоящему незабываемым.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Знакомство с методами вагинопластики в AZPO Health</h3>
+<p dir="ltr">AZPO Health предлагает разнообразные техники вагинопластики, адаптированные под индивидуальные анатомические особенности и потребности каждой женщины. Наши опытные хирурги тщательно оценивают ваше состояние и подбирают оптимальный подход для достижения наилучшего результата.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Задняя кольпорафия: эта процедура направлена на укрепление мышц и тканей задней стенки влагалища. Часто применяется для устранения расслабления влагалища после родов или с возрастом. Она способствует лучшей поддержке тазовых органов и улучшает качество интимной жизни.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Передняя кольпорафия: подтяжка передней стенки влагалища, которая может помочь в устранении недержания мочи и улучшить поддержку мочевого пузыря.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Вагинопластика: хирургическое сужение влагалищного канала, часто проводится после родов. Позволяет восстановить тонус влагалища, улучшить сексуальные ощущения и повысить уверенность в себе.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Редукция капюшона клитора: удаление избыточной кожи вокруг клитора. Улучшает эстетический вид интимной зоны, а в некоторых случаях может усилить сексуальные ощущения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Монспластика: косметическая коррекция зоны лобка. Обычно выполняется для удаления избыточной жировой ткани или обвисшей кожи в верхней части лобковой области. Часто сочетается с абдоминопластикой или лабиопластикой.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Перинэопластика: восстановление тканей промежности &mdash; области между влагалищем и анусом. Помогает устранить последствия разрывов или растяжений, произошедших во время родов, восстанавливает естественные контуры и повышает комфорт.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лабиопластика: хотя и не является частью вагинопластики в узком смысле, эта процедура часто проводится параллельно. Направлена на коррекцию размера, формы или асимметрии малых и больших половых губ. Лабиопластика улучшает внешний вид, комфорт и гигиену.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Омоложение влагалища в Турции: комплексный подход, сочетающий несколько техник для достижения общего эффекта подтяжки и улучшения функций влагалища.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Чего ожидать во время процедуры вагинопластики с AZPO Health</h3>
+<p dir="ltr">Процедура вагинопластики с AZPO Health включает в себя несколько ключевых этапов, обеспечивающих плавный и комфортный процесс:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Первичная консультация: ваш путь начинается с подробной консультации с опытным хирургом. Во время встречи вы обсудите свои цели, опасения и медицинскую историю. Хирург проведёт осмотр, чтобы оценить состояние и определить оптимальную технику вагинопластики. Консультация может быть проведена как лично, так и онлайн.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный план лечения: на основе консультации специалист разработает персонализированный план, учитывающий ваши особенности и ожидания. В нем будут описаны: методика операции, прогнозируемые результаты, возможные риски и рекомендации по восстановлению.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подготовка к операции: перед операцией вы получите все необходимые рекомендации по подготовке &mdash; это может включать сдачу анализов, отказ от некоторых лекарств и соблюдение определённой диеты.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургическое вмешательство: вагинопластика проводится под общим наркозом или местной анестезией с седацией. Продолжительность операции зависит от выбранной методики, обычно она занимает от одного до двух часов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Послеоперационный уход: после процедуры вы получите подробные инструкции по уходу, включающие рекомендации по обезболиванию, гигиене и ограничениям в физической активности. Наши специалисты будут регулярно контролировать ваше восстановление и поддерживать связь.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Восстановление и контроль: период восстановления обычно занимает несколько недель. Важно строго следовать рекомендациям врача и посещать все контрольные приемы. В этот период возможны временные дискомфорт, отёки и синяки, которые поддаются медикаментозному контролю и уходу.<br><br></p>
+</li>
+</ol>
+<h3 dir="ltr">Преимущества операции вагинопластики</h3>
+<p dir="ltr">Операция по вагинопластике может принести е преимущества:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение тонуса влагалища: основная задача процедуры &mdash; укрепить мышцы и ткани влагалища, восстановив их упругость и поддержку.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повышение сексуальной функции: многие пациентки отмечают улучшение чувствительности, более яркие оргазмы и общее повышение удовольствия после операции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повышение самооценки: устранение симптомов расслабления влагалища способствует росту уверенности в себе и улучшению восприятия собственного тела.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Снижение дискомфорта: операция помогает избавиться от неприятных ощущений, таких как чувство рыхлости или давления при физической активности.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение поддержки тазовых органов: укрепление тканей влагалища способствует снижению риска опущения органов малого таза и недержания мочи.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Риски и возможные осложнения</h3>
+<p dir="ltr">Как и любая хирургическая процедура, вагинопластика связана с определенными рисками:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Инфекция: возможна послеоперационная инфекция. В AZPO Health соблюдаются строгие меры стерильности для минимизации этого риска.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Кровотечение: возможны кровотечения, однако опытные хирурги контролируют этот процесс с максимальной тщательностью.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Рубцевание: рубцы &mdash; естественная часть заживления. Мы используем современные методы для минимизации их заметности и улучшения косметического результата.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Изменения чувствительности: возможно временное или постоянное изменение чувствительности влагалища.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Болевые ощущения: после операции возможны боль и дискомфорт, которые эффективно контролируются обезболивающими препаратами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Асимметрия: несмотря на стремление к симметрии, могут наблюдаться незначительные различия.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повторная операция: в редких случаях может потребоваться дополнительное вмешательство для коррекции результата или устранения осложнений.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Стоимость вагинопластики в Турции</h3>
+<p dir="ltr">Стоимость вагинопластики в Турции зависит от нескольких факторов:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Метод операции: выбранная техника влияет на итоговую цену.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Оплата клиники: стоимость услуг медицинского учреждения включена в цену.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Анестезия: учитывается цена за использование анестезии.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гонорар хирурга: опыт и квалификация специалиста влияют на стоимость.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Объем операции: чем более сложная и масштабная операция, тем выше цена.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Поскольку стоимость может варьироваться в зависимости от конкретных потребностей и выбранного плана лечения, AZPO Health предлагает обратиться к нам за индивидуальным расчетом. Мы предоставим точную и актуальную информацию, исходя из вашей ситуации.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Почему стоит выбрать AZPO Health для вагинопластики?</h3>
+<p dir="ltr">AZPO Health предлагает высокий уровень медицинского обслуживания и помогает добиться желаемого результата. Вот основные причины выбрать нас для проведения вагинопластики в Турции:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытные и сертифицированные хирурги: наши специалисты имеют богатый опыт и высокую квалификацию в области вагинопластики.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход: каждый пациент получает персонализированный план лечения, учитывающий уникальные особенности и цели.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные клиники: мы сотрудничаем с аккредитованными медицинскими учреждениями, оснащенными новейшим оборудованием для безопасного и комфортного проведения операций.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексные пакеты: мы предлагаем пакеты &laquo;всё включено&raquo; &mdash; от консультаций и операции до послеоперационного ухода и трансфера, чтобы сделать процесс максимально удобным.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддержка на всех этапах: наша команда сопровождает вас на протяжении всего пути &mdash; от первой консультации до полного восстановления, обеспечивая заботу и внимание.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Свяжитесь с AZPO Health для получения бесплатной консультации</h3>
+<p dir="ltr">Если вы рассматриваете возможность вагинопластики в Турции, свяжитесь с AZPO Health для бесплатной консультации. Наши специалисты подробно ответят на ваши вопросы и подготовят индивидуальный план лечения с прозрачным расчетом стоимости.</p>
+<p dir="ltr">Сделайте первый шаг к восстановлению уверенности и улучшению качества жизни &mdash; запишитесь на бесплатную консультацию уже сегодня!</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Turkey has become a popular destination for medical tourism, and for good reason. When considering vaginal tightening, opting for Turkey through AZPO Health can offer several advantages:</p>
 <ul>
 <li dir="ltr" aria-level="1">
@@ -22708,127 +24084,208 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Лечение заболеваний сетчатки глаз в Турции в 2025 году"
           : "Advanced Retinal Disease Treatment in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Изменения в зрении, вызванные заболеваниями сетчатки, могут быть неприятными и существенно влиять на вашу повседневную жизнь и общее самочувствие. Если вы ищете квалифицированную медицинскую помощь и эффективные решения для лечения заболеваний сетчатки, Турция предлагает не только опытных специалистов, но и новейшие методы лечения. AZPO Health готова поддержать вас на каждом шаге вашего пути, обеспечивая индивидуальный подход и надежные результаты."
           : "Experiencing changes in your vision due to a retinal condition can be unsettling, affecting your daily life and overall well-being. Are you looking for specialized care and effective solutions for your retinal disease? In Turkey, you can find highly skilled medical professionals and advanced treatment options, and AZPO Health is here to guide you through every step of your journey.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Vision Protection",
+            title: locale === "ru" ? "Пациентам с диабетом" : "Vision Protection",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "повышенный риск развития диабетической ретинопатии и потери зрения."
                 : "Early treatment helps maintain existing eyesight levels",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Life Enhancement",
+            title: locale === "ru" ? "Пожилым людям" : "Life Enhancement",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "Риск макулодистрофии, отслоения сетчатки и наследственных заболеваний глаз."
                 : "Better management leads to improved daily activities.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Disease Control",
+            title: locale === "ru" ? "Пациентам с гипертонией" : "Disease Control",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "Нарушения сосудов и внезапные изменения зрения — возможные признаки патологий сетчатки."
                 : "Timely care reduces progression rate.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Болезни сетчатки затрагивают часть глаза, которая отвечает за восприятие зрительных образов. Эти заболевания могут быть вызваны генетической предрасположенностью, возрастными изменениями, системными заболеваниями (например, диабетом) или травмами глаз. Своевременное вмешательство помогает контролировать симптомы, замедлять прогрессирование болезни и сохранять зрение."
                 : "Retinal diseases affect the retina, which is responsible for vision. These conditions can be caused by genetics, aging, systemic diseases (like diabetes), or eye injuries.Timely intervention can help manage symptoms and slow the progression of the disease, preserving vision.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Заболевания сетчатки могут привести к постепенной или внезапной потере зрения. В зависимости от типа заболевания лечение может включать медикаментозную терапию, лазерное воздействие или хирургические вмешательства, направленные на замедление прогрессирования заболевания или облегчение симптомов. Однако не все заболевания сетчатки можно полностью вылечить. Регулярные осмотры глаз имеют ключевое значение для ранней диагностики и достижения лучших результатов лечения."
                 : "Retinal diseases can lead to gradual or sudden vision loss.Depending on the condition, treatments may include medications, laser therapy, or surgery to slow progression or manage symptoms, though not all diseases are curable.Regular eye exams are essential for early detection and better treatment outcomes.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For Whom",
+            header: locale === "ru" ? "Кому показано" : "For Whom",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Пациентам с диабетом, пожилым людям, людям с высокой степенью миопии, а также тем, у кого есть семейная предрасположенность и пациентам с гипертонией, важно учитывать повышенный риск заболеваний сетчатки — таких как диабетическая ретинопатия, возрастная макулодистрофия, отслоение сетчатки и сосудистые нарушения. Внезапные изменения зрения могут свидетельствовать о патологиях сетчатки и требуют срочного обращения к врачу."
                 : "Diabetics: Risk of diabetic retinopathy and vision loss. Aging Adults: Prone to macular degeneration. High Myopia: Higher risk of retinal detachment. Family History: Genetic predisposition to retinal diseases. Hypertension: Can cause retinal vascular issues. Sudden Vision Changes: May signal retinal problems.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What causes retinal disease?",
-          answer:
-            locale === "ru" ? "" : "Aging, diabetes, trauma, and genetics",
+          question : locale === "ru" ? "Что вызывает заболевания сетчатки?" : "What causes retinal disease?",
+          answer : locale === "ru" ? "Причинами могут быть возрастные изменения, диабет, травмы глаза и генетическая предрасположенность." : "Aging, diabetes, trauma, and genetics"
         },
         {
-          question: locale === "ru" ? "" : "Is vision loss permanent?",
-          answer:
-            locale === "ru" ? "" : "Depends on condition and treatment timing",
+          question : locale === "ru" ? "Может ли потеря зрения быть необратимой?" : "Is vision loss permanent?",
+          answer : locale === "ru" ? "Это зависит от конкретного заболевания и своевременности начала лечения - при ранней диагностике возможна стабилизация состояния." : "Depends on condition and treatment timing"
         },
         {
-          question: locale === "ru" ? "" : "What treatments exist?",
-          answer: locale === "ru" ? "" : "Lasers, injections, or surgery",
+          question : locale === "ru" ? "Какие существуют методы лечения?" : "What treatments exist?",
+          answer : locale === "ru" ? "Варианты включают лазерную терапию, внутриглазные инъекции и хирургическое вмешательство." : "Lasers, injections, or surgery"
         },
         {
-          question: locale === "ru" ? "" : "Can I drive after treatment?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Usually not immediately – wait for clearance",
+          question : locale === "ru" ? "Могу ли я водить машину после лечения?" : "Can I drive after treatment?",
+          answer : locale === "ru" ? "Обычно - нет, необходимо дождаться разрешения врача, особенно после инъекций или операций." : "Usually not immediately – wait for clearance"
         },
         {
-          question: locale === "ru" ? "" : "Is there pain?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Mild discomfort is possible, not usually painful",
-        },
+          question : locale === "ru" ? "Есть ли боль при лечении?" : "Is there pain?",
+          answer : locale === "ru" ? "Возможно левкое чувство дискомфорта, но серьезной боли пациенты, как правило, не испытывают." : "Mild discomfort is possible, not usually painful"
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Use prescribed drops and medications as directed",
-        locale === "ru" ? "" : "Avoid bright light and heavy exertion",
-        locale === "ru" ? "" : "Protect eye from dust and trauma",
-        locale === "ru" ? "" : "Attend all scheduled follow-ups",
-        locale === "ru" ? "" : "Report any sudden vision loss immediately",
-        locale === "ru"
-          ? ""
-          : "Consult your doctor before using glasses or contact lenses.",
+        locale === "ru" ? "Используйте назначенные капли и лекарства строго по инструкции." : "Use prescribed drops and medications as directed",
+        locale === "ru" ? "Избегайте яркого света и интенсивной физической активности." : "Avoid bright light and heavy exertion",
+        locale === "ru" ? "Защищайте глаза от пыли, загрязнений и возможных травм." : "Protect eye from dust and trauma",
+        locale === "ru" ? "Посещайте все плановые контрольные обследования." : "Attend all scheduled follow-ups",
+        locale === "ru" ? "Немедленно сообщайте врачу о внезапном ухудшении или потере зрения." : "Report any sudden vision loss immediately",
+        locale === "ru" ? "Проконсультируйтесь с офтальмологом перед использованием очков или контактных линз." : "Consult your doctor before using glasses or contact lenses."
       ],
       preList: [
-        locale === "ru" ? "" : "Full eye examination and imaging required",
-        locale === "ru"
-          ? ""
-          : "Inform doctor about all medications and allergies",
-        locale === "ru" ? "" : "Control blood pressure and systemic conditions",
-        locale === "ru" ? "" : "Arrange someone to drive you home",
-        locale === "ru" ? "" : "Follow a healthy diet and get enough sleep",
+        locale === "ru" ? "Пройдите полное обследование глаз, включая визуализацию, перед процедурой." : "Full eye examination and imaging required",
+        locale === "ru" ? "Обязательно сообщите врачу обо всех принимаемых медикаментах и наличии аллергий." : "Inform doctor about all medications and allergies",
+        locale === "ru" ? "Контролируйте уровень артериального давления и хронические заболевания." : "Control blood pressure and systemic conditions",
+        locale === "ru" ? "Соблюдайте сбалансированную диету и обеспечьте себе полноценный сон." : "Follow a healthy diet and get enough sleep"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Заболевания сетчатки могут существенно повлиять на зрение, но при ранней диагностике и лечении их течение можно контролировать. Обращение за медицинской помощью на ранней стадии помогает сохранить зрение и улучшить качество жизни."
             : "Retinal diseases impact vision and may be managed with early intervention. Seeking timely treatment can help preserve vision and improve life quality.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Комплексное лечение заболеваний Сетчатки с помощью AZPO Health в Турции"
             : "Comprehensive Retinal Disease Treatment Options Through AZPO Health in Turkey",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Выбор страны и клиники для прохождения лечения &mdash; важный шаг. Когда речь идет о заболеваниях сетчатки, Турция становится одним из лидирующих направлений для пациентов, которые стремятся получить качественную медицинскую помощь и доступ к передовым технологиям. С помощью AZPO Health вы можете выйти на связь с авторитетными клиниками и опытными офтальмологами, специализирующимися на диагностике и лечении различных заболеваний сетчатки.</p>
+<h3 dir="ltr">Почему стоит выбрать Турцию для лечения заболеваний сетчатки?</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытные специалисты: в Турции работает большое количество квалифицированных офтальмологов, специализирующихся на заболеваниях сетчатки. Многие из них прошли обучение за рубежом и постоянно повышают квалификацию, следя за последними достижениями в области офтальмологии.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные медицинские учреждения: партнерские клиники и госпитали AZPO Health оснащены самым современным оборудованием для диагностики и лечения, включая высокоточные системы визуализации и лазерные технологии, которые особенно важны при лечении сетчатки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный и комплексный подход: турецкие специалисты ориентированы на пациента и всегда учитывают особенности каждого случая. Лечение подбирается индивидуально, что повышает шансы на успешный результат.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полное сопровождение от AZPO Health: мы организуем весь медицинский маршрут &mdash; от первой консультации до послеоперационного наблюдения. Также помогаем с поездкой, проживанием и переводом, чтобы вы могли сосредоточиться на восстановлении, не думая о бытовых вопросах.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Забота о вашем комфорте: турецкие клиники уделяют особое внимание психологическому и физическому состоянию пациентов. Во время всего лечения вы будете окружены вниманием и поддержкой медицинского персонала.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Заболевания сетчатки: причины, симптомы и эффективные методы лечения</h3>
+<p dir="ltr">Сетчатка &mdash; это светочувствительный слой в задней части глаза, играющий ключевую роль в процессе зрения. Различные заболевания могут повлиять на её работу, вызывая ухудшение зрения или даже слепоту, если вовремя не начать лечение. К числу наиболее распространенных заболеваний сетчатки относятся:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Возрастная макулярная дегенерация (ВМД): поражает центральное зрение, затрудняя чтение, вождение и распознавание лиц.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Диабетическая ретинопатия: возникает вследствие повреждения сосудов сетчатки при сахарном диабете.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Отслоение сетчатки: опасное состояние, при котором сетчатка отделяется от задней стенки глаза.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Глаукома: влияет на зрительный нерв и может затрагивать сетчатку.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пигментный ретинит: наследственные заболевания, приводящие к постепенной потере клеток сетчатки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Макулярная дыра: разрыв в центральной области сетчатки &mdash; макуле.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Разрывы сетчатки: мелкие повреждения, способные привести к ее отслоению.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Подход к лечению зависит от типа и стадии заболевания. В Турции, при поддержке AZPO Health, вы получите доступ к опытным офтальмологам и передовым методикам, включая:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лазерную терапию: для устранения кровотечений, закрытия разрывов и стабилизации состояния.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Анти-VEGF инъекции: для остановки роста аномальных сосудов при ВМД и диабетической ретинопатии.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургическое вмешательство: при отслоении сетчатки, макулярной дыре и других патологиях.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Имплантация интраокулярных линз: в отдельных случаях &mdash; для улучшения зрения при заболеваниях сетчатки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Фотодинамическая терапия (ФДТ): используется при некоторых формах макулопатии.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Минимально инвазивные операции при глаукоме (MIGS): для снижения внутриглазного давления и профилактики осложнений.</p>
+</li>
+</ul>
+<p dir="ltr">Офтальмологи проводят детальное обследование, включая визуализацию сетчатки, и предлагают индивидуальный план лечения с учётом всех особенностей пациента. Каждую процедуру объясняют подробно, с описанием возможных результатов и рисков.</p>
+<p dir="ltr">AZPO Health &mdash; ваш проводник в лечении заболеваний сетчатки в Турции. Мы помогаем сделать путь к качественному лечению за границей простым и безопасным. AZPO Health предоставляет всестороннюю поддержку и организацию лечения в лучших клиниках Турции.</p>
+<p dir="ltr">Мы предлагаем:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подбор клиник и специалистов с опытом в лечении заболеваний сетчатки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Онлайн-консультации с врачами до поездки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подробную информацию о методах лечения, клиниках и врачах.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Организацию поездки, бронирование жилья и трансферов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Языковое сопровождение для удобного общения с медперсоналом.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Постоянную поддержку на всем протяжении лечения и восстановления.</p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health ставит ваше здоровье на первое место и обеспечивает доступ к лечению на самом высоком уровне.</p>
+<p dir="ltr">Мы ценим прозрачность, индивидуальный подход и чёткую коммуникацию, помогая вам принимать осознанные решения о своем здоровье. Если вы ищете современное и профессиональное лечение заболеваний сетчатки, AZPO Health поможет вам найти лучших специалистов в Турции и начать путь к восстановлению зрения и улучшению качества жизни.</p>
+<p dir="ltr">Свяжитесь с AZPO Health уже сегодня, чтобы получить бесплатную консультацию и персональную информацию о вариантах лечения заболеваний сетчатки в Турции.</p>
+<h2 dir="ltr">Реальные истории пациентов</h2>
+<p dir="ltr">Истории других людей, столкнувшихся с похожими диагнозами, могут вселить уверенность и вдохновить на путь к выздоровлению. Ниже &mdash; примеры пациентов, которые обратились за лечением заболеваний сетчатки в Турции при содействии AZPO Health.</p>
+<p dir="ltr">История Сары: &laquo;Мое зрение ухудшалось с каждым годом из-за возрастной макулярной дегенерации. Чтение и узнавание лиц стали вызывать трудности, я чувствовала беспомощность и страх перед возможной потерей самостоятельности. Мой офтальмолог предложил стандартное лечение, но я искала более современные методы. Так я узнала о высококвалифицированных офтальмологах в Турции. Благодаря медицинскому координатору я вышла на отличную клинику в Стамбуле. Врачи объяснили суть новейшей терапии анти-VEGF, которая в моей стране была еще недоступна. От первой онлайн-консультации до контрольных осмотров после лечения &mdash; всё прошло на высоком уровне. Моё зрение стабилизировалось, и я снова могу читать. Я бесконечно благодарна за возможность пройти лечение в Турции&raquo;.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">История Дэвида:&nbsp; &laquo;Диагноз диабетическая ретинопатия стал неожиданностью. Я боялся потерять зрение и не мог представить свою жизнь без привычной активности. Врач предложил лазерное лечение, но я хотел более комплексного подхода. Знакомый посоветовал рассмотреть лечение в Турции. Я связался с AZPO Health, и они организовали консультацию с опытным офтальмологом, специализирующимся на моем диагнозе. После детального обследования он предложил комбинированный подход: лазерная терапия и коррекция образа жизни. Клиника была современной, персонал &mdash; внимательным, а уровень заботы &mdash; превосходным. Я чувствовал, что меня действительно слышат и заботятся о обо мне. Сейчас болезнь под контролем, и я смотрю в будущее с уверенностью&raquo;.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Choosing the right place for medical treatment is a significant decision. When it comes to retinal diseases, Turkey has emerged as a leading destination for individuals seeking high-quality care and advanced medical technologies. Through AZPO Health, you can connect with reputable clinics and experienced ophthalmologists who specialize in diagnosing and treating a wide range of retinal conditions.</p>
 <h3 dir="ltr">Why Consider Turkey for Your Retinal Disease Treatment?</h3>
 <ul>
