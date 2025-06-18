@@ -1963,20 +1963,20 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Косметическая стоматология в Турции: преобразите свою улыбку и обретите уверенность с AZPO Health"
+          ? "Косметическая стоматология в Турции: Преобразите свою улыбку и уверенность с AZPO Health"
           : "Cosmetic Dentistry in Turkey: Transform Your Smile and Confidence with AZPO Health",
       descriptionTop:
         locale === "ru"
-          ? "Мечтаете о ослепительной голливудской улыбке, которая повысит вашу уверенность в себе? Турция стала мировым центром косметической стоматологии, предлагая лечение мирового класса, квалифицированных специалистов и исключительную доступность. Узнайте, как AZPO Health свяжет вас с ведущими стоматологами-косметологами и предложит комплексные пакеты услуг, чтобы вы могли обрести улыбку своей мечты."
+          ? "Мечтаете о безупречной улыбке, которая будет источником вашей уверенности? Турция – это место, где сливаются передовые технологии, опытные специалисты и доступные цены. Благодаря AZPO Health вы получаете возможность работать с лучшими косметическими стоматологами и наслаждаться эксклюзивными предложениями, включая комплексные пакеты, которые позволят вам получить ту самую улыбку, о которой вы всегда мечтали."
           : "Dreaming of a dazzling smile makeover to boost your confidence? Turkey has become a global hotspot for cosmetic dentistry, offering world-class treatments, skilled specialists, and exceptional affordability. Discover how AZPO Health connects you with leading cosmetic dentists and all-inclusive packages to achieve the smile you've always desired.",
       videoContents: {
         title:
           locale === "ru"
-            ? "Косметическая стоматология: раскройте красоту вашей улыбки"
+            ? "Косметическая стоматология: откройте свою самую красивую улыбку"
             : "Cosmetic Dentistry: Unlocking Your Most Beautiful Smile",
         desc:
           locale === "ru"
-            ? "Косметическая стоматология выходит за рамки базового ухода за полостью рта, фокусируясь на улучшении внешнего вида зубов, десен и улыбки в целом. Она включает ряд процедур, направленных на улучшение эстетики, повышение самооценки и создание улыбки, которой вы будете гордиться. С косметической стоматологией в Турции от AZPO Health обретение улыбки вашей мечты становится реальностью — как с эстетической, так и с финансовой точки зрения."
+            ? "Косметическая стоматология выходит за рамки базового ухода за полостью рта и фокусируется на улучшении внешнего вида ваших зубов, десен и улыбки. Это целый ряд процедур, которые помогают улучшить эстетику вашей улыбки, укрепить уверенность в себе и подарить вам идеальный образ. В Турции, с помощью AZPO Health, мечта о совершенной улыбке становится реальностью – как с точки зрения эстетики, так и доступности."
             : "Cosmetic dentistry goes beyond basic oral health to focus on enhancing the appearance of your teeth, gums, and smile. It encompasses a range of treatments designed to improve aesthetics, boost self-esteem, and create a smile you'll be proud to show off. With cosmetic dentistry in Turkey through AZPO Health, achieving your dream smile is now within reach – both aesthetically and financially.",
       },
       subCategoryContent: {
@@ -1988,93 +1988,92 @@ export const subCategoryHandler = (
       contents: {
         title:
           locale === "ru"
-            ? "Полный спектр услуг косметической стоматологии в Турции с AZPO Health"
+            ? "Комплексные услуги косметической стоматологии в Турции с AZPO Health"
             : "Comprehensive Cosmetic Dentistry Services in Turkey with AZPO Health",
         content:
           locale === "ru"
-            ? `<p dir="ltr">AZPO Health сотрудничает с ведущими стоматологическими клиниками в Турции, чтобы предложить широкий спектр услуг косметической стоматологии, которые разрабатываются с учетом ваших индивидуальных эстетических целей. Наши услуги включают:</p>
+            ? `<p dir="ltr">AZPO Health сотрудничает с лучшими стоматологическими клиниками Турции, предлагая разнообразные косметические процедуры, которые помогут вам достичь желаемых эстетических результатов. Мы предлагаем:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Отбеливание зубов: мгновенное сияние вашей улыбки. Боритесь с пятнами и изменением цвета зубов, чтобы достичь ярко-белоснежной улыбки с помощью профессиональных процедур отбеливания. Мы предлагаем мощное кабинетное отбеливание для немедленных результатов, а также удобные наборы для домашнего использования для постепенного улучшения цвета зубов.</p>
+<p dir="ltr" role="presentation">Отбеливание зубов: осветлите свою улыбку мгновенно: борьба с пятнами и изменением цвета зубов, достигая яркой и белоснежной улыбки благодаря профессиональным процедурам отбеливания. Мы предлагаем как быстрое отбеливание в кабинете, так и удобные наборы для домашнего использования, которые постепенно придают вашей улыбке сияющий вид.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Фарфоровые виниры и люминиры: безупречный макияж улыбки. Скрывайте такие недостатки, как сколы, трещины, щели, пятна и незначительное искривление зубов с помощью индивидуально изготовленных фарфоровых виниров или ультратонких люминиров. Эти процедуры преображают форму, цвет и общий вид ваших зубов, создавая идеальную улыбку, достойную обложки журнала.</p>
+<p dir="ltr" role="presentation">Фарфоровые виниры и люминиры: безупречная трансформация улыбки: Маскируйте дефекты, такие как сколы, трещины, промежутки и пятна, с помощью индивидуально подобранных фарфоровых виниров или ультратонких люминиров. Эти процедуры изменяют форму, цвет и внешний вид ваших зубов, создавая идеальную и естественную улыбку.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Зубные коронки и мосты: гармония красоты и функциональности. Восстановите поврежденные или утраченные зубы с помощью изысканных коронок и мостов, созданных из высококачественных материалов, таких как фарфор и диоксид циркония. Эти реставрации идеально сливаются с естественной структурой ваших зубов, улучшая их функциональность и придавая вашей улыбке совершенный вид.</p>
+<p dir="ltr" role="presentation">Коронки и мосты: восстановление красоты и функциональности зубов: восстановите поврежденные или утраченные зубы с помощью эстетически привлекательных реставраций из высококачественного фарфора или циркония. Эти материалы идеально сливаются с естественными зубами, обеспечивая долговечность и отличный внешний вид.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Косметическое пломбирование (бондинг): минимальные дефекты &mdash; максимальный результат. Исправьте мелкие сколы, щели или изменения цвета зубов с помощью пломбирования композитной смолой, идеально подходящей под цвет ваших зубов. Этот консервативный и доступный метод позволяет значительно улучшить внешний вид зубов, устраняя незначительные дефекты.</p>
+<p dir="ltr" role="presentation">Стоматологический бондинг: маленькие дефекты, большое влияние: устранение сколов, промежутков или потемнений с помощью композитных материалов, точно подобранных по цвету к зубам. Этот доступный и эффективный метод позволяет быстро и безболезненно улучшить внешний вид зубов.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Ортодонтия: выравнивание зубов для идеальной улыбки. Исправьте неправильный прикус и кривизну зубов с помощью современных ортодонтических решений. Выбирайте традиционные брекеты или незаметные прозрачные элайнеры, такие как Invisalign, для достижения ровной и симметричной улыбки, а также улучшения долгосрочного здоровья полости рта.</p>
+<p dir="ltr" role="presentation">Ортодонтия: выравнивание зубов для гармоничной улыбки: Современные методы ортодонтии, включая традиционные брекеты и прозрачные капы, такие как Invisalign, помогут вам выровнять зубы и исправить прикус, при этом улучшая не только внешний вид, но и здоровье полости рта.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Контурная пластика десен (коррекция десневой улыбки): измените форму и баланс линии десен, чтобы уменьшить видимость &laquo;десневой улыбки&raquo; и создать более гармоничные пропорции между зубами и деснами, улучшив общую эстетику вашей улыбки.</p>
+<p dir="ltr" role="presentation">Контурирование десен (коррекция &laquo;десневой улыбки&raquo;): подкорректируйте линию десен, устраняя &laquo;десневую улыбку&raquo; и создавая идеальный баланс между зубами и деснами. Это улучшит общую эстетику вашей улыбки.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Преображение улыбки (Smile Makeover): индивидуальные преображения: сочетайте несколько процедур косметической стоматологии для комплексного преображения улыбки, разработанного с учетом ваших уникальных черт лица, индивидуальности и желаемого результата. Стоматологи AZPO Health специализируются на создании персонализированных планов преображения улыбки, которые гарантируют потрясающие и естественные результаты.</p>
+<p dir="ltr" role="presentation">Преобразование улыбки: индивидуальные решения: комбинируйте несколько косметических процедур для создания уникальной улыбки, идеально подходящей вашему лицу и характеру. Наши стоматологи AZPO Health разрабатывают персонализированные планы, достигая естественного и гармоничного результата, который будет радовать вас долгие годы.</p>
 </li>
 </ul>
 <h2 dir="ltr">Почему стоит выбрать Турцию для косметической стоматологии с AZPO Health?</h2>
-<p dir="ltr">Турция зарекомендовала себя как мировой лидер в косметической стоматологии, привлекая пациентов со всего света, стремящихся к исключительному качеству и невероятной ценности. AZPO Health усиливает этот статус, предлагая:</p>
+<p dir="ltr">Турция давно зарекомендовала себя как мировой центр косметической стоматологии, привлекая пациентов со всего мира, которые ищут сочетание непревзойденного качества и доступных цен. С AZPO Health ваше путешествие в мир идеальной улыбки становится не только возможным, но и приятным:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступные цены на косметическую стоматологию: лечение мирового класса по доступным ценам. Получите доступ к премиальной косметической стоматологии в Турции по значительно более низким ценам, чем в Европе, Северной Америке или Австралии. Обретите улыбку своей мечты, не жертвуя качеством и не переплачивая. Недорогая косметическая стоматология с AZPO Health &mdash; это исключительная ценность без компромиссов по качеству. Узнайте цены на косметическую стоматологию у наших консультантов.</p>
+<p dir="ltr" role="presentation">Доступные цены на косметическую стоматологию: мы предоставляем вам возможность получить мировое качество стоматологического обслуживания по значительно более выгодной цене, чем в Европе, Северной Америке или Австралии. Достигайте своей идеальной улыбки, не переживая о высоких расходах. Доступная косметическая стоматология с AZPO Health &ndash; это настоящая ценность без компромиссов в качестве.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Высококвалифицированные и специализированные стоматологи-косметологи: AZPO Health сотрудничает с тщательно отобранными стоматологическими клиниками в Турции, где работают высококвалифицированные и опытные стоматологи-косметологи. Эти специалисты являются экспертами в новейших методах косметической стоматологии, что гарантирует вам первоклассный уход и достижение красивых, естественных результатов.</p>
+<p dir="ltr" role="presentation">Опытные и высококвалифицированные стоматологи: в Турции множество стоматологических клиник, и выбор лучшей требует тщательных знаний и опыта. AZPO Health, с более чем 20-летним опытом работы с международными пациентами, помогает вам сделать правильный выбор. Мы сотрудничаем только с проверенными клиниками, где работают специалисты мирового уровня, использующие самые современные методы и технологии для достижения естественных и эстетичных результатов.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Современные клиники и технологии: наши клиники-партнеры в Турции оснащены передовым стоматологическим оборудованием и соблюдают строгие международные стандарты гигиены, обеспечивая безопасную, комфортную и современную среду для лечения.</p>
+<p dir="ltr" role="presentation">Современные клиники с передовыми технологиями: наши партнерские клиники оснащены новейшими технологиями и соблюдают самые высокие международные стандарты гигиены, обеспечивая вам комфортное и безопасное лечение.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Удобные пакеты &ldquo;все включено&rdquo; для беззаботного пребывания: AZPO Health упрощает ваше стоматологическое путешествие, предлагая комплексные пакеты, которые могут включать авиабилеты, роскошное проживание, индивидуальный трансфер из аэропорта, транспорт по Турции и персональную поддержку пациентов, обеспечивая комфорт и удобство на протяжении всей поездки.</p>
+<p dir="ltr" role="presentation">Всеобъемлющие пакеты для полного комфорта: с AZPO Health ваш путь к новой улыбке будет легким и приятным. Мы предлагаем пакеты, включающие не только лечение, но и организацию вашего пребывания: перелет, роскошные условия для проживания, трансферы и индивидуальное сопровождение, чтобы ваше путешествие было комфортным и беспечным.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Индивидуальный и художественный подход к дизайну улыбки: стоматологи AZPO Health понимают, что косметическая стоматология &mdash; это не только наука, но и искусство. Они подходят к каждому случаю индивидуально, внимательно учитывая черты вашего лица, тон кожи и личные предпочтения, чтобы создать уникальный дизайн улыбки, который идеально подчеркнет вашу индивидуальность и гармонично дополнит общий облик.</p>
+<p dir="ltr" role="presentation">Персонализированный подход к дизайну улыбки: косметическая стоматология &ndash; это искусство. В AZPO Health наши специалисты не просто делают вашу улыбку красивой, но и делают ее уникальной, гармонично подходящей к вашим чертам лица и личным предпочтениям. Мы создаем улыбку, которая подчеркивает вашу индивидуальность и становится идеальным дополнением к вашему образу.</p>
 </li>
 </ul>
-<h2 dir="ltr">Преимущества косметической стоматологии: нечто большее, чем просто красивая улыбка</h2>
-<p dir="ltr">Инвестиции в косметическую стоматологию предлагают множество преимуществ, которые выходят за рамки простого улучшения внешности:</p>
+<h2 dir="ltr">Преимущества косметической стоматологии : больше чем, просто красивая улыбка&nbsp;</h2>
+<p dir="ltr">Косметическая стоматология &ndash; это не только путь к совершенству внешности, но и шаг к гармонии и уверенности. Вот почему она приносит неоценимые преимущества, которые выходят далеко за рамки эстетики:</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Улучшенная эстетика улыбки: обретите более яркую, белоснежную, ровную и симметричную улыбку, устранив недостатки и раскрывая естественную красоту вашего лица.</p>
+<p dir="ltr" role="presentation">Совершенство улыбки: ваши зубы становятся ярче, белее, ровнее и симметричнее. Косметическая стоматология скрывает дефекты и раскрывает всю природную красоту вашей улыбки, делая её по-настоящему великолепной.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Повышение уверенности в себе и самооценки: преображение улыбки может значительно повысить вашу уверенность в себе и самооценку, оказывая положительное влияние как на личную, так и на профессиональную жизнь.</p>
+<p dir="ltr" role="presentation">Повышение уверенности и самооценки: обновлённая улыбка влияет на ваше восприятие себя, улучшая уверенность и самооценку. Это находит отражение не только в личной жизни, но и в профессиональной сфере, открывая новые горизонты.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Улучшение первого впечатления: улыбка &mdash; одно из первых, что люди замечают. Красивая улыбка может оставить положительное и незабываемое первое впечатление, открывая новые возможности как в социальной, так и в профессиональной жизни.</p>
+<p dir="ltr" role="presentation">Незабываемые первые впечатления: улыбка &ndash; это первое, что привлекает внимание. С помощью косметической стоматологии вы создаете сильное и позитивное впечатление, которое останется в памяти надолго и откроет перед вами новые возможности в общении.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Улучшение здоровья полости рта (в некоторых случаях): хотя косметические процедуры ориентированы в первую очередь на эстетику, такие как ортодонтия и коронки, они также могут улучшить прикус и защитить поврежденные зубы, способствуя улучшению долгосрочного здоровья полости рта.</p>
+<p dir="ltr" role="presentation">Забота о здоровье зубов: некоторые процедуры, такие как ортодонтия или установка коронок, не только улучшают эстетику, но и способствуют здоровью полости рта, обеспечивая правильный прикус и защищая поврежденные зубы.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Долговечные результаты и выгодные инвестиции: многие процедуры косметической стоматологии обеспечивают долговременные результаты, что делает их выгодным вложением в вашу внешность, уверенность в себе и общее благополучие.</p>
+<p dir="ltr" role="presentation">Долговечность и ценность: результаты косметической стоматологии радуют вас на протяжении долгих лет, став разумной и выгодной инвестицией в вашу красоту и уверенность.</p>
 </li>
 </ul>
-<p dir="ltr">&laquo;Я всегда стеснялась своей улыбки, но косметическая стоматология в Турции с AZPO Health стала самым лучшим подарком, который я когда-либо себе делала! Мои виниры выглядят потрясающе естественно, и я не могу перестать улыбаться. Цена была невероятно доступной, а уход &mdash; по-настоящему мирового класса. Спасибо, AZPO Health, за то, что изменили мою жизнь!&raquo; &mdash; Елена, Москва</p>
-<h2 dir="ltr">AZPO Health: ваш надежный партнер в косметической стоматологии в Турции</h2>
-<p dir="ltr">AZPO Health стремится сделать исключительную косметическую стоматологию доступной и приятной. Мы &mdash; ваш надежный проводник в мире эстетической стоматологии Турции, предлагая экспертные консультации, соединяя вас с лучшими клиниками и стоматологами, а также обеспечивая комфортное и беззаботное путешествие к преображению вашей улыбки.</p>
-<p dir="ltr">Почему стоит выбрать AZPO Health для вашего путешествия в мир косметической стоматологии?</p>
+<h2 dir="ltr">AZPO Health: ваш надежный партнер в мире косметической стоматологии в Турции</h2>
+<p dir="ltr">AZPO Health стремится сделать исключительную косметическую стоматологию доступной и радостной для каждого. Мы &ndash; ваш надежный партнер в достижении идеальной улыбки, соединяя вас с лучшими клиниками и опытными стоматологами Турции. Мы обеспечиваем беззаботный процесс преображения улыбки, чтобы вы могли наслаждаться результатами, которые превосходят ваши ожидания.</p>
+<p dir="ltr">Почему стоит выбрать AZPO Health для вашего пути в косметической стоматологии?</p>
 <ul>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Доступ к ведущим стоматологам-косметологам в Турции: мы сотрудничаем с тщательно отобранными клиниками и стоматологами, обладающими богатым опытом в косметической стоматологии и художественным подходом к созданию идеальной улыбки.</p>
+<p dir="ltr" role="presentation">Доступ к ведущим специалистам Турции: мы сотрудничаем только с тщательно отобранными клиниками и стоматологами, обладающими высоким уровнем профессионализма и художественным подходом к созданию идеальных улыбок.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Персонализированный и внимательный уход за пациентами: мы ставим в приоритет ваши индивидуальные эстетические цели и потребности, предлагая персонализированные консультации и поддержку координатора пациента на протяжении всего вашего пребывания.</p>
+<p dir="ltr" role="presentation">Персонализированный и внимательный подход: мы заботимся о ваших эстетических целях, предлагая индивидуальные консультации и поддержку на каждом шаге, чтобы ваше преображение было максимально комфортным и эффективным.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Прозрачные и доступные комплексные пакеты: мы предоставляем четкие и комплексные цены на косметическую стоматологию в Турции, гарантируя исключительную ценность и отсутствие скрытых платежей. Узнайте подробности о ценах на косметическую стоматологию у наших консультантов.</p>
+<p dir="ltr" role="presentation">Прозрачные и доступные пакеты &laquo;все включено&raquo;: мы предлагаем понятные и честные условия, с полным описанием стоимости, чтобы вы могли насладиться качественным лечением без скрытых платежей.</p>
 </li>
 <li dir="ltr" aria-level="1">
-<p dir="ltr" role="presentation">Круглосуточная помощь и поддержка: наша заботливая команда поддержки пациентов доступна круглосуточно, чтобы ответить на ваши вопросы, предоставить помощь и обеспечить ваш комфорт и спокойствие.</p>
+<p dir="ltr" role="presentation">Круглосуточная поддержка: наша команда всегда рядом, чтобы ответить на любые вопросы и обеспечить комфортное пребывание на протяжении всего пути.</p>
 </li>
 </ul>
-<p dir="ltr">Готовы ли вы преобразить свою улыбку и раскрыть её истинную красоту с помощью косметической стоматологии в Турции с AZPO Health?</p>
-<p dir="ltr">Свяжитесь с нами сегодня для бесплатной консультации и индивидуального расчета стоимости! Просто отправьте нам сообщение, и наша команда экспертов оперативно свяжется с вами, чтобы обсудить ваши цели в косметической стоматологии, ответить на все вопросы и помочь спланировать ваше преображающее путешествие за улыбкой в Турцию с AZPO Health. Ваша новая сияющая улыбка уже ждет вас!</p>
-<p dir="ltr">&nbsp;</p>`
+<p dir="ltr">Готовы раскрыть свою идеальную улыбку с косметической стоматологией в Турции с AZPO Health?</p>
+<p dir="ltr">Свяжитесь с нами для бесплатной консультации и персонализированного расчета! Просто отправьте сообщение, и мы быстро свяжемся с вами, чтобы обсудить ваши цели, ответить на вопросы и помочь спланировать ваше преображение улыбки с AZPO Health. Ваше сияющее будущее начинается с вашей новой улыбки!</p>
+<p>&nbsp;</p>`
             : `
            <p><span style="color: rgb(27, 28, 29);">AZPO Health partners with leading dental clinics in Turkey to offer a wide array of cosmetic dentistry services, tailored to meet your individual aesthetic goals. Our services include:</span></p><p>Teeth Whitening: Brighten Your Smile Instantly: Combat stains and discoloration and achieve a dramatically whiter smile with professional teeth whitening treatments. Options include powerful in-office whitening for immediate results and convenient take-home kits for gradual enhancement.</p><p><br></p><p>Porcelain Veneers and Lumineers: Flawless Smile Makeovers: Conceal imperfections like chips, cracks, gaps, stains, and minor misalignments with custom-crafted porcelain veneers or ultra-thin Lumineers. These transform the shape, color, and overall appearance of your teeth for a picture-perfect smile.</p><p><br></p><p>Dental Crowns and Bridges: Beautiful and Functional Restorations: Restore damaged, decayed, or missing teeth with lifelike dental crowns and bridges crafted from aesthetically pleasing materials like porcelain and zirconia. These restorations blend seamlessly with your natural teeth while improving both function and appearance.</p><p><br></p><p>Cosmetic Bonding: Minor Imperfections, Major Impact: Address small chips, gaps, or discoloration with tooth-colored composite resin bonding. This conservative and affordable technique can significantly enhance the appearance of minor dental flaws.</p><p><br></p><p>Orthodontics: Straighten Teeth for a Harmonious Smile: Correct misaligned teeth and bite issues with modern orthodontic solutions. Choose from traditional braces or discreet clear aligner options like Invisalign to achieve a straighter, more symmetrical smile and improve long-term oral health.</p><p><br></p><p>Gum Contouring (Gummy Smile Correction): Reshape and balance your gum line to reduce a "gummy smile" and create more harmonious proportions between your teeth and gums, enhancing overall smile aesthetics.</p><p><br></p><p>Smile Makeovers: Customized Transformations: Combine multiple cosmetic dentistry services for a comprehensive smile makeover tailored to your unique facial features, personality, and desired outcome. AZPO Health dentists excel at creating personalized smile makeover plans that achieve stunning and natural-looking results.</p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Why Choose Turkey for Your Cosmetic Dentistry with AZPO Health?</span></h2><p><span style="color: rgb(27, 28, 29);">Turkey has become a global leader in cosmetic dentistry, attracting patients worldwide seeking exceptional quality and value. AZPO Health enhances this advantage by providing:</span></p><p>Affordable Cosmetic Dentistry Prices: World-Class Treatment, Accessible Costs: Access premium cosmetic dentistry in Turkey at significantly lower cosmetic dentistry prices and overall prices for cosmetic dentistry compared to many countries in Europe, North America, or Australia. Achieve your dream smile without compromising on quality or breaking the bank. Cheap cosmetic dentistry in Turkey through AZPO Health means exceptional value, not compromised care.</p><p>Highly Experienced and Specialized Cosmetic Dentists: AZPO Health partners with carefully selected dental clinics in Turkey that are staffed by highly skilled and experienced cosmetic dentists. These specialists are experts in the latest cosmetic dentistry services and techniques, ensuring you receive top-tier care and achieve beautiful, natural-looking results.</p><p>State-of-the-Art Clinics and Technology: Our partner clinics in Turkey are equipped with advanced dental technology and adhere to stringent international hygiene standards, providing a safe, comfortable, and modern treatment environment.</p><p>Convenient All-Inclusive Packages for a Seamless Experience: AZPO Health simplifies your dental journey with all-inclusive packages that can incorporate flights, luxurious accommodation, private airport transfers, in-country transportation, and dedicated patient support, making your trip stress-free and convenient.</p><p>Personalized and Artistic Approach to Smile Design: AZPO Health dentists understand that cosmetic dentistry is both science and art. They take a personalized approach, carefully considering your facial features, skin tone, and personal preferences to create a smile design that is uniquely flattering and harmonious with your overall appearance.</p><h2><span style="color: rgb(27, 28, 29);">Benefits of Cosmetic Dentistry: More Than Just a Beautiful Smile</span></h2><p><span style="color: rgb(27, 28, 29);">Investing in cosmetic dentistry offers a multitude of benefits that extend beyond just aesthetics:</span></p><p>Enhanced Smile Aesthetics: Achieve a brighter, whiter, straighter, and more symmetrical smile that you'll be proud to show off, correcting imperfections and maximizing your smile's natural beauty.</p><p>Boosted Self-Confidence and Self-Esteem: A transformed smile can have a profound impact on your self-confidence and self-esteem, positively affecting your personal and professional life.</p><p>Improved First Impressions: Your smile is one of the first things people notice. A beautiful smile can create a positive and lasting first impression, opening doors in social and professional settings.</p><p>Enhanced Oral Health (in some cases): While primarily aesthetic, some cosmetic procedures like orthodontics and crowns can also improve bite alignment and protect damaged teeth, contributing to better long-term oral health.</p><p>Lasting Results and a Rewarding Investment: Many cosmetic dentistry services offer long-lasting results, making them a worthwhile investment in your appearance, confidence, and overall well-being.</p><p><em style="color: rgb(27, 28, 29);">"I had always been self-conscious about my smile. Cosmetic dentistry in Turkey with AZPO Health was the best gift I ever gave myself! My veneers are stunningly natural, and I can't stop smiling. The price was incredible, and the care I received was truly world-class. Thank you, AZPO Health, for changing my life!"</em><span style="color: rgb(27, 28, 29);"> – Emily R., UK</span></p><h2><span style="color: rgb(27, 28, 29);">AZPO Health: Your Trusted Partner for Cosmetic Dentistry in Turkey</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health is dedicated to making exceptional cosmetic dentistry accessible and enjoyable. We are your trusted partner for navigating cosmetic dentistry in Turkey, providing expert guidance, connecting you with top-tier clinics and dentists, and ensuring a seamless and rewarding smile transformation journey.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Cosmetic Dentistry Journey?</span></p><p>Access to Leading Cosmetic Dentists in Turkey: We partner with meticulously vetted clinics and dentists renowned for their expertise in cosmetic dentistry and their artistic approach to smile design.</p><p>Personalized and Attentive Patient Care: We prioritize your individual aesthetic goals and concerns, providing personalized consultations and dedicated patient coordinator support throughout your entire experience.</p><p>Transparent and Affordable All-Inclusive Packages: We offer clear, all-inclusive pricing for cosmetic dentistry in turkey, ensuring exceptional value and no hidden costs.</p><p>Dedicated 24/7 Assistance and Support: Our caring patient support team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind.</p><p><span style="color: rgb(27, 28, 29);">Ready to unlock your dream smile with cosmetic dentistry in Turkey and AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your cosmetic dentistry goals, answer your questions, and help you plan your transformative smile journey to Turkey with AZPO Health. Your radiant new smile awaits!</span></p><p><br></p><p><br></p>
         `,
@@ -2135,36 +2134,112 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Periodontics in Turkey: Expert Gum Care for a Healthy Smile with AZPO Health"
+          ? "Периодонтология в Турции — экспертный уход за деснами для здоровой улыбки с AZPO Health"
           : "Periodontics in Turkey - Expert Gum Care for a Healthy Smile with AZPO Health",
       descriptionTop:
         locale === "ru"
-          ? "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile."
+          ? "Если вас беспокоят заболевания десен или вы ищете специализированное лечение для улучшения здоровья десен, периодонтология в Турции предлагает вам уникальные возможности. Здесь вы найдете высококвалифицированных специалистов и передовые методы лечения по доступным ценам. AZPO Health соединяет вас с ведущими периодонтами, предлагая комплексные  пакеты для восстановления здоровья ваших десен и создания уверенной и красивой улыбки."
           : "Concerned about gum disease or seeking specialized gum treatment for a healthier smile? Periodontics in Turkey offers access to highly skilled specialists and advanced treatments at affordable prices. Discover how AZPO Health connects you with leading periodontists and all-inclusive packages to restore your gum health and achieve a confident, lasting smile.",
       videoContents: {
         title:
           locale === "ru"
-            ? "Periodontics: The Foundation of a Healthy and Lasting Smile"
+            ? "Периодонтология: основа здоровой и красивой улыбки"
             : "Periodontics: The Foundation of a Healthy and Lasting Smile",
         desc:
           locale === "ru"
-            ? "Periodontics is a specialized field of dentistry focused on the prevention, diagnosis, and treatment of periodontal disease, also known as gum disease. Healthy gums are the foundation for healthy teeth and a healthy smile. Periodontal disease can damage the soft tissues and bone that support your teeth, potentially leading to tooth loss and other serious health issues."
+            ? "Периодонтология – это специализированная область стоматологии, которая занимается профилактикой, диагностикой и лечением заболеваний пародонта, также известных как заболевания десен. Здоровые десны – это основа, на которой строится не только красота вашей улыбки, но и здоровье зубов. Когда десны поражены, они могут повлиять на ткани и кости, поддерживающие зубы, что в конечном итоге может привести к их утрате и множеству других проблем со здоровьем. Периодонтология в Турции с AZPO Health предлагает вам экспертные решения для сохранения здоровья десен и предотвращения осложнений. Этот подход особенно важен в имплантологии, создавая здоровую основу для успешной установки имплантов и долгосрочного сохранения вашей идеальной улыбки."
             : "Periodontics is a specialized field of dentistry focused on the prevention, diagnosis, and treatment of periodontal disease, also known as gum disease. Healthy gums are the foundation for healthy teeth and a healthy smile. Periodontal disease can damage the soft tissues and bone that support your teeth, potentially leading to tooth loss and other serious health issues.",
       },
       subCategoryContent: {
         title:
-          locale === "ru" ? "Periodontics in Turkey" : "Periodontics in Turkey",
+          locale === "ru" ? "Пародонтология в Турции" : "Periodontics in Turkey",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Comprehensive Periodontics Services Available in Turkey with AZPO Health"
+            ? "Комплексные услуги периодонтологии в Турции с AZPO Health"
             : "Comprehensive Periodontics Services Available in Turkey with AZPO Health:",
         content:
           locale === "ru"
-            ? `
-            <p><span style="color: rgb(27, 28, 29);">AZPO Health partners with leading periodontal clinics in Turkey to offer a complete range of services, ensuring your gum health needs are expertly addressed. Our services include:</span></p><p>Non-Surgical Periodontal Therapy: For early to moderate gum disease, non-surgical treatments are often highly effective. These include:</p><p><br></p><p class="ql-indent-1">Scaling and Root Planing (Deep Cleaning): Thorough removal of plaque and tartar buildup from below the gum line and smoothing of tooth root surfaces to promote gum reattachment and healing.</p><p class="ql-indent-1">Antibiotic Therapy: Local or systemic antibiotics to help control bacterial infection and promote gum healing.</p><p>Surgical Periodontal Therapy: For more advanced gum disease, surgical procedures may be necessary to restore gum health and supporting bone structure. These may include:</p><p><br></p><p class="ql-indent-1">Flap Surgery (Pocket Reduction Surgery): Lifting back the gums to access and remove deep tartar deposits and diseased tissue, allowing for more effective cleaning and gum reattachment.</p><p class="ql-indent-1">Bone Grafting: Regenerating lost bone tissue to support teeth and dental implants, improving stability and long-term prognosis.</p><p class="ql-indent-1">Gum Grafting (Soft Tissue Grafting): Covering exposed tooth roots or areas of gum recession with grafted tissue, improving aesthetics, reducing sensitivity, and protecting tooth roots.</p><p>Periodontal Maintenance Therapy: Ongoing care is essential for maintaining gum health after periodontal treatment. AZPO Health emphasizes personalized periodontal maintenance plans, including regular check-ups, professional cleanings, and customized home care instructions to prevent disease recurrence.</p><p><br></p><p>Implant Dentistry and Periodontics Synergy: Healthy gums are crucial for the success of dental implants. AZPO Health’s periodontal specialists work closely with implant dentists to ensure optimal gum health before, during, and after implant placement, maximizing the long-term success of your implant dentistry and periodontics treatments.</p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Why Choose Turkey for Periodontics with AZPO Health?</span></h2><p><span style="color: rgb(27, 28, 29);">Turkey has become a sought-after destination for medical tourism, particularly for specialized dental fields like periodontics. AZPO Health makes accessing expert gum care in Turkey even more appealing by providing:</span></p><p>Affordable Periodontics in Turkey: Expert Gum Care, Accessible Prices: Access high-quality periodontics in turkey at significantly more affordable prices compared to many countries in Europe, North America, or Australia. Receive specialized gum treatment without exceeding your budget.</p><p>Highly Skilled and Experienced Periodontists: AZPO Health partners with carefully vetted dental clinics in Turkey staffed by highly experienced and qualified periodontists. You can be confident in receiving expert care from specialists dedicated to periodontal health.</p><p>Modern Periodontal Clinics and Technology: Our partner clinics in Turkey are equipped with advanced periodontal technology and adhere to stringent hygiene protocols, ensuring a safe, comfortable, and advanced treatment environment for your periodontics care.</p><p>Convenient All-Inclusive Packages for a Stress-Free Journey: AZPO Health offers all-inclusive packages that can combine your periodontics in turkey treatment with flights, comfortable accommodation, airport transfers, and dedicated patient support, making your dental tourism journey seamless and enjoyable.</p><p>Personalized Treatment Plans for Your Gum Health: AZPO Health periodontists provide personalized consultations to assess your individual periodontal needs, discuss your treatment options, and create a customized plan to achieve optimal gum health and a lasting smile.</p><h2><span style="color: rgb(27, 28, 29);">Benefits of Periodontics: Investing in Your Overall Health and Smile</span></h2><p><span style="color: rgb(27, 28, 29);">Seeking professional periodontics treatment offers significant benefits that extend beyond just your gums:</span></p><p>Prevent Tooth Loss: Periodontics is crucial for preventing tooth loss caused by gum disease, helping you maintain your natural teeth for longer.</p><p>Improved Oral Health and Overall Well-being: Healthy gums contribute to overall oral health and can even have a positive impact on your systemic health, as gum disease has been linked to other health conditions.</p><p>Fresher Breath and Improved Confidence: Periodontal treatment can eliminate bad breath caused by gum disease, boosting your confidence and social comfort.</p><p>Enhanced Smile Appearance: Healthy gums frame your teeth beautifully. Periodontics can improve the aesthetics of your gum line, enhancing your overall smile appearance.</p><p>Long-Term Oral Health Investment: Addressing gum disease with periodontics is an investment in your long-term oral health, helping you maintain a healthy and functional smile for years to come.</p><p><em style="color: rgb(27, 28, 29);">"I was worried about my receding gums and potential tooth loss. Periodontics in Turkey with AZPO Health was a lifesaver! The periodontist was incredibly knowledgeable and caring, and the treatment made a huge difference. My gums feel so much healthier now, and I'm no longer worried about losing my teeth. Thank you, AZPO Health, for your expert care and support!"</em><span style="color: rgb(27, 28, 29);"> – Robert K., Ireland</span></p><h2><span style="color: rgb(27, 28, 29);">Your Dedicated Partner for Periodontics in Turkey</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health is dedicated to making exceptional periodontics accessible and convenient for everyone. We are your trusted partner for navigating periodontics in Turkey, providing expert guidance, connecting you with top-tier clinics and periodontists, and ensuring a seamless and rewarding journey to optimal gum health and a confident smile.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Periodontal Journey?</span></p><p>Access to Leading Periodontal Clinics in Turkey: We partner with carefully vetted and reputable dental clinics known for their expertise in periodontics and comprehensive gum care.</p><p>Experienced and Highly Qualified Periodontists: Our network includes periodontists with extensive experience in all aspects of periodontal treatment, ensuring you receive expert care tailored to your needs.</p><p>Personalized and Supportive Patient Care: We prioritize your individual periodontal needs and concerns, providing personalized consultations and dedicated patient coordinator support throughout your entire experience.</p><p>Transparent and Affordable All-Inclusive Packages: We offer clear, all-inclusive pricing for periodontics in turkey, ensuring exceptional value and no hidden costs.</p><p>Dedicated 24/7 Assistance and Support: Our caring patient support team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind.</p><p><span style="color: rgb(27, 28, 29);">Ready to invest in your gum health and achieve a lasting, healthy smile with periodontics in Turkey and AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your periodontal needs, answer your questions, and help you plan your gum health restoration journey to Turkey with AZPO Health. Your healthy, confident smile awaits!</span></p><p><br></p><p><br></p>
-            `
+            ? `<p dir="ltr">AZPO Health сотрудничает с ведущими клиниками периодонтологии Турции, предлагая полный спектр услуг для эффективного и профессионального решения всех ваших проблем с деснами. Наши услуги включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Несложная периодонтальная терапия: для ранних и умеренных стадий заболевания десен нехирургические методы часто оказываются крайне эффективными. Они включают:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Скейлинг и корневая планировка (глубокая чистка): тщательное удаление налета и зубного камня с поверхности корней зубов ниже линии десен, что способствует заживлению и приживлению десен.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Антибиотикотерапия: локальное или системное применение антибиотиков для контроля инфекции и восстановления здоровья десен.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургическая периодонтальная терапия: Для более сложных стадий заболевания десен могут потребоваться хирургические вмешательства, направленные на восстановление здоровья десен и поддерживающих костей. Это включает:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Операция по уменьшению карманов (срезка десен): поднятие десен для удаления глубоких отложений камня и пораженных тканей, что позволяет более эффективно очистить десны и вернуть их на место.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Костная трансплантация: восстановление утраченной костной ткани для поддержания зубов и имплантов, улучшая их стабильность и долгосрочную прогнозируемость.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Пересадка десен (пересадка мягких тканей): покрытие обнаженных корней зубов или участков рецессии десен пересаженной тканью, что улучшает эстетичный вид, снижает чувствительность и защищает зубные корни.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддерживающая терапия в периодонтологии: регулярный уход за деснами необходим после лечения, чтобы поддерживать их здоровье. AZPO Health разрабатывает персонализированные планы по поддержанию здоровья десен, включая регулярные осмотры, профессиональные чистки и индивидуальные рекомендации для домашнего ухода, чтобы предотвратить рецидив заболеваний.</p>
+</li>
+</ul>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Синергия имплантологии и периодонтологии: здоровые десны &ndash; залог успешного результата при установке зубных имплантов. Специалисты AZPO Health по периодонтологии работают в тесном сотрудничестве с имплантологами, чтобы обеспечить отличное состояние десен до, во время и после установки имплантов, обеспечивая долгосрочный успех вашего лечения.</p>
+</li>
+</ul>
+<h2 dir="ltr">Преимущества периодонтологии: инвестиция в ваше здоровье и безупречную улыбку</h2>
+<p dir="ltr">Профессиональное периодонтологическое лечение приносит множество ценнейших преимуществ, которые касаются не только состояния ваших десен:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предотвращение потери зубов: периодонтология играет решающую роль в сохранении ваших зубов, защищая их от разрушений, вызванных заболеваниями десен.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение здоровья полости рта и общего состояния: здоровые десны &ndash; это залог отличного состояния всей полости рта и даже общего здоровья, ведь заболевания десен могут быть связаны с другими недугами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">&nbsp;Свежесть дыхания и уверенность в себе: периодонтологическое лечение избавляет от неприятного запаха изо рта, обеспечивая вам уверенность и комфорт в общении.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Красота вашей улыбки: здоровые десны гармонично обрамляют ваши зубы, а периодонтология помогает улучшить эстетику линии десен, делая вашу улыбку ещё привлекательнее.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">&nbsp;Долгосрочное здоровье: забота о деснах с помощью периодонтологии &ndash; это инвестиция в ваше здоровье и сохранение функциональности и красоты улыбки на многие годы вперёд.</p>
+</li>
+</ul>
+<p dir="ltr">&laquo;Я волновался о состоянии своих десен и возможной потере зубов. Пародонтология в Турции с AZPO Health стала настоящим спасением! Пародонтолог был невероятно опытным и заботливым, а лечение принесло потрясающий результат. Мои десны теперь гораздо здоровее, и я больше не переживаю о потере зубов. Огромное спасибо, AZPO Health, за ваш высококвалифицированный уход и поддержку!&raquo; &ndash; Роберт К., Ирландия</p>
+<h2 dir="ltr">Ваш надежный партнер в пародонтологии в Турции</h2>
+<p dir="ltr">AZPO Health посвятила себя тому, чтобы сделать исключительную пародонтологию доступной и удобной для каждого. Мы &ndash; ваш надежный спутник на пути к здоровью десен и уверенной улыбке, предлагая экспертную помощь, соединяя вас с лучшими клиниками и пародонтологами Турции и обеспечивая комфортное и успешное лечение.</p>
+<p dir="ltr">Почему стоит выбрать AZPO Health для вашего пути к здоровой улыбке?</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к ведущим клиникам Турции: мы сотрудничаем только с тщательно отобранными стоматологическими клиниками, известными своей высококлассной экспертизой в области пародонтологии и комплексного ухода за деснами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытные и квалифицированные пародонтологи: в нашей сети работают специалисты с многолетним опытом, которые гарантируют индивидуальный подход и заботу, учитывающие ваши уникальные потребности.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Персонализированное внимание и поддержка: мы понимаем важность заботы о вашем здоровье и уделяем внимание каждому запросу, предоставляя вам персонализированные консультации и поддержку на каждом этапе.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Прозрачные и доступные пакеты: мы предлагаем чёткие, доступные пакеты с фиксированной ценой, без скрытых платежей, обеспечивая вам исключительное качество и ценность.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддержка 24/7: наша заботливая команда всегда готова ответить на ваши вопросы, предоставить помощь и гарантировать ваш комфорт в любое время.</p>
+</li>
+</ul>
+<p dir="ltr">Готовы сделать инвестицию в здоровье своих десен и обрести уверенную, здоровую улыбку с AZPO Health в Турции?</p>
+<p dir="ltr">Свяжитесь с нами прямо сейчас для бесплатной консультации и индивидуальной сметы! Мы с радостью ответим на все ваши вопросы и поможем спланировать ваш путь к восстановлению здоровья десен. Ваша здоровая и сияющая улыбка ждет вас с AZPO Health!</p>`
             : `
           <p>AZPO Health partners with leading periodontal clinics in Turkey to offer a complete range of services, ensuring your gum health needs are expertly addressed. Our services include:</p><ul><li>Non-Surgical Periodontal Therapy: For early to moderate gum disease, non-surgical treatments are often highly effective. These include:</li><li><br></li><li class="ql-indent-1">Scaling and Root Planing (Deep Cleaning): Thorough removal of plaque and tartar buildup from below the gum line and smoothing of tooth root surfaces to promote gum reattachment and healing.</li><li class="ql-indent-1">Antibiotic Therapy: Local or systemic antibiotics to help control bacterial infection and promote gum healing.</li><li>Surgical Periodontal Therapy: For more advanced gum disease, surgical procedures may be necessary to restore gum health and supporting bone structure. These may include:</li><li><br></li><li class="ql-indent-1">Flap Surgery (Pocket Reduction Surgery): Lifting back the gums to access and remove deep tartar deposits and diseased tissue, allowing for more effective cleaning and gum reattachment.</li><li class="ql-indent-1">Bone Grafting: Regenerating lost bone tissue to support teeth and dental implants, improving stability and long-term prognosis.</li><li class="ql-indent-1">Gum Grafting (Soft Tissue Grafting): Covering exposed tooth roots or areas of gum recession with grafted tissue, improving aesthetics, reducing sensitivity, and protecting tooth roots.</li><li>Periodontal Maintenance Therapy: Ongoing care is essential for maintaining gum health after periodontal treatment. AZPO Health emphasizes personalized periodontal maintenance plans, including regular check-ups, professional cleanings, and customized home care instructions to prevent disease recurrence.</li><li><br></li><li>Implant Dentistry and Periodontics Synergy: Healthy gums are crucial for the success of dental implants. AZPO Health’s periodontal specialists work closely with implant dentists to ensure optimal gum health before, during, and after implant placement, maximizing the long-term success of your implant dentistry and periodontics treatments.</li><li><br></li></ul><h2>Why Choose Turkey for Periodontics with AZPO Health?</h2><p>Turkey has become a sought-after destination for medical tourism, particularly for specialized dental fields like periodontics. AZPO Health makes accessing expert gum care in Turkey even more appealing by providing:</p><ul><li>Affordable Periodontics in Turkey: Expert Gum Care, Accessible Prices: Access high-quality periodontics in turkey at significantly more affordable prices compared to many countries in Europe, North America, or Australia. Receive specialized gum treatment without exceeding your budget.</li><li>Highly Skilled and Experienced Periodontists: AZPO Health partners with carefully vetted dental clinics in Turkey staffed by highly experienced and qualified periodontists. You can be confident in receiving expert care from specialists dedicated to periodontal health.</li><li>Modern Periodontal Clinics and Technology: Our partner clinics in Turkey are equipped with advanced periodontal technology and adhere to stringent hygiene protocols, ensuring a safe, comfortable, and advanced treatment environment for your periodontics care.</li><li>Convenient All-Inclusive Packages for a Stress-Free Journey: AZPO Health offers all-inclusive packages that can combine your periodontics in turkey treatment with flights, comfortable accommodation, airport transfers, and dedicated patient support, making your dental tourism journey seamless and enjoyable.</li><li>Personalized Treatment Plans for Your Gum Health: AZPO Health periodontists provide personalized consultations to assess your individual periodontal needs, discuss your treatment options, and create a customized plan to achieve optimal gum health and a lasting smile.</li></ul><h2>Benefits of Periodontics: Investing in Your Overall Health and Smile</h2><p>Seeking professional periodontics treatment offers significant benefits that extend beyond just your gums:</p><ul><li>Prevent Tooth Loss: Periodontics is crucial for preventing tooth loss caused by gum disease, helping you maintain your natural teeth for longer.</li><li>Improved Oral Health and Overall Well-being: Healthy gums contribute to overall oral health and can even have a positive impact on your systemic health, as gum disease has been linked to other health conditions.</li><li>Fresher Breath and Improved Confidence: Periodontal treatment can eliminate bad breath caused by gum disease, boosting your confidence and social comfort.</li><li>Enhanced Smile Appearance: Healthy gums frame your teeth beautifully. Periodontics can improve the aesthetics of your gum line, enhancing your overall smile appearance.</li><li>Long-Term Oral Health Investment: Addressing gum disease with periodontics is an investment in your long-term oral health, helping you maintain a healthy and functional smile for years to come.</li></ul><p>"I was worried about my receding gums and potential tooth loss. Periodontics in Turkey with AZPO Health was a lifesaver! The periodontist was incredibly knowledgeable and caring, and the treatment made a huge difference. My gums feel so much healthier now, and I'm no longer worried about losing my teeth. Thank you, AZPO Health, for your expert care and support!" – Robert K., Ireland</p><p><br></p><h2>Your Dedicated Partner for Periodontics in Turkey</h2><p>AZPO Health is dedicated to making exceptional periodontics accessible and convenient for everyone. We are your trusted partner for navigating periodontics in Turkey, providing expert guidance, connecting you with top-tier clinics and periodontists, and ensuring a seamless and rewarding journey to optimal gum health and a confident smile.</p><p>Why Choose AZPO Health for Your Periodontal Journey?</p><ul><li>Access to Leading Periodontal Clinics in Turkey: We partner with carefully vetted and reputable dental clinics known for their expertise in periodontics and comprehensive gum care.</li><li>Experienced and Highly Qualified Periodontists: Our network includes periodontists with extensive experience in all aspects of periodontal treatment, ensuring you receive expert care tailored to your needs.</li><li>Personalized and Supportive Patient Care: We prioritize your individual periodontal needs and concerns, providing personalized consultations and dedicated patient coordinator support throughout your entire experience.</li><li>Transparent and Affordable All-Inclusive Packages: We offer clear, all-inclusive pricing for periodontics in turkey, ensuring exceptional value and no hidden costs.</li><li>Dedicated 24/7 Assistance and Support: Our caring patient support team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind.</li></ul><p>Ready to invest in your gum health and achieve a lasting, healthy smile with periodontics in Turkey and AZPO Health?</p><p>Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your periodontal needs, answer your questions, and help you plan your gum health restoration journey to Turkey with AZPO Health. Your healthy, confident smile awaits!</p><p><br></p>
         `,
@@ -14349,151 +14424,214 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Laminate Veneers in Turkey: Achieve Your Dream Smile with Affordable Excellence at AZPO Health"
+          ? "Стоматологический бондинг в Туции в 2025 году"
           : "Dental Bonding in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Seeking a subtle yet transformative smile enhancement? Laminate veneers in Turkey have become a highly popular cosmetic dentistry option, offering a minimally invasive path to a flawless smile at exceptional prices. Discover how AZPO Health connects you with expert dentists and all-inclusive packages to achieve the radiant, confident smile you've always wanted with beautiful laminate veneers."
+          ? "Вы стесняетесь небольших дефектов улыбки, таких как сколы, трещины, пятна или неровные промежутки между зубами? Представьте себе быстрое, эффективное и доступное решение, которое преобразит вашу улыбку и придаст уверенности. В Турции квалифицированные стоматологи предлагают высококачественные процедуры стоматологического бондинга, а AZPO Health поможет вам найти специалистов для создания яркой и уверенной улыбки."
           : "Are you self-conscious about minor imperfections in your smile, such as chipped, cracked, stained, or unevenly spaced teeth? Imagine a quick, effective, and affordable solution that can transform your smile and boost your confidence. In Turkey, skilled dental professionals offer high-quality dental bonding procedures, and AZPO Health is here to connect you with the expertise you need for a brighter, more confident you.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Perfect Smile" : "Minimally Invasive",
+            title: locale === "ru" ? "Минимальное вмешательство" : "Minimally Invasive",
             desc:
               locale === "ru"
-                ? "Mimics natural teeth with ideal color reflection and transparency for flawless aesthetics"
+                ? "Практически не требует обточки эмали."
                 : "No or little enamel removal, preserving natural tooth structure.",
           },
           {
-            title: locale === "ru" ? "Lasting Beauty" : "Cost-Effective",
+            title: locale === "ru" ? "Доступная стоимость" : "Cost-Effective",
             desc:
               locale === "ru"
-                ? "Highly durable ceramic material with stable coloring that maintains appearance over time"
+                ? "дешевле виниров и коронок."
                 : "More affordable than veneers or crowns.",
           },
           {
-            title: locale === "ru" ? "Gentle Treatment" : "Quick Results",
+            title: locale === "ru" ? "Естественный вид" : "Quick Results",
             desc:
               locale === "ru"
-                ? "Minimally invasive procedure that preserves natural tooth structure"
+                ? "материал подбирается под цвет зубов."
                 : "Completed in one visit with instant improvement.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Who It’s For" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "E-Max veneers are ideal for individuals who wish to enhance the aesthetics of their smile, particularly those with discolored, uneven, or damaged front teeth. They are perfect for those looking for a durable, natural-looking solution that improves both function and appearance. Individuals seeking a minimally invasive treatment that preserves the natural tooth structure would benefit from E-Max veneers."
+                ? "Стоматологической бондинг – это косметическая процедура, при которой на поверхность зубов наносится композитный материал цвета зуба. Этот материал моделируется и формируется для улучшения внешнего вида улыбки. Он помогает решить множество эстетических и функциональных задач: восстановить поврежденные или пораженные кариесом зубы, скорректировать форму или длину, закрыть нежелательные промежутки, а также замаскировать пятна и изменение цвета эмали."
                 : "Dental bonding is a cosmetic procedure where a tooth-colored resin material is applied to the surface of your teeth. This material is sculpted and shaped to improve the appearance of your smile. It can fix a variety of dental issues, including repairing decayed or damaged teeth, closing gaps, reshaping or lengthening teeth, and covering up stains or discoloration. ",
           },
           {
-            header: locale === "ru" ? "Важные аспекты" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура начинается с консультации, в ходе которой стоматолог оценивает состояние зубов и подбирает подходящий оттенок композитного материала. Затем поверхность зуба слегка обрабатывается и покрывается связующим веществом. После этого композитный материал наносится слоями, формируется и затвердевает под воздействием специальной лампы. В завершение врач выполняет коррекцию и полировку для достижения максимально естественного вида."
                 : "Consultation: The dentist evaluates your teeth and selects a matching resin color. Preparation: The tooth is roughened, and a bonding agent is applied. Application: Resin is layered, shaped, and hardened with a special light. Finishing Touches: The dentist trims and polishes for a natural look.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For Whom",
+            header: locale === "ru" ? "Для кого подходит" : "For Whom",
             desc:
               locale === "ru"
-                ? "Consultation & Planning: The dentist evaluates your teeth and discusses your cosmetic goals. Based on this assessment, the dentist will recommend E-Max veneers for an ideal smile."
+                ? "Стоматологический бондинг идеально подходит для людей с незначительными косметическими дефектами, такими как небольшие сколы, промежутки между зубами или обесцвечивание. Это также отличный вариант для тех, кто хочет исправить проблемы с зубами, такие как кариес или повреждения, не прибегая к более инвазивным процедурам."
                 : "Dental bonding is ideal for individuals who have minor cosmetic imperfections such as small chips, gaps between teeth, or discoloration. It is also an excellent option for people who want to fix dental issues like decay or damage without resorting to more invasive procedures. ",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "How long does dental bonding last?",
-          answer:
-            locale === "ru" ? "" : "Typically 3–10 years, depending on care",
+          question : locale === "ru" ? "Как долго держится стоматологическая композитная пломба?" : "How long does dental bonding last?",
+          answer : locale === "ru" ? "Обычно 3–10 лет, в зависимости от ухода." : "Typically 3–10 years, depending on personal care"
         },
         {
-          question: locale === "ru" ? "" : "Does it hurt?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "No, it’s a painless, non-invasive procedure",
+          question : locale === "ru" ? "Это больно?" : "Does it hurt?",
+          answer : locale === "ru" ? "Нет, процедура безболезненная и неинвазивная." : "No, it’s a painless, non-invasive procedure"
         },
         {
-          question: locale === "ru" ? "" : "Can it fix gaps?",
-          answer: locale === "ru" ? "" : "Yes, great for closing small gaps",
+          question : locale === "ru" ? "Может ли она устранить щели между зубами?" : "Can it fix gaps on the teeth?",
+          answer : locale === "ru" ? "Да, она идеально подходит для закрытия небольших щелей." : "Yes, great for closing small gaps"
         },
         {
-          question: locale === "ru" ? "" : "Is bonding noticeable?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "It’s color-matched to your teeth and looks natural",
+          question : locale === "ru" ? "Заметна ли пломба?" : "Is bonding noticeable?",
+          answer : locale === "ru" ? "Она подбирается по цвету ваших зубов и выглядит естественно." : "It’s color-matched to your teeth and looks natural"
         },
         {
-          question: locale === "ru" ? "" : "What if it chips?",
-          answer: locale === "ru" ? "" : "It can be easily repaired",
+          question : locale === "ru" ? "Что делать, если пломба сколется?" : "What if it chips?",
+          answer : locale === "ru" ? "Это можно легко отремонтировать." : "It can be easily repaired"
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "Is dental bonding compatible with teeth whitening?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, but bonding may discolor after whitening, so it's best to do bonding first.",
+          question : locale === "ru" ? "Совместима ли стоматологическая композитная пломба с отбеливанием зубов?" : "Is dental bonding compatible with teeth whitening?",
+          answer : locale === "ru" ? "Да, но после отбеливания пломба может изменить цвет, поэтому лучше сначала установить пломбу." : "Yes, but bonding may discolor after whitening, so it's best to do bonding first."
         },
         {
-          question: locale === "ru" ? "" : "Does dental bonding change color?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Bonding doesn’t change, but stains from smoking, coffee, or tea can affect it.",
-        },
+          question : locale === "ru" ? "Меняется ли цвет стоматологической композитной пломбы?" : "Does dental bonding change color?",
+          answer : locale === "ru" ? "Пломба не меняет цвет, но может покрыться пятнами от курения, кофе или чая." : "Bonding doesn’t change, but stains from smoking, coffee, or tea can affect it."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Avoid hard or sticky foods for 24–48 hour",
-        locale === "ru"
-          ? ""
-          : "Bonding can stain – avoid coffee, tea, red wine, and smoking",
-        locale === "ru" ? "" : "Maintain regular brushing and flossingh",
-        locale === "ru"
-          ? ""
-          : "See dentist if chipping or discoloration occurs",
-        locale === "ru" ? "" : "Re-polishing may be needed over time",
-        locale === "ru"
-          ? ""
-          : "Use a mouthguard to protect your teeth during sports",
-        locale === "ru" ? "" : "Choose soft foods",
-        locale === "ru" ? "" : "Avoid acidic foods and drinks",
+        locale === "ru" ? "Избегайте твердой и липкой пищи в течение 24–48 часов." : "Avoid hard or sticky foods for 24–48 hours",
+        locale === "ru" ? "Пломбы могут окрашиваться - особенно избегайте кофе, чая, красного вина и курения." : "Bonding can stain – avoid especially coffee, tea, red wine, and smoking",
+        locale === "ru" ? "Регулярно чистите зубы и пользуйтесь зубной нитью." : "Maintain regular brushing and flossing",
+        locale === "ru" ? "Обратитесь к стоматологу, если заметите сколы или изменение цвета." : "See dentist if chipping or discoloration occurs",
+        locale === "ru" ? "Со временем может потребоваться полировка." : "Re-polishing may be needed over time",
+        locale === "ru" ? "Используйте капу для защиты зубов во время занятий спортом или интенсивной физической активности." : "Use a mouthguard to protect your teeth during sports or heavy physical activities",
+        locale === "ru" ? "Отдавайте предпочтение мягкой пище." : "Choose soft foods",
+        locale === "ru" ? "Сведите к минимуму употребление кислых продуктов и напитков." : "Avoid acidic foods and drinks"
       ],
       preList: [
-        locale === "ru" ? "" : "No major prep needed",
-        locale === "ru"
-          ? ""
-          : "Inform your dentist about allergies or previous restorations",
-        locale === "ru"
-          ? ""
-          : "Good oral hygiene before the visit helps ensure adhesion",
-        locale === "ru" ? "" : "Avoid alcohol and smoking before the session",
-        locale === "ru" ? "" : "Avoid hard foods",
+        locale === "ru" ? "Сообщите своему стоматологу об аллергиях и ранее выполненных реставрациях." : "Inform your dentist about allergies or previous restorations",
+        locale === "ru" ? "Позаботьтесь о чистоте полости рта перед визитом - это улучшит сцепление материалов." : "Good oral hygiene in needed before the visit helps ensure adhesion",
+        locale === "ru" ? "Избегайте употребления алкоголя и курения перед процедурой." : "Avoid alcohol and smoking before the session",
+        locale === "ru" ? "Воздержитесь от твердой пищи в день приема." : "Avoid hard foods",
+        locale === "ru" ? "Обсудите желаемый оттенок и цвет, особенно если речь идет о передних зубах." : "Share your shade/color preferences if it's for front teeth"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "E-Max veneers provide an excellent solution for individuals looking to improve the aesthetics of their smile with a durable and natural-looking material. Their aesthetic perfection, combined with durability and gum compatibility, makes them a popular choice for front tooth restorations. With proper care and maintenance, E-Max veneers offer long-lasting results that enhance both the appearance and function of your smile."
+            ? "Дентальный бондинг — это эффективный, доступный и быстрый способ улучшить внешний вид зубов и устранить незначительные косметические дефекты. Хотя срок его службы может быть короче, чем у виниров или коронок, бондинг дарит мгновенные результаты с минимальным дискомфортом и коротким временем восстановления. При правильном уходе этот метод обеспечит вам красивую и функциональную улыбку на долгие годы."
             : "Dental bonding is an effective, affordable, and quick solution for improving the appearance of your teeth and addressing minor cosmetic issues. While it may not last as long as other treatments like veneers or crowns, it offers immediate results with minimal discomfort and recovery time. With good oral care, dental bonding can provide you with a beautiful, functional smile for many years.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Laminate Veneers: The Art of Subtle Smile Perfection"
+            ? "Почему стоит выбрать Турцию для стоматологического бондинга?"
             : "Why Choose Turkey for Your Dental Bonding Procedure?",
         content:
           locale === "ru"
-            ? `
-         
-          `
+            ? `<p dir="ltr">Выбор бондинга в Турции через AZPO Health имеет несколько убедительных преимуществ. Основной причиной выбора Турции для стоматологических процедур является выгодная стоимость стоматологического бондинга. Как правило, цена на стоматологической бондинг в Турции значительно ниже, чем в других странах, что делает возможность улучшить свою улыбку доступной для более широкой аудитории.</p>
+<p dir="ltr">Несмотря на доступность, качество стоматологического обслуживания в Турции остается на высоком уровне. Многие клиники оснащены современными технологиями и строго соблюдают стандарты гигиены и безопасности. Стоматологи в Турции обладают высокой квалификацией и значительным опытом в области косметической стоматологии, включая бондинг. С AZPO Health вы получите доступ к надежным специалистам, которые гарантируют отличные результаты.</p>
+<p dir="ltr">Кроме того, совмещение стоматологического лечения с поездкой в Турцию открывает уникальные возможности для медицинского туризма. Турция &mdash; это страна, наполненная богатой историей, яркой культурой и живописными пейзажами. Вы сможете насладиться незабываемым отдыхом, одновременно позаботившись о своей улыбке. AZPO Health возьмет на себя организацию всего процесса, обеспечив максимальный комфорт и удобство вашего путешествия.</p>
+<h2 dir="ltr">Понимание процедуры стоматологического бондинга</h2>
+<p dir="ltr">Стоматологический бондинг &mdash; это востребованная косметическая процедура, которая использует композитный материал, точно подобранный под цвет зубов, для преображения вашей улыбки. Эта многофункциональная техника эффективно решает разнообразные косметические задачи и является быстрым и часто менее инвазивным решением, по сравнению с такими процедурами, как установка фарфоровых виниров.</p>
+<p dir="ltr">Что может исправить дентальный бондинг?&nbsp;</p>
+<p dir="ltr">Дентальный бондинг эффективно решает следующие проблемы:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сколы или трещины на зубах: бондинг восстанавливает исходную форму и целостность зубов, поврежденных незначительными дефектами.</p>
+</li>
+</ul>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Промежутки между зубами: небольшие зазоры между зубами можно закрыть с помощью композитного материала, создавая более ровную и гармоничную улыбку.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обесцвеченные зубы: бондинг скрывает пятна и обесцвечивание, которые не поддаются отбеливанию.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Короткие или неправильно сформированные зубы: с помощью бондинга можно изменить форму и длину зубов, придавая улыбке более эстетичный вид.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Открытые корни зубов: когда десны опускаются, обнажая чувствительные корни зубов, бондинг помогает защитить эти участки, обеспечивая дополнительную защиту.</p>
+</li>
+</ul>
+<p dir="ltr">Преимущества стоматологического бондинга:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступная стоимость: по сравнению с винирами или коронками, бондинг &mdash; это более экономичное решение для улучшения внешнего вида зубов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Минимальное вмешательство: как правило, процедура не требует значительного удаления эмали, что позволяет сохранить естественную структуру зуба.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Быстрый результат: в большинстве случаев бондинг проводится за одно посещение, а эффект заметен сразу.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обратимость: при необходимости композитный материал можно удалить или заменить, что делает процедуру менее окончательной по сравнению с другими методами.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Естественный вид: цвет смолы подбирается под оттенок ваших зубов, благодаря чему результат выглядит максимально натурально и гармонично.</p>
+</li>
+</ul>
+<h2 dir="ltr">Методы стоматологического бондинга&nbsp;</h2>
+<p dir="ltr">Наиболее распространенный способ &mdash; это прямой композитный бондинг. Вот как обычно проходит процедура:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подготовка: стоматолог тщательно осматривает зубы, которые требуют лечения, и выбирает оттенок композитного материала, идеально подходящий к вашему натуральному цвету. Затем поверхность зуба аккуратно обрабатывается специальным раствором, чтобы создать легкую шероховатость, что способствует лучшему сцеплению материала с эмалью.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Нанесение смолы: на подготовленную поверхность зуба наносится композитная смола, по своей консистенции напоминающая мягкую пасту телесного цвета, которая плавно адаптируется под форму зуба.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Формирование и моделирование: врач придает материалу нужную форму, устраняя дефекты и создавая естественные очертания зуба.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Затвердевание: сформированный материал облучается специальной лампой, которая за несколько секунд делает его твердым и прочным.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Финишная обработка: после затвердевания стоматолог полирует поверхность, придавая зубу гладкость и естественный блеск, чтобы бондинг идеально сочетался с остальными зубами и выглядел максимально натурально.</p>
+</li>
+</ol>
+<p dir="ltr">Обычно процедура проходит без использования анестезии, особенно при небольших коррекциях. В тех случаях, когда требуется работа с чувствительными участками или более сложное вмешательство, может быть использовано местное обезболивание, чтобы обеспечить ваш комфорт и безболезненность процесса.</p>
+<h2 dir="ltr">AZPO Health: ваш партнер на пути к идеальной улыбке&nbsp;</h2>
+<p dir="ltr">AZPO Health &mdash; ведущий оператор в сфере медицинского туризма в Турции. Наша миссия &mdash; соединять пациентов с высококвалифицированными стоматологами и проверенными клиниками, предоставляющими широкий спектр услуг, включая эстетическую реставрацию зубов с помощью бондинга. Мы понимаем, что выбор стоматологического лечения за рубежом может вызывать сомнения и вопросы, поэтому делаем все, чтобы ваш путь к безупречной улыбке был максимально простым, понятным и комфортным.</p>
+<p dir="ltr">Что мы предлагаем:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к проверенным специалистам: мы сотрудничаем с лицензированными стоматологами и клиниками, которые зарекомендовали себя как эксперты в области эстетической стоматологии и заслужили высокую оценку благодарных пациентов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный подход: мы внимательно учитываем ваши потребности и предпочтения, чтобы выбрать специалиста и клинику, которые наилучшим образом соответствуют вашим ожиданиям и требованиям.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гарантия качества и безопасности: все наши партнерские клиники соответствуют международным стандартам качества, стерильности и безопасности, обеспечивая вам высочайший уровень обслуживания.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полное сопровождение: мы помогаем на каждом этапе &mdash; от подбора врача до организации поездки, чтобы вы могли сосредоточиться на главном &mdash; своем здоровье и улыбке.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Открытость и информированность: мы предоставим вам полную и достоверную информацию о процедуре бондинга, ее преимуществах, ходе выполнения и ожидаемых результатах.</p>
+</li>
+</ul>
+<p dir="ltr">Готовы преобразить свою улыбку с помощью качественного и доступного бондинга в Турции?</p>
+<p dir="ltr">Свяжитесь с AZPO Health &mdash; получите бесплатную консультацию и индивидуальное предложение уже сегодня.</p>
+<p><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Реальные отзывы пациентов&nbsp;</h2>
+<p><strong>&nbsp;</strong></p>
+<p dir="ltr">&bull; Сара из Великобритании: &laquo;У меня был отколот передний зуб, и это всегда смущало меня, особенно на фотографиях. Восстановление в Великобритании оказалось слишком дорогим. Подруга посоветовала рассмотреть варианты в Турции. AZPO Health помогли мне найти отличную клинику &mdash; процедура бондинга прошла быстро, без боли, и результат просто потрясающий! Улыбка стала идеальной, а стоимость в разы ниже, чем у нас. И к тому же, я успела немного попутешествовать по прекрасному Стамбулу!&raquo;</p>
+<p dir="ltr">&bull; Джон из США: &laquo;Между передними зубами были небольшие щели, которые я давно хотел убрать. Думал об Invisalign, но не хотел тратить столько времени на лечение. Тогда я узнал о бондинге в Турции через AZPO Health &mdash; и не пожалел. Все прошло четко: меня связали с профессиональным стоматологом, который подробно все объяснил. Щели устранили всего за один приём. Стоимость приятно удивила, а результат &mdash; просто класс!&raquo;</p>
+<p><strong id="docs-internal-guid-10a74d6f-7fff-6045-8dc5-f36a0d623660">&bull; Эмили из Канады: &laquo;Один из моих передних зубов был немного темнее остальных, и меня это очень напрягало. Отбеливание не помогло, поэтому я решила попробовать бондинг в Турции. AZPO Health предложили на выбор несколько проверенных клиник. Стоматолог, которого я выбрала, прекрасно подобрал оттенок материала под мои зубы &mdash; теперь улыбка ровная и сияющая! Качество обслуживания на высоте, а цена &mdash; более чем приятная.&raquo;</strong></p>`
             : `<p dir="ltr">Opting for dental bonding in Turkey through AZPO Health offers several compelling advantages. One of the primary reasons many individuals consider Turkey for dental procedures is the dental bonding cost in Turkey. You'll often find that the dental bonding price in Turkey is significantly more affordable compared to costs in many other countries, making smile enhancement accessible to a wider range of individuals.</p>
 <p dir="ltr">Despite the cost-effectiveness, the quality of dental care in Turkey is high. Many clinics utilize modern technologies and adhere to stringent hygiene and safety standards. The dentists in Turkey are often highly skilled and experienced in cosmetic dentistry procedures like dental bonding. Through AZPO Health, you can be connected with reputable professionals who are dedicated to providing excellent results.</p>
 <p dir="ltr">Furthermore, combining your dental treatment with a trip to Turkey presents a unique opportunity for medical tourism. Turkey is a beautiful country with a rich history, vibrant culture, and stunning landscapes. You can enjoy a memorable vacation while taking care of your smile needs. AZPO Health can assist in coordinating your dental journey, making the entire process smoother and more convenient.</p>
@@ -16060,138 +16198,238 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Laser Gum Surgery in Turkey in 2025"
+          ? "Лазерная хирургия десен в Турции в 2025 году"
           : "Laser Gum Surgery in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Say goodbye to gum disease and excessive gum tissue with minimally invasive laser gum surgery! This advanced treatment removes bacteria, reshapes gums, and promotes healing with less pain, no stitches, and a faster recovery. Experience a healthier, more balanced smile—without the downtime!"
+          ? "Избавьтесь от заболеваний десен с помощью современного и малоинвазивного решения — лазерной хирургии десен. Это инновационное лечение бережно удаляет болезнетворные бактерии, аккуратно корректирует контуры десны и запускает естественные процессы заживления — без швов, с минимальной болью и быстрым восстановлением. Подарите себе здоровую, симметричную и сияющую улыбку — без длительного реабилитационного периода!"
           : "Say goodbye to gum disease and excessive gum tissue with minimally invasive laser gum surgery! This advanced treatment removes bacteria, reshapes gums, and promotes healing with less pain, no stitches, and a faster recovery. Experience a healthier, more balanced smile, without the downtime!",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Gentle Care" : "Gentle Care",
+            title: locale === "ru" ? "Нежная забота" : "Gentle Care",
             desc:
               locale === "ru"
-                ? "Less traumatic providing treatment with faster, less painful recovery."
+                ? "минимальная травматичность и быстрое восстановление."
                 : "Less traumatic providing treatment with faster, less painful recovery.",
           },
           {
-            title: locale === "ru" ? "Clean Healing" : "Clean Healing",
+            title: locale === "ru" ? "Быстрое заживление" : "Clean Healing",
             desc:
               locale === "ru"
-                ? "Prevents bleeding, eliminates stitches, and reduces infection risk for speedier recovery."
+                ? "без крови и швов, с низким риском инфекции."
                 : "Prevents bleeding, eliminates stitches, and reduces infection risk for speedier recovery.",
           },
           {
-            title: locale === "ru" ? "Precise Treatment" : "Precise Treatment",
+            title: locale === "ru" ? "Точность в каждом движении" : "Precise Treatment",
             desc:
               locale === "ru"
-                ? "Targets affected areas with accuracy while minimizing damage to healthy tissue."
+                ? "лазер действует только на проблемные зоны."
                 : "Targets affected areas with accuracy while minimizing damage to healthy tissue.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with gum diseases such as gingivitis or periodontitis.Individuals suffering from gum inflammation and bleeding.Patients seeking to minimize trauma and pain during gum treatment.Those who are not candidates for more invasive surgical procedures."
+                ? "Лазерная хирургия десен — это передовая стоматологическая технология, позволяющая эффективно и бережно лечить заболевания десен. С её помощью устраняются воспаления, избыточный рост тканей и другие проблемы, требующие вмешательства. В отличие от традиционной хирургии, лазерное лечение практически безболезненно и не требует длительного восстановления."
                 : "Laser gum surgery is a dental technique used to treat issues with the gums. It involves using laser technology to address problems such as excessive gum growth and gum disease. This method offers a less painful alternative to invasive procedures like traditional gum surgery, promoting a quicker recovery.",
           },
           {
-            header: locale === "ru" ? "What to Consider" : "How it Works",
+            header: locale === "ru" ? "Как работает лазерное лечение" : "How it Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Во время процедуры лазер мягко воздействует на воспалённые участки десен, удаляя повреждённые ткани и налёт. Благодаря своей точности, он не затрагивает здоровые участки, минимизируя травматичность. Лазер обладает антисептическим эффектом, стимулирует естественное заживление и устраняет необходимость в наложении швов. Это делает процесс лечения комфортным и безопасным."
                 : "Laser gum treatments use a laser to target inflamed gum tissues, remove plaque, and promote healing. The laser breaks down damaged tissue, has an antiseptic effect, and stimulates tissue regeneration. Unlike traditional methods, it’s minimally invasive, reducing pain and speeding up recovery without the need for stitches",
           },
           {
-            header: locale === "ru" ? "How it Works" : "Who is it for",
+            header: locale === "ru" ? "Кому подойдёт лазерная терапия" : "Who is it for",
             desc:
               locale === "ru"
-                ? "Laser gum treatments use laser technology to treat various gum diseases such as gingivitis, periodontitis, and other inflammatory conditions. Laser procedures are minimally invasive, which reduces pain and shortens recovery time."
+                ? "Пациентам с заболеваниями десен, такими как гингивит или пародонтит. Людям, страдающим от кровоточивости и воспаления десен. Тем, кто ищет щадящий, нетравматичный метод лечения. Пациентам, которым противопоказаны традиционные хирургические вмешательства."
                 : "Patients with gum diseases such as gingivitis or periodontitis. Individuals suffering from gum inflammation and bleeding. Patients seeking to minimize trauma and pain during gum treatment. Those who are not candidates for more invasive surgical procedures.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Minimal discomfort compared to traditional surgery",
+          question : locale === "ru" ? "Больно ли это?" : "Is it painful?",
+          answer : locale === "ru" ? "Процедура вызывает минимальный дискомфорт по сравнению с традиционной хирургией." : "Minimal discomfort compared to traditional surgery"
         },
         {
-          question: locale === "ru" ? "" : "How long does it take to heal?",
-          answer: locale === "ru" ? "" : "1–2 weeks for surface healing",
+          question : locale === "ru" ? "Сколько времени занимает заживление?" : "How long does it take to heal?",
+          answer : locale === "ru" ? "Поверхностное заживление обычно занимает 1–2 недели." : "1–2 weeks for surface healing"
         },
         {
-          question: locale === "ru" ? "" : "Does it regrow gums?",
-          answer:
-            locale === "ru" ? "" : "Helps reattach tissue and reduce pockets",
+          question : locale === "ru" ? "Можно ли восстановить рецессию десны?" : "Is it possible to restore receding gums?",
+          answer : locale === "ru" ? "Процедура помогает повторно прикрепить ткани и уменьшить пародонтальные карманы." : "It helps reattach tissue and reduce pockets"
         },
         {
-          question: locale === "ru" ? "" : "Is LANAP better than traditional?",
-          answer:
-            locale === "ru" ? "" : "Often less invasive, quicker recovery",
+          question : locale === "ru" ? "Является ли LANAP лучше традиционной хирургии десен?" : "Is LANAP better than traditional gum surgery?",
+          answer : locale === "ru" ? "Да, в большинстве случаев. Метод менее травматичный и позволяет быстрее восстановиться" : "Often less invasive, quicker recovery"
         },
         {
-          question: locale === "ru" ? "" : "Can I brush my gums?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Avoid brushing laser-treated zones initially",
+          question : locale === "ru" ? "Можно ли чистить десны после процедуры?" : "Can I brush my gums?",
+          answer : locale === "ru" ? "Вначале следует избегать чистки участков, обработанных лазером." : "Avoid brushing laser-treated zones initially"
         },
         {
-          question:
-            locale === "ru" ? "" : "When can I resume physical activity?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "After a few days, but consult with your doctor",
-        },
+          question : locale === "ru" ? "Когда можно вернуться к физической активности?" : "When can I resume physical activity?",
+          answer : locale === "ru" ? "Обычно через несколько дней, но обязательно проконсультируйтесь с врачом." : "After a few days, but consult with your doctor"
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Mild tenderness is normal, avoid hot/spicy food",
-        locale === "ru" ? "" : "Use salt water or mouthwash gently",
-        locale === "ru"
-          ? ""
-          : "Avoid disturbing healing areas, no flossing treated sites",
-        locale === "ru" ? "" : "Don’t smoke, take meds as prescribed",
-        locale === "ru" ? "" : "Attend follow-ups to monitor healing",
-        locale === "ru"
-          ? ""
-          : "Drink cool liquids and avoid excessive rinsing.",
+        locale === "ru" ? "Небольшая болезненность после процедуры -  это нормально. Избегайте горячей и острой пищи." : "Mild tenderness is normal, avoid hot/spicy food",
+        locale === "ru" ? "Осторожно используйте солёную воду или рекомендованный ополаскиватель для полости рта." : "Use salt water or mouthwash gently",
+        locale === "ru" ? "Старайтесь не травмировать зону заживления -  временно не пользуйтесь зубной нитью в обработанных участках." : "Avoid disturbing healing areas, no flossing treated sites",
+        locale === "ru" ? "Не курите и строго следуйте схеме приёма назначенных лекарств." : "Don’t smoke, take meds as prescribed",
+        locale === "ru" ? "Посещайте плановые осмотры для контроля процесса заживления." : "Attend follow-ups to monitor healing",
+        locale === "ru" ? "Пейте тёплые напитки и избегайте интенсивных полосканий." : "Drink lukewarm liquids and avoid excessive rinsing."
       ],
       preList: [
-        locale === "ru" ? "" : "Minimal prep for contouring",
-        locale === "ru" ? "" : "LANAP may involve segments and numbing",
-        locale === "ru" ? "" : "Maintain good hygiene beforehand",
-        locale === "ru" ? "" : "Arrange help if sedated",
-        locale === "ru"
-          ? ""
-          : "LANAP is especially effective for treating periodontal disease.",
+        locale === "ru" ? "Минимальная подготовка к контурной коррекции - Процедура LANAP может проводиться поэтапно с использованием местной анестезии." : "Minimal prep for contouring",
+        locale === "ru" ? "Заблаговременно обеспечьте хорошую гигиену полости рта." : "LANAP may involve segments and numbing",
+        locale === "ru" ? "Прием легкой пищи допустим, если врач не дал других рекомендаций." : "Maintain good hygiene beforehand",
+        locale === "ru" ? "" : "Eat a light meal unless told otherwise"
       ],
       conclusion: {
-        title: locale === "ru" ? "Заключение" : "Conclusion",
+        title: locale === "ru" ? "Вывод" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Laser gum treatments offer many advantages over traditional methods for treating gum disease. The procedure is minimally invasive, with quick recovery and high precision in targeting affected tissues. Laser therapy helps eliminate inflammation, accelerates healing, and minimizes pain, making it an ideal choice for those looking for an effective and non-traumatic solution for gum issues."
+            ? "Лазерное лечение десен обладает многими преимуществами по сравнению с традиционными методами лечения заболеваний десен. Процедура является малоинвазивной, обеспечивает быстрое восстановление и высокую точность воздействия на пораженные ткани. Лазерная терапия позволяет восстановить здоровье десен без боли и длительной реабилитации. Это идеальный выбор для тех, кто ценит комфорт, качество и современные решения."
             : "Laser gum treatments offer many advantages over traditional methods for treating gum disease. The procedure is minimally invasive, with quick recovery and high precision in targeting affected tissues. Laser therapy helps eliminate inflammation, accelerates healing, and minimizes pain, making it an ideal choice for those looking for an effective and non-traumatic solution for gum issues.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Laser Gum Surgery?"
+            ? "Почему стоит выбрать Турцию для лазерной хирургии десен?"
             : "Why Choose Turkey for Laser Gum Surgery?",
         content:
           locale === "ru"
-            ? `
-          `
+            ? `<p dir="ltr">Турция уверенно занимает ведущие позиции в сфере медицинского туризма, особенно в области стоматологии. Лазерная хирургия десен здесь становится всё более популярной благодаря высокому качеству услуг, доступным ценам и внимательному подходу к каждому пациенту. Компания AZPO Health, представленная в Стамбуле, Анталии и Алании, предлагает оптимальные условия для прохождения передовых стоматологических процедур.</p>
+<p dir="ltr">Доступность, не уступающая качеству: стоимость стоматологического лечения в Турции значительно ниже, чем в США, Великобритании и других странах Европы. Экономия может достигать 70&ndash;90%, даже с учетом перелета и проживания. Это делает такие процедуры, как лазерная хирургия десен, доступными для широкой аудитории без компромисса по качеству.</p>
+<p dir="ltr">Высокие стандарты и современные технологии: AZPO Health работает по международным стандартам, используя современное оборудование и новейшие технологии. Все клиники строго соблюдают санитарные нормы, создавая безопасную и комфортную среду для пациентов.</p>
+<p dir="ltr">Полный комплекс услуг &laquo;под ключ&raquo;: для иностранных пациентов AZPO Health предлагает пакеты &ldquo;всё включено&rdquo;, которые включают трансфер из аэропорта, проживание, лечение и послеоперационное сопровождение. Это избавляет от организационных хлопот и позволяет сосредоточиться только на здоровье и восстановлении.</p>
+<p dir="ltr">Опыт, которому можно доверять: стоматологи AZPO Health &mdash; это профессионалы с отличной подготовкой и большим практическим опытом. Они ежегодно проводят множество процедур, включая лазерную хирургию десен, что гарантирует высокое качество и стабильные результаты.</p>
+<p dir="ltr">Лечение и отдых &mdash; идеальное сочетание: вы можете совместить заботу о здоровье с отдыхом на Средиземноморье. После процедуры &mdash; расслабиться на пляжах Анталии или исследовать культурные сокровища Стамбула. Турция &mdash; это не только лечение, но и яркие впечатления, которые делают поездку особенно приятной.</p>
+<h2 dir="ltr">Что представляет собой лазерная хирургия десен</h2>
+<p dir="ltr">Лазерная хирургия десен, также известная как лазерно-ассистированная пародонтальная терапия (LAPT), является современным подходом к лечению заболеваний десен. Она имеет ряд преимуществ по сравнению с традиционными хирургическими методами.</p>
+<h3 dir="ltr">Принцип действия лазерной хирургии десен</h3>
+<p dir="ltr">Лазерная хирургия десен использует сфокусированные лучи света для удаления пораженных тканей и бактерий. Высокая точность лазера позволяет стоматологу воздействовать исключительно на проблемные участки, не затрагивая здоровые ткани. Процедура обычно включает следующие этапы:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Анестезия: для обеспечения комфортного и безболезненного лечения применяется местная анестезия.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удаление зубного камня:лазер используется для эффективного удаления налёта и зубного камня как над, так и под линией десен.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удаление пораженных тканей: инфицированные ткани мягко удаляются, что способствует заживлению и предотвращает распространение воспаления.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обработка корней: поверхность корней сглаживается для предотвращения повторного скопления бактерий и обеспечения правильного прикрепления тканей.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Завершение процедуры: при необходимости стоматолог может наложить швы, чтобы зафиксировать десну в правильном положении во время заживления.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Методы лазерной хирургии десен</h3>
+<p dir="ltr">В хирургии десен применяется несколько видов лазерных технологий, каждая из которых имеет свои особенности и преимущества. К наиболее распространённым типам относятся:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Диодные лазеры: универсальные лазеры, подходящие для различных процедур с мягкими тканями. Они эффективно удаляют воспаленные участки десен и способствуют коагуляции, снижая риск кровотечения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Nd:YAG-лазеры: лазеры на основе иттрий-алюминиевого граната, легированного неодимом. Отличаются высокой эффективностью при лечении глубоких очагов воспаления и уничтожении патогенных бактерий.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">CO₂-лазеры: углекислотные лазеры, обеспечивающие точное рассечение и испарение тканей. Идеально подходят для удаления повреждённых участков и коррекции формы десен.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Преимущества лазерной хирургии десен</h3>
+<p dir="ltr">Лазерная хирургия десен обладает рядом преимуществ по сравнению с традиционными хирургическими методами:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высокая точность: лазер точно воздействует на пораженные ткани, минимизируя повреждение окружающих здоровых участков.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Снижение кровотечений: благодаря эффекту коагуляции лазер значительно снижает кровотечение во время и после процедуры.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Минимум боли: пациенты обычно испытывают меньше боли и дискомфорта по сравнению с традиционной хирургией.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Быстрое заживление: лазер стимулирует регенерацию тканей, что способствует более быстрому восстановлению.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Снижение риска инфекции: лазер стерилизует обрабатываемую область, уменьшая вероятность послеоперационных осложнений.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Минимальная инвазивность: процедура менее травматична и часто не требует наложения швов.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Кому подходит метод лазерной хирургии десен?</h3>
+<p dir="ltr">Лазерная хирургия десен &mdash; это эффективный метод лечения, который подходит для людей, страдающих от:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гингивита: начальной формы заболевания десен, когда воспаленные, покрасневшие и кровоточащие ткани нуждаются в быстром и эффективном лечении.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пародонтита: более серьезного заболевания, при котором воспаление проникает глубже, приводя к потере костной массы и расшатыванию зубов. Лазер помогает остановить этот процесс и восстановить здоровье десен.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Рецессии десен: ситуации, когда ткани десен отступают, и лазер может восстановить их форму, улучшив внешний вид и состояние зубов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Чрезмерного роста десен: когда избыток ткани затрудняет гигиену и влияет на эстетичность улыбки. Лазер позволяет точно удалить лишнюю ткань, возвращая естественный вид десен и улучшая гигиену.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Восстановление и последующий уход</h3>
+<p dir="ltr">Для оптимального заживления после лазерной операции на деснах необходим тщательный уход. Основные рекомендации включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гигиена полости рта: аккуратно чистите зубы и используйте зубную нить по указанию стоматолога.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Антибактериальные средства для полоскания рта: применяйте предписанные средства для полоскания, чтобы предотвратить инфекцию.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Диета: в первые дни после процедуры употребляйте мягкую пищу и избегайте горячей, пряной или твердой пищи, которая может раздражать десны.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лечение боли: при необходимости принимайте обезболивающие препараты по назначению врача.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Контрольное обследование: обязательно посещайте все запланированные осмотры, чтобы контролировать процесс заживления и своевременно устранять возможные проблемы.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">AZPO Health: Ваш партнер в области лазерной хирургии десен</h2>
+<p dir="ltr">AZPO Health стремится предоставлять высококачественную стоматологическую помощь как местным, так и международным пациентам. Обладая самым современным оборудованием в Стамбуле, Анталии и Алании, AZPO Health предлагает комфортные и безопасные условия для лазерной хирургии десен.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опытная команда: стоматологи и вспомогательный персонал AZPO Health обладают высокой квалификацией и значительным опытом в проведении лазерных операций на деснах.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Передовые технологии: Клиники оснащены новейшими лазерными технологиями, что обеспечивает точность и эффективность лечения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный уход: AZPO Health разрабатывает индивидуальные планы лечения, учитывая потребности и цели каждого пациента.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Международные стандарты: клиники соблюдают международные стандарты гигиены и безопасности, что гарантирует благополучие пациентов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Всесторонняя поддержка: AZPO Health предоставляет полную поддержку иностранным пациентам, включая помощь в организации поездок, размещении и послеоперационном уходе.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Сделайте следующий шаг с AZPO Health</h2>
+<p dir="ltr">Не позволяйте заболеваниям десен влиять на вашу улыбку и здоровье полости рта. Обратитесь в AZPO Health сегодня за бесплатной консультацией и узнайте, как лазерная хирургия десен может изменить вашу жизнь. Наша опытная команда оценит ваше состояние, ответит на все вопросы и разработает индивидуальный план лечения, чтобы вернуть вам здоровую и уверенную улыбку.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Отзывы клиентов&nbsp;</h2>
+<p dir="ltr">&laquo;Я перенес лазерную операцию на деснах в клинике AZPO Health в Стамбуле, и я очень доволен результатами. Процедура была безболезненной, а восстановление &mdash; быстрым. Персонал был заботливым и профессиональным, благодаря чему я чувствовал себя комфортно на протяжении всего процесса.&raquo; - Майкл С.</p>
+<p dir="ltr">&laquo;Я сомневалась, стоит ли ехать в Турцию на лечение, но AZPO Health превзошел мои ожидания. Клиника в Алании была современной, стоматолог &mdash; квалифицированным специалистом, а цены &mdash; очень разумными. Мои десны никогда не были такими здоровыми!&raquo; - Сара Джей.</p>
+<p dir="ltr"><strong id="docs-internal-guid-c8a6300f-7fff-ede8-2a6f-44737995a56a">&laquo;После многолетней борьбы с заболеваниями десен я, наконец, нашла решение в AZPO Health в Анталии. Лазерная хирургия десен изменила ход событий. Я настоятельно рекомендую их услуги всем, кто ищет доступную и качественную стоматологическую помощь.&raquo; - Дэвид Л.</strong></p>`
             : `<p dir="ltr">Turkey has become a popular destination for medical tourism, especially for dental procedures like laser gum surgery. AZPO Health, with locations in Istanbul, Antalya, and Alanya, offers a unique combination of quality, affordability, and comprehensive care.</p>
 <ul>
 <li dir="ltr" aria-level="1">
@@ -23080,170 +23318,238 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Удаление зубов в Турции — деликатное избавление от боли и шаг к новой улыбке"
           : "Tooth Extractions in Turkey - Gentle Relief and a Fresh Smile",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Испытываете постоянную зубную боль или дискомфорт? Возможно, причина — сильный кариес или поврежденный зуб. Мысль об удалении может показаться пугающей, но в Турции вы найдете опытных стоматологов, которые проводят процедуру бережно и эффективно. Это откроет путь к здоровой, безболезненной и уверенной улыбке. Обратитесь в AZPO Health сегодня, чтобы получить индивидуальный план лечения от проверенных клиник."
           : `Are you experiencing persistent tooth pain or discomfort, perhaps from a severely decayed or damaged tooth? The thought of extraction might seem daunting, but in Turkey, you can find experienced dental professionals who offer gentle and effective tooth extractions, paving the way for a healthier and more comfortable smile. Contact AZPO Health today to connect with reputable clinics for your personalized care.`,
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Pain Relief",
+            title: locale === "ru" ? "Облегчение боли" : "Pain Relief",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "удаление устраняет дискомфорт от кариеса, инфекции или травмы."
                 : "Alleviates pain caused by tooth decay, infection, or damage to improve comfort.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Prevents Further Damage",
+            title: locale === "ru" ? "Профилактика осложнений" : "Prevents Further Damage",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "защищает соседние зубы от разрушения и инфекции."
                 : "Removes problematic teeth, preventing damage to surrounding teeth and tissues.",
           },
           {
             title:
               locale === "ru"
-                ? "Идеальный Контур"
+                ? "Подготовка к лечению"
                 : "Creates Space for Treatment",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "создаёт место для имплантов, протезов или брекетов."
                 : "Facilitates orthodontic treatments or the placement of implants/dentures",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Удаление зуба — это стоматологическая процедура по извлечению зуба из его лунки в челюсти. Ее проводят, когда зуб сильно разрушен, инфицирован или повреждён настолько, что восстановление невозможно. Также удаление может потребоваться при скученности зубов, ретинированных зубах мудрости или как часть подготовки к ортодонтическому лечению. В ряде случаев это профилактическая мера для предотвращения осложнений в будущем."
                 : "Tooth extraction is the process of removing a tooth from its socket in the jaw. It is commonly performed when a tooth is severely decayed, infected, or damaged beyond repair. Extractions are also done to eliminate teeth causing crowding or other dental issues, such as impacted wisdom teeth. In some cases, it may be a preventive measure to avoid future dental problems or complications that may arise with orthodontic treatment.",
           },
           {
-            header: locale === "ru" ? "" : "How It Works",
+            header: locale === "ru" ? "Как проходит процедура" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура удаления начинается с тщательного обследования и визуализации, например, рентгенографии, чтобы определить состояние зуба и выбрать оптимальный метод его удаления. Затем область вокруг зуба обезболивается с помощью местного анестетика, что делает процедуру полностью безболезненной. В более сложных случаях — например, при ретинированных или разрушенных зубах — стоматолог или челюстно-лицевой хирург может сделать небольшой разрез в десне для получения доступа к зубу. После этого зуб аккуратно извлекается из лунки с использованием специальных стоматологических инструментов."
                 : "The extraction procedure begins with a thorough examination and imaging, such as X-rays, to determine the tooth’s condition and the best approach for removal. The area around the tooth is numbed with a local anesthetic to ensure a painless experience. For more complex cases, like impacted teeth, the dentist or oral surgeon may need to make an incision in the gum to access the tooth. Once the tooth is loosened from its socket using specialized tools, it is carefully removed.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For Whom",
+            header: locale === "ru" ? "Для кого подходит" : "For Whom",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Удаление зубов рекомендуется пациентам с серьезными поражениями зубов, такими как глубокий кариес или механические повреждения, которые невозможно восстановить с помощью пломбирования или других терапевтических методов. Эта процедура также показана при инфекциях, не поддающихся лечению антибиотиками или эндодонтической терапией."
                 : "Tooth extraction is recommended for individuals experiencing severe tooth decay or damage that cannot be restored with fillings or other treatments. It is also suitable for those suffering from tooth infections that don't respond to antibiotics or root canal therapy.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Mild to moderate discomfort, manageable with medication",
+          question : locale === "ru" ? "Больно ли это?" : "Is it painful?",
+          answer : locale === "ru" ? "Умеренный дискомфорт - нормальное явление и хорошо контролируется обезболивающими средствами." : "Mild to moderate discomfort, manageable with medication"
         },
         {
-          question: locale === "ru" ? "" : "What is dry socket?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "A painful condition if the clot dislodges – avoid smoking/straws",
+          question : locale === "ru" ? "Что такое сухая лунка?" : "What is dry socket?",
+          answer : locale === "ru" ? "Это болезненное состояние, возникающее при потере или смещении кровяного сгустка - не рекомендуется курить и использовать соломинку." : "A painful condition if the clot dislodges – avoid smoking/straws"
         },
         {
-          question: locale === "ru" ? "" : "When can I eat normally?",
-          answer: locale === "ru" ? "" : "Usually after 3–5 days, gradually",
+          question : locale === "ru" ? "Когда можно есть твердую пищу?" : "When can I eat hard foods?",
+          answer : locale === "ru" ? "Постепенно, начиная через 3–5 дней, в зависимости от самочувствия." : "Usually after 3–5 days, gradually"
         },
         {
-          question: locale === "ru" ? "" : "Will there be swelling?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, usually peaks at 48 hours then improves",
+          question : locale === "ru" ? "Будет ли отек?" : "Will there be swelling?",
+          answer : locale === "ru" ? "Да, отек - это нормальная реакция организма. Обычно он достигает максимума через 48 часов после процедуры, а затем постепенно спадает." : "Yes, usually peaks at 48 hours then improves"
         },
         {
-          question: locale === "ru" ? "" : "Do I need stitches?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Sometimes – dissolvable or removed at follow-up",
+          question : locale === "ru" ? "Нужны ли мне швы?" : "Do I need stitches?",
+          answer : locale === "ru" ? "Иногда да - швы могут быть рассасывающимися или их снимет врач при повторном осмотре." : "Sometimes – dissolvable or removed at follow-up"
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "How long should I rest after a tooth extraction?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Rest for the first 24 hours and avoid physical activities.",
+          question : locale === "ru" ? "Как долго мне следует отдыхать после удаления зуба?" : "How long should I rest after a tooth extraction?",
+          answer : locale === "ru" ? "Отдыхайте в течение первых 24 часов и избегайте физических нагрузок." : "Rest for the first 24 hours and avoid physical activities."
         },
         {
-          question: locale === "ru" ? "" : "Can I smoke?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Avoid smoking, as it can delay healing and cause a dry socket.",
+          question : locale === "ru" ? "Могу ли я курить?" : "Can I smoke?",
+          answer : locale === "ru" ? "Курение не рекомендуется, так как оно может замедлить заживление и вызвать сухость лунки." : "Avoid smoking, as it can delay healing and cause a dry socket."
         },
         {
-          question: locale === "ru" ? "" : "When will the bleeding stop?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Bleeding may last for 24 hours. If it continues, bite down on sterile gauze.",
+          question : locale === "ru" ? "Когда остановится кровотечение?" : "When will the bleeding stop?",
+          answer : locale === "ru" ? "Небольшое кровотечение может сохраняться в течение 24 часов. Если оно продолжается, прикусите стерильную марлю." : "Bleeding may last for 24 hours. If it continues, bite down on sterile gauze."
         },
         {
-          question: locale === "ru" ? "" : "How can I manage pain?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Pain is manageable with prescribed painkillers. Contact your dentist if pain worsens.",
+          question : locale === "ru" ? "Как справиться с болью?" : "How can I manage pain?",
+          answer : locale === "ru" ? "Принимайте назначенные обезболивающие препараты. Если боль усиливается или не проходит, обратитесь к стоматологу." : "Pain is manageable with prescribed painkillers. Contact your dentist if pain worsens."
         },
         {
-          question: locale === "ru" ? "" : "How should I care for my mouth?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Avoid touching the area for 24 hours, then rinse gently with salt water.",
-        },
+          question : locale === "ru" ? "Как ухаживать за полостью рта после удаления?" : "How should I care for my mouth?",
+          answer : locale === "ru" ? "В течение первых 24 часов не прикасайтесь к области удаления. Затем аккуратно полощите рот тёплой солёной водой 2–3 раза в день." : "Avoid touching the area for 24 hours, then rinse gently with salt water."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Bite on gauze to stop bleeding",
-        locale === "ru"
-          ? ""
-          : "Do not smoke, spit, or use a straw for 48–72 hrs",
-        locale === "ru" ? "" : "Eat soft, cool foods",
-        locale === "ru" ? "" : "Use salt water rinse after 24 hours",
-        locale === "ru" ? "" : "Take all prescribed meds as directed",
-        locale === "ru" ? "" : "Keep your head elevated while sleeping.",
-        locale === "ru" ? "" : "Avoid physical activities.",
-        locale === "ru" ? "" : "Do not smoke.",
-        locale === "ru" ? "" : "Be careful not to touch the area",
-        locale === "ru" ? "" : "brush your teeth gently until fully healed.",
+        locale === "ru" ? "Укусите в марлю, чтобы остановить кровотечение" : "Bite on gauze to stop bleeding",
+        locale === "ru" ? "Избегайте кашля, курения и использования соломинки в течение и 48–72 часов" : "Do not smoke, spit, or use a straw for 48–72 hrs",
+        locale === "ru" ? "Ешьте мягкую, теплую пищу" : "Eat soft, lukewarm foods",
+        locale === "ru" ? "Полощите горло соленой водой через 24 часа" : "Use salt water rinse after 24 hours",
+        locale === "ru" ? "Принимайте все предписанные лекарства согласно инструкции" : "Take all prescribed meds as directed",
+        locale === "ru" ? "Держите голову приподнятой во время сна." : "Keep your head elevated while sleeping.",
+        locale === "ru" ? "Избегайте физических нагрузок." : "-Avoid physical activities.",
+        locale === "ru" ? "Не курите." : "-Do not smoke.",
+        locale === "ru" ? "Будьте осторожны, чтобы не трогать эту область" : "Be careful not to touch the area",
+        locale === "ru" ? "Чистите зубы осторожно до полного заживления." : "brush your teeth gently until fully healed."
       ],
       preList: [
-        locale === "ru" ? "" : "Avoid NSAIDs and alcohol before surgery",
-        locale === "ru" ? "" : "Arrange for transport if sedation is used",
-        locale === "ru" ? "" : "Eat light meal if local anesthesia is planned",
-        locale === "ru" ? "" : "Inform dentist of all medications",
+        locale === "ru" ? "Избегайте приема нестероидных противовоспалительных препаратов (НПВП) и алкоголя перед операцией." : "Avoid NSAIDs and alcohol before surgery",
+        locale === "ru" ? "Если планируется местная анестезия, допустим легкий примем пищи" : "Eat light meal if local anesthesia is planned",
+        locale === "ru" ? "Обязательно сообщите стоматологу о всех принимаемых вами лекарственных препаратах." : "Inform dentist of all medications",
+        locale === "ru" ? "Воздержитесь от курения как минимум за 24 часа до процедуры." : "Avoid smoking at least 24 hours before surgery"
       ],
       conclusion: {
+        title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? ""
+            ? "Удаление зуба — это эффективная и распространенная процедура для устранения серьезных стоматологических проблем. При необходимости оно помогает предотвратить осложнения и улучшить общее состояние полости рта. При соблюдении рекомендаций стоматолога и правильной гигиене восстановление проходит быстро и без проблем. Эта процедура обеспечивает долгосрочные преимущества: здоровье, комфорт и полноценную функциональность вашей улыбки."
             : "Tooth extraction is an effective and widely performed procedure for addressing severe dental issues. When necessary, it can prevent further complications and improve the health of the remaining teeth and gums. With proper post-extraction care, including following the dentist's instructions and maintaining good oral hygiene, recovery is typically swift and successful. The procedure provides long-term benefits, enhancing overall oral health, comfort, and functionality.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для удаления зубов?"
             : "Why Consider Turkey for Your Tooth Extractions?",
         content:
           locale === "ru"
-            ? ``
+            ? `<p dir="ltr">Удаление зубов в Турции с AZPO Health &mdash; это разумное и выгодное решение, которое сочетает в себе высокое качество медицинских услуг и доступную стоимость. Одна из ключевых причин, по которой иностранные пациенты выбирают Турцию для стоматологического лечения, &mdash; это значительная экономия. Несмотря на высокие стандарты медицинской помощи, цены на процедуры здесь значительно ниже, чем в большинстве западных стран. Это позволяет получить необходимое лечение без чрезмерных финансовых затрат.</p>
+<p dir="ltr">Однако не только финансовая выгода делает Турцию привлекательной. Страна завоевала признание в сфере медицинского туризма благодаря профессионализму и опыту своих специалистов. Турецкие стоматологи имеют высокую квалификацию и обширную практику, а современные клиники оснащены передовым оборудованием. AZPO Health сотрудничает исключительно с проверенными медицинскими учреждениями, чтобы гарантировать своим пациентам надёжность, безопасность и высокое качество лечения.</p>
+<p dir="ltr">Удаление зуба в Турции можно легко совместить с другими стоматологическими процедурами или даже с отдыхом. Например, Стамбул &mdash; динамичный мегаполис с богатой культурой и историей, где можно совместить лечение с приятным путешествием. AZPO Health оказывает полное сопровождение: от подбора клиники до организации трансфера и размещения, делая процесс максимально комфортным.</p>
+<p dir="ltr">Кроме того, современные методы обезболивания и подходы к лечению делают процедуру удаления зубов практически безболезненной. Опытные стоматологи, с которыми работает AZPO Health, обеспечивают индивидуальный подход к каждому пациенту, уделяя особое внимание вашему комфорту и спокойствию на всех этапах лечения. Выбирая Турцию и AZPO Health, вы выбираете профессионализм, заботу и уверенность в отличном результате.</p>
+<h2 dir="ltr">Что из себя представляет процедура удаления зубов</h2>
+<p dir="ltr">Удаление зуба &mdash; это стоматологическая процедура, при которой зуб извлекается из костной лунки. Хотя стоматологи всегда стремятся сохранить естественные зубы, бывают ситуации, когда удаление &mdash; это единственно верное решение.</p>
+<h3 dir="ltr">Распространенные причины удаления зубов:</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Глубокий кариес или инфекция: если кариес достиг пульпы зуба (внутренней части, содержащей нервы и сосуды), или возникла сильная инфекция, не поддающаяся лечению антибиотиками или процедурой корневого канала, удаление может предотвратить её распространение и избавить от боли.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубы мудрости: третьи моляры часто прорезываются с осложнениями. Если зуб мудрости не может нормально выйти, растет под углом или частично покрыт десной, это может вызывать боль, воспаление, повреждение соседних зубов или кисты. В таком случае рекомендуется удаление.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Скученность зубов: иногда зубы удаляются, чтобы освободить место для ортодонтического лечения &mdash; например, при установке брекетов или элайнеров.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подготовка к протезированию: при отсутствии или сильном повреждении нескольких зубов может потребоваться удаление оставшихся, чтобы подготовить полость рта к установке протезов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сломанные зубы: если зуб поврежден ниже уровня десны и не подлежит восстановлению, его также удаляют.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Тяжелая форма пародонтоза: продвинутое заболевание десен разрушает ткани и кость, удерживающие зубы, что может привести к их потере и необходимости удаления.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Виды удаления зубов:</p>
+<p dir="ltr">Существует два основных типа удаления зубов в зависимости от их видимости и доступности:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Простое удаление: этот тип удаления применяется к зубам, которые видны в ротовой полости. Стоматолог использует такие инструменты, как щипцы и подъемники, для расшатывания и извлечения зуба. Простое удаление обычно проводится под местной анестезией.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургическое удаление: это более сложная процедура, которая используется, когда доступ к зубу затруднен, например, при удалении зуба мудрости или зуба, отколовшегося от линии десны. При хирургическом удалении часто требуется сделать разрез в ткани десны для доступа к зубу. Для облегчения удаления зуб может быть разбит на несколько частей. Хирургическое удаление может проводиться под местной анестезией, седативными препаратами или общим наркозом в зависимости от сложности процедуры и уровня комфорта пациента.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Процесс удаления зуба обычно включает следующие этапы:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Консультация и осмотр: стоматолог проведет тщательное обследование, которое может включать рентген, для оценки состояния зуба и окружающих тканей. Врач обсудит с вами показания для удаления зуба, расскажет о предстоящей процедуре, возможных рисках и осложнениях, а также предложит варианты анестезии.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Анестезия: перед удалением зуба будет проведено обезболивание. Для простого удаления обычно достаточно местной анестезии, которая действует на область вокруг зуба. Если процедура более сложная, например, при хирургическом удалении, или если у вас есть беспокойство, могут быть использованы седативные препараты (например, закись азота, пероральные или внутривенные седативы) или общая анестезия.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удаление зуба: Как только область обезболена, стоматолог с помощью специальных инструментов расшатывает зуб и извлекает его. При простом удалении зуб осторожно покачивается взад и вперед до тех пор, пока не будет извлечен. Если зуб удаляется хирургическим методом, может потребоваться разрез ткани десны, удаление костной ткани или разделение зуба на части для облегчения его извлечения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Уход после удаления: после процедуры стоматолог помещает марлевую повязку на место удаления, чтобы остановить кровотечение. Вы получите подробные рекомендации по уходу, которые обычно включают:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Сохранение давления на марлю в течение определенного времени.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Избегание физических нагрузок.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Употребление мягкой пищи.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Прием назначенных обезболивающих препаратов.<br>Применение льда для уменьшения отека.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Соблюдение гигиены полости рта, стараясь не нарушить кровяной сгусток.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Восстановление: начальный период заживления после удаления зуба обычно занимает от нескольких дней до двух недель. Очень важно следовать указаниям стоматолога, чтобы ускорить процесс заживления и предотвратить осложнения, такие как сухость лунки.<br><br></p>
+</li>
+</ol>
+<p dir="ltr">Тщательное соблюдение инструкций поможет вам восстановиться быстро и без осложнений.</p>
+<h2 dir="ltr">AZPO Health &mdash; ваш надежный партнер в сфере стоматологической помощи в Турции</h2>
+<p dir="ltr">AZPO Health помогает пациентам найти авторитетных и опытных стоматологов в Турции. Мы понимаем, что обращение за медицинской помощью за рубежом может вызывать вопросы и беспокойство, и наша цель &mdash; сделать этот процесс максимально понятным и комфортным для вас.</p>
+<p dir="ltr">Мы сотрудничаем с тщательно проверенными клиниками, которые соблюдают высокие стандарты гигиены и ухода за пациентами. Хотя AZPO Health не проводит медицинские процедуры, мы облегчаем ваше путешествие, предоставляя информацию, связывая вас с нужными специалистами и клиниками, а также оказывая поддержку на протяжении всего пребывания.</p>
+<p dir="ltr">Выбирая AZPO Health, вы получаете:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к опытным специалистам: мы свяжем вас с профессионалами в области стоматологии и челюстно-лицевой хирургии, которые имеют большой опыт в проведении операций, включая удаление зубов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Качество и современное оснащение: клиники нашей сети оснащены передовыми стоматологическими технологиями и строго соблюдают гигиенические стандарты для вашего комфорта и безопасности.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Персонализированная поддержка: мы учитываем ваши индивидуальные потребности и предпочтения, чтобы предложить вам самых подходящих специалистов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Облегчение вашего медицинского путешествия: хотя мы не предоставляем медицинские услуги, мы помогаем вам спланировать ваше путешествие, предоставляя необходимую информацию и ресурсы для удобства при получении стоматологической помощи в Турции.</p>
+</li>
+</ul>
+<p dir="ltr">Свяжитесь с AZPO Health сегодня, чтобы узнать больше об удалении зубов в Турции и сделать первый шаг к более здоровой и безболезненной улыбке.</p>
+<h2 dir="ltr">Реальные отзывы пациентов&nbsp;</h2>
+<p dir="ltr">Отзыв 1: Сара из Великобритании</p>
+<p dir="ltr">&laquo;В течение нескольких месяцев я страдала от сильного разрушения коренного зуба, и боль была невыносимой. Стоимость удаления зуба в Великобритании была довольно высокой, поэтому я начала искать варианты за границей. AZPO Health связала меня с замечательной клиникой в Стамбуле. Стоматолог был очень любезен и все доходчиво объяснил. Удаление было быстрым и безболезненным, а инструкциям по последующему уходу было легко следовать. Всё это оказалось гораздо доступнее, чем я ожидала, и у меня даже была возможность осмотреть некоторые из прекрасных достопримечательностей Стамбула. Спасибо, AZPO Health!&raquo;</p>
+<p dir="ltr">Отзыв 2: Джон из США</p>
+<p dir="ltr">&laquo;Мне нужно было удалить пораженный зуб мудрости, и я очень нервничал из-за этой процедуры. AZPO Health помогла мне найти в Турции хирурга-стоматолога с хорошими рекомендациями. Начиная с начальной онлайн-консультации и заканчивая послеоперационным осмотром, общение было превосходным. Хирургическое удаление было проведено под действием седативных препаратов, и я совсем не почувствовал боли. Клиника была современной и чистой, а персонал &mdash; очень профессиональным. Я очень рад, что решил пройти процедуру в Турции через AZPO Health. Экономия средств была значительной, а качество лечения &mdash; исключительным.&raquo;</p>
+<p dir="ltr">Отзыв 3: Эмили из Канады</p>
+<p dir="ltr">&laquo;Мне пришлось удалить несколько зубов в рамках моего плана по установке зубных протезов. Я волновалась по поводу процесса, но стоматолог, с которым я связалась через AZPO Health в Турции, очень успокоил меня. Они нашли время, чтобы ответить на все мои вопросы и позаботились о том, чтобы мне было комфортно на протяжении всего процесса. Удаление было выполнено аккуратно, а восстановление прошло более гладко, чем я ожидала. Компания AZPO Health избавила меня от стресса на протяжении всего процесса, начиная с организации приема в клинику и заканчивая предоставлением информации о моем пребывании. Я очень довольна оказанной мне помощью.&raquo;</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Choosing to have your tooth extractions in Turkey through AZPO Health can offer several compelling advantages. One of the primary reasons many international patients consider Turkey for dental procedures is the potential for significant cost savings. While the quality of care remains high, the overall expenses, including the procedure itself, can be considerably more affordable compared to many Western countries. This allows you to address your dental needs without incurring excessive financial burden.</p>
 <p dir="ltr">Beyond the financial aspect, Turkey has emerged as a prominent destination for medical tourism due to the skill and experience of its dental professionals. Many dentists in Turkey are highly trained and experienced in performing various dental procedures, including tooth extractions, and often work in modern clinics equipped with advanced technology. AZPO Health collaborates with a network of such reputable clinics to ensure you receive quality care.</p>
 <p dir="ltr">Furthermore, for those considering other dental treatments or even a relaxing getaway, combining your tooth extraction with a medical tourism trip to Turkey can be an appealing option. Istanbul, in particular, is a vibrant city with a rich history and culture, offering numerous attractions to explore before or after your procedure, depending on your recovery timeline. AZPO Health can assist you in connecting with clinics that cater to international patients, often providing support with logistics to make your experience as seamless as possible.</p>
@@ -23359,143 +23665,167 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Удаление зубов мудрости в Турции"
           : "Wisdom Teeth Removal in Turkey",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Беспокоят боль, дискомфорт или припухлость в задней части рта? Вполне возможно, пришло время задуматься об удалении зубов мудрости — процедуре, с которой сталкиваются многие. Хотя это может вызывать тревогу, хорошая новость в том, что сегодня доступны безопасные и эффективные решения. Выбор подходящего метода за уходом полости рта может показаться непростым, но с AZPO Health вы получаете надежную поддержку и доступ к высококлассной стоматологической медицине в Турции."
           : `Are you experiencing discomfort, pain, or swelling in the back of your mouth? Perhaps your dentist has mentioned the need for wisdom teeth removal. Many people face this common dental concern, and the good news is that effective and high-quality solutions are available. Considering options for your oral health can feel overwhelming, but exploring the benefits of having your wisdom teeth removal in Turkey through AZPO Health can provide you with a comfortable and supported journey towards a healthier smile.`,
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Dental Alignment",
+            title: locale === "ru" ? "Выравнивание зубов" : "Dental Alignment",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "предотвращает скученность зубов и обеспечивает правильное расположение зубов в рту."
                 : "Prevents overcrowding and keeps teeth properly spaced in your mouth",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Oral Health",
+            title: locale === "ru" ? "Гигиена полости рта" : "Oral Health",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "снижает риск кариеса и инфекции в труднодоступных местах."
                 : "Reduces risk of decay and infection in difficult-to-clean areas",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Pain Management",
+            title: locale === "ru" ? "Снятие боли" : "Pain Management",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "позволяет избежать дискомфорта и осложнений, связанных с повреждением зубов мудрости."
                 : "Avoids discomfort and complications from impacted wisdom teeth",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Зуб мудрости — это третий коренной зуб, расположенный в задней части рта, который обычно появляется в возрасте от 17 до 25 лет. У человека их четыре: по одному с каждой стороны верхней и нижней челюсти. Эти зубы могут прорезаться нормально, оставаться скрытыми или расти криво, что часто приводит к различным проблемам."
                 : `A wisdom tooth is a third molar at the back of the mouth, typically emerging between ages 17 and 25. There are four wisdom teeth, one on each side of the upper and lower jaws. These teeth may emerge normally, remain impacted, or grow crooked, often causing`,
           },
           {
-            header: locale === "ru" ? "" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Удаление зуба мудрости обычно проводится под местной анестезией. Если зуб поврежден, в десне делается разрез, иногда требуется удалить часть кости вокруг зуба или разделить зуб на части для облегчения извлечения. После этого область ушивается."
                 : "Wisdom tooth extraction is usually performed under local anesthesia. If the tooth is impacted, an incision is made in the gum, and sometimes the bone around the tooth is removed or the tooth is divided into pieces for easier extraction. The area is then sutured.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who Needs It?",
+            header: locale === "ru" ? "Кому это необходимо ?" : "Who Needs It?",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Эта процедура рекомендуется людям, у которых зубы мудрости: Повреждены или находятся в неправильном положении, Вызывают боль, инфекцию или повреждают другие зубы, Не могут полностью прорезаться из-за нехватки места"
                 : "This procedure is recommended for individuals whose wisdom teeth are: Impacted or misaligned Causing pain, infection, or damage to other teeth Unable to emerge fully due to lack of space",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "How long do results last?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "6 months to 2 years depending on diet and habits",
+          question : locale === "ru" ? "Что такое сухая лунка?" : "Is it painful?",
+          answer : locale === "ru" ? "Это болезненное состояние, возникающее при потере или смещении кровяного сгустка. Чтобы его избежать, важно строго соблюдать рекомендации по уходу после удаления." : "Discomfort is normal and managed with pain relievers"
         },
         {
-          question: locale === "ru" ? "" : "Is it safe?",
-          answer: locale === "ru" ? "" : "Yes, when done professionally",
+          question : locale === "ru" ? "Как долго длится восстановление?" : "What is dry socket?",
+          answer : locale === "ru" ? "Заживление мягких тканей обычно занимает от 7 до 10 дней." : "A painful condition from dislodged clot – follow post-op rules"
         },
         {
-          question: locale === "ru" ? "" : "Will it hurt?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Some sensitivity may occur, usually short-term",
+          question : locale === "ru" ? "Рассасываются ли швы?" : "When can I eat solid food?",
+          answer : locale === "ru" ? "В большинстве случаев - да. Если нет, врач удалит их через неделю." : "Gradually after 3–5 days"
         },
         {
-          question: locale === "ru" ? "" : "Can I whiten crowns or veneers?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "No, only natural teeth respond to whitening",
+          question : locale === "ru" ? "Насколько сильный отек считается нормальным?" : "How long is recovery?",
+          answer : locale === "ru" ? "Отек - это нормально в течение первых двух дней после удаления, затем он должен постепенно снижаться." : "7–10 days for soft tissue healing"
         },
         {
-          question: locale === "ru" ? "" : "How white will my teeth get?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Depends on your natural shade and type of stains ",
+          question : locale === "ru" ? "Как чистить зубы после удаления?" : "Will stitches dissolve?",
+          answer : locale === "ru" ? "Чистите зубы аккуратно, избегая области удаления, чтобы не повредить заживающую ткань." : "Often yes, or removed after a week"
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "Can teeth whitening be done during pregnancy and breastfeeding?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "It’s not recommended; consult a dentist first.",
+          question : locale === "ru" ? "Нормально ли кровотечение после процедуры?" : "How much swelling is normal after extraction?",
+          answer : locale === "ru" ? "Легкое кровотечение в первые часы - это нормально. Если оно не останавливается, обратитесь к вашему стоматологу." : "Swelling is normal for the first 2 days, then decreases."
         },
         {
-          question:
-            locale === "ru" ? "" : "How often can teeth whitening be done?",
-          answer: locale === "ru" ? "" : "Generally, every 6 months.",
+          question : locale === "ru" ? "" : "How should I clean my teeth after extraction?",
+          answer : locale === "ru" ? "" : "Brush carefully, avoiding the extracted area."
         },
+        {
+          question : locale === "ru" ? "" : "Is bleeding normal after extraction?",
+          answer : locale === "ru" ? "" : "Mild bleeding is normal initially; contact your dentist if it doesn’t stop."
+        }
       ],
       posts: [
-        "Bite on gauze to control bleeding",
-        "Avoid spitting, using a straw, or smoking for 3 days",
-        "Apply ice packs for swelling during first 48 hours",
-        "Eat soft, cool foods like yogurt or soup",
-        "Rinse with salt water after 24 hours",
-        "Initially, sleep with your head elevated.",
-        "Avoid intense exercise.",
+        locale === "ru" ? "Прикусывайте марлю, чтобы контролировать кровотечение." : "Bite on gauze to control bleeding",
+        locale === "ru" ? "Избегайте кашля, курения и использования соломинки в течение первых 3 дней." : "Avoid spitting, using a straw, or smoking for 3 days",
+        locale === "ru" ? "Прикладывайте холодные компрессы для уменьшения отека в течение первых 48 часов." : "Apply ice packs for swelling during first 48 hours",
+        locale === "ru" ? "Употребляйте мягкую и теплую пищу, например, йогурт или суп.                                                                                                     - Через 24 часа начните полоскать рот теплой соленой водой." : "Eat soft, cool foods like yogurt or soup",
+        locale === "ru" ? "В первые дни спите с приподнятой головой." : "Rinse with salt water after 24 hours",
+        locale === "ru" ? "Избегайте интенсивных физических нагрузок." : "Initially, sleep with your head elevated.",
+        locale === "ru" ? "" : "Avoid intense exercise."
       ],
       preList: [
-        "Fast 6–8 hours before surgery if under sedation",
-        "Arrange transportation after the procedure",
-        "Wear loose, comfortable clothing",
-        "Avoid smoking and alcohol for 24 hours prior",
-        "Pay attention to oral hygiene.",
-        "Inform about allergies or health conditions.",
-        "Avoid blood thinners.",
+        locale === "ru" ? "Воздержитесь от еды на 6–8 часов перед операцией, если она проводится под седативным воздействием." : "Fast 6–8 hours before surgery if under sedation",
+        locale === "ru" ? "Наденьте свободную и удобную одежду." : "Wear loose, comfortable clothing",
+        locale === "ru" ? "Избегайте употребления алкоголя и курения за 24 часа до процедуры." : "Avoid smoking and alcohol for 24 hours prior",
+        locale === "ru" ? "Соблюдайте гигиену полости рта." : "Pay attention to oral hygiene.",
+        locale === "ru" ? "Избегайте разжижающих кровь препаратов.                                        - Сообщите врачу о наличии аллергий или хронических заболеваний." : "Inform about allergies or health conditions.",
+        locale === "ru" ? "Избегайте приема препаратов, разжижающих кровь (если не указано иное врачом)." : "Avoid blood thinners."
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Удаление зуба мудрости помогает предотвратить проблемы с зубами и улучшить общее состояние полости рта. При надлежащем уходе восстановление обычно проходит быстро и успешно. Удаление поврежденных или проблемных зубов мудрости снижает риск инфицирования, скученности и смещения зубов. Такой упреждающий подход может предотвратить будущие осложнения и улучшить долгосрочное состояние зубов, обеспечивая более здоровую и комфортную улыбку."
             : "Wisdom tooth extraction helps prevent dental problems and improve overall oral health. With proper care, recovery is typically quick and successful.By removing impacted or problematic wisdom teeth, the procedure reduces the risk of infection, overcrowding, and misalignment. This proactive approach can prevent future complications and enhance long-term dental well-being, ensuring a healthier, more comfortable smile.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для удаления зубов мудрости?"
             : "Why Consider Turkey for Wisdom Teeth Removal?",
         content:
           locale === "ru"
-            ? ``
+            ? `<p dir="ltr">Выбор места для проведения медицинской или стоматологической процедуры &mdash; это важное решение. Турция стала популярным направлением для людей, нуждающихся в различных медицинских процедурах, включая удаление зубов мудрости. Эта растущая тенденция обусловлена несколькими факторами.</p>
+<p dir="ltr">Один из основных аспектов, по которому многие пациенты выбирают Турцию для стоматологического лечения, &mdash; это возможность значительной экономии. Стоимость удаления зубов мудрости и других стоматологических процедур в Турции может быть значительно ниже, чем в странах Европы, Великобритании или США. Эта экономия делает качественную стоматологическую помощь доступной, не жертвуя уровнем лечения. Хотя точная стоимость удаления зубов мудрости может зависеть от индивидуальных потребностей и сложности процедуры, обращение в AZPO Health поможет найти финансово выгодные варианты, подходящие именно для вас.</p>
+<p dir="ltr">Кроме доступности, Турция гордится своей системой здравоохранения, в которой работают высококвалифицированные стоматологи. Многие специалисты в Турции имеют отличное образование и опыт работы в области стоматологии, включая удаление зубов мудрости. Клиники, обслуживающие иностранных пациентов, используют современные технологии и соблюдают строгие стандарты безопасности и гигиены. AZPO Health сотрудничает с авторитетными клиниками, гарантируя, что ваши интересы и безопасность будут в приоритете.</p>
+<p dir="ltr">Еще один бонус, который делает Турцию привлекательным местом для стоматологического туризма, &mdash; это возможность совмещения лечения с путешествием по стране с богатой историей и культурой. Стамбул, в частности, является динамичным городом, сочетающим исторические памятники, современные удобства и культурные впечатления. Для многих удаление зубов мудрости в Турции &mdash; это не только шаг к улучшению здоровья, но и шанс насладиться незабываемыми впечатлениями от путешествия. AZPO Health поможет вам с организацией поездки, предложив рекомендации по размещению и транспортировке, чтобы ваше пребывание было максимально комфортным.</p>
+<h2 dir="ltr">Что из себя представляет удаление зубов мудрости?</h2>
+<p dir="ltr">Зубы мудрости, или третьи коренные зубы, появляются последними и обычно прорезаются в конце подросткового или начале двадцатого года. У некоторых людей они не вызывают проблем, однако часто возникают осложнения, связанные с нехваткой места в челюсти. Это может привести к частичному прорезыванию зуба, его смещению, болям, инфекциям, повреждению соседних зубов или образованию кист.</p>
+<p dir="ltr">Решение об удалении зубов мудрости принимается на основе стоматологического обследования, которое включает рентген для оценки их положения и воздействия на здоровье полости рта. Стоматологи часто рекомендуют удаление, если зубы мудрости уже вызывают проблемы или есть вероятность, что они их вызовут в будущем.</p>
+<p dir="ltr">Процедура удаления зубов мудрости обычно проводится под местной анестезией, чтобы обезболить область. В зависимости от сложности операции и состояния пациента, может быть использована седация или общая анестезия. Хирург или стоматолог делает разрез в десне, чтобы обнажить зуб и кость. Если зуб трудно удалить или поврежден, его можно разделить на более мелкие части для облегчения извлечения. После удаления зуба место операции очищается, а на рану накладываются швы для лучшего заживления. Для остановки кровотечения может быть использована марля.</p>
+<p dir="ltr">Период восстановления после удаления зубов мудрости варьируется у людей по разному, но обычно сопровождается отечностью, дискомфортом и возможными кровоподтеками. Обезболивающие средства помогают справиться с болью. Очень важно следовать послеоперационным рекомендациям стоматолога для правильного заживления и минимизации риска осложнений, таких как инфекции или сухость в области раны. Эти рекомендации обычно включают диету (начиная с мягких продуктов), осторожное полоскание и ограничение физической активности.</p>
+<h3 dir="ltr">Преимущества решения проблем с зубами мудрости в Турции с помощью AZPO Health</h3>
+<p dir="ltr">Решение проблем с зубами мудрости с помощью AZPO Health в Турции имеет несколько значительных преимуществ:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к опытным специалистам: AZPO Health связывает вас с квалифицированными стоматологами и челюстно-лицевыми хирургами, которые обладают необходимыми навыками и опытом для эффективного удаления зубов мудрости.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современное оборудование и методики: клиники, с которыми работает AZPO Health, оснащены передовым стоматологическим оборудованием и используют современные методики для обеспечения высокого качества лечения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный уход и поддержка: AZPO Health уделяет внимание каждому пациенту, предлагая персонализированные решения и поддерживая вас на каждом этапе лечения, с учетом ваших потребностей и предпочтений.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Упрощенный процесс лечения: хотя само лечение проводится в выбранной клинике, AZPO Health облегчает процесс, предоставляя полную информацию и поддержку, чтобы ваше путешествие и лечение в Турции прошли максимально комфортно.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Экономически эффективные решения: с помощью AZPO Health вы можете найти более доступные варианты удаления зубов мудрости по сравнению с процедурами в вашей стране. Понимание стоимости лечения в Турции поможет вам грамотно спланировать бюджет.</p>
+</li>
+</ul>
+<h2 dir="ltr">О компании AZPO Health</h2>
+<p dir="ltr">Компания AZPO Health стремится предоставить людям, нуждающимся в качественной и доступной медицинской и стоматологической помощи, возможность обратиться к авторитетным клиникам и высококвалифицированным специалистам в области здравоохранения Турции. Мы понимаем, что поиск международных медицинских услуг может быть сложным процессом, и наша цель &mdash; упростить его для вас. Хотя AZPO Health не оказывает непосредственную медицинскую или стоматологическую помощь, мы выступаем в роли надежного посредника, предоставляя информацию и поддержку, которые помогут вам принять обоснованное решение о вашем медицинском путешествии. Мы уделяем особое внимание тому, чтобы связывать вас с клиниками, которые соответствуют высоким стандартам обслуживания, используют современные технологии и располагают опытной медицинской командой.&nbsp;</p>
+<p dir="ltr">Мы заботимся о том, чтобы у вас был доступ к подробной информации и квалифицированной поддержке, помогая вам выбрать оптимальные варианты для удаления зубов мудрости в Турции. Мы стремимся укрепить доверие, предоставляя точные данные и поддерживая профессиональное и доброжелательное общение на каждом этапе вашего взаимодействия с нами. Свяжитесь с AZPO Health сегодня, чтобы узнать, как мы можем помочь вам найти подходящие варианты удаления зубов мудрости, соответствующие вашим потребностям, и рассчитать возможные затраты на процедуру.</p>
+<h2 dir="ltr">Сделайте следующий шаг к более здоровой улыбке</h2>
+<p dir="ltr">Если вы рассматриваете возможность удаления зубов мудрости и ищете высококачественные и доступные варианты, обратитесь в компанию AZPO Health. Свяжитесь с нами сегодня для получения бесплатной консультации и персонализированной информации. Наша команда готова ответить на все ваши вопросы и помочь вам рассмотреть лучшие решения для устранения проблем с зубами мудрости в Турции.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Отзывы пациентов</h2>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сара из Великобритании: &laquo;Я годами откладывала удаление зубов мудрости из-за высоких затрат на родине. Подруга посоветовала мне поискать варианты в Турции, и я связалась с AZPO Health. Они были очень любезны в предоставлении информации о различных клиниках. Клиника, которую я выбрала, была современной, а стоматолог &mdash; отличным специалистом. Общая стоимость была значительно ниже, чем мне предлагали в Великобритании, и у меня даже было немного времени, чтобы осмотреть Стамбул после процедуры. Рекомендации по последующему уходу были четкими, и я чувствовала поддержку на протяжении всего процесса.&raquo;<br><br></p>
+</li>
+</ul>
+<p dir="ltr"><strong id="docs-internal-guid-a5db82c6-7fff-3b61-142e-3fae0512e930">Джон из США: &laquo;Боль от моего удаленного зуба мудрости становилась невыносимой. Я заглянул в Интернет и нашел AZPO Health. Они помогли мне быстро найти стоматологическую клинику с хорошей репутацией в Стамбуле. Общение прошло гладко, а персонал клиники был профессиональным. Я немного нервничал из-за предстоящей стоматологической операции за границей, но стоматолог все четко объяснил, и процедура прошла успешно. Стоимость удаления зубов мудрости в Турции стала приятным сюрпризом, и это позволило мне получить помощь, в которой я отчаянно нуждался, без огромного финансового бремени.&raquo;</strong></p>`
             : `<p dir="ltr">Choosing where to undergo any medical or dental procedure is a significant decision. Turkey has emerged as a prominent destination for individuals seeking various health treatments, including dental care like wisdom teeth removal. Several compelling factors contribute to this growing trend.</p>
 <p dir="ltr">One of the primary reasons many international patients consider Turkey for dental treatments is the potential for significant cost savings. The cost of wisdom teeth removal, along with other dental procedures, can be considerably more affordable in Turkey compared to many countries in Europe, the United Kingdom, or the United States. These cost advantages can make necessary dental care more accessible without compromising on the quality of treatment. While the exact wisdom teeth removal cost can vary based on individual needs and the complexity of the extraction, exploring options through AZPO Health can provide a financially viable path to addressing your dental health. Understanding the potential wisdom teeth removal cost in Turkey allows for better financial planning for your overall well-being.</p>
 <p dir="ltr">Beyond affordability, Turkey boasts a robust healthcare system with highly skilled dental professionals. Many dentists in Turkey are well-educated and experienced in performing a wide range of dental procedures, including the extraction of wisdom teeth. Furthermore, clinics that cater to international patients often utilize modern dental technologies and adhere to stringent hygiene and safety standards. AZPO Health collaborates with reputable clinics that prioritize patient safety and employ contemporary techniques in oral surgery.</p>
