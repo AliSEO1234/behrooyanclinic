@@ -17663,140 +17663,199 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Подтяжка живота в Турции: Верните стройность и уверенность в себе!"
+          ? "Лечение глаукомы в Турции в 2025 году"
           : "Glaucoma Treatment in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Заметили, что зрение стало расплывчатым? Чувствуете давление в глазах или постепенно теряете остроту зрения? Глаукома — это «тихий вор», который может незаметно лишить человека зрения. Но своевременное лечение способно остановить процесс и сохранить вашу зрительную функцию. С AZPO Health вы получаете доступ к ведущим офтальмологическим клиникам Турции и экспертам с высоким уровнем подготовки. Современные методы, точная диагностика и забота о вашем зрении."
           : "Is blurry vision, eye pressure, or gradual vision loss making daily life harder? Glaucoma is a silent thief of sight, but early intervention can save your vision. Regain hope with advanced Glaucoma Treatment options. AZPO Health connects you with expert clinics in Turkey offering personalized care to manage your condition and help preserve your precious sight, ensuring a brighter future for your vision.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Pressure Control",
+            title: locale === "ru" ? "Контроль давления" : "Pressure Control",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "стабильное снижение внутриглазного давления на длительный срок."
                 : "Effectively manages intraocular pressure for sustained periods",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Medication Freedom",
+            title: locale === "ru" ? "Отказ от капель" : "Medication Freedom",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "возможное избавление от постоянного использования глазных капель."
                 : "Potentially eliminates ongoing need for glaucoma eye drops",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Custom Treatment",
+            title: locale === "ru" ? "Индивидуальный подход" : "Custom Treatment",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "подбор метода лечения в зависимости от типа и стадии глаукомы."
                 : "Personalized approach based on individual glaucoma type and severity",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Подходит для людей с избытком кожи или ослабленными мышцами живота. Идеально подходит для пациентов со стабильным весом и хорошим общим состоянием здоровья."
+                ? "Оперативное лечение глаукомы применяется для снижения внутриглазного давления (ВГД) в случаях, когда медикаментозная терапия и лазерное лечение оказываются недостаточно эффективными. Цель операции — создать альтернативные пути оттока жидкости или уменьшить ее продукцию, чтобы предотвратить повреждение зрительного нерва."
                 : "Glaucoma surgery is used to lower intraocular pressure (IOP) when medications and laser treatments are insufficient. It creates alternative pathways for fluid drainage or reduces fluid production to prevent optic nerve damage.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Трабекулэктомия — это операция, при которой формируется склеральный клапан, обеспечивающий отток жидкости и снижение внутриглазного давления (ВГД) при запущенной глаукоме. В сложных случаях применяются дренажные устройства — шунты, такие как Ahmed и Baerveldt, которые отводят жидкость из глаза. Малоинвазивная хирургия глаукомы (MIGS) включает использование стентов, например iStent и Hydrus, которые улучшают отток жидкости при легкой и умеренной глаукоме. Циклофотокоагуляция представляет собой лазерное или криогенное воздействие, снижающее продукцию жидкости в устойчивых случаях заболевания."
                 : "Trabeculectomy: Creates a scleral flap to drain fluid, lowering IOP in advanced glaucoma. Drainage Devices: Shunts (Ahmed, Baerveldt) redirect fluid for complex cases. MIGS: Stents (iStent, Hydrus) improve drainage for mild to moderate glaucoma. Cyclophotocoagulation: Laser or freezing reduces fluid production in resistant cases.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For Whom?",
+            header: locale === "ru" ? "Кому показана операция" : "For Whom?",
             desc:
               locale === "ru"
-                ? "Trabeculectomy: A common surgery for advanced glaucoma. A small flap is created in the sclera (white part of the eye) to allow fluid to drain into a reservoir, or bleb, under the conjunctiva (clear membrane). Reduces IOP by bypassing the natural drainage pathways."
+                ? "Пациентам с неконтролируемым ВГД, несмотря на медикаменты или лазерную терапию. Людям с прогрессирующей глаукомой и высоким риском потери зрения. Тем, кто не может переносить лекарства или не соблюдает режим их применения."
                 : "Patients with uncontrolled IOP despite medications or laser therapy. Individuals with advanced glaucoma at risk of vision loss. Those who cannot tolerate or adhere to medications.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Is glaucoma curable?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "No, but it can be managed to prevent vision loss",
+          question : locale === "ru" ? "Можно ли вылечить глаукому?" : "Is glaucoma curable?",
+          answer : locale === "ru" ? "Нет, но ее можно контролировать, чтобы предотвратить потерю зрения." : "No, but it can be managed to prevent vision loss"
         },
         {
-          question: locale === "ru" ? "" : "Does it hurt?",
-          answer:
-            locale === "ru" ? "" : "Usually painless unless pressure spikes",
+          question : locale === "ru" ? "Это больно?" : "Does it hurt?",
+          answer : locale === "ru" ? "Обычно безболезненно, если нет скачков давления." : "Usually painless unless pressure spikes"
         },
         {
-          question: locale === "ru" ? "" : "Can I go blind?",
-          answer:
-            locale === "ru" ? "" : "Yes, if untreated – early care is key",
+          question : locale === "ru" ? "Могу ли я ослепнуть?" : "Can I go blind?",
+          answer : locale === "ru" ? "Да, если не лечить - ранняя помощь имеет значение." : "Yes, if untreated – early care is key"
         },
         {
-          question: locale === "ru" ? "" : "Do drops work?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, they lower pressure effectively in many cases",
+          question : locale === "ru" ? "Капли помогают?" : "Do drops work?",
+          answer : locale === "ru" ? "Да, они эффективно снижают давление во многих случаях." : "Yes, they lower pressure effectively in many cases"
         },
         {
-          question: locale === "ru" ? "" : "Are surgeries available?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes – laser and filtering surgeries for advanced cases ",
+          question : locale === "ru" ? "Доступны ли операции?" : "Are surgeries available?",
+          answer : locale === "ru" ? "Да - лазерные и фильтрационные операции для запущенных случаев." : "Yes – laser and filtering surgeries for advanced cases"
         },
         {
-          question:
-            locale === "ru" ? "" : "When is surgery needed for glaucoma?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Surgery is needed if medications and laser treatments are insufficient.",
+          question : locale === "ru" ? "Когда нужна операция при глаукоме?" : "When is surgery needed for glaucoma?",
+          answer : locale === "ru" ? "Операция требуется, если медикаменты и лазерные процедуры не дают достаточного эффекта." : "Surgery is needed if medications and laser treatments are insufficient."
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "Are glasses or contacts effective for glaucoma treatment?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Glasses or contacts improve vision but don’t treat glaucoma.",
-        },
+          question : locale === "ru" ? "Эффективны ли очки или контактные линзы для лечения глаукомы?" : "Are glasses or contacts effective for glaucoma treatment?",
+          answer : locale === "ru" ? "Очки или контактные линзы улучшают зрение, но не лечат глаукому." : "Glasses or contacts improve vision but don’t treat glaucoma."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Use prescribed eye drops on time",
-        locale === "ru" ? "" : "Avoid rubbing eyes and strenuous activity",
-        locale === "ru" ? "" : "Attend regular pressure checks",
-        locale === "ru" ? "" : "Protect eyes from bright light or dust",
-        locale === "ru" ? "" : "Follow up with ophthalmologist regularly",
+        locale === "ru" ? "Своевременно используйте назначенные капли для глаз." : "Use prescribed eye drops on time",
+        locale === "ru" ? "Избегайте трения глаз и интенсивных физических нагрузок." : "Avoid rubbing eyes and strenuous activity",
+        locale === "ru" ? "Регулярно проверяйте глазное давление." : "Attend regular pressure checks",
+        locale === "ru" ? "Защищайте глаза от яркого света и пыли." : "Protect eyes from bright light or dust",
+        locale === "ru" ? "Регулярно посещайте офтальмолога." : "Follow up with ophthalmologist regularly"
       ],
       preList: [
-        locale === "ru" ? "" : "Undergo eye pressure and vision testing",
-        locale === "ru" ? "" : "Discuss current eye drops and medications",
-        locale === "ru" ? "" : "Control blood pressure and diabetes if present",
-        locale === "ru" ? "" : "Avoid caffeine and stress before evaluation",
+        locale === "ru" ? "Пройдите тестирование на глазное давление и зрение для полной диагностики." : "Undergo eye pressure and vision testing",
+        locale === "ru" ? "Обсудите с врачом все используемые капли для глаз и лекарства." : "Discuss current eye drops and medications",
+        locale === "ru" ? "Контролируйте уровень кровяного давления и сахара в крови, если это необходимо." : "Control blood pressure and diabetes if present",
+        locale === "ru" ? "Постарайтесь избежать стресса и потребления кофеина перед обследованием." : "Avoid caffeine consumption and stress before evaluation"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Surgical treatments for glaucoma provide effective options for lowering IOP and preventing further vision loss, especially for patients with advanced or resistant forms of the disease. With evolving techniques like MIGS, patients now have access to safer and less invasive procedures tailored to their needs."
+            ? "Хирургическое лечение глаукомы предоставляет эффективные возможности для снижения ВГД и предотвращения дальнейшей потери зрения — особенно у пациентов с тяжёлыми или устойчивыми формами заболевания. Благодаря современным методам, таким как MIGS, пациенты могут рассчитывать на более безопасные процедуры, адаптированные к их индивидуальным потребностям."
             : "Surgical treatments for glaucoma provide effective options for lowering IOP and preventing further vision loss, especially for patients with advanced or resistant forms of the disease. With evolving techniques like MIGS, patients now have access to safer and less invasive procedures tailored to their needs.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Comprehensive Glaucoma Treatment Options in Turkey"
+            ? "Комплексное лечение глаукомы в Турци"
             : "Comprehensive Glaucoma Treatment Options in Turkey",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Глаукома &mdash; это заболевание, способное серьезно повлиять на зрение. Однако при своевременной и эффективной терапии ее прогресс можно контролировать. AZPO Health помогает вам сделать первый шаг к восстановлению зрения, предоставляя доступ к надежным клиникам в Турции, где предлагаются индивидуальные программы лечения глаукомы, ориентированные на ваши потребности. Понимание доступных вариантов &mdash; это первый шаг к управлению здоровьем глаз.</p>
+<h3 dir="ltr">Почему стоит рассмотреть лечение глаукомы в Турции?</h3>
+<p dir="ltr">Турция уверенно занимает ведущие позиции в сфере медицинского туризма &mdash; и неслучайно. В области специализированного лечения, включая глаукому, страна предлагает ряд значительных преимуществ:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к опытным специалистам:<br>турецкие офтальмологи обладают высокой квалификацией и богатым опытом в диагностике и лечении различных заболеваний глаз, включая глаукому. Клиники, с которыми сотрудничает AZPO Health, работают с врачами, регулярно повышающими свою квалификацию и использующими современные подходы в офтальмологии. Кроме того, вы можете получить бесплатную онлайн-консультацию с нашими специалистами до поездки в Турцию.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные медицинские учреждения:<br>Турция входит в число мировых лидеров по количеству медицинских учреждений, аккредитованных JCI. По состоянию на март 2025 года в стране действует 30 JCI-аккредитованных клиник. Учреждения, с которыми работает AZPO Health, оснащены передовыми технологиями для диагностики и лечения, обеспечивая качество медицинской помощи, сопоставимое или превосходящее стандарт в вашей стране.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексные пакеты медицинского обслуживания: многие клиники в Турции предлагают удобные и прозрачные пакеты услуг для иностранных пациентов. AZPO Health помогает вам наладить контакт с такими клиниками, где в рамках одного пакета могут быть включены: консультации, диагностические исследования, лечебные процедуры и последующее наблюдение &mdash; зачастую по более доступной цене.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Быстрый доступ к лечению: в некоторых странах ожидание приема у специалиста или проведения процедуры может занимать месяцы. В Турции вы можете получить необходимую помощь в гораздо более короткие сроки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Благоприятная среда: Турция славится своим гостеприимством и культурным богатством. Медицинские туристы часто отмечают, что местная атмосфера способствует восстановлению, а клиники предлагают комфортные условия проживания и дополнительные сервисы поддержки.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health не оказывает медицинских услуг напрямую, но мы заботливо и ответственно помогаем вам установить контакт с ведущими клиниками Турции, чтобы вы могли выбрать лучшее решение для лечения глаукомы и сохранить зрение на долгие годы.</p>
+<h3 dir="ltr">Глаукома: понимание заболевания и современные подходы к лечению</h3>
+<p dir="ltr">Глаукома &mdash; это группа заболеваний глаз, которые повреждают зрительный нерв, важный для передачи визуальной информации от глаза к мозгу. Часто это повреждение происходит из-за аномально высокого давления внутри глаза. Однако глаукома также может развиваться при нормальном уровне внутриглазного давления. Если не лечить глаукому, это может привести к потере зрения и даже слепоте.</p>
+<p dir="ltr">Важно понимать, что потеря зрения, вызванная глаукомой, необратима. Поэтому основная цель лечения глаукомы &mdash; замедлить или предотвратить дальнейшее повреждение зрительного нерва и сохранить оставшееся зрение. Наиболее подходящий подход к лечению будет зависеть от типа глаукомы, стадии заболевания и ваших индивидуальных особенностей. Клиники, с которыми сотрудничает AZPO Health, проведут тщательную оценку, чтобы определить наилучший курс лечения.</p>
+<p dir="ltr">Основные методы лечения глаукомы включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Глазные капли: для первичной открытоугольной глаукомы, наиболее распространенной формы заболевания, лечение обычно начинается с назначения глазных капель. Эти препараты помогают снизить давление внутри глаза, либо уменьшая количество жидкости, производимой глазом, либо улучшая ее отток. Существует несколько типов глазных капель, и ваш офтальмолог подберёт наиболее подходящий препарат, который может быть изменён или дополнен в зависимости от необходимости. Регулярное применение капель, как предписано врачом, имеет решающее значение для контроля заболевания.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лазерное лечение: лазерная терапия &mdash; это еще один распространенный метод лечения глаукомы, который может быть использован как начальный этап лечения, или если глазные капли не обеспечивают достаточного контроля за давлением. Для лечения глаукомы используются различные виды лазерных процедур:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Лазерная трабекулопластика: этот метод в основном используется при открытоугольной глаукоме. Лазер улучшает дренажную функцию трабекулярной сетки глаза, что способствует более легкому оттоку жидкости и снижению внутриглазного давления.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Лазерная периферическая иридотомия: этот метод применяется при угловой глаукоме. Лазером создается маленькое отверстие в радужке (цветной части глаза), что улучшает отток жидкости в глазу и помогает уменьшить давление.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Циклофотокоагуляция: этот лазерный метод воздействует на часть глаза, которая производит жидкость (цилиарное тело). Процедура снижает продукцию жидкости и помогает снизить внутриглазное давление. Она часто используется при более запущенных формах глаукомы.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургия:<br><br>Если глазные капли и лазерное лечение не могут эффективно контролировать внутриглазное давление или замедлить потерю зрения, может быть рекомендована операция. Для лечения глаукомы применяются различные хирургические процедуры:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Трабекулэктомия: это традиционная хирургическая процедура, при которой хирург создает новый дренажный канал для выхода жидкости из глаза, что помогает снизить внутриглазное давление.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Имплантаты для дренажа глаукомы (трубочные шунты): в рамках этой операции в глаз вставляется маленькая трубка, которая отводит жидкость в резервуар, расположенный под конъюнктивой (прозрачной оболочкой глаза). Это может быть особенно полезно при некоторых типах глаукомы или в случаях, когда другие методы лечения не были успешными.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Минимально инвазивная хирургия глаукомы (MIGS): это новейшие хирургические методы, которые менее инвазивны по сравнению с традиционной операцией на глаукоме. Процедуры MIGS обычно включают использование маленьких устройств для улучшения естественных путей дренажа глаза. Эти операции могут быть проведены как с катарактальной хирургией, так и в качестве самостоятельных процедур, и обычно имеют более короткий период восстановления.<br><br></p>
+</li>
+</ul>
+</ul>
+<p dir="ltr">Клиники, с которыми AZPO Health сотрудничает, предложат комплексную оценку, чтобы определить, какой из этих методов лечения или их комбинация наиболее подходит для вашего типа и стадии глаукомы. Они подробно объяснят преимущества и риски каждого метода, чтобы помочь принять осознанное и взвешенное решение.</p>
+<h3 dir="ltr">AZPO Health: ваш надежный партнер в лечении глаукомы</h3>
+<p dir="ltr">AZPO Health &mdash; ведущая компания в сфере медицинского туризма, базирующаяся в Турции. Мы помогаем международным пациентам найти проверенные и высококачественные медицинские учреждения, предлагая доступ к лучшим клиникам и специалистам для эффективного лечения.</p>
+<p dir="ltr">Наши услуги включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подбор проверенных клиник: мы сотрудничаем только с клиниками, имеющими безупречную репутацию в области офтальмологии и лечения глаукомы.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предоставление консультаций:<br>мы предоставляем всю необходимую информацию о возможных вариантах лечения и помогаем наладить связь с клиниками для уточнения всех вопросов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддержка на каждом этапе: понимая, как сложен процесс лечения за рубежом, наша команда обеспечивает поддержку на каждом шаге, помогая вам пройти путь лечения с комфортом и уверенностью.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Приоритет качества: мы сотрудничаем исключительно с медицинскими учреждениями, придерживающимися высоких стандартов качества и этических норм.</p>
+</li>
+</ul>
+<p dir="ltr">С AZPO Health вы получаете не только доступ к передовым методам лечения, но и уверенность в качестве и надежности предоставляемых услуг. Мы стремимся помочь вам сохранить зрение и обеспечить лучшие условия для вашего здоровья.&nbsp;</p>
+<p dir="ltr">Сделайте первый шаг к сохранению зрения</p>
+<p dir="ltr">Не позволяйте глаукоме угрожать вашему зрению. Исследуйте передовые методы лечения, доступные в Турции с AZPO Health. Наша команда готова помочь вам связаться с опытными офтальмологами и современными клиниками, которые предложат индивидуальное лечение глаукомы для сохранения вашего зрения на многие годы.</p>
+<p dir="ltr">Свяжитесь с AZPO Health сегодня для бесплатной консультации и узнайте, как мы можем помочь вам взять под контроль здоровье ваших глаз.</p>
+<p>&nbsp;</p>`
             : `<p dir="ltr">Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p>
 <h3 dir="ltr">Why Consider Turkey for Glaucoma Treatment?</h3>
 <p dir="ltr">Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p>
@@ -18132,160 +18191,242 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Удаление катаракты с имплантацией интраокулярной линзы (ИОЛ)"
           : "Cataract Surgery with Intraocular Lens (IOL) Implantation",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Устали мириться с размытым зрением, катарактой или зависимостью от очков и контактных линз? Откройте для себя возможности современной офтальмологии в Турции — стране, признанной лидером в сфере медицинского туризма. AZPO Health поможет вам получить доступ к передовым методам лечения и вернуть ясность вашему взгляду."
           : "Are blurry vision, cataracts, or reliance on glasses and contacts limiting your daily life? Discover the potential of Intraocular Lens (IOL) implantation in Turkey, a trusted destination for advanced eye care. AZPO Health can guide you to explore options for clearer vision and a brighter future.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Vision Restoration",
+            title: locale === "ru" ? "Восстановление зрения" : "Vision Restoration",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "обеспечивает значительное улучшение качества зрения и возвращение ясности взгляда."
                 : "Improves eyesight beyond pre-cataract condition through advanced surgical intervention.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Error Correction",
+            title: locale === "ru" ? "Коррекция ошибок рефракции" : "Error Correction",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "специальные ИОЛ позволяют уменьшить зависимость от очков и контактных линз."
                 : "Specialized lenses address refractive issues for enhanced visual outcomes.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Quick Recovery",
+            title: locale === "ru" ? "Быстрое восстановление" : "Quick Recovery",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "минимальное повреждение тканей и сокращённое время реабилитации после операции."
                 : "Minimally invasive procedure with proven success and swift healing process.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание процедуры" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Хирургическое лечение катаракты с установкой интраокулярной линзы (ИОЛ) — это процедура, при которой мутный естественный хрусталик удаляется и заменяется прозрачной искусственной линзой. Помимо восстановления зрения, современные ИОЛ позволяют скорректировать такие нарушения, как дальнозоркость, близорукость и астигматизм."
                 : "Cataract surgery with IOL is a procedure that removes the eye’s cloudy natural lens and replaces it with a clear artificial intraocular lens (IOL). This restores vision and can also correct refractive errors, reducing the need for glasses.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How it Works",
+            header: locale === "ru" ? "Как это работает" : "How it Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Через небольшой разрез хирург с помощью ультразвука (факоэмульсификация) разрушает и удаляет мутный хрусталик. Затем на его место имплантируется искусственная линза (ИОЛ), возвращающая четкое зрение. Операция проводится под местной анестезией, имеет короткий реабилитационный период и минимальные ощущения дискомфорта."
                 : "Cataract surgery involves removing the eye's cloudy natural lens and replacing it with an artificial intraocular lens (IOL). Through a small incision, the surgeon uses ultrasound energy to break up the cataract and suction it out (phacoemulsification). The IOL is then inserted, restoring clear vision. This procedure is typically performed under local anesthesia, allowing for quick recovery and minimal discomfort.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It's Fors",
+            header: locale === "ru" ? "Кому показана" : "Who It's Fors",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Людям с нарушением зрения, вызванным катарактой. Пациентам старше 60 лет (катаракта часто развивается с возрастом). Тем, кто хочет одновременно скорректировать возрастную дальнозоркость (пресбиопию) с помощью специальных ИОЛ."
                 : "People experiencing vision impairment or daily activity interference due to cataracts. Patients over 60, as cataracts are common with aging. Individuals with other vision correction needs, such as presbyopia, that can benefit from IOL options.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What is an IOL?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "An artificial lens placed after cataract removal",
+          question : locale === "ru" ? "Что такое ИОЛ?" : "What is an IOL?",
+          answer : locale === "ru" ? "Это искусственная интраокулярная линза, которая устанавливается на место естественного хрусталика после удаления катаракты." : "An artificial lens placed after cataract removal"
         },
         {
-          question: locale === "ru" ? "" : "Will I see clearly immediately?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Vision improves within days, full clarity may take weeks",
+          question : locale === "ru" ? "Буду ли я видеть четко сразу после операции?" : "Will I see clearly immediately?",
+          answer : locale === "ru" ? "Улучшение зрения начинается в течение нескольких дней, но полная ясность может занять несколько недель." : "Vision improves within days, full clarity may take weeks"
         },
         {
-          question: locale === "ru" ? "" : "Are there risks?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Low risk – infection, inflammation possible but rare",
+          question : locale === "ru" ? "Есть ли риски при установке ИОЛ?" : "Are there risks?",
+          answer : locale === "ru" ? "Риски минимальны, но возможны редкие осложнения, такие как воспаление или инфекция." : "Low risk – infection, inflammation possible but rare"
         },
         {
-          question: locale === "ru" ? "" : "Can I choose lens type?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes – options include mono-, multi-, and toric lenses",
+          question : locale === "ru" ? "Можно ли выбрать тип линзы?" : "Can I choose lens type?",
+          answer : locale === "ru" ? "Да. Существуют различные типы ИОЛ: монофокальные, мультифокальные и торические - выбор зависит от ваших потребностей и особенностей зрения." : "Yes – options include mono-, multi-, and toric lenses"
         },
         {
-          question: locale === "ru" ? "" : "How long does it last?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "IOLs are permanent and rarely need replacement",
+          question : locale === "ru" ? "Как долго служит искусственная линза?" : "How long does it last?",
+          answer : locale === "ru" ? "ИОЛ рассчитаны на постоянное использование и крайне редко требуют замены." : "IOLs are permanent and rarely need replacement"
         },
         {
-          question:
-            locale === "ru" ? "" : "Are vision changes normal after surgery?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, temporary blurriness or light flashes can occur during healing.",
+          question : locale === "ru" ? "Нормально ли, если зрение изменяется после операции?" : "Are vision changes normal after surgery?",
+          answer : locale === "ru" ? "Да, это нормально. Временная размытость, ореолы или световые блики могут наблюдаться в период восстановления." : "Yes, temporary blurriness or light flashes can occur during healing."
         },
         {
-          question: locale === "ru" ? "" : "Does the lens need to be replaced?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "IOLs are permanent, but re-evaluation may be needed if there are issues with focus or position.",
-        },
+          question : locale === "ru" ? "Нужно ли заменять ИОЛ в будущем?" : "Does the lens need to be replaced?",
+          answer : locale === "ru" ? "Обычно нет. Однако, при проблемах с фокусировкой или положением линзы может потребоваться повторная оценка специалистом." : "IOLs are permanent, but re-evaluation may be needed if there are issues with focus or position."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Avoid eye rubbing and pressure",
-        locale === "ru" ? "" : "Use post-op drops for several weeks",
-        locale === "ru" ? "" : "Protect eye during sleep with a shield",
-        locale === "ru" ? "" : "Avoid strenuous activity and water exposure",
-        locale === "ru" ? "" : "Follow-up for vision checks and healing",
-        locale === "ru"
-          ? ""
-          : "Contact your doctor if you have redness, pain, or vision loss.",
-        locale === "ru" ? "" : "Avoid alcohol and smoking.",
-        locale === "ru"
-          ? ""
-          : "Consult your doctor before using glasses or lenses.",
-        locale === "ru" ? "" : "Avoid low-light environments.",
-        locale === "ru" ? "" : "Limit computer and phone use.",
+        locale === "ru" ? "Избегайте трения глаз и любого давления на них." : "Avoid eye rubbing and pressure",
+        locale === "ru" ? "Используйте назначенные капли в течение нескольких недель после операции." : "Use post-op drops for several weeks",
+        locale === "ru" ? "Защищайте глаз во время сна с помощью специального щита." : "Protect eye during sleep with a shield",
+        locale === "ru" ? "Воздержитесь от интенсивных физических нагрузок и контакта глаз с водой." : "Avoid strenuous activity and water exposure",
+        locale === "ru" ? "Регулярно посещайте врача для проверки зрения и оценки процесса заживления." : "Follow-up for vision checks and healing",
+        locale === "ru" ? "Немедленно свяжитесь с врачом при появлении покраснения, боли или внезапной потери зрения." : "Contact your doctor if you have redness, pain, or vision loss.",
+        locale === "ru" ? "Избегайте употребления алкоголя и курения." : "Avoid alcohol and smoking.",
+        locale === "ru" ? "Проконсультируйтесь с офтальмологом перед использованием очков или контактных линз." : "Consult your doctor before using glasses or lenses.",
+        locale === "ru" ? "Старайтесь избегать плохо освещенных помещений и условий с низким уровнем света." : "Avoid low-light environments.",
+        locale === "ru" ? "" : "Limit computer and phone use."
       ],
       preList: [
-        locale === "ru" ? "" : "Eye exam and measurement for lens fitting",
-        locale === "ru" ? "" : "Stop medications if advised",
-        locale === "ru" ? "" : "Fast before procedure if sedated",
-        locale === "ru" ? "" : "Use pre-op eye drops as directed",
-        locale === "ru" ? "" : "Follow diet recommendations.",
-        locale === "ru" ? "" : "Inform about allergies.",
-        locale === "ru" ? "" : "Quit smoking.",
-        locale === "ru" ? "" : "Get enough sleep.",
+        locale === "ru" ? "Пройдите полное обследование зрения для подбора линз." : "Eye exam and measurement for lens fitting",
+        locale === "ru" ? "Прекратите прием определенных медикаментов, если это рекомендовано врачом." : "Stop medications if advised",
+        locale === "ru" ? "Воздержитесь от приема пищи перед процедурой, если планируется седация." : "Fast before procedure if sedated",
+        locale === "ru" ? "Используйте предоперационные глазные капли строго по инструкции." : "Use pre-op eye drops as directed",
+        locale === "ru" ? "Следуйте диетическим рекомендациям, выданным специалистом." : "Follow diet recommendations.",
+        locale === "ru" ? "Обязательно сообщите врачу об аллергиях." : "Inform about allergies.",
+        locale === "ru" ? "Откажитесь от курения для улучшения заживления и результатов." : "Quit smoking.",
+        locale === "ru" ? "Обеспечьте себе полноценный сон и отдых перед процедурой." : "Get enough sleep."
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Операция по удалению катаракты с имплантацией ИОЛ — одна из самых безопасных и результативных процедур в современной медицине. Благодаря технологическому прогрессу, она не только возвращает зрение, но и может значительно повысить его качество, улучшая повседневную жизнь пациента."
             : "Cataract surgery is one of the safest and most effective procedures in modern medicine, providing significant vision improvement. With advancements in IOL technology, it not only restores vision but can also address refractive errors, improving overall quality of life.",
-      },
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Diabetic retinopathy treatment",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Your Diabetic Retinopathy Treatment?"
+            ? "Имплантация интраокулярной линзы (ИОЛ) в Турции"
             : "Intraocular Lens (IOL) Implantation in Turkey",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">На разных этапах жизни многие люди сталкиваются с проблемами зрения &mdash; будь то рефракционные нарушения, такие как близорукость, дальнозоркость и астигматизм, или возрастные изменения, например катаракта. Имплантация интраокулярной линзы (ИОЛ) зарекомендовала себя как высокоэффективный и долговременный способ коррекции таких состояний, позволяя значительно улучшить зрение и сократить или полностью устранить необходимость в очках и контактных линзах. AZPO Health поможет вам связаться с опытными офтальмологами и ведущими офтальмологическими клиниками в Турции, специализирующимися на проведении современных операций по установке ИОЛ.</p>
+<h3 dir="ltr">Почему стоит рассмотреть Турцию для имплантации интраокулярной линзы (ИОЛ)?</h3>
+<p dir="ltr">Турция &mdash; признанный мировой центр медицинского туризма, особенно в области офтальмологии. Выбор имплантации интраокулярной линзы (ИОЛ) в Турции с поддержкой AZPO Health открывает для вас целый ряд значительных преимуществ:</p>
+<p dir="ltr">Высококвалифицированные офтальмологи с международным опытом: в Турции работает множество сертифицированных специалистов, прошедших профессиональную подготовку в области передовых офтальмологических хирургических техник, включая различные виды имплантации ИОЛ. Многие из них имеют международную практику и владеют передовыми технологиями в сфере коррекции зрения. AZPO Health тщательно отбирает врачей в своей сети, чтобы вы получали помощь исключительно от проверенных и уважаемых специалистов.</p>
+<p dir="ltr">Современные медицинские учреждения и передовые технологии: Турция входит в число мировых лидеров по количеству медицинских учреждений, аккредитованных по стандарту JCI. По состоянию на март 2025 года в стране насчитывается 30 таких клиник. Офтальмологические центры и больницы оснащены современным диагностическим и хирургическим оборудованием: лазерами последнего поколения, системами высокоточной визуализации и широким выбором современных интраокулярных линз. Благодаря AZPO Health вы получаете доступ к медицинским учреждениям, соответствующим международным стандартам.</p>
+<p dir="ltr">Широкий выбор ИОЛ с учетом индивидуальных потребностей: в зависимости от особенностей вашего зрения и образа жизни офтальмологи подберут оптимальный тип линз: монофокальные ИОЛ &mdash; обеспечивают четкое зрение на одном расстоянии; мультифокальные ИОЛ &mdash; позволяют хорошо видеть как вблизи, так и вдаль; торические ИОЛ &mdash; корректируют астигматизм; аккомодирующие ИОЛ &mdash; частично восстанавливают способность к фокусировке. Специалисты, с которыми вас свяжет AZPO Health, проведут детальное обследование и подберут наилучший вариант именно для вас.</p>
+<p dir="ltr">Индивидуальный, ориентированный на пациента подход:&nbsp; Турецкие офтальмологи уделяют особое внимание открытому диалогу с пациентом и индивидуальному подходу к лечению. Перед тем как рекомендовать имплантацию ИОЛ, они проводят всестороннее обследование, анализируют анамнез и уточняют ваши потребности и ожидания от восстановления зрения. Это позволяет составить индивидуальный план лечения. AZPO Health подбирает клиники, где комфорт и удовлетворенность пациента являются приоритетом.</p>
+<p dir="ltr">Доступная стоимость без ущерба качеству: по сравнению с другими странами, Турция предлагает медицинские услуги высокого качества по более доступным ценам, и имплантация ИОЛ &mdash; не исключение. При этом доступная стоимость не снижает уровень профессионализма врачей и качество медицинского обслуживания. AZPO Health поможет вам найти оптимальные по стоимости и качеству решения для восстановления зрения.</p>
+<p dir="ltr">Удобное расположение и развитая инфраструктура медицинского туризма: Турция удобно расположена и легкодоступна для пациентов из разных стран. В стране создана развитая инфраструктура медицинского туризма, ориентированная на иностранных пациентов. AZPO Health предоставляет всестороннюю информационную поддержку и помогает на всех этапах вашей поездки и лечения.</p>
+<h3 dir="ltr">Интраокулярные линзы и процедура имплантации</h3>
+<p dir="ltr">Что представляют собой интраокулярные линзы (ИОЛ)?</p>
+<p dir="ltr">Что такое интраокулярные линзы (ИОЛ)?</p>
+<p dir="ltr">Интраокулярные линзы (ИОЛ) &mdash; это миниатюрные искусственные линзы, которые хирургическим путём имплантируются внутрь глаза для замены или дополнения естественного хрусталика. Они изготавливаются из биосовместимых материалов, таких как акрил или силикон, и служат долговременным решением для коррекции зрения.</p>
+<p dir="ltr">Цель имплантации ИОЛ:</p>
+<p dir="ltr">Имплантация интраокулярных линз проводится в следующих случаях:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лечение катаракты: при катаракте &mdash; помутнении естественного хрусталика &mdash; зрение становится размытым. Во время операции хрусталик удаляется и заменяется прозрачной ИОЛ, что позволяет восстановить четкость зрения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Коррекция рефракционных нарушений: ИОЛ также применяются для устранения близорукости, дальнозоркости и астигматизма, даже при отсутствии катаракты. В этом случае речь идёт о рефракционной замене хрусталика или факичной имплантации ИОЛ, при которой сохраняется собственный хрусталик.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Типы интраокулярных линз:</p>
+<p dir="ltr">Современные технологии предлагают широкий выбор ИОЛ в зависимости потребностей пациента:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Монофокальные ИОЛ: обеспечивают четкое зрение на одном расстоянии (обычно вдаль); для других задач могут потребоваться очки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мультифокальные ИОЛ: имеют зоны с разной фокусировкой, что позволяет видеть чётко на близком, среднем и дальнем расстоянии; могут снизить зависимость от очков.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Торические ИОЛ: корректируют астигматизм за счет различной оптической силы по разным меридианам.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Аккомодирующие ИОЛ: имитируют естественную способность глаза фокусироваться на разные расстояния, уменьшая потребность в очках.</p>
+</li>
+</ul>
+<p dir="ltr">Специалисты из сети AZPO Health проводят тщательную диагностику и подбирают тип ИОЛ, наиболее подходящий именно вам &mdash; с учетом состояния зрения, образа жизни и ваших предпочтений.</p>
+<p dir="ltr">Начните путь к ясному зрению уже сегодня &mdash; воспользуйтесь бесплатной онлайн-консультацией с опытным врачом ещё до приезда в Турцию. AZPO Health &mdash; ваш надежный проводник в мире современной офтальмологии.</p>
+<p dir="ltr">Процедура имплантации интраокулярной линзы (ИОЛ)</p>
+<p dir="ltr">Процедура имплантации интраокулярной линзы (ИОЛ) обычно выполняется амбулаторно и является безопасной и эффективной. В зависимости от типа операции (катарактальная хирургия или рефракционная замена хрусталика), этапы процедуры могут немного различаться, но в целом она включает следующие шаги:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Анестезия: перед операцией глаз обезболивается местной анестезией, обычно с помощью глазных капель, а иногда &mdash; инъекцией в область вокруг глаза. Пациент обычно остается в сознании, при этом испытывает минимальный или отсутствующий дискомфорт.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Разрез: хирург делает небольшой разрез на роговице (прозрачной передней поверхности глаза).</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удаление естественного хрусталика (при катарактальной операции или рефракционной замене хрусталика): при проведении катарактальной операции или рефракционной замены хрусталика (нефакическая ИОЛ) естественный хрусталик разбивается и осторожно удаляется из глаза.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Введение ИОЛ: выбранная интраокулярная линза складывается и вставляется через небольшой разрез. После попадания в глаз линза разворачивается и размещается в капсуле хрусталика (оболочке, в которой находился естественный хрусталик). В случае факичных ИОЛ естественный хрусталик не удаляется, а линза устанавливается перед или за радужной оболочкой.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Закрытие разреза: небольшой разрез на роговице заживает самостоятельно и обычно не требует швов. В редких случаях могут быть использованы очень тонкие швы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Восстановление: после процедуры пациенту обычно назначают глазную защитную повязку и глазные капли для предотвращения инфекции и снижения воспаления.<br><br></p>
+</li>
+</ol>
+<p dir="ltr">Операция длится примерно 20-30 минут, и большинство пациентов могут вернуться домой сразу после ее завершения.</p>
+<p dir="ltr">Преимущества имплантации интраокулярной линзы (ИОЛ):&nbsp;</p>
+<p dir="ltr">Имплантация интраокулярной линзы (ИОЛ) имеет ряд значительных преимуществ, включая:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение зрения: многие пациенты испытывают значительное улучшение зрения, часто достигая четкого зрения без или с минимальной зависимостью от очков или контактных линз.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повышение качества жизни: четкое зрение способствует большей независимости, возможности заниматься хобби и в целом улучшению качества жизни.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Долговечное решение: ИОЛ спроектированы как постоянное решение для коррекции зрения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лечение катаракты: для людей с катарактой имплантация ИОЛ является окончательным методом восстановления четкого зрения.</p>
+</li>
+</ul>
+<p dir="ltr">Кому подходит имплантация ИОЛ и противопоказания:</p>
+<p dir="ltr">Имплантация интраокулярных линз (ИОЛ) является подходящим решением для большинства пациентов, однако важно пройти всестороннюю офтальмологическую консультацию для оценки вашей кандидатуры. Будут учтены такие факторы, как общее состояние здоровья глаз, медицинская история и индивидуальные потребности в коррекции зрения. Некоторые заболевания глаз или общие заболевания могут быть противопоказанием для процедуры имплантации ИОЛ. Опытные офтальмологи, с которыми вы можете связаться через AZPO Health, проведут тщательную диагностику и порекомендуют оптимальные варианты лечения, основанные на ваших особенностях.</p>
+<p dir="ltr">Процесс восстановления:</p>
+<p dir="ltr">Процесс восстановления после имплантации ИОЛ обычно протекает быстро. Важно строго следовать указаниям врача, которые могут включать использование рекомендованных глазных капель, избегание физической активности и защиту глаза. Большинство пациентов отмечают улучшение зрения уже через несколько дней, а полное заживление, как правило, происходит в течение нескольких недель. Регулярные контрольные визиты к офтальмологу необходимы для мониторинга процесса восстановления и оценки результатов лечения.</p>
+<p dir="ltr">Истории пациентов:</p>
+<p dir="ltr">Сара, 68 лет</p>
+<p dir="ltr">&laquo;Катаракта затрудняла мне чтение и прогулки на свежем воздухе. Я сомневалась по поводу операции, но офтальмолог в Турции, с которым я связалась через AZPO Health, был очень внимателен и уверенно объяснил все варианты ИОЛ. Я выбрала мультифокальную линзу. Операция прошла быстро и безболезненно, а теперь моё зрение значительно улучшилось! Я могу читать без очков и чувствую себя гораздо более независимой.&raquo;</p>
+<p dir="ltr">Майкл, 55 лет</p>
+<p dir="ltr">&laquo;С детства я носил очки из-за близорукости и устал от неудобств. Я рассмотрел вариант рефракционной замены хрусталика с имплантацией ИОЛ в Турции через AZPO Health. Клиника была современная, а хирург &mdash; высококвалифицированный специалист. Он рекомендовал мне торические ИОЛ для коррекции астигматизма. Результаты оказались потрясающими &mdash; теперь я могу видеть ясно без очков, и это ощущение свободы просто невероятное.&raquo;</p>
+<p dir="ltr">Айша, 72 года</p>
+<p dir="ltr">&laquo;Из-за катаракты мое зрение стало размытым, и мне было трудно заниматься привычными делами. Моя семья предложила рассмотреть лечение в Турции, и AZPO Health помогла нам найти отличную глазную клинику. Процесс &mdash; от консультации до послеоперационного ухода &mdash; был на высшем уровне. Врачи были профессиональными и внимательными, а стоимость лечения приятно удивила. Теперь я снова вижу четко, и я очень благодарна за это.&raquo;</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">AZPO Health: ваш путь к качественной коррекции зрения в Турции</h3>
+<p dir="ltr">AZPO Health помогает вам найти опытных и квалифицированных офтальмологов и медицинские учреждения в Турции для имплантации интраокулярных линз (ИОЛ). Мы понимаем, как важно четкое зрение, и предоставляем вам всю необходимую поддержку и информацию, чтобы вы могли принимать обоснованные решения по уходу за глазами.</p>
+<p dir="ltr">Наши услуги включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Связь с опытными и квалифицированными офтальмологами в Турции.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Информацию о различных типах интраокулярных линз и процессе их имплантации.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помощь в организации общения и координации с ведущими клиниками.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Содействие в организации медицинского туризма в Турцию.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обеспечение персонализированного ухода и поддержки на протяжении всего лечения.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Сделайте первый шаг к четкому зрению и светлому будущему. Свяжитесь с AZPO Health сегодня для бесплатной консультации и ознакомьтесь с вашими возможностями по имплантации интраокулярных линз (ИОЛ) в Турции.</p>
+<p dir="ltr">Свяжитесь с AZPO Health для бесплатной консультации &mdash; мы предоставим все необходимое для комфортного и эффективного решения вашей проблемы со зрением.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p>Many individuals face vision challenges at different points in their lives, whether due to refractive errors like nearsightedness or farsightedness, astigmatism, or age-related conditions such as cataracts. Intraocular Lens (IOL) implantation has emerged as a highly effective and long-lasting solution to address these issues, offering the potential to significantly improve vision and reduce or eliminate the need for glasses or contact lenses. AZPO Health can connect you with experienced ophthalmologists and leading eye care clinics in Turkey that specialize in providing state-of-the-art IOL implantation procedures.</p><h3><strong>Why Consider Turkey for Your Intraocular Lens (IOL) Implantation?</strong></h3><p>Turkey has gained international recognition as a premier destination for medical tourism, particularly in the field of ophthalmology. Opting for your Intraocular Lens (IOL) implantation in Turkey through the facilitation of AZPO Health offers several notable advantages:</p><p><strong>Highly Skilled and Experienced Ophthalmologists:</strong> Turkey is home to a large number of board-certified and experienced ophthalmologists who have specialized training in advanced surgical techniques, including various types of Intraocular Lens (IOL) implantation. Many of these specialists have international experience and are proficient in the latest advancements in vision correction. AZPO Health carefully vets its network of medical professionals to ensure you are connected with reputable experts.</p><p><strong>Advanced Medical Facilities and Cutting-Edge Technology:</strong> Eye care clinics and hospitals in Turkey are often equipped with state-of-the-art diagnostic and surgical technologies. This includes advanced lasers, high-resolution imaging systems, and a wide selection of modern Intraocular Lenses. By choosing Turkey through AZPO Health, you gain access to facilities that adhere to international standards of medical care.</p><p><strong>Comprehensive Range of IOL Options:</strong> Depending on your specific vision needs and lifestyle, various types of Intraocular Lenses are available. These include monofocal IOLs (providing clear vision at one distance), multifocal IOLs (offering clear vision at multiple distances), toric IOLs (correcting astigmatism), and accommodative IOLs (attempting to restore some degree of focusing ability). The ophthalmologists you can connect with through AZPO Health will conduct thorough evaluations to determine the most suitable IOL for you.</p><p><strong>Personalized and Patient-Centric Approach:</strong> Medical professionals in Turkey emphasize clear communication and personalized care. Before recommending IOL implantation, they conduct comprehensive eye examinations and consultations to understand your medical history, current eye condition, and visual goals. This ensures a tailored treatment plan that aligns with your individual needs. AZPO Health facilitates this process by connecting you with clinics that prioritize patient comfort and satisfaction.</p><p><strong>Cost-Effective Healthcare Solutions:</strong> Compared to many other countries, Turkey offers high-quality medical procedures, including Intraocular Lens (IOL) implantation, at more affordable prices. This cost-effectiveness does not compromise the quality of care or the expertise of the medical professionals. AZPO Health can help you explore cost-effective options for your vision correction journey.</p><p><strong>Convenient Location and Medical Tourism Infrastructure:</strong> Turkey is strategically located and easily accessible from various parts of the world. The country has a well-established medical tourism infrastructure, with services catering to international patients, making your travel and treatment experience smoother. AZPO Health assists with providing information and guidance for your medical travel.</p><h3><strong>Understanding Intraocular Lenses and the Implantation Procedure</strong></h3><p><strong>What are Intraocular Lenses (IOLs)?</strong></p><p>Intraocular Lenses (IOLs) are small, artificial lenses that are surgically implanted inside the eye to replace the eye's natural lens or to supplement it in order to correct vision problems. They are typically made of biocompatible materials such as acrylic or silicone and are designed to be a permanent solution for vision correction.</p><p><strong>Purpose of IOL Implantation:</strong></p><p>The primary reasons for Intraocular Lens (IOL) implantation include:</p><ul><li><strong>Cataract Surgery:</strong> Cataracts, the clouding of the natural lens, are a leading cause of vision impairment. During cataract surgery, the cloudy lens is removed and replaced with a clear IOL, restoring clear vision.</li><li><strong>Refractive Error Correction:</strong> In some cases, IOLs can be implanted to correct refractive errors such as nearsightedness (myopia), farsightedness (hyperopia), and astigmatism, even without the presence of cataracts. This is often referred to as refractive lens exchange or phakic IOL implantation. Phakic IOLs are implanted without removing the natural lens.</li></ul><p><strong>Types of Intraocular Lenses:</strong></p><p>The advancements in IOL technology have led to a variety of lens options, each designed to address specific visual needs:</p><ul><li><strong>Monofocal IOLs:</strong> These are the most common type and provide clear vision at a single distance (usually far, intermediate, or near). Most patients choose to have monofocal IOLs set for clear distance vision and then use reading glasses for near tasks.</li><li><strong>Multifocal IOLs:</strong> These lenses have multiple zones with different focusing powers, aiming to provide clear vision at various distances (far, intermediate, and near) and reduce the reliance on glasses. However, some individuals may experience glare or halos around lights with these lenses.</li><li><strong>Toric IOLs:</strong> These lenses are specifically designed to correct astigmatism, a condition where the cornea or lens is irregularly shaped, causing blurry or distorted vision at all distances. Toric IOLs have different powers in different meridians to counteract the irregular shape.</li><li><strong>Accommodative IOLs:</strong> These newer lenses are designed to mimic the natural focusing ability of the eye, potentially providing a wider range of clear vision with less dependence on glasses.</li></ul><p>The ophthalmologists in AZPO Health's network will discuss the pros and cons of each type of IOL and recommend the best option based on your individual needs and lifestyle.</p><p><strong>The IOL Implantation Procedure:</strong></p><p>The Intraocular Lens (IOL) implantation procedure is typically performed as an outpatient surgery and is generally safe and effective. While the specifics may vary slightly depending on the type of surgery (cataract surgery or refractive lens exchange), the general steps involved are:</p><ol><li><strong>Anesthesia:</strong> The eye is numbed with local anesthesia, usually eye drops and sometimes an injection around the eye. You will typically remain awake but feel little to no discomfort.</li><li><strong>Incision:</strong> The surgeon makes a small incision in the cornea (the clear front surface of the eye).</li><li><strong>Natural Lens Removal (in Cataract Surgery or Refractive Lens Exchange):</strong> If you are having cataract surgery or refractive lens exchange (non-phakic IOL), the natural lens is broken up and gently removed from the eye.</li><li><strong>IOL Insertion:</strong> The chosen Intraocular Lens is carefully folded and inserted through the small incision. Once inside the eye, the IOL unfolds and is positioned in the lens capsule (the sac that held the natural lens). In the case of phakic IOLs, the natural lens is not removed; the IOL is placed in front of or behind the iris.</li><li><strong>Incision Closure:</strong> The small corneal incision usually self-seals and does not require stitches. If needed, very fine sutures may be used.</li><li><strong>Recovery:</strong> Following the procedure, you will likely be given an eye shield to protect your eye and prescribed eye drops to prevent infection and reduce inflammation.</li></ol><p>The procedure itself usually takes around 20-30 minutes, and most patients can return home shortly afterward.</p><p><strong>Benefits of IOL Implantation:</strong></p><p>Intraocular Lens (IOL) implantation offers significant benefits, including:</p><ul><li><strong>Improved Vision:</strong> Many patients experience a dramatic improvement in their vision, often seeing clearly without or with reduced dependence on glasses or contact lenses.</li><li><strong>Enhanced Quality of Life:</strong> Clearer vision can lead to greater independence, enjoyment of hobbies, and overall improved quality of life.</li><li><strong>Long-Lasting Solution:</strong> IOLs are designed to be a permanent solution for vision correction.</li><li><strong>Treatment of Cataracts:</strong> For individuals with cataracts, IOL implantation is the definitive treatment to restore clear vision.</li></ul><p><strong>Suitability and Contraindications:</strong></p><p>While IOL implantation is a suitable option for many individuals, it's crucial to have a thorough ophthalmologic consultation to determine your candidacy. Factors such as your overall eye health, medical history, and specific vision needs will be evaluated. Certain eye conditions or systemic diseases may be contraindications for IOL implantation. The experienced ophthalmologists you can connect with through AZPO Health will provide a complete and personalized diagnosis and advise you on the most appropriate treatment options.</p><p><strong>Recovery Process:</strong></p><p>The recovery period after Intraocular Lens (IOL) implantation is generally short. You will need to follow your surgeon's instructions carefully, which may include using prescribed eye drops, avoiding strenuous activities, and protecting your eye. Most patients experience noticeable vision improvement within a few days, and complete healing typically occurs within a few weeks. Regular follow-up appointments with your ophthalmologist are essential to monitor your progress.</p><h3><strong>Realizing Clearer Vision: Patient Experiences</strong></h3><p><strong>Testimonial 1: Sarah, 68</strong></p><p>"My cataracts were making it increasingly difficult to enjoy reading and spending time outdoors. I was hesitant about surgery, but my ophthalmologist in Turkey, whom I found through AZPO Health, was so reassuring. He explained the IOL options clearly, and I chose a multifocal lens. The surgery was quick and painless, and my vision is now better than it has been in years! I can read without glasses, and I feel so much more independent."</p><p><strong>Testimonial 2: Michael, 55</strong></p><p>"I had been wearing glasses for nearsightedness since I was a child and was tired of the constant hassle. I explored refractive lens exchange with IOL implantation in Turkey through AZPO Health. The clinic was modern, and the surgeon was incredibly skilled. He recommended toric IOLs to correct my astigmatism as well. The results have been life-changing. I can finally see clearly without glasses, and it's such a liberating feeling."</p><p><strong>Testimonial 3: Aisha, 72</strong></p><p>"My vision had become quite blurry due to cataracts. My family suggested looking into treatment options in Turkey. AZPO Health connected us with a reputable eye hospital. The entire experience, from the initial consultation to the follow-up care, was excellent. The doctors were knowledgeable and caring, and the cost was significantly less than what I had expected. I am so grateful for the clear vision I now have."</p><h3><strong>AZPO Health: Your Gateway to Quality Vision Correction in Turkey</strong></h3><p>AZPO Health is committed to connecting you with reputable medical professionals and facilities in Turkey for your Intraocular Lens (IOL) implantation journey. We understand the importance of clear vision and are dedicated to providing you with the support and information you need to make informed decisions about your eye care.</p><p><strong>Our Services Include:</strong></p><ul><li><strong>Connecting you with experienced and qualified ophthalmologists in Turkey.</strong></li><li><strong>Providing information about different types of Intraocular Lenses and the implantation procedure.</strong></li><li><strong>Facilitating communication and coordination with leading eye care clinics.</strong></li><li><strong>Assisting with your medical travel arrangements to Turkey.</strong></li><li><strong>Ensuring you receive personalized care and support throughout your treatment journey.</strong></li></ul><p>Take the first step towards clearer vision and a brighter future. Contact AZPO Health today for a free consultation to explore your options for Intraocular Lens (IOL) implantation in Turkey.</p><p><strong>Contact AZPO Health now for a free consultation and personalized information about Intraocular Lens (IOL) implantation in Turkey.</strong></p><p><br></p><p><br></p>`,
       },
       imgCover: subNestedKey === "intraocular-lens" ? intraocularImg : null,
@@ -18296,134 +18437,222 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Трансплантация роговицы в Турции в 2025 году: верните ясность зрения"
           : "See clear Again with Corneal Transplantation in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Если ваше зрение стало размытым, болезненным или утратило прежнюю четкость, повреждение роговицы может значительно повлиять на вашу повседневную жизнь и уверенность в себе. Однако существует эффективное решение. В ведущих медицинских центрах Турции опытные хирурги применяют современные методы трансплантации роговицы, восстанавливая четкость зрения и обеспечивая комфорт. Независимо от причины ухудшения зрения — будь то травма, заболевание или дегенерация — вы больше не обязаны мириться с нарушением зрения."
           : "Does your vision feel like it’s fading—blurred, painful, or just not as sharp as it used to be? A damaged cornea can impact not just your sight, but your confidence and daily life. But there’s hope. In Turkey’s world-class medical centers, skilled surgeons use cutting-edge corneal transplantation techniques to restore clarity and comfort—giving you the gift of clear vision once again. Whether due to injury, disease, or degeneration, you don’t have to settle for compromised sight.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Error Correction",
+            title: locale === "ru" ? "Коррекция серьёзных нарушений" : "Error Correction",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "трансплантация помогает в случаях, когда LASIK не подходит."
                 : "Fixes severe vision problems when LASIK isn't suitable",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Vision Freedom",
+            title: locale === "ru" ? "Свобода от очков и линз" : "Vision Freedom",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "процедура значительно снижает зависимость от средств коррекции зрения."
                 : "Reduces reliance on glasses and contacts for clear vision",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Cataract Prevention",
+            title: locale === "ru" ? "Предотвращение катаракты" : "Cataract Prevention",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "трансплантация может помочь в профилактике катаракты в будущем."
                 : "Helps protect against future cataract development",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Трансплантация роговицы — это хирургическая процедура, при которой повреждённая или больная роговица заменяется здоровой тканью от донора. Это лечение применяется для восстановления зрения, нарушенного такими заболеваниями, как рубцы на роговице, кератоконус или серьёзные глазные инфекции. Главной целью трансплантации является улучшение зрения путём восстановления чёткости и функциональности роговицы."
                 : "A corneal transplant is a surgical procedure where a damaged or diseased cornea is replaced with healthy tissue from a donor. This procedure is performed to restore vision that has been impaired due to conditions like corneal scarring, keratoconus, or severe eye infections. The goal of the transplant is to improve vision by restoring the clarity and function of the cornea.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How it Works",
+            header: locale === "ru" ? "Как это работает" : "How it Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура трансплантации роговицы обычно проводится, когда другие методы, такие как медикаменты или очки, не дают желаемого эффекта. Операция проводится под местной анестезией, а процесс восстановления может занять несколько месяцев, пока организм адаптируется к новой ткани."
                 : "The transplant is usually done when other treatments, like medication or glasses, can't improve vision. The procedure is typically performed under local anesthesia, and recovery can take several months as the body adjusts to the new tissue.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It's For",
+            header: locale === "ru" ? "Кому это подходит" : "Who It's For",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Людям старше 40 лет с пресбиопией или высокими аномалиями рефракции. Пациентам, которым не подходит LASIK из-за тонкой роговицы или необходимости в экстренной коррекции зрения. Те, кто ищет постоянное решение проблемы как аномалий рефракции, так и потенциальной катаракты."
                 : "Individuals over 40 with presbyopia or high refractive errors. Patients unsuitable for LASIK due to thin corneas or extreme vision correction needs. Those seeking a permanent solution to both refractive errors and potential cataracts.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Is corneal transplant permanent?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Most grafts last 10+ years with proper care",
+          question : locale === "ru" ? "Является ли трансплантация роговицы постоянной?" : "Is corneal transplant permanent?",
+          answer : locale === "ru" ? "В большинстве случаев трансплантат служит более 10 лет при должном уходе и регулярных осмотрах." : "Most grafts last 10+ years with proper care"
         },
         {
-          question: locale === "ru" ? "" : "Will vision return fully?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Vision improves gradually, may need glasses or contacts",
+          question : locale === "ru" ? "Вернется ли зрение полностью?" : "Will vision return fully?",
+          answer : locale === "ru" ? "Зрение постепенно улучшается, однако для достижения наилучшей четкости могут потребоваться очки или контактные линзы." : "Vision improves gradually, may need glasses or contacts"
         },
         {
-          question: locale === "ru" ? "" : "Can my body reject the graft?",
-          answer: locale === "ru" ? "" : "Yes, but meds reduce the risk",
+          question : locale === "ru" ? "Может ли мой организм отвергнуть трансплантат?" : "Can my body reject the graft?",
+          answer : locale === "ru" ? "Да, но риск отторжения значительно снижается при правильном применении назначенных препаратов и соблюдении рекомендаций врача." : "Yes, but meds reduce the risk"
         },
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Mild discomfort for a few days, managed with meds",
+          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer : locale === "ru" ? "Обычно пациенты ощущают лишь небольшой дискомфорт в течение нескольких дней, который легко контролируется с помощью медикаментов." : "Mild discomfort for a few days, managed with meds"
         },
         {
-          question: locale === "ru" ? "" : "How long is recovery?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Initial healing in weeks; full vision may take months",
-        },
+          question : locale === "ru" ? "Как долго длится восстановление?" : "How long is recovery?",
+          answer : locale === "ru" ? "Первичное заживление занимает несколько недель, а окончательная стабилизация зрения может потребовать нескольких месяцев." : "Initial healing in weeks; full vision may take months"
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Use eye drops for months to prevent rejection",
-        locale === "ru" ? "" : "Wear eye shield and avoid trauma to the eye",
-        locale === "ru"
-          ? ""
-          : "Monitor for signs of rejection: redness, pain, light sensitivity",
-        locale === "ru" ? "" : "Attend all follow-ups for graft monitoring",
-        locale === "ru" ? "" : "Avoid strenuous activities or sports",
-        locale === "ru"
-          ? ""
-          : "Avoid rubbing the eye or putting pressure on it",
-        locale === "ru"
-          ? ""
-          : "Be mindful of infection risks, especially in the first few weeks",
+        locale === "ru" ? "Используйте глазные капли в течение нескольких месяцев, чтобы предотвратить отторжение." : "Use eye drops for months to prevent rejection",
+        locale === "ru" ? "Носите защитный щиток для глаз и избегайте травм." : "Wear eye shield and avoid trauma to the eye",
+        locale === "ru" ? "Обращайте внимание на признаки отторжения, такие как покраснение, боль или повышенная чувствительность к свету." : "Monitor for signs of rejection: redness, pain, light sensitivity",
+        locale === "ru" ? "Регулярно посещайте контрольные обследования для мониторинга состояния трансплантата." : "Attend all follow-ups for graft monitoring",
+        locale === "ru" ? "Избегайте интенсивных физических нагрузок и спортивных занятий." : "Avoid strenuous activities or sports",
+        locale === "ru" ? "Не трите глаза и не оказывайте на них давление." : "Avoid rubbing the eye or putting pressure on it",
+        locale === "ru" ? "Будьте внимательны к рискам инфекции, особенно в первые недели после трансплантации." : "Be mindful of infection risks, especially in the first few weeks"
       ],
       preList: [
-        locale === "ru" ? "" : "Comprehensive eye exam to confirm diagnosis",
-        locale === "ru" ? "" : "Avoid blood thinners if advised",
-        locale === "ru" ? "" : "Arrange transportation and recovery time",
-        locale === "ru" ? "" : "Discuss risks and graft options with surgeon",
-        locale === "ru"
-          ? ""
-          : "Ensure all pre-operative health conditions are managed, including blood pressure and diabetes",
+        locale === "ru" ? "Пройдите комплексное обследование глаз для подтверждения диагноза." : "Comprehensive eye exam to confirm diagnosis",
+        locale === "ru" ? "Избегайте разжижающих кровь препаратов, если это рекомендовано врачом." : "Avoid blood thinners if advised",
+        locale === "ru" ? "Обсудите риски и возможные варианты пересадки с хирургом." : "Discuss risks and graft options with surgeon",
+        locale === "ru" ? "Убедитесь, что все предоперационные заболевания, включая артериальное давление и диабет, находятся под контролем." : "Ensure all pre-operative health conditions are managed, including blood pressure and diabetes"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Трансплантация роговицы — эффективное решение для людей с серьезными рефракционными нарушениями или начальной катарактой, обеспечивающее не только коррекцию зрения, но и долгосрочную профилактику катаракты. Несмотря на наличие некоторых рисков, высокий уровень успешности и комплексные преимущества делают этот метод ценным выбором для подходящих пациентов."
             : "Corneal Transplantation is an effective option for individuals with severe refractive errors or early cataracts, offering both vision correction and long-term prevention of cataracts. While it carries some risks, its success rate and dual benefits make it a valuable choice for eligible patients.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для трансплантации роговицы?"
             : "Why Choose Turkey for Your Corneal Transplantation?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Решение о проведении трансплантации роговицы &mdash; серьезный шаг, и выбор страны для прохождения лечения играет важную роль. Турция по праву считается одним из лидеров в сфере медицинского туризма &mdash; особенно когда речь идет о таких высокоспециализированных процедурах, как пересадка роговицы. Вот несколько причин, по которым Турция заслуживает доверия:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высококвалифицированные хирурги: в Турции работают опытные офтальмологи и микрохирурги, владеющие всеми современными методами кератопластики. Многие из них проходили стажировки за рубежом и регулярно повышают квалификацию, следя за последними достижениями в области офтальмологии.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные медицинские учреждения: Турция занимает лидирующие позиции по количеству клиник, аккредитованных JCI (Joint Commission International). По состоянию на март 2025 года в стране насчитывается 30 таких учреждений. Клиники, работающие с иностранными пациентами, оснащены передовым оборудованием, соответствуют международным стандартам безопасности и гигиены, а также предлагают высокий уровень комфорта и ухода.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексный подход к лечению: компании-медиаторы, такие как AZPO Health, предлагают всестороннюю поддержку: от подбора клиники и консультаций с врачами до организации проживания, трансфера и послеоперационного сопровождения. Это значительно упрощает весь процесс и снижает уровень стресса для пациента.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступность и разумные цены: по сравнению с большинством западных стран, стоимость трансплантации роговицы в Турции значительно ниже, при этом качество медицинских услуг остается на высоком уровне. Это делает лечение доступным для большего числа пациентов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гостеприимная страна с богатой культурой: Турция &mdash; это не только медицинский центр, но и страна с тёплым приёмом, яркой культурой и живописными пейзажами. Вы можете совместить лечение с возможностью отдохнуть, восстановиться и открыть для себя новые места.</p>
+</li>
+</ul>
+<p dir="ltr">Выбирая Турцию для трансплантации роговицы, вы доверяете своё зрение профессионалам, получаете качественное лечение в современных условиях и при этом экономите. Это разумный шаг к восстановлению здоровья и улучшению качества жизни.</p>
+<h3 dir="ltr">Трансплантация роговицы: путь к восстановлению вашего зрения</h3>
+<p dir="ltr">Роговица &mdash; это прозрачная, куполообразная внешняя оболочка глаза. Она выполняет роль &laquo;окна&raquo;, через которое свет проникает внутрь, и играет ключевую роль в фокусировке изображения. Когда роговица повреждается или заболевает, она может мутнеть, деформироваться или покрываться рубцами, что приводит к ухудшению зрения и дискомфорту.</p>
+<p dir="ltr">Трансплантация роговицы, также известная как кератопластика, представляет собой хирургическую процедуру, в ходе которой поврежденный участок роговицы заменяется здоровой тканью донора. Цель операции &mdash; восстановить зрение, уменьшить болевые ощущения и улучшить внешний вид глаза.</p>
+<p dir="ltr">Существует несколько видов трансплантации роговицы. Выбор метода зависит от характера заболевания и степени повреждения:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сквозная кератопластика (PK): полная трансплантация роговицы, при которой удаляется весь пораженный участок и заменяется донорской тканью на всю толщину. Такая операция чаще всего применяется при серьезных нарушениях, затрагивающих все слои роговицы, например, при тяжелой форме кератоконуса, обширных рубцах или дистрофии Фукса.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Передняя ламеллярная кератопластика (ALK): в ходе этой процедуры заменяются только передние и средние слои роговицы, при этом задний слой &mdash; эндотелий &mdash; остаётся нетронутым. Этот метод подходит при поверхностных дистрофиях или рубцах, не затрагивающих внутренние слои роговицы.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Эндотелиальная кератопластика (DSEK и DMEK): современные и малотравматичные методы, направленные на замену внутреннего слоя роговицы &mdash; эндотелия. При DSEK пересаживается тонкий слой донорской ткани, включающий эндотелий и часть стромы.При DMEK трансплантируются только мембрана Десцемета и эндотелиальные клетки.<br>Эти процедуры особенно эффективны при дистрофии Фукса и других эндотелиальных патологиях.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Опытные офтальмохирурги AZPO Health проведут полную диагностику состояния вашего глаза и подберут оптимальный метод трансплантации для достижения наилучшего результата. Вам подробно расскажут о ходе операции, ее преимуществах и возможных рисках.</p>
+<h3 dir="ltr">Трансплантация роговицы: ключевые этапы восстановления зрения</h3>
+<p dir="ltr">Процесс трансплантации роговицы включает несколько этапов, каждый из которых направлен на обеспечение вашей безопасности и успешного результата процедуры. Вот общий обзор того, чего можно ожидать:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предоперационная оценка: перед операцией вам предстоит всестороннее обследование глаз. Оно включает проверку зрения, измерение кривизны и толщины роговицы, а также оценку общего состояния глаз. Также будет проанализирована ваша медицинская история для выявления возможных рисков и особенностей.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поиск донорской роговицы: здоровые донорские роговицы получают от умерших людей, которые проходят тщательную проверку на наличие заболеваний, прежде чем они будут признаны пригодными для трансплантации.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургическая процедура: операция по трансплантации роговицы обычно проводится амбулаторно, то есть вы сможете вернуться домой в тот же день. Процедура проводится под местной анестезией с седацией, чтобы вам было комфортно и расслабленно во время операции. В некоторых случаях может быть использована общая анестезия.<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">При проникновенной кератопластике хирург удаляет круглую часть поврежденной роговицы и заменяет ее донорской роговицей того же размера. Новая роговица затем тщательно сшивается очень тонкими швами.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">При ламеллярной кератопластике удаляются только поврежденные слои роговицы, которые заменяются соответствующими донорскими тканями.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">При DSEK/DMEK хирург делает небольшой разрез и вставляет тонкий слой донорских эндотелиальных клеток, который затем позиционируется и прижимается к задней части роговицы, часто с помощью пузыря воздуха.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Послеоперационное обслуживание: После операции вам будут даны конкретные указания по уходу за глазом, чтобы способствовать заживлению и предотвратить инфекцию. Обычно это включает:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Капли для глаз: вам нужно будет использовать различные капли для глаз, включая антибиотики для предотвращения инфекции, кортикостероиды для уменьшения воспаления и предотвращения отторжения, а также увлажняющие капли для комфорта.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Защита глаз: вам потребуется носить защитную повязку или очки для защиты глаза, особенно ночью и во время занятий, которые могут привести к травмам.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Ограничения активности: необходимо избегать тяжелых физических нагрузок, поднятия тяжестей, трения или нажатия на глаз в течение определенного времени. Ваш врач даст рекомендации, когда вы сможете постепенно вернуться к нормальной активности.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Контрольные визиты: регулярные визиты к офтальмологу крайне важны для контроля за процессом заживления, выявления возможных осложнений, таких как инфекция или отторжение, а также для корректировки лечения.<br><br></p>
+</li>
+</ul>
+</ol>
+<p dir="ltr">Период восстановления после трансплантации роговицы может варьироваться в зависимости от типа проведенной операции. Зрение может быть размытым в начале, но постепенно улучшится в течение нескольких недель или месяцев. В случае с проникновенной кератопластикой может пройти до года или даже дольше, прежде чем зрение стабилизируется полностью, и швы могут потребовать удаления на более позднем этапе.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">AZPO Health &mdash; ваш надежный партнер в восстановлении зрения</h3>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">В AZPO Health мы понимаем, что решение отправиться за границу ради лечения &mdash; это не только важный шаг к здоровью, но и значимое событие, требующее уверенности, поддержки и заботливого сопровождения на каждом этапе. Именно поэтому мы стремимся обеспечить вам комфортный и безопасный опыт на всём пути трансплантации роговицы в Турции. Мы сотрудничаем с ведущими клиниками и опытными офтальмохирургами, специализирующимися на операциях на роговице. Наша команда сопровождает вас на каждом этапе:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подбор квалифицированных хирургов: мы поможем вам найти опытных и надежных специалистов по трансплантации роговицы, исходя из вашего диагноза и индивидуальных потребностей.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Организация онлайн-консультаций: вы сможете заранее обсудить свой случай напрямую с врачом и получить ответы на все важные вопросы до принятия решения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помощь с поездкой и проживанием: мы возьмем на себя бронирование авиабилетов, подберем комфортное жилье и организуем трансферы на все медицинские приемы.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексные пакеты лечения: мы предлагаем готовые решения, включающие все ключевые этапы лечения &mdash; от диагностики до послеоперационного наблюдения, чтобы вы могли сосредоточиться на восстановлении.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Постоянная поддержка: наши координаторы всегда на связи, чтобы ответить на ваши вопросы и обеспечить сопровождение на всём пути &mdash; от первого обращения до полного восстановления.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Наша миссия &mdash; сделать трансплантацию роговицы доступной, эффективной и максимально комфортной для вас.</p>
+<h3 dir="ltr">Сделайте первый шаг к ясному зрению</h3>
+<p dir="ltr">Если вы сталкиваетесь с нарушением зрения из-за поврежденной роговицы &mdash; не теряйте надежду. Трансплантация роговицы в Турции &mdash; это надёжное и эффективное решение. Свяжитесь с AZPO Health уже сегодня и получите бесплатную консультацию. Наша опытная команда поможет вам определить наилучший путь восстановления, ответит на все вопросы и поддержит на каждом этапе. Верните себе ясность зрения и шагните навстречу светлому будущему вместе с AZPO Health.</p>
+<h3 dir="ltr">Настоящие истории &mdash; отзывы наших пациентов:</h3>
+<p dir="ltr">&bull; Сара, Великобритания:</p>
+<p dir="ltr">&laquo;Годы я боролась с кератоконусом &mdash; размытое зрение мешало в повседневной жизни. Сначала я сомневалась, но команда AZPO Health в Турции вселила в меня уверенность. Операция прошла легко, послеоперационный уход был на высоте. Сегодня я вижу намного лучше &mdash; будто мир заиграл новыми красками!&raquo;</p>
+<p dir="ltr">&bull; Джон, США:</p>
+<p dir="ltr">&laquo;Из-за дистрофии Фукса у меня появлялись блики и сильный дискомфорт. Я изучил разные варианты и понял, что Турция предлагает высокое качество по доступной цене. AZPO Health организовали всё безупречно &mdash; от консультации до восстановления. После DSEK мое зрение улучшилось, и я искренне благодарен.&raquo;</p>
+<p dir="ltr">&bull; Мария, Канада:</p>
+<p dir="ltr">&laquo;После инфекции роговицы остались рубцы, и я уже не верила, что снова буду видеть чётко. Благодаря специалистам в Турции и успешной сквозной кератопластике я постепенно восстановила зрение. Сейчас читаю и провожу время с внуками без проблем. Спасибо, AZPO Health!&raquo;</p>
+<p dir="ltr">Каждая история уникальна, но все они объединены общей целью &mdash; восстановить зрение и вернуть качество жизни. AZPO Health &mdash; ваш надежный партнер на этом пути.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Opting for corneal transplantation is a significant decision, and choosing the right location for your treatment is equally important. Turkey has become a popular choice for medical tourism, and for good reason. When it comes to specialized procedures like corneal transplantation, Turkey offers several compelling advantages:</p>
 <ul>
 <li dir="ltr" aria-level="1">
@@ -25294,146 +25523,190 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Лазерная коррекция зрения LASIK в Турции в 2025 году"
           : "Lasik Eye Surgery in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Устали от очков или неудобства контактных линз? Представьте, что каждое утро вы просыпаетесь с чётким и ясным зрением. В Турции современная лазерная коррекция зрения по технологии LASIK — это безопасный, эффективный и доступный путь к свободе от оптических средств. AZPO Health поможет вам подобрать лучшие клиники и специалистов, чтобы вы уверенно сделали шаг к качественному зрению."
           : "Are you tired of the daily struggle with glasses or the discomfort of contact lenses? Imagine waking up every morning with clear, crisp vision. In Turkey, advanced LASIK eye surgery offers a safe and effective path to visual freedom, and AZPO Health is here to connect you with leading hospitals to explore this life-changing possibility.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Rapid Recovery",
+            title: locale === "ru" ? "Быстрое восстановление" : "Rapid Recovery",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "первые улучшения — уже в день операции, полная стабилизация — в течение недели."
                 : "Vision improves within a day, full clarity in a week.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Reduced Dependency",
+            title: locale === "ru" ? "Свобода от очков и линз" : "Reduced Dependency",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "в большинстве случаев необходимость в оптических средствах отпадает."
                 : "Reduces or removes need for glasses or contacts.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Precision",
+            title: locale === "ru" ? "Высокая точность" : "Precision",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "индивидуальный подход к коррекции близорукости, дальнозоркости и астигматизма."
                 : "Tailored to correct nearsightedness, farsightedness, or astigmatism.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "LASIK (лазерный кератомилез)" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Операция LASIK — это современная и широко распространенная процедура, при которой с помощью лазера изменяется форма роговицы для коррекции нарушений рефракции: близорукости (миопии), дальнозоркости (гиперметропии) и астигматизма. Хирург точно удаляет микроскопические участки ткани, чтобы улучшить преломление света в глазу, что обеспечивает более четкое и ясное зрение."
                 : "LASIK eye surgery is a popular procedure that reshapes the cornea to correct refractive vision problems like nearsightedness (Myopia), farsightedness (Hyperopia), and astigmatism. Using a laser, the surgeon precisely removes tissue to improve how light enters the eye, resulting in clearer vision.",
           },
           {
-            header: locale === "ru" ? "" : "How it Works",
+            header: locale === "ru" ? "Как проходит процедура" : "How it Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Во время операции на поверхности роговицы формируется тонкий лоскут, который аккуратно отводится в сторону. Затем роговица моделируется с помощью лазера, после чего лоскут возвращается на место. Процедура проходит под местной анестезией с использованием глазных капель, поэтому пациент не ощущает боли. Улучшение зрения становится заметным уже в течение 3–5 дней."
                 : "LASIK is a laser eye surgery that reshapes the cornea to improve how light enters the eye. The surgeon creates a flap on the cornea, uses a laser to reshape it, and then repositions the flap. It starts with the anesthesia of the eye tissue with anesthetic drops. In this way, the patient does not feel anything during the surgery. The improvement in vision begins to give satisfactory results within 3-5 days.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It's For",
+            header: locale === "ru" ? "Кому подходит процедура LASIK" : "Who It's For",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Взрослым от 18 до 40 лет со стабильными показателями зрения не менее одного года. Пациентам с лёгкими или умеренными нарушениями рефракции и достаточной толщиной роговицы. Противопоказания: прогрессирующие заболевания глаз (например, кератоконус), тяжелые формы нарушения рефракции, аутоиммунные заболевания и другие медицинские ограничения."
                 : "Adults (18–40) with stable vision for at least a year. Those with mild to moderate refractive errors and adequate corneal thickness. Not suitable for individuals with progressive eye conditions, severe refractive errors, or certain medical conditions like keratoconus or autoimmune diseases.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Does LASIK hurt?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "No, numbing drops are used; mild burning sensation after",
+          question : locale === "ru" ? "Больно ли делать LASIK?" : "Does LASIK hurt?",
+          answer : locale === "ru" ? "Нет, процедура безболезненная, благодаря обезболивающим каплям. Легкое жжение может возникать после операции, но это временно." : "No, numbing drops are used; mild burning sensation is possibel after the surgery"
         },
         {
-          question: locale === "ru" ? "" : "When will I see clearly?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Vision improves within 24–48 hours; stabilizes in weeks",
+          question : locale === "ru" ? "Когда я начну видеть ясно?" : "When will I see clearly?",
+          answer : locale === "ru" ? "Улучшение зрения будет заметно уже через 24-48 часов, а полная стабилизация произойдёт в течение нескольких недель." : "Vision improves within 24–48 hours; stabilizes in weeks"
         },
         {
-          question: locale === "ru" ? "" : "Is it permanent?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, but age-related vision changes may occur later",
+          question : locale === "ru" ? "Это навсегда?" : "Is it permanent?",
+          answer : locale === "ru" ? "Да, результаты операции долгосрочные, однако с возрастом возможны изменения в зрении." : "Yes, but age-related vision changes may occur later"
         },
         {
-          question: locale === "ru" ? "" : "Can I go blind?",
-          answer:
-            locale === "ru" ? "" : "Extremely rare; complications are uncommon",
+          question : locale === "ru" ? "Могу ли я ослепнуть?" : "Can I go blind?",
+          answer : locale === "ru" ? "Риск ослепления крайне низок. Осложнения в процессе лечения — редкость." : "Extremely rare; complications are uncommon"
         },
         {
-          question: locale === "ru" ? "" : "Will I need glasses again?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Possibly for reading as you age (presbyopia)",
+          question : locale === "ru" ? "Понадобятся ли мне очки снова?" : "Will I need glasses again?",
+          answer : locale === "ru" ? "Возможно, для чтения, особенно с возрастом (пресбиопия)." : "Possibly for reading as you age (presbyopia)"
         },
         {
-          question: locale === "ru" ? "" : "What should I avoid post-surgery?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Avoid rubbing eyes, swimming, and dusty environments for a week.",
+          question : locale === "ru" ? "Чего мне следует избегать после операции?" : "What should I avoid post-surgery?",
+          answer : locale === "ru" ? "В течение недели избегайте тереть глаза, плавать и находиться в пыльных помещениях." : "Avoid rubbing eyes, swimming, and dusty environments for a week."
         },
         {
-          question: locale === "ru" ? "" : "How soon can I return to work?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Usually 1–2 days, depending on your recovery.",
-        },
+          question : locale === "ru" ? "Как скоро я могу вернуться к работе?" : "How soon can I return to work?",
+          answer : locale === "ru" ? "Обычно можно вернуться к работе через 1-2 дня, в зависимости от вашего восстановления." : "Usually 1–2 days, depending on your recovery."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Do not rub your eyes",
-        locale === "ru"
-          ? ""
-          : "Use prescribed eye drops to prevent dryness and infection",
-        locale === "ru"
-          ? ""
-          : "Avoid swimming, makeup, and dusty environments for a week",
-        locale === "ru"
-          ? ""
-          : "Rest eyes frequently and wear sunglasses outdoors",
-        locale === "ru"
-          ? ""
-          : "Attend follow-up appointments to monitor healing",
+        locale === "ru" ? "Не трите глаза." : "Do not rub your eyes",
+        locale === "ru" ? "Используйте предписанные глазные капли для предотвращения сухости и инфекции." : "Use prescribed eye drops to prevent dryness and infection",
+        locale === "ru" ? "Избегайте плавания, макияжа и посещения пыльных помещений в течение недели." : "Avoid swimming, makeup, and dusty environments for a week",
+        locale === "ru" ? "Давайте отдых глазам и носите солнцезащитные очки на улице." : "Rest eyes frequently and wear sunglasses outdoors",
+        locale === "ru" ? "Посещайте контрольные приемы для мониторинга заживления." : "Attend follow-up appointments to monitor healing"
       ],
       preList: [
-        locale === "ru" ? "" : "Stop wearing contact lenses 1–2 weeks before",
-        locale === "ru" ? "" : "Avoid eye makeup and lotions 24 hours before",
-        locale === "ru" ? "" : "Arrange for someone to drive you home",
-        locale === "ru" ? "" : "Have a thorough eye exam and corneal mapping",
+        locale === "ru" ? "Прекратите носить контактные линзы за 1–2 недели до процедуры." : "Stop wearing contact lenses 1–2 weeks before",
+        locale === "ru" ? "Избегайте макияжа для глаз и применения лосьонов за 24 часа до операции." : "Avoid eye makeup and lotions 24 hours before",
+        locale === "ru" ? "Пройдите тщательное обследование глаз и картографирование роговицы." : "Have a thorough eye exam and corneal mapping"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "LASIK — это безопасная, эффективная и результативная методика лазерной коррекции зрения, меняющая качество жизни пациентов. Благодаря высокому уровню успешности большинство людей достигают 100% зрения и выше. Хотя процедура показана не всем, для большинства она обеспечивает быстрое восстановление и долгосрочный результат."
             : "LASIK is a safe, effective, and life-changing procedure for those with refractive errors. With high success rates, most patients achieve 20/20 or better vision, making it one of the most popular vision correction methods worldwide. While not everyone is a candidate, for those who are, it offers a quick recovery and long-lasting results.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для лазерной коррекции зрения LASIK?"
             : "Why Choose Turkey for Your LASIK Eye Surgery Journey?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Выбор страны для прохождения медицинской процедуры за рубежом требует внимательного подхода. В последние годы Турция стала одним из ведущих направлений медицинского туризма, особенно в области офтальмологии и лазерной коррекции зрения &mdash; и на это есть весомые причины.</p>
+<p dir="ltr">Одним из главных факторов, привлекающих иностранных пациентов, является выгодная стоимость медицинских услуг. При сохранении высоких стандартов качества, стоимость LASIK в Турции значительно ниже, чем в странах Европы и США &mdash; экономия может достигать до 70%. Это позволяет пройти качественную коррекцию зрения без лишней финансовой нагрузки.</p>
+<p dir="ltr">Помимо доступных цен, Турция предлагает современную медицинскую инфраструктуру. Госпитали и клиники оснащены новейшим оборудованием и соответствуют международным стандартам. Страна занимает лидирующие позиции по количеству учреждений, аккредитованных Joint Commission International (JCI) &mdash; по состоянию на март 2025 года таких центров в Турции насчитывается 30.</p>
+<p dir="ltr">Также в Турции работают опытные офтальмологи, прошедшие международную подготовку и имеющие обширный клинический опыт в области рефракционной хирургии, включая LASIK. Пациенты могут быть уверены в профессионализме и компетентности медицинского персонала.</p>
+<p dir="ltr">Удобное географическое положение и развитое авиасообщение делают Турцию легкодоступной для пациентов со всего мира. Многие медицинские компании, включая AZPO Health, обеспечивают полное сопровождение поездки &mdash; от записи на прием до организации трансфера и проживания, создавая максимально комфортные и безопасные условия для медицинского путешествия.</p>
+<p dir="ltr">Дополнительным преимуществом становится возможность совместить лечение с отдыхом. Турция &mdash; это страна с богатой культурой, историей и природной красотой, что делает пребывание здесь не только полезным, но и по-настоящему приятным опытом.</p>
+<p dir="ltr">Ясный взгляд без очков: все о лазерной коррекции зрения LASIK</p>
+<p dir="ltr">Эта современная и широко применяемая методика коррекции зрения, направленная на устранение таких нарушений, как близорукость (миопия), дальнозоркость (гиперметропия) и астигматизм. Процедура заключается в изменении формы роговицы &mdash; прозрачной передней оболочки глаза, чтобы световые лучи правильно фокусировались на сетчатке. В результате зрение становится четким и ясным.</p>
+<p dir="ltr">Как проходит процедура:</p>
+<p dir="ltr">Во время LASIK-хирургии врач с помощью высокоточного лазера формирует тонкий роговичный лоскут, который затем аккуратно приподнимается. Второй лазер выполняет индивидуальную коррекцию внутренних слоев роговицы в соответствии с оптическими параметрами пациента. После завершения коррекции лоскут возвращается на место и надёжно фиксируется без наложения швов &mdash; ткань приживается естественным образом.</p>
+<p dir="ltr">Современные технологии в LASIK:</p>
+<p dir="ltr">Существует несколько усовершенствованных методик:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Custom LASIK &mdash; персонализированная коррекция с использованием wavefront-технологии, которая создает подробную &laquo;карту&raquo; глаза для максимальной точности;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Femtosecond LASIK &mdash; технология, при которой роговичный лоскут формируется фемтосекундным лазером, обеспечивая ещё большую точность и предсказуемость результатов.</p>
+</li>
+</ul>
+<p dir="ltr">Выбор конкретного метода зависит от индивидуальных особенностей глаз и определяется врачом на предварительной консультации.</p>
+<p dir="ltr">Преимущества LASIK:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Существенное снижение или полное устранение необходимости в очках и контактных линзах;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Быстрое восстановление &mdash; многие пациенты отмечают улучшение зрения уже через несколько часов;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Долговременные результаты;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Короткое время процедуры (обычно 15&ndash;20 минут) и амбулаторный характер операции &mdash; домой можно вернуться в тот же день;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Минимальный дискомфорт, легко контролируемый с помощью рекомендованных препаратов.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Отзывы клиентов, выбравших коррекцию зрения в Турции с AZPO Health</h2>
+<p dir="ltr">Сара, Великобритания:</p>
+<p dir="ltr">&laquo;В течение многих лет я сильно зависела от очков, а контактные линзы всегда доставляли неудобства. Мысль о LASIK была всегда в моей голове, но стоимость в Великобритании казалась слишком высокой. Я обратилась в AZPO Health, и они помогли мне разобраться в возможностях, которые предлагает Турция. Клинику, которую они порекомендовали, я считаю просто отличной: хирург был невероятно опытным, а весь процесс был организован на высшем уровне. Теперь, впервые за 20 лет, я могу видеть без очков! Это действительно изменило мою жизнь.&raquo;</p>
+<p dir="ltr">Джон, США:</p>
+<p dir="ltr">&laquo;Путешествие за границу для операции сначала казалось немного страшным, но AZPO Health сделала весь процесс максимально простым и удобным. Они ответили на все мои вопросы о LASIK в Турции, помогли подобрать проверенную клинику и даже организовали поездку. Стоимость операции была значительно ниже, чем в США, при этом качество обслуживания оказалось на высшем уровне. Мое зрение теперь намного лучше, чем я мог ожидать, и я даже успел насладиться несколькими днями в Стамбуле!&raquo;</p>
+<p dir="ltr">Мария, Канада:</p>
+<p dir="ltr">&laquo;У меня был астигматизм, и я сомневалась, подходит ли мне LASIK. AZPO Health связала меня с опытным специалистом в Турции, который подробно объяснил доступные современные методы коррекции зрения. Я почувствовала уверенность в их профессионализме и решила пройти операцию. Операция прошла быстро и без болевых ощущений, а восстановление прошло легко и без осложнений. Я очень благодарна AZPO Health за то, что помогли мне осуществить мечту о ясном зрении.&raquo;</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">AZPO Health: ваш партнер в достижении ясного зрения в Турции</h2>
+<p dir="ltr">AZPO Health помогает вам найти опытных и надежных медицинских специалистов и клиники в Турции, специализирующиеся на различных процедурах, включая современную операцию LASIK. Мы понимаем, что лечение за рубежом может вызывать вопросы и сомнения, и поэтому стремимся предоставить всю необходимую информацию и поддержку на каждом этапе.</p>
+<p dir="ltr">Наша цель &mdash; сделать ваше медицинское путешествие максимально комфортным и беспроблемным. Мы сотрудничаем с высококвалифицированными офтальмологами и аккредитованными клиниками в Турции, гарантируя вам качественное обслуживание в безопасной и комфортной обстановке. Мы поможем вам:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предоставить полную информацию о LASIK в Турции.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Связать вас с опытными офтальмологами для консультаций.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ответить на ваши вопросы по процедуре, восстановлению и послеоперационному уходу.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обеспечить связь с выбранной клиникой.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помочь с организацией поездки и выбором жилья (по необходимости).<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предоставить поддержку на протяжении всего пути.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">В AZPO Health мы ориентируемся на четкое общение и индивидуальный подход. Мы уверены, что важен каждый шаг в процессе принятия решения, и поэтому даем вам возможность принимать обоснованные решения о коррекции зрения. Мы готовы предоставить вам доступ к лучшим медицинским специалистам в Турции, помогая достичь четкого зрения, которого вы заслуживаете.</p>
+<p dir="ltr">Сделайте первый шаг к ясному и яркому будущему. Свяжитесь с AZPO Health сегодня для бесплатной консультации и персонализированного предложения по операции LASIK в Турции. Позвольте нам помочь вам достичь зрительной свободы.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Deciding to undergo any medical procedure abroad requires careful consideration. Turkey has emerged as a prominent destination for medical tourism, particularly for eye surgeries like LASIK, and for good reason.</p>
 <p dir="ltr">One of the primary factors attracting international patients is the cost-effectiveness of medical procedures in Turkey. While maintaining high standards of medical care, the overall expenses for LASIK surgery in Turkey are often significantly more affordable compared to many European countries or the United States (up to 70%). This allows you to access quality vision correction without incurring excessive financial burdens.</p>
 <p dir="ltr">Beyond affordability, Turkey boasts modern hospitals and clinics equipped with state-of-the-art technology for performing advanced eye surgeries like LASIK. Many facilities adhere to international standards, ensuring a safe and comfortable environment for patients.Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country</p>
@@ -25483,139 +25756,178 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Операция с использованием «умных линз» в Турции"
           : "Smart Lens in Turkey - See the World Clearly Again",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Устали от размытого зрения, постоянных поисков очков для чтения или ограничений, связанных с возрастными изменениями зрения? Представьте себе жизнь с ясным зрением на всех расстояниях, без необходимости ежедневно использовать очки или контактные линзы. Технология «умных линз», доступная в Турции, предлагает революционное решение для улучшения зрения. AZPO Health поможет вам связаться с высококвалифицированными специалистами, чтобы вы могли раскрыть потенциал этой инновационной технологии и подарить себе четкое зрение."
           : "Are you tired of struggling with blurry vision, constantly reaching for your reading glasses, or feeling limited by your eyesight? Imagine a life with sharper vision at all distances, potentially freeing you from the daily hassle of glasses and contact lenses. Smart lens technology in Turkey offers a promising solution, and AZPO Health can connect you with experienced professionals to explore this life-changing opportunity.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Clear Vision",
+            title: locale === "ru" ? "Четкое зрение на всех расстояниях" : "Clear Vision",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "вблизи, на среднем и дальнем расстоянии"
                 : "Enhances sight at all distances - near, intermediate, and far viewing",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Vision Freedom",
+            title: locale === "ru" ? "Свобода от очков" : "Vision Freedom",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "минимизируют необходимость в коррекционных средствах"
                 : "Reduces need for corrective eyewear and helps with farsightedness",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Eye Protection",
+            title: locale === "ru" ? "Забота о здоровье глаз" : "Eye Protection",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "помогают предотвратить прогрессирование возрастных заболеваний глаз"
                 : "Helps prevent progression of vision conditions while maintaining eye health",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Что представляет собой «умная линза»" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "«Умная линза» — это интраокулярная линза (ИОЛ), которую имплантируют на место естественного хрусталика. Она применяется после удаления катаракты или для коррекции возрастных изменений зрения. Смарт-линзы обеспечивают фокусировку на разных расстояниях, значительно снижая потребность в очках."
                 : "A smart lens is an intraocular lens that improves vision, often used after cataract surgery or for vision correction. It reduces the need for glasses by supporting both near and distant focus, especially benefiting those with age-related vision loss.",
           },
           {
-            header: locale === "ru" ? "" : "How It Works",
+            header: locale === "ru" ? "Как проходит процедура?" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура быстрая и безболезненная, проводится под местной анестезией. Поврежденный хрусталик заменяется на интеллектуальную линзу. Пациент возвращается домой в тот же день с защитной повязкой, а зрение начинает улучшаться почти сразу. Второй глаз обычно оперируют через несколько дней."
                 : "The impaired lens is removed and replaced with a smart lens in a quick, painless procedure under local anesthesia. Patients go home the same day with a protective bandage, and vision improves almost immediately. The second eye is treated within days.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : " Who its for?",
+            header: locale === "ru" ? "Кому подойдет?" : " Who its for?",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Людям с катарактой Тем, кто сталкивается с возрастными изменениями зрения Пациентам, желающим избавиться от очков или контактных линз"
                 : "Individuals with cataracts,Those experiencing age-related vision changes,Patients seeking a long-term alternative to glasses or contacts",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What is a smart lens?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "An advanced intraocular lens for clearer vision at all distances",
+          question : locale === "ru" ? "Что такое смарт-линза?" : "What is a smart lens?",
+          answer : locale === "ru" ? "Это усовершенствованная интраокулярная линза, обеспечивающая четкое зрение на всех расстояниях." : "An advanced intraocular lens for clearer vision at all distances"
         },
         {
-          question: locale === "ru" ? "" : "Is it better than LASIK?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "For older adults or those with cataracts, yes",
+          question : locale === "ru" ? "Смарт-линза лучше, чем LASIK?" : "Is it better than LASIK?",
+          answer : locale === "ru" ? "Для пожилых пациентов или людей с катарактой - да, это предпочтительный вариант." : "For older adults or those with cataracts, yes"
         },
         {
-          question: locale === "ru" ? "" : "Will I still need glasses?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Many don’t, but some might for specific tasks",
+          question : locale === "ru" ? "Понадобятся ли мне очки после установки смарт-линзы?" : "Will I still need glasses?",
+          answer : locale === "ru" ? "Многие пациенты обходятся без очков, однако для некоторых задач может потребоваться дополнительная коррекция." : "Many don’t, but some might for specific tasks"
         },
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer: locale === "ru" ? "" : "No, local anesthesia is used",
+          question : locale === "ru" ? "Я почувствую боль во время процедуры?" : "Is it painful?",
+          answer : locale === "ru" ? "Нет, процедура проводится под местной анестезией и проходит безболезненно." : "No, local anesthesia is used"
         },
         {
-          question: locale === "ru" ? "" : "How long does recovery take?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Initial recovery in days; full results in weeks",
+          question : locale === "ru" ? "Сколько времени занимает восстановление?" : "How long does recovery take?",
+          answer : locale === "ru" ? "Первоначальное восстановление занимает несколько дней, а полные результаты проявляются в течение нескольких недель." : "Initial recovery in days; full results in weeks"
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "Can I expect vision improvement right after the surgery?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Vision improvement can be noticeable right away, but full stabilization of vision will occur over several weeks.",
-        },
+          question : locale === "ru" ? "Улучшается ли зрение сразу после операции?" : "Can I expect vision improvement right after the surgery?",
+          answer : locale === "ru" ? "Первые улучшения могут быть заметны сразу, однако для полной стабилизации зрения потребуется несколько недель." : "Vision improvement can be noticeable right away, but full stabilization of vision will occur over several weeks."
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Use prescribed drops to prevent infection and inflammation",
-        locale === "ru"
-          ? ""
-          : "Wear eye shield while sleeping for the first week",
-        locale === "ru" ? "" : "Avoid rubbing or applying pressure to the eye",
-        locale === "ru" ? "" : "No swimming or eye makeup for 7 days",
-        locale === "ru" ? "" : "Follow all follow-up appointments",
+        locale === "ru" ? "Используйте назначенные глазные капли для профилактики инфекции и воспаления." : "Use prescribed drops to prevent infection and inflammation",
+        locale === "ru" ? "Носите защитный глазной щиток во время сна в течение первой недели после операции." : "Wear eye shield while sleeping for the first week",
+        locale === "ru" ? "Избегайте трения и давления на глаз." : "Avoid rubbing or applying pressure to the eye",
+        locale === "ru" ? "Воздержитесь от плавания и использования макияжа для глаз в течение 7 дней." : "No swimming or eye makeup for 7 days",
+        locale === "ru" ? "Строго соблюдайте все назначенные контрольные визиты к врачу." : "Follow all follow-up appointments"
       ],
       preList: [
-        locale === "ru" ? "" : "Comprehensive eye exam and lens selection",
-        locale === "ru" ? "" : "Stop blood thinners if advised",
-        locale === "ru"
-          ? ""
-          : "Avoid makeup and lotion near eyes day of surgery",
-        locale === "ru" ? "" : "Arrange transportation for after the procedure",
+        locale === "ru" ? "Пройти комплексное обследование глаз и подбор контактных линз." : "Comprehensive eye exam and lens selection",
+        locale === "ru" ? "При необходимости (по рекомендации врача) прекратить прием препаратов, разжижающих кровь." : "Stop blood thinners if advised",
+        locale === "ru" ? "В день операции избегать использования макияжа и кремов в области глаз." : "Avoid makeup and lotion near eyes day of surgery"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "«Умные линзы» — это эффективное и долговременное решение для восстановления ясного зрения и улучшения качества жизни. Консультация с опытным офтальмологом поможет подобрать оптимальный вариант в соответствии с вашими потребностями. А благодаря поддержке AZPO Health вы пройдете весь путь с уверенностью и комфортом."
             : "Smart lenses provide a lasting solution for clearer vision, improving quality of life. Consulting an eye specialist ensures the best outcome based on individual needs.Additionally, smart lenses can offer greater comfort and convenience, reducing the dependency on traditional glasses and contact lenses for many users.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для процедуры «умные линзы»"
             : "Why Consider Turkey for Your Smart Lens Procedure?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Выбор места для медицинской процедуры &mdash; это важное решение, и Турция становится все более популярным направлением для тех, кто ищет высококачественное лечение глаз. Вот несколько факторов, которые способствуют этому растущему интересу.</p>
+<p dir="ltr">Во-первых, Турция славится большим количеством высококвалифицированных и опытных офтальмологов. Многие турецкие хирурги прошли международную подготовку и владеют современными хирургическими методиками, включая имплантацию интраокулярных линз нового поколения, известных как &laquo;умные линзы&raquo;. AZPO Health сотрудничает с сетью клиник, где работают высококлассные специалисты.</p>
+<p dir="ltr">Во-вторых, медицинская инфраструктура Турции современна и оснащена по последнему слову техники. Больницы и глазные клиники, с которыми работает AZPO Health, используют передовое диагностическое и хирургическое оборудование, что обеспечивает пациентам лечение, соответствующее международным стандартам. Это позволяет проводить точные процедуры и добиваться оптимальных результатов. К тому же Турция занимает одно из лидирующих мест в мире по количеству медицинских учреждений с аккредитацией JCI. На март 2025 года в стране насчитывается 30 таких учреждений.</p>
+<p dir="ltr">В-третьих, для многих международных пациентов стоимость медицинских процедур в Турции значительно ниже, чем в странах Северной Америки или Западной Европы (экономия до 70%). Это делает Турцию привлекательным вариантом для тех, кто рассматривает имплантацию &laquo;умных линз&raquo;. Обратившись в AZPO Health, вы сможете выбрать оптимальный вариант, соответствующий вашему бюджету, не жертвуя качеством.</p>
+<p dir="ltr">И, в завершение, коррекция зрения в Турции предоставляет не только медицинский, но и культурный опыт, превращая процесс восстановления в незабываемое путешествие.<br>Страна, богатая историей, культурой и природными красотами, предлагает множество впечатлений как для вас, так и для ваших близких во время восстановления. AZPO Health поможет с организационными вопросами, сделав ваше медицинское путешествие комфортным и удобным.</p>
+<h3 dir="ltr">Что представляет собой технология &laquo;умных линз&raquo;?</h3>
+<p dir="ltr">Операция по установке &laquo;умных линз&raquo; предполагает замену естественного хрусталика глаза на искусственную интраокулярную линзу (ИОЛ), разработанную для улучшения зрения. В отличие от традиционных монофокальных линз, которые корректируют зрение лишь на одном расстоянии (близком, среднем или дальнем), &laquo;умные линзы&raquo; обеспечивают чёткое зрение на разных дистанциях, сводя к минимуму или полностью устраняя необходимость в очках.</p>
+<p dir="ltr">Основные виды &laquo;умных линз&raquo;:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мультифокальные ИОЛ: эти линзы имеют несколько фокусных зон, позволяющих видеть ясно как вблизи, так и вдали. Мозг автоматически выбирает нужную зону фокусировки в зависимости от расстояния до объекта. Мультифокальные линзы значительно снижают зависимость от очков для чтения и бифокальных линз.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Торические ИОЛ: эти линзы предназначены для коррекции астигматизма &mdash; состояния, при котором роговица или хрусталик имеют неправильную форму, вызывая искажение изображения на всех расстояниях. Торические ИОЛ компенсируют эту форму, обеспечивая чёткое и стабильное зрение. При необходимости такие линзы могут быть дополнены мультифокальной технологией.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Как проходит операция</p>
+<p dir="ltr">Имплантация &laquo;умной линзы&raquo; напоминает современную операцию по удалению катаракты и проводится амбулаторно. Хирург делает небольшой надрез, удаляет естественный хрусталик и устанавливает на его место искусственную линзу. Процедура проходит под местной анестезией, занимает минимум времени и обычно хорошо переносится. Большинство пациентов отмечают улучшение зрения уже в первые дни после операции.</p>
+<p dir="ltr">Кому подойдет данная операция?</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Людям с катарактой</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пациентам с возрастными изменениями зрения</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Тем, кто хочет избавиться от очков или контактных линз<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Преимущества технологии &laquo;умных линз&raquo;</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Острота зрения вблизи, на среднем расстоянии и вдали &mdash; без очков.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Свобода от очков &mdash; снижение или полное избавление от зависимости.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Профилактика ухудшения зрения &mdash; сохранение здоровья глаз и улучшение качества жизни.</p>
+</li>
+</ul>
+<h3 dir="ltr">Партнерство с AZPO Health - на пути к ясному зрению</h3>
+<p dir="ltr">Медицинская поездка в другую страну требует тщательной подготовки и доверия к организаторам. AZPO Health предлагает комфортное и надёжное сопровождение для тех, кто рассматривает операцию по установке &laquo;умных линз&raquo; в Турции. Мы выступаем связующим звеном между вами и проверенными офтальмологами, а также современными клиниками, специализирующимися на передовых методах коррекции зрения.</p>
+<p dir="ltr">Наша команда тщательно отбирает врачей и медицинские учреждения, с которыми сотрудничает, уделяя особое внимание качеству и безопасности. Мы обеспечим вам четкое и понятное сопровождение на каждом этапе &mdash; от первого обращения и онлайн-консультации &mdash; до организации поездки и рекомендаций по восстановлению.</p>
+<p dir="ltr">Выбирая AZPO Health, вы получаете:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к проверенной сети опытных офтальмологов: мы организуем бесплатные онлайн-консультации с врачами до вашего приезда. Вы будете на связи с хирургами, имеющими большой опыт установки умных линз и владеющими современными методиками.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные и надежные клиники: наши партнерские учреждения оснащены передовым оборудованием и соответствуют международным стандартам качества и безопасности.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальное сопровождение и внимание к деталям: мы ответим на ваши вопросы, предоставим полную информацию и поможем с организацией всех аспектов поездки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Возможность дистанционных консультаций: вы сможете заранее обсудить свои потребности и возможные варианты лечения с врачом, не выезжая из дома.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комфорт и забота на каждом этапе: мы стремимся создать максимально спокойный и доверительный опыт для каждого пациента.</p>
+</li>
+</ul>
+<p dir="ltr">Первый шаг к ясному зрению &mdash; это повод для радости. Если вы задумываетесь об операции по установке &laquo;умных линз&raquo; и рассматриваете Турцию как вариант, свяжитесь с AZPO Health. Мы поможем вам найти надежных специалистов и сделать этот путь безопасным, понятным и эффективным. Запишитесь на бесплатную консультацию уже сегодня и узнайте, как технология smart lens может изменить ваше зрение и качество жизни.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Choosing the right location for any medical procedure is a significant decision, and Turkey has emerged as a prominent destination for individuals seeking high-quality eye care. Several compelling factors contribute to this growing popularity.</p>
 <p dir="ltr">Firstly, Turkey boasts a wealth of highly skilled and experienced ophthalmologists. Many Turkish eye surgeons have received international training and are proficient in the latest surgical techniques, including the implantation of advanced technology intraocular lenses, commonly known as smart lenses. AZPO Health partners with a network of reputable clinics that are home to these accomplished professionals.</p>
 <p dir="ltr">Secondly, the healthcare infrastructure in Turkey is modern and well-equipped. Hospitals and eye clinics that AZPO Health collaborates with utilize state-of-the-art diagnostic and surgical equipment, ensuring that patients receive care that meets international standards. This commitment to technology allows for precise procedures and optimal patient outcomes. Besides Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
