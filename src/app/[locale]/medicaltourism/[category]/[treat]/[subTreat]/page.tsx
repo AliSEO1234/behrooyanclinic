@@ -357,7 +357,7 @@ const Page = async ({ params }: PropsPageType) => {
           )}
         </div>
         {/*  Conclusion */}
-        {fetchData?.conclusion && (
+        {fetchData?.conclusion?.title && (
           <div className="relative mb-10 s1280:mb-16 z-[2]">
             <BorderSubNested
               label={fetchData?.conclusion.title || "Conclusion"}
