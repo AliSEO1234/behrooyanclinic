@@ -2088,38 +2088,123 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Restorative Dentistry in Turkey: Rebuild Your Smile and Oral Health with Expert Care at AZPO Health"
+          ? "Восстановительная стоматология в Турции: верните себе уверенность в улыбке и здоровье зубов с заботой и профессионализмом специалистов AZPO Health."
           : "Restorative Dentistry in Turkey: Rebuild Your Smile and Oral Health with Expert Care at AZPO Health",
       descriptionTop:
         locale === "ru"
-          ? "Experiencing dental problems that impact your smile’s function and appearance? Restorative dentistry in Turkey offers advanced solutions to repair damaged or missing teeth, restoring your oral health and smile confidence. Discover how AZPO Health connects you with leading restorative dentists and all-inclusive packages for expert care and lasting results."
+          ? "Столкнулись с проблемами, которые влияют на функциональность и внешний вид вашей улыбки? Восстановительная стоматология в Турции предлагает современные и эффективные решения для восстановления поврежденных или утраченных зубов, возвращая здоровье полости рта и уверенность в улыбке. Узнайте, как AZPO Health помогает получить качественное лечение от опытных специалистов и гарантирует долговечные результаты с комфортом и заботой о каждом пациенте."
           : "Experiencing dental problems that impact your smile’s function and appearance? Restorative dentistry in Turkey offers advanced solutions to repair damaged or missing teeth, restoring your oral health and smile confidence. Discover how AZPO Health connects you with leading restorative dentists and all-inclusive packages for expert care and lasting results.",
       videoContents: {
         title:
           locale === "ru"
-            ? "Restorative Dentistry: Reclaiming Function and Beauty for Your Smile"
+            ? "Восстановительная стоматология: возвращение функции и красоты вашей улыбке"
             : "Restorative Dentistry: Reclaiming Function and Beauty for Your Smile",
         desc:
           locale === "ru"
-            ? "What is restorative dentistry? It's a branch of dentistry focused on the diagnosis, treatment, and management of diseases of the teeth and supporting structures. Restorative dentistry aims to repair or replace damaged, decayed, or missing teeth, restoring their proper function, health, and aesthetics. It goes beyond just fillings; it encompasses a wide range of procedures designed to rebuild your smile and improve your overall oral well-being. Choosing restorative dentistry in Turkey through AZPO Health ensures you receive expert care to regain a healthy, functional, and beautiful smile."
+            ? "Восстановительная стоматология — это направление, которое занимается диагностикой, лечением и восстановлением поврежденных или утраченных зубов. Цель — вернуть здоровье, функцию и эстетику улыбки с помощью различных процедур. С AZPO Health в Турции вы получаете профессиональный подход и уверенность в результате."
             : "What is restorative dentistry? It's a branch of dentistry focused on the diagnosis, treatment, and management of diseases of the teeth and supporting structures. Restorative dentistry aims to repair or replace damaged, decayed, or missing teeth, restoring their proper function, health, and aesthetics. It goes beyond just fillings; it encompasses a wide range of procedures designed to rebuild your smile and improve your overall oral well-being. Choosing restorative dentistry in Turkey through AZPO Health ensures you receive expert care to regain a healthy, functional, and beautiful smile.",
       },
       subCategoryContent: {
         title:
           locale === "ru"
-            ? "Restorative Dentistry in Turkey"
+            ? "Восстановительная стоматология в Турции"
             : "Restorative Dentistry in Turkey",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Comprehensive Restorative Dentistry Services in Turkey with AZPO Health"
+            ? "Комплексные услуги восстановительной стоматологии в Турции с AZPO Health"
             : "Comprehensive Restorative Dentistry Services in Turkey with AZPO Health",
         content:
           locale === "ru"
-            ? `
-            <p><span style="color: rgb(27, 28, 29);">AZPO Health partners with highly skilled dental professionals in Turkey, including experienced consultant in restorative dentistry, to offer a full spectrum of restorative treatments. Our services include:</span></p><p>Dental Fillings (Restorations): Repair cavities and tooth decay with durable and aesthetically pleasing fillings made from composite resin, amalgam, or other suitable materials, restoring tooth structure and function.</p><p><br></p><p>Dental Crowns: Restore significantly damaged, weakened, or decayed teeth with custom-made crowns that fully encase the visible portion of the tooth, providing strength, protection, and natural-looking aesthetics.</p><p><br></p><p>Dental Bridges: Replace one or more missing teeth by anchoring a bridge to adjacent teeth or dental implants, filling the gap and restoring chewing ability and smile aesthetics.</p><p><br></p><p>Dental Implants: The gold standard for tooth replacement. Implants are surgically placed into the jawbone to provide a stable and long-lasting foundation for crowns, bridges, or dentures, restoring both function and aesthetics.</p><p><br></p><p>Dentures (Full and Partial): Replace complete or partial sets of missing teeth with comfortable and well-fitting dentures, restoring chewing ability, speech, and facial structure.</p><p><br></p><p>Root Canal Treatments (Endodontics): Treat infected or damaged tooth pulp to save teeth that would otherwise require extraction. Root canal therapy eliminates infection and pain, preserving your natural tooth structure.</p><p><br></p><p>Inlays and Onlays: Custom-made restorations used to repair larger cavities or damage to the chewing surfaces of back teeth, offering a more conservative alternative to full crowns.</p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Why Choose Turkey for Restorative Dentistry with AZPO Health?</span></h2><p><span style="color: rgb(27, 28, 29);">Turkey has become a popular destination for medical tourism, especially for advanced dental treatments like restorative dentistry. AZPO Health makes choosing Turkey even more compelling by offering:</span></p><p>Expertise and Consultants in Restorative Dentistry: AZPO Health partners with clinics in Turkey that are staffed by highly qualified and experienced dentists, including specialists and consultant in restorative dentistry. You can be confident in receiving expert care from professionals dedicated to restoring your oral health.</p><p>Advanced Techniques and Technology: Our partner clinics in Turkey utilize cutting-edge dental technologies and materials for restorative procedures, ensuring precise diagnoses, effective treatments, and natural-looking results.</p><p>Affordable Restorative Dentistry Prices: Access high-quality restorative dentistry in Turkey at significantly more affordable prices compared to many Western countries. Receive world-class treatment without the prohibitive costs.</p><p>All-Inclusive Packages for a Stress-Free Experience: AZPO Health provides comprehensive all-inclusive packages designed for your comfort and convenience, including flights, accommodation, airport transfers, in-country transportation, and dedicated patient support.</p><p>Personalized Treatment Plans and Care: Your AZPO Health coordinator will ensure you receive a personalized treatment plan tailored to your specific dental needs and concerns, ensuring a comfortable and effective restorative journey.</p><p>Opportunity to Recover in a Beautiful Destination: Combine your dental treatment with a relaxing recovery in Turkey, enjoying its rich culture, historical sites, and stunning landscapes.</p><h2><span style="color: rgb(27, 28, 29);">The Transformative Power of Restorative Dentistry: Before and After</span></h2><p><span style="color: rgb(27, 28, 29);">The results of restorative dentistry can be truly transformative. Restorative dentistry before and after cases often show dramatic improvements in both the function and aesthetics of a patient's smile. Patients experience:</span></p><p>Restored Chewing Function and Comfort: Regain the ability to eat comfortably and enjoy a wider range of foods, improving nutrition and overall well-being.</p><p>Pain Relief: Eliminate pain and discomfort associated with tooth decay, damage, or missing teeth.</p><p>Improved Speech and Pronunciation: Missing or damaged teeth can affect speech. Restorative dentistry can improve pronunciation and clarity.</p><p>Enhanced Smile Aesthetics and Confidence: Restore a natural-looking and beautiful smile, boosting self-confidence and improving overall appearance.</p><p>Prevention of Further Dental Problems: Addressing dental issues promptly with restorative dentistry helps prevent more serious problems from developing in the future.</p><p><em style="color: rgb(27, 28, 29);">"I was so embarrassed by my broken and missing teeth. Restorative dentistry in Turkey with AZPO Health gave me back my smile and my confidence! The dentists were incredibly skilled, and the whole experience was so well-organized and supportive. Looking at my restorative dentistry before and after photos, I can’t believe the difference. Thank you, AZPO Health!"</em><span style="color: rgb(27, 28, 29);"> – David P., Germany</span></p><h2><span style="color: rgb(27, 28, 29);">AZPO Health: Your Partner in Restoring Your Smile and Oral Health in Turkey</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health is dedicated to providing accessible and exceptional restorative dentistry solutions in Turkey. We are your trusted partner for navigating your dental restoration journey, providing expert guidance, connecting you with top-tier clinics and dentists, and ensuring a seamless and rewarding experience focused on your oral health and smile.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Restorative Dentistry Journey?</span></p><p>Access to Leading Restorative Dentists in Turkey: We partner with meticulously vetted clinics and dentists renowned for their expertise in all facets of restorative dentistry.</p><p>Experienced and Highly Qualified Dental Professionals: Our network includes specialists and consultant in restorative dentistry, ensuring you receive expert care tailored to your specific needs.</p><p>Personalized and Compassionate Patient Care: We prioritize your individual needs and concerns, providing personalized consultations and dedicated patient coordinator support throughout your entire experience.</p><p>Transparent and Affordable All-Inclusive Packages: We offer clear, all-inclusive pricing for restorative dentistry in turkey, ensuring exceptional value and no hidden costs.</p><p>Dedicated 24/7 Assistance and Support: Our caring patient support team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind.</p><p><span style="color: rgb(27, 28, 29);">Ready to rebuild your smile and oral health with restorative dentistry in Turkey and AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your restorative dentistry needs, answer your questions, and help you plan your transformative dental journey to Turkey with AZPO Health. Reclaim your healthy, functional, and confident smile – your journey starts now!</span></p><p><br></p><p><br></p>
-            `
+            ? `<p dir="ltr">AZPO Health сотрудничает с высококвалифицированными стоматологами в Турции, включая опытных специалистов в области восстановительной стоматологии, предлагая полный спектр профессиональных услуг. Наши услуги включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пломбы (реставрации зубов): восстановление зубов, пораженных кариесом, с использованием долговечных и эстетичных пломб из композитной смолы, амальгамы или других материалов, которые восстанавливают форму и функцию зуба.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные коронки: восстановление сильно поврежденных или разрушенных зубов с помощью индивидуально изготовленных коронок, которые полностью покрывают видимую часть зуба, обеспечивая прочность, защиту и естественный внешний вид.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные мосты: замена одного или нескольких утраченных зубов с помощью моста, который надежно крепится к соседним зубам или имплантатам, восстанавливая жевательную способность и эстетику улыбки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные имплантаты: идеальный вариант для замены зубов. Имплантаты устанавливаются в челюстную кость, обеспечивая стабильную и долговечную основу для коронок, мостов или протезов, восстанавливая как функцию, так и внешний вид.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Протезы (полные и частичные): замена утраченных зубов с помощью комфортных и идеально подходящих протезов, которые восстанавливают жевание, речь и поддерживают естественную форму лица.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лечение корневых каналов (эндодонтия): лечение инфицированной или поврежденной пульпы для сохранения зуба, который в противном случае потребовал бы удаления. Это лечение устраняет инфекцию и боль, сохраняя естественную структуру зуба.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Вкладыши и накладки: индивидуально изготовленные реставрации, которые используются для восстановления крупных полостей или поврежденных жевательных поверхностей задних зубов, предлагая более щадящий и эффективный подход, чем полные коронки.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Почему стоит выбрать Турцию для&nbsp; восстановительной стоматологии с AZPO Health:&nbsp;</h2>
+<p dir="ltr">Турция стала популярным направлением для медицинского туризма, особенно для таких продвинутых стоматологических процедур, как восстановительная стоматология. AZPO Health делает выбор Турции еще более привлекательным, предлагая:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Профессионализм и специалисты в области восстановительной стоматологии: AZPO Health сотрудничает с клиниками в Турции, в которых работают высококвалифицированные и опытные стоматологи, включая специалистов и консультантов в области восстановительной стоматологии. Вы можете быть уверены, что получите квалифицированное лечение от профессионалов, которые уделяют внимание восстановлению вашего здоровья полости рта.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные технологии и методы: наши партнерские клиники в Турции используют передовые стоматологические технологии и материалы для восстановительных процедур, что гарантирует точные диагнозы, эффективное лечение и естественные результаты.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступные цены на восстановительную стоматологию: в Турции вы можете получить качественные услуги восстановительной стоматологии по значительно более доступным ценам по сравнению с многими западными странами. Получите лечение мирового уровня без чрезмерных затрат.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Все включено для вашего комфорта: AZPO Health предлагает комплексные пакеты &laquo;все включено&raquo;, которые сделают ваше пребывание в Турции комфортным и удобным. Пакеты включают перелет, проживание, трансферы из и в аэропорт, транспортировку по стране и круглосуточную поддержку пациента.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальные планы лечения и забота: ваш координатор AZPO Health обеспечит персонализированный план лечения, соответствующий вашим конкретным стоматологическим потребностям и запросам, гарантируя комфортное и эффективное восстановление.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Возможность восстановиться в прекрасном месте: совместите лечение с расслабляющим восстановлением в Турции, наслаждаясь ее богатой культурой, историческими достопримечательностями и потрясающими пейзажами.</p>
+</li>
+</ul>
+<h2 dir="ltr">Преображение с помощью восстановительной стоматологии: результаты до и после:</h2>
+<p dir="ltr">Восстановительная стоматология творит настоящие чудеса. Примеры &laquo;до&raquo; и &laquo;после&raquo; лечения часто показывают впечатляющие улучшения в функциональности и внешнем виде улыбки. Вот какие изменения ощущают пациенты:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Восстановление способности жевать и комфортного питания: возможность безболезненно наслаждаться различной пищей, что улучшает питание и общее самочувствие.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обезболивание: устранение боли и дискомфорта, вызванных повреждениями зубов или их отсутствием.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение речи и произношения: восстановление четкости речи и улучшение произношения благодаря исправлению повреждений зубов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Красота и уверенность в себе: восстановление естественного и привлекательного внешнего вида улыбки, что значительно повышает самооценку.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предотвращение дальнейших проблем с зубами: профилактика более серьезных стоматологических заболеваний благодаря своевременной восстановительной терапии.</p>
+</li>
+</ul>
+<p dir="ltr">&laquo;Я долго стыдился своих сломанных и отсутствующих зубов. Восстановительная стоматология с AZPO Health вернула мне не только улыбку, но и уверенность в себе! Процесс лечения был отлично организован, а стоматологи &ndash; настоящие профессионалы. Смотрю на свои фотографии &laquo;до&raquo; и &laquo;после&raquo; и не могу поверить в разницу. Огромное спасибо, AZPO Health!&raquo; &ndash; Дэвид П., Германия</p>
+<h2 dir="ltr">AZPO Health: ваш надежный партнер в восстановлении улыбки и здоровья зубов в Турции</h2>
+<p dir="ltr">AZPO Health &ndash; это ваш проводник в мир качественной восстановительной стоматологии в Турции. Мы предлагаем вам не только доступное и высококлассное лечение, но и внимательное сопровождение на каждом этапе. С нами вы получите заботу опытных специалистов, современные клиники и непревзойденный комфорт на пути к здоровой и красивой улыбке.</p>
+<p dir="ltr">Почему стоит выбрать AZPO Health для восстановления вашего здоровья зубов?</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лучшие стоматологи Турции: мы сотрудничаем только с клиниками и врачами, которые зарекомендовали себя как эксперты в области восстановительной стоматологии. Вы можете быть уверены в профессионализме наших партнеров.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высококвалифицированные специалисты: в нашей сети &ndash; только опытные врачи и консультанты, которые разрабатывают индивидуальные планы лечения, учитывая все особенности вашего состояния.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Персонализированный подход и внимание: в AZPO Health вы получите не только профессиональные консультации, но и поддержку на каждом этапе. Мы внимательно относимся к вашим потребностям и помогаем выбрать оптимальное решение.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Прозрачные и доступные пакеты услуг: мы предлагаем четкую цену на все наши услуги, без скрытых затрат. Пакеты с полным обслуживанием включают все &ndash; от консультаций до восстановления вашего здоровья и улыбки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Круглосуточная поддержка: наша команда всегда на связи. Мы готовы ответить на все вопросы и предоставить необходимую помощь на протяжении всего лечения.</p>
+</li>
+</ul>
+<p dir="ltr">Готовы восстановить вашу улыбку с AZPO Health в Турции?</p>
+<p dir="ltr"><strong id="docs-internal-guid-94afaf4f-7fff-81b0-a537-c36f9f216af4">Свяжитесь с нами уже сегодня для бесплатной консультации и персонального предложения! Напишите нам, и наши эксперты свяжутся с вами, чтобы обсудить ваши потребности, ответить на вопросы и помочь спланировать ваше стоматологическое путешествие в Турцию. Восстановите уверенность в своей улыбке и здоровье &ndash; путь к новому начнется с AZPO Health!</strong></p>`
             : `
            <p><span style="color: rgb(27, 28, 29);">AZPO Health partners with highly skilled dental professionals in Turkey, including experienced consultant in restorative dentistry, to offer a full spectrum of restorative treatments. Our services include:</span></p><p>Dental Fillings (Restorations): Repair cavities and tooth decay with durable and aesthetically pleasing fillings made from composite resin, amalgam, or other suitable materials, restoring tooth structure and function.</p><p><br></p><p>Dental Crowns: Restore significantly damaged, weakened, or decayed teeth with custom-made crowns that fully encase the visible portion of the tooth, providing strength, protection, and natural-looking aesthetics.</p><p><br></p><p>Dental Bridges: Replace one or more missing teeth by anchoring a bridge to adjacent teeth or dental implants, filling the gap and restoring chewing ability and smile aesthetics.</p><p><br></p><p>Dental Implants: The gold standard for tooth replacement. Implants are surgically placed into the jawbone to provide a stable and long-lasting foundation for crowns, bridges, or dentures, restoring both function and aesthetics.</p><p><br></p><p>Dentures (Full and Partial): Replace complete or partial sets of missing teeth with comfortable and well-fitting dentures, restoring chewing ability, speech, and facial structure.</p><p><br></p><p>Root Canal Treatments (Endodontics): Treat infected or damaged tooth pulp to save teeth that would otherwise require extraction. Root canal therapy eliminates infection and pain, preserving your natural tooth structure.</p><p><br></p><p>Inlays and Onlays: Custom-made restorations used to repair larger cavities or damage to the chewing surfaces of back teeth, offering a more conservative alternative to full crowns.</p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Why Choose Turkey for Restorative Dentistry with AZPO Health?</span></h2><p><span style="color: rgb(27, 28, 29);">Turkey has become a popular destination for medical tourism, especially for advanced dental treatments like restorative dentistry. AZPO Health makes choosing Turkey even more compelling by offering:</span></p><p>Expertise and Consultants in Restorative Dentistry: AZPO Health partners with clinics in Turkey that are staffed by highly qualified and experienced dentists, including specialists and consultant in restorative dentistry. You can be confident in receiving expert care from professionals dedicated to restoring your oral health.</p><p>Advanced Techniques and Technology: Our partner clinics in Turkey utilize cutting-edge dental technologies and materials for restorative procedures, ensuring precise diagnoses, effective treatments, and natural-looking results.</p><p>Affordable Restorative Dentistry Prices: Access high-quality restorative dentistry in Turkey at significantly more affordable prices compared to many Western countries. Receive world-class treatment without the prohibitive costs.</p><p>All-Inclusive Packages for a Stress-Free Experience: AZPO Health provides comprehensive all-inclusive packages designed for your comfort and convenience, including flights, accommodation, airport transfers, in-country transportation, and dedicated patient support.</p><p>Personalized Treatment Plans and Care: Your AZPO Health coordinator will ensure you receive a personalized treatment plan tailored to your specific dental needs and concerns, ensuring a comfortable and effective restorative journey.</p><p>Opportunity to Recover in a Beautiful Destination: Combine your dental treatment with a relaxing recovery in Turkey, enjoying its rich culture, historical sites, and stunning landscapes.</p><h2><span style="color: rgb(27, 28, 29);">The Transformative Power of Restorative Dentistry: Before and After</span></h2><p><span style="color: rgb(27, 28, 29);">The results of restorative dentistry can be truly transformative. Restorative dentistry before and after cases often show dramatic improvements in both the function and aesthetics of a patient's smile. Patients experience:</span></p><p>Restored Chewing Function and Comfort: Regain the ability to eat comfortably and enjoy a wider range of foods, improving nutrition and overall well-being.</p><p>Pain Relief: Eliminate pain and discomfort associated with tooth decay, damage, or missing teeth.</p><p>Improved Speech and Pronunciation: Missing or damaged teeth can affect speech. Restorative dentistry can improve pronunciation and clarity.</p><p>Enhanced Smile Aesthetics and Confidence: Restore a natural-looking and beautiful smile, boosting self-confidence and improving overall appearance.</p><p>Prevention of Further Dental Problems: Addressing dental issues promptly with restorative dentistry helps prevent more serious problems from developing in the future.</p><p><em style="color: rgb(27, 28, 29);">"I was so embarrassed by my broken and missing teeth. Restorative dentistry in Turkey with AZPO Health gave me back my smile and my confidence! The dentists were incredibly skilled, and the whole experience was so well-organized and supportive. Looking at my restorative dentistry before and after photos, I can’t believe the difference. Thank you, AZPO Health!"</em><span style="color: rgb(27, 28, 29);"> – David P., Germany</span></p><h2><span style="color: rgb(27, 28, 29);">AZPO Health: Your Partner in Restoring Your Smile and Oral Health in Turkey</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health is dedicated to providing accessible and exceptional restorative dentistry solutions in Turkey. We are your trusted partner for navigating your dental restoration journey, providing expert guidance, connecting you with top-tier clinics and dentists, and ensuring a seamless and rewarding experience focused on your oral health and smile.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Restorative Dentistry Journey?</span></p><p>Access to Leading Restorative Dentists in Turkey: We partner with meticulously vetted clinics and dentists renowned for their expertise in all facets of restorative dentistry.</p><p>Experienced and Highly Qualified Dental Professionals: Our network includes specialists and consultant in restorative dentistry, ensuring you receive expert care tailored to your specific needs.</p><p>Personalized and Compassionate Patient Care: We prioritize your individual needs and concerns, providing personalized consultations and dedicated patient coordinator support throughout your entire experience.</p><p>Transparent and Affordable All-Inclusive Packages: We offer clear, all-inclusive pricing for restorative dentistry in turkey, ensuring exceptional value and no hidden costs.</p><p>Dedicated 24/7 Assistance and Support: Our caring patient support team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind.</p><p><span style="color: rgb(27, 28, 29);">Ready to rebuild your smile and oral health with restorative dentistry in Turkey and AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your restorative dentistry needs, answer your questions, and help you plan your transformative dental journey to Turkey with AZPO Health. Reclaim your healthy, functional, and confident smile – your journey starts now!</span></p><p><br></p><p><br></p>
         `,
@@ -2254,34 +2339,102 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Straighten Your Smile with Orthodontics in Turkey!"
+          ? "Создайте идеальную улыбку с профессиональной ортодонтией в Турции!"
           : "Straighten Your Smile with Orthodontics in Turkey!",
       descriptionTop:
         locale === "ru"
-          ? "Achieve a healthier, more confident smile with advanced orthodontic care. Whether it’s braces, clear aligners, or retainers, we offer personalized solutions for all ages. Say goodbye to misaligned teeth and bite issues—our treatments bring precision, comfort, and long-term results. Your perfect smile starts here! 🦷"
+          ? "Получите здоровую и уверенную улыбку с помощью современной ортодонтической помощи! Брекеты, прозрачные элайнеры или ретейнеры — мы подберем индивидуальное решение для любого возраста. Забудьте о неровных зубах и проблемах с прикусом: наши процедуры обеспечивают точность, комфорт и стойкий результат. Ваша идеальная улыбка начинается здесь."
           : "Achieve a healthier, more confident smile with advanced orthodontic care. Whether it’s braces, clear aligners, or retainers, we offer personalized solutions for all ages. Say goodbye to misaligned teeth and bite issues—our treatments bring precision, comfort, and long-term results. Your perfect smile starts here! 🦷",
       videoContents: {
         title:
-          locale === "ru" ? "Orthodontics in Turkey" : "Orthodontics in Turkey",
+          locale === "ru" ? "Ортодонтия в Турции" : "Orthodontics in Turkey",
         desc:
           locale === "ru"
-            ? "Seeking affordable orthodontics in Turkey? AZPO Health provides advanced orthodontic treatments tailored to your needs. Correct misalignments, improve your dental health, and enjoy a perfect smile. Learn about the benefits of orthodontics in Turkey and start your journey to a better smile today."
+            ? "Ищете доступную ортодонтию в Турции? AZPO Health предлагает современные методы лечения, адаптированные под ваши индивидуальные потребности. Исправьте прикус, выровняйте зубы и улучшите общее здоровье полости рта. Наслаждайтесь идеальной улыбкой и узнайте больше о преимуществах ортодонтии в Турции — начните путь к уверенной улыбке уже сегодня!"
             : "Seeking affordable orthodontics in Turkey? AZPO Health provides advanced orthodontic treatments tailored to your needs. Correct misalignments, improve your dental health, and enjoy a perfect smile. Learn about the benefits of orthodontics in Turkey and start your journey to a better smile today.",
       },
       subCategoryContent: {
         title:
-          locale === "ru" ? "Orthodontics in Turkey" : "Orthodontics in Turkey",
+          locale === "ru" ? "Ортодонтия в Турции" : "Orthodontics in Turkey",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Orthodontics?"
+            ? "Почему стоит выбрать Турцию для ортодонтического лечения?"
             : "Why Choose Turkey for Orthodontics?",
         content:
           locale === "ru"
-            ? `
-            <p>Turkey has become a popular destination for individuals seeking high-quality and affordable dental care. AZPO Health offers comprehensive orthodontics packages that combine expert treatment with a comfortable and cost-effective experience.</p><h4><strong>Quality and Expertise</strong></h4><p>AZPO Health is committed to providing top-notch orthodontic services using the latest technology and techniques. Our orthodontists are experienced in treating a variety of dental alignment issues, ensuring you receive the best possible care. Many international medical students come to Turkey for internship and training programs.</p><h4><strong>Affordability</strong></h4><p>One of the primary reasons people choose Turkey for orthodontics is the cost. The favorable exchange rates and lower operating costs allow AZPO Health to offer treatments at significantly lower prices compared to Europe and the United States.</p><h4><strong>Comprehensive Packages</strong></h4><p>AZPO Health’s orthodontics packages are designed to provide a seamless and stress-free experience. These packages often include:</p><p>Initial consultation and assessment</p><p>All necessary orthodontic treatments</p><p>Accommodation</p><p>Airport transfers</p><p>Post-treatment care and follow-up appointments</p><h3><strong>Understanding Orthodontics</strong></h3><p>Braces (Traditional Metal, Ceramic)</p><p>What Are Braces?&nbsp;</p><p>Braces are orthodontic devices used to straighten teeth, fix bite issues, and address overcrowding or gaps. By applying continuous pressure, they gradually move teeth into their proper position, improving both appearance and oral health.</p><p>How Do Braces Work?</p><p>Placement:</p><p>Brackets are attached to each tooth using dental adhesive.</p><p>A metal or ceramic archwire is threaded through the brackets to connect them.</p><p>Adjustments:</p><p>Over time, the orthodontist tightens or adjusts the wires to maintain pressure, guiding the teeth into the desired position.</p><p>Rubber bands or additional appliances may be used to correct bite issues.</p><p>Duration:</p><p>Treatment typically takes between 18-24 months, though complex cases may require more time.</p><p><br></p><p>Who Are Braces Suitable For?</p><p>Braces are effective for:</p><p>Children, teenagers, and adults with teeth alignment issues.</p><p>Those with severe problems like overbite, underbite, crossbite, or crowded teeth.</p><p>Individuals who are comfortable with a visible appliance or prefer a cost-effective option.</p><p>Patients committed to regular orthodontist visits for adjustments.</p><p><br></p><p>Advantages of Braces</p><p>Effective for Complex Cases:</p><p>Braces are ideal for correcting severe dental misalignment and bite problems.</p><p>Customizable Appearance:</p><p>Traditional Metal Braces: Highly durable and cost-effective. Colored bands can be added for a fun, personalized look.</p><p>Ceramic Braces: Made of tooth-colored or clear brackets for a more discreet appearance.</p><p>Durable and Reliable:</p><p>Metal and ceramic braces can withstand the forces required to correct significant dental issues.</p><p>Improved Oral Health:</p><p>Properly aligned teeth are easier to clean, reducing the risk of cavities and gum disease.</p><p>Enhanced Functionality:</p><p>Aligning teeth improves chewing, speaking, and overall oral function.</p><p><br></p><p>Conclusion</p><p>Braces, whether traditional metal or ceramic, remain one of the most effective treatments for dental alignment issues. They provide reliable results for people of all ages and are especially beneficial for complex orthodontic needs. While they require a time commitment and regular maintenance, the long-term benefits to oral health, function, and confidence make braces a worthwhile investment.</p><p>If you’re considering braces, consult with an orthodontist to determine the best option based on your dental needs and preferences.</p><p><br></p><h3><strong>Take the Next Step</strong></h3><p>Ready to transform your smile with orthodontics in Turkey? Contact AZPO Health today for a free consultation and personalized quote. Our friendly team is here to answer your questions and guide you through every step of the process. Discover how affordable and effective orthodontics in Turkey can be!</p><p><br></p>
-            `
+            ? `<p dir="ltr">Турция стала популярным направлением для тех, кто ищет высококачественную и доступную стоматологическую помощь. AZPO Health предлагает комплексные ортодонтические услуги, сочетая профессионализм, комфорт и экономичность.</p>
+<h4 dir="ltr">Качество и профессионализм</h4>
+<p dir="ltr">AZPO Health предлагает высококлассные ортодонтические услуги с использованием передовых технологий и современных методик. Наши опытные ортодонты успешно справляются с различными случаями выравнивания зубов, обеспечивая каждому пациенту индивидуальный и качественный подход. Турция также привлекает множество иностранных студентов-медиков, проходящих здесь стажировку и обучение в рамках программ повышения квалификации &mdash; это подтверждает высокий уровень местной стоматологии.</p>
+<h4 dir="ltr">Доступность</h4>
+<p dir="ltr">Одной из главных причин, по которой многие выбирают Турцию для ортодонтического лечения, является доступная стоимость. Благодаря выгодному обменному курсу и низким операционным расходам, AZPO Health может предложить качественное лечение по значительно более низким ценам по сравнению с Европой и США.</p>
+<h4 dir="ltr">Комплексные программы</h4>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ортодонтические программы AZPO Health разработаны для вашего комфорта и спокойствия, обеспечивая весь процесс лечения без стресса. В них, как правило, включены:</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">первичная консультация и обследование;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">все необходимые ортодонтические процедуры;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">проживание;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">трансфер из аэропорта;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">послеоперационный уход и последующие визиты.</p>
+</li>
+</ul>
+<h3 dir="ltr">Понимание ортодонтии</h3>
+<h3 dir="ltr">Брекеты (традиционные металлические, керамические)</h3>
+<p dir="ltr">Что из себя представляют брекеты?&nbsp;</p>
+<p dir="ltr">Брекеты &mdash; это ортодонтические аппараты, используемые для выравнивания зубов, коррекции прикуса и устранения скученности или промежутков между зубами. Они оказывают постоянное давление, постепенно перемещая зубы в правильное положение и улучшая как внешний вид, так и здоровье полости рта.</p>
+<p dir="ltr">Как они работают?</p>
+<p dir="ltr">Установка:</p>
+<p dir="ltr">Брекеты прикрепляются к каждому зубу с помощью специального стоматологического клея. Затем через них проходит металлическая или керамическая дуга, соединяющая все элементы конструкции.</p>
+<p dir="ltr">Корректировка:</p>
+<p dir="ltr">С течением времени ортодонт регулярно регулирует дугу, чтобы сохранить нужное давление и направить зубы в правильное положение. Для дополнительной коррекции прикуса могут использоваться резиновые тяги или другие вспомогательные элементы.</p>
+<p dir="ltr">Продолжительность лечения:</p>
+<p dir="ltr">Обычно курс лечения длится от 18 до 24 месяцев, однако в более сложных случаях может потребоваться больше времени.</p>
+<p dir="ltr">Кому подходят брекеты?</p>
+<p dir="ltr">Брекеты эффективны для:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">детей, подростков и взрослых, которым необходимо выравнивание зубов;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">людей с серьезными проблемами, такими как неправильный прикус, недостаточный прикус, перекрестный прикус или скученность зубов;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">тех, кто предпочитает использовать видимые устройства или ищет более экономичный вариант лечения;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">пациентов, которые готовы регулярно посещать ортодонта для контроля и коррекции состояния зубов.</p>
+</li>
+</ul>
+<p dir="ltr">Преимущества брекетов</p>
+<p dir="ltr">Эффективны в сложных случаях:</p>
+<p dir="ltr">Брекеты идеально подходят для коррекции серьезного смещения зубов и проблем с прикусом.</p>
+<p dir="ltr">Настраиваемый внешний вид:</p>
+<p dir="ltr">Традиционные металлические брекеты отличаются высокой прочностью и экономичностью. Можно добавить цветные полоски для создания веселого индивидуального образа.</p>
+<p dir="ltr">Керамические брекеты: Изготавливаются из цветных или прозрачных брекетов для придания им более сдержанного внешнего вида.</p>
+<p dir="ltr">Долговечны и надежны:</p>
+<p dir="ltr">Металлические и керамические брекеты выдерживают нагрузку, необходимую для устранения серьезных стоматологических проблем.</p>
+<p dir="ltr">Улучшается здоровье полости рта:</p>
+<p dir="ltr">Правильно выровненные зубы легче чистить, что снижает риск возникновения кариеса и заболеваний десен.</p>
+<p dir="ltr">Расширенная функциональность:</p>
+<p dir="ltr">Выравнивание зубов улучшает жевание, речь и общую функцию полости рта.</p>
+<p dir="ltr">Вывод</p>
+<p dir="ltr">Брекеты, будь то традиционные металлические или керамические, остаются одним из самых эффективных методов лечения проблем с выравниванием зубов. Они обеспечивают надежные результаты для людей всех возрастов и особенно полезны при сложных ортодонтических случаях. Хотя брекеты требуют времени и регулярного ухода, долгосрочные преимущества для здоровья полости рта, функциональности и уверенности в себе делают их выгодным вложением.</p>
+<p dir="ltr">Если вы рассматриваете возможность установки брекетов, проконсультируйтесь с ортодонтом, чтобы выбрать наилучший вариант, учитывая ваши стоматологические особенности и предпочтения.</p>
+<h3 dir="ltr">Откройте новые возможности для своей улыбки</h3>
+<p dir="ltr">Готовы преобразить свою улыбку с помощью ортодонтии в Турции? Свяжитесь с AZPO Health сегодня, чтобы получить бесплатную консультацию и персонализированное предложение. Наша дружная команда готова ответить на все ваши вопросы и провести вас через каждый этап процесса. Узнайте, насколько доступной и эффективной может быть ортодонтия в Турции!</p>
+<p dir="ltr">&nbsp;</p>`
             : `
          <p>Turkey has become a popular destination for individuals seeking high-quality and affordable dental care. AZPO Health offers comprehensive orthodontics packages that combine expert treatment with a comfortable and cost-effective experience.</p><h4><strong>Quality and Expertise</strong></h4><p>AZPO Health is committed to providing top-notch orthodontic services using the latest technology and techniques. Our orthodontists are experienced in treating a variety of dental alignment issues, ensuring you receive the best possible care. Many international medical students come to Turkey for internship and training programs.</p><h4><strong>Affordability</strong></h4><p>One of the primary reasons people choose Turkey for orthodontics is the cost. The favorable exchange rates and lower operating costs allow AZPO Health to offer treatments at significantly lower prices compared to Europe and the United States.</p><h4><strong>Comprehensive Packages</strong></h4><p>AZPO Health’s orthodontics packages are designed to provide a seamless and stress-free experience. These packages often include:</p><ul><li>Initial consultation and assessment</li><li>All necessary orthodontic treatments</li><li>Accommodation</li><li>Airport transfers</li><li>Post-treatment care and follow-up appointments</li></ul><h3><strong>Understanding Orthodontics</strong></h3><p>Braces (Traditional Metal, Ceramic)</p><p>What Are Braces?&nbsp;</p><p>Braces are orthodontic devices used to straighten teeth, fix bite issues, and address overcrowding or gaps. By applying continuous pressure, they gradually move teeth into their proper position, improving both appearance and oral health.</p><p>How Do Braces Work?</p><p>Placement:</p><p>Brackets are attached to each tooth using dental adhesive.</p><p>A metal or ceramic archwire is threaded through the brackets to connect them.</p><p>Adjustments:</p><p>Over time, the orthodontist tightens or adjusts the wires to maintain pressure, guiding the teeth into the desired position.</p><p>Rubber bands or additional appliances may be used to correct bite issues.</p><p>Duration:</p><p>Treatment typically takes between 18-24 months, though complex cases may require more time.</p><p><br></p><p>Who Are Braces Suitable For?</p><p>Braces are effective for:</p><ul><li>Children, teenagers, and adults with teeth alignment issues.</li><li>Those with severe problems like overbite, underbite, crossbite, or crowded teeth.</li><li>Individuals who are comfortable with a visible appliance or prefer a cost-effective option.</li><li>Patients committed to regular orthodontist visits for adjustments.</li></ul><p><br></p><p>Advantages of Braces</p><p>Effective for Complex Cases:</p><p>Braces are ideal for correcting severe dental misalignment and bite problems.</p><p>Customizable Appearance:</p><p>Traditional Metal Braces: Highly durable and cost-effective. Colored bands can be added for a fun, personalized look.</p><p>Ceramic Braces: Made of tooth-colored or clear brackets for a more discreet appearance.</p><p>Durable and Reliable:</p><p>Metal and ceramic braces can withstand the forces required to correct significant dental issues.</p><p>Improved Oral Health:</p><p>Properly aligned teeth are easier to clean, reducing the risk of cavities and gum disease.</p><p>Enhanced Functionality:</p><p>Aligning teeth improves chewing, speaking, and overall oral function.</p><p><br></p><p>Conclusion</p><p>Braces, whether traditional metal or ceramic, remain one of the most effective treatments for dental alignment issues. They provide reliable results for people of all ages and are especially beneficial for complex orthodontic needs. While they require a time commitment and regular maintenance, the long-term benefits to oral health, function, and confidence make braces a worthwhile investment.</p><p>If you’re considering braces, consult with an orthodontist to determine the best option based on your dental needs and preferences.</p><p><br></p><h3><strong>Take the Next Step</strong></h3><p>Ready to transform your smile with orthodontics in Turkey? Contact AZPO Health today for a free consultation and personalized quote. Our friendly team is here to answer your questions and guide you through every step of the process. Discover how affordable and effective orthodontics in Turkey can be!</p><p><br></p>
         `,
@@ -2296,38 +2449,164 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Restore Your Smile and Confidence with Oral Surgery in 2025"
+          ? "Восстановите свою улыбку и уверенность с помощью оральной хирургии в 2025 году"
           : "Restore Your Smile and Confidence with Oral Surgery in 2025",
       descriptionTop:
         locale === "ru"
-          ? "From tooth extractions to jaw corrections, our expert oral surgery services restore your smile’s health and function with precision and care. Whether it’s wisdom teeth removal, dental implants, or corrective procedures, we ensure a safe, comfortable, and effective experience. Your oral health is in expert hands!"
+          ? "От удаления зубов до коррекции челюсти – наши услуги в области хирургической стоматологии помогают восстановить здоровье и функциональность вашей улыбки с максимальной точностью и заботой. Будь то удаление зубов мудрости, установка имплантов или восстановительные процедуры, мы обеспечиваем безопасное, комфортное и эффективное лечение. Ваше здоровье – в надежных и профессиональных руках."
           : "From tooth extractions to jaw corrections, our expert oral surgery services restore your smile’s health and function with precision and care. Whether it’s wisdom teeth removal, dental implants, or corrective procedures, we ensure a safe, comfortable, and effective experience. Your oral health is in expert hands!",
       videoContents: {
         title:
           locale === "ru"
-            ? "Discovering Affordable Oral Surgery in Turkey in 2025"
+            ? "Доступная хирургическая стоматология в Турции с AZPO Health – путь к здоровой и уверенной улыбке"
             : "Discovering Affordable Oral Surgery in Turkey in 2025",
         desc:
           locale === "ru"
-            ? "Worried about the cost of oral surgery? AZPO Health provides access to world-class oral surgeons in Turkey, combining cutting-edge techniques with significant savings. Learn how you can achieve the smile you've always wanted without breaking the bank, with personalized treatment plans designed for your unique needs."
+            ? "Если вас останавливает высокая стоимость лечения, пора открыть для себя новые возможности. AZPO Health предоставляет доступ к опытным челюстно-лицевым хирургам в Турции, где современные технологии сочетаются с разумными ценами. Индивидуальные планы лечения, внимательное сопровождение и забота о вашем комфорте – все это поможет вам обрести желаемую улыбку без лишних затрат и стресса."
             : "Worried about the cost of oral surgery? AZPO Health provides access to world-class oral surgeons in Turkey, combining cutting-edge techniques with significant savings. Learn how you can achieve the smile you've always wanted without breaking the bank, with personalized treatment plans designed for your unique needs.",
       },
       subCategoryContent: {
         title:
           locale === "ru"
-            ? "Orthodontics in Turkey"
+            ? "Хирургическое лечение полости рта"
             : "Oral surgery treatments",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Oral Surgery?"
+            ? "Почему стоит выбрать Турцию для хирургической стоматологии?"
             : "Why Choose Turkey for Oral Surgery?",
         content:
           locale === "ru"
-            ? `
-            <p>Turkey has become a leading destination for medical tourism, especially for procedures like oral surgery. Several factors contribute to its popularity:</p><p><strong>Affordability</strong>: The cost of oral surgery in Turkey is significantly lower compared to Europe, the UK, and the United States. Lower labor costs and favorable exchange rates make high-quality dental care accessible.</p><p><strong>Quality</strong>: Turkish dental clinics and hospitals are equipped with modern technology and experienced dentists. Many facilities cater to international patients and adhere to high standards of care.</p><p><strong>Comprehensive Packages</strong>: AZPO Health offers all-inclusive packages that cover treatment, accommodation, transfers, and post-operative care, ensuring a hassle-free experience.</p><p><strong>Tourism</strong>: Combining treatment with a vacation is a significant draw. Patients can recover while exploring Turkey’s rich cultural heritage and historical sites. Istanbul, Antalya, and Alanya offer a blend of history, culture, and natural beauty.</p><p><strong>How It Works:</strong></p><p>Oral surgery (or maxillofacial surgery) covers a wide range of procedures designed to treat and correct problems related to the jaws, teeth, and face. These procedures can include tooth extractions (including wisdom teeth), dental implants, bone reconstruction, treatment of jaw injuries, bite correction (orthognathic surgery), infection treatment, and correction of congenital anomalies such as cleft lip and palate. Diagnostics involve X-rays, CT scans, and other imaging methods that help the surgeon plan the operation and choose the appropriate anesthesia method: local or general.</p><p><strong>Advantages:</strong></p><p>Maxillofacial surgery addresses functional issues and can significantly improve appearance. For example, dental implants help replace missing teeth, restoring patients’ confidence and normal chewing function. Jaw injury treatment or correction of congenital defects helps restore facial symmetry and normal anatomical structures. Modern surgical methods are minimally invasive, reducing the risk of complications and speeding up recovery.</p><p><strong>Who It’s For:</strong></p><p>Maxillofacial surgery is recommended for patients with various problems, such as improper eruption of wisdom teeth, bone and tissue diseases (like cysts or infections), jaw injuries, congenital defects like cleft lip and palate, and malocclusions requiring surgical correction. Additionally, patients needing dental implants or preparation for orthodontic treatment may also benefit from surgery.</p><p><strong>Considerations:</strong></p><p>Before surgery, patients must undergo a full examination, including medical history assessment and imaging (X-ray or CT scan) to evaluate overall health and rule out contraindications. It’s essential to follow pre- and post-operative instructions. After surgery, special oral care, temporary dietary changes (such as soft or liquid foods), and rest are needed to speed up recovery. Healing can take from several days to several weeks, depending on the complexity of the surgery.</p><p><br></p><p><br></p><h3><strong>Types of Oral Surgery Available</strong></h3><p>AZPO Health provides access to a wide range of oral and maxillofacial surgical procedures:</p><p><strong>Dental Implants</strong>: Dental implants are a popular solution for replacing missing teeth. They involve placing a titanium implant into the jawbone, which then fuses with the bone to provide a stable base for a replacement tooth or bridge.</p><p class="ql-indent-1"><strong>Single Tooth Implants</strong>: Used to replace a single missing tooth.</p><p class="ql-indent-1"><strong>Implant Bridges</strong>: Suitable for patients with multiple missing teeth along the same line.</p><p class="ql-indent-1"><strong>All-on-4/All-on-6</strong>: These techniques involve placing four or six implants to support a full arch of teeth, offering a stable and long-term alternative to dentures.</p><p><strong>Maxillofacial Surgery</strong>: This includes a variety of procedures related to the face, jaw, and mouth.</p><p class="ql-indent-1"><strong>Corrective Jaw Surgery (Orthognathic Surgery)</strong>: Corrects irregularities of the jaw and facial bones to improve bite alignment, speech, and facial appearance.</p><p class="ql-indent-1"><strong>Facial Trauma Reconstruction</strong>: Repairs damage to the soft tissues and bones of the face resulting from accidents or injuries.</p><p class="ql-indent-1"><strong>TMJ Surgery</strong>: Treats temporomandibular joint disorders that cause jaw pain and restricted movement.</p><p class="ql-indent-1"><strong>Cyst Removal</strong>: Removal of cysts that form in the mouth or under the skin.</p><p><strong>Tooth Extractions</strong>: Simple and surgical extractions to remove damaged or problematic teeth.</p><p><strong>Bone Grafting</strong>: This procedure is performed when there is insufficient bone in the jaw to support dental implants. Bone grafting helps to increase bone volume and density, creating a stable foundation for implants.</p><p><strong>Sinus Lift</strong>: A sinus lift is often required when placing implants in the upper jaw, particularly if there is bone loss. The procedure involves lifting the sinus membrane to create space for additional bone grafting material.</p><p><strong>Cosmetic Procedures</strong>:</p><p class="ql-indent-1"><strong>Rhinoplasty</strong>: Nose surgery to improve its appearance.</p><p class="ql-indent-1"><strong>Otoplasty</strong>: Ear surgery to correct the shape, position, or proportion of the ears.</p><p class="ql-indent-1"><strong>Blepharoplasty</strong>: Eyelid surgery to improve the appearance of the eyelids.</p><p class="ql-indent-1"><strong>Chin Augmentation</strong>: Enhances the balance and proportion of the face.</p><p><strong>Other Treatments</strong>:</p><p class="ql-indent-1"><strong>Root Canal Treatment</strong>: To save a damaged or infected tooth.</p><p class="ql-indent-1"><strong>Frenectomy</strong>: A procedure to release a tight frenulum (the tissue connecting the tongue or lip to the gums).</p><p class="ql-indent-1"><strong>Apicoectomy</strong>: Surgical removal of the root tip to treat infection.</p><h3><strong>Methods Used in Oral Surgery</strong></h3><p>Oral surgeons employ various advanced techniques to ensure successful outcomes:</p><p><strong>3D Imaging</strong>: Advanced imaging techniques like CT scans help in precise treatment planning for dental implants and maxillofacial surgeries.</p><p><strong>CAD/CAM Technology</strong>: Computer-Aided Design and Computer-Aided Manufacturing (CAD/CAM) are used to create accurate dental restorations, such as crowns and bridges.</p><p><strong>Laser Surgery</strong>: Lasers are used for soft tissue procedures, offering precision and reduced bleeding.</p><p><strong>Piezosurgery</strong>: This technique uses ultrasonic vibrations for precise bone cutting, minimizing damage to surrounding tissues.</p><h3><strong>Benefits of Each Method</strong></h3><p>Each oral surgery method offers unique benefits:</p><p><strong>Dental Implants</strong>: Provide a permanent and stable solution for missing teeth, improving chewing ability and enhancing aesthetics.</p><p><strong>Maxillofacial Surgery</strong>: Corrects functional and aesthetic issues, improving quality of life.</p><p><strong>Bone Grafting and Sinus Lift</strong>: Increase the success rate of dental implants by providing a solid foundation.</p><p><strong>Cosmetic Procedures</strong>: Enhance facial appearance, boosting self-esteem and confidence.</p><p><strong>Advanced Technology</strong>: Ensures precision, reduces recovery time, and improves treatment outcomes.</p><p><br></p><p><strong>Conclusion</strong>:</p><p>Modern oral surgery offers reliable solutions for many maxillofacial issues. With individualized approaches and accurate diagnostics, patients can expect effective restoration of oral function and aesthetic improvements. Following the surgeon’s recommendations before and after surgery promotes successful recovery and optimal results.</p><p><strong>Why Choose AZPO Health?</strong></p><p>AZPO Health specializes in providing high-quality medical tourism services in Turkey. Here’s why you should choose us:</p><p><strong>Expertise</strong>: We partner with experienced and board-certified oral surgeons who have a proven track record of successful outcomes.</p><p><strong>Comprehensive Care</strong>: From the initial consultation to post-operative follow-up, we provide complete support and guidance.</p><p><strong>State-of-the-Art Facilities</strong>: Our partner clinics are equipped with the latest technology, ensuring you receive the best possible care.</p><p><strong>Affordable Pricing</strong>: We offer competitive pricing and transparent cost breakdowns, with no hidden surprises.</p><p><strong>Personalized Treatment Plans</strong>: We tailor treatment plans to your specific needs and goals, ensuring optimal results.</p><h3><strong>Take the Next Step</strong></h3><p>Ready to transform your oral health and smile? Contact AZPO Health today for a free consultation and personalized quote. Discover how affordable and accessible world-class oral surgery in Turkey can be.</p><p><br></p>
-            `
+            ? `<p dir="ltr">Турция уверенно занимает лидирующие позиции в сфере медицинского туризма, и хирургическая стоматология &ndash; не исключение. Вот почему пациенты со всего мира выбирают лечение именно у нас:</p>
+<p dir="ltr">&bull; Выгодная стоимость без потери качества: цены на хирургическое лечение в Турции заметно ниже, чем в Европе, Великобритании или США &ndash; благодаря более доступным расходам и благоприятному курсу валют. Это позволяет получить первоклассную помощь по разумной цене.</p>
+<p dir="ltr">&bull; Современные технологии и опытные врачи: клиники, с которыми работает AZPO Health, оснащены передовым оборудованием и соответствуют международным стандартам. Вас будут лечить квалифицированные стоматологи с многолетним опытом и вниманием к деталям.</p>
+<p dir="ltr">&bull; Удобные пакеты &laquo;все включено&raquo;: мы предлагаем комплексные решения, включающие не только лечение, но и проживание, трансферы, а также полное сопровождение до и после процедуры &ndash; чтобы ваше путешествие было комфортным и спокойным.</p>
+<p dir="ltr">&bull; Приятное восстановление на фоне красоты Турции: после лечения вы сможете отдохнуть в одном из живописных уголков страны. Стамбул, Анталья, Аланья и другие города радуют гостей богатой историей, мягким климатом и чарующими пейзажами.</p>
+<p dir="ltr">Как проходит процедура:</p>
+<p dir="ltr">Челюстно-лицевая хирургия охватывает широкий спектр операций, направленных на восстановление здоровья и функции зубов, челюстей и мягких тканей лица. В их числе &ndash; удаление зубов (включая зубы мудрости), установка дентальных имплантов, костная пластика, лечение травм челюстей, ортогнатические операции для коррекции прикуса, устранение инфекций, а также хирургическая коррекция врождённых аномалий, таких как расщелина губы и неба. Перед операцией проводится тщательная диагностика с использованием рентгена, КТ и других методов визуализации. Это помогает врачу точно спланировать ход вмешательства и подобрать оптимальный тип анестезии &ndash; местную или общую &ndash; в зависимости от сложности процедуры и индивидуальных особенностей пациента.</p>
+<p dir="ltr">Преимущества:</p>
+<p dir="ltr">Челюстно-лицевая хирургия не только решает функциональные проблемы, но и значительно улучшает внешний вид. Например, дентальные импланты позволяют заменить утраченные зубы, восстанавливая уверенность в своей улыбке и нормальную жевательную функцию. Лечение травм челюстей или коррекция врожденных дефектов способствует восстановлению гармонии лица и естественных анатомических структур. Современные хирургические методы минимизируют инвазивность, что снижает риск осложнений и ускоряет процесс восстановления.</p>
+<p dir="ltr">Для кого предназначена челюстно-лицевая хирургия:</p>
+<p dir="ltr">Челюстно-лицевая хирургия идеально подходит для пациентов с различными проблемами, такими как неправильное прорезывание зубов мудрости, заболевания костей и тканей (например, кисты или инфекции), травмы челюстей, а также врожденные дефекты, такие как расщелина губы и нёба. Также хирургическое вмешательство необходимо при нарушениях прикуса, требующих коррекции, а также для пациентов, нуждающихся в зубных имплантах или подготовке к ортодонтическому лечению.</p>
+<p dir="ltr">Особенности подготовки:</p>
+<p dir="ltr">Перед операцией пациенту предстоит пройти полное обследование, включая анализ медицинской истории и проведение необходимых снимков (рентген или КТ), чтобы оценить общее состояние здоровья и исключить возможные противопоказания. Важно строго следовать рекомендациям до и после операции. После хирургического вмешательства потребуется особый уход за полостью рта, переход на мягкую или жидкую пищу, а также полноценный отдых для ускоренного восстановления. Заживление может занять от нескольких дней до нескольких недель в зависимости от сложности процедуры.</p>
+<h3 dir="ltr">Типы доступных стоматологических операций:</h3>
+<p dir="ltr">AZPO Health предоставляет доступ к широкому спектру стоматологических и челюстно-лицевых хирургических процедур:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные импланты: популярное решение для замены утраченных зубов. Они включают установку титанового импланта в челюстную кость, которая срастается с имплантом, создавая стабильную основу для заменяющего зуба или моста.</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Импланты для одного зуба: используются для замены одного утраченного зуба.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Имплантные мосты: подходят для пациентов с несколькими утратами зубов в одной линии.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">All-on-4/All-on-6: эти методы включают установку четырёх или шести имплантов для поддержки полного ряда зубов, предлагая стабильную и долговечную альтернативу съемным протезам.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Челюстно-лицевая хирургия: включает разнообразные процедуры, связанные с лицом, челюстью и ртом.</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Коррекция челюсти (ортогнатическая хирургия): исправляет аномалии челюстей и костей лица для улучшения прикуса, речи и внешнего вида.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Реконструкция после травм лица: восстановление повреждений мягких тканей и костей лица после аварий или травм.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Операция на височно-нижнечелюстном суставе (ВНЧС): лечение расстройств височно-нижнечелюстного сустава, которые вызывают боль в челюсти и ограничение движений.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Удаление кист: образующихся в полости рта или под кожей.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удаление зубов: хирургическое удаление поврежденных или проблемных зубов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Костная пластика: процедура, выполняемая при недостаточном объеме костной ткани в челюсти для поддержания зубных имплантов. Костная пластика помогает увеличить объем и плотность кости, создавая стабильную основу для имплантов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лифт синуса: часто требуется при установке имплантов в верхнюю челюсть, особенно если есть потеря кости. Процедура включает в себя приподнимание синусной мембраны, чтобы создать пространство для введения дополнительного материала для костной реконструкции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Другие процедуры:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Лечение корневых каналов: сохранение поврежденного или инфицированного зуба.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Френэктомия: процедура для освобождения затянутой уздечки (ткани, соединяющей язык или губу с деснами).</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Апикэктомия: хирургическое удаление верхушки корня для лечения инфекции.</p>
+</li>
+</ul>
+</ul>
+<h3 dir="ltr">Методы, применяемые в челюстно-лицевой хирургии</h3>
+<p dir="ltr">Стоматологи-хирурги используют передовые методы для обеспечения точности и успешности операций:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">3D-имагинг: современные технологии, такие как КТ-сканирование, позволяют точно планировать лечение, включая установку зубных имплантов и челюстно-лицевые операции.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Технология CAD/CAM: компьютерное проектирование и производство (CAD/CAM) используются для создания высокоточных зубных восстановлений, таких как коронки и мосты.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лазерная хирургия: лазеры применяются для работы с мягкими тканями, обеспечивая максимальную точность и минимальное кровотечение.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пьезохирургия: этот метод использует ультразвуковые вибрации для аккуратной резки костной ткани, сводя к минимуму повреждения окружающих тканей.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Преимущества различных методов</h3>
+<p dir="ltr">Каждый метод челюстно-лицевой хирургии предлагает свои уникальные преимущества:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные импланты: они предоставляют надежное и долговечное решение для замены утраченных зубов, восстанавливая функцию жевания и улучшая эстетический вид.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Челюстно-лицевая хирургия: помогает устранить функциональные и эстетические проблемы, значительно улучшая качество жизни пациента.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Костная пластика и синус-лифтинг: создают прочную основу для успешной установки зубных имплантов, что повышает вероятность успешного результата.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Косметические процедуры: улучшают внешний вид лица, способствуя повышению самооценки и уверенности в себе.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные технологии: обеспечивают точность процедур, сокращают время восстановления и улучшают общие результаты лечения.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Заключение:<br>Современная челюстно-лицевая хирургия предоставляет надежные и эффективные решения для множества проблем в области челюстно-лицевой области. Благодаря индивидуальному подходу и точной диагностике, пациенты могут ожидать восстановление нормальной функции полости рта и улучшение внешнего вида. Соблюдение рекомендаций врача до и после операции способствует успешному восстановлению и гарантирует наилучшие результаты.</p>
+<p dir="ltr">Почему выбирают AZPO Health?</p>
+<p dir="ltr">AZPO Health предлагает высококачественные услуги медицинского туризма в Турции. Вот почему стоит выбрать нас:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Экспертность: мы сотрудничаем с опытными и сертифицированными челюстно-лицевыми хирургами, обладающими успешным опытом в лечении сложных случаев.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полный спектр услуг: мы обеспечиваем поддержку на каждом этапе &ndash; от первичной консультации до послепроцедурного наблюдения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные технологии: наши партнерские клиники оснащены новейшими технологиями, что позволяет предоставлять лучший уход нашим пациентам.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступность: мы предлагаем конкурентоспособные цены и полную прозрачность в расчетах, без скрытых дополнительных расходов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальные планы лечения: мы разрабатываем персонализированные планы лечения, соответствующие вашим уникальным потребностям и целям, чтобы обеспечить максимально эффективные результаты.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Готовы сделать шаг навстречу здоровой и красивой улыбке?</h3>
+<p dir="ltr">Свяжитесь с AZPO Health сегодня, чтобы получить бесплатную консультацию и персонализированное предложение. Узнайте, как доступна высококачественная челюстно-лицевая хирургия в Турции, и как можно достичь идеальной улыбки с помощью нашего профессионального подхода и индивидуального плана лечения.</p>
+<p dir="ltr">&nbsp;</p>`
             : `
          <p dir="ltr">Turkey has become a leading destination for medical tourism, especially for procedures like oral surgery. Several factors contribute to its popularity:</p>
 <ul>
