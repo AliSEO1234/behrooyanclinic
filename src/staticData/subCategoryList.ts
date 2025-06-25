@@ -2088,38 +2088,123 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Restorative Dentistry in Turkey: Rebuild Your Smile and Oral Health with Expert Care at AZPO Health"
+          ? "Восстановительная стоматология в Турции: верните себе уверенность в улыбке и здоровье зубов с заботой и профессионализмом специалистов AZPO Health."
           : "Restorative Dentistry in Turkey: Rebuild Your Smile and Oral Health with Expert Care at AZPO Health",
       descriptionTop:
         locale === "ru"
-          ? "Experiencing dental problems that impact your smile’s function and appearance? Restorative dentistry in Turkey offers advanced solutions to repair damaged or missing teeth, restoring your oral health and smile confidence. Discover how AZPO Health connects you with leading restorative dentists and all-inclusive packages for expert care and lasting results."
+          ? "Столкнулись с проблемами, которые влияют на функциональность и внешний вид вашей улыбки? Восстановительная стоматология в Турции предлагает современные и эффективные решения для восстановления поврежденных или утраченных зубов, возвращая здоровье полости рта и уверенность в улыбке. Узнайте, как AZPO Health помогает получить качественное лечение от опытных специалистов и гарантирует долговечные результаты с комфортом и заботой о каждом пациенте."
           : "Experiencing dental problems that impact your smile’s function and appearance? Restorative dentistry in Turkey offers advanced solutions to repair damaged or missing teeth, restoring your oral health and smile confidence. Discover how AZPO Health connects you with leading restorative dentists and all-inclusive packages for expert care and lasting results.",
       videoContents: {
         title:
           locale === "ru"
-            ? "Restorative Dentistry: Reclaiming Function and Beauty for Your Smile"
+            ? "Восстановительная стоматология: возвращение функции и красоты вашей улыбке"
             : "Restorative Dentistry: Reclaiming Function and Beauty for Your Smile",
         desc:
           locale === "ru"
-            ? "What is restorative dentistry? It's a branch of dentistry focused on the diagnosis, treatment, and management of diseases of the teeth and supporting structures. Restorative dentistry aims to repair or replace damaged, decayed, or missing teeth, restoring their proper function, health, and aesthetics. It goes beyond just fillings; it encompasses a wide range of procedures designed to rebuild your smile and improve your overall oral well-being. Choosing restorative dentistry in Turkey through AZPO Health ensures you receive expert care to regain a healthy, functional, and beautiful smile."
+            ? "Восстановительная стоматология — это направление, которое занимается диагностикой, лечением и восстановлением поврежденных или утраченных зубов. Цель — вернуть здоровье, функцию и эстетику улыбки с помощью различных процедур. С AZPO Health в Турции вы получаете профессиональный подход и уверенность в результате."
             : "What is restorative dentistry? It's a branch of dentistry focused on the diagnosis, treatment, and management of diseases of the teeth and supporting structures. Restorative dentistry aims to repair or replace damaged, decayed, or missing teeth, restoring their proper function, health, and aesthetics. It goes beyond just fillings; it encompasses a wide range of procedures designed to rebuild your smile and improve your overall oral well-being. Choosing restorative dentistry in Turkey through AZPO Health ensures you receive expert care to regain a healthy, functional, and beautiful smile.",
       },
       subCategoryContent: {
         title:
           locale === "ru"
-            ? "Restorative Dentistry in Turkey"
+            ? "Восстановительная стоматология в Турции"
             : "Restorative Dentistry in Turkey",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Comprehensive Restorative Dentistry Services in Turkey with AZPO Health"
+            ? "Комплексные услуги восстановительной стоматологии в Турции с AZPO Health"
             : "Comprehensive Restorative Dentistry Services in Turkey with AZPO Health",
         content:
           locale === "ru"
-            ? `
-            <p><span style="color: rgb(27, 28, 29);">AZPO Health partners with highly skilled dental professionals in Turkey, including experienced consultant in restorative dentistry, to offer a full spectrum of restorative treatments. Our services include:</span></p><p>Dental Fillings (Restorations): Repair cavities and tooth decay with durable and aesthetically pleasing fillings made from composite resin, amalgam, or other suitable materials, restoring tooth structure and function.</p><p><br></p><p>Dental Crowns: Restore significantly damaged, weakened, or decayed teeth with custom-made crowns that fully encase the visible portion of the tooth, providing strength, protection, and natural-looking aesthetics.</p><p><br></p><p>Dental Bridges: Replace one or more missing teeth by anchoring a bridge to adjacent teeth or dental implants, filling the gap and restoring chewing ability and smile aesthetics.</p><p><br></p><p>Dental Implants: The gold standard for tooth replacement. Implants are surgically placed into the jawbone to provide a stable and long-lasting foundation for crowns, bridges, or dentures, restoring both function and aesthetics.</p><p><br></p><p>Dentures (Full and Partial): Replace complete or partial sets of missing teeth with comfortable and well-fitting dentures, restoring chewing ability, speech, and facial structure.</p><p><br></p><p>Root Canal Treatments (Endodontics): Treat infected or damaged tooth pulp to save teeth that would otherwise require extraction. Root canal therapy eliminates infection and pain, preserving your natural tooth structure.</p><p><br></p><p>Inlays and Onlays: Custom-made restorations used to repair larger cavities or damage to the chewing surfaces of back teeth, offering a more conservative alternative to full crowns.</p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Why Choose Turkey for Restorative Dentistry with AZPO Health?</span></h2><p><span style="color: rgb(27, 28, 29);">Turkey has become a popular destination for medical tourism, especially for advanced dental treatments like restorative dentistry. AZPO Health makes choosing Turkey even more compelling by offering:</span></p><p>Expertise and Consultants in Restorative Dentistry: AZPO Health partners with clinics in Turkey that are staffed by highly qualified and experienced dentists, including specialists and consultant in restorative dentistry. You can be confident in receiving expert care from professionals dedicated to restoring your oral health.</p><p>Advanced Techniques and Technology: Our partner clinics in Turkey utilize cutting-edge dental technologies and materials for restorative procedures, ensuring precise diagnoses, effective treatments, and natural-looking results.</p><p>Affordable Restorative Dentistry Prices: Access high-quality restorative dentistry in Turkey at significantly more affordable prices compared to many Western countries. Receive world-class treatment without the prohibitive costs.</p><p>All-Inclusive Packages for a Stress-Free Experience: AZPO Health provides comprehensive all-inclusive packages designed for your comfort and convenience, including flights, accommodation, airport transfers, in-country transportation, and dedicated patient support.</p><p>Personalized Treatment Plans and Care: Your AZPO Health coordinator will ensure you receive a personalized treatment plan tailored to your specific dental needs and concerns, ensuring a comfortable and effective restorative journey.</p><p>Opportunity to Recover in a Beautiful Destination: Combine your dental treatment with a relaxing recovery in Turkey, enjoying its rich culture, historical sites, and stunning landscapes.</p><h2><span style="color: rgb(27, 28, 29);">The Transformative Power of Restorative Dentistry: Before and After</span></h2><p><span style="color: rgb(27, 28, 29);">The results of restorative dentistry can be truly transformative. Restorative dentistry before and after cases often show dramatic improvements in both the function and aesthetics of a patient's smile. Patients experience:</span></p><p>Restored Chewing Function and Comfort: Regain the ability to eat comfortably and enjoy a wider range of foods, improving nutrition and overall well-being.</p><p>Pain Relief: Eliminate pain and discomfort associated with tooth decay, damage, or missing teeth.</p><p>Improved Speech and Pronunciation: Missing or damaged teeth can affect speech. Restorative dentistry can improve pronunciation and clarity.</p><p>Enhanced Smile Aesthetics and Confidence: Restore a natural-looking and beautiful smile, boosting self-confidence and improving overall appearance.</p><p>Prevention of Further Dental Problems: Addressing dental issues promptly with restorative dentistry helps prevent more serious problems from developing in the future.</p><p><em style="color: rgb(27, 28, 29);">"I was so embarrassed by my broken and missing teeth. Restorative dentistry in Turkey with AZPO Health gave me back my smile and my confidence! The dentists were incredibly skilled, and the whole experience was so well-organized and supportive. Looking at my restorative dentistry before and after photos, I can’t believe the difference. Thank you, AZPO Health!"</em><span style="color: rgb(27, 28, 29);"> – David P., Germany</span></p><h2><span style="color: rgb(27, 28, 29);">AZPO Health: Your Partner in Restoring Your Smile and Oral Health in Turkey</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health is dedicated to providing accessible and exceptional restorative dentistry solutions in Turkey. We are your trusted partner for navigating your dental restoration journey, providing expert guidance, connecting you with top-tier clinics and dentists, and ensuring a seamless and rewarding experience focused on your oral health and smile.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Restorative Dentistry Journey?</span></p><p>Access to Leading Restorative Dentists in Turkey: We partner with meticulously vetted clinics and dentists renowned for their expertise in all facets of restorative dentistry.</p><p>Experienced and Highly Qualified Dental Professionals: Our network includes specialists and consultant in restorative dentistry, ensuring you receive expert care tailored to your specific needs.</p><p>Personalized and Compassionate Patient Care: We prioritize your individual needs and concerns, providing personalized consultations and dedicated patient coordinator support throughout your entire experience.</p><p>Transparent and Affordable All-Inclusive Packages: We offer clear, all-inclusive pricing for restorative dentistry in turkey, ensuring exceptional value and no hidden costs.</p><p>Dedicated 24/7 Assistance and Support: Our caring patient support team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind.</p><p><span style="color: rgb(27, 28, 29);">Ready to rebuild your smile and oral health with restorative dentistry in Turkey and AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your restorative dentistry needs, answer your questions, and help you plan your transformative dental journey to Turkey with AZPO Health. Reclaim your healthy, functional, and confident smile – your journey starts now!</span></p><p><br></p><p><br></p>
-            `
+            ? `<p dir="ltr">AZPO Health сотрудничает с высококвалифицированными стоматологами в Турции, включая опытных специалистов в области восстановительной стоматологии, предлагая полный спектр профессиональных услуг. Наши услуги включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пломбы (реставрации зубов): восстановление зубов, пораженных кариесом, с использованием долговечных и эстетичных пломб из композитной смолы, амальгамы или других материалов, которые восстанавливают форму и функцию зуба.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные коронки: восстановление сильно поврежденных или разрушенных зубов с помощью индивидуально изготовленных коронок, которые полностью покрывают видимую часть зуба, обеспечивая прочность, защиту и естественный внешний вид.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные мосты: замена одного или нескольких утраченных зубов с помощью моста, который надежно крепится к соседним зубам или имплантатам, восстанавливая жевательную способность и эстетику улыбки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные имплантаты: идеальный вариант для замены зубов. Имплантаты устанавливаются в челюстную кость, обеспечивая стабильную и долговечную основу для коронок, мостов или протезов, восстанавливая как функцию, так и внешний вид.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Протезы (полные и частичные): замена утраченных зубов с помощью комфортных и идеально подходящих протезов, которые восстанавливают жевание, речь и поддерживают естественную форму лица.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лечение корневых каналов (эндодонтия): лечение инфицированной или поврежденной пульпы для сохранения зуба, который в противном случае потребовал бы удаления. Это лечение устраняет инфекцию и боль, сохраняя естественную структуру зуба.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Вкладыши и накладки: индивидуально изготовленные реставрации, которые используются для восстановления крупных полостей или поврежденных жевательных поверхностей задних зубов, предлагая более щадящий и эффективный подход, чем полные коронки.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Почему стоит выбрать Турцию для&nbsp; восстановительной стоматологии с AZPO Health:&nbsp;</h2>
+<p dir="ltr">Турция стала популярным направлением для медицинского туризма, особенно для таких продвинутых стоматологических процедур, как восстановительная стоматология. AZPO Health делает выбор Турции еще более привлекательным, предлагая:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Профессионализм и специалисты в области восстановительной стоматологии: AZPO Health сотрудничает с клиниками в Турции, в которых работают высококвалифицированные и опытные стоматологи, включая специалистов и консультантов в области восстановительной стоматологии. Вы можете быть уверены, что получите квалифицированное лечение от профессионалов, которые уделяют внимание восстановлению вашего здоровья полости рта.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные технологии и методы: наши партнерские клиники в Турции используют передовые стоматологические технологии и материалы для восстановительных процедур, что гарантирует точные диагнозы, эффективное лечение и естественные результаты.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступные цены на восстановительную стоматологию: в Турции вы можете получить качественные услуги восстановительной стоматологии по значительно более доступным ценам по сравнению с многими западными странами. Получите лечение мирового уровня без чрезмерных затрат.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Все включено для вашего комфорта: AZPO Health предлагает комплексные пакеты &laquo;все включено&raquo;, которые сделают ваше пребывание в Турции комфортным и удобным. Пакеты включают перелет, проживание, трансферы из и в аэропорт, транспортировку по стране и круглосуточную поддержку пациента.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальные планы лечения и забота: ваш координатор AZPO Health обеспечит персонализированный план лечения, соответствующий вашим конкретным стоматологическим потребностям и запросам, гарантируя комфортное и эффективное восстановление.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Возможность восстановиться в прекрасном месте: совместите лечение с расслабляющим восстановлением в Турции, наслаждаясь ее богатой культурой, историческими достопримечательностями и потрясающими пейзажами.</p>
+</li>
+</ul>
+<h2 dir="ltr">Преображение с помощью восстановительной стоматологии: результаты до и после:</h2>
+<p dir="ltr">Восстановительная стоматология творит настоящие чудеса. Примеры &laquo;до&raquo; и &laquo;после&raquo; лечения часто показывают впечатляющие улучшения в функциональности и внешнем виде улыбки. Вот какие изменения ощущают пациенты:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Восстановление способности жевать и комфортного питания: возможность безболезненно наслаждаться различной пищей, что улучшает питание и общее самочувствие.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обезболивание: устранение боли и дискомфорта, вызванных повреждениями зубов или их отсутствием.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение речи и произношения: восстановление четкости речи и улучшение произношения благодаря исправлению повреждений зубов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Красота и уверенность в себе: восстановление естественного и привлекательного внешнего вида улыбки, что значительно повышает самооценку.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предотвращение дальнейших проблем с зубами: профилактика более серьезных стоматологических заболеваний благодаря своевременной восстановительной терапии.</p>
+</li>
+</ul>
+<p dir="ltr">&laquo;Я долго стыдился своих сломанных и отсутствующих зубов. Восстановительная стоматология с AZPO Health вернула мне не только улыбку, но и уверенность в себе! Процесс лечения был отлично организован, а стоматологи &ndash; настоящие профессионалы. Смотрю на свои фотографии &laquo;до&raquo; и &laquo;после&raquo; и не могу поверить в разницу. Огромное спасибо, AZPO Health!&raquo; &ndash; Дэвид П., Германия</p>
+<h2 dir="ltr">AZPO Health: ваш надежный партнер в восстановлении улыбки и здоровья зубов в Турции</h2>
+<p dir="ltr">AZPO Health &ndash; это ваш проводник в мир качественной восстановительной стоматологии в Турции. Мы предлагаем вам не только доступное и высококлассное лечение, но и внимательное сопровождение на каждом этапе. С нами вы получите заботу опытных специалистов, современные клиники и непревзойденный комфорт на пути к здоровой и красивой улыбке.</p>
+<p dir="ltr">Почему стоит выбрать AZPO Health для восстановления вашего здоровья зубов?</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лучшие стоматологи Турции: мы сотрудничаем только с клиниками и врачами, которые зарекомендовали себя как эксперты в области восстановительной стоматологии. Вы можете быть уверены в профессионализме наших партнеров.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высококвалифицированные специалисты: в нашей сети &ndash; только опытные врачи и консультанты, которые разрабатывают индивидуальные планы лечения, учитывая все особенности вашего состояния.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Персонализированный подход и внимание: в AZPO Health вы получите не только профессиональные консультации, но и поддержку на каждом этапе. Мы внимательно относимся к вашим потребностям и помогаем выбрать оптимальное решение.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Прозрачные и доступные пакеты услуг: мы предлагаем четкую цену на все наши услуги, без скрытых затрат. Пакеты с полным обслуживанием включают все &ndash; от консультаций до восстановления вашего здоровья и улыбки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Круглосуточная поддержка: наша команда всегда на связи. Мы готовы ответить на все вопросы и предоставить необходимую помощь на протяжении всего лечения.</p>
+</li>
+</ul>
+<p dir="ltr">Готовы восстановить вашу улыбку с AZPO Health в Турции?</p>
+<p dir="ltr"><strong id="docs-internal-guid-94afaf4f-7fff-81b0-a537-c36f9f216af4">Свяжитесь с нами уже сегодня для бесплатной консультации и персонального предложения! Напишите нам, и наши эксперты свяжутся с вами, чтобы обсудить ваши потребности, ответить на вопросы и помочь спланировать ваше стоматологическое путешествие в Турцию. Восстановите уверенность в своей улыбке и здоровье &ndash; путь к новому начнется с AZPO Health!</strong></p>`
             : `
            <p><span style="color: rgb(27, 28, 29);">AZPO Health partners with highly skilled dental professionals in Turkey, including experienced consultant in restorative dentistry, to offer a full spectrum of restorative treatments. Our services include:</span></p><p>Dental Fillings (Restorations): Repair cavities and tooth decay with durable and aesthetically pleasing fillings made from composite resin, amalgam, or other suitable materials, restoring tooth structure and function.</p><p><br></p><p>Dental Crowns: Restore significantly damaged, weakened, or decayed teeth with custom-made crowns that fully encase the visible portion of the tooth, providing strength, protection, and natural-looking aesthetics.</p><p><br></p><p>Dental Bridges: Replace one or more missing teeth by anchoring a bridge to adjacent teeth or dental implants, filling the gap and restoring chewing ability and smile aesthetics.</p><p><br></p><p>Dental Implants: The gold standard for tooth replacement. Implants are surgically placed into the jawbone to provide a stable and long-lasting foundation for crowns, bridges, or dentures, restoring both function and aesthetics.</p><p><br></p><p>Dentures (Full and Partial): Replace complete or partial sets of missing teeth with comfortable and well-fitting dentures, restoring chewing ability, speech, and facial structure.</p><p><br></p><p>Root Canal Treatments (Endodontics): Treat infected or damaged tooth pulp to save teeth that would otherwise require extraction. Root canal therapy eliminates infection and pain, preserving your natural tooth structure.</p><p><br></p><p>Inlays and Onlays: Custom-made restorations used to repair larger cavities or damage to the chewing surfaces of back teeth, offering a more conservative alternative to full crowns.</p><p><br></p><h2><span style="color: rgb(27, 28, 29);">Why Choose Turkey for Restorative Dentistry with AZPO Health?</span></h2><p><span style="color: rgb(27, 28, 29);">Turkey has become a popular destination for medical tourism, especially for advanced dental treatments like restorative dentistry. AZPO Health makes choosing Turkey even more compelling by offering:</span></p><p>Expertise and Consultants in Restorative Dentistry: AZPO Health partners with clinics in Turkey that are staffed by highly qualified and experienced dentists, including specialists and consultant in restorative dentistry. You can be confident in receiving expert care from professionals dedicated to restoring your oral health.</p><p>Advanced Techniques and Technology: Our partner clinics in Turkey utilize cutting-edge dental technologies and materials for restorative procedures, ensuring precise diagnoses, effective treatments, and natural-looking results.</p><p>Affordable Restorative Dentistry Prices: Access high-quality restorative dentistry in Turkey at significantly more affordable prices compared to many Western countries. Receive world-class treatment without the prohibitive costs.</p><p>All-Inclusive Packages for a Stress-Free Experience: AZPO Health provides comprehensive all-inclusive packages designed for your comfort and convenience, including flights, accommodation, airport transfers, in-country transportation, and dedicated patient support.</p><p>Personalized Treatment Plans and Care: Your AZPO Health coordinator will ensure you receive a personalized treatment plan tailored to your specific dental needs and concerns, ensuring a comfortable and effective restorative journey.</p><p>Opportunity to Recover in a Beautiful Destination: Combine your dental treatment with a relaxing recovery in Turkey, enjoying its rich culture, historical sites, and stunning landscapes.</p><h2><span style="color: rgb(27, 28, 29);">The Transformative Power of Restorative Dentistry: Before and After</span></h2><p><span style="color: rgb(27, 28, 29);">The results of restorative dentistry can be truly transformative. Restorative dentistry before and after cases often show dramatic improvements in both the function and aesthetics of a patient's smile. Patients experience:</span></p><p>Restored Chewing Function and Comfort: Regain the ability to eat comfortably and enjoy a wider range of foods, improving nutrition and overall well-being.</p><p>Pain Relief: Eliminate pain and discomfort associated with tooth decay, damage, or missing teeth.</p><p>Improved Speech and Pronunciation: Missing or damaged teeth can affect speech. Restorative dentistry can improve pronunciation and clarity.</p><p>Enhanced Smile Aesthetics and Confidence: Restore a natural-looking and beautiful smile, boosting self-confidence and improving overall appearance.</p><p>Prevention of Further Dental Problems: Addressing dental issues promptly with restorative dentistry helps prevent more serious problems from developing in the future.</p><p><em style="color: rgb(27, 28, 29);">"I was so embarrassed by my broken and missing teeth. Restorative dentistry in Turkey with AZPO Health gave me back my smile and my confidence! The dentists were incredibly skilled, and the whole experience was so well-organized and supportive. Looking at my restorative dentistry before and after photos, I can’t believe the difference. Thank you, AZPO Health!"</em><span style="color: rgb(27, 28, 29);"> – David P., Germany</span></p><h2><span style="color: rgb(27, 28, 29);">AZPO Health: Your Partner in Restoring Your Smile and Oral Health in Turkey</span></h2><p><span style="color: rgb(27, 28, 29);">AZPO Health is dedicated to providing accessible and exceptional restorative dentistry solutions in Turkey. We are your trusted partner for navigating your dental restoration journey, providing expert guidance, connecting you with top-tier clinics and dentists, and ensuring a seamless and rewarding experience focused on your oral health and smile.</span></p><p><span style="color: rgb(27, 28, 29);">Why Choose AZPO Health for Your Restorative Dentistry Journey?</span></p><p>Access to Leading Restorative Dentists in Turkey: We partner with meticulously vetted clinics and dentists renowned for their expertise in all facets of restorative dentistry.</p><p>Experienced and Highly Qualified Dental Professionals: Our network includes specialists and consultant in restorative dentistry, ensuring you receive expert care tailored to your specific needs.</p><p>Personalized and Compassionate Patient Care: We prioritize your individual needs and concerns, providing personalized consultations and dedicated patient coordinator support throughout your entire experience.</p><p>Transparent and Affordable All-Inclusive Packages: We offer clear, all-inclusive pricing for restorative dentistry in turkey, ensuring exceptional value and no hidden costs.</p><p>Dedicated 24/7 Assistance and Support: Our caring patient support team is available around the clock to answer your questions, provide assistance, and ensure your comfort and peace of mind.</p><p><span style="color: rgb(27, 28, 29);">Ready to rebuild your smile and oral health with restorative dentistry in Turkey and AZPO Health?</span></p><p><span style="color: rgb(27, 28, 29);">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your restorative dentistry needs, answer your questions, and help you plan your transformative dental journey to Turkey with AZPO Health. Reclaim your healthy, functional, and confident smile – your journey starts now!</span></p><p><br></p><p><br></p>
         `,
@@ -2254,34 +2339,102 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Straighten Your Smile with Orthodontics in Turkey!"
+          ? "Создайте идеальную улыбку с профессиональной ортодонтией в Турции!"
           : "Straighten Your Smile with Orthodontics in Turkey!",
       descriptionTop:
         locale === "ru"
-          ? "Achieve a healthier, more confident smile with advanced orthodontic care. Whether it’s braces, clear aligners, or retainers, we offer personalized solutions for all ages. Say goodbye to misaligned teeth and bite issues—our treatments bring precision, comfort, and long-term results. Your perfect smile starts here! 🦷"
+          ? "Получите здоровую и уверенную улыбку с помощью современной ортодонтической помощи! Брекеты, прозрачные элайнеры или ретейнеры — мы подберем индивидуальное решение для любого возраста. Забудьте о неровных зубах и проблемах с прикусом: наши процедуры обеспечивают точность, комфорт и стойкий результат. Ваша идеальная улыбка начинается здесь."
           : "Achieve a healthier, more confident smile with advanced orthodontic care. Whether it’s braces, clear aligners, or retainers, we offer personalized solutions for all ages. Say goodbye to misaligned teeth and bite issues—our treatments bring precision, comfort, and long-term results. Your perfect smile starts here! 🦷",
       videoContents: {
         title:
-          locale === "ru" ? "Orthodontics in Turkey" : "Orthodontics in Turkey",
+          locale === "ru" ? "Ортодонтия в Турции" : "Orthodontics in Turkey",
         desc:
           locale === "ru"
-            ? "Seeking affordable orthodontics in Turkey? AZPO Health provides advanced orthodontic treatments tailored to your needs. Correct misalignments, improve your dental health, and enjoy a perfect smile. Learn about the benefits of orthodontics in Turkey and start your journey to a better smile today."
+            ? "Ищете доступную ортодонтию в Турции? AZPO Health предлагает современные методы лечения, адаптированные под ваши индивидуальные потребности. Исправьте прикус, выровняйте зубы и улучшите общее здоровье полости рта. Наслаждайтесь идеальной улыбкой и узнайте больше о преимуществах ортодонтии в Турции — начните путь к уверенной улыбке уже сегодня!"
             : "Seeking affordable orthodontics in Turkey? AZPO Health provides advanced orthodontic treatments tailored to your needs. Correct misalignments, improve your dental health, and enjoy a perfect smile. Learn about the benefits of orthodontics in Turkey and start your journey to a better smile today.",
       },
       subCategoryContent: {
         title:
-          locale === "ru" ? "Orthodontics in Turkey" : "Orthodontics in Turkey",
+          locale === "ru" ? "Ортодонтия в Турции" : "Orthodontics in Turkey",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Orthodontics?"
+            ? "Почему стоит выбрать Турцию для ортодонтического лечения?"
             : "Why Choose Turkey for Orthodontics?",
         content:
           locale === "ru"
-            ? `
-            <p>Turkey has become a popular destination for individuals seeking high-quality and affordable dental care. AZPO Health offers comprehensive orthodontics packages that combine expert treatment with a comfortable and cost-effective experience.</p><h4><strong>Quality and Expertise</strong></h4><p>AZPO Health is committed to providing top-notch orthodontic services using the latest technology and techniques. Our orthodontists are experienced in treating a variety of dental alignment issues, ensuring you receive the best possible care. Many international medical students come to Turkey for internship and training programs.</p><h4><strong>Affordability</strong></h4><p>One of the primary reasons people choose Turkey for orthodontics is the cost. The favorable exchange rates and lower operating costs allow AZPO Health to offer treatments at significantly lower prices compared to Europe and the United States.</p><h4><strong>Comprehensive Packages</strong></h4><p>AZPO Health’s orthodontics packages are designed to provide a seamless and stress-free experience. These packages often include:</p><p>Initial consultation and assessment</p><p>All necessary orthodontic treatments</p><p>Accommodation</p><p>Airport transfers</p><p>Post-treatment care and follow-up appointments</p><h3><strong>Understanding Orthodontics</strong></h3><p>Braces (Traditional Metal, Ceramic)</p><p>What Are Braces?&nbsp;</p><p>Braces are orthodontic devices used to straighten teeth, fix bite issues, and address overcrowding or gaps. By applying continuous pressure, they gradually move teeth into their proper position, improving both appearance and oral health.</p><p>How Do Braces Work?</p><p>Placement:</p><p>Brackets are attached to each tooth using dental adhesive.</p><p>A metal or ceramic archwire is threaded through the brackets to connect them.</p><p>Adjustments:</p><p>Over time, the orthodontist tightens or adjusts the wires to maintain pressure, guiding the teeth into the desired position.</p><p>Rubber bands or additional appliances may be used to correct bite issues.</p><p>Duration:</p><p>Treatment typically takes between 18-24 months, though complex cases may require more time.</p><p><br></p><p>Who Are Braces Suitable For?</p><p>Braces are effective for:</p><p>Children, teenagers, and adults with teeth alignment issues.</p><p>Those with severe problems like overbite, underbite, crossbite, or crowded teeth.</p><p>Individuals who are comfortable with a visible appliance or prefer a cost-effective option.</p><p>Patients committed to regular orthodontist visits for adjustments.</p><p><br></p><p>Advantages of Braces</p><p>Effective for Complex Cases:</p><p>Braces are ideal for correcting severe dental misalignment and bite problems.</p><p>Customizable Appearance:</p><p>Traditional Metal Braces: Highly durable and cost-effective. Colored bands can be added for a fun, personalized look.</p><p>Ceramic Braces: Made of tooth-colored or clear brackets for a more discreet appearance.</p><p>Durable and Reliable:</p><p>Metal and ceramic braces can withstand the forces required to correct significant dental issues.</p><p>Improved Oral Health:</p><p>Properly aligned teeth are easier to clean, reducing the risk of cavities and gum disease.</p><p>Enhanced Functionality:</p><p>Aligning teeth improves chewing, speaking, and overall oral function.</p><p><br></p><p>Conclusion</p><p>Braces, whether traditional metal or ceramic, remain one of the most effective treatments for dental alignment issues. They provide reliable results for people of all ages and are especially beneficial for complex orthodontic needs. While they require a time commitment and regular maintenance, the long-term benefits to oral health, function, and confidence make braces a worthwhile investment.</p><p>If you’re considering braces, consult with an orthodontist to determine the best option based on your dental needs and preferences.</p><p><br></p><h3><strong>Take the Next Step</strong></h3><p>Ready to transform your smile with orthodontics in Turkey? Contact AZPO Health today for a free consultation and personalized quote. Our friendly team is here to answer your questions and guide you through every step of the process. Discover how affordable and effective orthodontics in Turkey can be!</p><p><br></p>
-            `
+            ? `<p dir="ltr">Турция стала популярным направлением для тех, кто ищет высококачественную и доступную стоматологическую помощь. AZPO Health предлагает комплексные ортодонтические услуги, сочетая профессионализм, комфорт и экономичность.</p>
+<h4 dir="ltr">Качество и профессионализм</h4>
+<p dir="ltr">AZPO Health предлагает высококлассные ортодонтические услуги с использованием передовых технологий и современных методик. Наши опытные ортодонты успешно справляются с различными случаями выравнивания зубов, обеспечивая каждому пациенту индивидуальный и качественный подход. Турция также привлекает множество иностранных студентов-медиков, проходящих здесь стажировку и обучение в рамках программ повышения квалификации &mdash; это подтверждает высокий уровень местной стоматологии.</p>
+<h4 dir="ltr">Доступность</h4>
+<p dir="ltr">Одной из главных причин, по которой многие выбирают Турцию для ортодонтического лечения, является доступная стоимость. Благодаря выгодному обменному курсу и низким операционным расходам, AZPO Health может предложить качественное лечение по значительно более низким ценам по сравнению с Европой и США.</p>
+<h4 dir="ltr">Комплексные программы</h4>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ортодонтические программы AZPO Health разработаны для вашего комфорта и спокойствия, обеспечивая весь процесс лечения без стресса. В них, как правило, включены:</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">первичная консультация и обследование;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">все необходимые ортодонтические процедуры;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">проживание;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">трансфер из аэропорта;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">послеоперационный уход и последующие визиты.</p>
+</li>
+</ul>
+<h3 dir="ltr">Понимание ортодонтии</h3>
+<h3 dir="ltr">Брекеты (традиционные металлические, керамические)</h3>
+<p dir="ltr">Что из себя представляют брекеты?&nbsp;</p>
+<p dir="ltr">Брекеты &mdash; это ортодонтические аппараты, используемые для выравнивания зубов, коррекции прикуса и устранения скученности или промежутков между зубами. Они оказывают постоянное давление, постепенно перемещая зубы в правильное положение и улучшая как внешний вид, так и здоровье полости рта.</p>
+<p dir="ltr">Как они работают?</p>
+<p dir="ltr">Установка:</p>
+<p dir="ltr">Брекеты прикрепляются к каждому зубу с помощью специального стоматологического клея. Затем через них проходит металлическая или керамическая дуга, соединяющая все элементы конструкции.</p>
+<p dir="ltr">Корректировка:</p>
+<p dir="ltr">С течением времени ортодонт регулярно регулирует дугу, чтобы сохранить нужное давление и направить зубы в правильное положение. Для дополнительной коррекции прикуса могут использоваться резиновые тяги или другие вспомогательные элементы.</p>
+<p dir="ltr">Продолжительность лечения:</p>
+<p dir="ltr">Обычно курс лечения длится от 18 до 24 месяцев, однако в более сложных случаях может потребоваться больше времени.</p>
+<p dir="ltr">Кому подходят брекеты?</p>
+<p dir="ltr">Брекеты эффективны для:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">детей, подростков и взрослых, которым необходимо выравнивание зубов;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">людей с серьезными проблемами, такими как неправильный прикус, недостаточный прикус, перекрестный прикус или скученность зубов;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">тех, кто предпочитает использовать видимые устройства или ищет более экономичный вариант лечения;</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">пациентов, которые готовы регулярно посещать ортодонта для контроля и коррекции состояния зубов.</p>
+</li>
+</ul>
+<p dir="ltr">Преимущества брекетов</p>
+<p dir="ltr">Эффективны в сложных случаях:</p>
+<p dir="ltr">Брекеты идеально подходят для коррекции серьезного смещения зубов и проблем с прикусом.</p>
+<p dir="ltr">Настраиваемый внешний вид:</p>
+<p dir="ltr">Традиционные металлические брекеты отличаются высокой прочностью и экономичностью. Можно добавить цветные полоски для создания веселого индивидуального образа.</p>
+<p dir="ltr">Керамические брекеты: Изготавливаются из цветных или прозрачных брекетов для придания им более сдержанного внешнего вида.</p>
+<p dir="ltr">Долговечны и надежны:</p>
+<p dir="ltr">Металлические и керамические брекеты выдерживают нагрузку, необходимую для устранения серьезных стоматологических проблем.</p>
+<p dir="ltr">Улучшается здоровье полости рта:</p>
+<p dir="ltr">Правильно выровненные зубы легче чистить, что снижает риск возникновения кариеса и заболеваний десен.</p>
+<p dir="ltr">Расширенная функциональность:</p>
+<p dir="ltr">Выравнивание зубов улучшает жевание, речь и общую функцию полости рта.</p>
+<p dir="ltr">Вывод</p>
+<p dir="ltr">Брекеты, будь то традиционные металлические или керамические, остаются одним из самых эффективных методов лечения проблем с выравниванием зубов. Они обеспечивают надежные результаты для людей всех возрастов и особенно полезны при сложных ортодонтических случаях. Хотя брекеты требуют времени и регулярного ухода, долгосрочные преимущества для здоровья полости рта, функциональности и уверенности в себе делают их выгодным вложением.</p>
+<p dir="ltr">Если вы рассматриваете возможность установки брекетов, проконсультируйтесь с ортодонтом, чтобы выбрать наилучший вариант, учитывая ваши стоматологические особенности и предпочтения.</p>
+<h3 dir="ltr">Откройте новые возможности для своей улыбки</h3>
+<p dir="ltr">Готовы преобразить свою улыбку с помощью ортодонтии в Турции? Свяжитесь с AZPO Health сегодня, чтобы получить бесплатную консультацию и персонализированное предложение. Наша дружная команда готова ответить на все ваши вопросы и провести вас через каждый этап процесса. Узнайте, насколько доступной и эффективной может быть ортодонтия в Турции!</p>
+<p dir="ltr">&nbsp;</p>`
             : `
          <p>Turkey has become a popular destination for individuals seeking high-quality and affordable dental care. AZPO Health offers comprehensive orthodontics packages that combine expert treatment with a comfortable and cost-effective experience.</p><h4><strong>Quality and Expertise</strong></h4><p>AZPO Health is committed to providing top-notch orthodontic services using the latest technology and techniques. Our orthodontists are experienced in treating a variety of dental alignment issues, ensuring you receive the best possible care. Many international medical students come to Turkey for internship and training programs.</p><h4><strong>Affordability</strong></h4><p>One of the primary reasons people choose Turkey for orthodontics is the cost. The favorable exchange rates and lower operating costs allow AZPO Health to offer treatments at significantly lower prices compared to Europe and the United States.</p><h4><strong>Comprehensive Packages</strong></h4><p>AZPO Health’s orthodontics packages are designed to provide a seamless and stress-free experience. These packages often include:</p><ul><li>Initial consultation and assessment</li><li>All necessary orthodontic treatments</li><li>Accommodation</li><li>Airport transfers</li><li>Post-treatment care and follow-up appointments</li></ul><h3><strong>Understanding Orthodontics</strong></h3><p>Braces (Traditional Metal, Ceramic)</p><p>What Are Braces?&nbsp;</p><p>Braces are orthodontic devices used to straighten teeth, fix bite issues, and address overcrowding or gaps. By applying continuous pressure, they gradually move teeth into their proper position, improving both appearance and oral health.</p><p>How Do Braces Work?</p><p>Placement:</p><p>Brackets are attached to each tooth using dental adhesive.</p><p>A metal or ceramic archwire is threaded through the brackets to connect them.</p><p>Adjustments:</p><p>Over time, the orthodontist tightens or adjusts the wires to maintain pressure, guiding the teeth into the desired position.</p><p>Rubber bands or additional appliances may be used to correct bite issues.</p><p>Duration:</p><p>Treatment typically takes between 18-24 months, though complex cases may require more time.</p><p><br></p><p>Who Are Braces Suitable For?</p><p>Braces are effective for:</p><ul><li>Children, teenagers, and adults with teeth alignment issues.</li><li>Those with severe problems like overbite, underbite, crossbite, or crowded teeth.</li><li>Individuals who are comfortable with a visible appliance or prefer a cost-effective option.</li><li>Patients committed to regular orthodontist visits for adjustments.</li></ul><p><br></p><p>Advantages of Braces</p><p>Effective for Complex Cases:</p><p>Braces are ideal for correcting severe dental misalignment and bite problems.</p><p>Customizable Appearance:</p><p>Traditional Metal Braces: Highly durable and cost-effective. Colored bands can be added for a fun, personalized look.</p><p>Ceramic Braces: Made of tooth-colored or clear brackets for a more discreet appearance.</p><p>Durable and Reliable:</p><p>Metal and ceramic braces can withstand the forces required to correct significant dental issues.</p><p>Improved Oral Health:</p><p>Properly aligned teeth are easier to clean, reducing the risk of cavities and gum disease.</p><p>Enhanced Functionality:</p><p>Aligning teeth improves chewing, speaking, and overall oral function.</p><p><br></p><p>Conclusion</p><p>Braces, whether traditional metal or ceramic, remain one of the most effective treatments for dental alignment issues. They provide reliable results for people of all ages and are especially beneficial for complex orthodontic needs. While they require a time commitment and regular maintenance, the long-term benefits to oral health, function, and confidence make braces a worthwhile investment.</p><p>If you’re considering braces, consult with an orthodontist to determine the best option based on your dental needs and preferences.</p><p><br></p><h3><strong>Take the Next Step</strong></h3><p>Ready to transform your smile with orthodontics in Turkey? Contact AZPO Health today for a free consultation and personalized quote. Our friendly team is here to answer your questions and guide you through every step of the process. Discover how affordable and effective orthodontics in Turkey can be!</p><p><br></p>
         `,
@@ -2296,38 +2449,164 @@ export const subCategoryHandler = (
       id: 0,
       title:
         locale === "ru"
-          ? "Restore Your Smile and Confidence with Oral Surgery in 2025"
+          ? "Восстановите свою улыбку и уверенность с помощью оральной хирургии в 2025 году"
           : "Restore Your Smile and Confidence with Oral Surgery in 2025",
       descriptionTop:
         locale === "ru"
-          ? "From tooth extractions to jaw corrections, our expert oral surgery services restore your smile’s health and function with precision and care. Whether it’s wisdom teeth removal, dental implants, or corrective procedures, we ensure a safe, comfortable, and effective experience. Your oral health is in expert hands!"
+          ? "От удаления зубов до коррекции челюсти – наши услуги в области хирургической стоматологии помогают восстановить здоровье и функциональность вашей улыбки с максимальной точностью и заботой. Будь то удаление зубов мудрости, установка имплантов или восстановительные процедуры, мы обеспечиваем безопасное, комфортное и эффективное лечение. Ваше здоровье – в надежных и профессиональных руках."
           : "From tooth extractions to jaw corrections, our expert oral surgery services restore your smile’s health and function with precision and care. Whether it’s wisdom teeth removal, dental implants, or corrective procedures, we ensure a safe, comfortable, and effective experience. Your oral health is in expert hands!",
       videoContents: {
         title:
           locale === "ru"
-            ? "Discovering Affordable Oral Surgery in Turkey in 2025"
+            ? "Доступная хирургическая стоматология в Турции с AZPO Health – путь к здоровой и уверенной улыбке"
             : "Discovering Affordable Oral Surgery in Turkey in 2025",
         desc:
           locale === "ru"
-            ? "Worried about the cost of oral surgery? AZPO Health provides access to world-class oral surgeons in Turkey, combining cutting-edge techniques with significant savings. Learn how you can achieve the smile you've always wanted without breaking the bank, with personalized treatment plans designed for your unique needs."
+            ? "Если вас останавливает высокая стоимость лечения, пора открыть для себя новые возможности. AZPO Health предоставляет доступ к опытным челюстно-лицевым хирургам в Турции, где современные технологии сочетаются с разумными ценами. Индивидуальные планы лечения, внимательное сопровождение и забота о вашем комфорте – все это поможет вам обрести желаемую улыбку без лишних затрат и стресса."
             : "Worried about the cost of oral surgery? AZPO Health provides access to world-class oral surgeons in Turkey, combining cutting-edge techniques with significant savings. Learn how you can achieve the smile you've always wanted without breaking the bank, with personalized treatment plans designed for your unique needs.",
       },
       subCategoryContent: {
         title:
           locale === "ru"
-            ? "Orthodontics in Turkey"
+            ? "Хирургическое лечение полости рта"
             : "Oral surgery treatments",
       },
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Oral Surgery?"
+            ? "Почему стоит выбрать Турцию для хирургической стоматологии?"
             : "Why Choose Turkey for Oral Surgery?",
         content:
           locale === "ru"
-            ? `
-            <p>Turkey has become a leading destination for medical tourism, especially for procedures like oral surgery. Several factors contribute to its popularity:</p><p><strong>Affordability</strong>: The cost of oral surgery in Turkey is significantly lower compared to Europe, the UK, and the United States. Lower labor costs and favorable exchange rates make high-quality dental care accessible.</p><p><strong>Quality</strong>: Turkish dental clinics and hospitals are equipped with modern technology and experienced dentists. Many facilities cater to international patients and adhere to high standards of care.</p><p><strong>Comprehensive Packages</strong>: AZPO Health offers all-inclusive packages that cover treatment, accommodation, transfers, and post-operative care, ensuring a hassle-free experience.</p><p><strong>Tourism</strong>: Combining treatment with a vacation is a significant draw. Patients can recover while exploring Turkey’s rich cultural heritage and historical sites. Istanbul, Antalya, and Alanya offer a blend of history, culture, and natural beauty.</p><p><strong>How It Works:</strong></p><p>Oral surgery (or maxillofacial surgery) covers a wide range of procedures designed to treat and correct problems related to the jaws, teeth, and face. These procedures can include tooth extractions (including wisdom teeth), dental implants, bone reconstruction, treatment of jaw injuries, bite correction (orthognathic surgery), infection treatment, and correction of congenital anomalies such as cleft lip and palate. Diagnostics involve X-rays, CT scans, and other imaging methods that help the surgeon plan the operation and choose the appropriate anesthesia method: local or general.</p><p><strong>Advantages:</strong></p><p>Maxillofacial surgery addresses functional issues and can significantly improve appearance. For example, dental implants help replace missing teeth, restoring patients’ confidence and normal chewing function. Jaw injury treatment or correction of congenital defects helps restore facial symmetry and normal anatomical structures. Modern surgical methods are minimally invasive, reducing the risk of complications and speeding up recovery.</p><p><strong>Who It’s For:</strong></p><p>Maxillofacial surgery is recommended for patients with various problems, such as improper eruption of wisdom teeth, bone and tissue diseases (like cysts or infections), jaw injuries, congenital defects like cleft lip and palate, and malocclusions requiring surgical correction. Additionally, patients needing dental implants or preparation for orthodontic treatment may also benefit from surgery.</p><p><strong>Considerations:</strong></p><p>Before surgery, patients must undergo a full examination, including medical history assessment and imaging (X-ray or CT scan) to evaluate overall health and rule out contraindications. It’s essential to follow pre- and post-operative instructions. After surgery, special oral care, temporary dietary changes (such as soft or liquid foods), and rest are needed to speed up recovery. Healing can take from several days to several weeks, depending on the complexity of the surgery.</p><p><br></p><p><br></p><h3><strong>Types of Oral Surgery Available</strong></h3><p>AZPO Health provides access to a wide range of oral and maxillofacial surgical procedures:</p><p><strong>Dental Implants</strong>: Dental implants are a popular solution for replacing missing teeth. They involve placing a titanium implant into the jawbone, which then fuses with the bone to provide a stable base for a replacement tooth or bridge.</p><p class="ql-indent-1"><strong>Single Tooth Implants</strong>: Used to replace a single missing tooth.</p><p class="ql-indent-1"><strong>Implant Bridges</strong>: Suitable for patients with multiple missing teeth along the same line.</p><p class="ql-indent-1"><strong>All-on-4/All-on-6</strong>: These techniques involve placing four or six implants to support a full arch of teeth, offering a stable and long-term alternative to dentures.</p><p><strong>Maxillofacial Surgery</strong>: This includes a variety of procedures related to the face, jaw, and mouth.</p><p class="ql-indent-1"><strong>Corrective Jaw Surgery (Orthognathic Surgery)</strong>: Corrects irregularities of the jaw and facial bones to improve bite alignment, speech, and facial appearance.</p><p class="ql-indent-1"><strong>Facial Trauma Reconstruction</strong>: Repairs damage to the soft tissues and bones of the face resulting from accidents or injuries.</p><p class="ql-indent-1"><strong>TMJ Surgery</strong>: Treats temporomandibular joint disorders that cause jaw pain and restricted movement.</p><p class="ql-indent-1"><strong>Cyst Removal</strong>: Removal of cysts that form in the mouth or under the skin.</p><p><strong>Tooth Extractions</strong>: Simple and surgical extractions to remove damaged or problematic teeth.</p><p><strong>Bone Grafting</strong>: This procedure is performed when there is insufficient bone in the jaw to support dental implants. Bone grafting helps to increase bone volume and density, creating a stable foundation for implants.</p><p><strong>Sinus Lift</strong>: A sinus lift is often required when placing implants in the upper jaw, particularly if there is bone loss. The procedure involves lifting the sinus membrane to create space for additional bone grafting material.</p><p><strong>Cosmetic Procedures</strong>:</p><p class="ql-indent-1"><strong>Rhinoplasty</strong>: Nose surgery to improve its appearance.</p><p class="ql-indent-1"><strong>Otoplasty</strong>: Ear surgery to correct the shape, position, or proportion of the ears.</p><p class="ql-indent-1"><strong>Blepharoplasty</strong>: Eyelid surgery to improve the appearance of the eyelids.</p><p class="ql-indent-1"><strong>Chin Augmentation</strong>: Enhances the balance and proportion of the face.</p><p><strong>Other Treatments</strong>:</p><p class="ql-indent-1"><strong>Root Canal Treatment</strong>: To save a damaged or infected tooth.</p><p class="ql-indent-1"><strong>Frenectomy</strong>: A procedure to release a tight frenulum (the tissue connecting the tongue or lip to the gums).</p><p class="ql-indent-1"><strong>Apicoectomy</strong>: Surgical removal of the root tip to treat infection.</p><h3><strong>Methods Used in Oral Surgery</strong></h3><p>Oral surgeons employ various advanced techniques to ensure successful outcomes:</p><p><strong>3D Imaging</strong>: Advanced imaging techniques like CT scans help in precise treatment planning for dental implants and maxillofacial surgeries.</p><p><strong>CAD/CAM Technology</strong>: Computer-Aided Design and Computer-Aided Manufacturing (CAD/CAM) are used to create accurate dental restorations, such as crowns and bridges.</p><p><strong>Laser Surgery</strong>: Lasers are used for soft tissue procedures, offering precision and reduced bleeding.</p><p><strong>Piezosurgery</strong>: This technique uses ultrasonic vibrations for precise bone cutting, minimizing damage to surrounding tissues.</p><h3><strong>Benefits of Each Method</strong></h3><p>Each oral surgery method offers unique benefits:</p><p><strong>Dental Implants</strong>: Provide a permanent and stable solution for missing teeth, improving chewing ability and enhancing aesthetics.</p><p><strong>Maxillofacial Surgery</strong>: Corrects functional and aesthetic issues, improving quality of life.</p><p><strong>Bone Grafting and Sinus Lift</strong>: Increase the success rate of dental implants by providing a solid foundation.</p><p><strong>Cosmetic Procedures</strong>: Enhance facial appearance, boosting self-esteem and confidence.</p><p><strong>Advanced Technology</strong>: Ensures precision, reduces recovery time, and improves treatment outcomes.</p><p><br></p><p><strong>Conclusion</strong>:</p><p>Modern oral surgery offers reliable solutions for many maxillofacial issues. With individualized approaches and accurate diagnostics, patients can expect effective restoration of oral function and aesthetic improvements. Following the surgeon’s recommendations before and after surgery promotes successful recovery and optimal results.</p><p><strong>Why Choose AZPO Health?</strong></p><p>AZPO Health specializes in providing high-quality medical tourism services in Turkey. Here’s why you should choose us:</p><p><strong>Expertise</strong>: We partner with experienced and board-certified oral surgeons who have a proven track record of successful outcomes.</p><p><strong>Comprehensive Care</strong>: From the initial consultation to post-operative follow-up, we provide complete support and guidance.</p><p><strong>State-of-the-Art Facilities</strong>: Our partner clinics are equipped with the latest technology, ensuring you receive the best possible care.</p><p><strong>Affordable Pricing</strong>: We offer competitive pricing and transparent cost breakdowns, with no hidden surprises.</p><p><strong>Personalized Treatment Plans</strong>: We tailor treatment plans to your specific needs and goals, ensuring optimal results.</p><h3><strong>Take the Next Step</strong></h3><p>Ready to transform your oral health and smile? Contact AZPO Health today for a free consultation and personalized quote. Discover how affordable and accessible world-class oral surgery in Turkey can be.</p><p><br></p>
-            `
+            ? `<p dir="ltr">Турция уверенно занимает лидирующие позиции в сфере медицинского туризма, и хирургическая стоматология &ndash; не исключение. Вот почему пациенты со всего мира выбирают лечение именно у нас:</p>
+<p dir="ltr">&bull; Выгодная стоимость без потери качества: цены на хирургическое лечение в Турции заметно ниже, чем в Европе, Великобритании или США &ndash; благодаря более доступным расходам и благоприятному курсу валют. Это позволяет получить первоклассную помощь по разумной цене.</p>
+<p dir="ltr">&bull; Современные технологии и опытные врачи: клиники, с которыми работает AZPO Health, оснащены передовым оборудованием и соответствуют международным стандартам. Вас будут лечить квалифицированные стоматологи с многолетним опытом и вниманием к деталям.</p>
+<p dir="ltr">&bull; Удобные пакеты &laquo;все включено&raquo;: мы предлагаем комплексные решения, включающие не только лечение, но и проживание, трансферы, а также полное сопровождение до и после процедуры &ndash; чтобы ваше путешествие было комфортным и спокойным.</p>
+<p dir="ltr">&bull; Приятное восстановление на фоне красоты Турции: после лечения вы сможете отдохнуть в одном из живописных уголков страны. Стамбул, Анталья, Аланья и другие города радуют гостей богатой историей, мягким климатом и чарующими пейзажами.</p>
+<p dir="ltr">Как проходит процедура:</p>
+<p dir="ltr">Челюстно-лицевая хирургия охватывает широкий спектр операций, направленных на восстановление здоровья и функции зубов, челюстей и мягких тканей лица. В их числе &ndash; удаление зубов (включая зубы мудрости), установка дентальных имплантов, костная пластика, лечение травм челюстей, ортогнатические операции для коррекции прикуса, устранение инфекций, а также хирургическая коррекция врождённых аномалий, таких как расщелина губы и неба. Перед операцией проводится тщательная диагностика с использованием рентгена, КТ и других методов визуализации. Это помогает врачу точно спланировать ход вмешательства и подобрать оптимальный тип анестезии &ndash; местную или общую &ndash; в зависимости от сложности процедуры и индивидуальных особенностей пациента.</p>
+<p dir="ltr">Преимущества:</p>
+<p dir="ltr">Челюстно-лицевая хирургия не только решает функциональные проблемы, но и значительно улучшает внешний вид. Например, дентальные импланты позволяют заменить утраченные зубы, восстанавливая уверенность в своей улыбке и нормальную жевательную функцию. Лечение травм челюстей или коррекция врожденных дефектов способствует восстановлению гармонии лица и естественных анатомических структур. Современные хирургические методы минимизируют инвазивность, что снижает риск осложнений и ускоряет процесс восстановления.</p>
+<p dir="ltr">Для кого предназначена челюстно-лицевая хирургия:</p>
+<p dir="ltr">Челюстно-лицевая хирургия идеально подходит для пациентов с различными проблемами, такими как неправильное прорезывание зубов мудрости, заболевания костей и тканей (например, кисты или инфекции), травмы челюстей, а также врожденные дефекты, такие как расщелина губы и нёба. Также хирургическое вмешательство необходимо при нарушениях прикуса, требующих коррекции, а также для пациентов, нуждающихся в зубных имплантах или подготовке к ортодонтическому лечению.</p>
+<p dir="ltr">Особенности подготовки:</p>
+<p dir="ltr">Перед операцией пациенту предстоит пройти полное обследование, включая анализ медицинской истории и проведение необходимых снимков (рентген или КТ), чтобы оценить общее состояние здоровья и исключить возможные противопоказания. Важно строго следовать рекомендациям до и после операции. После хирургического вмешательства потребуется особый уход за полостью рта, переход на мягкую или жидкую пищу, а также полноценный отдых для ускоренного восстановления. Заживление может занять от нескольких дней до нескольких недель в зависимости от сложности процедуры.</p>
+<h3 dir="ltr">Типы доступных стоматологических операций:</h3>
+<p dir="ltr">AZPO Health предоставляет доступ к широкому спектру стоматологических и челюстно-лицевых хирургических процедур:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные импланты: популярное решение для замены утраченных зубов. Они включают установку титанового импланта в челюстную кость, которая срастается с имплантом, создавая стабильную основу для заменяющего зуба или моста.</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Импланты для одного зуба: используются для замены одного утраченного зуба.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Имплантные мосты: подходят для пациентов с несколькими утратами зубов в одной линии.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">All-on-4/All-on-6: эти методы включают установку четырёх или шести имплантов для поддержки полного ряда зубов, предлагая стабильную и долговечную альтернативу съемным протезам.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Челюстно-лицевая хирургия: включает разнообразные процедуры, связанные с лицом, челюстью и ртом.</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Коррекция челюсти (ортогнатическая хирургия): исправляет аномалии челюстей и костей лица для улучшения прикуса, речи и внешнего вида.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Реконструкция после травм лица: восстановление повреждений мягких тканей и костей лица после аварий или травм.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Операция на височно-нижнечелюстном суставе (ВНЧС): лечение расстройств височно-нижнечелюстного сустава, которые вызывают боль в челюсти и ограничение движений.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Удаление кист: образующихся в полости рта или под кожей.</p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удаление зубов: хирургическое удаление поврежденных или проблемных зубов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Костная пластика: процедура, выполняемая при недостаточном объеме костной ткани в челюсти для поддержания зубных имплантов. Костная пластика помогает увеличить объем и плотность кости, создавая стабильную основу для имплантов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лифт синуса: часто требуется при установке имплантов в верхнюю челюсть, особенно если есть потеря кости. Процедура включает в себя приподнимание синусной мембраны, чтобы создать пространство для введения дополнительного материала для костной реконструкции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Другие процедуры:</p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Лечение корневых каналов: сохранение поврежденного или инфицированного зуба.</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Френэктомия: процедура для освобождения затянутой уздечки (ткани, соединяющей язык или губу с деснами).</p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Апикэктомия: хирургическое удаление верхушки корня для лечения инфекции.</p>
+</li>
+</ul>
+</ul>
+<h3 dir="ltr">Методы, применяемые в челюстно-лицевой хирургии</h3>
+<p dir="ltr">Стоматологи-хирурги используют передовые методы для обеспечения точности и успешности операций:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">3D-имагинг: современные технологии, такие как КТ-сканирование, позволяют точно планировать лечение, включая установку зубных имплантов и челюстно-лицевые операции.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Технология CAD/CAM: компьютерное проектирование и производство (CAD/CAM) используются для создания высокоточных зубных восстановлений, таких как коронки и мосты.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лазерная хирургия: лазеры применяются для работы с мягкими тканями, обеспечивая максимальную точность и минимальное кровотечение.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пьезохирургия: этот метод использует ультразвуковые вибрации для аккуратной резки костной ткани, сводя к минимуму повреждения окружающих тканей.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Преимущества различных методов</h3>
+<p dir="ltr">Каждый метод челюстно-лицевой хирургии предлагает свои уникальные преимущества:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные импланты: они предоставляют надежное и долговечное решение для замены утраченных зубов, восстанавливая функцию жевания и улучшая эстетический вид.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Челюстно-лицевая хирургия: помогает устранить функциональные и эстетические проблемы, значительно улучшая качество жизни пациента.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Костная пластика и синус-лифтинг: создают прочную основу для успешной установки зубных имплантов, что повышает вероятность успешного результата.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Косметические процедуры: улучшают внешний вид лица, способствуя повышению самооценки и уверенности в себе.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные технологии: обеспечивают точность процедур, сокращают время восстановления и улучшают общие результаты лечения.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Заключение:<br>Современная челюстно-лицевая хирургия предоставляет надежные и эффективные решения для множества проблем в области челюстно-лицевой области. Благодаря индивидуальному подходу и точной диагностике, пациенты могут ожидать восстановление нормальной функции полости рта и улучшение внешнего вида. Соблюдение рекомендаций врача до и после операции способствует успешному восстановлению и гарантирует наилучшие результаты.</p>
+<p dir="ltr">Почему выбирают AZPO Health?</p>
+<p dir="ltr">AZPO Health предлагает высококачественные услуги медицинского туризма в Турции. Вот почему стоит выбрать нас:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Экспертность: мы сотрудничаем с опытными и сертифицированными челюстно-лицевыми хирургами, обладающими успешным опытом в лечении сложных случаев.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полный спектр услуг: мы обеспечиваем поддержку на каждом этапе &ndash; от первичной консультации до послепроцедурного наблюдения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные технологии: наши партнерские клиники оснащены новейшими технологиями, что позволяет предоставлять лучший уход нашим пациентам.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступность: мы предлагаем конкурентоспособные цены и полную прозрачность в расчетах, без скрытых дополнительных расходов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальные планы лечения: мы разрабатываем персонализированные планы лечения, соответствующие вашим уникальным потребностям и целям, чтобы обеспечить максимально эффективные результаты.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Готовы сделать шаг навстречу здоровой и красивой улыбке?</h3>
+<p dir="ltr">Свяжитесь с AZPO Health сегодня, чтобы получить бесплатную консультацию и персонализированное предложение. Узнайте, как доступна высококачественная челюстно-лицевая хирургия в Турции, и как можно достичь идеальной улыбки с помощью нашего профессионального подхода и индивидуального плана лечения.</p>
+<p dir="ltr">&nbsp;</p>`
             : `
          <p dir="ltr">Turkey has become a leading destination for medical tourism, especially for procedures like oral surgery. Several factors contribute to its popularity:</p>
 <ul>
@@ -14161,160 +14440,165 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Laminate Veneers in Turkey: Achieve Your Dream Smile with Affordable Excellence at AZPO Health"
+          ? "Ламинированные виниры в Турции: реализуйте мечту о безупречной улыбке с доступным качеством от AZPO Health"
           : "Laminate Veneers in Turkey: Achieve Your Dream Smile with Affordable Excellence at AZPO Health",
       descriptionTop:
         locale === "ru"
-          ? "Seeking a subtle yet transformative smile enhancement? Laminate veneers in Turkey have become a highly popular cosmetic dentistry option, offering a minimally invasive path to a flawless smile at exceptional prices. Discover how AZPO Health connects you with expert dentists and all-inclusive packages to achieve the radiant, confident smile you've always wanted with beautiful laminate veneers."
+          ? "Если вы мечтаете о том, чтобы ваша улыбка стала еще более привлекательной, ламинированные виниры в Турции могут стать идеальным решением. Это минимально инвазивная и высокоэффективная косметическая процедура, которая позволяет достичь впечатляющих результатов по разумной цене. AZPO Health предоставляет вам возможность обратиться к опытным стоматологам и выбрать полный пакет услуг, чтобы воплотить свою мечту об идеальной улыбке с помощью стильных и качественных виниров."
           : "Seeking a subtle yet transformative smile enhancement? Laminate veneers in Turkey have become a highly popular cosmetic dentistry option, offering a minimally invasive path to a flawless smile at exceptional prices. Discover how AZPO Health connects you with expert dentists and all-inclusive packages to achieve the radiant, confident smile you've always wanted with beautiful laminate veneers.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Perfect Smile" : "Natural Aesthetics",
+            title: locale === "ru" ? "Естественная эстетика" : "Natural Aesthetics",
             desc:
               locale === "ru"
-                ? "Mimics natural teeth with ideal color reflection and transparency for flawless aesthetics"
+                ? "подчёркивают цвет и форму зубов для идеальной улыбки."
                 : "Enhance tooth color, shape, and alignment for a flawless smile.",
           },
           {
             title:
-              locale === "ru" ? "Lasting Beauty" : "Durable & Long-Lasting",
+              locale === "ru" ? "Долговечность" : "Durable & Long-Lasting",
             desc:
               locale === "ru"
-                ? "Highly durable ceramic material with stable coloring that maintains appearance over time"
+                ? "прочны, устойчивы к износу и сохраняют внешний вид."
                 : "Strong materials that resist wear and discoloration",
           },
           {
-            title: locale === "ru" ? "Gentle Treatment" : "Minimally Invasive",
+            title: locale === "ru" ? "Минимальное вмешательство" : "Minimally Invasive",
             desc:
               locale === "ru"
-                ? "Minimally invasive procedure that preserves natural tooth structure"
+                ? "сохраняется естественная структура зуба."
                 : "Preserves most of the natural tooth structure.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Who It’s For" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "E-Max veneers are ideal for individuals who wish to enhance the aesthetics of their smile, particularly those with discolored, uneven, or damaged front teeth. They are perfect for those looking for a durable, natural-looking solution that improves both function and appearance. Individuals seeking a minimally invasive treatment that preserves the natural tooth structure would benefit from E-Max veneers."
+                ? "Ламинированные виниры (или листовые виниры) – это тонкие и изысканные покрытия, которые приклеиваются к передней поверхности зубов. Обычно они изготавливаются из керамики или композитных материалов, создавая гармоничное сочетание красоты и естественности. Эти виниры не только придают зубам идеальную форму и оттенок, но и становятся идеальным решением для создания безупречной, естественно сияющей улыбки."
                 : "Laminate veneers (or leaf veneers) are thin, aesthetic coverings applied to the front of teeth, typically made from ceramic or composite materials. They enhance the color, shape, and appearance of teeth, offering an easy way to achieve a flawless and natural-looking smile.",
           },
           {
-            header: locale === "ru" ? "Важные аспекты" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Консультация и планирование: стоматолог внимательно осматривает ваши зубы и предлагает наиболее подходящий вариант виниров. Подготовка: для идеальной посадки винира с зуба аккуратно снимается небольшое количество эмали. Установка: виниры надежно фиксируются на зубах с помощью прочного клеящего вещества. Финальная коррекция: стоматолог тщательно проверяет, чтобы виниры идеально подходили и выглядели естественно, создавая гармонию в вашей улыбке."
                 : "Consultation & Planning: The dentist evaluates your teeth and recommends the best veneer option. Preparation: A small amount of enamel is removed for a proper fit. Customization: Impressions are taken, and the veneers are custom-designed for a natural look. Placement: Veneers are bonded to your teeth with a strong adhesive. Final Adjustments: The dentist ensures the fit and appearance are perfect.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It’s For",
+            header: locale === "ru" ? "Кому это подходит" : "Who It’s For",
             desc:
               locale === "ru"
-                ? "Consultation & Planning: The dentist evaluates your teeth and discusses your cosmetic goals. Based on this assessment, the dentist will recommend E-Max veneers for an ideal smile."
+                ? "Ламинированные виниры – это идеальное решение для тех, кто хочет улучшить эстетический вид своей улыбки. Особенно если передние зубы имеют изменения цвета, неровности или повреждения. Этот метод подходит тем, кто ищет долговечное, естественное решение для улучшения не только внешнего вида, но и функциональности зубов. Ламинированные виниры – минимально инвазивная процедура, которая сохраняет натуральную структуру зубов, что делает их отличным выбором для людей, стремящихся к сохранению здоровья зубов."
                 : " Laminate veneers are ideal for individuals who wish to enhance the aesthetics of their smile, particularly those with discolored, uneven, or damaged front teeth. They are perfect for those looking for a durable, natural-looking solution that improves both function and appearance. Individuals seeking a minimally invasive treatment that preserves the natural tooth structure would benefit from Laminate veneers.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Do veneers ruin my teeth?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "No, only a thin layer of enamel is removed for bonding",
+          question : locale === "ru" ? "Могут ли виниры повредить мои зубы?" : "Do veneers damage my teeth?",
+          answer : locale === "ru" ? "Нет, только тонкий слой эмали удаляется для их надёжного крепления." : "No, only a thin layer of enamel is removed for bonding"
         },
         {
-          question: locale === "ru" ? "" : "Are veneers permanent?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "They last 10–15 years with care, may need replacement",
+          question : locale === "ru" ? "Долговечны ли виниры?" : "Are veneers permanent?",
+          answer : locale === "ru" ? "Они служат 10–15 лет при должном уходе, но могут потребовать замены." : "They last 10–15 years with care, may need replacement"
         },
         {
-          question: locale === "ru" ? "" : "Can I whiten veneers?",
-          answer:
-            locale === "ru" ? "" : "No, veneers don’t respond to whitening",
+          question : locale === "ru" ? "Могу ли я осветлить виниры?" : "Can I whiten veneers?",
+          answer : locale === "ru" ? "Нет, виниры не поддаются отбеливанию." : "No, veneers don’t respond to whitening"
         },
         {
-          question: locale === "ru" ? "" : "Are they fragile?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "They’re strong but can chip – avoid using teeth as tools",
+          question : locale === "ru" ? "Они хрупкие?" : "Are they fragile?",
+          answer : locale === "ru" ? "Они достаточно прочные, но при чрезмерной нагрузке могут повредиться." : "They’re strong but can chip – avoid using teeth as tools"
         },
         {
-          question: locale === "ru" ? "" : "Will they look natural?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, modern veneers mimic natural tooth translucency",
+          question : locale === "ru" ? "Будут ли они выглядеть естественно?" : "Will they look natural?",
+          answer : locale === "ru" ? "Да, современные виниры имитируют естественную прозрачность зубов." : "Yes, modern veneers mimic natural tooth translucency"
         },
         {
-          question: locale === "ru" ? "" : "Do veneers change color over time?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "No, but pigmented foods and drinks can change the color of natural teeth.",
-        },
+          question : locale === "ru" ? "Меняют ли виниры цвет со временем?" : "Do veneers change color over time?",
+          answer : locale === "ru" ? "Нет, но красящие продукты и напитки могут повлиять на оттенок соседних натуральных зубов." : "No, but pigmented foods and drinks can change the color of natural teeth."
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Avoid biting hard foods with front teeth (like apples)",
-        locale === "ru"
-          ? ""
-          : "Maintain oral hygiene but use non-abrasive toothpaste",
-        locale === "ru" ? "" : "Use a night guard if you grind your teeth",
-        locale === "ru"
-          ? ""
-          : "Avoid staining foods and drinks for first 48 hours",
-        locale === "ru" ? "" : "Follow up for bonding check if needed",
-        locale === "ru" ? "" : "Avoid excessively hot and cold foods.",
-        locale === "ru"
-          ? ""
-          : "Avoid using whitening products after the procedure.",
-        locale === "ru" ? "" : "Avoid tobacco products.",
-        locale === "ru" ? "" : "Stay away from acidic and colorful foods.",
-        locale === "ru"
-          ? ""
-          : "Use a mouthguard during physical activities to protect your veneers.",
+        locale === "ru" ? "Избегайте укусов твёрдых продуктов передними зубами (например, яблок)." : "Avoid biting hard foods with front teeth (like apple)",
+        locale === "ru" ? "Соблюдайте гигиену полости рта, используя неабразивную зубную пасту." : "Maintain oral hygiene but use non-abrasive toothpaste",
+        locale === "ru" ? "Если вы скрипите зубами во сне, обязательно носите ночную капу." : "Use a night guard if you grind your teeth",
+        locale === "ru" ? "В течение первых 48 часов избегайте продуктов и напитков, способных окрашивать зубы." : "Avoid staining foods and drinks for first 48 hours",
+        locale === "ru" ? "При необходимости проходите контрольные осмотры для проверки сцепления виниров." : "Follow up for bonding check if needed",
+        locale === "ru" ? "Избегайте слишком горячей или холодной пищи." : "Avoid excessively hot and cold foods.",
+        locale === "ru" ? "Не используйте отбеливающие средства после установки виниров." : "Avoid using whitening products after the procedure.",
+        locale === "ru" ? "Откажитесь от табачных изделий." : "Avoid tobacco products.",
+        locale === "ru" ? "Ограничьте употребление кислых продуктов и напитков." : "Stay away from acidic foods/beverages.",
+        locale === "ru" ? "При занятиях спортом используйте защитную капу, чтобы уберечь виниры от повреждений." : "Use a mouthguard during physical activities to protect your veneers."
       ],
       preList: [
-        locale === "ru"
-          ? ""
-          : "Ensure oral health is stable (no untreated decay or gum disease)",
-        locale === "ru"
-          ? ""
-          : "Discuss color, shape, and smile design with your dentist",
-        locale === "ru"
-          ? ""
-          : "Expect minor enamel removal – no major fasting required",
-        locale === "ru"
-          ? ""
-          : "Stop smoking for better adhesion and long-term aesthetics",
-        locale === "ru"
-          ? ""
-          : "Clean your teeth. Inform if you have tooth sensitivity",
+        locale === "ru" ? "Убедитесь, что полость рта в здоровом состоянии - нет кариеса или заболеваний дёсен." : "Ensure oral health is stable (no untreated decay or gum disease)",
+        locale === "ru" ? "Обсудите с врачом желаемый цвет, форму и общий дизайн улыбки." : "Discuss color, shape, and smile design with your dentist",
+        locale === "ru" ? "Будьте готовы к незначительному удалению эмали - процедура не требует длительного голодания." : "Expect minor enamel removal – no major fasting required",
+        locale === "ru" ? "Откажитесь от курения для лучшей фиксации виниров и сохранения эстетики на долгий срок." : "Stop smoking for better adhesion and long-term aesthetics",
+        locale === "ru" ? "Обязательно сообщите врачу, если у вас есть повышенная чувствительность зубов." : "Inform if you have tooth sensitivity"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "E-Max veneers provide an excellent solution for individuals looking to improve the aesthetics of their smile with a durable and natural-looking material. Their aesthetic perfection, combined with durability and gum compatibility, makes them a popular choice for front tooth restorations. With proper care and maintenance, E-Max veneers offer long-lasting results that enhance both the appearance and function of your smile."
+            ? "Ламинированные виниры – это прекрасное решение для тех, кто стремится улучшить эстетику своей улыбки с помощью долговечного и естественного материала. Их способность создавать идеальный внешний вид, сочетание прочности и совместимости с деснами делают виниры идеальным выбором для восстановления передних зубов. С правильным уходом, ламинированные виниры обеспечат вам не только яркую улыбку, но и долгосрочные, естественные результаты."
             : "Laminate veneers provide an excellent solution for individuals looking to improve the aesthetics of their smile with a durable and natural-looking material. Their aesthetic perfection, combined with durability and gum compatibility, makes them a popular choice for front tooth restorations. With proper care and maintenance, Laminate veneers offer long-lasting results that enhance both the appearance and function of your smile.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Laminate Veneers: The Art of Subtle Smile Perfection"
+            ? "Ламинированные виниры: искусство создания безупречной улыбки"
             : "Laminate Veneers: The Art of Subtle Smile Perfection",
         content:
           locale === "ru"
-            ? `
-         
-          `
+            ? `<p dir="ltr">Ламинированные виниры, также известные как фарфоровые, представляют собой ультратонкие оболочки, выполненные из материала, идеально подобранного под цвет ваших зубов. Эти виниры прочно фиксируются на передней поверхности зубов, предлагая минимальное вмешательство и эффективное решение для исправления множества косметических недостатков &ndash; от сколов и трещин до пятен, небольших неровностей и промежутков. Выбор ламинированных виниров в Турции с AZPO Health &ndash; это возможность получить непревзойденное мастерство и точность по доступной цене.</p>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h2 dir="ltr">Преимущества ламинированных виниров в Турции с ZAPO Health:</h2>
+<p dir="ltr">Выбирая ламинированные виниры в Турции с AZPO Health, вы открываете для себя целый мир возможностей для преобразования вашей улыбки:</p>
+<p dir="ltr">&bull; Тонкое, но заметное улучшение улыбки: ламинированные виниры дарят вашей улыбке естественное, но значительное преображение. Они совершенствуют цвет, форму, размер и выравнивание зубов, создавая гармоничный и привлекательный результат, который выглядит натурально и не искусственно.</p>
+<p dir="ltr">&bull; Минимальное вмешательство: в отличие от коронок, ламинированные виниры требуют лишь незначительного удаления эмали, сохраняя большую часть вашей натуральной зубной структуры. Это более щадящий и консервативный подход к улучшению вашей улыбки.</p>
+<p dir="ltr">&bull; Устойчивость к пятнам и долговечная красота: ламинированные виниры из высококачественного фарфора или композитных материалов обладают отличной устойчивостью к пятнам от кофе, чая, вина и других привычных агрессоров. Они сохраняют свой первозданный вид на протяжении многих лет, обеспечивая долгосрочный эффект.</p>
+<p dir="ltr">&bull; Уверенность и самооценка: преобразившаяся улыбка с ламинированными винирами значительно повышает уверенность в себе, улучшая как личные, так и профессиональные отношения.</p>
+<p dir="ltr">Доступная стоимость ламинированных виниров в Турции: получите премиум качество по доступной цене. Одной из главных причин выбрать ламинированные виниры в Турции является их значительно более низкая стоимость по сравнению с Западными странами. AZPO Health открывает вам доступ к этим выгодным предложениям, позволяя получить высококачественные виниры по доступной цене. Узнайте больше о ценах на ламинированные виниры в Турции с AZPO Health и откройте для себя отличное соотношение цены и качества.</p>
+<p><strong>&nbsp;</strong></p>
+<h2 dir="ltr">Изучите варианты и стоимость ламинированных виниров в Турции с AZPO Health:</h2>
+<p dir="ltr">С AZPO Health вам открывается целый мир возможностей для выбора идеальных ламинированных виниров в Турции, где стоимость зависит от материала и выбранной клиники:</p>
+<p dir="ltr">&bull; Фарфоровые ламинированные виниры &ndash; это вершина эстетической стоматологии. Они славятся своей исключительной долговечностью, устойчивостью к пятнам и невероятно натуральным внешним видом. Фарфоровые виниры восхищают своей прозрачностью, которая идеально имитирует естественный цвет зубов. Несмотря на несколько более высокую стоимость по сравнению с композитными винирами, они являются надежным долгосрочным решением для вашей улыбки.</p>
+<p dir="ltr">&bull; Композитные ламинированные виниры &ndash; доступная альтернатива фарфоровым винирам, изготовленные из материала, близкого к цвету ваших зубов. Эти виниры можно установить за одно посещение, что делает процедуру быстрой и удобной. Хотя композитные виниры менее устойчивы к пятнам и износу, чем фарфор, они все же предоставляют значительные эстетические улучшения и остаются отличным выбором для пациентов, ищущих эффективное решение по более низкой цене.</p>
+<p dir="ltr">&bull; Ламинированные виниры Emax &ndash; это премиум вариант среди фарфоровых виниров, отличающийся выдающейся прочностью, тонкостью и невероятно естественным внешним видом. Виниры Emax обеспечивают великолепный баланс долговечности и красоты, что делает их популярным выбором для тех, кто ценит высокое качество и долговечность. Хотя стоимость виниров Emax может быть немного выше, они часто выбираются за их исключительные характеристики и долгосрочные результаты. Обратитесь к координатору AZPO Health, чтобы узнать подробности о стоимости виниров Emax в Турции.</p>
+<p dir="ltr">Стоимость ламинированных виниров в Турции зависит от ряда факторов: от количества виниров, выбранного материала (фарфор, композит, Emax) и самой клиники. Однако AZPO Health гордится прозрачной и конкурентоспособной ценовой политикой, гарантируя, что вы получите отличное соотношение цены и качества для вашего инвестиционного решения.</p>
+<h2 dir="ltr">Почему стоит выбрать AZPO Health для установки ламинированных виниров в Турции?</h2>
+<p dir="ltr">AZPO Health делает путь к вашей идеальной улыбке легким и приятным, предлагая вам не только высококлассное лечение, но и комфорт в процессе. Мы предоставляем:</p>
+<p dir="ltr">&bull; Доступ к лучшим стоматологам-специалистам: мы сотрудничаем только с отобранными стоматологическими клиниками Турции, которые зарекомендовали себя в области ламинированных виниров и эстетической стоматологии. Наши специалисты обладают глубоким опытом и художественным подходом, создавая естественные и красивые виниры.</p>
+<p dir="ltr">&bull; Доступные цены без потери качества: ламинированные виниры в Турции &ndash; это не только высокое качество, но и выгодная цена. Вы получите первоклассное лечение по значительно более доступной цене, чем в других странах, не экономя на материалах или профессионализме врача.</p>
+<p dir="ltr">&bull; Пакеты &laquo;все включено&raquo; для вашего комфорта: мы предлагаем всеобъемлющие пакеты, включающие авиабилеты, проживание в роскошных отелях, частные трансферы и полную поддержку на протяжении всего процесса. Мы позаботимся о каждом шаге, чтобы ваше путешествие было комфортным и беззаботным.</p>
+<p dir="ltr">&bull; Индивидуальный подход и проектирование улыбки: в AZPO Health каждый пациент получает персонализированную консультацию. Мы внимательно выслушаем ваши пожелания и создадим план для вашей идеальной улыбки, которая будет гармонировать с вашими чертами лица и личностью.</p>
+<p dir="ltr">&bull; Современные клиники с передовыми технологиями: все наши партнерские клиники оснащены новейшими стоматологическими технологиями и строго соблюдают международные стандарты гигиены и безопасности, обеспечивая вам комфорт и уверенность в результате.</p>
+<h2 dir="ltr">Преимущества ламинированных виниров за пределами эстетики:</h2>
+<p dir="ltr">Ламинированные виниры &ndash; это не только способ преобразить внешний вид, но и целый ряд дополнительных преимуществ, которые выходят за рамки косметического эффекта:</p>
+<p dir="ltr">&bull; Улучшение внешности и уверенности: ровная, белоснежная и гармонично симметричная улыбка подарит вам не только новый внешний вид, но и уверенность в себе, оказывая положительное влияние на ваше самочувствие и восприятие окружающими.</p>
+<p dir="ltr">&bull; Коррекция косметических дефектов: ламинированные виниры легко устраняют такие недостатки, как сколы, трещины, пятна и промежутки между зубами, создавая безупречно ровную и красивую улыбку.</p>
+<p dir="ltr">&bull; Минимальное вмешательство: в отличие от более сложных процедур, таких как установка коронок, ламинированные виниры требуют лишь незначительного удаления эмали, сохраняя большую часть вашей натуральной зубной структуры.</p>
+<p dir="ltr">&bull; Долговечность и стойкость: ваши виниры будут радовать вас своей красотой, сохраняя яркость и устойчивость к пятнам на протяжении многих лет при правильном уходе.</p>
+<p dir="ltr">&bull; Влияние на первые впечатления: совершенная улыбка, созданная с помощью виниров, неизменно произведет неизгладимое впечатление, как в личных, так и в деловых встречах.</p>
+<h2 dir="ltr">AZPO Health: ваш надежный спутник на пути к идеальной улыбке с ламинированными винирами в Турции</h2>
+<p dir="ltr">AZPO Health стремится сделать процесс установки ламинированных виниров доступным и максимально комфортным для каждого. Мы &ndash; ваш надежный партнер на пути к преображению улыбки в Турции, обеспечиваем полный спектр услуг от выбора лучших клиник до индивидуальных консультаций с опытными специалистами. Мы гарантируем, что каждый шаг вашего пути к новой, сияющей улыбке будет легким, понятным и сопровожден максимальной заботой.</p>
+<p dir="ltr">Почему стоит выбрать AZPO Health для установки ламинированных виниров в Турции?</p>
+<p dir="ltr">&bull; Доступ к лучшим специалистам по винирам в Турции: мы работаем только с тщательно отобранными стоматологами, которые обладают высоким уровнем мастерства и предлагают искусный подход к созданию идеальной улыбки.</p>
+<p dir="ltr">&bull; Доступные цены на ламинированные виниры в Турции: мы предоставляем вам возможность получить отличные результаты по значительно более выгодным ценам по сравнению с другими странами, не жертвуя качеством материалов и квалификацией стоматологов.</p>
+<p dir="ltr">&bull; Персонализированный подход и внимательный уход: мы внимательно слушаем ваши пожелания и помогаем подобрать оптимальное решение для вашего уникального случая, поддерживая вас на каждом шаге процесса.</p>
+<p dir="ltr">&bull; Прозрачность и комплексные пакеты: мы предлагаем комплексные пакеты услуг с ясными условиями и без скрытых затрат, чтобы вы могли наслаждаться полным комфортом и уверенностью на каждом этапе, не беспокоясь о дополнительных расходах.</p>
+<p dir="ltr">&bull; Круглосуточная поддержка: в любое время дня и ночи наша команда готова ответить на ваши вопросы, предоставить необходимую информацию и позаботиться о вашем удобстве на протяжении всего пути.</p>
+<p dir="ltr">Готовы обрести улыбку своей мечты с помощью ламинированных виниров в Турции с AZPO Health?</p>
+<p dir="ltr">Свяжитесь с нами прямо сейчас, чтобы получить бесплатную консультацию и персонализированное предложение! Мы внимательно выслушаем ваши пожелания, предложим оптимальные варианты и поможем спланировать ваше путешествие по преображению улыбки в Турцию. Ваша новая, сияющая улыбка уже близка!</p>
+<p dir="ltr">&laquo;Процесс установки ламинированных виниров в Турции с AZPO Health стал для меня настоящим откровением! Моя улыбка изменилась, но при этом она выглядит естественно и гармонично. Стоимость была настолько приятной, что я не могла поверить, насколько выгодно мне обошлась эта процедура. Весь процесс с AZPO Health был на высшем уровне &ndash; поддержка, забота и отличное качество. Теперь я уверенно улыбаюсь каждый день!&raquo; &ndash; Джессика Т., Канада</p>
+<p>&nbsp;</p>`
             : `<p dir="ltr">Laminate veneers, also known as porcelain veneers, are ultra-thin shells of tooth-colored material custom-designed to bond to the front surface of your teeth. They are a minimally invasive and highly effective solution for correcting a variety of cosmetic dental imperfections, including chips, cracks, stains, minor misalignments, and gaps. Choosing laminate veneers in Turkey with AZPO Health provides access to artistry and precision at an unparalleled value.</p>
 <p dir="ltr">&nbsp;</p>
 <hr>
@@ -15488,148 +15772,208 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Hollywood Smile | Transform Your Smile, Transform Your Confidence!"
+          ? "Голливудская улыбка. Преобразить свою улыбку и уверенность в себе!"
           : "Hollywood Smile | Transform Your Smile, Transform Your Confidence!",
       descriptionTop:
         locale === "ru"
-          ? "Get the dazzling, flawless smile you’ve always dreamed of with Hollywood Smile. Say goodbye to stains, chips, and gaps—our expert cosmetic dentistry enhances your teeth with precision, giving you that perfect, picture-ready look. Boost your confidence and make every smile unforgettable!"
+          ? "Получите ослепительную, безупречную улыбку, о которой вы всегда мечтали, с помощью голливудской улыбки. Прощайтесь с пятнами, сколами и зазорами — наши специалисты в области косметической стоматологии аккуратно укрепят ваши зубы, придав им идеальный, как на картинке, вид. Подарите себе уверенность и сделайте каждую улыбку незабываемой!"
           : "Get the dazzling, flawless smile you’ve always dreamed of with Hollywood Smile. Say goodbye to stains, chips, and gaps—our expert cosmetic dentistry enhances your teeth with precision, giving you that perfect, picture-ready look. Boost your confidence and make every smile unforgettable!",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Natural Beauty" : "Natural Beauty",
+            title: locale === "ru" ? "Естественная красота" : "Natural Beauty",
             desc:
               locale === "ru"
-                ? ""
+                ? "фарфоровые виниры создают реалистичную, гармоничную улыбку."
                 : "Veneers blend in seamlessly for a smooth, natural-looking smile.",
           },
           {
-            title: locale === "ru" ? "Lasting Results" : "Lasting Results",
+            title: locale === "ru" ? "Стойкий результат" : "Lasting Results",
             desc:
               locale === "ru"
-                ? ""
+                ? "прочные материалы обеспечивают долговечность."
                 : "Premium veneers offer strong, stain-resistant, long-term results.",
           },
           {
-            title: locale === "ru" ? "Confidence Boost" : "Confidence Boost",
+            title: locale === "ru" ? "Уверенность в себе" : "Confidence Boost",
             desc:
               locale === "ru"
-                ? ""
+                ? "улучшенная улыбка повышает самооценку."
                 : "Custom veneers transform your smile and boost self-confidence.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Who It’s For" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? `
-                    The Hollywood Smile is ideal for individuals who:
-                    Have stained, chipped, or worn-out teeth.Desire a more symmetrical, aligned, and aesthetically pleasing smile.Have minor alignment or spacing issues that they wish to correct without orthodontics.Seek a long-lasting and minimally invasive solution to enhance their smile.
-                  `
+                ? `Голливудская улыбка — это косметическая стоматологическая процедура, направленная на преображение вашей улыбки, решая такие распространенные эстетические проблемы, как пигментация зубов, сколы, проблемы с выравниванием и общей формой зубов. Лечение включает в себя использование зубных виниров — тонких пленкообразных покрытий, которые накладываются на переднюю поверхность зубов для улучшения их внешнего вида.`
                 : `
                     The Hollywood Smile is a cosmetic dental treatment designed to transform your smile by addressing common aesthetic concerns like tooth pigmentation, chipping, alignment issues, and general tooth shape. The treatment involves the use of dental veneers—thin, film-like covers that are placed on the front surface of the teeth to enhance their appearance.
                   `,
           },
           {
-            header: locale === "ru" ? "Важные аспекты" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура начинается с консультации, на которой стоматолог оценивает состояние полости рта и делает рентген. Затем создаётся индивидуальный дизайн улыбки с учётом формы, размера и оттенка зубов. После этого проводится минимальное удаление эмали, необходимое для установки виниров, в зависимости от их типа. На заключительном этапе виниры фиксируются на зубах, придавая улыбке естественный и эстетически привлекательный вид."
                 : "Consultation: Dentist evaluates oral health and takes X-rays. Smile Design: Customized veneers are planned based on tooth shape, size, and color. Tooth Preparation: Minimal enamel removal, depending on veneer type. Application: Veneers are bonded for a natural, enhanced smile.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It’s For",
+            header: locale === "ru" ? "Для кого подходит" : "Who It’s For",
             desc:
               locale === "ru"
-                ? "The process starts with a consultation where your dentist evaluates your oral health, discussing any underlying issues like gum disease or cavities. X-rays will be taken to ensure your teeth and gums are healthy enough for the treatment."
+                ? "Голливудская улыбка идеально подходит для людей с пятнами, сколами или изношенными зубами, а также для тех, кто хочет получить более симметричную и эстетически привлекательную улыбку. Это отличный вариант для пациентов с незначительными проблемами выравнивания или промежутками между зубами, которые они предпочитают корректировать без ортодонтического лечения. Кроме того, данный метод подойдёт тем, кто ищет долговечное и минимально инвазивное решение для улучшения внешнего вида своей улыбки."
                 : "The Hollywood Smile is ideal for individuals who: Have stained, chipped, or worn-out teeth. Desire a more symmetrical, aligned, and aesthetically pleasing smile Have minor alignment or spacing issues that they wish to correct without orthodontics. Seek a long-lasting and minimally invasive solution to enhance their smile.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What is a Hollywood Smile?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "A full-mouth cosmetic makeover usually with veneers or crowns",
+          question : locale === "ru" ? "Что представляет собой голливудская улыбка?" : "What is a Hollywood Smile?",
+          answer : locale === "ru" ? "Полная косметическая реконструкция зубов, обычно с использованием виниров или коронок" : "A full-mouth cosmetic makeover usually with veneers or crowns"
         },
         {
-          question: locale === "ru" ? "" : "Does it damage my natural teeth?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Minimal enamel reduction, preserves structure",
+          question : locale === "ru" ? "Повредит ли это мои естественные зубы?" : "Does it damage my natural teeth?",
+          answer : locale === "ru" ? "Минимальное уменьшение эмали, сохраняет структуру" : "Minimal enamel reduction, preserves structure"
         },
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Local anesthesia prevents pain, mild soreness after",
+          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer : locale === "ru" ? "Местная анестезия предотвращает боль, легкая болезненность после" : "Local anesthesia prevents pain, mild soreness after"
         },
         {
-          question: locale === "ru" ? "" : "How long does it last?",
-          answer: locale === "ru" ? "" : "Typically 10–15 years with care",
+          question : locale === "ru" ? "Как долго это длится?" : "How long does it last?",
+          answer : locale === "ru" ? "Обычно 10–15 лет при уходе" : "Typically 10–15 years with care"
         },
         {
-          question: locale === "ru" ? "" : "Can I choose the shade?",
-          answer:
-            locale === "ru" ? "" : "Yes, you customize it with your dentist",
+          question : locale === "ru" ? "Могу ли я выбрать оттенок?" : "Can I choose the shade?",
+          answer : locale === "ru" ? "Да, вы можете настроить его с вашим стоматологом" : "Yes, you customize it with your dentist"
         },
         {
-          question:
-            locale === "ru" ? "" : "Does the procedure take a long time?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Varies depending on the treatment but usually completed in 2-3 sessions",
+          question : locale === "ru" ? "Процедура занимает много времени?" : "Does the procedure take a long time?",
+          answer : locale === "ru" ? "Время варьируется в зависимости от лечения, но обычно завершается за 2-3 сеанса" : "Varies depending on the treatment but usually completed in 2-3 sessions"
         },
+        {
+          question : locale === "ru" ? "Что произойдет, если мое оральное здоровье не будет лечиться перед Голливудской улыбкой?" : "What happens if my oral health isn’t treated before a Hollywood Smile?",
+          answer : locale === "ru" ? "Это может привести к плохим результатам, неприятному запаху изо рта и ухудшению стоматологических проблем." : "It can lead to poor results, bad breath, and worsening dental issues."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Avoid biting hard objects with front teeth",
-        locale === "ru"
-          ? ""
-          : "Practice excellent hygiene and regular dental visits",
-        locale === "ru" ? "" : "Use a mouthguard if you grind teeth at night",
-        locale === "ru" ? "" : "Limit staining foods/beverages initially",
-        locale === "ru" ? "" : "Expect adjustment period to new bite/smile",
-        locale === "ru" ? "" : "Avoid hard foods",
-        locale === "ru" ? "" : "Limit smoking and alcohol",
-        locale === "ru" ? "" : "Prefer soft foods initially",
+        locale === "ru" ? "Избегайте кусания твердых предметов передними зубами." : "Avoid biting hard objects with front teeth",
+        locale === "ru" ? "Соблюдайте гигиену полости рта и регулярно посещайте стоматолога." : "Practice excellent hygiene and regular dental visits",
+        locale === "ru" ? "Используйте капу, если у вас есть привычка скрипеть зубами ночью." : "Use a mouthguard if you grind teeth at night",
+        locale === "ru" ? "Ограничьте потребление продуктов и напитков, которые могут вызвать пятна, на начальном этапе." : "Limit staining foods/beverages initially",
+        locale === "ru" ? "Вам потребуется немного времени, чтобы привыкнуть к новому прикусу и улыбке." : "Expect adjustment period to new bite/smile",
+        locale === "ru" ? "Избегайте употребления твердых продуктов." : "Avoid hard foods",
+        locale === "ru" ? "Ограничьте курение и алкоголь." : "Limit smoking and alcohol",
+        locale === "ru" ? "Предпочитайте мягкие продукты." : "Prefer soft foods initially"
       ],
       preList: [
-        locale === "ru" ? "" : "Dental exam and consultation for smile design",
-        locale === "ru" ? "" : "Treat gum disease or decay before starting",
-        locale === "ru"
-          ? ""
-          : "Discuss material (zirconia, e.max, veneers, etc.) and shade preference",
-        locale === "ru" ? "" : "Quit smoking for better bonding and aesthetics",
-        locale === "ru" ? "" : "Maintain good oral hygiene",
-        locale === "ru" ? "" : "It can be digitally designed in advance",
-        locale === "ru"
-          ? ""
-          : "It usually involves several stages, so be prepared to allocate enough time",
+        locale === "ru" ? "Пройдите стоматологический осмотр и консультацию по дизайну улыбки." : "Dental exam and consultation for smile design",
+        locale === "ru" ? "Пролечите заболевания десен или кариес до начала лечения." : "Treat gum disease or decay before starting",
+        locale === "ru" ? "Обсудите с врачом выбор материала (цирконий, e.max, виниры и т.д.) и предпочтения по оттенку." : "Discuss material (zirconia, e.max, veneers, etc.) and shade preference",
+        locale === "ru" ? "Воздержитесь от курения для улучшения сцепления и эстетики зубов." : "Quit smoking for better bonding and aesthetics",
+        locale === "ru" ? "Соблюдайте гигиену полости рта." : "Maintain good oral hygiene",
+        locale === "ru" ? "Обычно процесс включает несколько этапов, поэтому будьте готовы выделить достаточно времени." : "It usually involves several stages, so be prepared to allocate enough time"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile. Although it requires an investment of time and money, the benefits of a Hollywood Smile, including improved confidence and aesthetic appeal, make it a worthwhile option for many. Proper care and maintenance are key to ensuring your new smile lasts for many years."
+            ? "Голливудская улыбка — отличное решение для тех, кто хочет улучшить внешний вид своей улыбки. Использование индивидуально подобранных виниров из высококачественных материалов, таких как фарфор, люминиры или цирконий, обеспечивает естественный вид, долговечность и минимальную инвазивность для улучшения вашей улыбки."
             : "The Hollywood Smile is an excellent solution for individuals seeking a dramatic improvement in the appearance of their smile. By using custom-designed veneers made of high-quality materials like porcelain, lumineers, or zirconium, this treatment offers a natural-looking, long-lasting, and minimally invasive way to enhance your smile.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Your Hollywood Smile?"
+            ? "Почему выбрать Турцию для своей Голливудской улыбки?"
             : "Why Choose Turkey for Your Hollywood Smile?",
         content:
           locale === "ru"
-            ? `
-        <p>Turkey has become a leading destination for medical tourism, particularly for dental treatments like the Hollywood Smile. Several factors contribute to its popularity:</p><p><strong>Affordability:</strong> Dental treatments in Turkey are significantly more affordable compared to Europe, the UK, and the USA. You can achieve the smile of your dreams without breaking the bank.</p><p><strong>High-Quality Services:</strong> Turkish dentists and healthcare staff are well-educated and experienced. Many have international training and use advanced techniques and technologies.</p><p><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover treatment costs, accommodation, airport transfers, and post-operative care. This makes the entire process smooth and stress-free.</p><p><strong>Beautiful Destination:</strong> Combine your dental treatment with a holiday in a fascinating country. Explore the historic sites, vibrant culture, and delicious cuisine of Istanbul, Antalya, or Alanya.</p><h4><strong>What is a Hollywood Smile?</strong></h4><p>The Hollywood Smile is a cosmetic dental treatment designed to transform your smile by addressing common aesthetic concerns like tooth pigmentation, chipping, alignment issues, and general tooth shape. The treatment involves the use of dental veneers—thin, film-like covers that are placed on the front surface of the teeth to enhance their appearance. The veneers are typically made of porcelain, lumineers (ultra-thin porcelain), or zirconium (a strong ceramic), and are customized to give you a natural, flawless smile.</p><p><br></p><h4><strong>Methods Used in a Hollywood Smile</strong></h4><p>Several methods can be used in combination to achieve a Hollywood Smile, including:</p><p><strong>Dental Veneers:</strong> Thin layers of porcelain or composite resin are bonded to the front surface of the teeth to correct imperfections such as stains, chips, cracks, or minor misalignments. Veneers can improve the shape, size, and color of your teeth, creating a uniform and aesthetically pleasing smile.</p><p class="ql-indent-1">Depending on the veneer material, some removal of tooth enamel may be necessary, which is irreversible.</p><p><strong>Dental Crowns:</strong> Tooth-shaped caps that cover damaged or decayed teeth, restoring their shape, size, strength, and appearance. Crowns are used when a tooth is too damaged to be corrected with a veneer.</p><p><strong>Dental Implants:</strong> Artificial tooth roots that are surgically placed into the jawbone to support replacement teeth. Implants are a long-lasting solution for missing teeth, providing a stable foundation for crowns or bridges.</p><p class="ql-indent-1">Before proceeding with dental implants, it’s crucial to disclose your complete medical history, including any medications you are taking and any underlying health conditions, to your dentist or oral surgeon.</p><p><strong>Teeth Whitening:</strong> Bleaching procedures that lighten the shade of your teeth, removing stains and discoloration. Teeth whitening can be done in-office or at home using custom-made trays and bleaching gels.</p><p><strong>Gum Contouring:</strong> Reshaping the gum line to improve the symmetry and aesthetics of your smile. Gum contouring can correct a "gummy smile" or even out an uneven gum line.</p><p><strong>Orthodontics:</strong> In some cases, minor teeth straightening may be necessary to achieve optimal alignment before other cosmetic procedures. Clear aligners or traditional braces can be used to correct misalignments.</p><h4><strong>Benefits of Each Method</strong></h4><p><strong>Veneers:</strong> Provide a quick and effective way to correct minor imperfections, creating a bright and symmetrical smile.</p><p><strong>Crowns:</strong> Restore damaged teeth, protecting them from further decay and improving their function and appearance.</p><p><strong>Implants:</strong> Offer a permanent solution for missing teeth, restoring your smile and preventing bone loss in the jaw.</p><p><strong>Teeth Whitening:</strong> Enhances the brightness of your smile, making you look younger and more attractive.</p><p><strong>Gum Contouring:</strong> Improves the balance and harmony of your smile, correcting a gummy or uneven gum line.</p><p><strong>Orthodontics:</strong> Straightens misaligned teeth, improving your bite and making your teeth easier to clean.</p><h4><strong>Is a Hollywood Smile Right for You?</strong></h4><p>The Hollywood Smile is ideal for individuals who:</p><p>Have stained, chipped, or worn-out teeth.</p><p>Desire a more symmetrical, aligned, and aesthetically pleasing smile.</p><p>Have minor alignment or spacing issues that they wish to correct without orthodontics.</p><p>Seek a long-lasting and minimally invasive solution to enhance their smile.</p><h4><strong>Patient Testimonials</strong></h4><p><strong>Sarah, 32:</strong> "I always felt self-conscious about my smile because of some gaps and discoloration. AZPO Health gave me a Hollywood Smile, and it has changed my life! I feel so much more confident and love to show off my new smile."</p><p><strong>Mark, 45:</strong> "I had several damaged teeth and was embarrassed to smile. The team at AZPO Health restored my teeth with crowns and veneers, and the result is incredible. I now have a strong, healthy, and attractive smile."</p><p><strong>Emily, 28:</strong> "I was hesitant about traveling to Turkey for dental work, but AZPO Health made the entire process so easy and comfortable. The clinic was modern and clean, and the staff was friendly and professional. I am thrilled with my Hollywood Smile!"</p><h4><strong>AZPO Health: Your Trusted Partner for a Perfect Smile</strong></h4><p>AZPO Health is a leading medical tourism company in Turkey, specializing in aesthetic and health treatments. With locations in Istanbul, Antalya, and Alanya, we offer world-class dental services at affordable prices.</p><p>Our commitment to quality, expertise, and patient satisfaction sets us apart. We work with experienced dentists and use the latest technology to deliver exceptional results. Our all-inclusive packages ensure a smooth and stress-free experience, from your initial consultation to your post-operative care.</p><h4><strong>Contact Us Today!</strong></h4><p>Ready to transform your smile with a Hollywood Smile in Turkey? Contact AZPO Health today for a free consultation and personalized quote! Discover how we can help you achieve the smile of your dreams.</p><p><br></p>
-          `
+            ? `<p dir="ltr">Турция &mdash; это одно из ведущих направлений медицинского туризма, особенно для таких процедур, как Голливудская улыбка. Популярность страны обусловлена несколькими важными факторами:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступность: лечение зубов в Турции значительно дешевле по сравнению с Европой, Великобританией и США, позволяя вам получить идеальную улыбку по более доступной цене.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высокое качество услуг: турецкие стоматологи имеют отличное образование, прошли международное обучение и используют новейшие методы и технологии.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексные пакеты услуг: AZPO Health предлагает пакеты &laquo;все включено&raquo;, которые охватывают лечение, проживание, трансфер и послеоперационный уход, что делает процесс удобным и без стресса.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Прекрасное место: совместите лечение с отдыхом в красивейших местах Турции &mdash; Стамбуле, Анталии или Аланье. Наслаждайтесь историей, культурой и местной кухней.</p>
+</li>
+</ul>
+<p dir="ltr">Что такое Голливудская улыбка?</p>
+<p dir="ltr">Голливудская улыбка &mdash; это косметическая стоматологическая процедура, решающая такие проблемы, как пигментация зубов, сколы, проблемы с выравниванием и общей формой зубов. Основной метод &mdash; использование зубных виниров, которые накладываются на переднюю поверхность зубов для улучшения их внешнего вида. Виниры могут быть изготовлены из фарфора, люминиров (ультратонкий фарфор) или циркония (прочная керамика), что позволяет создать идеальный и натуральный внешний вид вашей улыбки.</p>
+<p dir="ltr">Методы, используемые для создания Голливудской улыбки:</p>
+<p dir="ltr">Для достижения Голливудской улыбки могут быть использованы несколько методов:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные виниры: тонкие слои фарфора или композитной смолы приклеиваются к передней поверхности зубов, исправляя дефекты, такие как пятна, сколы, трещины или незначительные перекосы. Виниры улучшают форму, размер и цвет зубов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные коронки: коронки восстанавливают форму, размер и внешний вид сильно поврежденных зубов.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Зубные имплантаты: искусственные корни, которые вживляются в челюсть, поддерживая протезы и восстанавливая утраченную функциональность.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Отбеливание зубов: процедуры, осветляющие зубы, удаляя пятна и обесцвечивание, можно проводить как в клинике, так и в домашних условиях.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Контурная пластика десен: коррекция формы десен для улучшения симметрии улыбки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ортодонтия: в некоторых случаях для достижения оптимального выравнивания зубов можно использовать прозрачные капы или традиционные брекеты.</p>
+</li>
+</ul>
+<p dir="ltr">Преимущества каждого метода:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Виниры: быстро устраняют дефекты, создавая симметричную и яркую улыбку.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Коронки: восстанавливают поврежденные зубы, улучшая их функцию и внешний вид.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Имплантаты: долговечное решение для утраченных зубов, восстанавливающее зубы и предотвращающее потерю костной ткани.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Отбеливание: улучшает яркость улыбки, делая ее более привлекательной.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Коррекция контура десен: улучшает гармонию улыбки, исправляя неровную линию десен.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ортодонтия: выравнивает зубы и облегчает их чистку.</p>
+</li>
+</ul>
+<p dir="ltr">Подходит ли вам голливудская улыбка?</p>
+<p dir="ltr">Голливудская улыбка идеально подходит для людей, у которых есть:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пятна, сколы или изношенные зубы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Желание иметь более симметричную, ровную и привлекательную улыбку.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Небольшие проблемы с выравниванием или промежутками между зубами, которые они хотят исправить без ортодонтии.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Потребность в долговечном и малоинвазивном решении для улучшения своей улыбки.</p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health &mdash; Ваш надежный партнер для идеальной улыбки.</p>
+<p dir="ltr">AZPO Health &mdash; ведущая компания в области медицинского туризма в Турции, специализирующаяся на эстетических процедурах. Мы предлагаем стоматологические услуги мирового класса по доступным ценам в Стамбуле, Анталии и Аланье. Наши клиники используют новейшие технологии, а опытные стоматологи обеспечивают отличные результаты. С пакетом &laquo;все включено&raquo; вы получите качественное лечение без стресса.</p>
+<p dir="ltr">Отзывы пациентов:</p>
+<p dir="ltr">Сара, 32 года: &laquo;Я всегда стеснялась своей улыбки из-за дефектов и обесцвечивания. AZPO Health подарила мне Голливудскую улыбку, и это изменило мою жизнь! Я чувствую себя намного увереннее&raquo;.</p>
+<p dir="ltr">Марк, 45 лет: &laquo;У меня были поврежденные зубы, и я стеснялся улыбаться. AZPO Health восстановила их с помощью коронок и виниров &mdash; результат потрясающий!&raquo;</p>
+<p dir="ltr">Эмили, 28 лет: &laquo;Я сомневалась, стоит ли ехать в Турцию, но AZPO Health сделала весь процесс простым и комфортным. Я в восторге от своей новой улыбки!&raquo;</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p>Turkey has become a leading destination for medical tourism, particularly for dental treatments like the Hollywood Smile. Several factors contribute to its popularity:</p><p><strong>Affordability:</strong> Dental treatments in Turkey are significantly more affordable compared to Europe, the UK, and the USA. You can achieve the smile of your dreams without breaking the bank.</p><p><strong>High-Quality Services:</strong> Turkish dentists and healthcare staff are well-educated and experienced. Many have international training and use advanced techniques and technologies.</p><p><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover treatment costs, accommodation, airport transfers, and post-operative care. This makes the entire process smooth and stress-free.</p><p><strong>Beautiful Destination:</strong> Combine your dental treatment with a holiday in a fascinating country. Explore the historic sites, vibrant culture, and delicious cuisine of Istanbul, Antalya, or Alanya.</p><h4><strong>What is a Hollywood Smile?</strong></h4><p>The Hollywood Smile is a cosmetic dental treatment designed to transform your smile by addressing common aesthetic concerns like tooth pigmentation, chipping, alignment issues, and general tooth shape. The treatment involves the use of dental veneers—thin, film-like covers that are placed on the front surface of the teeth to enhance their appearance. The veneers are typically made of porcelain, lumineers (ultra-thin porcelain), or zirconium (a strong ceramic), and are customized to give you a natural, flawless smile.</p><p><br></p><h4><strong>Methods Used in a Hollywood Smile</strong></h4><p>Several methods can be used in combination to achieve a Hollywood Smile, including:</p><p><strong>Dental Veneers:</strong> Thin layers of porcelain or composite resin are bonded to the front surface of the teeth to correct imperfections such as stains, chips, cracks, or minor misalignments. Veneers can improve the shape, size, and color of your teeth, creating a uniform and aesthetically pleasing smile.</p><p class="ql-indent-1">Depending on the veneer material, some removal of tooth enamel may be necessary, which is irreversible.</p><p><strong>Dental Crowns:</strong> Tooth-shaped caps that cover damaged or decayed teeth, restoring their shape, size, strength, and appearance. Crowns are used when a tooth is too damaged to be corrected with a veneer.</p><p><strong>Dental Implants:</strong> Artificial tooth roots that are surgically placed into the jawbone to support replacement teeth. Implants are a long-lasting solution for missing teeth, providing a stable foundation for crowns or bridges.</p><p class="ql-indent-1">Before proceeding with dental implants, it’s crucial to disclose your complete medical history, including any medications you are taking and any underlying health conditions, to your dentist or oral surgeon.</p><p><strong>Teeth Whitening:</strong> Bleaching procedures that lighten the shade of your teeth, removing stains and discoloration. Teeth whitening can be done in-office or at home using custom-made trays and bleaching gels.</p><p><strong>Gum Contouring:</strong> Reshaping the gum line to improve the symmetry and aesthetics of your smile. Gum contouring can correct a "gummy smile" or even out an uneven gum line.</p><p><strong>Orthodontics:</strong> In some cases, minor teeth straightening may be necessary to achieve optimal alignment before other cosmetic procedures. Clear aligners or traditional braces can be used to correct misalignments.</p><h4><strong>Benefits of Each Method</strong></h4><p><strong>Veneers:</strong> Provide a quick and effective way to correct minor imperfections, creating a bright and symmetrical smile.</p><p><strong>Crowns:</strong> Restore damaged teeth, protecting them from further decay and improving their function and appearance.</p><p><strong>Implants:</strong> Offer a permanent solution for missing teeth, restoring your smile and preventing bone loss in the jaw.</p><p><strong>Teeth Whitening:</strong> Enhances the brightness of your smile, making you look younger and more attractive.</p><p><strong>Gum Contouring:</strong> Improves the balance and harmony of your smile, correcting a gummy or uneven gum line.</p><p><strong>Orthodontics:</strong> Straightens misaligned teeth, improving your bite and making your teeth easier to clean.</p><h4><strong>Is a Hollywood Smile Right for You?</strong></h4><p>The Hollywood Smile is ideal for individuals who:</p><p>Have stained, chipped, or worn-out teeth.</p><p>Desire a more symmetrical, aligned, and aesthetically pleasing smile.</p><p>Have minor alignment or spacing issues that they wish to correct without orthodontics.</p><p>Seek a long-lasting and minimally invasive solution to enhance their smile.</p><h4><strong>Patient Testimonials</strong></h4><p><strong>Sarah, 32:</strong> "I always felt self-conscious about my smile because of some gaps and discoloration. AZPO Health gave me a Hollywood Smile, and it has changed my life! I feel so much more confident and love to show off my new smile."</p><p><strong>Mark, 45:</strong> "I had several damaged teeth and was embarrassed to smile. The team at AZPO Health restored my teeth with crowns and veneers, and the result is incredible. I now have a strong, healthy, and attractive smile."</p><p><strong>Emily, 28:</strong> "I was hesitant about traveling to Turkey for dental work, but AZPO Health made the entire process so easy and comfortable. The clinic was modern and clean, and the staff was friendly and professional. I am thrilled with my Hollywood Smile!"</p><h4><strong>AZPO Health: Your Trusted Partner for a Perfect Smile</strong></h4><p>AZPO Health is a leading medical tourism company in Turkey, specializing in aesthetic and health treatments. With locations in Istanbul, Antalya, and Alanya, we offer world-class dental services at affordable prices.</p><p>Our commitment to quality, expertise, and patient satisfaction sets us apart. We work with experienced dentists and use the latest technology to deliver exceptional results. Our all-inclusive packages ensure a smooth and stress-free experience, from your initial consultation to your post-operative care.</p><h4><strong>Contact Us Today!</strong></h4><p>Ready to transform your smile with a Hollywood Smile in Turkey? Contact AZPO Health today for a free consultation and personalized quote! Discover how we can help you achieve the smile of your dreams.</p><p><br></p>`,
       },
       imgCover: subNestedKey === "hollywood-smile" ? hollywood : null,
@@ -15641,33 +15985,33 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Clear Aligners Invisalign | Achieve Your Dream Smile in Turkey!"
+          ? "Прозрачные элайнеры Invisalign | Улыбка мечты в Турции!"
           : "Clear Aligners Invisalign | Achieve Your Dream Smile in Turkey!",
       descriptionTop:
         locale === "ru"
-          ? "Ditch the metal braces! Invisalign clear aligners offer a virtually invisible, comfortable way to achieve perfectly aligned teeth. Custom-made for a precise fit, these removable aligners let you eat, drink, and smile with confidence—while straightening your teeth effortlessly. Get the smile you deserve, the modern way!"
+          ? "Забудьте о металлических брекетах! Прозрачные элайнеры Invisalign — это практически незаметный и комфортный способ выровнять зубы. Индивидуально изготовленные для идеальной посадки, они легко снимаются, не мешают приему пищи и позволяют улыбаться с уверенностью. Получите идеальную улыбку с помощью современных и комфортных технологий."
           : "Ditch the metal braces! Invisalign clear aligners offer a virtually invisible, comfortable way to achieve perfectly aligned teeth. Custom-made for a precise fit, these removable aligners let you eat, drink, and smile with confidence, while straightening your teeth effortlessly. Get the smile you deserve, the modern way!",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Invisible Smile" : "Invisible Smile",
+            title: locale === "ru" ? "Невидимая улыбка" : "Invisible Smile",
             desc:
               locale === "ru"
-                ? "Transparent aligners offer discreet teeth straightening without visible metal brackets."
+                ? "Прозрачные элайнеры выравнивают зубы деликатно и незаметно — без металлических дуг и брекетов."
                 : "Transparent aligners offer discreet teeth straightening without visible metal brackets.",
           },
           {
-            title: locale === "ru" ? "Ultimate Comfort" : "Ultimate Comfort",
+            title: locale === "ru" ? "Абсолютный комфорт" : "Ultimate Comfort",
             desc:
               locale === "ru"
-                ? "Smooth plastic design prevents mouth irritation common with traditional braces."
+                ? "Гладкий и мягкий материал не вызывает раздражения, обеспечивая комфорт на протяжении всего лечения."
                 : "Smooth plastic design prevents mouth irritation common with traditional braces.",
           },
           {
-            title: locale === "ru" ? "Smart Technology" : "Smart Technology",
+            title: locale === "ru" ? "Умные технологии" : "Smart Technology",
             desc:
               locale === "ru"
-                ? "3D imaging provides precise treatment planning with predictable orthodontic results."
+                ? "3D-сканирование обеспечивает точное планирование лечения и предсказуемый результат."
                 : "3D imaging provides precise treatment planning with predictable orthodontic results.",
           },
         ],
@@ -15675,41 +16019,28 @@ Patients looking for a quicker, less invasive alternative to traditional implant
           {
             header:
               locale === "ru"
-                ? "Who Are Clear Aligners Suitable For?"
+                ? "Описание"
                 : "Description",
             desc:
               locale === "ru"
-                ? `
-                    Clear aligners are recommended for:
-                    Adults and teenagers seeking to straighten their teeth discreetly.
-                    Individuals with mild to moderate alignment issues, such as spacing, crowding, or minor bite problems.
-                    Patients who prefer removable appliances over fixed braces.
-                    Those committed to wearing aligners as prescribed to achieve the best results.
-                  `
+                ? `Элайнеры — это прозрачные каппы, которые постепенно и мягко перемещают зубы в нужное положение. Они практически незаметны на зубах и обеспечивают комфортное, деликатное лечение без металлических конструкций. Отличный выбор для тех, кто ценит эстетику и удобство.`
                 : `
                   Clear aligners, such as Invisalign, are a modern alternative to traditional braces. These custom-made, transparent trays gradually shift teeth into their desired position. They are nearly invisible and provide a comfortable and discreet orthodontic treatment option.
                 `,
           },
           {
-            header: locale === "ru" ? "" : "How does It work?",
+            header: locale === "ru" ? "Как работают" : "How does It work?",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процесс начинается с диагностики и планирования: выполняется 3D-сканирование зубов, на основе которого составляется персонализированный план коррекции. Далее изготавливаются элайнеры, которые необходимо носить по 20–22 часа в сутки, снимая только во время еды, питья и гигиенических процедур. Каждая новая пара элайнеров используется в среднем каждые 1–2 недели. Общая продолжительность лечения обычно составляет от 12 до 18 месяцев, в зависимости от индивидуальных особенностей случая."
                 : "Diagnosis and Treatment Planning: A 3D scan creates a digital model, and a customized treatment plan is developed. Fabrication and Use of Aligners: Aligners are worn 20–22 hours daily, removed for eating, drinking, and hygiene. They are replaced every 1–2 weeks. Duration of Treatment: Treatment usually lasts 12–18 months, depending on case complexity.",
           },
           {
             header:
-              locale === "ru" ? "How Do Clear Aligners Work?" : "For Whom",
+              locale === "ru" ? "Кому подойдут элайнеры?" : "For Whom",
             desc:
               locale === "ru"
-                ? `
-                  Diagnosis and Treatment Planning:
-                  A 3D scan of your teeth is taken to create a digital model.
-                  A personalized treatment plan is developed, detailing the sequence of tooth movements.
-                  Fabrication and Use of Aligners:
-                  Patients receive a set of aligners, with each tray designed for a specific stage of tooth alignment.
-                  Aligners must be worn for 20–22 hours daily, removed only for eating, drinking, and oral hygiene.
-                  `
+                ? `Прозрачные элайнеры рекомендуются взрослым и подросткам, желающим выровнять зубы незаметно и без дискомфорта. Они особенно подходят людям с незначительными и умеренными нарушениями прикуса, такими как скученность, промежутки между зубами или лёгкие проблемы смыкания. Элайнеры — отличное решение для тех, кто предпочитает съёмные каппы вместо традиционных брекетов, а также для пациентов, готовых носить их регулярно, чтобы достичь максимального результата.`
                 : `
                   Adults and teenagers seeking to straighten their teeth discreetly.
                   Individuals with mild to moderate alignment issues, such as spacing, crowding, or minor bite problems.
@@ -15721,85 +16052,194 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Does it hurt?",
-          answer:
-            locale === "ru" ? "" : "Mild pressure for a day or two is normal",
+          question : locale === "ru" ? "Это больно?" : "Does it hurt?",
+          answer : locale === "ru" ? "Легке давление в течение одного-двух дней после смены кап - это нормально и свидетельствует о том, что элайнеры работают." : "Mild pressure for a day or two is normal"
         },
         {
-          question: locale === "ru" ? "" : "Can I drink with aligners in?",
-          answer: locale === "ru" ? "" : "Only water – remove for other drinks",
+          question : locale === "ru" ? "Могу ли я пить с элайнерами?" : "Can I drink with aligners in?",
+          answer : locale === "ru" ? "Разрешается пить только воду. Для других напитков элайнеры необходимо снимать." : "Only water – remove for other drinks"
         },
         {
-          question:
-            locale === "ru" ? "" : "What happens if I forget to wear them?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Treatment may be delayed or trays may not fit",
+          question : locale === "ru" ? "Что произойдет, если я забуду их надеть?" : "What happens if I forget to wear them?",
+          answer : locale === "ru" ? "Это может замедлить лечение, а в некоторых случаях - привести к тому, что капы перестанут подходить." : "Treatment may be delayed or trays may not fit"
         },
         {
-          question: locale === "ru" ? "" : "How long is treatment?",
-          answer: locale === "ru" ? "" : "6–18 months depending on case",
+          question : locale === "ru" ? "Как долго длится лечение?" : "How long is treatment?",
+          answer : locale === "ru" ? "Обычно от 6 до 18 месяцев, в зависимости от индивидуального случая." : "6–18 months depending on case"
         },
         {
-          question: locale === "ru" ? "" : "Will my speech change?",
-          answer:
-            locale === "ru" ? "" : "Slight lisp at first, but it goes away",
+          question : locale === "ru" ? "Изменится ли моя речь?" : "Will my speech change?",
+          answer : locale === "ru" ? "В начале возможна легкая шепелявость, которая обычно быстро проходит по мере привыкания." : "Slight lisp at first, but it goes away"
         },
         {
-          question: locale === "ru" ? "" : "Can I chew gum with the aligners?",
-          answer: locale === "ru" ? "" : "No, as it may damage them",
-        },
+          question : locale === "ru" ? "Могу ли я жевать жевательную резинку с элайнерами?" : "Can I chew gum with the aligners?",
+          answer : locale === "ru" ? "Нет, жевательная резинка может повредить элайнеры и нарушить лечение." : "No, as it may damage them"
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Wear aligners 20–22 hrs/day, remove only for eating/cleaning",
-        locale === "ru" ? "" : "Clean aligners daily, brush teeth after meals",
-        locale === "ru"
-          ? ""
-          : "Expect mild discomfort with new sets, avoid losing them",
-        locale === "ru"
-          ? ""
-          : "Switch trays as directed and attend check-ups regularly",
-        locale === "ru"
-          ? ""
-          : "Store the aligners in a special case to prevent loss.",
+        locale === "ru" ? "Носите элайнеры по 20–22 часа в день, снимая их только во время приема пищи и чистки зубов." : "Wear aligners 20–22 hrs/day, remove only for eating/cleaning",
+        locale === "ru" ? "Очищайте элайнеры ежедневно, а зубы - после каждого приема пищи." : "Clean aligners daily, brush teeth after meals",
+        locale === "ru" ? "Будьте готовы к легкому дискомфорту при переходе на новые капы и следите, чтобы не потерять их." : "Expect mild discomfort with new sets, avoid losing them",
+        locale === "ru" ? "Меняйте элайнеры строго по назначенному графику и регулярно посещайте стоматолога." : "Switch trays as directed and attend check-ups regularly",
+        locale === "ru" ? "Храните капы в специальном футляре, чтобы избежать их повреждения или потери." : "Store the aligners in a special case to prevent loss."
       ],
       preList: [
-        locale === "ru" ? "" : "Get a dental cleaning and ensure no cavities",
-        locale === "ru" ? "" : "Discuss goals and get impressions/scans",
-        locale === "ru"
-          ? ""
-          : "Prepare for 22-hour daily wear and aligner cleaning",
-        locale === "ru"
-          ? ""
-          : "Perform a professional dental cleaning and ensure there are no cavities.",
-        locale === "ru"
-          ? ""
-          : "Discuss treatment goals and take impressions/scans for custom aligner creation.",
-        locale === "ru"
-          ? ""
-          : "Prepare to wear the aligners for 22 hours a day and maintain regular cleaning.",
+        locale === "ru" ? "Пройдите профессиональную чистку зубов и убедитесь в отсутствии кариеса и других стоматологических проблем." : "Perform a professional dental cleaning and ensure there are no cavities.",
+        locale === "ru" ? "Обсудите с врачом цели лечения и выполните слепки или цифровое сканирование для изготовления индивидуальных элайнеров." : "Discuss treatment goals and take impressions/scans for custom aligner creation.",
+        locale === "ru" ? "Подготовьтесь к тому, что элайнеры необходимо носить по 22 часа в день и соблюдать тщательную гигиену полости рта." : "Prepare to wear the aligners for 22 hours a day and maintain regular cleaning."
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.If you’re considering clear aligners, consult an orthodontist to determine if they’re the right treatment option for your specific needs."
+            ? "Прозрачные элайнеры, такие как Invisalign, — это инновационное решение для выравнивания зубов. Идеальны для тех, кто ценит эстетику, комфорт и гибкость. Хотя элайнеры требуют дисциплины и регулярного ношения, их преимущества делают их отличным выбором для большинства пациентов."
             : "Clear aligners, such as Invisalign, offer an innovative solution for straightening teeth. They are perfect for those who value aesthetics, comfort, and flexibility. While aligners require discipline in wearing them as directed, their benefits make them an excellent choice for most patients.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Clear Aligners Invisalign?"
+            ? "Почему стоит выбрать Турцию для лечения с помощью прозрачных элайнеров Invisalign?"
             : "Why Choose Turkey for Clear Aligners Invisalign?",
         content:
           locale === "ru"
-            ? `
-        <p>Turkey has emerged as a leading destination for medical tourism, particularly for dental treatments, and here’s why choosing AZPO Health for your Clear Aligners Invisalign treatment in Turkey is a smart decision:</p><p><strong>Affordability</strong>: One of the primary reasons people choose Turkey for dental work is the cost savings. You can save up to 70-90% on dental treatments compared to the US and UK, even after factoring in travel and accommodation expenses.</p><p><strong>High-Quality Care</strong>: AZPO Health is committed to providing top-notch dental services using state-of-the-art technology and adhering to the highest international standards. Our experienced dental professionals are skilled in the latest Invisalign techniques, ensuring you receive the best possible care.</p><p><strong>Experienced Professionals</strong>: AZPO Health boasts a team of highly trained experts who stay updated with the latest advancements in dentistry. Our specialists have years of experience in performing Clear Aligners Invisalign treatments, ensuring optimal results.</p><p><strong>Comprehensive Packages</strong>: AZPO Health offers all-inclusive packages that cover not only the Clear Aligners Invisalign treatment but also accommodation, airport transfers, and post-operative care. This comprehensive approach ensures a hassle-free and comfortable experience for international patients.</p><p><strong>Beautiful Destination</strong>: Combine your dental treatment with a vacation in Turkey! Explore the rich history, vibrant culture, and stunning landscapes of Istanbul, Antalya, or Alanya while achieving your dream smile.</p><h2>What Are Clear Aligners?</h2><p>Clear aligners, such as Invisalign, are a modern alternative to traditional braces. These custom-made, transparent trays gradually shift teeth into their desired position. They are nearly invisible and provide a comfortable and discreet orthodontic treatment option.</p><p><br></p><h4><strong>How Clear Aligners Work</strong></h4><p><strong>Initial Consultation and 3D Scanning:</strong></p><p class="ql-indent-1">The process begins with a consultation at AZPO Health, where our dental professionals assess your oral health and discuss your smile goals.</p><p class="ql-indent-1">Using a state-of-the-art iTero Element™ scanner, we create a detailed 3D scan of your teeth. This digital model ensures high precision in treatment planning.</p><p><strong>Personalized Treatment Plan:</strong></p><p class="ql-indent-1">Based on the 3D scan, our experts develop a customized treatment plan that maps out the precise movements of your teeth.</p><p class="ql-indent-1">You’ll get a preview of what your new smile will look like throughout each stage of the treatment.</p><p><strong>Custom Aligner Fabrication:</strong></p><p class="ql-indent-1">A series of Clear Aligners are custom-made to fit your teeth perfectly.</p><p class="ql-indent-1">These aligners are crafted from SmartTrack™ material, which is comfortable, durable, and nearly invisible.</p><p><strong>Wearing the Aligners:</strong></p><p class="ql-indent-1">You’ll wear each set of aligners for about 1-2 weeks, as directed by your dentist.</p><p class="ql-indent-1">The aligners should be worn for 20-22 hours a day, removing them only for eating, drinking, and oral hygiene.</p><p><strong>Progress and Adjustments:</strong></p><p class="ql-indent-1">As you switch to a new set of aligners, your teeth gradually shift into the desired position.</p><p class="ql-indent-1">Regular check-ups allow our team to monitor your progress and make any necessary adjustments.</p><h4><strong>Benefits of Clear Aligners: Invisalign</strong></h4><p><strong>Virtually Invisible</strong>: Clear Aligners are nearly invisible, making them a discreet option for straightening teeth.</p><p><strong>Comfortable Fit</strong>: Made from smooth plastic, Clear Aligners are gentle on your gums and cheeks, minimizing irritation.</p><p><strong>Removable</strong>: You can remove the aligners to eat, drink, brush, and floss, making it easier to maintain good oral hygiene.</p><p><strong>Customized Treatment</strong>: Each aligner is custom-made to fit your mouth, ensuring precise and effective tooth movement.</p><p><strong>Predictable Results</strong>: The 3D scanning and treatment planning process allows for predictable and accurate results.</p><p><strong>Improved Oral Health</strong>: Straightening your teeth with Clear Aligners can improve your overall oral health by making it easier to clean your teeth and gums.</p><h3><span style="color: rgb(67, 67, 67);">Types of clear aligners</span></h3><p><strong>Invisalign</strong>: A popular brand of clear aligners that offers a series of custom-made aligners to gradually straighten teeth.</p><p><strong>ClearCorrect</strong>: Another brand of clear aligners that uses a similar approach to Invisalign, with custom-made aligners designed to move teeth over time.</p><p><strong>eCligner</strong>: It is a transparent aligner system that uses aligners that are made in stages to align teeth.</p><h3><strong>AZPO Health: Your Trusted Partner for Clear Aligners Invisalign</strong></h3><p>At AZPO Health, we are dedicated to providing exceptional dental care with a focus on patient satisfaction and outstanding results. Here’s what sets us apart:</p><p><strong>Experienced Dental Team</strong>: Our team consists of highly qualified and experienced dentists specializing in orthodontics and Clear Aligners Invisalign treatments.</p><p><strong>State-of-the-Art Technology</strong>: We use the latest dental technology, including 3D scanning and digital treatment planning, to ensure precision and optimal outcomes.</p><p><strong>Personalized Care</strong>: We believe in providing personalized care tailored to your unique needs and smile goals. Our dental professionals take the time to listen to your concerns and develop a treatment plan that’s right for you.</p><p><strong>Comprehensive Support</strong>: From the initial consultation to the final follow-up appointment, we provide comprehensive support and guidance to ensure a smooth and comfortable experience. Our bilingual staff is always available to answer your questions and address any concerns.</p><p><strong>Prime Locations</strong>: With clinics all over Turkey, AZPO Health offers convenient access to world-class dental care in some of Turkey’s most beautiful cities.</p><h3><strong>Real Stories, Real Smiles</strong></h3><p><em>I had always been self-conscious about my crooked teeth, but the thought of wearing metal braces as an adult was unbearable. AZPO Health offered me a Clear Aligners Invisalign treatment plan that was not only affordable but also incredibly convenient. The aligners were virtually invisible, and I could remove them to eat and brush my teeth. The whole process was smooth, and the results are amazing. I finally have the confident smile I’ve always dreamed of!</em> - <strong>Sarah J.</strong></p><p><em>Choosing AZPO Health for my Clear Aligners Invisalign treatment was the best decision I’ve ever made. The team was professional and caring, and the clinic was equipped with the latest technology. I was amazed at how quickly my teeth started to straighten, and the aligners were so comfortable to wear. Plus, being able to explore Istanbul during my treatment was an added bonus. I highly recommend AZPO Health to anyone considering Clear Aligners Invisalign.</em> - <strong>Michael B.</strong></p><h3><strong>Take the First Step Towards Your Dream Smile!</strong></h3><p>Ready to transform your smile with Clear Aligners Invisalign? Contact AZPO Health today for a free consultation and personalized quote. Our friendly team is here to answer your questions, discuss your smile goals, and help you discover how Clear Aligners Invisalign can change your life. Don’t wait any longer to achieve the confident, beautiful smile you deserve!</p><p><br></p>
-          `
+            ? `<p dir="ltr">Турция &mdash; один из лидеров в мире медицинского туризма, особенно в сфере стоматологии. И вот почему лечение Invisalign в AZPO Health &mdash; это действительно умный и выгодный выбор:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Выгодная стоимость: экономия &mdash; один из ключевых факторов. Стоматологические процедуры в Турции обходятся в 2&ndash;3 раза дешевле, чем в США или Великобритании. И даже с учётом перелёта и проживания вы всё равно существенно выигрываете в бюджете.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высокие стандарты качества: в AZPO Health используются передовые технологии и материалы, соответствующие международным стандартам. Мы предлагаем современный подход к Invisalign, обеспечивая безопасность и эффективные результаты.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Проверенные специалисты: наши стоматологи &mdash; профессионалы с обширным опытом в области прозрачных элайнеров. Они постоянно совершенствуют свои знания, чтобы предложить пациентам самые актуальные и эффективные методы лечения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полный сервис под ключ: мы заботимся о вашем комфорте на каждом этапе. Проживание, трансфер из аэропорта, сопровождение и постпроцедурный уход &mdash; всё включено в программу. Вам остаётся только расслабиться и сосредоточиться на своём здоровье.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лечение с элементами отпуска: Турция &mdash; это не только качественная медицина, но и возможность отдохнуть. Насладитесь тёплым солнцем, морем, древними городами и восточным гостеприимством. Улыбка станет прекрасным финалом вашего путешествия.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Что представляют собой прозрачные элайнеры?</h2>
+<p dir="ltr">Элайнеры &mdash; это прозрачные индивидуально изготовленные каппы, которые постепенно смещают зубы в правильное положение. Они практически незаметны и обеспечивают комфортную и эстетичную альтернативу традиционным брекетам.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">Как работает система элайнеров?</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Первичная консультация и 3D-сканирование:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Лечение начинается с консультации в AZPO Health, где наши специалисты оценивают состояние полости рта и обсуждают желаемый результат.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">С помощью современного сканера iTero Element&trade; создается точная 3D-модель ваших зубов &mdash; это основа для тщательного и персонализированного плана лечения.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальный план лечения:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">На основе 3D-модели разрабатывается пошаговый план перемещения зубов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Вы сможете увидеть, как будет выглядеть ваша улыбка на каждом этапе лечения.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Изготовление капп:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Элайнеры изготавливаются из уникального материала SmartTrack&trade;, обеспечивающего комфорт, прочность и незаметность.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Каждая каппа создаётся под точную анатомию ваших зубов.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ношение элайнеров:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Каждую пару необходимо носить 1&ndash;2 недели, в зависимости от рекомендаций врача.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Элайнеры надеваются на 20&ndash;22 часа в сутки, снимаются только во время еды, питья и чистки зубов.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Контроль и коррекции:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">При смене каждой пары капп зубы постепенно перемещаются в нужное положение.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Благодаря чёткому планированию, количество очных визитов сводится к минимуму. Многие этапы можно сопровождать дистанционно: при необходимости назначаются онлайн-консультации и виртуальные осмотры, что особенно удобно для пациентов из других стран.<br><br></p>
+</li>
+</ul>
+</ol>
+<h3 dir="ltr">Преимущества прозрачных элайнеров Invisalign</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Почти незаметны: элайнеры практически не видны на зубах, что позволяет исправлять прикус незаметно для окружающих.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комфорт при ношении: сделаны из гладкого пластика, который бережно касается дёсен и не вызывает раздражения, как металлические брекеты.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Съемные и удобные: из легко снимать во время еды, чистки зубов и ухода за полостью рта, что помогает поддерживать гигиену на высшем уровне.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальное изготовление: каждая каппа изготавливается по точным слепкам, что обеспечивает эффективное и аккуратное перемещение зубов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Точная диагностика и прогноз: благодаря 3D-сканированию и тщательному планированию можно заранее увидеть конечный результат лечения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Здоровье полости рта: правильное выравнивание зубов облегчает чистку, снижая риск кариеса и воспалений.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Виды прозрачных элайнеров</h3>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Invisalign: самая известная система с серией индивидуальных капп для постепенного выравнивания зубов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">ClearCorrect: аналогичный вариант, предлагающий удобные и эффективные элайнеры.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">eCligner: модульная система, позволяющая поэтапно корректировать положение зубов.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Почему выбирают AZPO Health для лечения Invisalign</h3>
+<p dir="ltr">Мы в AZPO Health заботимся о вашем здоровье и комфортном лечении. Вот что делает нас особенными:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Профессиональная команда: наши специалисты &mdash; опытные ортодонты, постоянно совершенствующие свои навыки и владеющие всеми современными методами лечения элайнерами.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Передовые технологии: мы применяем новейшие цифровые технологии &mdash; 3D-сканирование и детальное моделирование, чтобы сделать лечение максимально точным и эффективным.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Персональный подход: мы учитываем все ваши пожелания и индивидуальные особенности, создавая уникальный план для вашей улыбки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддержка на каждом шаге: от первой консультации и до окончания лечения мы всегда на связи &mdash; наши координаторы помогут решить любые вопросы, включая после лечения, даже когда вы уже дома.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удобство и комфорт: наши клиники расположены в живописных городах Турции, где можно совместить лечение с отдыхом и приятными впечатлениями.<br><br></p>
+</li>
+</ul>
+<h3 dir="ltr">Сделайте первый шаг к улыбке своей мечты!</h3>
+<p dir="ltr">Хотите преобразить свою улыбку с помощью прозрачных элайнеров Invisalign? Обратитесь в AZPO Health уже сегодня, чтобы получить бесплатную консультацию и индивидуальный план лечения. Наша дружелюбная команда готова ответить на все ваши вопросы, помочь определить ваши цели и рассказать, как Invisalign поможет вам обрести уверенность и красивую улыбку. Не откладывайте &mdash; начните менять свою жизнь прямо сейчас!</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">Реальные отзывы наших пациентов&nbsp;</h3>
+<p dir="ltr">Я всегда стеснялась своих неровных зубов, а мысль о металлических брекетах во взрослом возрасте меня пугала. AZPO Health предложили мне удобное и доступное решение &mdash; лечение прозрачными элайнерами Invisalign. Элайнеры почти не заметны и их легко снимать во время еды и ухода за зубами. Процесс прошел гладко, а результат превзошел все мои ожидания. Теперь я горжусь своей улыбкой! &mdash; Сара Дж.</p>
+<p dir="ltr"><strong id="docs-internal-guid-3334e26a-7fff-2fce-5a85-f94c35aa4864">Выбрав AZPO Health для лечения Invisalign, я сделала лучший выбор в своей жизни. Профессионализм команды, современное оборудование и быстрый эффект лечения меня просто впечатлили. Элайнеры были удобны, а возможность совместить лечение с отдыхом в Стамбуле сделала этот опыт ещё более приятным. Рекомендую AZPO Health всем, кто хочет исправить улыбку без стресса и дискомфорта. &mdash; Майкл Б.</strong></p>`
             : `<p dir="ltr">Turkey has emerged as a leading destination for medical tourism, particularly for dental treatments, and here&rsquo;s why choosing AZPO Health for your Clear Aligners Invisalign treatment in Turkey is a smart decision:</p>
 <ul>
 <li dir="ltr" aria-level="1">
@@ -15949,122 +16389,105 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Restore & Protect Your Smile with Gum Graft Surgery"
+          ? "Восстановите и защитите свою улыбку с помощью операции по пересадке десен"
           : "Restore & Protect Your Smile with Gum Graft Surgery",
       descriptionTop:
         locale === "ru"
-          ? "Receding gums? Sensitivity? Exposed roots? Gum graft surgery rebuilds and strengthens your gums, protecting your teeth from damage and enhancing your smile’s health. Whether for aesthetics or relief, our expert care ensures a smooth, effective procedure with lasting results. Say hello to healthier gums and a confident smile!"
+          ? "Страдаете от опущенных десен, чувствительности или открытых корней зубов? Операция по пересадке десен – это эффективный способ укрепить и восстановить здоровье десен, защитив зубы от дальнейших повреждений и улучшив внешний вид вашей улыбки. Независимо от того, хотите ли вы улучшить эстетику или избавиться от неприятных симптомов, наши специалисты гарантируют комфортную и безопасную процедуру с длительным эффектом. Здоровые десны и уверенная улыбка – реальность!"
           : "Receding gums? Sensitivity? Exposed roots? Gum graft surgery rebuilds and strengthens your gums, protecting your teeth from damage and enhancing your smile’s health. Whether for aesthetics or relief, our expert care ensures a smooth, effective procedure with lasting results. Say hello to healthier gums and a confident smile!",
       benefits: {
         items: [
           {
             title:
-              locale === "ru" ? "Restored Gum Health" : "Restored Gum Health",
+              locale === "ru" ? "Восстановление здоровья десен" : "Restored Gum Health",
             desc:
               locale === "ru"
-                ? "Gum grafting rebuilds tissue, preventing recession and protecting roots."
+                ? "пересадка останавливает рецессию и защищает корни."
                 : "Gum grafting rebuilds tissue, preventing recession and protecting roots.",
           },
           {
             title:
-              locale === "ru" ? "Comfort & Appearance" : "Comfort & Appearance",
+              locale === "ru" ? "Комфорт и эстетика" : "Comfort & Appearance",
             desc:
               locale === "ru"
-                ? "Reduces tooth sensitivity while creating a more aesthetically pleasing smile."
+                ? "снижается чувствительность, улучшается внешний вид улыбки."
                 : "Reduces tooth sensitivity while creating a more aesthetically pleasing smile.",
           },
           {
             title:
-              locale === "ru" ? "Lasting Protection" : "Lasting Protection",
+              locale === "ru" ? "Долговечность и защита" : "Lasting Protection",
             desc:
               locale === "ru"
-                ? "Prevents dental diseases provides durable results with proper maintenance."
+                ? "долгосрочный результат и профилактика заболеваний при хорошем уходе."
                 : "Prevents dental diseases provides durable results with proper maintenance.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Description" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? ``
+                ? `Операция по пересадке десен – это высокоэффективная хирургическая процедура, предназначенная для восстановления здоровья десен, особенно при их рецессии, когда десна отходит от зубов, открывая корни. Это состояние может вызвать не только эстетические проблемы, но и увеличить риск развития стоматологических заболеваний.`
                 : `
                   Gum grafting is a surgical procedure aimed at restoring and improving the condition of the gums, especially in cases of gum recession, where the gums pull away from the teeth, exposing the roots. This can lead to both aesthetic issues and an increased risk of dental disease.
                 `,
           },
           {
-            header: locale === "ru" ? "What to Consider" : "How it Works",
+            header: locale === "ru" ? "Как это работает" : "How it Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процесс начинается с тщательной оценки состояния десен, чтобы определить степень рецессии и выбрать оптимальный метод пересадки. Для этой процедуры используется здоровая ткань, взятая с неба, или синтетический материал, который пересаживается на поврежденный участок и фиксируется швами. В течение нескольких недель трансплантат срастается с естественной тканью, восстанавливая толщину и прочность десен."
                 : "The procedure begins with an evaluation to determine the extent of gum recession and the best grafting method. Healthy tissue from the palate or a synthetic alternative is then grafted onto the affected area and secured with stitches. Over the following weeks, the graft integrates with existing tissue, restoring gum thickness and coverage.",
           },
           {
-            header: locale === "ru" ? "" : "For Whom",
+            header: locale === "ru" ? "Для кого подходит" : "For Whom",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура по пересадке десен рекомендована людям, страдающим от рецессии десен, которая может привести к повышенной чувствительности зубов, оголению корней и неравномерной линии десен. Она также может быть решением для тех, кто хочет улучшить внешний вид своей улыбки и предотвратить дальнейшую потерю десен и костной ткани. Люди, испытывающие дискомфорт при еде или чистке зубов из-за оголенных корней, могут извлечь значительную пользу от данной процедуры."
                 : "Gum grafting is suitable for individuals experiencing gum recession, which may lead to tooth sensitivity, exposed tooth roots, or an uneven gum line. It can also be an option for those who want to enhance the appearance of their smile by correcting receding gums or prevent further gum and bone loss. Additionally, people who feel discomfort while eating or brushing due to exposed root surfaces may benefit from this procedure. ",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Does it hurt?",
-          answer: locale === "ru" ? "" : "Palate can be sore – meds can help",
+          question : locale === "ru" ? "Больно ли?" : "Does it hurt?",
+          answer : locale === "ru" ? "Нкбо может болеть, но лекарства помогут справиться с дискомфортом." : "Palate can be sore – meds can help"
         },
         {
-          question: locale === "ru" ? "" : "How long to heal?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "2 weeks for surface healing, full in 3–6 months",
+          question : locale === "ru" ? "Как долго заживает?" : "How long to heal?",
+          answer : locale === "ru" ? "Поверхность заживает в течение 2 недель, полное заживление может занять от 3 до 6 месяцев." : "2 weeks for surface healing, full in 3–6 months"
         },
         {
-          question: locale === "ru" ? "" : "Will it match my gums?",
-          answer: locale === "ru" ? "" : "Color blends over time",
+          question : locale === "ru" ? "Будет ли пересадка гармонично сочетаться с моими деснами?" : "Will it match my gums?",
+          answer : locale === "ru" ? "Со временем цвет пересадки постепенно сливается с цветом ваших десен." : "Color blends over time"
         },
         {
-          question: locale === "ru" ? "" : "What if the graft fails?",
-          answer: locale === "ru" ? "" : "Rare – surgeon may redo small area",
+          question : locale === "ru" ? "Что если пересадка не удастся?" : "What if the graft fails?",
+          answer : locale === "ru" ? "Это случается крайне редко. В случае необходимости хирург может переделать небольшую область." : "Rare – surgeon may redo small area"
         },
         {
-          question: locale === "ru" ? "" : "Can I brush the site?",
-          answer:
-            locale === "ru" ? "" : "Not until cleared by your periodontist",
+          question : locale === "ru" ? "Могу ли я чистить этот участок?" : "Can I brush the site?",
+          answer : locale === "ru" ? "Чистить его можно только после разрешения вашего пародонтолога." : "Not until cleared by your periodontist"
         },
         {
-          question: locale === "ru" ? "" : "When can I resume normal eating?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Typically after 2-3 weeks, but consult with your doctor",
-        },
+          question : locale === "ru" ? "Когда я смогу вернуться к нормальному питанию?" : "When can I resume normal eating?",
+          answer : locale === "ru" ? "Обычно это возможно через 2–3 недели, но для точных рекомендаций проконсультируйтесь с вашим врачом." : "Typically after 2-3 weeks, but consult with your doctor"
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Don’t touch graft site or pull lips to check it",
-        locale === "ru" ? "" : "Stick to soft foods, no straws or spitting",
-        locale === "ru"
-          ? ""
-          : "Use prescribed rinse,do not brush the graft area initially",
-        locale === "ru"
-          ? ""
-          : "Take meds as prescribed, avoid strenuous activity",
-        locale === "ru" ? "" : "Follow-up for healing and stitch removal",
-        locale === "ru"
-          ? ""
-          : "Drink in small sips to avoid pressure on the graft site",
+        locale === "ru" ? "Не трогайте место пересадки и не тяните губы, чтобы проверить его." : "Don’t touch graft site or pull lips to check it",
+        locale === "ru" ? "Соблюдайте диету из мягкой пищи, избегайте трубочек и не сплевывайте." : "Stick to soft foods, no straws or spitting",
+        locale === "ru" ? "Используйте назначенный ополаскиватель, не чистите область пересадки на начальном этапе." : "Use prescribed rinse,do not brush the graft area initially",
+        locale === "ru" ? "Принимайте лекарства строго по назначению и избегайте интенсивных физических нагрузок." : "Take meds as prescribed, avoid strenuous activity",
+        locale === "ru" ? "Запишитесь на повторный прием для контроля за процессом заживления и снятия швов." : "Follow-up for healing and stitch removal",
+        locale === "ru" ? "Пейте маленькими глотками, чтобы избежать давления на место пересадки." : "Drink in small sips to avoid pressure on the graft site"
       ],
       preList: [
-        locale === "ru" ? "" : "Avoid aspirin/NSAIDs if advised",
-        locale === "ru" ? "" : "Know if tissue is from your palate or donor",
-        locale === "ru" ? "" : "Comsume soft, lukeworm foods at home",
-        locale === "ru" ? "" : "Stop smoking ahead of time",
-        locale === "ru"
-          ? ""
-          : "Avoid smoking prior to the procedure for better healing",
+        locale === "ru" ? "Избегайте аспирина и НПВП, если это рекомендовано вашим врачом." : "Avoid aspirin/NSAIDs if advised",
+        locale === "ru" ? "Уточните, является ли ткань для процедуры взятой с вашего неба или от донора." : "Know if tissue is from your palate or donor",
+        locale === "ru" ? "В первые дни после процедуры употребляйте мягкую и тёплую пищу." : "Comsume soft, lukeworm foods at home",
+        locale === "ru" ? "Прекратите курение заранее, чтобы улучшить процесс заживления." : "Stop smoking ahead of time",
+        locale === "ru" ? "Воздержитесь от курения непосредственно перед процедурой для лучшего результата." : "Avoid smoking prior to the procedure for better healing"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -17240,140 +17663,199 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Подтяжка живота в Турции: Верните стройность и уверенность в себе!"
+          ? "Лечение глаукомы в Турции в 2025 году"
           : "Glaucoma Treatment in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Заметили, что зрение стало расплывчатым? Чувствуете давление в глазах или постепенно теряете остроту зрения? Глаукома — это «тихий вор», который может незаметно лишить человека зрения. Но своевременное лечение способно остановить процесс и сохранить вашу зрительную функцию. С AZPO Health вы получаете доступ к ведущим офтальмологическим клиникам Турции и экспертам с высоким уровнем подготовки. Современные методы, точная диагностика и забота о вашем зрении."
           : "Is blurry vision, eye pressure, or gradual vision loss making daily life harder? Glaucoma is a silent thief of sight, but early intervention can save your vision. Regain hope with advanced Glaucoma Treatment options. AZPO Health connects you with expert clinics in Turkey offering personalized care to manage your condition and help preserve your precious sight, ensuring a brighter future for your vision.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Pressure Control",
+            title: locale === "ru" ? "Контроль давления" : "Pressure Control",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "стабильное снижение внутриглазного давления на длительный срок."
                 : "Effectively manages intraocular pressure for sustained periods",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Medication Freedom",
+            title: locale === "ru" ? "Отказ от капель" : "Medication Freedom",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "возможное избавление от постоянного использования глазных капель."
                 : "Potentially eliminates ongoing need for glaucoma eye drops",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Custom Treatment",
+            title: locale === "ru" ? "Индивидуальный подход" : "Custom Treatment",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "подбор метода лечения в зависимости от типа и стадии глаукомы."
                 : "Personalized approach based on individual glaucoma type and severity",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Подходит для людей с избытком кожи или ослабленными мышцами живота. Идеально подходит для пациентов со стабильным весом и хорошим общим состоянием здоровья."
+                ? "Оперативное лечение глаукомы применяется для снижения внутриглазного давления (ВГД) в случаях, когда медикаментозная терапия и лазерное лечение оказываются недостаточно эффективными. Цель операции — создать альтернативные пути оттока жидкости или уменьшить ее продукцию, чтобы предотвратить повреждение зрительного нерва."
                 : "Glaucoma surgery is used to lower intraocular pressure (IOP) when medications and laser treatments are insufficient. It creates alternative pathways for fluid drainage or reduces fluid production to prevent optic nerve damage.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Трабекулэктомия — это операция, при которой формируется склеральный клапан, обеспечивающий отток жидкости и снижение внутриглазного давления (ВГД) при запущенной глаукоме. В сложных случаях применяются дренажные устройства — шунты, такие как Ahmed и Baerveldt, которые отводят жидкость из глаза. Малоинвазивная хирургия глаукомы (MIGS) включает использование стентов, например iStent и Hydrus, которые улучшают отток жидкости при легкой и умеренной глаукоме. Циклофотокоагуляция представляет собой лазерное или криогенное воздействие, снижающее продукцию жидкости в устойчивых случаях заболевания."
                 : "Trabeculectomy: Creates a scleral flap to drain fluid, lowering IOP in advanced glaucoma. Drainage Devices: Shunts (Ahmed, Baerveldt) redirect fluid for complex cases. MIGS: Stents (iStent, Hydrus) improve drainage for mild to moderate glaucoma. Cyclophotocoagulation: Laser or freezing reduces fluid production in resistant cases.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For Whom?",
+            header: locale === "ru" ? "Кому показана операция" : "For Whom?",
             desc:
               locale === "ru"
-                ? "Trabeculectomy: A common surgery for advanced glaucoma. A small flap is created in the sclera (white part of the eye) to allow fluid to drain into a reservoir, or bleb, under the conjunctiva (clear membrane). Reduces IOP by bypassing the natural drainage pathways."
+                ? "Пациентам с неконтролируемым ВГД, несмотря на медикаменты или лазерную терапию. Людям с прогрессирующей глаукомой и высоким риском потери зрения. Тем, кто не может переносить лекарства или не соблюдает режим их применения."
                 : "Patients with uncontrolled IOP despite medications or laser therapy. Individuals with advanced glaucoma at risk of vision loss. Those who cannot tolerate or adhere to medications.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Is glaucoma curable?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "No, but it can be managed to prevent vision loss",
+          question : locale === "ru" ? "Можно ли вылечить глаукому?" : "Is glaucoma curable?",
+          answer : locale === "ru" ? "Нет, но ее можно контролировать, чтобы предотвратить потерю зрения." : "No, but it can be managed to prevent vision loss"
         },
         {
-          question: locale === "ru" ? "" : "Does it hurt?",
-          answer:
-            locale === "ru" ? "" : "Usually painless unless pressure spikes",
+          question : locale === "ru" ? "Это больно?" : "Does it hurt?",
+          answer : locale === "ru" ? "Обычно безболезненно, если нет скачков давления." : "Usually painless unless pressure spikes"
         },
         {
-          question: locale === "ru" ? "" : "Can I go blind?",
-          answer:
-            locale === "ru" ? "" : "Yes, if untreated – early care is key",
+          question : locale === "ru" ? "Могу ли я ослепнуть?" : "Can I go blind?",
+          answer : locale === "ru" ? "Да, если не лечить - ранняя помощь имеет значение." : "Yes, if untreated – early care is key"
         },
         {
-          question: locale === "ru" ? "" : "Do drops work?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, they lower pressure effectively in many cases",
+          question : locale === "ru" ? "Капли помогают?" : "Do drops work?",
+          answer : locale === "ru" ? "Да, они эффективно снижают давление во многих случаях." : "Yes, they lower pressure effectively in many cases"
         },
         {
-          question: locale === "ru" ? "" : "Are surgeries available?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes – laser and filtering surgeries for advanced cases ",
+          question : locale === "ru" ? "Доступны ли операции?" : "Are surgeries available?",
+          answer : locale === "ru" ? "Да - лазерные и фильтрационные операции для запущенных случаев." : "Yes – laser and filtering surgeries for advanced cases"
         },
         {
-          question:
-            locale === "ru" ? "" : "When is surgery needed for glaucoma?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Surgery is needed if medications and laser treatments are insufficient.",
+          question : locale === "ru" ? "Когда нужна операция при глаукоме?" : "When is surgery needed for glaucoma?",
+          answer : locale === "ru" ? "Операция требуется, если медикаменты и лазерные процедуры не дают достаточного эффекта." : "Surgery is needed if medications and laser treatments are insufficient."
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "Are glasses or contacts effective for glaucoma treatment?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Glasses or contacts improve vision but don’t treat glaucoma.",
-        },
+          question : locale === "ru" ? "Эффективны ли очки или контактные линзы для лечения глаукомы?" : "Are glasses or contacts effective for glaucoma treatment?",
+          answer : locale === "ru" ? "Очки или контактные линзы улучшают зрение, но не лечат глаукому." : "Glasses or contacts improve vision but don’t treat glaucoma."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Use prescribed eye drops on time",
-        locale === "ru" ? "" : "Avoid rubbing eyes and strenuous activity",
-        locale === "ru" ? "" : "Attend regular pressure checks",
-        locale === "ru" ? "" : "Protect eyes from bright light or dust",
-        locale === "ru" ? "" : "Follow up with ophthalmologist regularly",
+        locale === "ru" ? "Своевременно используйте назначенные капли для глаз." : "Use prescribed eye drops on time",
+        locale === "ru" ? "Избегайте трения глаз и интенсивных физических нагрузок." : "Avoid rubbing eyes and strenuous activity",
+        locale === "ru" ? "Регулярно проверяйте глазное давление." : "Attend regular pressure checks",
+        locale === "ru" ? "Защищайте глаза от яркого света и пыли." : "Protect eyes from bright light or dust",
+        locale === "ru" ? "Регулярно посещайте офтальмолога." : "Follow up with ophthalmologist regularly"
       ],
       preList: [
-        locale === "ru" ? "" : "Undergo eye pressure and vision testing",
-        locale === "ru" ? "" : "Discuss current eye drops and medications",
-        locale === "ru" ? "" : "Control blood pressure and diabetes if present",
-        locale === "ru" ? "" : "Avoid caffeine and stress before evaluation",
+        locale === "ru" ? "Пройдите тестирование на глазное давление и зрение для полной диагностики." : "Undergo eye pressure and vision testing",
+        locale === "ru" ? "Обсудите с врачом все используемые капли для глаз и лекарства." : "Discuss current eye drops and medications",
+        locale === "ru" ? "Контролируйте уровень кровяного давления и сахара в крови, если это необходимо." : "Control blood pressure and diabetes if present",
+        locale === "ru" ? "Постарайтесь избежать стресса и потребления кофеина перед обследованием." : "Avoid caffeine consumption and stress before evaluation"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Surgical treatments for glaucoma provide effective options for lowering IOP and preventing further vision loss, especially for patients with advanced or resistant forms of the disease. With evolving techniques like MIGS, patients now have access to safer and less invasive procedures tailored to their needs."
+            ? "Хирургическое лечение глаукомы предоставляет эффективные возможности для снижения ВГД и предотвращения дальнейшей потери зрения — особенно у пациентов с тяжёлыми или устойчивыми формами заболевания. Благодаря современным методам, таким как MIGS, пациенты могут рассчитывать на более безопасные процедуры, адаптированные к их индивидуальным потребностям."
             : "Surgical treatments for glaucoma provide effective options for lowering IOP and preventing further vision loss, especially for patients with advanced or resistant forms of the disease. With evolving techniques like MIGS, patients now have access to safer and less invasive procedures tailored to their needs.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Comprehensive Glaucoma Treatment Options in Turkey"
+            ? "Комплексное лечение глаукомы в Турци"
             : "Comprehensive Glaucoma Treatment Options in Turkey",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Глаукома &mdash; это заболевание, способное серьезно повлиять на зрение. Однако при своевременной и эффективной терапии ее прогресс можно контролировать. AZPO Health помогает вам сделать первый шаг к восстановлению зрения, предоставляя доступ к надежным клиникам в Турции, где предлагаются индивидуальные программы лечения глаукомы, ориентированные на ваши потребности. Понимание доступных вариантов &mdash; это первый шаг к управлению здоровьем глаз.</p>
+<h3 dir="ltr">Почему стоит рассмотреть лечение глаукомы в Турции?</h3>
+<p dir="ltr">Турция уверенно занимает ведущие позиции в сфере медицинского туризма &mdash; и неслучайно. В области специализированного лечения, включая глаукому, страна предлагает ряд значительных преимуществ:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к опытным специалистам:<br>турецкие офтальмологи обладают высокой квалификацией и богатым опытом в диагностике и лечении различных заболеваний глаз, включая глаукому. Клиники, с которыми сотрудничает AZPO Health, работают с врачами, регулярно повышающими свою квалификацию и использующими современные подходы в офтальмологии. Кроме того, вы можете получить бесплатную онлайн-консультацию с нашими специалистами до поездки в Турцию.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные медицинские учреждения:<br>Турция входит в число мировых лидеров по количеству медицинских учреждений, аккредитованных JCI. По состоянию на март 2025 года в стране действует 30 JCI-аккредитованных клиник. Учреждения, с которыми работает AZPO Health, оснащены передовыми технологиями для диагностики и лечения, обеспечивая качество медицинской помощи, сопоставимое или превосходящее стандарт в вашей стране.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексные пакеты медицинского обслуживания: многие клиники в Турции предлагают удобные и прозрачные пакеты услуг для иностранных пациентов. AZPO Health помогает вам наладить контакт с такими клиниками, где в рамках одного пакета могут быть включены: консультации, диагностические исследования, лечебные процедуры и последующее наблюдение &mdash; зачастую по более доступной цене.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Быстрый доступ к лечению: в некоторых странах ожидание приема у специалиста или проведения процедуры может занимать месяцы. В Турции вы можете получить необходимую помощь в гораздо более короткие сроки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Благоприятная среда: Турция славится своим гостеприимством и культурным богатством. Медицинские туристы часто отмечают, что местная атмосфера способствует восстановлению, а клиники предлагают комфортные условия проживания и дополнительные сервисы поддержки.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health не оказывает медицинских услуг напрямую, но мы заботливо и ответственно помогаем вам установить контакт с ведущими клиниками Турции, чтобы вы могли выбрать лучшее решение для лечения глаукомы и сохранить зрение на долгие годы.</p>
+<h3 dir="ltr">Глаукома: понимание заболевания и современные подходы к лечению</h3>
+<p dir="ltr">Глаукома &mdash; это группа заболеваний глаз, которые повреждают зрительный нерв, важный для передачи визуальной информации от глаза к мозгу. Часто это повреждение происходит из-за аномально высокого давления внутри глаза. Однако глаукома также может развиваться при нормальном уровне внутриглазного давления. Если не лечить глаукому, это может привести к потере зрения и даже слепоте.</p>
+<p dir="ltr">Важно понимать, что потеря зрения, вызванная глаукомой, необратима. Поэтому основная цель лечения глаукомы &mdash; замедлить или предотвратить дальнейшее повреждение зрительного нерва и сохранить оставшееся зрение. Наиболее подходящий подход к лечению будет зависеть от типа глаукомы, стадии заболевания и ваших индивидуальных особенностей. Клиники, с которыми сотрудничает AZPO Health, проведут тщательную оценку, чтобы определить наилучший курс лечения.</p>
+<p dir="ltr">Основные методы лечения глаукомы включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Глазные капли: для первичной открытоугольной глаукомы, наиболее распространенной формы заболевания, лечение обычно начинается с назначения глазных капель. Эти препараты помогают снизить давление внутри глаза, либо уменьшая количество жидкости, производимой глазом, либо улучшая ее отток. Существует несколько типов глазных капель, и ваш офтальмолог подберёт наиболее подходящий препарат, который может быть изменён или дополнен в зависимости от необходимости. Регулярное применение капель, как предписано врачом, имеет решающее значение для контроля заболевания.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лазерное лечение: лазерная терапия &mdash; это еще один распространенный метод лечения глаукомы, который может быть использован как начальный этап лечения, или если глазные капли не обеспечивают достаточного контроля за давлением. Для лечения глаукомы используются различные виды лазерных процедур:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Лазерная трабекулопластика: этот метод в основном используется при открытоугольной глаукоме. Лазер улучшает дренажную функцию трабекулярной сетки глаза, что способствует более легкому оттоку жидкости и снижению внутриглазного давления.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Лазерная периферическая иридотомия: этот метод применяется при угловой глаукоме. Лазером создается маленькое отверстие в радужке (цветной части глаза), что улучшает отток жидкости в глазу и помогает уменьшить давление.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Циклофотокоагуляция: этот лазерный метод воздействует на часть глаза, которая производит жидкость (цилиарное тело). Процедура снижает продукцию жидкости и помогает снизить внутриглазное давление. Она часто используется при более запущенных формах глаукомы.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургия:<br><br>Если глазные капли и лазерное лечение не могут эффективно контролировать внутриглазное давление или замедлить потерю зрения, может быть рекомендована операция. Для лечения глаукомы применяются различные хирургические процедуры:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Трабекулэктомия: это традиционная хирургическая процедура, при которой хирург создает новый дренажный канал для выхода жидкости из глаза, что помогает снизить внутриглазное давление.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Имплантаты для дренажа глаукомы (трубочные шунты): в рамках этой операции в глаз вставляется маленькая трубка, которая отводит жидкость в резервуар, расположенный под конъюнктивой (прозрачной оболочкой глаза). Это может быть особенно полезно при некоторых типах глаукомы или в случаях, когда другие методы лечения не были успешными.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Минимально инвазивная хирургия глаукомы (MIGS): это новейшие хирургические методы, которые менее инвазивны по сравнению с традиционной операцией на глаукоме. Процедуры MIGS обычно включают использование маленьких устройств для улучшения естественных путей дренажа глаза. Эти операции могут быть проведены как с катарактальной хирургией, так и в качестве самостоятельных процедур, и обычно имеют более короткий период восстановления.<br><br></p>
+</li>
+</ul>
+</ul>
+<p dir="ltr">Клиники, с которыми AZPO Health сотрудничает, предложат комплексную оценку, чтобы определить, какой из этих методов лечения или их комбинация наиболее подходит для вашего типа и стадии глаукомы. Они подробно объяснят преимущества и риски каждого метода, чтобы помочь принять осознанное и взвешенное решение.</p>
+<h3 dir="ltr">AZPO Health: ваш надежный партнер в лечении глаукомы</h3>
+<p dir="ltr">AZPO Health &mdash; ведущая компания в сфере медицинского туризма, базирующаяся в Турции. Мы помогаем международным пациентам найти проверенные и высококачественные медицинские учреждения, предлагая доступ к лучшим клиникам и специалистам для эффективного лечения.</p>
+<p dir="ltr">Наши услуги включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подбор проверенных клиник: мы сотрудничаем только с клиниками, имеющими безупречную репутацию в области офтальмологии и лечения глаукомы.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предоставление консультаций:<br>мы предоставляем всю необходимую информацию о возможных вариантах лечения и помогаем наладить связь с клиниками для уточнения всех вопросов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поддержка на каждом этапе: понимая, как сложен процесс лечения за рубежом, наша команда обеспечивает поддержку на каждом шаге, помогая вам пройти путь лечения с комфортом и уверенностью.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Приоритет качества: мы сотрудничаем исключительно с медицинскими учреждениями, придерживающимися высоких стандартов качества и этических норм.</p>
+</li>
+</ul>
+<p dir="ltr">С AZPO Health вы получаете не только доступ к передовым методам лечения, но и уверенность в качестве и надежности предоставляемых услуг. Мы стремимся помочь вам сохранить зрение и обеспечить лучшие условия для вашего здоровья.&nbsp;</p>
+<p dir="ltr">Сделайте первый шаг к сохранению зрения</p>
+<p dir="ltr">Не позволяйте глаукоме угрожать вашему зрению. Исследуйте передовые методы лечения, доступные в Турции с AZPO Health. Наша команда готова помочь вам связаться с опытными офтальмологами и современными клиниками, которые предложат индивидуальное лечение глаукомы для сохранения вашего зрения на многие годы.</p>
+<p dir="ltr">Свяжитесь с AZPO Health сегодня для бесплатной консультации и узнайте, как мы можем помочь вам взять под контроль здоровье ваших глаз.</p>
+<p>&nbsp;</p>`
             : `<p dir="ltr">Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p>
 <h3 dir="ltr">Why Consider Turkey for Glaucoma Treatment?</h3>
 <p dir="ltr">Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p>
@@ -17709,160 +18191,242 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Удаление катаракты с имплантацией интраокулярной линзы (ИОЛ)"
           : "Cataract Surgery with Intraocular Lens (IOL) Implantation",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Устали мириться с размытым зрением, катарактой или зависимостью от очков и контактных линз? Откройте для себя возможности современной офтальмологии в Турции — стране, признанной лидером в сфере медицинского туризма. AZPO Health поможет вам получить доступ к передовым методам лечения и вернуть ясность вашему взгляду."
           : "Are blurry vision, cataracts, or reliance on glasses and contacts limiting your daily life? Discover the potential of Intraocular Lens (IOL) implantation in Turkey, a trusted destination for advanced eye care. AZPO Health can guide you to explore options for clearer vision and a brighter future.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Vision Restoration",
+            title: locale === "ru" ? "Восстановление зрения" : "Vision Restoration",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "обеспечивает значительное улучшение качества зрения и возвращение ясности взгляда."
                 : "Improves eyesight beyond pre-cataract condition through advanced surgical intervention.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Error Correction",
+            title: locale === "ru" ? "Коррекция ошибок рефракции" : "Error Correction",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "специальные ИОЛ позволяют уменьшить зависимость от очков и контактных линз."
                 : "Specialized lenses address refractive issues for enhanced visual outcomes.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Quick Recovery",
+            title: locale === "ru" ? "Быстрое восстановление" : "Quick Recovery",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "минимальное повреждение тканей и сокращённое время реабилитации после операции."
                 : "Minimally invasive procedure with proven success and swift healing process.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание процедуры" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Хирургическое лечение катаракты с установкой интраокулярной линзы (ИОЛ) — это процедура, при которой мутный естественный хрусталик удаляется и заменяется прозрачной искусственной линзой. Помимо восстановления зрения, современные ИОЛ позволяют скорректировать такие нарушения, как дальнозоркость, близорукость и астигматизм."
                 : "Cataract surgery with IOL is a procedure that removes the eye’s cloudy natural lens and replaces it with a clear artificial intraocular lens (IOL). This restores vision and can also correct refractive errors, reducing the need for glasses.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How it Works",
+            header: locale === "ru" ? "Как это работает" : "How it Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Через небольшой разрез хирург с помощью ультразвука (факоэмульсификация) разрушает и удаляет мутный хрусталик. Затем на его место имплантируется искусственная линза (ИОЛ), возвращающая четкое зрение. Операция проводится под местной анестезией, имеет короткий реабилитационный период и минимальные ощущения дискомфорта."
                 : "Cataract surgery involves removing the eye's cloudy natural lens and replacing it with an artificial intraocular lens (IOL). Through a small incision, the surgeon uses ultrasound energy to break up the cataract and suction it out (phacoemulsification). The IOL is then inserted, restoring clear vision. This procedure is typically performed under local anesthesia, allowing for quick recovery and minimal discomfort.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It's Fors",
+            header: locale === "ru" ? "Кому показана" : "Who It's Fors",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Людям с нарушением зрения, вызванным катарактой. Пациентам старше 60 лет (катаракта часто развивается с возрастом). Тем, кто хочет одновременно скорректировать возрастную дальнозоркость (пресбиопию) с помощью специальных ИОЛ."
                 : "People experiencing vision impairment or daily activity interference due to cataracts. Patients over 60, as cataracts are common with aging. Individuals with other vision correction needs, such as presbyopia, that can benefit from IOL options.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What is an IOL?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "An artificial lens placed after cataract removal",
+          question : locale === "ru" ? "Что такое ИОЛ?" : "What is an IOL?",
+          answer : locale === "ru" ? "Это искусственная интраокулярная линза, которая устанавливается на место естественного хрусталика после удаления катаракты." : "An artificial lens placed after cataract removal"
         },
         {
-          question: locale === "ru" ? "" : "Will I see clearly immediately?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Vision improves within days, full clarity may take weeks",
+          question : locale === "ru" ? "Буду ли я видеть четко сразу после операции?" : "Will I see clearly immediately?",
+          answer : locale === "ru" ? "Улучшение зрения начинается в течение нескольких дней, но полная ясность может занять несколько недель." : "Vision improves within days, full clarity may take weeks"
         },
         {
-          question: locale === "ru" ? "" : "Are there risks?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Low risk – infection, inflammation possible but rare",
+          question : locale === "ru" ? "Есть ли риски при установке ИОЛ?" : "Are there risks?",
+          answer : locale === "ru" ? "Риски минимальны, но возможны редкие осложнения, такие как воспаление или инфекция." : "Low risk – infection, inflammation possible but rare"
         },
         {
-          question: locale === "ru" ? "" : "Can I choose lens type?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes – options include mono-, multi-, and toric lenses",
+          question : locale === "ru" ? "Можно ли выбрать тип линзы?" : "Can I choose lens type?",
+          answer : locale === "ru" ? "Да. Существуют различные типы ИОЛ: монофокальные, мультифокальные и торические - выбор зависит от ваших потребностей и особенностей зрения." : "Yes – options include mono-, multi-, and toric lenses"
         },
         {
-          question: locale === "ru" ? "" : "How long does it last?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "IOLs are permanent and rarely need replacement",
+          question : locale === "ru" ? "Как долго служит искусственная линза?" : "How long does it last?",
+          answer : locale === "ru" ? "ИОЛ рассчитаны на постоянное использование и крайне редко требуют замены." : "IOLs are permanent and rarely need replacement"
         },
         {
-          question:
-            locale === "ru" ? "" : "Are vision changes normal after surgery?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, temporary blurriness or light flashes can occur during healing.",
+          question : locale === "ru" ? "Нормально ли, если зрение изменяется после операции?" : "Are vision changes normal after surgery?",
+          answer : locale === "ru" ? "Да, это нормально. Временная размытость, ореолы или световые блики могут наблюдаться в период восстановления." : "Yes, temporary blurriness or light flashes can occur during healing."
         },
         {
-          question: locale === "ru" ? "" : "Does the lens need to be replaced?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "IOLs are permanent, but re-evaluation may be needed if there are issues with focus or position.",
-        },
+          question : locale === "ru" ? "Нужно ли заменять ИОЛ в будущем?" : "Does the lens need to be replaced?",
+          answer : locale === "ru" ? "Обычно нет. Однако, при проблемах с фокусировкой или положением линзы может потребоваться повторная оценка специалистом." : "IOLs are permanent, but re-evaluation may be needed if there are issues with focus or position."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Avoid eye rubbing and pressure",
-        locale === "ru" ? "" : "Use post-op drops for several weeks",
-        locale === "ru" ? "" : "Protect eye during sleep with a shield",
-        locale === "ru" ? "" : "Avoid strenuous activity and water exposure",
-        locale === "ru" ? "" : "Follow-up for vision checks and healing",
-        locale === "ru"
-          ? ""
-          : "Contact your doctor if you have redness, pain, or vision loss.",
-        locale === "ru" ? "" : "Avoid alcohol and smoking.",
-        locale === "ru"
-          ? ""
-          : "Consult your doctor before using glasses or lenses.",
-        locale === "ru" ? "" : "Avoid low-light environments.",
-        locale === "ru" ? "" : "Limit computer and phone use.",
+        locale === "ru" ? "Избегайте трения глаз и любого давления на них." : "Avoid eye rubbing and pressure",
+        locale === "ru" ? "Используйте назначенные капли в течение нескольких недель после операции." : "Use post-op drops for several weeks",
+        locale === "ru" ? "Защищайте глаз во время сна с помощью специального щита." : "Protect eye during sleep with a shield",
+        locale === "ru" ? "Воздержитесь от интенсивных физических нагрузок и контакта глаз с водой." : "Avoid strenuous activity and water exposure",
+        locale === "ru" ? "Регулярно посещайте врача для проверки зрения и оценки процесса заживления." : "Follow-up for vision checks and healing",
+        locale === "ru" ? "Немедленно свяжитесь с врачом при появлении покраснения, боли или внезапной потери зрения." : "Contact your doctor if you have redness, pain, or vision loss.",
+        locale === "ru" ? "Избегайте употребления алкоголя и курения." : "Avoid alcohol and smoking.",
+        locale === "ru" ? "Проконсультируйтесь с офтальмологом перед использованием очков или контактных линз." : "Consult your doctor before using glasses or lenses.",
+        locale === "ru" ? "Старайтесь избегать плохо освещенных помещений и условий с низким уровнем света." : "Avoid low-light environments.",
+        locale === "ru" ? "" : "Limit computer and phone use."
       ],
       preList: [
-        locale === "ru" ? "" : "Eye exam and measurement for lens fitting",
-        locale === "ru" ? "" : "Stop medications if advised",
-        locale === "ru" ? "" : "Fast before procedure if sedated",
-        locale === "ru" ? "" : "Use pre-op eye drops as directed",
-        locale === "ru" ? "" : "Follow diet recommendations.",
-        locale === "ru" ? "" : "Inform about allergies.",
-        locale === "ru" ? "" : "Quit smoking.",
-        locale === "ru" ? "" : "Get enough sleep.",
+        locale === "ru" ? "Пройдите полное обследование зрения для подбора линз." : "Eye exam and measurement for lens fitting",
+        locale === "ru" ? "Прекратите прием определенных медикаментов, если это рекомендовано врачом." : "Stop medications if advised",
+        locale === "ru" ? "Воздержитесь от приема пищи перед процедурой, если планируется седация." : "Fast before procedure if sedated",
+        locale === "ru" ? "Используйте предоперационные глазные капли строго по инструкции." : "Use pre-op eye drops as directed",
+        locale === "ru" ? "Следуйте диетическим рекомендациям, выданным специалистом." : "Follow diet recommendations.",
+        locale === "ru" ? "Обязательно сообщите врачу об аллергиях." : "Inform about allergies.",
+        locale === "ru" ? "Откажитесь от курения для улучшения заживления и результатов." : "Quit smoking.",
+        locale === "ru" ? "Обеспечьте себе полноценный сон и отдых перед процедурой." : "Get enough sleep."
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Операция по удалению катаракты с имплантацией ИОЛ — одна из самых безопасных и результативных процедур в современной медицине. Благодаря технологическому прогрессу, она не только возвращает зрение, но и может значительно повысить его качество, улучшая повседневную жизнь пациента."
             : "Cataract surgery is one of the safest and most effective procedures in modern medicine, providing significant vision improvement. With advancements in IOL technology, it not only restores vision but can also address refractive errors, improving overall quality of life.",
-      },
-      subCategoryContent: {
-        title:
-          locale === "ru"
-            ? "Diabetic retinopathy treatment"
-            : "Diabetic retinopathy treatment",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? "Why Choose Turkey for Your Diabetic Retinopathy Treatment?"
+            ? "Имплантация интраокулярной линзы (ИОЛ) в Турции"
             : "Intraocular Lens (IOL) Implantation in Turkey",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">На разных этапах жизни многие люди сталкиваются с проблемами зрения &mdash; будь то рефракционные нарушения, такие как близорукость, дальнозоркость и астигматизм, или возрастные изменения, например катаракта. Имплантация интраокулярной линзы (ИОЛ) зарекомендовала себя как высокоэффективный и долговременный способ коррекции таких состояний, позволяя значительно улучшить зрение и сократить или полностью устранить необходимость в очках и контактных линзах. AZPO Health поможет вам связаться с опытными офтальмологами и ведущими офтальмологическими клиниками в Турции, специализирующимися на проведении современных операций по установке ИОЛ.</p>
+<h3 dir="ltr">Почему стоит рассмотреть Турцию для имплантации интраокулярной линзы (ИОЛ)?</h3>
+<p dir="ltr">Турция &mdash; признанный мировой центр медицинского туризма, особенно в области офтальмологии. Выбор имплантации интраокулярной линзы (ИОЛ) в Турции с поддержкой AZPO Health открывает для вас целый ряд значительных преимуществ:</p>
+<p dir="ltr">Высококвалифицированные офтальмологи с международным опытом: в Турции работает множество сертифицированных специалистов, прошедших профессиональную подготовку в области передовых офтальмологических хирургических техник, включая различные виды имплантации ИОЛ. Многие из них имеют международную практику и владеют передовыми технологиями в сфере коррекции зрения. AZPO Health тщательно отбирает врачей в своей сети, чтобы вы получали помощь исключительно от проверенных и уважаемых специалистов.</p>
+<p dir="ltr">Современные медицинские учреждения и передовые технологии: Турция входит в число мировых лидеров по количеству медицинских учреждений, аккредитованных по стандарту JCI. По состоянию на март 2025 года в стране насчитывается 30 таких клиник. Офтальмологические центры и больницы оснащены современным диагностическим и хирургическим оборудованием: лазерами последнего поколения, системами высокоточной визуализации и широким выбором современных интраокулярных линз. Благодаря AZPO Health вы получаете доступ к медицинским учреждениям, соответствующим международным стандартам.</p>
+<p dir="ltr">Широкий выбор ИОЛ с учетом индивидуальных потребностей: в зависимости от особенностей вашего зрения и образа жизни офтальмологи подберут оптимальный тип линз: монофокальные ИОЛ &mdash; обеспечивают четкое зрение на одном расстоянии; мультифокальные ИОЛ &mdash; позволяют хорошо видеть как вблизи, так и вдаль; торические ИОЛ &mdash; корректируют астигматизм; аккомодирующие ИОЛ &mdash; частично восстанавливают способность к фокусировке. Специалисты, с которыми вас свяжет AZPO Health, проведут детальное обследование и подберут наилучший вариант именно для вас.</p>
+<p dir="ltr">Индивидуальный, ориентированный на пациента подход:&nbsp; Турецкие офтальмологи уделяют особое внимание открытому диалогу с пациентом и индивидуальному подходу к лечению. Перед тем как рекомендовать имплантацию ИОЛ, они проводят всестороннее обследование, анализируют анамнез и уточняют ваши потребности и ожидания от восстановления зрения. Это позволяет составить индивидуальный план лечения. AZPO Health подбирает клиники, где комфорт и удовлетворенность пациента являются приоритетом.</p>
+<p dir="ltr">Доступная стоимость без ущерба качеству: по сравнению с другими странами, Турция предлагает медицинские услуги высокого качества по более доступным ценам, и имплантация ИОЛ &mdash; не исключение. При этом доступная стоимость не снижает уровень профессионализма врачей и качество медицинского обслуживания. AZPO Health поможет вам найти оптимальные по стоимости и качеству решения для восстановления зрения.</p>
+<p dir="ltr">Удобное расположение и развитая инфраструктура медицинского туризма: Турция удобно расположена и легкодоступна для пациентов из разных стран. В стране создана развитая инфраструктура медицинского туризма, ориентированная на иностранных пациентов. AZPO Health предоставляет всестороннюю информационную поддержку и помогает на всех этапах вашей поездки и лечения.</p>
+<h3 dir="ltr">Интраокулярные линзы и процедура имплантации</h3>
+<p dir="ltr">Что представляют собой интраокулярные линзы (ИОЛ)?</p>
+<p dir="ltr">Что такое интраокулярные линзы (ИОЛ)?</p>
+<p dir="ltr">Интраокулярные линзы (ИОЛ) &mdash; это миниатюрные искусственные линзы, которые хирургическим путём имплантируются внутрь глаза для замены или дополнения естественного хрусталика. Они изготавливаются из биосовместимых материалов, таких как акрил или силикон, и служат долговременным решением для коррекции зрения.</p>
+<p dir="ltr">Цель имплантации ИОЛ:</p>
+<p dir="ltr">Имплантация интраокулярных линз проводится в следующих случаях:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лечение катаракты: при катаракте &mdash; помутнении естественного хрусталика &mdash; зрение становится размытым. Во время операции хрусталик удаляется и заменяется прозрачной ИОЛ, что позволяет восстановить четкость зрения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Коррекция рефракционных нарушений: ИОЛ также применяются для устранения близорукости, дальнозоркости и астигматизма, даже при отсутствии катаракты. В этом случае речь идёт о рефракционной замене хрусталика или факичной имплантации ИОЛ, при которой сохраняется собственный хрусталик.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Типы интраокулярных линз:</p>
+<p dir="ltr">Современные технологии предлагают широкий выбор ИОЛ в зависимости потребностей пациента:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Монофокальные ИОЛ: обеспечивают четкое зрение на одном расстоянии (обычно вдаль); для других задач могут потребоваться очки.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мультифокальные ИОЛ: имеют зоны с разной фокусировкой, что позволяет видеть чётко на близком, среднем и дальнем расстоянии; могут снизить зависимость от очков.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Торические ИОЛ: корректируют астигматизм за счет различной оптической силы по разным меридианам.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Аккомодирующие ИОЛ: имитируют естественную способность глаза фокусироваться на разные расстояния, уменьшая потребность в очках.</p>
+</li>
+</ul>
+<p dir="ltr">Специалисты из сети AZPO Health проводят тщательную диагностику и подбирают тип ИОЛ, наиболее подходящий именно вам &mdash; с учетом состояния зрения, образа жизни и ваших предпочтений.</p>
+<p dir="ltr">Начните путь к ясному зрению уже сегодня &mdash; воспользуйтесь бесплатной онлайн-консультацией с опытным врачом ещё до приезда в Турцию. AZPO Health &mdash; ваш надежный проводник в мире современной офтальмологии.</p>
+<p dir="ltr">Процедура имплантации интраокулярной линзы (ИОЛ)</p>
+<p dir="ltr">Процедура имплантации интраокулярной линзы (ИОЛ) обычно выполняется амбулаторно и является безопасной и эффективной. В зависимости от типа операции (катарактальная хирургия или рефракционная замена хрусталика), этапы процедуры могут немного различаться, но в целом она включает следующие шаги:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Анестезия: перед операцией глаз обезболивается местной анестезией, обычно с помощью глазных капель, а иногда &mdash; инъекцией в область вокруг глаза. Пациент обычно остается в сознании, при этом испытывает минимальный или отсутствующий дискомфорт.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Разрез: хирург делает небольшой разрез на роговице (прозрачной передней поверхности глаза).</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удаление естественного хрусталика (при катарактальной операции или рефракционной замене хрусталика): при проведении катарактальной операции или рефракционной замены хрусталика (нефакическая ИОЛ) естественный хрусталик разбивается и осторожно удаляется из глаза.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Введение ИОЛ: выбранная интраокулярная линза складывается и вставляется через небольшой разрез. После попадания в глаз линза разворачивается и размещается в капсуле хрусталика (оболочке, в которой находился естественный хрусталик). В случае факичных ИОЛ естественный хрусталик не удаляется, а линза устанавливается перед или за радужной оболочкой.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Закрытие разреза: небольшой разрез на роговице заживает самостоятельно и обычно не требует швов. В редких случаях могут быть использованы очень тонкие швы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Восстановление: после процедуры пациенту обычно назначают глазную защитную повязку и глазные капли для предотвращения инфекции и снижения воспаления.<br><br></p>
+</li>
+</ol>
+<p dir="ltr">Операция длится примерно 20-30 минут, и большинство пациентов могут вернуться домой сразу после ее завершения.</p>
+<p dir="ltr">Преимущества имплантации интраокулярной линзы (ИОЛ):&nbsp;</p>
+<p dir="ltr">Имплантация интраокулярной линзы (ИОЛ) имеет ряд значительных преимуществ, включая:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Улучшение зрения: многие пациенты испытывают значительное улучшение зрения, часто достигая четкого зрения без или с минимальной зависимостью от очков или контактных линз.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повышение качества жизни: четкое зрение способствует большей независимости, возможности заниматься хобби и в целом улучшению качества жизни.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Долговечное решение: ИОЛ спроектированы как постоянное решение для коррекции зрения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Лечение катаракты: для людей с катарактой имплантация ИОЛ является окончательным методом восстановления четкого зрения.</p>
+</li>
+</ul>
+<p dir="ltr">Кому подходит имплантация ИОЛ и противопоказания:</p>
+<p dir="ltr">Имплантация интраокулярных линз (ИОЛ) является подходящим решением для большинства пациентов, однако важно пройти всестороннюю офтальмологическую консультацию для оценки вашей кандидатуры. Будут учтены такие факторы, как общее состояние здоровья глаз, медицинская история и индивидуальные потребности в коррекции зрения. Некоторые заболевания глаз или общие заболевания могут быть противопоказанием для процедуры имплантации ИОЛ. Опытные офтальмологи, с которыми вы можете связаться через AZPO Health, проведут тщательную диагностику и порекомендуют оптимальные варианты лечения, основанные на ваших особенностях.</p>
+<p dir="ltr">Процесс восстановления:</p>
+<p dir="ltr">Процесс восстановления после имплантации ИОЛ обычно протекает быстро. Важно строго следовать указаниям врача, которые могут включать использование рекомендованных глазных капель, избегание физической активности и защиту глаза. Большинство пациентов отмечают улучшение зрения уже через несколько дней, а полное заживление, как правило, происходит в течение нескольких недель. Регулярные контрольные визиты к офтальмологу необходимы для мониторинга процесса восстановления и оценки результатов лечения.</p>
+<p dir="ltr">Истории пациентов:</p>
+<p dir="ltr">Сара, 68 лет</p>
+<p dir="ltr">&laquo;Катаракта затрудняла мне чтение и прогулки на свежем воздухе. Я сомневалась по поводу операции, но офтальмолог в Турции, с которым я связалась через AZPO Health, был очень внимателен и уверенно объяснил все варианты ИОЛ. Я выбрала мультифокальную линзу. Операция прошла быстро и безболезненно, а теперь моё зрение значительно улучшилось! Я могу читать без очков и чувствую себя гораздо более независимой.&raquo;</p>
+<p dir="ltr">Майкл, 55 лет</p>
+<p dir="ltr">&laquo;С детства я носил очки из-за близорукости и устал от неудобств. Я рассмотрел вариант рефракционной замены хрусталика с имплантацией ИОЛ в Турции через AZPO Health. Клиника была современная, а хирург &mdash; высококвалифицированный специалист. Он рекомендовал мне торические ИОЛ для коррекции астигматизма. Результаты оказались потрясающими &mdash; теперь я могу видеть ясно без очков, и это ощущение свободы просто невероятное.&raquo;</p>
+<p dir="ltr">Айша, 72 года</p>
+<p dir="ltr">&laquo;Из-за катаракты мое зрение стало размытым, и мне было трудно заниматься привычными делами. Моя семья предложила рассмотреть лечение в Турции, и AZPO Health помогла нам найти отличную глазную клинику. Процесс &mdash; от консультации до послеоперационного ухода &mdash; был на высшем уровне. Врачи были профессиональными и внимательными, а стоимость лечения приятно удивила. Теперь я снова вижу четко, и я очень благодарна за это.&raquo;</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">AZPO Health: ваш путь к качественной коррекции зрения в Турции</h3>
+<p dir="ltr">AZPO Health помогает вам найти опытных и квалифицированных офтальмологов и медицинские учреждения в Турции для имплантации интраокулярных линз (ИОЛ). Мы понимаем, как важно четкое зрение, и предоставляем вам всю необходимую поддержку и информацию, чтобы вы могли принимать обоснованные решения по уходу за глазами.</p>
+<p dir="ltr">Наши услуги включают:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Связь с опытными и квалифицированными офтальмологами в Турции.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Информацию о различных типах интраокулярных линз и процессе их имплантации.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помощь в организации общения и координации с ведущими клиниками.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Содействие в организации медицинского туризма в Турцию.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обеспечение персонализированного ухода и поддержки на протяжении всего лечения.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Сделайте первый шаг к четкому зрению и светлому будущему. Свяжитесь с AZPO Health сегодня для бесплатной консультации и ознакомьтесь с вашими возможностями по имплантации интраокулярных линз (ИОЛ) в Турции.</p>
+<p dir="ltr">Свяжитесь с AZPO Health для бесплатной консультации &mdash; мы предоставим все необходимое для комфортного и эффективного решения вашей проблемы со зрением.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p>Many individuals face vision challenges at different points in their lives, whether due to refractive errors like nearsightedness or farsightedness, astigmatism, or age-related conditions such as cataracts. Intraocular Lens (IOL) implantation has emerged as a highly effective and long-lasting solution to address these issues, offering the potential to significantly improve vision and reduce or eliminate the need for glasses or contact lenses. AZPO Health can connect you with experienced ophthalmologists and leading eye care clinics in Turkey that specialize in providing state-of-the-art IOL implantation procedures.</p><h3><strong>Why Consider Turkey for Your Intraocular Lens (IOL) Implantation?</strong></h3><p>Turkey has gained international recognition as a premier destination for medical tourism, particularly in the field of ophthalmology. Opting for your Intraocular Lens (IOL) implantation in Turkey through the facilitation of AZPO Health offers several notable advantages:</p><p><strong>Highly Skilled and Experienced Ophthalmologists:</strong> Turkey is home to a large number of board-certified and experienced ophthalmologists who have specialized training in advanced surgical techniques, including various types of Intraocular Lens (IOL) implantation. Many of these specialists have international experience and are proficient in the latest advancements in vision correction. AZPO Health carefully vets its network of medical professionals to ensure you are connected with reputable experts.</p><p><strong>Advanced Medical Facilities and Cutting-Edge Technology:</strong> Eye care clinics and hospitals in Turkey are often equipped with state-of-the-art diagnostic and surgical technologies. This includes advanced lasers, high-resolution imaging systems, and a wide selection of modern Intraocular Lenses. By choosing Turkey through AZPO Health, you gain access to facilities that adhere to international standards of medical care.</p><p><strong>Comprehensive Range of IOL Options:</strong> Depending on your specific vision needs and lifestyle, various types of Intraocular Lenses are available. These include monofocal IOLs (providing clear vision at one distance), multifocal IOLs (offering clear vision at multiple distances), toric IOLs (correcting astigmatism), and accommodative IOLs (attempting to restore some degree of focusing ability). The ophthalmologists you can connect with through AZPO Health will conduct thorough evaluations to determine the most suitable IOL for you.</p><p><strong>Personalized and Patient-Centric Approach:</strong> Medical professionals in Turkey emphasize clear communication and personalized care. Before recommending IOL implantation, they conduct comprehensive eye examinations and consultations to understand your medical history, current eye condition, and visual goals. This ensures a tailored treatment plan that aligns with your individual needs. AZPO Health facilitates this process by connecting you with clinics that prioritize patient comfort and satisfaction.</p><p><strong>Cost-Effective Healthcare Solutions:</strong> Compared to many other countries, Turkey offers high-quality medical procedures, including Intraocular Lens (IOL) implantation, at more affordable prices. This cost-effectiveness does not compromise the quality of care or the expertise of the medical professionals. AZPO Health can help you explore cost-effective options for your vision correction journey.</p><p><strong>Convenient Location and Medical Tourism Infrastructure:</strong> Turkey is strategically located and easily accessible from various parts of the world. The country has a well-established medical tourism infrastructure, with services catering to international patients, making your travel and treatment experience smoother. AZPO Health assists with providing information and guidance for your medical travel.</p><h3><strong>Understanding Intraocular Lenses and the Implantation Procedure</strong></h3><p><strong>What are Intraocular Lenses (IOLs)?</strong></p><p>Intraocular Lenses (IOLs) are small, artificial lenses that are surgically implanted inside the eye to replace the eye's natural lens or to supplement it in order to correct vision problems. They are typically made of biocompatible materials such as acrylic or silicone and are designed to be a permanent solution for vision correction.</p><p><strong>Purpose of IOL Implantation:</strong></p><p>The primary reasons for Intraocular Lens (IOL) implantation include:</p><ul><li><strong>Cataract Surgery:</strong> Cataracts, the clouding of the natural lens, are a leading cause of vision impairment. During cataract surgery, the cloudy lens is removed and replaced with a clear IOL, restoring clear vision.</li><li><strong>Refractive Error Correction:</strong> In some cases, IOLs can be implanted to correct refractive errors such as nearsightedness (myopia), farsightedness (hyperopia), and astigmatism, even without the presence of cataracts. This is often referred to as refractive lens exchange or phakic IOL implantation. Phakic IOLs are implanted without removing the natural lens.</li></ul><p><strong>Types of Intraocular Lenses:</strong></p><p>The advancements in IOL technology have led to a variety of lens options, each designed to address specific visual needs:</p><ul><li><strong>Monofocal IOLs:</strong> These are the most common type and provide clear vision at a single distance (usually far, intermediate, or near). Most patients choose to have monofocal IOLs set for clear distance vision and then use reading glasses for near tasks.</li><li><strong>Multifocal IOLs:</strong> These lenses have multiple zones with different focusing powers, aiming to provide clear vision at various distances (far, intermediate, and near) and reduce the reliance on glasses. However, some individuals may experience glare or halos around lights with these lenses.</li><li><strong>Toric IOLs:</strong> These lenses are specifically designed to correct astigmatism, a condition where the cornea or lens is irregularly shaped, causing blurry or distorted vision at all distances. Toric IOLs have different powers in different meridians to counteract the irregular shape.</li><li><strong>Accommodative IOLs:</strong> These newer lenses are designed to mimic the natural focusing ability of the eye, potentially providing a wider range of clear vision with less dependence on glasses.</li></ul><p>The ophthalmologists in AZPO Health's network will discuss the pros and cons of each type of IOL and recommend the best option based on your individual needs and lifestyle.</p><p><strong>The IOL Implantation Procedure:</strong></p><p>The Intraocular Lens (IOL) implantation procedure is typically performed as an outpatient surgery and is generally safe and effective. While the specifics may vary slightly depending on the type of surgery (cataract surgery or refractive lens exchange), the general steps involved are:</p><ol><li><strong>Anesthesia:</strong> The eye is numbed with local anesthesia, usually eye drops and sometimes an injection around the eye. You will typically remain awake but feel little to no discomfort.</li><li><strong>Incision:</strong> The surgeon makes a small incision in the cornea (the clear front surface of the eye).</li><li><strong>Natural Lens Removal (in Cataract Surgery or Refractive Lens Exchange):</strong> If you are having cataract surgery or refractive lens exchange (non-phakic IOL), the natural lens is broken up and gently removed from the eye.</li><li><strong>IOL Insertion:</strong> The chosen Intraocular Lens is carefully folded and inserted through the small incision. Once inside the eye, the IOL unfolds and is positioned in the lens capsule (the sac that held the natural lens). In the case of phakic IOLs, the natural lens is not removed; the IOL is placed in front of or behind the iris.</li><li><strong>Incision Closure:</strong> The small corneal incision usually self-seals and does not require stitches. If needed, very fine sutures may be used.</li><li><strong>Recovery:</strong> Following the procedure, you will likely be given an eye shield to protect your eye and prescribed eye drops to prevent infection and reduce inflammation.</li></ol><p>The procedure itself usually takes around 20-30 minutes, and most patients can return home shortly afterward.</p><p><strong>Benefits of IOL Implantation:</strong></p><p>Intraocular Lens (IOL) implantation offers significant benefits, including:</p><ul><li><strong>Improved Vision:</strong> Many patients experience a dramatic improvement in their vision, often seeing clearly without or with reduced dependence on glasses or contact lenses.</li><li><strong>Enhanced Quality of Life:</strong> Clearer vision can lead to greater independence, enjoyment of hobbies, and overall improved quality of life.</li><li><strong>Long-Lasting Solution:</strong> IOLs are designed to be a permanent solution for vision correction.</li><li><strong>Treatment of Cataracts:</strong> For individuals with cataracts, IOL implantation is the definitive treatment to restore clear vision.</li></ul><p><strong>Suitability and Contraindications:</strong></p><p>While IOL implantation is a suitable option for many individuals, it's crucial to have a thorough ophthalmologic consultation to determine your candidacy. Factors such as your overall eye health, medical history, and specific vision needs will be evaluated. Certain eye conditions or systemic diseases may be contraindications for IOL implantation. The experienced ophthalmologists you can connect with through AZPO Health will provide a complete and personalized diagnosis and advise you on the most appropriate treatment options.</p><p><strong>Recovery Process:</strong></p><p>The recovery period after Intraocular Lens (IOL) implantation is generally short. You will need to follow your surgeon's instructions carefully, which may include using prescribed eye drops, avoiding strenuous activities, and protecting your eye. Most patients experience noticeable vision improvement within a few days, and complete healing typically occurs within a few weeks. Regular follow-up appointments with your ophthalmologist are essential to monitor your progress.</p><h3><strong>Realizing Clearer Vision: Patient Experiences</strong></h3><p><strong>Testimonial 1: Sarah, 68</strong></p><p>"My cataracts were making it increasingly difficult to enjoy reading and spending time outdoors. I was hesitant about surgery, but my ophthalmologist in Turkey, whom I found through AZPO Health, was so reassuring. He explained the IOL options clearly, and I chose a multifocal lens. The surgery was quick and painless, and my vision is now better than it has been in years! I can read without glasses, and I feel so much more independent."</p><p><strong>Testimonial 2: Michael, 55</strong></p><p>"I had been wearing glasses for nearsightedness since I was a child and was tired of the constant hassle. I explored refractive lens exchange with IOL implantation in Turkey through AZPO Health. The clinic was modern, and the surgeon was incredibly skilled. He recommended toric IOLs to correct my astigmatism as well. The results have been life-changing. I can finally see clearly without glasses, and it's such a liberating feeling."</p><p><strong>Testimonial 3: Aisha, 72</strong></p><p>"My vision had become quite blurry due to cataracts. My family suggested looking into treatment options in Turkey. AZPO Health connected us with a reputable eye hospital. The entire experience, from the initial consultation to the follow-up care, was excellent. The doctors were knowledgeable and caring, and the cost was significantly less than what I had expected. I am so grateful for the clear vision I now have."</p><h3><strong>AZPO Health: Your Gateway to Quality Vision Correction in Turkey</strong></h3><p>AZPO Health is committed to connecting you with reputable medical professionals and facilities in Turkey for your Intraocular Lens (IOL) implantation journey. We understand the importance of clear vision and are dedicated to providing you with the support and information you need to make informed decisions about your eye care.</p><p><strong>Our Services Include:</strong></p><ul><li><strong>Connecting you with experienced and qualified ophthalmologists in Turkey.</strong></li><li><strong>Providing information about different types of Intraocular Lenses and the implantation procedure.</strong></li><li><strong>Facilitating communication and coordination with leading eye care clinics.</strong></li><li><strong>Assisting with your medical travel arrangements to Turkey.</strong></li><li><strong>Ensuring you receive personalized care and support throughout your treatment journey.</strong></li></ul><p>Take the first step towards clearer vision and a brighter future. Contact AZPO Health today for a free consultation to explore your options for Intraocular Lens (IOL) implantation in Turkey.</p><p><strong>Contact AZPO Health now for a free consultation and personalized information about Intraocular Lens (IOL) implantation in Turkey.</strong></p><p><br></p><p><br></p>`,
       },
       imgCover: subNestedKey === "intraocular-lens" ? intraocularImg : null,
@@ -17873,134 +18437,222 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Трансплантация роговицы в Турции в 2025 году: верните ясность зрения"
           : "See clear Again with Corneal Transplantation in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Если ваше зрение стало размытым, болезненным или утратило прежнюю четкость, повреждение роговицы может значительно повлиять на вашу повседневную жизнь и уверенность в себе. Однако существует эффективное решение. В ведущих медицинских центрах Турции опытные хирурги применяют современные методы трансплантации роговицы, восстанавливая четкость зрения и обеспечивая комфорт. Независимо от причины ухудшения зрения — будь то травма, заболевание или дегенерация — вы больше не обязаны мириться с нарушением зрения."
           : "Does your vision feel like it’s fading—blurred, painful, or just not as sharp as it used to be? A damaged cornea can impact not just your sight, but your confidence and daily life. But there’s hope. In Turkey’s world-class medical centers, skilled surgeons use cutting-edge corneal transplantation techniques to restore clarity and comfort—giving you the gift of clear vision once again. Whether due to injury, disease, or degeneration, you don’t have to settle for compromised sight.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Error Correction",
+            title: locale === "ru" ? "Коррекция серьёзных нарушений" : "Error Correction",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "трансплантация помогает в случаях, когда LASIK не подходит."
                 : "Fixes severe vision problems when LASIK isn't suitable",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Vision Freedom",
+            title: locale === "ru" ? "Свобода от очков и линз" : "Vision Freedom",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "процедура значительно снижает зависимость от средств коррекции зрения."
                 : "Reduces reliance on glasses and contacts for clear vision",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Cataract Prevention",
+            title: locale === "ru" ? "Предотвращение катаракты" : "Cataract Prevention",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "трансплантация может помочь в профилактике катаракты в будущем."
                 : "Helps protect against future cataract development",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Трансплантация роговицы — это хирургическая процедура, при которой повреждённая или больная роговица заменяется здоровой тканью от донора. Это лечение применяется для восстановления зрения, нарушенного такими заболеваниями, как рубцы на роговице, кератоконус или серьёзные глазные инфекции. Главной целью трансплантации является улучшение зрения путём восстановления чёткости и функциональности роговицы."
                 : "A corneal transplant is a surgical procedure where a damaged or diseased cornea is replaced with healthy tissue from a donor. This procedure is performed to restore vision that has been impaired due to conditions like corneal scarring, keratoconus, or severe eye infections. The goal of the transplant is to improve vision by restoring the clarity and function of the cornea.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How it Works",
+            header: locale === "ru" ? "Как это работает" : "How it Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура трансплантации роговицы обычно проводится, когда другие методы, такие как медикаменты или очки, не дают желаемого эффекта. Операция проводится под местной анестезией, а процесс восстановления может занять несколько месяцев, пока организм адаптируется к новой ткани."
                 : "The transplant is usually done when other treatments, like medication or glasses, can't improve vision. The procedure is typically performed under local anesthesia, and recovery can take several months as the body adjusts to the new tissue.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It's For",
+            header: locale === "ru" ? "Кому это подходит" : "Who It's For",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Людям старше 40 лет с пресбиопией или высокими аномалиями рефракции. Пациентам, которым не подходит LASIK из-за тонкой роговицы или необходимости в экстренной коррекции зрения. Те, кто ищет постоянное решение проблемы как аномалий рефракции, так и потенциальной катаракты."
                 : "Individuals over 40 with presbyopia or high refractive errors. Patients unsuitable for LASIK due to thin corneas or extreme vision correction needs. Those seeking a permanent solution to both refractive errors and potential cataracts.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Is corneal transplant permanent?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Most grafts last 10+ years with proper care",
+          question : locale === "ru" ? "Является ли трансплантация роговицы постоянной?" : "Is corneal transplant permanent?",
+          answer : locale === "ru" ? "В большинстве случаев трансплантат служит более 10 лет при должном уходе и регулярных осмотрах." : "Most grafts last 10+ years with proper care"
         },
         {
-          question: locale === "ru" ? "" : "Will vision return fully?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Vision improves gradually, may need glasses or contacts",
+          question : locale === "ru" ? "Вернется ли зрение полностью?" : "Will vision return fully?",
+          answer : locale === "ru" ? "Зрение постепенно улучшается, однако для достижения наилучшей четкости могут потребоваться очки или контактные линзы." : "Vision improves gradually, may need glasses or contacts"
         },
         {
-          question: locale === "ru" ? "" : "Can my body reject the graft?",
-          answer: locale === "ru" ? "" : "Yes, but meds reduce the risk",
+          question : locale === "ru" ? "Может ли мой организм отвергнуть трансплантат?" : "Can my body reject the graft?",
+          answer : locale === "ru" ? "Да, но риск отторжения значительно снижается при правильном применении назначенных препаратов и соблюдении рекомендаций врача." : "Yes, but meds reduce the risk"
         },
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Mild discomfort for a few days, managed with meds",
+          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer : locale === "ru" ? "Обычно пациенты ощущают лишь небольшой дискомфорт в течение нескольких дней, который легко контролируется с помощью медикаментов." : "Mild discomfort for a few days, managed with meds"
         },
         {
-          question: locale === "ru" ? "" : "How long is recovery?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Initial healing in weeks; full vision may take months",
-        },
+          question : locale === "ru" ? "Как долго длится восстановление?" : "How long is recovery?",
+          answer : locale === "ru" ? "Первичное заживление занимает несколько недель, а окончательная стабилизация зрения может потребовать нескольких месяцев." : "Initial healing in weeks; full vision may take months"
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Use eye drops for months to prevent rejection",
-        locale === "ru" ? "" : "Wear eye shield and avoid trauma to the eye",
-        locale === "ru"
-          ? ""
-          : "Monitor for signs of rejection: redness, pain, light sensitivity",
-        locale === "ru" ? "" : "Attend all follow-ups for graft monitoring",
-        locale === "ru" ? "" : "Avoid strenuous activities or sports",
-        locale === "ru"
-          ? ""
-          : "Avoid rubbing the eye or putting pressure on it",
-        locale === "ru"
-          ? ""
-          : "Be mindful of infection risks, especially in the first few weeks",
+        locale === "ru" ? "Используйте глазные капли в течение нескольких месяцев, чтобы предотвратить отторжение." : "Use eye drops for months to prevent rejection",
+        locale === "ru" ? "Носите защитный щиток для глаз и избегайте травм." : "Wear eye shield and avoid trauma to the eye",
+        locale === "ru" ? "Обращайте внимание на признаки отторжения, такие как покраснение, боль или повышенная чувствительность к свету." : "Monitor for signs of rejection: redness, pain, light sensitivity",
+        locale === "ru" ? "Регулярно посещайте контрольные обследования для мониторинга состояния трансплантата." : "Attend all follow-ups for graft monitoring",
+        locale === "ru" ? "Избегайте интенсивных физических нагрузок и спортивных занятий." : "Avoid strenuous activities or sports",
+        locale === "ru" ? "Не трите глаза и не оказывайте на них давление." : "Avoid rubbing the eye or putting pressure on it",
+        locale === "ru" ? "Будьте внимательны к рискам инфекции, особенно в первые недели после трансплантации." : "Be mindful of infection risks, especially in the first few weeks"
       ],
       preList: [
-        locale === "ru" ? "" : "Comprehensive eye exam to confirm diagnosis",
-        locale === "ru" ? "" : "Avoid blood thinners if advised",
-        locale === "ru" ? "" : "Arrange transportation and recovery time",
-        locale === "ru" ? "" : "Discuss risks and graft options with surgeon",
-        locale === "ru"
-          ? ""
-          : "Ensure all pre-operative health conditions are managed, including blood pressure and diabetes",
+        locale === "ru" ? "Пройдите комплексное обследование глаз для подтверждения диагноза." : "Comprehensive eye exam to confirm diagnosis",
+        locale === "ru" ? "Избегайте разжижающих кровь препаратов, если это рекомендовано врачом." : "Avoid blood thinners if advised",
+        locale === "ru" ? "Обсудите риски и возможные варианты пересадки с хирургом." : "Discuss risks and graft options with surgeon",
+        locale === "ru" ? "Убедитесь, что все предоперационные заболевания, включая артериальное давление и диабет, находятся под контролем." : "Ensure all pre-operative health conditions are managed, including blood pressure and diabetes"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Трансплантация роговицы — эффективное решение для людей с серьезными рефракционными нарушениями или начальной катарактой, обеспечивающее не только коррекцию зрения, но и долгосрочную профилактику катаракты. Несмотря на наличие некоторых рисков, высокий уровень успешности и комплексные преимущества делают этот метод ценным выбором для подходящих пациентов."
             : "Corneal Transplantation is an effective option for individuals with severe refractive errors or early cataracts, offering both vision correction and long-term prevention of cataracts. While it carries some risks, its success rate and dual benefits make it a valuable choice for eligible patients.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для трансплантации роговицы?"
             : "Why Choose Turkey for Your Corneal Transplantation?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Решение о проведении трансплантации роговицы &mdash; серьезный шаг, и выбор страны для прохождения лечения играет важную роль. Турция по праву считается одним из лидеров в сфере медицинского туризма &mdash; особенно когда речь идет о таких высокоспециализированных процедурах, как пересадка роговицы. Вот несколько причин, по которым Турция заслуживает доверия:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Высококвалифицированные хирурги: в Турции работают опытные офтальмологи и микрохирурги, владеющие всеми современными методами кератопластики. Многие из них проходили стажировки за рубежом и регулярно повышают квалификацию, следя за последними достижениями в области офтальмологии.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные медицинские учреждения: Турция занимает лидирующие позиции по количеству клиник, аккредитованных JCI (Joint Commission International). По состоянию на март 2025 года в стране насчитывается 30 таких учреждений. Клиники, работающие с иностранными пациентами, оснащены передовым оборудованием, соответствуют международным стандартам безопасности и гигиены, а также предлагают высокий уровень комфорта и ухода.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексный подход к лечению: компании-медиаторы, такие как AZPO Health, предлагают всестороннюю поддержку: от подбора клиники и консультаций с врачами до организации проживания, трансфера и послеоперационного сопровождения. Это значительно упрощает весь процесс и снижает уровень стресса для пациента.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступность и разумные цены: по сравнению с большинством западных стран, стоимость трансплантации роговицы в Турции значительно ниже, при этом качество медицинских услуг остается на высоком уровне. Это делает лечение доступным для большего числа пациентов.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гостеприимная страна с богатой культурой: Турция &mdash; это не только медицинский центр, но и страна с тёплым приёмом, яркой культурой и живописными пейзажами. Вы можете совместить лечение с возможностью отдохнуть, восстановиться и открыть для себя новые места.</p>
+</li>
+</ul>
+<p dir="ltr">Выбирая Турцию для трансплантации роговицы, вы доверяете своё зрение профессионалам, получаете качественное лечение в современных условиях и при этом экономите. Это разумный шаг к восстановлению здоровья и улучшению качества жизни.</p>
+<h3 dir="ltr">Трансплантация роговицы: путь к восстановлению вашего зрения</h3>
+<p dir="ltr">Роговица &mdash; это прозрачная, куполообразная внешняя оболочка глаза. Она выполняет роль &laquo;окна&raquo;, через которое свет проникает внутрь, и играет ключевую роль в фокусировке изображения. Когда роговица повреждается или заболевает, она может мутнеть, деформироваться или покрываться рубцами, что приводит к ухудшению зрения и дискомфорту.</p>
+<p dir="ltr">Трансплантация роговицы, также известная как кератопластика, представляет собой хирургическую процедуру, в ходе которой поврежденный участок роговицы заменяется здоровой тканью донора. Цель операции &mdash; восстановить зрение, уменьшить болевые ощущения и улучшить внешний вид глаза.</p>
+<p dir="ltr">Существует несколько видов трансплантации роговицы. Выбор метода зависит от характера заболевания и степени повреждения:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Сквозная кератопластика (PK): полная трансплантация роговицы, при которой удаляется весь пораженный участок и заменяется донорской тканью на всю толщину. Такая операция чаще всего применяется при серьезных нарушениях, затрагивающих все слои роговицы, например, при тяжелой форме кератоконуса, обширных рубцах или дистрофии Фукса.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Передняя ламеллярная кератопластика (ALK): в ходе этой процедуры заменяются только передние и средние слои роговицы, при этом задний слой &mdash; эндотелий &mdash; остаётся нетронутым. Этот метод подходит при поверхностных дистрофиях или рубцах, не затрагивающих внутренние слои роговицы.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Эндотелиальная кератопластика (DSEK и DMEK): современные и малотравматичные методы, направленные на замену внутреннего слоя роговицы &mdash; эндотелия. При DSEK пересаживается тонкий слой донорской ткани, включающий эндотелий и часть стромы.При DMEK трансплантируются только мембрана Десцемета и эндотелиальные клетки.<br>Эти процедуры особенно эффективны при дистрофии Фукса и других эндотелиальных патологиях.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Опытные офтальмохирурги AZPO Health проведут полную диагностику состояния вашего глаза и подберут оптимальный метод трансплантации для достижения наилучшего результата. Вам подробно расскажут о ходе операции, ее преимуществах и возможных рисках.</p>
+<h3 dir="ltr">Трансплантация роговицы: ключевые этапы восстановления зрения</h3>
+<p dir="ltr">Процесс трансплантации роговицы включает несколько этапов, каждый из которых направлен на обеспечение вашей безопасности и успешного результата процедуры. Вот общий обзор того, чего можно ожидать:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предоперационная оценка: перед операцией вам предстоит всестороннее обследование глаз. Оно включает проверку зрения, измерение кривизны и толщины роговицы, а также оценку общего состояния глаз. Также будет проанализирована ваша медицинская история для выявления возможных рисков и особенностей.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поиск донорской роговицы: здоровые донорские роговицы получают от умерших людей, которые проходят тщательную проверку на наличие заболеваний, прежде чем они будут признаны пригодными для трансплантации.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Хирургическая процедура: операция по трансплантации роговицы обычно проводится амбулаторно, то есть вы сможете вернуться домой в тот же день. Процедура проводится под местной анестезией с седацией, чтобы вам было комфортно и расслабленно во время операции. В некоторых случаях может быть использована общая анестезия.<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">При проникновенной кератопластике хирург удаляет круглую часть поврежденной роговицы и заменяет ее донорской роговицей того же размера. Новая роговица затем тщательно сшивается очень тонкими швами.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">При ламеллярной кератопластике удаляются только поврежденные слои роговицы, которые заменяются соответствующими донорскими тканями.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">При DSEK/DMEK хирург делает небольшой разрез и вставляет тонкий слой донорских эндотелиальных клеток, который затем позиционируется и прижимается к задней части роговицы, часто с помощью пузыря воздуха.<br><br></p>
+</li>
+</ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Послеоперационное обслуживание: После операции вам будут даны конкретные указания по уходу за глазом, чтобы способствовать заживлению и предотвратить инфекцию. Обычно это включает:<br><br></p>
+</li>
+<ul>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Капли для глаз: вам нужно будет использовать различные капли для глаз, включая антибиотики для предотвращения инфекции, кортикостероиды для уменьшения воспаления и предотвращения отторжения, а также увлажняющие капли для комфорта.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Защита глаз: вам потребуется носить защитную повязку или очки для защиты глаза, особенно ночью и во время занятий, которые могут привести к травмам.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Ограничения активности: необходимо избегать тяжелых физических нагрузок, поднятия тяжестей, трения или нажатия на глаз в течение определенного времени. Ваш врач даст рекомендации, когда вы сможете постепенно вернуться к нормальной активности.<br><br></p>
+</li>
+<li dir="ltr" aria-level="2">
+<p dir="ltr" role="presentation">Контрольные визиты: регулярные визиты к офтальмологу крайне важны для контроля за процессом заживления, выявления возможных осложнений, таких как инфекция или отторжение, а также для корректировки лечения.<br><br></p>
+</li>
+</ul>
+</ol>
+<p dir="ltr">Период восстановления после трансплантации роговицы может варьироваться в зависимости от типа проведенной операции. Зрение может быть размытым в начале, но постепенно улучшится в течение нескольких недель или месяцев. В случае с проникновенной кератопластикой может пройти до года или даже дольше, прежде чем зрение стабилизируется полностью, и швы могут потребовать удаления на более позднем этапе.</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h3 dir="ltr">AZPO Health &mdash; ваш надежный партнер в восстановлении зрения</h3>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<p dir="ltr">В AZPO Health мы понимаем, что решение отправиться за границу ради лечения &mdash; это не только важный шаг к здоровью, но и значимое событие, требующее уверенности, поддержки и заботливого сопровождения на каждом этапе. Именно поэтому мы стремимся обеспечить вам комфортный и безопасный опыт на всём пути трансплантации роговицы в Турции. Мы сотрудничаем с ведущими клиниками и опытными офтальмохирургами, специализирующимися на операциях на роговице. Наша команда сопровождает вас на каждом этапе:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Подбор квалифицированных хирургов: мы поможем вам найти опытных и надежных специалистов по трансплантации роговицы, исходя из вашего диагноза и индивидуальных потребностей.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Организация онлайн-консультаций: вы сможете заранее обсудить свой случай напрямую с врачом и получить ответы на все важные вопросы до принятия решения.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помощь с поездкой и проживанием: мы возьмем на себя бронирование авиабилетов, подберем комфортное жилье и организуем трансферы на все медицинские приемы.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комплексные пакеты лечения: мы предлагаем готовые решения, включающие все ключевые этапы лечения &mdash; от диагностики до послеоперационного наблюдения, чтобы вы могли сосредоточиться на восстановлении.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Постоянная поддержка: наши координаторы всегда на связи, чтобы ответить на ваши вопросы и обеспечить сопровождение на всём пути &mdash; от первого обращения до полного восстановления.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Наша миссия &mdash; сделать трансплантацию роговицы доступной, эффективной и максимально комфортной для вас.</p>
+<h3 dir="ltr">Сделайте первый шаг к ясному зрению</h3>
+<p dir="ltr">Если вы сталкиваетесь с нарушением зрения из-за поврежденной роговицы &mdash; не теряйте надежду. Трансплантация роговицы в Турции &mdash; это надёжное и эффективное решение. Свяжитесь с AZPO Health уже сегодня и получите бесплатную консультацию. Наша опытная команда поможет вам определить наилучший путь восстановления, ответит на все вопросы и поддержит на каждом этапе. Верните себе ясность зрения и шагните навстречу светлому будущему вместе с AZPO Health.</p>
+<h3 dir="ltr">Настоящие истории &mdash; отзывы наших пациентов:</h3>
+<p dir="ltr">&bull; Сара, Великобритания:</p>
+<p dir="ltr">&laquo;Годы я боролась с кератоконусом &mdash; размытое зрение мешало в повседневной жизни. Сначала я сомневалась, но команда AZPO Health в Турции вселила в меня уверенность. Операция прошла легко, послеоперационный уход был на высоте. Сегодня я вижу намного лучше &mdash; будто мир заиграл новыми красками!&raquo;</p>
+<p dir="ltr">&bull; Джон, США:</p>
+<p dir="ltr">&laquo;Из-за дистрофии Фукса у меня появлялись блики и сильный дискомфорт. Я изучил разные варианты и понял, что Турция предлагает высокое качество по доступной цене. AZPO Health организовали всё безупречно &mdash; от консультации до восстановления. После DSEK мое зрение улучшилось, и я искренне благодарен.&raquo;</p>
+<p dir="ltr">&bull; Мария, Канада:</p>
+<p dir="ltr">&laquo;После инфекции роговицы остались рубцы, и я уже не верила, что снова буду видеть чётко. Благодаря специалистам в Турции и успешной сквозной кератопластике я постепенно восстановила зрение. Сейчас читаю и провожу время с внуками без проблем. Спасибо, AZPO Health!&raquo;</p>
+<p dir="ltr">Каждая история уникальна, но все они объединены общей целью &mdash; восстановить зрение и вернуть качество жизни. AZPO Health &mdash; ваш надежный партнер на этом пути.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Opting for corneal transplantation is a significant decision, and choosing the right location for your treatment is equally important. Turkey has become a popular choice for medical tourism, and for good reason. When it comes to specialized procedures like corneal transplantation, Turkey offers several compelling advantages:</p>
 <ul>
 <li dir="ltr" aria-level="1">
@@ -22587,58 +23239,58 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Зубные импланты в Турции в 2025 году"
           : "Dental Implants in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Потерянные зубы не должны ограничивать вашу жизнь — будь то радость от еды, уверенность в общении или свободная улыбка. А что если бы вы могли вернуть естественную красоту и комфорт своих зубов с решением, которое будет не только эффективным, но и долговечным? С AZPO Health мы поможем вам найти лучших стоматологов в Турции, предлагающих передовые методы имплантации. Мы восстановим вашу улыбку по цене, значительно ниже, чем в других странах, сохраняя при этом высочайшее качество лечения."
           : `
           Missing teeth shouldn’t dictate your life—whether it’s eating, speaking, or simply smiling without worry. But what if you could get back the look and feel of natural teeth with a solution that’s seamless and lasting? At AZPO Health, we connect you with elite dental experts in Turkey, offering cutting-edge implant treatments that restore your smile at a fraction of the price you’d pay elsewhere—without compromising on quality.
           `,
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Long Lasting",
+            title: locale === "ru" ? "Долговечность" : "Long Lasting",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "премиальные материалы обеспечивают длительный срок службы."
                 : "Premium materials ensure decades of reliable performance.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Perfect Match",
+            title: locale === "ru" ? "Естественный вид" : "Perfect Match",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "выглядят и функционируют как натуральные зубы."
                 : "Seamlessly blends with natural teeth in look and function.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Better Health",
+            title: locale === "ru" ? "Здоровье" : "Better Health",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "сохраняют челюстную кость и улучшают жевание и речь."
                 : "Maintains jaw strength and improves eating and speech abilities.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Лечение зубными имплантами — это стоматологическая процедура, при которой в челюсть устанавливаются искусственные корни зубов, изготовленные из биосовместимых материалов, таких как титан. Эти импланты служат опорой для восстановления утраченных зубов с помощью коронок, мостов или протезов. Зубные импланты имитируют как функции, так и внешний вид натуральных зубов, предлагая долговечное и надежное решение для замещения утраченных зубов."
                 : "Implant treatment refers to a dental procedure in which artificial tooth roots made of biocompatible materials, such as titanium, are placed into the jawbone to support replacement teeth like crowns, bridges, or dentures. Dental implants mimic the function and appearance of natural teeth, providing a durable and long-lasting solution for missing teeth.",
           },
           {
-            header: locale === "ru" ? "" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процесс начинается с первичной консультации, во время которой оценивается состояние полости рта и определяется пригодность челюсти для имплантации. Проводятся рентгеновские снимки или 3D-сканирование для точного планирования. Затем имплант устанавливается хирургическим способом в челюсть, где со временем происходит его сращение с костной тканью — остеоинтеграция. Спустя несколько месяцев на имплант фиксируется абатмент, а затем устанавливается индивидуально подобранная коронка. Для успешного и долговременного результата важно регулярно посещать стоматолога и соблюдать рекомендации по уходу."
                 : "Initial Consultation: Oral health and jaw suitability are assessed, with X-rays or 3D scans taken for planning. Implant Placement: The implant is surgically inserted into the jawbone and fuses over time (osseointegration). Abutment & Crown: After a few months, an abutment is placed, and a custom crown is attached. Follow-Up & Maintenance: Regular visits and proper hygiene are essential for long-term success.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For Whom",
+            header: locale === "ru" ? "Для кого?" : "For Whom",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Зубные импланты подходят людям, у которых отсутствует один или несколько зубов, при этом важно, чтобы десны были здоровыми, а плотность костной ткани в челюсти — достаточной для установки. Также имплантация рекомендована тем, кто не страдает от заболеваний, способных замедлить заживление, например, неконтролируемого диабета или последствий курения. К основным преимуществам имплантов относятся долговечность — за счёт использования премиальных материалов, которые обеспечивают длительный срок службы, естественный вид — благодаря идеальному сочетанию с натуральными зубами по форме и функциям, а также поддержание здоровья — импланты сохраняют прочность челюстной кости и улучшают жевание и речь."
                 : `Individuals with one or more missing teeth. People with healthy gums and adequate jawbone density. Those in good overall health without conditions that may affect healing (e.g., uncontrolled diabetes or heavy smoking).
                 `,
           },
@@ -22646,59 +23298,69 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Is the implant permanent?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, with proper care, they can last a lifetime",
+          question : locale === "ru" ? "Имплантат - это навсегда?" : "Is the implant permanent?",
+          answer : locale === "ru" ? "Да, при надлежащем уходе он может прослужить всю жизнь." : "Yes, with proper care, they can last a lifetime"
         },
         {
-          question: locale === "ru" ? "" : "Is the procedure painful?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Mild soreness after, managed with medication",
+          question : locale === "ru" ? "Это больно?" : "Is the procedure painful?",
+          answer : locale === "ru" ? "Легкая болезненность после имплантации - нормальное явление, ее легко снять с помощью лекарств." : "Mild soreness after, managed with medication"
         },
         {
-          question: locale === "ru" ? "" : "Can I eat normally?",
-          answer: locale === "ru" ? "" : "Yes, after initial healing phase",
+          question : locale === "ru" ? "Смогу ли я нормально есть?" : "Can I eat normally?",
+          answer : locale === "ru" ? "Да, после начальной фазы заживления." : "Yes, after initial healing phase"
         },
         {
-          question: locale === "ru" ? "" : "Will it look natural?",
-          answer: locale === "ru" ? "" : "Yes, blends well with natural teeth",
+          question : locale === "ru" ? "Будет ли выглядеть естественно?" : "Will it look natural?",
+          answer : locale === "ru" ? "Да, имплантат отлично сочетается с натуральными зубами." : "Yes, blends well with natural teeth"
         },
         {
-          question: locale === "ru" ? "" : "How long does it take?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Healing can take several months, but implant placement is quick",
+          question : locale === "ru" ? "Сколько времени все займет?" : "How long does it take?",
+          answer : locale === "ru" ? "Установка имплантата проходит быстро, но полное заживление может занять несколько месяцев." : "Healing can take several months, but implant placement is quick"
         },
+        {
+          question : locale === "ru" ? "Будет ли припухлость?" : "Will there be any swelling?",
+          answer : locale === "ru" ? "Обычно бывает небольшая припухлость, которая проходит через несколько дней." : "Some mild swelling is common, but it usually goes down within a few days."
+        },
+        {
+          question : locale === "ru" ? "Ставят ли временную коронку?" : "Is a temporary crown placed?",
+          answer : locale === "ru" ? "Да, временная коронка ставится на период заживления." : "Yes, a temporary crown is placed until the permanent one is ready."
+        },
+        {
+          question : locale === "ru" ? "Что делать, если коронка сломается?" : "What happens if the crown gets damaged?",
+          answer : locale === "ru" ? "Если коронка повреждена, ее нужно заменить или отремонтировать у стоматолога." : "If the crown is damaged, it will need to be replaced or repaired by your dentist."
+        },
+        {
+          question : locale === "ru" ? "Кому не стоит ставить имплантаты?" : "Who should avoid dental implants?",
+          answer : locale === "ru" ? "Пациентам с сильной потерей костной массы (может понадобиться костная пластика);" : "Individuals with severe bone loss (may require bone grafting)"
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Avoid hot foods and rinse with salt water",
-        locale === "ru"
-          ? ""
-          : "Do not disturb implant site with tongue or fingers",
-        locale === "ru" ? "" : "Brush teeth gently and avoid the surgical area",
-        locale === "ru" ? "" : "Stick to soft foods for a few days",
-        locale === "ru"
-          ? ""
-          : "Take antibiotics and pain relievers as prescribed",
+        locale === "ru" ? "Избегайте горячей пищи и ополаскивайте рот солевым раствором." : "Avoid hot foods and rinse with salt water",
+        locale === "ru" ? "Воздержитесь от еды в течение первых 2 часов после процедуры." : "No Eating for the First 2 Hours",
+        locale === "ru" ? "Не трогайте область имплантации языком или руками." : "Do not disturb implant site with tongue or fingers",
+        locale === "ru" ? "Прикладывайте холодный компресс только в течение первого дня для уменьшения отёка." : "Cold compress can be applied only on the first day",
+        locale === "ru" ? "Чистите зубы осторожно, избегая зоны хирургического вмешательства." : "Brush teeth gently and avoid the surgical area",
+        locale === "ru" ? "Придерживайтесь мягкой диеты в течение нескольких дней." : "Stick to soft foods for a few days",
+        locale === "ru" ? "Принимайте антибиотики и обезболивающие строго по назначению врача." : "Take antibiotics and pain relievers as prescribed",
+        locale === "ru" ? "Не полощите рот и не сплевывайте в течение первых 24 часов." : "No spitting or rinsing on the first day",
+        locale === "ru" ? "Избегайте употребления молочных продуктов в течение одной недели." : "Avoid Dairy Products for One Week",
+        locale === "ru" ? "" : "First 24 hours: Stick to soft, lukewarm foods. No chewing on the implant side.",
+        locale === "ru" ? "" : "Days 1–7:Continue with soft foods like yogurt, soup, mashed potatoes. Avoid hard, spicy, hot, or sticky foods.",
+        locale === "ru" ? "" : "After 7 days: Gradually return to normal eating if approved by your dentist. Avoid very hard foods for a few more weeks."
       ],
       preList: [
-        locale === "ru" ? "" : "Full dental exam and X-rays before procedure",
-        locale === "ru" ? "" : "Treat any gum disease beforehand",
-        locale === "ru" ? "" : "Avoid smoking for at least 1 week before",
-        locale === "ru"
-          ? ""
-          : "Follow fasting instructions if sedation is planned",
+        locale === "ru" ? "Перед процедурой необходимо пройти полное стоматологическое обследование и сделать рентген." : "Full dental exam and X-rays before procedure",
+        locale === "ru" ? "Все проблемы с полостью рта должны быть устранены заранее." : "Treat all the dental disorders beforehand",
+        locale === "ru" ? "Избегайте курения минимум за две недели до процедуры." : "Avoid smoking for at least 2 week before",
+        locale === "ru" ? "Следуйте инструкциям по воздержанию от еды и питья, если планируется седация." : "Follow fasting instructions if sedation is planned",
+        locale === "ru" ? "Важно оценить плотность и структуру костной ткани." : "The bone density and structure should be measured",
+        locale === "ru" ? "Обязательно сообщите стоматологу обо всех принимаемых медикаментах." : "Any medications being used should be reviewed"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Зубные импланты — это эффективное и надежное решение для восстановления утраченных зубов, которое обеспечивает как функциональные, так и эстетические преимущества. Хотя процесс требует времени, терпения и финансовых затрат, долгосрочные результаты делают импланты оптимальным выбором для тех, кто хочет вернуть свою полноценную улыбку."
             : "Implant treatment is a reliable and effective solution for replacing missing teeth, offering functional and aesthetic benefits. While the process requires time, patience, and a financial commitment, the long-term advantages make it an ideal choice for those seeking a permanent restoration for their smile.",
       },
       bfs: bfList,
@@ -22709,7 +23371,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
             : "Why Choose Turkey for Dental Implant Treatment?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? ``
             : `<p dir="ltr">In recent years, Turkey has emerged as a leading destination for medical tourism, particularly in the field of dental care. Several compelling reasons contribute to this popularity. Firstly, the cost of dental implant treatment in Turkey is often significantly more affordable compared to many other countries, including the United States, the United Kingdom, and Europe. This cost-effectiveness does not compromise the quality of care. Turkish dental clinics are equipped with modern technology, and the dentists are highly skilled and experienced in performing various dental implant procedures. Many healthcare professionals in Turkey have received international training and adhere to high standards of practice.</p>
 <p dir="ltr">Furthermore, Turkey's strategic location and well-developed tourism infrastructure make it easily accessible for international patients. Combining your dental implant treatment with a pleasant stay in a country rich in history and culture is an attractive option for many. From the bustling city of Istanbul to the beautiful coastal regions, Turkey offers a diverse range of experiences to enhance your medical travel journey. AZPO Health understands the unique needs of international patients and can connect you with reputable clinics and facilitate a seamless experience, from initial consultation to post-treatment follow-up.</p>
 <p dir="ltr"><strong>&nbsp;</strong></p>
@@ -22752,160 +23414,217 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Пломбирование зубов в Турции в 2025"
           : "Dental Fillings in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Чувствуете дискомфорт или чувствительность зубов из-за кариеса? Озабочены внешним видом поврежденных или разрушенных зубов, которые могут испортить вашу улыбку? В Турции вас ждут высококачественные решения, включая передовые методы пломбирования, которые помогут восстановить здоровье вашей полости рта и вернуть уверенность в вашей улыбке. AZPO Health соединит вас с опытными стоматологами, готовыми предложить заботу, которая действительно вам нужна."
           : `Are you experiencing tooth sensitivity or discomfort from cavities? Concerned about the appearance of damaged or decayed teeth affecting your smile? In Turkey, you can find high-quality solutions with advanced dental filling procedures that can restore your oral health and bring back your confident smile. AZPO Health connects you with experienced dental professionals ready to provide the care you need.`,
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Decay Prevention",
+            title: locale === "ru" ? "Предотвращение кариеса" : "Decay Prevention",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "Задерживает разрушение зуба и защищает соседние зубы от повреждений."
                 : "Blocks further tooth deterioration and protects surrounding teeth",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Better Function",
+            title: locale === "ru" ? "Улучшение функции" : "Better Function",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "Восстанавливает способность полноценно пережевывать пищу и говорить."
                 : "Improves ability to eat and speak normally",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Visual Appeal",
+            title: locale === "ru" ? "Эстетика" : "Visual Appeal",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "Обеспечивает естественную улыбку и прочную, долговечную пломбу."
                 : "Creates natural-looking smile while providing lasting durability with regular maintenance",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Стоматологическая пломба — это эффективное решение для восстановления зубов, пострадавших от кариеса, трещин или других повреждений. Если вы заметили дискомфорт или проблемы с зубами, важно обратиться к специалисту, чтобы выбрать наилучший способ лечения. Пломбы не только восстанавливают форму и функцию зуба, но и предотвращают его дальнейшее разрушение."
                 : "A dental filling is a treatment used to restore teeth that have decayed, cracked, or broken. If you experience any dental issues, consulting a dentist is essential to determine the best treatment option. Fillings help preserve tooth structure and prevent further damage.",
           },
           {
-            header: locale === "ru" ? "" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процесс начинается с тщательной диагностики, когда стоматолог удаляет все пораженные участки зуба и очищает полость. Затем дефект заполняется высококачественным материалом, который восстанавливает природную форму зуба и возвращает его эстетический вид. В зависимости от состояния зуба, эстетических предпочтений и бюджета, врач подберет оптимальный материал для пломбы."
                 : "The process begins with the dentist examining the affected tooth and removing any decayed or damaged tissue. The cleaned cavity is then filled with a suitable material to restore the tooth's function and appearance. Different filling materials are available, and the choice depends on the tooth’s condition, aesthetic preferences, and budget.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "For Whom",
+            header: locale === "ru" ? "Для кого?" : "For Whom",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Людей с кариесом, трещинами или незначительными повреждениями зубов. Пациентов, которые хотят предотвратить дальнейшее разрушение зубов и сохранить их здоровье."
                 : "Those with cavities, cracks, or minor fractures Patients looking to prevent further tooth damage",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Will it hurt?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Local anesthesia prevents pain during; some soreness after is normal",
+          question : locale === "ru" ? "Будет ли больно?" : "Will it hurt?",
+          answer : locale === "ru" ? "Во время процедуры используется местная анестезия, поэтому боли не будет; легкая болезненность после - это нормально." : "Local anesthesia prevents pain during; some soreness after is normal"
         },
         {
-          question: locale === "ru" ? "" : "How long do fillings last?",
-          answer:
-            locale === "ru" ? "" : "5–15 years depending on material and care",
+          question : locale === "ru" ? "Как долго служат пломбы?" : "How long do fillings last?",
+          answer : locale === "ru" ? "От 5 до 15 лет, в зависимости от материала и ухода." : "5–15 years depending on material and care"
         },
         {
-          question: locale === "ru" ? "" : "Can I eat right after?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Wait until numbness fades; avoid hard foods for 24 hrs",
+          question : locale === "ru" ? "Можно ли есть сразу после процедуры?" : "Can I eat right after?",
+          answer : locale === "ru" ? "Подождите, пока пройдёт онемение, и избегайте твердой пищи в течение первых 24 часов." : "Wait until numbness fades; avoid hard foods for 24 hrs"
         },
         {
-          question: locale === "ru" ? "" : "Will I feel the filling?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Slight awareness at first, but it blends in quickly",
+          question : locale === "ru" ? "Буду ли я чувствовать пломбу?" : "Will I feel the filling?",
+          answer : locale === "ru" ? "Вначале может быть небольшое ощущение инородного тела, но оно быстро проходит." : "Slight awareness at first, but it blends in quickly"
         },
         {
-          question: locale === "ru" ? "" : "What if it falls out?",
-          answer:
-            locale === "ru" ? "" : "Call your dentist for a replacement ASAP",
+          question : locale === "ru" ? "Что делать, если пломба выпадет?" : "What if it falls out?",
+          answer : locale === "ru" ? "Обратитесь к стоматологу как можно скорее для замены." : "Call your dentist for a replacement ASAP"
         },
         {
-          question: locale === "ru" ? "" : "How should fillings be cared for?",
-          answer:
-            locale === "ru" ? "" : "Brush, floss, and get regular check-ups.",
+          question : locale === "ru" ? "Как ухаживать за пломбами?" : "How should fillings be cared for?",
+          answer : locale === "ru" ? "Регулярно чистите зубы, используйте зубную нить и посещайте стоматолога." : "Brush, floss, and get regular check-ups."
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "Do fillings get affected during whitening procedures?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, composite fillings can be affected; do whitening before fillings.",
+          question : locale === "ru" ? "Влияет ли отбеливание на пломбы?" : "Do fillings get affected during whitening procedures?",
+          answer : locale === "ru" ? "Да, композитные пломбы не осветляются, поэтому лучше отбеливать зубы до их установки." : "Yes, composite fillings can be affected; do whitening before fillings."
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "How can the lifespan of fillings be extended?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Maintain oral health, clean regularly, and avoid hard foods.",
-        },
+          question : locale === "ru" ? "Как продлить срок службы пломбы?" : "How can the lifespan of fillings be extended?",
+          answer : locale === "ru" ? "Поддерживайте хорошую гигиену полости рта и избегайте чрезмерной нагрузки на зубы." : "Maintain oral health, clean regularly, and avoid hard foods."
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Avoid chewing on the side of the filling until numbness wears off",
-        locale === "ru"
-          ? ""
-          : "Sensitivity to cold or pressure is normal for a few days",
-        locale === "ru" ? "" : "Avoid sticky or hard foods initially",
-        locale === "ru" ? "" : "Continue good oral hygiene",
-        locale === "ru" ? "" : "Call dentist if pain persists beyond a week",
-        locale === "ru"
-          ? ""
-          : "Avoid hot foods and drinks for the first 24 hours.",
-        locale === "ru" ? "" : "Avoid clenching and grinding your teeth.",
+        locale === "ru" ? "Избегайте жевания на стороне с пломбой, пока не пройдёт онемение." : "Avoid chewing on the side of the filling until numbness wears off",
+        locale === "ru" ? "Легкая чувствительность к холоду или давлению возможна в течение нескольких дней." : "Sensitivity to cold or pressure is normal for a few days",
+        locale === "ru" ? "Первое время откажитесь от липкой и твердой пищи." : "Avoid sticky or hard foods initially",
+        locale === "ru" ? "Поддерживайте тщательную гигиену полости рта." : "Continue good oral hygiene",
+        locale === "ru" ? "Обратитесь к стоматологу, если боль сохраняется более недели." : "Call dentist if pain persists beyond a week",
+        locale === "ru" ? "Избегайте горячей пищи и напитков в течение первых 24 часов." : "Avoid hot foods and drinks for the first 24 hours.",
+        locale === "ru" ? "Не сжимайте челюсти и не скрипите зубами." : "Avoid clenching and grinding your teeth."
       ],
       preList: [
-        locale === "ru" ? "" : "Brush and floss before the appointment",
-        locale === "ru"
-          ? ""
-          : "Inform the dentist about any allergies (especially to anesthesia)",
-        locale === "ru" ? "" : "Eat lightly if not under sedation",
-        locale === "ru"
-          ? ""
-          : "Discuss material options (composite, amalgam, etc.)",
-        locale === "ru"
-          ? ""
-          : "Provide information about any previous dental issues or past treatments.",
+        locale === "ru" ? "Почистите зубы и воспользуйтесь зубной нитью перед визитом." : "Brush and floss before the appointment",
+        locale === "ru" ? "Сообщите стоматологу о любых аллергиях, особенно на анестетики." : "Inform the dentist about any allergies (especially to anesthesia)",
+        locale === "ru" ? "Примите легкую пищу перед процедурой, если не планируется седация." : "Eat lightly, if you're not under sedation",
+        locale === "ru" ? "Обсудите с врачом подходящие варианты материалов (композит, амальгама и др.)." : "Discuss material options (composite, amalgam, etc.)",
+        locale === "ru" ? "Предоставьте информацию о прошлых стоматологических проблемах и лечении." : "Provide information about any previous dental issues or past treatments."
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Стоматологические пломбы — это надежный способ восстановления поврежденных зубов, который помогает избежать дальнейшего разрушения и поддерживает здоровье полости рта. Правильный выбор материала и профессиональный подход к лечению гарантируют долгосрочные результаты и привлекательный внешний вид вашей улыбки."
             : "Dental fillings are an effective way to restore damaged teeth, prevent further decay, and maintain oral health. Consulting a dentist ensures the right filling type is chosen for optimal durability and appearance.",
       },
       bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "" : "Why Choose Turkey for Your Dental Fillings?",
+          locale === "ru" ? "Почему стоит выбрать Турцию для установки стоматологических пломб?" : "Why Choose Turkey for Your Dental Fillings?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Турция все чаще становится предпочтительным выбором для тех, кто ищет качественное стоматологическое лечение, и это неудивительно. Когда речь идет о стоматологических пломбах, Турция предлагает непревзойденное сочетание факторов, которые делают ее идеальным местом для заботы о здоровье зубов.</p>
+<p dir="ltr">Основным преимуществом является доступность стоматологических услуг в Турции. Стоимость процедур, таких как установка пломб, значительно ниже, чем в странах Европы, Великобритании и США, что позволяет вам сэкономить без ущерба для качества. Это возможно благодаря более низким затратам на усоуги и выгодному обменному курсу, что дает шанс получить профессиональное лечение по доступной цене.</p>
+<p dir="ltr">Но, помимо стоимости, Турция гордится высококвалифицированными стоматологами. Множество турецких специалистов прошли обучение в лучших медицинских учреждениях, постоянно совершенствуются и осваивают новейшие методы и материалы. Клиники, с которыми сотрудничает AZPO Health, оснащены современным оборудованием и строго следуют международным стандартам гигиены, обеспечивая безопасное и эффективное лечение. Вам гарантировано внимательное отношение и тщательное выполнение каждой процедуры.</p>
+<p dir="ltr">Кроме того, лечение зубов в Турции можно прекрасно совместить с путешествием. Страна, полная исторических памятников, живописных пейзажей и уникальной культуры, открывает перед вами массу возможностей для отдыха и развлечений. Хотите ли вы исследовать Стамбул с его историей или насладиться пляжами Анталии &mdash; ваше лечение может стать частью незабываемого путешествия. AZPO Health поможет вам организовать всё, связав с удобными и туристическими клиниками.</p>
+<p dir="ltr">Турецкие стоматологические клиники ориентированы на международных пациентов и предлагают широкий спектр услуг, чтобы сделать ваше пребывание максимально комфортным. От помощи с трансферами до размещения &mdash; всё для того, чтобы ваше лечение прошло легко и без стресса. Гостеприимство турков добавляет еще один штрих к вашему положительному опыту.</p>
+<p dir="ltr">Таким образом, выбор Турции для установки пломб &mdash; это идеальное сочетание доступности, высокого качества и возможности совместить лечение с путешествием. AZPO Health обеспечит вам надежную связь с проверенными специалистами, чтобы ваше лечение стало не только успешным, но и приятным.</p>
+<h2 dir="ltr">Стоматологическая пломба: восстановление зуба и защита от дальнейших повреждений.</h2>
+<p dir="ltr">Стоматологические пломбы &mdash; неотъемлемая часть восстановительной стоматологии, играющая ключевую роль в восстановлении зубов, поврежденных кариесом или незначительными трещинами. Пломба словно &laquo;заполняет&raquo; поврежденную область зуба, возвращая ему первоначальную форму, функцию и предотвращая дальнейшее разрушение.</p>
+<p dir="ltr">Когда у зуба возникает кариес, это означает, что твердая оболочка эмали разрушена, образуя полость. Если оставить это без внимания, разрушение может проникнуть глубже, затронув нерв и вызвав сильную боль и инфекцию. Процесс установки пломбы включает в себя удаление поврежденной части зуба, тщательную очистку области и заполнение полости подходящим материалом. Это не только восстанавливает зуб, но и предотвращает проникновение бактерий, защищая от дальнейших повреждений.</p>
+<p dir="ltr">Стоматологические пломбы также эффективно восстанавливают мелкие сколы и трещины на зубах, которые могут вызывать чувствительность или ослаблять структуру зуба. Заполнив такие повреждения, зуб становится прочнее, а его поверхность восстанавливает свою гладкость и целостность.</p>
+<h3 dir="ltr">Виды зубных пломб</h3>
+<p dir="ltr">Современная стоматология предлагает множество решений для восстановления зубов, и пломбы &mdash; одно из самых распространенных. На первый взгляд кажется, что пломба &mdash; это просто &ldquo;заплатка&rdquo;, но на деле &mdash; это целая наука, где важно все: и прочность, и внешний вид, и комфорт, и даже влияние на здоровье. Разобраться в этом многообразии поможет специалист, с которым вас свяжет AZPO Health. А пока &mdash; расскажем о самых популярных типах пломб.</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Композитные пломбы: эстетика и технология в одном флаконе. Эти пломбы можно точно подобрать под цвет зуба, поэтому они практически незаметны. Изготавливаются из смолы с добавлением стекловидных частиц, хорошо подходят для передних и боковых зубов. Прочно сцепляются с тканью зуба, обеспечивая дополнительную поддержку. Однако при большой жевательной нагрузке могут со временем стираться.</p>
+</li>
+</ul>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Амальгамные пломбы (серебряные): классика прочности. Используются десятилетиями, особенно для жевательных зубов. Состоят из сплава металлов, включая серебро и ртуть. Очень прочные, долговечные и недорогие. Минусы &mdash; заметный металлический цвет и возможные опасения по поводу содержания ртути, хотя современные исследования подтверждают их безопасность.</p>
+</li>
+</ul>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Керамические (фарфоровые) пломбы: идеальный выбор для тех, кто ценит и красоту, и качество. Изготавливаются индивидуально в лаборатории и точно подгоняются под форму зуба. Блестяще имитируют натуральную эмаль, не темнеют со временем, устойчивы к пятнам. Подходят для средних и крупных реставраций. Единственный минус &mdash; цена выше, чем у других вариантов.</p>
+</li>
+</ul>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Золотые пломбы: известны своей исключительной долговечностью и надежностью. Эти пломбы служат десятилетиями, не стираются и не трескаются. Однако заметны при улыбке и требуют большего вложения &mdash; как в плане стоимости, так и времени на изготовление.</p>
+</li>
+</ul>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Стеклоиономерные пломбы: стеклоиономер &mdash; это материал, окрашенный в цвет зубов, изготовленный из комбинации стеклянного порошка и кислой жидкости. Он химически связывается с зубом и выделяет фтор, который помогает защищать его от дальнейшего разрушения. Стеклоиономерные пломбы часто используются для пломбирования небольших кариозных полостей, особенно вблизи линии десен, а также для установки в детских зубах. Однако они не такие прочные и износостойкие, как композитные или амальгамные пломбы.</p>
+</li>
+</ul>
+<p dir="ltr">Как сделать правильный выбор?</p>
+<p dir="ltr">Оптимальный материал для пломбы подбирается индивидуально. Важно учитывать размер и расположение кариеса, ваши пожелания по внешнему виду, нагрузку на зуб, бюджет и общее состояние полости рта. Обращаясь через AZPO Health, вы получите тщательную диагностику, после которой стоматолог предложит решение, идеально соответствующее вашим потребностям, а также рассмотрит наиболее подходящие варианты, учитывая особенности вашей ситуации.</p>
+<h3 dir="ltr">Процедура пломбирования зубов</h3>
+<p dir="ltr">Установка пломбы &mdash; это обычно простая и быстрая процедура, которая проходит в несколько этапов. Вот как это обычно происходит:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Анестезия: перед началом работы стоматолог обезболит область вокруг зуба с помощью местного анестетика, чтобы вы чувствовали себя комфортно на протяжении всего процесса.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Удаление кариеса: с использованием специальных стоматологических инструментов, врач аккуратно удаляет пораженную кариесом ткань зуба.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Чистка: после удаления кариеса полость очищается от остатков бактерий и возможных загрязнений, чтобы подготовить зуб к установке пломбы.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Установка пломбы: в подготовленную полость помещается выбранный материал для пломбы. Если это композитная пломба, материал наносится слоями, а затем с помощью специального устройства затвердевает. Для амальгамных пломб материал заполняет полость за один этап.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Придание формы и полировка: после установки пломбы стоматолог придает ей форму, соответствующую естественному контуром зуба, и проверяет правильность прикуса. В завершение пломба полируется до идеальной гладкости.</p>
+</li>
+</ol>
+<p dir="ltr">После процедуры возможна некоторая чувствительность к горячему или холодному, однако она обычно проходит в течение нескольких дней. Важно соблюдать все рекомендации стоматолога, чтобы обеспечить правильное заживление и долгосрочную службу пломбы. Регулярная гигиеническая чистка зубов, использование зубной нити и посещение стоматолога помогут вам поддерживать здоровье зубов и полости рта на должном уровне.</p>
+<h2 dir="ltr">Истории пациентов: настоящие улыбки, восстановленные в Турции</h2>
+<p dir="ltr">В AZPO Health мы понимаем, как важен фактор доверия при обращении за стоматологическим лечением за рубежом. Мы хотим поделиться примерами реальных историй пациентов, которые получили отличный опыт от процедур пломбирования зубов с помощью нашей сети клиник в Турции. Эти истории основаны на отзывах наших клиентов и служат примером того, как профессионализм и высококачественное лечение могут преобразить ваши зубы и восстановить уверенность в своей улыбке.</p>
+<p dir="ltr">История 1: Сара из Великобритании</p>
+<p dir="ltr">&laquo;У меня был чувствительный задний зуб, и я подозревала, что там может быть кариес. Стоимость пломбировки в Великобритании была слишком высокой, и я начала искать варианты за границей. Так я нашла AZPO Health, которые связали меня с отличной стоматологической клиникой в Стамбуле. Стоматолог был очень внимателен, подробно рассказал о возможных вариантах материалов и порекомендовал использовать композитную смолу для моих зубов. Процедура прошла быстро и безболезненно, а чувствительность исчезла. К тому же, стоимость лечения в Турции была значительно ниже, чем в Великобритании. Я также успела насладиться красотами Стамбула. Впечатления от поездки и лечения были превосходными, и я рада, что выбрала лечение в Турции через AZPO Health.&raquo;</p>
+<p dir="ltr">История 2: Джон из США</p>
+<p dir="ltr">&laquo;Маленький скол на моем переднем зубе беспокоил меня много лет. Он снижал мою уверенность, особенно когда я улыбался. Я долго откладывал решение, но изучая возможности медицинского туризма, я наткнулся на AZPO Health. Процесс поиска стоматолога был настолько простым благодаря их поддержке. Я выбрал композитную пломбу, подходящую по цвету зуба, и стоматолог в Анталии проделал потрясающую работу. Даже не скажешь, что когда-то был скол! Я был впечатлен уровнем профессионализма и качеством работы. AZPO Health помогли мне с организацией поездки, избавив от лишнего стресса. Я настоятельно рекомендую обратиться к стоматологу в Турции, и AZPO Health &mdash; отличный помощник, чтобы все прошло гладко.&raquo;</p>
+<p dir="ltr">История 3: Мария из Германии</p>
+<p dir="ltr">&laquo;Мне потребовалось несколько пломб из-за небольшого кариеса. Сделать все это лечение сразу в Германии оказалось бы очень дорого. Мой друг порекомендовал мне обратиться за стоматологическим лечением в Турцию, и я связалась с AZPO Health. Они предоставили мне информацию о нескольких клиниках с отличной репутацией, и я выбрала одну из них в Измире. Клиника произвела на меня отличное впечатление. Стоматологи использовали высококачественные композитные материалы для всех моих пломб, и они выглядят и ощущаются прекрасно. Связь с клиникой была на высшем уровне, а сама клиника &mdash; современной и чистой. Экономия была значительной, что позволило мне получить необходимое лечение без лишних финансовых затрат. Спасибо, AZPO Health, за столь положительный опыт!&raquo;</p>
+<p dir="ltr">Эти отзывы свидетельствуют о высококачественном обслуживании и отличных результатах, которые пациенты получают при лечении зубов в Турции с помощью AZPO Health. Мы стремимся предложить вам лучшие стоматологические услуги, соединяя с профессиональными врачами, которые уделяют внимание вашему комфорту и обеспечивают долговечные и эстетически привлекательные результаты.</p>
+<h2 dir="ltr">AZPO Health: ваш надежный партнер в сфере стоматологического здоровья в Турции</h2>
+<p dir="ltr">AZPO Health &mdash; лидер в области медицинского туризма, предлагающий пациентам со всего мира доступ к высококачественным медицинским и стоматологическим услугам в Турции. Мы понимаем, что поиск стоматологического лечения за рубежом может быть сложным и волнующим процессом, поэтому наша цель &mdash; быть вашим надежным проводником и поддержкой на каждом этапе вашего пути к восстановлению.</p>
+<p dir="ltr">Наша миссия &mdash; предоставить вам исключительный опыт, начиная с первого обращения и до вашего возвращения домой. Мы сотрудничаем только с тщательно отобранными стоматологическими клиниками в Турции, которые строго соответствуют самым высоким стандартам качества, гигиены и заботы о пациентах. Хотя мы не проводим лечения, наша роль &mdash; это быть связующим звеном между вами и опытными, высококвалифицированными стоматологами, готовыми удовлетворить все ваши потребности, включая пломбирование зубов.</p>
+<p dir="ltr">Почему стоит выбрать AZPO Health?</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Поиск идеальной стоматологической клиники: мы свяжем вас с лучшими стоматологическими клиниками в Турции, которые зарекомендовали себя в области восстановительной стоматологии, включая установку зубных пломб.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Содействие в установлении связи: мы обеспечим удобное и быстрое общение между вами и клиникой, чтобы все ваши вопросы были решены, а план лечения &mdash; ясен и понятен.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Полная информация и рекомендации: мы предложим подробные консультации по процессу лечения, организации поездки и подготовим вас ко всему, что вас ожидает во время визита к стоматологу в Турции.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Гарантия качества и доверия: мы работаем только с клиниками, использующими высококачественные материалы и придерживающимися международных стандартов стоматологической помощи.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальная поддержка: мы понимаем, что каждый пациент уникален, и поэтому обеспечиваем персонализированный подход, учитывая все ваши потребности и предпочтения.</p>
+</li>
+</ul>
+<p dir="ltr">AZPO Health нацелена на соблюдение самых высоких стандартов E.E.A.T., гарантируя вам максимальное качество обслуживания, безопасность и комфорт. С нами вы делаете уверенный шаг к восстановлению вашей улыбки в безопасной, доступной и гостеприимной атмосфере Турции.</p>
+<p dir="ltr">Свяжитесь с нами сегодня, чтобы узнать больше о том, как мы можем помочь вам с пломбированием зубов и другими стоматологическими услугами в Турции!</p>
+<h2 dir="ltr">Сделайте шаг к более здоровой улыбке</h2>
+<p dir="ltr">Не дайте зубной боли снизить качество вашей жизни. AZPO Health готовы помочь вам наладить контакт с опытными стоматологами в Турции, которые проведут высококачественные процедуры по пломбированию зубов. Свяжитесь с нами сегодня для бесплатной консультации и индивидуального предложения. Наша команда профессионалов всегда готова ответить на ваши вопросы и сопровождать вас на каждом этапе процесса. Сделайте первый шаг к более здоровой и уверенной улыбке &mdash; напишите нам, чтобы начать!</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Many individuals are increasingly choosing Turkey for their dental treatments, and for good reason. When it comes to dental fillings, Turkey offers a compelling combination of factors that make it an attractive destination for your oral health needs.</p>
 <p dir="ltr">One of the primary reasons is the affordability of dental treatments in Turkey. Compared to many countries in Europe, the United Kingdom, and the United States, the cost of dental procedures, including fillings, can be significantly lower in Turkey. This cost-effectiveness doesn't necessarily mean a compromise on quality. Instead, it's often attributed to factors such as lower labor costs and favorable exchange rates. By choosing Turkey for your dental fillings, you can potentially achieve substantial savings without sacrificing the standard of care you receive.</p>
 <p dir="ltr">Beyond the financial aspect, Turkey is home to highly skilled and experienced dental professionals. Many dentists in Turkey have received excellent education and training, and they often stay updated with the latest advancements in dental techniques and materials. The clinics that AZPO Health connects you with utilize modern technologies and adhere to stringent hygiene protocols, ensuring that you receive safe and effective treatment. You can have peace of mind knowing that your dental filling procedure will be performed with precision and care.</p>
@@ -22999,89 +23718,100 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "В 2025 году откройте для себя заботу о здоровье зубов  — стоматологические осмотры ждут вас в солнечной Турции."
           : "Dental Check-ups Await You in Turkey in 2025",
       descriptionTop:
         locale === "ru"
           ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
-          : `Are you concerned about maintaining your oral health without straining your budget? Longing for thorough dental evaluations that put your well-being first? Turkey offers a compelling solution, blending exceptional dental care with cost-effective options and above all a memorable holiday too while doing your dental work, your smile receives the expert attention it deserves with AZPO Health.`,
+          : `Заботитесь о сохранении здоровья полости рта без ущерба для бюджета? Хотите пройти тщательный стоматологический осмотр, который ставит ваше самочувствие на первое место? Турция – это идеальное решение, где высококлассная стоматологическая помощь сочетается с разумными ценами и, что особенно приятно, с возможностью насладиться незабываемым отдыхом. Вместе с AZPO Health вы получаете не просто лечение – вы дарите своей улыбке профессиональный и бережный уход, которого она по-настоящему достойна.`,
       benefits: null,
       faqs: [
         {
-          question: locale === "ru" ? "" : "How often should I have check-ups?",
-          answer: locale === "ru" ? "" : "Every 6 months, or more if advised",
+          question : locale === "ru" ? "Как часто мне нужно проходить осмотры?" : "How often should I have check-ups?",
+          answer : locale === "ru" ? "Каждые 6 месяцев или чаще, если это рекомендовано." : "Every 6 months, or more if advised"
         },
         {
-          question: locale === "ru" ? "" : "Do dental cleanings whiten teeth?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "They remove stains, but not the same as whitening",
+          question : locale === "ru" ? "Чистка зубов отбеливает зубы?" : "Do dental cleanings whiten teeth?",
+          answer : locale === "ru" ? "Чистка удаляет пятна, но это не то же самое, что и отбеливание." : "They remove stains, but not the same as whitening"
         },
         {
-          question: locale === "ru" ? "" : "Does it hurt?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Mild sensitivity may occur, especially with tartar build-up",
+          question : locale === "ru" ? "Это больно?" : "Does it hurt?",
+          answer : locale === "ru" ? "Может возникнуть легкая чувствительность, особенно при наличии зубного камня." : "Mild sensitivity may occur, especially with tartar build-up"
         },
         {
-          question: locale === "ru" ? "" : "Why do gums bleed during cleaning?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Indicates inflammation – regular flossing helps",
+          question : locale === "ru" ? "Почему десны кровоточат во время чистки?" : "Why do gums bleed during cleaning?",
+          answer : locale === "ru" ? "Это может быть признаком воспаления – регулярное использование зубной нити помогает предотвратить это." : "Indicates inflammation – regular flossing helps"
         },
         {
-          question: locale === "ru" ? "" : "Can I eat after a cleaning?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, unless fluoride was applied – wait 30 mins",
+          question : locale === "ru" ? "Могу ли я поесть после чистки?" : "Can I eat after a cleaning?",
+          answer : locale === "ru" ? "Да, если не было проведено фторирование, подождите 30 минут." : "Yes, unless fluoride was applied – wait 30 mins"
         },
         {
-          question:
-            locale === "ru" ? "" : "How long does a teeth cleaning take?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "It usually takes 30 minutes to 1 hour, depending on individual needs.",
-        },
+          question : locale === "ru" ? "Сколько времени занимает чистка зубов?" : "How long does a teeth cleaning take?",
+          answer : locale === "ru" ? "Обычно это занимает от 30 минут до 1 часа, в зависимости от индивидуальных особенностей." : "It usually takes 30 minutes to 1 hour, depending on individual needs."
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Sensitivity is possible after cleaning – avoid very hot/cold food",
-        locale === "ru" ? "" : "Start brushing and flossing the same day",
-        locale === "ru" ? "" : "Use desensitizing toothpaste if needed",
-        locale === "ru"
-          ? ""
-          : "Avoid smoking or staining foods for a few hours",
-        locale === "ru"
-          ? ""
-          : "Follow your dentist's recommended care instructions and get regular dental check-ups.",
+        locale === "ru" ? "Чувствительность возможна после чистки, избегайте очень горячей или холодной пищи." : "Sensitivity is possible after cleaning – avoid very hot/cold food",
+        locale === "ru" ? "Начинайте чистить зубы и использовать зубную нить в тот же день." : "Start brushing and flossing the same day",
+        locale === "ru" ? "Используйте десенсибилизирующую зубную пасту, если необходимо." : "Use desensitizing toothpaste if needed",
+        locale === "ru" ? "Избегайте курения или пищи, которая оставляет пятна, в течение нескольких часов." : "Avoid smoking or staining foods for a few hours",
+        locale === "ru" ? "Соблюдайте рекомендации стоматолога по уходу и регулярно проходите осмотры." : "Follow your dentist's recommended care instructions and get regular dental check-ups."
       ],
       preList: [
-        locale === "ru" ? "" : "Brush and floss normally",
-        locale === "ru" ? "" : "Bring list of medications and dental history",
-        locale === "ru" ? "" : "Avoid eating hard-staining foods before visit",
-        locale === "ru"
-          ? ""
-          : "If you have any issues like gum bleeding, share them with your dentist.",
+        locale === "ru" ? "Чистите зубы и используйте зубную нить, как обычно." : "Brush and floss normally",
+        locale === "ru" ? "Принесите список медикаментов и историю стоматологических заболеваний." : "Bring list of medications and dental history",
+        locale === "ru" ? "Избегайте пищи, которая может сильно окрасить зубы, перед визитом." : "Avoid eating hard-staining foods before visit",
+        locale === "ru" ? "Если у вас есть проблемы, такие как кровоточивость десен, сообщите об этом стоматологу." : "If you have any issues like gum bleeding, share them with your dentist."
       ],
       conclusion: {
-        title: locale === "ru" ? "" : "What are Dental Check-Ups?",
+        title: locale === "ru" ? null : "What are Dental Check-Ups?",
         desc:
           locale === "ru"
-            ? ""
+            ? null
             : "Regular dental check-ups are essential for maintaining optimal oral health. A dental check-up involves a thorough examination of your teeth and gums to detect any issues. This allows for early intervention, preventing more serious problems later on. The check-up includes services like plaque removal, cavity detection, gum disease screening, and identification of other potential oral health issues.",
       },
       bfs: bfList,
       contents: {
-        title: locale === "ru" ? "" : "What are Dental Check-Ups?",
+        title: locale === "ru" ? "Что представляет собой стоматологический осмотр?" : "What are Dental Check-Ups?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Регулярные стоматологические осмотры &ndash; это основа здоровой и уверенной улыбки. Они помогают не только сохранить здоровье зубов и дёсен, но и вовремя выявить любые отклонения. Во время приема проводится комплексное обследование полости рта: удаление налёта, диагностика кариеса, оценка состояния дёсен и выявление скрытых проблем. Такой подход позволяет предотвратить серьёзные осложнения и сохранить вашу улыбку яркой и здоровой на долгие годы.</p>
+<p dir="ltr">Подарок от Azpo Health &ndash; бесплатная рентгенодиагностика. При записи на стоматологический осмотр вы получаете бесплатную рентгенодиагностику от Azpo Health.Рентген позволяет обнаружить то, что не видно при обычном осмотре: начальные стадии кариеса, проблемы с корнями зубов и другие потенциальные риски.</p>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p dir="ltr">Объединяя осмотр с диагностикой, вы получаете полное и точное представление о состоянии здоровья полости рта &ndash; с заботой, вниманием и профессионализмом. Регулярные стоматологические осмотры &ndash; ключ к здоровью вашей улыбки. Во время таких визитов стоматолог проводит тщательную проверку состояния полости рта, зубов, дёсен, тканей челюсти и слюнных желез. Это позволяет вовремя выявить такие проблемы, как кариес, заболевания дёсен и истирание зубов. Также внимание уделяется оральным тканям, чтобы обнаружить возможные признаки рака, ведь ранняя диагностика может спасти жизнь.</p>
+<p dir="ltr">Как часто стоит проводить профессиональную чистку зубов?&nbsp;</p>
+<p dir="ltr">Профессиональная чистка зубов, или масштабирование, рекомендуется обычно раз в год. Однако в зависимости от состояния вашего здоровья полости рта стоматолог может предложить более частые процедуры. Регулярные чистки помогают избавиться от налёта и зубного камня, предотвращая заболевания дёсен и поддерживая общее здоровье зубов.</p>
+<p dir="ltr">Рутинные осмотры и чистки &ndash; это не просто забота о здоровье полости рта, а важный шаг к долгой и здоровой улыбке, защите от серьёзных проблем в будущем.</p>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h3 dir="ltr">Почему стоит выбрать Турцию для стоматологического осмотра?</h3>
+<p dir="ltr">Забота о здоровье полости рта &ndash; это основа общего благополучия. Регулярные стоматологические осмотры играют ключевую роль в раннем выявлении и профилактике проблем, помогая избежать более сложных и дорогих процедур в будущем. Турция стала привлекательным направлением для тех, кто ищет высококачественные стоматологические услуги по разумным ценам.</p>
+<p dir="ltr">Одной из ключевых причин, по которой люди выбирают Турцию для решения своих стоматологических вопросов, включая регулярные осмотры, является идеальное сочетание высококачественного обслуживания и доступных цен. Благодаря выгодному обменному курсу стоматологические услуги в Турции становятся значительно более доступными, при этом не теряя в качестве. Это позволяет заботиться о здоровье полости рта, проходя осмотры и чистки, не испытывая финансового давления.</p>
+<p dir="ltr">Турция также известна своей современной системой здравоохранения, высококвалифицированными стоматологами и клиниками, оснащенными новейшими технологиями. Множество турецких клиник придерживаются международных стандартов ухода и гигиены, создавая безопасную и надежную среду для ваших осмотров. Стоматологи часто имеют опыт работы с международными пациентами, что гарантирует индивидуальный подход и высокое качество общения. К тому же, посещение Турции для стоматологического осмотра можно превратить в уникальное путешествие. Страна, богатая историей, культурой и живописными пейзажами, предоставляет отличные возможности для отдыха и наслаждения атмосферой до или после визита к стоматологу.</p>
+<h3 dir="ltr">Понимание важности регулярных стоматологических осмотров и чистки зубов&nbsp;</h3>
+<p dir="ltr">Регулярные стоматологические осмотры &ndash; это ключ к поддержанию здоровой и красивой улыбки. Эти визиты позволяют не только выявить возможные проблемы, но и предотвратить их развитие на ранней стадии. Во время осмотра стоматолог внимательно исследует ваши зубы, десны и полость рта, чтобы обнаружить любые признаки кариеса, заболеваний дёсен или других заболеваний. Раннее обнаружение этих проблем значительно улучшает результаты лечения и помогает избежать более серьезных последствий.</p>
+<p dir="ltr">В процессе осмотра стоматолог проверяет каждый зуб на наличие кариеса, трещин или повреждений, а также оценивает состояние дёсен &ndash; воспаление, кровоточивость или их отступление могут свидетельствовать о начале заболевания. Важно также обратить внимание на прикус и выравнивание зубов. В некоторых случаях стоматолог может предложить сделать рентгеновский снимок, чтобы увидеть скрытые проблемы, которые не заметны при обычном осмотре.</p>
+<p dir="ltr">Чистка зубов, которая часто проводится в тот же день, что и осмотр, &ndash; важная процедура для удаления налета и зубного камня. Налёт, образующийся на зубах, представляет собой слой бактерий, который, если не удаляется вовремя, превращается в зубной камень. Это может привести к кариесу и заболеваниям десен. Во время профессиональной чистки зубов гигиенист использует специальные инструменты для тщательного удаления налета и камня, как с поверхности зубов, так и под линией десен.</p>
+<p dir="ltr">Чистка помогает предотвратить заболевания, такие как гингивит и пародонтит, а также улучшает общее состояние полости рта. После чистки зубы становятся гладкими и чистыми, а их поверхность полируется, удаляя поверхностные пятна. Кроме того, гигиенист может дать вам индивидуальные рекомендации по уходу за зубами, чтобы вы могли поддерживать здоровье полости рта между осмотрами.</p>
+<p dir="ltr">Регулярные стоматологические осмотры и чистка зубов в Турции &ndash; это не только профилактика, но и возможность поддерживать здоровье зубов на высшем уровне. Эти процедуры помогут вам сохранить здоровую, яркую улыбку и избежать более серьезных проблем в будущем.</p>
+<h3 dir="ltr">AZPO Health: ваш надежный партнер для качественного стоматологического осмотра</h3>
+<p dir="ltr">AZPO Health посвятила себя тому, чтобы сделать ваш путь к качественным стоматологическим услугам в Турции простым и доступным. Мы понимаем, как важно выбрать проверенного и надёжного специалиста, особенно когда речь идет о медицинских услугах за рубежом. Именно поэтому мы тщательно отбираем только лучшие клиники, которые соответствуют самым высоким стандартам качества, безопасности и заботы о пациентах.</p>
+<p dir="ltr">С AZPO Health вы получаете доступ к профессионалам, которые обеспечат вам всесторонние регулярные осмотры и профессиональную чистку зубов. Мы позаботимся о том, чтобы весь процесс был для вас максимально комфортным и понятным, предоставляя всю необходимую информацию о клиниках и процедурах, а также отвечая на любые ваши вопросы. Наша цель &ndash; сделать ваш путь к здоровой и красивой улыбке в Турции лёгким и беззаботным.</p>
+<p dir="ltr">Мы поможем вам принимать обоснованные решения, предоставив всю необходимую информацию и облегчая процесс общения с клиниками. Хотя мы не проводим лечения напрямую, мы гарантируем, что вы получите помощь от квалифицированных специалистов, которые помогут решить все вопросы, касающиеся регулярных осмотров и чистки зубов. Мы гордимся тем, что можем быть рядом с вами на протяжении всего пути к вашему здоровью и улыбке в Турции.</p>
+<h3 dir="ltr">Сделайте первый шаг к здоровой и сияющей улыбке уже сегодня&nbsp;</h3>
+<p dir="ltr">Не позволяйте сомнениям о стоимости или доступности отвлечь вас от заботы о своем здоровье. Турция предлагает отличное сочетание качества и доступности для стоматологических осмотров. Обратитесь в AZPO Health для бесплатной консультации и персональной сметы. Мы поможем вам выбрать надежную клинику, которая учтет все ваши пожелания и будет рядом на пути к вашей красивой и здоровой улыбке.</p>
+<h3 dir="ltr">Почитайте отзывы: реальные истории о стоматологическом уходе в Турции&nbsp;</h3>
+<p dir="ltr">Отзыв 1: Сара из Великобритании</p>
+<p dir="ltr">&laquo;Я долго откладывала стоматологический осмотр из-за высоких цен в Великобритании. Подруга посоветовала мне рассмотреть варианты в Турции, и, честно говоря, я была немного скептически настроена. Но после того как я связалась с клиникой через AZPO Health, все сомнения исчезли. Общение было ясным, а стоимость полного осмотра и чистки оказалась значительно ниже, чем в Великобритании. Клиника была современной и ухоженной, а стоматолог &ndash; профессионалом в своем деле. После визита я даже успела насладиться несколькими днями в Стамбуле. Это был невероятно положительный опыт, и я очень рада, что выбрала Турцию для заботы о своем здоровье.&raquo;</p>
+<p dir="ltr">Отзыв 2: Джон из США</p>
+<p dir="ltr">&laquo;Как человек без стоматологической страховки, я всегда переживал из-за высоких расходов на стоматологический уход в США. Начав искать варианты медицинского туризма, я наткнулся на Турцию. AZPO Health помогла мне найти высококлассную клинику для осмотра и чистки зубов. Весь процесс был абсолютно беззаботным. Клиника была оснащена по последнему слову техники, а стоматологическая команда &ndash; настоящими мастерами своего дела. Я оценил подробные объяснения состояния моего здоровья полости рта и персонализированные рекомендации. Сэкономленные деньги позволили мне сосредоточиться на своем здоровье, не переживая о финансовой стороне вопроса. Рекомендую Турцию для всех, кто заботится о своем стоматологическом здоровье..&raquo;</p>
+<p dir="ltr">Отзыв 3: Эмили из Канады</p>
+<p dir="ltr">&laquo;Я решила совместить отдых в Турции с регулярным стоматологическим осмотром. Благодаря AZPO Health мне было легко найти качественную клинику в удобном месте. Клиника была современной и оснащенной всем необходимым, а стоматолог &ndash; внимательной и профессиональной. Осмотр был всесторонним, а чистка зубов &ndash; великолепной. Я была приятно удивлена качеством обслуживания, а стоимость процедур была значительно ниже, чем в Канаде. Это был идеальный вариант &ndash; я могла насладиться прекрасной страной и позаботиться о своем здоровье одновременно.&raquo;</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Maintaining good oral health is a cornerstone of overall well-being. Regular dental check-ups are essential for early detection and prevention of dental problems, helping you avoid more complex and costly treatments down the line. Turkey has emerged as a prominent destination for individuals seeking high-quality dental care at more accessible prices compared to many other countries.</p>
 <p dir="ltr">One of the primary reasons people choose Turkey for their dental needs, including routine check-ups, is the cost-effectiveness. The favorable exchange rates often make dental services in Turkey significantly more affordable without compromising on the quality of care. This allows you to prioritize your oral health through regular examinations and cleanings without financial burden.</p>
 <p dir="ltr">Beyond affordability, Turkey boasts a robust healthcare system with highly qualified dental professionals and modern clinics equipped with advanced technology. Many Turkish dental clinics adhere to international standards of care and hygiene, providing a safe and reliable environment for your dental check-ups. The dentists are often experienced in treating international patients and understand the importance of clear communication and personalized care.</p>
@@ -23122,91 +23852,176 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Рентген зубов в Турции"
           : "Dental X-rays in Turkey",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Если вас беспокоят стоматологические проблемы, но вы не уверены, как дальше действовать, рентген зубов в Турции может стать важным шагом на пути к точному диагнозу. Этот доступный диагностический инструмент позволяет подробно исследовать состояние вашей полости рта, выявляя скрытые проблемы и открывая пути для эффективного лечения."
           : `Concerned about a dental issue but unsure of the next step? In Turkey, accessing essential diagnostic tools like dental X-rays is straightforward and provides a clear picture of your oral health, paving the way for effective and reassuring solutions. Contact AZPO Health today to connect with experienced dental professionals.`,
       benefits: null,
       faqs: [
         {
-          question: locale === "ru" ? "" : "Are X-rays safe?",
-          answer:
-            locale === "ru" ? "" : "Yes, modern X-rays use very low radiation",
+          question : locale === "ru" ? "Безопасны ли рентгеновские снимки?" : "Are X-rays safe?",
+          answer : locale === "ru" ? "Да, современные рентгеновские снимки используют очень низкие уровни радиации, что делает их безопасными для пациента." : "Yes, modern X-rays use very low radiation"
         },
         {
-          question: locale === "ru" ? "" : "How often do I need them?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Once a year or as advised based on dental health",
+          question : locale === "ru" ? "Как часто мне нужно делать рентген?" : "How often do I need them?",
+          answer : locale === "ru" ? "Обычно раз в год, или чаще, если это рекомендовано врачом в зависимости от состояния зубов." : "Once a year or as advised based on dental health"
         },
         {
-          question: locale === "ru" ? "" : "Can pregnant women have X-rays?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Generally postponed unless urgent; protection used if needed",
+          question : locale === "ru" ? "Могут ли беременные женщины делать рентген?" : "Can pregnant women have X-rays?",
+          answer : locale === "ru" ? "Обычно рентген откладывают, если нет срочной необходимости, однако при необходимости используется специальная защита для минимизации риска." : "Generally postponed unless urgent; protection used if needed"
         },
         {
-          question: locale === "ru" ? "" : "What do they detect?",
-          answer:
-            locale === "ru" ? "" : "Cavities, bone loss, infections, and more",
+          question : locale === "ru" ? "Что они выявляют?" : "What do they detect?",
+          answer : locale === "ru" ? "Рентгеновские снимки помогают выявить кариес, потерю костной массы, инфекции, заболевания десен и другие стоматологические проблемы." : "Cavities, bone loss, infections, and more"
         },
         {
-          question: locale === "ru" ? "" : "Do they hurt?",
-          answer: locale === "ru" ? "" : "No, it’s quick and painless",
+          question : locale === "ru" ? "Это больно?" : "Do they hurt?",
+          answer : locale === "ru" ? "Нет, процедура быстрая и безболезненная." : "No, it’s quick and painless"
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "What areas are checked during a dental X-ray?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Dental X-rays detect cavities, gum disease, bone loss, infections, and other issues.",
-        },
+          question : locale === "ru" ? "Какие области проверяются во время стоматологического рентгена?" : "What areas are checked during a dental X-ray?",
+          answer : locale === "ru" ? "Стоматологические рентгеновские снимки позволяют выявить кариес, заболевания десен, потерю костной массы, инфекции и другие стоматологические проблемы." : "Dental X-rays detect cavities, gum disease, bone loss, infections, and other issues."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "No restrictions; continue normal activities",
-        locale === "ru"
-          ? ""
-          : "Follow-up if dentist finds issues needing treatment",
-        locale === "ru" ? "" : "Maintain routine check-ups",
+        locale === "ru" ? "Нет ограничений; продолжайте обычные занятия" : "No restrictions; continue normal activities",
+        locale === "ru" ? "Следите, если стоматолог находит проблемы, требующие лечения" : "Follow-up if dentist finds issues needing treatment",
+        locale === "ru" ? "Поддерживайте регулярные осмотры" : "Maintain routine check-ups"
       ],
       preList: [
-        locale === "ru"
-          ? ""
-          : "Remove metal items (jewelry, glasses) before the process",
-        locale === "ru"
-          ? ""
-          : "Inform if someone is pregnant or suspect pregnancy",
-        locale === "ru" ? "" : "No special preparation needed",
-        locale === "ru"
-          ? ""
-          : "If you have any allergies or sensitivities, inform beforehand.",
-        locale === "ru"
-          ? ""
-          : "If you have metal fillings, dentures, or implants, mention them in advance.",
+        locale === "ru" ? "Удалите металлические предметы (ювелирные изделия, очки) перед процедурой." : "Remove metal items (jewelry, glasses) before the process",
+        locale === "ru" ? "Сообщите, если вы беременны или подозреваете беременность." : "Inform if someone is pregnant or suspect pregnancy",
+        locale === "ru" ? "Специальная подготовка не требуется." : "No special preparation needed",
+        locale === "ru" ? "Если у вас есть аллергии или чувствительность, сообщите об этом заранее." : "If you have any allergies or sensitivities, inform beforehand.",
+        locale === "ru" ? "Если у вас есть металлические пломбы, зубные протезы или имплантаты, сообщите об этом заранее." : "If you have metal fillings, dentures, or implants, mention them in advance."
       ],
       conclusion: {
-        title: locale === "ru" ? "Заключение" : "What is Dental X-Ray?",
+        title: locale === "ru" ? null : "What is Dental X-Ray?",
         desc:
           locale === "ru"
-            ? "A dental X-ray is a technique used to visualize the inside of your teeth and jaw structure. It helps detect hidden cavities, root issues, infections, and other oral health problems early. The process is quick, safe, and painless, assisting your dentist in making an accurate diagnosis.Additionally, when you benefit from our dental services, Azpo Health offers free X-ray service as a gift."
+            ? null
             : "A dental X-ray is a technique used to visualize the inside of your teeth and jaw structure. It helps detect hidden cavities, root issues, infections, and other oral health problems early. The process is quick, safe, and painless, assisting your dentist in making an accurate diagnosis.Additionally, when you benefit from our dental services, Azpo Health offers free X-ray service as a gift.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Что из себя представляет рентген зубов?"
             : "Why Choose Turkey for Your Dental Needs, Including Dental X-rays?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Рентген зубов &mdash; это метод, используемый для получения четкого изображения внутренней структуры зубов и челюсти. Он помогает на ранних стадиях обнаружить такие проблемы, как скрытый кариес, заболевания корней, инфекции и другие нарушения, которые могут остаться незамеченными при обычном осмотре. Процедура быстрая, безопасная и безболезненная, что позволяет стоматологу точно оценить ваше состояние.</p>
+<p dir="ltr">Кроме того, при обращении в AZPO Health вы получите бесплатную рентгеновскую процедуру в подарок, что позволит вам начать лечение с точной диагностики. Не откладывайте заботу о своем здоровье &mdash; свяжитесь с нами для консультации с опытными стоматологами в Турции уже сегодня!</p>
+<p><strong>&nbsp;</strong></p>
+<p dir="ltr">&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<h2 dir="ltr">Почему Турция &mdash; идеальный выбор для стоматологического лечения, включая рентген?</h2>
+<p dir="ltr">Турция стала одной из самых популярных стран для медицинского туризма, и это не случайно. Если вы нуждаетесь в стоматологическом лечении, включая рентген зубов, выбор Турции для этого процесса имеет множество весомых преимуществ:</p>
+<p dir="ltr">1. Доступность и экономическая эффективность: Турция привлекает пациентов со всего мира благодаря своей доступной стоимости стоматологических услуг. Стоимость лечения, включая рентген, в Турции значительно ниже, чем в Европе или США, при этом качество обслуживания остается на высоком уровне. Эта доступность объясняется экономическими факторами и выгодными курсами валют, а не компромиссами в качестве медицины.</p>
+<p dir="ltr">2. Высококачественная стоматологическая помощь: турецкие стоматологические клиники оснащены современным оборудованием и используют новейшие стоматологические технологии. Многие клиники придерживаются международных стандартов безопасности и гигиены, а их специалисты имеют опыт работы в различных областях стоматологии. Когда речь идет о рентгенографии зубов, вы можете рассчитывать на точные и четкие снимки с минимальным воздействием радиации.</p>
+<p dir="ltr">3. Опытные специалисты: в Турции работают высококвалифицированные стоматологи, которые прошли обучение в международных медицинских школах и продолжают повышать свою квалификацию. Эти профессионалы не только обеспечат вам точную диагностику, включая интерпретацию рентгеновских снимков, но и предложат эффективное и персонализированное лечение.</p>
+<p dir="ltr">4. Комплексный подход к лечению: в Турции вам будет доступен полный спектр стоматологических услуг &mdash; от рутинного рентгена до сложных стоматологических процедур, таких как имплантация зубов, ортодонтия или косметическое восстановление зубов. Вам не нужно искать несколько клиник &mdash; все можно пройти в одном месте.</p>
+<p dir="ltr">5. Удобство и доступность поездок: с учетом большого количества международных рейсов, доступных в Турцию, ваша поездка на лечение станет удобной и быстрой. AZPO Health позаботится о том, чтобы все логистические вопросы были решены, и вам оставалось только наслаждаться процессом лечения.</p>
+<p dir="ltr">6. Стоматологический туризм: кроме того, Турция &mdash; это не только лечение, но и возможность совмещения стоматологического туризма с отдыхом. Страна славится своими историческими достопримечательностями, уникальными природными пейзажами и культурным наследием, что делает поездку не только полезной для здоровья, но и приятной для души.</p>
+<p dir="ltr">В AZPO Health мы понимаем, как важно принимать обоснованные решения, когда речь идет о здоровье. Мы сотрудничаем с надежными и проверенными стоматологическими клиниками в Турции, которые гарантируют высокий уровень безопасности и точности при использовании современных диагностических методов, включая рентген зубов. Свяжитесь с нами сегодня, чтобы узнать больше о возможностях получения рентгеновских снимков и других стоматологических услуг в Турции.</p>
+<h2 dir="ltr">Понимание важности рентгеновских снимков полости рта&nbsp;</h2>
+<p dir="ltr">Здоровье полости рта &mdash; это не только то, что мы видим в зеркале. Рентгеновские снимки зубов &mdash; это ключевая диагностика, которая помогает стоматологам получить полное представление о состоянии вашего рта. Эти снимки дают уникальную возможность увидеть то, что скрыто от глаз, и позволяют выявить скрытые проблемы на ранней стадии, что в свою очередь способствует более эффективному и своевременному лечению.</p>
+<p dir="ltr">Рентген зубов &mdash; это своего рода путеводитель для вашего стоматолога, который помогает получить детальное изображение корней зубов, челюстной кости и промежутков между зубами. Это важнейший инструмент для выявления заболеваний, которые могут быть незаметны при обычном осмотре.</p>
+<p dir="ltr">Рентгеновские снимки помогают выявить:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Кариес и кариозные полости: даже небольшие очаги кариеса, которые скрыты между зубами или под пломбами, можно обнаружить на ранней стадии. Чем раньше выявлен кариес, тем меньше инвазивности потребуется для лечения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Потеря костной массы: рентген помогает выявить потерю костной массы, особенно при заболеваниях пародонта, что критично для своевременного планирования лечения десен.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Повреждения зубов: проблемы с зубами, такими как неправильное прорезывание зубов мудрости, можно точно определить с помощью рентгенографии, что помогает разработать оптимальный план лечения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Абсцессы и инфекции: рентгеновские снимки позволяют выявить инфекции корня зуба или в окружающей его кости, предотвращая их распространение.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Опухоли и кисты: в некоторых случаях рентген может обнаружить аномальные образования в челюстной кости или мягких тканях, что способствует раннему выявлению и лечению.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Проблемы внутри зуба: инфекции корневых каналов или другие аномалии в структуре зуба также могут быть визуализированы на рентгене.</p>
+</li>
+</ol>
+<p dir="ltr">Важность рентгеновских снимков при планировании процедур</p>
+<p dir="ltr">Рентген зубов необходим для точного планирования многих стоматологических процедур, таких как установка зубных имплантатов, коронок, лечение корневых каналов и ортодонтическое вмешательство. Например, перед установкой имплантатов важно оценить состояние челюстной кости, а рентген помогает определить ее плотность и здоровье.</p>
+<p dir="ltr">Рентгеновские снимки бывают различных типов, каждый из которых используется для различных диагностических целей:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Рентгеновские снимки прикуса: помогают выявить кариес между зубами, фокусируясь на коронках зубов.</p>
+</li>
+</ul>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Периапикальные рентгеновские снимки: показывают весь зуб и окружающую его кость, что полезно для диагностики проблем с корнями и костной тканью.</p>
+</li>
+</ul>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Панорамные рентгеновские снимки: дают общий обзор всей полости рта, включая зубы, челюсти и носовые пазухи. Этот тип рентгена используется для общего осмотра и планирования имплантации.</p>
+</li>
+</ul>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Кефалометрические рентгеновские снимки: в основном используются в ортодонтии для оценки соотношения зубов и челюстей.</p>
+</li>
+</ul>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Конусно-лучевая компьютерная томография (КЛКТ): современный метод, который дает трехмерные изображения зубных структур и позволяет провести детальную диагностику, особенно при сложных случаях. Этот метод используется для планирования имплантации и лечения поврежденных зубов.</p>
+</li>
+</ul>
+<p dir="ltr">Безопасность и комфорт</p>
+<p dir="ltr">Рентген зубов &mdash; это эффективная, безопасная и безболезненная процедура, которая играет ключевую роль в диагностике, но часто вызывает беспокойство у пациентов. Мы хотим вас уверить: современное оборудование и строгие стандарты безопасности делают рентген безвредным. В Турции вы легко можете пройти рентгеновскую диагностику в лучших стоматологических клиниках, и AZPO Health позаботится о том, чтобы ваш опыт был комфортным и результативным.</p>
+<p dir="ltr">Сделайте шаг к здоровью вашего рта</p>
+<p dir="ltr">Пройдите рентгеновское обследование и узнайте больше о состоянии своих зубов и десен. Свяжитесь с AZPO Health сегодня, и мы поможем вам организовать консультацию с опытными стоматологами в Турции, чтобы вы могли получить точный диагноз и эффективное лечение.</p>
+<p><strong>&nbsp;</strong></p>
+<h2 dir="ltr">AZPO Health: ваш проводник к высококачественной стоматологической помощи в Турции</h2>
+<p dir="ltr">AZPO Health &mdash; ваш надежный партнер в поиске высококачественной стоматологической помощи в Турции. Мы понимаем, что обращение за лечением за границу может быть непростым и требовать полного доверия, а также тщательной подготовки. Наши опытные специалисты и проверенные клиники помогут вам пройти все этапы лечения, включая получение рентгеновских снимков, с максимальным комфортом и уверенностью.</p>
+<p dir="ltr">Преимущества работы с AZPO Health:</p>
+<ol>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к сети проверенных клиник:</p>
+</li>
+</ol>
+<p dir="ltr">Мы наладили партнерские отношения с сетью передовых стоматологических клиник в Турции, которые отвечают самым высоким стандартам качества, гигиены и ухода за пациентами. Эти клиники оснащены современным оборудованием, включая передовые технологии для проведения рентгенографии, что обеспечивает точность диагностики и качество лечения.</p>
+<ol start="2">
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Связь с опытными стоматологами: AZPO Health поможет вам связаться с квалифицированными стоматологами, которые специализируются в различных областях стоматологии. Они обладают многолетним опытом и могут точно интерпретировать рентгеновские снимки зубов, гарантируя точный диагноз и рекомендации по дальнейшему лечению.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Персонализированная помощь и поддержка: мы понимаем, что каждый пациент уникален, и предоставляем индивидуальную поддержку на каждом этапе вашего визита. Наши специалисты помогут вам выбрать подходящую клинику, объяснят все этапы проведения рентгенографии зубов и решат любые вопросы, которые могут возникнуть.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Облегчение общения: языковые барьеры могут стать серьезной проблемой при медицинских поездках за границу. Мы поможем вам преодолеть эту преграду, обеспечив четкую и понятную коммуникацию между вами и клиникой, чтобы вы могли полностью понять все детали процесса, касающиеся ваших рентгеновских снимков и рекомендуемого лечения.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Упрощение процесса: мы стремимся сделать весь процесс получения стоматологической помощи в Турции максимально простым и без стресса. От координации встреч до помощи в организации логистики, мы обеспечим вам полный комфорт и уверенность на каждом шаге.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Стремление к качеству и надежности: в AZPO Health качество и надежность &mdash; наш главный приоритет. Мы тщательно выбираем клиники с хорошей репутацией, чтобы гарантировать вам профессионализм и высокий уровень обслуживания, который соответствует международным стандартам.</p>
+</li>
+</ol>
+<p dir="ltr">Почему стоит выбрать AZPO Health для рентгеновских снимков зубов?</p>
+<p dir="ltr">Независимо от того, нужен ли вам стандартный рентген зубов для общей диагностики или более сложная визуализация для лечения конкретной проблемы, AZPO Health всегда готова предложить вам квалифицированную помощь в Турции. Мы обеспечим вам качественное обслуживание, своевременные консультации и полное сопровождение на всех этапах вашего стоматологического лечения.</p>
+<p dir="ltr">Свяжитесь с нами сегодня для бесплатной консультации и узнайте, как мы можем помочь вам получить стоматологическую помощь мирового класса в Турции.</p>
+<h2 dir="ltr">Реальные отзывы пациентов&nbsp;</h2>
+<p dir="ltr">Чтобы дать вам более полное представление о том, как проходит процесс рентгеновских снимков в Турции с помощью AZPO Health, мы поделимся реальными историями пациентов, которые уже воспользовались нашими услугами.&nbsp;</p>
+<p dir="ltr">История Сары:</p>
+<p dir="ltr">&laquo;Я несколько месяцев ощущала дискомфорт в нижней челюсти. Мой стоматолог в родном городе подозревал проблему, но посоветовал пройти дополнительное обследование с рентгеном, что было довольно дорого. Я решила рассмотреть варианты лечения за границей и обнаружила AZPO Health. Они связали меня с клиникой в Стамбуле, и весь процесс организации консультации и рентгена прошел без проблем. Клиника была современная и чистая, а стоматолог очень внимателен. На панорамном снимке был выявлен поврежденный зуб мудрости, который и вызывал боль. Стоимость обследования в Турции была значительно ниже, чем в моей стране. Благодаря четким снимкам стоматолог подробно объяснил, как будет проходить удаление, и я почувствовала себя гораздо увереннее. Поддержка AZPO Health была неоценимой на каждом шаге!&raquo;</p>
+<p dir="ltr">Опыт Дэвида:</p>
+<p dir="ltr">&laquo;Я думал о том, чтобы установить имплантаты вместо отсутствующего зуба, и знал, что для этого необходим рентген. Мой друг порекомендовал мне стоматолога в Турции, и я обратился в AZPO Health. Они быстро предложили несколько клиник, специализирующихся на имплантологии, и организовали консультацию с 3D-диагностикой. Конусно-лучевая томография показала четкую картину состояния моей челюстной кости, что позволило специалисту точно спланировать лечение. Уровень технологий и опыт был впечатляющим, а стоимость рентгена и консультации &mdash; очень доступной. AZPO Health сделала весь процесс понятным и удобным, и теперь я с уверенностью могу продолжить лечение имплантами в Турции.&raquo;</p>
+<p dir="ltr">Эти примеры &mdash; лишь малая часть того, как AZPO Health помогает пациентам получить доступ к высококачественным рентгеновским исследованиям в Турции. Мы стремимся сделать процесс получения стоматологической диагностики понятным и доступным для всех.</p>
+<p dir="ltr">Получите бесплатную консультацию и персонализированное предложение, чтобы точно понимать состояние своих зубов и сделать следующий шаг к здоровью вашей полости рта.</p>
+<p>&nbsp;</p>`
             : `<p dir="ltr">Turkey has emerged as a prominent destination for medical tourism, and for good reason. When considering your dental health, including the need for diagnostic dental X-rays, choosing Turkey offers several compelling advantages:</p>
 <ul>
 <li dir="ltr" aria-level="1">
@@ -23880,122 +24695,106 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Челюстно-лицевая хирургия в Турции — восстановление здоровья и уверенности в себе"
           : "Jaw Surgery in Turkey - Realigning Your Health and Confidence",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Если вы испытываете дискомфорт, сложности с жеванием или беспокоитесь о форме вашего лица, челюстно-лицевая хирургия в Турции может предложить вам эффективное решение. AZPO Health поможет вам найти опытных специалистов, которые восстановят функциональность и эстетику, возвращая вам не только здоровье, но и уверенность в себе."
           : "Are you experiencing discomfort, difficulty chewing, or concerns about your facial alignment? Jaw surgery in Turkey offers a transformative solution, and AZPO Health can connect you with experienced professionals to guide you toward improved function and renewed confidence.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Dental Solutions",
+            title: locale === "ru" ? "Стоматологические решения" : "Dental Solutions",
             desc:
               locale === "ru"
-                ? "Advanced implant procedures restore both aesthetic appearance and bite function"
+                ? "восстанавливают эстетику и функцию прикуса, улучшая качество жизни."
                 : "Advanced implant procedures restore both aesthetic appearance and bite function",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Jaw Reconstruction",
+            title: locale === "ru" ? "Реконструкция челюсти" : "Jaw Reconstruction",
             desc:
               locale === "ru"
-                ? ""
+                ? "возвращает естественные контуры и функции лица."
                 : "Treatment of injuries and defects to achieve optimal facial harmony",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Modern Surgery",
+            title: locale === "ru" ? "Современная хирургия" : "Modern Surgery",
             desc:
               locale === "ru"
-                ? ""
+                ? "минимально инвазивные методы с быстрым восстановлением и низким риском."
                 : "Minimally invasive techniques ensuring faster recovery and reduced complications",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Челюстно-лицевая хирургия, или ортогнатическая хирургия, эффективно решает проблемы, связанные с нарушением положения челюстей, такими как нарушения височно-нижнечелюстного сустава (ВНЧС), неправильный прикус и апноэ во сне. С вероятностью успеха 94% эта операция становится необходимой, когда консервативные методы лечения оказываются неэффективными. Она не только улучшает функцию прикуса, но и значительно облегчает процесс еды и речи, хотя требует времени на восстановление."
                 : "Jaw surgery (orthognathic surgery) corrects misaligned jaws and treats conditions like TMJ disorders, malocclusion, and sleep apnea. With a 94% success rate, it’s recommended when nonsurgical treatments aren’t effective. The procedure improves bite function, making eating and speaking easier, though it requires significant recovery time.",
           },
           {
-            header: locale === "ru" ? "Важно учесть" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Челюстно-лицевая хирургия охватывает широкий спектр процедур, включая удаление зубов, имплантацию, реконструкцию костей, лечение травм челюсти, исправление прикуса и устранение расщелин. Современные технологии, такие как рентгенография и компьютерная томография, помогают хирургам точно спланировать процедуры и определить, какая анестезия — местная или общая — будет оптимальной для пациента."
                 : "Oral surgery (maxillofacial surgery) treats jaw, teeth, and facial issues through procedures like tooth extractions, dental implants, bone reconstruction, jaw injury treatment, bite correction, and cleft repair. Surgeons use X-rays and CT scans to plan procedures and determine whether local or general anesthesia is needed.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It’s For",
+            header: locale === "ru" ? "Для кого это предназначено" : "Who It’s For",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Челюстно-лицевая хирургия подходит пациентам с различными проблемами, такими как неправильное прорезывание зубов мудрости, заболевания костей и тканей (например, кисты или инфекции), травмы челюсти, врожденные дефекты (например, заячья губа и небо) или необходимость в хирургической коррекции прикуса. Также эта операция может быть полезной для тех, кто нуждается в зубных имплантатах или подготовке к ортодонтическому лечению."
                 : "Maxillofacial surgery is recommended for patients with various problems, such as improper eruption of wisdom teeth, bone and tissue diseases (like cysts or infections), jaw injuries, congenital defects like cleft lip and palate, and malocclusions requiring surgical correction. Additionally, patients needing dental implants or preparation for orthodontic treatment may also benefit from surgery.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "How long is recovery?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "6 weeks for bones to heal, full recovery in months",
+          question : locale === "ru" ? "Изменит ли это мою внешность?" : "How long is recovery process?",
+          answer : locale === "ru" ? "Да, операция часто улучшает симметрию лица и общий внешний вид." : "6 weeks for bones to heal, full recovery in months"
         },
         {
-          question: locale === "ru" ? "" : "Will it change my appearance?",
-          answer: locale === "ru" ? "" : "Yes, often improves facial symmetry",
+          question : locale === "ru" ? "Это больно?" : "Will it change my appearance?",
+          answer : locale === "ru" ? "Болевые ощущения контролируются с помощью обезболивающих препаратов; скованность в первые дни - это нормально." : "Yes, often improves facial symmetry"
         },
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Controlled with medications; stiffness is common",
+          question : locale === "ru" ? "Могу ли я есть нормально?" : "Is it painful?",
+          answer : locale === "ru" ? "Только после разрешения врача, обычно спустя 6–8 недель." : "Controlled with medications; stiffness is common"
         },
         {
-          question: locale === "ru" ? "" : "Can I eat normally?",
-          answer:
-            locale === "ru" ? "" : "Only after clearance, usually in 6–8 weeks",
+          question : locale === "ru" ? "Пластины удаляются позже?" : "Can I eat normally?",
+          answer : locale === "ru" ? "Нет, титановые пластины остаются на месте, если не возникает осложнений." : "Only after clearance, usually in 6–8 weeks"
         },
         {
-          question: locale === "ru" ? "" : "Are plates removed later?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "No, titanium plates stay in unless issues arise",
+          question : locale === "ru" ? "Кому не рекомендуется эта операция?" : "Are plates removed later?",
+          answer : locale === "ru" ? "Пациентам с серьезными хроническими заболеваниями, нарушениями свертываемости крови, слабым заживлением костной ткани или другими медицинскими противопоказаниями." : "No, titanium plates stay in unless issues arise"
         },
+        {
+          question : locale === "ru" ? "" : "Who should avoid this surgery?",
+          answer : locale === "ru" ? "" : "People with serious health risks/diseases or poor bone healing may not be suitable."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Expect swelling and bruising for 1–2 weeks",
-        locale === "ru" ? "" : "Sleep elevated and apply ice first 48 hours",
-        locale === "ru" ? "" : "Follow liquid or soft diet strictly",
-        locale === "ru" ? "" : "Avoid speaking excessively and rest jaw",
-        locale === "ru" ? "" : "Attend regular follow-up for adjustments",
-        locale === "ru" ? "" : "Avoid hot and cold foods.",
+        locale === "ru" ? "Ожидайте отечность и синяки в течение 1–2 недель." : "Expect swelling and bruising for 1–2 weeks",
+        locale === "ru" ? "Спите с приподнятой головой и прикладывайте лед в первые 48 часов." : "Sleep elevated and apply ice first 48 hours",
+        locale === "ru" ? "Строго придерживайтесь жидкой или мягкой диеты." : "Follow liquid or soft diet strictly",
+        locale === "ru" ? "Избегайте чрезмерных разговоров и давайте челюсти отдых." : "Avoid speaking excessively and rest your jaw",
+        locale === "ru" ? "Посещайте регулярные контрольные приемы для корректировок." : "Attend regular follow-up for adjustments",
+        locale === "ru" ? "Избегайте горячей и холодной пищи и напитков." : "Avoid hot and cold foods/beverages."
       ],
       preList: [
-        locale === "ru"
-          ? ""
-          : "Undergo imaging, blood tests, and orthodontic prep",
-        locale === "ru" ? "" : "Stop smoking well before surgery",
-        locale === "ru" ? "" : "Discuss medications with surgeon",
-        locale === "ru" ? "" : "Arrange time off work/school and help at home",
-        locale === "ru"
-          ? ""
-          : "Maintain good oral hygiene and keep your teeth clean.",
-        locale === "ru"
-          ? ""
-          : "Follow diet recommendations; you may need to fast for a certain period.",
-        locale === "ru"
-          ? ""
-          : "Get plenty of rest the night before the surgery.",
+        locale === "ru" ? "Пройти рентген, сдать анализы крови и подготовиться к ортодонтическому лечению." : "Undergo x-ray, blood tests, and orthodontic prep",
+        locale === "ru" ? "Прекратить курить перед операцией." : "Stop smoking before surgery",
+        locale === "ru" ? "Обсудить приём лекарств с хирургом." : "Discuss medications with surgeon",
+        locale === "ru" ? "Поддерживать хорошую гигиену полости рта и следить за чистотой зубов." : "Maintain good oral hygiene and keep your teeth clean.",
+        locale === "ru" ? "Соблюдать рекомендации по диете; возможно, потребуется воздержание от пищи в течение определённого времени" : "Follow diet recommendations; you may need to fast for a certain period."
       ],
       conclusion: {
-        title: locale === "ru" ? "Заключение" : "Conclusion",
+        title: locale === "ru" ? "Вывод" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "Современная челюстно-лицевая хирургия предлагает надежные и эффективные решения для множества челюстно-лицевых проблем. С индивидуальным подходом и точной диагностикой пациенты могут рассчитывать на успешное восстановление функции полости рта и значительное улучшение эстетики. Соблюдение рекомендаций хирурга до и после операции является ключом к быстрому и безболезненному восстановлению, что гарантирует достижение наилучших результатов."
             : "Modern oral surgery offers reliable solutions for many maxillofacial issues. With individualized approaches and accurate diagnostics, patients can expect effective restoration of oral function and aesthetic improvements. Following the surgeon’s recommendations before and after surgery promotes successful recovery and optimal results.",
       },
       bfs: bfList,
@@ -24724,146 +25523,190 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Лазерная коррекция зрения LASIK в Турции в 2025 году"
           : "Lasik Eye Surgery in Turkey in 2025",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Устали от очков или неудобства контактных линз? Представьте, что каждое утро вы просыпаетесь с чётким и ясным зрением. В Турции современная лазерная коррекция зрения по технологии LASIK — это безопасный, эффективный и доступный путь к свободе от оптических средств. AZPO Health поможет вам подобрать лучшие клиники и специалистов, чтобы вы уверенно сделали шаг к качественному зрению."
           : "Are you tired of the daily struggle with glasses or the discomfort of contact lenses? Imagine waking up every morning with clear, crisp vision. In Turkey, advanced LASIK eye surgery offers a safe and effective path to visual freedom, and AZPO Health is here to connect you with leading hospitals to explore this life-changing possibility.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Rapid Recovery",
+            title: locale === "ru" ? "Быстрое восстановление" : "Rapid Recovery",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "первые улучшения — уже в день операции, полная стабилизация — в течение недели."
                 : "Vision improves within a day, full clarity in a week.",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Reduced Dependency",
+            title: locale === "ru" ? "Свобода от очков и линз" : "Reduced Dependency",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "в большинстве случаев необходимость в оптических средствах отпадает."
                 : "Reduces or removes need for glasses or contacts.",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Precision",
+            title: locale === "ru" ? "Высокая точность" : "Precision",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "индивидуальный подход к коррекции близорукости, дальнозоркости и астигматизма."
                 : "Tailored to correct nearsightedness, farsightedness, or astigmatism.",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "LASIK (лазерный кератомилез)" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "Операция LASIK — это современная и широко распространенная процедура, при которой с помощью лазера изменяется форма роговицы для коррекции нарушений рефракции: близорукости (миопии), дальнозоркости (гиперметропии) и астигматизма. Хирург точно удаляет микроскопические участки ткани, чтобы улучшить преломление света в глазу, что обеспечивает более четкое и ясное зрение."
                 : "LASIK eye surgery is a popular procedure that reshapes the cornea to correct refractive vision problems like nearsightedness (Myopia), farsightedness (Hyperopia), and astigmatism. Using a laser, the surgeon precisely removes tissue to improve how light enters the eye, resulting in clearer vision.",
           },
           {
-            header: locale === "ru" ? "" : "How it Works",
+            header: locale === "ru" ? "Как проходит процедура" : "How it Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Во время операции на поверхности роговицы формируется тонкий лоскут, который аккуратно отводится в сторону. Затем роговица моделируется с помощью лазера, после чего лоскут возвращается на место. Процедура проходит под местной анестезией с использованием глазных капель, поэтому пациент не ощущает боли. Улучшение зрения становится заметным уже в течение 3–5 дней."
                 : "LASIK is a laser eye surgery that reshapes the cornea to improve how light enters the eye. The surgeon creates a flap on the cornea, uses a laser to reshape it, and then repositions the flap. It starts with the anesthesia of the eye tissue with anesthetic drops. In this way, the patient does not feel anything during the surgery. The improvement in vision begins to give satisfactory results within 3-5 days.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : "Who It's For",
+            header: locale === "ru" ? "Кому подходит процедура LASIK" : "Who It's For",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Взрослым от 18 до 40 лет со стабильными показателями зрения не менее одного года. Пациентам с лёгкими или умеренными нарушениями рефракции и достаточной толщиной роговицы. Противопоказания: прогрессирующие заболевания глаз (например, кератоконус), тяжелые формы нарушения рефракции, аутоиммунные заболевания и другие медицинские ограничения."
                 : "Adults (18–40) with stable vision for at least a year. Those with mild to moderate refractive errors and adequate corneal thickness. Not suitable for individuals with progressive eye conditions, severe refractive errors, or certain medical conditions like keratoconus or autoimmune diseases.",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "Does LASIK hurt?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "No, numbing drops are used; mild burning sensation after",
+          question : locale === "ru" ? "Больно ли делать LASIK?" : "Does LASIK hurt?",
+          answer : locale === "ru" ? "Нет, процедура безболезненная, благодаря обезболивающим каплям. Легкое жжение может возникать после операции, но это временно." : "No, numbing drops are used; mild burning sensation is possibel after the surgery"
         },
         {
-          question: locale === "ru" ? "" : "When will I see clearly?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Vision improves within 24–48 hours; stabilizes in weeks",
+          question : locale === "ru" ? "Когда я начну видеть ясно?" : "When will I see clearly?",
+          answer : locale === "ru" ? "Улучшение зрения будет заметно уже через 24-48 часов, а полная стабилизация произойдёт в течение нескольких недель." : "Vision improves within 24–48 hours; stabilizes in weeks"
         },
         {
-          question: locale === "ru" ? "" : "Is it permanent?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Yes, but age-related vision changes may occur later",
+          question : locale === "ru" ? "Это навсегда?" : "Is it permanent?",
+          answer : locale === "ru" ? "Да, результаты операции долгосрочные, однако с возрастом возможны изменения в зрении." : "Yes, but age-related vision changes may occur later"
         },
         {
-          question: locale === "ru" ? "" : "Can I go blind?",
-          answer:
-            locale === "ru" ? "" : "Extremely rare; complications are uncommon",
+          question : locale === "ru" ? "Могу ли я ослепнуть?" : "Can I go blind?",
+          answer : locale === "ru" ? "Риск ослепления крайне низок. Осложнения в процессе лечения — редкость." : "Extremely rare; complications are uncommon"
         },
         {
-          question: locale === "ru" ? "" : "Will I need glasses again?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Possibly for reading as you age (presbyopia)",
+          question : locale === "ru" ? "Понадобятся ли мне очки снова?" : "Will I need glasses again?",
+          answer : locale === "ru" ? "Возможно, для чтения, особенно с возрастом (пресбиопия)." : "Possibly for reading as you age (presbyopia)"
         },
         {
-          question: locale === "ru" ? "" : "What should I avoid post-surgery?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Avoid rubbing eyes, swimming, and dusty environments for a week.",
+          question : locale === "ru" ? "Чего мне следует избегать после операции?" : "What should I avoid post-surgery?",
+          answer : locale === "ru" ? "В течение недели избегайте тереть глаза, плавать и находиться в пыльных помещениях." : "Avoid rubbing eyes, swimming, and dusty environments for a week."
         },
         {
-          question: locale === "ru" ? "" : "How soon can I return to work?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Usually 1–2 days, depending on your recovery.",
-        },
+          question : locale === "ru" ? "Как скоро я могу вернуться к работе?" : "How soon can I return to work?",
+          answer : locale === "ru" ? "Обычно можно вернуться к работе через 1-2 дня, в зависимости от вашего восстановления." : "Usually 1–2 days, depending on your recovery."
+        }
       ],
       posts: [
-        locale === "ru" ? "" : "Do not rub your eyes",
-        locale === "ru"
-          ? ""
-          : "Use prescribed eye drops to prevent dryness and infection",
-        locale === "ru"
-          ? ""
-          : "Avoid swimming, makeup, and dusty environments for a week",
-        locale === "ru"
-          ? ""
-          : "Rest eyes frequently and wear sunglasses outdoors",
-        locale === "ru"
-          ? ""
-          : "Attend follow-up appointments to monitor healing",
+        locale === "ru" ? "Не трите глаза." : "Do not rub your eyes",
+        locale === "ru" ? "Используйте предписанные глазные капли для предотвращения сухости и инфекции." : "Use prescribed eye drops to prevent dryness and infection",
+        locale === "ru" ? "Избегайте плавания, макияжа и посещения пыльных помещений в течение недели." : "Avoid swimming, makeup, and dusty environments for a week",
+        locale === "ru" ? "Давайте отдых глазам и носите солнцезащитные очки на улице." : "Rest eyes frequently and wear sunglasses outdoors",
+        locale === "ru" ? "Посещайте контрольные приемы для мониторинга заживления." : "Attend follow-up appointments to monitor healing"
       ],
       preList: [
-        locale === "ru" ? "" : "Stop wearing contact lenses 1–2 weeks before",
-        locale === "ru" ? "" : "Avoid eye makeup and lotions 24 hours before",
-        locale === "ru" ? "" : "Arrange for someone to drive you home",
-        locale === "ru" ? "" : "Have a thorough eye exam and corneal mapping",
+        locale === "ru" ? "Прекратите носить контактные линзы за 1–2 недели до процедуры." : "Stop wearing contact lenses 1–2 weeks before",
+        locale === "ru" ? "Избегайте макияжа для глаз и применения лосьонов за 24 часа до операции." : "Avoid eye makeup and lotions 24 hours before",
+        locale === "ru" ? "Пройдите тщательное обследование глаз и картографирование роговицы." : "Have a thorough eye exam and corneal mapping"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "LASIK — это безопасная, эффективная и результативная методика лазерной коррекции зрения, меняющая качество жизни пациентов. Благодаря высокому уровню успешности большинство людей достигают 100% зрения и выше. Хотя процедура показана не всем, для большинства она обеспечивает быстрое восстановление и долгосрочный результат."
             : "LASIK is a safe, effective, and life-changing procedure for those with refractive errors. With high success rates, most patients achieve 20/20 or better vision, making it one of the most popular vision correction methods worldwide. While not everyone is a candidate, for those who are, it offers a quick recovery and long-lasting results.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для лазерной коррекции зрения LASIK?"
             : "Why Choose Turkey for Your LASIK Eye Surgery Journey?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Выбор страны для прохождения медицинской процедуры за рубежом требует внимательного подхода. В последние годы Турция стала одним из ведущих направлений медицинского туризма, особенно в области офтальмологии и лазерной коррекции зрения &mdash; и на это есть весомые причины.</p>
+<p dir="ltr">Одним из главных факторов, привлекающих иностранных пациентов, является выгодная стоимость медицинских услуг. При сохранении высоких стандартов качества, стоимость LASIK в Турции значительно ниже, чем в странах Европы и США &mdash; экономия может достигать до 70%. Это позволяет пройти качественную коррекцию зрения без лишней финансовой нагрузки.</p>
+<p dir="ltr">Помимо доступных цен, Турция предлагает современную медицинскую инфраструктуру. Госпитали и клиники оснащены новейшим оборудованием и соответствуют международным стандартам. Страна занимает лидирующие позиции по количеству учреждений, аккредитованных Joint Commission International (JCI) &mdash; по состоянию на март 2025 года таких центров в Турции насчитывается 30.</p>
+<p dir="ltr">Также в Турции работают опытные офтальмологи, прошедшие международную подготовку и имеющие обширный клинический опыт в области рефракционной хирургии, включая LASIK. Пациенты могут быть уверены в профессионализме и компетентности медицинского персонала.</p>
+<p dir="ltr">Удобное географическое положение и развитое авиасообщение делают Турцию легкодоступной для пациентов со всего мира. Многие медицинские компании, включая AZPO Health, обеспечивают полное сопровождение поездки &mdash; от записи на прием до организации трансфера и проживания, создавая максимально комфортные и безопасные условия для медицинского путешествия.</p>
+<p dir="ltr">Дополнительным преимуществом становится возможность совместить лечение с отдыхом. Турция &mdash; это страна с богатой культурой, историей и природной красотой, что делает пребывание здесь не только полезным, но и по-настоящему приятным опытом.</p>
+<p dir="ltr">Ясный взгляд без очков: все о лазерной коррекции зрения LASIK</p>
+<p dir="ltr">Эта современная и широко применяемая методика коррекции зрения, направленная на устранение таких нарушений, как близорукость (миопия), дальнозоркость (гиперметропия) и астигматизм. Процедура заключается в изменении формы роговицы &mdash; прозрачной передней оболочки глаза, чтобы световые лучи правильно фокусировались на сетчатке. В результате зрение становится четким и ясным.</p>
+<p dir="ltr">Как проходит процедура:</p>
+<p dir="ltr">Во время LASIK-хирургии врач с помощью высокоточного лазера формирует тонкий роговичный лоскут, который затем аккуратно приподнимается. Второй лазер выполняет индивидуальную коррекцию внутренних слоев роговицы в соответствии с оптическими параметрами пациента. После завершения коррекции лоскут возвращается на место и надёжно фиксируется без наложения швов &mdash; ткань приживается естественным образом.</p>
+<p dir="ltr">Современные технологии в LASIK:</p>
+<p dir="ltr">Существует несколько усовершенствованных методик:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Custom LASIK &mdash; персонализированная коррекция с использованием wavefront-технологии, которая создает подробную &laquo;карту&raquo; глаза для максимальной точности;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Femtosecond LASIK &mdash; технология, при которой роговичный лоскут формируется фемтосекундным лазером, обеспечивая ещё большую точность и предсказуемость результатов.</p>
+</li>
+</ul>
+<p dir="ltr">Выбор конкретного метода зависит от индивидуальных особенностей глаз и определяется врачом на предварительной консультации.</p>
+<p dir="ltr">Преимущества LASIK:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Существенное снижение или полное устранение необходимости в очках и контактных линзах;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Быстрое восстановление &mdash; многие пациенты отмечают улучшение зрения уже через несколько часов;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Долговременные результаты;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Короткое время процедуры (обычно 15&ndash;20 минут) и амбулаторный характер операции &mdash; домой можно вернуться в тот же день;<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Минимальный дискомфорт, легко контролируемый с помощью рекомендованных препаратов.<br><br></p>
+</li>
+</ul>
+<h2 dir="ltr">Отзывы клиентов, выбравших коррекцию зрения в Турции с AZPO Health</h2>
+<p dir="ltr">Сара, Великобритания:</p>
+<p dir="ltr">&laquo;В течение многих лет я сильно зависела от очков, а контактные линзы всегда доставляли неудобства. Мысль о LASIK была всегда в моей голове, но стоимость в Великобритании казалась слишком высокой. Я обратилась в AZPO Health, и они помогли мне разобраться в возможностях, которые предлагает Турция. Клинику, которую они порекомендовали, я считаю просто отличной: хирург был невероятно опытным, а весь процесс был организован на высшем уровне. Теперь, впервые за 20 лет, я могу видеть без очков! Это действительно изменило мою жизнь.&raquo;</p>
+<p dir="ltr">Джон, США:</p>
+<p dir="ltr">&laquo;Путешествие за границу для операции сначала казалось немного страшным, но AZPO Health сделала весь процесс максимально простым и удобным. Они ответили на все мои вопросы о LASIK в Турции, помогли подобрать проверенную клинику и даже организовали поездку. Стоимость операции была значительно ниже, чем в США, при этом качество обслуживания оказалось на высшем уровне. Мое зрение теперь намного лучше, чем я мог ожидать, и я даже успел насладиться несколькими днями в Стамбуле!&raquo;</p>
+<p dir="ltr">Мария, Канада:</p>
+<p dir="ltr">&laquo;У меня был астигматизм, и я сомневалась, подходит ли мне LASIK. AZPO Health связала меня с опытным специалистом в Турции, который подробно объяснил доступные современные методы коррекции зрения. Я почувствовала уверенность в их профессионализме и решила пройти операцию. Операция прошла быстро и без болевых ощущений, а восстановление прошло легко и без осложнений. Я очень благодарна AZPO Health за то, что помогли мне осуществить мечту о ясном зрении.&raquo;</p>
+<p dir="ltr"><strong>&nbsp;</strong></p>
+<h2 dir="ltr">AZPO Health: ваш партнер в достижении ясного зрения в Турции</h2>
+<p dir="ltr">AZPO Health помогает вам найти опытных и надежных медицинских специалистов и клиники в Турции, специализирующиеся на различных процедурах, включая современную операцию LASIK. Мы понимаем, что лечение за рубежом может вызывать вопросы и сомнения, и поэтому стремимся предоставить всю необходимую информацию и поддержку на каждом этапе.</p>
+<p dir="ltr">Наша цель &mdash; сделать ваше медицинское путешествие максимально комфортным и беспроблемным. Мы сотрудничаем с высококвалифицированными офтальмологами и аккредитованными клиниками в Турции, гарантируя вам качественное обслуживание в безопасной и комфортной обстановке. Мы поможем вам:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предоставить полную информацию о LASIK в Турции.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Связать вас с опытными офтальмологами для консультаций.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Ответить на ваши вопросы по процедуре, восстановлению и послеоперационному уходу.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Обеспечить связь с выбранной клиникой.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Помочь с организацией поездки и выбором жилья (по необходимости).<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Предоставить поддержку на протяжении всего пути.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">В AZPO Health мы ориентируемся на четкое общение и индивидуальный подход. Мы уверены, что важен каждый шаг в процессе принятия решения, и поэтому даем вам возможность принимать обоснованные решения о коррекции зрения. Мы готовы предоставить вам доступ к лучшим медицинским специалистам в Турции, помогая достичь четкого зрения, которого вы заслуживаете.</p>
+<p dir="ltr">Сделайте первый шаг к ясному и яркому будущему. Свяжитесь с AZPO Health сегодня для бесплатной консультации и персонализированного предложения по операции LASIK в Турции. Позвольте нам помочь вам достичь зрительной свободы.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Deciding to undergo any medical procedure abroad requires careful consideration. Turkey has emerged as a prominent destination for medical tourism, particularly for eye surgeries like LASIK, and for good reason.</p>
 <p dir="ltr">One of the primary factors attracting international patients is the cost-effectiveness of medical procedures in Turkey. While maintaining high standards of medical care, the overall expenses for LASIK surgery in Turkey are often significantly more affordable compared to many European countries or the United States (up to 70%). This allows you to access quality vision correction without incurring excessive financial burdens.</p>
 <p dir="ltr">Beyond affordability, Turkey boasts modern hospitals and clinics equipped with state-of-the-art technology for performing advanced eye surgeries like LASIK. Many facilities adhere to international standards, ensuring a safe and comfortable environment for patients.Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country</p>
@@ -24913,139 +25756,178 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       id: 0,
       title:
         locale === "ru"
-          ? "Diabetic Retinopathy Treatment in Turkey in 2025"
+          ? "Операция с использованием «умных линз» в Турции"
           : "Smart Lens in Turkey - See the World Clearly Again",
       descriptionTop:
         locale === "ru"
-          ? "Вы устали от обвисшего живота после родов или значительной потери веса?. Хотите вернуть себе стройный силуэт и уверенность в себе?. Подтяжка живота в Турции – это эффективное решение для восстановления эстетики живота и улучшения качества вашей жизни. AZPO Health поможет вам осуществить вашу мечту о красивом теле!"
+          ? "Устали от размытого зрения, постоянных поисков очков для чтения или ограничений, связанных с возрастными изменениями зрения? Представьте себе жизнь с ясным зрением на всех расстояниях, без необходимости ежедневно использовать очки или контактные линзы. Технология «умных линз», доступная в Турции, предлагает революционное решение для улучшения зрения. AZPO Health поможет вам связаться с высококвалифицированными специалистами, чтобы вы могли раскрыть потенциал этой инновационной технологии и подарить себе четкое зрение."
           : "Are you tired of struggling with blurry vision, constantly reaching for your reading glasses, or feeling limited by your eyesight? Imagine a life with sharper vision at all distances, potentially freeing you from the daily hassle of glasses and contact lenses. Smart lens technology in Turkey offers a promising solution, and AZPO Health can connect you with experienced professionals to explore this life-changing opportunity.",
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Новое Тело" : "Clear Vision",
+            title: locale === "ru" ? "Четкое зрение на всех расстояниях" : "Clear Vision",
             desc:
               locale === "ru"
-                ? "Комплексное преображение фигуры для идеального силуэта и уверенности в себе"
+                ? "вблизи, на среднем и дальнем расстоянии"
                 : "Enhances sight at all distances - near, intermediate, and far viewing",
           },
           {
-            title: locale === "ru" ? "Гладкая Кожа" : "Vision Freedom",
+            title: locale === "ru" ? "Свобода от очков" : "Vision Freedom",
             desc:
               locale === "ru"
-                ? "Избавление от растяжек и дефектов кожи для безупречного результата"
+                ? "минимизируют необходимость в коррекционных средствах"
                 : "Reduces need for corrective eyewear and helps with farsightedness",
           },
           {
-            title: locale === "ru" ? "Идеальный Контур" : "Eye Protection",
+            title: locale === "ru" ? "Забота о здоровье глаз" : "Eye Protection",
             desc:
               locale === "ru"
-                ? "Создание привлекательного силуэта через устранение лишних тканей"
+                ? "помогают предотвратить прогрессирование возрастных заболеваний глаз"
                 : "Helps prevent progression of vision conditions while maintaining eye health",
           },
         ],
         categories: [
           {
-            header: locale === "ru" ? "Для кого" : "Description",
+            header: locale === "ru" ? "Что представляет собой «умная линза»" : "Description",
             desc:
               locale === "ru"
-                ? "Patients with severe retinal issues, such as detachment or holes.Individuals with diabetic retinopathy causing bleeding or scarring."
+                ? "«Умная линза» — это интраокулярная линза (ИОЛ), которую имплантируют на место естественного хрусталика. Она применяется после удаления катаракты или для коррекции возрастных изменений зрения. Смарт-линзы обеспечивают фокусировку на разных расстояниях, значительно снижая потребность в очках."
                 : "A smart lens is an intraocular lens that improves vision, often used after cataract surgery or for vision correction. It reduces the need for glasses by supporting both near and distant focus, especially benefiting those with age-related vision loss.",
           },
           {
-            header: locale === "ru" ? "" : "How It Works",
+            header: locale === "ru" ? "Как проходит процедура?" : "How It Works",
             desc:
               locale === "ru"
-                ? ""
+                ? "Процедура быстрая и безболезненная, проводится под местной анестезией. Поврежденный хрусталик заменяется на интеллектуальную линзу. Пациент возвращается домой в тот же день с защитной повязкой, а зрение начинает улучшаться почти сразу. Второй глаз обычно оперируют через несколько дней."
                 : "The impaired lens is removed and replaced with a smart lens in a quick, painless procedure under local anesthesia. Patients go home the same day with a protective bandage, and vision improves almost immediately. The second eye is treated within days.",
           },
           {
-            header: locale === "ru" ? "Как это работает" : " Who its for?",
+            header: locale === "ru" ? "Кому подойдет?" : " Who its for?",
             desc:
               locale === "ru"
-                ? "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue."
+                ? "Людям с катарактой Тем, кто сталкивается с возрастными изменениями зрения Пациентам, желающим избавиться от очков или контактных линз"
                 : "Individuals with cataracts,Those experiencing age-related vision changes,Patients seeking a long-term alternative to glasses or contacts",
           },
         ],
       },
       faqs: [
         {
-          question: locale === "ru" ? "" : "What is a smart lens?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "An advanced intraocular lens for clearer vision at all distances",
+          question : locale === "ru" ? "Что такое смарт-линза?" : "What is a smart lens?",
+          answer : locale === "ru" ? "Это усовершенствованная интраокулярная линза, обеспечивающая четкое зрение на всех расстояниях." : "An advanced intraocular lens for clearer vision at all distances"
         },
         {
-          question: locale === "ru" ? "" : "Is it better than LASIK?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "For older adults or those with cataracts, yes",
+          question : locale === "ru" ? "Смарт-линза лучше, чем LASIK?" : "Is it better than LASIK?",
+          answer : locale === "ru" ? "Для пожилых пациентов или людей с катарактой - да, это предпочтительный вариант." : "For older adults or those with cataracts, yes"
         },
         {
-          question: locale === "ru" ? "" : "Will I still need glasses?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Many don’t, but some might for specific tasks",
+          question : locale === "ru" ? "Понадобятся ли мне очки после установки смарт-линзы?" : "Will I still need glasses?",
+          answer : locale === "ru" ? "Многие пациенты обходятся без очков, однако для некоторых задач может потребоваться дополнительная коррекция." : "Many don’t, but some might for specific tasks"
         },
         {
-          question: locale === "ru" ? "" : "Is it painful?",
-          answer: locale === "ru" ? "" : "No, local anesthesia is used",
+          question : locale === "ru" ? "Я почувствую боль во время процедуры?" : "Is it painful?",
+          answer : locale === "ru" ? "Нет, процедура проводится под местной анестезией и проходит безболезненно." : "No, local anesthesia is used"
         },
         {
-          question: locale === "ru" ? "" : "How long does recovery take?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Initial recovery in days; full results in weeks",
+          question : locale === "ru" ? "Сколько времени занимает восстановление?" : "How long does recovery take?",
+          answer : locale === "ru" ? "Первоначальное восстановление занимает несколько дней, а полные результаты проявляются в течение нескольких недель." : "Initial recovery in days; full results in weeks"
         },
         {
-          question:
-            locale === "ru"
-              ? ""
-              : "Can I expect vision improvement right after the surgery?",
-          answer:
-            locale === "ru"
-              ? ""
-              : "Vision improvement can be noticeable right away, but full stabilization of vision will occur over several weeks.",
-        },
+          question : locale === "ru" ? "Улучшается ли зрение сразу после операции?" : "Can I expect vision improvement right after the surgery?",
+          answer : locale === "ru" ? "Первые улучшения могут быть заметны сразу, однако для полной стабилизации зрения потребуется несколько недель." : "Vision improvement can be noticeable right away, but full stabilization of vision will occur over several weeks."
+        }
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Use prescribed drops to prevent infection and inflammation",
-        locale === "ru"
-          ? ""
-          : "Wear eye shield while sleeping for the first week",
-        locale === "ru" ? "" : "Avoid rubbing or applying pressure to the eye",
-        locale === "ru" ? "" : "No swimming or eye makeup for 7 days",
-        locale === "ru" ? "" : "Follow all follow-up appointments",
+        locale === "ru" ? "Используйте назначенные глазные капли для профилактики инфекции и воспаления." : "Use prescribed drops to prevent infection and inflammation",
+        locale === "ru" ? "Носите защитный глазной щиток во время сна в течение первой недели после операции." : "Wear eye shield while sleeping for the first week",
+        locale === "ru" ? "Избегайте трения и давления на глаз." : "Avoid rubbing or applying pressure to the eye",
+        locale === "ru" ? "Воздержитесь от плавания и использования макияжа для глаз в течение 7 дней." : "No swimming or eye makeup for 7 days",
+        locale === "ru" ? "Строго соблюдайте все назначенные контрольные визиты к врачу." : "Follow all follow-up appointments"
       ],
       preList: [
-        locale === "ru" ? "" : "Comprehensive eye exam and lens selection",
-        locale === "ru" ? "" : "Stop blood thinners if advised",
-        locale === "ru"
-          ? ""
-          : "Avoid makeup and lotion near eyes day of surgery",
-        locale === "ru" ? "" : "Arrange transportation for after the procedure",
+        locale === "ru" ? "Пройти комплексное обследование глаз и подбор контактных линз." : "Comprehensive eye exam and lens selection",
+        locale === "ru" ? "При необходимости (по рекомендации врача) прекратить прием препаратов, разжижающих кровь." : "Stop blood thinners if advised",
+        locale === "ru" ? "В день операции избегать использования макияжа и кремов в области глаз." : "Avoid makeup and lotion near eyes day of surgery"
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
         desc:
           locale === "ru"
-            ? "Vitrectomy is a critical option for treating severe retinal conditions, often preserving or significantly improving vision. Though recovery can be intensive, the procedure’s effectiveness makes it a vital tool in advanced ophthalmology."
+            ? "«Умные линзы» — это эффективное и долговременное решение для восстановления ясного зрения и улучшения качества жизни. Консультация с опытным офтальмологом поможет подобрать оптимальный вариант в соответствии с вашими потребностями. А благодаря поддержке AZPO Health вы пройдете весь путь с уверенностью и комфортом."
             : "Smart lenses provide a lasting solution for clearer vision, improving quality of life. Consulting an eye specialist ensures the best outcome based on individual needs.Additionally, smart lenses can offer greater comfort and convenience, reducing the dependency on traditional glasses and contact lenses for many users.",
       },
       bfs: bfList,
       contents: {
         title:
           locale === "ru"
-            ? ""
+            ? "Почему стоит выбрать Турцию для процедуры «умные линзы»"
             : "Why Consider Turkey for Your Smart Lens Procedure?",
         content:
           locale === "ru"
-            ? `<p>Glaucoma is a condition that can impact your vision, but with timely and effective management, its progression can be controlled. AZPO Health is dedicated to connecting you with reputable clinics in Turkey that offer a range of glaucoma treatments tailored to your specific needs. Understanding your options is the first step towards taking control of your eye health.</p><h3><strong>Why Consider Turkey for Glaucoma treatment?</strong></h3><p>Turkey has emerged as a leading destination for medical tourism, and for good reason. When it comes to specialized treatments like glaucoma management, several factors make Turkey an attractive choice:</p><ul><li><strong>Access to Experienced Professionals:</strong> Turkish healthcare professionals are highly trained and experienced in diagnosing and managing various eye conditions, including glaucoma. The clinics AZPO Health partners with employ specialists who stay updated with the latest advancements in ophthalmology.</li><li><strong>Advanced Medical Facilities:</strong> The medical facilities in Turkey that AZPO Health collaborates with are equipped with modern diagnostic and treatment technologies. This ensures that you have access to the same level of care, if not better, than what you might find in your home country.</li><li><strong>Comprehensive Care Packages:</strong> Many clinics in Turkey offer comprehensive care packages for international patients. While AZPO Health focuses on connecting you with these clinics, you can expect services that may include consultations, diagnostic tests, treatment procedures, and follow-up care, potentially at a more accessible cost.</li><li><strong>Timely Access to Treatment:</strong> In some countries, waiting times for specialist appointments and procedures can be lengthy. Choosing Turkey for your glaucoma management can potentially provide you with quicker access to the care you need.</li><li><strong>A Supportive Environment:</strong> Turkey is known for its hospitality and cultural richness. Medical tourists often find the environment conducive to recovery, with options for comfortable accommodation and support services available through the clinics.</li></ul><p>While AZPO Health does not provide treatment directly, we facilitate your connection with these esteemed healthcare providers in Turkey, ensuring you can explore the best options for managing your glaucoma.</p><h3><strong>Understanding Glaucoma and Its Treatment Approaches</strong></h3><p>Glaucoma is a group of eye diseases that damage the optic nerve, which is vital for transmitting visual information from the eye to the brain. Often, this damage is caused by an abnormally high pressure inside your eye. However, glaucoma can also occur with normal eye pressure. If left untreated, glaucoma can lead to vision loss and even blindness.</p><p>It's important to understand that vision loss caused by glaucoma is irreversible. Therefore, the primary goal of glaucoma treatment is to slow down or prevent further damage to the optic nerve and preserve your remaining vision. The most suitable treatment approach for you will depend on the type of glaucoma you have, the severity of your condition, and your individual circumstances. The clinics AZPO Health connects you with will conduct thorough evaluations to determine the best course of action.</p><p>The main treatment modalities for glaucoma include:</p><ul><li><strong>Eyedrops:</strong> For primary open-angle glaucoma, the most common type, treatment typically begins with prescription eyedrops. These medications help to lower the pressure inside your eye, either by reducing the amount of fluid your eye produces or by improving the flow of fluid out of your eye. Different types of eyedrops are available, and your eye specialist will prescribe the most appropriate one for you and may adjust or add medications as needed. Consistent use of these eyedrops as prescribed is crucial for managing the condition.</li><li><strong>Laser Treatment:</strong> Laser therapy is another common treatment option for glaucoma, and it may be used as an initial treatment or if eyedrops are not sufficiently controlling your eye pressure. Different types of laser treatments are used for glaucoma:</li><li class="ql-indent-1"><strong>Laser Trabeculoplasty:</strong> This procedure is primarily used for open-angle glaucoma. A laser is used to improve the drainage function of the eye's trabecular meshwork, which helps fluid to flow out more easily, thus reducing intraocular pressure.</li><li class="ql-indent-1"><strong>Laser Peripheral Iridotomy:</strong> This treatment is typically used for angle-closure glaucoma. A small hole is created in the iris (the colored part of the eye) using a laser. This helps to improve the flow of fluid within the eye and can relieve pressure buildup.</li><li class="ql-indent-1"><strong>Cyclophotocoagulation:</strong> This laser procedure targets the part of the eye that produces fluid (the ciliary body). It can help to reduce fluid production and lower eye pressure, and it is often used in more advanced cases of glaucoma.</li><li><strong>Surgery:</strong> If eyedrops and laser treatment are unable to adequately control your eye pressure or slow down vision loss, surgery may be recommended. Various surgical procedures are available for glaucoma:</li><li class="ql-indent-1"><strong>Trabeculectomy:</strong> This is a traditional surgical procedure where the surgeon creates a new drainage channel for fluid to leave the eye, helping to lower intraocular pressure.</li><li class="ql-indent-1"><strong>Glaucoma Drainage Implants (Tube Shunts):</strong> In this surgery, a small tube is inserted into the eye to drain fluid to a reservoir placed under the conjunctiva (the clear outer layer of the eye). This can be particularly helpful in certain types of glaucoma or when other surgical methods have not been successful.</li><li class="ql-indent-1"><strong>Minimally Invasive Glaucoma Surgery (MIGS):</strong> These newer surgical procedures are designed to be less invasive than traditional glaucoma surgery. MIGS procedures often involve the use of tiny devices to enhance the eye's natural drainage pathways. They may be performed in conjunction with cataract surgery or as standalone procedures and typically have a faster recovery time.</li></ul><p>The clinics that AZPO Health connects you with will offer comprehensive evaluations to determine which of these treatment options, or a combination thereof, is most appropriate for your specific type and stage of glaucoma. They will explain the benefits and risks of each option to help you make an informed decision about your care.</p><h3><strong>AZPO Health: Your Partner in Exploring Glaucoma Treatment Options</strong></h3><p>AZPO Health is a medical tourism company based in Turkey, dedicated to connecting international patients with reputable and high-quality healthcare providers. While we do not provide medical treatments ourselves, we act as a bridge, guiding you through the process of finding the best clinics and specialists for your glaucoma management needs.</p><p>Our commitment to you includes:</p><ul><li><strong>Connecting you with Experienced Clinics:</strong> We carefully select and partner with clinics in Turkey that have a strong reputation for excellence in ophthalmology and glaucoma care.</li><li><strong>Facilitating Information and Communication:</strong> We help you gather the necessary information about potential treatment options and facilitate initial communication with the clinics to address your questions and concerns.</li><li><strong>Guiding You Through the Process:</strong> We understand that seeking medical treatment in a foreign country can be overwhelming. Our team is here to provide support and guidance at every step, helping you navigate the process smoothly.</li><li><strong>Emphasizing Quality and Trustworthiness:</strong> We prioritize connecting you with healthcare providers who adhere to high medical standards and ethical practices.</li></ul><p>AZPO Health believes that clear communication and access to reliable information are paramount in your healthcare journey. We strive to empower you with the knowledge and resources you need to make informed decisions about your glaucoma treatment.</p><h3><strong>Take the First Step Towards Preserving Your Vision</strong></h3><p>Don't let glaucoma silently threaten your sight. Explore the advanced treatment options available in Turkey through AZPO Health. Our dedicated team is ready to assist you in connecting with experienced ophthalmologists and state-of-the-art clinics that can provide personalized care to manage your glaucoma and help preserve your vision for years to come.</p><p>Contact AZPO Health today for a free consultation and discover how we can help you take control of your eye health.</p><p><br></p>`
+            ? `<p dir="ltr">Выбор места для медицинской процедуры &mdash; это важное решение, и Турция становится все более популярным направлением для тех, кто ищет высококачественное лечение глаз. Вот несколько факторов, которые способствуют этому растущему интересу.</p>
+<p dir="ltr">Во-первых, Турция славится большим количеством высококвалифицированных и опытных офтальмологов. Многие турецкие хирурги прошли международную подготовку и владеют современными хирургическими методиками, включая имплантацию интраокулярных линз нового поколения, известных как &laquo;умные линзы&raquo;. AZPO Health сотрудничает с сетью клиник, где работают высококлассные специалисты.</p>
+<p dir="ltr">Во-вторых, медицинская инфраструктура Турции современна и оснащена по последнему слову техники. Больницы и глазные клиники, с которыми работает AZPO Health, используют передовое диагностическое и хирургическое оборудование, что обеспечивает пациентам лечение, соответствующее международным стандартам. Это позволяет проводить точные процедуры и добиваться оптимальных результатов. К тому же Турция занимает одно из лидирующих мест в мире по количеству медицинских учреждений с аккредитацией JCI. На март 2025 года в стране насчитывается 30 таких учреждений.</p>
+<p dir="ltr">В-третьих, для многих международных пациентов стоимость медицинских процедур в Турции значительно ниже, чем в странах Северной Америки или Западной Европы (экономия до 70%). Это делает Турцию привлекательным вариантом для тех, кто рассматривает имплантацию &laquo;умных линз&raquo;. Обратившись в AZPO Health, вы сможете выбрать оптимальный вариант, соответствующий вашему бюджету, не жертвуя качеством.</p>
+<p dir="ltr">И, в завершение, коррекция зрения в Турции предоставляет не только медицинский, но и культурный опыт, превращая процесс восстановления в незабываемое путешествие.<br>Страна, богатая историей, культурой и природными красотами, предлагает множество впечатлений как для вас, так и для ваших близких во время восстановления. AZPO Health поможет с организационными вопросами, сделав ваше медицинское путешествие комфортным и удобным.</p>
+<h3 dir="ltr">Что представляет собой технология &laquo;умных линз&raquo;?</h3>
+<p dir="ltr">Операция по установке &laquo;умных линз&raquo; предполагает замену естественного хрусталика глаза на искусственную интраокулярную линзу (ИОЛ), разработанную для улучшения зрения. В отличие от традиционных монофокальных линз, которые корректируют зрение лишь на одном расстоянии (близком, среднем или дальнем), &laquo;умные линзы&raquo; обеспечивают чёткое зрение на разных дистанциях, сводя к минимуму или полностью устраняя необходимость в очках.</p>
+<p dir="ltr">Основные виды &laquo;умных линз&raquo;:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Мультифокальные ИОЛ: эти линзы имеют несколько фокусных зон, позволяющих видеть ясно как вблизи, так и вдали. Мозг автоматически выбирает нужную зону фокусировки в зависимости от расстояния до объекта. Мультифокальные линзы значительно снижают зависимость от очков для чтения и бифокальных линз.<br><br></p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Торические ИОЛ: эти линзы предназначены для коррекции астигматизма &mdash; состояния, при котором роговица или хрусталик имеют неправильную форму, вызывая искажение изображения на всех расстояниях. Торические ИОЛ компенсируют эту форму, обеспечивая чёткое и стабильное зрение. При необходимости такие линзы могут быть дополнены мультифокальной технологией.<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Как проходит операция</p>
+<p dir="ltr">Имплантация &laquo;умной линзы&raquo; напоминает современную операцию по удалению катаракты и проводится амбулаторно. Хирург делает небольшой надрез, удаляет естественный хрусталик и устанавливает на его место искусственную линзу. Процедура проходит под местной анестезией, занимает минимум времени и обычно хорошо переносится. Большинство пациентов отмечают улучшение зрения уже в первые дни после операции.</p>
+<p dir="ltr">Кому подойдет данная операция?</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Людям с катарактой</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Пациентам с возрастными изменениями зрения</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Тем, кто хочет избавиться от очков или контактных линз<br><br></p>
+</li>
+</ul>
+<p dir="ltr">Преимущества технологии &laquo;умных линз&raquo;</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Острота зрения вблизи, на среднем расстоянии и вдали &mdash; без очков.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Свобода от очков &mdash; снижение или полное избавление от зависимости.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Профилактика ухудшения зрения &mdash; сохранение здоровья глаз и улучшение качества жизни.</p>
+</li>
+</ul>
+<h3 dir="ltr">Партнерство с AZPO Health - на пути к ясному зрению</h3>
+<p dir="ltr">Медицинская поездка в другую страну требует тщательной подготовки и доверия к организаторам. AZPO Health предлагает комфортное и надёжное сопровождение для тех, кто рассматривает операцию по установке &laquo;умных линз&raquo; в Турции. Мы выступаем связующим звеном между вами и проверенными офтальмологами, а также современными клиниками, специализирующимися на передовых методах коррекции зрения.</p>
+<p dir="ltr">Наша команда тщательно отбирает врачей и медицинские учреждения, с которыми сотрудничает, уделяя особое внимание качеству и безопасности. Мы обеспечим вам четкое и понятное сопровождение на каждом этапе &mdash; от первого обращения и онлайн-консультации &mdash; до организации поездки и рекомендаций по восстановлению.</p>
+<p dir="ltr">Выбирая AZPO Health, вы получаете:</p>
+<ul>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Доступ к проверенной сети опытных офтальмологов: мы организуем бесплатные онлайн-консультации с врачами до вашего приезда. Вы будете на связи с хирургами, имеющими большой опыт установки умных линз и владеющими современными методиками.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Современные и надежные клиники: наши партнерские учреждения оснащены передовым оборудованием и соответствуют международным стандартам качества и безопасности.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Индивидуальное сопровождение и внимание к деталям: мы ответим на ваши вопросы, предоставим полную информацию и поможем с организацией всех аспектов поездки.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Возможность дистанционных консультаций: вы сможете заранее обсудить свои потребности и возможные варианты лечения с врачом, не выезжая из дома.</p>
+</li>
+<li dir="ltr" aria-level="1">
+<p dir="ltr" role="presentation">Комфорт и забота на каждом этапе: мы стремимся создать максимально спокойный и доверительный опыт для каждого пациента.</p>
+</li>
+</ul>
+<p dir="ltr">Первый шаг к ясному зрению &mdash; это повод для радости. Если вы задумываетесь об операции по установке &laquo;умных линз&raquo; и рассматриваете Турцию как вариант, свяжитесь с AZPO Health. Мы поможем вам найти надежных специалистов и сделать этот путь безопасным, понятным и эффективным. Запишитесь на бесплатную консультацию уже сегодня и узнайте, как технология smart lens может изменить ваше зрение и качество жизни.</p>
+<p dir="ltr">&nbsp;</p>`
             : `<p dir="ltr">Choosing the right location for any medical procedure is a significant decision, and Turkey has emerged as a prominent destination for individuals seeking high-quality eye care. Several compelling factors contribute to this growing popularity.</p>
 <p dir="ltr">Firstly, Turkey boasts a wealth of highly skilled and experienced ophthalmologists. Many Turkish eye surgeons have received international training and are proficient in the latest surgical techniques, including the implantation of advanced technology intraocular lenses, commonly known as smart lenses. AZPO Health partners with a network of reputable clinics that are home to these accomplished professionals.</p>
 <p dir="ltr">Secondly, the healthcare infrastructure in Turkey is modern and well-equipped. Hospitals and eye clinics that AZPO Health collaborates with utilize state-of-the-art diagnostic and surgical equipment, ensuring that patients receive care that meets international standards. This commitment to technology allows for precise procedures and optimal patient outcomes. Besides Turkey ranks among the top countries worldwide in terms of the number of JCI-accredited healthcare institutions. As of March 2025, there are 30 JCI-accredited medical facilities in the country.</p>
