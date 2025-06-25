@@ -5,43 +5,43 @@ import eye from "@/assets/images/icons/services/eye.png";
 import dental from "@/assets/images/icons/services/dental.png";
 import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import { allSubCategory, allSubNestedCategory } from "../allSubCategory";
-const handleServices = (locale : string) => {
+const handleServices = (locale: string) => {
   // const countAethServices = categoryDataHandler("aesthetic", locale)
   //   ?.subCategoryList.length;
-  const countAethServices = allSubCategory.filter(
+  const allSubCategoryFunc = allSubCategory(locale);
+  const countAethServices = allSubCategoryFunc.filter(
     (sub) => sub.categoryKey === "aesthetic"
   ).length;
-  const counSubnestedAethServices = allSubNestedCategory.filter(
+  const allSubNestedCategoryFunc = allSubNestedCategory(locale);
+  const counSubnestedAethServices = allSubNestedCategoryFunc.filter(
     (subnested) => subnested.categoryKey === "aesthetic"
   ).length;
-  
-  const countDentalServices = allSubCategory.filter(
+
+  const countDentalServices = allSubCategoryFunc.filter(
     (sub) => sub.categoryKey === "dental-treatments"
   ).length;
-  const counSubnestedDentalServices = allSubNestedCategory.filter(
+  const counSubnestedDentalServices = allSubNestedCategoryFunc.filter(
     (subnested) => subnested.categoryKey === "dental-treatments"
   ).length;
 
-
-  const countEyeServices = allSubCategory.filter(
+  const countEyeServices = allSubCategoryFunc.filter(
     (sub) => sub.categoryKey === "eye-surgery"
   ).length;
-  const countSubnestedEyeServices = allSubNestedCategory.filter(
+  const countSubnestedEyeServices = allSubNestedCategoryFunc.filter(
     (subnested) => subnested.categoryKey === "eye-surgery"
   ).length;
 
-
-  const countFertilityServices = allSubCategory.filter(
+  const countFertilityServices = allSubCategoryFunc.filter(
     (sub) => sub.categoryKey === "fertility"
   ).length;
-  const countSubnestedFertilityServices = allSubNestedCategory.filter(
+  const countSubnestedFertilityServices = allSubNestedCategoryFunc.filter(
     (subnested) => subnested.categoryKey === "fertility"
   ).length;
 
-  const countStemCellServices = allSubCategory.filter(
+  const countStemCellServices = allSubCategoryFunc.filter(
     (sub) => sub.categoryKey === "stem-cell"
   ).length;
-  const countSubnestedStemCellServices = allSubNestedCategory.filter(
+  const countSubnestedStemCellServices = allSubNestedCategoryFunc.filter(
     (subnested) => subnested.categoryKey === "stem-cell"
   ).length;
   const services: ServiceType[] = [
@@ -54,17 +54,18 @@ const handleServices = (locale : string) => {
     {
       countService: countDentalServices + counSubnestedDentalServices || 0,
       img: dental,
-      label: locale=== "ru" ? "Стоматология" : "Dental",
+      label: locale === "ru" ? "Стоматология" : "Dental",
       path: "dental-treatments",
     },
     {
       countService: countEyeServices + countSubnestedEyeServices || 0,
       img: eye,
-      label: locale ==="ru" ? "Офтальмологические операции" : "Eye Surgeries",
+      label: locale === "ru" ? "Офтальмологические операции" : "Eye Surgeries",
       path: "eye-surgery",
     },
     {
-      countService: countFertilityServices + countSubnestedFertilityServices || 0,
+      countService:
+        countFertilityServices + countSubnestedFertilityServices || 0,
       img: fertility,
       label: locale === "ru" ? "Репродуктивное здоровье" : "Fertility",
       path: "fertility",

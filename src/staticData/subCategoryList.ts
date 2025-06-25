@@ -4,7 +4,10 @@ import stemcell from "@/assets/images/treatment/stemcell.png";
 import dental3d from "@/assets/images/treatment/dental3d.png";
 import tdAes from "@/assets/images/treatment/3dAesthetics.png";
 import { pathsCategory, pathsSubCategory } from "./urlAllPath";
-import { allSubCategory, allSubNestedCategory } from "./allSubCategory";
+import {
+  allSubCategory,
+  allSubNestedCategory,
+} from "./allSubCategory";
 // body contouring
 import arm from "@/assets/images/subnested/Arm lift.png";
 import brazilianad from "@/assets/images/subnested/Brazilian Butt Lift.png";
@@ -78,10 +81,11 @@ import lasiksurgery from "@/assets/images/subnested/LASIK surgery.png";
 import smartlens from "@/assets/images/subnested/Smart Lens in Turkey.png";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.png";
 import dentalbonding from "@/assets/images/subnested/Dental Bonding.png";
-import healthlogo from "@/assets/images/healthlogo.png" 
+import healthlogo from "@/assets/images/healthlogo.png";
 import { dentalTreatmentsContent } from "./contents/endPageContent";
 export const categoryDataHandler = (key: string, locale: string) => {
-  const findSubCategories = allSubCategory.filter(
+  const allSubCategoryFunc = allSubCategory(locale);
+  const findSubCategories = allSubCategoryFunc.filter(
     (sub) => sub.categoryKey === key
   );
   const categoryList = [
@@ -330,7 +334,8 @@ export const categoryDataHandler = (key: string, locale: string) => {
       //       : "Are you delaying necessary dental work due to high costs in your home country? Cheap dental treatments in Turkey don't mean compromising on quality. Turkey boasts highly skilled dentists, modern clinics equipped with the latest technology, and rigorous hygiene standards. With AZPO Health, you can access exceptional dental care for a fraction of the price you might expect to pay elsewhere.",
       // },
       subCategoryContent: {
-        title: locale === "ru" ? "Стоматологическое лечение" : "Dental Treatments",
+        title:
+          locale === "ru" ? "Стоматологическое лечение" : "Dental Treatments",
       },
       contents: {
         title:
@@ -436,7 +441,9 @@ export const categoryDataHandler = (key: string, locale: string) => {
           : "Don’t let blurred vision, eye conditions, or discomfort hold you back! At AZPO Health, we connect you with top-tier eye specialists in Turkey, offering advanced, personalized treatments using the latest medical technology.From laser vision correction to cataract surgery, glaucoma treatment, and corneal transplants, our expert team ensures affordable, high-quality care tailored to your needs.",
       subCategoryContent: {
         title:
-          locale === "ru" ? "Хирургическое лечение глаз" : "Eye Surgery Treatments",
+          locale === "ru"
+            ? "Хирургическое лечение глаз"
+            : "Eye Surgery Treatments",
       },
       contents: {
         title:
@@ -569,7 +576,9 @@ export const categoryDataHandler = (key: string, locale: string) => {
           : "Imagine regenerating damaged tissues, restoring function, and reducing pain—all without invasive surgery. Stem cell therapy is transforming medicine, offering groundbreaking treatments for injuries, chronic diseases, and even infertility. The future of healing isn’t coming—it’s already here. Don’t just treat symptoms; repair and rejuvenate from within. Explore the possibilities today",
       subCategoryContent: {
         title:
-          locale === "ru" ? "Лечение стволовыми клетками" : "Stem cell Treatments",
+          locale === "ru"
+            ? "Лечение стволовыми клетками"
+            : "Stem cell Treatments",
       },
       contents: {
         title:
@@ -693,7 +702,8 @@ export const subCategoryHandler = (
 ) => {
   const findCategory = pathsCategory.find((path) => path === categoryKey);
   const findSubCategory = pathsSubCategory.find((path) => path === key);
-  const findSubNestedList = allSubNestedCategory.filter(
+  const allSubNestedCategoryFunc = allSubNestedCategory(locale);
+  const findSubNestedList = allSubNestedCategoryFunc.filter(
     (subNested) => subNested.subCategoryKey === key
   );
   const categoryList = [
@@ -708,20 +718,14 @@ export const subCategoryHandler = (
           ? ""
           : "Are you facing the daily struggles associated with excess weight, such as reduced mobility, fatigue, or related health conditions? Many people feel self-conscious or limited by their weight, impacting their quality of life. Finding a treatment that offers significant, long-term weight loss can seem daunting. Bariatric surgery offers a powerful tool to help individuals regain control of their health and unlock a more active, fulfilling future.",
       videoContents: {
-        title:
-          locale === "ru"
-            ? ""
-            : "Benefits of Bariatric Surgery in Turkey",
+        title: locale === "ru" ? "" : "Benefits of Bariatric Surgery in Turkey",
         desc:
           locale === "ru"
             ? ""
             : "Considering medical treatment abroad can bring up many questions about quality, cost, and logistics. For those considering bariatric surgery, Turkey has emerged as a leading global destination, attracting patients from around the world due to its combination of medical excellence and appealing patient experience. Undertaking bariatric surgery in Turkey allows you to address your health concerns with confidence, knowing you are accessing experienced care in modern facilities, often with significant advantages in terms of affordability and ease of travel coordination.",
       },
       subCategoryContent: {
-        title:
-          locale === "ru"
-            ? ""
-            : "Bariatric Surgery Treatment",
+        title: locale === "ru" ? "" : "Bariatric Surgery Treatment",
       },
       contents: {
         title:
@@ -814,7 +818,6 @@ export const subCategoryHandler = (
       // video: "https://youtu.be/nFgBhpJvHQ8?si=XAn5N6gkJAzfUuxV",
       imgCover: tdAes,
     },
-
 
     {
       id: 0,
@@ -1163,7 +1166,10 @@ export const subCategoryHandler = (
             : "Body contouring treatments",
       },
       contents: {
-        title: locale === "ru" ? "Контурная пластика тела в Турции" : "Body Contouring in Turkey",
+        title:
+          locale === "ru"
+            ? "Контурная пластика тела в Турции"
+            : "Body Contouring in Turkey",
         content:
           locale === "ru"
             ? `<p dir="ltr">Контурная пластика тела, также известная как скульптинг тела, включает в себя медицинские и хирургические процедуры, направленные на изменение формы тела через удаление жира, подтяжку кожи и улучшение общих контуров. AZPO Health сотрудничает с ведущими клиниками и больницами Турции, предлагая высококачественные решения для контурной пластики, которые сочетают доступность и индивидуальный подход.</p>
@@ -2237,7 +2243,9 @@ export const subCategoryHandler = (
       },
       subCategoryContent: {
         title:
-          locale === "ru" ? "Пародонтология в Турции" : "Periodontics in Turkey",
+          locale === "ru"
+            ? "Пародонтология в Турции"
+            : "Periodontics in Turkey",
       },
       contents: {
         title:
@@ -2775,7 +2783,9 @@ export const subCategoryHandler = (
       },
       subCategoryContent: {
         title:
-          locale === "ru" ? "Лечение заболеваний глаз" : "Eye disease treatments",
+          locale === "ru"
+            ? "Лечение заболеваний глаз"
+            : "Eye disease treatments",
       },
       contents: {
         title:
@@ -2812,7 +2822,7 @@ export const subCategoryHandler = (
         `,
       },
       subCategoryKey: "eye-disease-treatments",
-      video : "https://youtu.be/6DSuBLpRip8?si=_IG7f_9NGwIjb1HO",
+      video: "https://youtu.be/6DSuBLpRip8?si=_IG7f_9NGwIjb1HO",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
       imgCover: eye3d,
@@ -3142,7 +3152,7 @@ export const subCategoryHandler = (
       subCategoryKey: "male-sexual-therapy",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      video : "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
       imgCover: stemcell,
     },
     // Stem Cell Therapy & Regenerative Medicine
@@ -3236,30 +3246,21 @@ export const dataSubCategoryHandler = (
       benefits: {
         items: [
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Weight Loss Benefits",
+            title: locale === "ru" ? "" : "Weight Loss Benefits",
             desc:
               locale === "ru"
                 ? ""
                 : "Significant weight reduction and improved overall health conditions",
           },
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Quick Recovery",
+            title: locale === "ru" ? "" : "Quick Recovery",
             desc:
               locale === "ru"
                 ? ""
                 : "Laparoscopic surgery ensures minimal scarring and faster healing time",
           },
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Appetite Control",
+            title: locale === "ru" ? "" : "Appetite Control",
             desc:
               locale === "ru"
                 ? ""
@@ -3297,39 +3298,65 @@ export const dataSubCategoryHandler = (
         },
         {
           question: locale === "ru" ? "" : "How much weight will I lose?",
-          answer: locale === "ru" ? "" : "Typically 60–70% of excess weight in 1–2 years.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Typically 60–70% of excess weight in 1–2 years.",
         },
         {
           question: locale === "ru" ? "" : "Will I feel hungry?",
-          answer: locale === "ru" ? "" : "Much less — the hunger hormone (ghrelin) is reduced.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Much less — the hunger hormone (ghrelin) is reduced.",
         },
         {
           question: locale === "ru" ? "" : "Can I regain weight?",
-          answer: locale === "ru" ? "" : "Possible if diet and habits aren’t maintained.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Possible if diet and habits aren’t maintained.",
         },
         {
-          question: locale === "ru" ? "" : "What is the recovery like after gastric sleeve surgery?",
-          answer: locale === "ru" ? "" : "Hospital stay is 2–3 days; full recovery in 2–4 weeks.",
+          question:
+            locale === "ru"
+              ? ""
+              : "What is the recovery like after gastric sleeve surgery?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Hospital stay is 2–3 days; full recovery in 2–4 weeks.",
         },
         {
           question: locale === "ru" ? "" : "When can I return to work?",
-          answer: locale === "ru" ? "" : "Usually 1–2 weeks post-op depending on your job.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Usually 1–2 weeks post-op depending on your job.",
         },
       ],
       posts: [
-        locale === "ru" ? "" : "Start with clear liquids, then advance diet per plan",
+        locale === "ru"
+          ? ""
+          : "Start with clear liquids, then advance diet per plan",
         locale === "ru" ? "" : "Walk daily to prevent clots and aid digestion",
         locale === "ru" ? "" : "Take prescribed vitamins and medications daily",
         locale === "ru" ? "" : "Avoid carbonated drinks and large portions",
         locale === "ru" ? "" : "No lifting over 10 lbs for 4–6 weeks",
       ],
-      preList:  [
+      preList: [
         locale === "ru" ? "" : "Follow a 2-week pre-op liquid diet as directed",
-        locale === "ru" ? "" : "Stop smoking and alcohol 2 weeks before surgery",
-        locale === "ru" ? "" : "Avoid aspirin, ibuprofen, or blood thinners 7 days prior",
+        locale === "ru"
+          ? ""
+          : "Stop smoking and alcohol 2 weeks before surgery",
+        locale === "ru"
+          ? ""
+          : "Avoid aspirin, ibuprofen, or blood thinners 7 days prior",
         locale === "ru" ? "" : "Stay active — light walking is encouraged",
         locale === "ru" ? "" : "Arrange for help at home and transportation",
-        locale === "ru" ? "" : "Inform your surgeon of any health issues or medications",
+        locale === "ru"
+          ? ""
+          : "Inform your surgeon of any health issues or medications",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -3432,30 +3459,21 @@ export const dataSubCategoryHandler = (
       benefits: {
         items: [
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Weight Control",
+            title: locale === "ru" ? "" : "Weight Control",
             desc:
               locale === "ru"
                 ? ""
                 : "Quick and effective surgical solution for sustainable weight management",
           },
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Health Benefits",
+            title: locale === "ru" ? "" : "Health Benefits",
             desc:
               locale === "ru"
                 ? ""
                 : "Resolves multiple conditions including diabetes, sleep apnea, and high cholesterol",
           },
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Proven Results",
+            title: locale === "ru" ? "" : "Proven Results",
             desc:
               locale === "ru"
                 ? ""
@@ -3489,41 +3507,61 @@ export const dataSubCategoryHandler = (
       faqs: [
         {
           question: locale === "ru" ? "" : "How does gastric bypass work?",
-          answer: locale === "ru" ? "" : "It shrinks your stomach and reroutes intestines to absorb less food.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "It shrinks your stomach and reroutes intestines to absorb less food.",
         },
         {
           question: locale === "ru" ? "" : "How much weight will I lose?",
-          answer: locale === "ru" ? "" : "60–80% of excess weight in 1–2 years.",
+          answer:
+            locale === "ru" ? "" : "60–80% of excess weight in 1–2 years.",
         },
         {
           question: locale === "ru" ? "" : "What are dumping symptoms?",
-          answer: locale === "ru" ? "" : "Nausea and diarrhea from eating sweets or fatty foods.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Nausea and diarrhea from eating sweets or fatty foods.",
         },
         {
           question: locale === "ru" ? "" : "Will I need supplements?",
-          answer: locale === "ru" ? "" : "Yes, for life to prevent deficiencies.",
+          answer:
+            locale === "ru" ? "" : "Yes, for life to prevent deficiencies.",
         },
         {
           question: locale === "ru" ? "" : "Is it reversible?",
           answer: locale === "ru" ? "" : "Technically yes, but rarely done.",
         },
         {
-          question: locale === "ru" ? "" : "Can weight be regained after surgery?",
-          answer: locale === "ru" ? "" : "Weight can return, but healthy habits help keep it off.",
+          question:
+            locale === "ru" ? "" : "Can weight be regained after surgery?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Weight can return, but healthy habits help keep it off.",
         },
         {
-          question: locale === "ru" ? "" : "What is the recovery like after gastric bypass surgery?",
-          answer: locale === "ru" ? "" : "Hospital stay is 2–3 days; recovery takes 3–4 weeks.",
+          question:
+            locale === "ru"
+              ? ""
+              : "What is the recovery like after gastric bypass surgery?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Hospital stay is 2–3 days; recovery takes 3–4 weeks.",
         },
       ],
       posts: [
         locale === "ru" ? "" : "Start with clear liquids, move to pureed foods",
-        locale === "ru" ? "" : "Take daily vitamins (B12, iron, calcium, multivitamin)",
+        locale === "ru"
+          ? ""
+          : "Take daily vitamins (B12, iron, calcium, multivitamin)",
         locale === "ru" ? "" : "Eat small, slow meals and chew thoroughly",
         locale === "ru" ? "" : "Avoid sweets and high-fat foods",
         locale === "ru" ? "" : "Walk daily and avoid heavy lifting 4–6 weeks",
       ],
-      preList:  [
+      preList: [
         locale === "ru" ? "" : "Follow a low-carb liquid diet for 1–2 weeks",
         locale === "ru" ? "" : "Stop smoking and avoid alcohol",
         locale === "ru" ? "" : "Stop NSAIDs and blood thinners 1 week before",
@@ -3738,30 +3776,21 @@ export const dataSubCategoryHandler = (
       benefits: {
         items: [
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Easy Adjustments",
+            title: locale === "ru" ? "" : "Easy Adjustments",
             desc:
               locale === "ru"
                 ? ""
                 : "Customizable band that can be modified or completely removed as needed",
           },
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Safer Choice",
+            title: locale === "ru" ? "" : "Safer Choice",
             desc:
               locale === "ru"
                 ? ""
                 : "Minimally invasive procedure with reduced surgical complications",
           },
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Steady Progress",
+            title: locale === "ru" ? "" : "Steady Progress",
             desc:
               locale === "ru"
                 ? ""
@@ -3795,11 +3824,17 @@ export const dataSubCategoryHandler = (
       faqs: [
         {
           question: locale === "ru" ? "" : "What is a gastric band?",
-          answer: locale === "ru" ? "" : "A silicone ring placed around the stomach to restrict food intake.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "A silicone ring placed around the stomach to restrict food intake.",
         },
         {
           question: locale === "ru" ? "" : "Is it adjustable?",
-          answer: locale === "ru" ? "" : "Yes, via saline fills through a port under your skin.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes, via saline fills through a port under your skin.",
         },
         {
           question: locale === "ru" ? "" : "Will I need surgery for removal?",
@@ -3814,45 +3849,36 @@ export const dataSubCategoryHandler = (
           answer: locale === "ru" ? "" : "Less often now due to newer options.",
         },
         {
-          question: locale === "ru" ? "" : "Can weight be regained after adjustable gastric band surgery?",
-          answer: locale === "ru" ? "" : "Yes, if healthy habits aren't maintained.",
+          question:
+            locale === "ru"
+              ? ""
+              : "Can weight be regained after adjustable gastric band surgery?",
+          answer:
+            locale === "ru" ? "" : "Yes, if healthy habits aren't maintained.",
         },
         {
-          question: locale === "ru" ? "" : "What is the recovery like after gastric band surgery?",
+          question:
+            locale === "ru"
+              ? ""
+              : "What is the recovery like after gastric band surgery?",
           answer: locale === "ru" ? "" : "Most return to normal within 1 week.",
         },
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Start with liquids, progress to soft foods",
+        locale === "ru" ? "" : "Start with liquids, progress to soft foods",
         locale === "ru"
           ? ""
           : "Eat slowly, chew thoroughly, and stop at fullness",
-        locale === "ru"
-          ? ""
-          : "No drinking with meals — wait 30 minutes",
-        locale === "ru"
-          ? ""
-          : "Follow up for band adjustments (fills)",
-        locale === "ru"
-          ? ""
-          : "Avoid vomiting by eating mindfully",
+        locale === "ru" ? "" : "No drinking with meals — wait 30 minutes",
+        locale === "ru" ? "" : "Follow up for band adjustments (fills)",
+        locale === "ru" ? "" : "Avoid vomiting by eating mindfully",
       ],
       preList: [
-        locale === "ru"
-          ? ""
-          : "Follow a pre-op diet as advised",
+        locale === "ru" ? "" : "Follow a pre-op diet as advised",
         locale === "ru" ? "" : "Stop smoking and alcohol 1–2 weeks before",
-        locale === "ru"
-          ? ""
-          : "Avoid blood thinners and NSAIDs",
-        locale === "ru"
-          ? ""
-          : "Attend a nutritional consult and psych eval",
-        locale === "ru"
-          ? ""
-          : "Arrange post-op support and help at home",
+        locale === "ru" ? "" : "Avoid blood thinners and NSAIDs",
+        locale === "ru" ? "" : "Attend a nutritional consult and psych eval",
+        locale === "ru" ? "" : "Arrange post-op support and help at home",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -4082,7 +4108,8 @@ export const dataSubCategoryHandler = (
 </div>`,
       },
       subNestedKey: "adjustable-gastric-banding",
-      imgCover: subNestedKey === "adjustable-gastric-banding" ? healthlogo : null,
+      imgCover:
+        subNestedKey === "adjustable-gastric-banding" ? healthlogo : null,
     },
     {
       id: 0,
@@ -4097,30 +4124,21 @@ export const dataSubCategoryHandler = (
       benefits: {
         items: [
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Weight Loss",
+            title: locale === "ru" ? "" : "Weight Loss",
             desc:
               locale === "ru"
                 ? ""
                 : "Patients can lose significant weight rapidly and see major health improvements.",
           },
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Health Benefits",
+            title: locale === "ru" ? "" : "Health Benefits",
             desc:
               locale === "ru"
                 ? ""
                 : "Many patients experience improvements in diabetes and blood pressure.",
           },
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Lasting Results",
+            title: locale === "ru" ? "" : "Lasting Results",
             desc:
               locale === "ru"
                 ? ""
@@ -4154,15 +4172,24 @@ export const dataSubCategoryHandler = (
       faqs: [
         {
           question: locale === "ru" ? "" : "How is BPD/DS different?",
-          answer: locale === "ru" ? "" : "It combines a sleeve gastrectomy and intestinal bypass.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "It combines a sleeve gastrectomy and intestinal bypass.",
         },
         {
           question: locale === "ru" ? "" : "Is it more effective?",
-          answer: locale === "ru" ? "" : "Yes — highest weight loss and diabetes remission.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes — highest weight loss and diabetes remission.",
         },
         {
           question: locale === "ru" ? "" : "What are the risks?",
-          answer: locale === "ru" ? "" : "Higher risk of vitamin deficiency and diarrhea.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Higher risk of vitamin deficiency and diarrhea.",
         },
         {
           question: locale === "ru" ? "" : "Is it reversible?",
@@ -4170,35 +4197,34 @@ export const dataSubCategoryHandler = (
         },
         {
           question: locale === "ru" ? "" : "Will I need lifelong supplements?",
-          answer: locale === "ru" ? "" : "Yes — strict compliance is essential.",
+          answer:
+            locale === "ru" ? "" : "Yes — strict compliance is essential.",
         },
         {
-          question: locale === "ru" ? "" : "What is the recovery like after duodenal switch surgery?",
-          answer: locale === "ru" ? "" : "Hospital stay is 3–4 days; full recovery in 4–6 weeks.",
+          question:
+            locale === "ru"
+              ? ""
+              : "What is the recovery like after duodenal switch surgery?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Hospital stay is 3–4 days; full recovery in 4–6 weeks.",
         },
       ],
       posts: [
         locale === "ru"
           ? ""
           : "Follow a slow progression diet (liquid to solid)",
-        locale === "ru"
-          ? ""
-          : "Take all prescribed supplements for life",
+        locale === "ru" ? "" : "Take all prescribed supplements for life",
         locale === "ru"
           ? ""
           : "Eat protein-rich meals and avoid high-fat foods",
-        locale === "ru"
-          ? ""
-          : "Walk daily, avoid lifting for 4–6 weeks",
+        locale === "ru" ? "" : "Walk daily, avoid lifting for 4–6 weeks",
       ],
       preList: [
-        locale === "ru"
-          ? ""
-          : "Stop smoking and drinking alcohol",
+        locale === "ru" ? "" : "Stop smoking and drinking alcohol",
         locale === "ru" ? "" : "Avoid NSAIDs and anticoagulants",
-        locale === "ru"
-          ? ""
-          : "Complete full blood work and evaluations",
+        locale === "ru" ? "" : "Complete full blood work and evaluations",
         locale === "ru"
           ? ""
           : "Discuss risks and high supplement needs with your team",
@@ -4418,30 +4444,21 @@ export const dataSubCategoryHandler = (
       benefits: {
         items: [
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "No Surgery",
+            title: locale === "ru" ? "" : "No Surgery",
             desc:
               locale === "ru"
                 ? ""
                 : "Completely non-invasive procedure with no incisions required",
           },
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Weight Results",
+            title: locale === "ru" ? "" : "Weight Results",
             desc:
               locale === "ru"
                 ? ""
                 : "Average total body weight loss of 10-15% post-treatment",
           },
           {
-            title:
-              locale === "ru"
-                ? ""
-                : "Health Benefits",
+            title: locale === "ru" ? "" : "Health Benefits",
             desc:
               locale === "ru"
                 ? ""
@@ -4475,7 +4492,10 @@ export const dataSubCategoryHandler = (
       faqs: [
         {
           question: locale === "ru" ? "" : "What is a gastric balloon?",
-          answer: locale === "ru" ? "" : "A temporary silicone balloon that reduces hunger.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "A temporary silicone balloon that reduces hunger.",
         },
         {
           question: locale === "ru" ? "" : "Is it permanent?",
@@ -4483,34 +4503,37 @@ export const dataSubCategoryHandler = (
         },
         {
           question: locale === "ru" ? "" : "Will I feel it inside?",
-          answer: locale === "ru" ? "" : "You may feel full or slightly bloated.",
+          answer:
+            locale === "ru" ? "" : "You may feel full or slightly bloated.",
         },
         {
           question: locale === "ru" ? "" : "How much weight can I lose?",
-          answer: locale === "ru" ? "" : "Typically 10–15% of total body weight.",
+          answer:
+            locale === "ru" ? "" : "Typically 10–15% of total body weight.",
         },
         {
           question: locale === "ru" ? "" : "Can it be repeated?",
-          answer: locale === "ru" ? "" : "Yes, but not recommended back-to-back without a break.",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes, but not recommended back-to-back without a break.",
         },
         {
-          question: locale === "ru" ? "" : "What is the recovery like after balloon placement?",
-          answer: locale === "ru" ? "" : "Same-day discharge; mild discomfort for a few days.",
+          question:
+            locale === "ru"
+              ? ""
+              : "What is the recovery like after balloon placement?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Same-day discharge; mild discomfort for a few days.",
         },
       ],
       posts: [
-        locale === "ru"
-          ? ""
-          : "Start with clear liquids, then soft foods",
-        locale === "ru"
-          ? ""
-          : "Expect nausea or cramping for a few days",
-        locale === "ru"
-          ? ""
-          : "Avoid overeating or carbonated drinks",
-        locale === "ru"
-          ? ""
-          : "Take anti-nausea meds if prescribed",
+        locale === "ru" ? "" : "Start with clear liquids, then soft foods",
+        locale === "ru" ? "" : "Expect nausea or cramping for a few days",
+        locale === "ru" ? "" : "Avoid overeating or carbonated drinks",
+        locale === "ru" ? "" : "Take anti-nausea meds if prescribed",
         locale === "ru"
           ? ""
           : "Balloon is removed after 6 months — plan accordingly",
@@ -4519,10 +4542,10 @@ export const dataSubCategoryHandler = (
         locale === "ru"
           ? ""
           : "Follow pre-procedure diet (often liquid 1–2 days)",
-        locale === "ru" ? "" : "No eating or drinking 8–12 hours before the procedure",
         locale === "ru"
           ? ""
-          : "Stop smoking and alcohol 3–5 days prior",
+          : "No eating or drinking 8–12 hours before the procedure",
+        locale === "ru" ? "" : "Stop smoking and alcohol 3–5 days prior",
         locale === "ru"
           ? ""
           : "Discuss acid reflux or stomach issues with your doctor",
@@ -4728,7 +4751,7 @@ export const dataSubCategoryHandler = (
       subNestedKey: "intragastric-balloon",
       imgCover: subNestedKey === "intragastric-balloon" ? healthlogo : null,
     },
-    
+
     // hair
     // fue
     {
@@ -4754,10 +4777,7 @@ export const dataSubCategoryHandler = (
                 : "A gentle surgical technique that reduces trauma and promotes faster healing.",
           },
           {
-            title:
-              locale === "ru"
-                ? "Без заметных рубцов"
-                : "No visible scars",
+            title: locale === "ru" ? "Без заметных рубцов" : "No visible scars",
             desc:
               locale === "ru"
                 ? "остаются лишь микроскопические следы, незаметные глазу."
@@ -4800,39 +4820,87 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question : locale === "ru" ? "Больно ли делать FUE?" : "Is FUE painful?",
-          answer : locale === "ru" ? "Нет, используется местная анестезия." : "No. Local anesthesia is used."
+          question:
+            locale === "ru" ? "Больно ли делать FUE?" : "Is FUE painful?",
+          answer:
+            locale === "ru"
+              ? "Нет, используется местная анестезия."
+              : "No. Local anesthesia is used.",
         },
         {
-          question : locale === "ru" ? "Когда появятся результаты?" : "When will I see results?",
-          answer : locale === "ru" ? "Полные результаты обычно видны через 9–12 месяцев." : "Full results appear in 9–12 months."
+          question:
+            locale === "ru"
+              ? "Когда появятся результаты?"
+              : "When will I see results?",
+          answer:
+            locale === "ru"
+              ? "Полные результаты обычно видны через 9–12 месяцев."
+              : "Full results appear in 9–12 months.",
         },
         {
-          question : locale === "ru" ? "Могу ли я вернуться к работе?" : "Can I return to work?",
-          answer : locale === "ru" ? "Да, обычно через 7-10 дней." : "Yes, usually at least 7-10 days."
+          question:
+            locale === "ru"
+              ? "Могу ли я вернуться к работе?"
+              : "Can I return to work?",
+          answer:
+            locale === "ru"
+              ? "Да, обычно через 7-10 дней."
+              : "Yes, usually at least 7-10 days.",
         },
         {
-          question : locale === "ru" ? "Выпадут ли пересаженные волосы?" : "Will transplanted hair fall out?",
-          answer : locale === "ru" ? "Да, но они отрастанут снова." : "Yes, but it regrows."
+          question:
+            locale === "ru"
+              ? "Выпадут ли пересаженные волосы?"
+              : "Will transplanted hair fall out?",
+          answer:
+            locale === "ru"
+              ? "Да, но они отрастанут снова."
+              : "Yes, but it regrows.",
         },
         {
-          question : locale === "ru" ? "Сколько длится процедура?" : "How long is the procedure?",
-          answer : locale === "ru" ? "6–8 часов, в зависимости от количества пересаживаемых графтов." : "6–8 hours depending on grafts."
-        }
+          question:
+            locale === "ru"
+              ? "Сколько длится процедура?"
+              : "How long is the procedure?",
+          answer:
+            locale === "ru"
+              ? "6–8 часов, в зависимости от количества пересаживаемых графтов."
+              : "6–8 hours depending on grafts.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Спите с приподнятой головой (45°) в течение первых 3 ночей, чтобы уменьшить отек." : "Sleep with your head elevated (45°) for 3 nights to reduce swelling.",
-        locale === "ru" ? "Избегайте прикосновений к области пересадки. Не носите тесные шляпы или шлемы." : "Avoid touching the graft area. Do not wear tight hats or helmets.",
-        locale === "ru" ? "Аккуратно начинайте мыть кожу головы через 48 часов после операции, следуя инструкциям." : "Begin gentle scalp washing 48 hours after surgery (as instructed).",
-        locale === "ru" ? "В течение 10–14 дней избегайте потоотделения, занятий в спортзале, солнечного воздействия и плавания." : "Avoid sweating, gym, sun exposure, and swimming for 10–14 days.",
-        locale === "ru" ? "Не пытайтесь отковырять корки; они отпадут естественным образом в течение 7–10 дней." : "Do not pick scabs; they will fall off naturally within 7–10 days."
+        locale === "ru"
+          ? "Спите с приподнятой головой (45°) в течение первых 3 ночей, чтобы уменьшить отек."
+          : "Sleep with your head elevated (45°) for 3 nights to reduce swelling.",
+        locale === "ru"
+          ? "Избегайте прикосновений к области пересадки. Не носите тесные шляпы или шлемы."
+          : "Avoid touching the graft area. Do not wear tight hats or helmets.",
+        locale === "ru"
+          ? "Аккуратно начинайте мыть кожу головы через 48 часов после операции, следуя инструкциям."
+          : "Begin gentle scalp washing 48 hours after surgery (as instructed).",
+        locale === "ru"
+          ? "В течение 10–14 дней избегайте потоотделения, занятий в спортзале, солнечного воздействия и плавания."
+          : "Avoid sweating, gym, sun exposure, and swimming for 10–14 days.",
+        locale === "ru"
+          ? "Не пытайтесь отковырять корки; они отпадут естественным образом в течение 7–10 дней."
+          : "Do not pick scabs; they will fall off naturally within 7–10 days.",
       ],
       preList: [
-        locale === "ru" ? "Прекратите курение, употребление алкоголя и разжижителей крови (аспирин, ибупрофен) как минимум за 7 дней до операции." : "Stop smoking, alcohol, and blood thinners (aspirin, ibuprofen) at least 7 days prior.",
-        locale === "ru" ? "Вымойте волосы мягким шампунем накануне процедуры." : "Wash hair with mild shampoo the night before.",
-        locale === "ru" ? "Избегайте использования геля для волос, спрея или других укладочных средств в день операции." : "Avoid hair gel, spray, or any styling products on the day of surgery.",
-        locale === "ru" ? "Сообщите своему врачу обо всех принимаемых лекарствах и состоянии здоровья." : "Inform your doctor of any medications or health conditions.",
-        locale === "ru" ? "Организуйте транспорт и возьмите выходной после операции для полноценного отдыха." : "Arrange transport and take the day off post-surgery for rest."
+        locale === "ru"
+          ? "Прекратите курение, употребление алкоголя и разжижителей крови (аспирин, ибупрофен) как минимум за 7 дней до операции."
+          : "Stop smoking, alcohol, and blood thinners (aspirin, ibuprofen) at least 7 days prior.",
+        locale === "ru"
+          ? "Вымойте волосы мягким шампунем накануне процедуры."
+          : "Wash hair with mild shampoo the night before.",
+        locale === "ru"
+          ? "Избегайте использования геля для волос, спрея или других укладочных средств в день операции."
+          : "Avoid hair gel, spray, or any styling products on the day of surgery.",
+        locale === "ru"
+          ? "Сообщите своему врачу обо всех принимаемых лекарствах и состоянии здоровья."
+          : "Inform your doctor of any medications or health conditions.",
+        locale === "ru"
+          ? "Организуйте транспорт и возьмите выходной после операции для полноценного отдыха."
+          : "Arrange transport and take the day off post-surgery for rest.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -5228,39 +5296,85 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question : locale === "ru" ? "Чем отличается DHI от FUE?" : "What’s different from FUE?",
-          answer : locale === "ru" ? "DHI использует ручку Choi для прямой имплантации волос, в отличие от FUE, где волосы пересаживаются с помощью иглы." : "DHI uses Choi pen for direct implantation."
+          question:
+            locale === "ru"
+              ? "Чем отличается DHI от FUE?"
+              : "What’s different from FUE?",
+          answer:
+            locale === "ru"
+              ? "DHI использует ручку Choi для прямой имплантации волос, в отличие от FUE, где волосы пересаживаются с помощью иглы."
+              : "DHI uses Choi pen for direct implantation.",
         },
         {
-          question : locale === "ru" ? "Требуется ли бритье?" : "Is shaving required?",
-          answer : locale === "ru" ? "Обычно бритье необходимо только в области донорской зоны." : "Only donor area usually."
+          question:
+            locale === "ru" ? "Требуется ли бритье?" : "Is shaving required?",
+          answer:
+            locale === "ru"
+              ? "Обычно бритье необходимо только в области донорской зоны."
+              : "Only donor area usually.",
         },
         {
-          question : locale === "ru" ? "Когда начнет расти волос?" : "When will hair grow?",
-          answer : locale === "ru" ? "Волосы начинают расти через 3-4 месяца, а полное восстановление происходит через 12 месяцев." : "Starts in 3–4 months, full in 12 months."
+          question:
+            locale === "ru"
+              ? "Когда начнет расти волос?"
+              : "When will hair grow?",
+          answer:
+            locale === "ru"
+              ? "Волосы начинают расти через 3-4 месяца, а полное восстановление происходит через 12 месяцев."
+              : "Starts in 3–4 months, full in 12 months.",
         },
         {
-          question : locale === "ru" ? "Лучше ли DHI, чем FUE?" : "Is DHI better than FUE?",
-          answer : locale === "ru" ? "Это зависит от конкретного случая и состояния пациента." : "Depends on the case."
+          question:
+            locale === "ru"
+              ? "Лучше ли DHI, чем FUE?"
+              : "Is DHI better than FUE?",
+          answer:
+            locale === "ru"
+              ? "Это зависит от конкретного случая и состояния пациента."
+              : "Depends on the case.",
         },
         {
-          question : locale === "ru" ? "Могу ли я носить шляпу?" : "Can I wear a hat?",
-          answer : locale === "ru" ? "Рекомендуется избегать ношения шляпы в течение минимум 10 дней после операции." : "Not for at least 10 days post-op."
-        }
+          question:
+            locale === "ru" ? "Могу ли я носить шляпу?" : "Can I wear a hat?",
+          answer:
+            locale === "ru"
+              ? "Рекомендуется избегать ношения шляпы в течение минимум 10 дней после операции."
+              : "Not for at least 10 days post-op.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Держите кожу головы сухой в течение первых 48 часов. Далее мойте по указаниям вашего врача." : "Keep the scalp dry for 48 hours. Then wash as per clinic instructions.",
-        locale === "ru" ? "Не прикасайтесь к области пересадки, не царапайте и не оказывайте давления." : "Do not touch, scratch, or apply pressure to the graft area.",
-        locale === "ru" ? "Спите в приподнятом положении на спине в течение недели." : "Sleep elevated on your back for a week.",
-        locale === "ru" ? "Избегайте интенсивных физических нагрузок, сауны, солнечных ванн и плавания в течение 2 недель." : "No intense exercise, sauna, sun, or swimming for 2 weeks.",
-        locale === "ru" ? "Принимайте назначенные антибиотики и обезболивающие в соответствии с указаниями врача." : "Take prescribed antibiotics and painkillers as directed."
+        locale === "ru"
+          ? "Держите кожу головы сухой в течение первых 48 часов. Далее мойте по указаниям вашего врача."
+          : "Keep the scalp dry for 48 hours. Then wash as per clinic instructions.",
+        locale === "ru"
+          ? "Не прикасайтесь к области пересадки, не царапайте и не оказывайте давления."
+          : "Do not touch, scratch, or apply pressure to the graft area.",
+        locale === "ru"
+          ? "Спите в приподнятом положении на спине в течение недели."
+          : "Sleep elevated on your back for a week.",
+        locale === "ru"
+          ? "Избегайте интенсивных физических нагрузок, сауны, солнечных ванн и плавания в течение 2 недель."
+          : "No intense exercise, sauna, sun, or swimming for 2 weeks.",
+        locale === "ru"
+          ? "Принимайте назначенные антибиотики и обезболивающие в соответствии с указаниями врача."
+          : "Take prescribed antibiotics and painkillers as directed.",
       ],
       preList: [
-        locale === "ru" ? "Прекратите использовать Миноксидил и избегайте алкоголя и курения за 3–5 дней до операции." : "Stop using Minoxidil and avoid alcohol and smoking 3–5 days before.",
-        locale === "ru" ? "Вымойте волосы накануне процедуры." : "Wash your hair the day before using a mild shampoo.",
-        locale === "ru" ? "Оденьтесь в свободную одежду с передним застегиванием в день операции." : "Wear loose, front-opening clothes on surgery day.",
-        locale === "ru" ? "Позавтракайте легкой пищей, если не указано иное." : "Eat a light breakfast unless instructed otherwise.",
-        locale === "ru" ? "Обсудите с врачом ваши предпочтения по дизайну линии волос." : "Share your hairline design goals with your doctor."
+        locale === "ru"
+          ? "Прекратите использовать Миноксидил и избегайте алкоголя и курения за 3–5 дней до операции."
+          : "Stop using Minoxidil and avoid alcohol and smoking 3–5 days before.",
+        locale === "ru"
+          ? "Вымойте волосы накануне процедуры."
+          : "Wash your hair the day before using a mild shampoo.",
+        locale === "ru"
+          ? "Оденьтесь в свободную одежду с передним застегиванием в день операции."
+          : "Wear loose, front-opening clothes on surgery day.",
+        locale === "ru"
+          ? "Позавтракайте легкой пищей, если не указано иное."
+          : "Eat a light breakfast unless instructed otherwise.",
+        locale === "ru"
+          ? "Обсудите с врачом ваши предпочтения по дизайну линии волос."
+          : "Share your hairline design goals with your doctor.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -5740,7 +5854,9 @@ export const dataSubCategoryHandler = (
         items: [
           {
             title:
-              locale === "ru" ? "Натуральное восстановление волос" : "Natural Hair Revival",
+              locale === "ru"
+                ? "Натуральное восстановление волос"
+                : "Natural Hair Revival",
             desc:
               locale === "ru"
                 ? "природный способ вернуть силу и здоровье волосам"
@@ -5757,8 +5873,7 @@ export const dataSubCategoryHandler = (
                 : "Advanced treatment for stronger roots and thicker hair",
           },
           {
-            title:
-              locale === "ru" ? "Повышение густоты" : "Hair Density Boost",
+            title: locale === "ru" ? "Повышение густоты" : "Hair Density Boost",
             desc:
               locale === "ru"
                 ? "эффект визуальной плотности и объема уже после курса процедур"
@@ -5774,8 +5889,7 @@ export const dataSubCategoryHandler = (
                 : "Platelet-Rich Plasma (PRP) is a regenerative therapy that utilizes the body's natural healing abilities by concentrating platelets and growth factors found in blood. It involves drawing a small amount of the patient’s blood, processing it to separate the platelet-rich plasma, and reintroducing this concentrated substance back into the body via injection.",
           },
           {
-            header:
-              locale === "ru" ? "Как это работает" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
                 ? "Обогащенная тромбоцитами плазма выделяется из крови пациента и вводится в кожу головы. Это активирует спящие фолликулы, усиливает кровообращение и укрепляет корни волос, способствуя их естественному росту. Процедура проводится с помощью ультратонких игл, что обеспечивает максимальную точность и комфорт, направленно воздействуя на нужные зоны для достижения выраженного и устойчивого результата."
@@ -5792,39 +5906,83 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question : locale === "ru" ? "Что такое PRP?" : "What is PRP?",
-          answer : locale === "ru" ? "PRP (обогащенная тромбоцитами плазма) стимулирует рост волос, улучшая состояние волосяных фолликулов." : "Platelet-rich plasma stimulates hair follicles to grow."
+          question: locale === "ru" ? "Что такое PRP?" : "What is PRP?",
+          answer:
+            locale === "ru"
+              ? "PRP (обогащенная тромбоцитами плазма) стимулирует рост волос, улучшая состояние волосяных фолликулов."
+              : "Platelet-rich plasma stimulates hair follicles to grow.",
         },
         {
-          question : locale === "ru" ? "Это больно?" : "Does it hurt?",
-          answer : locale === "ru" ? "Может быть незначительный дискомфорт, однако используется анестезия для минимизации болевых ощущений." : "Mild discomfort possible; numbing is used."
+          question: locale === "ru" ? "Это больно?" : "Does it hurt?",
+          answer:
+            locale === "ru"
+              ? "Может быть незначительный дискомфорт, однако используется анестезия для минимизации болевых ощущений."
+              : "Mild discomfort possible; numbing is used.",
         },
         {
-          question : locale === "ru" ? "Сколько сеансов нужно?" : "How many sessions are needed?",
-          answer : locale === "ru" ? "Обычно проводится 3-4 сеанса, затем рекомендуется поддерживающая терапия для поддержания эффекта." : "Typically 3–4 then maintenance."
+          question:
+            locale === "ru"
+              ? "Сколько сеансов нужно?"
+              : "How many sessions are needed?",
+          answer:
+            locale === "ru"
+              ? "Обычно проводится 3-4 сеанса, затем рекомендуется поддерживающая терапия для поддержания эффекта."
+              : "Typically 3–4 then maintenance.",
         },
         {
-          question : locale === "ru" ? "Результаты будут постоянными?" : "Are the results be permanent?",
-          answer : locale === "ru" ? "Результаты могут быть долговременными при регулярных поддерживающих сеансах." : "Long-lasting with ongoing sessions."
+          question:
+            locale === "ru"
+              ? "Результаты будут постоянными?"
+              : "Are the results be permanent?",
+          answer:
+            locale === "ru"
+              ? "Результаты могут быть долговременными при регулярных поддерживающих сеансах."
+              : "Long-lasting with ongoing sessions.",
         },
         {
-          question : locale === "ru" ? "Можно ли комбинировать PRP с трансплантацией?" : "Can PRP be combined with transplant?",
-          answer : locale === "ru" ? "Да, PRP ускоряет процесс заживления и способствует улучшению результатов трансплантации." : "Yes, boosts healing and results."
-        }
+          question:
+            locale === "ru"
+              ? "Можно ли комбинировать PRP с трансплантацией?"
+              : "Can PRP be combined with transplant?",
+          answer:
+            locale === "ru"
+              ? "Да, PRP ускоряет процесс заживления и способствует улучшению результатов трансплантации."
+              : "Yes, boosts healing and results.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Не мойте волосы и не используйте средства для волос в течение первых 24 часов." : "Don’t wash hair or apply products for 24 hours.",
-        locale === "ru" ? "Избегайте интенсивных физических нагрузок, употребления алкоголя и воздействия солнечных лучей в течение 24–48 часов." : "Avoid exercise, alcohol, and sun for 24–48 hours.",
-        locale === "ru" ? "Мытье волос разрешено спустя 1–2 дня после процедуры." : "Gentle washing allowed after 1–2 days.",
-        locale === "ru" ? "Не используйте укладочные инструменты и краски для волос как минимум 3 дня." : "Avoid styling tools and dyes for at least 3 days.",
-        locale === "ru" ? "Соблюдайте рекомендованный график сеансов PRP, например, каждые 4–6 недель." : "Stick to your PRP schedule (e.g., every 4–6 weeks)."
+        locale === "ru"
+          ? "Не мойте волосы и не используйте средства для волос в течение первых 24 часов."
+          : "Don’t wash hair or apply products for 24 hours.",
+        locale === "ru"
+          ? "Избегайте интенсивных физических нагрузок, употребления алкоголя и воздействия солнечных лучей в течение 24–48 часов."
+          : "Avoid exercise, alcohol, and sun for 24–48 hours.",
+        locale === "ru"
+          ? "Мытье волос разрешено спустя 1–2 дня после процедуры."
+          : "Gentle washing allowed after 1–2 days.",
+        locale === "ru"
+          ? "Не используйте укладочные инструменты и краски для волос как минимум 3 дня."
+          : "Avoid styling tools and dyes for at least 3 days.",
+        locale === "ru"
+          ? "Соблюдайте рекомендованный график сеансов PRP, например, каждые 4–6 недель."
+          : "Stick to your PRP schedule (e.g., every 4–6 weeks).",
       ],
       preList: [
-        locale === "ru" ? "Избегайте разжижителей крови, кофеина и алкоголя за 5 дней до процедуры." : "Avoid blood thinners, caffeine, and alcohol 5 days before.",
-        locale === "ru" ? "В день процедуры не используйте средства для волос." : "No hair products on the day of treatment.",
-        locale === "ru" ? "Поддерживайте водный баланс и употребляйте легкую пищу перед процедурой." : "Stay hydrated and eat a light meal beforehand.",
-        locale === "ru" ? "Сообщите врачу о любых принимаемых лекарствах или заболеваниях крови." : "Disclose any medications or blood conditions.",
-        locale === "ru" ? "Вы можете принять душ накануне процедуры." : "You can shower the night before."
+        locale === "ru"
+          ? "Избегайте разжижителей крови, кофеина и алкоголя за 5 дней до процедуры."
+          : "Avoid blood thinners, caffeine, and alcohol 5 days before.",
+        locale === "ru"
+          ? "В день процедуры не используйте средства для волос."
+          : "No hair products on the day of treatment.",
+        locale === "ru"
+          ? "Поддерживайте водный баланс и употребляйте легкую пищу перед процедурой."
+          : "Stay hydrated and eat a light meal beforehand.",
+        locale === "ru"
+          ? "Сообщите врачу о любых принимаемых лекарствах или заболеваниях крови."
+          : "Disclose any medications or blood conditions.",
+        locale === "ru"
+          ? "Вы можете принять душ накануне процедуры."
+          : "You can shower the night before.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -6192,9 +6350,7 @@ export const dataSubCategoryHandler = (
           },
           {
             title:
-              locale === "ru"
-                ? "Естественная густота"
-                : "Natural Hair Density",
+              locale === "ru" ? "Естественная густота" : "Natural Hair Density",
             desc:
               locale === "ru"
                 ? "мезотерапия способствует росту новых, крепких и плотных волос."
@@ -6210,8 +6366,7 @@ export const dataSubCategoryHandler = (
                 : "Mesotherapy is a treatment aimed at improving the condition of the hair and scalp. It involves injecting a cocktail of active ingredients directly into the scalp to stimulate hair growth, strengthen follicles, and improve tissue nourishment.",
           },
           {
-            header:
-              locale === "ru" ? "Как это работает" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
                 ? "В кожу головы вводятся витамины, минералы, аминокислоты и другие активные компоненты, которые стимулируют рост волос и улучшают их общее состояние."
@@ -6228,39 +6383,84 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question : locale === "ru" ? "Что такое мезотерапия?" : "What is mesotherapy?",
-          answer : locale === "ru" ? "Это процедура, при которой в кожу головы вводятся питательные вещества для стимуляции роста волос." : "It injects nutrients into the scalp."
+          question:
+            locale === "ru" ? "Что такое мезотерапия?" : "What is mesotherapy?",
+          answer:
+            locale === "ru"
+              ? "Это процедура, при которой в кожу головы вводятся питательные вещества для стимуляции роста волос."
+              : "It injects nutrients into the scalp.",
         },
         {
-          question : locale === "ru" ? "Это больно?" : "Is it painful?",
-          answer : locale === "ru" ? "Возможен минимальный дискомфорт, кратковременное покалывание." : "Minimal discomfort, brief stinging."
+          question: locale === "ru" ? "Это больно?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Возможен минимальный дискомфорт, кратковременное покалывание."
+              : "Minimal discomfort, brief stinging.",
         },
         {
-          question : locale === "ru" ? "Когда ждать результатов?" : "When to see results?",
-          answer : locale === "ru" ? "Обычно улучшения начинают проявляться после 3–4 сеансов." : "After 3–4 sessions typically."
+          question:
+            locale === "ru"
+              ? "Когда ждать результатов?"
+              : "When to see results?",
+          answer:
+            locale === "ru"
+              ? "Обычно улучшения начинают проявляться после 3–4 сеансов."
+              : "After 3–4 sessions typically.",
         },
         {
-          question : locale === "ru" ? "Результаты постоянные?" : "Are results permanent?",
-          answer : locale === "ru" ? "Результаты могут быть долговременными, но для поддержания эффекта могут потребоваться дополнительные сеансы." : "Ongoing sessions may be needed."
+          question:
+            locale === "ru"
+              ? "Результаты постоянные?"
+              : "Are results permanent?",
+          answer:
+            locale === "ru"
+              ? "Результаты могут быть долговременными, но для поддержания эффекта могут потребоваться дополнительные сеансы."
+              : "Ongoing sessions may be needed.",
         },
         {
-          question : locale === "ru" ? "Кто получает наибольшую выгоду от мезотерапии?" : "Who benefits most?",
-          answer : locale === "ru" ? "Особенно эффективна для людей с потерей волос на ранней стадии или для тех, у кого выпадение волос связано со стрессом." : "Early-stage or stress-related hair loss."
-        }
+          question:
+            locale === "ru"
+              ? "Кто получает наибольшую выгоду от мезотерапии?"
+              : "Who benefits most?",
+          answer:
+            locale === "ru"
+              ? "Особенно эффективна для людей с потерей волос на ранней стадии или для тех, у кого выпадение волос связано со стрессом."
+              : "Early-stage or stress-related hair loss.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Не мойте волосы и не используйте средства для волос в течение первых 24 часов." : "Don’t wash hair or apply products for 24 hours.",
-        locale === "ru" ? "Избегайте плавания, сауны и солнечного воздействия в течение 2–3 дней." : "Avoid swimming, sauna, or sun exposure for 2–3 days.",
-        locale === "ru" ? "Возобновите использование мягкого шампуня через 48 часов." : "Resume mild shampoo use after 48 hours.",
-        locale === "ru" ? "Не чешите и не массируйте кожу головы." : "Avoid scratching or massaging the scalp.",
-        locale === "ru" ? "Для достижения оптимальных результатов рекомендуется пройти 6–10 сеансов." : "Complete 6–10 sessions for optimal results."
+        locale === "ru"
+          ? "Не мойте волосы и не используйте средства для волос в течение первых 24 часов."
+          : "Don’t wash hair or apply products for 24 hours.",
+        locale === "ru"
+          ? "Избегайте плавания, сауны и солнечного воздействия в течение 2–3 дней."
+          : "Avoid swimming, sauna, or sun exposure for 2–3 days.",
+        locale === "ru"
+          ? "Возобновите использование мягкого шампуня через 48 часов."
+          : "Resume mild shampoo use after 48 hours.",
+        locale === "ru"
+          ? "Не чешите и не массируйте кожу головы."
+          : "Avoid scratching or massaging the scalp.",
+        locale === "ru"
+          ? "Для достижения оптимальных результатов рекомендуется пройти 6–10 сеансов."
+          : "Complete 6–10 sessions for optimal results.",
       ],
       preList: [
-        locale === "ru" ? "Избегайте использования Миноксидила, красок для волос и жестких шампуней за 3 дня до процедуры." : "Avoid using Minoxidil, hair dyes, or harsh shampoos 3 days before.",
-        locale === "ru" ? "Не употребляйте алкоголь, кофеин или противовоспалительные препараты за 3 дня до процедуры." : "No alcohol, caffeine, or anti-inflammatories for 3 days.",
-        locale === "ru" ? "Хорошо поешьте и выпейте воды перед приездом." : "Eat a light meal and drink water before arriving.",
-        locale === "ru" ? "Не мойте волосы в день процедуры." : "Don’t wash hair the day of treatment.",
-        locale === "ru" ? "Сообщите врачу о принимаемых медикаментах и аллергиях." : "Tell your doctor about medications and allergies."
+        locale === "ru"
+          ? "Избегайте использования Миноксидила, красок для волос и жестких шампуней за 3 дня до процедуры."
+          : "Avoid using Minoxidil, hair dyes, or harsh shampoos 3 days before.",
+        locale === "ru"
+          ? "Не употребляйте алкоголь, кофеин или противовоспалительные препараты за 3 дня до процедуры."
+          : "No alcohol, caffeine, or anti-inflammatories for 3 days.",
+        locale === "ru"
+          ? "Хорошо поешьте и выпейте воды перед приездом."
+          : "Eat a light meal and drink water before arriving.",
+        locale === "ru"
+          ? "Не мойте волосы в день процедуры."
+          : "Don’t wash hair the day of treatment.",
+        locale === "ru"
+          ? "Сообщите врачу о принимаемых медикаментах и аллергиях."
+          : "Tell your doctor about medications and allergies.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -6586,15 +6786,16 @@ export const dataSubCategoryHandler = (
           },
           {
             title:
-              locale === "ru" ? "Четкие и выразительные контуры" : "Enhanced Definition",
+              locale === "ru"
+                ? "Четкие и выразительные контуры"
+                : "Enhanced Definition",
             desc:
               locale === "ru"
                 ? "вы получаете густую, равномерную и эстетически привлекательную бороду."
                 : "Achieve fuller coverage and well-defined beard contours for a more masculine facial profile",
           },
           {
-            title:
-              locale === "ru" ? "Пожизненный эффект" : "Lasting Solution",
+            title: locale === "ru" ? "Пожизненный эффект" : "Lasting Solution",
             desc:
               locale === "ru"
                 ? "один раз — на всю жизнь. Пересаженные волосы продолжают расти как обычные."
@@ -6628,39 +6829,84 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question : locale === "ru" ? "Будет ли это выглядеть естественно?" : "Will it look natural?",
-          answer : locale === "ru" ? "Да, результаты будут выглядеть натурально, так как используются ваши собственные волосы." : "Yes, shaped with your own hair."
+          question:
+            locale === "ru"
+              ? "Будет ли это выглядеть естественно?"
+              : "Will it look natural?",
+          answer:
+            locale === "ru"
+              ? "Да, результаты будут выглядеть натурально, так как используются ваши собственные волосы."
+              : "Yes, shaped with your own hair.",
         },
         {
-          question : locale === "ru" ? "Когда я могу бриться?" : "When can I shave?",
-          answer : locale === "ru" ? "Вы можете бриться через 2–3 недели после процедуры." : "After 2–3 weeks."
+          question:
+            locale === "ru" ? "Когда я могу бриться?" : "When can I shave?",
+          answer:
+            locale === "ru"
+              ? "Вы можете бриться через 2–3 недели после процедуры."
+              : "After 2–3 weeks.",
         },
         {
-          question : locale === "ru" ? "Это больно?" : "Is it painful?",
-          answer : locale === "ru" ? "Процедура не вызывает сильной боли, используется местная анестезия для минимизации дискомфорта." : "Mild soreness, local anesthesia is used."
+          question: locale === "ru" ? "Это больно?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Процедура не вызывает сильной боли, используется местная анестезия для минимизации дискомфорта."
+              : "Mild soreness, local anesthesia is used.",
         },
         {
-          question : locale === "ru" ? "Результаты постоянные?" : "Are results permanent?",
-          answer : locale === "ru" ? "Да, пересаженные волосы будут расти на протяжении всей жизни." : "Yes, lifelong growth."
+          question:
+            locale === "ru"
+              ? "Результаты постоянные?"
+              : "Are results permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, пересаженные волосы будут расти на протяжении всей жизни."
+              : "Yes, lifelong growth.",
         },
         {
-          question : locale === "ru" ? "Могу ли я выбрать стиль бороды?" : "Can I choose beard style?",
-          answer : locale === "ru" ? "Да, стиль бороды можно согласовать с врачом, чтобы он соответствовал вашим предпочтениям." : "Yes, planned with the doctor."
-        }
+          question:
+            locale === "ru"
+              ? "Могу ли я выбрать стиль бороды?"
+              : "Can I choose beard style?",
+          answer:
+            locale === "ru"
+              ? "Да, стиль бороды можно согласовать с врачом, чтобы он соответствовал вашим предпочтениям."
+              : "Yes, planned with the doctor.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Избегайте касания или бритья области бороды в течение 10 дней." : "Avoid touching or shaving the beard area for 10 days.",
-        locale === "ru" ? "Осторожно мойте лицо через 48 часов после операции, используя предоставленный раствор." : "Gently wash the face 48 hours post-op using provided solution.",
-        locale === "ru" ? "Воздержитесь от воздействия солнца, плавания и физических нагрузок в течение 2 недель." : "Avoid sun, swimming, or workouts for 2 weeks.",
-        locale === "ru" ? "Спите в приподнятом положении и на спине, чтобы предотвратить отеки." : "Sleep elevated and on your back.",
-        locale === "ru" ? "Позвольте коркам отпасть естественным образом - не трите их." : "Let scabs fall off naturally — don’t pick."
+        locale === "ru"
+          ? "Избегайте касания или бритья области бороды в течение 10 дней."
+          : "Avoid touching or shaving the beard area for 10 days.",
+        locale === "ru"
+          ? "Осторожно мойте лицо через 48 часов после операции, используя предоставленный раствор."
+          : "Gently wash the face 48 hours post-op using provided solution.",
+        locale === "ru"
+          ? "Воздержитесь от воздействия солнца, плавания и физических нагрузок в течение 2 недель."
+          : "Avoid sun, swimming, or workouts for 2 weeks.",
+        locale === "ru"
+          ? "Спите в приподнятом положении и на спине, чтобы предотвратить отеки."
+          : "Sleep elevated and on your back.",
+        locale === "ru"
+          ? "Позвольте коркам отпасть естественным образом - не трите их."
+          : "Let scabs fall off naturally — don’t pick.",
       ],
       preList: [
-        locale === "ru" ? "Избегайте курения, употребления алкоголя и разжижающих кровь препаратов за 7 дней до операции." : "Avoid smoking, alcohol, and blood thinners 7 days prior.",
-        locale === "ru" ? "Вымойте лицо и кожу головы накануне процедуры." : "Wash your face and scalp the night before.",
-        locale === "ru" ? "Не используйте кремы, лосьоны или масла в день операции." : "No creams, lotions, or oils on surgery day.",
-        locale === "ru" ? "Позавтракайте легким приемом пищи и наденьте одежду с пуговицами для удобства." : "Have a light meal and wear button-up clothing.",
-        locale === "ru" ? "Побрейте донорскую зону, если это требуется по указаниям врача." : "Shave the donor area if requested."
+        locale === "ru"
+          ? "Избегайте курения, употребления алкоголя и разжижающих кровь препаратов за 7 дней до операции."
+          : "Avoid smoking, alcohol, and blood thinners 7 days prior.",
+        locale === "ru"
+          ? "Вымойте лицо и кожу головы накануне процедуры."
+          : "Wash your face and scalp the night before.",
+        locale === "ru"
+          ? "Не используйте кремы, лосьоны или масла в день операции."
+          : "No creams, lotions, or oils on surgery day.",
+        locale === "ru"
+          ? "Позавтракайте легким приемом пищи и наденьте одежду с пуговицами для удобства."
+          : "Have a light meal and wear button-up clothing.",
+        locale === "ru"
+          ? "Побрейте донорскую зону, если это требуется по указаниям врача."
+          : "Shave the donor area if requested.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -6997,8 +7243,7 @@ export const dataSubCategoryHandler = (
                 : "A mustache transplant is a cosmetic procedure that helps create or restore the density of a mustache. It is commonly used by men who are unable to naturally achieve the desired shape or thickness of their mustache due to sparse hair growth, genetics, or other factors.",
           },
           {
-            header:
-              locale === "ru" ? "Как проходит процедура" : "How It Works",
+            header: locale === "ru" ? "Как проходит процедура" : "How It Works",
             desc:
               locale === "ru"
                 ? "Сначала волосы берутся из донорской зоны (затылок или бока) методом FUE — без разрезов и швов. Затем фолликулы обрабатываются и пересаживаются в область усов с учётом естественного направления роста для максимально натурального результата."
@@ -7015,39 +7260,89 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question : locale === "ru" ? "Когда начнут расти волосы?" : "When does hair grow?",
-          answer : locale === "ru" ? "Волосы начинают расти через 3–4 месяца, а полный рост происходит через 9 месяцев." : "In 3–4 months; full by 9 months."
+          question:
+            locale === "ru"
+              ? "Когда начнут расти волосы?"
+              : "When does hair grow?",
+          answer:
+            locale === "ru"
+              ? "Волосы начинают расти через 3–4 месяца, а полный рост происходит через 9 месяцев."
+              : "In 3–4 months; full by 9 months.",
         },
         {
-          question : locale === "ru" ? "Будут ли результаты постоянными?" : "Will the results be permanent?",
-          answer : locale === "ru" ? "Да, результаты будут постоянными." : "Yes it will be permanent."
+          question:
+            locale === "ru"
+              ? "Будут ли результаты постоянными?"
+              : "Will the results be permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, результаты будут постоянными."
+              : "Yes it will be permanent.",
         },
         {
-          question : locale === "ru" ? "Могу ли я придавать форму волосам?" : "Can I shape it?",
-          answer : locale === "ru" ? "Да, вы можете придавать форму после полного заживления." : "Yes, after healing."
+          question:
+            locale === "ru"
+              ? "Могу ли я придавать форму волосам?"
+              : "Can I shape it?",
+          answer:
+            locale === "ru"
+              ? "Да, вы можете придавать форму после полного заживления."
+              : "Yes, after healing.",
         },
         {
-          question : locale === "ru" ? "Будет ли это совпадать с моими натуральными волосами?" : "Will it match my hair?",
-          answer : locale === "ru" ? "Да, используются ваши собственные фолликулы, что обеспечивает естественный вид." : "Yes, your own follicles are used."
+          question:
+            locale === "ru"
+              ? "Будет ли это совпадать с моими натуральными волосами?"
+              : "Will it match my hair?",
+          answer:
+            locale === "ru"
+              ? "Да, используются ваши собственные фолликулы, что обеспечивает естественный вид."
+              : "Yes, your own follicles are used.",
         },
         {
-          question : locale === "ru" ? "Останутся ли видимые шрамы?" : "Will be visible scars?",
-          answer : locale === "ru" ? "Нет, метод FUE оставляет минимальные следы и почти не оставляет видимых шрамов." : "No, FUE technique leaves minimal trace."
-        }
+          question:
+            locale === "ru"
+              ? "Останутся ли видимые шрамы?"
+              : "Will be visible scars?",
+          answer:
+            locale === "ru"
+              ? "Нет, метод FUE оставляет минимальные следы и почти не оставляет видимых шрамов."
+              : "No, FUE technique leaves minimal trace.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Не мойте и не брейте область над верхней губой в течение 5 дней после процедуры." : "Don’t wash or shave upper lip for 5 days.",
-        locale === "ru" ? "Если возникнет отек, используйте холодный компресс." : "Use cold compress if swelling occurs.",
-        locale === "ru" ? "Избегайте солнечного воздействия, курения и острой пищи в течение 10 дней." : "Avoid sun, smoking, spicy foods for 10 days.",
-        locale === "ru" ? "Не трогайте область трансплантации." : "Don’t pick the area.",
-        locale === "ru" ? "Используйте прописанные мази или спреи для ухода." : "Use prescribed ointments or sprays."
+        locale === "ru"
+          ? "Не мойте и не брейте область над верхней губой в течение 5 дней после процедуры."
+          : "Don’t wash or shave upper lip for 5 days.",
+        locale === "ru"
+          ? "Если возникнет отек, используйте холодный компресс."
+          : "Use cold compress if swelling occurs.",
+        locale === "ru"
+          ? "Избегайте солнечного воздействия, курения и острой пищи в течение 10 дней."
+          : "Avoid sun, smoking, spicy foods for 10 days.",
+        locale === "ru"
+          ? "Не трогайте область трансплантации."
+          : "Don’t pick the area.",
+        locale === "ru"
+          ? "Используйте прописанные мази или спреи для ухода."
+          : "Use prescribed ointments or sprays.",
       ],
       preList: [
-        locale === "ru" ? "Избегайте использования разжижителей крови, алкоголя и курения за 5 дней до операции." : "Avoid blood thinners, alcohol, and smoking 5 days prior.",
-        locale === "ru" ? "Тщательно очистите лицо и область верхней губы накануне процедуры." : "Clean your face and upper lip thoroughly the night before.",
-        locale === "ru" ? "В день операции не используйте кремы или средства для волос." : "No creams or hair products on surgery day.",
-        locale === "ru" ? "Обязательно сообщите врачу о любых хронических заболеваниях." : "Inform doctor about health conditions.",
-        locale === "ru" ? "Позавтракайте и выберите удобную одежду." : "Eat breakfast and wear comfortable clothes."
+        locale === "ru"
+          ? "Избегайте использования разжижителей крови, алкоголя и курения за 5 дней до операции."
+          : "Avoid blood thinners, alcohol, and smoking 5 days prior.",
+        locale === "ru"
+          ? "Тщательно очистите лицо и область верхней губы накануне процедуры."
+          : "Clean your face and upper lip thoroughly the night before.",
+        locale === "ru"
+          ? "В день операции не используйте кремы или средства для волос."
+          : "No creams or hair products on surgery day.",
+        locale === "ru"
+          ? "Обязательно сообщите врачу о любых хронических заболеваниях."
+          : "Inform doctor about health conditions.",
+        locale === "ru"
+          ? "Позавтракайте и выберите удобную одежду."
+          : "Eat breakfast and wear comfortable clothes.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -7563,15 +7858,14 @@ export const dataSubCategoryHandler = (
                 : "Custom-designed eyebrows to frame your face and enhance your features.",
           },
           {
-            title:
-              locale === "ru" ? "Долговечность" : "Permanent Results",
+            title: locale === "ru" ? "Долговечность" : "Permanent Results",
             desc:
               locale === "ru"
                 ? "результат сохраняется надолго, избавляя от необходимости ежедневного макияжа и коррекции."
                 : "Enjoy lasting results that eliminate the need for daily makeup and routines",
           },
         ],
-        categories: [ 
+        categories: [
           {
             header: locale === "ru" ? "Описание" : "Description",
             desc:
@@ -7580,8 +7874,7 @@ export const dataSubCategoryHandler = (
                 : "An eyebrow transplant is a cosmetic procedure designed to restore the shape and thickness of eyebrows, enhance their contours, or fill in areas where hair does not grow. This surgery is suitable for people who have lost their eyebrows due to injury, burns, genetic factors, or excessive plucking.",
           },
           {
-            header:
-              locale === "ru" ? "Как проходит процедура" : "How It Works",
+            header: locale === "ru" ? "Как проходит процедура" : "How It Works",
             desc:
               locale === "ru"
                 ? "Процедура включает несколько этапов. Сначала волосы извлекаются из донорской зоны, чаще всего с затылка, где они более густые и крепкие. Применяется метод FUE (Follicular Unit Extraction) — безболезненный и щадящий способ с минимальными следами. Затем извлечённые фолликулы обрабатываются и подготавливаются к пересадке в область бровей. На заключительном этапе волосы пересаживаются с учётом естественного направления и угла роста, что обеспечивает максимально естественный и гармоничный результат."
@@ -7598,39 +7891,87 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question : locale === "ru" ? "Выпадут ли брови?" : "Will brows fall out?",
-          answer : locale === "ru" ? "Первоначальная потеря волос является нормальным процессом, восстановление начинается через 3 месяца." : "Initial shedding is normal; regrowth in 3 months."
+          question:
+            locale === "ru" ? "Выпадут ли брови?" : "Will brows fall out?",
+          answer:
+            locale === "ru"
+              ? "Первоначальная потеря волос является нормальным процессом, восстановление начинается через 3 месяца."
+              : "Initial shedding is normal; regrowth in 3 months.",
         },
         {
-          question : locale === "ru" ? "Могу ли я придать форму бровям?" : "Can I shape them?",
-          answer : locale === "ru" ? "Да, после 4–6 недель, когда процесс заживления завершится." : "Yes, after 4–6 weeks."
+          question:
+            locale === "ru"
+              ? "Могу ли я придать форму бровям?"
+              : "Can I shape them?",
+          answer:
+            locale === "ru"
+              ? "Да, после 4–6 недель, когда процесс заживления завершится."
+              : "Yes, after 4–6 weeks.",
         },
         {
-          question : locale === "ru" ? "Будут ли они расти так же, как волосы на голове?" : "Do they grow like scalp hair?",
-          answer : locale === "ru" ? "Да, их рост будет аналогичен росту волос на коже головы, и периодическое подравнивание будет необходимо." : "Yes, occasional trimming needed."
+          question:
+            locale === "ru"
+              ? "Будут ли они расти так же, как волосы на голове?"
+              : "Do they grow like scalp hair?",
+          answer:
+            locale === "ru"
+              ? "Да, их рост будет аналогичен росту волос на коже головы, и периодическое подравнивание будет необходимо."
+              : "Yes, occasional trimming needed.",
         },
         {
-          question : locale === "ru" ? "Результаты будут постоянными?" : "Are the results be permanent?",
-          answer : locale === "ru" ? "Да, результаты будут постоянными." : "Yes it will be."
+          question:
+            locale === "ru"
+              ? "Результаты будут постоянными?"
+              : "Are the results be permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, результаты будут постоянными."
+              : "Yes it will be.",
         },
         {
-          question : locale === "ru" ? "Могу ли я использовать макияж позже?" : "Can I use makeup later?",
-          answer : locale === "ru" ? "Да, как только область заживет, можно использовать макияж." : "Yes, once healed."
-        }
+          question:
+            locale === "ru"
+              ? "Могу ли я использовать макияж позже?"
+              : "Can I use makeup later?",
+          answer:
+            locale === "ru"
+              ? "Да, как только область заживет, можно использовать макияж."
+              : "Yes, once healed.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Держите брови сухими в течение первых 48 часов." : "Keep brows dry for 48 hours.",
-        locale === "ru" ? "Воздержитесь от использования макияжа и укладки волос в течение 10 дней." : "No makeup or styling for 10 days.",
-        locale === "ru" ? "Спите на спине, чтобы избежать трения и повреждений." : "Sleep on your back to avoid friction.",
-        locale === "ru" ? "Не ковыряйте корки - они отпадут самостоятельно." : "Don’t pick at the scabs.",
-        locale === "ru" ? "Избегайте косметических процедур и посещения сауны в течение 2 недель." : "Avoid facials or sauna for 2 weeks."
+        locale === "ru"
+          ? "Держите брови сухими в течение первых 48 часов."
+          : "Keep brows dry for 48 hours.",
+        locale === "ru"
+          ? "Воздержитесь от использования макияжа и укладки волос в течение 10 дней."
+          : "No makeup or styling for 10 days.",
+        locale === "ru"
+          ? "Спите на спине, чтобы избежать трения и повреждений."
+          : "Sleep on your back to avoid friction.",
+        locale === "ru"
+          ? "Не ковыряйте корки - они отпадут самостоятельно."
+          : "Don’t pick at the scabs.",
+        locale === "ru"
+          ? "Избегайте косметических процедур и посещения сауны в течение 2 недель."
+          : "Avoid facials or sauna for 2 weeks.",
       ],
       preList: [
-        locale === "ru" ? "За неделю до процедуры прекратите использование ретинола, макияжа и краски для бровей." : "Stop using retinol, makeup, or brow dye 1 week before.",
-        locale === "ru" ? "За 5 дней избегайте приёма алкоголя, кофеина и препаратов, разжижающих кровь." : "Avoid blood thinners, alcohol, and caffeine 5 days prior.",
-        locale === "ru" ? "Накануне тщательно очистите кожу лица." : "Cleanse your face thoroughly the day before.",
-        locale === "ru" ? "В день операции приходите без макияжа." : "No makeup on surgery day.",
-        locale === "ru" ? "Обсудите с хирургом желаемую форму бровей заранее, чтобы добиться идеального результата." : "Discuss desired shape with your surgeon."
+        locale === "ru"
+          ? "За неделю до процедуры прекратите использование ретинола, макияжа и краски для бровей."
+          : "Stop using retinol, makeup, or brow dye 1 week before.",
+        locale === "ru"
+          ? "За 5 дней избегайте приёма алкоголя, кофеина и препаратов, разжижающих кровь."
+          : "Avoid blood thinners, alcohol, and caffeine 5 days prior.",
+        locale === "ru"
+          ? "Накануне тщательно очистите кожу лица."
+          : "Cleanse your face thoroughly the day before.",
+        locale === "ru"
+          ? "В день операции приходите без макияжа."
+          : "No makeup on surgery day.",
+        locale === "ru"
+          ? "Обсудите с хирургом желаемую форму бровей заранее, чтобы добиться идеального результата."
+          : "Discuss desired shape with your surgeon.",
       ],
       conclusion: {
         title: locale === "ru" ? "Вывод" : "Conclusion",
@@ -7903,40 +8244,92 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question : locale === "ru" ? "Когда я увижу результаты?" : "When can I see results?",
-          answer : locale === "ru" ? "Первоначальные результаты становятся видны через 1–3 месяца, окончательные — через 6–12 месяцев." : "Initial results appear in 1–3 months, final in 6–12 months"
+          question:
+            locale === "ru"
+              ? "Когда я увижу результаты?"
+              : "When can I see results?",
+          answer:
+            locale === "ru"
+              ? "Первоначальные результаты становятся видны через 1–3 месяца, окончательные — через 6–12 месяцев."
+              : "Initial results appear in 1–3 months, final in 6–12 months",
         },
         {
-          question : locale === "ru" ? "Будет ли трудно дышать после операции?" : "Is breathing difficult after?",
-          answer : locale === "ru" ? "Легкая заложенность носа - это нормально и проходит в процессе заживления." : "Mild congestion is normal and improves with healing"
+          question:
+            locale === "ru"
+              ? "Будет ли трудно дышать после операции?"
+              : "Is breathing difficult after?",
+          answer:
+            locale === "ru"
+              ? "Легкая заложенность носа - это нормально и проходит в процессе заживления."
+              : "Mild congestion is normal and improves with healing",
         },
         {
-          question : locale === "ru" ? "Останутся ли у меня шрамы?" : "Will I have scars?",
-          answer : locale === "ru" ? "При открытой ринопластике может остаться небольшой шрам под носом, но он будет едва заметен." : "Open rhinoplasty may leave a small scar under the nose, barely visible"
+          question:
+            locale === "ru"
+              ? "Останутся ли у меня шрамы?"
+              : "Will I have scars?",
+          answer:
+            locale === "ru"
+              ? "При открытой ринопластике может остаться небольшой шрам под носом, но он будет едва заметен."
+              : "Open rhinoplasty may leave a small scar under the nose, barely visible",
         },
         {
-          question : locale === "ru" ? "Когда я смогу вернуться к обычной жизни, включая работу и социальные мероприятия?" : "When can I return to normal activities, including work and social interactions?",
-          answer : locale === "ru" ? "Обычно через 1-2 недели, в зависимости от вашего состояния." : "Answer: Typically within 1-2 weeks, depending on your condition"
+          question:
+            locale === "ru"
+              ? "Когда я смогу вернуться к обычной жизни, включая работу и социальные мероприятия?"
+              : "When can I return to normal activities, including work and social interactions?",
+          answer:
+            locale === "ru"
+              ? "Обычно через 1-2 недели, в зависимости от вашего состояния."
+              : "Answer: Typically within 1-2 weeks, depending on your condition",
         },
         {
-          question : locale === "ru" ? "Есть ли риски при ринопластике?" : "Are there any risks of rhinoplasty?",
-          answer : locale === "ru" ? "Да, как и при любой операции, существуют риски, такие как инфекция, кровотечение или проблемы с дыханием." : "Yes, like all surgeries, it carries risks such as infection, bleeding, or breathing issues."
-        }
+          question:
+            locale === "ru"
+              ? "Есть ли риски при ринопластике?"
+              : "Are there any risks of rhinoplasty?",
+          answer:
+            locale === "ru"
+              ? "Да, как и при любой операции, существуют риски, такие как инфекция, кровотечение или проблемы с дыханием."
+              : "Yes, like all surgeries, it carries risks such as infection, bleeding, or breathing issues.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Спите с приподнятой головой." : "Sleep with head elevated",
-        locale === "ru" ? "Не сморкайтесь как минимум неделю." : "Don’t blow your nose for at least a week",
-        locale === "ru" ? "Используйте холодные компрессы для уменьшения отека." : "Use cold compresses to reduce swelling",
-        locale === "ru" ? "Избегайте интенсивных физических нагрузок в течение 2–3 недель." : "Avoid heavy exercise for 2–3 weeks",
-        locale === "ru" ? "Не носите очки, которые касаются вашего носа." : "Don’t wear glasses that touch your nose",
-        locale === "ru" ? "Аккуратно прикладывайте холодные компрессы, чтобы избежать обморожения." : "Apply cold compresses carefully to avoid frostbite"
+        locale === "ru"
+          ? "Спите с приподнятой головой."
+          : "Sleep with head elevated",
+        locale === "ru"
+          ? "Не сморкайтесь как минимум неделю."
+          : "Don’t blow your nose for at least a week",
+        locale === "ru"
+          ? "Используйте холодные компрессы для уменьшения отека."
+          : "Use cold compresses to reduce swelling",
+        locale === "ru"
+          ? "Избегайте интенсивных физических нагрузок в течение 2–3 недель."
+          : "Avoid heavy exercise for 2–3 weeks",
+        locale === "ru"
+          ? "Не носите очки, которые касаются вашего носа."
+          : "Don’t wear glasses that touch your nose",
+        locale === "ru"
+          ? "Аккуратно прикладывайте холодные компрессы, чтобы избежать обморожения."
+          : "Apply cold compresses carefully to avoid frostbite",
       ],
       preList: [
-        locale === "ru" ? "Избегайте препаратов, разжижающих кровь, таких как аспирин или ибупрофен, в течение 2 недель до операции." : "Avoid blood thinners like aspirin or ibuprofen for 2 weeks",
-        locale === "ru" ? "Прекратите курить как минимум за 2 недели до процедуры." : "Stop smoking at least 2 weeks before",
-        locale === "ru" ? "Пройдите необходимые лабораторные тесты, если это указано." : "Complete lab tests if requested",
-        locale === "ru" ? "Не ешьте и не пейте после полуночи перед операцией." : "No food/drink after midnight before surgery",
-        locale === "ru" ? "Обсудите все принимаемые вами лекарства с вашим хирургом перед процедурой." : "Discuss any medications you're taking with your surgeon prior to the procedure."
+        locale === "ru"
+          ? "Избегайте препаратов, разжижающих кровь, таких как аспирин или ибупрофен, в течение 2 недель до операции."
+          : "Avoid blood thinners like aspirin or ibuprofen for 2 weeks",
+        locale === "ru"
+          ? "Прекратите курить как минимум за 2 недели до процедуры."
+          : "Stop smoking at least 2 weeks before",
+        locale === "ru"
+          ? "Пройдите необходимые лабораторные тесты, если это указано."
+          : "Complete lab tests if requested",
+        locale === "ru"
+          ? "Не ешьте и не пейте после полуночи перед операцией."
+          : "No food/drink after midnight before surgery",
+        locale === "ru"
+          ? "Обсудите все принимаемые вами лекарства с вашим хирургом перед процедурой."
+          : "Discuss any medications you're taking with your surgeon prior to the procedure.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -8352,8 +8745,7 @@ export const dataSubCategoryHandler = (
                 : "Blepharoplasty is a surgical procedure aimed at correcting the eyelids by removing excess skin, fat deposits, and other imperfections to enhance the appearance of the eyes. It can be performed on the upper or lower eyelids depending on the patient’s needs. ",
           },
           {
-            header:
-              locale === "ru" ? "Как это работает" : "How It Works",
+            header: locale === "ru" ? "Как это работает" : "How It Works",
             desc:
               locale === "ru"
                 ? "Блефаропластика начинается с консультации, где хирург определяет цели процедуры — устранение лишней кожи, жировых мешков или коррекция формы век. Во время операции удаляются избыточные ткани с верхних и/или нижних век, при этом разрезы размещаются в естественных складках или внутри века для минимизации шрамов. Восстановление занимает несколько недель и включает использование повязок или специальных полосок для ускоренного заживления."
@@ -8370,35 +8762,74 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question : locale === "ru" ? "Будут ли у меня шрамы?" : "Will I have scars?",
-          answer : locale === "ru" ? "Разрезы скрыты в естественных складках и заживают с минимальными следами." : "Incisions are hidden in natural creases and fade well"
+          question:
+            locale === "ru" ? "Будут ли у меня шрамы?" : "Will I have scars?",
+          answer:
+            locale === "ru"
+              ? "Разрезы скрыты в естественных складках и заживают с минимальными следами."
+              : "Incisions are hidden in natural creases and fade well",
         },
         {
-          question : locale === "ru" ? "Помогает ли это зрению?" : "Does it help vision?",
-          answer : locale === "ru" ? "Да, если свисающая кожа мешала обзору, операция может улучшить зрение." : "Yes, if drooping skin was obstructing sight"
+          question:
+            locale === "ru"
+              ? "Помогает ли это зрению?"
+              : "Does it help vision?",
+          answer:
+            locale === "ru"
+              ? "Да, если свисающая кожа мешала обзору, операция может улучшить зрение."
+              : "Yes, if drooping skin was obstructing sight",
         },
         {
-          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
-          answer : locale === "ru" ? "Обычно ощущается легкое стягивание или дискомфорт, но болезненные ощущения минимальны." : "Mostly mild tightness or discomfort"
+          question: locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Обычно ощущается легкое стягивание или дискомфорт, но болезненные ощущения минимальны."
+              : "Mostly mild tightness or discomfort",
         },
         {
-          question : locale === "ru" ? "Когда я могу возобновить физическую активность?" : "When can I resume physical activity?",
-          answer : locale === "ru" ? "Обычно через 2-3 недели, однако рекомендуется проконсультироваться с вашим врачом." : "Answer: Typically after 2-3 weeks, but check with your doctor"
-        }
+          question:
+            locale === "ru"
+              ? "Когда я могу возобновить физическую активность?"
+              : "When can I resume physical activity?",
+          answer:
+            locale === "ru"
+              ? "Обычно через 2-3 недели, однако рекомендуется проконсультироваться с вашим врачом."
+              : "Answer: Typically after 2-3 weeks, but check with your doctor",
+        },
       ],
       posts: [
-        locale === "ru" ? "Используйте холодные компрессы для уменьшения отека." : "Use cold compresses for swelling",
-        locale === "ru" ? "Держите голову приподнятой во время сна." : "Keep head elevated while sleeping",
-        locale === "ru" ? "Применяйте предписанные глазные мази и капли." : "Use prescribed eye ointments/drops",
-        locale === "ru" ? "Избегайте длительного времени перед экраном и физической нагрузки в течение нескольких дней." : "Avoid screen time and lifting for a few days",
-        locale === "ru" ? "Обычно возвращение к работе возможно через 7–10 дней." : "Return to work in 7–10 days typically",
-        locale === "ru" ? "Будьте осторожны при применении холодных компрессов, чтобы избежать переохлаждения кожи." : "Be cautious when applying cold compresses to avoid overcooling the skin"
+        locale === "ru"
+          ? "Используйте холодные компрессы для уменьшения отека."
+          : "Use cold compresses for swelling",
+        locale === "ru"
+          ? "Держите голову приподнятой во время сна."
+          : "Keep head elevated while sleeping",
+        locale === "ru"
+          ? "Применяйте предписанные глазные мази и капли."
+          : "Use prescribed eye ointments/drops",
+        locale === "ru"
+          ? "Избегайте длительного времени перед экраном и физической нагрузки в течение нескольких дней."
+          : "Avoid screen time and lifting for a few days",
+        locale === "ru"
+          ? "Обычно возвращение к работе возможно через 7–10 дней."
+          : "Return to work in 7–10 days typically",
+        locale === "ru"
+          ? "Будьте осторожны при применении холодных компрессов, чтобы избежать переохлаждения кожи."
+          : "Be cautious when applying cold compresses to avoid overcooling the skin",
       ],
       preList: [
-        locale === "ru" ? "Избегайте разжижающих кровь препаратов и травяных добавок в течение 1–2 недель" : "Avoid blood thinners/herbal supplements for 1–2 weeks",
-        locale === "ru" ? "Не используйте макияж и контактные линзы в день операции" : "Don’t wear makeup or contact lenses on surgery day",
-        locale === "ru" ? "Организуйте транспорт и обеспечьте себе отдых после операции" : "Arrange for transport and rest post-op",
-        locale === "ru" ? "Обсудите с вашим хирургом любые беспокойства по поводу изменений внешности после операции" : "Discuss any concerns regarding post-surgery appearance changes with your surgeon"
+        locale === "ru"
+          ? "Избегайте разжижающих кровь препаратов и травяных добавок в течение 1–2 недель"
+          : "Avoid blood thinners/herbal supplements for 1–2 weeks",
+        locale === "ru"
+          ? "Не используйте макияж и контактные линзы в день операции"
+          : "Don’t wear makeup or contact lenses on surgery day",
+        locale === "ru"
+          ? "Организуйте транспорт и обеспечьте себе отдых после операции"
+          : "Arrange for transport and rest post-op",
+        locale === "ru"
+          ? "Обсудите с вашим хирургом любые беспокойства по поводу изменений внешности после операции"
+          : "Discuss any concerns regarding post-surgery appearance changes with your surgeon",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -8769,8 +9200,7 @@ export const dataSubCategoryHandler = (
                 : "Labiaplasty is a surgical procedure aimed at altering the size and shape of the labia, often performed to improve aesthetic appearance and increase comfort. Labiaplasty can involve reducing the size of the labia majora to relieve discomfort caused by hypertrophy (enlargement) of the labia.",
           },
           {
-            header:
-              locale === "ru" ? "Как проходит процедура" : "How it works",
+            header: locale === "ru" ? "Как проходит процедура" : "How it works",
             desc:
               locale === "ru"
                 ? "Операция проводится под местной или общей анестезией. Хирург делает аккуратные надрезы на малых половых губах, удаляет излишки ткани и придаёт области более симметричную, эстетичную форму. После вмешательства возможны легкие отеки и чувствительность, которые обычно проходят в течение нескольких недель. По желанию пациентки можно достичь так называемого «Barbie Look»— максимально аккуратного и компактного результата."
@@ -8787,41 +9217,89 @@ export const dataSubCategoryHandler = (
       },
       faqs: [
         {
-          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
-          answer : locale === "ru" ? "Легкая болезненность в течение нескольких дней - это нормально и обычно хорошо контролируется обезболивающими." : "Tenderness for a few days is normal, managed with meds"
+          question: locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Легкая болезненность в течение нескольких дней - это нормально и обычно хорошо контролируется обезболивающими."
+              : "Tenderness for a few days is normal, managed with meds",
         },
         {
-          question : locale === "ru" ? "Будут ли видны шрамы?" : "Will there be visible scars?",
-          answer : locale === "ru" ? "Шрамы минимальны и со временем становятся менее заметными." : "Scars are small and fade over time"
+          question:
+            locale === "ru"
+              ? "Будут ли видны шрамы?"
+              : "Will there be visible scars?",
+          answer:
+            locale === "ru"
+              ? "Шрамы минимальны и со временем становятся менее заметными."
+              : "Scars are small and fade over time",
         },
         {
-          question : locale === "ru" ? "Могу ли я заниматься спортом после процедуры?" : "Can I exercise after?",
-          answer : locale === "ru" ? "В первые 1–2 недели рекомендуется только лёгкая активность, например, прогулки." : "Light walking only for first 1–2 weeks"
+          question:
+            locale === "ru"
+              ? "Могу ли я заниматься спортом после процедуры?"
+              : "Can I exercise after?",
+          answer:
+            locale === "ru"
+              ? "В первые 1–2 недели рекомендуется только лёгкая активность, например, прогулки."
+              : "Light walking only for first 1–2 weeks",
         },
         {
-          question : locale === "ru" ? "Это безопасно?" : "Is it safe?",
-          answer : locale === "ru" ? "Да, при условии, что процедура проводится квалифицированным и опытным хирургом." : "Yes, when done by qualified surgeons"
+          question: locale === "ru" ? "Это безопасно?" : "Is it safe?",
+          answer:
+            locale === "ru"
+              ? "Да, при условии, что процедура проводится квалифицированным и опытным хирургом."
+              : "Yes, when done by qualified surgeons",
         },
         {
-          question : locale === "ru" ? "Повлияет ли это на чувствительность?" : "Will it affect sensitivity?",
-          answer : locale === "ru" ? "В большинстве случаев чувствительность сохраняется; некоторые пациенты даже отмечают улучшение комфорта." : "Most patients report no change or improved comfort"
-        }
+          question:
+            locale === "ru"
+              ? "Повлияет ли это на чувствительность?"
+              : "Will it affect sensitivity?",
+          answer:
+            locale === "ru"
+              ? "В большинстве случаев чувствительность сохраняется; некоторые пациенты даже отмечают улучшение комфорта."
+              : "Most patients report no change or improved comfort",
+        },
       ],
       posts: [
-        locale === "ru" ? "Прикладывайте холодные компрессы поверх одежды, чтобы уменьшить отек." : "Apply cold compresses over clothing to reduce swelling",
-        locale === "ru" ? "Поддерживайте чистоту и сухость в зоне вмешательства; при необходимости используйте сидячие ванны по рекомендации врача." : "Keep area clean and dry, use sitz baths if recommended",
-        locale === "ru" ? "Избегайте тесной одежды и половой активности в течение 4–6 недель." : "Avoid tight clothing and sexual activity for 4–6 weeks",
-        locale === "ru" ? "Принимайте все назначенные лекарства и обезболивающие строго по инструкции." : "Take all prescribed medications and pain relief",
-        locale === "ru" ? "Следите за признаками инфекции: повышенная температура, неприятный запах или гнойные выделения." : "Monitor for signs of infection (fever, odor, pus)",
-        locale === "ru" ? "Используйте сидячие ванны с осторожностью, чтобы избежать раздражения или повреждения ткани." : "Be cautious with sitz baths to avoid irritation or damage to the area"
+        locale === "ru"
+          ? "Прикладывайте холодные компрессы поверх одежды, чтобы уменьшить отек."
+          : "Apply cold compresses over clothing to reduce swelling",
+        locale === "ru"
+          ? "Поддерживайте чистоту и сухость в зоне вмешательства; при необходимости используйте сидячие ванны по рекомендации врача."
+          : "Keep area clean and dry, use sitz baths if recommended",
+        locale === "ru"
+          ? "Избегайте тесной одежды и половой активности в течение 4–6 недель."
+          : "Avoid tight clothing and sexual activity for 4–6 weeks",
+        locale === "ru"
+          ? "Принимайте все назначенные лекарства и обезболивающие строго по инструкции."
+          : "Take all prescribed medications and pain relief",
+        locale === "ru"
+          ? "Следите за признаками инфекции: повышенная температура, неприятный запах или гнойные выделения."
+          : "Monitor for signs of infection (fever, odor, pus)",
+        locale === "ru"
+          ? "Используйте сидячие ванны с осторожностью, чтобы избежать раздражения или повреждения ткани."
+          : "Be cautious with sitz baths to avoid irritation or damage to the area",
       ],
       preList: [
-        locale === "ru" ? "Избегайте приема НПВП и биодобавок за 7 дней до операции." : "Avoid NSAIDs and supplements 1 week before",
-        locale === "ru" ? "Воздержитесь от курения за 2–3 недели до процедуры." : "Stop smoking 2–3 weeks before",
-        locale === "ru" ? "Побрейте или аккуратно подстригите зону вмешательства согласно рекомендациям врача." : "Shave or trim the area as instructed pre-surgery",
-        locale === "ru" ? "Наденьте свободное хлопковое нижнее белье и возьмите с собой гигиеническую прокладку." : "Wear loose cotton underwear and bring a pad",
-        locale === "ru" ? "Запланируйте не менее 3–5 дней на восстановление и отдых." : "Arrange time off for rest (at least 3–5 days)",
-        locale === "ru" ? "Обязательно сообщите врачу о любых хронических заболеваниях или аллергиях, которые могут повлиять на заживление." : "Inform your doctor of any chronic illnesses or allergies that could affect healing."
+        locale === "ru"
+          ? "Избегайте приема НПВП и биодобавок за 7 дней до операции."
+          : "Avoid NSAIDs and supplements 1 week before",
+        locale === "ru"
+          ? "Воздержитесь от курения за 2–3 недели до процедуры."
+          : "Stop smoking 2–3 weeks before",
+        locale === "ru"
+          ? "Побрейте или аккуратно подстригите зону вмешательства согласно рекомендациям врача."
+          : "Shave or trim the area as instructed pre-surgery",
+        locale === "ru"
+          ? "Наденьте свободное хлопковое нижнее белье и возьмите с собой гигиеническую прокладку."
+          : "Wear loose cotton underwear and bring a pad",
+        locale === "ru"
+          ? "Запланируйте не менее 3–5 дней на восстановление и отдых."
+          : "Arrange time off for rest (at least 3–5 days)",
+        locale === "ru"
+          ? "Обязательно сообщите врачу о любых хронических заболеваниях или аллергиях, которые могут повлиять на заживление."
+          : "Inform your doctor of any chronic illnesses or allergies that could affect healing.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -9013,10 +9491,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       benefits: {
         items: [
           {
-            title:
-              locale === "ru"
-                ? "Чёткий профиль"
-                : "Profile Enhancement",
+            title: locale === "ru" ? "Чёткий профиль" : "Profile Enhancement",
             desc:
               locale === "ru"
                 ? "Подарите себе более молодой и подтянутый вид, избавившись от двойного подбородка."
@@ -9063,33 +9538,67 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
       faqs: [
         {
-          question : locale === "ru" ? "Это навсегда?" : "Is it permanent?",
-          answer : locale === "ru" ? "Да, при условии поддержания стабильного веса." : "Yes, as long as you maintain your weight"
+          question: locale === "ru" ? "Это навсегда?" : "Is it permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, при условии поддержания стабильного веса."
+              : "Yes, as long as you maintain your weight",
         },
         {
-          question : locale === "ru" ? "Как долго нужно носить компрессионное изделие?" : "How long do I wear the compression garment?",
-          answer : locale === "ru" ? "Обычно в течение 3–7 дней." : "Usually for 3–7 days"
+          question:
+            locale === "ru"
+              ? "Как долго нужно носить компрессионное изделие?"
+              : "How long do I wear the compression garment?",
+          answer:
+            locale === "ru"
+              ? "Обычно в течение 3–7 дней."
+              : "Usually for 3–7 days",
         },
         {
-          question : locale === "ru" ? "Вернется ли жир?" : "Will fat return?",
-          answer : locale === "ru" ? "Нет, в обработанных зонах, если вес остается стабильным." : "Not in treated areas if weight is stable"
+          question: locale === "ru" ? "Вернется ли жир?" : "Will fat return?",
+          answer:
+            locale === "ru"
+              ? "Нет, в обработанных зонах, если вес остается стабильным."
+              : "Not in treated areas if weight is stable",
         },
         {
-          question : locale === "ru" ? "Когда я могу возобновить физическую активность?" : "When can I resume physical activity?",
-          answer : locale === "ru" ? "Обычно через 2–3 недели, но проконсультируйтесь с вашим врачом." : "Answer: Typically after 2-3 weeks, but check with your doctor"
-        }
+          question:
+            locale === "ru"
+              ? "Когда я могу возобновить физическую активность?"
+              : "When can I resume physical activity?",
+          answer:
+            locale === "ru"
+              ? "Обычно через 2–3 недели, но проконсультируйтесь с вашим врачом."
+              : "Answer: Typically after 2-3 weeks, but check with your doctor",
+        },
       ],
       posts: [
-        locale === "ru" ? "Избегайте наклонов и интенсивной физической активности в течение недели." : "Avoid bending over or heavy activity for a week",
-        locale === "ru" ? "Ожидайте отека и синяков в течение 7–14 дней." : "Expect swelling and bruising for 7–14 days",
-        locale === "ru" ? "Результаты станут видимыми через 3–4 недели." : "Results become visible in 3–4 weeks",
-        locale === "ru" ? "Носите компрессионное изделие в соответствии с указаниями, чтобы предотвратить осложнения." : "Wear the compression garment as directed to avoid complications"
+        locale === "ru"
+          ? "Избегайте наклонов и интенсивной физической активности в течение недели."
+          : "Avoid bending over or heavy activity for a week",
+        locale === "ru"
+          ? "Ожидайте отека и синяков в течение 7–14 дней."
+          : "Expect swelling and bruising for 7–14 days",
+        locale === "ru"
+          ? "Результаты станут видимыми через 3–4 недели."
+          : "Results become visible in 3–4 weeks",
+        locale === "ru"
+          ? "Носите компрессионное изделие в соответствии с указаниями, чтобы предотвратить осложнения."
+          : "Wear the compression garment as directed to avoid complications",
       ],
       preList: [
-        locale === "ru" ? "Избегайте алкоголя, нестероидных противовоспалительных препаратов и курения перед операцией." : "Avoid alcohol, NSAIDs, and smoking pre-op",
-        locale === "ru" ? "Наденьте свободную одежду в день операции." : "Wear loose clothing on surgery day",
-        locale === "ru" ? "Подготовьте мягкие блюда для восстановления." : "Prepare soft meals for recovery",
-        locale === "ru" ? "Сообщите своему хирургу о любых дополнительных лекарствах, которые вы принимаете." : "Inform your surgeon of any additional medications you're taking."
+        locale === "ru"
+          ? "Избегайте алкоголя, нестероидных противовоспалительных препаратов и курения перед операцией."
+          : "Avoid alcohol, NSAIDs, and smoking pre-op",
+        locale === "ru"
+          ? "Наденьте свободную одежду в день операции."
+          : "Wear loose clothing on surgery day",
+        locale === "ru"
+          ? "Подготовьте мягкие блюда для восстановления."
+          : "Prepare soft meals for recovery",
+        locale === "ru"
+          ? "Сообщите своему хирургу о любых дополнительных лекарствах, которые вы принимаете."
+          : "Inform your surgeon of any additional medications you're taking.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -9366,42 +9875,85 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
       faqs: [
         {
-          question : locale === "ru" ? "" : "Is otoplasty painful?",
-          answer : locale === "ru" ? "" : "It is generally well tolerated. Most patients feel mild pressure or tightness around the ears for a few days. Pain medications help manage discomfort."
+          question: locale === "ru" ? "" : "Is otoplasty painful?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "It is generally well tolerated. Most patients feel mild pressure or tightness around the ears for a few days. Pain medications help manage discomfort.",
         },
         {
-          question : locale === "ru" ? "" : "Will there be visible scars?",
-          answer : locale === "ru" ? "" : "The incisions are usually hidden behind the ears or within natural creases. Over time, scars fade and are barely noticeable."
+          question: locale === "ru" ? "" : "Will there be visible scars?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "The incisions are usually hidden behind the ears or within natural creases. Over time, scars fade and are barely noticeable.",
         },
         {
-          question : locale === "ru" ? "" : "How soon can I return to work or school?",
-          answer : locale === "ru" ? "" : "Most people return within 5–7 days, though children may need up to 10 days depending on activity levels."
+          question:
+            locale === "ru" ? "" : "How soon can I return to work or school?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Most people return within 5–7 days, though children may need up to 10 days depending on activity levels.",
         },
         {
-          question : locale === "ru" ? "" : "Are the results permanent?",
-          answer : locale === "ru" ? "" : "Yes, the new ear position is typically permanent. Minor settling or changes may occur during healing, but revisions are rare."
+          question: locale === "ru" ? "" : "Are the results permanent?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes, the new ear position is typically permanent. Minor settling or changes may occur during healing, but revisions are rare.",
         },
         {
-          question : locale === "ru" ? "" : "Can both children and adults have this surgery?",
-          answer : locale === "ru" ? "" : "Yes. Otoplasty is safe and effective for children (typically age 5+) and adults who are healthy and have realistic expectations."
-        }
+          question:
+            locale === "ru"
+              ? ""
+              : "Can both children and adults have this surgery?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Yes. Otoplasty is safe and effective for children (typically age 5+) and adults who are healthy and have realistic expectations.",
+        },
       ],
       posts: [
-        locale === "ru" ? "" : "Keep the bandage or head wrap dry and in place.",
-        locale === "ru" ? "" : "Sleep elevated; avoid lying on your side for 2 weeks.",
-        locale === "ru" ? "" : "Keep the incision clean; use ointments if prescribed.",
-        locale === "ru" ? "" : "No exercise, swimming, or lifting for 3–4 weeks.",
-        locale === "ru" ? "" : "Wear a headband as advised — usually for 1–3 weeks.",
-        locale === "ru" ? "" : "Swelling and bruising are normal; fade in 1–2 weeks.",
-        locale === "ru" ? "" : "Avoid pressure from glasses or mask straps behind the ears."
+        locale === "ru"
+          ? ""
+          : "Keep the bandage or head wrap dry and in place.",
+        locale === "ru"
+          ? ""
+          : "Sleep elevated; avoid lying on your side for 2 weeks.",
+        locale === "ru"
+          ? ""
+          : "Keep the incision clean; use ointments if prescribed.",
+        locale === "ru"
+          ? ""
+          : "No exercise, swimming, or lifting for 3–4 weeks.",
+        locale === "ru"
+          ? ""
+          : "Wear a headband as advised — usually for 1–3 weeks.",
+        locale === "ru"
+          ? ""
+          : "Swelling and bruising are normal; fade in 1–2 weeks.",
+        locale === "ru"
+          ? ""
+          : "Avoid pressure from glasses or mask straps behind the ears.",
       ],
       preList: [
-        locale === "ru" ? "" : "Stop blood thinners, herbal supplements, and alcohol 7 days before.",
+        locale === "ru"
+          ? ""
+          : "Stop blood thinners, herbal supplements, and alcohol 7 days before.",
         locale === "ru" ? "" : "Quit smoking at least 2 weeks before surgery.",
-        locale === "ru" ? "" : "Wash hair the night before; no hair products on surgery day.",
-        locale === "ru" ? "" : "No food or drink after midnight if under general anesthesia.",
-        locale === "ru" ? "" : "Arrange a ride and someone to help post-surgery.",
-        locale === "ru" ? "" : "Inform your doctor of medical conditions or medications."
+        locale === "ru"
+          ? ""
+          : "Wash hair the night before; no hair products on surgery day.",
+        locale === "ru"
+          ? ""
+          : "No food or drink after midnight if under general anesthesia.",
+        locale === "ru"
+          ? ""
+          : "Arrange a ride and someone to help post-surgery.",
+        locale === "ru"
+          ? ""
+          : "Inform your doctor of medical conditions or medications.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -9812,7 +10364,8 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: locale === "ru" ? "Кому подойдет" : "For whom it is suitable",
+            header:
+              locale === "ru" ? "Кому подойдет" : "For whom it is suitable",
             desc:
               locale === "ru"
                 ? "идеально подходит для людей с избыточным весом или дряблой кожей после значительного похудения, а также для тех, кто хочет улучшить форму своих бедер."
@@ -9820,7 +10373,10 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
           },
           {
             header: locale === "ru" ? "Описание" : "Considerations",
-            desc: locale === "ru" ? "Это процедура, направленная на подтяжку и укрепление кожи внутренней или внешней поверхности бёдер. В зависимости от особенностей пациента применяются хирургические методы или нитевые технологии. В ходе операции удаляется излишняя кожа и жировая ткань, а оставшаяся кожа подтягивается для создания более гладкого и эстетичного контура." : "This procedure is aimed at tightening and firming the skin on the inner or outer thighs. Depending on the patient's individual characteristics, either surgical methods or thread lifting techniques are used. During the operation, excess skin and fat tissue are removed, and the remaining skin is tightened to create a smoother and more aesthetically pleasing contour.",
+            desc:
+              locale === "ru"
+                ? "Это процедура, направленная на подтяжку и укрепление кожи внутренней или внешней поверхности бёдер. В зависимости от особенностей пациента применяются хирургические методы или нитевые технологии. В ходе операции удаляется излишняя кожа и жировая ткань, а оставшаяся кожа подтягивается для создания более гладкого и эстетичного контура."
+                : "This procedure is aimed at tightening and firming the skin on the inner or outer thighs. Depending on the patient's individual characteristics, either surgical methods or thread lifting techniques are used. During the operation, excess skin and fat tissue are removed, and the remaining skin is tightened to create a smoother and more aesthetically pleasing contour.",
           },
           {
             header: locale === "ru" ? "Как проходит процедура" : "How it works",
@@ -9843,7 +10399,9 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
       subCategoryContent: {
         title:
-          locale === "ru" ? "Лечение бедренной пластики" : "Thighplasty Treatment",
+          locale === "ru"
+            ? "Лечение бедренной пластики"
+            : "Thighplasty Treatment",
       },
       bfs: bfList,
       contents: {
@@ -10093,7 +10651,10 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         categories: [
           {
             header: locale === "ru" ? "Описание" : "Description",
-            desc: locale === "ru" ? "Подтяжка бровей — это косметическая операция, направленная на поднятие и улучшение формы бровей, а также на устранение признаков старения в области лба. Процедура помогает избавиться от опущенных бровей и морщин, возвращая лицу свежесть и молодость." : "A brow lift (or brow surgery) is a cosmetic surgical procedure aimed at lifting and improving the shape of the eyebrows, as well as eliminating signs of aging in the forehead area. This surgery addresses drooping brows, forehead wrinkles, and creates a fresher, younger look.",
+            desc:
+              locale === "ru"
+                ? "Подтяжка бровей — это косметическая операция, направленная на поднятие и улучшение формы бровей, а также на устранение признаков старения в области лба. Процедура помогает избавиться от опущенных бровей и морщин, возвращая лицу свежесть и молодость."
+                : "A brow lift (or brow surgery) is a cosmetic surgical procedure aimed at lifting and improving the shape of the eyebrows, as well as eliminating signs of aging in the forehead area. This surgery addresses drooping brows, forehead wrinkles, and creates a fresher, younger look.",
           },
           {
             header: locale === "ru" ? "Как проходит операция" : "How it works",
@@ -10113,50 +10674,113 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
       faqs: [
         {
-          question : locale === "ru" ? "Будут ли мои брови выглядеть естественно?" : "Will my eyebrows look natural?",
-          answer : locale === "ru" ? "Да, современные методы позволяют приподнять брови деликатно, сохраняя естественное выражение лица." : "Yes, modern techniques lift subtly for a refreshed look"
+          question:
+            locale === "ru"
+              ? "Будут ли мои брови выглядеть естественно?"
+              : "Will my eyebrows look natural?",
+          answer:
+            locale === "ru"
+              ? "Да, современные методы позволяют приподнять брови деликатно, сохраняя естественное выражение лица."
+              : "Yes, modern techniques lift subtly for a refreshed look",
         },
         {
-          question : locale === "ru" ? "Это больно?" : "Is it painful?",
-          answer : locale === "ru" ? "Обычно ощущается легкое напряжение или дискомфорт, но сильная боль бывает редко и легко контролируется." : "Mostly tightness and mild discomfort, not severe pain"
+          question: locale === "ru" ? "Это больно?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Обычно ощущается легкое напряжение или дискомфорт, но сильная боль бывает редко и легко контролируется."
+              : "Mostly tightness and mild discomfort, not severe pain",
         },
         {
-          question : locale === "ru" ? "Результаты постоянные?" : "Are the results permanent?",
-          answer : locale === "ru" ? "Эффект сохраняется в среднем от 5 до 10 лет, в зависимости от индивидуальных особенностей, ухода за кожей и процесса старения." : "Results last 5–10 years, depending on aging and skin care"
+          question:
+            locale === "ru"
+              ? "Результаты постоянные?"
+              : "Are the results permanent?",
+          answer:
+            locale === "ru"
+              ? "Эффект сохраняется в среднем от 5 до 10 лет, в зависимости от индивидуальных особенностей, ухода за кожей и процесса старения."
+              : "Results last 5–10 years, depending on aging and skin care",
         },
         {
-          question : locale === "ru" ? "Могу ли я наносить макияж после процедуры?" : "Can I wear makeup after?",
-          answer : locale === "ru" ? "Да, как правило, спустя 1–2 недели после заживления и с одобрения вашего хирурга." : "After healing – usually in 1–2 weeks with surgeon’s approval"
+          question:
+            locale === "ru"
+              ? "Могу ли я наносить макияж после процедуры?"
+              : "Can I wear makeup after?",
+          answer:
+            locale === "ru"
+              ? "Да, как правило, спустя 1–2 недели после заживления и с одобрения вашего хирурга."
+              : "After healing – usually in 1–2 weeks with surgeon’s approval",
         },
         {
-          question : locale === "ru" ? "Изменится ли форма моих глаз?" : "Will it change my eye shape?",
-          answer : locale === "ru" ? "Нет, процедура приподнимает только брови и не влияет на форму глаз." : "No, it lifts brows but doesn’t change eye shape"
+          question:
+            locale === "ru"
+              ? "Изменится ли форма моих глаз?"
+              : "Will it change my eye shape?",
+          answer:
+            locale === "ru"
+              ? "Нет, процедура приподнимает только брови и не влияет на форму глаз."
+              : "No, it lifts brows but doesn’t change eye shape",
         },
         {
-          question : locale === "ru" ? "Будут ли мои брови со временем снова опускаться?" : "-Will my eyebrows droop after the surgery?",
-          answer : locale === "ru" ? "С возрастом возможен незначительный естественный опуск бровей, но общий эффект подтяжки сохраняется надолго." : "Your eyebrows will be lifted and defined, but may droop over time with aging."
-        }
+          question:
+            locale === "ru"
+              ? "Будут ли мои брови со временем снова опускаться?"
+              : "-Will my eyebrows droop after the surgery?",
+          answer:
+            locale === "ru"
+              ? "С возрастом возможен незначительный естественный опуск бровей, но общий эффект подтяжки сохраняется надолго."
+              : "Your eyebrows will be lifted and defined, but may droop over time with aging.",
+        },
       ],
 
       posts: [
-        locale === "ru" ? "Держите голову приподнятой и прикладывайте холодные компрессы для уменьшения отека." : "Keep head elevated and use cold compresses",
-        locale === "ru" ? "Избегайте наклонов вперед и подъема тяжестей." : "Avoid bending over or heavy lifting",
-        locale === "ru" ? "Легкая отечность, синяки и ощущение напряжения на лбу — нормальные явления." : "Expect forehead tightness, swelling, and mild bruising",
-        locale === "ru" ? "Тщательно следуйте рекомендациям по уходу за ранами, особенно если разрезы расположены в линии роста волос." : "Follow wound care for incisions (usually hidden in hairline)",
-        locale === "ru" ? "Избегайте прямого солнечного света; после заживления наносите солнцезащитный крем на область швов." : "Avoid sun exposure and use sunscreen on scars once healed",
-        locale === "ru" ? "Воздержитесь от интенсивной физической активности." : "Avoid strenuous activities.",
-        locale === "ru" ? "Старайтесь ограничить активную мимику." : "Limit facial expressions.",
-        locale === "ru" ? "Избегайте воздействия экстремально горячих или холодных температур." : "Avoid extreme hot and cold temperatures."
+        locale === "ru"
+          ? "Держите голову приподнятой и прикладывайте холодные компрессы для уменьшения отека."
+          : "Keep head elevated and use cold compresses",
+        locale === "ru"
+          ? "Избегайте наклонов вперед и подъема тяжестей."
+          : "Avoid bending over or heavy lifting",
+        locale === "ru"
+          ? "Легкая отечность, синяки и ощущение напряжения на лбу — нормальные явления."
+          : "Expect forehead tightness, swelling, and mild bruising",
+        locale === "ru"
+          ? "Тщательно следуйте рекомендациям по уходу за ранами, особенно если разрезы расположены в линии роста волос."
+          : "Follow wound care for incisions (usually hidden in hairline)",
+        locale === "ru"
+          ? "Избегайте прямого солнечного света; после заживления наносите солнцезащитный крем на область швов."
+          : "Avoid sun exposure and use sunscreen on scars once healed",
+        locale === "ru"
+          ? "Воздержитесь от интенсивной физической активности."
+          : "Avoid strenuous activities.",
+        locale === "ru"
+          ? "Старайтесь ограничить активную мимику."
+          : "Limit facial expressions.",
+        locale === "ru"
+          ? "Избегайте воздействия экстремально горячих или холодных температур."
+          : "Avoid extreme hot and cold temperatures.",
       ],
 
       preList: [
-        locale === "ru" ? "Избегайте употребления алкоголя и разжижающих кровь средств за 1–2 недели до операции." : "Avoid alcohol and blood thinners for 1–2 weeks before",
-        locale === "ru" ? "Прекратите курение как минимум за несколько недель до процедуры." : "Stop smoking several weeks before surgery",
-        locale === "ru" ? "Обсудите с врачом вашу медицинскую историю и любые ранее проведенные процедуры в области лба." : "Discuss medical history and any past forehead procedures",
-        locale === "ru" ? "Заранее организуйте транспорт и помощь на период восстановления." : "Arrange transportation and post-op care support",
-        locale === "ru" ? "Не ешьте и не пейте за 6 часов до операции, если планируется общий наркоз." : "Avoid eating or drinking for 6 hours before surgery if anesthesia is applied.",
-        locale === "ru" ? "Перед операцией убедитесь, что кожа лица и волосы чистые." : "Pay attention to cleaning your face and hair before the surgery.",
-        locale === "ru" ? "Убедитесь, что вы хорошо отдохнули перед операцией." : "Make sure to get enough rest."
+        locale === "ru"
+          ? "Избегайте употребления алкоголя и разжижающих кровь средств за 1–2 недели до операции."
+          : "Avoid alcohol and blood thinners for 1–2 weeks before",
+        locale === "ru"
+          ? "Прекратите курение как минимум за несколько недель до процедуры."
+          : "Stop smoking several weeks before surgery",
+        locale === "ru"
+          ? "Обсудите с врачом вашу медицинскую историю и любые ранее проведенные процедуры в области лба."
+          : "Discuss medical history and any past forehead procedures",
+        locale === "ru"
+          ? "Заранее организуйте транспорт и помощь на период восстановления."
+          : "Arrange transportation and post-op care support",
+        locale === "ru"
+          ? "Не ешьте и не пейте за 6 часов до операции, если планируется общий наркоз."
+          : "Avoid eating or drinking for 6 hours before surgery if anesthesia is applied.",
+        locale === "ru"
+          ? "Перед операцией убедитесь, что кожа лица и волосы чистые."
+          : "Pay attention to cleaning your face and hair before the surgery.",
+        locale === "ru"
+          ? "Убедитесь, что вы хорошо отдохнули перед операцией."
+          : "Make sure to get enough rest.",
       ],
       conclusion: {
         title: locale === "ru" ? null : "Conclusion",
@@ -10533,43 +11157,99 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
       },
       faqs: [
-          {
-            question : locale === "ru" ? "Как долго длится восстановление?" : "How long is recovery?",
-            answer : locale === "ru" ? "Первичное заживление занимает около 2 недель, полное восстановление - 4–6 недель." : "Initial healing in 2 weeks, full recovery in 4–6 weeks"
-          },
-          {
-            question : locale === "ru" ? "Будут ли видны шрамы?" : "Are there visible scars?",
-            answer : locale === "ru" ? "Разрезы, как правило, скрыты за ушами или под подбородком и становятся малозаметными со временем." : "Scars are discreet, behind ears or under chin"
-          },
-          {
-            question : locale === "ru" ? "Устраняет ли подтяжка шеи двойной подбородок?" : "Will a neck lift get rid of double chin?",
-            answer : locale === "ru" ? "Подтяжка улучшает контур челюсти и устраняет обвисание кожи; часто ее комбинируют с липосакцией для более выраженного результата." : "It improves jawline and removes sagging, often paired with liposuction"
-          },
-          {
-            question : locale === "ru" ? "Сохраняется ли результат навсегда?" : "Can results be permanent?",
-            answer : locale === "ru" ? "Да, результаты устойчивые, однако естественный процесс старения продолжается." : "Yes, though aging continues naturally"
-          },
-          {
-            question : locale === "ru" ? "Проводится ли процедура под общим наркозом?" : "Is it done under general anesthesia?",
-            answer : locale === "ru" ? "Чаще всего - да, но возможна и под местной анестезией с седацией, в зависимости от случая." : "Often yes, but local with sedation is also an option"
-          }
+        {
+          question:
+            locale === "ru"
+              ? "Как долго длится восстановление?"
+              : "How long is recovery?",
+          answer:
+            locale === "ru"
+              ? "Первичное заживление занимает около 2 недель, полное восстановление - 4–6 недель."
+              : "Initial healing in 2 weeks, full recovery in 4–6 weeks",
+        },
+        {
+          question:
+            locale === "ru"
+              ? "Будут ли видны шрамы?"
+              : "Are there visible scars?",
+          answer:
+            locale === "ru"
+              ? "Разрезы, как правило, скрыты за ушами или под подбородком и становятся малозаметными со временем."
+              : "Scars are discreet, behind ears or under chin",
+        },
+        {
+          question:
+            locale === "ru"
+              ? "Устраняет ли подтяжка шеи двойной подбородок?"
+              : "Will a neck lift get rid of double chin?",
+          answer:
+            locale === "ru"
+              ? "Подтяжка улучшает контур челюсти и устраняет обвисание кожи; часто ее комбинируют с липосакцией для более выраженного результата."
+              : "It improves jawline and removes sagging, often paired with liposuction",
+        },
+        {
+          question:
+            locale === "ru"
+              ? "Сохраняется ли результат навсегда?"
+              : "Can results be permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, результаты устойчивые, однако естественный процесс старения продолжается."
+              : "Yes, though aging continues naturally",
+        },
+        {
+          question:
+            locale === "ru"
+              ? "Проводится ли процедура под общим наркозом?"
+              : "Is it done under general anesthesia?",
+          answer:
+            locale === "ru"
+              ? "Чаще всего - да, но возможна и под местной анестезией с седацией, в зависимости от случая."
+              : "Often yes, but local with sedation is also an option",
+        },
       ],
       posts: [
-        locale === "ru" ? "Носите компрессионное изделие согласно рекомендациям врача." : "Wear a compression garment as advised",
-        locale === "ru" ? "Спите с приподнятой головой и избегайте напряжения в области шеи." : "Sleep with head elevated and avoid neck strain",
-        locale === "ru" ? "Ожидайте появления отека и синяков в течение 1–2 недель - это нормально." : "Expect swelling and bruising for 1–2 weeks",
-        locale === "ru" ? "Избегайте резких поворотов головы и подъема тяжестей." : "Avoid turning head sharply or lifting heavy items",
-        locale === "ru" ? "Посещайте плановые осмотры для снятия повязки и швов." : "Attend follow-ups for dressing and stitch removal",
-        locale === "ru" ? "Поддерживайте водный баланс - пейте достаточное количество воды." : "Stay hydrated.",
-        locale === "ru" ? "Защищайте кожу от солнца, особенно в зоне вмешательства." : "Protect yourself from the sun."
+        locale === "ru"
+          ? "Носите компрессионное изделие согласно рекомендациям врача."
+          : "Wear a compression garment as advised",
+        locale === "ru"
+          ? "Спите с приподнятой головой и избегайте напряжения в области шеи."
+          : "Sleep with head elevated and avoid neck strain",
+        locale === "ru"
+          ? "Ожидайте появления отека и синяков в течение 1–2 недель - это нормально."
+          : "Expect swelling and bruising for 1–2 weeks",
+        locale === "ru"
+          ? "Избегайте резких поворотов головы и подъема тяжестей."
+          : "Avoid turning head sharply or lifting heavy items",
+        locale === "ru"
+          ? "Посещайте плановые осмотры для снятия повязки и швов."
+          : "Attend follow-ups for dressing and stitch removal",
+        locale === "ru"
+          ? "Поддерживайте водный баланс - пейте достаточное количество воды."
+          : "Stay hydrated.",
+        locale === "ru"
+          ? "Защищайте кожу от солнца, особенно в зоне вмешательства."
+          : "Protect yourself from the sun.",
       ],
       preList: [
-        locale === "ru" ? "Прекратите курить и избегайте разжижающих кровь препаратов минимум за 2 недели до процедуры." : "Stop smoking and avoid blood thinners for at least 2 weeks",
-        locale === "ru" ? "Пройдите необходимые анализы и получите медицинское заключение при необходимости." : "Get blood work and medical clearance if needed",
-        locale === "ru" ? "Обсудите с хирургом желаемый результат и укажите, были ли у вас ранее операции в этой области." : "Discuss desired outcome and any previous surgeries with your surgeon",
-        locale === "ru" ? "Подготовьте свободную удобную одежду и заранее организуйте помощь дома на период восстановления." : "Prepare loose clothing and arrange help at home post-op",
-        locale === "ru" ? "Соблюдайте гигиену лица и шеи, чтобы снизить риск инфекции." : "Facial and neck hygiene is important to prevent infection.",
-        locale === "ru" ? "Поддерживайте водный баланс, но воздержитесь от еды и питья за 6 часов до операции." : "Stay hydrated, but avoid eating or drinking anything 6 hours before surgery."
+        locale === "ru"
+          ? "Прекратите курить и избегайте разжижающих кровь препаратов минимум за 2 недели до процедуры."
+          : "Stop smoking and avoid blood thinners for at least 2 weeks",
+        locale === "ru"
+          ? "Пройдите необходимые анализы и получите медицинское заключение при необходимости."
+          : "Get blood work and medical clearance if needed",
+        locale === "ru"
+          ? "Обсудите с хирургом желаемый результат и укажите, были ли у вас ранее операции в этой области."
+          : "Discuss desired outcome and any previous surgeries with your surgeon",
+        locale === "ru"
+          ? "Подготовьте свободную удобную одежду и заранее организуйте помощь дома на период восстановления."
+          : "Prepare loose clothing and arrange help at home post-op",
+        locale === "ru"
+          ? "Соблюдайте гигиену лица и шеи, чтобы снизить риск инфекции."
+          : "Facial and neck hygiene is important to prevent infection.",
+        locale === "ru"
+          ? "Поддерживайте водный баланс, но воздержитесь от еды и питья за 6 часов до операции."
+          : "Stay hydrated, but avoid eating or drinking anything 6 hours before surgery.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -10773,53 +11453,117 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
       },
       faqs: [
-          {
-            question : locale === "ru" ? "Какие процедуры включены?" : "Where is the fat taken from?",
-            answer : locale === "ru" ? "Обычно это подтяжка и/или увеличение груди, абдоминопластика и липосакция." : "Usually abdomen, flanks, thighs via liposuction"
-          },
-          {
-            question : locale === "ru" ? "Как долго длится восстановление?" : "Is all the transferred fat permanent?",
-            answer : locale === "ru" ? "Первичный период заживления занимает 2–3 недели, полное восстановление - 6–8 недель." : "About 60–70% survives long-term"
-          },
-          {
-            question : locale === "ru" ? "Смогу ли я кормить грудью после маммопластики?" : "Can I sit normally again?",
-            answer : locale === "ru" ? "Если во время операции не затронуты молочные протоки, грудное вскармливание возможно. Однако обязательно обсудите это с хирургом." : "Yes, after 3–4 weeks with caution and gradual return"
-          },
-          {
-            question : locale === "ru" ? "Потеряю ли я вес после этих процедур?" : "Are there risks?",
-            answer : locale === "ru" ? "Нет, это контурирование тела, а не способ похудения." : "Fat embolism is a rare but serious risk – experienced surgeons mitigate this"
-          },
-          {
-            question : locale === "ru" ? "Результаты сохраняются навсегда?" : "Will it look natural?",
-            answer : locale === "ru" ? "Да, при условии стабильного веса и отсутствия будущих беременностей." : "Yes, with proper fat placement and contouring"
-          },
-          {
-            question : locale === "ru" ? "" : "How should I sit after BBL?",
-            answer : locale === "ru" ? "" : "Avoid sitting directly on your buttocks for the first few weeks. Using a BBL pillow helps support recovery."
-          },
-          {
-            question : locale === "ru" ? "" : "How should I eat after BBL?",
-            answer : locale === "ru" ? "" : "A protein-rich diet and plenty of fluids aid healing. Maintaining a healthy lifestyle can enhance long-term results."
-          }
+        {
+          question:
+            locale === "ru"
+              ? "Какие процедуры включены?"
+              : "Where is the fat taken from?",
+          answer:
+            locale === "ru"
+              ? "Обычно это подтяжка и/или увеличение груди, абдоминопластика и липосакция."
+              : "Usually abdomen, flanks, thighs via liposuction",
+        },
+        {
+          question:
+            locale === "ru"
+              ? "Как долго длится восстановление?"
+              : "Is all the transferred fat permanent?",
+          answer:
+            locale === "ru"
+              ? "Первичный период заживления занимает 2–3 недели, полное восстановление - 6–8 недель."
+              : "About 60–70% survives long-term",
+        },
+        {
+          question:
+            locale === "ru"
+              ? "Смогу ли я кормить грудью после маммопластики?"
+              : "Can I sit normally again?",
+          answer:
+            locale === "ru"
+              ? "Если во время операции не затронуты молочные протоки, грудное вскармливание возможно. Однако обязательно обсудите это с хирургом."
+              : "Yes, after 3–4 weeks with caution and gradual return",
+        },
+        {
+          question:
+            locale === "ru"
+              ? "Потеряю ли я вес после этих процедур?"
+              : "Are there risks?",
+          answer:
+            locale === "ru"
+              ? "Нет, это контурирование тела, а не способ похудения."
+              : "Fat embolism is a rare but serious risk – experienced surgeons mitigate this",
+        },
+        {
+          question:
+            locale === "ru"
+              ? "Результаты сохраняются навсегда?"
+              : "Will it look natural?",
+          answer:
+            locale === "ru"
+              ? "Да, при условии стабильного веса и отсутствия будущих беременностей."
+              : "Yes, with proper fat placement and contouring",
+        },
+        {
+          question: locale === "ru" ? "" : "How should I sit after BBL?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Avoid sitting directly on your buttocks for the first few weeks. Using a BBL pillow helps support recovery.",
+        },
+        {
+          question: locale === "ru" ? "" : "How should I eat after BBL?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "A protein-rich diet and plenty of fluids aid healing. Maintaining a healthy lifestyle can enhance long-term results.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Носите компрессионные изделия в соответствии с указаниями врача." : "Avoid sitting directly on buttocks for at least 2–3 weeks",
-        locale === "ru" ? "Избегайте подъема предметов весом более 5 кг (включая детей) в течение 4–6 недель." : "Use a BBL pillow when sitting after that period",
-        locale === "ru" ? "Спите на спине с приподнятыми ногами, если операция сочеталась с абдоминопластикой." : "Wear compression garment 6–8 weeks",
-        locale === "ru" ? "Ухаживайте за дренажами (если они использовались) и поддерживайте чистоту разрезов." : "Keep incision sites clean and monitor for infection",
-        locale === "ru" ? "Посещайте контрольные осмотры и ограничьте физическую активность в течение 6 недель." : "Light walking helps circulation – no intense workouts for 4–6 weeks - Get plenty of rest.",
-        locale === "ru" ? "Пейте достаточное количество воды." : "Avoid high temperatures.",
-        locale === "ru" ? "Соблюдайте здоровую диету." : "Pay attention to fluid intake."
+        locale === "ru"
+          ? "Носите компрессионные изделия в соответствии с указаниями врача."
+          : "Avoid sitting directly on buttocks for at least 2–3 weeks",
+        locale === "ru"
+          ? "Избегайте подъема предметов весом более 5 кг (включая детей) в течение 4–6 недель."
+          : "Use a BBL pillow when sitting after that period",
+        locale === "ru"
+          ? "Спите на спине с приподнятыми ногами, если операция сочеталась с абдоминопластикой."
+          : "Wear compression garment 6–8 weeks",
+        locale === "ru"
+          ? "Ухаживайте за дренажами (если они использовались) и поддерживайте чистоту разрезов."
+          : "Keep incision sites clean and monitor for infection",
+        locale === "ru"
+          ? "Посещайте контрольные осмотры и ограничьте физическую активность в течение 6 недель."
+          : "Light walking helps circulation – no intense workouts for 4–6 weeks - Get plenty of rest.",
+        locale === "ru"
+          ? "Пейте достаточное количество воды."
+          : "Avoid high temperatures.",
+        locale === "ru"
+          ? "Соблюдайте здоровую диету."
+          : "Pay attention to fluid intake.",
       ],
       preList: [
-        locale === "ru" ? "Прекратите курить как минимум за 6 недель до операции." : "Stop smoking 4 weeks before surgery",
-        locale === "ru" ? "Избегайте НПВП, аспирина, разжижающих кровь средств и некоторых травяных добавок за 2 недели до операции." : "Avoid alcohol and blood thinners for 2 weeks",
-        locale === "ru" ? "Пройдите лабораторные тесты и получите медицинское разрешение." : "Stay hydrated and eat high-protein meals",
-        locale === "ru" ? "Поддерживайте стабильный вес в течение как минимум 6 месяцев." : "Prepare BBL pillow and loose clothing for recovery",
-        locale === "ru" ? "Организуйте помощь на 2–3 недели после операции (особенно для ухода за детьми)." : "Arrange for assistance for first week post-op",
-        locale === "ru" ? "Соблюдайте гигиену тела." : "The importance of body hygiene.",
-        locale === "ru" ? "Обеспечьте себе достаточный отдых." : "Ensure adequate rest.",
-        locale === "ru" ? "" : "Limit physical activity."
+        locale === "ru"
+          ? "Прекратите курить как минимум за 6 недель до операции."
+          : "Stop smoking 4 weeks before surgery",
+        locale === "ru"
+          ? "Избегайте НПВП, аспирина, разжижающих кровь средств и некоторых травяных добавок за 2 недели до операции."
+          : "Avoid alcohol and blood thinners for 2 weeks",
+        locale === "ru"
+          ? "Пройдите лабораторные тесты и получите медицинское разрешение."
+          : "Stay hydrated and eat high-protein meals",
+        locale === "ru"
+          ? "Поддерживайте стабильный вес в течение как минимум 6 месяцев."
+          : "Prepare BBL pillow and loose clothing for recovery",
+        locale === "ru"
+          ? "Организуйте помощь на 2–3 недели после операции (особенно для ухода за детьми)."
+          : "Arrange for assistance for first week post-op",
+        locale === "ru"
+          ? "Соблюдайте гигиену тела."
+          : "The importance of body hygiene.",
+        locale === "ru"
+          ? "Обеспечьте себе достаточный отдых."
+          : "Ensure adequate rest.",
+        locale === "ru" ? "" : "Limit physical activity.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -11243,43 +11987,95 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
       },
       faqs: [
-          {
-            question : locale === "ru" ? "Является ли липосакция методом похудения?" : "Is liposuction a weight loss method?",
-            answer : locale === "ru" ? "Нет, липосакция предназначена для улучшения контуров тела, а не для снижения веса." : "No, it’s for body contouring, not weight reduction"
-          },
-          {
-            question : locale === "ru" ? "Являются ли результаты постоянными?" : "Are the results permanent?",
-            answer : locale === "ru" ? "Да, жировые клетки удаляются навсегда, но увеличение веса может повлиять на итоговый результат." : "Yes, fat cells are removed, but weight gain can affect results"
-          },
-          {
-            question : locale === "ru" ? "Когда будут заметны результаты?" : "When will I see results?",
-            answer : locale === "ru" ? "Отек постепенно уменьшается в течение нескольких недель; окончательные результаты проявляются через 2–3 месяца." : "Swelling reduces over weeks; full results in 2–3 months"
-          },
-          {
-            question : locale === "ru" ? "Будут ли видны шрамы?" : "Will I have scars?",
-            answer : locale === "ru" ? "Разрезы очень маленькие, обычно хорошо заживают и становятся едва заметными." : "Small incisions heal well and are barely noticeable"
-          },
-          {
-            question : locale === "ru" ? "Может ли жир вернуться?" : "Can fat come back?",
-            answer : locale === "ru" ? "В обработанных зонах - нет, при условии, что вы поддерживаете стабильный вес." : "Not in treated areas if you maintain weight"
-          }
+        {
+          question:
+            locale === "ru"
+              ? "Является ли липосакция методом похудения?"
+              : "Is liposuction a weight loss method?",
+          answer:
+            locale === "ru"
+              ? "Нет, липосакция предназначена для улучшения контуров тела, а не для снижения веса."
+              : "No, it’s for body contouring, not weight reduction",
+        },
+        {
+          question:
+            locale === "ru"
+              ? "Являются ли результаты постоянными?"
+              : "Are the results permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, жировые клетки удаляются навсегда, но увеличение веса может повлиять на итоговый результат."
+              : "Yes, fat cells are removed, but weight gain can affect results",
+        },
+        {
+          question:
+            locale === "ru"
+              ? "Когда будут заметны результаты?"
+              : "When will I see results?",
+          answer:
+            locale === "ru"
+              ? "Отек постепенно уменьшается в течение нескольких недель; окончательные результаты проявляются через 2–3 месяца."
+              : "Swelling reduces over weeks; full results in 2–3 months",
+        },
+        {
+          question:
+            locale === "ru" ? "Будут ли видны шрамы?" : "Will I have scars?",
+          answer:
+            locale === "ru"
+              ? "Разрезы очень маленькие, обычно хорошо заживают и становятся едва заметными."
+              : "Small incisions heal well and are barely noticeable",
+        },
+        {
+          question:
+            locale === "ru" ? "Может ли жир вернуться?" : "Can fat come back?",
+          answer:
+            locale === "ru"
+              ? "В обработанных зонах - нет, при условии, что вы поддерживаете стабильный вес."
+              : "Not in treated areas if you maintain weight",
+        },
       ],
       posts: [
-        locale === "ru" ? "Носите компрессионные изделия, чтобы уменьшить отёчность." : "Wear compression garments to reduce swelling",
-        locale === "ru" ? "Ожидайте появления синяков и болезненности в течение 1–2 недель - это нормально." : "Expect bruising and soreness for 1–2 weeks",
-        locale === "ru" ? "Избегайте интенсивной физической активности минимум на 2 недели." : "Avoid strenuous activity for at least 2 weeks",
-        locale === "ru" ? "Тщательно следуйте инструкциям по уходу за дренажом, если были установлены трубки." : "Follow drainage care if small tubes were placed",
-        locale === "ru" ? "Соблюдайте сбалансированную диету, чтобы поддержать процесс заживления." : "Maintain a healthy diet to support healing",
-        locale === "ru" ? "Пейте достаточно воды, чтобы поддерживать водный баланс." : "Stay hydrated.",
-        locale === "ru" ? "Избегайте воздействия прямых солнечных лучей и обязательно используйте солнцезащитные средства." : "Protect yourself from the sun."
+        locale === "ru"
+          ? "Носите компрессионные изделия, чтобы уменьшить отёчность."
+          : "Wear compression garments to reduce swelling",
+        locale === "ru"
+          ? "Ожидайте появления синяков и болезненности в течение 1–2 недель - это нормально."
+          : "Expect bruising and soreness for 1–2 weeks",
+        locale === "ru"
+          ? "Избегайте интенсивной физической активности минимум на 2 недели."
+          : "Avoid strenuous activity for at least 2 weeks",
+        locale === "ru"
+          ? "Тщательно следуйте инструкциям по уходу за дренажом, если были установлены трубки."
+          : "Follow drainage care if small tubes were placed",
+        locale === "ru"
+          ? "Соблюдайте сбалансированную диету, чтобы поддержать процесс заживления."
+          : "Maintain a healthy diet to support healing",
+        locale === "ru"
+          ? "Пейте достаточно воды, чтобы поддерживать водный баланс."
+          : "Stay hydrated.",
+        locale === "ru"
+          ? "Избегайте воздействия прямых солнечных лучей и обязательно используйте солнцезащитные средства."
+          : "Protect yourself from the sun.",
       ],
       preList: [
-        locale === "ru" ? "Избегайте курения и разжижающих кровь препаратов минимум за 2 недели до операции." : "Avoid smoking and blood thinners for 2 weeks prior",
-        locale === "ru" ? "Поддерживайте оптимальную гидратацию и стабильный вес." : "Stay hydrated and maintain a stable weight",
-        locale === "ru" ? "Обсудите все медицинские состояния и лекарства с вашим хирургом." : "Discuss medical conditions and medications with surgeon",
-        locale === "ru" ? "Организуйте помощь после операции и подготовьте удобную, свободную одежду." : "Arrange post-op help and prepare loose clothing",
-        locale === "ru" ? "Соблюдайте чистоту в области операции, чтобы предотвратить инфекцию." : "Keep the surgical area clean.",
-        locale === "ru" ? "Убедитесь, что вы достаточно отдыхаете для лучшего восстановления." : "Make sure to get enough rest."
+        locale === "ru"
+          ? "Избегайте курения и разжижающих кровь препаратов минимум за 2 недели до операции."
+          : "Avoid smoking and blood thinners for 2 weeks prior",
+        locale === "ru"
+          ? "Поддерживайте оптимальную гидратацию и стабильный вес."
+          : "Stay hydrated and maintain a stable weight",
+        locale === "ru"
+          ? "Обсудите все медицинские состояния и лекарства с вашим хирургом."
+          : "Discuss medical conditions and medications with surgeon",
+        locale === "ru"
+          ? "Организуйте помощь после операции и подготовьте удобную, свободную одежду."
+          : "Arrange post-op help and prepare loose clothing",
+        locale === "ru"
+          ? "Соблюдайте чистоту в области операции, чтобы предотвратить инфекцию."
+          : "Keep the surgical area clean.",
+        locale === "ru"
+          ? "Убедитесь, что вы достаточно отдыхаете для лучшего восстановления."
+          : "Make sure to get enough rest.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -11603,40 +12399,92 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
       faqs: [
         {
-          question : locale === "ru" ? "Будут ли видны шрамы?" : "Will scars be visible?",
-          answer : locale === "ru" ? "Шрамы обычно располагаются на внутренней стороне рук и со временем становятся менее заметными." : "Scars are placed along inner arms and fade with time"
+          question:
+            locale === "ru"
+              ? "Будут ли видны шрамы?"
+              : "Will scars be visible?",
+          answer:
+            locale === "ru"
+              ? "Шрамы обычно располагаются на внутренней стороне рук и со временем становятся менее заметными."
+              : "Scars are placed along inner arms and fade with time",
         },
         {
-          question : locale === "ru" ? "Операция проводится под общим наркозом?" : "Is it done under general anesthesia?",
-          answer : locale === "ru" ? "Да, обычно применяется общий наркоз." : "Yes, typically"
+          question:
+            locale === "ru"
+              ? "Операция проводится под общим наркозом?"
+              : "Is it done under general anesthesia?",
+          answer:
+            locale === "ru"
+              ? "Да, обычно применяется общий наркоз."
+              : "Yes, typically",
         },
         {
-          question : locale === "ru" ? "Могу ли я сочетать эту процедуру с липосакцией?" : "Can I combine with liposuction?",
-          answer : locale === "ru" ? "Да, липосакция часто выполняется вместе с этой процедурой для улучшения контурирования тела." : "Yes, often done for better contour"
+          question:
+            locale === "ru"
+              ? "Могу ли я сочетать эту процедуру с липосакцией?"
+              : "Can I combine with liposuction?",
+          answer:
+            locale === "ru"
+              ? "Да, липосакция часто выполняется вместе с этой процедурой для улучшения контурирования тела."
+              : "Yes, often done for better contour",
         },
         {
-          question : locale === "ru" ? "Когда я смогу снова поднимать руки?" : "When can I raise my arms again?",
-          answer : locale === "ru" ? "Легкое поднятие рук возможно через 1–2 недели, полный диапазон движений - через 4–6 недель." : "Light raising after 1–2 weeks, full range in 4–6 weeks"
+          question:
+            locale === "ru"
+              ? "Когда я смогу снова поднимать руки?"
+              : "When can I raise my arms again?",
+          answer:
+            locale === "ru"
+              ? "Легкое поднятие рук возможно через 1–2 недели, полный диапазон движений - через 4–6 недель."
+              : "Light raising after 1–2 weeks, full range in 4–6 weeks",
         },
         {
-          question : locale === "ru" ? "Насколько долговечны результаты?" : "Are results long-lasting?",
-          answer : locale === "ru" ? "Результаты обычно долговечные, особенно при поддержании стабильного веса." : "Yes, especially if you maintain your weight"
-        }
+          question:
+            locale === "ru"
+              ? "Насколько долговечны результаты?"
+              : "Are results long-lasting?",
+          answer:
+            locale === "ru"
+              ? "Результаты обычно долговечные, особенно при поддержании стабильного веса."
+              : "Yes, especially if you maintain your weight",
+        },
       ],
       posts: [
-        locale === "ru" ? "Поднимайте руки и используйте компрессионные рукава в соответствии с рекомендациями врача." : "Elevate arms and use compression sleeves",
-        locale === "ru" ? "Избегайте подъема рук, их вытягивания вверх и вождения в течение 1–2 недель после операции." : "Avoid lifting, reaching overhead, or driving for 1–2 weeks",
-        locale === "ru" ? "Держите разрезы чистыми и сухими, следуя указаниям по уходу." : "Keep incisions clean and dry",
-        locale === "ru" ? "Возобновите легкие физические нагрузки через 2 недели; полные тренировки можно начинать через 6 недель." : "Resume light activities after 2 weeks; full workouts after 6",
-        locale === "ru" ? "Следите за признаками накопления жидкости или инфекции в области разрезов." : "Watch for signs of fluid buildup or infection",
-        locale === "ru" ? "Носите компрессионные рукава в соответствии с указаниями врача, чтобы избежать осложнений." : "Wear compression sleeves as directed by your doctor to avoid complications.",
+        locale === "ru"
+          ? "Поднимайте руки и используйте компрессионные рукава в соответствии с рекомендациями врача."
+          : "Elevate arms and use compression sleeves",
+        locale === "ru"
+          ? "Избегайте подъема рук, их вытягивания вверх и вождения в течение 1–2 недель после операции."
+          : "Avoid lifting, reaching overhead, or driving for 1–2 weeks",
+        locale === "ru"
+          ? "Держите разрезы чистыми и сухими, следуя указаниям по уходу."
+          : "Keep incisions clean and dry",
+        locale === "ru"
+          ? "Возобновите легкие физические нагрузки через 2 недели; полные тренировки можно начинать через 6 недель."
+          : "Resume light activities after 2 weeks; full workouts after 6",
+        locale === "ru"
+          ? "Следите за признаками накопления жидкости или инфекции в области разрезов."
+          : "Watch for signs of fluid buildup or infection",
+        locale === "ru"
+          ? "Носите компрессионные рукава в соответствии с указаниями врача, чтобы избежать осложнений."
+          : "Wear compression sleeves as directed by your doctor to avoid complications.",
       ],
       preList: [
-        locale === "ru" ? "Воздержитесь от курения и избегайте разжижающих кровь препаратов перед операцией." : "Stop smoking and avoid blood thinners pre-op",
-        locale === "ru" ? "В зависимости от возраста и состояния здоровья могут потребоваться дополнительные анализы." : "Lab tests may be required depending on age/health",
-        locale === "ru" ? "Запланируйте 1–2 недели отдыха от работы и организуйте помощь дома в период восстановления." : "Plan 1–2 weeks off work and help at home",
-        locale === "ru" ? "Носите рубашки на пуговицах для удобства одевания в послеоперационный период." : "Wear button-up shirts for easy dressing",
-        locale === "ru" ? "Обсудите с хирургом все особенности вашего здоровья, особенно хронические заболевания." : "Discuss any specific health conditions, especially chronic diseases, with your surgeon",
+        locale === "ru"
+          ? "Воздержитесь от курения и избегайте разжижающих кровь препаратов перед операцией."
+          : "Stop smoking and avoid blood thinners pre-op",
+        locale === "ru"
+          ? "В зависимости от возраста и состояния здоровья могут потребоваться дополнительные анализы."
+          : "Lab tests may be required depending on age/health",
+        locale === "ru"
+          ? "Запланируйте 1–2 недели отдыха от работы и организуйте помощь дома в период восстановления."
+          : "Plan 1–2 weeks off work and help at home",
+        locale === "ru"
+          ? "Носите рубашки на пуговицах для удобства одевания в послеоперационный период."
+          : "Wear button-up shirts for easy dressing",
+        locale === "ru"
+          ? "Обсудите с хирургом все особенности вашего здоровья, особенно хронические заболевания."
+          : "Discuss any specific health conditions, especially chronic diseases, with your surgeon",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -11926,14 +12774,18 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
                 : "Improves skin firmness and elasticity for a more youthful appearance",
           },
           {
-            title: locale === "ru" ? "Улучшенный контур бедра" : "Contour Enhancement",
+            title:
+              locale === "ru"
+                ? "Улучшенный контур бедра"
+                : "Contour Enhancement",
             desc:
               locale === "ru"
                 ? "Форма бедра становится более чёткой"
                 : "Reshapes thigh area for improved body proportions and aesthetic appeal",
           },
           {
-            title: locale === "ru" ? "Меньше жира и лишней кожи" : "Fat Reduction",
+            title:
+              locale === "ru" ? "Меньше жира и лишней кожи" : "Fat Reduction",
             desc:
               locale === "ru"
                 ? "Устраняются излишки кожи и жировые отложения"
@@ -11966,47 +12818,111 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
       faqs: [
         {
-          question : locale === "ru" ? "Будет ли заметен шрам после операции?" : "Will the scar be visible?",
-          answer : locale === "ru" ? "Обычно разрез располагается в паховой складке или на внутренней стороне бедра, и со временем становится менее заметным." : "Usually placed in groin crease or inner thigh – fades over time"
+          question:
+            locale === "ru"
+              ? "Будет ли заметен шрам после операции?"
+              : "Will the scar be visible?",
+          answer:
+            locale === "ru"
+              ? "Обычно разрез располагается в паховой складке или на внутренней стороне бедра, и со временем становится менее заметным."
+              : "Usually placed in groin crease or inner thigh – fades over time",
         },
         {
-          question : locale === "ru" ? "Насколько болезненной является процедура?" : "Is it painful?",
-          answer : locale === "ru" ? "Возможна лёгкая до умеренной болезненность, которая хорошо контролируется обезболивающими препаратами." : "Mild to moderate soreness – well managed with meds"
+          question:
+            locale === "ru"
+              ? "Насколько болезненной является процедура?"
+              : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Возможна лёгкая до умеренной болезненность, которая хорошо контролируется обезболивающими препаратами."
+              : "Mild to moderate soreness – well managed with meds",
         },
         {
-          question : locale === "ru" ? "Можно ли сочетать подтяжку бедер с липосакцией?" : "Can I combine this with liposuction?",
-          answer : locale === "ru" ? "Да, эти процедуры часто выполняются вместе для достижения наилучшего результата." : "Yes, often done together"
+          question:
+            locale === "ru"
+              ? "Можно ли сочетать подтяжку бедер с липосакцией?"
+              : "Can I combine this with liposuction?",
+          answer:
+            locale === "ru"
+              ? "Да, эти процедуры часто выполняются вместе для достижения наилучшего результата."
+              : "Yes, often done together",
         },
         {
-          question : locale === "ru" ? "Кожа подтянется сразу после операции?" : "Will skin tighten immediately?",
-          answer : locale === "ru" ? "Да, результат виден сразу, но окончательный эффект проявляется по мере спадания отеков." : "Yes, results are immediate but improve as swelling reduces"
+          question:
+            locale === "ru"
+              ? "Кожа подтянется сразу после операции?"
+              : "Will skin tighten immediately?",
+          answer:
+            locale === "ru"
+              ? "Да, результат виден сразу, но окончательный эффект проявляется по мере спадания отеков."
+              : "Yes, results are immediate but improve as swelling reduces",
         },
         {
-          question : locale === "ru" ? "Результаты сохраняются навсегда?" : "Is it permanent?",
-          answer : locale === "ru" ? "Да, при стабильном весе и надлежащем уходе за кожей." : "Yes, with stable weight and good skin care"
+          question:
+            locale === "ru"
+              ? "Результаты сохраняются навсегда?"
+              : "Is it permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, при стабильном весе и надлежащем уходе за кожей."
+              : "Yes, with stable weight and good skin care",
         },
         {
-          question : locale === "ru" ? "Каков период восстановления после операции?" : "What is the recovery time after surgery?",
-          answer : locale === "ru" ? "Легкая физическая активность возможна через 2–4 недели, полное восстановление занимает 6–8 недель." : "Light activities in 2-4 weeks, full recovery in 6-8 weeks."
+          question:
+            locale === "ru"
+              ? "Каков период восстановления после операции?"
+              : "What is the recovery time after surgery?",
+          answer:
+            locale === "ru"
+              ? "Легкая физическая активность возможна через 2–4 недели, полное восстановление занимает 6–8 недель."
+              : "Light activities in 2-4 weeks, full recovery in 6-8 weeks.",
         },
       ],
       posts: [
-        locale === "ru" ? "Прекратите курить и употреблять алкоголь за 2–4 недели до" : "Stop smoking and alcohol 2–4 weeks prior",
-        locale === "ru" ? "Избегайте разжижающих кровь средств и определенных добавок" : "Avoid blood thinners and certain supplements",
-        locale === "ru" ? "Обсудите все медицинские состояния с вашим хирургом" : "Discuss all health conditions with your surgeon",
-        locale === "ru" ? "Запланируйте 2 недели восстановления и мягкие брюки для комфорта" : "Plan for 2 weeks of downtime and soft pants for comfort",
-        locale === "ru" ? "Ограничьте физическую активность" : "Limit physical activity",
-        locale === "ru" ? "Рекомендуется стабильная диета и вес" : "A stable diet and weight are recommended"
+        locale === "ru"
+          ? "Прекратите курить и употреблять алкоголь за 2–4 недели до"
+          : "Stop smoking and alcohol 2–4 weeks prior",
+        locale === "ru"
+          ? "Избегайте разжижающих кровь средств и определенных добавок"
+          : "Avoid blood thinners and certain supplements",
+        locale === "ru"
+          ? "Обсудите все медицинские состояния с вашим хирургом"
+          : "Discuss all health conditions with your surgeon",
+        locale === "ru"
+          ? "Запланируйте 2 недели восстановления и мягкие брюки для комфорта"
+          : "Plan for 2 weeks of downtime and soft pants for comfort",
+        locale === "ru"
+          ? "Ограничьте физическую активность"
+          : "Limit physical activity",
+        locale === "ru"
+          ? "Рекомендуется стабильная диета и вес"
+          : "A stable diet and weight are recommended",
       ],
       preList: [
-        locale === "ru" ? "Поддерживайте стабильный вес в течение 6+ месяцев" : "Avoid smoking, alcohol, NSAIDs pre-op",
-        locale === "ru" ? "Избегайте курения, алкоголя, НПВП перед операцией" : "Lab tests and medical clearance may be needed",
-        locale === "ru" ? "Может потребоваться лабораторное обследование и медицинская справка" : "Prepare for 2–3 weeks off work and help at home",
-        locale === "ru" ? "Подготовьтесь к 2–3 неделям отсутствия на работе и помощи дома" : "Avoid crash dieting before surgery",
-        locale === "ru" ? "Избегайте резкого снижения веса перед операцией" : "Stop smoking at least 4-6 weeks prior",
-        locale === "ru" ? "Прекратите курение как минимум за 4-6 недель до" : "Avoid using blood thinners",
-        locale === "ru" ? "Избегайте использования разжижающих кровь препаратов." : "Opt for a low-carb, high-protein diet",
-        locale === "ru" ? "Выбирайте низкоуглеводную, высокобелковую диету" : "Prepare loose clothing"
+        locale === "ru"
+          ? "Поддерживайте стабильный вес в течение 6+ месяцев"
+          : "Avoid smoking, alcohol, NSAIDs pre-op",
+        locale === "ru"
+          ? "Избегайте курения, алкоголя, НПВП перед операцией"
+          : "Lab tests and medical clearance may be needed",
+        locale === "ru"
+          ? "Может потребоваться лабораторное обследование и медицинская справка"
+          : "Prepare for 2–3 weeks off work and help at home",
+        locale === "ru"
+          ? "Подготовьтесь к 2–3 неделям отсутствия на работе и помощи дома"
+          : "Avoid crash dieting before surgery",
+        locale === "ru"
+          ? "Избегайте резкого снижения веса перед операцией"
+          : "Stop smoking at least 4-6 weeks prior",
+        locale === "ru"
+          ? "Прекратите курение как минимум за 4-6 недель до"
+          : "Avoid using blood thinners",
+        locale === "ru"
+          ? "Избегайте использования разжижающих кровь препаратов."
+          : "Opt for a low-carb, high-protein diet",
+        locale === "ru"
+          ? "Выбирайте низкоуглеводную, высокобелковую диету"
+          : "Prepare loose clothing",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -12477,41 +13393,95 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
       faqs: [
         {
-          question : locale === "ru" ? "Безопасны ли имплантаты?" : "Are the implants safe?",
-          answer : locale === "ru" ? "Да, как силиконовые, так и солевые имплантаты одобрены FDA и считаются безопасными." : "Yes, both silicone and saline implants are FDA-approved"
+          question:
+            locale === "ru"
+              ? "Безопасны ли имплантаты?"
+              : "Are the implants safe?",
+          answer:
+            locale === "ru"
+              ? "Да, как силиконовые, так и солевые имплантаты одобрены FDA и считаются безопасными."
+              : "Yes, both silicone and saline implants are FDA-approved",
         },
         {
-          question : locale === "ru" ? "Потеряю ли я чувствительность сосков?" : "Will I lose nipple sensation?",
-          answer : locale === "ru" ? "Временное онемение сосков - обычное явление, постоянная утрата чувствительности встречается редко." : "Temporary numbness is common, permanent loss is rare"
+          question:
+            locale === "ru"
+              ? "Потеряю ли я чувствительность сосков?"
+              : "Will I lose nipple sensation?",
+          answer:
+            locale === "ru"
+              ? "Временное онемение сосков - обычное явление, постоянная утрата чувствительности встречается редко."
+              : "Temporary numbness is common, permanent loss is rare",
         },
         {
-          question : locale === "ru" ? "Могу ли я кормить грудью после увеличения груди?" : "Can I breastfeed after augmentation?",
-          answer : locale === "ru" ? "Обычно да, но это зависит от расположения имплантата." : "Often yes, but depends on implant placement"
+          question:
+            locale === "ru"
+              ? "Могу ли я кормить грудью после увеличения груди?"
+              : "Can I breastfeed after augmentation?",
+          answer:
+            locale === "ru"
+              ? "Обычно да, но это зависит от расположения имплантата."
+              : "Often yes, but depends on implant placement",
         },
         {
-          question : locale === "ru" ? "Сколько прослужат имплантаты?" : "How long do implants last?",
-          answer : locale === "ru" ? "Имплантаты в среднем служат 10–15 лет, но может потребоваться их замена в будущем." : "10–15 years on average; may need replacement eventually"
+          question:
+            locale === "ru"
+              ? "Сколько прослужат имплантаты?"
+              : "How long do implants last?",
+          answer:
+            locale === "ru"
+              ? "Имплантаты в среднем служат 10–15 лет, но может потребоваться их замена в будущем."
+              : "10–15 years on average; may need replacement eventually",
         },
         {
-          question : locale === "ru" ? "Будут ли видны шрамы?" : "Will there be visible scars?",
-          answer : locale === "ru" ? "Шрамы маленькие и обычно скрыты под грудью или в области подмышки." : "Scars are small and usually hidden under the breast or armpit"
-        }
+          question:
+            locale === "ru"
+              ? "Будут ли видны шрамы?"
+              : "Will there be visible scars?",
+          answer:
+            locale === "ru"
+              ? "Шрамы маленькие и обычно скрыты под грудью или в области подмышки."
+              : "Scars are small and usually hidden under the breast or armpit",
+        },
       ],
       posts: [
-        locale === "ru" ? "Носите хирургический бюстгальтер или поддерживающее изделие в соответствии с указаниями врача." : "Wear a surgical bra or support garment",
-        locale === "ru" ? "Спите на спине с приподнятой верхней частью тела для лучшего восстановления." : "Sleep on your back with upper body elevated",
-        locale === "ru" ? "Избегайте поднятия рук выше плеч в течение 1–2 недель после операции." : "Avoid lifting arms above shoulders for 1–2 weeks",
-        locale === "ru" ? "Ограничьте физическую активность на 4–6 недель для нормального заживления." : "Limit physical activity for 4–6 weeks",
-        locale === "ru" ? "Держите разрезы сухими и следуйте инструкциям по перевязке для предотвращения инфекций." : "Keep incisions dry and follow dressing instructions",
-        locale === "ru" ? "Выберите хирургический бюстгальтер по рекомендациям вашего врача для правильной поддержки в период восстановления." : "Choose a surgical bra based on your doctor’s recommendations for proper support during recovery",
+        locale === "ru"
+          ? "Носите хирургический бюстгальтер или поддерживающее изделие в соответствии с указаниями врача."
+          : "Wear a surgical bra or support garment",
+        locale === "ru"
+          ? "Спите на спине с приподнятой верхней частью тела для лучшего восстановления."
+          : "Sleep on your back with upper body elevated",
+        locale === "ru"
+          ? "Избегайте поднятия рук выше плеч в течение 1–2 недель после операции."
+          : "Avoid lifting arms above shoulders for 1–2 weeks",
+        locale === "ru"
+          ? "Ограничьте физическую активность на 4–6 недель для нормального заживления."
+          : "Limit physical activity for 4–6 weeks",
+        locale === "ru"
+          ? "Держите разрезы сухими и следуйте инструкциям по перевязке для предотвращения инфекций."
+          : "Keep incisions dry and follow dressing instructions",
+        locale === "ru"
+          ? "Выберите хирургический бюстгальтер по рекомендациям вашего врача для правильной поддержки в период восстановления."
+          : "Choose a surgical bra based on your doctor’s recommendations for proper support during recovery",
       ],
       preList: [
-        locale === "ru" ? "Воздержитесь от курения за 4–6 недель до операции." : "Stop smoking 4–6 weeks prior",
-        locale === "ru" ? "Избегайте аспирина, НПВП и травяных добавок." : "Avoid aspirin, NSAIDs, and herbal supplements",
-        locale === "ru" ? "Пройдите обследование (маммография или ультразвук, если это необходимо)." : "Complete imaging (mammogram or ultrasound if required)",
-        locale === "ru" ? "Обсудите с хирургом размер и тип импланта, чтобы выбрать оптимальный вариант." : "Discuss implant size and type with your surgeon",
-        locale === "ru" ? "Организуйте помощь на 1–2 недели после операции для удобства в восстановительный период." : "Arrange for 1–2 weeks of help post-op",
-        locale === "ru" ? "Обсудите с хирургом любые хронические заболевания или аллергии, которые могут повлиять на восстановление." : "Discuss any chronic conditions or allergies that could affect recovery with your surgeon.",
+        locale === "ru"
+          ? "Воздержитесь от курения за 4–6 недель до операции."
+          : "Stop smoking 4–6 weeks prior",
+        locale === "ru"
+          ? "Избегайте аспирина, НПВП и травяных добавок."
+          : "Avoid aspirin, NSAIDs, and herbal supplements",
+        locale === "ru"
+          ? "Пройдите обследование (маммография или ультразвук, если это необходимо)."
+          : "Complete imaging (mammogram or ultrasound if required)",
+        locale === "ru"
+          ? "Обсудите с хирургом размер и тип импланта, чтобы выбрать оптимальный вариант."
+          : "Discuss implant size and type with your surgeon",
+        locale === "ru"
+          ? "Организуйте помощь на 1–2 недели после операции для удобства в восстановительный период."
+          : "Arrange for 1–2 weeks of help post-op",
+        locale === "ru"
+          ? "Обсудите с хирургом любые хронические заболевания или аллергии, которые могут повлиять на восстановление."
+          : "Discuss any chronic conditions or allergies that could affect recovery with your surgeon.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -12861,41 +13831,93 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
       faqs: [
         {
-          question : locale === "ru" ? "Увеличивает ли это размер груди?" : "Does it increase cup size?",
-          answer : locale === "ru" ? "Нет, процедура поднимает и формирует грудь, но не увеличивает ее объем." : "No, it lifts and reshapes but doesn’t enlarge breasts"
+          question:
+            locale === "ru"
+              ? "Увеличивает ли это размер груди?"
+              : "Does it increase cup size?",
+          answer:
+            locale === "ru"
+              ? "Нет, процедура поднимает и формирует грудь, но не увеличивает ее объем."
+              : "No, it lifts and reshapes but doesn’t enlarge breasts",
         },
         {
-          question : locale === "ru" ? "Можно ли комбинировать это с имплантами?" : "Can it be combined with implants?",
-          answer : locale === "ru" ? "Да, для добавления объема можно сочетать с имплантами." : "Yes, for added volume"
+          question:
+            locale === "ru"
+              ? "Можно ли комбинировать это с имплантами?"
+              : "Can it be combined with implants?",
+          answer:
+            locale === "ru"
+              ? "Да, для добавления объема можно сочетать с имплантами."
+              : "Yes, for added volume",
         },
         {
-          question : locale === "ru" ? "Будут ли рубцы?" : "Will there be scars?",
-          answer : locale === "ru" ? "Да, рубцы могут быть, но они становятся менее заметными со временем и могут быть скрыты в бюстгальтерах." : "Yes, but they fade and can be concealed in bras"
+          question:
+            locale === "ru" ? "Будут ли рубцы?" : "Will there be scars?",
+          answer:
+            locale === "ru"
+              ? "Да, рубцы могут быть, но они становятся менее заметными со временем и могут быть скрыты в бюстгальтерах."
+              : "Yes, but they fade and can be concealed in bras",
         },
         {
-          question : locale === "ru" ? "Результаты постоянные?" : "Are results permanent?",
-          answer : locale === "ru" ? "Старение и воздействие гравитации продолжаются, но результаты обычно долговечны." : "Aging and gravity continue, but results are long-lasting"
+          question:
+            locale === "ru"
+              ? "Результаты постоянные?"
+              : "Are results permanent?",
+          answer:
+            locale === "ru"
+              ? "Старение и воздействие гравитации продолжаются, но результаты обычно долговечны."
+              : "Aging and gravity continue, but results are long-lasting",
         },
         {
-          question : locale === "ru" ? "Влияет ли это на чувствительность сосков?" : "Is nipple sensation affected?",
-          answer : locale === "ru" ? "Возможно, но обычно это временная потеря чувствительности." : "Possible, usually temporary"
-        }
+          question:
+            locale === "ru"
+              ? "Влияет ли это на чувствительность сосков?"
+              : "Is nipple sensation affected?",
+          answer:
+            locale === "ru"
+              ? "Возможно, но обычно это временная потеря чувствительности."
+              : "Possible, usually temporary",
+        },
       ],
       posts: [
-        locale === "ru" ? "Носите поддерживающий бюстгальтер, как рекомендовано врачом." : "Wear a supportive bra as recommended",
-        locale === "ru" ? "Держите разрезы чистыми и сухими для предотвращения инфекции." : "Keep incisions clean and dry",
-        locale === "ru" ? "Избегайте поднятия тяжестей и движений над головой в период восстановления." : "Avoid heavy lifting or overhead motion",
-        locale === "ru" ? "Спите на спине, чтобы избежать давления на грудь." : "Sleep on your back to avoid pressure",
-        locale === "ru" ? "Следите за отеками, синяками или необычными выделениями, и сообщите врачу при необходимости." : "Monitor for swelling, bruising, or unusual discharge",
-        locale === "ru" ? "Носите поддерживающий бюстгальтер в течение рекомендованного времени для сохранения формы груди и предотвращения изменений внешнего вида." : "Wear the supportive bra for the recommended duration to maintain breast shape and prevent appearance changes",
+        locale === "ru"
+          ? "Носите поддерживающий бюстгальтер, как рекомендовано врачом."
+          : "Wear a supportive bra as recommended",
+        locale === "ru"
+          ? "Держите разрезы чистыми и сухими для предотвращения инфекции."
+          : "Keep incisions clean and dry",
+        locale === "ru"
+          ? "Избегайте поднятия тяжестей и движений над головой в период восстановления."
+          : "Avoid heavy lifting or overhead motion",
+        locale === "ru"
+          ? "Спите на спине, чтобы избежать давления на грудь."
+          : "Sleep on your back to avoid pressure",
+        locale === "ru"
+          ? "Следите за отеками, синяками или необычными выделениями, и сообщите врачу при необходимости."
+          : "Monitor for swelling, bruising, or unusual discharge",
+        locale === "ru"
+          ? "Носите поддерживающий бюстгальтер в течение рекомендованного времени для сохранения формы груди и предотвращения изменений внешнего вида."
+          : "Wear the supportive bra for the recommended duration to maintain breast shape and prevent appearance changes",
       ],
       preList: [
-        locale === "ru" ? "Воздержитесь от курения за 4–6 недель до операции." : "Stop smoking 4–6 weeks before",
-        locale === "ru" ? "Избегайте НПВП и алкоголя за 2 недели до операции." : "Avoid NSAIDs and alcohol for 2 weeks",
-        locale === "ru" ? "Поддерживайте стабильный вес для достижения оптимальных результатов." : "Maintain a stable weight for optimal results",
-        locale === "ru" ? "Организуйте помощь после операции и время для отдыха от работы." : "Arrange for post-op help and time off work",
-        locale === "ru" ? "Носите удобную, свободную одежду в день операции для комфорта." : "Wear comfortable, loose clothing on surgery day",
-        locale === "ru" ? "Обсудите с хирургом любые хронические заболевания или проблемы со здоровьем, которые могут повлиять на восстановление." : "Discuss any chronic conditions or health concerns that could impact recovery",
+        locale === "ru"
+          ? "Воздержитесь от курения за 4–6 недель до операции."
+          : "Stop smoking 4–6 weeks before",
+        locale === "ru"
+          ? "Избегайте НПВП и алкоголя за 2 недели до операции."
+          : "Avoid NSAIDs and alcohol for 2 weeks",
+        locale === "ru"
+          ? "Поддерживайте стабильный вес для достижения оптимальных результатов."
+          : "Maintain a stable weight for optimal results",
+        locale === "ru"
+          ? "Организуйте помощь после операции и время для отдыха от работы."
+          : "Arrange for post-op help and time off work",
+        locale === "ru"
+          ? "Носите удобную, свободную одежду в день операции для комфорта."
+          : "Wear comfortable, loose clothing on surgery day",
+        locale === "ru"
+          ? "Обсудите с хирургом любые хронические заболевания или проблемы со здоровьем, которые могут повлиять на восстановление."
+          : "Discuss any chronic conditions or health concerns that could impact recovery",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -13161,8 +14183,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       benefits: {
         items: [
           {
-            title:
-              locale === "ru" ? "Красота тела" : "Image Benefits",
+            title: locale === "ru" ? "Красота тела" : "Image Benefits",
             desc:
               locale === "ru"
                 ? "улучшение эстетики для повышения самооценки."
@@ -13176,8 +14197,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
                 : "Less friction during activities leads to improved mobility.",
           },
           {
-            title:
-              locale === "ru" ? "Путь уверенности" : "Mental Health",
+            title: locale === "ru" ? "Путь уверенности" : "Mental Health",
             desc:
               locale === "ru"
                 ? "развитие эмоционального благополучия и качества жизни."
@@ -13193,8 +14213,7 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
                 : "Labiaplasty is a surgical procedure aimed at altering the size and shape of the labia, often performed to improve aesthetic appearance and increase comfort. Labiaplasty can involve reducing the size of the labia majora to relieve discomfort caused by hypertrophy (enlargement) of the labia.",
           },
           {
-            header:
-              locale === "ru" ? "Как это работает" : "How it works",
+            header: locale === "ru" ? "Как это работает" : "How it works",
             desc:
               locale === "ru"
                 ? "лабиопластика – это хирургическая процедура, направленная на изменение формы и размера больших или малых половых губ. Она позволяет удалить избыточную ткань, создавая более эстетичный и симметричный вид. В некоторых случаях возможно достижение так называемого “эффекта Барби” – гиперсимметричных и эстетически гармоничных половых губ."
@@ -13211,41 +14230,89 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
       faqs: [
         {
-          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
-          answer : locale === "ru" ? "Легкая болезненность в течение нескольких дней - это нормально и обычно хорошо контролируется обезболивающими." : "Tenderness for a few days is normal, managed with meds"
+          question: locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Легкая болезненность в течение нескольких дней - это нормально и обычно хорошо контролируется обезболивающими."
+              : "Tenderness for a few days is normal, managed with meds",
         },
         {
-          question : locale === "ru" ? "Будут ли видны шрамы?" : "Will there be visible scars?",
-          answer : locale === "ru" ? "Шрамы минимальны и со временем становятся менее заметными." : "Scars are small and fade over time"
+          question:
+            locale === "ru"
+              ? "Будут ли видны шрамы?"
+              : "Will there be visible scars?",
+          answer:
+            locale === "ru"
+              ? "Шрамы минимальны и со временем становятся менее заметными."
+              : "Scars are small and fade over time",
         },
         {
-          question : locale === "ru" ? "Могу ли я заниматься спортом после процедуры?" : "Can I exercise after?",
-          answer : locale === "ru" ? "В первые 1–2 недели рекомендуется только лёгкая активность, например, прогулки." : "Light walking only for first 1–2 weeks"
+          question:
+            locale === "ru"
+              ? "Могу ли я заниматься спортом после процедуры?"
+              : "Can I exercise after?",
+          answer:
+            locale === "ru"
+              ? "В первые 1–2 недели рекомендуется только лёгкая активность, например, прогулки."
+              : "Light walking only for first 1–2 weeks",
         },
         {
-          question : locale === "ru" ? "Это безопасно?" : "Is it safe?",
-          answer : locale === "ru" ? "Да, при условии, что процедура проводится квалифицированным и опытным хирургом." : "Yes, when done by qualified surgeons"
+          question: locale === "ru" ? "Это безопасно?" : "Is it safe?",
+          answer:
+            locale === "ru"
+              ? "Да, при условии, что процедура проводится квалифицированным и опытным хирургом."
+              : "Yes, when done by qualified surgeons",
         },
         {
-          question : locale === "ru" ? "Повлияет ли это на чувствительность?" : "Will it affect sensitivity?",
-          answer : locale === "ru" ? "В большинстве случаев чувствительность сохраняется; некоторые пациенты даже отмечают улучшение комфорта." : "Most patients report no change or improved comfort"
-        }
+          question:
+            locale === "ru"
+              ? "Повлияет ли это на чувствительность?"
+              : "Will it affect sensitivity?",
+          answer:
+            locale === "ru"
+              ? "В большинстве случаев чувствительность сохраняется; некоторые пациенты даже отмечают улучшение комфорта."
+              : "Most patients report no change or improved comfort",
+        },
       ],
       posts: [
-        locale === "ru" ? "Прикладывайте холодные компрессы поверх одежды, чтобы уменьшить отек." : "Apply cold compresses over clothing to reduce swelling",
-        locale === "ru" ? "Поддерживайте чистоту и сухость в зоне вмешательства; при необходимости используйте сидячие ванны по рекомендации врача." : "Keep area clean and dry, use sitz baths if recommended",
-        locale === "ru" ? "Избегайте тесной одежды и половой активности в течение 4–6 недель." : "Avoid tight clothing and sexual activity for 4–6 weeks",
-        locale === "ru" ? "Принимайте все назначенные лекарства и обезболивающие строго по инструкции." : "Take all prescribed medications and pain relief",
-        locale === "ru" ? "Следите за признаками инфекции: повышенная температура, неприятный запах или гнойные выделения." : "Monitor for signs of infection (fever, odor, pus)",
-        locale === "ru" ? "Используйте сидячие ванны с осторожностью, чтобы избежать раздражения или повреждения ткани." : "Be cautious with sitz baths to avoid irritation or damage to the area"
+        locale === "ru"
+          ? "Прикладывайте холодные компрессы поверх одежды, чтобы уменьшить отек."
+          : "Apply cold compresses over clothing to reduce swelling",
+        locale === "ru"
+          ? "Поддерживайте чистоту и сухость в зоне вмешательства; при необходимости используйте сидячие ванны по рекомендации врача."
+          : "Keep area clean and dry, use sitz baths if recommended",
+        locale === "ru"
+          ? "Избегайте тесной одежды и половой активности в течение 4–6 недель."
+          : "Avoid tight clothing and sexual activity for 4–6 weeks",
+        locale === "ru"
+          ? "Принимайте все назначенные лекарства и обезболивающие строго по инструкции."
+          : "Take all prescribed medications and pain relief",
+        locale === "ru"
+          ? "Следите за признаками инфекции: повышенная температура, неприятный запах или гнойные выделения."
+          : "Monitor for signs of infection (fever, odor, pus)",
+        locale === "ru"
+          ? "Используйте сидячие ванны с осторожностью, чтобы избежать раздражения или повреждения ткани."
+          : "Be cautious with sitz baths to avoid irritation or damage to the area",
       ],
       preList: [
-        locale === "ru" ? "Избегайте приема НПВП и биодобавок за 7 дней до операции." : "Avoid NSAIDs and supplements 1 week before",
-        locale === "ru" ? "Воздержитесь от курения за 2–3 недели до процедуры." : "Stop smoking 2–3 weeks before",
-        locale === "ru" ? "Побрейте или аккуратно подстригите зону вмешательства согласно рекомендациям врача." : "Shave or trim the area as instructed pre-surgery",
-        locale === "ru" ? "Наденьте свободное хлопковое нижнее белье и возьмите с собой гигиеническую прокладку." : "Wear loose cotton underwear and bring a pad",
-        locale === "ru" ? "Запланируйте не менее 3–5 дней на восстановление и отдых." : "Arrange time off for rest (at least 3–5 days)",
-        locale === "ru" ? "Обязательно сообщите врачу о любых хронических заболеваниях или аллергиях, которые могут повлиять на заживление." : "Inform your doctor of any chronic illnesses or allergies that could affect healing."
+        locale === "ru"
+          ? "Избегайте приема НПВП и биодобавок за 7 дней до операции."
+          : "Avoid NSAIDs and supplements 1 week before",
+        locale === "ru"
+          ? "Воздержитесь от курения за 2–3 недели до процедуры."
+          : "Stop smoking 2–3 weeks before",
+        locale === "ru"
+          ? "Побрейте или аккуратно подстригите зону вмешательства согласно рекомендациям врача."
+          : "Shave or trim the area as instructed pre-surgery",
+        locale === "ru"
+          ? "Наденьте свободное хлопковое нижнее белье и возьмите с собой гигиеническую прокладку."
+          : "Wear loose cotton underwear and bring a pad",
+        locale === "ru"
+          ? "Запланируйте не менее 3–5 дней на восстановление и отдых."
+          : "Arrange time off for rest (at least 3–5 days)",
+        locale === "ru"
+          ? "Обязательно сообщите врачу о любых хронических заболеваниях или аллергиях, которые могут повлиять на заживление."
+          : "Inform your doctor of any chronic illnesses or allergies that could affect healing.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -13581,7 +14648,8 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
                 : "Penoplasty involves lengthening and thickening techniques. Lengthening is achieved by cutting the suspensory ligament, making more of the penis visible. Thickening uses fat injections, fillers, or tissue transfer to enhance girth, though some fat may reabsorb over time. Straightening procedures can also correct curvature for improved function and comfort.",
           },
           {
-            header: locale === "ru" ? "Кому подойдет процедура" : "Who It Is For",
+            header:
+              locale === "ru" ? "Кому подойдет процедура" : "Who It Is For",
             desc:
               locale === "ru"
                 ? "Фаллопластика подходит мужчинам, недовольным размером или формой полового члена. К показаниям относятся длина пениса ниже средней (менее 12 см в состоянии эрекции), деформации после неудачного обрезания или травм, желание увеличить обхват по эстетическим или функциональным причинам, а также аномальное искривление, вызывающее дискомфорт при эрекции или во время полового акта."
@@ -13591,38 +14659,86 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
       },
       faqs: [
         {
-          question : locale === "ru" ? "Являются ли результаты постоянными?" : "Is the result permanent?",
-          answer : locale === "ru" ? "Да, увеличение объема обычно сохраняется надолго. Изменения в длине индивидуальны и могут варьироваться." : "Girth enhancement is long-lasting; length varies"
+          question:
+            locale === "ru"
+              ? "Являются ли результаты постоянными?"
+              : "Is the result permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, увеличение объема обычно сохраняется надолго. Изменения в длине индивидуальны и могут варьироваться."
+              : "Girth enhancement is long-lasting; length varies",
         },
         {
-          question : locale === "ru" ? "Влияет ли процедура на сексуальную функцию?" : "Does it affect sexual function?",
-          answer : locale === "ru" ? "Нет, сексуальная функция остаётся прежней и не нарушается." : "No, function is preserved"
+          question:
+            locale === "ru"
+              ? "Влияет ли процедура на сексуальную функцию?"
+              : "Does it affect sexual function?",
+          answer:
+            locale === "ru"
+              ? "Нет, сексуальная функция остаётся прежней и не нарушается."
+              : "No, function is preserved",
         },
         {
-          question : locale === "ru" ? "Останутся ли заметные шрамы?" : "Will there be scars?",
-          answer : locale === "ru" ? "Разрезы минимальны и, как правило, незаметны даже при ближайшем рассмотрении." : "Minimal, discreet incisions"
+          question:
+            locale === "ru"
+              ? "Останутся ли заметные шрамы?"
+              : "Will there be scars?",
+          answer:
+            locale === "ru"
+              ? "Разрезы минимальны и, как правило, незаметны даже при ближайшем рассмотрении."
+              : "Minimal, discreet incisions",
         },
         {
-          question : locale === "ru" ? "Насколько болезненной является процедура?" : "Is it painful?",
-          answer : locale === "ru" ? "В течение первых дней возможны умеренные болевые ощущения и отечность, которые хорошо контролируются назначенными препаратами." : "Mild soreness and swelling are expected"
+          question:
+            locale === "ru"
+              ? "Насколько болезненной является процедура?"
+              : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "В течение первых дней возможны умеренные болевые ощущения и отечность, которые хорошо контролируются назначенными препаратами."
+              : "Mild soreness and swelling are expected",
         },
         {
-          question : locale === "ru" ? "Гарантированы ли результаты?" : "Are results guaranteed?",
-          answer : locale === "ru" ? "Итоги процедуры зависят от индивидуальных особенностей организма. Чтобы достичь наилучшего результата, важно заранее обсудить свои ожидания с врачом." : "Varies per individual, discuss goals beforehand"
-        }
+          question:
+            locale === "ru"
+              ? "Гарантированы ли результаты?"
+              : "Are results guaranteed?",
+          answer:
+            locale === "ru"
+              ? "Итоги процедуры зависят от индивидуальных особенностей организма. Чтобы достичь наилучшего результата, важно заранее обсудить свои ожидания с врачом."
+              : "Varies per individual, discuss goals beforehand",
+        },
       ],
       posts: [
-        locale === "ru" ? "Избегайте сексуальной активности не менее 4–6 недель после процедуры." : "Avoid sexual activity for at least 4–6 weeks",
-        locale === "ru" ? "Носите поддерживающее нижнее белье согласно рекомендациям врача." : "Wear supportive underwear",
-        locale === "ru" ? "Принимайте все назначенные антибиотики и противовоспалительные препараты строго по инструкции." : "Take all prescribed antibiotics and anti-inflammatory meds",
-        locale === "ru" ? "Наблюдайте за появлением отёков, покраснений или других признаков воспаления." : "Monitor for swelling or redness",
-        locale === "ru" ? "Воздержитесь от физической активности в течение как минимум 2 недель." : "Avoid physical activity for 2 weeks"
+        locale === "ru"
+          ? "Избегайте сексуальной активности не менее 4–6 недель после процедуры."
+          : "Avoid sexual activity for at least 4–6 weeks",
+        locale === "ru"
+          ? "Носите поддерживающее нижнее белье согласно рекомендациям врача."
+          : "Wear supportive underwear",
+        locale === "ru"
+          ? "Принимайте все назначенные антибиотики и противовоспалительные препараты строго по инструкции."
+          : "Take all prescribed antibiotics and anti-inflammatory meds",
+        locale === "ru"
+          ? "Наблюдайте за появлением отёков, покраснений или других признаков воспаления."
+          : "Monitor for swelling or redness",
+        locale === "ru"
+          ? "Воздержитесь от физической активности в течение как минимум 2 недель."
+          : "Avoid physical activity for 2 weeks",
       ],
-      preList:[
-        locale === "ru" ? "Прекратите прием разжижающих кровь препаратов и курение за 2–3 недели до операции." : "Stop blood thinners and smoking 2–3 weeks before",
-        locale === "ru" ? "Пройдите полное медицинское обследование и сдайте необходимые анализы." : "Complete medical clearance and lab tests",
-        locale === "ru" ? "Избегайте бритья области, чтобы не вызвать раздражения кожи." : "Avoid shaving area to prevent irritation",
-        locale === "ru" ? "Обязательно обсудите свои ожидания и желаемые результаты с хирургом." : "Discuss expectations clearly with your surgeon"
+      preList: [
+        locale === "ru"
+          ? "Прекратите прием разжижающих кровь препаратов и курение за 2–3 недели до операции."
+          : "Stop blood thinners and smoking 2–3 weeks before",
+        locale === "ru"
+          ? "Пройдите полное медицинское обследование и сдайте необходимые анализы."
+          : "Complete medical clearance and lab tests",
+        locale === "ru"
+          ? "Избегайте бритья области, чтобы не вызвать раздражения кожи."
+          : "Avoid shaving area to prevent irritation",
+        locale === "ru"
+          ? "Обязательно обсудите свои ожидания и желаемые результаты с хирургом."
+          : "Discuss expectations clearly with your surgeon",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -14010,7 +15126,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
 <p dir="ltr">Contact us today for a free consultation and personalized quote! Simply send us a message, and our expert team will promptly connect with you to discuss your full arch restoration needs, answer your questions, and help you plan your journey to a renewed and confident smile with 4 Dental Implants in turkey or 6 Dental-Implants in turkey through AZPO Health. Your transformation starts now!</p>
 <p>&nbsp;</p>`,
       },
-      video:"https://youtu.be/4tNxEcepwEY?si=8WLzBdNz-VF99PUf",
+      video: "https://youtu.be/4tNxEcepwEY?si=8WLzBdNz-VF99PUf",
       imgCover: subNestedKey === "6-4-dental-implants" ? den64 : null,
       subNestedKey: "6-4-dental-implants",
     },
@@ -14075,38 +15191,77 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Больно ли это?" : "Is it painful?",
-          answer : locale === "ru" ? "Во время процедуры боли нет, но после может ощущаться небольшой дискомфорт" : "Not during the procedure – some discomfort after is common"
+          question: locale === "ru" ? "Больно ли это?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Во время процедуры боли нет, но после может ощущаться небольшой дискомфорт"
+              : "Not during the procedure – some discomfort after is common",
         },
         {
-          question : locale === "ru" ? "Сколько времени это занимает?" : "How long does it take?",
-          answer : locale === "ru" ? "Обычно требуется 1–2 визита, в зависимости от конкретного случая" : "1–2 visits, depending on the case"
+          question:
+            locale === "ru"
+              ? "Сколько времени это занимает?"
+              : "How long does it take?",
+          answer:
+            locale === "ru"
+              ? "Обычно требуется 1–2 визита, в зависимости от конкретного случая"
+              : "1–2 visits, depending on the case",
         },
         {
-          question : locale === "ru" ? "Всегда ли нужна коронка?" : "Is a crown always needed?",
-          answer : locale === "ru" ? "В большинстве случаев - да. Коронка помогает защитить зуб в долгосрочной перспективе." : "Usually yes, to protect the tooth long-term"
+          question:
+            locale === "ru"
+              ? "Всегда ли нужна коронка?"
+              : "Is a crown always needed?",
+          answer:
+            locale === "ru"
+              ? "В большинстве случаев - да. Коронка помогает защитить зуб в долгосрочной перспективе."
+              : "Usually yes, to protect the tooth long-term",
         },
         {
-          question : locale === "ru" ? "Может ли инфекция вернуться?" : "Can the infection return?",
-          answer : locale === "ru" ? "Это случается редко, особенно если лечение проведено правильно и соблюдаются рекомендации врача" : "Rarely, if treatment is done properly"
+          question:
+            locale === "ru"
+              ? "Может ли инфекция вернуться?"
+              : "Can the infection return?",
+          answer:
+            locale === "ru"
+              ? "Это случается редко, особенно если лечение проведено правильно и соблюдаются рекомендации врача"
+              : "Rarely, if treatment is done properly",
         },
         {
-          question : locale === "ru" ? "Будет ли зуб выглядеть иначе?" : "Will the tooth look different?",
-          answer : locale === "ru" ? "Нет, с установленной коронкой внешний вид зуба сохраняется" : "Not with a crown – appearance is preserved"
+          question:
+            locale === "ru"
+              ? "Будет ли зуб выглядеть иначе?"
+              : "Will the tooth look different?",
+          answer:
+            locale === "ru"
+              ? "Нет, с установленной коронкой внешний вид зуба сохраняется"
+              : "Not with a crown – appearance is preserved",
         },
         {
-          question : locale === "ru" ? "Ослабнет ли мой зуб после эндодонтического лечения?" : "Does my tooth weaken after a root canal?",
-          answer : locale === "ru" ? "Да, после лечения зуб может стать более хрупким, поэтому установка коронки часто рекомендуется" : "Yes, the tooth may weaken, so a crown is often recommended."
+          question:
+            locale === "ru"
+              ? "Ослабнет ли мой зуб после эндодонтического лечения?"
+              : "Does my tooth weaken after a root canal?",
+          answer:
+            locale === "ru"
+              ? "Да, после лечения зуб может стать более хрупким, поэтому установка коронки часто рекомендуется"
+              : "Yes, the tooth may weaken, so a crown is often recommended.",
         },
         {
-          question : locale === "ru" ? "Что, если мой зуб сломается после эндодонтического лечения?" : "What if my tooth breaks after a root canal?",
-          answer : locale === "ru" ? "Немедленно обратитесь к стоматологу. Может потребоваться установка коронки или иное восстановительное лечение" : "Contact your dentist right away. A crown or other treatment may be needed."
-        }
+          question:
+            locale === "ru"
+              ? "Что, если мой зуб сломается после эндодонтического лечения?"
+              : "What if my tooth breaks after a root canal?",
+          answer:
+            locale === "ru"
+              ? "Немедленно обратитесь к стоматологу. Может потребоваться установка коронки или иное восстановительное лечение"
+              : "Contact your dentist right away. A crown or other treatment may be needed.",
+        },
       ],
       posts: [
         locale === "ru"
-        ? "Ожидается болезненность в течение 2–3 дней — при необходимости используйте обезболивающие."
-        : "Expect soreness for 2–3 days – use pain relievers",
+          ? "Ожидается болезненность в течение 2–3 дней — при необходимости используйте обезболивающие."
+          : "Expect soreness for 2–3 days – use pain relievers",
         locale === "ru"
           ? "Избегайте жевания на обработанном зубе до установки постоянной пломбы или коронки."
           : "Avoid chewing on treated tooth until permanent filling/crown",
@@ -14127,9 +15282,15 @@ Patients looking for a quicker, less invasive alternative to traditional implant
           : "Avoid hot or cold foods.",
       ],
       preList: [
-        locale === "ru" ? "Поешьте легкую пищу перед визитом" : "Eat a light meal before your appointment",
-        locale === "ru" ? "Не курите и не пейте алкоголь в день лечения" : "Do not smoke or drink alcohol on the day of treatment",
-        locale === "ru" ? "Наденьте удобную одежду" : "Wear comfortable clothes",
+        locale === "ru"
+          ? "Поешьте легкую пищу перед визитом"
+          : "Eat a light meal before your appointment",
+        locale === "ru"
+          ? "Не курите и не пейте алкоголь в день лечения"
+          : "Do not smoke or drink alcohol on the day of treatment",
+        locale === "ru"
+          ? "Наденьте удобную одежду"
+          : "Wear comfortable clothes",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -14449,22 +15610,25 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Естественная эстетика" : "Natural Aesthetics",
+            title:
+              locale === "ru" ? "Естественная эстетика" : "Natural Aesthetics",
             desc:
               locale === "ru"
                 ? "подчёркивают цвет и форму зубов для идеальной улыбки."
                 : "Enhance tooth color, shape, and alignment for a flawless smile.",
           },
           {
-            title:
-              locale === "ru" ? "Долговечность" : "Durable & Long-Lasting",
+            title: locale === "ru" ? "Долговечность" : "Durable & Long-Lasting",
             desc:
               locale === "ru"
                 ? "прочны, устойчивы к износу и сохраняют внешний вид."
                 : "Strong materials that resist wear and discoloration",
           },
           {
-            title: locale === "ru" ? "Минимальное вмешательство" : "Minimally Invasive",
+            title:
+              locale === "ru"
+                ? "Минимальное вмешательство"
+                : "Minimally Invasive",
             desc:
               locale === "ru"
                 ? "сохраняется естественная структура зуба."
@@ -14497,48 +15661,111 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Могут ли виниры повредить мои зубы?" : "Do veneers damage my teeth?",
-          answer : locale === "ru" ? "Нет, только тонкий слой эмали удаляется для их надёжного крепления." : "No, only a thin layer of enamel is removed for bonding"
+          question:
+            locale === "ru"
+              ? "Могут ли виниры повредить мои зубы?"
+              : "Do veneers damage my teeth?",
+          answer:
+            locale === "ru"
+              ? "Нет, только тонкий слой эмали удаляется для их надёжного крепления."
+              : "No, only a thin layer of enamel is removed for bonding",
         },
         {
-          question : locale === "ru" ? "Долговечны ли виниры?" : "Are veneers permanent?",
-          answer : locale === "ru" ? "Они служат 10–15 лет при должном уходе, но могут потребовать замены." : "They last 10–15 years with care, may need replacement"
+          question:
+            locale === "ru"
+              ? "Долговечны ли виниры?"
+              : "Are veneers permanent?",
+          answer:
+            locale === "ru"
+              ? "Они служат 10–15 лет при должном уходе, но могут потребовать замены."
+              : "They last 10–15 years with care, may need replacement",
         },
         {
-          question : locale === "ru" ? "Могу ли я осветлить виниры?" : "Can I whiten veneers?",
-          answer : locale === "ru" ? "Нет, виниры не поддаются отбеливанию." : "No, veneers don’t respond to whitening"
+          question:
+            locale === "ru"
+              ? "Могу ли я осветлить виниры?"
+              : "Can I whiten veneers?",
+          answer:
+            locale === "ru"
+              ? "Нет, виниры не поддаются отбеливанию."
+              : "No, veneers don’t respond to whitening",
         },
         {
-          question : locale === "ru" ? "Они хрупкие?" : "Are they fragile?",
-          answer : locale === "ru" ? "Они достаточно прочные, но при чрезмерной нагрузке могут повредиться." : "They’re strong but can chip – avoid using teeth as tools"
+          question: locale === "ru" ? "Они хрупкие?" : "Are they fragile?",
+          answer:
+            locale === "ru"
+              ? "Они достаточно прочные, но при чрезмерной нагрузке могут повредиться."
+              : "They’re strong but can chip – avoid using teeth as tools",
         },
         {
-          question : locale === "ru" ? "Будут ли они выглядеть естественно?" : "Will they look natural?",
-          answer : locale === "ru" ? "Да, современные виниры имитируют естественную прозрачность зубов." : "Yes, modern veneers mimic natural tooth translucency"
+          question:
+            locale === "ru"
+              ? "Будут ли они выглядеть естественно?"
+              : "Will they look natural?",
+          answer:
+            locale === "ru"
+              ? "Да, современные виниры имитируют естественную прозрачность зубов."
+              : "Yes, modern veneers mimic natural tooth translucency",
         },
         {
-          question : locale === "ru" ? "Меняют ли виниры цвет со временем?" : "Do veneers change color over time?",
-          answer : locale === "ru" ? "Нет, но красящие продукты и напитки могут повлиять на оттенок соседних натуральных зубов." : "No, but pigmented foods and drinks can change the color of natural teeth."
-        }
+          question:
+            locale === "ru"
+              ? "Меняют ли виниры цвет со временем?"
+              : "Do veneers change color over time?",
+          answer:
+            locale === "ru"
+              ? "Нет, но красящие продукты и напитки могут повлиять на оттенок соседних натуральных зубов."
+              : "No, but pigmented foods and drinks can change the color of natural teeth.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Избегайте укусов твёрдых продуктов передними зубами (например, яблок)." : "Avoid biting hard foods with front teeth (like apple)",
-        locale === "ru" ? "Соблюдайте гигиену полости рта, используя неабразивную зубную пасту." : "Maintain oral hygiene but use non-abrasive toothpaste",
-        locale === "ru" ? "Если вы скрипите зубами во сне, обязательно носите ночную капу." : "Use a night guard if you grind your teeth",
-        locale === "ru" ? "В течение первых 48 часов избегайте продуктов и напитков, способных окрашивать зубы." : "Avoid staining foods and drinks for first 48 hours",
-        locale === "ru" ? "При необходимости проходите контрольные осмотры для проверки сцепления виниров." : "Follow up for bonding check if needed",
-        locale === "ru" ? "Избегайте слишком горячей или холодной пищи." : "Avoid excessively hot and cold foods.",
-        locale === "ru" ? "Не используйте отбеливающие средства после установки виниров." : "Avoid using whitening products after the procedure.",
-        locale === "ru" ? "Откажитесь от табачных изделий." : "Avoid tobacco products.",
-        locale === "ru" ? "Ограничьте употребление кислых продуктов и напитков." : "Stay away from acidic foods/beverages.",
-        locale === "ru" ? "При занятиях спортом используйте защитную капу, чтобы уберечь виниры от повреждений." : "Use a mouthguard during physical activities to protect your veneers."
+        locale === "ru"
+          ? "Избегайте укусов твёрдых продуктов передними зубами (например, яблок)."
+          : "Avoid biting hard foods with front teeth (like apple)",
+        locale === "ru"
+          ? "Соблюдайте гигиену полости рта, используя неабразивную зубную пасту."
+          : "Maintain oral hygiene but use non-abrasive toothpaste",
+        locale === "ru"
+          ? "Если вы скрипите зубами во сне, обязательно носите ночную капу."
+          : "Use a night guard if you grind your teeth",
+        locale === "ru"
+          ? "В течение первых 48 часов избегайте продуктов и напитков, способных окрашивать зубы."
+          : "Avoid staining foods and drinks for first 48 hours",
+        locale === "ru"
+          ? "При необходимости проходите контрольные осмотры для проверки сцепления виниров."
+          : "Follow up for bonding check if needed",
+        locale === "ru"
+          ? "Избегайте слишком горячей или холодной пищи."
+          : "Avoid excessively hot and cold foods.",
+        locale === "ru"
+          ? "Не используйте отбеливающие средства после установки виниров."
+          : "Avoid using whitening products after the procedure.",
+        locale === "ru"
+          ? "Откажитесь от табачных изделий."
+          : "Avoid tobacco products.",
+        locale === "ru"
+          ? "Ограничьте употребление кислых продуктов и напитков."
+          : "Stay away from acidic foods/beverages.",
+        locale === "ru"
+          ? "При занятиях спортом используйте защитную капу, чтобы уберечь виниры от повреждений."
+          : "Use a mouthguard during physical activities to protect your veneers.",
       ],
       preList: [
-        locale === "ru" ? "Убедитесь, что полость рта в здоровом состоянии - нет кариеса или заболеваний дёсен." : "Ensure oral health is stable (no untreated decay or gum disease)",
-        locale === "ru" ? "Обсудите с врачом желаемый цвет, форму и общий дизайн улыбки." : "Discuss color, shape, and smile design with your dentist",
-        locale === "ru" ? "Будьте готовы к незначительному удалению эмали - процедура не требует длительного голодания." : "Expect minor enamel removal – no major fasting required",
-        locale === "ru" ? "Откажитесь от курения для лучшей фиксации виниров и сохранения эстетики на долгий срок." : "Stop smoking for better adhesion and long-term aesthetics",
-        locale === "ru" ? "Обязательно сообщите врачу, если у вас есть повышенная чувствительность зубов." : "Inform if you have tooth sensitivity"
+        locale === "ru"
+          ? "Убедитесь, что полость рта в здоровом состоянии - нет кариеса или заболеваний дёсен."
+          : "Ensure oral health is stable (no untreated decay or gum disease)",
+        locale === "ru"
+          ? "Обсудите с врачом желаемый цвет, форму и общий дизайн улыбки."
+          : "Discuss color, shape, and smile design with your dentist",
+        locale === "ru"
+          ? "Будьте готовы к незначительному удалению эмали - процедура не требует длительного голодания."
+          : "Expect minor enamel removal – no major fasting required",
+        locale === "ru"
+          ? "Откажитесь от курения для лучшей фиксации виниров и сохранения эстетики на долгий срок."
+          : "Stop smoking for better adhesion and long-term aesthetics",
+        locale === "ru"
+          ? "Обязательно сообщите врачу, если у вас есть повышенная чувствительность зубов."
+          : "Inform if you have tooth sensitivity",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -14717,7 +15944,10 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Минимальное вмешательство" : "Minimally Invasive",
+            title:
+              locale === "ru"
+                ? "Минимальное вмешательство"
+                : "Minimally Invasive",
             desc:
               locale === "ru"
                 ? "Практически не требует обточки эмали."
@@ -14764,50 +15994,113 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Как долго держится стоматологическая композитная пломба?" : "How long does dental bonding last?",
-          answer : locale === "ru" ? "Обычно 3–10 лет, в зависимости от ухода." : "Typically 3–10 years, depending on personal care"
+          question:
+            locale === "ru"
+              ? "Как долго держится стоматологическая композитная пломба?"
+              : "How long does dental bonding last?",
+          answer:
+            locale === "ru"
+              ? "Обычно 3–10 лет, в зависимости от ухода."
+              : "Typically 3–10 years, depending on personal care",
         },
         {
-          question : locale === "ru" ? "Это больно?" : "Does it hurt?",
-          answer : locale === "ru" ? "Нет, процедура безболезненная и неинвазивная." : "No, it’s a painless, non-invasive procedure"
+          question: locale === "ru" ? "Это больно?" : "Does it hurt?",
+          answer:
+            locale === "ru"
+              ? "Нет, процедура безболезненная и неинвазивная."
+              : "No, it’s a painless, non-invasive procedure",
         },
         {
-          question : locale === "ru" ? "Может ли она устранить щели между зубами?" : "Can it fix gaps on the teeth?",
-          answer : locale === "ru" ? "Да, она идеально подходит для закрытия небольших щелей." : "Yes, great for closing small gaps"
+          question:
+            locale === "ru"
+              ? "Может ли она устранить щели между зубами?"
+              : "Can it fix gaps on the teeth?",
+          answer:
+            locale === "ru"
+              ? "Да, она идеально подходит для закрытия небольших щелей."
+              : "Yes, great for closing small gaps",
         },
         {
-          question : locale === "ru" ? "Заметна ли пломба?" : "Is bonding noticeable?",
-          answer : locale === "ru" ? "Она подбирается по цвету ваших зубов и выглядит естественно." : "It’s color-matched to your teeth and looks natural"
+          question:
+            locale === "ru" ? "Заметна ли пломба?" : "Is bonding noticeable?",
+          answer:
+            locale === "ru"
+              ? "Она подбирается по цвету ваших зубов и выглядит естественно."
+              : "It’s color-matched to your teeth and looks natural",
         },
         {
-          question : locale === "ru" ? "Что делать, если пломба сколется?" : "What if it chips?",
-          answer : locale === "ru" ? "Это можно легко отремонтировать." : "It can be easily repaired"
+          question:
+            locale === "ru"
+              ? "Что делать, если пломба сколется?"
+              : "What if it chips?",
+          answer:
+            locale === "ru"
+              ? "Это можно легко отремонтировать."
+              : "It can be easily repaired",
         },
         {
-          question : locale === "ru" ? "Совместима ли стоматологическая композитная пломба с отбеливанием зубов?" : "Is dental bonding compatible with teeth whitening?",
-          answer : locale === "ru" ? "Да, но после отбеливания пломба может изменить цвет, поэтому лучше сначала установить пломбу." : "Yes, but bonding may discolor after whitening, so it's best to do bonding first."
+          question:
+            locale === "ru"
+              ? "Совместима ли стоматологическая композитная пломба с отбеливанием зубов?"
+              : "Is dental bonding compatible with teeth whitening?",
+          answer:
+            locale === "ru"
+              ? "Да, но после отбеливания пломба может изменить цвет, поэтому лучше сначала установить пломбу."
+              : "Yes, but bonding may discolor after whitening, so it's best to do bonding first.",
         },
         {
-          question : locale === "ru" ? "Меняется ли цвет стоматологической композитной пломбы?" : "Does dental bonding change color?",
-          answer : locale === "ru" ? "Пломба не меняет цвет, но может покрыться пятнами от курения, кофе или чая." : "Bonding doesn’t change, but stains from smoking, coffee, or tea can affect it."
-        }
+          question:
+            locale === "ru"
+              ? "Меняется ли цвет стоматологической композитной пломбы?"
+              : "Does dental bonding change color?",
+          answer:
+            locale === "ru"
+              ? "Пломба не меняет цвет, но может покрыться пятнами от курения, кофе или чая."
+              : "Bonding doesn’t change, but stains from smoking, coffee, or tea can affect it.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Избегайте твердой и липкой пищи в течение 24–48 часов." : "Avoid hard or sticky foods for 24–48 hours",
-        locale === "ru" ? "Пломбы могут окрашиваться - особенно избегайте кофе, чая, красного вина и курения." : "Bonding can stain – avoid especially coffee, tea, red wine, and smoking",
-        locale === "ru" ? "Регулярно чистите зубы и пользуйтесь зубной нитью." : "Maintain regular brushing and flossing",
-        locale === "ru" ? "Обратитесь к стоматологу, если заметите сколы или изменение цвета." : "See dentist if chipping or discoloration occurs",
-        locale === "ru" ? "Со временем может потребоваться полировка." : "Re-polishing may be needed over time",
-        locale === "ru" ? "Используйте капу для защиты зубов во время занятий спортом или интенсивной физической активности." : "Use a mouthguard to protect your teeth during sports or heavy physical activities",
-        locale === "ru" ? "Отдавайте предпочтение мягкой пище." : "Choose soft foods",
-        locale === "ru" ? "Сведите к минимуму употребление кислых продуктов и напитков." : "Avoid acidic foods and drinks"
+        locale === "ru"
+          ? "Избегайте твердой и липкой пищи в течение 24–48 часов."
+          : "Avoid hard or sticky foods for 24–48 hours",
+        locale === "ru"
+          ? "Пломбы могут окрашиваться - особенно избегайте кофе, чая, красного вина и курения."
+          : "Bonding can stain – avoid especially coffee, tea, red wine, and smoking",
+        locale === "ru"
+          ? "Регулярно чистите зубы и пользуйтесь зубной нитью."
+          : "Maintain regular brushing and flossing",
+        locale === "ru"
+          ? "Обратитесь к стоматологу, если заметите сколы или изменение цвета."
+          : "See dentist if chipping or discoloration occurs",
+        locale === "ru"
+          ? "Со временем может потребоваться полировка."
+          : "Re-polishing may be needed over time",
+        locale === "ru"
+          ? "Используйте капу для защиты зубов во время занятий спортом или интенсивной физической активности."
+          : "Use a mouthguard to protect your teeth during sports or heavy physical activities",
+        locale === "ru"
+          ? "Отдавайте предпочтение мягкой пище."
+          : "Choose soft foods",
+        locale === "ru"
+          ? "Сведите к минимуму употребление кислых продуктов и напитков."
+          : "Avoid acidic foods and drinks",
       ],
       preList: [
-        locale === "ru" ? "Сообщите своему стоматологу об аллергиях и ранее выполненных реставрациях." : "Inform your dentist about allergies or previous restorations",
-        locale === "ru" ? "Позаботьтесь о чистоте полости рта перед визитом - это улучшит сцепление материалов." : "Good oral hygiene in needed before the visit helps ensure adhesion",
-        locale === "ru" ? "Избегайте употребления алкоголя и курения перед процедурой." : "Avoid alcohol and smoking before the session",
-        locale === "ru" ? "Воздержитесь от твердой пищи в день приема." : "Avoid hard foods",
-        locale === "ru" ? "Обсудите желаемый оттенок и цвет, особенно если речь идет о передних зубах." : "Share your shade/color preferences if it's for front teeth"
+        locale === "ru"
+          ? "Сообщите своему стоматологу об аллергиях и ранее выполненных реставрациях."
+          : "Inform your dentist about allergies or previous restorations",
+        locale === "ru"
+          ? "Позаботьтесь о чистоте полости рта перед визитом - это улучшит сцепление материалов."
+          : "Good oral hygiene in needed before the visit helps ensure adhesion",
+        locale === "ru"
+          ? "Избегайте употребления алкоголя и курения перед процедурой."
+          : "Avoid alcohol and smoking before the session",
+        locale === "ru"
+          ? "Воздержитесь от твердой пищи в день приема."
+          : "Avoid hard foods",
+        locale === "ru"
+          ? "Обсудите желаемый оттенок и цвет, особенно если речь идет о передних зубах."
+          : "Share your shade/color preferences if it's for front teeth",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -15082,25 +16375,55 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Как долго служит коронка?" : "How long do crowns last?",
-          answer : locale === "ru" ? "От 10 до 15 лет и дольше - при правильном уходе" : "10–15 years or more with good care"
+          question:
+            locale === "ru"
+              ? "Как долго служит коронка?"
+              : "How long do crowns last?",
+          answer:
+            locale === "ru"
+              ? "От 10 до 15 лет и дольше - при правильном уходе"
+              : "10–15 years or more with good care",
         },
         {
-          question : locale === "ru" ? "Насколько естественно коронка будет сочетаться с моими зубами?" : "Will it match my teeth?",
-          answer : locale === "ru" ? "Коронка будет выглядеть естественно, так как цвет подбирается индивидуально, особенно для фарфоровых коронок." : "Yes, color is customized for porcelain crowns"
+          question:
+            locale === "ru"
+              ? "Насколько естественно коронка будет сочетаться с моими зубами?"
+              : "Will it match my teeth?",
+          answer:
+            locale === "ru"
+              ? "Коронка будет выглядеть естественно, так как цвет подбирается индивидуально, особенно для фарфоровых коронок."
+              : "Yes, color is customized for porcelain crowns",
         },
         {
-          question : locale === "ru" ? "Смогу ли я нормально есть?" : "Can I eat normally?",
-          answer : locale === "ru" ? "Да, после того как коронка полностью зафиксирована" : "Yes, once fully bonded and settled"
+          question:
+            locale === "ru"
+              ? "Смогу ли я нормально есть?"
+              : "Can I eat normally?",
+          answer:
+            locale === "ru"
+              ? "Да, после того как коронка полностью зафиксирована"
+              : "Yes, once fully bonded and settled",
         },
         {
-          question : locale === "ru" ? "Защищает ли коронка зуб?" : "Does a crown protect the tooth?",
-          answer : locale === "ru" ? "Да, она восстанавливает прочность, форму и функцию зуба" : "Yes, it restores strength and function"
+          question:
+            locale === "ru"
+              ? "Защищает ли коронка зуб?"
+              : "Does a crown protect the tooth?",
+          answer:
+            locale === "ru"
+              ? "Да, она восстанавливает прочность, форму и функцию зуба"
+              : "Yes, it restores strength and function",
         },
         {
-          question : locale === "ru" ? "Что делать, если коронка отпала?" : "What if my crown comes off?",
-          answer : locale === "ru" ? "Обратитесь к стоматологу - ее можно повторно зафиксировать или заменить" : "See your dentist to re-cement or replace it"
-        }
+          question:
+            locale === "ru"
+              ? "Что делать, если коронка отпала?"
+              : "What if my crown comes off?",
+          answer:
+            locale === "ru"
+              ? "Обратитесь к стоматологу - ее можно повторно зафиксировать или заменить"
+              : "See your dentist to re-cement or replace it",
+        },
       ],
       posts: [
         locale === "ru"
@@ -15560,37 +16883,79 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Как долго сохраняется результат отбеливания?" : "How long do results last?",
-          answer : locale === "ru" ? "От 6 месяцев до 2 лет - в зависимости от питания, образа жизни и гигиены полости рта." : "6 months to 2 years depending on diet and habits"
+          question:
+            locale === "ru"
+              ? "Как долго сохраняется результат отбеливания?"
+              : "How long do results last?",
+          answer:
+            locale === "ru"
+              ? "От 6 месяцев до 2 лет - в зависимости от питания, образа жизни и гигиены полости рта."
+              : "6 months to 2 years depending on diet and habits",
         },
         {
-          question : locale === "ru" ? "Это безопасно?" : "Is it safe?",
-          answer : locale === "ru" ? "Да, если процедура проводится профессионально и с соблюдением рекомендаций." : "Yes, when done professionally"
+          question: locale === "ru" ? "Это безопасно?" : "Is it safe?",
+          answer:
+            locale === "ru"
+              ? "Да, если процедура проводится профессионально и с соблюдением рекомендаций."
+              : "Yes, when done professionally",
         },
         {
-          question : locale === "ru" ? "Будет ли больно?" : "Will it hurt?",
-          answer : locale === "ru" ? "Возможна легкая чувствительность, которая обычно проходит в течение короткого времени." : "Some sensitivity may occur, usually short-term"
+          question: locale === "ru" ? "Будет ли больно?" : "Will it hurt?",
+          answer:
+            locale === "ru"
+              ? "Возможна легкая чувствительность, которая обычно проходит в течение короткого времени."
+              : "Some sensitivity may occur, usually short-term",
         },
         {
-          question : locale === "ru" ? "Можно ли отбелить коронки или виниры?" : "Can I whiten crowns or veneers?",
-          answer : locale === "ru" ? "Нет, отбеливанию поддаются только натуральные зубы." : "No, only natural teeth respond to whitening"
+          question:
+            locale === "ru"
+              ? "Можно ли отбелить коронки или виниры?"
+              : "Can I whiten crowns or veneers?",
+          answer:
+            locale === "ru"
+              ? "Нет, отбеливанию поддаются только натуральные зубы."
+              : "No, only natural teeth respond to whitening",
         },
         {
-          question : locale === "ru" ? "Насколько белыми станут зубы?" : "How white will my teeth get?",
-          answer : locale === "ru" ? "Результат зависит от природного оттенка зубов и характера пигментации." : "Depends on your natural shade and type of stains"
+          question:
+            locale === "ru"
+              ? "Насколько белыми станут зубы?"
+              : "How white will my teeth get?",
+          answer:
+            locale === "ru"
+              ? "Результат зависит от природного оттенка зубов и характера пигментации."
+              : "Depends on your natural shade and type of stains",
         },
         {
-          question : locale === "ru" ? "Можно ли проводить отбеливание при беременности или в период грудного вскармливания?" : "Can teeth whitening be done during pregnancy and breastfeeding?",
-          answer : locale === "ru" ? "Не рекомендуется. Перед процедурой следует проконсультироваться с врачом." : "It’s not recommended; consult a dentist first."
+          question:
+            locale === "ru"
+              ? "Можно ли проводить отбеливание при беременности или в период грудного вскармливания?"
+              : "Can teeth whitening be done during pregnancy and breastfeeding?",
+          answer:
+            locale === "ru"
+              ? "Не рекомендуется. Перед процедурой следует проконсультироваться с врачом."
+              : "It’s not recommended; consult a dentist first.",
         },
         {
-          question : locale === "ru" ? "Как часто можно отбеливать зубы?" : "How often can teeth whitening be done?",
-          answer : locale === "ru" ? "Обычно не чаще одного раза в 6 месяцев, если иное не рекомендовано стоматологом." : "Generally, every 6 months."
+          question:
+            locale === "ru"
+              ? "Как часто можно отбеливать зубы?"
+              : "How often can teeth whitening be done?",
+          answer:
+            locale === "ru"
+              ? "Обычно не чаще одного раза в 6 месяцев, если иное не рекомендовано стоматологом."
+              : "Generally, every 6 months.",
         },
         {
-          question : locale === "ru" ? "Кому следует избегать процедуры?" : "Who should avoid?",
-          answer : locale === "ru" ? "Детям до 18 лет, лицам с активным кариесом, воспалениями или повышенной чувствительностью эмали." : "Individuals under 18, those with active infections/cavities or those with sensitive enamal."
-        }
+          question:
+            locale === "ru"
+              ? "Кому следует избегать процедуры?"
+              : "Who should avoid?",
+          answer:
+            locale === "ru"
+              ? "Детям до 18 лет, лицам с активным кариесом, воспалениями или повышенной чувствительностью эмали."
+              : "Individuals under 18, those with active infections/cavities or those with sensitive enamal.",
+        },
       ],
       posts: [
         locale === "ru"
@@ -15830,51 +17195,118 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Что представляет собой голливудская улыбка?" : "What is a Hollywood Smile?",
-          answer : locale === "ru" ? "Полная косметическая реконструкция зубов, обычно с использованием виниров или коронок" : "A full-mouth cosmetic makeover usually with veneers or crowns"
+          question:
+            locale === "ru"
+              ? "Что представляет собой голливудская улыбка?"
+              : "What is a Hollywood Smile?",
+          answer:
+            locale === "ru"
+              ? "Полная косметическая реконструкция зубов, обычно с использованием виниров или коронок"
+              : "A full-mouth cosmetic makeover usually with veneers or crowns",
         },
         {
-          question : locale === "ru" ? "Повредит ли это мои естественные зубы?" : "Does it damage my natural teeth?",
-          answer : locale === "ru" ? "Минимальное уменьшение эмали, сохраняет структуру" : "Minimal enamel reduction, preserves structure"
+          question:
+            locale === "ru"
+              ? "Повредит ли это мои естественные зубы?"
+              : "Does it damage my natural teeth?",
+          answer:
+            locale === "ru"
+              ? "Минимальное уменьшение эмали, сохраняет структуру"
+              : "Minimal enamel reduction, preserves structure",
         },
         {
-          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
-          answer : locale === "ru" ? "Местная анестезия предотвращает боль, легкая болезненность после" : "Local anesthesia prevents pain, mild soreness after"
+          question: locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Местная анестезия предотвращает боль, легкая болезненность после"
+              : "Local anesthesia prevents pain, mild soreness after",
         },
         {
-          question : locale === "ru" ? "Как долго это длится?" : "How long does it last?",
-          answer : locale === "ru" ? "Обычно 10–15 лет при уходе" : "Typically 10–15 years with care"
+          question:
+            locale === "ru"
+              ? "Как долго это длится?"
+              : "How long does it last?",
+          answer:
+            locale === "ru"
+              ? "Обычно 10–15 лет при уходе"
+              : "Typically 10–15 years with care",
         },
         {
-          question : locale === "ru" ? "Могу ли я выбрать оттенок?" : "Can I choose the shade?",
-          answer : locale === "ru" ? "Да, вы можете настроить его с вашим стоматологом" : "Yes, you customize it with your dentist"
+          question:
+            locale === "ru"
+              ? "Могу ли я выбрать оттенок?"
+              : "Can I choose the shade?",
+          answer:
+            locale === "ru"
+              ? "Да, вы можете настроить его с вашим стоматологом"
+              : "Yes, you customize it with your dentist",
         },
         {
-          question : locale === "ru" ? "Процедура занимает много времени?" : "Does the procedure take a long time?",
-          answer : locale === "ru" ? "Время варьируется в зависимости от лечения, но обычно завершается за 2-3 сеанса" : "Varies depending on the treatment but usually completed in 2-3 sessions"
+          question:
+            locale === "ru"
+              ? "Процедура занимает много времени?"
+              : "Does the procedure take a long time?",
+          answer:
+            locale === "ru"
+              ? "Время варьируется в зависимости от лечения, но обычно завершается за 2-3 сеанса"
+              : "Varies depending on the treatment but usually completed in 2-3 sessions",
         },
         {
-          question : locale === "ru" ? "Что произойдет, если мое оральное здоровье не будет лечиться перед Голливудской улыбкой?" : "What happens if my oral health isn’t treated before a Hollywood Smile?",
-          answer : locale === "ru" ? "Это может привести к плохим результатам, неприятному запаху изо рта и ухудшению стоматологических проблем." : "It can lead to poor results, bad breath, and worsening dental issues."
-        }
+          question:
+            locale === "ru"
+              ? "Что произойдет, если мое оральное здоровье не будет лечиться перед Голливудской улыбкой?"
+              : "What happens if my oral health isn’t treated before a Hollywood Smile?",
+          answer:
+            locale === "ru"
+              ? "Это может привести к плохим результатам, неприятному запаху изо рта и ухудшению стоматологических проблем."
+              : "It can lead to poor results, bad breath, and worsening dental issues.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Избегайте кусания твердых предметов передними зубами." : "Avoid biting hard objects with front teeth",
-        locale === "ru" ? "Соблюдайте гигиену полости рта и регулярно посещайте стоматолога." : "Practice excellent hygiene and regular dental visits",
-        locale === "ru" ? "Используйте капу, если у вас есть привычка скрипеть зубами ночью." : "Use a mouthguard if you grind teeth at night",
-        locale === "ru" ? "Ограничьте потребление продуктов и напитков, которые могут вызвать пятна, на начальном этапе." : "Limit staining foods/beverages initially",
-        locale === "ru" ? "Вам потребуется немного времени, чтобы привыкнуть к новому прикусу и улыбке." : "Expect adjustment period to new bite/smile",
-        locale === "ru" ? "Избегайте употребления твердых продуктов." : "Avoid hard foods",
-        locale === "ru" ? "Ограничьте курение и алкоголь." : "Limit smoking and alcohol",
-        locale === "ru" ? "Предпочитайте мягкие продукты." : "Prefer soft foods initially"
+        locale === "ru"
+          ? "Избегайте кусания твердых предметов передними зубами."
+          : "Avoid biting hard objects with front teeth",
+        locale === "ru"
+          ? "Соблюдайте гигиену полости рта и регулярно посещайте стоматолога."
+          : "Practice excellent hygiene and regular dental visits",
+        locale === "ru"
+          ? "Используйте капу, если у вас есть привычка скрипеть зубами ночью."
+          : "Use a mouthguard if you grind teeth at night",
+        locale === "ru"
+          ? "Ограничьте потребление продуктов и напитков, которые могут вызвать пятна, на начальном этапе."
+          : "Limit staining foods/beverages initially",
+        locale === "ru"
+          ? "Вам потребуется немного времени, чтобы привыкнуть к новому прикусу и улыбке."
+          : "Expect adjustment period to new bite/smile",
+        locale === "ru"
+          ? "Избегайте употребления твердых продуктов."
+          : "Avoid hard foods",
+        locale === "ru"
+          ? "Ограничьте курение и алкоголь."
+          : "Limit smoking and alcohol",
+        locale === "ru"
+          ? "Предпочитайте мягкие продукты."
+          : "Prefer soft foods initially",
       ],
       preList: [
-        locale === "ru" ? "Пройдите стоматологический осмотр и консультацию по дизайну улыбки." : "Dental exam and consultation for smile design",
-        locale === "ru" ? "Пролечите заболевания десен или кариес до начала лечения." : "Treat gum disease or decay before starting",
-        locale === "ru" ? "Обсудите с врачом выбор материала (цирконий, e.max, виниры и т.д.) и предпочтения по оттенку." : "Discuss material (zirconia, e.max, veneers, etc.) and shade preference",
-        locale === "ru" ? "Воздержитесь от курения для улучшения сцепления и эстетики зубов." : "Quit smoking for better bonding and aesthetics",
-        locale === "ru" ? "Соблюдайте гигиену полости рта." : "Maintain good oral hygiene",
-        locale === "ru" ? "Обычно процесс включает несколько этапов, поэтому будьте готовы выделить достаточно времени." : "It usually involves several stages, so be prepared to allocate enough time"
+        locale === "ru"
+          ? "Пройдите стоматологический осмотр и консультацию по дизайну улыбки."
+          : "Dental exam and consultation for smile design",
+        locale === "ru"
+          ? "Пролечите заболевания десен или кариес до начала лечения."
+          : "Treat gum disease or decay before starting",
+        locale === "ru"
+          ? "Обсудите с врачом выбор материала (цирконий, e.max, виниры и т.д.) и предпочтения по оттенку."
+          : "Discuss material (zirconia, e.max, veneers, etc.) and shade preference",
+        locale === "ru"
+          ? "Воздержитесь от курения для улучшения сцепления и эстетики зубов."
+          : "Quit smoking for better bonding and aesthetics",
+        locale === "ru"
+          ? "Соблюдайте гигиену полости рта."
+          : "Maintain good oral hygiene",
+        locale === "ru"
+          ? "Обычно процесс включает несколько этапов, поэтому будьте готовы выделить достаточно времени."
+          : "It usually involves several stages, so be prepared to allocate enough time",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -16017,10 +17449,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
         ],
         categories: [
           {
-            header:
-              locale === "ru"
-                ? "Описание"
-                : "Description",
+            header: locale === "ru" ? "Описание" : "Description",
             desc:
               locale === "ru"
                 ? `Элайнеры — это прозрачные каппы, которые постепенно и мягко перемещают зубы в нужное положение. Они практически незаметны на зубах и обеспечивают комфортное, деликатное лечение без металлических конструкций. Отличный выбор для тех, кто ценит эстетику и удобство.`
@@ -16036,8 +17465,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Diagnosis and Treatment Planning: A 3D scan creates a digital model, and a customized treatment plan is developed. Fabrication and Use of Aligners: Aligners are worn 20–22 hours daily, removed for eating, drinking, and hygiene. They are replaced every 1–2 weeks. Duration of Treatment: Treatment usually lasts 12–18 months, depending on case complexity.",
           },
           {
-            header:
-              locale === "ru" ? "Кому подойдут элайнеры?" : "For Whom",
+            header: locale === "ru" ? "Кому подойдут элайнеры?" : "For Whom",
             desc:
               locale === "ru"
                 ? `Прозрачные элайнеры рекомендуются взрослым и подросткам, желающим выровнять зубы незаметно и без дискомфорта. Они особенно подходят людям с незначительными и умеренными нарушениями прикуса, такими как скученность, промежутки между зубами или лёгкие проблемы смыкания. Элайнеры — отличное решение для тех, кто предпочитает съёмные каппы вместо традиционных брекетов, а также для пациентов, готовых носить их регулярно, чтобы достичь максимального результата.`
@@ -16052,41 +17480,90 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Это больно?" : "Does it hurt?",
-          answer : locale === "ru" ? "Легке давление в течение одного-двух дней после смены кап - это нормально и свидетельствует о том, что элайнеры работают." : "Mild pressure for a day or two is normal"
+          question: locale === "ru" ? "Это больно?" : "Does it hurt?",
+          answer:
+            locale === "ru"
+              ? "Легке давление в течение одного-двух дней после смены кап - это нормально и свидетельствует о том, что элайнеры работают."
+              : "Mild pressure for a day or two is normal",
         },
         {
-          question : locale === "ru" ? "Могу ли я пить с элайнерами?" : "Can I drink with aligners in?",
-          answer : locale === "ru" ? "Разрешается пить только воду. Для других напитков элайнеры необходимо снимать." : "Only water – remove for other drinks"
+          question:
+            locale === "ru"
+              ? "Могу ли я пить с элайнерами?"
+              : "Can I drink with aligners in?",
+          answer:
+            locale === "ru"
+              ? "Разрешается пить только воду. Для других напитков элайнеры необходимо снимать."
+              : "Only water – remove for other drinks",
         },
         {
-          question : locale === "ru" ? "Что произойдет, если я забуду их надеть?" : "What happens if I forget to wear them?",
-          answer : locale === "ru" ? "Это может замедлить лечение, а в некоторых случаях - привести к тому, что капы перестанут подходить." : "Treatment may be delayed or trays may not fit"
+          question:
+            locale === "ru"
+              ? "Что произойдет, если я забуду их надеть?"
+              : "What happens if I forget to wear them?",
+          answer:
+            locale === "ru"
+              ? "Это может замедлить лечение, а в некоторых случаях - привести к тому, что капы перестанут подходить."
+              : "Treatment may be delayed or trays may not fit",
         },
         {
-          question : locale === "ru" ? "Как долго длится лечение?" : "How long is treatment?",
-          answer : locale === "ru" ? "Обычно от 6 до 18 месяцев, в зависимости от индивидуального случая." : "6–18 months depending on case"
+          question:
+            locale === "ru"
+              ? "Как долго длится лечение?"
+              : "How long is treatment?",
+          answer:
+            locale === "ru"
+              ? "Обычно от 6 до 18 месяцев, в зависимости от индивидуального случая."
+              : "6–18 months depending on case",
         },
         {
-          question : locale === "ru" ? "Изменится ли моя речь?" : "Will my speech change?",
-          answer : locale === "ru" ? "В начале возможна легкая шепелявость, которая обычно быстро проходит по мере привыкания." : "Slight lisp at first, but it goes away"
+          question:
+            locale === "ru"
+              ? "Изменится ли моя речь?"
+              : "Will my speech change?",
+          answer:
+            locale === "ru"
+              ? "В начале возможна легкая шепелявость, которая обычно быстро проходит по мере привыкания."
+              : "Slight lisp at first, but it goes away",
         },
         {
-          question : locale === "ru" ? "Могу ли я жевать жевательную резинку с элайнерами?" : "Can I chew gum with the aligners?",
-          answer : locale === "ru" ? "Нет, жевательная резинка может повредить элайнеры и нарушить лечение." : "No, as it may damage them"
-        }
+          question:
+            locale === "ru"
+              ? "Могу ли я жевать жевательную резинку с элайнерами?"
+              : "Can I chew gum with the aligners?",
+          answer:
+            locale === "ru"
+              ? "Нет, жевательная резинка может повредить элайнеры и нарушить лечение."
+              : "No, as it may damage them",
+        },
       ],
       posts: [
-        locale === "ru" ? "Носите элайнеры по 20–22 часа в день, снимая их только во время приема пищи и чистки зубов." : "Wear aligners 20–22 hrs/day, remove only for eating/cleaning",
-        locale === "ru" ? "Очищайте элайнеры ежедневно, а зубы - после каждого приема пищи." : "Clean aligners daily, brush teeth after meals",
-        locale === "ru" ? "Будьте готовы к легкому дискомфорту при переходе на новые капы и следите, чтобы не потерять их." : "Expect mild discomfort with new sets, avoid losing them",
-        locale === "ru" ? "Меняйте элайнеры строго по назначенному графику и регулярно посещайте стоматолога." : "Switch trays as directed and attend check-ups regularly",
-        locale === "ru" ? "Храните капы в специальном футляре, чтобы избежать их повреждения или потери." : "Store the aligners in a special case to prevent loss."
+        locale === "ru"
+          ? "Носите элайнеры по 20–22 часа в день, снимая их только во время приема пищи и чистки зубов."
+          : "Wear aligners 20–22 hrs/day, remove only for eating/cleaning",
+        locale === "ru"
+          ? "Очищайте элайнеры ежедневно, а зубы - после каждого приема пищи."
+          : "Clean aligners daily, brush teeth after meals",
+        locale === "ru"
+          ? "Будьте готовы к легкому дискомфорту при переходе на новые капы и следите, чтобы не потерять их."
+          : "Expect mild discomfort with new sets, avoid losing them",
+        locale === "ru"
+          ? "Меняйте элайнеры строго по назначенному графику и регулярно посещайте стоматолога."
+          : "Switch trays as directed and attend check-ups regularly",
+        locale === "ru"
+          ? "Храните капы в специальном футляре, чтобы избежать их повреждения или потери."
+          : "Store the aligners in a special case to prevent loss.",
       ],
       preList: [
-        locale === "ru" ? "Пройдите профессиональную чистку зубов и убедитесь в отсутствии кариеса и других стоматологических проблем." : "Perform a professional dental cleaning and ensure there are no cavities.",
-        locale === "ru" ? "Обсудите с врачом цели лечения и выполните слепки или цифровое сканирование для изготовления индивидуальных элайнеров." : "Discuss treatment goals and take impressions/scans for custom aligner creation.",
-        locale === "ru" ? "Подготовьтесь к тому, что элайнеры необходимо носить по 22 часа в день и соблюдать тщательную гигиену полости рта." : "Prepare to wear the aligners for 22 hours a day and maintain regular cleaning."
+        locale === "ru"
+          ? "Пройдите профессиональную чистку зубов и убедитесь в отсутствии кариеса и других стоматологических проблем."
+          : "Perform a professional dental cleaning and ensure there are no cavities.",
+        locale === "ru"
+          ? "Обсудите с врачом цели лечения и выполните слепки или цифровое сканирование для изготовления индивидуальных элайнеров."
+          : "Discuss treatment goals and take impressions/scans for custom aligner creation.",
+        locale === "ru"
+          ? "Подготовьтесь к тому, что элайнеры необходимо носить по 22 часа в день и соблюдать тщательную гигиену полости рта."
+          : "Prepare to wear the aligners for 22 hours a day and maintain regular cleaning.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -16399,7 +17876,9 @@ Patients looking for a quicker, less invasive alternative to traditional implant
         items: [
           {
             title:
-              locale === "ru" ? "Восстановление здоровья десен" : "Restored Gum Health",
+              locale === "ru"
+                ? "Восстановление здоровья десен"
+                : "Restored Gum Health",
             desc:
               locale === "ru"
                 ? "пересадка останавливает рецессию и защищает корни."
@@ -16450,44 +17929,97 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Больно ли?" : "Does it hurt?",
-          answer : locale === "ru" ? "Нкбо может болеть, но лекарства помогут справиться с дискомфортом." : "Palate can be sore – meds can help"
+          question: locale === "ru" ? "Больно ли?" : "Does it hurt?",
+          answer:
+            locale === "ru"
+              ? "Нкбо может болеть, но лекарства помогут справиться с дискомфортом."
+              : "Palate can be sore – meds can help",
         },
         {
-          question : locale === "ru" ? "Как долго заживает?" : "How long to heal?",
-          answer : locale === "ru" ? "Поверхность заживает в течение 2 недель, полное заживление может занять от 3 до 6 месяцев." : "2 weeks for surface healing, full in 3–6 months"
+          question:
+            locale === "ru" ? "Как долго заживает?" : "How long to heal?",
+          answer:
+            locale === "ru"
+              ? "Поверхность заживает в течение 2 недель, полное заживление может занять от 3 до 6 месяцев."
+              : "2 weeks for surface healing, full in 3–6 months",
         },
         {
-          question : locale === "ru" ? "Будет ли пересадка гармонично сочетаться с моими деснами?" : "Will it match my gums?",
-          answer : locale === "ru" ? "Со временем цвет пересадки постепенно сливается с цветом ваших десен." : "Color blends over time"
+          question:
+            locale === "ru"
+              ? "Будет ли пересадка гармонично сочетаться с моими деснами?"
+              : "Will it match my gums?",
+          answer:
+            locale === "ru"
+              ? "Со временем цвет пересадки постепенно сливается с цветом ваших десен."
+              : "Color blends over time",
         },
         {
-          question : locale === "ru" ? "Что если пересадка не удастся?" : "What if the graft fails?",
-          answer : locale === "ru" ? "Это случается крайне редко. В случае необходимости хирург может переделать небольшую область." : "Rare – surgeon may redo small area"
+          question:
+            locale === "ru"
+              ? "Что если пересадка не удастся?"
+              : "What if the graft fails?",
+          answer:
+            locale === "ru"
+              ? "Это случается крайне редко. В случае необходимости хирург может переделать небольшую область."
+              : "Rare – surgeon may redo small area",
         },
         {
-          question : locale === "ru" ? "Могу ли я чистить этот участок?" : "Can I brush the site?",
-          answer : locale === "ru" ? "Чистить его можно только после разрешения вашего пародонтолога." : "Not until cleared by your periodontist"
+          question:
+            locale === "ru"
+              ? "Могу ли я чистить этот участок?"
+              : "Can I brush the site?",
+          answer:
+            locale === "ru"
+              ? "Чистить его можно только после разрешения вашего пародонтолога."
+              : "Not until cleared by your periodontist",
         },
         {
-          question : locale === "ru" ? "Когда я смогу вернуться к нормальному питанию?" : "When can I resume normal eating?",
-          answer : locale === "ru" ? "Обычно это возможно через 2–3 недели, но для точных рекомендаций проконсультируйтесь с вашим врачом." : "Typically after 2-3 weeks, but consult with your doctor"
-        }
+          question:
+            locale === "ru"
+              ? "Когда я смогу вернуться к нормальному питанию?"
+              : "When can I resume normal eating?",
+          answer:
+            locale === "ru"
+              ? "Обычно это возможно через 2–3 недели, но для точных рекомендаций проконсультируйтесь с вашим врачом."
+              : "Typically after 2-3 weeks, but consult with your doctor",
+        },
       ],
       posts: [
-        locale === "ru" ? "Не трогайте место пересадки и не тяните губы, чтобы проверить его." : "Don’t touch graft site or pull lips to check it",
-        locale === "ru" ? "Соблюдайте диету из мягкой пищи, избегайте трубочек и не сплевывайте." : "Stick to soft foods, no straws or spitting",
-        locale === "ru" ? "Используйте назначенный ополаскиватель, не чистите область пересадки на начальном этапе." : "Use prescribed rinse,do not brush the graft area initially",
-        locale === "ru" ? "Принимайте лекарства строго по назначению и избегайте интенсивных физических нагрузок." : "Take meds as prescribed, avoid strenuous activity",
-        locale === "ru" ? "Запишитесь на повторный прием для контроля за процессом заживления и снятия швов." : "Follow-up for healing and stitch removal",
-        locale === "ru" ? "Пейте маленькими глотками, чтобы избежать давления на место пересадки." : "Drink in small sips to avoid pressure on the graft site"
+        locale === "ru"
+          ? "Не трогайте место пересадки и не тяните губы, чтобы проверить его."
+          : "Don’t touch graft site or pull lips to check it",
+        locale === "ru"
+          ? "Соблюдайте диету из мягкой пищи, избегайте трубочек и не сплевывайте."
+          : "Stick to soft foods, no straws or spitting",
+        locale === "ru"
+          ? "Используйте назначенный ополаскиватель, не чистите область пересадки на начальном этапе."
+          : "Use prescribed rinse,do not brush the graft area initially",
+        locale === "ru"
+          ? "Принимайте лекарства строго по назначению и избегайте интенсивных физических нагрузок."
+          : "Take meds as prescribed, avoid strenuous activity",
+        locale === "ru"
+          ? "Запишитесь на повторный прием для контроля за процессом заживления и снятия швов."
+          : "Follow-up for healing and stitch removal",
+        locale === "ru"
+          ? "Пейте маленькими глотками, чтобы избежать давления на место пересадки."
+          : "Drink in small sips to avoid pressure on the graft site",
       ],
       preList: [
-        locale === "ru" ? "Избегайте аспирина и НПВП, если это рекомендовано вашим врачом." : "Avoid aspirin/NSAIDs if advised",
-        locale === "ru" ? "Уточните, является ли ткань для процедуры взятой с вашего неба или от донора." : "Know if tissue is from your palate or donor",
-        locale === "ru" ? "В первые дни после процедуры употребляйте мягкую и тёплую пищу." : "Comsume soft, lukeworm foods at home",
-        locale === "ru" ? "Прекратите курение заранее, чтобы улучшить процесс заживления." : "Stop smoking ahead of time",
-        locale === "ru" ? "Воздержитесь от курения непосредственно перед процедурой для лучшего результата." : "Avoid smoking prior to the procedure for better healing"
+        locale === "ru"
+          ? "Избегайте аспирина и НПВП, если это рекомендовано вашим врачом."
+          : "Avoid aspirin/NSAIDs if advised",
+        locale === "ru"
+          ? "Уточните, является ли ткань для процедуры взятой с вашего неба или от донора."
+          : "Know if tissue is from your palate or donor",
+        locale === "ru"
+          ? "В первые дни после процедуры употребляйте мягкую и тёплую пищу."
+          : "Comsume soft, lukeworm foods at home",
+        locale === "ru"
+          ? "Прекратите курение заранее, чтобы улучшить процесс заживления."
+          : "Stop smoking ahead of time",
+        locale === "ru"
+          ? "Воздержитесь от курения непосредственно перед процедурой для лучшего результата."
+          : "Avoid smoking prior to the procedure for better healing",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -16644,7 +18176,10 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Prevents bleeding, eliminates stitches, and reduces infection risk for speedier recovery.",
           },
           {
-            title: locale === "ru" ? "Точность в каждом движении" : "Precise Treatment",
+            title:
+              locale === "ru"
+                ? "Точность в каждом движении"
+                : "Precise Treatment",
             desc:
               locale === "ru"
                 ? "лазер действует только на проблемные зоны."
@@ -16660,14 +18195,20 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Laser gum surgery is a dental technique used to treat issues with the gums. It involves using laser technology to address problems such as excessive gum growth and gum disease. This method offers a less painful alternative to invasive procedures like traditional gum surgery, promoting a quicker recovery.",
           },
           {
-            header: locale === "ru" ? "Как работает лазерное лечение" : "How it Works",
+            header:
+              locale === "ru"
+                ? "Как работает лазерное лечение"
+                : "How it Works",
             desc:
               locale === "ru"
                 ? "Во время процедуры лазер мягко воздействует на воспалённые участки десен, удаляя повреждённые ткани и налёт. Благодаря своей точности, он не затрагивает здоровые участки, минимизируя травматичность. Лазер обладает антисептическим эффектом, стимулирует естественное заживление и устраняет необходимость в наложении швов. Это делает процесс лечения комфортным и безопасным."
                 : "Laser gum treatments use a laser to target inflamed gum tissues, remove plaque, and promote healing. The laser breaks down damaged tissue, has an antiseptic effect, and stimulates tissue regeneration. Unlike traditional methods, it’s minimally invasive, reducing pain and speeding up recovery without the need for stitches",
           },
           {
-            header: locale === "ru" ? "Кому подойдёт лазерная терапия" : "Who is it for",
+            header:
+              locale === "ru"
+                ? "Кому подойдёт лазерная терапия"
+                : "Who is it for",
             desc:
               locale === "ru"
                 ? "Пациентам с заболеваниями десен, такими как гингивит или пародонтит. Людям, страдающим от кровоточивости и воспаления десен. Тем, кто ищет щадящий, нетравматичный метод лечения. Пациентам, которым противопоказаны традиционные хирургические вмешательства."
@@ -16677,43 +18218,94 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Больно ли это?" : "Is it painful?",
-          answer : locale === "ru" ? "Процедура вызывает минимальный дискомфорт по сравнению с традиционной хирургией." : "Minimal discomfort compared to traditional surgery"
+          question: locale === "ru" ? "Больно ли это?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Процедура вызывает минимальный дискомфорт по сравнению с традиционной хирургией."
+              : "Minimal discomfort compared to traditional surgery",
         },
         {
-          question : locale === "ru" ? "Сколько времени занимает заживление?" : "How long does it take to heal?",
-          answer : locale === "ru" ? "Поверхностное заживление обычно занимает 1–2 недели." : "1–2 weeks for surface healing"
+          question:
+            locale === "ru"
+              ? "Сколько времени занимает заживление?"
+              : "How long does it take to heal?",
+          answer:
+            locale === "ru"
+              ? "Поверхностное заживление обычно занимает 1–2 недели."
+              : "1–2 weeks for surface healing",
         },
         {
-          question : locale === "ru" ? "Можно ли восстановить рецессию десны?" : "Is it possible to restore receding gums?",
-          answer : locale === "ru" ? "Процедура помогает повторно прикрепить ткани и уменьшить пародонтальные карманы." : "It helps reattach tissue and reduce pockets"
+          question:
+            locale === "ru"
+              ? "Можно ли восстановить рецессию десны?"
+              : "Is it possible to restore receding gums?",
+          answer:
+            locale === "ru"
+              ? "Процедура помогает повторно прикрепить ткани и уменьшить пародонтальные карманы."
+              : "It helps reattach tissue and reduce pockets",
         },
         {
-          question : locale === "ru" ? "Является ли LANAP лучше традиционной хирургии десен?" : "Is LANAP better than traditional gum surgery?",
-          answer : locale === "ru" ? "Да, в большинстве случаев. Метод менее травматичный и позволяет быстрее восстановиться" : "Often less invasive, quicker recovery"
+          question:
+            locale === "ru"
+              ? "Является ли LANAP лучше традиционной хирургии десен?"
+              : "Is LANAP better than traditional gum surgery?",
+          answer:
+            locale === "ru"
+              ? "Да, в большинстве случаев. Метод менее травматичный и позволяет быстрее восстановиться"
+              : "Often less invasive, quicker recovery",
         },
         {
-          question : locale === "ru" ? "Можно ли чистить десны после процедуры?" : "Can I brush my gums?",
-          answer : locale === "ru" ? "Вначале следует избегать чистки участков, обработанных лазером." : "Avoid brushing laser-treated zones initially"
+          question:
+            locale === "ru"
+              ? "Можно ли чистить десны после процедуры?"
+              : "Can I brush my gums?",
+          answer:
+            locale === "ru"
+              ? "Вначале следует избегать чистки участков, обработанных лазером."
+              : "Avoid brushing laser-treated zones initially",
         },
         {
-          question : locale === "ru" ? "Когда можно вернуться к физической активности?" : "When can I resume physical activity?",
-          answer : locale === "ru" ? "Обычно через несколько дней, но обязательно проконсультируйтесь с врачом." : "After a few days, but consult with your doctor"
-        }
+          question:
+            locale === "ru"
+              ? "Когда можно вернуться к физической активности?"
+              : "When can I resume physical activity?",
+          answer:
+            locale === "ru"
+              ? "Обычно через несколько дней, но обязательно проконсультируйтесь с врачом."
+              : "After a few days, but consult with your doctor",
+        },
       ],
       posts: [
-        locale === "ru" ? "Небольшая болезненность после процедуры -  это нормально. Избегайте горячей и острой пищи." : "Mild tenderness is normal, avoid hot/spicy food",
-        locale === "ru" ? "Осторожно используйте солёную воду или рекомендованный ополаскиватель для полости рта." : "Use salt water or mouthwash gently",
-        locale === "ru" ? "Старайтесь не травмировать зону заживления -  временно не пользуйтесь зубной нитью в обработанных участках." : "Avoid disturbing healing areas, no flossing treated sites",
-        locale === "ru" ? "Не курите и строго следуйте схеме приёма назначенных лекарств." : "Don’t smoke, take meds as prescribed",
-        locale === "ru" ? "Посещайте плановые осмотры для контроля процесса заживления." : "Attend follow-ups to monitor healing",
-        locale === "ru" ? "Пейте тёплые напитки и избегайте интенсивных полосканий." : "Drink lukewarm liquids and avoid excessive rinsing."
+        locale === "ru"
+          ? "Небольшая болезненность после процедуры -  это нормально. Избегайте горячей и острой пищи."
+          : "Mild tenderness is normal, avoid hot/spicy food",
+        locale === "ru"
+          ? "Осторожно используйте солёную воду или рекомендованный ополаскиватель для полости рта."
+          : "Use salt water or mouthwash gently",
+        locale === "ru"
+          ? "Старайтесь не травмировать зону заживления -  временно не пользуйтесь зубной нитью в обработанных участках."
+          : "Avoid disturbing healing areas, no flossing treated sites",
+        locale === "ru"
+          ? "Не курите и строго следуйте схеме приёма назначенных лекарств."
+          : "Don’t smoke, take meds as prescribed",
+        locale === "ru"
+          ? "Посещайте плановые осмотры для контроля процесса заживления."
+          : "Attend follow-ups to monitor healing",
+        locale === "ru"
+          ? "Пейте тёплые напитки и избегайте интенсивных полосканий."
+          : "Drink lukewarm liquids and avoid excessive rinsing.",
       ],
       preList: [
-        locale === "ru" ? "Минимальная подготовка к контурной коррекции - Процедура LANAP может проводиться поэтапно с использованием местной анестезии." : "Minimal prep for contouring",
-        locale === "ru" ? "Заблаговременно обеспечьте хорошую гигиену полости рта." : "LANAP may involve segments and numbing",
-        locale === "ru" ? "Прием легкой пищи допустим, если врач не дал других рекомендаций." : "Maintain good hygiene beforehand",
-        locale === "ru" ? "" : "Eat a light meal unless told otherwise"
+        locale === "ru"
+          ? "Минимальная подготовка к контурной коррекции - Процедура LANAP может проводиться поэтапно с использованием местной анестезии."
+          : "Minimal prep for contouring",
+        locale === "ru"
+          ? "Заблаговременно обеспечьте хорошую гигиену полости рта."
+          : "LANAP may involve segments and numbing",
+        locale === "ru"
+          ? "Прием легкой пищи допустим, если врач не дал других рекомендаций."
+          : "Maintain good hygiene beforehand",
+        locale === "ru" ? "" : "Eat a light meal unless told otherwise",
       ],
       conclusion: {
         title: locale === "ru" ? "Вывод" : "Conclusion",
@@ -17343,51 +18935,123 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Удаляются ли растяжки во время операции?" : "Does it remove stretch marks?",
-          answer : locale === "ru" ? "Да, если растяжки находятся на коже нижней части живота, которая удаляется в ходе процедуры." : "Yes, if they’re on the lower abdomen skin that’s removed"
+          question:
+            locale === "ru"
+              ? "Удаляются ли растяжки во время операции?"
+              : "Does it remove stretch marks?",
+          answer:
+            locale === "ru"
+              ? "Да, если растяжки находятся на коже нижней части живота, которая удаляется в ходе процедуры."
+              : "Yes, if they’re on the lower abdomen skin that’s removed",
         },
         {
-          question : locale === "ru" ? "Могу ли я забеременеть после операции?" : "Can I get pregnant after?",
-          answer : locale === "ru" ? "Да, беременность возможна, но она может свести на нет результаты операции." : "Yes, but it may reverse the results"
+          question:
+            locale === "ru"
+              ? "Могу ли я забеременеть после операции?"
+              : "Can I get pregnant after?",
+          answer:
+            locale === "ru"
+              ? "Да, беременность возможна, но она может свести на нет результаты операции."
+              : "Yes, but it may reverse the results",
         },
         {
-          question : locale === "ru" ? "Включена ли липосакция в процедуру?" : "Is liposuction included?",
-          answer : locale === "ru" ? "Часто - да, в сочетании с другими процедурами, но обязательно уточните это у своего хирурга." : "Often combined, but ask your surgeon"
+          question:
+            locale === "ru"
+              ? "Включена ли липосакция в процедуру?"
+              : "Is liposuction included?",
+          answer:
+            locale === "ru"
+              ? "Часто - да, в сочетании с другими процедурами, но обязательно уточните это у своего хирурга."
+              : "Often combined, but ask your surgeon",
         },
         {
-          question : locale === "ru" ? "Результаты сохраняются надолго?" : "Are results permanent?",
-          answer : locale === "ru" ? "Да, при условии стабильного веса и здорового образа жизни." : "Yes, with stable weight"
+          question:
+            locale === "ru"
+              ? "Результаты сохраняются надолго?"
+              : "Are results permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, при условии стабильного веса и здорового образа жизни."
+              : "Yes, with stable weight",
         },
         {
-          question : locale === "ru" ? "Когда я смогу вернуться к работе?" : "When can I return to work?",
-          answer : locale === "ru" ? "Обычно через 2–3 недели, в зависимости от характера работы и индивидуального восстановления." : "Typically after 2–3 weeks"
+          question:
+            locale === "ru"
+              ? "Когда я смогу вернуться к работе?"
+              : "When can I return to work?",
+          answer:
+            locale === "ru"
+              ? "Обычно через 2–3 недели, в зависимости от характера работы и индивидуального восстановления."
+              : "Typically after 2–3 weeks",
         },
         {
-          question : locale === "ru" ? "Возможна ли потеря чувствительности в области живота?" : "Is there sensation loss in the abdomen after surgery?",
-          answer : locale === "ru" ? "Да, возможна временная потеря чувствительности, но она обычно восстанавливается в течение нескольких месяцев." : "Temporary loss is possible, but it usually improves in a few months."
-        }
+          question:
+            locale === "ru"
+              ? "Возможна ли потеря чувствительности в области живота?"
+              : "Is there sensation loss in the abdomen after surgery?",
+          answer:
+            locale === "ru"
+              ? "Да, возможна временная потеря чувствительности, но она обычно восстанавливается в течение нескольких месяцев."
+              : "Temporary loss is possible, but it usually improves in a few months.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Носите компрессионное белье в течение 6 недель" : "Wear compression garment for 6 weeks",
-        locale === "ru" ? "Дренажи могут быть установлены – ухаживайте за ними по указанию" : "Drains may be placed – care for them as instructed",
-        locale === "ru" ? "Избегайте полного стояния в течение 5–7 дней" : "Avoid standing upright fully for 5–7 days",
-        locale === "ru" ? "Легко гуляйте, чтобы предотвратить тромбы, но не занимайтесь спортом" : "Walk lightly to prevent clots, but no workouts",
-        locale === "ru" ? "Избегайте поднятия тяжелых предметов как минимум в течение 6 недель" : "Avoid lifting anything heavy for at least 6 weeks",
-        locale === "ru" ? "Обеспечьте своему организму достаточный отдых." : "Ensure your body gets enough rest.",
-        locale === "ru" ? "Соблюдайте высокобелковую диету." : "Follow a high-protein diet.",
-        locale === "ru" ? "Избегайте экстремальных температур." : "Avoid extreme temperatures.",
-        locale === "ru" ? "Избегайте одежды с низкой посадкой, тесной или с поясом." : "Avoid low-rise, tight, or waistband clothing.",
-        locale === "ru" ? "Посещайте плановые приемы, назначенные вашим врачом." : "Attend follow-up appointments as scheduled by your doctor."
+        locale === "ru"
+          ? "Носите компрессионное белье в течение 6 недель"
+          : "Wear compression garment for 6 weeks",
+        locale === "ru"
+          ? "Дренажи могут быть установлены – ухаживайте за ними по указанию"
+          : "Drains may be placed – care for them as instructed",
+        locale === "ru"
+          ? "Избегайте полного стояния в течение 5–7 дней"
+          : "Avoid standing upright fully for 5–7 days",
+        locale === "ru"
+          ? "Легко гуляйте, чтобы предотвратить тромбы, но не занимайтесь спортом"
+          : "Walk lightly to prevent clots, but no workouts",
+        locale === "ru"
+          ? "Избегайте поднятия тяжелых предметов как минимум в течение 6 недель"
+          : "Avoid lifting anything heavy for at least 6 weeks",
+        locale === "ru"
+          ? "Обеспечьте своему организму достаточный отдых."
+          : "Ensure your body gets enough rest.",
+        locale === "ru"
+          ? "Соблюдайте высокобелковую диету."
+          : "Follow a high-protein diet.",
+        locale === "ru"
+          ? "Избегайте экстремальных температур."
+          : "Avoid extreme temperatures.",
+        locale === "ru"
+          ? "Избегайте одежды с низкой посадкой, тесной или с поясом."
+          : "Avoid low-rise, tight, or waistband clothing.",
+        locale === "ru"
+          ? "Посещайте плановые приемы, назначенные вашим врачом."
+          : "Attend follow-up appointments as scheduled by your doctor.",
       ],
       preList: [
-        locale === "ru" ? "Поддерживайте стабильный вес в течение 6+ месяцев" : "Avoid smoking, alcohol, NSAIDs pre-op",
-        locale === "ru" ? "Избегайте курения, алкоголя, НПВП перед операцией" : "Lab tests and medical clearance may be needed",
-        locale === "ru" ? "Может потребоваться лабораторное обследование и медицинская справка" : "Prepare for 2–3 weeks off work and help at home",
-        locale === "ru" ? "Подготовьтесь к 2–3 неделям отсутствия на работе и помощи дома" : "Avoid crash dieting before surgery",
-        locale === "ru" ? "Избегайте резкого снижения веса перед операцией" : "Stop smoking at least 4-6 weeks prior.",
-        locale === "ru" ? "Прекратите курение как минимум за 4-6 недель до." : "Avoid using blood thinners.",
-        locale === "ru" ? "Избегайте использования разжижающих кровь препаратов." : "Opt for a low-carb, high-protein diet.",
-        locale === "ru" ? "Выбирайте низкоуглеводную, высокобелковую диету." : "Prepare loose clothing."
+        locale === "ru"
+          ? "Поддерживайте стабильный вес в течение 6+ месяцев"
+          : "Avoid smoking, alcohol, NSAIDs pre-op",
+        locale === "ru"
+          ? "Избегайте курения, алкоголя, НПВП перед операцией"
+          : "Lab tests and medical clearance may be needed",
+        locale === "ru"
+          ? "Может потребоваться лабораторное обследование и медицинская справка"
+          : "Prepare for 2–3 weeks off work and help at home",
+        locale === "ru"
+          ? "Подготовьтесь к 2–3 неделям отсутствия на работе и помощи дома"
+          : "Avoid crash dieting before surgery",
+        locale === "ru"
+          ? "Избегайте резкого снижения веса перед операцией"
+          : "Stop smoking at least 4-6 weeks prior.",
+        locale === "ru"
+          ? "Прекратите курение как минимум за 4-6 недель до."
+          : "Avoid using blood thinners.",
+        locale === "ru"
+          ? "Избегайте использования разжижающих кровь препаратов."
+          : "Opt for a low-carb, high-protein diet.",
+        locale === "ru"
+          ? "Выбирайте низкоуглеводную, высокобелковую диету."
+          : "Prepare loose clothing.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -17686,7 +19350,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Potentially eliminates ongoing need for glaucoma eye drops",
           },
           {
-            title: locale === "ru" ? "Индивидуальный подход" : "Custom Treatment",
+            title:
+              locale === "ru" ? "Индивидуальный подход" : "Custom Treatment",
             desc:
               locale === "ru"
                 ? "подбор метода лечения в зависимости от типа и стадии глаукомы."
@@ -17719,46 +19384,98 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Можно ли вылечить глаукому?" : "Is glaucoma curable?",
-          answer : locale === "ru" ? "Нет, но ее можно контролировать, чтобы предотвратить потерю зрения." : "No, but it can be managed to prevent vision loss"
+          question:
+            locale === "ru"
+              ? "Можно ли вылечить глаукому?"
+              : "Is glaucoma curable?",
+          answer:
+            locale === "ru"
+              ? "Нет, но ее можно контролировать, чтобы предотвратить потерю зрения."
+              : "No, but it can be managed to prevent vision loss",
         },
         {
-          question : locale === "ru" ? "Это больно?" : "Does it hurt?",
-          answer : locale === "ru" ? "Обычно безболезненно, если нет скачков давления." : "Usually painless unless pressure spikes"
+          question: locale === "ru" ? "Это больно?" : "Does it hurt?",
+          answer:
+            locale === "ru"
+              ? "Обычно безболезненно, если нет скачков давления."
+              : "Usually painless unless pressure spikes",
         },
         {
-          question : locale === "ru" ? "Могу ли я ослепнуть?" : "Can I go blind?",
-          answer : locale === "ru" ? "Да, если не лечить - ранняя помощь имеет значение." : "Yes, if untreated – early care is key"
+          question:
+            locale === "ru" ? "Могу ли я ослепнуть?" : "Can I go blind?",
+          answer:
+            locale === "ru"
+              ? "Да, если не лечить - ранняя помощь имеет значение."
+              : "Yes, if untreated – early care is key",
         },
         {
-          question : locale === "ru" ? "Капли помогают?" : "Do drops work?",
-          answer : locale === "ru" ? "Да, они эффективно снижают давление во многих случаях." : "Yes, they lower pressure effectively in many cases"
+          question: locale === "ru" ? "Капли помогают?" : "Do drops work?",
+          answer:
+            locale === "ru"
+              ? "Да, они эффективно снижают давление во многих случаях."
+              : "Yes, they lower pressure effectively in many cases",
         },
         {
-          question : locale === "ru" ? "Доступны ли операции?" : "Are surgeries available?",
-          answer : locale === "ru" ? "Да - лазерные и фильтрационные операции для запущенных случаев." : "Yes – laser and filtering surgeries for advanced cases"
+          question:
+            locale === "ru"
+              ? "Доступны ли операции?"
+              : "Are surgeries available?",
+          answer:
+            locale === "ru"
+              ? "Да - лазерные и фильтрационные операции для запущенных случаев."
+              : "Yes – laser and filtering surgeries for advanced cases",
         },
         {
-          question : locale === "ru" ? "Когда нужна операция при глаукоме?" : "When is surgery needed for glaucoma?",
-          answer : locale === "ru" ? "Операция требуется, если медикаменты и лазерные процедуры не дают достаточного эффекта." : "Surgery is needed if medications and laser treatments are insufficient."
+          question:
+            locale === "ru"
+              ? "Когда нужна операция при глаукоме?"
+              : "When is surgery needed for glaucoma?",
+          answer:
+            locale === "ru"
+              ? "Операция требуется, если медикаменты и лазерные процедуры не дают достаточного эффекта."
+              : "Surgery is needed if medications and laser treatments are insufficient.",
         },
         {
-          question : locale === "ru" ? "Эффективны ли очки или контактные линзы для лечения глаукомы?" : "Are glasses or contacts effective for glaucoma treatment?",
-          answer : locale === "ru" ? "Очки или контактные линзы улучшают зрение, но не лечат глаукому." : "Glasses or contacts improve vision but don’t treat glaucoma."
-        }
+          question:
+            locale === "ru"
+              ? "Эффективны ли очки или контактные линзы для лечения глаукомы?"
+              : "Are glasses or contacts effective for glaucoma treatment?",
+          answer:
+            locale === "ru"
+              ? "Очки или контактные линзы улучшают зрение, но не лечат глаукому."
+              : "Glasses or contacts improve vision but don’t treat glaucoma.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Своевременно используйте назначенные капли для глаз." : "Use prescribed eye drops on time",
-        locale === "ru" ? "Избегайте трения глаз и интенсивных физических нагрузок." : "Avoid rubbing eyes and strenuous activity",
-        locale === "ru" ? "Регулярно проверяйте глазное давление." : "Attend regular pressure checks",
-        locale === "ru" ? "Защищайте глаза от яркого света и пыли." : "Protect eyes from bright light or dust",
-        locale === "ru" ? "Регулярно посещайте офтальмолога." : "Follow up with ophthalmologist regularly"
+        locale === "ru"
+          ? "Своевременно используйте назначенные капли для глаз."
+          : "Use prescribed eye drops on time",
+        locale === "ru"
+          ? "Избегайте трения глаз и интенсивных физических нагрузок."
+          : "Avoid rubbing eyes and strenuous activity",
+        locale === "ru"
+          ? "Регулярно проверяйте глазное давление."
+          : "Attend regular pressure checks",
+        locale === "ru"
+          ? "Защищайте глаза от яркого света и пыли."
+          : "Protect eyes from bright light or dust",
+        locale === "ru"
+          ? "Регулярно посещайте офтальмолога."
+          : "Follow up with ophthalmologist regularly",
       ],
       preList: [
-        locale === "ru" ? "Пройдите тестирование на глазное давление и зрение для полной диагностики." : "Undergo eye pressure and vision testing",
-        locale === "ru" ? "Обсудите с врачом все используемые капли для глаз и лекарства." : "Discuss current eye drops and medications",
-        locale === "ru" ? "Контролируйте уровень кровяного давления и сахара в крови, если это необходимо." : "Control blood pressure and diabetes if present",
-        locale === "ru" ? "Постарайтесь избежать стресса и потребления кофеина перед обследованием." : "Avoid caffeine consumption and stress before evaluation"
+        locale === "ru"
+          ? "Пройдите тестирование на глазное давление и зрение для полной диагностики."
+          : "Undergo eye pressure and vision testing",
+        locale === "ru"
+          ? "Обсудите с врачом все используемые капли для глаз и лекарства."
+          : "Discuss current eye drops and medications",
+        locale === "ru"
+          ? "Контролируйте уровень кровяного давления и сахара в крови, если это необходимо."
+          : "Control blood pressure and diabetes if present",
+        locale === "ru"
+          ? "Постарайтесь избежать стресса и потребления кофеина перед обследованием."
+          : "Avoid caffeine consumption and stress before evaluation",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -17969,7 +19686,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Expert services to maintain and enhance eyesight in retinal complications",
           },
           {
-            title: locale === "ru" ? "Комплексная помощь" : "Diabetic Treatment",
+            title:
+              locale === "ru" ? "Комплексная помощь" : "Diabetic Treatment",
             desc:
               locale === "ru"
                 ? "комплексное лечение зрения при диабетических осложнениях."
@@ -17992,7 +19710,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Vitrectomy involves the removal of the vitreous gel inside the eye to address conditions such as retinal detachment, macular holes, or diabetic retinopathy. The vitreous is replaced with a saline solution, gas bubble, or silicone oil to maintain eye shape and allow healing. Advanced tools enable precise work on delicate retinal tissue.",
           },
           {
-            header: locale === "ru" ? "Кому показана витрэктомия" : "Who It’s For",
+            header:
+              locale === "ru" ? "Кому показана витрэктомия" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "Пациентам с тяжелыми повреждениями сетчатки (отслойка, разрывы). Людям с диабетической ретинопатией, сопровождающейся кровоизлияниями или образованием рубцовой ткани."
@@ -18002,46 +19721,99 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Можно ли это обратить?" : "Can it be reversed?",
-          answer : locale === "ru" ? "Ранние стадии можно контролировать, однако продвинутое повреждение является необратимым." : "Early stages can be managed, advanced damage is permanent"
+          question:
+            locale === "ru" ? "Можно ли это обратить?" : "Can it be reversed?",
+          answer:
+            locale === "ru"
+              ? "Ранние стадии можно контролировать, однако продвинутое повреждение является необратимым."
+              : "Early stages can be managed, advanced damage is permanent",
         },
         {
-          question : locale === "ru" ? "Больно ли лечение?" : "Does treatment hurt?",
-          answer : locale === "ru" ? "Лазерная терапия или инъекции обычно хорошо переносятся." : "Laser or injections are usually well tolerated"
+          question:
+            locale === "ru" ? "Больно ли лечение?" : "Does treatment hurt?",
+          answer:
+            locale === "ru"
+              ? "Лазерная терапия или инъекции обычно хорошо переносятся."
+              : "Laser or injections are usually well tolerated",
         },
         {
-          question : locale === "ru" ? "Я ослепну?" : "Will I go blind?",
-          answer : locale === "ru" ? "Нет, если вовремя контролировать ранние стадии и придерживаться лечения." : "Not if managed early and consistently"
+          question: locale === "ru" ? "Я ослепну?" : "Will I go blind?",
+          answer:
+            locale === "ru"
+              ? "Нет, если вовремя контролировать ранние стадии и придерживаться лечения."
+              : "Not if managed early and consistently",
         },
         {
-          question : locale === "ru" ? "Как часто нужны процедуры?" : "How often are treatments needed?",
-          answer : locale === "ru" ? "Частота процедур зависит от степени заболевания и реакции на лечение." : "Varies based on severity and response"
+          question:
+            locale === "ru"
+              ? "Как часто нужны процедуры?"
+              : "How often are treatments needed?",
+          answer:
+            locale === "ru"
+              ? "Частота процедур зависит от степени заболевания и реакции на лечение."
+              : "Varies based on severity and response",
         },
         {
-          question : locale === "ru" ? "Может ли операция это исправить?" : "Can surgery fix it?",
-          answer : locale === "ru" ? "Витректомия может помочь в более тяжелых случаях." : "Vitrectomy may help in advanced cases"
+          question:
+            locale === "ru"
+              ? "Может ли операция это исправить?"
+              : "Can surgery fix it?",
+          answer:
+            locale === "ru"
+              ? "Витректомия может помочь в более тяжелых случаях."
+              : "Vitrectomy may help in advanced cases",
         },
         {
-          question : locale === "ru" ? "Каковы побочные эффекты лечения?" : "What are the side effects of the treatment?",
-          answer : locale === "ru" ? "Временно могут возникнуть чувствительность глаз, покраснение или размытое зрение." : "Temporary eye sensitivity, redness, or blurred vision may occur."
-        }
+          question:
+            locale === "ru"
+              ? "Каковы побочные эффекты лечения?"
+              : "What are the side effects of the treatment?",
+          answer:
+            locale === "ru"
+              ? "Временно могут возникнуть чувствительность глаз, покраснение или размытое зрение."
+              : "Temporary eye sensitivity, redness, or blurred vision may occur.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Используйте назначенные глазные капли или лекарства." : "Use prescribed eye drops or medications",
-        locale === "ru" ? "Тщательно следите за изменениями в зрении." : "Monitor vision changes closely",
-        locale === "ru" ? "Избегайте физических нагрузок и подъема тяжестей." : "Avoid strenuous activity and heavy lifting",
-        locale === "ru" ? "Регулярно посещайте контрольные осмотры." : "Attend regular follow-up exams",
-        locale === "ru" ? "Контролируйте сахарный диабет, чтобы предотвратить дальнейшие повреждения." : "Control diabetes to prevent further damage",
-        locale === "ru" ? "Носите солнечные очки и избегайте яркого света." : "Wear sunglasses and avoid bright lights.",
-        locale === "ru" ? "Воздержитесь от курения, так как это вредит здоровью глаз." : "Avoid smoking as it harms eye health."
+        locale === "ru"
+          ? "Используйте назначенные глазные капли или лекарства."
+          : "Use prescribed eye drops or medications",
+        locale === "ru"
+          ? "Тщательно следите за изменениями в зрении."
+          : "Monitor vision changes closely",
+        locale === "ru"
+          ? "Избегайте физических нагрузок и подъема тяжестей."
+          : "Avoid strenuous activity and heavy lifting",
+        locale === "ru"
+          ? "Регулярно посещайте контрольные осмотры."
+          : "Attend regular follow-up exams",
+        locale === "ru"
+          ? "Контролируйте сахарный диабет, чтобы предотвратить дальнейшие повреждения."
+          : "Control diabetes to prevent further damage",
+        locale === "ru"
+          ? "Носите солнечные очки и избегайте яркого света."
+          : "Wear sunglasses and avoid bright lights.",
+        locale === "ru"
+          ? "Воздержитесь от курения, так как это вредит здоровью глаз."
+          : "Avoid smoking as it harms eye health.",
       ],
       preList: [
-        locale === "ru" ? "Постоянно контролируйте уровень сахара в крови" : "Control blood sugar levels consistently",
-        locale === "ru" ? "Запланируйте комплексное обследование глаз" : "Schedule a comprehensive eye exam",
-        locale === "ru" ? "Сообщите врачу о всех принимаемых лекарствах" : "Inform doctor about all medications",
-        locale === "ru" ? "Избегайте разжижающих кровь препаратов, если это предписано" : "Avoid blood thinners if instructed",
-        locale === "ru" ? "Придерживайтесь здорового образа жизни" : "Adopt a healthy lifestyle.",
-        locale === "ru" ? "Воздержитесь от курения" : "Avoid smoking"
+        locale === "ru"
+          ? "Постоянно контролируйте уровень сахара в крови"
+          : "Control blood sugar levels consistently",
+        locale === "ru"
+          ? "Запланируйте комплексное обследование глаз"
+          : "Schedule a comprehensive eye exam",
+        locale === "ru"
+          ? "Сообщите врачу о всех принимаемых лекарствах"
+          : "Inform doctor about all medications",
+        locale === "ru"
+          ? "Избегайте разжижающих кровь препаратов, если это предписано"
+          : "Avoid blood thinners if instructed",
+        locale === "ru"
+          ? "Придерживайтесь здорового образа жизни"
+          : "Adopt a healthy lifestyle.",
+        locale === "ru" ? "Воздержитесь от курения" : "Avoid smoking",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -18200,21 +19972,26 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Восстановление зрения" : "Vision Restoration",
+            title:
+              locale === "ru" ? "Восстановление зрения" : "Vision Restoration",
             desc:
               locale === "ru"
                 ? "обеспечивает значительное улучшение качества зрения и возвращение ясности взгляда."
                 : "Improves eyesight beyond pre-cataract condition through advanced surgical intervention.",
           },
           {
-            title: locale === "ru" ? "Коррекция ошибок рефракции" : "Error Correction",
+            title:
+              locale === "ru"
+                ? "Коррекция ошибок рефракции"
+                : "Error Correction",
             desc:
               locale === "ru"
                 ? "специальные ИОЛ позволяют уменьшить зависимость от очков и контактных линз."
                 : "Specialized lenses address refractive issues for enhanced visual outcomes.",
           },
           {
-            title: locale === "ru" ? "Быстрое восстановление" : "Quick Recovery",
+            title:
+              locale === "ru" ? "Быстрое восстановление" : "Quick Recovery",
             desc:
               locale === "ru"
                 ? "минимальное повреждение тканей и сокращённое время реабилитации после операции."
@@ -18247,55 +20024,128 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Что такое ИОЛ?" : "What is an IOL?",
-          answer : locale === "ru" ? "Это искусственная интраокулярная линза, которая устанавливается на место естественного хрусталика после удаления катаракты." : "An artificial lens placed after cataract removal"
+          question: locale === "ru" ? "Что такое ИОЛ?" : "What is an IOL?",
+          answer:
+            locale === "ru"
+              ? "Это искусственная интраокулярная линза, которая устанавливается на место естественного хрусталика после удаления катаракты."
+              : "An artificial lens placed after cataract removal",
         },
         {
-          question : locale === "ru" ? "Буду ли я видеть четко сразу после операции?" : "Will I see clearly immediately?",
-          answer : locale === "ru" ? "Улучшение зрения начинается в течение нескольких дней, но полная ясность может занять несколько недель." : "Vision improves within days, full clarity may take weeks"
+          question:
+            locale === "ru"
+              ? "Буду ли я видеть четко сразу после операции?"
+              : "Will I see clearly immediately?",
+          answer:
+            locale === "ru"
+              ? "Улучшение зрения начинается в течение нескольких дней, но полная ясность может занять несколько недель."
+              : "Vision improves within days, full clarity may take weeks",
         },
         {
-          question : locale === "ru" ? "Есть ли риски при установке ИОЛ?" : "Are there risks?",
-          answer : locale === "ru" ? "Риски минимальны, но возможны редкие осложнения, такие как воспаление или инфекция." : "Low risk – infection, inflammation possible but rare"
+          question:
+            locale === "ru"
+              ? "Есть ли риски при установке ИОЛ?"
+              : "Are there risks?",
+          answer:
+            locale === "ru"
+              ? "Риски минимальны, но возможны редкие осложнения, такие как воспаление или инфекция."
+              : "Low risk – infection, inflammation possible but rare",
         },
         {
-          question : locale === "ru" ? "Можно ли выбрать тип линзы?" : "Can I choose lens type?",
-          answer : locale === "ru" ? "Да. Существуют различные типы ИОЛ: монофокальные, мультифокальные и торические - выбор зависит от ваших потребностей и особенностей зрения." : "Yes – options include mono-, multi-, and toric lenses"
+          question:
+            locale === "ru"
+              ? "Можно ли выбрать тип линзы?"
+              : "Can I choose lens type?",
+          answer:
+            locale === "ru"
+              ? "Да. Существуют различные типы ИОЛ: монофокальные, мультифокальные и торические - выбор зависит от ваших потребностей и особенностей зрения."
+              : "Yes – options include mono-, multi-, and toric lenses",
         },
         {
-          question : locale === "ru" ? "Как долго служит искусственная линза?" : "How long does it last?",
-          answer : locale === "ru" ? "ИОЛ рассчитаны на постоянное использование и крайне редко требуют замены." : "IOLs are permanent and rarely need replacement"
+          question:
+            locale === "ru"
+              ? "Как долго служит искусственная линза?"
+              : "How long does it last?",
+          answer:
+            locale === "ru"
+              ? "ИОЛ рассчитаны на постоянное использование и крайне редко требуют замены."
+              : "IOLs are permanent and rarely need replacement",
         },
         {
-          question : locale === "ru" ? "Нормально ли, если зрение изменяется после операции?" : "Are vision changes normal after surgery?",
-          answer : locale === "ru" ? "Да, это нормально. Временная размытость, ореолы или световые блики могут наблюдаться в период восстановления." : "Yes, temporary blurriness or light flashes can occur during healing."
+          question:
+            locale === "ru"
+              ? "Нормально ли, если зрение изменяется после операции?"
+              : "Are vision changes normal after surgery?",
+          answer:
+            locale === "ru"
+              ? "Да, это нормально. Временная размытость, ореолы или световые блики могут наблюдаться в период восстановления."
+              : "Yes, temporary blurriness or light flashes can occur during healing.",
         },
         {
-          question : locale === "ru" ? "Нужно ли заменять ИОЛ в будущем?" : "Does the lens need to be replaced?",
-          answer : locale === "ru" ? "Обычно нет. Однако, при проблемах с фокусировкой или положением линзы может потребоваться повторная оценка специалистом." : "IOLs are permanent, but re-evaluation may be needed if there are issues with focus or position."
-        }
+          question:
+            locale === "ru"
+              ? "Нужно ли заменять ИОЛ в будущем?"
+              : "Does the lens need to be replaced?",
+          answer:
+            locale === "ru"
+              ? "Обычно нет. Однако, при проблемах с фокусировкой или положением линзы может потребоваться повторная оценка специалистом."
+              : "IOLs are permanent, but re-evaluation may be needed if there are issues with focus or position.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Избегайте трения глаз и любого давления на них." : "Avoid eye rubbing and pressure",
-        locale === "ru" ? "Используйте назначенные капли в течение нескольких недель после операции." : "Use post-op drops for several weeks",
-        locale === "ru" ? "Защищайте глаз во время сна с помощью специального щита." : "Protect eye during sleep with a shield",
-        locale === "ru" ? "Воздержитесь от интенсивных физических нагрузок и контакта глаз с водой." : "Avoid strenuous activity and water exposure",
-        locale === "ru" ? "Регулярно посещайте врача для проверки зрения и оценки процесса заживления." : "Follow-up for vision checks and healing",
-        locale === "ru" ? "Немедленно свяжитесь с врачом при появлении покраснения, боли или внезапной потери зрения." : "Contact your doctor if you have redness, pain, or vision loss.",
-        locale === "ru" ? "Избегайте употребления алкоголя и курения." : "Avoid alcohol and smoking.",
-        locale === "ru" ? "Проконсультируйтесь с офтальмологом перед использованием очков или контактных линз." : "Consult your doctor before using glasses or lenses.",
-        locale === "ru" ? "Старайтесь избегать плохо освещенных помещений и условий с низким уровнем света." : "Avoid low-light environments.",
-        locale === "ru" ? "" : "Limit computer and phone use."
+        locale === "ru"
+          ? "Избегайте трения глаз и любого давления на них."
+          : "Avoid eye rubbing and pressure",
+        locale === "ru"
+          ? "Используйте назначенные капли в течение нескольких недель после операции."
+          : "Use post-op drops for several weeks",
+        locale === "ru"
+          ? "Защищайте глаз во время сна с помощью специального щита."
+          : "Protect eye during sleep with a shield",
+        locale === "ru"
+          ? "Воздержитесь от интенсивных физических нагрузок и контакта глаз с водой."
+          : "Avoid strenuous activity and water exposure",
+        locale === "ru"
+          ? "Регулярно посещайте врача для проверки зрения и оценки процесса заживления."
+          : "Follow-up for vision checks and healing",
+        locale === "ru"
+          ? "Немедленно свяжитесь с врачом при появлении покраснения, боли или внезапной потери зрения."
+          : "Contact your doctor if you have redness, pain, or vision loss.",
+        locale === "ru"
+          ? "Избегайте употребления алкоголя и курения."
+          : "Avoid alcohol and smoking.",
+        locale === "ru"
+          ? "Проконсультируйтесь с офтальмологом перед использованием очков или контактных линз."
+          : "Consult your doctor before using glasses or lenses.",
+        locale === "ru"
+          ? "Старайтесь избегать плохо освещенных помещений и условий с низким уровнем света."
+          : "Avoid low-light environments.",
+        locale === "ru" ? "" : "Limit computer and phone use.",
       ],
       preList: [
-        locale === "ru" ? "Пройдите полное обследование зрения для подбора линз." : "Eye exam and measurement for lens fitting",
-        locale === "ru" ? "Прекратите прием определенных медикаментов, если это рекомендовано врачом." : "Stop medications if advised",
-        locale === "ru" ? "Воздержитесь от приема пищи перед процедурой, если планируется седация." : "Fast before procedure if sedated",
-        locale === "ru" ? "Используйте предоперационные глазные капли строго по инструкции." : "Use pre-op eye drops as directed",
-        locale === "ru" ? "Следуйте диетическим рекомендациям, выданным специалистом." : "Follow diet recommendations.",
-        locale === "ru" ? "Обязательно сообщите врачу об аллергиях." : "Inform about allergies.",
-        locale === "ru" ? "Откажитесь от курения для улучшения заживления и результатов." : "Quit smoking.",
-        locale === "ru" ? "Обеспечьте себе полноценный сон и отдых перед процедурой." : "Get enough sleep."
+        locale === "ru"
+          ? "Пройдите полное обследование зрения для подбора линз."
+          : "Eye exam and measurement for lens fitting",
+        locale === "ru"
+          ? "Прекратите прием определенных медикаментов, если это рекомендовано врачом."
+          : "Stop medications if advised",
+        locale === "ru"
+          ? "Воздержитесь от приема пищи перед процедурой, если планируется седация."
+          : "Fast before procedure if sedated",
+        locale === "ru"
+          ? "Используйте предоперационные глазные капли строго по инструкции."
+          : "Use pre-op eye drops as directed",
+        locale === "ru"
+          ? "Следуйте диетическим рекомендациям, выданным специалистом."
+          : "Follow diet recommendations.",
+        locale === "ru"
+          ? "Обязательно сообщите врачу об аллергиях."
+          : "Inform about allergies.",
+        locale === "ru"
+          ? "Откажитесь от курения для улучшения заживления и результатов."
+          : "Quit smoking.",
+        locale === "ru"
+          ? "Обеспечьте себе полноценный сон и отдых перед процедурой."
+          : "Get enough sleep.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -18446,21 +20296,28 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Коррекция серьёзных нарушений" : "Error Correction",
+            title:
+              locale === "ru"
+                ? "Коррекция серьёзных нарушений"
+                : "Error Correction",
             desc:
               locale === "ru"
                 ? "трансплантация помогает в случаях, когда LASIK не подходит."
                 : "Fixes severe vision problems when LASIK isn't suitable",
           },
           {
-            title: locale === "ru" ? "Свобода от очков и линз" : "Vision Freedom",
+            title:
+              locale === "ru" ? "Свобода от очков и линз" : "Vision Freedom",
             desc:
               locale === "ru"
                 ? "процедура значительно снижает зависимость от средств коррекции зрения."
                 : "Reduces reliance on glasses and contacts for clear vision",
           },
           {
-            title: locale === "ru" ? "Предотвращение катаракты" : "Cataract Prevention",
+            title:
+              locale === "ru"
+                ? "Предотвращение катаракты"
+                : "Cataract Prevention",
             desc:
               locale === "ru"
                 ? "трансплантация может помочь в профилактике катаракты в будущем."
@@ -18493,40 +20350,89 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Является ли трансплантация роговицы постоянной?" : "Is corneal transplant permanent?",
-          answer : locale === "ru" ? "В большинстве случаев трансплантат служит более 10 лет при должном уходе и регулярных осмотрах." : "Most grafts last 10+ years with proper care"
+          question:
+            locale === "ru"
+              ? "Является ли трансплантация роговицы постоянной?"
+              : "Is corneal transplant permanent?",
+          answer:
+            locale === "ru"
+              ? "В большинстве случаев трансплантат служит более 10 лет при должном уходе и регулярных осмотрах."
+              : "Most grafts last 10+ years with proper care",
         },
         {
-          question : locale === "ru" ? "Вернется ли зрение полностью?" : "Will vision return fully?",
-          answer : locale === "ru" ? "Зрение постепенно улучшается, однако для достижения наилучшей четкости могут потребоваться очки или контактные линзы." : "Vision improves gradually, may need glasses or contacts"
+          question:
+            locale === "ru"
+              ? "Вернется ли зрение полностью?"
+              : "Will vision return fully?",
+          answer:
+            locale === "ru"
+              ? "Зрение постепенно улучшается, однако для достижения наилучшей четкости могут потребоваться очки или контактные линзы."
+              : "Vision improves gradually, may need glasses or contacts",
         },
         {
-          question : locale === "ru" ? "Может ли мой организм отвергнуть трансплантат?" : "Can my body reject the graft?",
-          answer : locale === "ru" ? "Да, но риск отторжения значительно снижается при правильном применении назначенных препаратов и соблюдении рекомендаций врача." : "Yes, but meds reduce the risk"
+          question:
+            locale === "ru"
+              ? "Может ли мой организм отвергнуть трансплантат?"
+              : "Can my body reject the graft?",
+          answer:
+            locale === "ru"
+              ? "Да, но риск отторжения значительно снижается при правильном применении назначенных препаратов и соблюдении рекомендаций врача."
+              : "Yes, but meds reduce the risk",
         },
         {
-          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
-          answer : locale === "ru" ? "Обычно пациенты ощущают лишь небольшой дискомфорт в течение нескольких дней, который легко контролируется с помощью медикаментов." : "Mild discomfort for a few days, managed with meds"
+          question: locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Обычно пациенты ощущают лишь небольшой дискомфорт в течение нескольких дней, который легко контролируется с помощью медикаментов."
+              : "Mild discomfort for a few days, managed with meds",
         },
         {
-          question : locale === "ru" ? "Как долго длится восстановление?" : "How long is recovery?",
-          answer : locale === "ru" ? "Первичное заживление занимает несколько недель, а окончательная стабилизация зрения может потребовать нескольких месяцев." : "Initial healing in weeks; full vision may take months"
-        }
+          question:
+            locale === "ru"
+              ? "Как долго длится восстановление?"
+              : "How long is recovery?",
+          answer:
+            locale === "ru"
+              ? "Первичное заживление занимает несколько недель, а окончательная стабилизация зрения может потребовать нескольких месяцев."
+              : "Initial healing in weeks; full vision may take months",
+        },
       ],
       posts: [
-        locale === "ru" ? "Используйте глазные капли в течение нескольких месяцев, чтобы предотвратить отторжение." : "Use eye drops for months to prevent rejection",
-        locale === "ru" ? "Носите защитный щиток для глаз и избегайте травм." : "Wear eye shield and avoid trauma to the eye",
-        locale === "ru" ? "Обращайте внимание на признаки отторжения, такие как покраснение, боль или повышенная чувствительность к свету." : "Monitor for signs of rejection: redness, pain, light sensitivity",
-        locale === "ru" ? "Регулярно посещайте контрольные обследования для мониторинга состояния трансплантата." : "Attend all follow-ups for graft monitoring",
-        locale === "ru" ? "Избегайте интенсивных физических нагрузок и спортивных занятий." : "Avoid strenuous activities or sports",
-        locale === "ru" ? "Не трите глаза и не оказывайте на них давление." : "Avoid rubbing the eye or putting pressure on it",
-        locale === "ru" ? "Будьте внимательны к рискам инфекции, особенно в первые недели после трансплантации." : "Be mindful of infection risks, especially in the first few weeks"
+        locale === "ru"
+          ? "Используйте глазные капли в течение нескольких месяцев, чтобы предотвратить отторжение."
+          : "Use eye drops for months to prevent rejection",
+        locale === "ru"
+          ? "Носите защитный щиток для глаз и избегайте травм."
+          : "Wear eye shield and avoid trauma to the eye",
+        locale === "ru"
+          ? "Обращайте внимание на признаки отторжения, такие как покраснение, боль или повышенная чувствительность к свету."
+          : "Monitor for signs of rejection: redness, pain, light sensitivity",
+        locale === "ru"
+          ? "Регулярно посещайте контрольные обследования для мониторинга состояния трансплантата."
+          : "Attend all follow-ups for graft monitoring",
+        locale === "ru"
+          ? "Избегайте интенсивных физических нагрузок и спортивных занятий."
+          : "Avoid strenuous activities or sports",
+        locale === "ru"
+          ? "Не трите глаза и не оказывайте на них давление."
+          : "Avoid rubbing the eye or putting pressure on it",
+        locale === "ru"
+          ? "Будьте внимательны к рискам инфекции, особенно в первые недели после трансплантации."
+          : "Be mindful of infection risks, especially in the first few weeks",
       ],
       preList: [
-        locale === "ru" ? "Пройдите комплексное обследование глаз для подтверждения диагноза." : "Comprehensive eye exam to confirm diagnosis",
-        locale === "ru" ? "Избегайте разжижающих кровь препаратов, если это рекомендовано врачом." : "Avoid blood thinners if advised",
-        locale === "ru" ? "Обсудите риски и возможные варианты пересадки с хирургом." : "Discuss risks and graft options with surgeon",
-        locale === "ru" ? "Убедитесь, что все предоперационные заболевания, включая артериальное давление и диабет, находятся под контролем." : "Ensure all pre-operative health conditions are managed, including blood pressure and diabetes"
+        locale === "ru"
+          ? "Пройдите комплексное обследование глаз для подтверждения диагноза."
+          : "Comprehensive eye exam to confirm diagnosis",
+        locale === "ru"
+          ? "Избегайте разжижающих кровь препаратов, если это рекомендовано врачом."
+          : "Avoid blood thinners if advised",
+        locale === "ru"
+          ? "Обсудите риски и возможные варианты пересадки с хирургом."
+          : "Discuss risks and graft options with surgeon",
+        locale === "ru"
+          ? "Убедитесь, что все предоперационные заболевания, включая артериальное давление и диабет, находятся под контролем."
+          : "Ensure all pre-operative health conditions are managed, including blood pressure and diabetes",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -18784,14 +20690,18 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Гормональная терапия" : "Hormonal Therapy",
+            title:
+              locale === "ru" ? "Гормональная терапия" : "Hormonal Therapy",
             desc:
               locale === "ru"
                 ? "восстанавливает естественный сперматогенез."
                 : "Restores hormonal balance to support natural sperm production.",
           },
           {
-            title: locale === "ru" ? "Хирургическое лечение" : "Surgical Interventions",
+            title:
+              locale === "ru"
+                ? "Хирургическое лечение"
+                : "Surgical Interventions",
             desc:
               locale === "ru"
                 ? "устраняет структурные проблемы, улучшая качество спермы."
@@ -18834,42 +20744,98 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Что вызывает мужское бесплодие?" : "What causes male infertility?",
-          answer : locale === "ru" ? "Причинами могут быть низкое количество сперматозоидов, их сниженная подвижность, гормональные нарушения или структурные проблемы." : "Low sperm count, motility, hormonal or structural issues"
+          question:
+            locale === "ru"
+              ? "Что вызывает мужское бесплодие?"
+              : "What causes male infertility?",
+          answer:
+            locale === "ru"
+              ? "Причинами могут быть низкое количество сперматозоидов, их сниженная подвижность, гормональные нарушения или структурные проблемы."
+              : "Low sperm count, motility, hormonal or structural issues",
         },
         {
-          question : locale === "ru" ? "Можно ли вылечить мужское бесплодие?" : "Can it be treated?",
-          answer : locale === "ru" ? "Да, в некоторых случаях помогают медикаментозное лечение, хирургическое вмешательство или вспомогательные репродуктивные технологии." : "Yes, with medications, surgery, or assisted reproduction"
+          question:
+            locale === "ru"
+              ? "Можно ли вылечить мужское бесплодие?"
+              : "Can it be treated?",
+          answer:
+            locale === "ru"
+              ? "Да, в некоторых случаях помогают медикаментозное лечение, хирургическое вмешательство или вспомогательные репродуктивные технологии."
+              : "Yes, with medications, surgery, or assisted reproduction",
         },
         {
-          question : locale === "ru" ? "Бесплодие всегда является постоянным?" : "Is it permanent?",
-          answer : locale === "ru" ? "Это зависит от причины; многие случаи мужского бесплодия поддаются лечению." : "Depends on cause; many cases are reversible"
+          question:
+            locale === "ru"
+              ? "Бесплодие всегда является постоянным?"
+              : "Is it permanent?",
+          answer:
+            locale === "ru"
+              ? "Это зависит от причины; многие случаи мужского бесплодия поддаются лечению."
+              : "Depends on cause; many cases are reversible",
         },
         {
-          question : locale === "ru" ? "Как диагностируется мужское бесплодие?" : "How is it diagnosed?",
-          answer : locale === "ru" ? "Основные методы диагностики включают анализ спермы, гормональные и генетические исследования." : "Semen analysis, hormone and genetic testing"
+          question:
+            locale === "ru"
+              ? "Как диагностируется мужское бесплодие?"
+              : "How is it diagnosed?",
+          answer:
+            locale === "ru"
+              ? "Основные методы диагностики включают анализ спермы, гормональные и генетические исследования."
+              : "Semen analysis, hormone and genetic testing",
         },
         {
-          question : locale === "ru" ? "Влияет ли образ жизни на фертильность?" : "Does lifestyle matter?",
-          answer : locale === "ru" ? "Безусловно. Курение, употребление алкоголя, стресс и другие факторы образа жизни существенно влияют на качество спермы." : "Absolutely – smoking, alcohol, stress impact fertility"
-        }
+          question:
+            locale === "ru"
+              ? "Влияет ли образ жизни на фертильность?"
+              : "Does lifestyle matter?",
+          answer:
+            locale === "ru"
+              ? "Безусловно. Курение, употребление алкоголя, стресс и другие факторы образа жизни существенно влияют на качество спермы."
+              : "Absolutely – smoking, alcohol, stress impact fertility",
+        },
       ],
       posts: [
-        locale === "ru" ? "Строго соблюдайте назначенный график приема лекарств." : "Follow medication schedules strictly",
-        locale === "ru" ? "Поддерживайте здоровый образ жизни: следите за питанием, режимом сна и избегайте воздействия токсичных веществ." : "Maintain healthy lifestyle (diet, sleep, avoid toxins)",
-        locale === "ru" ? "Регулярно посещайте консультации по вопросам фертильности." : "Attend regular fertility follow-ups",
-        locale === "ru" ? "Воздерживайтесь от половой активности в период лечения в соответствии с рекомендациями врача." : "Abstain from sex as recommended during treatment",
-        locale === "ru" ? "Включайте в рацион продукты, богатые антиоксидантами, такие как ягоды, орехи и листовые овощи - они помогают улучшить качество спермы, нейтрализуя свободные радикалы." : "Use antioxidant-rich foods: These can help improve sperm quality by neutralizing free radicals. Include foods like berries, nuts, and leafy greens.",
-        locale === "ru" ? "Следите за признаками возможной инфекции: обращайте внимание на необычные отеки, покраснение или дискомфорт в области хирургического вмешательства и при необходимости немедленно обращайтесь к врачу." : "Monitor for signs of infection: Watch for unusual swelling, redness, or discomfort in the area after any surgical intervention."
+        locale === "ru"
+          ? "Строго соблюдайте назначенный график приема лекарств."
+          : "Follow medication schedules strictly",
+        locale === "ru"
+          ? "Поддерживайте здоровый образ жизни: следите за питанием, режимом сна и избегайте воздействия токсичных веществ."
+          : "Maintain healthy lifestyle (diet, sleep, avoid toxins)",
+        locale === "ru"
+          ? "Регулярно посещайте консультации по вопросам фертильности."
+          : "Attend regular fertility follow-ups",
+        locale === "ru"
+          ? "Воздерживайтесь от половой активности в период лечения в соответствии с рекомендациями врача."
+          : "Abstain from sex as recommended during treatment",
+        locale === "ru"
+          ? "Включайте в рацион продукты, богатые антиоксидантами, такие как ягоды, орехи и листовые овощи - они помогают улучшить качество спермы, нейтрализуя свободные радикалы."
+          : "Use antioxidant-rich foods: These can help improve sperm quality by neutralizing free radicals. Include foods like berries, nuts, and leafy greens.",
+        locale === "ru"
+          ? "Следите за признаками возможной инфекции: обращайте внимание на необычные отеки, покраснение или дискомфорт в области хирургического вмешательства и при необходимости немедленно обращайтесь к врачу."
+          : "Monitor for signs of infection: Watch for unusual swelling, redness, or discomfort in the area after any surgical intervention.",
       ],
       preList: [
-        locale === "ru" ? "Пройдите обследование, включающее анализ спермы и гормональные исследования." : "Undergo semen analysis and hormonal testing",
-        locale === "ru" ? "Избегайте воздействия тепла (сауны, бани и горячие ванны) за несколько дней до обследования." : "Avoid heat exposure (saunas etc.) pre-evaluation",
-        locale === "ru" ? "Откажитесь от ношения тесной одежды перед сдачей анализов." : "Avoid tight clothes pre-evaluation",
-        locale === "ru" ? "Прекратите курение, употребление алкоголя и ограничьте потребление кофеина." : "Stop smoking, alcohol, and limit caffeine consumption",
-        locale === "ru" ? "Предоставьте врачу полную медицинскую и репродуктивную историю." : "Provide full medical and reproductive history",
-        locale === "ru" ? "Минимизируйте контакт с экологическими токсинами: старайтесь избегать воздействия химикатов, тяжёлых металлов и загрязняющих веществ, так как они могут ухудшить качество спермы." : "Avoid exposure to environmental toxins: This includes reducing contact with chemicals, heavy metals, and pollution. These can negatively affect sperm quality",
-        locale === "ru" ? "Следите за уровнем гидратации: обезвоживание может негативно сказаться на здоровье спермы. Перед обследованием пейте достаточное количество воды." : "Ensure proper hydration: Dehydration can impact sperm health. Drink plenty of water prior to the evaluation"
+        locale === "ru"
+          ? "Пройдите обследование, включающее анализ спермы и гормональные исследования."
+          : "Undergo semen analysis and hormonal testing",
+        locale === "ru"
+          ? "Избегайте воздействия тепла (сауны, бани и горячие ванны) за несколько дней до обследования."
+          : "Avoid heat exposure (saunas etc.) pre-evaluation",
+        locale === "ru"
+          ? "Откажитесь от ношения тесной одежды перед сдачей анализов."
+          : "Avoid tight clothes pre-evaluation",
+        locale === "ru"
+          ? "Прекратите курение, употребление алкоголя и ограничьте потребление кофеина."
+          : "Stop smoking, alcohol, and limit caffeine consumption",
+        locale === "ru"
+          ? "Предоставьте врачу полную медицинскую и репродуктивную историю."
+          : "Provide full medical and reproductive history",
+        locale === "ru"
+          ? "Минимизируйте контакт с экологическими токсинами: старайтесь избегать воздействия химикатов, тяжёлых металлов и загрязняющих веществ, так как они могут ухудшить качество спермы."
+          : "Avoid exposure to environmental toxins: This includes reducing contact with chemicals, heavy metals, and pollution. These can negatively affect sperm quality",
+        locale === "ru"
+          ? "Следите за уровнем гидратации: обезвоживание может негативно сказаться на здоровье спермы. Перед обследованием пейте достаточное количество воды."
+          : "Ensure proper hydration: Dehydration can impact sperm health. Drink plenty of water prior to the evaluation",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -19437,7 +21403,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       imgCover:
         subNestedKey === "male-sexual-health-issues" ? malesexual : null,
       subNestedKey: "male-sexual-health-issues",
-      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
     },
     // Peyronies-Disease
     {
@@ -19453,7 +21419,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Коррекция искривления" : "Curvature Treatment",
+            title:
+              locale === "ru" ? "Коррекция искривления" : "Curvature Treatment",
             desc:
               locale === "ru"
                 ? "терапия помогает уменьшить фиброз и выпрямить половой член."
@@ -19490,7 +21457,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Stem cells aid penile tissue repair through multiple mechanisms: Anti-inflammatory Effects: Reduce inflammation and promote healing. Tissue Regeneration: Differentiate into smooth muscle and endothelial cells for tissue repair. Collagen Remodeling: Break down fibrotic plaques and support healthy tissue formation. Angiogenesis: Enhance blood vessel growth for better oxygenation and recovery. Immunomodulation: Regulate immune responses to prevent further damage.",
           },
           {
-            header: locale === "ru" ? "Кому подойдет это лечение" : "Who It’s For",
+            header:
+              locale === "ru" ? "Кому подойдет это лечение" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "Терапия стволовыми клетками идеально подходит для людей с хронической болезнью Пейрони, стойкими фиброзными бляшками, значительным искривлением, болью или эректильной дисфункцией. Она предлагает минимально инвазивную альтернативу для тех, кто не реагирует на другие методы лечения или избегает хирургического вмешательства."
@@ -19500,41 +21468,93 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Что такое болезнь Пейрони?" : "What is Peyronie’s Disease?",
-          answer : locale === "ru" ? "Это заболевание, которое вызывает искривление пениса из-за образования рубцовой ткани, что может приводить к дискомфорту." : "A condition causing penile curvature from scar tissue"
+          question:
+            locale === "ru"
+              ? "Что такое болезнь Пейрони?"
+              : "What is Peyronie’s Disease?",
+          answer:
+            locale === "ru"
+              ? "Это заболевание, которое вызывает искривление пениса из-за образования рубцовой ткани, что может приводить к дискомфорту."
+              : "A condition causing penile curvature from scar tissue",
         },
         {
-          question : locale === "ru" ? "Можно ли это лечить?" : "Is it treatable?",
-          answer : locale === "ru" ? "Да, болезнь Пейрони поддается лечению с помощью медикаментов, инъекций или, при необходимости, хирургического вмешательства." : "Yes, with meds, injections, or surgery if needed"
+          question:
+            locale === "ru" ? "Можно ли это лечить?" : "Is it treatable?",
+          answer:
+            locale === "ru"
+              ? "Да, болезнь Пейрони поддается лечению с помощью медикаментов, инъекций или, при необходимости, хирургического вмешательства."
+              : "Yes, with meds, injections, or surgery if needed",
         },
         {
-          question : locale === "ru" ? "Могу ли я продолжать сексуальную активность?" : "Can I still have sex?",
-          answer : locale === "ru" ? "Да, при условии, что функция сохранена, и дискомфорт можно контролировать." : "Yes, if function is intact and discomfort is manageable"
+          question:
+            locale === "ru"
+              ? "Могу ли я продолжать сексуальную активность?"
+              : "Can I still have sex?",
+          answer:
+            locale === "ru"
+              ? "Да, при условии, что функция сохранена, и дискомфорт можно контролировать."
+              : "Yes, if function is intact and discomfort is manageable",
         },
         {
-          question : locale === "ru" ? "Это состояние permanentное?" : "Is it permanent?",
-          answer : locale === "ru" ? "Оно может как стабилизироваться, так и ухудшаться, но раннее обращение за лечением помогает остановить прогрессирование." : "It can stabilize or worsen – early treatment helps"
+          question:
+            locale === "ru"
+              ? "Это состояние permanentное?"
+              : "Is it permanent?",
+          answer:
+            locale === "ru"
+              ? "Оно может как стабилизироваться, так и ухудшаться, но раннее обращение за лечением помогает остановить прогрессирование."
+              : "It can stabilize or worsen – early treatment helps",
         },
         {
-          question : locale === "ru" ? "Может ли это привести к эректильной дисфункции?" : "Does it cause ED?",
-          answer : locale === "ru" ? "В некоторых случаях да, но с применением соответствующих методов лечения можно решить обе проблемы." : "In some cases, yes – treatments address both"
-        }
+          question:
+            locale === "ru"
+              ? "Может ли это привести к эректильной дисфункции?"
+              : "Does it cause ED?",
+          answer:
+            locale === "ru"
+              ? "В некоторых случаях да, но с применением соответствующих методов лечения можно решить обе проблемы."
+              : "In some cases, yes – treatments address both",
+        },
       ],
       posts: [
-        locale === "ru" ? "Соблюдайте строгий график приема назначенных препаратов, таких как инъекции коллагеназы." : "Follow medication schedule strictly (e.g., collagenase injections)",
-        locale === "ru" ? "На начальном этапе лечения воздерживайтесь от сексуальной активности." : "Avoid sexual activity during initial treatment phase",
-        locale === "ru" ? "В случае ухудшения искривления или возникновения болевых ощущений немедленно сообщите об этом врачу." : "Report any worsening curvature or pain",
-        locale === "ru" ? "Если врач рекомендовал, рассмотрите возможность физиотерапевтического лечения." : "Consider physical therapy if recommended",
-        locale === "ru" ? "Регулярно посещайте уролога для контрольных визитов." : "Schedule regular follow-ups with your urologist",
-        locale === "ru" ? "Постарайтесь сократить потребление алкоголя и табака." : "Reduce alcohol and tobacco use.",
-        locale === "ru" ? "Будьте терпеливы: процесс лечения требует времени, и результаты могут проявиться не сразу." : "Be patient, the treatment process may take time."
+        locale === "ru"
+          ? "Соблюдайте строгий график приема назначенных препаратов, таких как инъекции коллагеназы."
+          : "Follow medication schedule strictly (e.g., collagenase injections)",
+        locale === "ru"
+          ? "На начальном этапе лечения воздерживайтесь от сексуальной активности."
+          : "Avoid sexual activity during initial treatment phase",
+        locale === "ru"
+          ? "В случае ухудшения искривления или возникновения болевых ощущений немедленно сообщите об этом врачу."
+          : "Report any worsening curvature or pain",
+        locale === "ru"
+          ? "Если врач рекомендовал, рассмотрите возможность физиотерапевтического лечения."
+          : "Consider physical therapy if recommended",
+        locale === "ru"
+          ? "Регулярно посещайте уролога для контрольных визитов."
+          : "Schedule regular follow-ups with your urologist",
+        locale === "ru"
+          ? "Постарайтесь сократить потребление алкоголя и табака."
+          : "Reduce alcohol and tobacco use.",
+        locale === "ru"
+          ? "Будьте терпеливы: процесс лечения требует времени, и результаты могут проявиться не сразу."
+          : "Be patient, the treatment process may take time.",
       ],
       preList: [
-        locale === "ru" ? "Пройдите медицинское обследование (например, ультразвук)." : "Undergo physical exam and imaging (e.g., ultrasound)",
-        locale === "ru" ? "Поделитесь с врачом информацией о принимаемых вами медикаментах и вашей половой истории." : "Discuss medications and sexual history",
-        locale === "ru" ? "Избегайте применения НПВП, если они не были прописаны врачом." : "Avoid NSAIDs unless directed by your doctor",
-        locale === "ru" ? "Будьте готовы к возможному назначению медикаментозного лечения или инъекционной терапии." : "Prepare for potential medication or injection therapy",
-        locale === "ru" ? "Лечение может занять некоторое время, поэтому важно правильно управлять своими ожиданиями." : "The treatment may take time, so manage your expectations."
+        locale === "ru"
+          ? "Пройдите медицинское обследование (например, ультразвук)."
+          : "Undergo physical exam and imaging (e.g., ultrasound)",
+        locale === "ru"
+          ? "Поделитесь с врачом информацией о принимаемых вами медикаментах и вашей половой истории."
+          : "Discuss medications and sexual history",
+        locale === "ru"
+          ? "Избегайте применения НПВП, если они не были прописаны врачом."
+          : "Avoid NSAIDs unless directed by your doctor",
+        locale === "ru"
+          ? "Будьте готовы к возможному назначению медикаментозного лечения или инъекционной терапии."
+          : "Prepare for potential medication or injection therapy",
+        locale === "ru"
+          ? "Лечение может занять некоторое время, поэтому важно правильно управлять своими ожиданиями."
+          : "The treatment may take time, so manage your expectations.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -19683,7 +21703,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       imgCover: subNestedKey === "peyronies-disease" ? peyroniesdisease : null,
       subNestedKey: "peyronies-disease",
-      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
     },
     // Peyronies-Disease
     {
@@ -19699,21 +21719,26 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Восстановление сосудов" : "Vascular Revival",
+            title:
+              locale === "ru" ? "Восстановление сосудов" : "Vascular Revival",
             desc:
               locale === "ru"
                 ? "улучшение кровообращения в тканях полового члена."
                 : "Enhances blood circulation in penile tissue through advanced stem cell treatment",
           },
           {
-            title: locale === "ru" ? "Регенерация тканей" : "Tissue Regeneration",
+            title:
+              locale === "ru" ? "Регенерация тканей" : "Tissue Regeneration",
             desc:
               locale === "ru"
                 ? "восстановление ключевых структур, включая гладкую мускулатуру и эндотелий."
                 : "Rebuilds vital penile structures including smooth muscle and endothelial tissues",
           },
           {
-            title: locale === "ru" ? "Безопасность и эффективность" : "Safe Solutions",
+            title:
+              locale === "ru"
+                ? "Безопасность и эффективность"
+                : "Safe Solutions",
             desc:
               locale === "ru"
                 ? "длительный терапевтический эффект с минимальными побочными реакциями, особенно при тяжёлых формах ЭД."
@@ -19746,42 +21771,98 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Что может вызывать эректильную дисфункцию?" : "What causes ED?",
-          answer : locale === "ru" ? "Основными причинами могут быть нарушения кровообращения, повреждения нервов, гормональные изменения или стресс." : "Blood flow issues, nerve damage, hormones, or stress"
+          question:
+            locale === "ru"
+              ? "Что может вызывать эректильную дисфункцию?"
+              : "What causes ED?",
+          answer:
+            locale === "ru"
+              ? "Основными причинами могут быть нарушения кровообращения, повреждения нервов, гормональные изменения или стресс."
+              : "Blood flow issues, nerve damage, hormones, or stress",
         },
         {
-          question : locale === "ru" ? "Насколько безопасны таблетки для лечения ЭД?" : "Are pills safe?",
-          answer : locale === "ru" ? "Таблетки безопасны, если они принимаются под наблюдением врача." : "Yes, under medical supervision"
+          question:
+            locale === "ru"
+              ? "Насколько безопасны таблетки для лечения ЭД?"
+              : "Are pills safe?",
+          answer:
+            locale === "ru"
+              ? "Таблетки безопасны, если они принимаются под наблюдением врача."
+              : "Yes, under medical supervision",
         },
         {
-          question : locale === "ru" ? "Пройдет ли это само собой?" : "Will it go away on its own?",
-          answer : locale === "ru" ? "В некоторых случаях, особенно если причина связана со стрессом, проблема может исчезнуть сама собой." : "Sometimes, especially if stress-related"
+          question:
+            locale === "ru"
+              ? "Пройдет ли это само собой?"
+              : "Will it go away on its own?",
+          answer:
+            locale === "ru"
+              ? "В некоторых случаях, особенно если причина связана со стрессом, проблема может исчезнуть сама собой."
+              : "Sometimes, especially if stress-related",
         },
         {
-          question : locale === "ru" ? "Что делать, если таблетки не помогают?" : "What if pills don’t work?",
-          answer : locale === "ru" ? "Если таблетки не дают результата, можно рассмотреть альтернативные методы лечения, такие как инъекции или специализированные устройства." : "Other treatments include injections or devices"
+          question:
+            locale === "ru"
+              ? "Что делать, если таблетки не помогают?"
+              : "What if pills don’t work?",
+          answer:
+            locale === "ru"
+              ? "Если таблетки не дают результата, можно рассмотреть альтернативные методы лечения, такие как инъекции или специализированные устройства."
+              : "Other treatments include injections or devices",
         },
         {
-          question : locale === "ru" ? "Могут ли молодые мужчины столкнуться с эректильной дисфункцией?" : "Can young men get ED?",
-          answer : locale === "ru" ? "Да, это возможно, и часто связано с тревожностью или неправильным образом жизни." : "Yes – often linked to anxiety or lifestyle"
-        }
+          question:
+            locale === "ru"
+              ? "Могут ли молодые мужчины столкнуться с эректильной дисфункцией?"
+              : "Can young men get ED?",
+          answer:
+            locale === "ru"
+              ? "Да, это возможно, и часто связано с тревожностью или неправильным образом жизни."
+              : "Yes – often linked to anxiety or lifestyle",
+        },
       ],
       posts: [
-        locale === "ru" ? "Принимайте лекарства, такие как ингибиторы ФДЭ5, строго по назначению врача." : "Take medications (e.g., PDE5 inhibitors) as prescribed",
-        locale === "ru" ? "Работайте над улучшением образа жизни: следите за весом, занимайтесь физическими упражнениями и придерживайтесь сбалансированной диеты." : "Continue lifestyle improvements (weight, exercise, diet)",
-        locale === "ru" ? "Избегайте использования препаратов для лечения эректильной дисфункции, если они не были одобрены вашим врачом." : "Avoid recreational ED drugs unless approved",
-        locale === "ru" ? "Лечите сопутствующие заболевания, такие как диабет и гипертензия, согласно рекомендациям специалиста." : "Treat underlying conditions (diabetes, hypertension)",
-        locale === "ru" ? "Регулярно проходите контрольные осмотры для оценки эффективности лечения." : "Schedule follow-ups to monitor response",
-        locale === "ru" ? "Соблюдайте рекомендации врача по срокам воздержания от сексуальной активности." : "Avoid sexual activity for the duration recommended by your doctor.",
-        locale === "ru" ? "Обратитесь за медицинской помощью, если испытываете боль или дискомфорт." : "Seek medical attention if you experience pain or discomfort.",
-        locale === "ru" ? "Старайтесь избегать стрессовых ситуаций." : "Avoid stress.",
-        locale === "ru" ? "Сократите потребление табака и алкоголя." : "Reduce tobacco and alcohol use."
+        locale === "ru"
+          ? "Принимайте лекарства, такие как ингибиторы ФДЭ5, строго по назначению врача."
+          : "Take medications (e.g., PDE5 inhibitors) as prescribed",
+        locale === "ru"
+          ? "Работайте над улучшением образа жизни: следите за весом, занимайтесь физическими упражнениями и придерживайтесь сбалансированной диеты."
+          : "Continue lifestyle improvements (weight, exercise, diet)",
+        locale === "ru"
+          ? "Избегайте использования препаратов для лечения эректильной дисфункции, если они не были одобрены вашим врачом."
+          : "Avoid recreational ED drugs unless approved",
+        locale === "ru"
+          ? "Лечите сопутствующие заболевания, такие как диабет и гипертензия, согласно рекомендациям специалиста."
+          : "Treat underlying conditions (diabetes, hypertension)",
+        locale === "ru"
+          ? "Регулярно проходите контрольные осмотры для оценки эффективности лечения."
+          : "Schedule follow-ups to monitor response",
+        locale === "ru"
+          ? "Соблюдайте рекомендации врача по срокам воздержания от сексуальной активности."
+          : "Avoid sexual activity for the duration recommended by your doctor.",
+        locale === "ru"
+          ? "Обратитесь за медицинской помощью, если испытываете боль или дискомфорт."
+          : "Seek medical attention if you experience pain or discomfort.",
+        locale === "ru"
+          ? "Старайтесь избегать стрессовых ситуаций."
+          : "Avoid stress.",
+        locale === "ru"
+          ? "Сократите потребление табака и алкоголя."
+          : "Reduce tobacco and alcohol use.",
       ],
       preList: [
-        locale === "ru" ? "Укажите все принимаемые лекарства и существующие заболевания." : "Disclose all current medications and health conditions",
-        locale === "ru" ? "Подготовьтесь к лабораторным тестам, включая анализы на уровень тестостерона и состояние сосудов." : "Expect lab tests for testosterone or vascular health",
-        locale === "ru" ? "Перед тестированием избегайте употребления алкоголя, табака и высокожирной пищи." : "Avoid alcohol, tobacco, and high-fat meals before testing",
-        locale === "ru" ? "Будьте откровенны относительно психологических факторов и жизненных обстоятельств, которые могут повлиять на результаты." : "Be honest about psychological and lifestyle factors"
+        locale === "ru"
+          ? "Укажите все принимаемые лекарства и существующие заболевания."
+          : "Disclose all current medications and health conditions",
+        locale === "ru"
+          ? "Подготовьтесь к лабораторным тестам, включая анализы на уровень тестостерона и состояние сосудов."
+          : "Expect lab tests for testosterone or vascular health",
+        locale === "ru"
+          ? "Перед тестированием избегайте употребления алкоголя, табака и высокожирной пищи."
+          : "Avoid alcohol, tobacco, and high-fat meals before testing",
+        locale === "ru"
+          ? "Будьте откровенны относительно психологических факторов и жизненных обстоятельств, которые могут повлиять на результаты."
+          : "Be honest about psychological and lifestyle factors",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -19999,7 +22080,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       imgCover: subNestedKey === "erectile-dysfunction-ed" ? dyfunc : null,
       subNestedKey: "erectile-dysfunction-ed",
-      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
     },
     // Stem-Cell-Treatments-for-Men
     {
@@ -20015,14 +22096,18 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Естественное восстановление" : "Natural Healing",
+            title:
+              locale === "ru"
+                ? "Естественное восстановление"
+                : "Natural Healing",
             desc:
               locale === "ru"
                 ? "усиливает собственные механизмы организма, уменьшая потребность в операциях."
                 : "Enhances the body’s self-repair, reducing need for surgery",
           },
           {
-            title: locale === "ru" ? "Широкое применение" : "Treatment Versatility",
+            title:
+              locale === "ru" ? "Широкое применение" : "Treatment Versatility",
             desc:
               locale === "ru"
                 ? "эффективна в лечении проблем кожи, сердца и нервной системы."
@@ -20062,55 +22147,124 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Какие заболевания могут лечить стволовые клетки?" : "What conditions can stem cells treat?",
-          answer : locale === "ru" ? "ЭД, болезнь Пейрони, боль в суставах и множество других состояний." : "ED, Peyronie’s, joint pain, and more"
+          question:
+            locale === "ru"
+              ? "Какие заболевания могут лечить стволовые клетки?"
+              : "What conditions can stem cells treat?",
+          answer:
+            locale === "ru"
+              ? "ЭД, болезнь Пейрони, боль в суставах и множество других состояний."
+              : "ED, Peyronie’s, joint pain, and more",
         },
         {
-          question : locale === "ru" ? "Это безопасно?" : "Is it safe?",
-          answer : locale === "ru" ? "В целом, да, при условии, что лечение проводится опытным специалистом." : "Generally yes, when done by trained professionals"
+          question: locale === "ru" ? "Это безопасно?" : "Is it safe?",
+          answer:
+            locale === "ru"
+              ? "В целом, да, при условии, что лечение проводится опытным специалистом."
+              : "Generally yes, when done by trained professionals",
         },
         {
-          question : locale === "ru" ? "Это одобрено FDA?" : "Is it FDA-approved?",
-          answer : locale === "ru" ? "Некоторые области применения стволовых клеток находятся на стадии исследования и еще не имеют полного одобрения." : "Some applications are still investigational"
+          question:
+            locale === "ru" ? "Это одобрено FDA?" : "Is it FDA-approved?",
+          answer:
+            locale === "ru"
+              ? "Некоторые области применения стволовых клеток находятся на стадии исследования и еще не имеют полного одобрения."
+              : "Some applications are still investigational",
         },
         {
-          question : locale === "ru" ? "Как долго ждать результатов?" : "How long for results?",
-          answer : locale === "ru" ? "Результаты могут проявиться от нескольких недель до нескольких месяцев, в зависимости от конкретного состояния." : "Weeks to months depending on condition"
+          question:
+            locale === "ru"
+              ? "Как долго ждать результатов?"
+              : "How long for results?",
+          answer:
+            locale === "ru"
+              ? "Результаты могут проявиться от нескольких недель до нескольких месяцев, в зависимости от конкретного состояния."
+              : "Weeks to months depending on condition",
         },
         {
-          question : locale === "ru" ? "Есть ли побочные эффекты?" : "Are there side effects?",
-          answer : locale === "ru" ? "Возможны незначительные отеки или болезненность в месте инъекции." : "Minor swelling or soreness at injection site"
+          question:
+            locale === "ru"
+              ? "Есть ли побочные эффекты?"
+              : "Are there side effects?",
+          answer:
+            locale === "ru"
+              ? "Возможны незначительные отеки или болезненность в месте инъекции."
+              : "Minor swelling or soreness at injection site",
         },
         {
-          question : locale === "ru" ? "Каков процент успеха терапии стволовыми клетками?" : "What is the success rate of stem cell therapy?",
-          answer : locale === "ru" ? "Успех терапии зависит от индивидуальных факторов и состояния пациента. Раннее вмешательство может значительно повысить вероятность положительных результатов." : "Success varies by individual and condition, but early intervention can lead to positive outcomes."
+          question:
+            locale === "ru"
+              ? "Каков процент успеха терапии стволовыми клетками?"
+              : "What is the success rate of stem cell therapy?",
+          answer:
+            locale === "ru"
+              ? "Успех терапии зависит от индивидуальных факторов и состояния пациента. Раннее вмешательство может значительно повысить вероятность положительных результатов."
+              : "Success varies by individual and condition, but early intervention can lead to positive outcomes.",
         },
         {
-          question : locale === "ru" ? "Сколько сеансов необходимо для лечения?" : "How many sessions are required for treatment?",
-          answer : locale === "ru" ? "Обычно требуется несколько сеансов. План лечения определяется вашим врачом в зависимости от состояния и реакции организма." : "Multiple sessions are usually needed, with the plan determined by your doctor."
-        }
+          question:
+            locale === "ru"
+              ? "Сколько сеансов необходимо для лечения?"
+              : "How many sessions are required for treatment?",
+          answer:
+            locale === "ru"
+              ? "Обычно требуется несколько сеансов. План лечения определяется вашим врачом в зависимости от состояния и реакции организма."
+              : "Multiple sessions are usually needed, with the plan determined by your doctor.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Ограничьте физическую активность в течение нескольких дней после инъекции." : "Limit physical activity for a few days post-injection",
-        locale === "ru" ? "Поддерживайте водный баланс и следуйте рекомендациям по уходу после процедуры." : "Stay hydrated and follow post-care instructions",
-        locale === "ru" ? "Избегайте приема НПВП, если они не назначены врачом, так как они могут повлиять на эффективность стволовых клеток." : "Avoid NSAIDs unless prescribed (they may hinder stem cell action)",
-        locale === "ru" ? "Регулярно посещайте контрольные осмотры для мониторинга улучшений." : "Attend follow-ups to track improvements",
-        locale === "ru" ? "Соблюдайте рекомендации по питанию и образу жизни, способствующие заживлению." : "Follow lifestyle and dietary advice to support healing",
-        locale === "ru" ? "Немедленно сообщайте врачу о боли или дискомфорте." : "Report pain or discomfort.",
-        locale === "ru" ? "Воздержитесь от сексуальной активности, как указано вашим урологом." : "Avoid sexual activity as recommended by your urologist",
-        locale === "ru" ? "Избегайте воздействия экстремальных температур (горячих и холодных), а также сильного давления." : "Avoid extreme heat, cold, or pressure.",
+        locale === "ru"
+          ? "Ограничьте физическую активность в течение нескольких дней после инъекции."
+          : "Limit physical activity for a few days post-injection",
+        locale === "ru"
+          ? "Поддерживайте водный баланс и следуйте рекомендациям по уходу после процедуры."
+          : "Stay hydrated and follow post-care instructions",
+        locale === "ru"
+          ? "Избегайте приема НПВП, если они не назначены врачом, так как они могут повлиять на эффективность стволовых клеток."
+          : "Avoid NSAIDs unless prescribed (they may hinder stem cell action)",
+        locale === "ru"
+          ? "Регулярно посещайте контрольные осмотры для мониторинга улучшений."
+          : "Attend follow-ups to track improvements",
+        locale === "ru"
+          ? "Соблюдайте рекомендации по питанию и образу жизни, способствующие заживлению."
+          : "Follow lifestyle and dietary advice to support healing",
+        locale === "ru"
+          ? "Немедленно сообщайте врачу о боли или дискомфорте."
+          : "Report pain or discomfort.",
+        locale === "ru"
+          ? "Воздержитесь от сексуальной активности, как указано вашим урологом."
+          : "Avoid sexual activity as recommended by your urologist",
+        locale === "ru"
+          ? "Избегайте воздействия экстремальных температур (горячих и холодных), а также сильного давления."
+          : "Avoid extreme heat, cold, or pressure.",
         locale === "ru" ? "Минимизируйте стресс." : "Avoid stress.",
-        locale === "ru" ? "" : "Be patient, as treatment effects take time."
+        locale === "ru" ? "" : "Be patient, as treatment effects take time.",
       ],
       preList: [
-        locale === "ru" ? "Пройдите тщательную консультацию для оценки необходимости и возможности лечения." : "Full consultation to assess eligibility",
-        locale === "ru" ? "Сдайте необходимые анализы крови, пройдите визуализацию и обсудите свою медицинскую историю." : "Blood tests, imaging, and medical history review",
-        locale === "ru" ? "Избегайте приема противовоспалительных препаратов перед процедурой." : "Avoid anti-inflammatory medications before procedure",
-        locale === "ru" ? "Прекратите курение и употребление алкоголя за несколько дней до лечения." : "Stop smoking and alcohol use prior to treatment",
-        locale === "ru" ? "Контролируйте вес и поддерживайте физическое здоровье." : "Weight management and physical health.",
-        locale === "ru" ? "Поделитесь своим психологическим состоянием с врачом." : "Share your psychological state.",
-        locale === "ru" ? "Убедитесь, что вы хорошо отдохнули перед процедурой." : "Make sure to rest before the procedure.",
-        locale === "ru" ? "Лечение может занять время, поэтому важно управлять своими ожиданиями." : "The treatment may take time, so manage your expectations."
+        locale === "ru"
+          ? "Пройдите тщательную консультацию для оценки необходимости и возможности лечения."
+          : "Full consultation to assess eligibility",
+        locale === "ru"
+          ? "Сдайте необходимые анализы крови, пройдите визуализацию и обсудите свою медицинскую историю."
+          : "Blood tests, imaging, and medical history review",
+        locale === "ru"
+          ? "Избегайте приема противовоспалительных препаратов перед процедурой."
+          : "Avoid anti-inflammatory medications before procedure",
+        locale === "ru"
+          ? "Прекратите курение и употребление алкоголя за несколько дней до лечения."
+          : "Stop smoking and alcohol use prior to treatment",
+        locale === "ru"
+          ? "Контролируйте вес и поддерживайте физическое здоровье."
+          : "Weight management and physical health.",
+        locale === "ru"
+          ? "Поделитесь своим психологическим состоянием с врачом."
+          : "Share your psychological state.",
+        locale === "ru"
+          ? "Убедитесь, что вы хорошо отдохнули перед процедурой."
+          : "Make sure to rest before the procedure.",
+        locale === "ru"
+          ? "Лечение может занять время, поэтому важно управлять своими ожиданиями."
+          : "The treatment may take time, so manage your expectations.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -20350,7 +22504,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       imgCover: subNestedKey === "stem-cell-for-men" ? stemmen : null,
       subNestedKey: "stem-cell-for-men",
-      video:"https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
     },
     // Orthopedic-Stem-Cell-Therapy
     {
@@ -20366,14 +22520,18 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Натуральное восстановление" : "Natural Healing",
+            title:
+              locale === "ru"
+                ? "Натуральное восстановление"
+                : "Natural Healing",
             desc:
               locale === "ru"
                 ? "активация саморегенерации без операций."
                 : "Stem cells boost self-repair, reducing invasive treatment needs.",
           },
           {
-            title: locale === "ru" ? "Универсальность" : "Versatile Applications",
+            title:
+              locale === "ru" ? "Универсальность" : "Versatile Applications",
             desc:
               locale === "ru"
                 ? "применяется в разных областях медицины."
@@ -20413,50 +22571,117 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Какие заболевания можно лечить с помощью стволовых клеток?" : "What can it treat?",
-          answer : locale === "ru" ? "Артрит, травмы сухожилий, дегенерация суставов и другие заболевания." : "Arthritis, tendon injuries, joint degeneration"
+          question:
+            locale === "ru"
+              ? "Какие заболевания можно лечить с помощью стволовых клеток?"
+              : "What can it treat?",
+          answer:
+            locale === "ru"
+              ? "Артрит, травмы сухожилий, дегенерация суставов и другие заболевания."
+              : "Arthritis, tendon injuries, joint degeneration",
         },
         {
-          question : locale === "ru" ? "Как долго длится эффект?" : "How long does it last?",
-          answer : locale === "ru" ? "Результаты могут варьироваться, обычно от нескольких месяцев до нескольких лет." : "Results vary but can last months to years"
+          question:
+            locale === "ru"
+              ? "Как долго длится эффект?"
+              : "How long does it last?",
+          answer:
+            locale === "ru"
+              ? "Результаты могут варьироваться, обычно от нескольких месяцев до нескольких лет."
+              : "Results vary but can last months to years",
         },
         {
-          question : locale === "ru" ? "Могут ли стволовые клетки заменить операцию?" : "Will it replace surgery?",
-          answer : locale === "ru" ? "В некоторых случаях да, особенно на ранних и умеренных стадиях заболевания." : "Sometimes – helpful for early to moderate cases"
+          question:
+            locale === "ru"
+              ? "Могут ли стволовые клетки заменить операцию?"
+              : "Will it replace surgery?",
+          answer:
+            locale === "ru"
+              ? "В некоторых случаях да, особенно на ранних и умеренных стадиях заболевания."
+              : "Sometimes – helpful for early to moderate cases",
         },
         {
-          question : locale === "ru" ? "Это болезненно?" : "Is it painful?",
-          answer : locale === "ru" ? "Обычно ощущается легкая болезненность, серьезной боли не ожидается." : "Mild soreness, but no major pain expected"
+          question: locale === "ru" ? "Это болезненно?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Обычно ощущается легкая болезненность, серьезной боли не ожидается."
+              : "Mild soreness, but no major pain expected",
         },
         {
-          question : locale === "ru" ? "Когда я смогу вернуться к спорту?" : "How soon can I return to sports?",
-          answer : locale === "ru" ? "Обычно через 2–6 недель, в зависимости от области лечения." : "2–6 weeks depending on area treated"
+          question:
+            locale === "ru"
+              ? "Когда я смогу вернуться к спорту?"
+              : "How soon can I return to sports?",
+          answer:
+            locale === "ru"
+              ? "Обычно через 2–6 недель, в зависимости от области лечения."
+              : "2–6 weeks depending on area treated",
         },
         {
-          question : locale === "ru" ? "Насколько безопасна терапия стволовыми клетками?" : "How safe is stem cell therapy?",
-          answer : locale === "ru" ? "Это безопасная процедура, если она проводится опытными специалистами." : "It's safe when done by experienced professionals."
-        }
+          question:
+            locale === "ru"
+              ? "Насколько безопасна терапия стволовыми клетками?"
+              : "How safe is stem cell therapy?",
+          answer:
+            locale === "ru"
+              ? "Это безопасная процедура, если она проводится опытными специалистами."
+              : "It's safe when done by experienced professionals.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Отдыхайте в течение нескольких дней." : "Rest the treated joint for a few days",
-        locale === "ru" ? "Используйте компрессию, подъем и лед при необходимости." : "Use compression, elevation, and ice if needed",
-        locale === "ru" ? "Избегайте НПВП, если только врач не рекомендовал их." : "Avoid NSAIDs unless directed",
-        locale === "ru" ? "Возобновляйте легкую активность согласно рекомендациям (избегайте ударных нагрузок)." : "Resume light movement as advised (no high-impact activity)",
-        locale === "ru" ? "Пройдите контрольный осмотр для оценки прогресса." : "Follow up for progress evaluation",
-        locale === "ru" ? "Обратитесь к врачу, если ощущаете боль или дискомфорт." : "Consult your doctor if you experience pain or discomfort.",
-        locale === "ru" ? "Продолжайте поддерживать водный баланс, употребляя достаточное количество воды." : "Continue to drink adequate amounts of water.",
-        locale === "ru" ? "Сократите потребление табака и алкоголя." : "Reduce cigarette and alcohol consumption.",
-        locale === "ru" ? "Оберегайте обработанную область от травм." : "Protect the treated area.",
-        locale === "ru" ? "Следите за контрольным весом." : "Pay attention to weight control.",
-        locale === "ru" ? "Будьте терпеливы - восстановление может занять время." : "Recovery may take time, so be patient."
+        locale === "ru"
+          ? "Отдыхайте в течение нескольких дней."
+          : "Rest the treated joint for a few days",
+        locale === "ru"
+          ? "Используйте компрессию, подъем и лед при необходимости."
+          : "Use compression, elevation, and ice if needed",
+        locale === "ru"
+          ? "Избегайте НПВП, если только врач не рекомендовал их."
+          : "Avoid NSAIDs unless directed",
+        locale === "ru"
+          ? "Возобновляйте легкую активность согласно рекомендациям (избегайте ударных нагрузок)."
+          : "Resume light movement as advised (no high-impact activity)",
+        locale === "ru"
+          ? "Пройдите контрольный осмотр для оценки прогресса."
+          : "Follow up for progress evaluation",
+        locale === "ru"
+          ? "Обратитесь к врачу, если ощущаете боль или дискомфорт."
+          : "Consult your doctor if you experience pain or discomfort.",
+        locale === "ru"
+          ? "Продолжайте поддерживать водный баланс, употребляя достаточное количество воды."
+          : "Continue to drink adequate amounts of water.",
+        locale === "ru"
+          ? "Сократите потребление табака и алкоголя."
+          : "Reduce cigarette and alcohol consumption.",
+        locale === "ru"
+          ? "Оберегайте обработанную область от травм."
+          : "Protect the treated area.",
+        locale === "ru"
+          ? "Следите за контрольным весом."
+          : "Pay attention to weight control.",
+        locale === "ru"
+          ? "Будьте терпеливы - восстановление может занять время."
+          : "Recovery may take time, so be patient.",
       ],
       preList: [
-        locale === "ru" ? "Пройдите МРТ или рентген для оценки повреждений суставов или тканей." : "MRI or X-rays to assess joint or tissue damage",
-        locale === "ru" ? "Прекратите прием противовоспалительных средств за 1 неделю до процедуры." : "Discontinue anti-inflammatories 1 week before",
-        locale === "ru" ? "Избегайте инъекций кортикостероидов перед лечением." : "Avoid corticosteroid injections prior to procedure",
-        locale === "ru" ? "Воздержитесь от курения и следуйте диетическим рекомендациям." : "Stop smoking and follow dietary advice",
-        locale === "ru" ? "Поделитесь с врачом своей полной медицинской историей." : "Inform your doctor of your complete medical history.",
-        locale === "ru" ? "Позаботьтесь о достаточном отдыхе перед процедурой." : "Make sure to rest."
+        locale === "ru"
+          ? "Пройдите МРТ или рентген для оценки повреждений суставов или тканей."
+          : "MRI or X-rays to assess joint or tissue damage",
+        locale === "ru"
+          ? "Прекратите прием противовоспалительных средств за 1 неделю до процедуры."
+          : "Discontinue anti-inflammatories 1 week before",
+        locale === "ru"
+          ? "Избегайте инъекций кортикостероидов перед лечением."
+          : "Avoid corticosteroid injections prior to procedure",
+        locale === "ru"
+          ? "Воздержитесь от курения и следуйте диетическим рекомендациям."
+          : "Stop smoking and follow dietary advice",
+        locale === "ru"
+          ? "Поделитесь с врачом своей полной медицинской историей."
+          : "Inform your doctor of your complete medical history.",
+        locale === "ru"
+          ? "Позаботьтесь о достаточном отдыхе перед процедурой."
+          : "Make sure to rest.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -20912,7 +23137,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       imgCover:
         subNestedKey === "orthopedic-stem-cell-therapy" ? orthopedic : null,
       subNestedKey: "orthopedic-stem-cell-therapy",
-      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
     },
     // neu...-Stem-Cell-Therapy
     {
@@ -20942,7 +23167,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Replaces damaged neurons and glial cells to repair neural pathways.",
           },
           {
-            title: locale === "ru" ? "Общее улучшение здоровья" : "Health Benefits",
+            title:
+              locale === "ru" ? "Общее улучшение здоровья" : "Health Benefits",
             desc:
               locale === "ru"
                 ? "снижение воспаления, улучшение моторных, сенсорных и когнитивных функций."
@@ -20975,45 +23201,107 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Какие заболевания могут лечиться с помощью стволовых клеток?" : "What conditions does it help?",
-          answer : locale === "ru" ? "Болезнь Паркинсона, рассеянный склероз, восстановление после инсульта, травмы спины." : "Parkinson’s, MS, stroke recovery, spinal injuries"
+          question:
+            locale === "ru"
+              ? "Какие заболевания могут лечиться с помощью стволовых клеток?"
+              : "What conditions does it help?",
+          answer:
+            locale === "ru"
+              ? "Болезнь Паркинсона, рассеянный склероз, восстановление после инсульта, травмы спины."
+              : "Parkinson’s, MS, stroke recovery, spinal injuries",
         },
         {
-          question : locale === "ru" ? "Подтверждены ли результаты терапии стволовыми клетками?" : "Is it proven?",
-          answer : locale === "ru" ? "Терапия находится на стадии исследования, однако в некоторых областях результаты многообещающие." : "Still under research but promising in some areas"
+          question:
+            locale === "ru"
+              ? "Подтверждены ли результаты терапии стволовыми клетками?"
+              : "Is it proven?",
+          answer:
+            locale === "ru"
+              ? "Терапия находится на стадии исследования, однако в некоторых областях результаты многообещающие."
+              : "Still under research but promising in some areas",
         },
         {
-          question : locale === "ru" ? "Как вводятся стволовые клетки?" : "How are cells administered?",
-          answer : locale === "ru" ? "Клетки могут вводиться через люмбальную пункцию, внутривенно или целенаправленную инъекцию." : "Via lumbar puncture, IV, or targeted injection"
+          question:
+            locale === "ru"
+              ? "Как вводятся стволовые клетки?"
+              : "How are cells administered?",
+          answer:
+            locale === "ru"
+              ? "Клетки могут вводиться через люмбальную пункцию, внутривенно или целенаправленную инъекцию."
+              : "Via lumbar puncture, IV, or targeted injection",
         },
         {
-          question : locale === "ru" ? "Существуют ли немедленные результаты?" : "Are results immediate?",
-          answer : locale === "ru" ? "Улучшения обычно происходят через несколько недель или месяцев." : "No – improvements take weeks to months"
+          question:
+            locale === "ru"
+              ? "Существуют ли немедленные результаты?"
+              : "Are results immediate?",
+          answer:
+            locale === "ru"
+              ? "Улучшения обычно происходят через несколько недель или месяцев."
+              : "No – improvements take weeks to months",
         },
         {
-          question : locale === "ru" ? "Есть ли риски при терапии стволовыми клетками?" : "Are there risks?",
-          answer : locale === "ru" ? "Риски низкие, но возможны инфекции и воспаления." : "Low, but infection and inflammation are possible"
-        }
+          question:
+            locale === "ru"
+              ? "Есть ли риски при терапии стволовыми клетками?"
+              : "Are there risks?",
+          answer:
+            locale === "ru"
+              ? "Риски низкие, но возможны инфекции и воспаления."
+              : "Low, but infection and inflammation are possible",
+        },
       ],
       posts: [
-        locale === "ru" ? "Внимательно следите за изменениями в симптомах." : "Monitor for any changes in symptoms",
-        locale === "ru" ? "Продолжайте прием назначенных лекарств, если не указано иное." : "Continue existing medications unless instructed",
-        locale === "ru" ? "В первые несколько дней избегайте интенсивных физических нагрузок." : "Avoid heavy exertion in first few days",
-        locale === "ru" ? "При появлении лихорадки, головной боли или ухудшении состояния немедленно сообщите об этом врачу." : "Report any signs of fever, headache, or worsening function",
-        locale === "ru" ? "Регулярно посещайте плановые консультации у невролога." : "Attend neurologist follow-ups as scheduled",
-        locale === "ru" ? "В случае боли или дискомфорта не стесняйтесь обратиться за помощью." : "Report any pain or discomfort.",
-        locale === "ru" ? "Убедитесь, что поддерживаете водный баланс, употребляя достаточное количество жидкости." : "Drink an adequate amount of water.",
-        locale === "ru" ? "Старайтесь минимизировать стресс и беспокойство." : "Avoid excessive stress and anxiety.",
-        locale === "ru" ? "Ограничьте курение и употребление алкоголя." : "Avoid smoking and alcohol use.",
-        locale === "ru" ? "Постепенно увеличивайте физическую активность, следуя рекомендациям специалиста." : "Gradually increase physical activities."
+        locale === "ru"
+          ? "Внимательно следите за изменениями в симптомах."
+          : "Monitor for any changes in symptoms",
+        locale === "ru"
+          ? "Продолжайте прием назначенных лекарств, если не указано иное."
+          : "Continue existing medications unless instructed",
+        locale === "ru"
+          ? "В первые несколько дней избегайте интенсивных физических нагрузок."
+          : "Avoid heavy exertion in first few days",
+        locale === "ru"
+          ? "При появлении лихорадки, головной боли или ухудшении состояния немедленно сообщите об этом врачу."
+          : "Report any signs of fever, headache, or worsening function",
+        locale === "ru"
+          ? "Регулярно посещайте плановые консультации у невролога."
+          : "Attend neurologist follow-ups as scheduled",
+        locale === "ru"
+          ? "В случае боли или дискомфорта не стесняйтесь обратиться за помощью."
+          : "Report any pain or discomfort.",
+        locale === "ru"
+          ? "Убедитесь, что поддерживаете водный баланс, употребляя достаточное количество жидкости."
+          : "Drink an adequate amount of water.",
+        locale === "ru"
+          ? "Старайтесь минимизировать стресс и беспокойство."
+          : "Avoid excessive stress and anxiety.",
+        locale === "ru"
+          ? "Ограничьте курение и употребление алкоголя."
+          : "Avoid smoking and alcohol use.",
+        locale === "ru"
+          ? "Постепенно увеличивайте физическую активность, следуя рекомендациям специалиста."
+          : "Gradually increase physical activities.",
       ],
       preList: [
-        locale === "ru" ? "Пройдите обследование (МРТ, КТ и другие методы)." : "Review of medical history and current therapies",
-        locale === "ru" ? "Изучите свою медицинскую историю и текущее лечение." : "Discuss goals and expected outcomes with neurologist",
-        locale === "ru" ? "Обсудите с неврологом цели и ожидаемые результаты лечения." : "May require lab work or genetic screening",
-        locale === "ru" ? "Возможно, потребуется анализ крови или генетический скрининг." : "Reduce cigarette and alcohol use.",
-        locale === "ru" ? "Сократите потребление сигарет и алкоголя." : "Ensure adequate sleep and rest.",
-        locale === "ru" ? "Обеспечьте себе достаточный сон и отдых." : "Share your psychological condition."
+        locale === "ru"
+          ? "Пройдите обследование (МРТ, КТ и другие методы)."
+          : "Review of medical history and current therapies",
+        locale === "ru"
+          ? "Изучите свою медицинскую историю и текущее лечение."
+          : "Discuss goals and expected outcomes with neurologist",
+        locale === "ru"
+          ? "Обсудите с неврологом цели и ожидаемые результаты лечения."
+          : "May require lab work or genetic screening",
+        locale === "ru"
+          ? "Возможно, потребуется анализ крови или генетический скрининг."
+          : "Reduce cigarette and alcohol use.",
+        locale === "ru"
+          ? "Сократите потребление сигарет и алкоголя."
+          : "Ensure adequate sleep and rest.",
+        locale === "ru"
+          ? "Обеспечьте себе достаточный сон и отдых."
+          : "Share your psychological condition.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -21226,7 +23514,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       imgCover: subNestedKey === "neurological-therapy" ? neurological : null,
       subNestedKey: "neurological-therapy",
-      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0"
+      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
     },
     // tipplasty
     {
@@ -22116,14 +24404,16 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Complete postpartum physical recovery focusing on multiple areas for optimal results.",
           },
           {
-            title: locale === "ru" ? "Быстрое восстановление" : "Quick Recovery",
+            title:
+              locale === "ru" ? "Быстрое восстановление" : "Quick Recovery",
             desc:
               locale === "ru"
                 ? "эффективное заживление благодаря стратегически подобранным процедурам."
                 : "Efficient healing process through strategic combination of therapeutic procedures.",
           },
           {
-            title: locale === "ru" ? "Повышение уверенности" : "Confidence Boost",
+            title:
+              locale === "ru" ? "Повышение уверенности" : "Confidence Boost",
             desc:
               locale === "ru"
                 ? "улучшение самооценки и эмоционального состояния благодаря преобразующему эффекту."
@@ -22156,45 +24446,105 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Какие процедуры включены?" : "What procedures are included?",
-          answer : locale === "ru" ? "Обычно это подтяжка/увеличение груди, абдоминопластика и липосакция." : "Typically breast lift/augmentation, tummy tuck, and liposuction"
+          question:
+            locale === "ru"
+              ? "Какие процедуры включены?"
+              : "What procedures are included?",
+          answer:
+            locale === "ru"
+              ? "Обычно это подтяжка/увеличение груди, абдоминопластика и липосакция."
+              : "Typically breast lift/augmentation, tummy tuck, and liposuction",
         },
         {
-          question : locale === "ru" ? "Как долго длится восстановление?" : "How long is recovery?",
-          answer : locale === "ru" ? "Первоначальный заживление - 2–3 недели, полное заживление - 6–8 недель." : "2–3 weeks initial rest, full healing 6–8 weeks"
+          question:
+            locale === "ru"
+              ? "Как долго длится восстановление?"
+              : "How long is recovery?",
+          answer:
+            locale === "ru"
+              ? "Первоначальный заживление - 2–3 недели, полное заживление - 6–8 недель."
+              : "2–3 weeks initial rest, full healing 6–8 weeks",
         },
         {
-          question : locale === "ru" ? "Могу ли я кормить грудью после маммопластики?" : "Can I breastfeed after a mommy makeover?",
-          answer : locale === "ru" ? "Если увеличение не затрагивает молочные протоки, да - но обсудите это с хирургом." : "If augmentation avoids gland ducts, yes – but discuss with surgeon"
+          question:
+            locale === "ru"
+              ? "Могу ли я кормить грудью после маммопластики?"
+              : "Can I breastfeed after a mommy makeover?",
+          answer:
+            locale === "ru"
+              ? "Если увеличение не затрагивает молочные протоки, да - но обсудите это с хирургом."
+              : "If augmentation avoids gland ducts, yes – but discuss with surgeon",
         },
         {
-          question : locale === "ru" ? "Потеряю ли я вес от этого?" : "Will I lose weight from this?",
-          answer : locale === "ru" ? "Нет, это контурирование тела, а не метод похудения." : "No, it's body contouring, not weight loss"
+          question:
+            locale === "ru"
+              ? "Потеряю ли я вес от этого?"
+              : "Will I lose weight from this?",
+          answer:
+            locale === "ru"
+              ? "Нет, это контурирование тела, а не метод похудения."
+              : "No, it's body contouring, not weight loss",
         },
         {
-          question : locale === "ru" ? "Результаты постоянные?" : "Are results permanent?",
-          answer : locale === "ru" ? "Да, при стабильном весе и отсутствии будущих беременностей." : "With stable weight and no future pregnancies, yes"
-        }
+          question:
+            locale === "ru"
+              ? "Результаты постоянные?"
+              : "Are results permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, при стабильном весе и отсутствии будущих беременностей."
+              : "With stable weight and no future pregnancies, yes",
+        },
       ],
       posts: [
-        locale === "ru" ? "Носите компрессионные изделия в соответствии с указаниями." : "Wear compression garments as directed",
-        locale === "ru" ? "Избегайте подъема предметов весом более 5 кг (включая детей) в течение 4–6 недель." : "Avoid lifting anything over 5 kg (including children) for 4–6 weeks",
-        locale === "ru" ? "Спите на спине с приподнятыми ногами, если операция сочеталась с абдоминопластикой." : "Sleep on back with legs elevated if combined with tummy tuck",
-        locale === "ru" ? "Ухаживайте за дренажами (если они использовались) и поддерживайте чистоту разрезов." : "Manage drains (if used) and keep incisions clean",
-        locale === "ru" ? "Посещайте контрольные осмотры и ограничьте физическую активность в течение 6 недель." : "Attend follow-ups and limit physical activity for 6 weeks",
-        locale === "ru" ? "Пейте достаточное количество воды." : "Stay hydrated.",
-        locale === "ru" ? "Соблюдайте здоровую диету." : "Maintain a healthy diet.",
-        locale === "ru" ? "Защищайте себя от солнца." : "Protect yourself from the sun."
+        locale === "ru"
+          ? "Носите компрессионные изделия в соответствии с указаниями."
+          : "Wear compression garments as directed",
+        locale === "ru"
+          ? "Избегайте подъема предметов весом более 5 кг (включая детей) в течение 4–6 недель."
+          : "Avoid lifting anything over 5 kg (including children) for 4–6 weeks",
+        locale === "ru"
+          ? "Спите на спине с приподнятыми ногами, если операция сочеталась с абдоминопластикой."
+          : "Sleep on back with legs elevated if combined with tummy tuck",
+        locale === "ru"
+          ? "Ухаживайте за дренажами (если они использовались) и поддерживайте чистоту разрезов."
+          : "Manage drains (if used) and keep incisions clean",
+        locale === "ru"
+          ? "Посещайте контрольные осмотры и ограничьте физическую активность в течение 6 недель."
+          : "Attend follow-ups and limit physical activity for 6 weeks",
+        locale === "ru"
+          ? "Пейте достаточное количество воды."
+          : "Stay hydrated.",
+        locale === "ru"
+          ? "Соблюдайте здоровую диету."
+          : "Maintain a healthy diet.",
+        locale === "ru"
+          ? "Защищайте себя от солнца."
+          : "Protect yourself from the sun.",
       ],
       preList: [
-        locale === "ru" ? "Прекратите курить как минимум за 6 недель до операции." : "Stop smoking at least 6 weeks prior",
-        locale === "ru" ? "Избегайте НПВП и добавок за 2 недели до операции." : "Avoid NSAIDs and supplements 2 weeks before",
-        locale === "ru" ? "Пройдите лабораторные тесты и получите медицинское разрешение." : "Complete lab tests and medical clearance",
-        locale === "ru" ? "Поддерживайте стабильный вес в течение как минимум 6 месяцев." : "Maintain a stable weight for 6+ months",
-        locale === "ru" ? "Организуйте помощь на 2–3 недели после операции (особенно для ухода за детьми)." : "Arrange for 2–3 weeks of help post-op (especially with childcare)",
-        locale === "ru" ? "Избегайте разжижающих кровь средств, аспирина, и некоторых травяных добавок." : "-Avoid blood thinners, aspirin, ibuprofen, and certain herbal supplements.",
+        locale === "ru"
+          ? "Прекратите курить как минимум за 6 недель до операции."
+          : "Stop smoking at least 6 weeks prior",
+        locale === "ru"
+          ? "Избегайте НПВП и добавок за 2 недели до операции."
+          : "Avoid NSAIDs and supplements 2 weeks before",
+        locale === "ru"
+          ? "Пройдите лабораторные тесты и получите медицинское разрешение."
+          : "Complete lab tests and medical clearance",
+        locale === "ru"
+          ? "Поддерживайте стабильный вес в течение как минимум 6 месяцев."
+          : "Maintain a stable weight for 6+ months",
+        locale === "ru"
+          ? "Организуйте помощь на 2–3 недели после операции (особенно для ухода за детьми)."
+          : "Arrange for 2–3 weeks of help post-op (especially with childcare)",
+        locale === "ru"
+          ? "Избегайте разжижающих кровь средств, аспирина, и некоторых травяных добавок."
+          : "-Avoid blood thinners, aspirin, ibuprofen, and certain herbal supplements.",
         locale === "ru" ? "Соблюдайте гигиену тела." : "Maintain body hygiene.",
-        locale === "ru" ? "Обеспечьте достаточный отдых." : "Ensure adequate rest."
+        locale === "ru"
+          ? "Обеспечьте достаточный отдых."
+          : "Ensure adequate rest.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -22206,7 +24556,9 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "Почему стоит выбрать Турцию для «преображения мамочки»?" : "Why Choose Turkey for Your Mommy Makeover?",
+          locale === "ru"
+            ? "Почему стоит выбрать Турцию для «преображения мамочки»?"
+            : "Why Choose Turkey for Your Mommy Makeover?",
         content:
           locale === "ru"
             ? `<p dir="ltr">Решение о проведении &laquo;преображение мамочки&raquo; &mdash; это важный шаг, и выбор подходящего места для процедуры играет ключевую роль в обеспечении комфортного и успешного результата. Турция стала одним из ведущих направлений медицинского туризма, особенно для косметических процедур, таких как &laquo;преображение мамочки&raquo;. Вот несколько весомых причин, почему люди со всего мира выбирают Турцию для своих трансформационных процедур.</p>
@@ -22334,41 +24686,95 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Могу ли я продолжать кормить грудью после операции?" : "Can I still breastfeed?",
-          answer : locale === "ru" ? "В некоторых случаях - да. Это зависит от используемой хирургической техники. Обсудите это с вашим хирургом заранее." : "Sometimes, depends on surgical technique"
+          question:
+            locale === "ru"
+              ? "Могу ли я продолжать кормить грудью после операции?"
+              : "Can I still breastfeed?",
+          answer:
+            locale === "ru"
+              ? "В некоторых случаях - да. Это зависит от используемой хирургической техники. Обсудите это с вашим хирургом заранее."
+              : "Sometimes, depends on surgical technique",
         },
         {
-          question : locale === "ru" ? "Покрывается ли операция страховкой?" : "Will insurance cover it?",
-          answer : locale === "ru" ? "Если процедура признана медицински необходимой (например, при хронической боли), страховая компания может её покрыть." : "If deemed medically necessary, often yes"
+          question:
+            locale === "ru"
+              ? "Покрывается ли операция страховкой?"
+              : "Will insurance cover it?",
+          answer:
+            locale === "ru"
+              ? "Если процедура признана медицински необходимой (например, при хронической боли), страховая компания может её покрыть."
+              : "If deemed medically necessary, often yes",
         },
         {
-          question : locale === "ru" ? "Уменьшит ли операция боль в спине?" : "Will it relieve back pain?",
-          answer : locale === "ru" ? "Да, многие пациенты сообщают об облегчении боли в спине, плечах и шее после уменьшения груди." : "Yes, many patients report relief"
+          question:
+            locale === "ru"
+              ? "Уменьшит ли операция боль в спине?"
+              : "Will it relieve back pain?",
+          answer:
+            locale === "ru"
+              ? "Да, многие пациенты сообщают об облегчении боли в спине, плечах и шее после уменьшения груди."
+              : "Yes, many patients report relief",
         },
         {
-          question : locale === "ru" ? "Являются ли результаты постоянными?" : "Are the results permanent?",
-          answer : locale === "ru" ? "Да, но значительные изменения в весе могут повлиять на форму и размер груди." : "Yes, but weight changes can alter outcome"
+          question:
+            locale === "ru"
+              ? "Являются ли результаты постоянными?"
+              : "Are the results permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, но значительные изменения в весе могут повлиять на форму и размер груди."
+              : "Yes, but weight changes can alter outcome",
         },
         {
-          question : locale === "ru" ? "Как долго сохраняется отек?" : "How long until swelling subsides?",
-          answer : locale === "ru" ? "Умеренный отек может сохраняться в течение 2–4 недель. Полное заживление занимает обычно 2–3 месяца." : "2–4 weeks for most swelling, full healing in 2–3 months"
-        }
+          question:
+            locale === "ru"
+              ? "Как долго сохраняется отек?"
+              : "How long until swelling subsides?",
+          answer:
+            locale === "ru"
+              ? "Умеренный отек может сохраняться в течение 2–4 недель. Полное заживление занимает обычно 2–3 месяца."
+              : "2–4 weeks for most swelling, full healing in 2–3 months",
+        },
       ],
       posts: [
-        locale === "ru" ? "Носите хирургический бюстгальтер в соответствии с указаниями врача." : "Wear surgical bra as directed",
-        locale === "ru" ? "Избегайте движений верхней части тела и физических нагрузок в первые недели." : "Avoid upper body movement or exercise",
-        locale === "ru" ? "Держите разрезы сухими и чистыми, соблюдая рекомендации по уходу." : "Keep incisions dry and clean",
-        locale === "ru" ? "Отдыхайте на спине, чтобы избежать давления на грудную область." : "Rest on back to avoid breast pressure",
-        locale === "ru" ? "Запланируйте контрольный визит для снятия швов или осмотра." : "Follow-up for suture removal or wound checks",
-        locale === "ru" ? "Наблюдайте за состоянием швов - при признаках инфекции немедленно обратитесь к врачу.." : "Monitor stitches for signs of infection and contact your doctor if necessary."
+        locale === "ru"
+          ? "Носите хирургический бюстгальтер в соответствии с указаниями врача."
+          : "Wear surgical bra as directed",
+        locale === "ru"
+          ? "Избегайте движений верхней части тела и физических нагрузок в первые недели."
+          : "Avoid upper body movement or exercise",
+        locale === "ru"
+          ? "Держите разрезы сухими и чистыми, соблюдая рекомендации по уходу."
+          : "Keep incisions dry and clean",
+        locale === "ru"
+          ? "Отдыхайте на спине, чтобы избежать давления на грудную область."
+          : "Rest on back to avoid breast pressure",
+        locale === "ru"
+          ? "Запланируйте контрольный визит для снятия швов или осмотра."
+          : "Follow-up for suture removal or wound checks",
+        locale === "ru"
+          ? "Наблюдайте за состоянием швов - при признаках инфекции немедленно обратитесь к врачу.."
+          : "Monitor stitches for signs of infection and contact your doctor if necessary.",
       ],
       preList: [
-        locale === "ru" ? "Воздержитесь от курения за 4–6 недель до операции для оптимального заживления и снижения риска осложнений." : "Stop smoking and avoid blood thinners for 2 weeks",
-        locale === "ru" ? "Избегайте разжижающих кровь средств за 2 недели до операции." : "Pre-op mammogram may be required",
-        locale === "ru" ? "Может потребоваться маммография перед операцией." : "Discuss any back or neck pain related to breast size",
-        locale === "ru" ? "Обсудите с хирургом любые боли в спине или шее, связанные с размером груди." : "Arrange help at home for at least 1 week",
-        locale === "ru" ? "Организуйте помощь дома как минимум на 1 неделю после операции." : "Stay hydrated and prepare loose clothing",
-        locale === "ru" ? "Поддерживайте водный баланс и подготовьте свободную одежду для удобства." : "Discuss any allergies or chronic conditions with your surgeon, as these may affect healing"
+        locale === "ru"
+          ? "Воздержитесь от курения за 4–6 недель до операции для оптимального заживления и снижения риска осложнений."
+          : "Stop smoking and avoid blood thinners for 2 weeks",
+        locale === "ru"
+          ? "Избегайте разжижающих кровь средств за 2 недели до операции."
+          : "Pre-op mammogram may be required",
+        locale === "ru"
+          ? "Может потребоваться маммография перед операцией."
+          : "Discuss any back or neck pain related to breast size",
+        locale === "ru"
+          ? "Обсудите с хирургом любые боли в спине или шее, связанные с размером груди."
+          : "Arrange help at home for at least 1 week",
+        locale === "ru"
+          ? "Организуйте помощь дома как минимум на 1 неделю после операции."
+          : "Stay hydrated and prepare loose clothing",
+        locale === "ru"
+          ? "Поддерживайте водный баланс и подготовьте свободную одежду для удобства."
+          : "Discuss any allergies or chronic conditions with your surgeon, as these may affect healing",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -22616,7 +25022,10 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Decreases breast volume to achieve more balanced proportions",
           },
           {
-            title: locale === "ru" ? "Комфорт в повседневной жизн" : "Enhanced Comfort",
+            title:
+              locale === "ru"
+                ? "Комфорт в повседневной жизн"
+                : "Enhanced Comfort",
             desc:
               locale === "ru"
                 ? "Избавление от физического дискомфорта и скованности в движениях."
@@ -22656,41 +25065,93 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Вернется ли жир после операции?" : "Will the fat come back?",
-          answer : locale === "ru" ? "Нет, если вы поддерживаете стабильный вес, жировая ткань в обработанных зонах не возвращается." : "Not if weight is stable"
+          question:
+            locale === "ru"
+              ? "Вернется ли жир после операции?"
+              : "Will the fat come back?",
+          answer:
+            locale === "ru"
+              ? "Нет, если вы поддерживаете стабильный вес, жировая ткань в обработанных зонах не возвращается."
+              : "Not if weight is stable",
         },
         {
-          question : locale === "ru" ? "Всегда ли используется липосакция?" : "Is liposuction always used?",
-          answer : locale === "ru" ? "Часто да - липосакция сочетается с удалением ткани для более точного моделирования контуров." : "Often combined with tissue excision"
+          question:
+            locale === "ru"
+              ? "Всегда ли используется липосакция?"
+              : "Is liposuction always used?",
+          answer:
+            locale === "ru"
+              ? "Часто да - липосакция сочетается с удалением ткани для более точного моделирования контуров."
+              : "Often combined with tissue excision",
         },
         {
-          question : locale === "ru" ? "Будут ли рубцы?" : "Will there be scarring?",
-          answer : locale === "ru" ? "Да, но они минимальны и, как правило, располагаются вокруг ареолы, где менее заметны." : "Minimal and often around the areola"
+          question:
+            locale === "ru" ? "Будут ли рубцы?" : "Will there be scarring?",
+          answer:
+            locale === "ru"
+              ? "Да, но они минимальны и, как правило, располагаются вокруг ареолы, где менее заметны."
+              : "Minimal and often around the areola",
         },
         {
-          question : locale === "ru" ? "Когда можно вернуться к тренировкам?" : "When can I return to the gym?",
-          answer : locale === "ru" ? "Обычно через 4–6 недель, в зависимости от индивидуальных темпов заживления." : "4–6 weeks, depending on healing"
+          question:
+            locale === "ru"
+              ? "Когда можно вернуться к тренировкам?"
+              : "When can I return to the gym?",
+          answer:
+            locale === "ru"
+              ? "Обычно через 4–6 недель, в зависимости от индивидуальных темпов заживления."
+              : "4–6 weeks, depending on healing",
         },
         {
-          question : locale === "ru" ? "Постоянны ли результаты?" : "Are results permanent?",
-          answer : locale === "ru" ? "Да, при условии сохранения здорового образа жизни и стабильного веса." : "Yes, with healthy weight maintenance"
-        }
+          question:
+            locale === "ru"
+              ? "Постоянны ли результаты?"
+              : "Are results permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, при условии сохранения здорового образа жизни и стабильного веса."
+              : "Yes, with healthy weight maintenance",
+        },
       ],
       posts: [
-        locale === "ru" ? "- Носите компрессионный жилет в течение 4–6 недель, согласно рекомендациям врача." : "Wear compression vest for 4–6 weeks",
-        locale === "ru" ? "Избегайте тренировок грудной мышцы и подъема верхней части тела в период восстановления." : "Avoid chest workouts or upper body lifting",
-        locale === "ru" ? "Поддерживайте чистоту в области разрезов, чтобы предотвратить инфекцию." : "Keep incision sites clean",
-        locale === "ru" ? "Будьте готовы к легким синякам и отекам -  это нормальная часть заживления." : "Expect mild bruising and swelling",
-        locale === "ru" ? "Регулярно посещайте контрольные осмотры, чтобы врач мог отслеживать динамику восстановления." : "Attend follow-ups to monitor healing",
-        locale === "ru" ? "Продолжайте носить компрессионный жилет столько, сколько порекомендует врач - это важно для правильного заживления и финального результата." : "Wear the compression vest as directed for optimal healing"
+        locale === "ru"
+          ? "- Носите компрессионный жилет в течение 4–6 недель, согласно рекомендациям врача."
+          : "Wear compression vest for 4–6 weeks",
+        locale === "ru"
+          ? "Избегайте тренировок грудной мышцы и подъема верхней части тела в период восстановления."
+          : "Avoid chest workouts or upper body lifting",
+        locale === "ru"
+          ? "Поддерживайте чистоту в области разрезов, чтобы предотвратить инфекцию."
+          : "Keep incision sites clean",
+        locale === "ru"
+          ? "Будьте готовы к легким синякам и отекам -  это нормальная часть заживления."
+          : "Expect mild bruising and swelling",
+        locale === "ru"
+          ? "Регулярно посещайте контрольные осмотры, чтобы врач мог отслеживать динамику восстановления."
+          : "Attend follow-ups to monitor healing",
+        locale === "ru"
+          ? "Продолжайте носить компрессионный жилет столько, сколько порекомендует врач - это важно для правильного заживления и финального результата."
+          : "Wear the compression vest as directed for optimal healing",
       ],
       preList: [
-        locale === "ru" ? "Избегайте приема разжижающих кровь препаратов и курения за 2 недели до операции." : "Avoid blood thinners and smoking 2 weeks prior",
-        locale === "ru" ? "Может потребоваться прохождение лабораторных анализов и рентгенография грудной клетки - уточните у вашего врача." : "Lab tests and chest imaging may be required",
-        locale === "ru" ? "Прекратите употребление алкоголя минимум за несколько дней до процедуры." : "Discontinue alcohol before surgery",
-        locale === "ru" ? "Организуйте помощь дома на первые 2–3 дня после операции для комфортного восстановления." : "Arrange help at home for the first 2–3 days",
-        locale === "ru" ? "Обсудите с врачом прием лекарств и уровень гормонов, особенно если вы проходите гормональную терапию." : "Discuss medications and hormone levels with your doctor",
-        locale === "ru" ? "Сообщите хирургу о любых хронических заболеваниях или аллергиях, так как это может повлиять на процесс заживления и восстановление." : "Inform your surgeon about any chronic conditions or allergies that could affect recovery"
+        locale === "ru"
+          ? "Избегайте приема разжижающих кровь препаратов и курения за 2 недели до операции."
+          : "Avoid blood thinners and smoking 2 weeks prior",
+        locale === "ru"
+          ? "Может потребоваться прохождение лабораторных анализов и рентгенография грудной клетки - уточните у вашего врача."
+          : "Lab tests and chest imaging may be required",
+        locale === "ru"
+          ? "Прекратите употребление алкоголя минимум за несколько дней до процедуры."
+          : "Discontinue alcohol before surgery",
+        locale === "ru"
+          ? "Организуйте помощь дома на первые 2–3 дня после операции для комфортного восстановления."
+          : "Arrange help at home for the first 2–3 days",
+        locale === "ru"
+          ? "Обсудите с врачом прием лекарств и уровень гормонов, особенно если вы проходите гормональную терапию."
+          : "Discuss medications and hormone levels with your doctor",
+        locale === "ru"
+          ? "Сообщите хирургу о любых хронических заболеваниях или аллергиях, так как это может повлиять на процесс заживления и восстановление."
+          : "Inform your surgeon about any chronic conditions or allergies that could affect recovery",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -22882,14 +25343,20 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Повышение чувствительности" : "Vaginal Firmness",
+            title:
+              locale === "ru"
+                ? "Повышение чувствительности"
+                : "Vaginal Firmness",
             desc:
               locale === "ru"
                 ? "восстановление упругости и тонуса мышц для большего сексуального удовлетворения."
                 : "Helps restore natural elasticity and tone for enhanced sensation.",
           },
           {
-            title: locale === "ru" ? "Улучшение поддержки тазового дна" : "Sexual Performance",
+            title:
+              locale === "ru"
+                ? "Улучшение поддержки тазового дна"
+                : "Sexual Performance",
             desc:
               locale === "ru"
                 ? "укрепление мышц влагалища, снижение риска недержания и других проблем."
@@ -22919,7 +25386,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "The procedure can be performed using various methods, including surgical intervention or non-invasive technologies such as laser treatment. It is important to note that these procedures can be beneficial not only for enhancing sexual sensations but also for correcting functional issues such as urinary incontinence or other disorders.",
           },
           {
-            header: locale === "ru" ? "Кому подходит вагинопластика" : "For whom",
+            header:
+              locale === "ru" ? "Кому подходит вагинопластика" : "For whom",
             desc:
               locale === "ru"
                 ? "Вагинопластика рекомендуется женщинам, столкнувшимся с ослаблением влагалищных мышц после родов, возрастных изменений или по врождённым причинам. Также процедура эффективна при травмах или после интимных операций. Она помогает восстановить мышечный тонус, усилить чувствительность и укрепить тазовое дно."
@@ -22929,38 +25397,82 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Результат виден сразу?" : "Is the result immediate?",
-          answer : locale === "ru" ? "Многие пациенты ощущают улучшение практически сразу, однако полное проявление результатов происходит через несколько недель." : "Some feel immediate improvement, full effects in weeks"
+          question:
+            locale === "ru"
+              ? "Результат виден сразу?"
+              : "Is the result immediate?",
+          answer:
+            locale === "ru"
+              ? "Многие пациенты ощущают улучшение практически сразу, однако полное проявление результатов происходит через несколько недель."
+              : "Some feel immediate improvement, full effects in weeks",
         },
         {
-          question : locale === "ru" ? "Будет ли это болезненно?" : "Is it painful?",
-          answer : locale === "ru" ? "Легкая болезненность, которую легко контролировать с помощью назначенных медикаментов." : "Mild soreness, managed with medication"
+          question:
+            locale === "ru" ? "Будет ли это болезненно?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Легкая болезненность, которую легко контролировать с помощью назначенных медикаментов."
+              : "Mild soreness, managed with medication",
         },
         {
-          question : locale === "ru" ? "Повлияет ли это на чувствительность?" : "Can it affect sensation?",
-          answer : locale === "ru" ? "Часто приводит к улучшению чувствительности и ощущению упругости в области." : "Often improves sensitivity and tightness"
+          question:
+            locale === "ru"
+              ? "Повлияет ли это на чувствительность?"
+              : "Can it affect sensation?",
+          answer:
+            locale === "ru"
+              ? "Часто приводит к улучшению чувствительности и ощущению упругости в области."
+              : "Often improves sensitivity and tightness",
         },
         {
-          question : locale === "ru" ? "Результаты сохранятся надолго?" : "Is it permanent?",
-          answer : locale === "ru" ? "Результаты сохраняются на долгие годы, хотя они могут измениться с возрастом или после родов." : "Results last years but may change with childbirth or aging"
+          question:
+            locale === "ru"
+              ? "Результаты сохранятся надолго?"
+              : "Is it permanent?",
+          answer:
+            locale === "ru"
+              ? "Результаты сохраняются на долгие годы, хотя они могут измениться с возрастом или после родов."
+              : "Results last years but may change with childbirth or aging",
         },
         {
-          question : locale === "ru" ? "Насколько безопасна процедура?" : "Is it safe?",
-          answer : locale === "ru" ? "Процедура абсолютно безопасна, если ее выполняет опытный хирург и вы следуете всем рекомендациям по восстановлению." : "Yes, with experienced doctors and proper care"
-        }
+          question:
+            locale === "ru" ? "Насколько безопасна процедура?" : "Is it safe?",
+          answer:
+            locale === "ru"
+              ? "Процедура абсолютно безопасна, если ее выполняет опытный хирург и вы следуете всем рекомендациям по восстановлению."
+              : "Yes, with experienced doctors and proper care",
+        },
       ],
       posts: [
-        locale === "ru" ? "Избегайте сексуальной активности и использования тампонов в течение 4–6 недель." : "Avoid sexual activity and tampon use for 4–6 weeks",
-        locale === "ru" ? "Соблюдайте интимную гигиену, используя только рекомендованные средства для очищения." : "Maintain hygiene, use recommended washes only",
-        locale === "ru" ? "Носите свободное хлопковое белье и избегайте тесной одежды." : "Wear cotton underwear and avoid tight clothing",
-        locale === "ru" ? "Принимайте назначенные антибиотики и обезболивающие строго по указаниям врача." : "Take prescribed antibiotics or pain relief as directed",
-        locale === "ru" ? "Воздержитесь от интенсивных физических нагрузок как минимум на 2 недели." : "No intense workouts for at least 2 weeks"
+        locale === "ru"
+          ? "Избегайте сексуальной активности и использования тампонов в течение 4–6 недель."
+          : "Avoid sexual activity and tampon use for 4–6 weeks",
+        locale === "ru"
+          ? "Соблюдайте интимную гигиену, используя только рекомендованные средства для очищения."
+          : "Maintain hygiene, use recommended washes only",
+        locale === "ru"
+          ? "Носите свободное хлопковое белье и избегайте тесной одежды."
+          : "Wear cotton underwear and avoid tight clothing",
+        locale === "ru"
+          ? "Принимайте назначенные антибиотики и обезболивающие строго по указаниям врача."
+          : "Take prescribed antibiotics or pain relief as directed",
+        locale === "ru"
+          ? "Воздержитесь от интенсивных физических нагрузок как минимум на 2 недели."
+          : "No intense workouts for at least 2 weeks",
       ],
       preList: [
-        locale === "ru" ? "Избегайте половых контактов и использования тампонов за 48 часов до процедуры." : "Avoid intercourse and tampon use 48 hours prior",
-        locale === "ru" ? "Не принимайте препараты, разжижающие кровь, и откажитесь от курения как минимум за 1 неделю до." : "No blood thinners or smoking 1 week before",
-        locale === "ru" ? "Тщательно очистите обрабатываемую область перед процедурой." : "Clean the area thoroughly before procedure",
-        locale === "ru" ? "Носите свободное хлопковое нижнее белье и запланируйте время для отдыха после процедуры." : "Wear loose underwear and arrange rest time post-op"
+        locale === "ru"
+          ? "Избегайте половых контактов и использования тампонов за 48 часов до процедуры."
+          : "Avoid intercourse and tampon use 48 hours prior",
+        locale === "ru"
+          ? "Не принимайте препараты, разжижающие кровь, и откажитесь от курения как минимум за 1 неделю до."
+          : "No blood thinners or smoking 1 week before",
+        locale === "ru"
+          ? "Тщательно очистите обрабатываемую область перед процедурой."
+          : "Clean the area thoroughly before procedure",
+        locale === "ru"
+          ? "Носите свободное хлопковое нижнее белье и запланируйте время для отдыха после процедуры."
+          : "Wear loose underwear and arrange rest time post-op",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -22972,7 +25484,9 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "Вагинопластика с AZPO Health: ответы на ваши вопросы" : "Why Choose Turkey for Vaginal Tightening?",
+          locale === "ru"
+            ? "Вагинопластика с AZPO Health: ответы на ваши вопросы"
+            : "Why Choose Turkey for Vaginal Tightening?",
         content:
           locale === "ru"
             ? `<p dir="ltr">Вагинопластика &mdash; это хирургическая процедура, направленная на восстановление структуры и функций влагалища. Также её называют интимным омоложением или хирургической подтяжкой влагалища. Многие женщины прибегают к этой операции после родов, с возрастом или при наличии вырожденных особенностей. В AZPO Health мы понимаем, насколько личной и деликатной может быть эта тема, поэтому подходим к каждому случаю с максимальной заботой и вниманием.</p>
@@ -23298,63 +25812,151 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Имплантат - это навсегда?" : "Is the implant permanent?",
-          answer : locale === "ru" ? "Да, при надлежащем уходе он может прослужить всю жизнь." : "Yes, with proper care, they can last a lifetime"
+          question:
+            locale === "ru"
+              ? "Имплантат - это навсегда?"
+              : "Is the implant permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, при надлежащем уходе он может прослужить всю жизнь."
+              : "Yes, with proper care, they can last a lifetime",
         },
         {
-          question : locale === "ru" ? "Это больно?" : "Is the procedure painful?",
-          answer : locale === "ru" ? "Легкая болезненность после имплантации - нормальное явление, ее легко снять с помощью лекарств." : "Mild soreness after, managed with medication"
+          question:
+            locale === "ru" ? "Это больно?" : "Is the procedure painful?",
+          answer:
+            locale === "ru"
+              ? "Легкая болезненность после имплантации - нормальное явление, ее легко снять с помощью лекарств."
+              : "Mild soreness after, managed with medication",
         },
         {
-          question : locale === "ru" ? "Смогу ли я нормально есть?" : "Can I eat normally?",
-          answer : locale === "ru" ? "Да, после начальной фазы заживления." : "Yes, after initial healing phase"
+          question:
+            locale === "ru"
+              ? "Смогу ли я нормально есть?"
+              : "Can I eat normally?",
+          answer:
+            locale === "ru"
+              ? "Да, после начальной фазы заживления."
+              : "Yes, after initial healing phase",
         },
         {
-          question : locale === "ru" ? "Будет ли выглядеть естественно?" : "Will it look natural?",
-          answer : locale === "ru" ? "Да, имплантат отлично сочетается с натуральными зубами." : "Yes, blends well with natural teeth"
+          question:
+            locale === "ru"
+              ? "Будет ли выглядеть естественно?"
+              : "Will it look natural?",
+          answer:
+            locale === "ru"
+              ? "Да, имплантат отлично сочетается с натуральными зубами."
+              : "Yes, blends well with natural teeth",
         },
         {
-          question : locale === "ru" ? "Сколько времени все займет?" : "How long does it take?",
-          answer : locale === "ru" ? "Установка имплантата проходит быстро, но полное заживление может занять несколько месяцев." : "Healing can take several months, but implant placement is quick"
+          question:
+            locale === "ru"
+              ? "Сколько времени все займет?"
+              : "How long does it take?",
+          answer:
+            locale === "ru"
+              ? "Установка имплантата проходит быстро, но полное заживление может занять несколько месяцев."
+              : "Healing can take several months, but implant placement is quick",
         },
         {
-          question : locale === "ru" ? "Будет ли припухлость?" : "Will there be any swelling?",
-          answer : locale === "ru" ? "Обычно бывает небольшая припухлость, которая проходит через несколько дней." : "Some mild swelling is common, but it usually goes down within a few days."
+          question:
+            locale === "ru"
+              ? "Будет ли припухлость?"
+              : "Will there be any swelling?",
+          answer:
+            locale === "ru"
+              ? "Обычно бывает небольшая припухлость, которая проходит через несколько дней."
+              : "Some mild swelling is common, but it usually goes down within a few days.",
         },
         {
-          question : locale === "ru" ? "Ставят ли временную коронку?" : "Is a temporary crown placed?",
-          answer : locale === "ru" ? "Да, временная коронка ставится на период заживления." : "Yes, a temporary crown is placed until the permanent one is ready."
+          question:
+            locale === "ru"
+              ? "Ставят ли временную коронку?"
+              : "Is a temporary crown placed?",
+          answer:
+            locale === "ru"
+              ? "Да, временная коронка ставится на период заживления."
+              : "Yes, a temporary crown is placed until the permanent one is ready.",
         },
         {
-          question : locale === "ru" ? "Что делать, если коронка сломается?" : "What happens if the crown gets damaged?",
-          answer : locale === "ru" ? "Если коронка повреждена, ее нужно заменить или отремонтировать у стоматолога." : "If the crown is damaged, it will need to be replaced or repaired by your dentist."
+          question:
+            locale === "ru"
+              ? "Что делать, если коронка сломается?"
+              : "What happens if the crown gets damaged?",
+          answer:
+            locale === "ru"
+              ? "Если коронка повреждена, ее нужно заменить или отремонтировать у стоматолога."
+              : "If the crown is damaged, it will need to be replaced or repaired by your dentist.",
         },
         {
-          question : locale === "ru" ? "Кому не стоит ставить имплантаты?" : "Who should avoid dental implants?",
-          answer : locale === "ru" ? "Пациентам с сильной потерей костной массы (может понадобиться костная пластика);" : "Individuals with severe bone loss (may require bone grafting)"
-        }
+          question:
+            locale === "ru"
+              ? "Кому не стоит ставить имплантаты?"
+              : "Who should avoid dental implants?",
+          answer:
+            locale === "ru"
+              ? "Пациентам с сильной потерей костной массы (может понадобиться костная пластика);"
+              : "Individuals with severe bone loss (may require bone grafting)",
+        },
       ],
       posts: [
-        locale === "ru" ? "Избегайте горячей пищи и ополаскивайте рот солевым раствором." : "Avoid hot foods and rinse with salt water",
-        locale === "ru" ? "Воздержитесь от еды в течение первых 2 часов после процедуры." : "No Eating for the First 2 Hours",
-        locale === "ru" ? "Не трогайте область имплантации языком или руками." : "Do not disturb implant site with tongue or fingers",
-        locale === "ru" ? "Прикладывайте холодный компресс только в течение первого дня для уменьшения отёка." : "Cold compress can be applied only on the first day",
-        locale === "ru" ? "Чистите зубы осторожно, избегая зоны хирургического вмешательства." : "Brush teeth gently and avoid the surgical area",
-        locale === "ru" ? "Придерживайтесь мягкой диеты в течение нескольких дней." : "Stick to soft foods for a few days",
-        locale === "ru" ? "Принимайте антибиотики и обезболивающие строго по назначению врача." : "Take antibiotics and pain relievers as prescribed",
-        locale === "ru" ? "Не полощите рот и не сплевывайте в течение первых 24 часов." : "No spitting or rinsing on the first day",
-        locale === "ru" ? "Избегайте употребления молочных продуктов в течение одной недели." : "Avoid Dairy Products for One Week",
-        locale === "ru" ? "" : "First 24 hours: Stick to soft, lukewarm foods. No chewing on the implant side.",
-        locale === "ru" ? "" : "Days 1–7:Continue with soft foods like yogurt, soup, mashed potatoes. Avoid hard, spicy, hot, or sticky foods.",
-        locale === "ru" ? "" : "After 7 days: Gradually return to normal eating if approved by your dentist. Avoid very hard foods for a few more weeks."
+        locale === "ru"
+          ? "Избегайте горячей пищи и ополаскивайте рот солевым раствором."
+          : "Avoid hot foods and rinse with salt water",
+        locale === "ru"
+          ? "Воздержитесь от еды в течение первых 2 часов после процедуры."
+          : "No Eating for the First 2 Hours",
+        locale === "ru"
+          ? "Не трогайте область имплантации языком или руками."
+          : "Do not disturb implant site with tongue or fingers",
+        locale === "ru"
+          ? "Прикладывайте холодный компресс только в течение первого дня для уменьшения отёка."
+          : "Cold compress can be applied only on the first day",
+        locale === "ru"
+          ? "Чистите зубы осторожно, избегая зоны хирургического вмешательства."
+          : "Brush teeth gently and avoid the surgical area",
+        locale === "ru"
+          ? "Придерживайтесь мягкой диеты в течение нескольких дней."
+          : "Stick to soft foods for a few days",
+        locale === "ru"
+          ? "Принимайте антибиотики и обезболивающие строго по назначению врача."
+          : "Take antibiotics and pain relievers as prescribed",
+        locale === "ru"
+          ? "Не полощите рот и не сплевывайте в течение первых 24 часов."
+          : "No spitting or rinsing on the first day",
+        locale === "ru"
+          ? "Избегайте употребления молочных продуктов в течение одной недели."
+          : "Avoid Dairy Products for One Week",
+        locale === "ru"
+          ? ""
+          : "First 24 hours: Stick to soft, lukewarm foods. No chewing on the implant side.",
+        locale === "ru"
+          ? ""
+          : "Days 1–7:Continue with soft foods like yogurt, soup, mashed potatoes. Avoid hard, spicy, hot, or sticky foods.",
+        locale === "ru"
+          ? ""
+          : "After 7 days: Gradually return to normal eating if approved by your dentist. Avoid very hard foods for a few more weeks.",
       ],
       preList: [
-        locale === "ru" ? "Перед процедурой необходимо пройти полное стоматологическое обследование и сделать рентген." : "Full dental exam and X-rays before procedure",
-        locale === "ru" ? "Все проблемы с полостью рта должны быть устранены заранее." : "Treat all the dental disorders beforehand",
-        locale === "ru" ? "Избегайте курения минимум за две недели до процедуры." : "Avoid smoking for at least 2 week before",
-        locale === "ru" ? "Следуйте инструкциям по воздержанию от еды и питья, если планируется седация." : "Follow fasting instructions if sedation is planned",
-        locale === "ru" ? "Важно оценить плотность и структуру костной ткани." : "The bone density and structure should be measured",
-        locale === "ru" ? "Обязательно сообщите стоматологу обо всех принимаемых медикаментах." : "Any medications being used should be reviewed"
+        locale === "ru"
+          ? "Перед процедурой необходимо пройти полное стоматологическое обследование и сделать рентген."
+          : "Full dental exam and X-rays before procedure",
+        locale === "ru"
+          ? "Все проблемы с полостью рта должны быть устранены заранее."
+          : "Treat all the dental disorders beforehand",
+        locale === "ru"
+          ? "Избегайте курения минимум за две недели до процедуры."
+          : "Avoid smoking for at least 2 week before",
+        locale === "ru"
+          ? "Следуйте инструкциям по воздержанию от еды и питья, если планируется седация."
+          : "Follow fasting instructions if sedation is planned",
+        locale === "ru"
+          ? "Важно оценить плотность и структуру костной ткани."
+          : "The bone density and structure should be measured",
+        locale === "ru"
+          ? "Обязательно сообщите стоматологу обо всех принимаемых медикаментах."
+          : "Any medications being used should be reviewed",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -23423,7 +26025,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Предотвращение кариеса" : "Decay Prevention",
+            title:
+              locale === "ru" ? "Предотвращение кариеса" : "Decay Prevention",
             desc:
               locale === "ru"
                 ? "Задерживает разрушение зуба и защищает соседние зубы от повреждений."
@@ -23470,53 +26073,122 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Будет ли больно?" : "Will it hurt?",
-          answer : locale === "ru" ? "Во время процедуры используется местная анестезия, поэтому боли не будет; легкая болезненность после - это нормально." : "Local anesthesia prevents pain during; some soreness after is normal"
+          question: locale === "ru" ? "Будет ли больно?" : "Will it hurt?",
+          answer:
+            locale === "ru"
+              ? "Во время процедуры используется местная анестезия, поэтому боли не будет; легкая болезненность после - это нормально."
+              : "Local anesthesia prevents pain during; some soreness after is normal",
         },
         {
-          question : locale === "ru" ? "Как долго служат пломбы?" : "How long do fillings last?",
-          answer : locale === "ru" ? "От 5 до 15 лет, в зависимости от материала и ухода." : "5–15 years depending on material and care"
+          question:
+            locale === "ru"
+              ? "Как долго служат пломбы?"
+              : "How long do fillings last?",
+          answer:
+            locale === "ru"
+              ? "От 5 до 15 лет, в зависимости от материала и ухода."
+              : "5–15 years depending on material and care",
         },
         {
-          question : locale === "ru" ? "Можно ли есть сразу после процедуры?" : "Can I eat right after?",
-          answer : locale === "ru" ? "Подождите, пока пройдёт онемение, и избегайте твердой пищи в течение первых 24 часов." : "Wait until numbness fades; avoid hard foods for 24 hrs"
+          question:
+            locale === "ru"
+              ? "Можно ли есть сразу после процедуры?"
+              : "Can I eat right after?",
+          answer:
+            locale === "ru"
+              ? "Подождите, пока пройдёт онемение, и избегайте твердой пищи в течение первых 24 часов."
+              : "Wait until numbness fades; avoid hard foods for 24 hrs",
         },
         {
-          question : locale === "ru" ? "Буду ли я чувствовать пломбу?" : "Will I feel the filling?",
-          answer : locale === "ru" ? "Вначале может быть небольшое ощущение инородного тела, но оно быстро проходит." : "Slight awareness at first, but it blends in quickly"
+          question:
+            locale === "ru"
+              ? "Буду ли я чувствовать пломбу?"
+              : "Will I feel the filling?",
+          answer:
+            locale === "ru"
+              ? "Вначале может быть небольшое ощущение инородного тела, но оно быстро проходит."
+              : "Slight awareness at first, but it blends in quickly",
         },
         {
-          question : locale === "ru" ? "Что делать, если пломба выпадет?" : "What if it falls out?",
-          answer : locale === "ru" ? "Обратитесь к стоматологу как можно скорее для замены." : "Call your dentist for a replacement ASAP"
+          question:
+            locale === "ru"
+              ? "Что делать, если пломба выпадет?"
+              : "What if it falls out?",
+          answer:
+            locale === "ru"
+              ? "Обратитесь к стоматологу как можно скорее для замены."
+              : "Call your dentist for a replacement ASAP",
         },
         {
-          question : locale === "ru" ? "Как ухаживать за пломбами?" : "How should fillings be cared for?",
-          answer : locale === "ru" ? "Регулярно чистите зубы, используйте зубную нить и посещайте стоматолога." : "Brush, floss, and get regular check-ups."
+          question:
+            locale === "ru"
+              ? "Как ухаживать за пломбами?"
+              : "How should fillings be cared for?",
+          answer:
+            locale === "ru"
+              ? "Регулярно чистите зубы, используйте зубную нить и посещайте стоматолога."
+              : "Brush, floss, and get regular check-ups.",
         },
         {
-          question : locale === "ru" ? "Влияет ли отбеливание на пломбы?" : "Do fillings get affected during whitening procedures?",
-          answer : locale === "ru" ? "Да, композитные пломбы не осветляются, поэтому лучше отбеливать зубы до их установки." : "Yes, composite fillings can be affected; do whitening before fillings."
+          question:
+            locale === "ru"
+              ? "Влияет ли отбеливание на пломбы?"
+              : "Do fillings get affected during whitening procedures?",
+          answer:
+            locale === "ru"
+              ? "Да, композитные пломбы не осветляются, поэтому лучше отбеливать зубы до их установки."
+              : "Yes, composite fillings can be affected; do whitening before fillings.",
         },
         {
-          question : locale === "ru" ? "Как продлить срок службы пломбы?" : "How can the lifespan of fillings be extended?",
-          answer : locale === "ru" ? "Поддерживайте хорошую гигиену полости рта и избегайте чрезмерной нагрузки на зубы." : "Maintain oral health, clean regularly, and avoid hard foods."
-        }
+          question:
+            locale === "ru"
+              ? "Как продлить срок службы пломбы?"
+              : "How can the lifespan of fillings be extended?",
+          answer:
+            locale === "ru"
+              ? "Поддерживайте хорошую гигиену полости рта и избегайте чрезмерной нагрузки на зубы."
+              : "Maintain oral health, clean regularly, and avoid hard foods.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Избегайте жевания на стороне с пломбой, пока не пройдёт онемение." : "Avoid chewing on the side of the filling until numbness wears off",
-        locale === "ru" ? "Легкая чувствительность к холоду или давлению возможна в течение нескольких дней." : "Sensitivity to cold or pressure is normal for a few days",
-        locale === "ru" ? "Первое время откажитесь от липкой и твердой пищи." : "Avoid sticky or hard foods initially",
-        locale === "ru" ? "Поддерживайте тщательную гигиену полости рта." : "Continue good oral hygiene",
-        locale === "ru" ? "Обратитесь к стоматологу, если боль сохраняется более недели." : "Call dentist if pain persists beyond a week",
-        locale === "ru" ? "Избегайте горячей пищи и напитков в течение первых 24 часов." : "Avoid hot foods and drinks for the first 24 hours.",
-        locale === "ru" ? "Не сжимайте челюсти и не скрипите зубами." : "Avoid clenching and grinding your teeth."
+        locale === "ru"
+          ? "Избегайте жевания на стороне с пломбой, пока не пройдёт онемение."
+          : "Avoid chewing on the side of the filling until numbness wears off",
+        locale === "ru"
+          ? "Легкая чувствительность к холоду или давлению возможна в течение нескольких дней."
+          : "Sensitivity to cold or pressure is normal for a few days",
+        locale === "ru"
+          ? "Первое время откажитесь от липкой и твердой пищи."
+          : "Avoid sticky or hard foods initially",
+        locale === "ru"
+          ? "Поддерживайте тщательную гигиену полости рта."
+          : "Continue good oral hygiene",
+        locale === "ru"
+          ? "Обратитесь к стоматологу, если боль сохраняется более недели."
+          : "Call dentist if pain persists beyond a week",
+        locale === "ru"
+          ? "Избегайте горячей пищи и напитков в течение первых 24 часов."
+          : "Avoid hot foods and drinks for the first 24 hours.",
+        locale === "ru"
+          ? "Не сжимайте челюсти и не скрипите зубами."
+          : "Avoid clenching and grinding your teeth.",
       ],
       preList: [
-        locale === "ru" ? "Почистите зубы и воспользуйтесь зубной нитью перед визитом." : "Brush and floss before the appointment",
-        locale === "ru" ? "Сообщите стоматологу о любых аллергиях, особенно на анестетики." : "Inform the dentist about any allergies (especially to anesthesia)",
-        locale === "ru" ? "Примите легкую пищу перед процедурой, если не планируется седация." : "Eat lightly, if you're not under sedation",
-        locale === "ru" ? "Обсудите с врачом подходящие варианты материалов (композит, амальгама и др.)." : "Discuss material options (composite, amalgam, etc.)",
-        locale === "ru" ? "Предоставьте информацию о прошлых стоматологических проблемах и лечении." : "Provide information about any previous dental issues or past treatments."
+        locale === "ru"
+          ? "Почистите зубы и воспользуйтесь зубной нитью перед визитом."
+          : "Brush and floss before the appointment",
+        locale === "ru"
+          ? "Сообщите стоматологу о любых аллергиях, особенно на анестетики."
+          : "Inform the dentist about any allergies (especially to anesthesia)",
+        locale === "ru"
+          ? "Примите легкую пищу перед процедурой, если не планируется седация."
+          : "Eat lightly, if you're not under sedation",
+        locale === "ru"
+          ? "Обсудите с врачом подходящие варианты материалов (композит, амальгама и др.)."
+          : "Discuss material options (composite, amalgam, etc.)",
+        locale === "ru"
+          ? "Предоставьте информацию о прошлых стоматологических проблемах и лечении."
+          : "Provide information about any previous dental issues or past treatments.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -23528,7 +26200,9 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       bfs: bfList,
       contents: {
         title:
-          locale === "ru" ? "Почему стоит выбрать Турцию для установки стоматологических пломб?" : "Why Choose Turkey for Your Dental Fillings?",
+          locale === "ru"
+            ? "Почему стоит выбрать Турцию для установки стоматологических пломб?"
+            : "Why Choose Turkey for Your Dental Fillings?",
         content:
           locale === "ru"
             ? `<p dir="ltr">Турция все чаще становится предпочтительным выбором для тех, кто ищет качественное стоматологическое лечение, и это неудивительно. Когда речь идет о стоматологических пломбах, Турция предлагает непревзойденное сочетание факторов, которые делают ее идеальным местом для заботы о здоровье зубов.</p>
@@ -23727,42 +26401,93 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: null,
       faqs: [
         {
-          question : locale === "ru" ? "Как часто мне нужно проходить осмотры?" : "How often should I have check-ups?",
-          answer : locale === "ru" ? "Каждые 6 месяцев или чаще, если это рекомендовано." : "Every 6 months, or more if advised"
+          question:
+            locale === "ru"
+              ? "Как часто мне нужно проходить осмотры?"
+              : "How often should I have check-ups?",
+          answer:
+            locale === "ru"
+              ? "Каждые 6 месяцев или чаще, если это рекомендовано."
+              : "Every 6 months, or more if advised",
         },
         {
-          question : locale === "ru" ? "Чистка зубов отбеливает зубы?" : "Do dental cleanings whiten teeth?",
-          answer : locale === "ru" ? "Чистка удаляет пятна, но это не то же самое, что и отбеливание." : "They remove stains, but not the same as whitening"
+          question:
+            locale === "ru"
+              ? "Чистка зубов отбеливает зубы?"
+              : "Do dental cleanings whiten teeth?",
+          answer:
+            locale === "ru"
+              ? "Чистка удаляет пятна, но это не то же самое, что и отбеливание."
+              : "They remove stains, but not the same as whitening",
         },
         {
-          question : locale === "ru" ? "Это больно?" : "Does it hurt?",
-          answer : locale === "ru" ? "Может возникнуть легкая чувствительность, особенно при наличии зубного камня." : "Mild sensitivity may occur, especially with tartar build-up"
+          question: locale === "ru" ? "Это больно?" : "Does it hurt?",
+          answer:
+            locale === "ru"
+              ? "Может возникнуть легкая чувствительность, особенно при наличии зубного камня."
+              : "Mild sensitivity may occur, especially with tartar build-up",
         },
         {
-          question : locale === "ru" ? "Почему десны кровоточат во время чистки?" : "Why do gums bleed during cleaning?",
-          answer : locale === "ru" ? "Это может быть признаком воспаления – регулярное использование зубной нити помогает предотвратить это." : "Indicates inflammation – regular flossing helps"
+          question:
+            locale === "ru"
+              ? "Почему десны кровоточат во время чистки?"
+              : "Why do gums bleed during cleaning?",
+          answer:
+            locale === "ru"
+              ? "Это может быть признаком воспаления – регулярное использование зубной нити помогает предотвратить это."
+              : "Indicates inflammation – regular flossing helps",
         },
         {
-          question : locale === "ru" ? "Могу ли я поесть после чистки?" : "Can I eat after a cleaning?",
-          answer : locale === "ru" ? "Да, если не было проведено фторирование, подождите 30 минут." : "Yes, unless fluoride was applied – wait 30 mins"
+          question:
+            locale === "ru"
+              ? "Могу ли я поесть после чистки?"
+              : "Can I eat after a cleaning?",
+          answer:
+            locale === "ru"
+              ? "Да, если не было проведено фторирование, подождите 30 минут."
+              : "Yes, unless fluoride was applied – wait 30 mins",
         },
         {
-          question : locale === "ru" ? "Сколько времени занимает чистка зубов?" : "How long does a teeth cleaning take?",
-          answer : locale === "ru" ? "Обычно это занимает от 30 минут до 1 часа, в зависимости от индивидуальных особенностей." : "It usually takes 30 minutes to 1 hour, depending on individual needs."
-        }
+          question:
+            locale === "ru"
+              ? "Сколько времени занимает чистка зубов?"
+              : "How long does a teeth cleaning take?",
+          answer:
+            locale === "ru"
+              ? "Обычно это занимает от 30 минут до 1 часа, в зависимости от индивидуальных особенностей."
+              : "It usually takes 30 minutes to 1 hour, depending on individual needs.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Чувствительность возможна после чистки, избегайте очень горячей или холодной пищи." : "Sensitivity is possible after cleaning – avoid very hot/cold food",
-        locale === "ru" ? "Начинайте чистить зубы и использовать зубную нить в тот же день." : "Start brushing and flossing the same day",
-        locale === "ru" ? "Используйте десенсибилизирующую зубную пасту, если необходимо." : "Use desensitizing toothpaste if needed",
-        locale === "ru" ? "Избегайте курения или пищи, которая оставляет пятна, в течение нескольких часов." : "Avoid smoking or staining foods for a few hours",
-        locale === "ru" ? "Соблюдайте рекомендации стоматолога по уходу и регулярно проходите осмотры." : "Follow your dentist's recommended care instructions and get regular dental check-ups."
+        locale === "ru"
+          ? "Чувствительность возможна после чистки, избегайте очень горячей или холодной пищи."
+          : "Sensitivity is possible after cleaning – avoid very hot/cold food",
+        locale === "ru"
+          ? "Начинайте чистить зубы и использовать зубную нить в тот же день."
+          : "Start brushing and flossing the same day",
+        locale === "ru"
+          ? "Используйте десенсибилизирующую зубную пасту, если необходимо."
+          : "Use desensitizing toothpaste if needed",
+        locale === "ru"
+          ? "Избегайте курения или пищи, которая оставляет пятна, в течение нескольких часов."
+          : "Avoid smoking or staining foods for a few hours",
+        locale === "ru"
+          ? "Соблюдайте рекомендации стоматолога по уходу и регулярно проходите осмотры."
+          : "Follow your dentist's recommended care instructions and get regular dental check-ups.",
       ],
       preList: [
-        locale === "ru" ? "Чистите зубы и используйте зубную нить, как обычно." : "Brush and floss normally",
-        locale === "ru" ? "Принесите список медикаментов и историю стоматологических заболеваний." : "Bring list of medications and dental history",
-        locale === "ru" ? "Избегайте пищи, которая может сильно окрасить зубы, перед визитом." : "Avoid eating hard-staining foods before visit",
-        locale === "ru" ? "Если у вас есть проблемы, такие как кровоточивость десен, сообщите об этом стоматологу." : "If you have any issues like gum bleeding, share them with your dentist."
+        locale === "ru"
+          ? "Чистите зубы и используйте зубную нить, как обычно."
+          : "Brush and floss normally",
+        locale === "ru"
+          ? "Принесите список медикаментов и историю стоматологических заболеваний."
+          : "Bring list of medications and dental history",
+        locale === "ru"
+          ? "Избегайте пищи, которая может сильно окрасить зубы, перед визитом."
+          : "Avoid eating hard-staining foods before visit",
+        locale === "ru"
+          ? "Если у вас есть проблемы, такие как кровоточивость десен, сообщите об этом стоматологу."
+          : "If you have any issues like gum bleeding, share them with your dentist.",
       ],
       conclusion: {
         title: locale === "ru" ? null : "What are Dental Check-Ups?",
@@ -23773,7 +26498,10 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       bfs: bfList,
       contents: {
-        title: locale === "ru" ? "Что представляет собой стоматологический осмотр?" : "What are Dental Check-Ups?",
+        title:
+          locale === "ru"
+            ? "Что представляет собой стоматологический осмотр?"
+            : "What are Dental Check-Ups?",
         content:
           locale === "ru"
             ? `<p dir="ltr">Регулярные стоматологические осмотры &ndash; это основа здоровой и уверенной улыбки. Они помогают не только сохранить здоровье зубов и дёсен, но и вовремя выявить любые отклонения. Во время приема проводится комплексное обследование полости рта: удаление налёта, диагностика кариеса, оценка состояния дёсен и выявление скрытых проблем. Такой подход позволяет предотвратить серьёзные осложнения и сохранить вашу улыбку яркой и здоровой на долгие годы.</p>
@@ -23851,9 +26579,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
     {
       id: 0,
       title:
-        locale === "ru"
-          ? "Рентген зубов в Турции"
-          : "Dental X-rays in Turkey",
+        locale === "ru" ? "Рентген зубов в Турции" : "Dental X-rays in Turkey",
       descriptionTop:
         locale === "ru"
           ? "Если вас беспокоят стоматологические проблемы, но вы не уверены, как дальше действовать, рентген зубов в Турции может стать важным шагом на пути к точному диагнозу. Этот доступный диагностический инструмент позволяет подробно исследовать состояние вашей полости рта, выявляя скрытые проблемы и открывая пути для эффективного лечения."
@@ -23861,41 +26587,88 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: null,
       faqs: [
         {
-          question : locale === "ru" ? "Безопасны ли рентгеновские снимки?" : "Are X-rays safe?",
-          answer : locale === "ru" ? "Да, современные рентгеновские снимки используют очень низкие уровни радиации, что делает их безопасными для пациента." : "Yes, modern X-rays use very low radiation"
+          question:
+            locale === "ru"
+              ? "Безопасны ли рентгеновские снимки?"
+              : "Are X-rays safe?",
+          answer:
+            locale === "ru"
+              ? "Да, современные рентгеновские снимки используют очень низкие уровни радиации, что делает их безопасными для пациента."
+              : "Yes, modern X-rays use very low radiation",
         },
         {
-          question : locale === "ru" ? "Как часто мне нужно делать рентген?" : "How often do I need them?",
-          answer : locale === "ru" ? "Обычно раз в год, или чаще, если это рекомендовано врачом в зависимости от состояния зубов." : "Once a year or as advised based on dental health"
+          question:
+            locale === "ru"
+              ? "Как часто мне нужно делать рентген?"
+              : "How often do I need them?",
+          answer:
+            locale === "ru"
+              ? "Обычно раз в год, или чаще, если это рекомендовано врачом в зависимости от состояния зубов."
+              : "Once a year or as advised based on dental health",
         },
         {
-          question : locale === "ru" ? "Могут ли беременные женщины делать рентген?" : "Can pregnant women have X-rays?",
-          answer : locale === "ru" ? "Обычно рентген откладывают, если нет срочной необходимости, однако при необходимости используется специальная защита для минимизации риска." : "Generally postponed unless urgent; protection used if needed"
+          question:
+            locale === "ru"
+              ? "Могут ли беременные женщины делать рентген?"
+              : "Can pregnant women have X-rays?",
+          answer:
+            locale === "ru"
+              ? "Обычно рентген откладывают, если нет срочной необходимости, однако при необходимости используется специальная защита для минимизации риска."
+              : "Generally postponed unless urgent; protection used if needed",
         },
         {
-          question : locale === "ru" ? "Что они выявляют?" : "What do they detect?",
-          answer : locale === "ru" ? "Рентгеновские снимки помогают выявить кариес, потерю костной массы, инфекции, заболевания десен и другие стоматологические проблемы." : "Cavities, bone loss, infections, and more"
+          question:
+            locale === "ru" ? "Что они выявляют?" : "What do they detect?",
+          answer:
+            locale === "ru"
+              ? "Рентгеновские снимки помогают выявить кариес, потерю костной массы, инфекции, заболевания десен и другие стоматологические проблемы."
+              : "Cavities, bone loss, infections, and more",
         },
         {
-          question : locale === "ru" ? "Это больно?" : "Do they hurt?",
-          answer : locale === "ru" ? "Нет, процедура быстрая и безболезненная." : "No, it’s quick and painless"
+          question: locale === "ru" ? "Это больно?" : "Do they hurt?",
+          answer:
+            locale === "ru"
+              ? "Нет, процедура быстрая и безболезненная."
+              : "No, it’s quick and painless",
         },
         {
-          question : locale === "ru" ? "Какие области проверяются во время стоматологического рентгена?" : "What areas are checked during a dental X-ray?",
-          answer : locale === "ru" ? "Стоматологические рентгеновские снимки позволяют выявить кариес, заболевания десен, потерю костной массы, инфекции и другие стоматологические проблемы." : "Dental X-rays detect cavities, gum disease, bone loss, infections, and other issues."
-        }
+          question:
+            locale === "ru"
+              ? "Какие области проверяются во время стоматологического рентгена?"
+              : "What areas are checked during a dental X-ray?",
+          answer:
+            locale === "ru"
+              ? "Стоматологические рентгеновские снимки позволяют выявить кариес, заболевания десен, потерю костной массы, инфекции и другие стоматологические проблемы."
+              : "Dental X-rays detect cavities, gum disease, bone loss, infections, and other issues.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Нет ограничений; продолжайте обычные занятия" : "No restrictions; continue normal activities",
-        locale === "ru" ? "Следите, если стоматолог находит проблемы, требующие лечения" : "Follow-up if dentist finds issues needing treatment",
-        locale === "ru" ? "Поддерживайте регулярные осмотры" : "Maintain routine check-ups"
+        locale === "ru"
+          ? "Нет ограничений; продолжайте обычные занятия"
+          : "No restrictions; continue normal activities",
+        locale === "ru"
+          ? "Следите, если стоматолог находит проблемы, требующие лечения"
+          : "Follow-up if dentist finds issues needing treatment",
+        locale === "ru"
+          ? "Поддерживайте регулярные осмотры"
+          : "Maintain routine check-ups",
       ],
       preList: [
-        locale === "ru" ? "Удалите металлические предметы (ювелирные изделия, очки) перед процедурой." : "Remove metal items (jewelry, glasses) before the process",
-        locale === "ru" ? "Сообщите, если вы беременны или подозреваете беременность." : "Inform if someone is pregnant or suspect pregnancy",
-        locale === "ru" ? "Специальная подготовка не требуется." : "No special preparation needed",
-        locale === "ru" ? "Если у вас есть аллергии или чувствительность, сообщите об этом заранее." : "If you have any allergies or sensitivities, inform beforehand.",
-        locale === "ru" ? "Если у вас есть металлические пломбы, зубные протезы или имплантаты, сообщите об этом заранее." : "If you have metal fillings, dentures, or implants, mention them in advance."
+        locale === "ru"
+          ? "Удалите металлические предметы (ювелирные изделия, очки) перед процедурой."
+          : "Remove metal items (jewelry, glasses) before the process",
+        locale === "ru"
+          ? "Сообщите, если вы беременны или подозреваете беременность."
+          : "Inform if someone is pregnant or suspect pregnancy",
+        locale === "ru"
+          ? "Специальная подготовка не требуется."
+          : "No special preparation needed",
+        locale === "ru"
+          ? "Если у вас есть аллергии или чувствительность, сообщите об этом заранее."
+          : "If you have any allergies or sensitivities, inform beforehand.",
+        locale === "ru"
+          ? "Если у вас есть металлические пломбы, зубные протезы или имплантаты, сообщите об этом заранее."
+          : "If you have metal fillings, dentures, or implants, mention them in advance.",
       ],
       conclusion: {
         title: locale === "ru" ? null : "What is Dental X-Ray?",
@@ -24149,7 +26922,10 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Alleviates pain caused by tooth decay, infection, or damage to improve comfort.",
           },
           {
-            title: locale === "ru" ? "Профилактика осложнений" : "Prevents Further Damage",
+            title:
+              locale === "ru"
+                ? "Профилактика осложнений"
+                : "Prevents Further Damage",
             desc:
               locale === "ru"
                 ? "защищает соседние зубы от разрушения и инфекции."
@@ -24192,63 +26968,137 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Больно ли это?" : "Is it painful?",
-          answer : locale === "ru" ? "Умеренный дискомфорт - нормальное явление и хорошо контролируется обезболивающими средствами." : "Mild to moderate discomfort, manageable with medication"
+          question: locale === "ru" ? "Больно ли это?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Умеренный дискомфорт - нормальное явление и хорошо контролируется обезболивающими средствами."
+              : "Mild to moderate discomfort, manageable with medication",
         },
         {
-          question : locale === "ru" ? "Что такое сухая лунка?" : "What is dry socket?",
-          answer : locale === "ru" ? "Это болезненное состояние, возникающее при потере или смещении кровяного сгустка - не рекомендуется курить и использовать соломинку." : "A painful condition if the clot dislodges – avoid smoking/straws"
+          question:
+            locale === "ru" ? "Что такое сухая лунка?" : "What is dry socket?",
+          answer:
+            locale === "ru"
+              ? "Это болезненное состояние, возникающее при потере или смещении кровяного сгустка - не рекомендуется курить и использовать соломинку."
+              : "A painful condition if the clot dislodges – avoid smoking/straws",
         },
         {
-          question : locale === "ru" ? "Когда можно есть твердую пищу?" : "When can I eat hard foods?",
-          answer : locale === "ru" ? "Постепенно, начиная через 3–5 дней, в зависимости от самочувствия." : "Usually after 3–5 days, gradually"
+          question:
+            locale === "ru"
+              ? "Когда можно есть твердую пищу?"
+              : "When can I eat hard foods?",
+          answer:
+            locale === "ru"
+              ? "Постепенно, начиная через 3–5 дней, в зависимости от самочувствия."
+              : "Usually after 3–5 days, gradually",
         },
         {
-          question : locale === "ru" ? "Будет ли отек?" : "Will there be swelling?",
-          answer : locale === "ru" ? "Да, отек - это нормальная реакция организма. Обычно он достигает максимума через 48 часов после процедуры, а затем постепенно спадает." : "Yes, usually peaks at 48 hours then improves"
+          question:
+            locale === "ru" ? "Будет ли отек?" : "Will there be swelling?",
+          answer:
+            locale === "ru"
+              ? "Да, отек - это нормальная реакция организма. Обычно он достигает максимума через 48 часов после процедуры, а затем постепенно спадает."
+              : "Yes, usually peaks at 48 hours then improves",
         },
         {
-          question : locale === "ru" ? "Нужны ли мне швы?" : "Do I need stitches?",
-          answer : locale === "ru" ? "Иногда да - швы могут быть рассасывающимися или их снимет врач при повторном осмотре." : "Sometimes – dissolvable or removed at follow-up"
+          question:
+            locale === "ru" ? "Нужны ли мне швы?" : "Do I need stitches?",
+          answer:
+            locale === "ru"
+              ? "Иногда да - швы могут быть рассасывающимися или их снимет врач при повторном осмотре."
+              : "Sometimes – dissolvable or removed at follow-up",
         },
         {
-          question : locale === "ru" ? "Как долго мне следует отдыхать после удаления зуба?" : "How long should I rest after a tooth extraction?",
-          answer : locale === "ru" ? "Отдыхайте в течение первых 24 часов и избегайте физических нагрузок." : "Rest for the first 24 hours and avoid physical activities."
+          question:
+            locale === "ru"
+              ? "Как долго мне следует отдыхать после удаления зуба?"
+              : "How long should I rest after a tooth extraction?",
+          answer:
+            locale === "ru"
+              ? "Отдыхайте в течение первых 24 часов и избегайте физических нагрузок."
+              : "Rest for the first 24 hours and avoid physical activities.",
         },
         {
-          question : locale === "ru" ? "Могу ли я курить?" : "Can I smoke?",
-          answer : locale === "ru" ? "Курение не рекомендуется, так как оно может замедлить заживление и вызвать сухость лунки." : "Avoid smoking, as it can delay healing and cause a dry socket."
+          question: locale === "ru" ? "Могу ли я курить?" : "Can I smoke?",
+          answer:
+            locale === "ru"
+              ? "Курение не рекомендуется, так как оно может замедлить заживление и вызвать сухость лунки."
+              : "Avoid smoking, as it can delay healing and cause a dry socket.",
         },
         {
-          question : locale === "ru" ? "Когда остановится кровотечение?" : "When will the bleeding stop?",
-          answer : locale === "ru" ? "Небольшое кровотечение может сохраняться в течение 24 часов. Если оно продолжается, прикусите стерильную марлю." : "Bleeding may last for 24 hours. If it continues, bite down on sterile gauze."
+          question:
+            locale === "ru"
+              ? "Когда остановится кровотечение?"
+              : "When will the bleeding stop?",
+          answer:
+            locale === "ru"
+              ? "Небольшое кровотечение может сохраняться в течение 24 часов. Если оно продолжается, прикусите стерильную марлю."
+              : "Bleeding may last for 24 hours. If it continues, bite down on sterile gauze.",
         },
         {
-          question : locale === "ru" ? "Как справиться с болью?" : "How can I manage pain?",
-          answer : locale === "ru" ? "Принимайте назначенные обезболивающие препараты. Если боль усиливается или не проходит, обратитесь к стоматологу." : "Pain is manageable with prescribed painkillers. Contact your dentist if pain worsens."
+          question:
+            locale === "ru"
+              ? "Как справиться с болью?"
+              : "How can I manage pain?",
+          answer:
+            locale === "ru"
+              ? "Принимайте назначенные обезболивающие препараты. Если боль усиливается или не проходит, обратитесь к стоматологу."
+              : "Pain is manageable with prescribed painkillers. Contact your dentist if pain worsens.",
         },
         {
-          question : locale === "ru" ? "Как ухаживать за полостью рта после удаления?" : "How should I care for my mouth?",
-          answer : locale === "ru" ? "В течение первых 24 часов не прикасайтесь к области удаления. Затем аккуратно полощите рот тёплой солёной водой 2–3 раза в день." : "Avoid touching the area for 24 hours, then rinse gently with salt water."
-        }
+          question:
+            locale === "ru"
+              ? "Как ухаживать за полостью рта после удаления?"
+              : "How should I care for my mouth?",
+          answer:
+            locale === "ru"
+              ? "В течение первых 24 часов не прикасайтесь к области удаления. Затем аккуратно полощите рот тёплой солёной водой 2–3 раза в день."
+              : "Avoid touching the area for 24 hours, then rinse gently with salt water.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Укусите в марлю, чтобы остановить кровотечение" : "Bite on gauze to stop bleeding",
-        locale === "ru" ? "Избегайте кашля, курения и использования соломинки в течение и 48–72 часов" : "Do not smoke, spit, or use a straw for 48–72 hrs",
-        locale === "ru" ? "Ешьте мягкую, теплую пищу" : "Eat soft, lukewarm foods",
-        locale === "ru" ? "Полощите горло соленой водой через 24 часа" : "Use salt water rinse after 24 hours",
-        locale === "ru" ? "Принимайте все предписанные лекарства согласно инструкции" : "Take all prescribed meds as directed",
-        locale === "ru" ? "Держите голову приподнятой во время сна." : "Keep your head elevated while sleeping.",
-        locale === "ru" ? "Избегайте физических нагрузок." : "-Avoid physical activities.",
+        locale === "ru"
+          ? "Укусите в марлю, чтобы остановить кровотечение"
+          : "Bite on gauze to stop bleeding",
+        locale === "ru"
+          ? "Избегайте кашля, курения и использования соломинки в течение и 48–72 часов"
+          : "Do not smoke, spit, or use a straw for 48–72 hrs",
+        locale === "ru"
+          ? "Ешьте мягкую, теплую пищу"
+          : "Eat soft, lukewarm foods",
+        locale === "ru"
+          ? "Полощите горло соленой водой через 24 часа"
+          : "Use salt water rinse after 24 hours",
+        locale === "ru"
+          ? "Принимайте все предписанные лекарства согласно инструкции"
+          : "Take all prescribed meds as directed",
+        locale === "ru"
+          ? "Держите голову приподнятой во время сна."
+          : "Keep your head elevated while sleeping.",
+        locale === "ru"
+          ? "Избегайте физических нагрузок."
+          : "-Avoid physical activities.",
         locale === "ru" ? "Не курите." : "-Do not smoke.",
-        locale === "ru" ? "Будьте осторожны, чтобы не трогать эту область" : "Be careful not to touch the area",
-        locale === "ru" ? "Чистите зубы осторожно до полного заживления." : "brush your teeth gently until fully healed."
+        locale === "ru"
+          ? "Будьте осторожны, чтобы не трогать эту область"
+          : "Be careful not to touch the area",
+        locale === "ru"
+          ? "Чистите зубы осторожно до полного заживления."
+          : "brush your teeth gently until fully healed.",
       ],
       preList: [
-        locale === "ru" ? "Избегайте приема нестероидных противовоспалительных препаратов (НПВП) и алкоголя перед операцией." : "Avoid NSAIDs and alcohol before surgery",
-        locale === "ru" ? "Если планируется местная анестезия, допустим легкий примем пищи" : "Eat light meal if local anesthesia is planned",
-        locale === "ru" ? "Обязательно сообщите стоматологу о всех принимаемых вами лекарственных препаратах." : "Inform dentist of all medications",
-        locale === "ru" ? "Воздержитесь от курения как минимум за 24 часа до процедуры." : "Avoid smoking at least 24 hours before surgery"
+        locale === "ru"
+          ? "Избегайте приема нестероидных противовоспалительных препаратов (НПВП) и алкоголя перед операцией."
+          : "Avoid NSAIDs and alcohol before surgery",
+        locale === "ru"
+          ? "Если планируется местная анестезия, допустим легкий примем пищи"
+          : "Eat light meal if local anesthesia is planned",
+        locale === "ru"
+          ? "Обязательно сообщите стоматологу о всех принимаемых вами лекарственных препаратах."
+          : "Inform dentist of all medications",
+        locale === "ru"
+          ? "Воздержитесь от курения как минимум за 24 часа до процедуры."
+          : "Avoid smoking at least 24 hours before surgery",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -24536,54 +27386,122 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Что такое сухая лунка?" : "Is it painful?",
-          answer : locale === "ru" ? "Это болезненное состояние, возникающее при потере или смещении кровяного сгустка. Чтобы его избежать, важно строго соблюдать рекомендации по уходу после удаления." : "Discomfort is normal and managed with pain relievers"
+          question:
+            locale === "ru" ? "Что такое сухая лунка?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Это болезненное состояние, возникающее при потере или смещении кровяного сгустка. Чтобы его избежать, важно строго соблюдать рекомендации по уходу после удаления."
+              : "Discomfort is normal and managed with pain relievers",
         },
         {
-          question : locale === "ru" ? "Как долго длится восстановление?" : "What is dry socket?",
-          answer : locale === "ru" ? "Заживление мягких тканей обычно занимает от 7 до 10 дней." : "A painful condition from dislodged clot – follow post-op rules"
+          question:
+            locale === "ru"
+              ? "Как долго длится восстановление?"
+              : "What is dry socket?",
+          answer:
+            locale === "ru"
+              ? "Заживление мягких тканей обычно занимает от 7 до 10 дней."
+              : "A painful condition from dislodged clot – follow post-op rules",
         },
         {
-          question : locale === "ru" ? "Рассасываются ли швы?" : "When can I eat solid food?",
-          answer : locale === "ru" ? "В большинстве случаев - да. Если нет, врач удалит их через неделю." : "Gradually after 3–5 days"
+          question:
+            locale === "ru"
+              ? "Рассасываются ли швы?"
+              : "When can I eat solid food?",
+          answer:
+            locale === "ru"
+              ? "В большинстве случаев - да. Если нет, врач удалит их через неделю."
+              : "Gradually after 3–5 days",
         },
         {
-          question : locale === "ru" ? "Насколько сильный отек считается нормальным?" : "How long is recovery?",
-          answer : locale === "ru" ? "Отек - это нормально в течение первых двух дней после удаления, затем он должен постепенно снижаться." : "7–10 days for soft tissue healing"
+          question:
+            locale === "ru"
+              ? "Насколько сильный отек считается нормальным?"
+              : "How long is recovery?",
+          answer:
+            locale === "ru"
+              ? "Отек - это нормально в течение первых двух дней после удаления, затем он должен постепенно снижаться."
+              : "7–10 days for soft tissue healing",
         },
         {
-          question : locale === "ru" ? "Как чистить зубы после удаления?" : "Will stitches dissolve?",
-          answer : locale === "ru" ? "Чистите зубы аккуратно, избегая области удаления, чтобы не повредить заживающую ткань." : "Often yes, or removed after a week"
+          question:
+            locale === "ru"
+              ? "Как чистить зубы после удаления?"
+              : "Will stitches dissolve?",
+          answer:
+            locale === "ru"
+              ? "Чистите зубы аккуратно, избегая области удаления, чтобы не повредить заживающую ткань."
+              : "Often yes, or removed after a week",
         },
         {
-          question : locale === "ru" ? "Нормально ли кровотечение после процедуры?" : "How much swelling is normal after extraction?",
-          answer : locale === "ru" ? "Легкое кровотечение в первые часы - это нормально. Если оно не останавливается, обратитесь к вашему стоматологу." : "Swelling is normal for the first 2 days, then decreases."
+          question:
+            locale === "ru"
+              ? "Нормально ли кровотечение после процедуры?"
+              : "How much swelling is normal after extraction?",
+          answer:
+            locale === "ru"
+              ? "Легкое кровотечение в первые часы - это нормально. Если оно не останавливается, обратитесь к вашему стоматологу."
+              : "Swelling is normal for the first 2 days, then decreases.",
         },
         {
-          question : locale === "ru" ? "" : "How should I clean my teeth after extraction?",
-          answer : locale === "ru" ? "" : "Brush carefully, avoiding the extracted area."
+          question:
+            locale === "ru"
+              ? ""
+              : "How should I clean my teeth after extraction?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Brush carefully, avoiding the extracted area.",
         },
         {
-          question : locale === "ru" ? "" : "Is bleeding normal after extraction?",
-          answer : locale === "ru" ? "" : "Mild bleeding is normal initially; contact your dentist if it doesn’t stop."
-        }
+          question:
+            locale === "ru" ? "" : "Is bleeding normal after extraction?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "Mild bleeding is normal initially; contact your dentist if it doesn’t stop.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Прикусывайте марлю, чтобы контролировать кровотечение." : "Bite on gauze to control bleeding",
-        locale === "ru" ? "Избегайте кашля, курения и использования соломинки в течение первых 3 дней." : "Avoid spitting, using a straw, or smoking for 3 days",
-        locale === "ru" ? "Прикладывайте холодные компрессы для уменьшения отека в течение первых 48 часов." : "Apply ice packs for swelling during first 48 hours",
-        locale === "ru" ? "Употребляйте мягкую и теплую пищу, например, йогурт или суп.                                                                                                     - Через 24 часа начните полоскать рот теплой соленой водой." : "Eat soft, cool foods like yogurt or soup",
-        locale === "ru" ? "В первые дни спите с приподнятой головой." : "Rinse with salt water after 24 hours",
-        locale === "ru" ? "Избегайте интенсивных физических нагрузок." : "Initially, sleep with your head elevated.",
-        locale === "ru" ? "" : "Avoid intense exercise."
+        locale === "ru"
+          ? "Прикусывайте марлю, чтобы контролировать кровотечение."
+          : "Bite on gauze to control bleeding",
+        locale === "ru"
+          ? "Избегайте кашля, курения и использования соломинки в течение первых 3 дней."
+          : "Avoid spitting, using a straw, or smoking for 3 days",
+        locale === "ru"
+          ? "Прикладывайте холодные компрессы для уменьшения отека в течение первых 48 часов."
+          : "Apply ice packs for swelling during first 48 hours",
+        locale === "ru"
+          ? "Употребляйте мягкую и теплую пищу, например, йогурт или суп.                                                                                                     - Через 24 часа начните полоскать рот теплой соленой водой."
+          : "Eat soft, cool foods like yogurt or soup",
+        locale === "ru"
+          ? "В первые дни спите с приподнятой головой."
+          : "Rinse with salt water after 24 hours",
+        locale === "ru"
+          ? "Избегайте интенсивных физических нагрузок."
+          : "Initially, sleep with your head elevated.",
+        locale === "ru" ? "" : "Avoid intense exercise.",
       ],
       preList: [
-        locale === "ru" ? "Воздержитесь от еды на 6–8 часов перед операцией, если она проводится под седативным воздействием." : "Fast 6–8 hours before surgery if under sedation",
-        locale === "ru" ? "Наденьте свободную и удобную одежду." : "Wear loose, comfortable clothing",
-        locale === "ru" ? "Избегайте употребления алкоголя и курения за 24 часа до процедуры." : "Avoid smoking and alcohol for 24 hours prior",
-        locale === "ru" ? "Соблюдайте гигиену полости рта." : "Pay attention to oral hygiene.",
-        locale === "ru" ? "Избегайте разжижающих кровь препаратов.                                        - Сообщите врачу о наличии аллергий или хронических заболеваний." : "Inform about allergies or health conditions.",
-        locale === "ru" ? "Избегайте приема препаратов, разжижающих кровь (если не указано иное врачом)." : "Avoid blood thinners."
+        locale === "ru"
+          ? "Воздержитесь от еды на 6–8 часов перед операцией, если она проводится под седативным воздействием."
+          : "Fast 6–8 hours before surgery if under sedation",
+        locale === "ru"
+          ? "Наденьте свободную и удобную одежду."
+          : "Wear loose, comfortable clothing",
+        locale === "ru"
+          ? "Избегайте употребления алкоголя и курения за 24 часа до процедуры."
+          : "Avoid smoking and alcohol for 24 hours prior",
+        locale === "ru"
+          ? "Соблюдайте гигиену полости рта."
+          : "Pay attention to oral hygiene.",
+        locale === "ru"
+          ? "Избегайте разжижающих кровь препаратов.                                        - Сообщите врачу о наличии аллергий или хронических заболеваний."
+          : "Inform about allergies or health conditions.",
+        locale === "ru"
+          ? "Избегайте приема препаратов, разжижающих кровь (если не указано иное врачом)."
+          : "Avoid blood thinners.",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -24704,14 +27622,18 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Стоматологические решения" : "Dental Solutions",
+            title:
+              locale === "ru"
+                ? "Стоматологические решения"
+                : "Dental Solutions",
             desc:
               locale === "ru"
                 ? "восстанавливают эстетику и функцию прикуса, улучшая качество жизни."
                 : "Advanced implant procedures restore both aesthetic appearance and bite function",
           },
           {
-            title: locale === "ru" ? "Реконструкция челюсти" : "Jaw Reconstruction",
+            title:
+              locale === "ru" ? "Реконструкция челюсти" : "Jaw Reconstruction",
             desc:
               locale === "ru"
                 ? "возвращает естественные контуры и функции лица."
@@ -24741,7 +27663,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Oral surgery (maxillofacial surgery) treats jaw, teeth, and facial issues through procedures like tooth extractions, dental implants, bone reconstruction, jaw injury treatment, bite correction, and cleft repair. Surgeons use X-rays and CT scans to plan procedures and determine whether local or general anesthesia is needed.",
           },
           {
-            header: locale === "ru" ? "Для кого это предназначено" : "Who It’s For",
+            header:
+              locale === "ru" ? "Для кого это предназначено" : "Who It’s For",
             desc:
               locale === "ru"
                 ? "Челюстно-лицевая хирургия подходит пациентам с различными проблемами, такими как неправильное прорезывание зубов мудрости, заболевания костей и тканей (например, кисты или инфекции), травмы челюсти, врожденные дефекты (например, заячья губа и небо) или необходимость в хирургической коррекции прикуса. Также эта операция может быть полезной для тех, кто нуждается в зубных имплантатах или подготовке к ортодонтическому лечению."
@@ -24751,44 +27674,95 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Изменит ли это мою внешность?" : "How long is recovery process?",
-          answer : locale === "ru" ? "Да, операция часто улучшает симметрию лица и общий внешний вид." : "6 weeks for bones to heal, full recovery in months"
+          question:
+            locale === "ru"
+              ? "Изменит ли это мою внешность?"
+              : "How long is recovery process?",
+          answer:
+            locale === "ru"
+              ? "Да, операция часто улучшает симметрию лица и общий внешний вид."
+              : "6 weeks for bones to heal, full recovery in months",
         },
         {
-          question : locale === "ru" ? "Это больно?" : "Will it change my appearance?",
-          answer : locale === "ru" ? "Болевые ощущения контролируются с помощью обезболивающих препаратов; скованность в первые дни - это нормально." : "Yes, often improves facial symmetry"
+          question:
+            locale === "ru" ? "Это больно?" : "Will it change my appearance?",
+          answer:
+            locale === "ru"
+              ? "Болевые ощущения контролируются с помощью обезболивающих препаратов; скованность в первые дни - это нормально."
+              : "Yes, often improves facial symmetry",
         },
         {
-          question : locale === "ru" ? "Могу ли я есть нормально?" : "Is it painful?",
-          answer : locale === "ru" ? "Только после разрешения врача, обычно спустя 6–8 недель." : "Controlled with medications; stiffness is common"
+          question:
+            locale === "ru" ? "Могу ли я есть нормально?" : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Только после разрешения врача, обычно спустя 6–8 недель."
+              : "Controlled with medications; stiffness is common",
         },
         {
-          question : locale === "ru" ? "Пластины удаляются позже?" : "Can I eat normally?",
-          answer : locale === "ru" ? "Нет, титановые пластины остаются на месте, если не возникает осложнений." : "Only after clearance, usually in 6–8 weeks"
+          question:
+            locale === "ru"
+              ? "Пластины удаляются позже?"
+              : "Can I eat normally?",
+          answer:
+            locale === "ru"
+              ? "Нет, титановые пластины остаются на месте, если не возникает осложнений."
+              : "Only after clearance, usually in 6–8 weeks",
         },
         {
-          question : locale === "ru" ? "Кому не рекомендуется эта операция?" : "Are plates removed later?",
-          answer : locale === "ru" ? "Пациентам с серьезными хроническими заболеваниями, нарушениями свертываемости крови, слабым заживлением костной ткани или другими медицинскими противопоказаниями." : "No, titanium plates stay in unless issues arise"
+          question:
+            locale === "ru"
+              ? "Кому не рекомендуется эта операция?"
+              : "Are plates removed later?",
+          answer:
+            locale === "ru"
+              ? "Пациентам с серьезными хроническими заболеваниями, нарушениями свертываемости крови, слабым заживлением костной ткани или другими медицинскими противопоказаниями."
+              : "No, titanium plates stay in unless issues arise",
         },
         {
-          question : locale === "ru" ? "" : "Who should avoid this surgery?",
-          answer : locale === "ru" ? "" : "People with serious health risks/diseases or poor bone healing may not be suitable."
-        }
+          question: locale === "ru" ? "" : "Who should avoid this surgery?",
+          answer:
+            locale === "ru"
+              ? ""
+              : "People with serious health risks/diseases or poor bone healing may not be suitable.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Ожидайте отечность и синяки в течение 1–2 недель." : "Expect swelling and bruising for 1–2 weeks",
-        locale === "ru" ? "Спите с приподнятой головой и прикладывайте лед в первые 48 часов." : "Sleep elevated and apply ice first 48 hours",
-        locale === "ru" ? "Строго придерживайтесь жидкой или мягкой диеты." : "Follow liquid or soft diet strictly",
-        locale === "ru" ? "Избегайте чрезмерных разговоров и давайте челюсти отдых." : "Avoid speaking excessively and rest your jaw",
-        locale === "ru" ? "Посещайте регулярные контрольные приемы для корректировок." : "Attend regular follow-up for adjustments",
-        locale === "ru" ? "Избегайте горячей и холодной пищи и напитков." : "Avoid hot and cold foods/beverages."
+        locale === "ru"
+          ? "Ожидайте отечность и синяки в течение 1–2 недель."
+          : "Expect swelling and bruising for 1–2 weeks",
+        locale === "ru"
+          ? "Спите с приподнятой головой и прикладывайте лед в первые 48 часов."
+          : "Sleep elevated and apply ice first 48 hours",
+        locale === "ru"
+          ? "Строго придерживайтесь жидкой или мягкой диеты."
+          : "Follow liquid or soft diet strictly",
+        locale === "ru"
+          ? "Избегайте чрезмерных разговоров и давайте челюсти отдых."
+          : "Avoid speaking excessively and rest your jaw",
+        locale === "ru"
+          ? "Посещайте регулярные контрольные приемы для корректировок."
+          : "Attend regular follow-up for adjustments",
+        locale === "ru"
+          ? "Избегайте горячей и холодной пищи и напитков."
+          : "Avoid hot and cold foods/beverages.",
       ],
       preList: [
-        locale === "ru" ? "Пройти рентген, сдать анализы крови и подготовиться к ортодонтическому лечению." : "Undergo x-ray, blood tests, and orthodontic prep",
-        locale === "ru" ? "Прекратить курить перед операцией." : "Stop smoking before surgery",
-        locale === "ru" ? "Обсудить приём лекарств с хирургом." : "Discuss medications with surgeon",
-        locale === "ru" ? "Поддерживать хорошую гигиену полости рта и следить за чистотой зубов." : "Maintain good oral hygiene and keep your teeth clean.",
-        locale === "ru" ? "Соблюдать рекомендации по диете; возможно, потребуется воздержание от пищи в течение определённого времени" : "Follow diet recommendations; you may need to fast for a certain period."
+        locale === "ru"
+          ? "Пройти рентген, сдать анализы крови и подготовиться к ортодонтическому лечению."
+          : "Undergo x-ray, blood tests, and orthodontic prep",
+        locale === "ru"
+          ? "Прекратить курить перед операцией."
+          : "Stop smoking before surgery",
+        locale === "ru"
+          ? "Обсудить приём лекарств с хирургом."
+          : "Discuss medications with surgeon",
+        locale === "ru"
+          ? "Поддерживать хорошую гигиену полости рта и следить за чистотой зубов."
+          : "Maintain good oral hygiene and keep your teeth clean.",
+        locale === "ru"
+          ? "Соблюдать рекомендации по диете; возможно, потребуется воздержание от пищи в течение определённого времени"
+          : "Follow diet recommendations; you may need to fast for a certain period.",
       ],
       conclusion: {
         title: locale === "ru" ? "Вывод" : "Conclusion",
@@ -25222,7 +28196,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Пациентам с диабетом" : "Vision Protection",
+            title:
+              locale === "ru" ? "Пациентам с диабетом" : "Vision Protection",
             desc:
               locale === "ru"
                 ? "повышенный риск развития диабетической ретинопатии и потери зрения."
@@ -25236,7 +28211,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Better management leads to improved daily activities.",
           },
           {
-            title: locale === "ru" ? "Пациентам с гипертонией" : "Disease Control",
+            title:
+              locale === "ru" ? "Пациентам с гипертонией" : "Disease Control",
             desc:
               locale === "ru"
                 ? "Нарушения сосудов и внезапные изменения зрения — возможные признаки патологий сетчатки."
@@ -25269,39 +28245,87 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Что вызывает заболевания сетчатки?" : "What causes retinal disease?",
-          answer : locale === "ru" ? "Причинами могут быть возрастные изменения, диабет, травмы глаза и генетическая предрасположенность." : "Aging, diabetes, trauma, and genetics"
+          question:
+            locale === "ru"
+              ? "Что вызывает заболевания сетчатки?"
+              : "What causes retinal disease?",
+          answer:
+            locale === "ru"
+              ? "Причинами могут быть возрастные изменения, диабет, травмы глаза и генетическая предрасположенность."
+              : "Aging, diabetes, trauma, and genetics",
         },
         {
-          question : locale === "ru" ? "Может ли потеря зрения быть необратимой?" : "Is vision loss permanent?",
-          answer : locale === "ru" ? "Это зависит от конкретного заболевания и своевременности начала лечения - при ранней диагностике возможна стабилизация состояния." : "Depends on condition and treatment timing"
+          question:
+            locale === "ru"
+              ? "Может ли потеря зрения быть необратимой?"
+              : "Is vision loss permanent?",
+          answer:
+            locale === "ru"
+              ? "Это зависит от конкретного заболевания и своевременности начала лечения - при ранней диагностике возможна стабилизация состояния."
+              : "Depends on condition and treatment timing",
         },
         {
-          question : locale === "ru" ? "Какие существуют методы лечения?" : "What treatments exist?",
-          answer : locale === "ru" ? "Варианты включают лазерную терапию, внутриглазные инъекции и хирургическое вмешательство." : "Lasers, injections, or surgery"
+          question:
+            locale === "ru"
+              ? "Какие существуют методы лечения?"
+              : "What treatments exist?",
+          answer:
+            locale === "ru"
+              ? "Варианты включают лазерную терапию, внутриглазные инъекции и хирургическое вмешательство."
+              : "Lasers, injections, or surgery",
         },
         {
-          question : locale === "ru" ? "Могу ли я водить машину после лечения?" : "Can I drive after treatment?",
-          answer : locale === "ru" ? "Обычно - нет, необходимо дождаться разрешения врача, особенно после инъекций или операций." : "Usually not immediately – wait for clearance"
+          question:
+            locale === "ru"
+              ? "Могу ли я водить машину после лечения?"
+              : "Can I drive after treatment?",
+          answer:
+            locale === "ru"
+              ? "Обычно - нет, необходимо дождаться разрешения врача, особенно после инъекций или операций."
+              : "Usually not immediately – wait for clearance",
         },
         {
-          question : locale === "ru" ? "Есть ли боль при лечении?" : "Is there pain?",
-          answer : locale === "ru" ? "Возможно левкое чувство дискомфорта, но серьезной боли пациенты, как правило, не испытывают." : "Mild discomfort is possible, not usually painful"
-        }
+          question:
+            locale === "ru" ? "Есть ли боль при лечении?" : "Is there pain?",
+          answer:
+            locale === "ru"
+              ? "Возможно левкое чувство дискомфорта, но серьезной боли пациенты, как правило, не испытывают."
+              : "Mild discomfort is possible, not usually painful",
+        },
       ],
       posts: [
-        locale === "ru" ? "Используйте назначенные капли и лекарства строго по инструкции." : "Use prescribed drops and medications as directed",
-        locale === "ru" ? "Избегайте яркого света и интенсивной физической активности." : "Avoid bright light and heavy exertion",
-        locale === "ru" ? "Защищайте глаза от пыли, загрязнений и возможных травм." : "Protect eye from dust and trauma",
-        locale === "ru" ? "Посещайте все плановые контрольные обследования." : "Attend all scheduled follow-ups",
-        locale === "ru" ? "Немедленно сообщайте врачу о внезапном ухудшении или потере зрения." : "Report any sudden vision loss immediately",
-        locale === "ru" ? "Проконсультируйтесь с офтальмологом перед использованием очков или контактных линз." : "Consult your doctor before using glasses or contact lenses."
+        locale === "ru"
+          ? "Используйте назначенные капли и лекарства строго по инструкции."
+          : "Use prescribed drops and medications as directed",
+        locale === "ru"
+          ? "Избегайте яркого света и интенсивной физической активности."
+          : "Avoid bright light and heavy exertion",
+        locale === "ru"
+          ? "Защищайте глаза от пыли, загрязнений и возможных травм."
+          : "Protect eye from dust and trauma",
+        locale === "ru"
+          ? "Посещайте все плановые контрольные обследования."
+          : "Attend all scheduled follow-ups",
+        locale === "ru"
+          ? "Немедленно сообщайте врачу о внезапном ухудшении или потере зрения."
+          : "Report any sudden vision loss immediately",
+        locale === "ru"
+          ? "Проконсультируйтесь с офтальмологом перед использованием очков или контактных линз."
+          : "Consult your doctor before using glasses or contact lenses.",
       ],
       preList: [
-        locale === "ru" ? "Пройдите полное обследование глаз, включая визуализацию, перед процедурой." : "Full eye examination and imaging required",
-        locale === "ru" ? "Обязательно сообщите врачу обо всех принимаемых медикаментах и наличии аллергий." : "Inform doctor about all medications and allergies",
-        locale === "ru" ? "Контролируйте уровень артериального давления и хронические заболевания." : "Control blood pressure and systemic conditions",
-        locale === "ru" ? "Соблюдайте сбалансированную диету и обеспечьте себе полноценный сон." : "Follow a healthy diet and get enough sleep"
+        locale === "ru"
+          ? "Пройдите полное обследование глаз, включая визуализацию, перед процедурой."
+          : "Full eye examination and imaging required",
+        locale === "ru"
+          ? "Обязательно сообщите врачу обо всех принимаемых медикаментах и наличии аллергий."
+          : "Inform doctor about all medications and allergies",
+        locale === "ru"
+          ? "Контролируйте уровень артериального давления и хронические заболевания."
+          : "Control blood pressure and systemic conditions",
+        locale === "ru"
+          ? "Соблюдайте сбалансированную диету и обеспечьте себе полноценный сон."
+          : "Follow a healthy diet and get enough sleep",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -25532,14 +28556,18 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Быстрое восстановление" : "Rapid Recovery",
+            title:
+              locale === "ru" ? "Быстрое восстановление" : "Rapid Recovery",
             desc:
               locale === "ru"
                 ? "первые улучшения — уже в день операции, полная стабилизация — в течение недели."
                 : "Vision improves within a day, full clarity in a week.",
           },
           {
-            title: locale === "ru" ? "Свобода от очков и линз" : "Reduced Dependency",
+            title:
+              locale === "ru"
+                ? "Свобода от очков и линз"
+                : "Reduced Dependency",
             desc:
               locale === "ru"
                 ? "в большинстве случаев необходимость в оптических средствах отпадает."
@@ -25555,7 +28583,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
         ],
         categories: [
           {
-            header: locale === "ru" ? "LASIK (лазерный кератомилез)" : "Description",
+            header:
+              locale === "ru" ? "LASIK (лазерный кератомилез)" : "Description",
             desc:
               locale === "ru"
                 ? "Операция LASIK — это современная и широко распространенная процедура, при которой с помощью лазера изменяется форма роговицы для коррекции нарушений рефракции: близорукости (миопии), дальнозоркости (гиперметропии) и астигматизма. Хирург точно удаляет микроскопические участки ткани, чтобы улучшить преломление света в глазу, что обеспечивает более четкое и ясное зрение."
@@ -25569,7 +28598,10 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "LASIK is a laser eye surgery that reshapes the cornea to improve how light enters the eye. The surgeon creates a flap on the cornea, uses a laser to reshape it, and then repositions the flap. It starts with the anesthesia of the eye tissue with anesthetic drops. In this way, the patient does not feel anything during the surgery. The improvement in vision begins to give satisfactory results within 3-5 days.",
           },
           {
-            header: locale === "ru" ? "Кому подходит процедура LASIK" : "Who It's For",
+            header:
+              locale === "ru"
+                ? "Кому подходит процедура LASIK"
+                : "Who It's For",
             desc:
               locale === "ru"
                 ? "Взрослым от 18 до 40 лет со стабильными показателями зрения не менее одного года. Пациентам с лёгкими или умеренными нарушениями рефракции и достаточной толщиной роговицы. Противопоказания: прогрессирующие заболевания глаз (например, кератоконус), тяжелые формы нарушения рефракции, аутоиммунные заболевания и другие медицинские ограничения."
@@ -25579,45 +28611,94 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Больно ли делать LASIK?" : "Does LASIK hurt?",
-          answer : locale === "ru" ? "Нет, процедура безболезненная, благодаря обезболивающим каплям. Легкое жжение может возникать после операции, но это временно." : "No, numbing drops are used; mild burning sensation is possibel after the surgery"
+          question:
+            locale === "ru" ? "Больно ли делать LASIK?" : "Does LASIK hurt?",
+          answer:
+            locale === "ru"
+              ? "Нет, процедура безболезненная, благодаря обезболивающим каплям. Легкое жжение может возникать после операции, но это временно."
+              : "No, numbing drops are used; mild burning sensation is possibel after the surgery",
         },
         {
-          question : locale === "ru" ? "Когда я начну видеть ясно?" : "When will I see clearly?",
-          answer : locale === "ru" ? "Улучшение зрения будет заметно уже через 24-48 часов, а полная стабилизация произойдёт в течение нескольких недель." : "Vision improves within 24–48 hours; stabilizes in weeks"
+          question:
+            locale === "ru"
+              ? "Когда я начну видеть ясно?"
+              : "When will I see clearly?",
+          answer:
+            locale === "ru"
+              ? "Улучшение зрения будет заметно уже через 24-48 часов, а полная стабилизация произойдёт в течение нескольких недель."
+              : "Vision improves within 24–48 hours; stabilizes in weeks",
         },
         {
-          question : locale === "ru" ? "Это навсегда?" : "Is it permanent?",
-          answer : locale === "ru" ? "Да, результаты операции долгосрочные, однако с возрастом возможны изменения в зрении." : "Yes, but age-related vision changes may occur later"
+          question: locale === "ru" ? "Это навсегда?" : "Is it permanent?",
+          answer:
+            locale === "ru"
+              ? "Да, результаты операции долгосрочные, однако с возрастом возможны изменения в зрении."
+              : "Yes, but age-related vision changes may occur later",
         },
         {
-          question : locale === "ru" ? "Могу ли я ослепнуть?" : "Can I go blind?",
-          answer : locale === "ru" ? "Риск ослепления крайне низок. Осложнения в процессе лечения — редкость." : "Extremely rare; complications are uncommon"
+          question:
+            locale === "ru" ? "Могу ли я ослепнуть?" : "Can I go blind?",
+          answer:
+            locale === "ru"
+              ? "Риск ослепления крайне низок. Осложнения в процессе лечения — редкость."
+              : "Extremely rare; complications are uncommon",
         },
         {
-          question : locale === "ru" ? "Понадобятся ли мне очки снова?" : "Will I need glasses again?",
-          answer : locale === "ru" ? "Возможно, для чтения, особенно с возрастом (пресбиопия)." : "Possibly for reading as you age (presbyopia)"
+          question:
+            locale === "ru"
+              ? "Понадобятся ли мне очки снова?"
+              : "Will I need glasses again?",
+          answer:
+            locale === "ru"
+              ? "Возможно, для чтения, особенно с возрастом (пресбиопия)."
+              : "Possibly for reading as you age (presbyopia)",
         },
         {
-          question : locale === "ru" ? "Чего мне следует избегать после операции?" : "What should I avoid post-surgery?",
-          answer : locale === "ru" ? "В течение недели избегайте тереть глаза, плавать и находиться в пыльных помещениях." : "Avoid rubbing eyes, swimming, and dusty environments for a week."
+          question:
+            locale === "ru"
+              ? "Чего мне следует избегать после операции?"
+              : "What should I avoid post-surgery?",
+          answer:
+            locale === "ru"
+              ? "В течение недели избегайте тереть глаза, плавать и находиться в пыльных помещениях."
+              : "Avoid rubbing eyes, swimming, and dusty environments for a week.",
         },
         {
-          question : locale === "ru" ? "Как скоро я могу вернуться к работе?" : "How soon can I return to work?",
-          answer : locale === "ru" ? "Обычно можно вернуться к работе через 1-2 дня, в зависимости от вашего восстановления." : "Usually 1–2 days, depending on your recovery."
-        }
+          question:
+            locale === "ru"
+              ? "Как скоро я могу вернуться к работе?"
+              : "How soon can I return to work?",
+          answer:
+            locale === "ru"
+              ? "Обычно можно вернуться к работе через 1-2 дня, в зависимости от вашего восстановления."
+              : "Usually 1–2 days, depending on your recovery.",
+        },
       ],
       posts: [
         locale === "ru" ? "Не трите глаза." : "Do not rub your eyes",
-        locale === "ru" ? "Используйте предписанные глазные капли для предотвращения сухости и инфекции." : "Use prescribed eye drops to prevent dryness and infection",
-        locale === "ru" ? "Избегайте плавания, макияжа и посещения пыльных помещений в течение недели." : "Avoid swimming, makeup, and dusty environments for a week",
-        locale === "ru" ? "Давайте отдых глазам и носите солнцезащитные очки на улице." : "Rest eyes frequently and wear sunglasses outdoors",
-        locale === "ru" ? "Посещайте контрольные приемы для мониторинга заживления." : "Attend follow-up appointments to monitor healing"
+        locale === "ru"
+          ? "Используйте предписанные глазные капли для предотвращения сухости и инфекции."
+          : "Use prescribed eye drops to prevent dryness and infection",
+        locale === "ru"
+          ? "Избегайте плавания, макияжа и посещения пыльных помещений в течение недели."
+          : "Avoid swimming, makeup, and dusty environments for a week",
+        locale === "ru"
+          ? "Давайте отдых глазам и носите солнцезащитные очки на улице."
+          : "Rest eyes frequently and wear sunglasses outdoors",
+        locale === "ru"
+          ? "Посещайте контрольные приемы для мониторинга заживления."
+          : "Attend follow-up appointments to monitor healing",
       ],
       preList: [
-        locale === "ru" ? "Прекратите носить контактные линзы за 1–2 недели до процедуры." : "Stop wearing contact lenses 1–2 weeks before",
-        locale === "ru" ? "Избегайте макияжа для глаз и применения лосьонов за 24 часа до операции." : "Avoid eye makeup and lotions 24 hours before",
-        locale === "ru" ? "Пройдите тщательное обследование глаз и картографирование роговицы." : "Have a thorough eye exam and corneal mapping"
+        locale === "ru"
+          ? "Прекратите носить контактные линзы за 1–2 недели до процедуры."
+          : "Stop wearing contact lenses 1–2 weeks before",
+        locale === "ru"
+          ? "Избегайте макияжа для глаз и применения лосьонов за 24 часа до операции."
+          : "Avoid eye makeup and lotions 24 hours before",
+        locale === "ru"
+          ? "Пройдите тщательное обследование глаз и картографирование роговицы."
+          : "Have a thorough eye exam and corneal mapping",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -25765,7 +28846,10 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       benefits: {
         items: [
           {
-            title: locale === "ru" ? "Четкое зрение на всех расстояниях" : "Clear Vision",
+            title:
+              locale === "ru"
+                ? "Четкое зрение на всех расстояниях"
+                : "Clear Vision",
             desc:
               locale === "ru"
                 ? "вблизи, на среднем и дальнем расстоянии"
@@ -25779,7 +28863,8 @@ Patients looking for a quicker, less invasive alternative to traditional implant
                 : "Reduces need for corrective eyewear and helps with farsightedness",
           },
           {
-            title: locale === "ru" ? "Забота о здоровье глаз" : "Eye Protection",
+            title:
+              locale === "ru" ? "Забота о здоровье глаз" : "Eye Protection",
             desc:
               locale === "ru"
                 ? "помогают предотвратить прогрессирование возрастных заболеваний глаз"
@@ -25788,14 +28873,18 @@ Patients looking for a quicker, less invasive alternative to traditional implant
         ],
         categories: [
           {
-            header: locale === "ru" ? "Что представляет собой «умная линза»" : "Description",
+            header:
+              locale === "ru"
+                ? "Что представляет собой «умная линза»"
+                : "Description",
             desc:
               locale === "ru"
                 ? "«Умная линза» — это интраокулярная линза (ИОЛ), которую имплантируют на место естественного хрусталика. Она применяется после удаления катаракты или для коррекции возрастных изменений зрения. Смарт-линзы обеспечивают фокусировку на разных расстояниях, значительно снижая потребность в очках."
                 : "A smart lens is an intraocular lens that improves vision, often used after cataract surgery or for vision correction. It reduces the need for glasses by supporting both near and distant focus, especially benefiting those with age-related vision loss.",
           },
           {
-            header: locale === "ru" ? "Как проходит процедура?" : "How It Works",
+            header:
+              locale === "ru" ? "Как проходит процедура?" : "How It Works",
             desc:
               locale === "ru"
                 ? "Процедура быстрая и безболезненная, проводится под местной анестезией. Поврежденный хрусталик заменяется на интеллектуальную линзу. Пациент возвращается домой в тот же день с защитной повязкой, а зрение начинает улучшаться почти сразу. Второй глаз обычно оперируют через несколько дней."
@@ -25812,41 +28901,93 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Что такое смарт-линза?" : "What is a smart lens?",
-          answer : locale === "ru" ? "Это усовершенствованная интраокулярная линза, обеспечивающая четкое зрение на всех расстояниях." : "An advanced intraocular lens for clearer vision at all distances"
+          question:
+            locale === "ru"
+              ? "Что такое смарт-линза?"
+              : "What is a smart lens?",
+          answer:
+            locale === "ru"
+              ? "Это усовершенствованная интраокулярная линза, обеспечивающая четкое зрение на всех расстояниях."
+              : "An advanced intraocular lens for clearer vision at all distances",
         },
         {
-          question : locale === "ru" ? "Смарт-линза лучше, чем LASIK?" : "Is it better than LASIK?",
-          answer : locale === "ru" ? "Для пожилых пациентов или людей с катарактой - да, это предпочтительный вариант." : "For older adults or those with cataracts, yes"
+          question:
+            locale === "ru"
+              ? "Смарт-линза лучше, чем LASIK?"
+              : "Is it better than LASIK?",
+          answer:
+            locale === "ru"
+              ? "Для пожилых пациентов или людей с катарактой - да, это предпочтительный вариант."
+              : "For older adults or those with cataracts, yes",
         },
         {
-          question : locale === "ru" ? "Понадобятся ли мне очки после установки смарт-линзы?" : "Will I still need glasses?",
-          answer : locale === "ru" ? "Многие пациенты обходятся без очков, однако для некоторых задач может потребоваться дополнительная коррекция." : "Many don’t, but some might for specific tasks"
+          question:
+            locale === "ru"
+              ? "Понадобятся ли мне очки после установки смарт-линзы?"
+              : "Will I still need glasses?",
+          answer:
+            locale === "ru"
+              ? "Многие пациенты обходятся без очков, однако для некоторых задач может потребоваться дополнительная коррекция."
+              : "Many don’t, but some might for specific tasks",
         },
         {
-          question : locale === "ru" ? "Я почувствую боль во время процедуры?" : "Is it painful?",
-          answer : locale === "ru" ? "Нет, процедура проводится под местной анестезией и проходит безболезненно." : "No, local anesthesia is used"
+          question:
+            locale === "ru"
+              ? "Я почувствую боль во время процедуры?"
+              : "Is it painful?",
+          answer:
+            locale === "ru"
+              ? "Нет, процедура проводится под местной анестезией и проходит безболезненно."
+              : "No, local anesthesia is used",
         },
         {
-          question : locale === "ru" ? "Сколько времени занимает восстановление?" : "How long does recovery take?",
-          answer : locale === "ru" ? "Первоначальное восстановление занимает несколько дней, а полные результаты проявляются в течение нескольких недель." : "Initial recovery in days; full results in weeks"
+          question:
+            locale === "ru"
+              ? "Сколько времени занимает восстановление?"
+              : "How long does recovery take?",
+          answer:
+            locale === "ru"
+              ? "Первоначальное восстановление занимает несколько дней, а полные результаты проявляются в течение нескольких недель."
+              : "Initial recovery in days; full results in weeks",
         },
         {
-          question : locale === "ru" ? "Улучшается ли зрение сразу после операции?" : "Can I expect vision improvement right after the surgery?",
-          answer : locale === "ru" ? "Первые улучшения могут быть заметны сразу, однако для полной стабилизации зрения потребуется несколько недель." : "Vision improvement can be noticeable right away, but full stabilization of vision will occur over several weeks."
-        }
+          question:
+            locale === "ru"
+              ? "Улучшается ли зрение сразу после операции?"
+              : "Can I expect vision improvement right after the surgery?",
+          answer:
+            locale === "ru"
+              ? "Первые улучшения могут быть заметны сразу, однако для полной стабилизации зрения потребуется несколько недель."
+              : "Vision improvement can be noticeable right away, but full stabilization of vision will occur over several weeks.",
+        },
       ],
       posts: [
-        locale === "ru" ? "Используйте назначенные глазные капли для профилактики инфекции и воспаления." : "Use prescribed drops to prevent infection and inflammation",
-        locale === "ru" ? "Носите защитный глазной щиток во время сна в течение первой недели после операции." : "Wear eye shield while sleeping for the first week",
-        locale === "ru" ? "Избегайте трения и давления на глаз." : "Avoid rubbing or applying pressure to the eye",
-        locale === "ru" ? "Воздержитесь от плавания и использования макияжа для глаз в течение 7 дней." : "No swimming or eye makeup for 7 days",
-        locale === "ru" ? "Строго соблюдайте все назначенные контрольные визиты к врачу." : "Follow all follow-up appointments"
+        locale === "ru"
+          ? "Используйте назначенные глазные капли для профилактики инфекции и воспаления."
+          : "Use prescribed drops to prevent infection and inflammation",
+        locale === "ru"
+          ? "Носите защитный глазной щиток во время сна в течение первой недели после операции."
+          : "Wear eye shield while sleeping for the first week",
+        locale === "ru"
+          ? "Избегайте трения и давления на глаз."
+          : "Avoid rubbing or applying pressure to the eye",
+        locale === "ru"
+          ? "Воздержитесь от плавания и использования макияжа для глаз в течение 7 дней."
+          : "No swimming or eye makeup for 7 days",
+        locale === "ru"
+          ? "Строго соблюдайте все назначенные контрольные визиты к врачу."
+          : "Follow all follow-up appointments",
       ],
       preList: [
-        locale === "ru" ? "Пройти комплексное обследование глаз и подбор контактных линз." : "Comprehensive eye exam and lens selection",
-        locale === "ru" ? "При необходимости (по рекомендации врача) прекратить прием препаратов, разжижающих кровь." : "Stop blood thinners if advised",
-        locale === "ru" ? "В день операции избегать использования макияжа и кремов в области глаз." : "Avoid makeup and lotion near eyes day of surgery"
+        locale === "ru"
+          ? "Пройти комплексное обследование глаз и подбор контактных линз."
+          : "Comprehensive eye exam and lens selection",
+        locale === "ru"
+          ? "При необходимости (по рекомендации врача) прекратить прием препаратов, разжижающих кровь."
+          : "Stop blood thinners if advised",
+        locale === "ru"
+          ? "В день операции избегать использования макияжа и кремов в области глаз."
+          : "Avoid makeup and lotion near eyes day of surgery",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
@@ -26260,7 +29401,10 @@ Patients looking for a quicker, less invasive alternative to traditional implant
           },
           {
             header: locale === "ru" ? "" : "How It Works",
-            desc: locale === "ru" ? "" : "The Frozen Embryo Transfer (FET) process begins with embryo freezing, where extra embryos from IVF are preserved through vitrification to maintain their quality for future use. When ready for transfer, the embryos are carefully thawed and evaluated for viability. Meanwhile, the uterus is prepared with hormone therapy involving estrogen and progesterone to create an optimal environment for implantation. The healthiest embryo or embryos are then transferred into the uterus using a thin catheter. About two weeks later, a blood test is performed to monitor hCG levels and confirm pregnancy.",
+            desc:
+              locale === "ru"
+                ? ""
+                : "The Frozen Embryo Transfer (FET) process begins with embryo freezing, where extra embryos from IVF are preserved through vitrification to maintain their quality for future use. When ready for transfer, the embryos are carefully thawed and evaluated for viability. Meanwhile, the uterus is prepared with hormone therapy involving estrogen and progesterone to create an optimal environment for implantation. The healthiest embryo or embryos are then transferred into the uterus using a thin catheter. About two weeks later, a blood test is performed to monitor hCG levels and confirm pregnancy.",
           },
           {
             header: locale === "ru" ? "Как это работает" : "For Whom",
@@ -26273,41 +29417,86 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       faqs: [
         {
-          question : locale === "ru" ? "Is FET painful?" : "Is FET painful?",
-          answer : locale === "ru" ? "No, it’s a quick, painless procedure similar to a Pap smear." : "No, it’s a quick, painless procedure similar to a Pap smear"
+          question: locale === "ru" ? "Is FET painful?" : "Is FET painful?",
+          answer:
+            locale === "ru"
+              ? "No, it’s a quick, painless procedure similar to a Pap smear."
+              : "No, it’s a quick, painless procedure similar to a Pap smear",
         },
         {
-          question : locale === "ru" ? "How long until I know if it worked?" : "How long until I know if it worked?",
-          answer : locale === "ru" ? "About 10–14 days after transfer via blood pregnancy test." : "About 10–14 days after transfer via blood pregnancy test"
+          question:
+            locale === "ru"
+              ? "How long until I know if it worked?"
+              : "How long until I know if it worked?",
+          answer:
+            locale === "ru"
+              ? "About 10–14 days after transfer via blood pregnancy test."
+              : "About 10–14 days after transfer via blood pregnancy test",
         },
         {
-          question : locale === "ru" ? "Can I move around normally after FET?" : "Can I move around normally after FET?",
-          answer : locale === "ru" ? "Yes, light walking and normal daily activities are fine after the first day." : "Yes, light walking and normal daily activities are fine after the first day"
+          question:
+            locale === "ru"
+              ? "Can I move around normally after FET?"
+              : "Can I move around normally after FET?",
+          answer:
+            locale === "ru"
+              ? "Yes, light walking and normal daily activities are fine after the first day."
+              : "Yes, light walking and normal daily activities are fine after the first day",
         },
         {
-          question : locale === "ru" ? "How many embryos are usually transferred?" : "How many embryos are usually transferred?",
-          answer : locale === "ru" ? "Usually one, but your doctor may recommend more based on your situation." : "Usually one, but your doctor may recommend more based on your situation"
+          question:
+            locale === "ru"
+              ? "How many embryos are usually transferred?"
+              : "How many embryos are usually transferred?",
+          answer:
+            locale === "ru"
+              ? "Usually one, but your doctor may recommend more based on your situation."
+              : "Usually one, but your doctor may recommend more based on your situation",
         },
         {
-          question : locale === "ru" ? "Does frozen embryo transfer success differ from fresh?" : "Does frozen embryo transfer success differ from fresh?",
-          answer : locale === "ru" ? "No — success rates for frozen transfers are often as good or better than fresh." : "No — success rates for frozen transfers are often as good or better than fresh"
-        }
+          question:
+            locale === "ru"
+              ? "Does frozen embryo transfer success differ from fresh?"
+              : "Does frozen embryo transfer success differ from fresh?",
+          answer:
+            locale === "ru"
+              ? "No — success rates for frozen transfers are often as good or better than fresh."
+              : "No — success rates for frozen transfers are often as good or better than fresh",
+        },
       ],
       posts: [
-        locale === "ru" ? "" : "Rest for the day after the embryo transfer", 
-        locale === "ru" ? "" : "Continue hormone medications exactly as prescribed", 
-        locale === "ru" ? "" : "Avoid heavy lifting, strenuous exercise, or running for about 1–2 weeks", 
-        locale === "ru" ? "" : "No sexual intercourse until after your pregnancy test", 
-        locale === "ru" ? "" : "Eat healthy foods and stay hydrated", 
-        locale === "ru" ? "" : "Attend your scheduled pregnancy blood test (usually 10–14 days later)", 
+        locale === "ru" ? "" : "Rest for the day after the embryo transfer",
+        locale === "ru"
+          ? ""
+          : "Continue hormone medications exactly as prescribed",
+        locale === "ru"
+          ? ""
+          : "Avoid heavy lifting, strenuous exercise, or running for about 1–2 weeks",
+        locale === "ru"
+          ? ""
+          : "No sexual intercourse until after your pregnancy test",
+        locale === "ru" ? "" : "Eat healthy foods and stay hydrated",
+        locale === "ru"
+          ? ""
+          : "Attend your scheduled pregnancy blood test (usually 10–14 days later)",
       ],
       preList: [
-        locale === "ru" ? "" : "Follow your hormone schedule exactly (estrogen, progesterone, etc.)", 
-        locale === "ru" ? "" : "Attend all ultrasound and blood test appointments on time", 
-        locale === "ru" ? "" : "Avoid smoking, alcohol, and caffeine during preparation", 
-        locale === "ru" ? "" : "Stay hydrated and eat a balanced, healthy diet", 
-        locale === "ru" ? "" : "Limit stress — keep a calm environment before transfer day", 
-        locale === "ru" ? "" : "Inform your doctor about any recent illnesses or medications", 
+        locale === "ru"
+          ? ""
+          : "Follow your hormone schedule exactly (estrogen, progesterone, etc.)",
+        locale === "ru"
+          ? ""
+          : "Attend all ultrasound and blood test appointments on time",
+        locale === "ru"
+          ? ""
+          : "Avoid smoking, alcohol, and caffeine during preparation",
+        locale === "ru" ? "" : "Stay hydrated and eat a balanced, healthy diet",
+        locale === "ru"
+          ? ""
+          : "Limit stress — keep a calm environment before transfer day",
+        locale === "ru"
+          ? ""
+          : "Inform your doctor about any recent illnesses or medications",
       ],
       conclusion: {
         title: locale === "ru" ? "Заключение" : "Conclusion",
