@@ -193,7 +193,7 @@ const Navbar = () => {
             <div className="hidden s1280:block">
               <ChangeLanguage
                 trigStyle="s1280:w-[56px] s1600:w-[70px] h-[35px] s1600:h-[44px]"
-                BodyWidth="w-[56px]"
+                BodyWidth="w-[70px]"
               />
             </div>
             <div>
