@@ -56,81 +56,78 @@ const Home = async ({
   const { locale } = await params;
   const feedBackOne: FeedbackCardType[] = [
     {
-      fullName: locale === "ru" ? "" : "Mahour afshar",
+      fullName: locale === "ru" ? "Махур Афшар" : "Mahour afshar",
       rateCount: 5,
       desc:
         locale === "ru"
-          ? ""
+          ? "Я очень благодарна этой замечательной команде. Хотя мы подробно обсудили все этапы операции заранее, я всё равно нервничала. Однако их внимательность ко всему сразу развеяла мои сомнения и успокоила меня."
           : "I'm really really grateful to this amazing team. I must admit that although we'd gone through every stage of the operation in a detailed manner beforehand, I was still nervous. However, they changed my mind by how meticulous they were about everything  and alleviated the situation the moment we met.",
     },
     {
-      fullName: locale === "ru" ? "" : "Sheena ahangar",
+      fullName: locale === "ru" ? "Шина Ахангар" : "Sheena ahangar",
       rateCount: 5,
       desc:
         locale === "ru"
-          ? ""
+          ? "Я приехала в этот центр из Италии и воспользовалась услугами по уходу за волосами. Команда была очень профессиональной и дружелюбной, я осталась очень довольна. Спасибо Azpo Health 🙏"
           : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏",
     },
     {
-      fullName: locale === "ru" ? "" : "Mozhgaan panahi",
+      fullName: locale === "ru" ? "Можган Панахи" : "Mozhgaan panahi",
       rateCount: 5,
       desc:
         locale === "ru"
-          ? ""
+          ? "Один из лучших опытов в медицинском туризме в Турции, спасибо профессиональному персоналу. Рекомендую всем."
           : "One of the best experiences I’ve ever had in health tourism in turkey, thanks to the professional staff .Recommend it to everyone",
     },
     {
-      fullName: locale === "ru" ? "" : "Saina Tayebi",
+      fullName: locale === "ru" ? "Сайна Таеби" : "Saina Tayebi",
       rateCount: 5,
       desc:
         locale === "ru"
-          ? ""
+          ? "Очень дружелюбные координаторы и хорошие цены. Очень рекомендую."
           : "Very friendly coordinators and good prices they have. Highly recommended.",
     },
     {
-      fullName: locale === "ru" ? "" : "Александр Степин",
+      fullName: locale === "ru" ? "Александр Степин" : "Александр Степин",
       rateCount: 5,
       desc:
         locale === "ru"
-          ? ""
+          ? "Замечательная клиника с внимательными и чуткими специалистами. Пересадку я делал полгода назад, и уже вижу результат. Большое спасибо за вашу работу!"
           : "A wonderful clinic with attentive and sensitive specialists. I had a transplant six months ago, and I can already see the results. Thank you very much for your work!",
     },
   ];
   const feedBackTwo: FeedbackCardType[] = [
     {
-      fullName: locale === "ru" ? "" : "Irina Kulagina",
+      fullName: locale === "ru" ? "Ирина Кулагина" : "Irina Kulagina",
       rateCount: 5,
       desc:
         locale === "ru"
-          ? ""
+          ? "Профессионалы своего дела. Работают только с проверенными клиниками и врачами."
           : "Professionals in their field. They work only with trusted clinics and doctors.",
     },
     {
-      fullName: locale === "ru" ? "" : "Mehmet Nastrullah",
+      fullName: locale === "ru" ? "Мехмет Наструллах" : "Mehmet Nastrullah",
       rateCount: 5,
       desc:
         locale === "ru"
-          ? ""
+          ? "Я приехал в этот центр из Италии и воспользовался услугами по уходу за волосами. Команда была очень профессиональной и дружелюбной, я остался очень доволен. Спасибо Azpo Health 🙏"
           : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏",
     },
-    
-    // {
-    //   fullName: locale === "ru" ? "" : "Mozhgaan panahi",
-    //   rateCount: 5,
-    //   desc:
-    //     locale === "ru"
-    //       ? ""
-    //       : "I contacted them for a hair transplant. They are very attentive both before and after the treatment.",
-    // },
     {
-      fullName: locale === "ru" ? "" : "Aleysa Mahmutçepoğlu",
+      fullName: locale === "ru" ? "Алейса Махмутчепоглу" : "Aleysa Mahmutçepoğlu",
       rateCount: 5,
-      desc: locale === "ru" ? "" : "A perfect clinic, amazing in every way ❤️",
+      desc:
+        locale === "ru"
+          ? "Идеальная клиника, потрясающая во всём ❤️"
+          : "A perfect clinic, amazing in every way ❤️",
     },
     {
-      fullName: locale === "ru" ? "" : "Erhan Günal",
+      fullName: locale === "ru" ? "Эрхан Гюнал" : "Erhan Günal",
       rateCount: 5,
-      desc: locale === "ru" ? "" : "Thank you for your attention and care ❤️",
+      desc:
+        locale === "ru"
+          ? "Спасибо за вашу заботу и внимание ❤️"
+          : "Thank you for your attention and care ❤️",
     },
   ];
   const circleList: {

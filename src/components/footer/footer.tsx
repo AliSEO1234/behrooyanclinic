@@ -123,7 +123,9 @@ const Footer = () => {
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Hair transplant</span>
+                    <span>
+                      {locale === "ru" ? "Пересадка волос" : "Hair transplant"}
+                    </span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7 s1280:w-[200px] s1512:w-[140px] s1728:w-[190px] s1920:w-[230px]">
@@ -144,7 +146,9 @@ const Footer = () => {
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>About Us</span>
+                    <span>
+                      {locale === "ru" ? "О нас" : "About Us"}
+                    </span>
                   </Link>
                 </td>
               </tr>
@@ -157,7 +161,10 @@ const Footer = () => {
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Body contouring</span>
+                    <span>
+
+                      {locale === "ru" ? "Контурная пластика тела" : "Body contouring"}
+                    </span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
@@ -179,7 +186,9 @@ const Footer = () => {
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Contact Us</span>
+                    <span>
+                      {locale === "ru" ? "Свяжитесь с нами" : "Contact Us"}
+                    </span>
                   </Link>
                 </td>
               </tr>
@@ -192,7 +201,9 @@ const Footer = () => {
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Implant treatment</span>
+                    <span>
+                      {locale === "ru" ? "Имплантация зубов" : "Implant treatment"}
+                    </span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
@@ -226,7 +237,9 @@ const Footer = () => {
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Male sexual</span>
+                    <span className="line-clamp-1">
+                      {locale === "ru" ? "Терапия мужского сексуального здоровья" : "Male sexual therapy"}
+                    </span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">
@@ -262,7 +275,9 @@ const Footer = () => {
                     <span>
                       <MdArrowForwardIos className="s1280:size-4" />
                     </span>
-                    <span>Cataract treatment</span>
+                    <span>
+                      {locale === "ru" ? "Лечение катаракты" : "Cataract treatment"}
+                    </span>
                   </Link>
                 </td>
                 <td className="py-3 s1512:pb-4 s1600:pb-8 s1728:pb-7">

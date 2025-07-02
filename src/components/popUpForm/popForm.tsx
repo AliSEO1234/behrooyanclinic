@@ -14,9 +14,11 @@ import { PopFormType } from "@/types/forms";
 import { toast } from "react-toastify";
 import { usePathname } from "next/navigation";
 import { sendFormAction } from "@/actions/formAction";
+import { useLocale } from "next-intl";
 // import axios from "axios";
 const PopForm = () => {
   const pathname = usePathname();
+  const locale = useLocale();
   const { handleSubmit, register, setValue, watch, setError, reset } =
     useForm<PopFormType>();
   const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
@@ -54,19 +56,20 @@ const PopForm = () => {
   // }, [setValue]);
   const [loading, setLoading] = useState<boolean>(false);
   const onSubmit: SubmitHandler<PopFormType> = async ({
-    email,
-    full_name,
-    phone,
-    treatment,
-    // token,
-  }) => {
+                                                        email,
+                                                        full_name,
+                                                        phone,
+                                                        treatment,
+                                                        // token,
+                                                      }) => {
     // if(!token) return
     setLoading(true);
     if (isNaN(+phone)) {
       setError("phone", { type: "validate", message: "The number is wrong." });
       setLoading(false);
       return;
-    } else if (!selectedOption) {
+    }
+    else if (!selectedOption) {
       setError("treatment", {
         type: "validate",
         message: "Select service type",
@@ -87,7 +90,8 @@ const PopForm = () => {
         setPopUpForm(false);
       }, 2000);
       toast.success("Request sent successfully.");
-    } else {
+    }
+    else {
       setLoading(false);
       toast.error("A problem occurred. Please try again later.");
     }
@@ -101,53 +105,58 @@ const PopForm = () => {
         popUpForm ? "animate-popup-form" : "hidden"
       }`}
     >
-      <div className="h-[80px] s1512:h-[90px] bg-gradient-to-r from-[#82DFB5] to-[#0CA5A5] rounded-t-[40px] relative z-[2] flex-cen">
+      <div
+        className="h-[80px] s1512:h-[90px] bg-gradient-to-r from-[#82DFB5] to-[#0CA5A5] rounded-t-[40px] relative z-[2] flex-cen">
         {/* close */}
         <button
           onClick={() => setPopUpForm(false)}
           className="w-7 h-7 s1280:w-5 s1280:h-5 s1728:w-7 s1728:h-7 flex-cen text-white absolute -top-8 right-0 s1280:top-4 s1280:right-4 outline-none rounded-full  bg-[#FFFFFF4D]"
         >
-          <IoClose className="size-4 s1728:size-6" />
+          <IoClose className="size-4 s1728:size-6"/>
         </button>
         {/* char */}
-        <div className="w-[144px] h-[317px] s1280:w-[200px] s1280:h-[438px] s1728:w-[230px] s1728:[564px] absolute -top-[80px] s1280:-top-36 -left-10 s1280:-left-10 s1728:left-0 z-[1]">
-          <ImgFetcher src={girlChar} />
+        <div
+          className="w-[144px] h-[317px] s1280:w-[200px] s1280:h-[438px] s1728:w-[230px] s1728:[564px] absolute -top-[80px] s1280:-top-36 -left-10 s1280:-left-10 s1728:left-0 z-[1]">
+          <ImgFetcher src={girlChar}/>
         </div>
         {/* phone */}
         <div className="w-10 h-10 s1280:w-[40px] s1280:h-[40px] absolute top-7 left-36">
-          <ImgFetcher src={phone} />
+          <ImgFetcher src={phone}/>
         </div>
         <div className="z-[1] w-4 h-4 s1280:w-[29px] s1280:h-[29px] absolute top-2 left-52">
-          <ImgFetcher src={phone} />
+          <ImgFetcher src={phone}/>
         </div>
-        <div className="z-[1] w-14 h-14 s1280:w-[50px] s1280:h-[50px] absolute top-5 left-20 s1280:-bottom-5 s1280:right-40 opacity-50 rotate-180">
-          <ImgFetcher src={phone} />
+        <div
+          className="z-[1] w-14 h-14 s1280:w-[50px] s1280:h-[50px] absolute top-5 left-20 s1280:-bottom-5 s1280:right-40 opacity-50 rotate-180">
+          <ImgFetcher src={phone}/>
         </div>
         <div className="z-[1] w-10 h-10 s1280:w-[50px] s1280:h-[50px] absolute -bottom-5 right-10 opacity-80">
-          <ImgFetcher src={phone} />
+          <ImgFetcher src={phone}/>
         </div>
-        <div className=" ms-28 s1280:ms-28 z-[2]">
+        <div className=" ms-28 s1280:ms-40 z-[2]">
           <p className="font-semibold s1280:text-[18px] s1728:text-[20px] text-white">
-            Fill out the form to receive advice
+            {locale === "ru" ? "Заполните форму, чтобы получить консультацию" : "Fill out the form to receive advice"}
           </p>
         </div>
       </div>
-      <div className="bg-white h-full rounded-b-[40px] relative z-[3] py-3 px-5 s1280:py-5 s1280:px-8 s1512:px-12 s1728:px-5 shadow-pop">
-        <div className="flex flex-col items-center justify-start s1280:flex-row s1280:flex-wrap s1280:items-start s1280:justify-between gap-y-3 s1280:gap-y-5 mb-5">
+      <div
+        className="bg-white h-full rounded-b-[40px] relative z-[3] py-3 px-5 s1280:py-5 s1280:px-8 s1512:px-12 s1728:px-5 shadow-pop">
+        <div
+          className="flex flex-col items-center justify-start s1280:flex-row s1280:flex-wrap s1280:items-start s1280:justify-between gap-y-3 s1280:gap-y-5 mb-5">
           <div className="w-full s1280:w-fit">
             <label className="block" htmlFor="residen">
-              Name
+              {locale === "ru" ? "Имя" : "Name"}
             </label>
             <input
               {...register("full_name", { required: true })}
               className="placeholder:text-[#898989] px-2"
-              placeholder="Name"
+              placeholder={locale === "ru" ? "Имя" : "Name"}
               type="text"
             />
           </div>
           <div className="w-full s1280:w-fit">
             <label className="block" htmlFor="residen">
-              Phone Number
+              {locale === "ru" ? "Номер телефона" : "Phone Number"}
             </label>
             <div className="relative">
               <input
@@ -155,7 +164,7 @@ const PopForm = () => {
                 onChange={handlePhoneChange}
                 defaultValue={phoneValue}
                 className="placeholder:text-[#898989] ps-20 pe-2 outline-none w-full h-[45px] s1280:w-[219px] s1512:w-[250px] s1280:h-[38px] s1728:h-[48px] s1728:w-[320px] border-[1px] border-[#9996A0] placeholder:text-[14px] rounded-[40px] text-[14px] s1280:placeholder:text-[14px] s1728:text-[16px] s1728:placeholder:text-[16px]"
-                placeholder="Phone Number"
+                placeholder={locale === "ru" ? "Номер телефона" : "Phone Number"}
                 type="text"
               />
               <CountryCode
@@ -168,10 +177,10 @@ const PopForm = () => {
           </div>
           <div className="w-full s1280:w-fit">
             <label className="block" htmlFor="residen">
-              Treatment
+              {locale === "ru" ? "Лечение" : "Treatment"}
             </label>
             <ComboBox
-              trigger={selectedOption ? selectedOption.label : "Treatment"}
+              trigger={selectedOption ? selectedOption.label : locale === "ru" ? "Лечение" : "Treatment"}
               className="flex-bet text-[14px] s1728:text-[16px] w-full s1280:w-[219px] s1512:w-[250px] s1728:h-[48px] s1728:w-[320px] outline-none h-[45px] s1280:h-[38px] s1600:h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB]"
               containertStyle="s1280:w-[219px] s1512:w-[250px] s1728:w-[320px]"
               options={options}
@@ -181,13 +190,13 @@ const PopForm = () => {
           </div>
           <div className="w-full s1280:w-fit">
             <label className="block" htmlFor="email">
-              Email
+              {locale === "ru" ? "Электронная почта" : "Email"}
             </label>
             <input
               {...register("email", { required: true })}
               id="email"
               className="placeholder:text-[#898989] px-2"
-              placeholder="Email"
+              placeholder={locale === "ru" ? "Электронная почта" : "Email"}
               type="text"
             />
           </div>
@@ -199,7 +208,11 @@ const PopForm = () => {
             type="submit"
             className="bg-[#0CA5A5] rounded-[40px] w-full h-[45px] s1280:w-[163px] s1280:h-[38px] s1728:w-[178px] s1728:h-[45px] flex-cen text-white"
           >
-            {loading ? "Sending..." : "Send Message"}
+            {
+              loading ?
+                locale === "ru" ? "Отправляется..." : "Sending..." :
+                locale === "ru" ? "отправить сообщение" : "Send Message"
+            }
           </button>
         </div>
       </div>
