@@ -23,8 +23,8 @@ jobs:
             cd /root/azpo-health/
             git reset --hard
             git clean -fd
-            git pull
+            git pull origin master
             source ~/.nvm/nvm.sh
             npm install
             npm run build
-            pm2 restart 2
+            pm2 restart 3
