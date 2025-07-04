@@ -1,19 +1,26 @@
 "use client";
-import dynamic from "next/dynamic";
-// import ReactPlayer from "react-player";
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+import { useEffect, useState } from "react";
+
 const VideoPlayerCom = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
-    <div className="video-header">
-        <ReactPlayer
-          url={`/videos/videohealth1.mp4`}
-          playing
-          muted
-          loop
-          width="100%"
-          height="100%"
-        />
+    <div className={"video-header"}>
+      {
+        isClient &&
+        <video autoPlay muted playsInline preload={"none"} loop width={"100%"} height={"100%"}
+               poster={"/videos/video-health-cover.jpg"}>
+          <source src={"/videos/videohealth1.mp4"} type={"video/mp4"}/>
+          <source src={"/videos/videohealth1.ogv"} type={"video/ogg"}/>
+          <source src={"/videos/videohealth1.webm"} type={"video/webm"}/>
+        </video>
+      }
     </div>
   );
 };
+
 export default VideoPlayerCom;
