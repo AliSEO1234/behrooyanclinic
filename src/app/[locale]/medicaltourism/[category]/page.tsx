@@ -1,4 +1,3 @@
-// import PrevNextBtn from "@/features/treatment/prevNextTreat/prevNextBtn";
 import borderTreat from "@/assets/images/treatment/bordertreat.png";
 import eye from "@/assets/images/treatment/eye.png";
 import bgCate from "@/assets/images/treatment/bg-category.svg";
@@ -12,12 +11,11 @@ import SubContent from "@/components/shortLongDesc";
 import { Metadata } from "next";
 import { titleCategorySeoHandler } from "@/staticData/seoDataList";
 import { headers } from "next/headers";
-type PropsPageType = {
-  params: Promise<{ category: string; locale: string }>;
-};
-type Props = {
-  params: Promise<{ category: string; locale: string }>;
-};
+import { FC } from "react";
+
+interface Props {
+  params: Promise<{ category: string; locale: string; }>;
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category, locale } = await params;
@@ -36,14 +34,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://${host}/${locale}/medicaltourism/${findCategory?.path}`,
     },
     robots: {
-      index: locale === "en" ? true : false,
-      follow: locale === "en" ? true : false,
+      index: locale === "en",
+      follow: locale === "en",
     },
   };
 }
-const Page = async ({ params }: PropsPageType) => {
+
+const Page: FC<Readonly<Props>> = async ({ params }) => {
   const { category, locale } = await params;
   const fetchData = categoryDataHandler(category, locale);
+
   return (
     <div className="bg-[#FCFCFC]">
       <div className="grid grid-cols-12 gap-y-5 s1280:gap-y-0 mt-16 s1512:mt-20 ps-[10px] s430:ps-5 pt-10 s1280:ps-[71px] s1512:ps-[79px] s1600:ps-[85px] s1728:ps-[100px] s1920:ps-[131px] rounded-b-[40px] shadow-[0px_19px_30px_-25px_#0000001C] overflow-hidden mb-10 s1280:mb-20 pb-5 s1280:pb-0 s1280:h-[520px] s1512:h-[620px] s1728:h-[750px]">
@@ -134,4 +134,5 @@ const Page = async ({ params }: PropsPageType) => {
     </div>
   );
 };
+
 export default Page;
