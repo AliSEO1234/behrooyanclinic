@@ -12,7 +12,7 @@ const VideoPlayerCom = () => {
     <div className={"video-header"}>
       {
         isClient &&
-        <video autoPlay muted playsInline preload={"none"} loop width={"100%"} height={"100%"}
+        <video autoPlay muted playsInline preload={"auto"} loop width={"100%"} height={"100%"}
                poster={"/videos/video-health-cover.jpg"}>
           <source src={"/videos/videohealth1.mp4"} type={"video/mp4"}/>
           <source src={"/videos/videohealth1.ogv"} type={"video/ogg"}/>
