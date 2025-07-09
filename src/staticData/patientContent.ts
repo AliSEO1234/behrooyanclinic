@@ -4,6 +4,7 @@ import dist1icon from "@/assets/images/distinctive/icon1.svg";
 // import dist4icon from "@/assets/images/distinctive/icon4.svg";
 import { StaticImageData } from "next/image";
 export const handlePatient = (locale: string) => {
+  const isRu = locale === "ru"
   const patientContents: {
     service: string;
     serivceKey: string;
@@ -13,7 +14,15 @@ export const handlePatient = (locale: string) => {
     serviceIcon: StaticImageData;
   }[] = [
     {
-      service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
+      service: isRu ? "Стоматологическое лечение" : "Dental Treatments",
+      serivceKey: "dental-treatments",
+      serviceIcon: dist1icon,
+      header: "Jasminka",
+      desc: "All-on-4 dental implant",
+      video: isRu ? "https://youtu.be/pebPJAQD4xk?si=92H5tai32u-MMtDJ" : "https://youtu.be/Y-X7bSZzzu0?si=mYPor7A99_PklD1K",
+    },
+    {
+      service: isRu ? "Эстетическая медицина" : "Aesthetics",
       serivceKey: "aesthetic",
       serviceIcon: dist1icon,
       header: "Maliba",
@@ -21,7 +30,7 @@ export const handlePatient = (locale: string) => {
       video: "https://youtu.be/gsQ849f0x-I?si=sQ3nz3PbXQ7O3zFw",
     },
     {
-      service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
+      service: isRu ? "Эстетическая медицина" : "Aesthetics",
       serivceKey: "aesthetic",
       serviceIcon: dist1icon,
       header: "Timur's",
@@ -29,7 +38,7 @@ export const handlePatient = (locale: string) => {
       video: "https://www.youtube.com/shorts/CUzIi1Yyikg",
     },
     {
-      service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
+      service: isRu ? "Эстетическая медицина" : "Aesthetics",
       serivceKey: "aesthetic",
       serviceIcon: dist1icon,
       header: "Alexander's",
@@ -37,7 +46,7 @@ export const handlePatient = (locale: string) => {
       video: "https://www.youtube.com/shorts/gvc__8i32cI",
     },
     {
-      service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
+      service: isRu ? "Эстетическая медицина" : "Aesthetics",
       serivceKey: "aesthetic",
       serviceIcon: dist1icon,
       header: "Vadim's",
@@ -46,7 +55,7 @@ export const handlePatient = (locale: string) => {
     },
 
     {
-      service: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
+      service: isRu ? "Эстетическая медицина" : "Aesthetics",
       serivceKey: "aesthetic",
       serviceIcon: dist1icon,
       header: "Ludmila's",

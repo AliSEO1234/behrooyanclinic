@@ -101,7 +101,7 @@ const PopForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       onClick={(e) => e.stopPropagation()}
-      className={`z-[5] w-[326px] s390:w-[358px] s1280:w-[526px] s1280:h-[260px] s1512:w-[621px] s1728:w-[716px] s1512:h-[250px] s1728:h-[290px] popUpform ${
+      className={`z-[6] w-[326px] s390:w-[358px] s1280:w-[526px] s1280:h-[260px] s1512:w-[621px] s1728:w-[716px] s1512:h-[250px] s1728:h-[290px] popUpform ${
         popUpForm ? "animate-popup-form z-4" : "hidden"
       }`}
     >

@@ -11,8 +11,17 @@ import {
 } from "../ui/dropdown-menu";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { countries } from "@/staticData/countryCodes";
+import { useLocale } from "next-intl";
 
-const CountryCode = ({ setCodes, codes, className ,countriesDrop ,setCountriesDrop }: CountryCodeType) => {
+const CountryCode = ({
+  setCodes,
+  codes,
+  className,
+  countriesDrop,
+  setCountriesDrop,
+}: CountryCodeType) => {
+  const locale = useLocale();
+  const isRu = locale === "ru";
   const [countryList, setCountryList] =
     useState<CountrycodeItemType[]>(countries);
   const allCountries: CountrycodeItemType[] = countries;
@@ -42,21 +51,21 @@ const CountryCode = ({ setCodes, codes, className ,countriesDrop ,setCountriesDr
           className ? className : "2s1280:text-[14] w-16"
         }`}
       >
-        <span>{codes ? codes.key : "Code"}</span>
+        <span>{codes ? codes.key : isRu ? "Код" : "Code"}</span>
         <span>
           <MdKeyboardArrowDown className="size-5 data-[state=open]:rotate-180" />
         </span>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-white rounded-[20px] h-[300px] w-[250px] overflow-y-scroll border shadow my-3">
         <DropdownMenuLabel className="text-[#898989]">
-          Countries Code
+          {isRu ? "Код страны" : "Countries Code"}
         </DropdownMenuLabel>
         <div className="px-2 mb-3">
           <input
             onChange={handleFilterCountries}
             type="text"
             className="outline-none w-full s1280:h-[38px] rounded-[40px] font-medium s1280:text-[14px] px-3 placeholder:text-[#898989] s1280:placeholder:text-[14] bg-white border focus:border-[#00979A]"
-            placeholder="Search"
+            placeholder={isRu ? "Поиск" : "Search"}
           />
         </div>
         <DropdownMenuSeparator />

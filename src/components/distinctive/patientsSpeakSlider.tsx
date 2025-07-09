@@ -29,10 +29,10 @@ const PatientsSpeakSlider = () => {
   };
   return (
     <div className="relative z-[4] overflow-hidden rounded-[20px] s1280:rounded-[40px]">
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 z-[5] bg-[#00979A]/10 backdrop-blur-[10px] shadow-[0px_5px_50px_#00979A] h-full hidden md:flex-cen px-2">
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 z-[5] h-full hidden md:flex-cen px-2">
         <button
           onClick={scrollLeft}
-          className="hidden 2xl:flex-cen anm w-10 h-10 rounded-full bg-[#00979A] text-white hover:text-[#00979A] hover:bg-white"
+          className="hidden 2xl:flex-cen anm w-10 h-10 rounded-full bg-[#fff] text-[#00979A] hover:text-[#fff] hover:bg-[#00979A] active:scale-75"
         >
           <IoIosArrowBack className="size-6" />
         </button>
@@ -57,10 +57,10 @@ const PatientsSpeakSlider = () => {
           }
         )}
       </div>
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 z-[5] bg-[#00979A]/10 backdrop-blur-[10px] shadow-[0px_5px_50px_#00979A] h-full hidden md:flex-cen px-2">
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 z-[5] h-full hidden md:flex-cen px-2">
         <button
           onClick={scrollRight}
-          className="hidden 2xl:flex-cen anm w-10 h-10 rounded-full bg-[#00979A] text-white hover:text-[#00979A] hover:bg-white"
+          className="hidden 2xl:flex-cen anm w-10 h-10 rounded-full bg-[#fff] text-[#00979A] hover:text-[#fff] hover:bg-[#00979A] active:scale-75"
         >
           <IoIosArrowBack className="size-6 rotate-180" />
         </button>

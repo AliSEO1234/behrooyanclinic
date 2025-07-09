@@ -65,7 +65,8 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
   return (
     <AppContext.Provider
       value={{
-        youtubeShow, setYoutubeShow,
+        youtubeShow,
+        setYoutubeShow,
         patientSrcActive,
         setPatientSrcActive,
         hamburgerMenu,
