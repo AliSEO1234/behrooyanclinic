@@ -97,6 +97,7 @@ const PopForm = () => {
     }
     reset();
   };
+  const optionList = options(locale);
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
@@ -183,7 +184,7 @@ const PopForm = () => {
               trigger={selectedOption ? selectedOption.label : locale === "ru" ? "Лечение" : "Treatment"}
               className="flex-bet text-[14px] s1728:text-[16px] w-full s1280:w-[219px] s1512:w-[250px] s1728:h-[48px] s1728:w-[320px] outline-none h-[45px] s1280:h-[38px] s1600:h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB]"
               containertStyle="s1280:w-[219px] s1512:w-[250px] s1728:w-[320px]"
-              options={options}
+              options={optionList}
               onChange={setSelectedOption}
               selectedValue={selectedOption}
             />

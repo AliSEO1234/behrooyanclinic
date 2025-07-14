@@ -3,7 +3,7 @@ import eye from "@/assets/images/treatment/eye.png";
 import bgCate from "@/assets/images/treatment/bg-category.svg";
 import ImgFetcher from "@/components/imgFetcher";
 import borderPhone from "@/assets/images/treatment/borderTreatPhone.png";
-import Pagination from "@/components/pagination";
+// import Pagination from "@/components/pagination";
 import Sidebar from "@/layoutes/sidebar/sidebar";
 import TreatCard from "@/features/treatment/treatCard";
 import { categoryDataHandler } from "@/staticData/subCategoryList";
@@ -115,9 +115,9 @@ const Page: FC<Readonly<Props>> = async ({ params }) => {
                   );
                 })}
 
-                <div className="w-full">
+                {/* <div className="w-full">
                   <Pagination totalPages={80} />
-                </div>
+                </div> */}
                 {/* content */}
                 <div>
                   <SubContent

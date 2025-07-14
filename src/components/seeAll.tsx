@@ -10,7 +10,7 @@ const SeeAll = ({ link , className }: { link: string , className : string }) => 
       href={link}
     >
       {
-        locale === "ru" ? "Весь список" : "See All"
+        locale === "ru" ? "“Смотреть все" : "See All"
       }
     </Link>
   );

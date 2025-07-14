@@ -66,6 +66,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 const Page = async ({ params }: PropsPageType) => {
   const { subTreat, locale } = await params;
+  const isRu = locale === "ru";
   const bfRelations = handleBFRelation();
   const findSubnestedRelation = bfRelations.find((bf) => bf.path === subTreat);
   const isVersion2 = findSubnestedRelation?.isVersion2;
@@ -105,25 +106,25 @@ const Page = async ({ params }: PropsPageType) => {
   const tableOfContents = [
     {
       link: "patient-bf",
-      label: "Befor/After",
+      label: isRu ? "До/После" : "Befor/After",
       icon: bfIcon,
       isActive: fetchData?.bfs && fetchData.bfs.length > 0,
     },
     {
       link: "video",
-      label: "Videos",
+      label: isRu ? "Видео" : "Videos",
       icon: subnestedvideo,
       isActive: true,
     },
     {
       link: "advantages",
-      label: "What is it?",
+      label: isRu ? "Что это?" : "What is it?",
       icon: advantageicon,
       isActive: true,
     },
     {
       link: "content",
-      label: "Content",
+      label: isRu ? "Содержание" : "Content",
       icon: subnestedcontent,
       isActive: true,
     },
@@ -188,7 +189,7 @@ const Page = async ({ params }: PropsPageType) => {
         {/* video */}
         <div id="video" className="sub-nested-video-section">
           <BorderSubNested
-            label="Video"
+            label={isRu ? "Видео" :"Video"}
             className="sub-nested-video-label"
             labelStyle="sub-nested-video-label-style"
           />
@@ -196,7 +197,7 @@ const Page = async ({ params }: PropsPageType) => {
             videoSrc={
               fetchData?.video
                 ? fetchData.video
-                : locale === "ru"
+                : isRu
                 ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
                 : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
             }
@@ -208,7 +209,7 @@ const Page = async ({ params }: PropsPageType) => {
             <div>
               <div>
                 <div className="w-full">
-                  <h2>{locale === "ru" ? "Преимущества" : "Advantages"}</h2>
+                  <h2>{isRu ? "Преимущества" : "Advantages"}</h2>
                 </div>
                 <div>
                   <ImgFetcher width={1500} height={1500} src={benefitIcon} />
@@ -373,24 +374,22 @@ const Page = async ({ params }: PropsPageType) => {
         {Boolean(bfCurrentLinks) && (
           <div id="patient-bf" className="mb-[24px] s1280:mb-20 relative z-[2]">
             <div className="font-bold flex-left relative w-fit mb-5">
-              <h2 className="s1280:text-[48px]">
-                {locale === "ru" ? "До" : "Before"}
-              </h2>
+              <h2 className="s1280:text-[48px]">{isRu ? "До" : "Before"}</h2>
               <div
                 className={`bg-gradient-to-r from-[#FCFCFC] via-[#3EBB9A] to-[#FCFCFC] s1280:w-[140px] w-[80px] h-[2px] s1280:h-[6px] -rotate-45 absolute -translate-x-1/2 -translate-y-1/2 ${
-                  locale === "ru"
+                  isRu
                     ? "top-[58%] left-[20%] s1280:top-[55%] s1280:left-[20%]"
                     : "top-[58%] left-[42%] s1280:top-[55%] s1280:left-[42%]"
                 }`}
               ></div>
               <h2
                 className={`text-[30px] s1280:text-[96px] text-[#3EBB9A] [text-shadow:0px_3px_2.8px_#00000040]  ${
-                  locale === "ru"
+                  isRu
                     ? "mt-7 -ms-0 s1280:-ms-1 s1280:mt-20"
                     : "mt-7 -ms-2 s1280:-ms-6 s1280:mt-20"
                 }`}
               >
-                {locale === "ru" ? "После" : "After"}
+                {isRu ? "После" : "After"}
               </h2>
             </div>
             <div>
@@ -405,7 +404,7 @@ const Page = async ({ params }: PropsPageType) => {
         {fetchData?.faqs && fetchData.faqs.length > 0 && (
           <div className="mb-10 s1280:mb-16 relative z-[2]">
             <BorderSubNested
-              label="Frequently Asked Questions"
+              label={isRu ? "Часто задаваемые вопросы" :"Frequently Asked Questions"}
               className=" w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-10 s1512:mb-12"
               labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
             />
@@ -437,7 +436,7 @@ const Page = async ({ params }: PropsPageType) => {
         {/* content */}
         <div className="relative z-[2]" id="content">
           <BorderSubNested
-            label="Content"
+            label={isRu ? "Содержание" : "Content"}
             className=" w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-10 s1512:mb-12"
             labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
           />

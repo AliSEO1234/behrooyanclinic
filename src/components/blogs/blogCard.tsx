@@ -1,7 +1,10 @@
+"use client";
 import { BlogCardType } from "@/types/blog/blogType";
 import ImgFetcher from "../imgFetcher";
+import { useLocale } from "next-intl";
 
 const BlogCard = ({ blogDate, desc, img, title, className }: BlogCardType) => {
+  const locale = useLocale();
   return (
     <article
       className={`${
@@ -31,7 +34,7 @@ const BlogCard = ({ blogDate, desc, img, title, className }: BlogCardType) => {
       </div>
       <div className="flex-cen mt-auto">
         <button className="bg-[#86D1AB] text-[18px] s1280:text-[18px] font-bold text-center w-[173px] h-[44px] rounded-[40px] text-white">
-          Read More
+          {locale === "ru" ? "Читать далее" : "Read More"}
         </button>
       </div>
     </article>

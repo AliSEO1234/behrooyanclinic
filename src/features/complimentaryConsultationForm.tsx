@@ -76,6 +76,7 @@ const ComplimentaryConsultationForm = () => {
     }
     reset();
   };
+  const optionList = options(locale);
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="form-header">
       <div>
@@ -96,7 +97,7 @@ const ComplimentaryConsultationForm = () => {
               : "Treatment"
           }
           className="combo-box"
-          options={options}
+          options={optionList}
           onChange={setSelectedOption}
           selectedValue={selectedOption}
         />

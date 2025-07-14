@@ -114,7 +114,8 @@ const Home = async ({
           : "İ came to this center from Italy and used the hair servicesTheir team was very professional and friendly, it was very satisfying Thanks azpo health🙏",
     },
     {
-      fullName: locale === "ru" ? "Алейса Махмутчепоглу" : "Aleysa Mahmutçepoğlu",
+      fullName:
+        locale === "ru" ? "Алейса Махмутчепоглу" : "Aleysa Mahmutçepoğlu",
       rateCount: 5,
       desc:
         locale === "ru"
@@ -166,6 +167,7 @@ const Home = async ({
       topValue: 5200,
     },
   ];
+  const blogs = blogList(locale);
   return (
     <>
       <section
@@ -615,7 +617,9 @@ const Home = async ({
                     : "What sets us apart is our dedication to personalized, reliable care. Our expert doctors and patient coordinators truly understand your needs. From the first contact, we provide one-on-one consultations to craft the best treatment plan for you. We stand by you as a trusted guide on your healthcare journey."
                 }
                 header={
-                  locale === "ru" ? "Высокая квалификация" : "High Expertise"
+                  locale === "ru"
+                    ? "Высокий уровень экспертизы"
+                    : "High Expertise"
                 }
                 index={1}
               />
@@ -627,7 +631,9 @@ const Home = async ({
                     : "Throughout your medical journey in Turkey Azpo Health team will take care of everything—treatment, transfers, accommodation, and visas—so you can focus on your recovery. Your case is thoroughly assessed by top specialists and double-checked by Azpo's consultant doctors to guarantee the highest quality care. All you need to do is trust the process and leave it to Azpo Health."
                 }
                 header={
-                  locale === "ru" ? "Полный спектр услуг" : "360-degree Service"
+                  locale === "ru"
+                    ? "Сервис полного цикла"
+                    : "360-degree Service"
                 }
                 index={3}
               />
@@ -650,9 +656,7 @@ const Home = async ({
                     ? "Благодаря 20-летнему опыту работы с международными клиентами и укреплению партнерских связей, мы глубоко понимаем ваши потребности и обеспечиваем безупречную координацию. Наши эксперты и медицинские партнеры помогают нам предлагать оптимальные решения. Мы учитываем все нюансы и всегда рядом, предоставляя поддержку на каждом этапе — до, во время и после лечения."
                     : "Thanks to our years of experience and extensive network, we’re here to support you in top health tourism destinations in Turkey, including Istanbul, Antalya, Alanya, Ankara, Izmir, Samsun, and Cappadocia, as well as in several countries with well-established medical tourism. No matter where you choose to receive treatment and benefit from our services, our local representatives are ready to offer you the best service in that city."
                 }
-                header={
-                  locale === "ru" ? "Большая партнерская сеть" : "Network"
-                }
+                header={locale === "ru" ? "Сеть клиник" : "Network"}
                 index={4}
               />
             </div>
@@ -734,7 +738,7 @@ const Home = async ({
               </div>
             </div>
             <div className="grid grid-cols-12 px-4 s412:px-[27px] gap-y-5 s1280:gap-y-0 s1280:gap-x-5 s1600:gap-x-8 s1920:gap-x-14 z-[3] s1280:px-5 s1600:px-10">
-              {blogList.map((blog) => {
+              {blogs.map((blog) => {
                 return <BlogCard key={blog.blogId} {...blog} />;
               })}
             </div>

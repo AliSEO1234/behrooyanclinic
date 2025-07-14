@@ -32,6 +32,7 @@ const HamburgerMenu = () => {
   const { hamburgerMenu, setHamburgerMenu } = useAppContext();
   const [windowWidth, setWindowWidth] = useState<number>(0);
   const locale = useLocale();
+  const isRu = locale === "ru";
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -46,7 +47,8 @@ const HamburgerMenu = () => {
       setHamburgerMenu(false);
     }
   }, [windowWidth, setHamburgerMenu]);
-  const sortedData = [...options].sort((a, b) => +b.isActive - +a.isActive);
+  const optionList = options(locale);
+  const sortedData = [...optionList].sort((a, b) => +b.isActive - +a.isActive);
   return (
     <Sheet open={hamburgerMenu} onOpenChange={setHamburgerMenu}>
       <SheetContent className="[&>button]:hidden px-3 rounded-s-[40px] overflow-hidden">
@@ -82,7 +84,7 @@ const HamburgerMenu = () => {
               <input
                 type="search"
                 className="w-full h-[48px] border-[0.5px] border-[#00000012] rounded-[100px] px-4"
-                placeholder="Search"
+                placeholder={isRu ? "Поиск" : "Search"}
               />
               <button className="w-10 h-10 rounded-full bg-[#25A6A9] flex-cen border-[2px] border-[#FFFFFF] text-white absolute top-1/2 right-1 -translate-y-1/2">
                 <FiSearch className="size-6" />
@@ -92,38 +94,37 @@ const HamburgerMenu = () => {
               <ul className="flex flex-col items-start gap-y-6 font-medium text-[#474744]">
                 <li>
                   <Link href={`/${locale}`}>
-                    {locale === "ru" ? "Главная страница" : "Home Page"}
+                    {isRu ? "Главная страница" : "Home Page"}
                   </Link>
                 </li>
                 <li>
                   <Link href={`/${locale}/patient-services`}>
-                    {locale === "ru"
-                      ? "Услуги для пациентов"
-                      : "Patient Services"}
+                    {isRu ? "Услуги для пациентов" : "Patient Services"}
                   </Link>
                 </li>
                 <li>
                   <Link href={`/${locale}/clinics`}>
-                    {locale === "ru"
-                      ? "Больницы и клиники"
-                      : "Hospital & Clinics"}
+                    {isRu ? "Больницы и клиники" : "Hospital & Clinics"}
                   </Link>
                 </li>
                 <li>
-                  <Link href={`/${locale}/contact-us`}>{
-                    locale === "ru" ? "Свяжитесь с нами"  : "Contact Us"
-                  }</Link>
+                  <Link href={`/${locale}/contact-us`}>
+                    {isRu ? "Свяжитесь с нами" : "Contact Us"}
+                  </Link>
                 </li>
                 <li>
-                  <Link href={`/${locale}/about`}>{
-                    locale === "ru" ? "О нас" : "About Us"
-                  }</Link>
+                  <Link href={`/${locale}/about`}>
+                    {isRu ? "О нас" : "About Us"}
+                  </Link>
                 </li>
                 <li className="w-full">
                   <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
                       <AccordionTrigger className="py-0">
-                        Medical Branches
+                        {
+                          isRu ? "Медицинские отделения" : "Medical Branches"
+                        }
+                        
                       </AccordionTrigger>
                       <AccordionContent className="mt-3 p-3 pb-6">
                         <ul className="flex flex-col items-start gap-y-3">
@@ -220,7 +221,7 @@ const HamburgerMenu = () => {
               <Link
                 target="_blank"
                 href={
-                  locale === "ru"
+                  isRu
                     ? "https://www.instagram.com/azpo_health?igsh=MXcxbm9tMXV2bmE5dg=="
                     : "https://www.instagram.com/azpo_health_international?igsh=NzJkcWY5NmxkbGky"
                 }

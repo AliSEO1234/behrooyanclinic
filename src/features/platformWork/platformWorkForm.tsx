@@ -67,6 +67,7 @@ const PlatformWorkForm = () => {
     }
     reset();
   };
+  const optionList = options(locale);
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
@@ -124,7 +125,7 @@ const PlatformWorkForm = () => {
               : "Treatment"
           }
           className="flex-bet w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1"
-          options={options}
+          options={optionList}
           onChange={setSelectedOption}
           selectedValue={selectedOption}
         />

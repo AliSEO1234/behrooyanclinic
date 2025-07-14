@@ -6,6 +6,7 @@ import { options } from "@/staticData/optionsForm";
 import { OptionType } from "@/types/comboBox/comboType";
 import { SideBarType } from "@/types/forms";
 import { LucideSendHorizontal } from "lucide-react";
+import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -13,6 +14,8 @@ import { toast } from "react-toastify";
 
 const SidebarForm = ({ activeAdmin }: { activeAdmin: string }) => {
   const pathname = usePathname();
+  const locale = useLocale();
+  const isRu = locale === "ru";
   const { handleSubmit, register, setValue, watch, setError, reset } =
     useForm<SideBarType>();
   const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
@@ -74,37 +77,38 @@ const SidebarForm = ({ activeAdmin }: { activeAdmin: string }) => {
     }
     reset();
   };
+  const optionList = options(locale);
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
       className="grid grid-cols-12 gap-y-4 form-work"
     >
       <div className="col-span-12">
-        <label htmlFor="">Name & Surname</label>
+        <label htmlFor="">{isRu ? "Имя и фамилия" : "Name & Surname"}</label>
         <input
           {...register("full_name", { required: true })}
           className="px-4"
-          placeholder="Name & Surname"
+          placeholder={isRu ? "Имя и фамилия" : "Name & Surname"}
           type="text"
         />
       </div>
       <div className="col-span-12">
-        <label htmlFor="">Email</label>
+        <label htmlFor="">{isRu ? "Эл. почта" : "Email"}</label>
         <input
           {...register("email", { required: true })}
           className="px-4"
-          placeholder="Email"
+          placeholder={isRu ? "Эл. почта" : "Email"}
           type="email"
         />
       </div>
       <div className="col-span-12">
-        <label htmlFor="">Phone Number</label>
+        <label htmlFor="">{isRu ? "Номер телефона" : "Phone Number"}</label>
         <div className="w-full relative overflow-hidden">
           <input
             {...register("phone", { required: true })}
             onChange={handlePhoneChange}
             defaultValue={phoneValue}
-            placeholder="Number"
+            placeholder={isRu ? "Номер телефона" : "Number"}
             type="text"
             className="ps-20 pe-3"
           />
@@ -117,11 +121,19 @@ const SidebarForm = ({ activeAdmin }: { activeAdmin: string }) => {
         </div>
       </div>
       <div className="col-span-12 z-[4]">
-        <label htmlFor="">Choose your service type</label>
+        <label htmlFor="">
+          {isRu ? "Выберите услугу" : "Choose your service type"}
+        </label>
         <ComboBox
-          trigger={selectedOption ? selectedOption.label : "Please Select"}
+          trigger={
+            selectedOption
+              ? selectedOption.label
+              : isRu
+              ? "Пожалуйста, выберите"
+              : "Please Select"
+          }
           className="flex-bet w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1"
-          options={options}
+          options={optionList}
           onChange={setSelectedOption}
           selectedValue={selectedOption}
         />
@@ -138,7 +150,7 @@ const SidebarForm = ({ activeAdmin }: { activeAdmin: string }) => {
               loading ? "top-0" : "group-hover:-top-full"
             }  left-0 text-center flex-cen anm`}
           >
-            {loading ? "Loading..." : "let’s connect"}
+            {loading ? "Loading..." : isRu ? "Связаться с нами" : "let’s connect"}
           </div>
           <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
             <LucideSendHorizontal className="size-5" />

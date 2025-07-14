@@ -23,7 +23,41 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
   };
 }
-const Clinics = () => {
+const Clinics = async ({ params }: Props) => {
+  const { locale } = await params;
+  const isRu = locale === "ru";
+  const description = isRu
+    ? `
+                    Турция — это страна, где расположено множество международных аккредитованных больниц, включая
+                    <strong>
+                      учреждения с сертификатом JCI. В Azpo Health мы стремимся соединить вас с лучшими медицинскими услугами
+                    </strong>
+                    путём сотрудничества с
+                    <strong>ведущими больницами и опытными врачами</strong> по всей Турции.
+                    Мы сотрудничаем с одними из самых надёжных медицинских центров в
+                    <strong>
+                      Стамбуле, Анталье, Измире, Каппадокии, Самсуне и Анкаре
+                    </strong>
+                    — все они являются ведущими направлениями для медицинского туризма. Наша цель? Обеспечить вам лечение мирового уровня с самым высоким уровнем заботы и комфорта.
+
+                  `
+    : `
+                    Turkey is home to many internationally accredited hospitals,
+                    including
+                    <strong>
+                      JCI-certified institutions. At Azpo Health, we’re all about
+                      connecting you with the best healthcare services
+                    </strong>
+                    by working with
+                    <strong>top hospitals and expert doctors</strong> across Turkey.
+                    We’ve partnered with some of the most trusted medical centers in
+                    <strong>
+                      Istanbul, Antalya, Izmir, Cappadocia, Samsun, and Ankara
+                    </strong>
+                    —all top destinations for health tourism. Our goal? To make sure
+                    you get world-class treatment with the highest standards of care
+                    and comfort
+                  `;
   return (
     <>
       <div className="pt-28 s1280:pt-40 s1280:pb-20 viewport-size">
@@ -31,9 +65,9 @@ const Clinics = () => {
         <div className="flex flex-col items-center justify-start gap-y-10 s1280:gap-y-0 s1280:flex-row s1280:items-center s1280:justify-around mb-14 s1280:mb-40">
           <div className="s1280:w-[437px] s1920:w-fit flex flex-col items-center justify-center s1280:flex-row">
             <div className="s1280:hidden mb-8">
-              <h1 className="font-semibold text-[#25A6A9] text-center text-[24px]">
-                Hospital & Clinics
-              </h1>
+              <span className="font-semibold text-[#25A6A9] text-center text-[24px]">
+                {isRu ? "Больницы и клиники" : "Hospital & Clinics"}
+              </span>
             </div>
             <div className="flex-cen relative">
               <div className="w-[176px] h-[176px] s1280:w-[348px] s1280:h-[348px] s1728:w-[424px] s1728:h-[424px] s1920:w-[516px] s1920:h-[516px] bg-gradient-to-b from-[#25A6A9] to-[#0F4243] rounded-full backdrop-blur-[20px] opacity-60"></div>
@@ -52,25 +86,12 @@ const Clinics = () => {
           <div className="s1280:w-[571px]">
             <div className="mb-6 s1280:mb-14">
               <h1 className="text-[#25A6A9] font-semibold s1280:text-[30px] s1728:text-[48px] s1280:mb-4 s1512:mb-6 s1728:mb-8 s1920:mb-10 hidden s1280:block">
-                Hospital & Clinics
+                {isRu ? "Больницы и клиники" : "Hospital & Clinics"}
               </h1>
-              <p className="text-[#474744] px-5 s1280:px-0 font-medium s1280:text-[18px] s1728:text-[20px] s1280:leading-[33px]">
-                Turkey is home to many internationally accredited hospitals,
-                including{" "}
-                <strong>
-                  JCI-certified institutions. At Azpo Health, we’re all about
-                  connecting you with the best healthcare services
-                </strong>{" "}
-                by working with{" "}
-                <strong>top hospitals and expert doctors</strong> across Turkey.
-                We’ve partnered with some of the most trusted medical centers in{" "}
-                <strong>
-                  Istanbul, Antalya, Izmir, Cappadocia, Samsun, and Ankara
-                </strong>
-                —all top destinations for health tourism. Our goal? To make sure
-                you get world-class treatment with the highest standards of care
-                and comfort
-              </p>
+              <p
+                dangerouslySetInnerHTML={{ __html: description }}
+                className="text-[#474744] px-5 s1280:px-0 font-medium s1280:text-[18px] s1728:text-[20px] s1280:leading-[33px]"
+              ></p>
             </div>
             {/* <SearchClinic /> */}
           </div>

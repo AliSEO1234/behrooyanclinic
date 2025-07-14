@@ -22,6 +22,7 @@ import HamburgerMenu from "./hamburgerMenu";
 import { usePathname } from "next/navigation";
 const Navbar = () => {
   const locale = useLocale();
+  const optionList = options(locale);
   const [isScroll, setIsScroll] = useState<boolean>(false);
   const pathname = usePathname();
   const { setHamburgerMenu } = useAppContext();
@@ -102,7 +103,7 @@ const Navbar = () => {
                       <NavigationMenuContent>
                         <div className="w-[900px] py-3">
                           <ul className="grid grid-cols-12">
-                            {options.map((service, index) => {
+                            {optionList.map((service, index) => {
                               return (
                                 <li
                                   title={service.label}

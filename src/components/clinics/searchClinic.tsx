@@ -7,7 +7,7 @@ import { clinicCities } from "@/staticData/clinics/clinicCitiesList";
 import { IoSearchSharp } from "react-icons/io5";
 const SearchClinic = () => {
   const [citySelected, setCitySelected] = useState<OptionType | null>(null);
-
+  
   return (
     <div className="s1280:w-[548px] h-[57px] s1280:h-[68px] grid grid-cols-12 rounded-[100px] shadow-[0px_4px_4px_0px_#00000040] bg-white px-1 s1280:px-3">
       <div className="col-span-6">

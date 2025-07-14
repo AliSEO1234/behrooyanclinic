@@ -12,7 +12,7 @@ const BranchContactCard = ({
   phone,
 }: BranchContactCardType) => {
   return (
-    <div className="bg-[#BCF8DD0D] rounded-[40px] shadow-[0px_4px_4px_0px_#00000040] py-4 px-6">
+    <div className="w-full bg-[#BCF8DD0D] rounded-[40px] shadow-[0px_4px_4px_0px_#00000040] py-4 px-6">
       <h2 className="font-extrabold text-[#0CA5A5] mb-4 s1512:text-[18px] s1728:text-[20px]">{branchName}</h2>
       <div>
         <ul className="flex flex-col items-start justify-center gap-y-4">

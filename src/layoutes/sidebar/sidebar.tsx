@@ -17,6 +17,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Sidebar = () => {
   const locale = useLocale();
+  const isRu = locale === "ru"
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const activeAdmin = handleAdmins(locale)[activeIndex].name;
   const admins = handleAdmins(locale);
@@ -80,7 +81,7 @@ const Sidebar = () => {
       </div>
       <div className="mt-auto">
         <div className="flex-bet mb-4">
-          <span className="font-semibold s1280:text-[20px] w-1/4">Service</span>
+          <span className="font-semibold s1280:text-[20px] w-1/4">{isRu ? "Услуги" : "Services"}</span>
           <span className="border-[1px] border-[#9996A0] w-[70%] h-0"></span>
         </div>
         <div className="flex flex-col items-start justify-start gap-y-4">

@@ -4,12 +4,14 @@ import { ComboBoxType } from "@/types/comboBox/comboType";
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
+import { useLocale } from "next-intl";
 const ComboBox = ({ options, onChange, trigger, className , containertStyle }: ComboBoxType) => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [openUpwards, setOpenUpwards] = useState<boolean>(false);
   const comboRef = useRef<HTMLDivElement>(null);
-
+  const locale = useLocale()
+  const isRu = locale === "ru"
   useEffect(() => {
     if (isOpen && comboRef.current) {
       const rect = comboRef.current.getBoundingClientRect();
@@ -54,7 +56,7 @@ const ComboBox = ({ options, onChange, trigger, className , containertStyle }: C
               <input
                 type="text"
                 className="w-full h-[44px] border p-2 rounded-[20px]"
-                placeholder="Search..."
+                placeholder={isRu ? "Поиск..." : "Search..."}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />

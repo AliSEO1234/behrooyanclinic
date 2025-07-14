@@ -86,6 +86,7 @@ const PatientServicesForm = () => {
     }
     reset();
   };
+  const optionList = options(locale);
   return (
     <div className="relative s1280:static">
       {/* phone char */}
@@ -169,7 +170,7 @@ const PatientServicesForm = () => {
                   : "Treatment"
               }
               className="w-full s1280:w-[250px] s1728:w-[320px] h-[48px] s1280:h-[38px] s1512:h-[48px] flex justify-between items-center px-3 bg-white rounded-[40px] text-[#898989] text-[14px] s1728:txt-[16px]"
-              options={options}
+              options={optionList}
               onChange={setTreatmentSelected}
               selectedValue={treatmentSelected}
               containertStyle=" s1280:w-[250px] s1728:w-[320px] font-medium"
