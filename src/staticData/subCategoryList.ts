@@ -1991,6 +1991,7 @@ export const subCategoryHandler = (
       },
       subCategoryKey: "cosmetic-dentistry",
       categoryKey: findCategory,
+      video: isRu ? "https://www.youtube.com/watch?v=2xNeVgGTzYc" : "https://www.youtube.com/watch?v=nYy2ovlxJnY",
       subNestedList: findSubNestedList,
       imgCover: dental3d,
     },
@@ -2331,6 +2332,7 @@ export const subCategoryHandler = (
       },
       subCategoryKey: "orthodontics",
       categoryKey: findCategory,
+      video: isRu ? "https://www.youtube.com/watch?v=_AAxiDClulU" : "https://www.youtube.com/watch?v=5mLxJDpofBY",
       subNestedList: findSubNestedList,
       imgCover: dental3d,
     },
@@ -16932,6 +16934,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
 <p><strong id="docs-internal-guid-e0027ac1-7fff-bc31-865d-ba382afb607a">"I was hesitant to travel abroad for dental work, but AZPO Health's team put me at ease from the start. The clinic was modern and clean, and the crown looks and feels completely natural." - Michael B.</strong></p>`,
       },
       imgCover: subNestedKey === "dental-crowns" ? dentistchoosing : null,
+      video: isRu ? "https://www.youtube.com/watch?v=NPmLaJ_QsX0" : "https://www.youtube.com/watch?v=66c78tbQErc",
       subNestedKey: "dental-crowns",
     },
     // teeth-whitening
@@ -17053,31 +17056,31 @@ Patients looking for a quicker, less invasive alternative to traditional implant
         isRu
           ? "В течение 48 часов избегайте продуктов и напитков, способных окрасить эмаль (кофе, красное вино, ягоды и т.д.)"
           : "Avoid staining foods/drinks (coffee, red wine, berries) for 48 hrs",
-      
+
         isRu
           ? "Не курите в течение 24–48 часов после процедуры"
           : "No smoking for 24–48 hours",
-      
+
         isRu
           ? "Пейте напитки через соломинку, чтобы минимизировать контакт с зубами"
           : "Use a straw for beverages to minimize contact",
-      
+
         isRu
           ? "Возможна временная чувствительность зубов - это нормально"
           : "Expect temporary sensitivity",
-      
+
         isRu
           ? "Используйте средства против чувствительности, если необходимо"
           : "Use desensitizing products if needed",
-      
+
         isRu
           ? "Избегайте слишком горячей или холодной пищи."
           : "Avoid excessively hot and cold foods.",
-      
+
         isRu
           ? "Воздержитесь от кислых продуктов, таких как лимоны, апельсины и уксус."
           : "Stay away from acidic foods like lemon, orange, and vinegar.",
-      
+
         isRu
           ? "Соблюдайте тщательную гигиену полости рта - это важно для сохранения результата отбеливания."
           : "Don’t neglect oral care after teeth whitening.",
@@ -17086,19 +17089,19 @@ Patients looking for a quicker, less invasive alternative to traditional implant
         isRu
           ? "Почистите зубы и воспользуйтесь зубной нитью перед процедурой"
           : "Brush and floss before treatment",
-      
+
         isRu
           ? "Избегайте кофе, чая и курения перед процедурой"
           : "Avoid coffee, tea, and smoking before procedure",
-      
+
         isRu
           ? "Сообщите стоматологу о чувствительности зубов, если она есть"
           : "Inform dentist of any tooth sensitivity",
-      
+
         isRu
           ? "При необходимости используйте заранее пасту для чувствительных зубов"
           : "Use desensitizing toothpaste beforehand if advised",
-      
+
         isRu
           ? "Сначала вылечите заболевания дёсен или кариес — отбеливание эффективнее на здоровых зубах"
           : "Treat gum issues or cavities first; whitening works best on healthy teeth.",
@@ -17363,6 +17366,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
 <p>&nbsp;</p>`,
       },
       imgCover: subNestedKey === "teeth-whitening" ? teethwhiting : null,
+      video : isRu ? "https://www.youtube.com/watch?v=j1J2Q06Dvmw" : "https://www.youtube.com/watch?v=9eEunhZZL2I",
       subNestedKey: "teeth-whitening",
     },
     // Hollywood Smile
@@ -18034,6 +18038,7 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       imgCover:
         subNestedKey === "clear-aligners-invisalign" ? clearaligners : null,
+      video : isRu ? "https://www.youtube.com/watch?v=wSkXTBruywI" :  "https://www.youtube.com/watch?v=uivvCfy1EPI&t=38s",
       subNestedKey: "clear-aligners-invisalign",
     },
     // Gum Graft
