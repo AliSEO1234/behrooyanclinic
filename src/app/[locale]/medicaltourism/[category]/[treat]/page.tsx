@@ -47,7 +47,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const Page = async ({ params }: PropsPageType) => {
   const { treat, locale, category } = await params;
   const fetchData = subCategoryHandler(category, treat, locale);
-  console.log(fetchData);
   
   return (
     <div className="bg-[#FCFCFC]">
@@ -121,7 +120,7 @@ const Page = async ({ params }: PropsPageType) => {
                   fetchData?.video
                     ? fetchData.video
                     : locale === "ru"
-                    ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
+                    ? "https://www.youtube.com/watch?v=ocHaJi7XUOw"
                     : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
                 }
               />

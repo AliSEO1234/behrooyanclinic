@@ -104,7 +104,7 @@ const Treatments = async ({
           <VideoPlayer
             src={
               locale === "ru"
-                ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
+                ? "https://www.youtube.com/watch?v=ocHaJi7XUOw"
                 : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
             }
             className="w-[300px] h-[170px] s1280:w-[916px] s1280:h-[501px] object-cover"

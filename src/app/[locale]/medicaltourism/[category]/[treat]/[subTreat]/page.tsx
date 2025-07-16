@@ -198,7 +198,7 @@ const Page = async ({ params }: PropsPageType) => {
               fetchData?.video
                 ? fetchData.video
                 : isRu
-                ? "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
+                ? "https://www.youtube.com/watch?v=ocHaJi7XUOw"
                 : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
             }
           />
