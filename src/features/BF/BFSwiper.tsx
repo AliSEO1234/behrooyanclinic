@@ -15,13 +15,13 @@ const BFSwiper = ({
 }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const fetchLinkImg = "https://azpohealth.com/api/files/content-images/";
-  
+
   return (
     <Swiper
-    spaceBetween={40}
-    slidesPerView={2}
-    breakpoints={{
-      1024: {
+      spaceBetween={40}
+      slidesPerView={2}
+      breakpoints={{
+        1024: {
           spaceBetween: 40,
           slidesPerView: 4,
         },
@@ -31,7 +31,7 @@ const BFSwiper = ({
       onSlideChange={(swiper) => {
         setActiveIndex(swiper.activeIndex);
       }}
-      >
+    >
       {bfList.map((src, index) => {
         return (
           <SwiperSlide

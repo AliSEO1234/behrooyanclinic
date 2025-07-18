@@ -102,7 +102,7 @@ const Page = async ({ params }: PropsPageType) => {
     locale,
     bfCurrentLinks ? bfCurrentLinks : null
   );
-
+  
   const tableOfContents = [
     {
       link: "patient-bf",
@@ -153,7 +153,7 @@ const Page = async ({ params }: PropsPageType) => {
           <h1>{fetchData?.title}</h1>
           <p>{fetchData?.descriptionTop}</p>
           <BorderSubNested
-            label="Table of content"
+            label={isRu ? "Оглавление" : "Table of content"}
             className="home-first-child-section"
             labelStyle="home-first-child-section-label"
           />
@@ -189,7 +189,7 @@ const Page = async ({ params }: PropsPageType) => {
         {/* video */}
         <div id="video" className="sub-nested-video-section">
           <BorderSubNested
-            label={isRu ? "Видео" :"Video"}
+            label={isRu ? "Видео" : "Video"}
             className="sub-nested-video-label"
             labelStyle="sub-nested-video-label-style"
           />
@@ -306,37 +306,38 @@ const Page = async ({ params }: PropsPageType) => {
                     </ul>
                   </div>
                 )}
+              {fetchData?.benefits.categories[2]?.header && (
+                <div className="text-[#474744]">
+                  <div className="mb-8 s1280:mb-5">
+                    <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
+                      <span className="w-[18px] h-[39px]">
+                        <ImgFetcher src={consider} />
+                      </span>
+                      <span>{fetchData?.benefits.categories[2]?.header}</span>
+                    </h4>
+                  </div>
+                  <ul className="font-normal flex flex-col gap-y-6 relative">
+                    <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
+                      <div
+                        className="w-0 h-full"
+                        style={{
+                          border: "1px dashed",
+                          borderImageSource:
+                            "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
+                          borderImageSlice: 1,
+                        }}
+                      ></div>
+                    </li>
 
-              <div className="text-[#474744]">
-                <div className="mb-8 s1280:mb-5">
-                  <h4 className="flex-left gap-x-4 s1280:gap-x-5 font-medium text-[20px] s1920:text-[24px]">
-                    <span className="w-[18px] h-[39px]">
-                      <ImgFetcher src={consider} />
-                    </span>
-                    <span>{fetchData?.benefits.categories[2]?.header}</span>
-                  </h4>
+                    <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8">
+                      <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
+                        <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
+                      </span>
+                      <span>{fetchData?.benefits.categories[2]?.desc}</span>
+                    </li>
+                  </ul>
                 </div>
-                <ul className="font-normal flex flex-col gap-y-6 relative">
-                  <li className="h-full w-[18px] absolute top-2 left-0 flex items-start justify-center z-[1] pb-4">
-                    <div
-                      className="w-0 h-full"
-                      style={{
-                        border: "1px dashed",
-                        borderImageSource:
-                          "linear-gradient(50deg, #FCFCFC 0%, #000000 100%)",
-                        borderImageSlice: 1,
-                      }}
-                    ></div>
-                  </li>
-
-                  <li className="text-[14px] s1280:text-[16px] s1512:text-[20px] s1920:text-[23px] flex items-start justify-start gap-x-4 z-[2] ps-8 relative s1280:ps-8">
-                    <span className="absolute top-1 s1280:top-2 left-0 w-[18px] flex-cen">
-                      <span className="w-[10px] h-[10px] bg-[#00CCA1] rounded-full border border-[#474744]"></span>
-                    </span>
-                    <span>{fetchData?.benefits.categories[2]?.desc}</span>
-                  </li>
-                </ul>
-              </div>
+              )}
             </div>
           </div>
         )}
@@ -404,7 +405,9 @@ const Page = async ({ params }: PropsPageType) => {
         {fetchData?.faqs && fetchData.faqs.length > 0 && (
           <div className="mb-10 s1280:mb-16 relative z-[2]">
             <BorderSubNested
-              label={isRu ? "Часто задаваемые вопросы" :"Frequently Asked Questions"}
+              label={
+                isRu ? "Часто задаваемые вопросы" : "Frequently Asked Questions"
+              }
               className=" w-[108px] s1280:w-[182px] s1512:w-[215px] s1728:w-[393px] mb-5 s1280:mb-10 s1512:mb-12"
               labelStyle="text-[#333333] s1280:text-[24px] s1512:text-[30px] s1728:text-[36px] s1920:text-[40px]"
             />

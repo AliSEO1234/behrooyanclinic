@@ -38,7 +38,10 @@ const Sidebar = () => {
       <div className="s1280:mb-10">
         <div className="mb-4">
           <h3 className="font-bold s1280:text-[20px] text-[#25A6A9] text-center">
-            Free consultation
+            {
+              isRu ? "Бесплатная консультация" : "Free consultation"
+            }
+            
           </h3>
         </div>
         <div className="relative w-full px-5 h-[110px]">

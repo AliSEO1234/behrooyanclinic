@@ -863,7 +863,7 @@ export const subCategoryHandler = (
       subCategoryKey: "hair-transplantation",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      video: "https://youtu.be/nFgBhpJvHQ8?si=XAn5N6gkJAzfUuxV",
+      video: isRu ? "https://www.youtube.com/watch?v=CzLjqvAfqPU&list=PLk1LLHP_VmHjeqtXBg2gMfvYeO4S8YG4j&index=10" : "https://youtu.be/nFgBhpJvHQ8?si=XAn5N6gkJAzfUuxV",
       imgCover: tdAes,
     },
     {
@@ -1767,7 +1767,9 @@ export const subCategoryHandler = (
 <p>&nbsp;</p>
         `,
       },
-      video: "https://youtu.be/4tNxEcepwEY?si=P_qXhP0pLP-FT4i4",
+      video: isRu
+        ? "https://www.youtube.com/watch?v=i2WL40fvdFY&list=PLk1LLHP_VmHjeqtXBg2gMfvYeO4S8YG4j&index=8"
+        : "https://youtu.be/4tNxEcepwEY?si=P_qXhP0pLP-FT4i4",
       subCategoryKey: "implantology",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
@@ -1991,7 +1993,9 @@ export const subCategoryHandler = (
       },
       subCategoryKey: "cosmetic-dentistry",
       categoryKey: findCategory,
-      video: isRu ? "https://www.youtube.com/watch?v=2xNeVgGTzYc" : "https://www.youtube.com/watch?v=nYy2ovlxJnY",
+      video: isRu
+        ? "https://www.youtube.com/watch?v=2xNeVgGTzYc"
+        : "https://www.youtube.com/watch?v=nYy2ovlxJnY",
       subNestedList: findSubNestedList,
       imgCover: dental3d,
     },
@@ -2332,7 +2336,9 @@ export const subCategoryHandler = (
       },
       subCategoryKey: "orthodontics",
       categoryKey: findCategory,
-      video: isRu ? "https://www.youtube.com/watch?v=_AAxiDClulU" : "https://www.youtube.com/watch?v=5mLxJDpofBY",
+      video: isRu
+        ? "https://www.youtube.com/watch?v=_AAxiDClulU"
+        : "https://www.youtube.com/watch?v=5mLxJDpofBY",
       subNestedList: findSubNestedList,
       imgCover: dental3d,
     },
@@ -2690,7 +2696,9 @@ export const subCategoryHandler = (
         `,
       },
       subCategoryKey: "eye-disease-treatments",
-      video: "https://youtu.be/6DSuBLpRip8?si=_IG7f_9NGwIjb1HO",
+      video: isRu
+        ? "https://www.youtube.com/watch?v=O2jMnfd7RtU&list=PLk1LLHP_VmHjeqtXBg2gMfvYeO4S8YG4j"
+        : "https://youtu.be/6DSuBLpRip8?si=_IG7f_9NGwIjb1HO",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
       imgCover: eye3d,
@@ -2999,7 +3007,9 @@ export const subCategoryHandler = (
       subCategoryKey: "male-sexual-therapy",
       categoryKey: findCategory,
       subNestedList: findSubNestedList,
-      video: "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
+      video: isRu
+        ? "https://www.youtube.com/watch?v=FaseuCjuCa8&list=PLk1LLHP_VmHjeqtXBg2gMfvYeO4S8YG4j&index=7"
+        : "https://youtu.be/TYU4i2CBjN0?si=ftzBE6wrmX1ysYo0",
       imgCover: stemcell,
     },
     // Stem Cell Therapy & Regenerative Medicine
@@ -16934,7 +16944,9 @@ Patients looking for a quicker, less invasive alternative to traditional implant
 <p><strong id="docs-internal-guid-e0027ac1-7fff-bc31-865d-ba382afb607a">"I was hesitant to travel abroad for dental work, but AZPO Health's team put me at ease from the start. The clinic was modern and clean, and the crown looks and feels completely natural." - Michael B.</strong></p>`,
       },
       imgCover: subNestedKey === "dental-crowns" ? dentistchoosing : null,
-      video: isRu ? "https://www.youtube.com/watch?v=NPmLaJ_QsX0" : "https://www.youtube.com/watch?v=66c78tbQErc",
+      video: isRu
+        ? "https://www.youtube.com/watch?v=NPmLaJ_QsX0"
+        : "https://www.youtube.com/watch?v=66c78tbQErc",
       subNestedKey: "dental-crowns",
     },
     // teeth-whitening
@@ -17366,7 +17378,9 @@ Patients looking for a quicker, less invasive alternative to traditional implant
 <p>&nbsp;</p>`,
       },
       imgCover: subNestedKey === "teeth-whitening" ? teethwhiting : null,
-      video : isRu ? "https://www.youtube.com/watch?v=j1J2Q06Dvmw" : "https://www.youtube.com/watch?v=9eEunhZZL2I",
+      video: isRu
+        ? "https://www.youtube.com/watch?v=j1J2Q06Dvmw"
+        : "https://www.youtube.com/watch?v=9eEunhZZL2I",
       subNestedKey: "teeth-whitening",
     },
     // Hollywood Smile
@@ -17612,7 +17626,9 @@ Patients looking for a quicker, less invasive alternative to traditional implant
           : `<p>Turkey has become a leading destination for medical tourism, particularly for dental treatments like the Hollywood Smile. Several factors contribute to its popularity:</p><p><strong>Affordability:</strong> Dental treatments in Turkey are significantly more affordable compared to Europe, the UK, and the USA. You can achieve the smile of your dreams without breaking the bank.</p><p><strong>High-Quality Services:</strong> Turkish dentists and healthcare staff are well-educated and experienced. Many have international training and use advanced techniques and technologies.</p><p><strong>Comprehensive Packages:</strong> AZPO Health offers all-inclusive packages that cover treatment costs, accommodation, airport transfers, and post-operative care. This makes the entire process smooth and stress-free.</p><p><strong>Beautiful Destination:</strong> Combine your dental treatment with a holiday in a fascinating country. Explore the historic sites, vibrant culture, and delicious cuisine of Istanbul, Antalya, or Alanya.</p><h4><strong>What is a Hollywood Smile?</strong></h4><p>The Hollywood Smile is a cosmetic dental treatment designed to transform your smile by addressing common aesthetic concerns like tooth pigmentation, chipping, alignment issues, and general tooth shape. The treatment involves the use of dental veneers—thin, film-like covers that are placed on the front surface of the teeth to enhance their appearance. The veneers are typically made of porcelain, lumineers (ultra-thin porcelain), or zirconium (a strong ceramic), and are customized to give you a natural, flawless smile.</p><p><br></p><h4><strong>Methods Used in a Hollywood Smile</strong></h4><p>Several methods can be used in combination to achieve a Hollywood Smile, including:</p><p><strong>Dental Veneers:</strong> Thin layers of porcelain or composite resin are bonded to the front surface of the teeth to correct imperfections such as stains, chips, cracks, or minor misalignments. Veneers can improve the shape, size, and color of your teeth, creating a uniform and aesthetically pleasing smile.</p><p class="ql-indent-1">Depending on the veneer material, some removal of tooth enamel may be necessary, which is irreversible.</p><p><strong>Dental Crowns:</strong> Tooth-shaped caps that cover damaged or decayed teeth, restoring their shape, size, strength, and appearance. Crowns are used when a tooth is too damaged to be corrected with a veneer.</p><p><strong>Dental Implants:</strong> Artificial tooth roots that are surgically placed into the jawbone to support replacement teeth. Implants are a long-lasting solution for missing teeth, providing a stable foundation for crowns or bridges.</p><p class="ql-indent-1">Before proceeding with dental implants, it’s crucial to disclose your complete medical history, including any medications you are taking and any underlying health conditions, to your dentist or oral surgeon.</p><p><strong>Teeth Whitening:</strong> Bleaching procedures that lighten the shade of your teeth, removing stains and discoloration. Teeth whitening can be done in-office or at home using custom-made trays and bleaching gels.</p><p><strong>Gum Contouring:</strong> Reshaping the gum line to improve the symmetry and aesthetics of your smile. Gum contouring can correct a "gummy smile" or even out an uneven gum line.</p><p><strong>Orthodontics:</strong> In some cases, minor teeth straightening may be necessary to achieve optimal alignment before other cosmetic procedures. Clear aligners or traditional braces can be used to correct misalignments.</p><h4><strong>Benefits of Each Method</strong></h4><p><strong>Veneers:</strong> Provide a quick and effective way to correct minor imperfections, creating a bright and symmetrical smile.</p><p><strong>Crowns:</strong> Restore damaged teeth, protecting them from further decay and improving their function and appearance.</p><p><strong>Implants:</strong> Offer a permanent solution for missing teeth, restoring your smile and preventing bone loss in the jaw.</p><p><strong>Teeth Whitening:</strong> Enhances the brightness of your smile, making you look younger and more attractive.</p><p><strong>Gum Contouring:</strong> Improves the balance and harmony of your smile, correcting a gummy or uneven gum line.</p><p><strong>Orthodontics:</strong> Straightens misaligned teeth, improving your bite and making your teeth easier to clean.</p><h4><strong>Is a Hollywood Smile Right for You?</strong></h4><p>The Hollywood Smile is ideal for individuals who:</p><p>Have stained, chipped, or worn-out teeth.</p><p>Desire a more symmetrical, aligned, and aesthetically pleasing smile.</p><p>Have minor alignment or spacing issues that they wish to correct without orthodontics.</p><p>Seek a long-lasting and minimally invasive solution to enhance their smile.</p><h4><strong>Patient Testimonials</strong></h4><p><strong>Sarah, 32:</strong> "I always felt self-conscious about my smile because of some gaps and discoloration. AZPO Health gave me a Hollywood Smile, and it has changed my life! I feel so much more confident and love to show off my new smile."</p><p><strong>Mark, 45:</strong> "I had several damaged teeth and was embarrassed to smile. The team at AZPO Health restored my teeth with crowns and veneers, and the result is incredible. I now have a strong, healthy, and attractive smile."</p><p><strong>Emily, 28:</strong> "I was hesitant about traveling to Turkey for dental work, but AZPO Health made the entire process so easy and comfortable. The clinic was modern and clean, and the staff was friendly and professional. I am thrilled with my Hollywood Smile!"</p><h4><strong>AZPO Health: Your Trusted Partner for a Perfect Smile</strong></h4><p>AZPO Health is a leading medical tourism company in Turkey, specializing in aesthetic and health treatments. With locations in Istanbul, Antalya, and Alanya, we offer world-class dental services at affordable prices.</p><p>Our commitment to quality, expertise, and patient satisfaction sets us apart. We work with experienced dentists and use the latest technology to deliver exceptional results. Our all-inclusive packages ensure a smooth and stress-free experience, from your initial consultation to your post-operative care.</p><h4><strong>Contact Us Today!</strong></h4><p>Ready to transform your smile with a Hollywood Smile in Turkey? Contact AZPO Health today for a free consultation and personalized quote! Discover how we can help you achieve the smile of your dreams.</p><p><br></p>`,
       },
       imgCover: subNestedKey === "hollywood-smile" ? hollywood : null,
-      video: "https://youtu.be/zYc0XsglnOA?si=wUteTWTf5dHdGGZe",
+      video: isRu
+        ? "https://www.youtube.com/watch?v=MI2Ed8Y_hnU&list=PLk1LLHP_VmHjeqtXBg2gMfvYeO4S8YG4j&index=9"
+        : "https://youtu.be/zYc0XsglnOA?si=wUteTWTf5dHdGGZe",
       subNestedKey: "hollywood-smile",
     },
     // clear aligners
@@ -18038,7 +18054,9 @@ Patients looking for a quicker, less invasive alternative to traditional implant
       },
       imgCover:
         subNestedKey === "clear-aligners-invisalign" ? clearaligners : null,
-      video : isRu ? "https://www.youtube.com/watch?v=wSkXTBruywI" :  "https://www.youtube.com/watch?v=uivvCfy1EPI&t=38s",
+      video: isRu
+        ? "https://www.youtube.com/watch?v=wSkXTBruywI"
+        : "https://www.youtube.com/watch?v=uivvCfy1EPI&t=38s",
       subNestedKey: "clear-aligners-invisalign",
     },
     // Gum Graft
