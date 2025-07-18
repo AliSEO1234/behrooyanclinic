@@ -14,7 +14,7 @@ const ClinicCard = ({ img, label }: ClinicCardType) => {
       </div>
       <div>
         <div className="mt-2 s1280:mt-2 s1512:mt-3">
-          <p className="font-medium text-[#474744] s1512:text-[18px] s1728:text-[20px] text-center">
+          <p className="font-medium text-[#474744] text-[14px] s1512:text-[16px] s1728:text-[20px] text-center">
             {label}
           </p>
         </div>

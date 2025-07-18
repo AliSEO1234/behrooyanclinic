@@ -17,95 +17,97 @@ import clinic16 from "@/assets/images/clinics/clinicsPhoto/16.jpg";
 import clinic17 from "@/assets/images/clinics/clinicsPhoto/17.jpg";
 import clinic18 from "@/assets/images/clinics/clinicsPhoto/18.jpg";
 
-export const clinicsData = [
-  {
-    label: "Veni Vidi Eye Hospital",
-    img: clinic1,
-    link: "https://venividigoz.com",
-  },
-  // {
-  //   label: "Lazergöz Eye Hospital",
-  //   img: clinic2,
-  //   link: "https://www.lazergoztipmerkezi.com",
-  // },
-  {
-    label: "Memorial Healthcare Group",
-    img: clinic3,
-    link: "https://www.memorial.com.tr/en",
-  },
-  {
-    label: "Acıbadem Healthcare Group",
-    img: clinic4,
-    link: "https://www.acibadem.com.tr",
-  },
-  {
-    label: "Avrasya Hospital",
-    img: clinic5,
-    link: "https://www.avrasyahospital.com.tr",
-  },
-  {
-    label: "Liv Hospital",
-    img: clinic6,
-    link: "https://www.livhospital.com/en",
-  },
-  {
-    label: "Koç Healthcare Group",
-    img: clinic7,
-    link: "https://portal.kochealthcare.org",
-  },
-  {
-    label: "Dünya Göz Eye Hospital Group",
-    img: clinic8,
-    link: "https://www.dunyagoz.com/tr",
-  },
-  {
-    label: "Medicana Health Group",
-    img: clinic9,
-    link: "https://www.medicanainternational.com",
-  },
-  {
-    label: "Yeditepe University Hospital",
-    img: clinic10,
-    link: "https://yeditepehastaneleri.com",
-  },
-  {
-    label: "Biruni University Hospital",
-    img: clinic11,
-    link: "https://www.birunihastanesi.com.tr",
-  },
-  {
-    label: "Başkent University Hospital",
-    img: clinic12,
-    link: "https://istanbulbaskentuniversitesi.com",
-  },
-  // {
-  //   label: "Kolan İnternational Hospital",
-  //   img: clinic13,
-  //   link: "https://kolanhastanesi.com.tr",
-  // },
-  {
-    label: "Medistate Hospital",
-    img: clinic14,
-    link: "https://www.medistate.com.tr",
-  },
-  {
-    label: "Florance Nigtingale Group",
-    img: clinic15,
-    link: "https://www.florence.com.tr/hastanelerimiz",
-  },
-  {
-    label: "Medipol Health Group",
-    img: clinic16,
-    link: "https://medipol.com.tr",
-  },
-  {
-    label: "Aviccena Hospitals",
-    img: clinic17,
-    link: "https://avicennahospitals.com/en",
-  },
-  {
-    label: "Hisar Intercontitental Hospital",
-    img: clinic18,
-    link: "https://hisarhospital.com/en",
-  },
-];
+export const clinicsData = (locale: string) => {
+  const isRu = locale === "ru";
+  const clinics = [
+    {
+      label: isRu ? "Глазная больница Вени Види" : "Veni Vidi Eye Hospital",
+      img: clinic1,
+      link: "https://venividigoz.com",
+    },
+    {
+      label: isRu ? "Группа здравоохранения Мемориал" : "Memorial Healthcare Group",
+      img: clinic3,
+      link: isRu
+        ? "https://www.memorial.com.tr/ru"
+        : "https://www.memorial.com.tr/en",
+    },
+    {
+      label: isRu ? "Группа здравоохранения Аджибадем" : "Acıbadem Healthcare Group",
+      img: clinic4,
+      link: "https://www.acibadem.com.tr",
+    },
+    {
+      label: isRu ? "Больница Аврасия" : "Avrasya Hospital",
+      img: clinic5,
+      link: "https://www.avrasyahospital.com.tr",
+    },
+    {
+      label: isRu ? "Больница Лив" : "Liv Hospital",
+      img: clinic6,
+      link: isRu
+        ? "https://www.livhospital.com/ru"
+        : "https://www.livhospital.com/en",
+    },
+    {
+      label: isRu ? "Группа здравоохранения Коч" : "Koç Healthcare Group",
+      img: clinic7,
+      link: "https://portal.kochealthcare.org",
+    },
+    {
+      label: isRu ? "Группа глазных больниц Дюнья Гёз" : "Dünya Göz Eye Hospital Group",
+      img: clinic8,
+      link: "https://www.dunyagoz.com/tr",
+    },
+    {
+      label: isRu ? "Группа здравоохранения Медикана" : "Medicana Health Group",
+      img: clinic9,
+      link: "https://www.medicanainternational.com",
+    },
+    {
+      label: isRu ? "Больница Университета Йедитепе" : "Yeditepe University Hospital",
+      img: clinic10,
+      link: "https://yeditepehastaneleri.com",
+    },
+    {
+      label: isRu ? "Больница Университета Бируни" : "Biruni University Hospital",
+      img: clinic11,
+      link: "https://www.birunihastanesi.com.tr",
+    },
+    {
+      label: isRu ? "Больница Университета Башкент" : "Başkent University Hospital",
+      img: clinic12,
+      link: "https://istanbulbaskentuniversitesi.com",
+    },
+    {
+      label: isRu ? "Больница Медистейт" : "Medistate Hospital",
+      img: clinic14,
+      link: "https://www.medistate.com.tr",
+    },
+    {
+      label: isRu ? "Группа Флоренс Найтингейл" : "Florance Nigtingale Group",
+      img: clinic15,
+      link: "https://www.florence.com.tr/hastanelerimiz",
+    },
+    {
+      label: isRu ? "Группа здравоохранения Медиполь" : "Medipol Health Group",
+      img: clinic16,
+      link: "https://medipol.com.tr",
+    },
+    {
+      label: isRu ? "Больницы Авиценна" : "Aviccena Hospitals",
+      img: clinic17,
+      link: isRu
+        ? "https://avicennahospitals.com/ru"
+        : "https://avicennahospitals.com/en",
+    },
+    {
+      label: isRu ? "Межконтинентальная больница Хисар" : "Hisar Intercontitental Hospital",
+      img: clinic18,
+      link: isRu
+        ? "https://hisarhospital.com/ru"
+        : "https://hisarhospital.com/en",
+    },
+  ];
+  return clinics;
+};

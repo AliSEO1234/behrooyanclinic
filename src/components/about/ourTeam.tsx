@@ -22,29 +22,29 @@ const OurTeam = ({ locale }: OurTeamComType) => {
     },
     {
       id: 27,
-      fullName: locale === "ru" ? "Parinaz Shaker" : "Parinaz Shaker",
+      fullName: locale === "ru" ? "Париназ Шакер" : "Parinaz Shaker",
       position:
         locale === "ru"
-          ? "Azpo Health Department Manager"
+          ? "Руководитель отдела здравоохранения Azpo"
           : "Azpo Health Department Manager",
       img: per33,
     },
     {
       id: 25,
-      fullName: locale === "ru" ? "Teymur Jafarov" : "Teymur Jafarov",
-      position: locale === "ru" ? "Patient Coordinator" : "Patient Coordinator",
+      fullName: locale === "ru" ? "Теймур Джафаров" : "Teymur Jafarov",
+      position: locale === "ru" ? "Координатор по работе с пациентами" : "Patient Coordinator",
       img: per31,
     },
     {
       id: 24,
-      fullName: locale === "ru" ? "Mehri Narbayeva" : "Mehri Narbayeva",
-      position: locale === "ru" ? "Patient Coordinator" : "Patient Coordinator",
+      fullName: locale === "ru" ? "Мехри Нарбаева" : "Mehri Narbayeva",
+      position: locale === "ru" ? "Координатор по работе с пациентами" : "Patient Coordinator",
       img: per30,
     },
     {
       id: 26,
-      fullName: locale === "ru" ? "Kubra Balik" : "Kubra Balik",
-      position: locale === "ru" ? "Patient Coordinator" : "Patient Coordinator",
+      fullName: locale === "ru" ? "Кубра Балик" : "Kubra Balik",
+      position: locale === "ru" ? "Координатор по работе с пациентами" : "Patient Coordinator",
       img: per32,
     },
     {
@@ -61,13 +61,13 @@ const OurTeam = ({ locale }: OurTeamComType) => {
     },
     {
       id: 11,
-      fullName: locale === "ru" ? "ЭРХАН ГЮНАЛ" : "ERHAN GUNAL",
+      fullName: locale === "ru" ? "Эрхан Гюнал" : "ERHAN GUNAL",
       position: locale === "ru" ? "Менеджер по логистике" : "Logistics Manager",
       img: per12,
     },
     {
       id: 10,
-      fullName: locale === "ru" ? "МЕХМЕТ НАСТРУЛА" : "MEHMET NASTRULLA",
+      fullName: locale === "ru" ? "Мехмет Наструлла" : "MEHMET NASTRULLA",
       position: locale === "ru" ? "ВОДИТЕЛЬ" : "DRIVER",
       img: per11,
     },
@@ -87,7 +87,7 @@ const OurTeam = ({ locale }: OurTeamComType) => {
     },
     {
       id: 2,
-      fullName: locale === "ru" ? "Али Моссадык" : "Ali Mosadegh",
+      fullName: locale === "ru" ? "Али Мосадег" : "Ali Mosadegh",
       position:
         locale === "ru"
           ? "Генеральный директор и технический директор"
@@ -95,6 +95,89 @@ const OurTeam = ({ locale }: OurTeamComType) => {
       img: per9,
     },
   ];
+  
+  // const personels = [
+  //   {
+  //     id: 0,
+  //     fullName: locale === "ru" ? "Ресул Чечен" : "Resul Çeçen",
+  //     position: locale === "ru" ? "Владелец компании" : "Company Owner",
+  //     img: per4,
+  //   },
+  //   {
+  //     id: 27,
+  //     fullName: locale === "ru" ? "Parinaz Shaker" : "Parinaz Shaker",
+  //     position:
+  //       locale === "ru"
+  //         ? "Руководитель отдела здравоохранения Azpo"
+  //         : "Azpo Health Department Manager",
+  //     img: per33,
+  //   },
+  //   {
+  //     id: 25,
+  //     fullName: locale === "ru" ? "Teymur Jafarov" : "Teymur Jafarov",
+  //     position: locale === "ru" ? "Координатор по работе с пациентами" : "Patient Coordinator",
+  //     img: per31,
+  //   },
+  //   {
+  //     id: 24,
+  //     fullName: locale === "ru" ? "Mehri Narbayeva" : "Mehri Narbayeva",
+  //     position: locale === "ru" ? "Координатор по работе с пациентами" : "Patient Coordinator",
+  //     img: per30,
+  //   },
+  //   {
+  //     id: 26,
+  //     fullName: locale === "ru" ? "Kubra Balik" : "Kubra Balik",
+  //     position: locale === "ru" ? "Координатор по работе с пациентами" : "Patient Coordinator",
+  //     img: per32,
+  //   },
+  //   {
+  //     id: 1,
+  //     fullName: locale === "ru" ? "Шуле Гюнал" : "Şule Günal",
+  //     position: locale === "ru" ? "Бухгалтерия" : "Accounting",
+  //     img: per8,
+  //   },
+  //   {
+  //     id: 13,
+  //     fullName: locale === "ru" ? "Андрей Касимов" : "Andrey Kasimov",
+  //     position: locale === "ru" ? "Видеооператор" : "Videographer",
+  //     img: per7,
+  //   },
+  //   {
+  //     id: 11,
+  //     fullName: locale === "ru" ? "ЭРХАН ГЮНАЛ" : "ERHAN GUNAL",
+  //     position: locale === "ru" ? "Менеджер по логистике" : "Logistics Manager",
+  //     img: per12,
+  //   },
+  //   {
+  //     id: 10,
+  //     fullName: locale === "ru" ? "МЕХМЕТ НАСТРУЛА" : "MEHMET NASTRULLA",
+  //     position: locale === "ru" ? "ВОДИТЕЛЬ" : "DRIVER",
+  //     img: per11,
+  //   },
+  //   {
+  //     id: 6,
+  //     fullName:
+  //       locale === "ru" ? "Рамазан Илькджан Шенсой" : "Ramazan İlkcan Şensoy",
+  //     position: locale === "ru" ? "Бухгалтери" : "Accounting",
+  //     img: per6,
+  //   },
+  //   {
+  //     id: 5,
+  //     fullName: locale === "ru" ? "Ирина Кулагина" : "Irina Kulagina",
+  //     position:
+  //       locale === "ru" ? "Отдел социальных сетей" : "Social Media Department",
+  //     img: per5,
+  //   },
+  //   {
+  //     id: 2,
+  //     fullName: locale === "ru" ? "Али Моссадык" : "Ali Mosadegh",
+  //     position:
+  //       locale === "ru"
+  //         ? "Генеральный директор и технический директор"
+  //         : "SEO and CTO maneger",
+  //     img: per9,
+  //   },
+  // ];
   return (
     <>
       <div className="mb-10 s1280:mb-20 flex-cen">

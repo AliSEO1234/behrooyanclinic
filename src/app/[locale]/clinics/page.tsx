@@ -58,6 +58,7 @@ const Clinics = async ({ params }: Props) => {
                     you get world-class treatment with the highest standards of care
                     and comfort
                   `;
+  const clinics = clinicsData(locale);
   return (
     <>
       <div className="pt-28 s1280:pt-40 s1280:pb-20 viewport-size">
@@ -102,7 +103,7 @@ const Clinics = async ({ params }: Props) => {
           <div className="w-full h-[54px] s1280:h-[138px] bg-gradient-to-b from-[#25A6A9] to-[#0F4243] backdrop-blur-[20px] rounded-[20px] z-[1] opacity-60"></div>
           {/* clinics */}
           <div className="flex items-center justify-center flex-wrap gap-y-10 s1512:gap-y-12 s1280:gap-x-2 s1512:gap-x-5 s1920:gap-x-10 -mt-5 s1280:-mt-20 px-2 s1280:px-0">
-            {clinicsData.map((clinic, index) => {
+            {clinics.map((clinic, index) => {
               return <ClinicCard key={index} {...clinic} />;
             })}
           </div>
