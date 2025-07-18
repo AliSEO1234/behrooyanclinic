@@ -121,10 +121,7 @@ const HamburgerMenu = () => {
                   <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
                       <AccordionTrigger className="py-0">
-                        {
-                          isRu ? "Медицинские отделения" : "Medical Branches"
-                        }
-                        
+                        {isRu ? "Медицинские отделения" : "Medical Branches"}
                       </AccordionTrigger>
                       <AccordionContent className="mt-3 p-3 pb-6">
                         <ul className="flex flex-col items-start gap-y-3">
@@ -144,7 +141,7 @@ const HamburgerMenu = () => {
                                     </span>
                                   ) : (
                                     <span className="bg-[#00979A] text-white font-medium s1280:text-[14px] rounded-[5px] px-1 shadow-soon-service">
-                                      Soon
+                                      {isRu ? "Скоро" : "Soon"}
                                     </span>
                                   )}
                                 </Link>

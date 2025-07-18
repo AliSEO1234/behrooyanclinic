@@ -22,6 +22,7 @@ import HamburgerMenu from "./hamburgerMenu";
 import { usePathname } from "next/navigation";
 const Navbar = () => {
   const locale = useLocale();
+  const isRu = locale === "ru";
   const optionList = options(locale);
   const [isScroll, setIsScroll] = useState<boolean>(false);
   const pathname = usePathname();
@@ -88,7 +89,7 @@ const Navbar = () => {
             >
               <div>
                 <Link className="hover:text-[#25A6A9] anm" href={`/${locale}`}>
-                  {locale === "ru" ? "Главная страница" : "Home Page"}
+                  {isRu ? "Главная страница" : "Home Page"}
                 </Link>
               </div>
               <div>
@@ -96,9 +97,7 @@ const Navbar = () => {
                   <NavigationMenuList>
                     <NavigationMenuItem>
                       <NavigationMenuTrigger className="p-0 hover:bg-inherit focus:bg-inherit hover:text-[#00979A] s1280:text-[14px] s1512:text-[16px] s1728:text-[18px]">
-                        {locale === "ru"
-                          ? "Медицинские направления"
-                          : "Medical branches"}
+                        {isRu ? "Медицинские направления" : "Medical branches"}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
                         <div className="w-[900px] py-3">
@@ -127,7 +126,7 @@ const Navbar = () => {
                                       </span>
                                     ) : (
                                       <span className="bg-[#00979A] text-white font-medium s1280:text-[14px] rounded-[5px] px-1 shadow-soon-service">
-                                        Soon
+                                        {isRu ? "Скоро" : "Soon"}
                                       </span>
                                     )}
                                   </Link>
@@ -149,9 +148,7 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/clinics`}
                 >
-                  {locale === "ru"
-                    ? "Больницы и клиники"
-                    : "Hospital & Clinics"}
+                  {isRu ? "Больницы и клиники" : "Hospital & Clinics"}
                 </Link>
               </div>
               <div>
@@ -159,9 +156,7 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/patient-services`}
                 >
-                  {locale === "ru"
-                    ? "Услуги для пациентов"
-                    : "Patient Services"}
+                  {isRu ? "Услуги для пациентов" : "Patient Services"}
                 </Link>
               </div>
               {/* <div>
@@ -174,7 +169,7 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/about`}
                 >
-                  {locale === "ru" ? "О нас" : "About Us"}
+                  {isRu ? "О нас" : "About Us"}
                 </Link>
               </div>
               <div>
@@ -182,7 +177,7 @@ const Navbar = () => {
                   className="hover:text-[#25A6A9] anm"
                   href={`/${locale}/contact-us`}
                 >
-                  {locale === "ru" ? "Свяжитесь с нами" : "Contact Us"}
+                  {isRu ? "Свяжитесь с нами" : "Contact Us"}
                 </Link>
               </div>
             </div>
