@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 // import { operationDescription } from "./scripts/sliceContent";
 
@@ -15,11 +15,12 @@ const SubContent = ({
   const [measuredHeight, setMeasuredHeight] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (contentRef.current) {
       setMeasuredHeight(contentRef.current.scrollHeight);
     }
-  }, [desc]);
+  }, [isFull]);
+
   return (
     <div className="pb-8 pt-[30px] border border-[#00979A] bg-white rounded-[40px]">
       <div className="mb-4 s1280:mb-5 ">
@@ -29,16 +30,17 @@ const SubContent = ({
       </div>
       <div className=" px-4 s1280:px-10 ">
         <motion.div
-          ref={contentRef}
           className={`transition-all h-[90px] text-[14px] s1280:text-[20px] font-normal text-start overflow-hidden text-editor`}
           animate={{ height: isFull ? measuredHeight : 90 }}
           transition={{ duration: 0.5 }}
         >
+          <div ref={contentRef}>
           <div
             dangerouslySetInnerHTML={{
               __html: desc || "",
             }}
           />
+          </div>
         </motion.div>
         {/* <motion.div
           className={`transition-all text-[14px] s1280:text-[20px] font-normal text-start overflow-hidden text-editor`}
