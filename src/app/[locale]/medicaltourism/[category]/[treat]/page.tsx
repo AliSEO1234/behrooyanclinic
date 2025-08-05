@@ -14,6 +14,8 @@ import { subCategoryHandler } from "@/staticData/subCategoryList";
 import { Metadata } from "next";
 import { headers } from "next/headers";
 import { titleSubCategorySeoHandler } from "@/staticData/seoDataList";
+import healthlogo from "@/assets/images/healthlogo.png";
+
 type PropsPageType = {
   params: Promise<{ category: string; treat: string; locale: string }>;
 };
@@ -104,7 +106,7 @@ const Page = async ({ params }: PropsPageType) => {
             <ImgFetcher width={3000} height={3000} src={bgCover} />
           </div>
           <div className="w-[320px] h-[320px] s1280:w-[404px] s1280:h-[404px] s1512:w-[487px] s1512:h-[473px] s1600:w-[473px] s1600:h-[473px] s1728:w-[503px] s1728:h-[503px] s1920:w-[578px] s1920:h-[578px] absolute top-1/2 s1280:top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <ImgFetcher width={800} height={800} src={fetchData!.imgCover} />
+            <ImgFetcher width={800} height={800} src={fetchData?.imgCover||healthlogo} />
           </div>
         </div>
       </div>

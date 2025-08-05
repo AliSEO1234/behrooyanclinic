@@ -658,27 +658,6 @@ export const categoryDataHandler = (key: string, locale: string) => {
       subCategoryList: findSubCategories,
       imgCover: key === "stem-cell" ? stemcell : null,
     },
-  ];
-
-  const findData = categoryList.find((sub) => {
-    return sub.categoryKey === key;
-  });
-
-  return findData;
-};
-export const subCategoryHandler = (
-  categoryKey: string,
-  key: string,
-  locale: string
-) => {
-  const findCategory = pathsCategory.find((path) => path === categoryKey);
-  const findSubCategory = pathsSubCategory.find((path) => path === key);
-  const allSubNestedCategoryFunc = allSubNestedCategory(locale);
-  const findSubNestedList = allSubNestedCategoryFunc.filter(
-    (subNested) => subNested.subCategoryKey === key
-  );
-  const isRu = locale === "ru";
-  const categoryList = [
     {
       id: 0,
       title: isRu
@@ -687,12 +666,6 @@ export const subCategoryHandler = (
       descriptionTop: isRu
         ? ""
         : "Are you facing the daily struggles associated with excess weight, such as reduced mobility, fatigue, or related health conditions? Many people feel self-conscious or limited by their weight, impacting their quality of life. Finding a treatment that offers significant, long-term weight loss can seem daunting. Bariatric surgery offers a powerful tool to help individuals regain control of their health and unlock a more active, fulfilling future.",
-      videoContents: {
-        title: isRu ? "" : "Benefits of Bariatric Surgery in Turkey",
-        desc: isRu
-          ? ""
-          : "Considering medical treatment abroad can bring up many questions about quality, cost, and logistics. For those considering bariatric surgery, Turkey has emerged as a leading global destination, attracting patients from around the world due to its combination of medical excellence and appealing patient experience. Undertaking bariatric surgery in Turkey allows you to address your health concerns with confidence, knowing you are accessing experienced care in modern facilities, often with significant advantages in terms of affordability and ease of travel coordination.",
-      },
       subCategoryContent: {
         title: isRu ? "" : "Bariatric Surgery Treatment",
       },
@@ -777,13 +750,33 @@ export const subCategoryHandler = (
 <p>&nbsp;</p>
         `,
       },
-      subCategoryKey: "bariatric-surgery",
-      categoryKey: findCategory,
-      subNestedList: findSubNestedList,
-      // video: "https://youtu.be/nFgBhpJvHQ8?si=XAn5N6gkJAzfUuxV",
-      imgCover: tdAes,
+      categoryKey: "bariatric-surgery",
+      subCategoryList: findSubCategories,
+      imgCover:key === "bariatric-surgery" ?healthlogo:null,
     },
 
+  ];
+
+  const findData = categoryList.find((sub) => {
+    return sub.categoryKey === key;
+  });
+
+  return findData;
+};
+export const subCategoryHandler = (
+  categoryKey: string,
+  key: string,
+  locale: string
+) => {
+  const findCategory = pathsCategory.find((path) => path === categoryKey);
+  const findSubCategory = pathsSubCategory.find((path) => path === key);
+  const allSubNestedCategoryFunc = allSubNestedCategory(locale);
+  const findSubNestedList = allSubNestedCategoryFunc.filter(
+    (subNested) => subNested.subCategoryKey === key
+  );
+  const isRu = locale === "ru";
+  const categoryList = [
+    
     {
       id: 0,
       title: isRu
@@ -3423,7 +3416,7 @@ export const dataSubCategoryHandler = (
 </div>`,
       },
       subNestedKey: "gastric-sleeve-surgery",
-      imgCover: subNestedKey === "gastric-sleeve-surgery" ? healthlogo : null,
+      imgCover: subNestedKey === "gastric-sleeve-surgery" ? "/images/Bariatric Surgery Treatment/Gastric Sleeve Surgery in Turkey.png" : null,
     },
     {
       id: 0,
@@ -3925,7 +3918,7 @@ export const dataSubCategoryHandler = (
 </div>`,
       },
       subNestedKey: "roux-gastric-bypass",
-      imgCover: subNestedKey === "roux-gastric-bypass" ? healthlogo : null,
+      imgCover: subNestedKey === "roux-gastric-bypass" ? "/images/Bariatric Surgery Treatment/Roux-en-Y Gastric Bypass Surgery.png" : null,
     },
     {
       id: 0,
@@ -4497,7 +4490,7 @@ export const dataSubCategoryHandler = (
       },
       subNestedKey: "adjustable-gastric-banding",
       imgCover:
-        subNestedKey === "adjustable-gastric-banding" ? healthlogo : null,
+        subNestedKey === "adjustable-gastric-banding" ? "/images/Bariatric Surgery Treatment/Adjustable Gastric Banding in Turkey.png" : null,
     },
     {
       id: 0,
@@ -4997,7 +4990,7 @@ export const dataSubCategoryHandler = (
 <strong id="docs-internal-guid-2e7f1eef-7fff-8718-4fd1-da423bce7c7d"></strong></div>`,
       },
       subNestedKey: "bpd-ds",
-      imgCover: subNestedKey === "bpd-ds" ? healthlogo : null,
+      imgCover: subNestedKey === "bpd-ds" ? "/images/Bariatric Surgery Treatment/Biliopancreatic Diversion with Duodenal Switch (BPD DS) in Turkey.png" : null,
     },
     {
       id: 0,
@@ -5498,7 +5491,7 @@ export const dataSubCategoryHandler = (
               `,
       },
       subNestedKey: "intragastric-balloon",
-      imgCover: subNestedKey === "intragastric-balloon" ? healthlogo : null,
+      imgCover: subNestedKey === "intragastric-balloon" ? "/images/Bariatric Surgery Treatment/Intragastric Balloon in Turkey.png" : null,
     },
 
     // hair

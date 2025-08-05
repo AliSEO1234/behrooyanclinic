@@ -3,7 +3,8 @@ export const pathsCategory = [
     "dental-treatments",
     "eye-surgery",
     "fertility",
-    'stem-cell'
+    'stem-cell',
+    "bariatric-surgery"
 ]
 
 export const pathsSubCategory = [

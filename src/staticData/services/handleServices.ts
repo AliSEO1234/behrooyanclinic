@@ -5,6 +5,8 @@ import eye from "@/assets/images/icons/services/eye.png";
 import dental from "@/assets/images/icons/services/dental.png";
 import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import { allSubCategory, allSubNestedCategory } from "../allSubCategory";
+import healthlogo from "@/assets/images/healthlogo.png";
+
 const handleServices = (locale: string) => {
   // const countAethServices = categoryDataHandler("aesthetic", locale)
   //   ?.subCategoryList.length;
@@ -44,6 +46,14 @@ const handleServices = (locale: string) => {
   const countSubnestedStemCellServices = allSubNestedCategoryFunc.filter(
     (subnested) => subnested.categoryKey === "stem-cell"
   ).length;
+
+  const countBariatricServices = allSubCategoryFunc.filter(
+    (sub) => sub.categoryKey === "aesthetic"
+  ).length;
+  const countSubNestedService = allSubNestedCategoryFunc.filter(
+    (subnested) => subnested.categoryKey === "aesthetic"
+  ).length;
+
   const services: ServiceType[] = [
     {
       countService: countAethServices + counSubnestedAethServices || 0,
@@ -75,6 +85,12 @@ const handleServices = (locale: string) => {
       img: cell,
       label: locale === "ru" ? "Лечение стволовыми клетками" : "Stem Cell",
       path: "stem-cell",
+    },
+    {
+      countService: countBariatricServices + countSubNestedService || 0,
+      img: healthlogo,
+      label: locale === "ru" ? "Бариатрическая хирургия" : "Bariatric Surgery",
+      path: "bariatric-surgery",
     },
   ];
   return services;

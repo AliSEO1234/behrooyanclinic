@@ -30,6 +30,7 @@ import breatSubCategory from "@/assets/images/subCategory/Breast augmentation (i
 import genital from "@/assets/images/treatment/Genital Aesthetic.png";
 import labiaplastyGenital from "@/assets/images/subnested/Labiaplasty _ Barbie Look.png";
 import penileGenital from "@/assets/images/subnested/PeyronieDisease.png";
+import peyroniesdisease from "@/assets/images/subnested/PeyronieDisease.png";
 import implantology from "@/assets/images/subCategory/implantology.png";
 import den64 from "@/assets/images/subnested/All on 6 Dental Implants.png";
 import destigeneral from "@/assets/images/subCategory/General Dentistry.png";
@@ -39,12 +40,12 @@ import laminateveneers from "@/assets/images/subnested/Laminate Veneers.png";
 import restoryDenstiry from "@/assets/images/subCategory/Restorative Dentistry.png";
 import dentistchoosing from "@/assets/images/subnested/Dental Crowns.png";
 import periodontics from "@/assets/images/subnested/Periodontics.png";
+import lasergumtreatments from "@/assets/images/subnested/Periodontics.png";
 import hollywood from "@/assets/images/subnested/Holleywood Smile.png";
 import teethwhiting from "@/assets/images/subnested/Teeth Whitening.png";
 import orthodontics from "@/assets/images/subnested/Orthodontics.png";
 import clearaligners from "@/assets/images/subnested/ClearAligners.png";
 import gumgrafting from "@/assets/images/subnested/Gum Grafting.png";
-import lasergumtreatments from "@/assets/images/subnested/Periodontics.png";
 import oralsurgery from "@/assets/images/subnested/Oral Surgery.png";
 import bonegrafting from "@/assets/images/subnested/Bone Grafting.png";
 import glocama from "@/assets/images/subnested/Glaucoma treatment.png";
@@ -57,7 +58,6 @@ import maleFertility from "@/assets/images/subnested/Male Infertility.png";
 import asissfertility from "@/assets/images/subnested/Fertility assisted reproduction.png";
 import malesecual from "@/assets/images/subnested/Male sexual health issues.png";
 import malesexual from "@/assets/images/subnested/Male sexual health issues.png";
-import peyroniesdisease from "@/assets/images/subnested/PeyronieDisease.png";
 import dyfunc from "@/assets/images/subnested/Erectile Dysfunction.png";
 import theregemed from "@/assets/images/subCategory/therapy Regenerative Medicine.jpg";
 import orthopedic from "@/assets/images/subnested/Orthopedic Stem Cell Therapy.png";
@@ -86,7 +86,6 @@ import lasiksurgery from "@/assets/images/subnested/LASIK surgery.png";
 import smartlens from "@/assets/images/subnested/Smart Lens in Turkey.png";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.png";
 import dentalbonding from "@/assets/images/subnested/Dental Bonding.png";
-import healthlogo from "@/assets/images/healthlogo.png";
 // export const allSubCategory = (locale: string) => {
 //   const isRu = locale === "ru";
 //   const treatments = [
@@ -263,6 +262,63 @@ import healthlogo from "@/assets/images/healthlogo.png";
 export const allSubCategory = (locale: string) => {
   const isRu = locale === "ru";
   const treatments = [
+    // bariatric-surgery
+    {
+      img: "/images/Bariatric Surgery Treatment/Intragastric Balloon in Turkey.png",
+      title: isRu
+        ? "Внутрижелудочный баллон в Турции"
+        : "Intragastric Balloon in Turkey",
+      description: isRu
+        ? "Похудение может быть сложным и часто обескураживающим путешествием. Если вы пробовали различные диеты и программы упражнений без длительного успеха, но идея постоянной бариатрической хирургии кажется слишком большим шагом, вы можете искать менее инвазивный вариант. Чувство разочарования из-за упрямого веса и его влияния на ваше здоровье и уверенность — это нормально, но существуют эффективные нехирургические решения."
+        : "Losing weight can be a difficult and often discouraging journey. If you've tried various diets and exercise programs without lasting success, but the idea of permanent weight loss surgery feels like too big a step, you might be looking for a less invasive option. Feeling frustrated by stubborn weight and its impact on your health and confidence is common, but there are effective, non-surgical solutions available.",
+      path: "intragastric-balloon/intragastric-balloon",
+      categoryKey: "bariatric-surgery",
+    },
+    {
+      img: "/images/Bariatric Surgery Treatment/Biliopancreatic Diversion with Duodenal Switch (BPD DS) in Turkey.png",
+      title: isRu
+        ? "Билиопанкреатическое шунтирование с дуоденальным переключением (BPD/DS) в Турции"
+        : "Biliopancreatic Diversion with Duodenal Switch (BPD/DS) in Turkey",
+      description: isRu
+        ? "Для людей, борющихся с тяжелым или морбидным ожирением (часто определяемым как ИМТ 50 или выше), путь может быть невероятно сложным. Стандартные методы похудения могли оказаться неэффективными, и даже другие бариатрические операции могут не предложить глубокую, длительную потерю веса, необходимую для значительного улучшения здоровья и восстановления качества жизни. Если вы оказались в такой ситуации, чувствуя себя подавленным из-за осложнений, связанных с экстремальным ожирением, и ищете самое мощное хирургическое решение, билиопанкреатическое шунтирование с дуоденальным переключением (BPD/DS) может быть ответом."
+        : "For individuals grappling with severe or morbid obesity (often defined as a BMI of 50 or higher), the journey can be incredibly challenging. Standard weight loss methods may have proven ineffective, and even other bariatric surgeries might not offer the profound, lasting weight loss needed to significantly improve health and reclaim quality of life. If you find yourself in this situation, feeling overwhelmed by the health complications of extreme obesity and seeking the most potent surgical solution available, Biliopancreatic Diversion with Duodenal Switch (BPD/DS) could be the answer.",
+      path: "intragastric-balloon/bpd-ds",
+      categoryKey: "bariatric-surgery",
+    },
+    {
+      img: "/images/Bariatric Surgery Treatment/Adjustable Gastric Banding in Turkey.png",
+      title: isRu
+        ? "Регулируемое желудочное бандажирование в Турции"
+        : "Adjustable Gastric Banding in Turkey",
+      description: isRu
+        ? "Изучаете варианты бариатрической хирургии, но сомневаетесь в постоянных изменениях вашего тела? Возможно, вы ищете менее инвазивный подход для борьбы с ожирением и связанными с ним проблемами здоровья. Если диета и упражнения не дали долгосрочных результатов, и вы предпочитаете процедуру, которую можно регулировать или даже отменить, регулируемое желудочное бандажирование может быть правильным выбором для вас."
+        : "Are you exploring weight loss surgery options but feel hesitant about permanent changes to your body? Perhaps you're looking for a less invasive approach to help manage obesity and its related health challenges. If diet and exercise haven't provided the lasting results you need, and you prefer a procedure that can be adjusted or even reversed, Adjustable Gastric Banding might be the right path for you.",
+      path: "intragastric-balloon/adjustable-gastric-banding",
+      categoryKey: "bariatric-surgery",
+    },
+    {
+      img: "/images/Bariatric Surgery Treatment/Roux-en-Y Gastric Bypass Surgery.png",
+      title: isRu
+        ? "Гастрошунтирование по Ру в Турции"
+        : "Roux-en-Y Gastric Bypass Surgery",
+      description: isRu
+        ? "Жизнь с тяжелым ожирением может ощущаться как постоянная борьба. Возможно, вы пробовали бесчисленные диеты и планы упражнений, но вес возвращался, оставляя вас разочарованным и безнадежным. Возможно, вы сталкиваетесь с серьезными проблемами со здоровьем, такими как диабет 2 типа, высокое давление или апноэ во сне, которые ограничивают ваши повседневные активности и влияют на ваше общее благополучие. Мы понимаем ваши трудности и связываем вас с самыми авторитетными клиниками Турции и высококвалифицированными бариатрическими хирургами, специализирующимися на трансформирующих процедурах похудения, включая известное гастрошунтирование по Ру."
+        : "Living with severe obesity can feel like a constant battle. Perhaps you've tried countless diets and exercise plans, only to find the weight returning, leaving you feeling frustrated and hopeless. Maybe you're facing serious health problems like type 2 diabetes, high blood pressure, or sleep apnea, which limit your daily activities and impact your overall well-being.  We understand the challenges you face, and we connect you with Turkey's most reputable clinics and highly experienced bariatric surgeons specializing in transformative weight-loss procedures, including the renowned Roux-en-Y Gastric Bypass.",
+      path: "intragastric-balloon/roux-gastric-bypass",
+      categoryKey: "bariatric-surgery",
+    },
+    {
+      img: "/images/Bariatric Surgery Treatment/Gastric Sleeve Surgery in Turkey.png",
+      title: isRu
+        ? "Рукавная гастрэктомия в Турции"
+        : "Gastric Sleeve Surgery in Turkey",
+      description: isRu
+        ? "Трансформационное путешествие к более здоровому вам с помощью рукавной гастрэктомии, ведущей бариатрической процедуры, предлагаемой AZPO Health в Турции. Если вы боролись с ожирением и связанными с ним проблемами здоровья, рукавная гастрэктомия в Турции предоставляет эффективное, безопасное и доступное решение. AZPO Health сотрудничает с лучшими, международно аккредитованными клиниками и высококвалифицированными бариатрическими хирургами по всей Турции, гарантируя, что вы получите медицинский уход мирового уровня, адаптированный к вашим потребностям."
+        : "A transformative journey towards a healthier you with gastric sleeve surgery, a leading bariatric procedure offered by AZPO Health in Turkey. If you've struggled with obesity and related health issues, gastric sleeve surgery in Turkey provides an effective, safe, and affordable solution. AZPO Health partners with the best, internationally accredited clinics and highly experienced bariatric surgeons across Turkey's top destinations, ensuring you receive world-class care tailored to your needs.",
+      path: "intragastric-balloon/gastric-sleeve-surgery",
+      categoryKey: "bariatric-surgery",
+    },
+
     {
       img: hair,
       title: isRu ? "Пересадка волос" : "Hair Transplantation",
@@ -307,15 +363,6 @@ export const allSubCategory = (locale: string) => {
         : "Considering genital aesthetic surgery to address personal concerns or enhance your intimate well-being? Turkey has become a leading destination for these specialized procedures, offering discreet, high-quality care. Discover how AZPO Health connects you with expert surgeons and all-inclusive packages for a comfortable and transformative experience.",
       categoryKey: "aesthetic",
       path: "genital-aesthetic",
-    },
-    {
-      img: healthlogo,
-      title: isRu ? "Бариатрическая хирургия" : "Bariatric Surgery",
-      description: isRu
-        ? "Сталкиваетесь с ежедневными трудностями из-за лишнего веса, такими как снижение подвижности, усталость или связанные с этим состояния здоровья? Многие люди чувствуют себя неуверенно или ограниченно из-за своего веса, что влияет на качество их жизни. Бариатрическая хирургия предлагает мощный инструмент, чтобы помочь людям восстановить контроль над своим здоровьем и открыть более активное, полноценное будущее."
-        : "Are you facing the daily struggles associated with excess weight, such as reduced mobility, fatigue, or related health conditions? Many people feel self-conscious or limited by their weight, impacting their quality of life. Finding a treatment that offers significant, long-term weight loss can seem daunting. Bariatric surgery offers a powerful tool to help individuals regain control of their health and unlock a more active, fulfilling future.",
-      categoryKey: "aesthetic",
-      path: "bariatric-surgery",
     },
     // dental
     {
@@ -441,68 +488,6 @@ export const allSubCategory = (locale: string) => {
 export const allSubNestedCategory = (locale: string) => {
   const isRu = locale === "ru";
   const treatments = [
-    // bariatric-surgery
-    {
-      img: healthlogo,
-      title: isRu
-        ? "Внутрижелудочный баллон в Турции"
-        : "Intragastric Balloon in Turkey",
-      description: isRu
-        ? "Похудение может быть сложным и часто обескураживающим путешествием. Если вы пробовали различные диеты и программы упражнений без длительного успеха, но идея постоянной бариатрической хирургии кажется слишком большим шагом, вы можете искать менее инвазивный вариант. Чувство разочарования из-за упрямого веса и его влияния на ваше здоровье и уверенность — это нормально, но существуют эффективные нехирургические решения."
-        : "Losing weight can be a difficult and often discouraging journey. If you've tried various diets and exercise programs without lasting success, but the idea of permanent weight loss surgery feels like too big a step, you might be looking for a less invasive option. Feeling frustrated by stubborn weight and its impact on your health and confidence is common, but there are effective, non-surgical solutions available.",
-      path: "intragastric-balloon",
-      categoryKey: "aesthetic",
-      subCategoryKey: "bariatric-surgery",
-    },
-    {
-      img: healthlogo,
-      title: isRu
-        ? "Билиопанкреатическое шунтирование с дуоденальным переключением (BPD/DS) в Турции"
-        : "Biliopancreatic Diversion with Duodenal Switch (BPD/DS) in Turkey",
-      description: isRu
-        ? "Для людей, борющихся с тяжелым или морбидным ожирением (часто определяемым как ИМТ 50 или выше), путь может быть невероятно сложным. Стандартные методы похудения могли оказаться неэффективными, и даже другие бариатрические операции могут не предложить глубокую, длительную потерю веса, необходимую для значительного улучшения здоровья и восстановления качества жизни. Если вы оказались в такой ситуации, чувствуя себя подавленным из-за осложнений, связанных с экстремальным ожирением, и ищете самое мощное хирургическое решение, билиопанкреатическое шунтирование с дуоденальным переключением (BPD/DS) может быть ответом."
-        : "For individuals grappling with severe or morbid obesity (often defined as a BMI of 50 or higher), the journey can be incredibly challenging. Standard weight loss methods may have proven ineffective, and even other bariatric surgeries might not offer the profound, lasting weight loss needed to significantly improve health and reclaim quality of life. If you find yourself in this situation, feeling overwhelmed by the health complications of extreme obesity and seeking the most potent surgical solution available, Biliopancreatic Diversion with Duodenal Switch (BPD/DS) could be the answer.",
-      path: "bpd-ds",
-      categoryKey: "aesthetic",
-      subCategoryKey: "bariatric-surgery",
-    },
-    {
-      img: healthlogo,
-      title: isRu
-        ? "Регулируемое желудочное бандажирование в Турции"
-        : "Adjustable Gastric Banding in Turkey",
-      description: isRu
-        ? "Изучаете варианты бариатрической хирургии, но сомневаетесь в постоянных изменениях вашего тела? Возможно, вы ищете менее инвазивный подход для борьбы с ожирением и связанными с ним проблемами здоровья. Если диета и упражнения не дали долгосрочных результатов, и вы предпочитаете процедуру, которую можно регулировать или даже отменить, регулируемое желудочное бандажирование может быть правильным выбором для вас."
-        : "Are you exploring weight loss surgery options but feel hesitant about permanent changes to your body? Perhaps you're looking for a less invasive approach to help manage obesity and its related health challenges. If diet and exercise haven't provided the lasting results you need, and you prefer a procedure that can be adjusted or even reversed, Adjustable Gastric Banding might be the right path for you.",
-      path: "adjustable-gastric-banding",
-      categoryKey: "aesthetic",
-      subCategoryKey: "bariatric-surgery",
-    },
-    {
-      img: healthlogo,
-      title: isRu
-        ? "Гастрошунтирование по Ру в Турции"
-        : "Roux-en-Y Gastric Bypass Surgery",
-      description: isRu
-        ? "Жизнь с тяжелым ожирением может ощущаться как постоянная борьба. Возможно, вы пробовали бесчисленные диеты и планы упражнений, но вес возвращался, оставляя вас разочарованным и безнадежным. Возможно, вы сталкиваетесь с серьезными проблемами со здоровьем, такими как диабет 2 типа, высокое давление или апноэ во сне, которые ограничивают ваши повседневные активности и влияют на ваше общее благополучие. Мы понимаем ваши трудности и связываем вас с самыми авторитетными клиниками Турции и высококвалифицированными бариатрическими хирургами, специализирующимися на трансформирующих процедурах похудения, включая известное гастрошунтирование по Ру."
-        : "Living with severe obesity can feel like a constant battle. Perhaps you've tried countless diets and exercise plans, only to find the weight returning, leaving you feeling frustrated and hopeless. Maybe you're facing serious health problems like type 2 diabetes, high blood pressure, or sleep apnea, which limit your daily activities and impact your overall well-being.  We understand the challenges you face, and we connect you with Turkey's most reputable clinics and highly experienced bariatric surgeons specializing in transformative weight-loss procedures, including the renowned Roux-en-Y Gastric Bypass.",
-      path: "roux-gastric-bypass",
-      categoryKey: "aesthetic",
-      subCategoryKey: "bariatric-surgery",
-    },
-    {
-      img: healthlogo,
-      title: isRu
-        ? "Рукавная гастрэктомия в Турции"
-        : "Gastric Sleeve Surgery in Turkey",
-      description: isRu
-        ? "Трансформационное путешествие к более здоровому вам с помощью рукавной гастрэктомии, ведущей бариатрической процедуры, предлагаемой AZPO Health в Турции. Если вы боролись с ожирением и связанными с ним проблемами здоровья, рукавная гастрэктомия в Турции предоставляет эффективное, безопасное и доступное решение. AZPO Health сотрудничает с лучшими, международно аккредитованными клиниками и высококвалифицированными бариатрическими хирургами по всей Турции, гарантируя, что вы получите медицинский уход мирового уровня, адаптированный к вашим потребностям."
-        : "A transformative journey towards a healthier you with gastric sleeve surgery, a leading bariatric procedure offered by AZPO Health in Turkey. If you've struggled with obesity and related health issues, gastric sleeve surgery in Turkey provides an effective, safe, and affordable solution. AZPO Health partners with the best, internationally accredited clinics and highly experienced bariatric surgeons across Turkey's top destinations, ensuring you receive world-class care tailored to your needs.",
-      path: "gastric-sleeve-surgery",
-      categoryKey: "aesthetic",
-      subCategoryKey: "bariatric-surgery",
-    },
-
     // hair-transplantation
     {
       title: isRu ? "FUE пересадка волос" : "FUE Hair Transplantation",
