@@ -5048,9 +5048,9 @@ export const dataSubCategoryHandler = (
         ],
         categories: [
           {
-            header: isRu ? null : "Description",
+            header: isRu ? "Описание" : "Description",
             desc: isRu
-              ? null
+              ? "Внутрижелудочный баллон, это нехирургический способ похудения, при котором в желудок временно помещают баллон, наполненный жидкостью или газом. Это помогает быстрее чувствовать себя сытым и есть меньше. Процедура занимает всего 20-30 минут, баллон находится в желудке от 6 до 12 месяцев. В среднем люди теряют 10-15% от своего веса. Этот метод подходит тем, у кого ИМТ от 30 до 40, а также тем, кто не хочет делать операцию. Чтобы получить лучший результат, нужно следовать программе питания."
               : "The intragastric balloon is a non-surgical weight-loss procedure designed to help individuals lose weight by reducing hunger and promoting earlier satiety. A soft, saline- or gas-filled balloon (400-700 cc) is temporarily placed in the stomach, occupying space and limiting food intake.",
           },
           {
@@ -5562,15 +5562,15 @@ export const dataSubCategoryHandler = (
               : "The FUE method (Follicular Unit Extraction) is a hair restoration technique in which individual hair follicles are extracted from the donor area of the scalp (usually from the back of the head) and transplanted to areas with hair loss or thinning to restore natural density and appearance.",
           },
           {
-            header: isRu ? null : "How it works",
+            header: isRu ? "Как это работает" : "How it works",
             desc: isRu
-              ? null
+              ? "Извлечение: Волосы берутся из донорской зоны. Подготовка: Фолликулы сортируются и сохраняются. Имплантация: Размещаются в крошечных каналах в области-получателе. Рост: Волосы со временем растут естественным путем."
               : "Extraction: Hair follicles are taken from the donor area. Preparation: Follicles are sorted and preserved. Implantation: Placed into tiny channels in the recipient area. Growth: Hair grows naturally over time.",
           },
           {
-            header: isRu ? null : "For whom",
+            header: isRu ? "Кому это подходит" : "For whom",
             desc: isRu
-              ? null
+              ? "Процедура подходит как мужчинам, так и женщинам с локальными участками выпадения волос, при этом необходимо наличие достаточного количества здоровых волос в донорской зоне."
               : "The procedure is suitable for both men and women with localized hair loss areas, but a sufficient amount of healthy hair in the donor area is required.",
           },
         ],
@@ -6018,9 +6018,9 @@ export const dataSubCategoryHandler = (
               : "Hair follicles are extracted using a micro-tool and transplanted with a special implanting device (DHI pen), which simultaneously creates a channel and places the hair. This allows for more precise control over the angle, depth, and direction of hair growth.",
           },
           {
-            header: isRu ? null : "For whom",
+            header: isRu ? "Кому это подходит" : "For whom",
             desc: isRu
-              ? null
+              ? "Процедура подходит как мужчинам, так и женщинам с локальными участками выпадения волос, которые хотят получить максимально естественный результат. Требуется наличие здоровых волос-доноров."
               : "The procedure is suitable for both men and women with localized hair loss areas who want the most natural result. Healthy donor hair is required. DHI hair transplantation is ideal for individuals with hair loss, thinning, or reduced density in specific areas. Candidates in good health with sufficient donor hair follicles can benefit, especially those affected by genetics, hormonal changes, or environmental factors. It’s also effective for increasing density or filling thinning areas.",
           },
         ],
@@ -7050,9 +7050,9 @@ export const dataSubCategoryHandler = (
               : "Vitamins, minerals, amino acids, and other active substances are injected into the scalp, stimulating hair growth and enhancing its condition.",
           },
           {
-            header: isRu ? null : "For Whom",
+            header: isRu ? "Для кого" : "For Whom",
             desc: isRu
-              ? null
+              ? "Подходит для людей с истончением волос и эффективна для тех, кто сталкивается с начальной стадией выпадения волос или желает улучшить состояние кожи головы, способствуя здоровому росту волос."
               : "Suitable for individuals with thinning hair, early-stage hair loss, or those looking to improve scalp health.",
           },
         ],
@@ -7469,9 +7469,9 @@ export const dataSubCategoryHandler = (
               : "Donor Hair Extraction: Hair is taken from the donor area (usually the back of the head) using the FUE (Follicular Unit Extraction) method. Follicle Preparation: The extracted follicles are processed and prepared for transplantation. Implantation: The hair is transplanted into areas that need correction, considering the natural direction, angle, and density of the beard growth.",
           },
           {
-            header: isRu ? null : "For Whom",
+            header: isRu ? "Для кого" : "For Whom",
             desc: isRu
-              ? null
+              ? "Эта процедура идеально подходит для мужчин с редким или отсутствующим ростом бороды, а также для тех, кто желает улучшить форму и контуры своей бороды, придавая ей более выразительный и аккуратный вид."
               : "This procedure is suitable for men with sparse or no beard growth, as well as those who want to enhance the contours of their beard.",
           },
         ],
@@ -7865,9 +7865,9 @@ export const dataSubCategoryHandler = (
         ],
         categories: [
           {
-            header: isRu ? null : "Description",
+            header: isRu ? "Забор донорских волос" : "Description",
             desc: isRu
-              ? null
+              ? "волосы берутся с затылочной или боковых областей головы методом FUE — без разрезов и швов. Затем идет подготовка фолликул: извлеченные волосяные фолликулы обрабатываются и подготавливаются к пересадке. Наконец, происходит имплантация: фолликулы имплантируются под правильным углом для максимально естественного результата."
               : "A mustache transplant is a cosmetic procedure that helps create or restore the density of a mustache. It is commonly used by men who are unable to naturally achieve the desired shape or thickness of their mustache due to sparse hair growth, genetics, or other factors.",
           },
           {
@@ -8805,9 +8805,9 @@ export const dataSubCategoryHandler = (
         ],
         categories: [
           {
-            header: isRu ? null : "Description",
+            header: isRu ? "Описание" : "Description",
             desc: isRu
-              ? null
+              ? "Ринопластика, это операция, которая меняет форму носа и может помочь с дыханием. Хирург меняет структуру носа, а после операции нужно время на восстановление. Эта процедура улучшает внешний вид лица и облегчает дыхание, и её результаты остаются надолго."
               : "Nose shape correction surgery, also known as rhinoplasty, addresses structural abnormalities in the nose. These deformities may be congenital, caused by trauma, infections, or prior surgeries. The abnormalities can affect the nose’s aesthetics, functionality, or both, impacting overall well-being.",
           },
           {
@@ -9298,9 +9298,9 @@ export const dataSubCategoryHandler = (
         ],
         categories: [
           {
-            header: isRu ? null : "Description",
+            header: isRu ? "Описание" : "Description",
             desc: isRu
-              ? null
+              ? "Блефаропластика — это операция на веках, которая помогает убрать лишнюю кожу и жир, чтобы глаза выглядели моложе. Сначала хирург обсуждает, что нужно исправить. Затем во время операции он убирает лишние ткани, делая разрезы в незаметных местах. После операции нужно несколько недель на восстановление. Эта процедура делает взгляд свежее, улучшает зрение, если веки сильно нависают, и даёт долгий результат. Она подходит тем, кто хочет омолодить свои глаза."
               : "Blepharoplasty is a surgical procedure aimed at correcting the eyelids by removing excess skin, fat deposits, and other imperfections to enhance the appearance of the eyes. It can be performed on the upper or lower eyelids depending on the patient’s needs. ",
           },
           {
@@ -10033,9 +10033,9 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: isRu ? null : "Description",
+            header: isRu ? "Описание" : "Description",
             desc: isRu
-              ? null
+              ? "Липосакция двойного подбородка,  это процедура, при которой убирают лишний жир с подбородка. Это помогает сделать контур лица более чётким и красивым. Основные плюсы: лицо выглядит моложе, результаты смотрятся естественно и сохраняются надолго. Такая процедура хорошо подходит людям, у которых есть лишний жир на подбородке, от которого не получается избавиться с помощью спорта и диет. Чтобы получить хороший результат, важно выбрать опытного врача."
               : "Double chin liposuction is a surgical procedure aimed at removing excess fat from the chin and neck area to create a more defined facial contour and enhance overall appearance. This procedure is suitable for individuals experiencing age-related changes or those who want to eliminate stubborn fat that doesn't respond to diet or exercise.",
           },
           {
@@ -10351,9 +10351,9 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: isRu ? null : "Description",
+            header: isRu ? "Описание" : "Description",
             desc: isRu
-              ? null
+              ? "Отопластика, это операция, которая меняет форму, размер или положение ушей. Чаще всего её делают, когда уши торчат или выглядят по-разному. Во время операции врач убирает лишний хрящ и подтягивает ткань, чтобы уши выглядели красиво и естественно."
               : "Otoplasty is a surgical procedure designed to reshape or resize the ears. It addresses aesthetic ear defects such as excessive protrusion, asymmetry, or other abnormalities. This procedure is particularly popular among individuals who feel self-conscious about the appearance of their ears.",
           },
           {
@@ -11113,9 +11113,9 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
               : "During the procedure, the surgeon makes incisions along the hairline or just above the eyebrows. The skin and tissues are tightened to lift the brows and smooth forehead wrinkles. In some cases, adjustments to the forehead position and removal of excess skin may also be performed. Recovery from a brow lift typically takes 1 to 2 weeks, with patients advised to avoid intense physical activity and follow post-surgical instructions for healing.",
           },
           {
-            header: isRu ? null : "For whom",
+            header: isRu ? "Кому подходит" : "For whom",
             desc: isRu
-              ? null
+              ? "Процедура идеально подходит людям с опущенными бровями или дряблой кожей лба, из-за которых глаза выглядят усталыми или старше. Рекомендуется тем, кто хочет улучшить внешний вид области глаз и лба без более сложных операций. Также подтяжка поможет тем, кто испытывает дискомфорт из-за морщин и складок на лбу."
               : "Ideal for people with drooping brows or sagging forehead skin, making the eyes appear tired or aged. Suitable for those who want to enhance the appearance of their eyes and forehead without undergoing more invasive procedures. Also recommended for individuals who experience discomfort from forehead wrinkles and folds.",
           },
         ],
@@ -11563,9 +11563,9 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: isRu ? null : "Description",
+            header: isRu ? "Описание" : "Description",
             desc: isRu
-              ? null
+              ? "Подтяжка шеи (омоложение шеи) — это хирургическая процедура, направленная на улучшение контуров шеи и устранение признаков старения, таких как обвисшая кожа, второй подбородок и лишний жир. Эта операция помогает создать более четкую и молодую линию шеи."
               : "A neck lift (or neck rejuvenation) is a surgical procedure designed to improve the contours of the neck and eliminate signs of aging, such as sagging skin, a double chin, and excess fat. A neck lift helps create a more defined and youthful neck appearance.",
           },
           {
@@ -11836,9 +11836,9 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: isRu ? null : "Description",
+            header: isRu ? "Описание" : "Description",
             desc: isRu
-              ? null
+              ? "Бразильская подтяжка ягодиц, это операция, которая увеличивает объём и улучшает форму ягодиц. Во время процедуры жир убирают с живота, бёдер или боков с помощью липосакции, а потом переносят его в ягодицы. Главные плюсы — естественный вид, гармоничный силуэт и двойной эффект: вы избавляетесь от лишнего жира и одновременно делаете ягодицы более красивыми. Это хороший вариант для тех, кто хочет увеличить ягодицы без искусственных имплантатов. Чтобы результат был хорошим, важно найти квалифицированного хирурга и выполнять все его рекомендации после операции."
               : "The Brazilian Butt Lift (BBL) is a procedure that enhances the volume and shape of the buttocks using the patient's own fat.",
           },
           {
@@ -12338,9 +12338,9 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: isRu ? null : "Description",
+            header: isRu ? "Описание" : "Description",
             desc: isRu
-              ? null
+              ? "Липосакция, это операция, которая убирает лишний жир с разных частей тела, например, с живота, бёдер или рук. Во время процедуры делают небольшие разрезы, через которые вводят специальную трубку, чтобы разрушить жировые клетки. Затем жир убирают. Эта операция помогает убрать жир, который не исчезает даже при правильном питании и спорте. Она делает контуры тела красивее и подходит тем, у кого есть локальные жировые отложения."
               : "Liposuction is a cosmetic surgical procedure designed to remove localized fat deposits to improve the contours and proportions of the body. It is not a weight loss method, but a body contouring technique.",
           },
           {
@@ -13676,9 +13676,9 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
               : "Breast augmentation involves the insertion of implants to increase the size and improve the shape of the breasts. This popular cosmetic procedure enhances body proportions and restores volume lost due to pregnancy or weight loss.",
           },
           {
-            header: isRu ? null : "How it works",
+            header: isRu ? "Как проходит операция" : "How it works",
             desc: isRu
-              ? null
+              ? "импланты — силиконовые или солевые — вводятся через аккуратные разрезы, которые могут располагаться в складке под грудью, вокруг ареолы или в подмышечной области. Их размещают либо под молочной железой, либо под грудной мышцей, в зависимости от индивидуальных анатомических особенностей и пожеланий пациента. Операция длится от 1 до 2 часов и проводится под общим наркозом."
               : "Silicone or saline implants are inserted through incisions made in the breast fold, around the areola, or under the armpit. The implants are placed either under the breast tissue or beneath the chest muscle. The procedure typically lasts 1–2 hours under general anesthesia.",
           },
           {
@@ -14463,9 +14463,9 @@ Don't let discomfort or self-consciousness hold you back any longer. Contact AZP
         ],
         categories: [
           {
-            header: isRu ? null : "Description",
+            header: isRu ? "Описание" : "Description",
             desc: isRu
-              ? null
+              ? "Лабиопластика, это операция, которая меняет форму и размер половых губ. Во время операции врач убирает лишнюю ткань, чтобы сделать половые губы более красивыми и симметричными. Иногда результатом может быть \"эффект Барби\" — очень симметричные и красивые половые губы. Главные плюсы — это улучшение внешнего вида, избавление от неудобства и повышение уверенности в себе. Эта операция подходит женщинам, которым не нравится, как выглядят их половые губы, или тем, кто испытывает из-за этого дискомфорт."
               : "Labiaplasty is a surgical procedure aimed at altering the size and shape of the labia, often performed to improve aesthetic appearance and increase comfort. Labiaplasty can involve reducing the size of the labia majora to relieve discomfort caused by hypertrophy (enlargement) of the labia.",
           },
           {
