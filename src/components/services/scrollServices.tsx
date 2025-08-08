@@ -20,7 +20,8 @@ const ScrollServices = () => {
     }
   }, []);
   return (
-    <div ref={scrollContainerRef} className="flex flex-nowrap scroll-hide overflow-x-scroll gap-x-8 s1280:overflow-x-hidden s1280:flex-wrap items-center justify-start s1280:items-center s1280:justify-between gap-y-8 s1280:gap-4 s1280:px-0 scroll-smooth snap-x snap-mandatory pb-4">
+    <div ref={scrollContainerRef}
+         className="flex flex-nowrap scroll-hide overflow-x-scroll gap-5 px-2 items-center justify-start  gap-y-8 scroll-smooth snap-x snap-mandatory pb-4">
       {services.map(({ countService, img, label, path }, index) => {
         return (
           <ServiceCard
