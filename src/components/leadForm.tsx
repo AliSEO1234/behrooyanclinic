@@ -177,7 +177,7 @@ const LeadForm = ({ className }: LeadFormType) => {
           </Link>
           <Link
             target="_blank"
-            href="whatsapp://send?phone=+905393323230"
+            href="https://wa.me/+905393323230"
             className="w-[35px] h-[35px] s1512:w-[44px] s1512:h-[44px] rounded-full flex-cen p-2 text-[#128C7E] bg-white hover:bg-[#0CA5A5] hover:text-white anm shadow-[0px_1px_6px_0px_#00000040]"
           >
             <IoLogoWhatsapp className="s1280:size-5 s1512:size-6" />

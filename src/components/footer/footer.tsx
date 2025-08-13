@@ -346,7 +346,7 @@ const Footer = () => {
           <div>
             <Link
               target="_blank"
-              href="whatsapp://send?phone=+905393323230"
+              href="https://wa.me/+905393323230"
               className="w-[35px] h-[35px] rounded-full border-[1px] border-[#0CA5A5] flex-cen p-2 hover:bg-[#0CA5A5] hover:text-white anm"
             >
               <IoLogoWhatsapp className="s1280:size-5" />
