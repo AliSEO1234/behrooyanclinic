@@ -826,7 +826,7 @@ export const categoryDataHandler = (key: string, locale: string) => {
       },
       categoryKey: "bariatric-surgery",
       subCategoryList: findSubCategories,
-      imgCover:key === "bariatric-surgery" ?healthlogo:null,
+      imgCover:key === "bariatric-surgery" ?"/images/Bariatric Surgery Treatment/Adjustable Gastric Banding in Turkey.png":null,
     },
 
   ];

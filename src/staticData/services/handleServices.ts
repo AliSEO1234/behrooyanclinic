@@ -5,7 +5,6 @@ import eye from "@/assets/images/icons/services/eye.png";
 import dental from "@/assets/images/icons/services/dental.png";
 import aesthetics from "@/assets/images/icons/services/aesthetics.png";
 import { allSubCategory, allSubNestedCategory } from "../allSubCategory";
-import healthlogo from "@/assets/images/healthlogo.png";
 
 const handleServices = (locale: string) => {
   // const countAethServices = categoryDataHandler("aesthetic", locale)
@@ -88,7 +87,7 @@ const handleServices = (locale: string) => {
     },
     {
       countService: countBariatricServices + countSubNestedService || 0,
-      img: healthlogo,
+      img: "/images/Bariatric Surgery Treatment/Adjustable Gastric Banding in Turkey.png",
       label: locale === "ru" ? "Бариатрическая хирургия" : "Bariatric Surgery",
       path: "bariatric-surgery",
     },
