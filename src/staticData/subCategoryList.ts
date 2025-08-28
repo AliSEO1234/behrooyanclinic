@@ -78,7 +78,6 @@ import lasiksurgery from "@/assets/images/subnested/LASIK surgery.png";
 import smartlens from "@/assets/images/subnested/Smart Lens in Turkey.png";
 import wisdom from "@/assets/images/subnested/Wisdom Teeth Removal.png";
 import dentalbonding from "@/assets/images/subnested/Dental Bonding.png";
-import healthlogo from "@/assets/images/healthlogo.png";
 import { dentalTreatmentsContent } from "./contents/endPageContent";
 
 export const categoryDataHandler = (key: string, locale: string) => {
