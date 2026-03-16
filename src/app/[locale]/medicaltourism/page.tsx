@@ -1,20 +1,19 @@
 import ImgFetcher from "@/components/imgFetcher";
-import VideoPlayer from "@/features/services/videoPlayer/videoPlayer";
 import Link from "next/link";
 import { FaPlay } from "react-icons/fa";
-import videoIcon from "@/assets/images/icons/video.svg";
 import Sidebar from "@/layoutes/sidebar/sidebar";
 import ServiceCard from "@/features/services/serviceCard";
-import Pagination from "@/components/pagination";
-import ServiceSlider from "@/features/services/serviceSlider/serviceSlider";
 import SubContent from "@/components/shortLongDesc";
 import { medicalTourismContent } from "@/staticData/medicalTourismContent";
 import handleServices from "@/staticData/services/handleServices";
 import { Metadata } from "next";
 import { headers } from "next/headers";
+import doctor from "@/assets/images/our1.png";
+
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const headerRequest = await headers();
@@ -29,6 +28,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
   };
 }
+
+const serviceTags = [
+  "رنوویِن",
+  "بلفاروپلاستی",
+  "بوتاکس لیفت",
+  "کاشت مو",
+  "مزوتراپی",
+  "لاغری نوین",
+  "پی آر پی",
+  "هایفو",
+];
+
 const Treatments = async ({
   params,
 }: {
@@ -38,94 +49,101 @@ const Treatments = async ({
 }) => {
   const { locale } = await params;
   const services = handleServices(locale);
-  const isRu = locale === "ru"
+
   return (
-    <div className="viewport-size bg-[#FCFCFC]">
-      {/* header */}
+    <div
+      className="viewport-size bg-[#FCFCFC]"
+      dir="rtl"
+      lang="fa"
+    >
+      {/* header section */}
       <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 mb-10 s1280:mb-20 mt-20">
-        <div className="col-span-12 s1280:col-span-5 s1728:col-span-6">
-          <div className="mb-3 s1280:mb-20 s1728:mb-10">
-            <h1 className="text-[30px] s1280:text-[30px] s1920:text-[46px] font-black s1280:font-semibold text-[#00979A] mb-4 s1280:mb-10">
-              {locale === "ru"
-                ? "Медицинский туризм в Турции — ваш путь к здравоохранению мирового уровня"
-                : "Medical Tourism in Turkey - Your Gateway to World-Class Healthcare"}
-            </h1>
-            {/* <p className="font-semibold flex-left gap-x-1 text-[14px] s1280:text-[24px] text-[#00979A] [text-shadow:0_2px_3px_#00000040] mb-4">
-              <span>85</span>
-              <span>Service</span>
-            </p> */}
-            <p className="font-medium s1280:text-[20px] s1512:text-[24px] s1728:text-[28px] s1920:text-[30px] leading-[22px] s1280:leading-[27px] s1512:leading-[32px] s1728:leading-[40px] s1280:pe-10">
-              {locale === "ru"
-                ? "Ищете доступное и качественное лечение? Турция — идеальное направление для тех, кто хочет совместить заботу о здоровье с комфортом и новыми впечатлениями. AZPO Health предлагает комплексные медицинские пакеты — от косметических процедур до высокоспециализированного лечения. Все это с индивидуальным подходом и вниманием к деталям."
-                : "Seeking affordable, high-quality healthcare? Discover medical tourism in Turkey! AZPO Health offers comprehensive packages for various medical needs, from cosmetic surgery to specialized treatments. Combine your health journey with a unique cultural experience."}
-            </p>
-          </div>
-          <div className="flex items-center justify-start s1280:justify-between gap-x-4 s1280:gap-x-0 s1280:pe-20 s1600:pe-40 s1728:pe-72 s1920:pe-80">
-            <div>
-              <Link
-                className="flex-cen rounded-[40px] w-[157px] h-[41px] s1280:w-[197px] s1280:h-[52px] text-center bg-[#0CA5A5] text-white font-bold s1280:text-[18px] border border-[#0CA5A5] hover:bg-white hover:text-[#0CA5A5] anm"
-                href={`/${locale}`}
-              >
-                Back To Home
-              </Link>
-            </div>
-            <div>
-              <a
+        {/* doctor image - left on RTL = right visually */}
+        <div className="col-span-12 s1280:col-span-5 order-2 s1280:order-1">
+          <div className="relative w-full h-[350px] s1280:h-[500px] rounded-[30px] overflow-hidden">
+            <ImgFetcher
+              className="object-cover object-top"
+              width={1500}
+              height={1500}
+              src={doctor}
+            />
+            {/* play button overlay */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              
                 href="#video-service"
-                className="flex-cen gap-x-2 text-[#00979A] s1280:text-[20px] font-semibold"
+                className="w-[60px] h-[60px] rounded-full bg-white/80 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
               >
-                <span className="bg-[#DAEDE6] rounded-full p-1 s1280:p-2 flex-cen w-[37px] h-[37px] s1280:w-[62px] s1280:h-[62px]">
-                  <span className=" bg-[#25A6A9] hover:bg-[#0c797b] anm w-full h-full rounded-full flex-cen text-white">
-                    <FaPlay className="size-3 s1280:size-5 ms-1" />
-                  </span>
-                </span>
-                <span>Play video</span>
+                <FaPlay className="text-[#A855F7] ms-1 size-5" />
               </a>
             </div>
           </div>
         </div>
-        <div className="col-span-12 s1280:col-span-7 s1728:col-span-6">
-          <ServiceSlider />
-        </div>
-      </div>
-      {/* azpo service video */}
-      <div className="mb-14 s1280:mb-28">
-        <div className="flex-bet mb-2 s1280:mb-10">
-          <hr className="border-[1px] border-[#333333] border-dashed w-[10%] s1280:w-[34%]" />
-          <h2 className="flex-cen font-semibold text-[20px] s1280:text-[30px]">
-            <span className="w-[55px] h-[40px]  s1280:w-[70px] s1280:h-[53px]">
-              <ImgFetcher src={videoIcon} />
-            </span>
-            <span>Azpo Service video</span>{" "}
-          </h2>
-          <hr className="border-[1px] border-[#333333] border-dashed w-[10%] s1280:w-[34%]" />
-        </div>
-        <div className="flex-cen">
-          <VideoPlayer
-            src={
-              locale === "ru"
-                ? "https://www.youtube.com/watch?v=ocHaJi7XUOw"
-                : "https://youtu.be/VEqbI7eBgJY?si=1NTS-RyYETB_Gjn5"
-            }
-            className="w-[300px] h-[170px] s1280:w-[916px] s1280:h-[501px] object-cover"
-          />
-        </div>
-      </div>
-      {/* all treatments */}
-      <div>
-        <div className="mb-10 flex flex-col justify-start gap-y-2 s1280:gap-y-0 s1280:flex-row items-start s1280:justify-start s1280:mb-20">
-          <div className="w-full s1280:w-fit">
-            <h2 className="[text-shadow:0px_1px_2px_#00000040] font-bold text-[20px] s1280:text-[40px] s1600:text-[48px] text-[#00979A]">
-              {
-                isRu ? "Все процедуры" : "All Treatments"
-              }
-              
-            </h2>
+
+        {/* clinic info - right on RTL = left visually */}
+        <div className="col-span-12 s1280:col-span-7 order-1 s1280:order-2 flex flex-col justify-center s1280:pe-10 s1280:ps-20">
+          <h1 className="text-[28px] s1280:text-[40px] s1920:text-[48px] font-black text-right mb-4">
+            <span className="text-[#A855F7]">خدمات</span>{" "}
+            <span className="text-[#1a1a1a]">کلینیک بهرویان</span>
+          </h1>
+          <p className="text-right text-[14px] s1280:text-[16px] text-[#555] leading-7 mb-2">
+            جایی که علم پزشکی، زیبایی را بازتعریف می‌کند.
+          </p>
+          <p className="text-right text-[14px] s1280:text-[16px] font-bold text-[#333] leading-7 mb-1">
+            در کلینیک بهرویان، ما به «تغییر زودگذر» اعتقاد نداریم؛
+          </p>
+          <p className="text-right text-[14px] s1280:text-[16px] text-[#555] leading-7 mb-6">
+            هدف ما زیبایی ماندگار، طبیعی و ایمن بر پایه حدیدترین تکنولوژی‌های روز دنیاست.
+          </p>
+
+          {/* service tags */}
+          <div className="flex flex-wrap gap-2 justify-end mb-6">
+            {serviceTags.map((tag, index) => (
+              <span
+                key={index}
+                className="flex items-center gap-x-1 text-[13px] s1280:text-[14px] text-[#555] bg-white border border-[#e5e7eb] rounded-full px-3 py-1 shadow-sm"
+              >
+                <span className="w-4 h-4 rounded-full border border-[#A855F7] flex items-center justify-center">
+                  <span className="w-2 h-2 rounded-full bg-[#A855F7]"></span>
+                </span>
+                {tag}
+              </span>
+            ))}
           </div>
-          {/* <div className="w-full s1280:w-fit">
-            <SearchBox />
-          </div> */}
+
+          {/* buttons */}
+          <div className="flex items-center justify-end gap-x-4">
+            <Link
+              href={`/${locale}/contact-us`}
+              className="flex-cen rounded-[40px] px-6 h-[44px] s1280:h-[52px] bg-[#A855F7] text-white font-bold text-[14px] s1280:text-[16px] hover:bg-[#9333ea] transition-colors"
+            >
+              تماس با بهرویان
+            </Link>
+            <Link
+              href={`/${locale}`}
+              className="flex-cen rounded-[40px] px-6 h-[44px] s1280:h-[52px] bg-white text-[#A855F7] font-bold text-[14px] s1280:text-[16px] border border-[#A855F7] hover:bg-[#A855F7] hover:text-white transition-colors"
+            >
+              بازگشت به خانه
+            </Link>
+          </div>
         </div>
+      </div>
+
+      {/* scroll indicator */}
+      <div className="flex justify-center mb-10">
+        <div className="w-6 h-10 border-2 border-[#ccc] rounded-full flex justify-center pt-2">
+          <div className="w-1 h-3 bg-[#ccc] rounded-full animate-bounce"></div>
+        </div>
+      </div>
+
+      {/* all services */}
+      <div>
+        <div className="mb-10 flex items-center justify-end gap-x-3 s1280:mb-16">
+          <h2 className="text-[20px] s1280:text-[36px] font-bold text-[#1a1a1a] text-right">
+            خدمات تخصصی زیبایی و جوانسازی
+          </h2>
+          <div className="flex-1 h-[2px] bg-gradient-to-l from-[#A855F7] to-transparent"></div>
+        </div>
+
         <div className="flex flex-col items-center justify-start s1280:flex-row s1280:items-start s1280:justify-between gap-y-10 s1280:gap-y-0 s1280:gap-x-5">
           <div className="flex items-center flex-col justify-start s1280:flex-row s1280:justify-start flex-wrap w-full gap-y-10 s1280:flex-grow s1280:gap-x-5">
             {services.map(({ countService, img, label, path }, index) => (
@@ -142,9 +160,6 @@ const Treatments = async ({
               />
             ))}
             <div className="w-full">
-              <Pagination totalPages={80} />
-            </div>
-            <div className="w-full">
               <SubContent
                 desc={medicalTourismContent(locale, "desc")}
                 header={medicalTourismContent(locale, "title")}
@@ -157,4 +172,5 @@ const Treatments = async ({
     </div>
   );
 };
+
 export default Treatments;
