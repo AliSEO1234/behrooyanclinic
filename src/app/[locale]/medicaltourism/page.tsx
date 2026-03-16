@@ -43,43 +43,30 @@ const serviceTags = [
 const Treatments = async ({
   params,
 }: {
-  params: Promise<{
-    locale: string;
-  }>;
+  params: Promise<{ locale: string }>;
 }) => {
   const { locale } = await params;
   const services = handleServices(locale);
 
   return (
-    <div
-      className="viewport-size bg-[#FCFCFC]"
-      dir="rtl"
-      lang="fa"
-    >
+    <div className="viewport-size bg-[#FCFCFC]" dir="rtl" lang="fa">
+
       {/* header section */}
       <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 mb-10 s1280:mb-20 mt-20">
-        {/* doctor image - left on RTL = right visually */}
+
+        {/* doctor image */}
         <div className="col-span-12 s1280:col-span-5 order-2 s1280:order-1">
           <div className="relative w-full h-[350px] s1280:h-[500px] rounded-[30px] overflow-hidden">
-            <ImgFetcher
-              className="object-cover object-top"
-              width={1500}
-              height={1500}
-              src={doctor}
-            />
-            {/* play button overlay */}
+            <ImgFetcher className="object-cover object-top" width={1500} height={1500} src={doctor} />
             <div className="absolute inset-0 flex items-center justify-center">
-              
-                href="#video-service"
-                className="w-[60px] h-[60px] rounded-full bg-white/80 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
-              >
+              <a href="#video-service" className="w-[60px] h-[60px] rounded-full bg-white/80 flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
                 <FaPlay className="text-[#A855F7] ms-1 size-5" />
               </a>
             </div>
           </div>
         </div>
 
-        {/* clinic info - right on RTL = left visually */}
+        {/* clinic info */}
         <div className="col-span-12 s1280:col-span-7 order-1 s1280:order-2 flex flex-col justify-center s1280:pe-10 s1280:ps-20">
           <h1 className="text-[28px] s1280:text-[40px] s1920:text-[48px] font-black text-right mb-4">
             <span className="text-[#A855F7]">خدمات</span>{" "}
@@ -98,10 +85,7 @@ const Treatments = async ({
           {/* service tags */}
           <div className="flex flex-wrap gap-2 justify-end mb-6">
             {serviceTags.map((tag, index) => (
-              <span
-                key={index}
-                className="flex items-center gap-x-1 text-[13px] s1280:text-[14px] text-[#555] bg-white border border-[#e5e7eb] rounded-full px-3 py-1 shadow-sm"
-              >
+              <span key={index} className="flex items-center gap-x-1 text-[13px] s1280:text-[14px] text-[#555] bg-white border border-[#e5e7eb] rounded-full px-3 py-1 shadow-sm">
                 <span className="w-4 h-4 rounded-full border border-[#A855F7] flex items-center justify-center">
                   <span className="w-2 h-2 rounded-full bg-[#A855F7]"></span>
                 </span>
@@ -112,16 +96,10 @@ const Treatments = async ({
 
           {/* buttons */}
           <div className="flex items-center justify-end gap-x-4">
-            <Link
-              href={`/${locale}/contact-us`}
-              className="flex-cen rounded-[40px] px-6 h-[44px] s1280:h-[52px] bg-[#A855F7] text-white font-bold text-[14px] s1280:text-[16px] hover:bg-[#9333ea] transition-colors"
-            >
+            <Link href={`/${locale}/contact-us`} className="flex-cen rounded-[40px] px-6 h-[44px] s1280:h-[52px] bg-[#A855F7] text-white font-bold text-[14px] s1280:text-[16px] hover:bg-[#9333ea] transition-colors">
               تماس با بهرویان
             </Link>
-            <Link
-              href={`/${locale}`}
-              className="flex-cen rounded-[40px] px-6 h-[44px] s1280:h-[52px] bg-white text-[#A855F7] font-bold text-[14px] s1280:text-[16px] border border-[#A855F7] hover:bg-[#A855F7] hover:text-white transition-colors"
-            >
+            <Link href={`/${locale}`} className="flex-cen rounded-[40px] px-6 h-[44px] s1280:h-[52px] bg-white text-[#A855F7] font-bold text-[14px] s1280:text-[16px] border border-[#A855F7] hover:bg-[#A855F7] hover:text-white transition-colors">
               بازگشت به خانه
             </Link>
           </div>
@@ -169,6 +147,7 @@ const Treatments = async ({
           <Sidebar />
         </div>
       </div>
+
     </div>
   );
 };
