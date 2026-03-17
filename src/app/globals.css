@@ -631,7 +631,8 @@ html {
   /* yekan-bakh */
   @font-face {
     font-family: "yekan-bakh";
-    src: url("/YekanBakh-Regular.woff2") format("woff2");
+    src: url("./../assets/fonts/fa-yekan-bakh/YekanBakh-Regular.woff2")
+      format("woff2");
     font-weight: 400;
     font-display: swap;
     font-style: normal;

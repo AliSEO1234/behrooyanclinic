@@ -66,7 +66,7 @@ const RootLayout = async ({
         <AppProvider>
           <Navbar />
           <main>
-            <PopForm />
+            {/* <PopForm /> */}
             <ToastContainer position="top-center" draggable />
             <UpArrow />
             <WhatsAppLink />
