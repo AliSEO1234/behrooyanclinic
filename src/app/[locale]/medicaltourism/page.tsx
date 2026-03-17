@@ -49,7 +49,7 @@ const Treatments = async ({
   const services = handleServices(locale);
 
   return (
-    <div className="viewport-size bg-[#FCFCFC]" dir="rtl" lang="fa">
+    <div className="viewport-size bg-[#FCFCFC] font-yekan-bakh" dir="rtl" lang="fa">
 
       {/* header section */}
       <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 mb-10 s1280:mb-20 mt-20">
