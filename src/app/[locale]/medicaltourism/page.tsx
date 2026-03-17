@@ -96,10 +96,10 @@ const Treatments = async ({
 
           {/* buttons */}
           <div className="flex items-center justify-end gap-x-4">
-            <Link href={`/${locale}`} className="flex-cen rounded-[40px] px-8 h-[44px] s1280:h-[52px] bg-white text-[#555] font-medium text-[14px] s1280:text-[16px] border border-[#d1d5db] hover:border-[#A855F7] hover:text-[#A855F7] transition-colors">
+            <Link href={`/${locale}`} className="flex-cen w-[239px] h-[61px] rounded-[15px] bg-[#F4EDF2] text-[#9A62F7] font-bold text-[14px] s1280:text-[16px] hover:opacity-80 transition-opacity">
               دریافت مشاوره
             </Link>
-            <Link href={`/${locale}/contact-us`} className="flex-cen rounded-[40px] px-8 h-[44px] s1280:h-[52px] bg-[#A855F7] text-white font-bold text-[14px] s1280:text-[16px] hover:bg-[#9333ea] transition-colors">
+            <Link href={`/${locale}/contact-us`} className="flex-cen w-[239px] h-[61px] rounded-[15px] bg-[#9A62F7] text-white font-bold text-[14px] s1280:text-[16px] hover:opacity-90 transition-opacity">
               تماس با بهرویان
             </Link>
           </div>
