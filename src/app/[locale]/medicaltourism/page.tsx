@@ -1,6 +1,6 @@
 import ImgFetcher from "@/components/imgFetcher";
 import Link from "next/link";
-import { FaPlay } from "react-icons/fa";
+import { FaPlay, FaCheck } from "react-icons/fa";
 import Sidebar from "@/layoutes/sidebar/sidebar";
 import ServiceCard from "@/features/services/serviceCard";
 import SubContent from "@/components/shortLongDesc";
@@ -34,10 +34,10 @@ const serviceTags = [
   "بلفاروپلاستی",
   "بوتاکس لیفت",
   "کاشت مو",
+  "هایفو",
   "مزوتراپی",
   "لاغری نوین",
   "پی آر پی",
-  "هایفو",
 ];
 
 const Treatments = async ({
@@ -83,33 +83,33 @@ const Treatments = async ({
           </p>
 
           {/* service tags */}
-          <div className="flex flex-wrap gap-2 justify-end mb-6">
+          <div className="grid grid-cols-2 s1280:grid-cols-4 gap-x-6 gap-y-3 mb-8">
             {serviceTags.map((tag, index) => (
-              <span key={index} className="flex items-center gap-x-1 text-[13px] s1280:text-[14px] text-[#555] bg-white border border-[#e5e7eb] rounded-full px-3 py-1 shadow-sm">
-                <span className="w-4 h-4 rounded-full border border-[#A855F7] flex items-center justify-center">
-                  <span className="w-2 h-2 rounded-full bg-[#A855F7]"></span>
-                </span>
+              <span key={index} className="flex items-center justify-end gap-x-2 text-[14px] s1280:text-[15px] text-[#555]">
                 {tag}
+                <span className="w-5 h-5 rounded-full bg-[#e0e0e0] flex items-center justify-center flex-shrink-0">
+                  <FaCheck className="text-white text-[10px]" />
+                </span>
               </span>
             ))}
           </div>
 
           {/* buttons */}
           <div className="flex items-center justify-end gap-x-4">
-            <Link href={`/${locale}/contact-us`} className="flex-cen rounded-[40px] px-6 h-[44px] s1280:h-[52px] bg-[#A855F7] text-white font-bold text-[14px] s1280:text-[16px] hover:bg-[#9333ea] transition-colors">
-              تماس با بهرویان
+            <Link href={`/${locale}`} className="flex-cen rounded-[40px] px-8 h-[44px] s1280:h-[52px] bg-white text-[#A855F7] font-bold text-[14px] s1280:text-[16px] border border-[#A855F7] hover:bg-[#A855F7] hover:text-white transition-colors">
+              دریافت مشاوره
             </Link>
-            <Link href={`/${locale}`} className="flex-cen rounded-[40px] px-6 h-[44px] s1280:h-[52px] bg-white text-[#A855F7] font-bold text-[14px] s1280:text-[16px] border border-[#A855F7] hover:bg-[#A855F7] hover:text-white transition-colors">
-              بازگشت به خانه
+            <Link href={`/${locale}/contact-us`} className="flex-cen rounded-[40px] px-8 h-[44px] s1280:h-[52px] bg-[#A855F7] text-white font-bold text-[14px] s1280:text-[16px] hover:bg-[#9333ea] transition-colors">
+              تماس با بهرویان
             </Link>
           </div>
         </div>
       </div>
 
-      {/* scroll indicator */}
+      {/* scroll indicator - mouse icon */}
       <div className="flex justify-center mb-10">
-        <div className="w-6 h-10 border-2 border-[#ccc] rounded-full flex justify-center pt-2">
-          <div className="w-1 h-3 bg-[#ccc] rounded-full animate-bounce"></div>
+        <div className="w-7 h-11 border-2 border-[#ccc] rounded-full flex flex-col items-center pt-2">
+          <div className="w-[3px] h-3 bg-[#ccc] rounded-full animate-bounce"></div>
         </div>
       </div>
 

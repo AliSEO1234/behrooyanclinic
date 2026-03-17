@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la app/[locale])",
+      "Bash(ls -la app/[locale]/medicaltourism)",
+      "Bash(head -80 app/[locale]/about/page.tsx)"
+    ]
+  }
+}
