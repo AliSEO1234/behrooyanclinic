@@ -55,7 +55,7 @@ const Treatments = async ({
       <div className="grid grid-cols-12 gap-y-10 s1280:gap-y-0 mb-10 s1280:mb-20 mt-20">
 
         {/* doctor image */}
-        <div className="col-span-12 s1280:col-span-5 order-2 s1280:order-1">
+        <div className="col-span-12 s1280:col-span-5 order-2 s1280:order-2">
           <div className="relative w-full h-[350px] s1280:h-[500px] rounded-[30px] overflow-hidden">
             <ImgFetcher className="object-cover object-top" width={1500} height={1500} src={doctor} />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -67,7 +67,7 @@ const Treatments = async ({
         </div>
 
         {/* clinic info */}
-        <div className="col-span-12 s1280:col-span-7 order-1 s1280:order-2 flex flex-col justify-center s1280:pe-10 s1280:ps-20">
+        <div className="col-span-12 s1280:col-span-7 order-1 s1280:order-1 flex flex-col justify-center s1280:pe-10 s1280:ps-20">
           <h1 className="text-[28px] s1280:text-[40px] s1920:text-[48px] font-black text-right mb-4">
             <span className="text-[#A855F7]">خدمات</span>{" "}
             <span className="text-[#1a1a1a]">کلینیک بهرویان</span>
@@ -96,7 +96,7 @@ const Treatments = async ({
 
           {/* buttons */}
           <div className="flex items-center justify-end gap-x-4">
-            <Link href={`/${locale}`} className="flex-cen rounded-[40px] px-8 h-[44px] s1280:h-[52px] bg-white text-[#A855F7] font-bold text-[14px] s1280:text-[16px] border border-[#A855F7] hover:bg-[#A855F7] hover:text-white transition-colors">
+            <Link href={`/${locale}`} className="flex-cen rounded-[40px] px-8 h-[44px] s1280:h-[52px] bg-white text-[#555] font-medium text-[14px] s1280:text-[16px] border border-[#d1d5db] hover:border-[#A855F7] hover:text-[#A855F7] transition-colors">
               دریافت مشاوره
             </Link>
             <Link href={`/${locale}/contact-us`} className="flex-cen rounded-[40px] px-8 h-[44px] s1280:h-[52px] bg-[#A855F7] text-white font-bold text-[14px] s1280:text-[16px] hover:bg-[#9333ea] transition-colors">
