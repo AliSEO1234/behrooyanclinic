@@ -29,8 +29,8 @@ const WhatsAppLink = () => {
             <button
               onClick={() => {
                 setIsOpen(false);
-                if (typeof window !== "undefined" && window.Tawk_API) {
-                  window.Tawk_API.toggle();
+                if (typeof window !== "undefined" && (window as any).Tawk_API) {
+                  (window as any).Tawk_API.toggle();
                 }
               }}
               className="flex items-center gap-x-3 px-4 py-3 rounded-[12px] border border-[#e5e7eb] hover:border-[#9A62F7] hover:bg-[#f5f0ff] transition-all text-[13px] text-[#333] w-full"
