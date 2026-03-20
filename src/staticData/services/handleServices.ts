@@ -57,39 +57,45 @@ const handleServices = (locale: string) => {
     {
       countService: countAethServices + counSubnestedAethServices || 0,
       img: aesthetics,
-      label: locale === "ru" ? "Эстетическая медицина" : "Aesthetics",
+      label: "زیبایی و جوانسازی",
       path: "aesthetic",
+      description: "با استفاده از جدیدترین روش‌های زیبایی و جوانسازی، پوستی شاداب و جوان داشته باشید. خدمات متنوع از فیلر و بوتاکس تا لیزر درمانی...",
     },
     {
       countService: countDentalServices + counSubnestedDentalServices || 0,
       img: dental,
-      label: locale === "ru" ? "Стоматология" : "Dental",
+      label: "لاغری و تناسب اندام",
       path: "dental-treatments",
+      description: "با روش‌های نوین لاغری مانند کرایولیپولیز و کویتیشن، بدون جراحی به تناسب اندام دلخواه خود برسید...",
     },
     {
       countService: countEyeServices + countSubnestedEyeServices || 0,
       img: eye,
-      label: locale === "ru" ? "Офтальмологические операции" : "Eye Surgeries",
+      label: "جراحی زیبایی صورت",
       path: "eye-surgery",
+      description: "جراحی‌های زیبایی صورت شامل بلفاروپلاستی، رینوپلاستی و لیفت صورت با بهترین جراحان و نتایج طبیعی...",
     },
     {
       countService:
         countFertilityServices + countSubnestedFertilityServices || 0,
       img: fertility,
-      label: locale === "ru" ? "Репродуктивное здоровье" : "Fertility",
+      label: "کاشت مو",
       path: "fertility",
+      description: "کاشت مو با تکنیک‌های پیشرفته FUE و DHI توسط متخصصان مجرب. بازسازی خط رویش طبیعی مو با نتایج ماندگار...",
     },
     {
       countService: countStemCellServices + countSubnestedStemCellServices || 0,
       img: cell,
-      label: locale === "ru" ? "Лечение стволовыми клетками" : "Stem Cell",
+      label: "مراقبت پوست",
       path: "stem-cell",
+      description: "خدمات تخصصی مراقبت پوست شامل مزوتراپی، پی آر پی و میکرونیدلینگ برای جوانسازی و شادابی پوست...",
     },
     {
       countService: countBariatricServices + countSubNestedService || 0,
       img: "/images/Bariatric Surgery Treatment/Adjustable Gastric Banding in Turkey.png",
-      label: locale === "ru" ? "Бариатрическая хирургия" : "Bariatric Surgery",
+      label: "خدمات بدن",
       path: "bariatric-surgery",
+      description: "خدمات تخصصی بدن شامل هایفو، لیفت بدن و تناسب اندام با استفاده از فناوری‌های روز دنیا...",
     },
   ];
   return services;

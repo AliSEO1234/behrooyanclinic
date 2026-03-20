@@ -14,9 +14,7 @@ const VideoPlayerCom = () => {
         isClient &&
         <video autoPlay muted playsInline preload={"auto"} loop width={"100%"} height={"100%"}
                poster={"/videos/video-health-cover.jpg"}>
-          <source src={"/videos/videohealth1.mp4"} type={"video/mp4"}/>
-          <source src={"/videos/videohealth1.ogv"} type={"video/ogg"}/>
-          <source src={"/videos/videohealth1.webm"} type={"video/webm"}/>
+          <source src={"/videos/Video Project 2.mp4"} type={"video/mp4"}/>
         </video>
       }
     </div>

@@ -14,7 +14,8 @@ export default {
   	extend: {
   		fontFamily: {
   			inter: 'inter',
-  			'pt-sans': 'pt-sans'
+  			'pt-sans': 'pt-sans',
+  			'yekan-bakh': 'yekan-bakh'
   		},
   		screens: {
   			s375: '375px',

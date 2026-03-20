@@ -1,68 +1,72 @@
 "use client";
 import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io";
-import phone from "@/assets/images/white-phone-logo.svg";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
-import ImgFetcher from "../imgFetcher";
-import { BiMessageSquareEdit, BiSolidPhoneCall } from "react-icons/bi";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { IoChatbubbleEllipsesOutline, IoClose } from "react-icons/io5";
 import { useState } from "react";
-import { useLocale } from "next-intl";
+import { FaHeadphones } from "react-icons/fa";
 
 const WhatsAppLink = () => {
-  const [whatsapp, setWhatsapp] = useState<boolean>(false);
-  const locale = useLocale();
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <DropdownMenu modal={false} onOpenChange={setWhatsapp} open={whatsapp}>
-      <DropdownMenuTrigger
-        data-aos="fade-up"
-        className={`w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-[#00979A] p-2 outline-none fixed bottom-5 right-5 z-[5] ${
-          whatsapp ? "" : "animate-ping-custom"
-        }`}
-      >
-        <ImgFetcher src={phone} width={500} />
-      </DropdownMenuTrigger>
-      <DropdownMenuContent
-        data-aos="fade-down"
-        className="w-[40px] s1512:w-[54px] bg-inherit border-none p-0 my-3"
-      >
-        <DropdownMenuGroup className="flex flex-col items-center gap-y-2">
-          <DropdownMenuItem className="border shadow w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-white">
+    <div className="fixed bottom-5 right-5 z-[5] flex flex-col items-end gap-y-3 font-yekan-bakh" dir="rtl">
+      {/* Contact options panel */}
+      {isOpen && (
+        <div className="bg-white rounded-[20px] shadow-[0px_4px_20px_#0000001A] p-5 w-[260px] animate-in fade-in slide-in-from-bottom-2 duration-200">
+          <p className="font-bold text-[14px] text-[#333] mb-4 text-right">
+            از طریق کانال دلخواه با ما در ارتباط باشید
+          </p>
+          <div className="flex flex-col gap-y-2">
             <Link
-              className="w-full h-full flex-cen"
               href="https://wa.me/+905393323230"
               target="_blank"
+              className="flex items-center gap-x-3 px-4 py-3 rounded-[12px] border border-[#e5e7eb] hover:border-[#25d366] hover:bg-[#f0fdf4] transition-all text-[13px] text-[#333]"
             >
-              <IoLogoWhatsapp className="size-6 text-[#25d366]" />
+              <IoLogoWhatsapp className="size-5 text-[#25d366] flex-shrink-0" />
+              واتساپ
             </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem className="border shadow w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-white s1512:p-3">
+            <button
+              onClick={() => {
+                setIsOpen(false);
+                if (typeof window !== "undefined" && window.Tawk_API) {
+                  window.Tawk_API.toggle();
+                }
+              }}
+              className="flex items-center gap-x-3 px-4 py-3 rounded-[12px] border border-[#e5e7eb] hover:border-[#9A62F7] hover:bg-[#f5f0ff] transition-all text-[13px] text-[#333] w-full"
+            >
+              <IoChatbubbleEllipsesOutline className="size-5 text-[#888] flex-shrink-0" />
+              چت با ما
+            </button>
             <Link
-              className="w-full h-full flex-cen text-[#00979A]"
-              href="tel:+90 539 332 32 30"
-              target="_blank"
+              href="tel:+905393323230"
+              className="flex items-center gap-x-3 px-4 py-3 rounded-[12px] border border-[#e5e7eb] hover:border-[#9A62F7] hover:bg-[#f5f0ff] transition-all text-[13px] text-[#333]"
             >
-              {" "}
-              <BiSolidPhoneCall className="size-6" />
+              <BiSolidPhoneCall className="size-5 text-[#888] flex-shrink-0" />
+              تماس مستقیم
             </Link>
-          </DropdownMenuItem>
-          <DropdownMenuItem className="border shadow w-10 h-10 s1512:w-[54px] s1512:h-[54px] rounded-full bg-white text-[#00979A]">
-            <Link
-              onClick={() => setWhatsapp(false)}
-              className="w-full h-full flex-cen"
-              href={`/${locale}/contact-us`}
-            >
-              <BiMessageSquareEdit className="size-7" />
-            </Link>
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
-      </DropdownMenuContent>
-    </DropdownMenu>
+          </div>
+        </div>
+      )}
+
+      {/* Toggle button */}
+      <button
+        onClick={() => setIsOpen((v) => !v)}
+        className={`w-12 h-12 s1512:w-14 s1512:h-14 rounded-full flex-cen shadow-lg transition-all duration-300 ${
+          isOpen
+            ? "bg-[#444] hover:bg-[#333]"
+            : "bg-[#9A62F7] hover:bg-[#8347E0]"
+        }`}
+        aria-label="ارتباط با ما"
+      >
+        {isOpen ? (
+          <IoClose className="size-6 text-white" />
+        ) : (
+          <FaHeadphones className="size-5 s1512:size-6 text-white" />
+        )}
+      </button>
+    </div>
   );
 };
+
 export default WhatsAppLink;

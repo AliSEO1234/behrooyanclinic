@@ -48,13 +48,13 @@ const ComplimentaryConsultationForm = () => {
   }) => {
     setLoading(true);
     if (isNaN(+phone)) {
-      setError("phone", { type: "validate", message: "The number is wrong." });
+      setError("phone", { type: "validate", message: "شماره اشتباه است." });
       setLoading(false);
       return;
     } else if (!selectedOption) {
       setError("treatment", {
         type: "validate",
-        message: "Select service type",
+        message: "نوع خدمت را انتخاب کنید",
       });
       setLoading(false);
       return;
@@ -68,10 +68,10 @@ const ComplimentaryConsultationForm = () => {
       treatment,
     });
     if (response) {
-      toast.success("Request sent successfully.");
+      toast.success("درخواست با موفقیت ارسال شد.");
       setLoading(false);
     } else {
-      toast.error("There was a problem sending the request.");
+      toast.error("مشکلی در ارسال درخواست پیش آمد.");
       setLoading(false);
     }
     reset();
@@ -80,21 +80,13 @@ const ComplimentaryConsultationForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="form-header">
       <div>
-        <input
-          {...register("full_name", { required: true })}
-          className="homepage-input px-4"
-          placeholder={locale === "ru" ? "Имя" : "Name & Surname"}
-          type="text"
-        />
-      </div>
-      <div>
         <ComboBox
           trigger={
             selectedOption
               ? selectedOption.label
               : locale === "ru"
               ? "Лечение"
-              : "Treatment"
+              : "انتخاب خدمت"
           }
           className="combo-box"
           options={optionList}
@@ -102,23 +94,20 @@ const ComplimentaryConsultationForm = () => {
           selectedValue={selectedOption}
         />
       </div>
-      <div className="relative">
+      <div>
         <input
-          {...register("phone", { required: true })}
-          onChange={handlePhoneChange}
-          defaultValue={phoneValue}
-          className="homepage-input ps-20 pe-4"
-          placeholder={locale === "ru" ? "Телефон" : "Phone Number"}
+          {...register("full_name", { required: true })}
+          className="homepage-input"
+          placeholder={locale === "ru" ? "Имя" : "نام خود را وارد کنید"}
           type="text"
         />
-        <CountryCode countriesDrop={countriesDrop} setCountriesDrop={setCountriesDrop} codes={codes} setCodes={setCodes} />
       </div>
       <div>
         <input
-          {...register("email", { required: true })}
-          className="homepage-input px-4"
-          placeholder={locale === "ru" ? "Электронная почта" : "Email"}
-          type="text"
+          {...register("phone", { required: true })}
+          className="homepage-input"
+          placeholder={locale === "ru" ? "Телефон" : "شماره خود را وارد نمایید"}
+          type="tel"
         />
       </div>
       <div>
@@ -135,7 +124,7 @@ const ComplimentaryConsultationForm = () => {
               ? "Sending..."
               : locale === "ru"
               ? "На связь!"
-              : "Let’s Connect"}
+              : "ارسال درخواست"}
           </span>
           <span>
             <LucideSendHorizontal className="" />

@@ -22,43 +22,31 @@ const SubContent = ({
   }, [isFull]);
 
   return (
-    <div className="pb-8 pt-[30px] border border-[#00979A] bg-white rounded-[40px]">
-      <div className="mb-4 s1280:mb-5 ">
-        <h2 className="px-4 s1280:px-10 font-semibold s1280:text-[20px]">
+    <div dir="rtl" className="pb-8 pt-[30px] border border-[#9A62F7] bg-white rounded-[40px] font-yekan-bakh">
+      <div className="mb-4 s1280:mb-5">
+        <h2 className="px-4 s1280:px-10 font-semibold s1280:text-[20px] text-right">
           {header}
         </h2>
       </div>
-      <div className=" px-4 s1280:px-10 ">
+      <div className="px-4 s1280:px-10">
         <motion.div
-          className={`transition-all h-[90px] text-[14px] s1280:text-[20px] font-normal text-start overflow-hidden text-editor`}
+          className="transition-all h-[90px] text-[14px] s1280:text-[16px] font-normal text-right overflow-hidden text-editor leading-7"
           animate={{ height: isFull ? measuredHeight : 90 }}
           transition={{ duration: 0.5 }}
         >
           <div ref={contentRef}>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: desc || "",
-            }}
-          />
+            <div
+              dangerouslySetInnerHTML={{
+                __html: desc || "",
+              }}
+            />
           </div>
         </motion.div>
-        {/* <motion.div
-          className={`transition-all text-[14px] s1280:text-[20px] font-normal text-start overflow-hidden text-editor`}
-          initial={{ opacity: 0, height: 200 }}
-          animate={{
-            opacity: 1,
-            height: "auto",
-          }}
-          transition={{ duration: 0.5 }}
-          dangerouslySetInnerHTML={{
-            __html: desc  || "",
-          }}
-        /> */}
         <button
-          className="px-4 s1280:px-0 text-[#00979A] animation-global mt-3"
+          className="px-4 s1280:px-0 text-[#9A62F7] animation-global mt-3"
           onClick={() => setIsFull((val) => !val)}
         >
-          {isFull ? "Read Less" : "Read More"}
+          {isFull ? "نمایش کمتر" : "ادامه مطلب"}
         </button>
       </div>
     </div>

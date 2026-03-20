@@ -9,9 +9,7 @@ const SeeAll = ({ link , className }: { link: string , className : string }) => 
       className={`treatments__sea-all-button border-[2px] rounded-[40px] border-[#00979A] text-[#00979A] flex-cen font-semibold ${className ? className : ""}`}
       href={link}
     >
-      {
-        locale === "ru" ? "“Смотреть все" : "See All"
-      }
+      {locale === "ru" ? "Смотреть все" : "مشاهده همه"}
     </Link>
   );
 };

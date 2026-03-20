@@ -6,7 +6,8 @@ export type ServiceCardType = {
   title: string;
   countService: number;
   linkService: string;
-  imgStyle: string
-  titleStyle : string
-  linkStyle : string
+  imgStyle?: string;
+  titleStyle?: string;
+  linkStyle?: string;
+  description?: string;
 };

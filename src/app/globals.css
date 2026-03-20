@@ -37,7 +37,8 @@ html {
   }
   /* #################### circle animate #################### */
   .circle-animate {
-    @apply w-0 h-0 absolute z-[1] shadow-[0_0_150px_150px_#00979a1f] backdrop-blur-[313px] bg-[#00979a1f];
+    @apply w-0 h-0 absolute shadow-[0_0_150px_150px_#9A62F71f] backdrop-blur-[313px] bg-[#9A62F71f] pointer-events-none;
+    z-index: -1;
   }
   /* #################### home page #################### */
   .first-section {
@@ -65,25 +66,42 @@ html {
     @apply size-4 ms-[2px];
   }
   .first-section .form-header {
-    @apply grid grid-cols-10 gap-x-4 gap-y-4 relative z-[3] w-full s1280:mt-auto mb-5 s1280:mb-10 bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF4D] backdrop-blur-[5px] rounded-[40px] s1280:rounded-[90px] p-5 s1280:p-4 s1280:h-20;
+    @apply grid grid-cols-12 gap-x-3 gap-y-3 items-center relative z-[3] w-full s1280:mt-auto mb-5 s1280:mb-10 rounded-[30px] s1280:rounded-[100px] p-4 s1280:px-4 s1280:py-5;
+    background: rgba(154, 98, 247, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 2px solid #9A62F7;
   }
   .first-section .form-header > div {
-    @apply col-span-12 s1280:col-span-2 h-fit;
+    @apply col-span-12 s1280:col-span-3 h-[48px] s1280:h-[52px];
   }
   .first-section .form-header > div .homepage-input {
-    @apply bg-white h-[48px] rounded-[40px] border border-[#9996A0] font-medium w-full outline-none;
+    @apply h-[48px] s1280:h-[52px] rounded-[100px] border border-white font-medium w-full outline-none text-[#333] placeholder-[#888] px-5 text-right;
+    font-size: clamp(13px, 1vw, 15px);
+    direction: rtl;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
   .first-section .form-header .combo-box {
-    @apply flex-bet s1728:text-[16px] w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-medium text-[#898989] bg-white;
+    @apply flex-bet s1728:text-[16px] w-full outline-none h-[48px] s1280:h-[52px] px-5 rounded-[100px] border border-white font-medium text-[#888];
+    font-size: clamp(13px, 1vw, 15px);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
   .first-section .form-header .submit-btn {
-    @apply h-[48px] rounded-[40px] text-white px-4 w-full text-center font-bold relative overflow-hidden text-[18px];
+    @apply h-[48px] s1280:h-[52px] rounded-[100px] text-white px-4 w-full text-center font-bold relative overflow-hidden;
+    font-size: clamp(14px, 1.1vw, 18px);
+    border: 0.5px solid #FFFFFF;
   }
   .first-section .form-header .submit-btn span:first-child {
-    @apply z-[2] bg-[#0CA5A5] text-white w-full h-full absolute left-0 text-center flex-cen anm transition-all duration-300;
+    @apply z-[2] text-white w-full h-full absolute left-0 text-center flex-cen anm transition-all duration-300;
+    background: #9A62F7;
   }
   .first-section .form-header .submit-btn span:last-child {
-    @apply z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center flex-cen;
+    @apply z-[1] text-white w-full h-full absolute top-0 left-0 text-center flex-cen;
+    background: #7B3FE4;
   }
   .first-section .form-header .submit-btn span:last-child > svg {
     @apply size-5;
@@ -456,7 +474,9 @@ html {
   }
   /* vieport style */
   .viewport-size {
-    @apply px-[10px] s430:px-5 py-10 s1280:px-[71px] s1512:px-[79px] s1600:px-[85px] s1728:px-[100px] s1920:px-[131px];
+    padding-left: clamp(10px, 5vw, 131px);
+    padding-right: clamp(10px, 5vw, 131px);
+    @apply py-10;
   }
   .form-platform-work-end div label {
     @apply block font-semibold text-[#474744] mb-2;
@@ -504,7 +524,7 @@ html {
   }
   /* inner shadowe info card in patform work */
   .plt-work-info-shadow {
-    box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
+    box-shadow: 0px 0px 39.9px -8px #9A62F7 inset;
   }
   /* how our platform works form */
   /* hide scrollbar */
@@ -522,7 +542,7 @@ html {
   }
   /* experience shadow */
   .experience-card-shadow {
-    box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
+    box-shadow: 0px 0px 39.9px -8px #9A62F7 inset;
   }
   /* border arrow helping */
   .help-shadow {
@@ -534,12 +554,12 @@ html {
   }
   /* shadow service shadow roadmap card  */
   .shadow-choose-us {
-    box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
+    box-shadow: 0px 0px 39.9px -8px #9A62F7 inset;
   }
 
   .shadow-service,
   .shadow-roadmap-card {
-    box-shadow: 0px 0px 39.9px -8px #86d1ab inset;
+    box-shadow: 0px 0px 20px -6px #9A62F74D inset;
   }
   /* complimentary Form */
   .complimentaryFormItem label {
@@ -825,21 +845,15 @@ html {
     }
   }
 }
-/* fillscroll border */
+/* fillscroll border — hidden */
 .border__style--layout-first,
-.border__style--layout-third,
-.border__style--layout-five,
-.border__style--layout-seven {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 .border__style--layout-second,
+.border__style--layout-third,
+.border__style--layout-fourth,
+.border__style--layout-five,
 .border__style--layout-six,
-.border__style--layout-fourth {
-  position: absolute;
-  left: 0;
-  top: 0;
+.border__style--layout-seven {
+  display: none;
 }
 
 /* Home Page */
@@ -1543,6 +1557,113 @@ html {
   /*  left: 88.5%;*/
   /*  top: 85%;*/
   /*}*/
+}
+
+/* Rotating circle pulse animation */
+@keyframes circle-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+/* Instagram mobile fade edges */
+.instagram-mobile-fade {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 25%,
+    black 75%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 25%,
+    black 75%,
+    transparent 100%
+  );
+}
+
+/* Instagram continuous vertical scroll */
+@keyframes instagram-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.instagram-scroll-track {
+  display: flex;
+  flex-direction: column;
+  animation: instagram-scroll 30s linear infinite;
+}
+
+/* Wave bars animation for patient video reviews */
+@keyframes wave-smooth-a {
+  0%   { transform: scaleY(0.25); }
+  25%  { transform: scaleY(0.9); }
+  50%  { transform: scaleY(0.4); }
+  75%  { transform: scaleY(1); }
+  100% { transform: scaleY(0.25); }
+}
+@keyframes wave-smooth-b {
+  0%   { transform: scaleY(0.6); }
+  20%  { transform: scaleY(0.2); }
+  45%  { transform: scaleY(1); }
+  70%  { transform: scaleY(0.35); }
+  100% { transform: scaleY(0.6); }
+}
+@keyframes wave-smooth-c {
+  0%   { transform: scaleY(1); }
+  30%  { transform: scaleY(0.3); }
+  60%  { transform: scaleY(0.8); }
+  85%  { transform: scaleY(0.2); }
+  100% { transform: scaleY(1); }
+}
+
+.wave-bars-animate svg path {
+  transform-origin: center;
+  animation: wave-smooth-a 1.2s ease-in-out infinite;
+}
+.wave-bars-animate svg path:nth-child(2n) {
+  animation-name: wave-smooth-b;
+  animation-duration: 1s;
+  animation-delay: 0.05s;
+}
+.wave-bars-animate svg path:nth-child(3n) {
+  animation-name: wave-smooth-c;
+  animation-duration: 1.4s;
+  animation-delay: 0.1s;
+}
+.wave-bars-animate svg path:nth-child(4n) {
+  animation-name: wave-smooth-a;
+  animation-duration: 0.9s;
+  animation-delay: 0.15s;
+}
+.wave-bars-animate svg path:nth-child(5n) {
+  animation-name: wave-smooth-b;
+  animation-duration: 1.1s;
+  animation-delay: 0.2s;
+}
+.wave-bars-animate svg path:nth-child(7n) {
+  animation-name: wave-smooth-c;
+  animation-duration: 1.3s;
+  animation-delay: 0.08s;
+}
+.wave-bars-animate svg path:nth-child(11n) {
+  animation-name: wave-smooth-a;
+  animation-duration: 1.15s;
+  animation-delay: 0.12s;
+}
+.wave-bars-animate svg path:nth-child(13n) {
+  animation-name: wave-smooth-b;
+  animation-duration: 0.95s;
+  animation-delay: 0.18s;
 }
 
 /* Advantages */

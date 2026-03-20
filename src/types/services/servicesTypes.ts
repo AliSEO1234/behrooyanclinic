@@ -5,4 +5,5 @@ export type ServiceType = {
   countService: number
   path: string
   img: StaticImageData | string;
+  description?: string;
 }

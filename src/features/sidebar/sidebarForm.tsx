@@ -1,44 +1,17 @@
 "use client";
-import ComboBox from "@/components/comboBox";
-import CountryCode from "@/components/forms/countryCode";
 import { sendFormFunc } from "@/server-APIs/formAPI";
-import { options } from "@/staticData/optionsForm";
-import { OptionType } from "@/types/comboBox/comboType";
 import { SideBarType } from "@/types/forms";
-import { LucideSendHorizontal } from "lucide-react";
 import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const SidebarForm = ({ activeAdmin }: { activeAdmin: string }) => {
   const pathname = usePathname();
   const locale = useLocale();
-  const isRu = locale === "ru";
-  const { handleSubmit, register, setValue, watch, setError, reset } =
+  const { handleSubmit, register, setError, reset } =
     useForm<SideBarType>();
-  const [countriesDrop, setCountriesDrop] = useState<boolean>(false);
-  const [selectedOption, setSelectedOption] = useState<OptionType | null>(null);
-  const [codes, setCodes] = useState<OptionType | null>(null);
-  useEffect(() => {
-    setValue("treatment", `${selectedOption?.label},${selectedOption?.key}`);
-  }, [selectedOption, setValue]);
-  const phoneValue = watch("phone", "");
-
-  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!codes) {
-      setCountriesDrop(true);
-      e.target.value = "";
-      return;
-    }
-    let inputValue = e.target.value;
-    if (!inputValue.startsWith(codes?.key || "")) {
-      inputValue = inputValue.replace(/^\+\d+/, "");
-      inputValue = inputValue.replace(/[^0-9+]/g, "");
-    }
-    setValue("phone", inputValue);
-  };
 
   const [loading, setLoading] = useState<boolean>(false);
   const onSubmit: SubmitHandler<SideBarType> = async ({
@@ -49,112 +22,73 @@ const SidebarForm = ({ activeAdmin }: { activeAdmin: string }) => {
   }) => {
     setLoading(true);
     if (isNaN(+phone)) {
-      setError("phone", { type: "validate", message: "The number is wrong." });
-      setLoading(false);
-      return;
-    } else if (!selectedOption) {
-      setError("treatment", {
-        type: "validate",
-        message: "Select service type",
-      });
+      setError("phone", { type: "validate", message: "شماره اشتباه است." });
       setLoading(false);
       return;
     }
     const response = await sendFormFunc({
       activeAdmin: activeAdmin,
-      email,
+      email: email || "",
       name: full_name,
       treatment,
-      phone: codes?.key + phone,
+      phone,
       pageUrl: pathname,
     });
     if (response) {
       setLoading(false);
-      toast.success("Request sent successfully.");
+      toast.success("درخواست با موفقیت ارسال شد.");
     } else {
       setLoading(false);
-      toast.error("There was a problem sending the request.");
+      toast.error("مشکلی در ارسال درخواست پیش آمد.");
     }
     reset();
   };
-  const optionList = options(locale);
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="grid grid-cols-12 gap-y-4 form-work"
+      className="flex flex-col gap-y-3"
+      dir="rtl"
     >
-      <div className="col-span-12">
-        <label htmlFor="">{isRu ? "Имя и фамилия" : "Name & Surname"}</label>
+      <div>
+        <label className="block font-semibold text-[11px] s1512:text-[12px] s1920:text-[13px] text-[#474744] mb-1">
+          نام و نام خانوادگی
+        </label>
         <input
           {...register("full_name", { required: true })}
-          className="px-4"
-          placeholder={isRu ? "Имя и фамилия" : "Name & Surname"}
+          className="w-full outline-none h-[36px] s1512:h-[38px] s1920:h-[42px] px-3 text-[11px] s1512:text-[12px] s1920:text-[13px] rounded-[30px] border border-[#d1d5db] text-right placeholder:text-[#bbb] text-[#474744]"
+          placeholder="مثال : محمد زارع"
           type="text"
         />
       </div>
-      <div className="col-span-12">
-        <label htmlFor="">{isRu ? "Эл. почта" : "Email"}</label>
-        <input
-          {...register("email", { required: true })}
-          className="px-4"
-          placeholder={isRu ? "Эл. почта" : "Email"}
-          type="email"
-        />
-      </div>
-      <div className="col-span-12">
-        <label htmlFor="">{isRu ? "Номер телефона" : "Phone Number"}</label>
-        <div className="w-full relative overflow-hidden">
-          <input
-            {...register("phone", { required: true })}
-            onChange={handlePhoneChange}
-            defaultValue={phoneValue}
-            placeholder={isRu ? "Номер телефона" : "Number"}
-            type="text"
-            className="ps-20 pe-3"
-          />
-          <CountryCode
-            countriesDrop={countriesDrop}
-            setCountriesDrop={setCountriesDrop}
-            codes={codes}
-            setCodes={setCodes}
-          />
-        </div>
-      </div>
-      <div className="col-span-12 z-[4]">
-        <label htmlFor="">
-          {isRu ? "Выберите услугу" : "Choose your service type"}
+      <div>
+        <label className="block font-semibold text-[11px] s1512:text-[12px] s1920:text-[13px] text-[#474744] mb-1">
+          شماره تماس
         </label>
-        <ComboBox
-          trigger={
-            selectedOption
-              ? selectedOption.label
-              : isRu
-              ? "Пожалуйста, выберите"
-              : "Please Select"
-          }
-          className="flex-bet w-full outline-none h-[48px] px-4 rounded-[40px] border border-[#9996A0] font-normal text-[#BBBBBB] mb-1"
-          options={optionList}
-          onChange={setSelectedOption}
-          selectedValue={selectedOption}
+        <input
+          {...register("phone", { required: true })}
+          placeholder="مثال : ۰۹۱۲۱۲۳۴۵۶۷۸"
+          type="text"
+          className="w-full outline-none h-[36px] s1512:h-[38px] s1920:h-[42px] px-3 text-[11px] s1512:text-[12px] s1920:text-[13px] rounded-[30px] border border-[#d1d5db] text-right placeholder:text-[#bbb] text-[#474744]"
         />
-        {/* <input placeholder="Please Select" type="email" /> */}
       </div>
-      <div className="col-span-12 flex-cen z-[3]">
+      <div>
+        <label className="block font-semibold text-[11px] s1512:text-[12px] s1920:text-[13px] text-[#474744] mb-1">
+          موضوع مشاوره شما چیست ؟
+        </label>
+        <input
+          {...register("treatment")}
+          placeholder="موضوع مشاوره را وارد کنید"
+          type="text"
+          className="w-full outline-none h-[36px] s1512:h-[38px] s1920:h-[42px] px-3 text-[11px] s1512:text-[12px] s1920:text-[13px] rounded-[30px] border border-[#d1d5db] text-right placeholder:text-[#bbb] text-[#474744]"
+        />
+      </div>
+      <div>
         <button
           type="submit"
           disabled={loading}
-          className="font-bold w-full h-[48px] text-center rounded-[40px] group s1280:text-[18px]  text-white relative overflow-hidden"
+          className="font-bold w-full h-[38px] s1512:h-[40px] s1920:h-[44px] text-center rounded-[30px] text-[13px] s1512:text-[14px] s1920:text-[16px] text-white bg-[#9A62F7] hover:bg-[#8347E0] anm"
         >
-          <div
-            className={`z-[2] bg-[#0CA5A5] w-full h-full absolute top-0 ${
-              loading ? "top-0" : "group-hover:-top-full"
-            }  left-0 text-center flex-cen anm`}
-          >
-            {loading ? "Loading..." : isRu ? "Связаться с нами" : "let’s connect"}
-          </div>
-          <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
-            <LucideSendHorizontal className="size-5" />
-          </div>
+          {loading ? "در حال ارسال..." : "ارسال درخواست"}
         </button>
       </div>
     </form>

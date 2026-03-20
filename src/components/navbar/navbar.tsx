@@ -1,221 +1,133 @@
 "use client";
-import health from "@/assets/images/health.svg";
 import Image from "next/image";
 import Link from "next/link";
-import ChangeLanguage from "../change-language";
 import { HiMenuAlt2 } from "react-icons/hi";
-import ring from "@/assets/images/ringnavbar.svg";
-import ImgFetcher from "../imgFetcher";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "../ui/navigation-menu";
-import { options } from "@/staticData/optionsForm";
-import { MdArrowForwardIos } from "react-icons/md";
 import { useAppContext } from "@/contexts/app-context/app-context";
-import HamburgerMenu from "./hamburgerMenu";
+import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
+
+const HamburgerMenu = dynamic(() => import("./hamburgerMenu"), {
+  ssr: false,
+});
+
+const menuItems = [
+  { label: "صفحه اصلی", path: "" },
+  { label: "خدمات بهرویان", path: "/medicaltourism" },
+  { label: "مقالات", path: "/about" },
+  { label: "تماس با ما", path: "/contact-us" },
+  { label: "درباره ما", path: "/about" },
+] as const;
+
 const Navbar = () => {
   const locale = useLocale();
-  const isRu = locale === "ru";
-  const optionList = options(locale);
-  const [isScroll, setIsScroll] = useState<boolean>(false);
+  const [isScroll, setIsScroll] = useState(false);
+  const [showHeader, setShowHeader] = useState(false);
   const pathname = usePathname();
   const { setHamburgerMenu } = useAppContext();
+  const delayTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const hasPassedHeroRef = useRef(false);
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScroll(true);
-      } else {
-        setIsScroll(false);
+      const scrollY = window.scrollY;
+      setIsScroll(scrollY > 50);
+
+      // Check if user scrolled past 20% of viewport height
+      const triggerHeight = window.innerHeight * 0.2;
+      if (scrollY > triggerHeight && !hasPassedHeroRef.current) {
+        hasPassedHeroRef.current = true;
+        // Show header after 2 second delay
+        delayTimerRef.current = setTimeout(() => {
+          setShowHeader(true);
+        }, 2000);
+      } else if (scrollY <= triggerHeight) {
+        hasPassedHeroRef.current = false;
+        if (delayTimerRef.current) {
+          clearTimeout(delayTimerRef.current);
+          delayTimerRef.current = null;
+        }
+        setShowHeader(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (delayTimerRef.current) clearTimeout(delayTimerRef.current);
+    };
   }, []);
+
   useEffect(() => {
     setHamburgerMenu(false);
   }, [pathname, setHamburgerMenu]);
+
+  const toggleMenu = useCallback(() => {
+    setHamburgerMenu((val: boolean) => !val);
+  }, [setHamburgerMenu]);
+
   return (
     <>
       <HamburgerMenu />
       <header
-        className={`fixed top-0 left-0 ${
-          isScroll ? "animateScroll" : ""
-        } w-full z-[5]`}
+        className={`fixed left-0 w-full z-[5] flex justify-center transition-transform duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)] ${
+          showHeader ? "top-0 translate-y-0" : "-translate-y-full top-0"
+        }`}
+        style={{ paddingTop: "clamp(8px, 0.8vw, 12px)", paddingLeft: "clamp(10px, 5vw, 131px)", paddingRight: "clamp(10px, 5vw, 131px)" }}
       >
         <nav
-          className={`flex items-center justify-between bg-white shadow-[0_4px_2px_#0000001C] px-[20px] py-3 rounded-b-[40px] anm s1280:px-[50px] ${
-            isScroll ? "s1280:py-1" : "s1280:py-3"
-          }`}
+          dir="rtl"
+          className="flex items-center justify-between bg-[#F4EDF2] w-full rounded-[100px] font-yekan-bakh anm"
+          style={{
+            paddingLeft: "clamp(15px, 3.5vw, 50px)",
+            paddingRight: "clamp(15px, 3.5vw, 50px)",
+            height: isScroll ? "clamp(55px, 4.5vw, 75px)" : "clamp(60px, 5.5vw, 93px)",
+          }}
         >
-          <div className="flex-left s1280:gap-x-[18px] s1512:gap-x-[32px]">
-            <Link href={`/${locale}`} className={`flex-left gap-x-2`}>
-              <div className="flex-cen">
-                <div className="w-[44px] h-[44px] s1280:w-8 s1280:h-8 s1512:w-[49px] s1512:h-[49px]">
-                  <Image
-                    src={health}
-                    alt="Azpo Health"
-                    width={1000}
-                    height={1000}
-                    className="w-full h-full"
-                  />
-                </div>
-              </div>
-              <div className="text-[#00979A]">
-                <p
-                  className={`anm font-black tracking-[2px] s1280:text-[20px] s1512:text-[30px] ${
-                    isScroll ? "" : "text-[24px] s412:text-[20px] "
-                  }`}
-                >
-                  AZPO
-                </p>
-                <p
-                  className={`-mt-2 font-bold text-[14px] s1280:text-[14px] s1512:text-[18px]  ${
-                    isScroll ? "" : ""
-                  }`}
-                >
-                  HEALTH
-                </p>
-              </div>
+          <div className="flex-left s1280:gap-x-6 s1512:gap-x-9 s1728:gap-x-11">
+            <Link href={`/${locale}`} className="flex-cen">
+              <Image
+                src="/images/Behrooyan-Logo.svg"
+                alt="بهرویان"
+                width={48}
+                height={48}
+                priority
+                className="w-9 h-9 s1280:w-[38px] s1280:h-[38px] s1512:w-[42px] s1512:h-[42px] s1920:w-12 s1920:h-12"
+              />
             </Link>
-            <div
-              className={`hidden s1280:flex items-center font-medium s1280:text-[14px] s1280:gap-x-6 s1512:gpa-x-10 s1512:text-[16px] s1728:text-[18px] gap-x-2 s1728:gap-x-12 text-[#474744] anm`}
-            >
-              <div>
-                <Link className="hover:text-[#25A6A9] anm" href={`/${locale}`}>
-                  {isRu ? "Главная страница" : "Home Page"}
-                </Link>
-              </div>
-              <div>
-                <NavigationMenu>
-                  <NavigationMenuList>
-                    <NavigationMenuItem>
-                      <NavigationMenuTrigger className="p-0 hover:bg-inherit focus:bg-inherit hover:text-[#00979A] s1280:text-[14px] s1512:text-[16px] s1728:text-[18px]">
-                        {isRu ? "Медицинские направления" : "Medical branches"}
-                      </NavigationMenuTrigger>
-                      <NavigationMenuContent>
-                        <div className="w-[900px] py-3">
-                          <ul className="grid grid-cols-12">
-                            {optionList.map((service, index) => {
-                              return (
-                                <li
-                                  title={service.label}
-                                  className="s1280:col-span-4"
-                                  key={index}
-                                >
-                                  <Link
-                                    className="flex-bet gap-x-2 hover:bg-[#fafafa] py-2 px-3 text-[#474744] anm font-medium hover:text-[#00979A]"
-                                    href={
-                                      service.isActive
-                                        ? `/${locale}/medicaltourism/${service.key}`
-                                        : `/${locale}/coming-soon`
-                                    }
-                                  >
-                                    <span className="line-clamp-1">
-                                      {service.label}
-                                    </span>
-                                    {service.isActive ? (
-                                      <span className="rounded-full flex-cen w-6 h-6">
-                                        <MdArrowForwardIos className="size-3 -me-[1px]" />
-                                      </span>
-                                    ) : (
-                                      <span className="bg-[#00979A] text-white font-medium s1280:text-[14px] rounded-[5px] px-1 shadow-soon-service">
-                                        {isRu ? "Скоро" : "Soon"}
-                                      </span>
-                                    )}
-                                  </Link>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </div>
-                      </NavigationMenuContent>
-                    </NavigationMenuItem>
-                  </NavigationMenuList>
-                </NavigationMenu>
-                {/* <Link className="hover:text-[#25A6A9] anm" href="/">
-                Medical Branches
-              </Link> */}
-              </div>
-              <div>
+            <div className="hidden s1280:flex items-center font-medium s1280:text-[13px] s1512:text-[15px] s1728:text-[16px] s1920:text-[18px] s1280:gap-x-5 s1512:gap-x-8 s1728:gap-x-10 s1920:gap-x-14 text-[#9A62F7]">
+              {menuItems.map(({ label, path }) => (
                 <Link
-                  className="hover:text-[#25A6A9] anm"
-                  href={`/${locale}/clinics`}
+                  key={path + label}
+                  className="hover:opacity-70 anm"
+                  href={`/${locale}${path}`}
                 >
-                  {isRu ? "Больницы и клиники" : "Hospital & Clinics"}
+                  {label}
                 </Link>
-              </div>
-              <div>
-                <Link
-                  className="hover:text-[#25A6A9] anm"
-                  href={`/${locale}/patient-services`}
-                >
-                  {isRu ? "Услуги для пациентов" : "Patient Services"}
-                </Link>
-              </div>
-              {/* <div>
-              <Link className="hover:text-[#25A6A9] anm" href="/">
-                Blogs
-              </Link>
-            </div> */}
-              <div>
-                <Link
-                  className="hover:text-[#25A6A9] anm"
-                  href={`/${locale}/about`}
-                >
-                  {isRu ? "О нас" : "About Us"}
-                </Link>
-              </div>
-              <div>
-                <Link
-                  className="hover:text-[#25A6A9] anm"
-                  href={`/${locale}/contact-us`}
-                >
-                  {isRu ? "Свяжитесь с нами" : "Contact Us"}
-                </Link>
-              </div>
+              ))}
             </div>
           </div>
-          <div className="flex-right gap-x-2 anm">
-            {/* <div className="hidden s1280:block">
-              <TreatSearchBox />
-            </div> */}
-            <div className="hidden s1280:block">
-              <ChangeLanguage
-                trigStyle="s1280:w-[56px] s1600:w-[70px] h-[35px] s1600:h-[44px]"
-                BodyWidth="w-[70px]"
-              />
-            </div>
-            <div>
-              <Link
-                href="tel:+90 539 332 32 30"
-                target="_blank"
-                className="flex-cen gap-x-2 bg-[#25A6A9] rounded-[40px] py-4 px-2 s1280:py-[10px] s1280:px-[20px] font-medium s1280:text-[12px] s1600:text-[18px] text-white h-[33px] w-[33px] s1280:w-fit s1280:h-[35px] s1600:h-[44px]"
-              >
-                <span>
-                  <ImgFetcher src={ring} />
-                </span>
-                <span className="hidden s1280:inline">+90 539 332 32 30</span>
-              </Link>
-            </div>
-            <div className="s1280:hidden">
-              <button
-                onClick={() => setHamburgerMenu((val) => !val)}
-                className="flex-cen bg-[#25A6A9] w-[33px] h-[33px] text-white p-2 rounded-full"
-              >
-                <HiMenuAlt2 className="size-5" />
-              </button>
-            </div>
+
+          <div className="flex-right gap-x-2">
+            <Link
+              href={`/${locale}/contact-us`}
+              className="hidden s1280:flex flex-cen bg-[#9A62F7] rounded-[40px] px-5 s1512:px-6 s1920:px-8 s1280:h-[38px] s1512:h-[42px] s1920:h-12 font-bold s1280:text-[13px] s1512:text-[14px] s1920:text-[16px] text-white hover:opacity-90 anm"
+            >
+              رزرو نوبت
+            </Link>
+            <button
+              onClick={toggleMenu}
+              className="s1280:hidden flex-cen bg-[#9A62F7] w-[33px] h-[33px] text-white p-2 rounded-full"
+              aria-label="منو"
+            >
+              <HiMenuAlt2 className="size-5" />
+            </button>
           </div>
         </nav>
       </header>
     </>
   );
 };
+
 export default Navbar;

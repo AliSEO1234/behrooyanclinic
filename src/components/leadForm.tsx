@@ -54,10 +54,10 @@ const LeadForm = ({ className }: LeadFormType) => {
       phone: codes?.key + phone,
     });
     if (response) {
-      toast.success("Request sent successfully.");
+      toast.success("درخواست با موفقیت ارسال شد.");
       setLoading(false);
     } else {
-      toast.error("There was a problem sending the request.");
+      toast.error("مشکلی در ارسال درخواست پیش آمد.");
       setLoading(false);
     }
     reset();
@@ -92,13 +92,13 @@ const LeadForm = ({ className }: LeadFormType) => {
           <p className="font-bold s1512:text-[20px] s1728:text-[24px] text-center s1280:text-start text-white">
             {locale === "ru"
               ? "Вы готовы пройти медицинское обследование?"
-              : "Are you ready for a health checkup?"}
+              : "آیا برای معاینه سلامت آماده‌اید؟"}
           </p>
           <div className="grid grid-cols-12 gap-y-4 s1280:gap-x-2 s1280:gap-y-6 mt-4 s1280:mt-6 s1920:gap-y-10">
             <div className="col-span-12 s1280:col-span-6">
               <input
                 {...register("fullName", { required: true })}
-                placeholder={locale === "ru" ? "Имя" : "Name"}
+                placeholder={locale === "ru" ? "Имя" : "نام"}
                 className="px-3 outline-none bg-white w-full h-[48px] s1280:h-[38px] s1512:h-[40px] s1728:h-[48px] s1512:text-[16px] s1280:text-[14px] placeholder:text-[#9996A0] font-medium rounded-[40px]"
                 type="text"
               />
@@ -106,7 +106,7 @@ const LeadForm = ({ className }: LeadFormType) => {
             <div className="col-span-12 s1280:col-span-6">
               <input
                 {...register("email", { required: true })}
-                placeholder={locale === "ru" ? "Электронная почта" : "Email"}
+                placeholder={locale === "ru" ? "Электронная почта" : "ایمیل"}
                 className="px-3 outline-none bg-white w-full h-[48px] s1280:h-[38px] s1512:h-[40px] s1728:h-[48px] s1512:text-[16px] s1280:text-[14px] placeholder:text-[#9996A0] font-medium rounded-[40px]"
                 type="email"
               />
@@ -116,7 +116,7 @@ const LeadForm = ({ className }: LeadFormType) => {
                 {...register("phone", { required: true })}
                 onChange={handlePhoneChange}
                 defaultValue={phoneValue}
-                placeholder={locale === "ru" ? "Телефон" : "Phone"}
+                placeholder={locale === "ru" ? "Телефон" : "تلفن"}
                 className="ps-20 s1280:ps-16 s1512:ps-20 pe-3 outline-none bg-white w-full h-[48px] s1280:h-[38px] s1512:h-[40px] s1728:h-[48px] s1512:text-[16px] s1280:text-[14px] placeholder:text-[#9996A0] font-medium rounded-[40px]"
                 type="text"
               />
@@ -142,7 +142,7 @@ const LeadForm = ({ className }: LeadFormType) => {
                     ? "Sending..."
                     : locale === "ru"
                     ? "Отправить запрос"
-                    : "Send Request"}
+                    : "ارسال درخواست"}
                 </div>
                 <div className="z-[1] bg-[#86D1AB] text-white w-full h-full absolute top-0 left-0 text-center  flex-cen">
                   <LucideSendHorizontal className="size-5" />
@@ -155,7 +155,7 @@ const LeadForm = ({ className }: LeadFormType) => {
       <div className="col-span-3 hidden s1280:flex relative pb-3 s1512:pb-[34px] s1728:pb-[38px]">
         <div className="h-[59px] bg-blue-6000 mt-auto flex-left gap-x-2">
           <p className="font-bold s1280:text-[24px] text-white me-3">
-            {locale === "ru" ? "или" : "OR"}
+            {locale === "ru" ? "или" : "یا"}
           </p>
           <Link
             target="_blank"

@@ -1,108 +1,46 @@
 "use client";
-import {
-  Carousel,
-  CarouselApi,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-import CarouselAdmin from "@/features/sidebar/adminCard";
+import Image from "next/image";
 import SidebarForm from "@/features/sidebar/sidebarForm";
-import handleServices from "@/staticData/services/handleServices";
-import { handleAdmins } from "@/staticData/sidebar/handleAdmins";
 import { useLocale } from "next-intl";
-import Link from "next/link";
-// import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Sidebar = () => {
   const locale = useLocale();
-  const isRu = locale === "ru"
-  const [activeIndex, setActiveIndex] = useState<number>(0);
-  const activeAdmin = handleAdmins(locale)[activeIndex].name;
-  const admins = handleAdmins(locale);
-  const [api, setApi] = useState<CarouselApi>();
-  const carouselRef = useRef<HTMLDivElement | null>(null);
-  const services = handleServices(locale);
-  useEffect(() => {
-    if (!api) return;
-
-    setActiveIndex(api.selectedScrollSnap());
-
-    api.on("select", () => {
-      setActiveIndex(api.selectedScrollSnap());
-    });
-  }, [api]);
   return (
-    <aside className="hidden s1280:sticky s1280:top-0 s1280:flex s1280:flex-col w-full s1280:w-[318px] s1280:flex-shrink-0 s1280:min-w-[318px] s1600:w-[340px] s1600:min-w-[340px] rounded-[40px] shadow-[0_4px_15px_#0000001A] bg-white px-6 py-8">
-      <div className="s1280:mb-10">
+    <aside
+      dir="rtl"
+      className="hidden s1280:sticky s1280:top-0 s1280:flex s1280:flex-col w-full s1280:w-[250px] s1280:flex-shrink-0 s1280:min-w-[250px] s1512:w-[270px] s1512:min-w-[270px] s1600:w-[290px] s1600:min-w-[290px] s1920:w-[320px] s1920:min-w-[320px] rounded-[30px] shadow-[0_4px_15px_#0000001A] bg-white px-3 s1512:px-4 s1920:px-5 py-5 s1920:py-6 font-yekan-bakh"
+    >
+      <div className="s1280:mb-4">
         <div className="mb-4">
-          <h3 className="font-bold s1280:text-[20px] text-[#25A6A9] text-center">
-            {
-              isRu ? "Бесплатная консультация" : "Free consultation"
-            }
-            
+          <h3 className="font-bold text-[14px] s1512:text-[15px] s1920:text-[18px] text-[#9A62F7] text-center">
+            فرم درخواست مشاوره
           </h3>
         </div>
-        <div className="relative w-full px-5 h-[110px]">
-          <button
-            onClick={() => api?.scrollPrev()}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 text-[#777777] hover:color animation-global"
-          >
-            <IoIosArrowBack className="size-4" />
-          </button>
-          <button
-            onClick={() => api?.scrollNext()}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 text-[#777777] hover:color animation-global"
-          >
-            <IoIosArrowForward className="size-4" />
-          </button>
 
-          <Carousel setApi={setApi} opts={{ loop: true }} className="w-full">
-            <CarouselContent ref={carouselRef}>
-              {admins.map((admin, index) => {
-                return (
-                  <CarouselItem key={index}>
-                    <CarouselAdmin
-                      value={admin.desc}
-                      langs={admin.languages}
-                      image={admin.img}
-                      name={admin.name}
-                      userType="onlyView"
-                    />
-                  </CarouselItem>
-                );
-              })}
-            </CarouselContent>
-            {/* <CarouselPrevious />
-          <CarouselNext /> */}
-          </Carousel>
+        {/* Doctor info - static */}
+        <div className="flex items-center gap-x-2 mb-4">
+          <div className="w-[55px] h-[55px] s1920:w-[65px] s1920:h-[65px] rounded-full overflow-hidden flex-shrink-0">
+            <Image
+              src="/images/dr-naseh.png"
+              alt="دکتر محمد حسن ناصح"
+              width={140}
+              height={140}
+              className="w-full h-full object-cover object-[center_20%]"
+            />
+          </div>
+          <div className="text-right">
+            <p className="font-bold text-[12px] s1512:text-[13px] s1920:text-[14px] text-[#333] flex items-center gap-x-1">
+              دکتر محمد حسن ناصح
+              <Image src="/images/blue-tick.png" alt="" width={14} height={14} className="w-3.5 h-3.5 rounded-full aspect-square" />
+            </p>
+            <p className="text-[10px] s1512:text-[11px] s1920:text-[12px] text-[#888] mt-0.5">
+              پزشک و موسس بهرویان
+            </p>
+          </div>
         </div>
+
         <div>
-          <SidebarForm activeAdmin={activeAdmin} />
-        </div>
-      </div>
-      <div className="mt-auto">
-        <div className="flex-bet mb-4">
-          <span className="font-semibold s1280:text-[20px] w-1/4">{isRu ? "Услуги" : "Services"}</span>
-          <span className="border-[1px] border-[#9996A0] w-[70%] h-0"></span>
-        </div>
-        <div className="flex flex-col items-start justify-start gap-y-4">
-          {services.map((service, index) => {
-            return (
-              <div className="w-full" key={index}>
-                <Link
-                  href={`/${locale}/medicaltourism/${service.path}`}
-                  className="w-full font-normal flex-bet hover:text-[#0CA5A5] anm text-[#333333]"
-                >
-                  <span>{service.label}</span>
-                  <span className="flex-right gap-x-2">
-                    <IoIosArrowForward className="size-5" />
-                  </span>
-                </Link>
-              </div>
-            );
-          })}
+          <SidebarForm activeAdmin="دکتر محمد حسن ناصح" />
         </div>
       </div>
     </aside>
