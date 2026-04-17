@@ -1,0 +1,48 @@
+import { NextRequest, NextResponse } from 'next/server';
+import { prisma } from '@/lib/prisma';
+
+export const dynamic = 'force-dynamic';
+
+// GET /api/blog/articles
+export async function GET(request: NextRequest) {
+  try {
+    const limit = parseInt(request.nextUrl.searchParams.get('limit') || '10');
+    const status = request.nextUrl.searchParams.get('status') || 'published';
+    const featured = request.nextUrl.searchParams.get('featured') === 'true';
+    const categoryId = request.nextUrl.searchParams.get('categoryId');
+
+    const where: any = { status };
+    if (featured) where.featured = true;
+    if (categoryId) where.categoryId = categoryId;
+
+    const articles = await prisma.article.findMany({
+      where,
+      include: {
+        category: true,
+        author: {
+          select: {
+            id: true,
+            name: true,
+            imageUrl: true
+          }
+        }
+      },
+      orderBy: { publishedAt: 'desc' },
+      take: limit
+    });
+
+    return NextResponse.json({
+      success: true,
+      data: articles,
+      count: articles.length
+    }, {
+      headers: { 'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600' },
+    });
+  } catch (error: any) {
+    console.error('Error fetching articles:', error);
+    return NextResponse.json(
+      { success: false, error: error.message },
+      { status: 500 }
+    );
+  }
+}
